@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: rarefaction
+Version: 1.2.1
+Summary: Rarefaction and Accumulation for Metagenomic datasets
+Home-page: https://github.com/TankMermaid/rarefy_accumulation.git
+Author: Xiao-Ning Tank Zhang
+Author-email: tanklovemermaid@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# rarefy_accumulation
+Python 3.8+ based, Processing subsampling metagenomic feature-count table and calculate the accumulation curve
+
+
