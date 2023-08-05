@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+zarenacord.py.egg-info/PKG-INFO
+zarenacord.py.egg-info/SOURCES.txt
+zarenacord.py.egg-info/dependency_links.txt
+zarenacord.py.egg-info/requires.txt
+zarenacord.py.egg-info/top_level.txt

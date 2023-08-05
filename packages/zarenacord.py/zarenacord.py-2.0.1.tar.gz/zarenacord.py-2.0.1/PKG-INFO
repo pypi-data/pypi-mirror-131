@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: zarenacord.py
+Version: 2.0.1
+Summary: A mirror package for zarenacord. Please install that instead.
+Home-page: https://github.com/Zarenalabs/zarenacord
+Author: Bravestone
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### This is a mirror package!
+
+It is recommended to install `zarenacord` instead.
+
+
