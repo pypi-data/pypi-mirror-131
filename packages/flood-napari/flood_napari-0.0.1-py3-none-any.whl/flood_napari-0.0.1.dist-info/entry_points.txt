@@ -1,0 +1,3 @@
+[napari.plugin]
+flood-napari = flood_napari
+
