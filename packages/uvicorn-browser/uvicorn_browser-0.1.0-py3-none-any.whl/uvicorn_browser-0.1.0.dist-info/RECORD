@@ -1,0 +1,13 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_smoke.py,sha256=SF_9YYk_6K8qgJx1JRqO1nLD2kRwMWfELlSlEwvEaa8,104
+uvicorn_browser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uvicorn_browser/__main__.py,sha256=37rDDa5796ZM8CtsTXVJNJPaYvqsfuOPkwzNyfE7y34,77
+uvicorn_browser/driver.py,sha256=cphCdiJinQcA2YNcvwS5pxxfGu9-LV6Gojm9Xb-hJpo,1132
+uvicorn_browser/main.py,sha256=aNfSwUusC3EXjdxAhCOvXTldpQqo5f3i-krPIptOlto,1967
+uvicorn_browser/reload.py,sha256=m3kJNA0gUZySzqHuWLtOtYMuwjDEjm-qApYCtQpJdrc,1712
+uvicorn_browser-0.1.0.dist-info/LICENSE,sha256=_2N4sMUZiaIPfRx1HDP0kDE112CKjRyKipsmj08dwvU,1076
+uvicorn_browser-0.1.0.dist-info/METADATA,sha256=m3IJccjgrOuP07EzOtG3442lVphexpGOKTCdf0ZK08s,2003
+uvicorn_browser-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+uvicorn_browser-0.1.0.dist-info/entry_points.txt,sha256=wOrssJkj--NBei6kVe-YFZS2W118M2OLFdWvaUbAU1o,52
+uvicorn_browser-0.1.0.dist-info/top_level.txt,sha256=CzQVus3dg83HHPwMiN5sx7d9wM2onADKpE-2bddWFY8,22
+uvicorn_browser-0.1.0.dist-info/RECORD,,
