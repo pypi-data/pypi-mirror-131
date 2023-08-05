@@ -1,0 +1,9 @@
+pipelines/__init__.py,sha256=6KrmuLMoigUWos7IkCOC_98GTTMmSwANwMzajVATmck,2750
+pipelines/question_answering.py,sha256=-mpqFMwrucbVNs1Roky6ekFxvQx-B9ctoZ6ISpeyups,7739
+pipelines/question_generation.py,sha256=0ZtHDjgqJ2bMtUY8QkCLyJ0yw8n9_QDsBDAbdUfSgSg,2955
+pipelines/utils_qa.py,sha256=d8boJIh1PoFBotZmDDaFPLoyZVLw9W2W5DF9GLNEXsk,20905
+question_generation-0.0.1.dist-info/LICENSE,sha256=uSj92H3nEHEIdpwgYbUMsuF0HbLqeMUnSoPcOV8lfrE,11413
+question_generation-0.0.1.dist-info/METADATA,sha256=BHzSB1f_k4aqkqJqyMCfHEknoJw6hUykN5Ev7ZYKm94,8630
+question_generation-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+question_generation-0.0.1.dist-info/top_level.txt,sha256=wM54Wgkc8XBc1LVH9mLfozGMALCN4Zgoe33Z2N0Yuhs,10
+question_generation-0.0.1.dist-info/RECORD,,
