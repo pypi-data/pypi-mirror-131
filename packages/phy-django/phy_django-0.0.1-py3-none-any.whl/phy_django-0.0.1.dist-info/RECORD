@@ -1,0 +1,16 @@
+phy_django/__init__.py,sha256=pdCyqwUBH8azVdGMofHRftXcJBIXiRDEosvhYX00SKY,195
+phy_django/admin.py,sha256=K7EIP65rx0Dx23b15vKKHKRHqT0XCw3caSyIlGaUeOA,6519
+phy_django/apps.py,sha256=iqUqdnzmPUvxStMPCt5XNebV0cooSI19QpBbac1-gsg,186
+phy_django/forms.py,sha256=ZkJlVXGXYqdprLk12_E_jORaGCBeh_6wnA_5M6oA7wQ,574
+phy_django/models.py,sha256=R6usDwpdtdndNjqii2cnW0rUhJsREKJtyPj4PkifKJM,14427
+phy_django/resources.py,sha256=Mx1SO7KMY7oJrq347kXtxvTduB59INozccLlDbqagZQ,2388
+phy_django/runs.py,sha256=dSVrvuaQbvrgYnl5YzlbOb07CfxItP3lJ50doMgMrEA,283
+phy_django/serializers.py,sha256=BjvnA0z3KVnoYVEnajs6sUDjUjgZvTk9Ev9Hv45j9zM,140
+phy_django/tests.py,sha256=2uDafv3Ns6f7Vy1ekUtgYxCZEi1KRyesZDTAFhYcX-E,63
+phy_django/views.py,sha256=34-LNjXSX0YCsPskkFMt2cavVnDgz1LHoUEHllqaXZ0,2299
+phy_django/viewsets.py,sha256=0OtZkW_OSkec6NHv-i-hji6UTqOdDEnnk9TPLWdpkzc,419
+phy_django-0.0.1.dist-info/LICENSE,sha256=C-syd4KrFsN09LNKDh0Ex70jXlCWlL-kVjkTBnpGOWc,1085
+phy_django-0.0.1.dist-info/METADATA,sha256=opWBNFc74lq-7H3eBQ3Gvob-4QPSof2kPO53QWfWZxM,1122
+phy_django-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+phy_django-0.0.1.dist-info/top_level.txt,sha256=3UdLToNmmVakf2RdzwKJsNoQ9rVSA85iLXSkVUplQLQ,11
+phy_django-0.0.1.dist-info/RECORD,,
