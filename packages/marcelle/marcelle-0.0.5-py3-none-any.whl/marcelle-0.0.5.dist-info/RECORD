@@ -1,0 +1,11 @@
+marcelle/__init__.py,sha256=ddhoal43iYdjzROT6Fi4RUljTQFZTvwD2-cOX-TQxs8,170
+marcelle/data_store.py,sha256=9QBzcD4_8xHC19tlDvrXuM6CTFtqUk_Tyu-BAVjbR9I,10823
+marcelle/keras_callback.py,sha256=wV_DKjQDRE4JiYYujopRHjy357Z1vRPTasB5Jv-b1Mk,2390
+marcelle/remote.py,sha256=de8EPe4D8UpNH38p49AgIqazkLzMhUPN2roTwiSVs-4,12455
+marcelle/uploader.py,sha256=ZQsd_FdB-UR68TUMaKTFZ8g-jzziWIB9Tj92tHIxQ_4,3800
+marcelle/utils.py,sha256=B5yric-PlznPZJyd8PKgVMoWkOB-vwUYP1hs7ay7X3g,3203
+marcelle/writer.py,sha256=g5PE9fPFyEI7FvbRntBLG4pYp8YopZSUypi_xdVSrZ8,8675
+marcelle-0.0.5.dist-info/LICENSE,sha256=VZP2jR0D4UW-pxe-iW4f47Ou0BL2zvIBNdemE3jNAFI,1065
+marcelle-0.0.5.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+marcelle-0.0.5.dist-info/METADATA,sha256=lErtEwhpYkIGbCwqoWvoqE-viOzrz-T377sWr7XP7no,3209
+marcelle-0.0.5.dist-info/RECORD,,
