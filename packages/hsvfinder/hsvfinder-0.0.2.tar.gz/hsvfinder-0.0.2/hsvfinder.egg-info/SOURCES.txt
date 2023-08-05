@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+hsvfinder/__init__.py
+hsvfinder/__main__.py
+hsvfinder.egg-info/PKG-INFO
+hsvfinder.egg-info/SOURCES.txt
+hsvfinder.egg-info/dependency_links.txt
+hsvfinder.egg-info/requires.txt
+hsvfinder.egg-info/top_level.txt
