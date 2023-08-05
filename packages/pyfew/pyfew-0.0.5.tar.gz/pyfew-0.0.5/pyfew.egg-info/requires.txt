@@ -1,0 +1,5 @@
+pyyaml
+catch22
+numpy
+scipy
+tqdm
