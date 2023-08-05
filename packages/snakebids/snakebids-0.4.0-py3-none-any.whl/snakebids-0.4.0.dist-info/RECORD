@@ -1,0 +1,14 @@
+snakebids/__init__.py,sha256=Va09QJU1-e0HqRQGBTDbT2_EXx_9aR56ZTWf5a2xxfE,443
+snakebids/app.py,sha256=ZSd-sHDuM3lajstonHKJRb09vLr4dCmnQZ7ZexSFcDo,18656
+snakebids/bids.py,sha256=htipHaHLN0QOveFMR2TDcomy8vm0MqMpCqOoAWPSm_k,34098
+snakebids/bids_tags.json,sha256=-_zSI5lszskuMjrbUc3QddNaN9Tz_4kpzcKQMRZeJUU,300
+snakebids/exceptions.py,sha256=V5sRbap5ywH9d5Ph39hTouQfQNpwu0W8dZxIVxKfbuc,405
+snakebids/template.py,sha256=G8eFcq9mwoSrpomoT1cmt_I4xGfaUgizJb1u3bDxtJ4,275
+snakebids/utils/__init__.py,sha256=5onIrZP8-XtQpR-oSpPKwOE8gYIif8GXLIKCXhSVKhs,477
+snakebids/utils/output.py,sha256=JTdJVS5j7UWkLiid-fxdyMjD2ptTO2Mb8GISt-Z8oPQ,14435
+snakebids/utils/snakemake_io.py,sha256=qeBhzHHPByK9jN8YtrOjq8YqB8mBl7x08wC8K4GVmWc,4882
+snakebids-0.4.0.dist-info/entry_points.txt,sha256=I8fTxmCJBLZoenfXGu6WPHQzAF0OrTLQOUMxgq4Wm2k,60
+snakebids-0.4.0.dist-info/LICENSE,sha256=gtZCYgKRpY6qRIyd5DLEPdcVfTQm-m0PnvCtOEr6d8Q,1065
+snakebids-0.4.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+snakebids-0.4.0.dist-info/METADATA,sha256=JyL80OYfht4hmfHQ3nnYlGneBTZi0QFjF0LzKOIJ1Q4,2793
+snakebids-0.4.0.dist-info/RECORD,,
