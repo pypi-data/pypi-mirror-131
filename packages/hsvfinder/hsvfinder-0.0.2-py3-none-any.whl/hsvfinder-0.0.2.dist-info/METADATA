@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hsvfinder
+Version: 0.0.2
+Summary: Reporting HSV values in flood filled masked areas.
+Home-page: https://github.com/danmaclean/hsvfinder
+Author: Dan MacLean, Alexander Reynolds
+Author-email: dan.maclean@tsl.ac.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: opencv-python
+
+UNKNOWN
+
