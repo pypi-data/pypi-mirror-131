@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: freedesktop_os_release
+Version: 0.0.0
+Summary: Backport of platform.freedesktop_os_release() compatible with python 3.5.
+Author-email: awright <ambwrig@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://github.com/amblina/freedesktop-os-release/
