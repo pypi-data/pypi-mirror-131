@@ -1,0 +1,9 @@
+typing-extensions
+typing-validation
+
+[dev]
+mypy
+pylint
+pytest
+pytest-cov
+base58
