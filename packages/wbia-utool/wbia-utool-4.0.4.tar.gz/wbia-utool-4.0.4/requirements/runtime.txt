@@ -1,0 +1,15 @@
+delorean
+gitpython
+lockfile
+networkx
+numpy
+opencv-contrib-python-headless
+ordered-set
+pandas
+parse
+pint
+psutil
+pyparsing
+requests
+six
+ubelt

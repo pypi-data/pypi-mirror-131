@@ -1,0 +1,16 @@
+astor
+autopep8
+boto
+delorean
+h5py
+lru-dict
+numpy
+objgraph
+pyfiglet
+Pygments
+pyperclip
+setproctitle
+sphinx
+sphinxcontrib-napoleon
+tqdm
+xxhash
