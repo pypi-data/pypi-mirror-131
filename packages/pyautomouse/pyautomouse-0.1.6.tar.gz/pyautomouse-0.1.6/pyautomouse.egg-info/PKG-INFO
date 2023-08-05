@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pyautomouse
+Version: 0.1.6
+Summary: UNKNOWN
+Home-page: https://github.com/seoul2k/pyautomouse
+Author: xiongtianshuo
+Author-email: seoul1k@163.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/seoul2k/pyautomouse/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+[EOF]
+
+

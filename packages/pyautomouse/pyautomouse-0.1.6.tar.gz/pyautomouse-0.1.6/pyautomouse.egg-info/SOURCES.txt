@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pyautomouse/__init__.py
+pyautomouse.egg-info/PKG-INFO
+pyautomouse.egg-info/SOURCES.txt
+pyautomouse.egg-info/dependency_links.txt
+pyautomouse.egg-info/requires.txt
+pyautomouse.egg-info/top_level.txt
