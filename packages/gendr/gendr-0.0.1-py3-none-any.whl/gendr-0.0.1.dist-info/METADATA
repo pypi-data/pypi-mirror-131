@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: gendr
+Version: 0.0.1
+Summary: gendr
+Home-page: https://github.com/Felix-Petersen/gendr
+Author: Felix Petersen
+Author-email: ads0399@felix-petersen.de
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: torch (>=1.9.0)
+
+# gendr
+
+
