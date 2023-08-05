@@ -1,0 +1,8 @@
+delaunay_triangulation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+delaunay_triangulation/triangulate.py,sha256=yEmeZ1yCArUjC9lMLcRL069hgO_ilvwmD_5pVi9AO7o,6630
+delaunay_triangulation/typing.py,sha256=b0CsE76t0SptPMpmSZWwB9cqkU5f81c2RDcH8psGhEI,11094
+delaunay_triangulation-1.0.4.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+delaunay_triangulation-1.0.4.dist-info/METADATA,sha256=ERFYphxpTq97tefdBYhI7J9JrCa9P48qqdWBiXuk1S4,2044
+delaunay_triangulation-1.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+delaunay_triangulation-1.0.4.dist-info/top_level.txt,sha256=9TCjBWeqiSm-1HcNY9P87Mxt9qtZwffmTWtozaPyTnE,23
+delaunay_triangulation-1.0.4.dist-info/RECORD,,
