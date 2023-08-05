@@ -1,0 +1,1 @@
+include sphinx_inplace/template/*.rst_t
