@@ -1,0 +1,9 @@
+bdkpython/__init__.py,sha256=MEpm0DIvUBPD-sxBYta3csrTiTaSqkjXsn9L_2Mi2r4,28
+bdkpython/bdk.py,sha256=apWezNKsHSQNHx87195dNA7SJYmti25EBhCQLEeOURY,65672
+bdkpython/darwin-arm64/libbdkffi.dylib,sha256=1eFmZxJwSmsVsMjrYqewys51RngelgO4DoqI21vbYX4,7208908
+bdkpython/darwin-x86_64/libbdkffi.dylib,sha256=V95qoyBZQOhpgNZW-H9ESMFLenh1bQDaX5BVp7Zm6WA,7976744
+bdkpython/linux-x86_64/libbdkffi.so,sha256=kXSIk7IGZ6Y1xKVBSfMWQe3IzNmTF4JWZW_YbmR2WKM,13837928
+bdkpython-0.0.4.dist-info/METADATA,sha256=NAB1xwXIw5eTV_xWu8WbohSXLcaaDUuefLm2CuL4YE4,1909
+bdkpython-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+bdkpython-0.0.4.dist-info/top_level.txt,sha256=BpjT6locJ4WJz-wFZu6kSG9cKeH8E64dUJlPeL425OY,10
+bdkpython-0.0.4.dist-info/RECORD,,
