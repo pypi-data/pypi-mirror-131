@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: wom-connector
+Version: 1.1.0
+Summary: Connector library to the WOM Platform.
+Home-page: https://github.com/WOM-Platform/Python-Connector
+Author: WOM Platform
+Author-email: info@wom.social
+License: MIT
+Project-URL: Homepage, https://wom.social/
+Project-URL: Source, https://github.com/WOM-Platform/Python-Connector
+Platform: UNKNOWN
+
+WOM Connector for Python
+========================
+
+This library can be used to interact with the WOM platform as a Point of Service or as an Instrument.
+In order to use the library, you will need to register to the platform (wom.social) and obtain an identifier and a private key.
+
+Check out the repository for further information:
+https://github.com/WOM-Platform/Python-Connector
+
+
