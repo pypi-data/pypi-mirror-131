@@ -1,0 +1,12 @@
+mudata/__init__.py,sha256=Xu-lWt7WOloqnmH1Z93kYKJw7QCjQK-uBctWpAvTDRc,243
+mudata/_core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mudata/_core/config.py,sha256=Gntdw1qISFaQiTD2uWjBg0ZsAejy4jduRIkBhEbYPEI,1598
+mudata/_core/file_backing.py,sha256=wAsKr-YCJWTjiRSiZj-mN4qghqX8RNllhmcdp3AgWaI,3561
+mudata/_core/io.py,sha256=r47dZMWXSrZ-TJoSaG9F0q15R0krRX6EuSbLf-Rdg3Y,13330
+mudata/_core/mudata.py,sha256=cocKa9IYBq743yhyo4_i5rXmieVA9GHWoLUzr2EgVW8,39220
+mudata/_core/repr.py,sha256=SHaFCktybAouM-3-cPebRssawTjuKXMmK6QvPwzp2aE,8297
+mudata/_core/utils.py,sha256=RNgaKM7sk58jBeCrUuE7ipw460tP8UWhUXLBLBSPXcY,662
+mudata-0.1.1.dist-info/LICENSE,sha256=1L8o9EtTUsrEeI1c9LoDF8bmGH3sspVPcBXj6NOvE7I,1524
+mudata-0.1.1.dist-info/WHEEL,sha256=LVOPL_YDMEiGvRLgDK1hLkfhFCnTcxcAYZJtpNFses0,81
+mudata-0.1.1.dist-info/METADATA,sha256=ikpF7MamLq1iNor3SRiS860gvvXMcVhCbC8uKR3f25Y,3692
+mudata-0.1.1.dist-info/RECORD,,
