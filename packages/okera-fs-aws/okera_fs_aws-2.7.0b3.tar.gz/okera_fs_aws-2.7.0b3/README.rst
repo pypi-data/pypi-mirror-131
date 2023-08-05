@@ -1,0 +1,58 @@
+okera_fs_aws
+============
+
+Okera access control for AWS S3 CLI v1
+
+Dependencies
+------------
+
+Required:
+
+-  Python 3.6+
+
+-  AWS CLI v1 for Python 3.6
+
+-  ``jwt``, ``requests``, ``pytz``, ``urllib3``, ``pathlib``
+
+.. code:: shell
+
+    pip3 install jwt requests pytz urllib3 pathlib
+
+Installation
+------------
+
+.. code:: shell
+
+    pip3 install okera_fs_aws
+
+To verify:
+
+.. code:: python
+
+    >>> import okera.odas
+    >>> okera.odas.version()
+    '##OKERA_RELEASE_VERSION##'
+
+Configuration
+-------------
+
+If ~/.aws/config doesn't exist the user should create it by running aws configure.  The values the user enters for the access and secret key will not effect the use of the okera_fs plugin.  The 'plugins' definition below indicates the AWS CLI should load the 'okera_fs' python module found on it's sys.path.  The [profile okera] section parameterizes the Okera CLI plugin.
+
+Example of the okera_fs updates to ~/.aws/config
+::
+
+    [profile okera]
+    okera =
+        proxy = https://<CDAS REST server host>:5010
+        rest = https://<CDAS REST server host>:8083
+        token = <User's JWT token>
+
+    [plugins]
+    okera = okera_fs_aws
+
+Usage
+-----
+
+.. code:: shell
+
+    aws s3 <command> --profile okera
