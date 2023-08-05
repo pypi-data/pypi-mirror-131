@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: rarefaction
+Version: 1.2.2
+Summary: Rarefaction and Accumulation for Metagenomic datasets
+Home-page: https://github.com/TankMermaid/rarefy_accumulation.git
+Author: Xiao-Ning Tank Zhang
+Author-email: tanklovemermaid@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aioeasywebdav (==2.4.0)
+Requires-Dist: async-timeout (==3.0.1)
+Requires-Dist: attmap (==0.12.11)
+Requires-Dist: backcall (==0.2.0)
+Requires-Dist: brotlipy (==0.7.0)
+Requires-Dist: CacheControl (==0.12.10)
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: cycler (==0.11.0)
+Requires-Dist: Cython (==0.29.25)
+Requires-Dist: filechunkio (==1.8)
+Requires-Dist: fonttools (==4.28.3)
+Requires-Dist: hdmedians (==0.14.2)
+Requires-Dist: ipython (==7.30.1)
+Requires-Dist: jedi (==0.18.1)
+Requires-Dist: joblib (==1.1.0)
+Requires-Dist: kiwisolver (==1.3.2)
+Requires-Dist: lockfile (==0.12.2)
+Requires-Dist: matplotlib (==3.5.0)
+Requires-Dist: matplotlib-inline (==0.1.3)
+Requires-Dist: msgpack (==1.0.3)
+Requires-Dist: natsort (==8.0.0)
+Requires-Dist: oauth2client (==4.1.3)
+Requires-Dist: pandas (==1.2.2)
+Requires-Dist: parso (==0.8.3)
+Requires-Dist: pexpect (==4.8.0)
+Requires-Dist: pickleshare (==0.7.5)
+Requires-Dist: Pillow (==8.4.0)
+Requires-Dist: prompt-toolkit (==3.0.23)
+Requires-Dist: protobuf (==3.15.1)
+Requires-Dist: ptyprocess (==0.7.0)
+Requires-Dist: pyasn1 (==0.4.8)
+Requires-Dist: pyasn1-modules (==0.2.8)
+Requires-Dist: pysftp (==0.2.9)
+Requires-Dist: pytest (==6.2.2)
+Requires-Dist: python-irodsclient (==0.8.2)
+Requires-Dist: PyYAML (==5.4.1)
+Requires-Dist: scikit-bio (==0.5.6)
+Requires-Dist: scikit-learn (==1.0.1)
+Requires-Dist: scipy (==1.7.3)
+Requires-Dist: setuptools-scm (==6.3.2)
+Requires-Dist: slacker (==0.14.0)
+Requires-Dist: threadpoolctl (==3.0.0)
+Requires-Dist: tomli (==1.2.2)
+Requires-Dist: uritemplate (==3.0.1)
+Requires-Dist: veracitools (==0.1.3)
+Requires-Dist: xmlrunner (==1.7.7)
+
+# rarefy_accumulation
+Python 3.8+ based, Processing subsampling metagenomic feature-count table and calculate the accumulation curve
+
+
