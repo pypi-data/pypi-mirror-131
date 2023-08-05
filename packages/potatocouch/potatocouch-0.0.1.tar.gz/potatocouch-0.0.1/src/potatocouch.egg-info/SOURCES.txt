@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+src/potatocouch-lib/__init__.py
+src/potatocouch-lib/example.py
+src/potatocouch.egg-info/PKG-INFO
+src/potatocouch.egg-info/SOURCES.txt
+src/potatocouch.egg-info/dependency_links.txt
+src/potatocouch.egg-info/top_level.txt
