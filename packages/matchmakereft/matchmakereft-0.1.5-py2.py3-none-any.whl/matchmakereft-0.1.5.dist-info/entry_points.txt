@@ -1,0 +1,3 @@
+[console_scripts]
+matchmakereft = matchmakereft.libs.MatchMaker:MM
+
