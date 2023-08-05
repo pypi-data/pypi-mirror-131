@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: aio_nacos
+Version: 0.1.5
+Summary: 一个异步的nacos库
+Home-page: https://github.com/zqsc/aio-nacos
+Author: zqsc
+Author-email: zhao_zqsc@sina.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.4
