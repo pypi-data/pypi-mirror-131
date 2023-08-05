@@ -1,0 +1,16 @@
+ray
+ujson
+py_cui
+torch
+plotille
+pandas
+pdoc
+
+[dev]
+check-manifest
+pdoc
+twine
+
+[test]
+coverage
+nose
