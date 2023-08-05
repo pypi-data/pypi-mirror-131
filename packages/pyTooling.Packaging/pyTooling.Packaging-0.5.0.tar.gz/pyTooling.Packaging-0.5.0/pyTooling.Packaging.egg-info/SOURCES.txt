@@ -1,0 +1,9 @@
+LICENSE.md
+README.md
+setup.py
+pyTooling.Packaging.egg-info/PKG-INFO
+pyTooling.Packaging.egg-info/SOURCES.txt
+pyTooling.Packaging.egg-info/dependency_links.txt
+pyTooling.Packaging.egg-info/requires.txt
+pyTooling.Packaging.egg-info/top_level.txt
+pyTooling/Packaging/__init__.py
