@@ -1,0 +1,5 @@
+pandas
+numpy
+aiohttp
+nest_asyncio
+plotly
