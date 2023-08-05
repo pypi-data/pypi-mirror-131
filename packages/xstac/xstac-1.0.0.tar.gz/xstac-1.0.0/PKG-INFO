@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: xstac
+Version: 1.0.0
+Summary: xstac
+Requires-Python: >=3.6
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: shapely ; extra == "dev"
+Provides-Extra: dev

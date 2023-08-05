@@ -1,0 +1,36 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "xstac"
+author = "Tom Augspurger"
+author-email = "taugspurger@microsoft.com"
+classifiers = [ "License :: OSI Approved :: MIT License",]
+requires = [
+    "cf_xarray",
+    "xarray",
+    "numpy",
+    "pystac>=1.0.0b3",
+    "pandas",
+    "pyproj",
+    "pydantic",
+    "zarr",
+    "jsonschema",
+    "dask[array]",  # for chunking
+    # these are just for generate
+    "fsspec[http]",
+]
+requires-python = ">=3.6"
+dynamic = ["version", "description"]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "pre-commit",
+  "shapely",
+]
+
+[project.scripts]
+xstac = "xstac._generate:main"
+
