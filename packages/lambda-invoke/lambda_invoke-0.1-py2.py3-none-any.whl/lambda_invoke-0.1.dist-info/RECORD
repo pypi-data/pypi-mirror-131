@@ -1,0 +1,8 @@
+lambda_invoke/__init__.py,sha256=OSQ4wKqe6a9MVTa2kuDadixk5WOWTipqcDpg-zhtwWg,70
+lambda_invoke/simple_proxy.py,sha256=T6askmW0N0msimxcGgqtSISn9LYVWsV5ve1_L3MES2E,4329
+lambda_invoke-0.1.dist-info/AUTHORS.rst,sha256=vYIsT0GiAXSmKYgT6pSM9UjgBy7wfEFH8VPYG4ipO9Y,156
+lambda_invoke-0.1.dist-info/LICENSE,sha256=YildfelFtvZTzoHja3CGUAgqW6j3ZhDcS3n1cS1H7-4,1073
+lambda_invoke-0.1.dist-info/METADATA,sha256=cWzFrKVisd7sqdo2i7DKx8gNnx4hlRmZYZuGaD8OiTY,1711
+lambda_invoke-0.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+lambda_invoke-0.1.dist-info/top_level.txt,sha256=2RDWxL_r6ctaBB-KW5TWdITY5_bDualv8XuCQUqEjq0,14
+lambda_invoke-0.1.dist-info/RECORD,,
