@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: soap2json
+Version: 0.1.4
+Summary: Soap to Json
+Home-page: https://github.com/bcn-dev/soap2json.git
+Author: Wilson Silva
+Author-email: wilson.silva@bcn.cv
+License: MIT
+Project-URL: Bug Tracker, https://github.com/bcn-dev/soap2json/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# soap2json - Soap 2 Json
+
+Soap 2 Json
+
+Install `soap2json` on your system using : 
+
+```
+pip install soap2json
+```
+
+
