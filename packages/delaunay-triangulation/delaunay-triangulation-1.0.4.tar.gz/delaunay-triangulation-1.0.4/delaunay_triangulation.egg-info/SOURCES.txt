@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+delaunay_triangulation/__init__.py
+delaunay_triangulation/triangulate.py
+delaunay_triangulation/typing.py
+delaunay_triangulation.egg-info/PKG-INFO
+delaunay_triangulation.egg-info/SOURCES.txt
+delaunay_triangulation.egg-info/dependency_links.txt
+delaunay_triangulation.egg-info/top_level.txt
