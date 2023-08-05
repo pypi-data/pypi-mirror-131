@@ -1,0 +1,18 @@
+{
+    "text": "<strong><span class=\"text-success\">NOT</strong></span> <strong><span class=\"text-danger\">AND</span></strong> <span class=\"label label-danger\"></span> <span class=\"label label-danger\">false</span> <i></i>",
+    "icon": "glyphicon glyphicon-ok text-success",
+    "state": {
+        "opened": true
+    },
+    "info": null,
+    "children": [
+        {
+            "text": " <strong><span class=\"text-danger\">2</span></strong> <span class=\"label label-danger\"></span> <span class=\"label label-danger\">false</span> <i></i>",
+            "icon": "glyphicon glyphicon-remove text-danger",
+            "state": {
+                "opened": true
+            },
+            "info": null
+        }
+    ]
+}

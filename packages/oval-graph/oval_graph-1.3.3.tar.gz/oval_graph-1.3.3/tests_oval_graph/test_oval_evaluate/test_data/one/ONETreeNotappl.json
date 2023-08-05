@@ -1,0 +1,41 @@
+{
+    "node_id": 1,
+    "type": "operator",
+    "value": "one",
+    "negation": false,
+    "comment": null,
+    "tag": null,
+    "test_result_details": null,
+    "child": [
+        {
+            "node_id": 2,
+            "type": "value",
+            "value": "notappl",
+            "negation": false,
+            "comment": null,
+            "tag": null,
+            "test_result_details": null,
+            "child": null
+        },
+        {
+            "node_id": 3,
+            "type": "value",
+            "value": "notappl",
+            "negation": false,
+            "comment": null,
+            "tag": null,
+            "test_result_details": null,
+            "child": null
+        },
+        {
+            "node_id": 4,
+            "type": "value",
+            "value": "notappl",
+            "negation": false,
+            "comment": null,
+            "tag": null,
+            "test_result_details": null,
+            "child": null
+        }
+    ]
+}

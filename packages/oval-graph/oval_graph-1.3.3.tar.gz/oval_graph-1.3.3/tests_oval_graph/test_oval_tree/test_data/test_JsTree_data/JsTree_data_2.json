@@ -1,0 +1,18 @@
+{
+    "text": " <strong><span class=\"text-dark\">AND</span></strong> <span class=\"label label-default\"></span> <span class=\"label label-default\">noteval</span> <i></i>",
+    "icon": "glyphicon glyphicon-question-sign text-dark",
+    "state": {
+        "opened": true
+    },
+    "info": null,
+    "children": [
+        {
+            "text": " <strong><span class=\"text-dark\">2</span></strong> <span class=\"label label-default\"></span> <span class=\"label label-default\">noteval</span> <i></i>",
+            "icon": "glyphicon glyphicon-question-sign text-dark",
+            "state": {
+                "opened": true
+            },
+            "info": null
+        }
+    ]
+}
