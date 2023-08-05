@@ -1,0 +1,5 @@
+networkx
+nltk
+nltk_tgrep
+numpy
+scipy
