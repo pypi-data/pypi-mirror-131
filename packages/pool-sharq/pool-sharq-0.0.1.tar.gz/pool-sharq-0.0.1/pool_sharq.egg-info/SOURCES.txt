@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pool_sharq/__init__.py
+pool_sharq.egg-info/PKG-INFO
+pool_sharq.egg-info/SOURCES.txt
+pool_sharq.egg-info/dependency_links.txt
+pool_sharq.egg-info/requires.txt
+pool_sharq.egg-info/top_level.txt
