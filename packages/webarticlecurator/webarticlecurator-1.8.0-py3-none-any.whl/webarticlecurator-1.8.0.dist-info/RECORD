@@ -1,0 +1,16 @@
+webarticlecurator/__init__.py,sha256=hydi7C6EsJtAujBr7O5XhfD36DtianaA9mtbLP176bw,738
+webarticlecurator/__main__.py,sha256=-Gbc1n7JKyWfSjdReTTIQLStmWWMvQrh-70VFMPt1EM,17206
+webarticlecurator/crawl_schema.yaml,sha256=3Y55s3zz9NyTi4TkqfjDjykCeUTMsQ4ANnhUbS8NxxY,567
+webarticlecurator/enhanced_downloader.py,sha256=FZfeR1J8rDBJQMoK25MJ8_9aiGnvqIHACfXRTOgpkx4,24460
+webarticlecurator/logger.py,sha256=1DCOhADEt1GDjAbK4nSLaDbwAsJ6aeMqxEaY2ppTA54,6343
+webarticlecurator/news_crawler.py,sha256=3USzVsyb584iQtB8JWaoLA29-Aes-Bzy8C7w6TAAMLg,21433
+webarticlecurator/other_modes.py,sha256=PXOtpKgeSkRltBrdiA1CpoJJPDfqkpKppntwknFmG0Q,6663
+webarticlecurator/site_schema.yaml,sha256=3iePLax7UJBeAqLfqHPeM56fdPMSLI2jeim7ZmUJuHs,1482
+webarticlecurator/utils.py,sha256=rQDIfILNgQYOKM_3nI5ZPtq61WbZ1p6Q7ifvsg2l8jQ,12018
+webarticlecurator/version.py,sha256=uSAHove1K7YM2OJ_W5suFMpmFURR0sRuLi8p-ggH13k,91
+webarticlecurator-1.8.0.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+webarticlecurator-1.8.0.dist-info/METADATA,sha256=KS0H28q4RXIyFws_-I73LjNMYbdlO6YGmvvOVSVj6uw,13686
+webarticlecurator-1.8.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+webarticlecurator-1.8.0.dist-info/entry_points.txt,sha256=_s_2T19ZXLZoD3zYxTT91hwnt91xl8aog46rwCv_roM,71
+webarticlecurator-1.8.0.dist-info/top_level.txt,sha256=EhsGd-Tr7FFh8GEWvWvbvsqyLN9GG0K7zSS3KOrJbEw,18
+webarticlecurator-1.8.0.dist-info/RECORD,,
