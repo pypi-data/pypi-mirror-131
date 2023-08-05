@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: coredotseries
+Version: 0.1.8
+Summary: Library for time series
+Home-page: https://github.com/coredottoday/CoreDotSeries.git
+Author: CoreDotToday
+Author-email: engine@core.today
+License: Apache Software License 2.0
+Keywords: coredotseries
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.md
+
+![CoreDotSeries](docs/static/logo.svg)
+
+
+[![GitHup issues](https://img.shields.io/github/issues/CoreDotToday/CoreDotSeries)](https://github.com/CoreDotToday/CoreDotSeries/issues)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+
+Sequential Data Analytics Tool
+
+* Free software: Apache Software License 2.0
+
+
+Installation
+------------
+```
+pip install coredotseries
+```
+
+```
+pip install git+https://github.com/CoreDotToday/CoreDotSeries
+```
+
+
+Features
+--------
+
+* TODO
+
+
+=======
+History
+=======
+
+0.1.0 (2021-10-12)
+------------------
+
+* First release on Github.
+
+
+0.2.0 (2021-11-02)
+------------------
+* First release on PyPI.
+
+
