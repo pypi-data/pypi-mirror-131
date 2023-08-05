@@ -1,0 +1,6 @@
+README.md
+setup.py
+chopyn.egg-info/PKG-INFO
+chopyn.egg-info/SOURCES.txt
+chopyn.egg-info/dependency_links.txt
+chopyn.egg-info/top_level.txt
