@@ -1,0 +1,10 @@
+napari-plugin-engine>=0.1.4
+numpy
+tiler
+
+[testing]
+pytest
+pytest-faulthandler
+pytest-order
+pytest-qt
+pytest-timeout

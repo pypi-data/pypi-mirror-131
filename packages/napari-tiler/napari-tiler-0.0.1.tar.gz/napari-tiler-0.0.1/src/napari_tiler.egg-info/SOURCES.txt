@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+src/napari_tiler/__init__.py
+src/napari_tiler/_dock_widget.py
+src/napari_tiler.egg-info/PKG-INFO
+src/napari_tiler.egg-info/SOURCES.txt
+src/napari_tiler.egg-info/dependency_links.txt
+src/napari_tiler.egg-info/entry_points.txt
+src/napari_tiler.egg-info/requires.txt
+src/napari_tiler.egg-info/top_level.txt
+src/napari_tiler/_tests/__init__.py
+src/napari_tiler/_tests/test_dock_widget.py
