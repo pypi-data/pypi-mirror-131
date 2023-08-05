@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: redis-enterprise-python
+Version: 1.0.1
+Summary: Redis Enterprise API
+Home-page: UNKNOWN
+Author-email: matthew.royal@redis.com
+License: UNKNOWN
+Keywords: Swagger,Redis Enterprise API,Redis Enterprise,Redis
+Platform: UNKNOWN
+
+file: README.md
+
