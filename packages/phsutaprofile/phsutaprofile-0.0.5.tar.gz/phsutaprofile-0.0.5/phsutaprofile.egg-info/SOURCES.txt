@@ -1,0 +1,10 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+phsutaprofile/__init__.py
+phsutaprofile/myprofile.py
+phsutaprofile.egg-info/PKG-INFO
+phsutaprofile.egg-info/SOURCES.txt
+phsutaprofile.egg-info/dependency_links.txt
+phsutaprofile.egg-info/top_level.txt
