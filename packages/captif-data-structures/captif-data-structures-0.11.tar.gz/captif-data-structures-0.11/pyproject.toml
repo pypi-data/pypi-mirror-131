@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "captif-data-structures"
+version = "0.11"
+description = ""
+authors = ["John Bull"]
+homepage = "https://github.com/captif-nz/captif-data-structures"
+license = "MIT"
+readme = "README.md"
+keywords = ["CAPTIF"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.3.3"
+parse = "^1.19.0"
+pydantic = "^1.8.2"
+unsync = "^1.4.0"
+psutil = "^5.8.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-randomly = "^3.10.1"
+pytest-cov = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
