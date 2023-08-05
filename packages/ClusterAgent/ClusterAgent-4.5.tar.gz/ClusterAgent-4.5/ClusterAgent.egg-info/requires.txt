@@ -1,0 +1,6 @@
+pandas
+pymongo
+Flask
+logaugment
+requests
+threadpool
