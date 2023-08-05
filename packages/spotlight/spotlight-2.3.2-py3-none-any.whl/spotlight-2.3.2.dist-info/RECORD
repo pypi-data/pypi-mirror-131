@@ -1,0 +1,12 @@
+spotlight/__init__.py,sha256=w8YqFSusd8ePGC1G9K4mFSI7fJDUNQLd2k5T20LM0Hw,183
+spotlight/config.py,sha256=YyLiz0tB93hGFlJ7GejI3b4W3cw9GbkJDXv9gWLQmGM,187
+spotlight/errors.py,sha256=TuMA8YQ5wESaBZ0Y_has__eUYRahuM4zvvxNrafPZwU,2777
+spotlight/exceptions.py,sha256=9-3doOBcuy8kT25ciyZ8JNUAkGA6xhegExus6JgXWAU,1031
+spotlight/rules.py,sha256=DxaHADOI2bz4fosGanWFrIJZtT8yJ0QMwS2MS8Fvmjg,24515
+spotlight/utils.py,sha256=wEthzE8685ArbjubF3k41FsJyufdVHwGUZd-ogyMFqM,1944
+spotlight/validator.py,sha256=fwYNkuG1_B1M74zQ3mVtVNLrYtfPtoDqOhHyWS591Fw,14082
+spotlight-2.3.2.dist-info/LICENSE,sha256=ZbLg7_2hMXA7MqKTSlne98sS-w-MV3dIwWRXEin4EAM,1066
+spotlight-2.3.2.dist-info/METADATA,sha256=-UdiywxEQFW1nv2RgkuWSw80R75-pf_se6aSBYgDaaw,2316
+spotlight-2.3.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+spotlight-2.3.2.dist-info/top_level.txt,sha256=PRdMaBRUBDwWc415oK4C3vlNb8n3Kbx8L5XsflRNp-M,10
+spotlight-2.3.2.dist-info/RECORD,,
