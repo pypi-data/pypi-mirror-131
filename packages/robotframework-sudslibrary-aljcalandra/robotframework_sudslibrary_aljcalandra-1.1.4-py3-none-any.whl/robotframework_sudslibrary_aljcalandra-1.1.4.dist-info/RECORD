@@ -1,0 +1,16 @@
+SudsLibrary/__init__.py,sha256=MV0yoIN8UjR5LTD43Wo4UTiAkpU7z_Mcmj8Gk-8RoHA,8550
+SudsLibrary/clientmanagement.py,sha256=1traKX2vC7cRnc_rNLWR5UsfZquRV5BRd_hus8Da34M,5262
+SudsLibrary/factory.py,sha256=Ak_eLZuVgS-bvtO7SmryvjaBt0Dk9IJ7-tENF7P5Pxg,3045
+SudsLibrary/monkeypatches.py,sha256=vbvxvGlABJ_pvd4OuxUDBI_kPTsrk_KvuPVwLhpBE7g,2422
+SudsLibrary/options.py,sha256=Jrv5WxOdjrpmijYjEO5pvYiBpeyVecpQtla7itDYJwU,10730
+SudsLibrary/proxy.py,sha256=QFCG62zDOQih0gjMpVn6R-74He9tUnmEAL5NC5igIC4,4820
+SudsLibrary/soaplogging.py,sha256=4cvPgK84-mWOFH7gwpOKf96b4MpJBffhdnGdDU6DWsA,4692
+SudsLibrary/utils.py,sha256=lNnMbASE58nImpmH8ER6yBNeNbT9jOU8DaNve1Kg7Rw,1132
+SudsLibrary/version.py,sha256=iln6hsFON83eBS6ove_OjE8d6UsNtHKr9Q3AJ2k152w,19
+SudsLibrary/wsse.py,sha256=U0I1OxcjnodPZLhOH6_QtCwSDa7RE8a0BRxj0xv8g9k,6809
+robotframework_sudslibrary_aljcalandra-1.1.4.dist-info/LICENSE.txt,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+robotframework_sudslibrary_aljcalandra-1.1.4.dist-info/METADATA,sha256=lHlbVeYmmgUt3kYe118TiZ9_IBx1oU61sGviXA1BawI,850
+robotframework_sudslibrary_aljcalandra-1.1.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+robotframework_sudslibrary_aljcalandra-1.1.4.dist-info/top_level.txt,sha256=DOuCT39K6Zz2rIfpnp2ed1J_bxG8v6be4LKoY91gcEg,12
+robotframework_sudslibrary_aljcalandra-1.1.4.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+robotframework_sudslibrary_aljcalandra-1.1.4.dist-info/RECORD,,
