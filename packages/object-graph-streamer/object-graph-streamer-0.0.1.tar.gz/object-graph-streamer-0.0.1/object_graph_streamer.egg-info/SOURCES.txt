@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+object_graph_streamer.egg-info/PKG-INFO
+object_graph_streamer.egg-info/SOURCES.txt
+object_graph_streamer.egg-info/dependency_links.txt
+object_graph_streamer.egg-info/requires.txt
+object_graph_streamer.egg-info/top_level.txt
+src/__init__.py
+src/object_graph_streamer.py
+src/object_graph_streamer_test.py
+src/version.py
