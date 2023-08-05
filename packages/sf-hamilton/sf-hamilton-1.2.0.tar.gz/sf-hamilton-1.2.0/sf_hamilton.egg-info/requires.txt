@@ -1,0 +1,7 @@
+pandas
+dataclasses
+numpy
+
+[visualization]
+graphviz
+networkx
