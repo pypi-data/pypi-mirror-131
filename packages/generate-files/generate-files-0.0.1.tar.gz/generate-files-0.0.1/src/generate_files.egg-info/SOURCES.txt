@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/GenerateFiles/__init__.py
+src/GenerateFiles/generate_files.py
+src/GenerateFiles/save_file.py
+src/generate_files.egg-info/PKG-INFO
+src/generate_files.egg-info/SOURCES.txt
+src/generate_files.egg-info/dependency_links.txt
+src/generate_files.egg-info/top_level.txt
