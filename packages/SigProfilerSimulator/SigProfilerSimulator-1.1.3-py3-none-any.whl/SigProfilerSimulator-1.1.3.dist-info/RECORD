@@ -1,0 +1,12 @@
+SigProfilerSimulator/SigProfilerSimulator.py,sha256=XDue9C5IC9x1FhbDQKrN1uKaKq8R6UPoM653E4tJ2Jg,21200
+SigProfilerSimulator/SigProfilerSimulator_original.py,sha256=ap-mhTaFUByC_3oLWHKOazM6PYv6T_vZHk3VCew0d-A,20528
+SigProfilerSimulator/__init__.py,sha256=ZRcPQNuFhRF0B2MgkOakQBbqftKYCvacjBMq0iyN5c8,49
+SigProfilerSimulator/mutational_simulator.py,sha256=wHMpsDtrJA7Fey8xRBC5QRoOwMg-pSh713si3h0fnH8,111306
+SigProfilerSimulator/mutational_simulator_original.py,sha256=Wbbqh3a-7du_917qvHbkWvkoJtmyuiotk4hNiXsCIKc,107532
+SigProfilerSimulator/seeds.txt,sha256=gAWal8koEkVzM50xRqm5bf4RtlRvuBYb69EqhAVgvpw,275
+SigProfilerSimulator/version.py,sha256=7Qbvh60g-JRK681XdIszpGzmBr7EEi3D7MVXqmA754A,106
+SigProfilerSimulator-1.1.3.dist-info/LICENSE,sha256=zil8dsok0iKcEbIVOdOhzIAJ3Eu7cMVyB5oawFdVKR8,1341
+SigProfilerSimulator-1.1.3.dist-info/METADATA,sha256=xC9cDaGAqRziDeNH8IbXLaS_UDdkY2_yAcdJCTgTnGw,10033
+SigProfilerSimulator-1.1.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+SigProfilerSimulator-1.1.3.dist-info/top_level.txt,sha256=on4m47Cb4C4L-dFc8Qkj7sY4zcCmbPQzsFUUz1ChGB0,21
+SigProfilerSimulator-1.1.3.dist-info/RECORD,,
