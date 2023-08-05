@@ -1,0 +1,7 @@
+xstac/__init__.py,sha256=fjSsWOknLw_gL4Fhkyd9g1bOTYjm0lW3QL6mTBJ1wwk,126
+xstac/_generate.py,sha256=h_jBQqyIfv-5ipqGJZMrTsGFla72VrmABmzb9yNHzLY,3470
+xstac/_xstac.py,sha256=_kAMt0JAHtxqQsyFUwGj2Mb_O-W1-TsK9FGmjnyvdmA,13459
+xstac-1.0.0.dist-info/entry_points.txt,sha256=I_lWlEwpnOJ5Q1e6PoKQjAQ2HKxGIK3f_iABaNIgAsU,46
+xstac-1.0.0.dist-info/WHEEL,sha256=LVOPL_YDMEiGvRLgDK1hLkfhFCnTcxcAYZJtpNFses0,81
+xstac-1.0.0.dist-info/METADATA,sha256=Z3UKgBLBfei0HjQsPzJf_a4AsH2jxM_torRGSnz5wFc,280
+xstac-1.0.0.dist-info/RECORD,,

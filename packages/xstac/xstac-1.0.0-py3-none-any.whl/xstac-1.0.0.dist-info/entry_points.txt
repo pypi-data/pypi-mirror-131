@@ -1,0 +1,3 @@
+[console_scripts]
+xstac=xstac._generate:main
+
