@@ -1,0 +1,10 @@
+#!python
+
+import jsii
+import sys
+
+__jsii_assembly__ = jsii.JSIIAssembly.load(
+    "crow-api", "2.0.0", "crow_api.core", "crow-api@2.0.0.jsii.tgz"
+)
+
+__jsii_assembly__.invokeBinScript("crow-api", "crow-api", sys.argv[1:])
