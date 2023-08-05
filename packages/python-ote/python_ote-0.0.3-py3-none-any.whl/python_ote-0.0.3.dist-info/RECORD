@@ -1,0 +1,10 @@
+ote/__init__.py,sha256=UT47WpSPmJGlMbHV8wvESEAWpNFgSWynf0mCDXzRp5g,1679
+ote/items.py,sha256=zZWfPgTMtm6k2HZiikHAAFSFO28dA_X1phjQR9R0T-s,747
+ote/settings.py,sha256=uPv57GAodWxjGgbO-Nn7kAmHTHp7_XfSuQfX92ugyYE,3263
+ote/spiders/__init__.py,sha256=ULwecZkx3_NTphkz7y_qiazBeUoHFnCCWnKSjoDCZj0,161
+ote/spiders/ote_electricity.py,sha256=9TUt_f21HI4Vckf5655LMU_Z5SbnJ8PPIhjmm5eKsF8,2634
+python_ote-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+python_ote-0.0.3.dist-info/METADATA,sha256=SpclKmZR7_-Qb8AqsheezemdlxTmEJk85ezXWpIUWQ8,2934
+python_ote-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+python_ote-0.0.3.dist-info/top_level.txt,sha256=yQdvTJXFOYD6qso0tukAyDAGvOIx3V3queKeDxJQsGE,4
+python_ote-0.0.3.dist-info/RECORD,,
