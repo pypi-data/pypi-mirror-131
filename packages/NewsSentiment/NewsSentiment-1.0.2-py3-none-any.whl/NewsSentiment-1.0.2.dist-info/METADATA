@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: NewsSentiment
+Version: 1.0.2
+Summary: Easy-to-use, high-quality target-dependent sentiment classification for news articles
+Home-page: https://github.com/fhamborg/NewsMTSC
+Author: Felix Hamborg
+Author-email: felix.hamborg@uni-konstanz.de
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/fhamborg/NewsMTSC/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Python: <3.9,>=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3 (>=1.19.7)
+Requires-Dist: gensim (>=4.0.1)
+Requires-Dist: imbalanced-learn (>=0.8.1)
+Requires-Dist: jsonlines (>=2.0.0)
+Requires-Dist: matplotlib (>=3.4.3)
+Requires-Dist: networkx (>=2.6.3)
+Requires-Dist: openpyxl (>=3.0.5)
+Requires-Dist: pandas (>=1.3.3)
+Requires-Dist: torch (==1.7.1)
+Requires-Dist: regex (>=2021.10.23)
+Requires-Dist: requests (>=2.26.0)
+Requires-Dist: sacremoses (>=0.0.46)
+Requires-Dist: scikit-learn (>=1.0.1)
+Requires-Dist: spacy (<3,>=2.1)
+Requires-Dist: tabulate (>=0.8.9)
+Requires-Dist: torchvision (>=0.8.2)
+Requires-Dist: tqdm (>=4.62.3)
+Requires-Dist: transformers (<4,>=3.1.0)
+Provides-Extra: cuda
+Requires-Dist: cudatoolkit (==10.1) ; extra == 'cuda'
+
+UNKNOWN
+
