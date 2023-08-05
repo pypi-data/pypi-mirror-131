@@ -1,0 +1,7 @@
+libsfst.dylib,sha256=g4vo3XuWGgsa64HvRol-tF48aEPNVY8PqYIqCXVI7k4,262152
+sfst_transduce.cpython-37m-darwin.so,sha256=sf92yCjSzbCqrJ4zcdDnMRdhZn3Ee3Wx58L8C-CzMh8,340728
+sfst_transduce-1.0.1.dist-info/COPYING,sha256=pFkyx5MX0VEW6tvxycb8WRF-w8RiHbOodgZt76cjljs,15127
+sfst_transduce-1.0.1.dist-info/METADATA,sha256=I3-bZB89X5KfKSeOMen2tjV_37O0PxSkNViik7uXB8M,2664
+sfst_transduce-1.0.1.dist-info/WHEEL,sha256=MTGYRPpheMM24WbmS90Rp7e0ky6cZJ8CkS_x1qgwoGk,110
+sfst_transduce-1.0.1.dist-info/top_level.txt,sha256=j4ZrgNBgPQ-ImEOznpEUsr-bay9S88rvdWXgV0xggrg,15
+sfst_transduce-1.0.1.dist-info/RECORD,,
