@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: micropython-microbmp
+Version: 0.1.0
+Summary: A small Python module for BMP image processing.
+Home-page: https://github.com/jacklinquan/micropython-microbmp
+Author: Quan Lin
+Author-email: jacklinquan@gmail.com
+License: MIT
+Description: https://github.com/jacklinquan/micropython-microbmp
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: Implementation :: MicroPython
+Description-Content-Type: text/markdown
