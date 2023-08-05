@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/checker/__init__.py
+src/checker/fetch_and_prepare.py
+src/checker/huge_dict.py
+src/checker/log_setup.py
+src/checker/main.py
+src/checker/smaller_dict.py
+src/domain_check.egg-info/PKG-INFO
+src/domain_check.egg-info/SOURCES.txt
+src/domain_check.egg-info/dependency_links.txt
+src/domain_check.egg-info/entry_points.txt
+src/domain_check.egg-info/requires.txt
+src/domain_check.egg-info/top_level.txt
