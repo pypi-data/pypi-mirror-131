@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+dfhist/__init__.py
+dfhist.egg-info/PKG-INFO
+dfhist.egg-info/SOURCES.txt
+dfhist.egg-info/dependency_links.txt
+dfhist.egg-info/top_level.txt

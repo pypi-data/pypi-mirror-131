@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dfhist
+Version: 0.0.0
+Summary: utilities for caching pandas dataframes
+Home-page: https://github.com/jftsang/dfhist
+Author: J. M. F. Tsang
+Author-email: j.m.f.tsang@cantab.net
+License: CC BY 4.0
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
