@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: aapt2
+Version: 0.2.1
+Summary: Android Asset Packaging Tool 2 for Python3
+Home-page: https://github.com/trevorwang/aapt
+Keywords: aapt,aapt2,android,adb
+Author: Trevor Wang
+Author-email: trevor.wang@qq.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/trevorwang/aapt

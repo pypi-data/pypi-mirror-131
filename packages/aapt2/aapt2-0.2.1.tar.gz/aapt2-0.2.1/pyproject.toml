@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "aapt2"
+version = "0.2.1"
+description = "Android Asset Packaging Tool 2 for Python3"
+authors = ["Trevor Wang <trevor.wang@qq.com>"]
+homepage = "https://github.com/trevorwang/aapt"
+repository = "https://github.com/trevorwang/aapt"
+keywords = [
+	"aapt", "aapt2","android", "adb"
+]
+packages =[
+	{include= "aapt2", from="src"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+requests = "^2.26.0"
+autopep8 = "^1.6.0"
+pytest = "^6.2.5"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
