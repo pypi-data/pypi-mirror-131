@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/labjack_unified/__init__.py
+src/labjack_unified/devices.py
+src/labjack_unified/utils.py
+src/labjack_unified.egg-info/PKG-INFO
+src/labjack_unified.egg-info/SOURCES.txt
+src/labjack_unified.egg-info/dependency_links.txt
+src/labjack_unified.egg-info/requires.txt
+src/labjack_unified.egg-info/top_level.txt

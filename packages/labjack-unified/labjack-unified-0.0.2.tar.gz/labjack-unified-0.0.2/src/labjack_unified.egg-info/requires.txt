@@ -1,0 +1,4 @@
+LabJackPython
+labjack-ljm
+plotly
+numpy
