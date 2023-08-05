@@ -1,0 +1,11 @@
+sync_my_tasks/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+sync_my_tasks/command.py,sha256=l0Tur7RIY747eyIs8PWovKGJJzi0o8t8U6bL6TSz8SU,1394
+sync_my_tasks/provider_asana.py,sha256=ErjjYUwHZs_rdbbsole-sjQEJwMaD6lC3uaRsMvceLE,6551
+sync_my_tasks/provider_mstodo.py,sha256=00HBPkaPiWp1hNs-Tfkw4Kw7DPbKprRgOa1A23qPFUA,4049
+sync_my_tasks/task.py,sha256=O-eXYKSHeehCh5bDiCDyAldEhJFJMFMSEGHBFFq26eA,588
+sync_my_tasks/tasklist.py,sha256=EHlHHsmILw8RX-E_sGDG9DlkI8KmPvrgtkwqxse5KWY,264
+sync_my_tasks-0.1.0.dist-info/entry_points.txt,sha256=5IsUMs4hB52eEIGf2BZvZ0DpHWDlE5gQljiw26pLBn0,60
+sync_my_tasks-0.1.0.dist-info/LICENSE,sha256=U7pysqeU06SLcfGQu6l7wQFNGL1-SFbXhMufHCQar2w,1071
+sync_my_tasks-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+sync_my_tasks-0.1.0.dist-info/METADATA,sha256=9ZSLhAjpMFE93lrR4Uz6RiZcaH3Rd4xCFgf0fXxsoAU,4237
+sync_my_tasks-0.1.0.dist-info/RECORD,,
