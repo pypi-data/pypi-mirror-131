@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+passwordDictGenerator.egg-info/PKG-INFO
+passwordDictGenerator.egg-info/SOURCES.txt
+passwordDictGenerator.egg-info/dependency_links.txt
+passwordDictGenerator.egg-info/entry_points.txt
+passwordDictGenerator.egg-info/requires.txt
+passwordDictGenerator.egg-info/top_level.txt
+pwdgen/__init__.py
+pwdgen/pwdgen.py
