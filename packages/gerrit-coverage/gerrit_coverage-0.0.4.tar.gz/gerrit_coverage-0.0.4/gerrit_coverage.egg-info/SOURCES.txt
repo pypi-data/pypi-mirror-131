@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+gerrit_coverage/__init__.py
+gerrit_coverage/__main__.py
+gerrit_coverage/condense.py
+gerrit_coverage/gerrit_coverage.py
+gerrit_coverage.egg-info/PKG-INFO
+gerrit_coverage.egg-info/SOURCES.txt
+gerrit_coverage.egg-info/dependency_links.txt
+gerrit_coverage.egg-info/entry_points.txt
+gerrit_coverage.egg-info/requires.txt
+gerrit_coverage.egg-info/top_level.txt
+test/test_gerrit_coverage.py

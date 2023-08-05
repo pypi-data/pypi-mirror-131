@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: gerrit-coverage
+Version: 0.0.4
+Summary: Convert the test-coverage-result while only including not covered lines in the current diff.
+Home-page: https://github.com/tom-010/gerrit_coverage
+Author: Thomas Deniffel
+Author-email: tdeniffel@gmail.com
+License: Apache2
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+gerrit_coverage
+===============
+
+Convert the test-coverage-result (saved in `.converage` to gerrit comments) while only
+including not covered lines in the current diff.
+
+
