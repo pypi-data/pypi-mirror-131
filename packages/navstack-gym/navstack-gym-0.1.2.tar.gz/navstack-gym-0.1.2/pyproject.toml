@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "navstack-gym"
+version = "0.1.2"
+description = ""
+authors = ["Reona Sato <www.shinderu.www@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/wwwshwww/navstack-gym"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+gym = "^0.21.0"
+nav-sim-modules = "^0.3.2"
+matplotlib = "^3.5.0"
+descartes = "^1.1.0"
+
+[tool.poetry.dev-dependencies]
+jupyter = "^1.0.0"
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "gym"]
+build-backend = "poetry.core.masonry.api"
