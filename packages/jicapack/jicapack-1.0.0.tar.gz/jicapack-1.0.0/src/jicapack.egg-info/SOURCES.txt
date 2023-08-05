@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+src/jicapack/__init__.py
+src/jicapack/mylib.py
+src/jicapack/package_data.dat
+src/jicapack.egg-info/PKG-INFO
+src/jicapack.egg-info/SOURCES.txt
+src/jicapack.egg-info/dependency_links.txt
+src/jicapack.egg-info/entry_points.txt
+src/jicapack.egg-info/requires.txt
+src/jicapack.egg-info/top_level.txt
