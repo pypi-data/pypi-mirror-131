@@ -1,0 +1,4 @@
+[console_scripts]
+csv_converter=converter_js.converter:converter
+json_converter=converter_js.converter:converter2
+
