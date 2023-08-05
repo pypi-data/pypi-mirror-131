@@ -1,0 +1,20 @@
+include MANIFEST.in
+include README.md
+include pyproject.toml
+recursive-include quinteng *pyx
+recursive-include quinteng *pxd
+recursive-include quinteng *.pxi
+recursive-include quinteng *cpp
+recursive-include quinteng *hpp
+graft src
+graft contrib
+include quinteng/providers/app/backends/wrappers/CMakeLists.txt
+include quinteng/providers/app/backends/wrappers/bindings.cc
+include quinteng/providers/app/pulse/qutip_extra_lite/cy/CMakeLists.txt
+include quinteng/providers/app/VERSION.txt
+include quinteng/providers/app/library/instructions_table.csv
+include CMakeLists.txt
+include cmake/*.cmake
+# Exclude static libraries (they are all compressed with 7z)
+exclude src/third-party/*/lib/*.a
+exclude src/third-party/*/lib/*.lib
