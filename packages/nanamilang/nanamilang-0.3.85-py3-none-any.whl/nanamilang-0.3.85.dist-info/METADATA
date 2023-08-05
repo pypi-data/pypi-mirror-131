@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: nanamilang
+Version: 0.3.85
+Summary: NanamiLang - Chiaki Nanami Language
+Home-page: https://nanamilang.jedi2light.moe/
+Author: @jedi2light
+Author-email: stoyan.minaev@gmail.com
+Maintainer: @jedi2light
+Maintainer-email: stoyan.minaev@gmail.com
+License: GNU GPL v2
+Project-URL: Documentation, https://nanamilang.readthedocs.io/en/latest/
+Project-URL: Bug Tracker, https://gitea.jedi2light.moe/jedi2light/nanamilang/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
