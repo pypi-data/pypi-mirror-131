@@ -1,0 +1,12 @@
+derm_ita/__init__.py,sha256=3QISh9pcaYPFrv_oWX_HdL-qG4xtvq5bzuh42V2F4vE,4732
+derm_ita/boarder_removal.py,sha256=DKauOYq9Xt4MhjMEQM0X3mUka4XTDxUYpbiCEWGw3fg,1324
+derm_ita/cropped_center.py,sha256=tCpQTFULcs8kJdTI_DPDK4O7hP9fUSrcoTdYQBlWF6Q,2956
+derm_ita/ita_core_computations.py,sha256=QndYAyRCQo7_BAiZIelGM6CTNshECMGWr_8i3R5UGz8,2986
+derm_ita/random_patches.py,sha256=AdMuw_C8Rn6qVJZRT4ps-30o6stqdzQgKoqU-UxU3tM,2890
+derm_ita/skin_tone_classification.py,sha256=3Ns9A0BrhWyrgll3crv2O7IILrlvC7ZWHbuFGx7F-hE,3013
+derm_ita/structured_patches.py,sha256=N-bQRa0LT06hynsHQi6l4gy4s3aEyzZ52WkGzoH5f8Y,2082
+derm_ita-0.0.4.dist-info/LICENSE.txt,sha256=p4SJXsYHnGywlvWFEMZqZpdIxjrdtL8VJMnvUqCJHXo,1097
+derm_ita-0.0.4.dist-info/METADATA,sha256=I1-Ilg2M33Ggp28b_fq3CCS8Gbml37SpG8nPH8v_ZRM,6858
+derm_ita-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+derm_ita-0.0.4.dist-info/top_level.txt,sha256=WJt2FBqOcvhKHREhowmMoxzcaxe5ru9e7zqC5OAlM3A,9
+derm_ita-0.0.4.dist-info/RECORD,,
