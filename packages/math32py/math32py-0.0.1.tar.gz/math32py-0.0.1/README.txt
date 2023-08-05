@@ -1,0 +1,1 @@
+This is a normal and simple math solver that either add, subtract, multiply or divide them.
