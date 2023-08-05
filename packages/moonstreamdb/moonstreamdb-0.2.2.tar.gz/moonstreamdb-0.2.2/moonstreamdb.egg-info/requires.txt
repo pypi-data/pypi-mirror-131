@@ -1,0 +1,13 @@
+alembic
+psycopg2-binary
+sqlalchemy
+
+[dev]
+black
+isort
+mypy
+
+[distribute]
+setuptools
+twine
+wheel
