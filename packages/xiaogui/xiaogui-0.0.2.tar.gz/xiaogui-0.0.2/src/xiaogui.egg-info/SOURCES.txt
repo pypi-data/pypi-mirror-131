@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/xiaogui/__init__.py
+src/xiaogui/hello.py
+src/xiaogui.egg-info/PKG-INFO
+src/xiaogui.egg-info/SOURCES.txt
+src/xiaogui.egg-info/dependency_links.txt
+src/xiaogui.egg-info/top_level.txt
