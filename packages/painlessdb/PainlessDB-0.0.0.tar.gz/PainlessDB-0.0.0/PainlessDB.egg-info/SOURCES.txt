@@ -1,0 +1,6 @@
+README.md
+setup.py
+PainlessDB.egg-info/PKG-INFO
+PainlessDB.egg-info/SOURCES.txt
+PainlessDB.egg-info/dependency_links.txt
+PainlessDB.egg-info/top_level.txt
