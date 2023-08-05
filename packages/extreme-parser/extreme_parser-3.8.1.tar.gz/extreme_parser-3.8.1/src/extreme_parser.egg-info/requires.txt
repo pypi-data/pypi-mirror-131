@@ -1,0 +1,4 @@
+pandas
+parsel
+js2py
+pydantic
