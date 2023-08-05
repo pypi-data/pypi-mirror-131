@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: navstack-gym
+Version: 0.1.1
+Summary: 
+Author: Reona Sato
+Author-email: www.shinderu.www@gmail.com
+Requires-Python: >=3.8,<3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: descartes (>=1.1.0,<2.0.0)
+Requires-Dist: gym (>=0.21.0,<0.22.0)
+Requires-Dist: matplotlib (>=3.5.0,<4.0.0)
+Requires-Dist: nav-sim-modules (>=0.3.2,<0.4.0)
