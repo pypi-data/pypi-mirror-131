@@ -1,0 +1,10 @@
+cst_modeling/__init__.py,sha256=HB4j7F_s8AwHRQGVckW3I0OTMoY2nNmdqwqF6O6TQMI,51
+cst_modeling/auxiliary.py,sha256=QM-scVNtGQ6cTvmFHKQ9U4twDI_QWSZW6QA6CwYXOQc,10231
+cst_modeling/foil.py,sha256=8WyAOTRVPiBn9diCF8Wkvx7oeTjfFtGHX2cF08JlWJc,57029
+cst_modeling/naca.py,sha256=rGGqVnOrfOjnOonLa4-hlqtMWHx8LK5_Us_f5lLb-K0,8614
+cst_modeling/surface.py,sha256=IJObnmIn_5fNGGsWRE90FH-wHdVSEuZP2pJpQwWKF5E,70760
+cst_modeling3d-0.1.13.dist-info/LICENSE,sha256=mA_EDlN-xxxUKXjUlh_NpZ2rJ_0r2pNfmoQ9ScfX1zY,1088
+cst_modeling3d-0.1.13.dist-info/METADATA,sha256=Qqe8DqhlgpKf_4cFNnjso8fhBHK2fZaCu5h33ckaPGI,476
+cst_modeling3d-0.1.13.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+cst_modeling3d-0.1.13.dist-info/top_level.txt,sha256=GOZpQR926iOSIqQ-whaaMuWlygza70Hsp7qXHMv2I1Q,13
+cst_modeling3d-0.1.13.dist-info/RECORD,,
