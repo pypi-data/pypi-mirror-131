@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+sphinx_inplace/__init__.py
+sphinx_inplace/__main__.py
+sphinx_inplace/file_tree.py
+sphinx_inplace/rst_generator.py
+sphinx_inplace.egg-info/PKG-INFO
+sphinx_inplace.egg-info/SOURCES.txt
+sphinx_inplace.egg-info/dependency_links.txt
+sphinx_inplace.egg-info/requires.txt
+sphinx_inplace.egg-info/top_level.txt
+sphinx_inplace/template/module.rst_t
+sphinx_inplace/template/package.rst_t
+sphinx_inplace/template/toc.rst_t
