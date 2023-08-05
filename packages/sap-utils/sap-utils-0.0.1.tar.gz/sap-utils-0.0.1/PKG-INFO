@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: sap-utils
+Version: 0.0.1
+Summary: Random utility code.
+Home-page: https://github.com/satyarth934/sap-utils
+Author: Satyarth Praveen
+Author-email: satyarth934@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/satyarth934/sap-utils/issues
+Project-URL: Source, https://github.com/satyarth934/sap-utils
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# sap-utils
+Random utility functions.
+
+
