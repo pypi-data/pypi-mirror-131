@@ -1,0 +1,172 @@
+Metadata-Version: 2.1
+Name: moto-ext
+Version: 2.2.8
+Summary: A library that allows your python tests to easily mock out the boto library
+Home-page: https://github.com/spulec/moto
+Author: Steve Pulec
+Author-email: spulec@gmail.com
+License: Apache
+Project-URL: Documentation, http://docs.getmoto.org/en/latest/
+Description: # Moto - Mock AWS Services
+        
+        Fork of [`moto`](https://github.com/spulec/moto) with changes and adaptations for [LocalStack](https://github.com/localstack/localstack).
+        
+        Please refer to the upstream repo for more details.
+        
+        ## Releasing
+        
+        This fork is maintained as a separate pypi package, [moto-ext](https://pypi.org/project/moto-ext). To release a new version, follow these steps:
+        ```
+        # make sure to have git remotes defined for both repos: 
+        $ git remote -v
+        localstack	git@github.com:localstack/moto.git (fetch)
+        localstack	git@github.com:localstack/moto.git (push)
+        upstream	git@github.com:spulec/moto.git (fetch)
+        upstream	git@github.com:spulec/moto.git (push)
+        
+        # fetch fresh upstream "master" branch
+        $ git fetch upstream master
+        
+        # branch "localstack" is the default branch of this repo
+        $ git checkout localstack
+        $ git rebase upstream/master  # resolve merge conflicts, if any...
+        # (force-)push latest changes to the remote repo
+        $ git push -f localstack localstack
+        
+        # update __version__, then publish to pypi
+        $ vi moto/__init__.py
+        ...
+        $ rm -rf dist/ build/
+        $ make publish
+        ...
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development :: Testing
+Description-Content-Type: text/markdown
+Provides-Extra: budgets
+Provides-Extra: efs
+Provides-Extra: elbv2
+Provides-Extra: autoscaling
+Provides-Extra: datapipeline_deprecated
+Provides-Extra: ec2_deprecated
+Provides-Extra: cognitoidp
+Provides-Extra: sqs_deprecated
+Provides-Extra: dynamodb
+Provides-Extra: logs_deprecated
+Provides-Extra: opsworks
+Provides-Extra: sns
+Provides-Extra: timestreamwrite
+Provides-Extra: polly
+Provides-Extra: ec2
+Provides-Extra: eks
+Provides-Extra: kms_deprecated
+Provides-Extra: codepipeline
+Provides-Extra: iam
+Provides-Extra: redshift_deprecated
+Provides-Extra: apigateway_deprecated
+Provides-Extra: dms
+Provides-Extra: ecs
+Provides-Extra: kinesis_deprecated
+Provides-Extra: cognitoidentity
+Provides-Extra: route53resolver
+Provides-Extra: secretsmanager
+Provides-Extra: awslambda
+Provides-Extra: rds2
+Provides-Extra: sns_deprecated
+Provides-Extra: managedblockchain
+Provides-Extra: rds
+Provides-Extra: elb
+Provides-Extra: forecast
+Provides-Extra: cloudwatch
+Provides-Extra: swf_deprecated
+Provides-Extra: logs
+Provides-Extra: rds_deprecated
+Provides-Extra: dynamodb2
+Provides-Extra: cloudformation
+Provides-Extra: s3_deprecated
+Provides-Extra: glue
+Provides-Extra: events
+Provides-Extra: glacier
+Provides-Extra: sts_deprecated
+Provides-Extra: dynamodb2_deprecated
+Provides-Extra: elasticbeanstalk
+Provides-Extra: stepfunctions
+Provides-Extra: cloudfront
+Provides-Extra: iot
+Provides-Extra: opsworks_deprecated
+Provides-Extra: xray
+Provides-Extra: datasync
+Provides-Extra: ses
+Provides-Extra: config
+Provides-Extra: medialive
+Provides-Extra: sdb
+Provides-Extra: elasticache
+Provides-Extra: lambda_deprecated
+Provides-Extra: server
+Provides-Extra: cloudtrail
+Provides-Extra: batch
+Provides-Extra: resourcegroupstaggingapi
+Provides-Extra: sagemaker
+Provides-Extra: ssm
+Provides-Extra: sqs
+Provides-Extra: emr_deprecated
+Provides-Extra: athena
+Provides-Extra: route53
+Provides-Extra: ecr_deprecated
+Provides-Extra: cloudformation_deprecated
+Provides-Extra: swf
+Provides-Extra: dynamodb_deprecated
+Provides-Extra: cognitoidentity_deprecated
+Provides-Extra: autoscaling_deprecated
+Provides-Extra: firehose
+Provides-Extra: support
+Provides-Extra: organizations
+Provides-Extra: cognitoidp_deprecated
+Provides-Extra: apigateway
+Provides-Extra: rds2_deprecated
+Provides-Extra: ses_deprecated
+Provides-Extra: elb_deprecated
+Provides-Extra: all
+Provides-Extra: kinesis
+Provides-Extra: guardduty
+Provides-Extra: dynamodbstreams
+Provides-Extra: ecs_deprecated
+Provides-Extra: iam_deprecated
+Provides-Extra: ds
+Provides-Extra: mediastoredata
+Provides-Extra: ec2instanceconnect
+Provides-Extra: glacier_deprecated
+Provides-Extra: ecr
+Provides-Extra: cloudwatch_deprecated
+Provides-Extra: mediastore
+Provides-Extra: datapipeline
+Provides-Extra: applicationautoscaling
+Provides-Extra: route53_deprecated
+Provides-Extra: mediaconnect
+Provides-Extra: codecommit
+Provides-Extra: iotdata
+Provides-Extra: mediapackage
+Provides-Extra: elastictranscoder
+Provides-Extra: transcribe
+Provides-Extra: xray_client
+Provides-Extra: kms
+Provides-Extra: kinesisvideo
+Provides-Extra: ram
+Provides-Extra: resourcegroups
+Provides-Extra: lambda
+Provides-Extra: wafv2
+Provides-Extra: acm
+Provides-Extra: sts
+Provides-Extra: emr
+Provides-Extra: redshift
+Provides-Extra: s3
+Provides-Extra: kinesisvideoarchivedmedia
+Provides-Extra: emrcontainers
