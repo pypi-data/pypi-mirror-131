@@ -1,0 +1,3 @@
+[console_scripts]
+asc2mb=asc2mb.asc2mb:main
+
