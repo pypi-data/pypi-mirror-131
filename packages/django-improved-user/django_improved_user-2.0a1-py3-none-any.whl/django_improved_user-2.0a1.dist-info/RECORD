@@ -1,0 +1,14 @@
+improved_user/__init__.py,sha256=r-m25IOM6hIqXIYYurCsi1YEsXZTsB2pRARdwwdPniA,448
+improved_user/admin.py,sha256=HTOR39z7Zg-c2Z57fH2Tkpb-gcbGeG2bo81Ysbe2Lw0,1256
+improved_user/apps.py,sha256=idQjn0qLfKLQiZ43ws_P1WCSuAc7r754PFO9wDO8C20,905
+improved_user/factories.py,sha256=gJKs8QUkie9EbNGYZ1ua6T6GwSrH0VQganO3-StlMCA,1269
+improved_user/forms.py,sha256=udgxL8MgshMhejoTztAs640LX4zNGomdcdyBljb3j1g,7902
+improved_user/managers.py,sha256=Vs-ExYd4JqNK_w2Xsu94ILrRsJ8_s0Ww2D-hypedoFE,2152
+improved_user/model_mixins.py,sha256=em3JpK5Qr5NJIVoZH9r-xckmNwx321bMIptZx1llOo4,3770
+improved_user/models.py,sha256=PFbKoRajM2Q2viAL5kgt5ah_j4zd_NosWk2I2ibBwf4,422
+improved_user/migrations/0001_initial.py,sha256=YFlZuK9JBJjkviuMmKUjdkZUYfjqItUO0RSeRFgK3_4,4166
+improved_user/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_improved_user-2.0a1.dist-info/LICENSE,sha256=IFG4LhN4loWr9WT1vBksykzylS9Jy3ecHwfI0K2sMnw,1328
+django_improved_user-2.0a1.dist-info/WHEEL,sha256=LVOPL_YDMEiGvRLgDK1hLkfhFCnTcxcAYZJtpNFses0,81
+django_improved_user-2.0a1.dist-info/METADATA,sha256=3HMLtfPB9Dlki1Czdu8EXecorDXRo5WIbphl9l9lA9M,4708
+django_improved_user-2.0a1.dist-info/RECORD,,

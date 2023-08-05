@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: django-improved-user
+Version: 2.0a1
+Summary: Compose new Django User models that follow best-practices for international names and authenticate via email instead of username.
+Author: Russell Keith-Magee, Andrew Pinkham
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Requires-Dist: django>=2.2
+Requires-Dist: factory_boy>=2.9 ; extra == "factory"
+Requires-Dist: Faker>=0.8 ; extra == "factory"
+Requires-Dist: python-dateutil>=2.6 ; extra == "factory"
+Project-URL: Documentation, https://django-improved-user.rtfd.io
+Project-URL: Source, https://github.com/jambonsw/django-improved-user/
+Project-URL: Tracker, https://github.com/jambonsw/django-improved-user/issues
+Provides-Extra: factory
+
+Latest Release: |Version| |Tag|
+
+Documentation: |DevelopmentDocs|
+
+Compatibility: |Implementation| |Python| |Django| |License|
+
+Tests: |Pre-commit| |Coverage|
+
+.. |Version| image:: http://img.shields.io/pypi/v/django-improved-user.svg
+        :target: https://pypi.org/project/django-improved-user/
+        :alt: PyPI Version
+
+.. |Tag| image:: https://img.shields.io/github/tag/jambonsw/django-improved-user.svg
+        :target: https://github.com/jambonsw/django-improved-user/releases
+        :alt: Github Tag
+
+.. .. |StableDocs| image:: https://readthedocs.org/projects/django-improved-user/badge/?version=stable
+..         :target: http://django-improved-user.readthedocs.io/en/stable/?badge=stable
+..         :alt: Stable Documentation Status
+
+.. |DevelopmentDocs| image:: https://readthedocs.org/projects/django-improved-user/badge/?version=latest
+        :target: http://django-improved-user.readthedocs.io/en/latest/?badge=latest
+        :alt: Development Documentation Status
+
+.. |Implementation| image:: https://img.shields.io/pypi/implementation/django-improved-user.svg
+        :target: https://pypi.org/project/django-improved-user/
+        :alt: Python Implementation Support
+
+.. |Python| image:: https://img.shields.io/pypi/pyversions/django-improved-user.svg
+        :target: https://pypi.org/project/django-improved-user/
+        :alt: Python Support
+
+.. |Django| image:: https://img.shields.io/badge/Django-1.8%2C%201.11%2C%202.0%2C%202.1-blue.svg
+        :target: https://pypi.org/project/django-improved-user/
+        :alt: Django Support
+
+.. |License| image:: http://img.shields.io/pypi/l/django-improved-user.svg
+        :target: http://opensource.org/licenses/BSD-2-Clause
+        :alt: License
+
+.. |Pre-commit| image:: https://results.pre-commit.ci/badge/github/jambonsw/django-improved-user/development.svg
+        :target: https://results.pre-commit.ci/latest/github/jambonsw/django-improved-user/development
+        :alt: pre-commit.ci status
+
+.. |Coverage| image:: https://codecov.io/gh/jambonsw/django-improved-user/branch/development/graph/badge.svg
+        :target: https://codecov.io/gh/jambonsw/django-improved-user
+        :alt: Coverage Status
+
+.. end-badges
+
+Read Me
+=======
+
+This project provides a custom user model that improves on Django's
+default by making a few modern and international changes.
+
+* Uses email as the username to simplify login for users
+* Replace :code:`first_name` and :code:`last_name` with international
+  friendly :code:`short_name` and :code:`full_name` fields
+
+The project also provides mix-in classes to make building custom User
+models easier.
+
+For an explanation of why and how the project was built, please see the
+`Project Rationale`_.
+
+For information about getting started, please refer to the `quickstart
+documentation`_.
+
+For information about how to help with the project, please see the
+`contributing documentation`_.
+
+.. _contributing documentation: https://django-improved-user.readthedocs.io/en/latest/contributing.html
+.. _Project Rationale: https://django-improved-user.readthedocs.io/en/latest/rationale.html
+.. _quickstart documentation: https://django-improved-user.readthedocs.io/en/latest/quickstart.html
+
