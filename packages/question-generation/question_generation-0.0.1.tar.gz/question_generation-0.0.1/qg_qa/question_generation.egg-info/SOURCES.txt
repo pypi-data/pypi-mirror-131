@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+qg_qa/pipelines/__init__.py
+qg_qa/pipelines/question_answering.py
+qg_qa/pipelines/question_generation.py
+qg_qa/pipelines/utils_qa.py
+qg_qa/question_generation.egg-info/PKG-INFO
+qg_qa/question_generation.egg-info/SOURCES.txt
+qg_qa/question_generation.egg-info/dependency_links.txt
+qg_qa/question_generation.egg-info/top_level.txt
