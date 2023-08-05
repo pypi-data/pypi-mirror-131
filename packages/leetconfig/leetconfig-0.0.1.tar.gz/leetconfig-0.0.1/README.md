@@ -1,0 +1,530 @@
+# leetconfig
+
+## Introduction
+
+`leetconfig` is a package for parsing and aggregating structured configs from multiple
+sources, including CLI, YAML, and environment variables. The general workflow is:
+
+1. Define the structure of the config, including detailed information about each option (such as
+   name, type, help text, etc.). Each option is a [`ConfigEntry`](#configentry), and a group of
+   these is a [`ConfigGroup`](#configgroup).
+2. Define an aggregator for the config, including what sources to look at (only parse CLI, parse CLI
+   and environment variables, parse only YAML, etc.). The aggregator is a
+   [`ConfigParser`](#configparser), and the sources are represented by
+   [`ConfigFormat`](#configformat-and-source).
+3. At runtime, extract structured config options from the specified sources.
+
+## `ConfigParser`
+
+The `ConfigParser` is the top-level object that aggregates all of the options for an application,
+along with information about where to find the values for those options. It also provides an entry
+point to extract and parse all of the values.
+
+### `ConfigParser` Example
+
+Let's begin by saving the following code in `leetconfig_readme.py`.
+
+```python
+from leetconfig.parser import ConfigParser
+
+my_app_parser = ConfigParser(
+    "cool_application",
+    "a very cool application",
+    sources=[],
+    groups=[],
+    entries=[],
+)
+
+my_app_parser.extract()
+```
+
+There are no config options yet, but we already have some functionality. If we run this script with
+`--help`, we see:
+
+```
+$  python3 leetconfig_readme.py --help
+usage: cool application [--help] [--show-config]
+
+a very cool application
+
+Configuration sources (ordered by priority):
+  CLI:
+    Parse config values from the command line arguments.
+
+Configuration options:
+```
+
+This confirms that we have not yet defined any config options. To add config options,
+[`ConfigEntry`](#configentry)s, [`ConfigGroup`](#configgroup)s, and/or
+[`ConfigNamespace`](#confignamespace)s must be defined.
+
+## `ConfigEntry`
+
+A `ConfigEntry` is the basic unit of this package. Each `ConfigEntry` defines a single config
+option. All config entries must have a parser (a [`ConfigEntryConverter`](#configentryconverter)
+implementation), a help string, and at least one name. An entry may also have several other flags,
+like `is_positional` or `is_required`. Default values and static lists of choices can also be set
+for each entry.
+
+Note that if the name of a `ConfigEntry` contains any underscores `_`, these are converted to dashes
+`-` when parsing from the command line.
+
+### `ConfigEntryConverter`
+
+Config options come in a wide variety of formats, so each config entry must define how to
+deserialize its options from a raw string. This is done via the `ConfigEntryConverter`
+implementation.
+
+A `ConfigEntryConverter` is a parser that deserializes an entry's value from string values, and vice
+versa. The raw string is parsed from the source (like CLI or YAML) for each config entry and then
+fed to the `ConfigEntryConverter` that is set as the `parser` for that respective config entry.
+
+Included in this package are many predefined converters such as `IntegerConfigEntryConverter`,
+or `EnumConfigEntryConverter`. Each expects the raw string to be of a
+certain form, and each outputs an instance of the relevant type (`int` or `enum`, respectively).
+
+Converters can be nested. For example: The `ArrayConfigEntryConverter` creates lists of arbitrary
+types. How does it know how to parse each element of the list? Well, the constructor for this class
+expects to be passed a parser that will be called for each element of the list. In this way one can
+parse lists of `int`s, `enum`s, `float`s, etc.
+
+### `ConfigEntry` and `ConfigEntryConverter` Example
+
+```python
+from leetconfig.parser import ConfigParser
+from leetconfig.entry import ConfigEntry
+from leetconfig.entry_converter import StringConfigEntryConverter, IntegerConfigEntryConverter
+
+hostname_config = ConfigEntry(
+    "hostname",
+    short_names="hn",
+    parser=StringConfigEntryConverter(),
+    help="The host to connect to the server",
+    is_required=True,
+)  # type: ConfigEntry[str]
+port_config = ConfigEntry(
+    "port",
+    short_names="p",
+    parser=IntegerConfigEntryConverter(),
+    help="The port to connect to the server",
+    is_required=True,
+)  # type: ConfigEntry[int]
+
+connect_retries_config = ConfigEntry(
+    "connect_retries",
+    short_names="cr",
+    parser=IntegerConfigEntryConverter(),
+    help="Max retries when attempting to connect to the server (default 0)",
+    is_required=False,
+    default=0,
+)  # type: ConfigEntry[int]
+
+
+my_app_parser = ConfigParser(
+    "cool_application",
+    "a very cool application",
+    sources=[],
+    groups=[],
+    entries=[hostname_config, port_config, connect_retries_config],
+)
+
+my_app_parser.extract()
+hostname = hostname_config.get_value()
+port = port_config.get_value()
+connect_retries = connect_retries_config.get_value()
+
+print(hostname, port, connect_retries)
+```
+
+When the preceding code is saved in `leetconfig_readme.py` and then run, it returns the following:
+
+```
+$  python3 leetconfig_readme.py --help
+usage: cool_application [--help] [--show-config] --hostname VAL --port VAL
+                        [--connect-retries VAL]
+
+very cool
+
+Configuration sources (ordered by priority):
+  CLI:
+    Parse config values from the command line arguments.
+
+Configuration options:
+  hostname, hn: string
+      The host to connect to the server
+  port, p: integer
+      The port to connect to the server
+  connect_retries, cr: [integer]
+      Max retries when attempting to connect to the server (default 0)
+        (default: 0)
+$  python3 leetconfig_readme.py --hostname localhost --port 1337
+localhost 1337 0
+```
+
+## `ConfigGroup`
+
+A `ConfigGroup` aggregates related config entries together. For example, the options from the
+previous example can be bundled into a basic server-client `ConfigGroup` with three config entries
+named `hostname`, `port`, and `connect-retries`:
+
+```python
+class ServerClientConfigGroup(ConfigGroup):
+    def __init__(self):
+        self.hostname = ConfigEntry(
+            "hostname",
+            short_names="hn",
+            parser=StringConfigEntryConverter(),
+            help="The host to connect to the server",
+            is_required=True,
+        )  # type: ConfigEntry[str]
+        self.port = ConfigEntry(
+            "port",
+            short_names="p",
+            parser=IntegerConfigEntryConverter(),
+            help="The port to connect to the server",
+            is_required=True,
+        )  # type: ConfigEntry[int]
+        self.connect_retries = ConfigEntry(
+            "connect_retries",
+            short_names="cr",
+            parser=IntegerConfigEntryConverter(),
+            help="Max retries when attempting to connect to the server (default 0)",
+            is_required=False,
+            default=0,
+        )  # type: ConfigEntry[int]
+        super(ServerClientConfigGroup, self).__init__(
+            entries=[self.hostname, self.port, self.connect_retries],
+        )
+```
+
+Groups can be nested. A `ConfigGroup` can contain other `ConfigGroup`s as well as `ConfigEntry`s.
+This allows config groups to compose into a larger config group. For example, we can combine the
+`ServerClientConfigGroup` with a `PasswordAuthenticationConfigGroup` group into a
+`ServerClientLoginConfigGroup` with five config entries named `hostname`,
+`port`, `connect-retries`, `username`, `password`:
+
+```python
+class PasswordAuthenticationConfigGroup(ConfigGroup):
+    def __init__(self):
+        self.username = ConfigEntry(
+            "username",
+            short_names="u",
+            parser=StringConfigEntryConverter(),
+            help="The username to authenticate with the service",
+            is_required=True,
+        )  # type: ConfigEntry[str]
+        self.password = ConfigEntry(
+            "password",
+            short_names="pw",
+            parser=StringConfigEntryConverter(),
+            help="The password to authenticate with the service",
+            is_required=True,
+        )  # type: ConfigEntry[str]
+        super(PasswordAuthenticationConfigGroup, self).__init__(
+            entries=[self.username, self.password],
+        )
+
+
+class ServerClientLoginConfigGroup(ConfigGroup):
+    def __init__(self):
+        self.server = ServerClientConfigGroup()
+        self.authentication = PasswordAuthenticationConfigGroup()
+        super(ServerClientLoginConfigGroup, self).__init__(
+            groups=[self.server, self.authentication],
+        )
+```
+
+### `ConfigNamespace`
+
+A `ConfigNamespace` is a special case of `ConfigGroup` and can be used the same ways. The only
+difference is that the `ConfigEntry`s are also grouped under a namespace, so that the group can
+be distinguished from other groups or entries. This is useful for when there are multiple similar
+but distinct configs. For example, one could have multiple
+`ServerClientLoginConfigGroup` groups for different services that an
+application relies on, and separate them via namespaces:
+
+```python
+class MyApplicationConfigDefinition(ConfigGroup):
+    def __init__(self):
+        super(MyApplicationConfigDefinition, self).__init__(
+            groups=[
+                ConfigNamespace(
+                    "redis",
+                    "r",
+                    groups=[ServerClientLoginConfigGroup()]
+                ),
+                ConfigNamespace(
+                    "git",
+                    "g",
+                    groups=[ServerClientLoginConfigGroup()]
+                ),
+            ],
+        )
+```
+
+This group has ten config entries. They are named: `redis-hostname`, `redis-port`,
+`redis-connect-retries`, `redis-username`, `redis-password`, ` git-hostname`, `git-port`,
+`git-connect-retries`, `git-username`, `git-password`.
+
+Notice that the namespace is prepended to each config entry, making it uniquely identifiable.
+Without the ability to create a namespace (a name string), separate `ConfigEntries` would have to
+be defined for the Redis port and the Git port in order to distinguish those arguments.
+`ConfigNamespace`s can thus help reduce duplicated code.
+
+We could simplify the example shown above by making
+`ServerClientLoginConfigGroup` a namespace from the beginning:
+
+```python
+class ServerClientLoginConfigGroup(ConfigNamespace):
+    def __init__(
+        self,
+        service_name,  # type: str
+        service_short_name,  # type: str
+    ):
+        self.server = ServerClientConfigGroup()
+        self.authentication = PasswordAuthenticationConfigGroup()
+        super(ServerClientLoginConfigGroup, self).__init__(
+            service_name, service_short_name, groups=[self.server, self.authentication],
+        )
+
+class MyApplicationConfigDefinition(ConfigGroup):
+    def __init__(self):
+        super(MyApplicationConfigDefinition, self).__init__(
+            groups=[
+                ServerClientLoginConfigGroup("redis", "r"),
+                ServerClientLoginConfigGroup("git", "g"),
+            ],
+        )
+```
+
+This results in the same ten config entries as before.
+
+### `ConfigGroup` and `ConfigNamespace` Example
+
+Very similar implementations of the above definitions of `ServerClientConfigGroup`
+and `PasswordAuthenticationConfigGroup` are already built into `leetconfig` as
+`ServerClientConfigDefinition` and `PasswordAuthenticationConfigDefinition`. Using those,
+the full previous `ConfigGroup` example could be written as:
+
+```python
+from leetconfig.parser import ConfigParser
+from leetconfig.group import ConfigGroup
+from leetconfig.namespace import ConfigNamespace
+from leetconfig.definitions.server_client import ServerClientConfigDefinition
+from leetconfig.definitions.authentication import PasswordAuthenticationConfigDefinition
+
+class ServerClientLoginConfigGroup(ConfigNamespace):
+    def __init__(
+        self,
+        service_name,  # type: str
+        service_short_name,  # type: str
+    ):
+        self.server = ServerClientConfigDefinition(service_name)
+        self.authentication = PasswordAuthenticationConfigDefinition(service_name, is_required=True)
+        super(ServerClientLoginConfigGroup, self).__init__(
+            service_name, service_short_name, groups=[self.server, self.authentication],
+        )
+
+    def export(self):
+        return self.server.export(), self.authentication.export()
+
+class MyApplicationConfigDefinition(ConfigGroup):
+    def __init__(self):
+        self.redis_config = ServerClientLoginConfigGroup("redis", "r")
+        self.git_config = ServerClientLoginConfigGroup("git", "g")
+        super(MyApplicationConfigDefinition, self).__init__(
+            groups=[self.redis_config, self.git_config],
+        )
+
+my_app_config = MyApplicationConfigDefinition()
+my_app_parser = ConfigParser(
+    "cool_application",
+    "a very cool application",
+    sources=[],
+    groups=[my_app_config],
+    entries=[],
+)
+
+my_app_parser.extract()
+redis_options = my_app_config.redis_config.export()
+git_options = my_app_config.git_config.export()
+```
+
+Notice the `export` method we've added, and that `ServerClientConfigDefinition` and
+`PasswordAuthenticationConfigDefinition` also have this method. This is a common pattern to extract
+config options in a convenient form factor, such as a dataclass.
+
+Running with `--help` we get:
+
+```
+$  python3 leetconfig_readme.py --help
+usage: cool_application [--help] [--show-config] --redis-hostname VAL
+                        --redis-port VAL [--redis-connect-retries VAL]
+                        --redis-username VAL --redis-password VAL
+                        --git-hostname VAL --git-port VAL
+                        [--git-connect-retries VAL] --git-username VAL
+                        --git-password VAL
+
+a very cool application
+
+Configuration sources (ordered by priority):
+  CLI:
+    Parse config values from the command line arguments.
+
+Configuration options:
+  redis:
+    hostname, redis_hostname, rhn: string
+        The host to connect to the redis server
+    port, redis_port, rp: integer
+        The port to connect to the redis server
+    connect_retries, redis_connect_retries, rcr: [integer]
+        Max retries when attempting to connect to the redis server (default 0)
+          (default: 0)
+    username, redis_username, ru: [string]
+        The username to authenticate with the redis service
+    password, redis_password, rpw: [string]
+        The password to authenticate with the redis service
+  git:
+    hostname, git_hostname, ghn: string
+        The host to connect to the git server
+    port, git_port, gp: integer
+        The port to connect to the git server
+    connect_retries, git_connect_retries, gcr: [integer]
+        Max retries when attempting to connect to the git server (default 0)
+          (default: 0)
+    username, git_username, gu: [string]
+        The username to authenticate with the git service
+    password, git_password, gpw: [string]
+        The password to authenticate with the git service
+```
+
+So far, this is a complete and usable config definition. It is annoying to type out all of the flags
+every time though, so next we will instead parse these options from a config file.
+
+## `ConfigFormat` and `sources`
+
+The role of the `ConfigFormat` is to do the intial extraction of config option values before feeding
+each individual option to the `ConfigEntryConverter`s to be deserialized. These raw values are
+parsed from a source, such CLI arguments. Three main `ConfigFormat` implementations exist:
+
+- `CLIConfigFormat`
+
+  Read config options from `sys.args` using the `argparse` library. This source is always enabled by
+  default in every `ConfigParser`. (This can be disabled with `force_no_cli` flag to `ConfigParser`
+  constructor.)
+
+- `YAMLConfigFormat`
+
+  Read config options from one or more YAML config files. The paths to these files are 
+  constructed inone of two ways:
+
+  1. The `YAMLConfigFormat` is instantiated with one or more file names to find, and optionally with
+     a list of search directories to check. If no directories are supplied, the current working
+     directory and `/etc/leetconfig/` are searched by default. Every file in one of the 
+     search
+     directories whose name matches a filename will be read. A dictionary of key-value pairs is
+     aggregated across all opened files and then passed to the `ConfigEntryConverter`s for
+     deserialization.
+
+  2. An option `--yaml-config-path` is added to the CLI arguments, so a user can specify an absolute
+     or relative path to a config file. This option is always available in the CLI when a
+     `ConfigParser` is using `YAMLConfigFormat`, even if `force_no_cli` is set!
+
+- `EnvironmentConfigFormat`
+
+  Reads config options from the OS environment variables.
+
+
+### `ConfigFormat` Example
+
+Consider the following code, saved to `leetconfig_readme.py`:
+
+```python
+from leetconfig.parser import ConfigParser
+from leetconfig.group import ConfigGroup
+from leetconfig.namespace import ConfigNamespace
+from leetconfig.definitions.server_client import ServerClientConfigDefinition
+from leetconfig.definitions.authentication import PasswordAuthenticationConfigDefinition
+from leetconfig.format.file_yaml import YAMLConfigFormat
+
+class ServerClientLoginConfigGroup(ConfigNamespace):
+    def __init__(
+        self,
+        service_name,  # type: str
+        service_short_name,  # type: str
+    ):
+        self.server = ServerClientConfigDefinition(service_name)
+        self.authentication = PasswordAuthenticationConfigDefinition(service_name, is_required=True)
+        super(ServerClientLoginConfigGroup, self).__init__(
+            service_name, service_short_name, groups=[self.server, self.authentication],
+        )
+
+    def export(self):
+        return self.server.export(), self.authentication.export()
+
+class MyApplicationConfigDefinition(ConfigGroup):
+    def __init__(self):
+        self.redis_config = ServerClientLoginConfigGroup("redis", "r")
+        self.git_config = ServerClientLoginConfigGroup("git", "g")
+        super(MyApplicationConfigDefinition, self).__init__(
+            groups=[self.redis_config, self.git_config],
+        )
+
+my_app_config = MyApplicationConfigDefinition()
+my_app_parser = ConfigParser(
+    "cool_application",
+    "a very cool application",
+    sources=[YAMLConfigFormat("cool_application.config.yaml")],  # This is new!
+    groups=[my_app_config],
+    entries=[],
+)
+
+my_app_parser.extract()
+redis_options = my_app_config.redis_config.export()
+git_options = my_app_config.git_config.export()
+
+```
+
+When run, notice that there is an additional valid option listed in `--help`:
+
+```
+$  python3 leetconfig_readme.py --help
+usage: cool_application [--help] [--show-config] --redis-hostname VAL
+                        --redis-port VAL [--redis-connect-retries VAL]
+                        --redis-username VAL --redis-password VAL
+                        --git-hostname VAL --git-port VAL
+                        [--git-connect-retries VAL] --git-username VAL
+                        --git-password VAL
+                        [--yaml-config-path [VAL [VAL ...]]]
+
+a very cool application
+
+Configuration sources (ordered by priority):
+  CLI:
+    Parse config values from the command line arguments.
+  YAML:
+    Parse config values from file(s) named cool_application.config.yaml in the
+      current working directory.
+[ ... ]
+```
+
+A populated a YAML config file `cool_application.config.yaml` in that path might look like:
+
+```
+redis:
+  hostname: localhost
+  port: 1111
+  username: cooluser
+  password: "me0w!"
+git:
+  hostname: localhost
+  port: 2222
+  username: cooluser
+  password: "m3ow?"
+```
+
+Alternatively, we could give the file an arbitrary name and pass its path with the
+`--yaml-config-path` option. We could also define multiple config files, perhaps one for local
+and one for remote services. Then, we could pass the local config file when we are testing locally
+and, when we are ready to hit the remote services, we can change the entire configuration of the
+program by simply passing in a different config file.

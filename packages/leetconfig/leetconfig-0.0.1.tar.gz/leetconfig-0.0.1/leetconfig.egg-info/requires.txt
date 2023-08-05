@@ -1,0 +1,13 @@
+pyyaml==5.4
+structlog~=20.1.0
+
+[:python_version < "3.4"]
+enum34
+
+[test]
+pytest
+pytest-cov
+
+[test:python_version >= "3.5"]
+mypy
+types-PyYAML==5.4
