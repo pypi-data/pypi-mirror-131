@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: mafia-schedule
+Version: 0.0.5
+Summary: This is package to generate and work with schedules of mafia tournaments
+Home-page: https://github.com/dimtom/MafSchedule
+Author: Dmitry Bimatov
+Author-email: dbimatov@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### Mafia schedule package
+
+This is package to generate and work with schedules of mafia tournaments
+
+Author: [Dmitry Bimatov](mailto:dbimatov@gmail.com)
+
+Code in [Github repository](https://github.com/dimtom/MafSchedule)
+
+
+
