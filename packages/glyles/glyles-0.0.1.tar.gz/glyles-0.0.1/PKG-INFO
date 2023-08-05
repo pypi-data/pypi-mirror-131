@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: glyles
+Version: 0.0.1
+Summary: A tool to convert IUPAC representation of glycans into SMILES strings
+Author: Roman Joeres
+Author-email: Roman.Joeres@helmholtz-hzi.de
+Requires-Python: >=3.7,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: antlr4-python3-runtime (>=4.9.3,<5.0.0)
+Requires-Dist: networkx (>=2.6.3,<3.0.0)
+Requires-Dist: numpy (>=1.21.4,<2.0.0)
+Requires-Dist: pydot (>=1.4.2,<2.0.0)
+Requires-Dist: rdkit-pypi (>=2021.9.2,<2022.0.0)
