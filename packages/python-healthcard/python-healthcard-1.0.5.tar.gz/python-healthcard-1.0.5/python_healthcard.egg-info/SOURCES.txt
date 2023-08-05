@@ -1,0 +1,16 @@
+LICENSE
+README.rst
+setup.py
+healthcard/__init__.py
+healthcard/address.py
+healthcard/exceptions.py
+healthcard/insurance.py
+healthcard/patient.py
+healthcard/reader.py
+healthcard/utils.py
+python_healthcard.egg-info/PKG-INFO
+python_healthcard.egg-info/SOURCES.txt
+python_healthcard.egg-info/dependency_links.txt
+python_healthcard.egg-info/not-zip-safe
+python_healthcard.egg-info/requires.txt
+python_healthcard.egg-info/top_level.txt
