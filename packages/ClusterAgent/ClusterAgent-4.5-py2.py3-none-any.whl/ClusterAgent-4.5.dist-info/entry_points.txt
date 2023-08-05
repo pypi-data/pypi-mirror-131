@@ -1,0 +1,3 @@
+[console_scripts]
+ClusterAgent = cluster_agent.infra_http_service:run
+

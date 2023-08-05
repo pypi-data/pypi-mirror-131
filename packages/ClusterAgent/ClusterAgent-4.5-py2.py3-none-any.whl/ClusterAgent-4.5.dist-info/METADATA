@@ -1,0 +1,28 @@
+Metadata-Version: 2.0
+Name: ClusterAgent
+Version: 4.5
+Summary: Agent for cluster test.
+Home-page: https://github.com/Mortimrr/ClusterAgent
+Author: Shuangshuang Li
+Author-email: lily2421@163.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: pymongo
+Requires-Dist: Flask
+Requires-Dist: logaugment
+Requires-Dist: requests
+Requires-Dist: threadpool
+
+
+# ClusterAgent
+
