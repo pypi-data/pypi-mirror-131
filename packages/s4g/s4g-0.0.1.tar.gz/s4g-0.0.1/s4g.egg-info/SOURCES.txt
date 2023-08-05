@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+s4g/__init__.py
+s4g/__main__.py
+s4g/render.py
+s4g.egg-info/PKG-INFO
+s4g.egg-info/SOURCES.txt
+s4g.egg-info/dependency_links.txt
+s4g.egg-info/entry_points.txt
+s4g.egg-info/requires.txt
+s4g.egg-info/top_level.txt
