@@ -1,0 +1,3 @@
+[console_scripts]
+fill=tablefill.cli:app
+
