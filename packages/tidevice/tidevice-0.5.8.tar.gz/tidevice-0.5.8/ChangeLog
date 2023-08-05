@@ -1,0 +1,23 @@
+CHANGES
+=======
+
+0.5.8
+-----
+
+* support iOS 15.2
+* format code
+* add windows install step
+* change dot to ,
+* update wda bundleId pattern
+* change bundle pattern
+* update wda bundleId pattern
+* change bundle pattern
+* update to support ios 15.1
+* Update README.md
+* add DataType.GPU
+* update README: fix xctest command env variable error
+* fix for windows
+* fix README.md 新版本需要传入性能数据类型
+* fix network and usb both exists bug
+* feat: add cmd date and get device via Network
+* fix wdaproxy bug
