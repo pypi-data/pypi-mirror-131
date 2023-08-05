@@ -1,0 +1,8 @@
+apache-airflow
+requests
+selenium-wire
+webdriver-manager
+humanize
+pandas
+apache-airflow[mongo]
+openpyxl
