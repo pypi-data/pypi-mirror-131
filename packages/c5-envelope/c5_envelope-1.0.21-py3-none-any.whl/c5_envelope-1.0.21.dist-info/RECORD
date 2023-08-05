@@ -1,0 +1,10 @@
+c5_envelope/__init__.py,sha256=ReVtlBcno4jBVDayZy36a5QgVTcO4wBxxv5td6RcsPM,191
+c5_envelope/simple_envelope.py,sha256=hZGTvNrqBnvElxi0ffA5ChfqUf35XbhHX0CcHfn8iIY,12987
+c5_envelope/simple_envelope_test.py,sha256=rjbCgqku0a3y_OqI3Un2iivrO-5ZWhR1NER9a0xl_dg,5373
+c5_envelope/lang/python/envelope.py,sha256=YJm3YMbu8tXL05mZiH2S1KtMGQoMd_60lC9wBs1ytqs,6369
+c5_envelope/lang/python/version.py,sha256=1Q_Whc8wLYK2CjiuRNw66LGQCrgnsbgJBQ9dlL53uV0,23
+c5_envelope-1.0.21.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+c5_envelope-1.0.21.dist-info/METADATA,sha256=hnZ1m0-olHxl8R-am2hkKdzYRw9rn2FrQT7FAxzWuTk,899
+c5_envelope-1.0.21.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+c5_envelope-1.0.21.dist-info/top_level.txt,sha256=1K4PMlu79gqWOAkbbHfJcrm2Ibss3jUPX5uXXi5E1UA,12
+c5_envelope-1.0.21.dist-info/RECORD,,
