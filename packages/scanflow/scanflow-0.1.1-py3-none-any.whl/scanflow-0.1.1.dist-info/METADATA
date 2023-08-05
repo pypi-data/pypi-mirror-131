@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: scanflow
+Version: 0.1.1
+Summary: An MLOps Platform
+Home-page: UNKNOWN
+Author: BSC Scanflow Team
+Author-email: peini.liu@bsc.es
+License: MIT license
+Keywords: scanflow,kubernetes,mlflow,argo,seldon
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: click (==8.0.1)
+Requires-Dist: mlflow (==1.14.1)
+Requires-Dist: docker (==4.1.0)
+Requires-Dist: matplotlib (==3.1.1)
+Requires-Dist: fastapi (==0.65.1)
+Requires-Dist: uvicorn (==0.14.0)
+Requires-Dist: kubernetes (==12.0.1)
+Requires-Dist: pyaml
+Requires-Dist: seldon-core (==1.8.0)
+Requires-Dist: boto3 (==1.17.53)
+Requires-Dist: couler-scanflow (==0.1.2)
+Provides-Extra: dev
+Requires-Dist: click (==8.0.1) ; extra == 'dev'
+Requires-Dist: mlflow (==1.14.1) ; extra == 'dev'
+Requires-Dist: docker (==4.1.0) ; extra == 'dev'
+Requires-Dist: matplotlib (==3.1.1) ; extra == 'dev'
+Requires-Dist: fastapi (==0.65.1) ; extra == 'dev'
+Requires-Dist: uvicorn (==0.14.0) ; extra == 'dev'
+Requires-Dist: kubernetes (==12.0.1) ; extra == 'dev'
+Requires-Dist: pyaml ; extra == 'dev'
+Requires-Dist: seldon-core (==1.8.0) ; extra == 'dev'
+Requires-Dist: boto3 (==1.17.53) ; extra == 'dev'
+Requires-Dist: couler-scanflow (==0.1.2) ; extra == 'dev'
+
+UNKNOWN
+
+
