@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "merakitools"
+version = "0.1.8"
+description = "CLI tools for managing Meraki networks based on Typer"
+authors = ["Billy Zoellers <billy.zoellers@mac.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+merakitools = "merakitools.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = {extras = ["all"], version = "^0.3.2"}
+rich = "^10.7.0"
+meraki = "^1.12.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+typer-cli = "^0.0.12"
+black = "^21.9b0"
+
+[tool.poetry.urls]
+documentation = "https://github.com/billyzoellers/merakitools/README.md"
+source = "https://github.com/billyzoellers/merakitools"
+tracker = "https://github.com/billyzoellers/merakitools/issues"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
