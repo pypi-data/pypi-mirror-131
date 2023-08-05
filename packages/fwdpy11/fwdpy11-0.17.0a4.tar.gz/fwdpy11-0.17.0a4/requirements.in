@@ -1,0 +1,25 @@
+# NOTE: any pinning should also be coordinated
+# with requirements.in and doc/requirements.in
+# and may require regenerating the .txt files.
+pybind11[global]
+numpy<1.21.0
+sparse
+scipy
+attrs
+black
+demes~=0.2.0
+
+#below are for building package
+#and running tests
+# requirements for docs are in docs/requirements.txt
+msprime
+tskit~=0.4.0
+setuptools_scm
+pytest
+pytest-xdist
+
+#below are for formatting, linting,
+#etc.
+flake8
+flake8-bugbear
+blacken-docs

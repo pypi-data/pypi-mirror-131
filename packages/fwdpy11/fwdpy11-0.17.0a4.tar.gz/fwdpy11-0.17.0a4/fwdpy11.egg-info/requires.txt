@@ -1,0 +1,6 @@
+attrs>=20.3.0
+black
+numpy
+sparse
+tskit~=0.4.0
+demes~=0.2.0
