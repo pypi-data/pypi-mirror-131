@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/win32_bridge/__init__.py
+src/win32_bridge/capture.py
+src/win32_bridge.egg-info/PKG-INFO
+src/win32_bridge.egg-info/SOURCES.txt
+src/win32_bridge.egg-info/dependency_links.txt
+src/win32_bridge.egg-info/top_level.txt
