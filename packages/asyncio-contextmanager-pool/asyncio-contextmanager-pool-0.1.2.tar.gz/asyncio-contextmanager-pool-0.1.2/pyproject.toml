@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "asyncio-contextmanager-pool"
+version = "0.1.2"
+description = "A library providing a pool-like object for holding `AsyncContextManager` instances."
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/RedRoserade/asyncio-contextmanager-pool"
+homepage = "https://github.com/RedRoserade/asyncio-contextmanager-pool"
+authors = ["André Carvalho <afecarvalho@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typing-extensions = { version = ">=3.10.0.0", python = "~3.8" }
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+pylint = "^2.12.2"
+pytest = "^6.2.5"
+pytest-asyncio = "^0.16.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
