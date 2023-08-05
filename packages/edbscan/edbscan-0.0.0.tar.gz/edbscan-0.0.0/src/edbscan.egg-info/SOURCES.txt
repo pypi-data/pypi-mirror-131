@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/edbscan/__init__.py
+src/edbscan/_inner.cpp
+src/edbscan/_inner.html
+src/edbscan/_inner.py
+src/edbscan/main.py
+src/edbscan.egg-info/PKG-INFO
+src/edbscan.egg-info/SOURCES.txt
+src/edbscan.egg-info/dependency_links.txt
+src/edbscan.egg-info/requires.txt
+src/edbscan.egg-info/top_level.txt
