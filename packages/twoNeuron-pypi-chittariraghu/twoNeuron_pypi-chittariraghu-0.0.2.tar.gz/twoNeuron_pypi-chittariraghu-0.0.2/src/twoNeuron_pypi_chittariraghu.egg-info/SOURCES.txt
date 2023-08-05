@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/twoNeuron/__init__.py
+src/twoNeuron/perceptron.py
+src/twoNeuron_pypi_chittariraghu.egg-info/PKG-INFO
+src/twoNeuron_pypi_chittariraghu.egg-info/SOURCES.txt
+src/twoNeuron_pypi_chittariraghu.egg-info/dependency_links.txt
+src/twoNeuron_pypi_chittariraghu.egg-info/requires.txt
+src/twoNeuron_pypi_chittariraghu.egg-info/top_level.txt
