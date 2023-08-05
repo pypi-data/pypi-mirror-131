@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: ocflcore
+Version: 0.1.0
+Summary: Oxford Common Filesystem Layout module for Python.
+Home-page: https://github.com/inveniosoftware/ocflcore
+Author: CERN & Data Futures
+Author-email: info@inveniosoftware.org
+License: MIT
+Keywords: OCFL package for Python.
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Development Status :: 1 - Planning
+Provides-Extra: docs
+Provides-Extra: tests
+Provides-Extra: all
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+..
+    Copyright (C) 2021 CERN.
+
+    OCFL Core is free software; you can redistribute it and/or modify it under
+    the terms of the MIT License; see LICENSE file for more details.
+
+===========
+ OCFL Core
+===========
+
+.. image:: https://github.com/inveniosoftware/ocflcore/workflows/CI/badge.svg
+        :target: https://github.com/inveniosoftware/ocflcore/actions?query=workflow%3ACI
+
+.. image:: https://img.shields.io/github/tag/inveniosoftware/ocflcore.svg
+        :target: https://github.com/inveniosoftware/ocflcore/releases
+
+.. image:: https://img.shields.io/pypi/dm/ocflcore.svg
+        :target: https://pypi.python.org/pypi/ocflcore
+
+.. image:: https://img.shields.io/github/license/inveniosoftware/ocflcore.svg
+        :target: https://github.com/inveniosoftware/ocflcore/blob/master/LICENSE
+
+Oxford Common Filesystem Layout module for Python.
+
+Further documentation is available on https://ocflcore.readthedocs.io/.
+
+
+..
+    Copyright (C) 2021 CERN.
+
+    OCFL Core is free software; you can redistribute it and/or modify it under
+    the terms of the MIT License; see LICENSE file for more details.
+
+Changes
+=======
+
+Version 0.1.0 (released 2012-12-13)
+
+- Initial basic prototype.
+
+
