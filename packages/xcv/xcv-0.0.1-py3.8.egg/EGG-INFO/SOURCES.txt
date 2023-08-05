@@ -1,0 +1,8 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+xcv.egg-info/PKG-INFO
+xcv.egg-info/SOURCES.txt
+xcv.egg-info/dependency_links.txt
+xcv.egg-info/top_level.txt
