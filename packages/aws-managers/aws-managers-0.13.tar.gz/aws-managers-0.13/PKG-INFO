@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: aws-managers
+Version: 0.13
+Summary: Wrappers around boto3 and sagemaker
+Home-page: https://github.com/vahndi/aws-managers
+Author: Vahndi Minah
+License: MIT
+Keywords: boto3,sagemaker
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+UNKNOWN
+
