@@ -1,0 +1,7 @@
+pyyaml
+click
+pydantic
+boto3
+botocore
+aws-lambda-powertools
+colorama

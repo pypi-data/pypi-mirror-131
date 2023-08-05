@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: kinnaird-utils
+Version: 0.0.28
+Summary: UNKNOWN
+Home-page: https://github.com/kmcquade/kinnaird-utils
+Author: Kinnaird McQuade
+Author-email: kinnairdm@gmail.com
+License: UNKNOWN
+Project-URL: Documentation, https://policy-sentry.readthedocs.io/
+Project-URL: Code, https://github.com/salesforce/policy_sentry/
+Project-URL: Example Report, https://opensource.salesforce.com/cloudsplaining
+Project-URL: Twitter, https://twitter.com/kmcquade3
+Project-URL: Red Team Report, https://kmcquade.com/security.html
+Description: # kinnaird-utils
+        
+        My personal helper methods.
+        
+        [https://github.com/kmcquade/kinnaird-utils](https://github.com/kmcquade/kinnaird-utils)
+        
+        [![Downloads](https://pepy.tech/badge/kinnaird-utils)](https://pepy.tech/project/kinnaird-utils)
+        
+        ## Motivation
+        
+        I forget how to do plenty of Python things regularly that I have solved before and find myself wasting time looking through old code to figure out how I did something in the past. I am storing some helper methods in this package, so I can use them during rapid development of stuff.
+        
+        
+        ## Process
+        
+        * Use this package when developing rapidly
+        * When I have my tools in a more usable state, I can eliminate the tool's dependency on `kinnaird-utils` by simply copying over the helper methods to the tool I am working on.
+        
+        
+Keywords: kinnaird
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
