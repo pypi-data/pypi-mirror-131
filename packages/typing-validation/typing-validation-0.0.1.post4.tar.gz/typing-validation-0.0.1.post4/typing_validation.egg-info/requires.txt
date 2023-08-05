@@ -1,0 +1,9 @@
+
+[:python_version < "3.8"]
+typing_extensions
+
+[dev]
+mypy
+pylint
+pytest
+pytest-cov
