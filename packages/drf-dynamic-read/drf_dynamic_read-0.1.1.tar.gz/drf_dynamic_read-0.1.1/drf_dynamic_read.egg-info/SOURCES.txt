@@ -1,0 +1,14 @@
+LICENSE
+README.rst
+setup.py
+drf_dynamic_read/__init__.py
+drf_dynamic_read/exceptions.py
+drf_dynamic_read/serializers.py
+drf_dynamic_read/utils.py
+drf_dynamic_read/views.py
+drf_dynamic_read.egg-info/PKG-INFO
+drf_dynamic_read.egg-info/SOURCES.txt
+drf_dynamic_read.egg-info/dependency_links.txt
+drf_dynamic_read.egg-info/requires.txt
+drf_dynamic_read.egg-info/top_level.txt
+drf_dynamic_read.egg-info/zip-safe
