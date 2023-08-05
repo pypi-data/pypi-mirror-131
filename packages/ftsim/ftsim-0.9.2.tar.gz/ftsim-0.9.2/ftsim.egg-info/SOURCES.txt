@@ -1,0 +1,16 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+ftsim/__init__.py
+ftsim/ft.db
+ftsim/ftdb2.py
+ftsim/ftlib4.py
+ftsim/ftmain9.py
+ftsim/ftmain9.save.py
+ftsim/ftsim105.sql
+ftsim.egg-info/PKG-INFO
+ftsim.egg-info/SOURCES.txt
+ftsim.egg-info/dependency_links.txt
+ftsim.egg-info/entry_points.txt
+ftsim.egg-info/top_level.txt
