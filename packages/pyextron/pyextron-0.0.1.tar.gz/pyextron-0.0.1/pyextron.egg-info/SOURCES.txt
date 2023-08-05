@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pyextron/__init__.py
+pyextron/config.py
+pyextron/protocol.py
+pyextron.egg-info/PKG-INFO
+pyextron.egg-info/SOURCES.txt
+pyextron.egg-info/dependency_links.txt
+pyextron.egg-info/requires.txt
+pyextron.egg-info/top_level.txt
+pyextron.egg-info/zip-safe
+pyextron/protocols/mav88.yaml
+pyextron/series/mav88.yaml
