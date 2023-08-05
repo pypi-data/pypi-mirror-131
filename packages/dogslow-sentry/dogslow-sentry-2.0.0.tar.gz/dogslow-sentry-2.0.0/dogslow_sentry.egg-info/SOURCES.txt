@@ -1,0 +1,13 @@
+.pylintrc
+COPYING.txt
+MANIFEST.in
+Makefile
+README.rst
+setup.py
+dogslow_sentry/__init__.py
+dogslow_sentry/timer.py
+dogslow_sentry.egg-info/PKG-INFO
+dogslow_sentry.egg-info/SOURCES.txt
+dogslow_sentry.egg-info/dependency_links.txt
+dogslow_sentry.egg-info/requires.txt
+dogslow_sentry.egg-info/top_level.txt
