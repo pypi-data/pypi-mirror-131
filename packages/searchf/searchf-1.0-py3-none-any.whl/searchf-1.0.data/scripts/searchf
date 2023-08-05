@@ -1,0 +1,5 @@
+#!python
+
+import searchf.searchf
+searchf.searchf.main_loop()
+
