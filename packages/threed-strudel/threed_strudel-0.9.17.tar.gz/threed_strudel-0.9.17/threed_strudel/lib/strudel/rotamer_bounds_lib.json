@@ -1,0 +1,2588 @@
+{
+    "arg": [
+        {
+            "id": 1,
+            "name": "ppp80",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 65.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 2,
+            "name": "ppp-140",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 245.0,
+            "chi-width_4": 230
+        },
+        {
+            "id": 3,
+            "name": "ppt90",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 62.5,
+            "chi-width_2": 125,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 62.5,
+            "chi-width_4": 125
+        },
+        {
+            "id": 4,
+            "name": "ppt170",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 65.0,
+            "chi-width_2": 130,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 177.5,
+            "chi-width_4": 105
+        },
+        {
+            "id": 5,
+            "name": "ppt-90",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 62.5,
+            "chi-width_2": 125,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 295.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 6,
+            "name": "ptp90",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 185.0,
+            "chi-width_2": 130,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 65.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 7,
+            "name": "ptp-170",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 185.0,
+            "chi-width_2": 130,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 100
+        },
+        {
+            "id": 8,
+            "name": "ptp-110",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 185.0,
+            "chi-width_2": 130,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 295.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 9,
+            "name": "ptt90",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 187.5,
+            "chi-width_2": 125,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 62.5,
+            "chi-width_4": 125
+        },
+        {
+            "id": 10,
+            "name": "ptt180",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 185.0,
+            "chi-width_2": 110,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 177.5,
+            "chi-width_4": 105
+        },
+        {
+            "id": 11,
+            "name": "ptt-90",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 187.5,
+            "chi-width_2": 125,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 295.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 12,
+            "name": "ptm-80",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 172.5,
+            "chi-width_2": 135,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 295.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 13,
+            "name": "ptm160",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 177.5,
+            "chi-width_2": 145,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 115.0,
+            "chi-width_4": 230
+        },
+        {
+            "id": 14,
+            "name": "pmt-80",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 305.0,
+            "chi-width_2": 110,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 295.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 15,
+            "name": "pmt170",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 185.0,
+            "chi-width_3": 130,
+            "chi_4": 182.5,
+            "chi-width_4": 95
+        },
+        {
+            "id": 16,
+            "name": "pmt100",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 305.0,
+            "chi-width_2": 110,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 67.5,
+            "chi-width_4": 135
+        },
+        {
+            "id": 17,
+            "name": "pmm-80",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 295.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 18,
+            "name": "pmm150",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 305.0,
+            "chi-width_2": 110,
+            "chi_3": 305.0,
+            "chi-width_3": 110,
+            "chi_4": 115.0,
+            "chi-width_4": 230
+        },
+        {
+            "id": 19,
+            "name": "tpp80",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 55.0,
+            "chi-width_2": 110,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 65.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 20,
+            "name": "tpp-160",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 55.0,
+            "chi-width_2": 110,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 245.0,
+            "chi-width_4": 230
+        },
+        {
+            "id": 21,
+            "name": "tpt90",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 55.0,
+            "chi-width_2": 110,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 60.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 22,
+            "name": "tpt170",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 55.0,
+            "chi-width_2": 110,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 175.0,
+            "chi-width_4": 110
+        },
+        {
+            "id": 23,
+            "name": "tpt-90",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 55.0,
+            "chi-width_2": 110,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 295.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 24,
+            "name": "tpm170",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 55.0,
+            "chi-width_2": 110,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 115.0,
+            "chi-width_4": 230
+        },
+        {
+            "id": 25,
+            "name": "tpm-80",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 55.0,
+            "chi-width_2": 110,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 295.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 26,
+            "name": "ttp80",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 185.0,
+            "chi-width_2": 150,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 65.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 27,
+            "name": "ttp-170",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 140,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 177.5,
+            "chi-width_4": 95
+        },
+        {
+            "id": 28,
+            "name": "ttp-110",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 140,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 292.5,
+            "chi-width_4": 135
+        },
+        {
+            "id": 29,
+            "name": "ttt90",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 172.5,
+            "chi-width_2": 125,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 60.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 30,
+            "name": "ttt180",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 172.5,
+            "chi-width_2": 125,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 175.0,
+            "chi-width_4": 110
+        },
+        {
+            "id": 31,
+            "name": "ttt-90",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 172.5,
+            "chi-width_2": 125,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 295.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 32,
+            "name": "ttm110",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 175.0,
+            "chi-width_2": 130,
+            "chi_3": 297.5,
+            "chi-width_3": 125,
+            "chi_4": 67.5,
+            "chi-width_4": 135
+        },
+        {
+            "id": 33,
+            "name": "ttm170",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 175.0,
+            "chi-width_2": 130,
+            "chi_3": 297.5,
+            "chi-width_3": 125,
+            "chi_4": 182.5,
+            "chi-width_4": 95
+        },
+        {
+            "id": 34,
+            "name": "ttm-80",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 175.0,
+            "chi-width_2": 130,
+            "chi_3": 297.5,
+            "chi-width_3": 125,
+            "chi_4": 295.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 35,
+            "name": "tmt90",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 297.5,
+            "chi-width_2": 125,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 65.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 36,
+            "name": "tmt170",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 297.5,
+            "chi-width_2": 125,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 185.0,
+            "chi-width_4": 110
+        },
+        {
+            "id": 37,
+            "name": "tmt-80",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 297.5,
+            "chi-width_2": 125,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 300.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 38,
+            "name": "tmm160",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 297.5,
+            "chi-width_3": 125,
+            "chi_4": 115.0,
+            "chi-width_4": 230
+        },
+        {
+            "id": 39,
+            "name": "tmm-80",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 297.5,
+            "chi-width_3": 125,
+            "chi_4": 295.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 40,
+            "name": "mmm-85",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 292.5,
+            "chi-width_4": 135
+        },
+        {
+            "id": 41,
+            "name": "mmm160",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 112.5,
+            "chi-width_4": 225
+        },
+        {
+            "id": 42,
+            "name": "mmp-170",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 305.0,
+            "chi-width_2": 110,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 245.0,
+            "chi-width_4": 230
+        },
+        {
+            "id": 43,
+            "name": "mmp80",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 65.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 44,
+            "name": "mmt-90",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 295.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 45,
+            "name": "mmt180",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 100
+        },
+        {
+            "id": 46,
+            "name": "mmt90",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 65.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 47,
+            "name": "mpp-170",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 245.0,
+            "chi-width_4": 230
+        },
+        {
+            "id": 48,
+            "name": "mpp80",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 65.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 49,
+            "name": "mpt-90",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 295.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 50,
+            "name": "mpt180",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 175.0,
+            "chi-width_4": 110
+        },
+        {
+            "id": 51,
+            "name": "mpt90",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 60.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 52,
+            "name": "mtm-85",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 175.0,
+            "chi-width_2": 130,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 292.5,
+            "chi-width_4": 135
+        },
+        {
+            "id": 53,
+            "name": "mtm110",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 175.0,
+            "chi-width_2": 130,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 67.5,
+            "chi-width_4": 135
+        },
+        {
+            "id": 54,
+            "name": "mtm180",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 175.0,
+            "chi-width_2": 130,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 90
+        },
+        {
+            "id": 55,
+            "name": "mtp-110",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 185.0,
+            "chi-width_2": 130,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 295.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 56,
+            "name": "mtp180",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 185.0,
+            "chi-width_2": 130,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 182.5,
+            "chi-width_4": 95
+        },
+        {
+            "id": 57,
+            "name": "mtp85",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 67.5,
+            "chi-width_4": 135
+        },
+        {
+            "id": 58,
+            "name": "mtt-85",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 295.0,
+            "chi-width_4": 130
+        },
+        {
+            "id": 59,
+            "name": "mtt180",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 100
+        },
+        {
+            "id": 60,
+            "name": "mtt90",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 65.0,
+            "chi-width_4": 130
+        }
+    ],
+    "val": [
+        {
+            "id": 1,
+            "name": "p",
+            "chi_1": 60.0,
+            "chi-width_1": 120
+        },
+        {
+            "id": 2,
+            "name": "t",
+            "chi_1": 180.0,
+            "chi-width_1": 120
+        },
+        {
+            "id": 3,
+            "name": "m",
+            "chi_1": 300.0,
+            "chi-width_1": 120
+        }
+    ],
+    "pro": [
+        {
+            "id": 1,
+            "name": "Cg_endo",
+            "chi_1": 90.0,
+            "chi-width_1": 180,
+            "chi_2": 180.0,
+            "chi-width_2": 360,
+            "chi_3": 180.0,
+            "chi-width_3": 360
+        },
+        {
+            "id": 2,
+            "name": "Cg_exo",
+            "chi_1": 270.0,
+            "chi-width_1": 180,
+            "chi_2": 180.0,
+            "chi-width_2": 360,
+            "chi_3": 180.0,
+            "chi-width_3": 360
+        }
+    ],
+    "phe": [
+        {
+            "id": 1,
+            "name": "p90",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 90.0,
+            "chi-width_2": 180
+        },
+        {
+            "id": 2,
+            "name": "t80",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 90.0,
+            "chi-width_2": 180
+        },
+        {
+            "id": 3,
+            "name": "m-80",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 90.0,
+            "chi-width_2": 100
+        },
+        {
+            "id": 4,
+            "name": "m-10",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 20.0,
+            "chi-width_2": 40
+        },
+        {
+            "id": 5,
+            "name": "m-10",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 160.0,
+            "chi-width_2": 40
+        }
+    ],
+    "thr": [
+        {
+            "id": 1,
+            "name": "p",
+            "chi_1": 60.0,
+            "chi-width_1": 120
+        },
+        {
+            "id": 2,
+            "name": "t",
+            "chi_1": 180.0,
+            "chi-width_1": 120
+        },
+        {
+            "id": 3,
+            "name": "m",
+            "chi_1": 300.0,
+            "chi-width_1": 120
+        }
+    ],
+    "trp": [
+        {
+            "id": 1,
+            "name": "p-90",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 270.0,
+            "chi-width_2": 180
+        },
+        {
+            "id": 2,
+            "name": "p90",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 90.0,
+            "chi-width_2": 180
+        },
+        {
+            "id": 3,
+            "name": "t-100",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 247.5,
+            "chi-width_2": 135
+        },
+        {
+            "id": 4,
+            "name": "t60",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 90.0,
+            "chi-width_2": 180
+        },
+        {
+            "id": 5,
+            "name": "t60",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 337.5,
+            "chi-width_2": 45
+        },
+        {
+            "id": 6,
+            "name": "m-90",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 242.5,
+            "chi-width_2": 125
+        },
+        {
+            "id": 7,
+            "name": "m-10",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 332.5,
+            "chi-width_2": 55
+        },
+        {
+            "id": 8,
+            "name": "m-10",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 22.5,
+            "chi-width_2": 45
+        },
+        {
+            "id": 9,
+            "name": "m100",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 112.5,
+            "chi-width_2": 135
+        }
+    ],
+    "lys": [
+        {
+            "id": 1,
+            "name": "pmmt",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 2,
+            "name": "pmtt",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 3,
+            "name": "pptt",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 4,
+            "name": "ptmm",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 300.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 5,
+            "name": "ptmt",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 6,
+            "name": "ptpp",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 60.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 7,
+            "name": "ptpt",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 185.0,
+            "chi-width_2": 130,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 8,
+            "name": "pttm",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 300.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 9,
+            "name": "pttp",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 60.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 10,
+            "name": "pttt",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 11,
+            "name": "tmmm",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 300.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 12,
+            "name": "tmmt",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 13,
+            "name": "tmtm",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 300.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 14,
+            "name": "tmtp",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 60.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 15,
+            "name": "tmtt",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 16,
+            "name": "tppp",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 60.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 17,
+            "name": "tppt",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 18,
+            "name": "tptm",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 185.0,
+            "chi-width_3": 130,
+            "chi_4": 300.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 19,
+            "name": "tptp",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 60.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 20,
+            "name": "tptt",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 190.0,
+            "chi-width_3": 140,
+            "chi_4": 180.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 21,
+            "name": "ttmm",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 300.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 22,
+            "name": "ttmp",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 60.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 23,
+            "name": "ttmt",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 175.0,
+            "chi-width_2": 130,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 24,
+            "name": "ttpm",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 300.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 25,
+            "name": "ttpp",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 185.0,
+            "chi-width_2": 130,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 60.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 26,
+            "name": "ttpt",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 190.0,
+            "chi-width_2": 140,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 27,
+            "name": "tttm",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 300.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 28,
+            "name": "tttp",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 60.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 29,
+            "name": "tttt",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 30,
+            "name": "mmmm",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 300.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 31,
+            "name": "mmmt",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 32,
+            "name": "mmpt",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 33,
+            "name": "mmtm",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 300.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 34,
+            "name": "mmtp",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 60.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 35,
+            "name": "mmtt",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 36,
+            "name": "mppt",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 37,
+            "name": "mptm",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 300.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 38,
+            "name": "mptp",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 60.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 39,
+            "name": "mptt",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 40,
+            "name": "mtmm",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 300.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 41,
+            "name": "mtmp",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 60.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 42,
+            "name": "mtmt",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 300.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 43,
+            "name": "mtpm",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 300.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 44,
+            "name": "mtpp",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 60.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 45,
+            "name": "mtpt",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 46,
+            "name": "mttm",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 300.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 47,
+            "name": "mttp",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 60.0,
+            "chi-width_4": 120
+        },
+        {
+            "id": 48,
+            "name": "mttt",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120,
+            "chi_4": 180.0,
+            "chi-width_4": 120
+        }
+    ],
+    "mse": [
+        {
+            "id": 1,
+            "name": "pp-130",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 240.0,
+            "chi-width_3": 240
+        },
+        {
+            "id": 2,
+            "name": "ppp",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 3,
+            "name": "ptp",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 185.0,
+            "chi-width_2": 130,
+            "chi_3": 60.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 4,
+            "name": "ptt",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 5,
+            "name": "ptm",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 300.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 6,
+            "name": "pmt",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 7,
+            "name": "pmm",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 300.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 8,
+            "name": "tpp",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 65.0,
+            "chi-width_3": 130
+        },
+        {
+            "id": 9,
+            "name": "tpt",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 230.0,
+            "chi-width_3": 200
+        },
+        {
+            "id": 10,
+            "name": "ttp",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 11,
+            "name": "ttt",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 175.0,
+            "chi-width_3": 110
+        },
+        {
+            "id": 12,
+            "name": "ttm",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 177.5,
+            "chi-width_2": 115,
+            "chi_3": 295.0,
+            "chi-width_3": 130
+        },
+        {
+            "id": 13,
+            "name": "tmt",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 170.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 14,
+            "name": "tmm",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 297.5,
+            "chi-width_2": 125,
+            "chi_3": 295.0,
+            "chi-width_3": 130
+        },
+        {
+            "id": 15,
+            "name": "mpp",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 16,
+            "name": "mpt",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 170.0,
+            "chi-width_3": 100
+        },
+        {
+            "id": 17,
+            "name": "mpm",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 57.5,
+            "chi-width_2": 115,
+            "chi_3": 290.0,
+            "chi-width_3": 140
+        },
+        {
+            "id": 18,
+            "name": "mtp",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 19,
+            "name": "mtt",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 20,
+            "name": "mtm",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 177.5,
+            "chi-width_2": 125,
+            "chi_3": 300.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 21,
+            "name": "mmp",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 65.0,
+            "chi-width_3": 130
+        },
+        {
+            "id": 22,
+            "name": "mmt",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 100
+        },
+        {
+            "id": 23,
+            "name": "mmm",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 295.0,
+            "chi-width_3": 130
+        }
+    ],
+    "met": [
+        {
+            "id": 1,
+            "name": "pp-130",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 240.0,
+            "chi-width_3": 240
+        },
+        {
+            "id": 2,
+            "name": "ppp",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 3,
+            "name": "ptp",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 185.0,
+            "chi-width_2": 130,
+            "chi_3": 60.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 4,
+            "name": "ptt",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 5,
+            "name": "ptm",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 300.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 6,
+            "name": "pmt",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 7,
+            "name": "pmm",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 300.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 8,
+            "name": "tpp",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 65.0,
+            "chi-width_3": 130
+        },
+        {
+            "id": 9,
+            "name": "tpt",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 230.0,
+            "chi-width_3": 200
+        },
+        {
+            "id": 10,
+            "name": "ttp",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 11,
+            "name": "ttt",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 175.0,
+            "chi-width_3": 110
+        },
+        {
+            "id": 12,
+            "name": "ttm",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 177.5,
+            "chi-width_2": 115,
+            "chi_3": 295.0,
+            "chi-width_3": 130
+        },
+        {
+            "id": 13,
+            "name": "tmt",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 170.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 14,
+            "name": "tmm",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 297.5,
+            "chi-width_2": 125,
+            "chi_3": 295.0,
+            "chi-width_3": 130
+        },
+        {
+            "id": 15,
+            "name": "mpp",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 16,
+            "name": "mpt",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 170.0,
+            "chi-width_3": 100
+        },
+        {
+            "id": 17,
+            "name": "mpm",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 57.5,
+            "chi-width_2": 115,
+            "chi_3": 290.0,
+            "chi-width_3": 140
+        },
+        {
+            "id": 18,
+            "name": "mtp",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 60.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 19,
+            "name": "mtt",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 20,
+            "name": "mtm",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 177.5,
+            "chi-width_2": 125,
+            "chi_3": 300.0,
+            "chi-width_3": 120
+        },
+        {
+            "id": 21,
+            "name": "mmp",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 65.0,
+            "chi-width_3": 130
+        },
+        {
+            "id": 22,
+            "name": "mmt",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 100
+        },
+        {
+            "id": 23,
+            "name": "mmm",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 295.0,
+            "chi-width_3": 130
+        }
+    ],
+    "asn": [
+        {
+            "id": 1,
+            "name": "p0",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 360
+        },
+        {
+            "id": 2,
+            "name": "t0",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120
+        },
+        {
+            "id": 3,
+            "name": "t0",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 270.0,
+            "chi-width_2": 180
+        },
+        {
+            "id": 4,
+            "name": "t160",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 150.0,
+            "chi-width_2": 60
+        },
+        {
+            "id": 5,
+            "name": "m-40",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 290.0,
+            "chi-width_2": 140
+        },
+        {
+            "id": 6,
+            "name": "m-40",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 25.0,
+            "chi-width_2": 50
+        },
+        {
+            "id": 7,
+            "name": "m110",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 135.0,
+            "chi-width_2": 170
+        }
+    ],
+    "leu": [
+        {
+            "id": 1,
+            "name": "pp",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120
+        },
+        {
+            "id": 2,
+            "name": "pt",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120
+        },
+        {
+            "id": 3,
+            "name": "tp",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120
+        },
+        {
+            "id": 4,
+            "name": "tt",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120
+        },
+        {
+            "id": 5,
+            "name": "tm",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120
+        },
+        {
+            "id": 6,
+            "name": "mp",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120
+        },
+        {
+            "id": 7,
+            "name": "mt",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120
+        },
+        {
+            "id": 8,
+            "name": "mm",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120
+        }
+    ],
+    "asp": [
+        {
+            "id": 1,
+            "name": "p0",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 90.0,
+            "chi-width_2": 180
+        },
+        {
+            "id": 2,
+            "name": "t0",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 22.5,
+            "chi-width_2": 45
+        },
+        {
+            "id": 3,
+            "name": "t0",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 150.0,
+            "chi-width_2": 60
+        },
+        {
+            "id": 4,
+            "name": "t70",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 82.5,
+            "chi-width_2": 75
+        },
+        {
+            "id": 5,
+            "name": "m-30",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 90.0,
+            "chi-width_2": 180
+        }
+    ],
+    "gln": [
+        {
+            "id": 1,
+            "name": "pt0",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 100,
+            "chi_3": 180.0,
+            "chi-width_3": 360
+        },
+        {
+            "id": 2,
+            "name": "pm20",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 295.0,
+            "chi-width_2": 130,
+            "chi_3": 180.0,
+            "chi-width_3": 360
+        },
+        {
+            "id": 3,
+            "name": "pp30",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 65.0,
+            "chi-width_2": 130,
+            "chi_3": 180.0,
+            "chi-width_3": 360
+        },
+        {
+            "id": 4,
+            "name": "tp-100",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 230.0,
+            "chi-width_3": 160
+        },
+        {
+            "id": 5,
+            "name": "tp40",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 75.0,
+            "chi-width_3": 150
+        },
+        {
+            "id": 6,
+            "name": "tp40",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 335.0,
+            "chi-width_3": 50
+        },
+        {
+            "id": 7,
+            "name": "tt0",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 175.0,
+            "chi-width_2": 110,
+            "chi_3": 180.0,
+            "chi-width_3": 360
+        },
+        {
+            "id": 8,
+            "name": "tm-30",
+            "chi_1": 175.0,
+            "chi-width_1": 110,
+            "chi_2": 295.0,
+            "chi-width_2": 130,
+            "chi_3": 40.0,
+            "chi-width_3": 80
+        },
+        {
+            "id": 9,
+            "name": "tm-30",
+            "chi_1": 175.0,
+            "chi-width_1": 110,
+            "chi_2": 295.0,
+            "chi-width_2": 130,
+            "chi_3": 285.0,
+            "chi-width_3": 150
+        },
+        {
+            "id": 10,
+            "name": "mp10",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 320.0,
+            "chi-width_3": 80
+        },
+        {
+            "id": 11,
+            "name": "mp10",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 75.0,
+            "chi-width_3": 150
+        },
+        {
+            "id": 12,
+            "name": "mt0",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 180.0,
+            "chi-width_3": 360
+        },
+        {
+            "id": 13,
+            "name": "mm-40",
+            "chi_1": 295.0,
+            "chi-width_1": 130,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 25.0,
+            "chi-width_3": 50
+        },
+        {
+            "id": 14,
+            "name": "mm-40",
+            "chi_1": 295.0,
+            "chi-width_1": 130,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 285.0,
+            "chi-width_3": 150
+        },
+        {
+            "id": 15,
+            "name": "mm110",
+            "chi_1": 295.0,
+            "chi-width_1": 130,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 130.0,
+            "chi-width_3": 160
+        },
+        {
+            "id": 16,
+            "name": "tm130",
+            "chi_1": 175.0,
+            "chi-width_1": 110,
+            "chi_2": 295.0,
+            "chi-width_2": 130,
+            "chi_3": 145.0,
+            "chi-width_3": 130
+        },
+        {
+            "id": 17,
+            "name": "mp-120",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 215.0,
+            "chi-width_3": 130
+        }
+    ],
+    "glu": [
+        {
+            "id": 1,
+            "name": "pp20",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 65.0,
+            "chi-width_2": 130,
+            "chi_3": 90.0,
+            "chi-width_3": 180
+        },
+        {
+            "id": 2,
+            "name": "pt0",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 100,
+            "chi_3": 90.0,
+            "chi-width_3": 180
+        },
+        {
+            "id": 3,
+            "name": "pm20",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 295.0,
+            "chi-width_2": 130,
+            "chi_3": 90.0,
+            "chi-width_3": 180
+        },
+        {
+            "id": 4,
+            "name": "tp30",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 90.0,
+            "chi-width_3": 180
+        },
+        {
+            "id": 5,
+            "name": "tt0",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 175.0,
+            "chi-width_2": 110,
+            "chi_3": 90.0,
+            "chi-width_3": 180
+        },
+        {
+            "id": 6,
+            "name": "tm-30",
+            "chi_1": 175.0,
+            "chi-width_1": 110,
+            "chi_2": 295.0,
+            "chi-width_2": 130,
+            "chi_3": 90.0,
+            "chi-width_3": 180
+        },
+        {
+            "id": 7,
+            "name": "mp0",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120,
+            "chi_3": 90.0,
+            "chi-width_3": 180
+        },
+        {
+            "id": 8,
+            "name": "mt-10",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120,
+            "chi_3": 90.0,
+            "chi-width_3": 180
+        },
+        {
+            "id": 9,
+            "name": "mm-30",
+            "chi_1": 295.0,
+            "chi-width_1": 130,
+            "chi_2": 300.0,
+            "chi-width_2": 120,
+            "chi_3": 90.0,
+            "chi-width_3": 180
+        }
+    ],
+    "his": [
+        {
+            "id": 1,
+            "name": "p-80",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 280.0,
+            "chi-width_2": 160
+        },
+        {
+            "id": 2,
+            "name": "p90",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 100.0,
+            "chi-width_2": 200
+        },
+        {
+            "id": 3,
+            "name": "t-170",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 185.0,
+            "chi-width_2": 90
+        },
+        {
+            "id": 4,
+            "name": "t-90",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 295.0,
+            "chi-width_2": 130
+        },
+        {
+            "id": 5,
+            "name": "t70",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 70.0,
+            "chi-width_2": 140
+        },
+        {
+            "id": 6,
+            "name": "m-70",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 292.5,
+            "chi-width_2": 135
+        },
+        {
+            "id": 7,
+            "name": "m-70",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 10.0,
+            "chi-width_2": 20
+        },
+        {
+            "id": 8,
+            "name": "m170",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 177.5,
+            "chi-width_2": 95
+        },
+        {
+            "id": 9,
+            "name": "m90",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 75.0,
+            "chi-width_2": 110
+        }
+    ],
+    "ile": [
+        {
+            "id": 1,
+            "name": "pp",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120
+        },
+        {
+            "id": 2,
+            "name": "pt",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120
+        },
+        {
+            "id": 3,
+            "name": "tp",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120
+        },
+        {
+            "id": 4,
+            "name": "tt",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120
+        },
+        {
+            "id": 5,
+            "name": "mp",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 60.0,
+            "chi-width_2": 120
+        },
+        {
+            "id": 6,
+            "name": "mt",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 180.0,
+            "chi-width_2": 120
+        },
+        {
+            "id": 7,
+            "name": "mm",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 300.0,
+            "chi-width_2": 120
+        }
+    ],
+    "tyr": [
+        {
+            "id": 1,
+            "name": "p90",
+            "chi_1": 60.0,
+            "chi-width_1": 120,
+            "chi_2": 90.0,
+            "chi-width_2": 180
+        },
+        {
+            "id": 2,
+            "name": "t80",
+            "chi_1": 180.0,
+            "chi-width_1": 120,
+            "chi_2": 90.0,
+            "chi-width_2": 180
+        },
+        {
+            "id": 3,
+            "name": "m-80",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 90.0,
+            "chi-width_2": 100
+        },
+        {
+            "id": 4,
+            "name": "m-10",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 20.0,
+            "chi-width_2": 40
+        },
+        {
+            "id": 5,
+            "name": "m-10",
+            "chi_1": 300.0,
+            "chi-width_1": 120,
+            "chi_2": 160.0,
+            "chi-width_2": 40
+        }
+    ],
+    "ser": [
+        {
+            "id": 1,
+            "name": "p",
+            "chi_1": 60.0,
+            "chi-width_1": 120
+        },
+        {
+            "id": 2,
+            "name": "t",
+            "chi_1": 180.0,
+            "chi-width_1": 120
+        },
+        {
+            "id": 3,
+            "name": "m",
+            "chi_1": 300.0,
+            "chi-width_1": 120
+        }
+    ],
+    "cys": [
+        {
+            "id": 1,
+            "name": "p",
+            "chi_1": 60.0,
+            "chi-width_1": 120
+        },
+        {
+            "id": 2,
+            "name": "t",
+            "chi_1": 180.0,
+            "chi-width_1": 120
+        },
+        {
+            "id": 3,
+            "name": "m",
+            "chi_1": 300.0,
+            "chi-width_1": 120
+        }
+    ]
+}
