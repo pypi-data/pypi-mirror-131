@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: altmo
+Version: 0.1.1a5
+Summary: Tools for mapping walkability and bikeability using Open Street Map data
+Home-page: https://altmo.readthedocs.io
+License: GPLv3
+Keywords: OpenStreetMap,GIS
+Author: Travis Hathaway
+Author-email: travis.j.hathaway@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: GDAL (>=3.2.1,<3.3.0)
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: numpy (>=1.21.0,<2.0.0)
+Requires-Dist: psycopg2 (>=2.8.6,<3.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: tqdm (>=4.61.0,<5.0.0)
+Project-URL: Documentation, https://altmo.readthedocs.io
+Project-URL: Repository, https://github.com/travishathaway/altmo
+Description-Content-Type: text/markdown
+
+# AltMo
+
+**Alt**ernative **Mo**bilities is a CLI tool which helps map alternative mobilities with Open Street Map data.
+Specifically, this tool helps you map walkability and bikeability averages as a surface for an area of intent
+(usually a city or a region).
+
+It relies on the following external services to work:
+
+- A PostgreSQL database within extensions `postgis`, `hstore` and `tablefunc` enabled
+- An Open Street Map database imported into this database
+- A running instance a [Vahalla](https://valhalla.readthedocs.io/en/latest/) (used for calculating network routing)
+- A GeoJSON file of the boundary you would like to gather data for (should fit inside OSM data)
+
+For a full description of how to use this tool, you are encouraged to visit 
+[https://altmo.readthedocs.io/en/latest/index.html](https://altmo.readthedocs.io/en/latest/index.html).
+
