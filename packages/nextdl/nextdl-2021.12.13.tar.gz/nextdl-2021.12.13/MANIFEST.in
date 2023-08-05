@@ -1,0 +1,9 @@
+include README.md
+include LICENSE
+include AUTHORS
+include ChangeLog
+include nextdl.bash-completion
+include nextdl.fish
+include nextdl.1
+recursive-include docs Makefile conf.py *.rst
+recursive-include test *
