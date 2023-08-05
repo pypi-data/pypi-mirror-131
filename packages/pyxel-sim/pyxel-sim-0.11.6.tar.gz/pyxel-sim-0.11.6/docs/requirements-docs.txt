@@ -1,0 +1,10 @@
+# Pyxel additional requirements for generating documentation
+
+doc8
+sphinx==4.2.0
+sphinx-book-theme
+sphinxcontrib-bibtex
+sphinxcontrib-napoleon
+sphinx-panels
+ipython
+sphinx-inline-tabs

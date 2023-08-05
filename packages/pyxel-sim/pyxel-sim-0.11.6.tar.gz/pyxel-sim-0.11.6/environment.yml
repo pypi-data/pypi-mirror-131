@@ -1,0 +1,83 @@
+# Create a new conda environment:
+#   $ cd pyxel
+#   $ conda update -n base conda
+#   $ conda deactivate
+#   $ conda env create -f environment.yml
+#   $ conda activate pyxel-dev
+#   (pyxel_dev) $ pip install -e .
+
+# Get a list of all the environments:
+#  $ conda env list -v
+
+# Upgrade a conda environment
+#  $ conda update -f environment.yml [-n CONDA_ENV_NAME]
+#  $ conda update [-n CONDA_ENV_NAME] --all
+
+# Remove a conda environment
+#  $ conda remove --name MYENV --all
+
+
+name: pyxel-dev
+channels:
+  - conda-forge
+  - numba
+  - defaults
+dependencies:
+# Python
+  - python>=3.7,<3.9
+  - pip
+# Scientific computing
+  - numba
+  - numpy>=1.17
+  - pandas
+  - scipy
+  - xarray
+# Plotting
+  - matplotlib>=3.1
+  - seaborn
+  - holoviews
+  - bokeh
+# Parallel computing
+  - dask>=2.9
+  - dask-labextension
+# Jupyter notebook
+  - ipywidgets>=7.5
+  - notebook>=6
+  - jupyterlab
+  - nodejs
+# Input/Output
+  - astropy>=4
+  - fsspec
+  - h5py
+  - pyyaml
+  - xlrd
+  - openpyxl
+  - netcdf4
+# Others
+  - click
+  - tqdm
+  - typing-extensions
+  - pygmo>=2.16.1
+  - pympler
+  - pillow
+  - scikit-image
+# Code formatting
+  - black>=20
+  - isort>=5
+  - jupyterlab_code_formatter
+# Development
+  - flake8
+  - mypy
+  - pre-commit
+  - pytest
+  - pytest-httpserver
+  - tox
+  - tryceratops
+  - freezegun
+# Pip packages
+  - pip:
+    - poppy>=0.9
+    # Development
+    - types-requests
+    - types-PyYAML
+    - types-pkg_resources
