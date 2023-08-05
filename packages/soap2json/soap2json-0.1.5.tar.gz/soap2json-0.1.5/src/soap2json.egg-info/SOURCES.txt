@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/soap2json/__init__.py
+src/soap2json/adapters.py
+src/soap2json/session.py
+src/soap2json.egg-info/PKG-INFO
+src/soap2json.egg-info/SOURCES.txt
+src/soap2json.egg-info/dependency_links.txt
+src/soap2json.egg-info/not-zip-safe
+src/soap2json.egg-info/requires.txt
+src/soap2json.egg-info/top_level.txt
