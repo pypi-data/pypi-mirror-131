@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+deepl/__init__.py
+deepl/__main__.py
+deepl/api.py
+deepl/extractors.py
+deepl/generators.py
+deepl/hacks.py
+deepl/settings.py
+deepl/utils.py
+deepl_translate.egg-info/PKG-INFO
+deepl_translate.egg-info/SOURCES.txt
+deepl_translate.egg-info/dependency_links.txt
+deepl_translate.egg-info/entry_points.txt
+deepl_translate.egg-info/requires.txt
+deepl_translate.egg-info/top_level.txt
