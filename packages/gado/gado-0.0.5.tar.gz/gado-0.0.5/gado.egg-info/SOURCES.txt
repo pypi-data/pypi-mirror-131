@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+gado/__init__.py
+gado/gado.py
+gado.egg-info/PKG-INFO
+gado.egg-info/SOURCES.txt
+gado.egg-info/dependency_links.txt
+gado.egg-info/entry_points.txt
+gado.egg-info/requires.txt
+gado.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+pronouncing
+requests
+pyxdg
+rich

@@ -1,0 +1,4 @@
+[console_scripts]
+gado = gado.gado:main
+gado++ = gado.gado:main
+
