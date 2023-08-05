@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pgzip/__init__.py
+pgzip/__main__.py
+pgzip/pgzip.py
+pgzip.egg-info/PKG-INFO
+pgzip.egg-info/SOURCES.txt
+pgzip.egg-info/dependency_links.txt
+pgzip.egg-info/top_level.txt
