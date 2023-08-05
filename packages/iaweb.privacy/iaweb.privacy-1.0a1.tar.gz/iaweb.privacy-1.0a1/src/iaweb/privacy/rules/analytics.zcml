@@ -1,0 +1,19 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:gdpr="http://namespaces.plone.org/gdpr"
+  xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+  i18n_domain="collective.privacy">
+
+  <!-- statistics -->
+
+  <gdpr:data_use_category
+    name="basic_analytics"
+    title="Use google analytics"
+    description="We use Google Analytics to provide statistics to website owner.
+Google monitors the usage patterns of users to provide enhanced analytics."
+    legal_basis="consent"
+    identifier="collective.privacy.identifiers.CookieIdentifier"
+    storage="collective.privacy.storage.CookieStorage"
+    />
+
+</configure>
