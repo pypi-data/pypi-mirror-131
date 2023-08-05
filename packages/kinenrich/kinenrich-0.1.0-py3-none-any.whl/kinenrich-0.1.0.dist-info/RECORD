@@ -1,0 +1,10 @@
+kinenrich/__init__.py,sha256=FCMHYK0lFzKOOPDKN-XFVkHXzrJn5rBpDy94RXDtBgs,71
+kinenrich/kindictgene.csv,sha256=okeCO4HMO2vTKIQirTvDZ47ihj0oVaQymvkizujLlr0,129468
+kinenrich/kindictpro.csv,sha256=C_xlPF7rsoG3ZAx66AOylFTQq1OYBO5sFma5O_hwKGk,145529
+kinenrich/kinenrich.py,sha256=kPe_lVGfjIktwlj4AFiTgGzfYCIOTNnCljmJQ1-Nfjw,14459
+kinenrich/unigenedict.csv,sha256=Z3W_ZW1p4S-14yRwlsZeHi6A3d01OSjz0f5mUi2_yfs,2577751
+kinenrich-0.1.0.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+kinenrich-0.1.0.dist-info/METADATA,sha256=QxabrIPPCnc6NFee8elplW1H-FHr7ZmB5GhIv0wIpGM,513
+kinenrich-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+kinenrich-0.1.0.dist-info/top_level.txt,sha256=NbjLqvr2hHzVzue0GarUSGV5F9fIJIbjZiXcHB6Ityk,10
+kinenrich-0.1.0.dist-info/RECORD,,
