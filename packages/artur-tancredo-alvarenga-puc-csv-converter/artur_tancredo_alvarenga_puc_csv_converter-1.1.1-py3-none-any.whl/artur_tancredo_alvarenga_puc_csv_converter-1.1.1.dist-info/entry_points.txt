@@ -1,0 +1,4 @@
+[console_scripts]
+converter_CSV_JSON=artur_tancredo_alvarenga_puc_csv_converter.converter:converter
+converter_JSON_CSV=artur_tancredo_alvarenga_puc_csv_converter.converter:converter_2
+

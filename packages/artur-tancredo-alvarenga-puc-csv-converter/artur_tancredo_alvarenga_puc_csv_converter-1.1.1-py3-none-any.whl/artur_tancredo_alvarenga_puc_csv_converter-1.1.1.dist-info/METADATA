@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: artur-tancredo-alvarenga-puc-csv-converter
+Version: 1.1.1
+Summary: Trabalho da PUC - converter arquivo(s) de csv para json e json para csv
+Author: Artur Tancredo de Alvarenga
+Author-email: arturalvarenga@hotmail.com
+Requires-Python: >=3.8.10,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: pandas (>=1.3.4,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Conversão de arquivos:
+
+.CSV para JSON
+
+.JSON para CSV.
+
+## Introdução
+
+Esse é um trabalho proposta na disciplina de Python da Pós Graduação da PUC-MG, cujo objetivo é usar o PATH para a conversão de arquivos de CSV para JSON e/ou JSON para CSV.
+
+### O que o projeto faz ?
+
+Ler um arquivo de **CSV** ou **JSON** e até mesmo, ler uma pasta com arquivos de **CSV** ou **JSON** , cujo objetivo é converter **CSV-JSON** ou **JSON-CSV**. Este projeto é um programa de execução no terminal, de preferÊncia instalado com **pipx**:
+
+```bash
+pipx install artur_tancredo_alvarenga_puc_csv_converter
+```
+
+Para usar, basta digitar:
+
+### Converter CSV para JSON
+
+```bash
+converter_CSV_JSON --help
+```
+
+### Converter JSON para CSV
+
+```bash
+converter_JSON_CSV --help
+```
+
+### Isso listará todas as opções disponíveis.
