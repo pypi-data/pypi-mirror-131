@@ -1,0 +1,1 @@
+print('this file is powered by lry for test')
