@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: basedmypy
+Version: 1.1.2
+Summary: Based static typing for Python
+Home-page: https://www.github.com/KotlinIsland/basedmypy
+Author: KotlinIsland
+Author-email: AMONGUS@pizzahut.com
+License: MIT License
+Project-URL: News, https://github.com/KotlinIsland/basedmypy/releases
+Project-URL: Documentation, https://mypy.readthedocs.io/en/stable/introduction.html
+Project-URL: Repository, https://github.com/KotlinIsland/basedmypy
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6
+Provides-Extra: dmypy
+Provides-Extra: python2
+License-File: LICENSE
+
+Basedmypy -- Based Static Typing for Python
+===========================================
+
+Ever tried to use pythons type system and thought to yourself "This doesn't seem based".
+
+Well fret no longer as basedmypy got you covered!
+
+Baseline
+--------
+
+Basedmypy has baseline, baseline is based! It allows you to adopt new features from basedmypy
+without the burden of fixing up every usage, just save all current errors to the baseline
+file and deal with them later.
+
+.. code-block:: python
+
+    def foo(a):
+        print(a)
+
+.. code-block:: bash
+
+    > mypy .
+    error: missing typehints !!!!!
+    Epic fail bro!
+
+    > mypy --write-baseline .
+    error: missing typehints
+    Baseline successfully saved!
+
+    > mypy .
+    Looks good to me, no errors!
+
+

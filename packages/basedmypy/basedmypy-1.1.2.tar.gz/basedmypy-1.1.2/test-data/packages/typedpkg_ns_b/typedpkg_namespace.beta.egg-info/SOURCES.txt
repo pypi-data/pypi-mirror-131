@@ -1,0 +1,9 @@
+setup.py
+typedpkg_namespace.beta.egg-info/PKG-INFO
+typedpkg_namespace.beta.egg-info/SOURCES.txt
+typedpkg_namespace.beta.egg-info/dependency_links.txt
+typedpkg_namespace.beta.egg-info/namespace_packages.txt
+typedpkg_namespace.beta.egg-info/not-zip-safe
+typedpkg_namespace.beta.egg-info/top_level.txt
+typedpkg_ns/b/__init__.py
+typedpkg_ns/b/bbb.py
