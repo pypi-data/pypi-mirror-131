@@ -1,0 +1,103 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:i18n="http://xml.zope.org/namespaces/i18n" i18n:domain="imio.gdpr">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  </head>
+
+  <body i18n:translate="default-cookies-text">
+
+    <h1>Politique d'utilisation des cookies</h1>
+
+    <p>Les cookies sont des petits fichiers enregistrés sur votre appareil lorsque vous visitez un site internet. Les cookies contiennent des informations qui permettent d'identifier les utilisateurs et de retenir leurs préférences. Les cookies disposent généralement d'une date d'expiration.&nbsp;</p>
+
+    <h2>Utilisation des cookies</h2>
+
+    <p>Ce site web utilise des cookies de trois types :</p>
+
+    <ul>
+        <li>des cookies essentiels</li>
+        <li>des cookies d'analyse</li>
+        <li>des cookies fonctionnels<br />
+        &nbsp;</li>
+    </ul>
+
+    <p>Les cookies essentiels sont requis pour une utilisation normale de ce site internet et ne peuvent dès lors pas être désactivés. Ces cookies permettent de répartir la charge sur nos serveurs (technique du load balancing), d'authentifier les utilisateurs et d'enregistrer leurs préférences en matière de cookies.&nbsp;</p>
+
+    <p>Les cookies d'analyse sont quant à eux utilisés par <em>Google Analytics</em> pour fournir des statistiques aux gestionnaires de ce site. Afin de respecter votre vie privée, votre adresse IP est anonymisée avant d'être transférée aux serveurs de <em>Google</em>.</p>
+
+    <p>Enfin, des cookies fonctionnels sont employés pour retenir vos préférences en matière de langue sur un site multilingue. D'autres cookies fonctionnels peuvent également être enregistrés par des tiers lorsque le gestionnaire du site intègre des contenus externes comme des vidéos.&nbsp;&nbsp;&nbsp;</p>
+
+    <h3>Cookies essentiels</h3>
+
+    <p>Les cookies essentiels sont nécessaires au bon fonctionnement de ce site internet et ne peuvent donc pas être bloqués.</p>
+
+    <h4>cc_cookie_accept</h4>
+
+    <p>Ce cookie enregistre les préférences de l'utilisateur quant au traitement des cookies. Sa validité est de deux ans.</p>
+
+    <h4>serverid</h4>
+
+    <p>Ce cookie permet l'application d'une technique de load balancing sur nos serveurs. Il expire à la fermeture du navigateur.</p>
+
+    <h4>__ac</h4>
+
+    <p>Ce cookie authentifie les utilisateurs du site. Il expire à la fermeture du navigateur.</p>
+
+    <h3>Cookies d'analyse</h3>
+
+    <p>Vous pouvez bloquer les cookies d'analyse. Ils nous aident néanmoins à améliorer la qualité de votre visite.</p>
+
+    <h4>_ga et _ga_ (<em>Google Analytics</em>)</h4>
+
+    <p>Ces cookies permettent de distinguer les utilisateurs. Leur validité est de deux ans.</p>
+
+    <h4>_gid (<em>Google Analytics</em>)</h4>
+
+    <p>Ce cookie permet de distinguer les utilisateurs. Sa validité est de vingt-quatre heures.</p>
+
+    <h4>_gat_gtag (<em>Google Analytics</em>)</h4>
+
+    <p>Ce cookie permet de réguler la fréquence des requêtes. Sa validité est d'une heure.</p>
+
+    <h3>Cookies fonctionnels</h3>
+
+    <p>Refuser ces cookies bloquera l'intégration de contenus externes et la bascule de langue sur les sites multilingues.</p>
+
+    <h4>I18N_LANGUAGE</h4>
+
+    <p>Ce cookie enregistre les préférences de langue de l'utilisateur. Il expire à la fermeture du navigateur.</p>
+
+    <h4>Vidéos encapsulées</h4>
+
+    <p>Nous utilisons <em>YouTube</em> pour encapsuler des vidéos sur le site. <em>YouTube</em> suit les actions des utilisateurs au moyen de cookies pour fournir des statistiques et des produits publicitaires.&nbsp;</p>
+
+    <p>Cookies issus de <em>YouTube</em> :</p>
+
+    <ul>
+        <li>1P_JAR (1 mois)</li>
+        <li>ANID (9 mois)</li>
+        <li>APISID (2 ans)</li>
+        <li>CONSENT (10 ans)</li>
+        <li>COMPASS (3 jours)</li>
+        <li>HSID (2 ans)</li>
+        <li>NID (6 mois)</li>
+        <li>SAPISID (2 ans)</li>
+        <li>SID (2 ans)</li>
+        <li>SIDCC (1 an)</li>
+        <li>SSID (2 ans)</li>
+        <li>__Secure-3PAPISID (2 ans)</li>
+        <li>__Secure-3PSID (2 ans)</li>
+        <li>__Secure-3PSIDCC (1 an)<br />
+        &nbsp;</li>
+    </ul>
+
+    <h2>Gestion et suppression des cookies</h2>
+
+    <p>Tous les navigateurs offrent la possibilité de retrouver et de supprimer les cookies installés sur une machine. Ces fonctionnalités sont disponibles dans les préférences du navigateur au sein d'une section généralement intitulée Vie privée ou Sécurité.</p>
+
+    <p>Vous avez par ailleurs la possibilité de supprimer automatiquement les cookies en utilisant la navigation privée de votre navigateur.</p>
+
+    <p>Pour supprimer rapidement les cookies, certains navigateurs (Firefox, Chrome, Edge, Internet Explorer) proposent un raccourci clavier par l'appui simultané sur les touches CTRL/CMD,&nbsp; MAJ et DELETE.&nbsp;</p>
+
+  </body>
+</html>
