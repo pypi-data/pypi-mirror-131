@@ -1,0 +1,74 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.nitpick]
+style = "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/nitpick-style-wemake.toml"
+
+
+[tool.poetry]
+name = "django-test-migrations"
+version = "1.2.0"
+description = "Test django schema and data migrations, including ordering"
+license = "MIT"
+
+authors = [
+  "sobolevn <mail@sobolevn.me>"
+]
+
+readme = "README.md"
+
+repository = "https://github.com/wemake-services/django-test-migrations"
+
+keywords = [
+  "django",
+  "django-tests",
+  "django-migrations",
+  "django-orm",
+  "migrations",
+  "orm",
+  "sql",
+  "tests",
+  "test",
+  "pytest",
+  "pytest-plugin"
+]
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+  "Framework :: Django",
+  "Framework :: Django :: 1.11",
+  "Framework :: Django :: 2.2",
+  "Framework :: Django :: 3.0",
+  "Framework :: Django :: 3.1",
+]
+
+[tool.poetry.plugins.pytest11]
+django_test_migrations = "django_test_migrations.contrib.pytest_plugin"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+typing_extensions = ">=3.6,<5"
+
+[tool.poetry.dev-dependencies]
+django = "^3.2"
+
+mypy = "^0.910"
+wemake-python-styleguide = "^0.16"
+flake8-pytest-style = "^1.5"
+nitpick = "^0.29"
+
+safety = "^1.10"
+
+pytest = "^6.2"
+pytest-cov = "^3.0"
+pytest-randomly = "^3.10"
+pytest-django = "^4.5"
+pytest-pythonpath = "^0.7"
+pytest-mock = "^3.6"
