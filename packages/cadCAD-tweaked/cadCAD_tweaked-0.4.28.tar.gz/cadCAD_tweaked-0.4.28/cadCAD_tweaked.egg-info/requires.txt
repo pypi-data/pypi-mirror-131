@@ -1,0 +1,8 @@
+pandas
+fn
+funcy
+dill
+pathos
+numpy
+pytz
+six
