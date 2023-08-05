@@ -1,0 +1,10 @@
+quickbase_json/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quickbase_json/client.py,sha256=1NhyrP8Rd0OjpnGeknk_t3WSO3nMYHk1ejk0AGxEGho,3872
+quickbase_json/helpers.py,sha256=szUkJBYbIDwAS8w_8P5kHAzWi5ZHLNc3bi6dPuOKGv8,2782
+quickbase_json/qb_linked_record.py,sha256=imy8Y3lRV-XdHyDv0PVhj0TaFsWUDa6A9iCqnEfMPCM,1126
+quickbase_json/qb_response.py,sha256=KuaKkDWe4I3kTkco5EBdOsjwbxQjV19BV6hvCOewaiQ,8376
+quickbase_json_api_client-0.0.1.dist-info/LICENSE,sha256=KsUlenax4CUMnhBjj5-GuOg22s4vuAI1lUXPGvEloXw,1076
+quickbase_json_api_client-0.0.1.dist-info/METADATA,sha256=h0ZsdsfCcdthXWO4BIUl1NekhLvV3TqLfWj_HLjvXxI,1057
+quickbase_json_api_client-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+quickbase_json_api_client-0.0.1.dist-info/top_level.txt,sha256=QMAhfxRbrBd-B38Cc-bzrimhmUFYQCY2Aj9u7FX1rdQ,15
+quickbase_json_api_client-0.0.1.dist-info/RECORD,,
