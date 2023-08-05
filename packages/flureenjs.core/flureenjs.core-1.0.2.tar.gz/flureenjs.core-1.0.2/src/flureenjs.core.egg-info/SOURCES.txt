@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/flureenjs.core.egg-info/PKG-INFO
+src/flureenjs.core.egg-info/SOURCES.txt
+src/flureenjs.core.egg-info/dependency_links.txt
+src/flureenjs.core.egg-info/requires.txt
+src/flureenjs.core.egg-info/top_level.txt
+src/flureenjs/core/__init__.py
+src/flureenjs/core/py.typed
+src/flureenjs/core/_jsii/__init__.py
+src/flureenjs/core/_jsii/fluree-jsii@1.0.2.jsii.tgz
