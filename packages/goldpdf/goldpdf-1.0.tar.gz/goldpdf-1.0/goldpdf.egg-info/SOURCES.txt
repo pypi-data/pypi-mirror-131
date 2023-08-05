@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+goldpdf/__init__.py
+goldpdf/pdf2image.py
+goldpdf/pdf2text.py
+goldpdf.egg-info/PKG-INFO
+goldpdf.egg-info/SOURCES.txt
+goldpdf.egg-info/dependency_links.txt
+goldpdf.egg-info/top_level.txt
