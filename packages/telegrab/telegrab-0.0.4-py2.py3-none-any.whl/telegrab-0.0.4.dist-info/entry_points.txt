@@ -1,0 +1,3 @@
+[console_scripts]
+fuckjpeg=telegrab.__main__:cli
+
