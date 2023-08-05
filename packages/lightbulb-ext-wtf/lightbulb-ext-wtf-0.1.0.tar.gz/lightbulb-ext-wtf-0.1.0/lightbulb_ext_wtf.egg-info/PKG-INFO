@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: lightbulb-ext-wtf
+Version: 0.1.0
+Summary: A very strange method of declaring commands with hikari-lightbulb
+Home-page: https://github.com/tandemdude/lightbulb-ext-wtf
+Author: tandemdude
+Author-email: tandemdude1@gmail.com
+License: Beerware
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8.0,<3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### Lightbulb WTF
+
+This is a joke project (but working somehow).
+
+I just wanted to mess around to see how much I could mess with lightbulb command declaration syntax.
+
+## Usage
+
+Commands are declared like generics using square brackets (`[]`) as the construction method.
+
+A basic command:
+
+```python
+import lightbulb
+from lightbulb.ext.wtf import *
+
+bot = lightbulb.BotApp(...)
+
+async def foo_callback(ctx):
+    await ctx.respond("Bar")
+
+
+cmd = Command[
+    Implements[lightbulb.PrefixCommand],
+    Name["foo"],
+    Description["test command"],
+    Executes[foo_callback]
+]
+
+bot.command(cmd)
+bot.run()
+```
+
+
