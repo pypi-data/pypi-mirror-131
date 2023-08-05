@@ -1,0 +1,34 @@
+{
+    "version": 1,
+    "reference": ", T. S. Grigera, A. Cavagna, I. Giardina, G. Parisi, Phys. Rev. Lett. 88, 055502 (2002)",
+    "potential": [
+	{
+	    "type": "inverse_power",
+	    "parameters": {
+		"exponent": 12,
+		"sigma": [[0.905365, 0.995902], [0.995902, 1.086438]],
+		"epsilon": [[1.0, 1.0], [1.0, 1.0]]}
+	}
+    ],
+    "cutoff": [
+	{
+	    "type": "cubic_spline",
+	    "parameters": {"rspl": [[1.732, 1.732], [1.732, 1.732]]}
+	}
+    ],
+    "notes": "This is a smooth variant of the Roux-Barrat-Hansen model",
+    "samples": [
+	{
+	    "path": "samples/grigera_cavagna_giardina_parisi/N1000_rho1.0_T0.2461.xyz",
+	    "format": "xyz",
+	    "species": ["A", "B"],
+	    "potential_energy_per_particle": 2.1449771790499375,
+	    "number_of_particles": 1000,
+	    "density": 1.0,
+	    "temperature": 0.2461,
+	    "state": "fluid"
+	}
+    ]
+}
+
+
