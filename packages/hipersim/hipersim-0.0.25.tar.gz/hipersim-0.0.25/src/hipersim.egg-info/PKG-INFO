@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: hipersim
+Version: 0.0.25
+Summary: A collection of wind energy simulation tools
+Home-page: https://gitlab.windenergy.dtu.dk/HiperSim/hipersim
+Author: Nikolay Dimitrov
+Author-email: nkdi@dtu.dk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Hipersim
+
+## Introduction
+Hipersim is a collection of tools for computationally-efficient simulation of Wind Energy problems using statistical and machine learning methods. Currently, the package contains the following submodules:
+
+- **turbgen**: 
+    - Generation of 3D frozen turbulence fields ("turbulence boxes") with the Mann turbulence spectrum
+    - Constrained turbulence field generation and application of constraints on pre-generated turbulence fields
+
+- **surrogates**:
+    - A feedforward neural network toolbox, training and evaluation of feedforward neural networks. 
+	- A set of tools for surrogate-based modeling and analysis of wind farms
+
+## Installation
+Hipersim is registered as installable Python package in PyPi.org. Installation happens automatically with the following command:
+
+pip install hipersim
+
+## References
+
+## License
+Hipersim uses the MIT License.
+
+
