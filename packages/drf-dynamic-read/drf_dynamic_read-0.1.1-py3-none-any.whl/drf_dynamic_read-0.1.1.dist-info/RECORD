@@ -1,0 +1,11 @@
+drf_dynamic_read/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_dynamic_read/exceptions.py,sha256=k_taVpaCyFVM9rpkVKJVd8P7dcx0Jlf4Fyg4Imb-504,237
+drf_dynamic_read/serializers.py,sha256=AXz3Lj7luk95fSo8RNL0PcGTc7jzgraqfm_wkTPTORY,7509
+drf_dynamic_read/utils.py,sha256=cM9T4hGIzTD8NpqDVINMzOG3fdKYp4ASZg-7ELFrjdc,3439
+drf_dynamic_read/views.py,sha256=4B9ZrXvDwBky8HFSDQr0zAqrrAm46jMl6hYaoBsbSjw,1502
+drf_dynamic_read-0.1.1.dist-info/LICENSE,sha256=y1GNW1zS6gXNYBCUhjjtJ4-qGsclUBmTBzt-pszrQ-w,1068
+drf_dynamic_read-0.1.1.dist-info/METADATA,sha256=jbxfMjMRkvZDm38_08nrc9IZK1F6wu5kVnCENm9Gz5Y,11379
+drf_dynamic_read-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+drf_dynamic_read-0.1.1.dist-info/top_level.txt,sha256=N-BNGuczJ77A7-sIGqH6Kp72-J5jGCipXJVrxNrM6qM,17
+drf_dynamic_read-0.1.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+drf_dynamic_read-0.1.1.dist-info/RECORD,,
