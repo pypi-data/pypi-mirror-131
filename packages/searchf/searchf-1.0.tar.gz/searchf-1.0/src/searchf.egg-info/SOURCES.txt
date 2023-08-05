@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+bin/searchf
+src/searchf/__init__.py
+src/searchf/searchf.py
+src/searchf.egg-info/PKG-INFO
+src/searchf.egg-info/SOURCES.txt
+src/searchf.egg-info/dependency_links.txt
+src/searchf.egg-info/top_level.txt
+src/searchf/test/__init__.py
+src/searchf/test/all.py
+src/searchf/test/color.py
+src/searchf/test/unit.py
