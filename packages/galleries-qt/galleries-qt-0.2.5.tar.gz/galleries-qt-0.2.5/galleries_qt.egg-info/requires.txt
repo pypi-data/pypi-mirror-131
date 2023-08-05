@@ -1,0 +1,8 @@
+galleries>=0.2.4
+mnd_utils
+mnd_qtutils
+numpy
+opencv-python
+propsettings_qt>=0.2.1
+pyrulo-qt>=0.3.1
+PySide2
