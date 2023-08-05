@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pydrinker
+Version: 1.0.3
+Summary: The most amazing lib to drink (consume) message from your queue provider of preference
+Home-page: https://github.com/rafaelhenrique/pydrinker
+License: LGPLv3
+Keywords: pub-sub,queue,consumer,message-broker
+Author: Rafael Henrique da Silva Correia
+Author-email: rafael@abraseucodigo.com.br
+Requires-Python: >=3.9,<3.10
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: System :: Distributed Computing
+Provides-Extra: gcp
+Requires-Dist: pydrinker-gcp (>=1.1.2,<2.0.0); extra == "gcp"
+Requires-Dist: pydrinker-loafer (>=1.0.1,<2.0.0)
+Project-URL: Repository, https://github.com/rafaelhenrique/pydrinker
+Description-Content-Type: text/markdown
+
+# pydrinker
+
+![build on github actions](https://github.com/pydrinker/pydrinker/actions/workflows/test.yml/badge.svg?branch=main)
+
+This is a abstraction layer between [pydrinker-loafer](https://github.com/pydrinker/pydrinker-loafer) and all pydrinker libs, this project makes possible change thinks of original [olist-loafer](https://github.com/olist/olist-loafer) project, the future of this project is switch all core structure to here and remove pydrinker-loafer;
+
+To understand more about pydrinker see [org page](https://github.com/pydrinker).
+
