@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: insiderTrades
+Version: 1.0.0
+Summary: Download insider trading transactions and insider holdings from a public NoSQL SEC database (<https://www.sec.gov/Archives/edgar/full-index/>) using keyword criteria and generate a relational dataframe.
+Home-page: https://github.com/jhancuch/insiderTrades
+Author: Joe Hancuch
+Author-email: joseph.hancuch1@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: requests
+
+UNKNOWN
+
