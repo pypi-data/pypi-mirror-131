@@ -1,0 +1,6 @@
+timeago
+pycryptodome
+pandas
+tqdm
+requests
+scikit-learn==1.0.1
