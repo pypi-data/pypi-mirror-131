@@ -1,0 +1,3 @@
+[distutils.setup_keywords]
+use_git_versioner = __version__:setup_keyword
+
