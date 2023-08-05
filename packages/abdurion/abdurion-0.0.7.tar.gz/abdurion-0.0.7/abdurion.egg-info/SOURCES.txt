@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Aggregation_Class/__init__.py
+Aggregation_Class/main.py
+abdurion.egg-info/PKG-INFO
+abdurion.egg-info/SOURCES.txt
+abdurion.egg-info/dependency_links.txt
+abdurion.egg-info/top_level.txt

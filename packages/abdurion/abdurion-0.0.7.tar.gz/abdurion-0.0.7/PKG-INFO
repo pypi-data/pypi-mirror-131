@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: abdurion
+Version: 0.0.7
+Summary: A small example package
+Home-page: https://github.com/abdurion
+Author: Abdulrahman AlQumaidy
+Author-email: author@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### Aggregation Package Details
+    - This package computes the mean, median, min, max, sum of positives, and count of negatives of a list.
+
