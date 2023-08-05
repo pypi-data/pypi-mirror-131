@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+requirements.txt
+setup.py
+missing_diff_lines/__init__.py
+missing_diff_lines/missing_diff_lines.py
+missing_diff_lines.egg-info/PKG-INFO
+missing_diff_lines.egg-info/SOURCES.txt
+missing_diff_lines.egg-info/dependency_links.txt
+missing_diff_lines.egg-info/requires.txt
+missing_diff_lines.egg-info/top_level.txt
+scripts/publish.sh
+scripts/test.sh
+test/__init__.py
+test/test_find_class.py
