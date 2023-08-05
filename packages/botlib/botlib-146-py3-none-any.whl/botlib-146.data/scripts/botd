@@ -1,0 +1,63 @@
+#!python
+# This file is placed in the Public Domain.
+
+
+"24/7 channel daemon"
+
+
+__version__ = 146
+
+
+import os
+import readline
+import sys
+import termios
+import threading
+import time
+
+
+from bot.irc import Cfg as IRC
+from bot.krn import k
+from bot.obj import Cfg
+from bot.ofn import fmt
+from bot.run import Runtime, spl
+from bot.run import Cfg as RunCfg
+from bot.tbl import Table
+from bot.tms import elapsed
+
+
+IRC.nick = "botd"
+IRC.channel = "#botd"
+
+
+Cfg.wd = "/var/lib/botd/"
+
+
+starttime = time.time()
+
+
+import bot.all
+
+
+def ver(event):
+    event.reply("BOTD %s" % __version__)
+
+
+def main():
+    k.stdout = sys.stdout
+    k.stderr = sys.stderr
+    k.cfg.verbose = False
+    k.addcmd(ver)
+    msg = "BOTD %s starting at %s" % (__version__, time.ctime(time.time()))
+    k.direct(msg.replace("  ", " "))
+    k.direct("workdir is %s" % Cfg.wd)
+    k.direct(fmt(k.cfg, ["console", "daemon", "debug", "systemd", "verbose"]))
+    k.cfg.mod += "irc,rss"
+    for mn in spl(k.cfg.mod):
+        k.init("bot.%s" % mn)
+    k.direct(",".join(sorted(list(Table.modnames))))
+    k.direct("booted (%s)" % elapsed(time.time() - starttime))
+    k.wait()
+
+
+main()

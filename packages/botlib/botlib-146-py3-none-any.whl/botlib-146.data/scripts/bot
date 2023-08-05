@@ -1,0 +1,117 @@
+#!python
+# This file is placed in the Public Domain.
+
+
+"24/7 channel daemon"
+
+
+__version__ = "146"
+
+
+import os, sys
+
+
+sys.path.insert(0, os.getcwd())
+
+
+import os
+import readline
+import sys
+import termios
+import threading
+import time
+
+
+from bot.clt import Client
+from bot.krn import k
+from bot.obj import Cfg, Object, keys
+from bot.ofn import fmt
+from bot.run import Runtime, spl
+from bot.tbl import Table
+from bot.tms import elapsed
+
+
+Cfg.wd = os.path.expanduser("~/.bot")
+
+
+starttime = time.time()
+
+
+class Console(Client):
+
+    def __init__(self):
+        super().__init__()
+        k.add(self)
+        
+    def handle(self, clt, e):
+        k.put(e)
+        e.wait()
+
+    def poll(self):
+        return input("> ")
+
+    def raw(self, txt):
+        print(txt)
+        sys.stdout.flush()
+
+
+clt = Console()
+
+
+def daemon():
+    pid = os.fork()
+    if pid != 0:
+        termreset()
+        os._exit(0)
+    os.setsid()
+    os.umask(0)
+    si = open("/dev/null", 'r')
+    so = open("/dev/null", 'a+')
+    se = open("/dev/null", 'a+')
+    os.dup2(si.fileno(), sys.stdin.fileno())
+    os.dup2(so.fileno(), sys.stdout.fileno())
+    os.dup2(se.fileno(), sys.stderr.fileno())
+
+
+def wrap(func):
+    fd = sys.stdin.fileno()
+    old = termios.tcgetattr(fd)
+    try:
+        func()
+    except (EOFError, KeyboardInterrupt):
+        print("")
+    finally:
+        termios.tcsetattr(fd, termios.TCSADRAIN, old)
+
+
+import bot.all
+
+
+def ver(event):
+    event.reply("BOTLIB %s" % __version__)
+    
+
+def main():
+    if k.root():
+        print("don't run this bot as root")
+        return
+    k.parse_cli()
+    k.addcmd(ver)
+    if k.cfg.verbose:
+        msg = "BOTLIB %s starting at %s" % (__version__, time.ctime(time.time()))
+        k.log(msg.replace("  ", " "))
+        k.log(fmt(k.cfg, ["console", "daemon", "debug", "systemd", "verbose"]))
+    if k.prs.txt:
+        return k.cmd(clt, k.prs.otxt)
+    if k.cfg.daemon:
+        daemon()
+    if k.cfg.console or "mod" in k.cfg:
+        for mn in spl(k.cfg.mod):
+            k.init("bot.%s" % mn)
+        k.log(",".join(sorted(list(Table.modnames))))
+        k.log("booted (%s)" % elapsed(time.time() - starttime))
+        clt.start()
+        k.wait()
+
+
+wrap(main)
