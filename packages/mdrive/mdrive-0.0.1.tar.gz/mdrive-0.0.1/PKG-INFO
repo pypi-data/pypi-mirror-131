@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mdrive
+Version: 0.0.1
+Summary: Metadrive as a service.
+Home-page: https://gitlab.com/mindey/mdrive
+Author: Mindey
+Author-email: mindey@mindey.com
+License: PROPRIETARY
+Description: Data and Actions as a Service
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+Provides-Extra: develop

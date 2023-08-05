@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+mdrive.egg-info/PKG-INFO
+mdrive.egg-info/SOURCES.txt
+mdrive.egg-info/dependency_links.txt
+mdrive.egg-info/entry_points.txt
+mdrive.egg-info/not-zip-safe
+mdrive.egg-info/requires.txt
+mdrive.egg-info/top_level.txt
