@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: trinsic-sdk
+Version: 1.2.0
+Summary: Trinsic Services SDK bindings
+Home-page: https://github.com/trinsic-id/okapi/
+Author: Scott Phillips
+Author-email: scott.phillips@trinsic.id
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/trinsic-id/okapi/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: grpclib
+Requires-Dist: betterproto (>=2.0.0b3)
+Requires-Dist: trinsic-okapi (>=1.0.4)
+Requires-Dist: blake3 (>=0.2.1)
+
+# Python SDK
+
+
