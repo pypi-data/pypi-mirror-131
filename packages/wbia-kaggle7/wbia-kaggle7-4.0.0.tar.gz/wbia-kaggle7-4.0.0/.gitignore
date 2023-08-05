@@ -1,0 +1,13 @@
+.DS_Store
+
+failed_doctests.txt
+timeings.txt
+profile_output*.txt
+
+*.egg-info
+__pycache__
+_docs/_build
+docs/
+_page/
+
+wbia_kaggle7/_version.py

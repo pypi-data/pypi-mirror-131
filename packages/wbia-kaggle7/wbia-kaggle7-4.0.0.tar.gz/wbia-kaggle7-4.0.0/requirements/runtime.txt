@@ -1,0 +1,6 @@
+docker
+opencv-contrib-python-headless
+Pillow
+tqdm
+wbia-utool
+wildbook-ia

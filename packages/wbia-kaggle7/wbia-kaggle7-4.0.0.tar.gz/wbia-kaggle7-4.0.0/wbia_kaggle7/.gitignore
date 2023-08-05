@@ -1,0 +1,17 @@
+.DS_Store
+__pycache__
+
+timeings.txt
+
+crop_test/
+crop_train/
+sample_submission.csv
+test.zip
+test/
+train.csv
+train.zip
+train/
+
+data/
+data_archive/
+_version.py
