@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: SwissArmyTransformer
+Version: 0.1.4
+Summary: A transformer-based framework with finetuning as the first class citizen.
+Home-page: https://github.com/THUDM/SwissArmyTransformer
+Author: Ming Ding, et al.
+Author-email: dm_thu@qq.com
+License: Apache 2.0 license
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: deepspeed
+Requires-Dist: lmdb
+Requires-Dist: sentencepiece
+Requires-Dist: tensorboardX (==1.8)
+
+# Temp instruction
+### Install
+```
+    pip install SwissArmyTransformer
+```
+### Run CogView2
+```
+    cd examples/cogview2
+    ./scripts/text2image_cogview2.sh
+```
+
+### Run GLM
+1. Prepare input.txt. Example: "Welcome! This is the main page of SwissArmyTransformer".
+2. Run the following commands:
+```
+    cd examples/glm
+    ./scripts/generate_glm.sh config/model_glm_10B_chinese.sh
+```
+
+Output:
+[CLS]Welcome! This is the main page of SwissArmyTransformer. It is a comprehensive and clear explanation of the technical problems in the transformer. It is also an introduction to the development of the SwissArmy transformers. Welcome to Swiss Army Transforters. This is the main page of Swiss army tranforter. It's a complete and clean explaination of technology problem in the Tranformer, which is an integral part of the army's technological development. It also anintroduction of the developments of the Army technicians. Well, if you have any questions, please feel free to contact the official webs
+
+
