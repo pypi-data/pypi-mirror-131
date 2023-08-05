@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "nonebot-plugin-tvseries"
+version = "0.0.2"
+description = ""
+authors = ["kexue <xana278@foxmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+nonebot-adapter-cqhttp = "^2.0.0-alpha.16"
+playwright = "^1.17.2"
+lxml = "^4.6.4"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+nonebot2 = "^2.0.0-alpha.16"
+pillow = "^8.4.0"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple/"
