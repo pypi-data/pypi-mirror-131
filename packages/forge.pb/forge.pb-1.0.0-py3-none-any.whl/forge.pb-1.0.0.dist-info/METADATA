@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: forge.pb
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/provenance-io/forge.pb
+Author: Wyatt Baker
+Author-email: wbaker@figure.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: arrow (==1.2.1)
+Requires-Dist: certifi (==2021.10.8)
+Requires-Dist: charset-normalizer (==2.0.7)
+Requires-Dist: click (==8.0.3)
+Requires-Dist: decorator (==4.4.2)
+Requires-Dist: futures (==2.2.0)
+Requires-Dist: gitdb (==4.0.9)
+Requires-Dist: GitPython (==3.1.18)
+Requires-Dist: idna (==3.3)
+Requires-Dist: importlib-metadata (==4.8.2)
+Requires-Dist: networkx (==2.5.1)
+Requires-Dist: psutil (==5.8.0)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: smmap (==5.0.0)
+Requires-Dist: tornado (==6.1)
+Requires-Dist: typing-extensions (==4.0.0)
+Requires-Dist: urllib3 (==1.26.7)
+Requires-Dist: zipp (==3.6.0)
+
+# Forge.pb - Provenance Blockchain Process Manager
+
+## Description
+The Provenance Blockchain Manager is an application for automated startup of nodes on the [Provenance Blockchain](https://docs.provenance.io/) testnet, mainnet, or localnet which can be used for testing.
+
+## Usage
+In order to execute wizard, run:
+```sh
+forge interactive
+```
+* You will be prompted on what you want Forge to do. Selecting to bootstrap a node will allow you to select mainnet, testnet, or localnet.
+
+* Selecting any of the listed 3 would clone the [Provenance Repository](https://github.com/provenance-io/provenance) if it doesn't already exist, then the version information would be gathered either from the user in the case of localnet, or from mainnet/testnet information on github. 
+
+* The repo would then checkout to the release version and the binaries would be built, genesis file downloaded/constructed, and a command to run the node would be output to the console.
+
+
+### Forge comes with command line tools that can speed up the process.
+
+To get you started with a couple commands:
+
+Initialize and start a localnet node with default values:
+```sh
+forge node start
+```
+For a list of all commands:
+```sh
+forge --help
+```
+You can also drill into the individual commands for more help and additional commands:
+```sh
+forge node --help
+```
+
+## Version Info
+* Python 3.6
+
