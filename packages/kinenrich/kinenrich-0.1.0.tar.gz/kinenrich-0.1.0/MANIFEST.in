@@ -1,0 +1,6 @@
+#include README.rst
+
+# Include the data files
+include   kinenrich/kindictgene.csv
+include   kinenrich/kindictpro.csv
+include   kinenrich/unigenedict.csv

@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+kinenrich/__init__.py
+kinenrich/kindictgene.csv
+kinenrich/kindictpro.csv
+kinenrich/kinenrich.py
+kinenrich/unigenedict.csv
+kinenrich.egg-info/PKG-INFO
+kinenrich.egg-info/SOURCES.txt
+kinenrich.egg-info/dependency_links.txt
+kinenrich.egg-info/requires.txt
+kinenrich.egg-info/top_level.txt
