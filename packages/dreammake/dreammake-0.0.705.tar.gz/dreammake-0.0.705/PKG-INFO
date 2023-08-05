@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dreammake
+Version: 0.0.705
+Summary: A pygame based game engine made in python.
+Home-page: https://github.com/Boglov/Dreammake
+Author: Nitebound
+Author-email: zvisger@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Boglov/Dreammake/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Dreammake
+Game design simplified.
+
