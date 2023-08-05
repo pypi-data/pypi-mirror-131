@@ -1,0 +1,16 @@
+boto3
+
+[testing]
+pip~=21.3
+flake8
+tox
+coverage
+pytest
+pyflakes
+pytest-cov
+bandit
+black~=21.5b1
+isort
+wheel
+twine
+build
