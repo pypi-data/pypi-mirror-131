@@ -1,0 +1,4 @@
+[console_scripts]
+maze-hyper-opt = maze.maze_hyper_opt:maze_hyper_opt
+maze-run = maze.maze_cli:maze_run
+
