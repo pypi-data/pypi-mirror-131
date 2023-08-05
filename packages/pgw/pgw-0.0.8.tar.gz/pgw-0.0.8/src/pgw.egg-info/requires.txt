@@ -1,0 +1,11 @@
+cython
+pywin32
+pygame
+inputs
+pydub
+wxPython
+pyautogui
+moviepy
+pipwin
+wave
+opencv-python
