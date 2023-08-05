@@ -1,0 +1,9 @@
+pool_sharq/__init__.py,sha256=eQ8LTDVAsLmdUA9vBYFnN6onURgApo2INf-99S61ijQ,353
+pool_sharq/_fetch/_download_test_data.py,sha256=z_O72r6zHJ6OcK9vDzZJ840Pw_vwMvxboHzVzzD1OVw,715
+pool_sharq/_fetch/_poolq_downloader.py,sha256=0n_iasz6jEpuOFBwH4qP2iWQHxVGVwdTH0-EFJKn18Q,4754
+pool_sharq/_poolq_python/_poolq_module.py,sha256=lxqWOxUZhMp7vDt5Seh3RrTqhRLHMDELMuaYPJqNsWg,822
+pool_sharq-0.0.11.dist-info/LICENSE,sha256=Ff-4VTG-k3DmnDPrOey0wfFniUA6gNWMVvl2ozoPFm8,1072
+pool_sharq-0.0.11.dist-info/METADATA,sha256=g2GhR6qq84P0eLwuz_Az-51CUsvuJ1chBvud55Mj0Rw,1598
+pool_sharq-0.0.11.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pool_sharq-0.0.11.dist-info/top_level.txt,sha256=48pCSIYjdfsgKNcsy_UXE8TEyUk7BHSksgkjwKupEGM,11
+pool_sharq-0.0.11.dist-info/RECORD,,
