@@ -1,0 +1,6 @@
+marquez_airflow/__init__.py,sha256=QTPhhzn2jDzhuMHQAefOZBhIUZuGw6fGylETxh2ujvU,684
+marquez_airflow/dag.py,sha256=AT1U-yFbEoxKkiIJ5B7BkSTpovrSGZV7gSv7qxmp0go,581
+marquez_airflow-0.20.0.dist-info/METADATA,sha256=dLAALCux5dnCeTY_n8-cI_V2bHixBil0n3EviU7_nBc,883
+marquez_airflow-0.20.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+marquez_airflow-0.20.0.dist-info/top_level.txt,sha256=m11L2VVgjm_xl2CIZFOe2CJk1tOKudSMVndc_6u7FWg,16
+marquez_airflow-0.20.0.dist-info/RECORD,,
