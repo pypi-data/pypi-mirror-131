@@ -1,0 +1,12 @@
+README.md
+setup.py
+machine_parts_pp/__init__.py
+machine_parts_pp/dissimilarities.csv
+machine_parts_pp/machine_parts.json
+machine_parts_pp/parts.csv
+machine_parts_pp.egg-info/PKG-INFO
+machine_parts_pp.egg-info/SOURCES.txt
+machine_parts_pp.egg-info/dependency_links.txt
+machine_parts_pp.egg-info/not-zip-safe
+machine_parts_pp.egg-info/requires.txt
+machine_parts_pp.egg-info/top_level.txt
