@@ -1,0 +1,3 @@
+[console_scripts]
+cubexplain=cubexplain.commande_line:main
+
