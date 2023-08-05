@@ -1,0 +1,11 @@
+skippa/__init__.py,sha256=ESK3CuKQUIZGUzWgzEOCwIeF-q3wlTzHqNMgMKaTGzk,359
+skippa/pipeline.py,sha256=xiBTlThpU8SYPeJEedkany6NaSxd-DFwuhuaKStjjy4,12170
+skippa/transformers/__init__.py,sha256=ERmmOxz_9mUkIuccNbzUa5Y6gVLLVDdyc4cCxbCCUbY,20
+skippa/transformers/base.py,sha256=PXPdbvXzWgIGJthBSXgiRrT0Oo0F241AYvNwO982Tqw,4537
+skippa/transformers/custom.py,sha256=5Q1zQsEuPVwx9yXgyWDOGmdrTh-vuBwj-oBjlEDRTxk,7209
+skippa/transformers/sklearn.py,sha256=Zm8bo_AVSV8Xstjm0aBg7oYMECZQ2Zdx8IE5iuVyklE,4080
+skippa-0.1.5.dist-info/LICENSE,sha256=aX_bk6QyguvX2gOe3Yb3Tg4NdvPs15WVQvBOetDXaoE,1511
+skippa-0.1.5.dist-info/METADATA,sha256=Cj1KUdUCKQ8yw5MlP9S_g85qQN5mlRzke4S0VhBKIB8,4748
+skippa-0.1.5.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+skippa-0.1.5.dist-info/top_level.txt,sha256=zZ8RD3r2mCnIw7Z0OmorKhum5LTPa1a_MMi3_6xjKik,7
+skippa-0.1.5.dist-info/RECORD,,
