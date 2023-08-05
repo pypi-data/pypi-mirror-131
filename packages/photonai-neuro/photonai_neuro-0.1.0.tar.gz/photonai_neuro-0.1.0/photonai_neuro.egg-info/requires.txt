@@ -1,0 +1,4 @@
+photonai
+nibabel
+nilearn
+scikit-image
