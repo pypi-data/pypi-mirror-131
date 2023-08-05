@@ -1,0 +1,6 @@
+#!python
+import sys
+import pydbt.main
+
+if __name__ == "__main__":
+    pydbt.main.main(sys.argv)

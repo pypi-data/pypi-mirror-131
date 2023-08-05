@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pydbt
+Version: 0.6.0
+Summary: Python dbt executor with customizable logging and alerting
+Home-page: https://github.com/henriblancke/dbt-py
+Author: Henri Blancke
+Author-email: blanckehenri@gmail.com
+License: MIT
+Platform: any
+Requires-Python: >=3.6
+Requires-Dist: dbt-core (==1.0.*)
+Requires-Dist: datadog (==0.40.1)
+Requires-Dist: python-dotenv (==0.17.0)
+Requires-Dist: pygments (>=2.4.0)
+Requires-Dist: sentry-sdk (==1.4.*)
+Requires-Dist: prometheus-client (==0.11.0)
+Provides-Extra: dev
+Requires-Dist: flake8 (~=3.9.2) ; extra == 'dev'
+Requires-Dist: pytest (~=6.2.4) ; extra == 'dev'
+Requires-Dist: pytest-cov (~=2.12.1) ; extra == 'dev'
+Requires-Dist: yapf (~=0.21.0) ; extra == 'dev'
+Requires-Dist: mock (~=2.0.0) ; extra == 'dev'
+
+Python dbt executor with custom logging and alerting that fits into your stack
+
+
