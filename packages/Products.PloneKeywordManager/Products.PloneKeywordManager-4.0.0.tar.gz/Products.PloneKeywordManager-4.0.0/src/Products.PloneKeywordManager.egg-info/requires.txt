@@ -1,0 +1,12 @@
+plone.api
+setuptools
+
+[Levenshtein]
+python-Levenshtein
+
+[dev]
+pdbpp
+
+[test]
+plone.app.testing
+plone.app.contenttypes[test]
