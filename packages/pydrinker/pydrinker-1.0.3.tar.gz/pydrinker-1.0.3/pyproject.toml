@@ -1,0 +1,58 @@
+[tool.black]
+line-length = 110
+target-version = ["py37"]
+
+[tool.isort]
+line_length = 110
+multi_line_output = 3
+known_localfolder = ["pydrinker", "tests"]
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "LOCALFOLDER"]
+default_section = "THIRDPARTY"
+include_trailing_comma = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-vv --cov=pydrinker --cov-report=term-missing"
+
+[tool.poetry]
+name = "pydrinker"
+version = "1.0.3"
+description = "The most amazing lib to drink (consume) message from your queue provider of preference"
+authors = ["Rafael Henrique da Silva Correia <rafael@abraseucodigo.com.br>"]
+keywords = ["pub-sub", "queue", "consumer", "message-broker"]
+readme = "README.md"
+license = "LGPLv3"
+include = ["LICENSE"]
+homepage = "https://github.com/rafaelhenrique/pydrinker"
+repository = "https://github.com/rafaelhenrique/pydrinker"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: System :: Distributed Computing",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+]
+packages = [
+    {include = "pydrinker"}
+]
+
+[tool.poetry.extras]
+gcp = ["pydrinker-gcp"]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+pydrinker-loafer = "^1.0.1"
+pydrinker-gcp = { version = "^1.1.2", optional = true }
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-asyncio = "^0.15.1"
+pytest-cov = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
