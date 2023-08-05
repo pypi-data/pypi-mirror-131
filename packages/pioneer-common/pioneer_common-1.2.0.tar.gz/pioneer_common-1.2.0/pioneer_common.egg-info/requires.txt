@@ -1,0 +1,14 @@
+future
+matplotlib
+numpy
+open3d==0.10
+opencv-python
+ruamel.std.zipfile
+scikit-build
+scipy
+shapely
+sk-video
+sklearn
+tqdm
+transforms3d
+utm
