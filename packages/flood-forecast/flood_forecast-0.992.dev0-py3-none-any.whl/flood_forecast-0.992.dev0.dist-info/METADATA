@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: flood-forecast
+Version: 0.992.dev0
+Summary: An open source framework for deep time series forecasting built with PyTorch.
+Home-page: UNKNOWN
+License: GPL 3.0
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: shap (==0.40.0)
+Requires-Dist: scikit-learn (==0.24.2)
+Requires-Dist: pandas
+Requires-Dist: torch
+Requires-Dist: tb-nightly
+Requires-Dist: seaborn
+Requires-Dist: future
+Requires-Dist: h5py
+Requires-Dist: wandb (==0.12.7)
+Requires-Dist: google-cloud
+Requires-Dist: google-cloud-storage
+Requires-Dist: pyyaml
+Requires-Dist: plotly (~=5.1.0)
+Requires-Dist: pytz (~=2021.3)
+Requires-Dist: setuptools (~=59.0.1)
+Requires-Dist: numpy (==1.20)
+Requires-Dist: requests
+Requires-Dist: torchvision (>=0.6.0)
+Requires-Dist: mpld3 (~=0.5)
+Requires-Dist: numba (>=0.50)
+Requires-Dist: sphinx
+Requires-Dist: sphinx-rtd-theme
+Requires-Dist: sphinx-autodoc-typehints
+Provides-Extra: dev
+Requires-Dist: autopep8 ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+
+Flow Forecast is the top open source deep learning for time series forecasting and classification framework. We were the original TS framework to contain models like the transformer and have now expanded to include all popular deep learning models.
+
