@@ -1,0 +1,10 @@
+LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+pydrinker_gcp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydrinker_gcp/base.py,sha256=6AdL851pZh7DMc0r814ZQvIs_H2is9aCZ1QLW2cp2_o,2133
+pydrinker_gcp/message_translators.py,sha256=yVKeNTncrcZNfepaEg6OyjElgyzcHduspmPdKJvXmfk,1539
+pydrinker_gcp/providers.py,sha256=irUl7O5dUcDlVkEqEq7kVopJUhFHp_5vtZKAcPD17zQ,2372
+pydrinker_gcp/routes.py,sha256=UcxF9zC26NEehMZ4VcmjSekBim438tj2tx3DgupNUoo,820
+pydrinker_gcp-1.1.2.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+pydrinker_gcp-1.1.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pydrinker_gcp-1.1.2.dist-info/METADATA,sha256=HZ9yvAqaMvJppo5w8fGwd1yOr4HK-rXexKKeGNd-o3E,1519
+pydrinker_gcp-1.1.2.dist-info/RECORD,,
