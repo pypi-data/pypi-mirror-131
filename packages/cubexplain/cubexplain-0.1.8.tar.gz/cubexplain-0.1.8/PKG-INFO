@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cubexplain
+Version: 0.1.8
+Summary: 
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: atoti[sql]
+Requires-Dist: certifi
+Requires-Dist: pandas
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: watchdog (>=2.1.6,<3.0.0)
