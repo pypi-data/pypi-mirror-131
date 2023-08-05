@@ -1,0 +1,3 @@
+[console_scripts]
+frabitd = frabit.cli:main
+
