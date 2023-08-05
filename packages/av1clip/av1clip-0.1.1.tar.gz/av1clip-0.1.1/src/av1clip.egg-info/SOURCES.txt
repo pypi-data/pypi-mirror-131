@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/av1clip/__init__.py
+src/av1clip/av1clip.py
+src/av1clip.egg-info/PKG-INFO
+src/av1clip.egg-info/SOURCES.txt
+src/av1clip.egg-info/dependency_links.txt
+src/av1clip.egg-info/entry_points.txt
+src/av1clip.egg-info/top_level.txt
