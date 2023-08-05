@@ -1,0 +1,10 @@
+[BASIC]
+good-names=_,a,b,c,d,e,ex,i,j,k,n,p,rv,t,v,db
+
+[MASTER]
+disable=
+    C0114, # missing-module-docstring
+    C0116, # Missing function or method docstring
+    R0903, # Too few public methods
+    R0201, # Method could be a function
+    C0115, # Missing class docstring
