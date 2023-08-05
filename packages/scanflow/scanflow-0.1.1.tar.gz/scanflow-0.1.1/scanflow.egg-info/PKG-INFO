@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: scanflow
+Version: 0.1.1
+Summary: An MLOps Platform
+Home-page: UNKNOWN
+Author: BSC Scanflow Team
+Author-email: peini.liu@bsc.es
+License: MIT license
+Description: UNKNOWN
+Keywords: scanflow,kubernetes,mlflow,argo,seldon
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: dev
