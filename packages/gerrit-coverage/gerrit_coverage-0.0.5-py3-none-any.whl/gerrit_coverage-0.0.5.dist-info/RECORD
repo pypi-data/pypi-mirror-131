@@ -1,0 +1,10 @@
+gerrit_coverage/__init__.py,sha256=-70tIuK_GxdrikuyvkY1M2iFr--kTL_0fi8dzIt6Qm8,2011
+gerrit_coverage/__main__.py,sha256=5X1Wf8wtjy-5Ti6ncjZkPz-19RyJ0oNLuCZ0tVh3eT8,47
+gerrit_coverage/condense.py,sha256=hsKllnETGnrwGdscUQ2Yne-glXWBlWQIyuh1D-WI60Q,776
+gerrit_coverage/gerrit_coverage.py,sha256=7XtVqm6DPgveGeTL-LUtxK3QVbVuUH7mqv7D5DosFEo,3961
+gerrit_coverage-0.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gerrit_coverage-0.0.5.dist-info/METADATA,sha256=SJFBnsQhg41NnjVQMc_ceWPxNbqAb8Yio0nDVeVl8h4,935
+gerrit_coverage-0.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+gerrit_coverage-0.0.5.dist-info/entry_points.txt,sha256=2uf4as-hv1rqWiiBIGqxqaK7EWAU1Pohy-ww3RubZDU,122
+gerrit_coverage-0.0.5.dist-info/top_level.txt,sha256=Npd-RYnd-I7Yo76OhOh5THw5yra1OY4ijka5ZG5yEWI,16
+gerrit_coverage-0.0.5.dist-info/RECORD,,
