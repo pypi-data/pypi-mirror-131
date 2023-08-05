@@ -1,0 +1,3 @@
+[console_scripts]
+sheet2linkml=sheet2linkml.cli:main
+
