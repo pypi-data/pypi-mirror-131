@@ -1,0 +1,101 @@
+id;type;sex;familyStatus;age
+id1;active;male;married;28
+id2;active;male;married;33
+id3;active;female;not married;26
+id4;active;female;not married;22
+id5;active;male;married;26
+id6;active;male;married;21
+id7;active;male;married;20
+id8;active;male;married;31
+id9;active;female;not married;26
+id10;active;male;not married;43
+id11;active;female;married;43
+id12;active;male;married;21
+id13;active;male;not married;33
+id14;active;male;married;29
+id15;active;female;not married;32
+id16;active;male;married;27
+id17;active;male;married;34
+id18;active;male;married;33
+id19;active;female;married;37
+id20;active;female;not married;25
+id21;active;male;not married;25
+id22;active;female;married;33
+id23;active;male;married;27
+id24;active;male;not married;37
+id25;active;male;married;21
+id26;active;male;married;41
+id27;active;male;not married;30
+id28;active;male;married;34
+id29;active;male;not married;37
+id30;active;male;married;38
+id31;active;male;married;25
+id32;active;male;married;34
+id33;active;male;not married;28
+id34;active;female;married;42
+id35;active;male;not married;23
+id36;active;male;married;41
+id37;active;male;not married;25
+id38;active;male;married;24
+id39;active;female;married;30
+id40;active;male;not married;34
+id41;active;male;not married;29
+id42;active;male;not married;25
+id43;active;male;not married;27
+id44;active;male;married;38
+id45;active;male;not married;23
+id46;active;male;not married;37
+id47;active;female;married;32
+id48;active;male;married;20
+id49;active;female;not married;52
+id50;active;male;married;23
+id51;active;male;married;30
+id52;active;female;not married;40
+id53;active;male;married;36
+id54;active;male;not married;20
+id55;active;male;not married;20
+id56;active;male;married;40
+id57;active;male;not married;23
+id58;active;male;married;47
+id59;active;male;married;26
+id60;active;male;not married;44
+id61;active;male;not married;21
+id62;active;male;married;20
+id63;active;male;married;43
+id64;active;female;married;42
+id65;active;male;married;28
+id66;active;female;married;20
+id67;retired;male;married;56
+id68;retired;female;married;56
+id69;retired;female;married;56
+id70;retired;female;married;56
+id71;retired;female;married;56
+id72;retired;female;married;56
+id73;retired;male;married;56
+id74;retired;male;married;70
+id75;retired;male;married;71
+id76;retired;male;married;72
+id77;retired;male;married;73
+id78;retired;male;married;74
+id79;retired;male;married;75
+id80;retired;male;married;76
+id81;retired;male;married;77
+id82;retired;male;married;78
+id83;retired;male;married;79
+id84;retired;female;married;71
+id85;retired;female;married;72
+id86;retired;female;married;73
+id87;retired;female;married;74
+id88;retired;female;married;75
+id89;retired;female;married;76
+id90;retired;female;married;77
+id91;retired;female;married;78
+id92;retired;female;not married;79
+id93;retired;female;not married;71
+id94;retired;female;not married;72
+id95;retired;female;not married;73
+id96;retired;female;not married;74
+id97;retired;female;not married;75
+id98;retired;female;not married;76
+id99;retired;female;not married;77
+id100;retired;female;not married;78

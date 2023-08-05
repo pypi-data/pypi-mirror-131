@@ -1,0 +1,25 @@
+pop_projection/Actuariat.py,sha256=ABzzIbQXPG5P6Ghx5t0s--f0d5YhLnQedxQ47FQ2hnI,6160
+pop_projection/Cashflows.py,sha256=0TjXm8BA5FvCKjQ1n-aSxSptfy1IzmmOUzpR2u8yy5I,10199
+pop_projection/Effectifs.py,sha256=KJ0cwjj7w27QcVDrp1ffy_3Ok-pwcrq_6a9MGIcxDwE,79206
+pop_projection/Groupes.py,sha256=h-SyMC5qpmBnD4Omj1Y37LeOGJWrbS_0nGoA_tZL-vE,11398
+pop_projection/__init__.py,sha256=mdrMdbCXmcHPVO-cDKFijshBiVDsJZ8xC1axJ5Vh7iQ,21
+pop_projection/sample_laws.py,sha256=ldOwrwHyin_6GCpoNoALKgob4HpJgqDyopoFyHoN_qI,2865
+pop_projection/tools.py,sha256=iNTcrFN9hQ3rKqWZjUgootlwa1j2QliiPPu5GYSz9cY,5583
+pop_projection/data/children.csv,sha256=ER8K_ULM4WGyXEqUy7jP9biJ5yg7fAs8DXJO094gnLE,3050
+pop_projection/data/employees - Copie.csv,sha256=WR3P_qSgkMFX8cpalVmw5mGwLOwNJG_Pcb7q14g6erg,3073
+pop_projection/data/employees.csv,sha256=dqm0bcT5W84Vh_nZhaa7Ylcu97AFqkfaMLg-2iF7xzs,4982
+pop_projection/data/globnum.csv,sha256=AJEWuggZg8PP5Qn3ggI2l6kqwYRl8V8duRpJk4UTvTM,1983
+pop_projection/data/pensions.csv,sha256=t5YcVG2h2xEUSXlSa63zrMpXd5QskBIXVvmuhDNxcQQ,1054
+pop_projection/data/rate_contr.csv,sha256=zXOHwWGPxRMwys45sb0RgRqM2Y9Sohl51YHp0N16Va8,408
+pop_projection/data/salaries.csv,sha256=Z-XBPpbe8uows-HtXFPxtHcPngDFV88ueI_Pzi3eXHU,1102
+pop_projection/data/spouses.csv,sha256=HAvgH6bX7g6vjYQrdDaMOYhAD5NHXl4LhyksyDl7aIY,2939
+pop_projection/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pop_projection/test/asupprimer.py,sha256=XdVvOn54c65z2gJzQ-uB7Uj4_pqAFUgufb9AwwJ3VgA,4427
+pop_projection/test/test_Effectifs.py,sha256=XmUF3TZtGtlIX_BXFEcuceIiCFbXc9CYJwSQQM0dLKE,10900
+pop_projection/test/data/children.csv,sha256=ER8K_ULM4WGyXEqUy7jP9biJ5yg7fAs8DXJO094gnLE,3050
+pop_projection/test/data/employees.csv,sha256=TjPQ6CgYibavI3l8Q4D1ORg0iQWnb-Z0y_f2LxF8Pi0,6024
+pop_projection/test/data/spouses.csv,sha256=HAvgH6bX7g6vjYQrdDaMOYhAD5NHXl4LhyksyDl7aIY,2939
+pop_projection-3.0.0.dist-info/METADATA,sha256=A_mO1Xahx60kkC5DK9uGCCYqQq4j217mhvy1sRrQlp4,5731
+pop_projection-3.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pop_projection-3.0.0.dist-info/top_level.txt,sha256=LSgt_OMbkIJlZ3fZTNmBugSNth6QtThDrnK-jiBSCNA,15
+pop_projection-3.0.0.dist-info/RECORD,,
