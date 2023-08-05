@@ -1,0 +1,12 @@
+localstack-client~=1.28
+lxml~=4.6
+pyspark>=2.7
+
+[:python_version == "3.6"]
+dataclasses
+
+[all]
+boto3
+
+[boto3]
+boto3
