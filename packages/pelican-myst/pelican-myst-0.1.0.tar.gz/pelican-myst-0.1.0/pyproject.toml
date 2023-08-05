@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "pelican-myst"
+version = "0.1.0"
+description = "A Pelican Myst reader"
+authors = ["Axel H. <noirbizarre@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+pelican = ">=4.0,<5.0"
+PyYAML = "^6.0"
+
+# [tool.poetry.group.lint.dependencies]
+black = {version = "^21.9b0", allow-prereleases = true, optional = true}
+flake8 = {version = "*", optional = true}
+isort = {version = "^5.9.3", optional = true}
+
+# [tool.poetry.group.test.dependencies]
+pyquery = {version = "^1.4.3", optional = true}
+pytest = {version = "^6.2.5", optional = true}
+pytest-cov = {version = "^3.0.0", optional = true}
+pytest-pythonpath = {version = "^0.7.3", optional = true}
+pytest-sugar = {version = "^0.9.4", optional = true}
+markdown-it-py = {extras = ["linkify", "plugins"], version = "^2.0.0"}
+
+[tool.poetry.extras]
+test = [
+  "pytest",
+  "pytest-cov",
+  "pytest-sugar",
+  "pytest-pythonpath",
+  "pyquery",
+]
+lint = [
+  "flake8",
+  "mypy",
+  "black",
+  "isort",
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+norecursedirs = ".git build dist"
+testpaths = "tests"

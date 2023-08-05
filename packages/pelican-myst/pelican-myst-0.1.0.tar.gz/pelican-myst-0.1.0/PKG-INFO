@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pelican-myst
+Version: 0.1.0
+Summary: A Pelican Myst reader
+License: MIT
+Author: Axel H.
+Author-email: noirbizarre@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: lint
+Provides-Extra: test
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: black (>=21.9b0,<22.0); extra == "lint"
+Requires-Dist: flake8; extra == "lint"
+Requires-Dist: isort (>=5.9.3,<6.0.0); extra == "lint"
+Requires-Dist: markdown-it-py[plugins,linkify] (>=2.0.0,<3.0.0)
+Requires-Dist: pelican (>=4.0,<5.0)
+Requires-Dist: pyquery (>=1.4.3,<2.0.0); extra == "test"
+Requires-Dist: pytest (>=6.2.5,<7.0.0); extra == "test"
+Requires-Dist: pytest-cov (>=3.0.0,<4.0.0); extra == "test"
+Requires-Dist: pytest-pythonpath (>=0.7.3,<0.8.0); extra == "test"
+Requires-Dist: pytest-sugar (>=0.9.4,<0.10.0); extra == "test"
