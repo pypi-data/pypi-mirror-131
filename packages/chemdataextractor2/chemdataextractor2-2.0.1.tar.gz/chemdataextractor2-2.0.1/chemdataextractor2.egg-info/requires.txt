@@ -1,0 +1,24 @@
+appdirs
+beautifulsoup4
+click==6.7
+cssselect
+lxml
+nltk
+pdfminer.six
+python-dateutil
+requests==2.21.0
+six
+python-crfsuite
+TableDataExtractor@ git+https://github.com/CambridgeMolecularEngineering/tabledataextractor
+PyYAML
+selenium==3.141.0
+numpy
+scipy
+
+[:python_version < "3.7.0"]
+DAWG
+numpy==1.16
+
+[:python_version >= "3.7.0"]
+DAWG@ git+https://github.com/ti250/DAWG-patched
+numpy>=1.16
