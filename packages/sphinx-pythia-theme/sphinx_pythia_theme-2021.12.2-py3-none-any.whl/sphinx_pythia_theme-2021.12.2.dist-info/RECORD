@@ -1,0 +1,15 @@
+sphinx_pythia_theme/__init__.py,sha256=LRudb15_HvZd372bkYz1OPVsBCuol1yJSxoLK0FZPnA,4456
+sphinx_pythia_theme/banner.py,sha256=8wJLyFVWEtRHnSIi7lUI2IkDVzP9Yuatim3mCSuirIU,2058
+sphinx_pythia_theme/footer.html,sha256=PlDQcN9xoxTBG5kh3CZ_nCp3vYiYHwSWWDFlIRMx01w,2212
+sphinx_pythia_theme/header.html,sha256=KCNeKa2Ty03ShkvSsO6ZbX2G98mk5QOwInaw0zsHbAk,1062
+sphinx_pythia_theme/layout.html,sha256=ndz80sVG7_IBiGVDkPQw6fbCXaOPspjC1x5huzEyrjM,1469
+sphinx_pythia_theme/theme.conf,sha256=zG0Pv5LN5ywAsjrnyvn-SvwFTzhFQFJyK5Dwtr2ojTk,222
+sphinx_pythia_theme/_templates/prev-next.html,sha256=XAIZxI4OYrinJE3QQ4Al5XVcc7U-wI5OcgfuFfy0dHM,667
+sphinx_pythia_theme/static/sphinx-pythia-theme.min.css,sha256=FTxzllkOFPJbT3UgO9PwInxpz0XyuYWWGK8u9H0uKEs,5199
+sphinx_pythia_theme/static/sphinx-pythia-theme.min.js,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sphinx_pythia_theme-2021.12.2.dist-info/LICENSE,sha256=_qJuMp5913P77iW5A6b83Wo41on3mDtiWSy9RwoARFA,11355
+sphinx_pythia_theme-2021.12.2.dist-info/METADATA,sha256=74O66KdCoWYDFTbTUFdVc8yxt5oatiUC7HZG9VruTg0,1248
+sphinx_pythia_theme-2021.12.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+sphinx_pythia_theme-2021.12.2.dist-info/entry_points.txt,sha256=tz1KqllvDxw0Z34Qy1B6B6WZKemBhYU7jAcjjKmwzaU,64
+sphinx_pythia_theme-2021.12.2.dist-info/top_level.txt,sha256=KvA_xct7XDivtFb8fMS4vGCoHIOhr0TSN9OYOCfqdTM,20
+sphinx_pythia_theme-2021.12.2.dist-info/RECORD,,

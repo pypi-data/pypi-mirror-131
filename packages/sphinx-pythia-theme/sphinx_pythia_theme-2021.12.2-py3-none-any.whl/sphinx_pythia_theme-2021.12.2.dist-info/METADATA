@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: sphinx-pythia-theme
+Version: 2021.12.2
+Summary: Sphinx Pythia Theme
+Home-page: https://github.com/ProjectPythia/sphinx-pythia-theme
+Author: Kevin Paul
+Author-email: kpaul@ucar.edu
+License: Apache 2.0
+Project-URL: Documentation, https://projectpythia.org
+Project-URL: Source, https://github.com/ProjectPythia/sphinx-pythia-theme
+Project-URL: Tracker, https://github.com/ProjectPythia/sphinx-pythia-theme/issues
+Keywords: reproducible science environments scholarship notebook
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Documentation
+Description-Content-Type: text/markdown
+Requires-Dist: sphinx-book-theme (>=0.1.7)
+
+# Sphinx Pythia Theme
+
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/ProjectPythia/sphinx-pythia-theme/main.svg)](https://results.pre-commit.ci/latest/github/ProjectPythia/sphinx-pythia-theme/main)
+
+
