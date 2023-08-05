@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['finpack', 'finpack.core', 'finpack.reports']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['docopt>=0.6.2,<0.7.0']
+
+entry_points = \
+{'console_scripts': ['finpack = finpack.core.cli:main']}
+
+setup_kwargs = {
+    'name': 'finpack',
+    'version': '0.2.1',
+    'description': 'Super simple financial tracking.',
+    'long_description': '![Alt text](logo.png?raw=true "logo")\n\n# Personal Finance Package (FinPack)\n\nSuper simple personal finance tracking.\n\nBuild balance sheets and cashflow statements.\n\nChart your net worth, asset allocation, financial independence trajectory and much more.\n\n---\n\n## Table of Contents\n\n- [Installation](#installation-for-development)\n- [Running Tests and Checking Coverage](#running-tests-and-checking-coverage)\n- [Deployment](#deployment)\n- [How to Use](#how-to-use)\n  - [Generating the boilerplate data.csv](#generating-the-boilerplate-datacsv)\n  - [Manually adding data to data.csv](#manually-adding-data-to-datacsv)\n  - [Account Structure in data.csv](#account-structure-in-datacsv)\n  - [Example CSV](#example-csv)\n- [Contributing](#contributing)\n- [Versioning](#versioning)\n- [Authors](#authors)\n\n---\n\n## Installation (for development)\n\nThese instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.\n\n1. Fork this repo\n2. Install [Git](https://git-scm.com/downloads), [Python 3.9+](https://www.python.org/downloads/) and [Poetry](https://python-poetry.org/docs/#installation)\n3. Clone the newly forked repo to your computer\n4. Inside `FinPack/` run `poetry install`\n\n## Running Tests and Checking Coverage\n\nTests are created using unittest but are run with pytest (ensure you follow the [Installation (for development)](#installation-for-development) steps before running tests and checking test coverage):\n\n```\n$ poetry run pytest -v --cov\n```\n\n## Deployment\n\nThis package can be installed with the following command:\n\n```\npip install finpack\n```\n\n## How To Use\n\n```\n  ______ _       _____           _\n |  ____(_)     |  __ \\         | |\n | |__   _ _ __ | |__) |_ _  ___| | __\n |  __| | | \'_ \\|  ___/ _` |/ __| |/ /\n | |    | | | | | |  | (_| | (__|   <\n |_|    |_|_| |_|_|   \\__,_|\\___|_|\\_\\\n\nSuper simple personal finance tracking/management tools.\n\nCommands:\n    init        Generate boilerplate data.csv\n    balsheet    Outputs balance sheet to terminal\n\nUsage:\n    finpack init [--filepath=filepath] [--sample-dataset] [--overwrite]\n    finpack balsheet [--filepath=filepath] [--levels=level] [--date=date]\n    finpack (--version | --help | -h)\n\nOptions:\n    --filepath=filepath         Location of the account list. [default: data.csv]\n    --levels=level              How deep of a breakdown on the report [default: 3]\n                                    1 Categories\n                                    2 Categories + Sub-categories\n                                    3 Categories + Sub-categories + accounts\n    --overwrite                 Write over existing file\n    --date=date                 Custom date to build report (YYYY-MM-DD) [default: today]\n    -v --version                Display installed version\n    -h --help                   Show available commands\n```\n\n### Generating the boilerplate data.csv:\n\nThe following will generate `data.csv`.\n\n```\nfinpack init\n\nor\n\nfinpack init --filepath=data.csv\n```\n\n### Manually adding data to `data.csv`:\n\nData can be added manually to this csv file as long as you follow these standards:\n\n- Duplicate account names are only permitted if account types are different\n- Account types are always lowercase\n- Dates are always formatted `YYYY-MM-DD`\n\n### Account Structure in `data.csv`:\n\n| Types        | Description                                                         |\n| ------------ | ------------------------------------------------------------------- |\n| account      | Determined and configured by user (examples below)                  |\n| type         | Pre-determined values (assets, liabilities, incomes, expenses)      |\n| category     | Determined and configured by user (examples below)                  |\n| sub_category | Determined and configured by user (examples below)                  |\n| description  | Determined and configured by user, best for supplement account data |\n\n### Example CSV:\n\nThis is an example print out of what `finpack init --sample-dataset` will output to `data.csv`\n\n`YYYY-MM-DD` is set dynamically when using `finpack init` and will be the current date.\n\n| account                    | type      | category                  | sub_category     | description | YYYY-MM-DD |\n| -------------------------- | --------- | ------------------------- | ---------------- | ----------- | ---------- |\n| Checking Account 1         | asset     | Cash and Cash Equivalents | Checking Account |             | 1000.00    |\n| Checking Account 2         | asset     | Cash and Cash Equivalents | Checking Account |             | 2000.00    |\n| Savings Account 1          | asset     | Cash and Cash Equivalents | Savings Account  |             | 5000.00    |\n| Retirement Savings Account | asset     | Retirement Accounts       | 401(k)s          |             | 20000.00   |\n| 123 Main St.               | asset     | Property                  | Real Estate      |             | 200000.00  |\n| 123 Main St.               | liability | Loans and Mortgages       | Mortgages        |             | 150000.00  |\n| Student Loan 1             | liability | Loans and Mortgages       | Student Loans    |             | 10000.00   |\n| Student Loan 2             | liability | Loans and Mortgages       | Student Loans    |             | 10000.00   |\n\n## Contributing\n\nPlease read [CONTRIBUTING.md](#) for details on our code of conduct, and the process for submitting pull requests to us.\n\n## Versioning\n\nWe use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/RackReaver/FinPack/tags).\n\n## Authors\n\n- **Matt Ferreira** - _Developer_ - [RackReaver](https://github.com/RackReaver)\n\nSee also the list of [contributors](#) who participated in this project.\n',
+    'author': 'rackreaver',
+    'author_email': 'rackreaver@gmail.com',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': 'https://github.com/RackReaver/FinPack',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'entry_points': entry_points,
+    'python_requires': '>=3.9,<4.0',
+}
+
+
+setup(**setup_kwargs)
