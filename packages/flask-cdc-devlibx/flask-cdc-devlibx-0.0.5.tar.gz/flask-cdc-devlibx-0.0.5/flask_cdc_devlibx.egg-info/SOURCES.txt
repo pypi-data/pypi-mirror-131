@@ -1,0 +1,12 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+./flask_cdc/cdc.py
+flask_cdc_devlibx.egg-info/PKG-INFO
+flask_cdc_devlibx.egg-info/SOURCES.txt
+flask_cdc_devlibx.egg-info/dependency_links.txt
+flask_cdc_devlibx.egg-info/requires.txt
+flask_cdc_devlibx.egg-info/top_level.txt
