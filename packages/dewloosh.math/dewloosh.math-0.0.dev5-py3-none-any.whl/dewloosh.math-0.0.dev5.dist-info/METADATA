@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: dewloosh.math
+Version: 0.0.dev5
+Summary: A numerical math library for applications in various bramches of science and engineering
+Home-page: https://github.com/dewloosh/dewloosh-math
+Author: dewloosh
+Author-email: dewloosh@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/dewloosh/dewloosh-math/archive/refs/tags/0_0_dev5.zip
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: dewloosh.core
+Requires-Dist: scipy
+Requires-Dist: awkward
+Requires-Dist: numba
+Requires-Dist: networkx
+Requires-Dist: sympy
+
+# polydata
+A package to build and manage polygonal data
+
+
