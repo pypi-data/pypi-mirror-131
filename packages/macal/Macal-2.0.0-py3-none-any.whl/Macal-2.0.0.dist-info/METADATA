@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: Macal
+Version: 2.0.0
+Summary: Specialized scripting language
+Home-page: https://github.com/Sama-Developer/macal
+Author: Marco Caspers
+Author-email: marco.caspers@westcon.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Sama-Developer/macal/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Macal Package
+
+This is the installation package for Macal, a Python script Language by Marco Caspers.
+
+Macal was developed for a limited and specific use.
+
+Creating a human and machine readable configuration file that loads data, transforms the data and emits the data.
+Loading happens by calling functions from libraries specific to a particular (Rest/XML) API.
+
+Emitting data is currently limited to the console and SysLog.
+
+In the tests folder find the test.py utility that contains several tests.
+
+13-12-2021:
+Please note that this package was previously called pyql, however there already existed a pyql project so i renamed it.
+
+Whats new in 2.0:
+
+- Fully revised lexer, parser and interpreter.
+- Script language now support defining functions.
+- The interface for libraries was changed to make it much easier to write libraries.
+- Published on github in a private repository.
+- Extension for examples changed from .pyql into .mcl
+- Examples in example subfolder
+- Removed http library, may be re-added later
+- Removed external dependancies due to removal of http library
+- Changed interface of syslog commands
+
+
+
+
