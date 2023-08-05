@@ -1,0 +1,3 @@
+[console_scripts]
+fastwsgi = fastwsgi:run_from_cli
+
