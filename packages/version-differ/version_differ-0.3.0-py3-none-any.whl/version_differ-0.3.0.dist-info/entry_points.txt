@@ -1,0 +1,3 @@
+[console_scripts]
+version-differ=version_differ.__main__:main
+
