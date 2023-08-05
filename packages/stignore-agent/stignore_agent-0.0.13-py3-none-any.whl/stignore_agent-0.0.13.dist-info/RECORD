@@ -1,0 +1,9 @@
+stignore_agent/__init__.py,sha256=LGwWBsMkcF8fU-IKsAawIC_Mqcx44x7-byO8cNEHmag,83
+stignore_agent/app.py,sha256=QMmIcsHwnoZfMgO0os85VG-F632wypPWusG-VO7wSB4,8800
+stignore_agent/helpers.py,sha256=uG5twFOF-nm9eqQxN0EuHl3d2karah5dcPKLu-bxw_Q,3828
+stignore_agent-0.0.13.data/scripts/stignore-agent,sha256=216-kn8N5bmh8hskMFYV20lvQQRiR0UqZCV8Q8_YV-A,2149
+stignore_agent-0.0.13.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+stignore_agent-0.0.13.dist-info/METADATA,sha256=mMIaBfL2mWk1RLMfoFxv3j4Wu_BPUyoHv6-K3ePPDAs,1352
+stignore_agent-0.0.13.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+stignore_agent-0.0.13.dist-info/top_level.txt,sha256=xyZhkiyv6lonSbIMaFC8M9aEKd9l5zByfo4QZCnxLlI,15
+stignore_agent-0.0.13.dist-info/RECORD,,
