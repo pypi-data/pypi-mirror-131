@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: dbt-airflow-manifest-parser
+Version: 0.15.0
+Summary: Library to convert DBT manifest metadata to Airflow tasks
+Home-page: https://github.com/getindata/dbt-airflow-manifest-parser/
+Author: Piotr Pekala
+Author-email: piotr.pekala@getindata.com
+License: Apache Software License (Apache 2.0)
+Keywords: dbt airflow manifest parser python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Provides-Extra: docs
+License-File: LICENSE
+
+# DBT Airflow Manifest Parser
+
+## About
+
+Library to convert DBT manifest metadata to Airflow tasks
+
+
