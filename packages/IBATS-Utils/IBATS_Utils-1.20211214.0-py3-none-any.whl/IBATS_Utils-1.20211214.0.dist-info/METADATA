@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: IBATS-Utils
+Version: 1.20211214.0
+Summary: IBATS 通用工具，该工具涉及数据库、量化、以及一些通用工具
+Home-page: https://github.com/IBATS/IBATS_Utils
+Author: MG
+Author-email: mmmaaaggg@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (>=0.24.0)
+Requires-Dist: redis (>=2.10.6)
+Requires-Dist: SQLAlchemy (>=1.2.8)
+Requires-Dist: xlrd (>=1.1.0)
+Requires-Dist: matplotlib (>=3.0.3)
+Requires-Dist: numba (<=0.52.0,>=0.51.2)
+Requires-Dist: simplejson (>=3.17.2)
+Requires-Dist: numpy (>=1.18.5)
+
+# IBATS_Utils
+IBATS 通用工具，该工具涉及数据库、量化、以及一些通用工具。
+
+#### 版本历史
+* 2021-12-14 \[1.20211214.0]
+  > feat: add FalseUntilEqual, TrueUntilEqual.
+
+* 2021-09-27 \[1.20210927.0]
+  > feat: add FalseUntilEqual, TrueUntilEqual.
+
+* 2021-09-12 \[1.20210912.0]
+  > feat: add no_with_if_is_none.
+
+* 2021-08-20 \[1.20210820.0]
+  > isinstance(obj, np.bool_)
+
+* 2021-06-28 \[1.20210628.0]
+  > fix: @njit on least_common_multiple_arr, least_common_multiple.
+
+* 2021-06-23 \[1.20210623.0]
+  > feat: add math module.\
+  > feat: add get_file_name_iter.\
+  > refactor: split mess funcs to separated modules.
+
+* 2021-06-18 \[1.20210618.0]
+  > fix: cls=SimpleJsonEncoder.
+
+* 2021-06-07 \[1.20210607.1]
+  > feat: enhance dict_2_jsonable, obj_2_json.\
+  > fix: JsonEncoder, SimpleJsonEncoder on Enum value.\
+  > feat: use CalVer
+
+#### 编译命令
+```bash
+python setup.py build bdist_wheel
+twine upload dist/*
+```
+
+
