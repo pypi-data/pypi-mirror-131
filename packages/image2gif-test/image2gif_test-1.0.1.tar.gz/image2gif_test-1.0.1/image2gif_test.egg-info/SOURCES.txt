@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+image2gif_test/__init__.py
+image2gif_test/convert.py
+image2gif_test.egg-info/PKG-INFO
+image2gif_test.egg-info/SOURCES.txt
+image2gif_test.egg-info/dependency_links.txt
+image2gif_test.egg-info/not-zip-safe
+image2gif_test.egg-info/requires.txt
+image2gif_test.egg-info/top_level.txt
