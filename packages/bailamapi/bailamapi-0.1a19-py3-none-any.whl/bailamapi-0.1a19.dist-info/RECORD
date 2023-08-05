@@ -1,0 +1,9 @@
+bailamapi/__init__.py,sha256=CGkAdgYxxHVdcDEo46SZAIgXg_pOzT4BFMMUhl0tvB8,105
+bailamapi/bailam_api.py,sha256=OuAJ21f1CeyA1xRIKQwyv00323u0nSnzwNt7gE-4kYc,8986
+bailamapi/json_to_table.py,sha256=1UP2uG5t2nVE_iH7_uBxn8lIM46qDQDxSRLy9PAYptE,5888
+bailamapi/typestools.py,sha256=cHdlOse3AYnrU6P5zPTCWGCSoKtZJVKPBeQZmiN59XU,935
+bailamapi-0.1a19.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+bailamapi-0.1a19.dist-info/METADATA,sha256=DRCh7b_SmpRy_abLR8bdtDI8badAua2D-6-Smpjb_ow,312
+bailamapi-0.1a19.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+bailamapi-0.1a19.dist-info/top_level.txt,sha256=g_LBlUv9nVHKItTNiIRJbscSitYsEPhRd4mebCTKDR8,10
+bailamapi-0.1a19.dist-info/RECORD,,
