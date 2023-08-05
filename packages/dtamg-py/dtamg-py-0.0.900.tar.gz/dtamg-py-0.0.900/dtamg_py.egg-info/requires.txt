@@ -1,0 +1,9 @@
+PyMySQL==1.0.2
+ckanapi>=4.0.0
+click>=8.0.1
+dpckan==0.1.11
+frictionless-ckan-mapper>=1.0.6
+frictionless>=4.16.6
+jsonpatch==1.32
+psycopg2==2.9.1
+python-dotenv>=0.19.1
