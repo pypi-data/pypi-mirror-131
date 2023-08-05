@@ -1,0 +1,9 @@
+README.md
+setup.py
+fiddup/main.py
+fiddup.egg-info/PKG-INFO
+fiddup.egg-info/SOURCES.txt
+fiddup.egg-info/dependency_links.txt
+fiddup.egg-info/entry_points.txt
+fiddup.egg-info/requires.txt
+fiddup.egg-info/top_level.txt
