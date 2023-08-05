@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/pdf_wrangler/__init__.py
+src/pdf_wrangler/document.py
+src/pdf_wrangler/page.py
+src/pdf_wrangler.egg-info/PKG-INFO
+src/pdf_wrangler.egg-info/SOURCES.txt
+src/pdf_wrangler.egg-info/dependency_links.txt
+src/pdf_wrangler.egg-info/requires.txt
+src/pdf_wrangler.egg-info/top_level.txt
