@@ -1,0 +1,4 @@
+cachecontrol[filecache]
+pyyaml>=5.4.1
+requests>=2.6.1
+tst>=0.13.1
