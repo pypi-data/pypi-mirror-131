@@ -1,0 +1,3 @@
+[console_scripts]
+CLINAME = OpenMiChroM._cli:main
+
