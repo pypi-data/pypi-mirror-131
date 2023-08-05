@@ -1,0 +1,8 @@
+GenerateFiles/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+GenerateFiles/generate_files.py,sha256=E4METZ0rK7x92rQPyykLlF-DreDEOLU7k0Wf91qbI9E,10097
+GenerateFiles/save_file.py,sha256=5Im5xuQxEXpTjNj7DibvewqFRzPbGaQzvD61ycq_YZs,603
+generate_files-0.0.1.dist-info/LICENSE.txt,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+generate_files-0.0.1.dist-info/METADATA,sha256=T0HLxY0t2SKzcus1kyn_vLQXsgEiZEIgzGML-7iipDU,870
+generate_files-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+generate_files-0.0.1.dist-info/top_level.txt,sha256=AxUhw0kczLW-gO9XFaPqXJgdwLesaNJ9eIOHz4DcigU,14
+generate_files-0.0.1.dist-info/RECORD,,
