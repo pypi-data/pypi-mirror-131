@@ -1,0 +1,8 @@
+README.md
+setup.py
+structurefunction.py
+structurefunction.egg-info/PKG-INFO
+structurefunction.egg-info/SOURCES.txt
+structurefunction.egg-info/dependency_links.txt
+structurefunction.egg-info/requires.txt
+structurefunction.egg-info/top_level.txt
