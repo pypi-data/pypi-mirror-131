@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/jicautils4str/__init__.py
+src/jicautils4str/palidrome.py
+src/jicautils4str/topk.py
+src/jicautils4str.egg-info/PKG-INFO
+src/jicautils4str.egg-info/SOURCES.txt
+src/jicautils4str.egg-info/dependency_links.txt
+src/jicautils4str.egg-info/requires.txt
+src/jicautils4str.egg-info/top_level.txt
