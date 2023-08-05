@@ -1,0 +1,7 @@
+# 'examples/File_Browser' is omitted on purpose
+include examples/fileserver.py
+include examples/get_files.py
+include examples/pbapclient.py
+include examples/pushclient.py
+include examples/pushserver.py
+include examples/threaded_connection.py
