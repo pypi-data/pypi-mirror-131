@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: intell
+Version: 1.0.0
+Summary: Make a functional code start!
+Author: OwoNicoo
+Author-email: 86409467+DiscordBotML@users.noreply.github.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
