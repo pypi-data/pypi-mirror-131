@@ -1,0 +1,9 @@
+gnomad_db/__init__.py,sha256=UYE7dGmTo5ZiPBbzzQ07eCOHKXpPh1Uf8ckfSQLc6-A,16
+gnomad_db/database.py,sha256=L6FjQwnrfoF9KmPw2Y--JebrOCKl4qFsQoSVHdaZ-bQ,7205
+gnomad_db/utils.py,sha256=FymIYRMEzC8krDNnSNtSTpBwN0gcrNCQ7F1tcvS_7KQ,1170
+gnomad_db/pkgdata/gnomad_columns.yaml,sha256=FbRJRNDdpXA1yLEeFAlntZ6gkKIEtbdYbvjrGLRDxPk,2312
+gnomad_db-0.1.1.dist-info/LICENSE,sha256=w7qP1S7l0VdkuB3O4jT1iMMhraPNzgWVqaiXfQiMuyc,1069
+gnomad_db-0.1.1.dist-info/METADATA,sha256=mUh_XP4vNX37tkcufMBZdH6nhPQxUCGl81mcBNTyJqE,6295
+gnomad_db-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+gnomad_db-0.1.1.dist-info/top_level.txt,sha256=nj5hSFsEPX3Je3Quf985f1BJW9DUgXPW0cOoS6YUpQI,10
+gnomad_db-0.1.1.dist-info/RECORD,,
