@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+bin/stignore-agent
+stignore_agent/__init__.py
+stignore_agent/app.py
+stignore_agent/helpers.py
+stignore_agent.egg-info/PKG-INFO
+stignore_agent.egg-info/SOURCES.txt
+stignore_agent.egg-info/dependency_links.txt
+stignore_agent.egg-info/requires.txt
+stignore_agent.egg-info/top_level.txt
