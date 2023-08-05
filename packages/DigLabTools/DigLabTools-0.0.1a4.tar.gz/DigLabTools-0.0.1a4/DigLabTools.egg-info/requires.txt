@@ -1,0 +1,7 @@
+pandas
+pytest
+gitpython
+pycap>=1.1.3
+
+[test]
+pytest
