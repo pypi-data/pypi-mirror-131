@@ -1,0 +1,8 @@
+requests
+beautifulsoup4==4.8.2
+jinja2
+configparser
+boto3
+botocore
+awscli
+defusedxml

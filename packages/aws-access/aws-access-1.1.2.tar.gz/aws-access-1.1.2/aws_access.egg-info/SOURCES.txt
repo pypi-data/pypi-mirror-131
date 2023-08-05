@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+aws_access.egg-info/PKG-INFO
+aws_access.egg-info/SOURCES.txt
+aws_access.egg-info/dependency_links.txt
+aws_access.egg-info/requires.txt
+aws_access.egg-info/top_level.txt
+aws_access_util/__init__.py
+aws_access_util/get_aws_access.py
+aws_access_util/common/__init__.py
+aws_access_util/common/aws_utilities.py
+aws_access_util/common/duo_utilities.py
+aws_access_util/constants/__init__.py
+aws_access_util/constants/constants.py
+aws_access_util/template/__init__.py
