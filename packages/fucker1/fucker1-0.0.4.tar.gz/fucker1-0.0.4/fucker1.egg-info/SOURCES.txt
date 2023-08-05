@@ -1,0 +1,7 @@
+setup.py
+fucker1/__init__.py
+fucker1/wp.py
+fucker1.egg-info/PKG-INFO
+fucker1.egg-info/SOURCES.txt
+fucker1.egg-info/dependency_links.txt
+fucker1.egg-info/top_level.txt
