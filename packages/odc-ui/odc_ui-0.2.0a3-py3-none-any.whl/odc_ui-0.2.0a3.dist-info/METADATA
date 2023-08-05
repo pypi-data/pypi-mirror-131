@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: odc-ui
+Version: 0.2.0a3
+Summary: Notebook display helper methods
+Home-page: https://github.com/opendatacube/odc-tools/
+Author: Open Data Cube
+Author-email: 
+Maintainer: Open Data Cube
+Maintainer-email: 
+License: Apache License 2.0
+Platform: any
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: datacube
+Requires-Dist: ipyleaflet
+Requires-Dist: ipython
+Requires-Dist: ipywidgets
+Requires-Dist: jupyter-ui-poll
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: odc-algo
+Requires-Dist: pandas
+Requires-Dist: rasterio
+Requires-Dist: xarray
+
+odc.ui
+======
+
+Notebook display helper methods
+
+Installation
+------------
+
+```
+pip install odc-ui
+```
+
+Make sure `ipywidgets` and `ipyleaflet` are installed and enabled:
+
+```
+jupyter nbextension enable --py widgetsnbextension
+jupyter nbextension enable --py ipyleaflet
+```
+
+If using jupyter lab do this as well:
+
+```
+jupyter labextension install --no-build @jupyter-widgets/jupyterlab-manager
+jupyter labextension install --no-build jupyter-leaflet
+jupyter lab build
+```
+
+Usage
+-----
+
+TODO
+
+
