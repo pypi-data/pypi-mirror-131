@@ -1,0 +1,71 @@
+site_name: Skforecast Docs
+extra_css: [style.css]
+repo_url: https://github.com/JoaquinAmatRodrigo/skforecast
+site_url: https://joaquinamatrodrigo.github.io/skforecast/
+site_description: Python library that eases using scikit-learn regressors as multi-step forecasters. It also works with any regressor compatible with the scikit-learn API (XGBoost, LightGBM, Ranger...).
+site_author: Joaquin Amat Rodrigo
+use_directory_urls: false
+nav:
+  - Home:
+    - Readme: README.md
+    - User Guides: guides/introduction-forecasting.md
+    - Examples: examples/examples.md
+    - API Reference: api/ForecasterAutoreg.md
+    - Releases: releases/releases.md
+    
+  - User Guides:
+      - Introduction to forcasting: guides/introduction-forecasting.md
+      - Recursive multi-step forecasting: guides/autoregresive-forecaster.md
+      - Custom predictors: guides/custom-predictors.md
+      - Recursive multi-step forecasting with exogenous variables: guides/autoregresive-forecaster-exogenous.md
+      - Direct multi-step forecasting: guides/direct-multi-step-forecasting.md
+      - Backtesting: guides/backtesting.md
+      - Tuning forecaster: guides/tuning-forecaster.md
+      - Prediction intervals: guides/prediction-intervals.md
+
+  - Examples:
+      - Forecasting time series with con Python and Scikit-learn: examples/examples.md
+      - Forecasting energy demand: examples/examples.md
+      - Forecasting web page traffic: examples/examples.md
+
+  - API Reference:
+      - ForecasterAutoreg: api/ForecasterAutoreg.md
+      - ForecasterAutoregCustom: api/ForecasterAutoregCustom.md
+      - ForecasterAutoregMultiOutput: api/ForecasterAutoregMultiOutput.md
+      - model_selection: api/model_selection.md
+      - model_selection_statsmodels: api/model_selection_statsmodels.md
+plugins:
+  - mkapi
+  - search
+copyright: 
+theme:
+  name: material
+  custom_dir: overrides
+  font:
+    text: Ubuntu
+    code: Ubuntu Mono
+  logo: img/logo_skforecast_white_no_background.png
+  highlightjs: true
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+  palette:
+    primary: deep purple
+    accent: light blue
+markdown_extensions:
+  - codehilite
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.highlight:
+      use_pygments: true
+      linenums: true
+  - pymdownx.superfences
+  - pymdownx.magiclink
+  - toc:
+      permalink: true
+extra:
+  version:
+    provider: mike
