@@ -1,0 +1,11 @@
+fiddup/__init__.py,sha256=UiuBcRXPtXxPUBDdp0ZDvWl0U9Db1kMNfT3oAfhxqLg,22
+fiddup/__main__.py,sha256=FMK7_HSsmTrg5Fc-Z9U6OeD1cA8HdKFnX_UuUuOVwZE,1166
+fiddup/constants.py,sha256=E-DIumM2zX9HefanMlmBcLjh6tKleKYvoyNZK8Uk1Jc,199
+fiddup/fiddup.py,sha256=5IRElLPNZu8qg3bSHaiUXcsgKPim5UMAGf07Awu8lio,3689
+fiddup/result.py,sha256=MWL3ooOfD-n6jLZlT90ASpL1m36HHpdsnDijT53jmFQ,1329
+fiddup/views.py,sha256=3J_PyyU_EqmYXGPEKt7ff_0zb-AJE8gTv1BYnQQeg0k,2304
+fiddup-2.1.2.dist-info/METADATA,sha256=x02HCLCfhOEvkpVRNr8o_hlaWm4CJqlNxqj6gHbAD3s,1379
+fiddup-2.1.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fiddup-2.1.2.dist-info/entry_points.txt,sha256=8dmq7yIS8v7usOm1Sgyk4kz2kY_9zuXc3zZp1neLPHc,49
+fiddup-2.1.2.dist-info/top_level.txt,sha256=H1DbADgjMQZUwafmxG2Fr6RUu66OtvuyLebW939csnU,7
+fiddup-2.1.2.dist-info/RECORD,,
