@@ -1,0 +1,11 @@
+README.md
+setup.py
+pysophia2/__init__.py
+pysophia2/db.py
+pysophia2/ngram.py
+pysophia2/tools.py
+pytetete.egg-info/PKG-INFO
+pytetete.egg-info/SOURCES.txt
+pytetete.egg-info/dependency_links.txt
+pytetete.egg-info/requires.txt
+pytetete.egg-info/top_level.txt
