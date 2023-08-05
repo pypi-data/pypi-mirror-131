@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/socket_asyncio_threaded/__init__.py
+src/socket_asyncio_threaded/client.py
+src/socket_asyncio_threaded.egg-info/PKG-INFO
+src/socket_asyncio_threaded.egg-info/SOURCES.txt
+src/socket_asyncio_threaded.egg-info/dependency_links.txt
+src/socket_asyncio_threaded.egg-info/top_level.txt
