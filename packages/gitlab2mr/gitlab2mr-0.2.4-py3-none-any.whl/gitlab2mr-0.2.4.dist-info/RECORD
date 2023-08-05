@@ -1,0 +1,9 @@
+gitlab2mr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitlab2mr/__main__.py,sha256=A2Y0nDRy8HMXIwJp2d0_uf3_G4O4pPhBM3RjR7vO6Hc,69
+gitlab2mr/cli.py,sha256=AHQ7e_EvQT-C6_9r9jG2q9iLb3FiX8sqSWIa-1bd0Rs,4532
+gitlab2mr-0.2.4.dist-info/LICENSE,sha256=euPzvrsP4SbzyqgD_DKrHdA-uQ50ZZe6Ts7vzt3cmac,1085
+gitlab2mr-0.2.4.dist-info/METADATA,sha256=Bhob8klOgRtDAufAuM72SY5WBn3Bh7YTryHXuSBaCSo,1295
+gitlab2mr-0.2.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+gitlab2mr-0.2.4.dist-info/entry_points.txt,sha256=GVNBWNWJsxpUVadgHE5yG7O2Tla1mUMGoxh-zahaT5Q,50
+gitlab2mr-0.2.4.dist-info/top_level.txt,sha256=1IPb5F-ABDK0j4CBScclqxgO4O9J5GWz7231VqtO4Fk,10
+gitlab2mr-0.2.4.dist-info/RECORD,,
