@@ -1,0 +1,8 @@
+vsgan/RRDBNet.py,sha256=M1nceXHxX8xCSL_Fp31AAOZYnxKUKcZOJbWDYyZyPyk,2784
+vsgan/RRDBNet_Blocks.py,sha256=1SMLZDqFT4ICHWxYjP8WCznv4j2iU97cg0SeueBPfp8,9862
+vsgan/__init__.py,sha256=Vnfj4yM3DO9Ysg_UV5zJdH-sLyQ7zZf6ouSdPrELDcs,11950
+vsgan/constants.py,sha256=1bE-Sxg8FaDj4PKtDbTn2_V0t0OYhzt1Liz4wg56Yq4,380
+vsgan-1.4.0.dist-info/LICENSE,sha256=RHlk3F8fBvH0IN4E5aEBbbe-xEeealc0Gew15SKQUsM,1069
+vsgan-1.4.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+vsgan-1.4.0.dist-info/METADATA,sha256=amBJdMxTA04IMbHGnr95huc8DX7EN_Ddswd-4IRYkxk,2666
+vsgan-1.4.0.dist-info/RECORD,,

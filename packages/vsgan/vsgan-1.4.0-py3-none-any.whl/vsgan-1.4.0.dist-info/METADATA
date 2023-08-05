@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: vsgan
+Version: 1.4.0
+Summary: VapourSynth Single Image Super-Resolution Generative Adversarial Network (GAN)
+Home-page: https://github.com/rlaphoenix/vsgan
+License: MIT
+Keywords: vapoursynth,upscaling,gan,deep-learning,esrgan
+Author: PHOENiX
+Author-email: rlaphoenix@pm.me
+Requires-Python: >=3.6.2,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Multimedia :: Video
+Provides-Extra: pytorch
+Requires-Dist: numpy (>=1.19.5,<2.0.0)
+Requires-Dist: torch (==1.10.0+cu113)
+Project-URL: Repository, https://github.com/rlaphoenix/vsgan
+Description-Content-Type: text/markdown
+
+![banner](https://rawcdn.githack.com/rlaphoenix/VSGAN/d7ad537bffb52bdbd1ad07c825cf016964ac57a2/banner.png)
+
+[![Build Tests](https://img.shields.io/github/workflow/status/rlaphoenix/VSGAN/Version%20test?label=Python%203.6%2B%20builds)](https://github.com/rlaphoenix/VSGAN/actions?query=workflow%3A%22Version+test%22)
+[![License](https://img.shields.io/github/license/rlaphoenix/VSGAN?style=flat)](https://github.com/rlaphoenix/VSGAN/blob/master/LICENSE)
+[![DeepSource](https://deepsource.io/gh/rlaphoenix/VSGAN.svg/?label=active+issues)](https://deepsource.io/gh/rlaphoenix/VSGAN/?ref=repository-badge)
+<a href="https://colab.research.google.com/github/rlaphoenix/VSGAN/blob/master/VSGAN.ipynb">
+    <img align="right" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/>
+</a>
+
+VSGAN is a Single Image Super-Resolution Generative Adversarial Network (GAN) which uses the VapourSynth processing framework to handle input and output image data.
+
+## Documentation
+
+More information, installation, building, quick start, and more, is available at [rlaphoenix.github.io/VSGAN](https://rlaphoenix.github.io/VSGAN).
+
+The source code to the Documentation page is available on the [gh-pages branch](https://github.com/rlaphoenix/VSGAN/tree/gh-pages) and can be built and deployed locally.  
+You could also just read the markdown files found in the [_docs folder](https://github.com/rlaphoenix/VSGAN/tree/gh-pages/_docs).
+
+## License
+
+This project is released under the MIT license.  
+Please read and agree to the license before use, it can be found in the [LICENSE](LICENSE) file.
+
