@@ -1,0 +1,786 @@
+#!python
+
+
+from ArgumentStack import * 
+from mako.lib.schedule import * 
+from mako.lib.ams import * 
+from mako.lib.reporting import * 
+from mako.lib.reporting.month import * 
+from mako.lib.reporting.quarter import * 
+from mako.lib.table import * 
+from mako.desktop import * 
+from mako.lib import MakoCRUD
+
+from mako.loggers import * 
+
+import sys
+import os 
+import os.path
+import colorama
+import json
+import shlex
+
+from mbot import * 
+
+stack = ArgumentStack(error_msg="Wrong option. Run 'mako help' to see available options.")
+
+try:
+    os.mkdir("%s/.mako/" % os.environ["HOME"])
+except FileExistsError:
+    pass
+
+args = sys.argv
+db = None
+if "--ods" in args:
+    del args[args.index("--ods")]
+    db = MakoODSDesktopDatabase(path="%s/.mako/db" % os.environ["HOME"], autosave=True)
+else:
+    db = MakoDesktopDatabase(path="%s/.mako/db" % os.environ["HOME"], autosave=True)
+crud = MakoCRUD(db)
+
+log = CLILogger()
+
+def introduce(name):
+    log.title(name)
+
+def list_projects(**kw):
+    projects = db.downloadProjects()
+    introduce("Projects")
+    for project in projects:
+        log.print(project.getName())
+
+def add_project(name="", bg="ffffff", fg="000000"):
+    introduce("Adding project %s" % name)
+    projects = db.downloadProjects()
+    projects.append(ScheduleProject(name, (255, 0, 0), (255,255,255)))
+    db.uploadProjects(projects)
+
+def delete_project(name="", **kw):
+    introduce("Deleting project %s" % name)
+    projects = db.downloadProjects()
+    newprojects = [] 
+    for p in projects:
+        if p.getName() != name:
+            newprojects.append(p)
+    db.uploadProjects(newprojects)
+
+def get_project_index(projects, name):
+    k = -1 
+    for i in range(len(projects)):
+        if name == projects[i].getName():
+            k = i
+            break
+    return k 
+
+def get_subproject_index(subprojects, name):
+    k = -1 
+    for i in range(len(subprojects)):
+        if name == subprojects[i].getName():
+            k = i
+            break
+    return k 
+
+
+def list_subprojects(project_name, **kw):
+    introduce("List of subprojects for %s" % project_name)
+    projects = db.downloadProjects()
+    k = get_project_index(projects, project_name)
+    if k == -1:
+        log.print("Project %s not found" % project_name)
+        return 
+    for sp in projects[k].getSubprojects():
+        log.print(sp.getName())
+
+def add_subproject(project_name, name, **kw):
+    introduce("Adding %s to %s" % (name, project_name))
+    projects = db.downloadProjects()
+    k = get_project_index(projects, project_name)
+    if k == -1:
+        log.print("Project %s not found" % project_name)
+        return 
+    projects[k].addSubproject(ScheduleSubproject(name))
+    db.uploadProjects(projects)
+
+def delete_subproject(project_name, name, **kw):
+    introduce("Deleting %s from %s" % (name, project_name))
+    projects = db.downloadProjects()
+    i = get_project_index(projects, project_name)
+    if i == -1:
+        log.print("Project %s not found" % project_name)
+    j = get_subproject_index(projects[i].getSubprojects(), name)
+    if j == -1:
+        log.print("Subproject not found")
+    projects[i].getSubprojects()[j].setActive(False)
+    db.uploadProjects(projects)
+
+stack.pushCommand("projects")
+stack.assignAction(list_projects, "Lists all projects")
+stack.pushCommand("list")
+stack.assignAction(list_projects, "Lists all projects")
+stack.pop()
+
+stack.pushCommand("add")
+stack.pushVariable("name")
+stack.assignAction(add_project, "Add new projects. Colors are specified in hexadecimal manner like ffffff for white.")
+stack.pop()
+stack.pop()
+stack.pop()
+stack.pop()
+
+stack.pushCommand("delete")
+stack.pushVariable("name")
+stack.pop()
+stack.pop()
+
+stack.pop()
+
+stack.pushCommand("project")
+stack.pushVariable("project_name")
+
+stack.pushCommand("subprojects")
+stack.assignAction(list_subprojects, "Lists all subprojects for a given project")
+stack.pushCommand("list")
+stack.assignAction(list_subprojects, "Lists all subprojects for a given project")
+stack.pop()
+
+stack.pushCommand("add")
+stack.pushVariable("name")
+stack.assignAction(add_subproject, "Adds new subproject into existing project")
+stack.pop()
+stack.pop()
+
+stack.pushCommand("delete")
+stack.pushVariable("name")
+stack.assignAction(delete_subproject, "Deletes existing subproject")
+stack.pop()
+stack.pop()
+
+stack.pop() # we do not use subprojects subcommands anymore 
+
+stack.pushCommand("subproject")
+stack.pushVariable("name")
+
+
+def list_tasks(project_name, name, **kw):
+    introduce("Task list for %s -> %s" % (project_name, name))
+    projects = db.downloadProjects()
+    i = get_project_index(projects, project_name)
+    if i == -1:
+        log.print("Project not found")
+        return 
+    j = get_subproject_index(projects[i].getSubprojects(), name)
+    if j == -1:
+        log.print("Subproject not found")
+        return 
+    tasks = projects[i].getSubprojects()[j].getAllTasks()
+    k = 1
+    for t in tasks:
+        log.task(t, k)
+        k += 1
+
+stack.pushCommand("tasks")
+stack.assignAction(list_tasks,"List all tasks for given subproject")
+stack.pushCommand("list")
+stack.assignAction(list_tasks, "List all tasks for given subproject")
+stack.pop()
+
+def add_task(project_name, name, text, due, expected, **kw):
+    if due == "current":
+        due = datetime.datetime(datetime.datetime.now().year, datetime.datetime.now().month, 28)
+    else:
+        due = datetime.datetime.strptime(due, "%Y-%m-%d")
+    expected = int(expected)
+    introduce("Adding task to %s -> %s with description: %s, due date is %s and expected time is %d" % (project_name, name, text, datetime.datetime.strftime(due, "%Y-%m-%d"), expected))
+    projects = db.downloadProjects()
+    i = get_project_index(projects, project_name)
+    if i == -1:
+        log.print("Project not found")
+        return
+    j = get_subproject_index(projects[i].getSubprojects(), name)
+    if j == -1:
+        log.print("Subproject not found")
+        return 
+    projects[i].getSubprojects()[j].addTask(Task(text, expected, due=due))
+    db.uploadProjects(projects)
+
+stack.pushCommand("add")
+stack.pushVariable("text")
+stack.pushVariable("due")
+stack.pushVariable("expected")
+stack.assignAction(add_task, "Adds new task. Due date has to be specified in %Y-%m-%d format or 'current' if end of current month is needed to be. Expected time is in hours.")
+
+stack.pop()
+stack.pop()
+stack.pop()
+stack.pop()
+
+
+def delete_task(project_name, name, text):
+    introduce("Deleting task %s" % text)
+    projects = db.downloadProjects()
+    i = get_project_index(projects, project_name)
+    if i == -1:
+        log.print("Project not found")
+        return
+    j = get_subproject_index(projects[i].getSubprojects(), name)
+    if j == -1:
+        log.print("Subproject not found")
+        return 
+    if not text.isdigit():
+        tasks = projects[i].getSubprojects()[j].getAllTasks().copy()
+        projects[i].getSubprojects()[j].deleteAllTasks()
+        for task in tasks:
+            if task.getText() != text:
+                projects[i].getSubprojects()[j].addTask(task)
+    else:
+        k = int(text)-1
+        del projects[i].getSubprojects()[j].getAllTasks()[k]
+    db.uploadProjects(projects)
+
+stack.pushCommand("delete")
+stack.pushVariable("text")
+stack.assignAction(delete_task, "Delete task with specified text")
+stack.pop()
+stack.pop()
+stack.pop()
+
+stack.pushCommand("task")
+stack.pushVariable("text")
+
+def get_task_by_text(tasks, text):
+    candidates = [] 
+    for task in tasks:
+        if text.lower() in task.getText().lower():
+            candidates.append(task)
+    if len(candidates) == 0:
+        log.print("No tasks to change")
+        exit(0)
+    if len(candidates) > 1:
+        log.print("There's multiple tasks containing specified text, choose one:")
+        i = 1
+        for k, candidate in enumerate(candidates):
+            t = candidate 
+            log.task(t, k+1)
+        choice = int(input(">> "))
+        while choice > len(candidates) or choice <= 0:
+            print("Wrong number, try again")
+            choice = int(input(">> "))
+        return candidates[choice - 0]
+    else:
+        return candidates[0]
+
+
+def mark_task_done(project_name, name, text, **kw):
+    introduce("Marking task as done")
+    projects = db.downloadProjects()
+    i = get_project_index(projects, project_name)
+    if i == -1:
+        log.print("Project not found")
+        return 
+    j = get_subproject_index(projects[i].getSubprojects(), name)
+    if j == -1:
+        log.print("Subproject not found")
+        return 
+    if not text.isdigit():
+        get_task_by_text(projects[i].getSubprojects()[j].getAllTasks(), text).setDone()
+    else:
+        k = int(text)-1
+        projects[i].getSubprojects()[j].getAllTasks()[k].setDone()
+    db.uploadProjects(projects)
+stack.pushCommand("done")
+stack.assignAction(mark_task_done, "Mark specified task as done")
+
+stack.pop()
+
+def increase_spent_time(project_name, name, text, dt, **kw):
+    introduce("Changing spent time for a given task")
+    dt = int(dt)
+    projects = db.downloadProjects()
+    i = get_project_index(projects, project_name)
+    if i == -1:
+        log.print("Project not found")
+        return 
+    j = get_subproject_index(projects[i].getSubprojects(), name)
+    if j == -1:
+        log.print("Subproject not found")
+        return 
+    if not text.isdigit():
+        get_task_by_text(projects[i].getSubprojects()[j].getAllTasks(), text).increaseSpentTime(dt)
+    else:
+        k = int(text)-1
+        projects[i].getSubprojects()[j].getAllTasks()[k].increaseSpentTime(dt)
+    db.uploadProjects(projects)
+
+stack.pushCommand("do")
+stack.pushVariable("dt")
+stack.assignAction(increase_spent_time, "Increase spent time for a given task")
+
+
+stack.popAll()
+
+def list_schedules(**kw):
+    introduce("Listing all schedules")
+    schedules = db.downloadSchedules()
+    for schedule in schedules:
+        d = schedule.getDate()
+        log.print("Schedule created %s" % str(d))
+
+stack.pushCommand("schedules")
+stack.assignAction(list_schedules, "List all scedules")
+stack.pushCommand("list")
+stack.assignAction(list_schedules, "List all scedules")
+stack.pop()
+
+
+stack.popAll()
+
+stack.pushCommand("today")
+def today(**kw):
+    introduce("Tsks for today (without increasing spent time automatically)")
+    crud.visitTasksToday(lambda p,sp,t: log.print("%s\t%s\t%s | %d hours" % (p.getName(), sp.getName(), t.getText(), t.getExpectedTime())))
+stack.assignAction(today, "Show tasks which can be done today by last schedule")
+stack.popAll()
+
+stack.pushCommand("schedule")
+
+def add_schedule(**kw):
+    introduce("Adding new schedule")
+    schedules = db.downloadSchedules()
+    s = Schedule(datetime.date.today())
+    for condition in db.downloadDefaultConditions():
+        log.print("Adding condition: %s" % condition.getDescription())
+        s.addCondition(condition)
+    schedules.append(s)
+    db.uploadSchedules(schedules)
+
+stack.pushCommand("new")
+stack.assignAction(add_schedule, "Create new schedule")
+stack.pop()
+
+def show_tabular(table, column_size=10, has_header=True):
+    log.table(table, has_header)
+
+def show_schedule(schedule):
+    log.schedule(schedule)
+
+def key_operator(entry):
+    return entry.getDate()
+def add_entry(day, time, duration, project_name, subproject_name, **kw):
+    introduce("Adding entry to schedule")
+    schedules = sorted(db.downloadSchedules(), key=key_operator)
+    projects = db.downloadProjects()
+    i = get_project_index(projects, project_name)
+    if i == -1:
+        log.print("Project not found")
+        return 
+    j = get_subproject_index(projects[i].getSubprojects(), subproject_name)
+    if j == -1:
+        log.print("Subproject not found")
+        return 
+    try:
+        schedules[-1].addEntry(ScheduleEntry(projects[i], projects[i].getSubprojects()[j], int(day), int(time), int(duration)))
+        errors = schedules[-1].check()
+        if len(errors) > 0:
+            log.print("Conditins not satisfied:")
+            for error in errors:
+                log.print(error[1].getDescription())
+            return 
+        db.uploadSchedules(schedules)
+        show_schedule(schedules[-1])
+    except IndexError:
+        log.print("No schedules to add entry to")
+
+
+stack.pushCommand("add")
+stack.pushVariable("day")
+stack.pushVariable("time")
+stack.pushVariable("duration")
+stack.pushVariable("project_name")
+stack.pushVariable("subproject_name")
+stack.assignAction(add_entry, "Add entry to lastly created schedule")
+stack.pop()
+stack.pop()
+stack.pop()
+stack.pop()
+stack.pop()
+stack.pop()
+
+def print_schedule(**kw):
+    introduce("Showing last schedule")
+    schedules = sorted(db.downloadSchedules(), key=key_operator)
+    try:
+        show_schedule(schedules[-1])
+        log.print("Conditions:")
+        for cond in schedules[-1].getConditions():
+            print(cond.getDescription())
+    except IndexError:
+        log.print("There's no schedule to show.")
+
+stack.assignAction(print_schedule, "Show lastly created schedule")
+stack.pushCommand("show")
+stack.assignAction(print_schedule, "Show lastly created schedule")
+stack.pop()
+
+def delete_schedule_entry(day, start, duration, **kw):
+    introduce("Deleting entry from last schedule")
+    schedules = sorted(db.downloadSchedules(), key=key_operator)
+    try:
+        schedules[-1].removeEntry(int(day), int(start), int(duration))
+        show_schedule(schedules[-1])
+        db.uploadSchedules(schedules)
+    except IndexError:
+        log.print("No available schedule found.")
+
+stack.pushCommand("remove")
+stack.pushVariable("day")
+stack.pushVariable("start")
+stack.pushVariable("duration")
+stack.assignAction(delete_schedule_entry, "Delete all entries on specified day which start at start and end before start+duration")
+
+
+stack.popAll()
+
+def measure_all():
+    introduce("Measuring all metric")
+    actions = db.downloadMeasurementActions()
+    ams = AMS()
+    tables = db.downloadTables()
+    for action in actions:
+        metric = action
+        data = db.downloadMeasurementData(metric.getIdentifier())
+        val = metric.measure(tables)
+        log.print("%s: %f" % (metric.getIdentifier(), val))
+        data.append((datetime.date.today(), val))
+        db.uploadMeasurementData(metric.getIdentifier(), data)
+stack.pushCommand("measure")
+stack.assignAction(measure_all, "Run measurement of all metrics")
+stack.pop()
+
+def list_metrics():
+    introduce("Listing all metrics with last value")
+    actions = db.downloadMeasurementActions()
+    ams = AMS()
+    for action in actions:
+        data = db.downloadMeasurementData(action.getIdentifier())
+        log.print("%s: %f | on %s" % (action.getIdentifier(), data[-1][1], data[-1][0]))
+    
+stack.pushCommand("metrics")
+stack.assignAction(list_metrics, "Lists all metrics with last values")
+stack.popAll()
+
+def list_reports():
+    introduce("Listing reports")
+    reports = db.downloadReports()
+    for report in reports:
+        log.print("%s | %s" % (report.getName(), str(report.getDate())))
+stack.pushCommand("reports")
+stack.assignAction(list_reports, "List all reports")
+
+stack.pushCommand("generate")
+
+class MonthCLIReportView(ReportView):
+    def show(self, report):
+        if report.getField("expected_time") == "":
+            return
+        log.print("Total expected time for all tasks: %s" % report.getField("expected_time"))
+        log.print("Tasks that have to be split")
+        l = [["Project", "Subproject", "Task text"]]
+        for task in report.getField("to_split"):
+            l.append([task["project"], task["subproject"], task["task"]])
+        show_tabular(l, 30)
+        log.print()
+        log.print("Expected time this month for each project")
+        l = [["Project name", "Expected time this month"]]
+        for p in report.getField("expected_per_project"):
+            l.append([p["project"], str(p["time"]) + "h"])
+        show_tabular(l, 30)
+
+def generate_month(month, year, **kw):
+    introduce("Generating report")
+    generator = MonthReportGenerator(db.downloadProjects())
+    generator.setup(int(year), int(month))
+    report = generator.generate()
+    reports = db.downloadReports()
+    reports.append(report)
+    db.uploadReports(reports)
+    view = MonthCLIReportView()
+    view.show(report)
+
+stack.pushCommand("monthly")
+stack.pushVariable("year")
+stack.pushVariable("month")
+stack.assignAction(generate_month)
+stack.pop()
+stack.pop()
+stack.pop()
+
+
+class QuarterCLIReportView(ReportView):
+    def show(self, report):
+        if report.getField("subprojects") == "":
+            return
+        l = [["Project name", "Expected time", "Spent time"]]
+        for project in report.getField("projects"):
+            subprojects = report.getField("subprojects")[project]
+            expected = 0
+            real = 0
+            for subproject in subprojects["subprojects"]:
+                expected += int(subprojects["expected"][subproject])
+                real += int(subprojects["real"][subproject])
+            l.append([project, str(expected), str(real)])
+        show_tabular(l, 30)
+
+def generate_quarter(quarter, year, **kw):
+    introduce("Generating report")
+    generator = QuarterReportGenerator(db.downloadProjects())
+    generator.setup(int(year), int(quarter), True, True)
+    report = generator.generate()
+    reports = db.downloadReports()
+    reports.append(report)
+    db.uploadReports(reports)
+    view = QuarterCLIReportView()
+    view.show(report)
+
+stack.pushCommand("quarterly")
+stack.pushVariable("year")
+stack.pushVariable("quarter")
+stack.assignAction(generate_quarter)
+stack.pop()
+stack.pop()
+stack.pop()
+
+stack.pop()
+
+def show_report(report_name, **kw):
+    introduce("Showing report %s" % report_name)
+    reports = db.downloadReports()
+    r = None
+    for report in reports:
+        if report.getName() == report_name:
+            r = report 
+            break
+    if r == None:
+        log.print("Report not found")
+        return
+    view = MonthCLIReportView()
+    view.show(r)
+    view = QuarterCLIReportView()
+    view.show(r)
+
+stack.pushCommand("show")
+stack.pushVariable("report_name")
+stack.assignAction(show_report, "Show report")
+
+stack.popAll()
+stack.pushCommand("tables")
+def list_tables(**kw):
+    introduce("Listing tables")
+    tables = db.downloadTables()
+    for table in tables:
+        log.print(table.getName())
+stack.assignAction(list_tables, "List all tables")
+stack.pushCommand("list")
+stack.assignAction(list_tables, "List all tables")
+stack.pop()
+
+def create_table(name, fields, **kw):
+    introduce("Adding table %s" % name)
+    t = Table(name, fields.split("|"))
+    tables = db.downloadTables()
+    tables.append(t)
+    db.uploadTables(tables)
+stack.pushCommand("new")
+stack.pushVariable("name")
+stack.pushVariable("fields")
+stack.assignAction(create_table, "Creates new table with name and fields where each column is separated by |")
+
+def find_table_by_name(name, tables):
+    for table in tables:
+        if table.getName().lower() == name.lower():
+            return table
+    return None
+
+stack.pop()
+stack.pop()
+stack.pop()
+stack.pop()
+
+stack.pushCommand("table")
+stack.pushVariable("name")
+def show_table(name, **kw):
+    introduce("Table: %s" % name)
+    table = find_table_by_name(name, db.downloadTables())
+    if table != None:
+        log.print(str(table))
+    else:
+        log.print("Not found")
+stack.assignAction(show_table, "Shows specified table")
+stack.pushCommand("show")
+stack.assignAction(show_table, "Shows specified table")
+stack.pop()
+
+def table_filter(name, filter, **kw):
+    introduce("Filtered results")
+    table = find_table_by_name(name, db.downloadTables())
+    if table != None:
+        show_tabular(table.getEntries(filter))
+        log.print("Total number of items: %d" % table.getEntryCount(filter))
+    else:
+        log.print("Not found")
+stack.pushCommand("filter")
+stack.pushVariable("filter")
+stack.assignAction(table_filter, "Show only entries where at least one column contains specified filter")
+stack.pop()
+stack.pop()
+
+def delete_table(name, **kw):
+    introduce("Removing table")
+    res = [] 
+    tables = db.downloadTables()
+    for table in tables:
+        if table.getName() != name:
+            res.append(table)
+    db.uploadTables(res)
+stack.pushCommand("delete")
+stack.assignAction(delete_table, "Delete specified table")
+stack.pop()
+
+def table_add_entry(name, data, **kw):
+    introduce("Adding entry to table")
+    tables = db.downloadTables()
+    table = find_table_by_name(name, tables)
+    if table != None:
+        table.addEntry(data.split("|"))
+        db.uploadTables(tables)
+stack.pushCommand("add")
+stack.pushVariable("data")
+stack.assignAction(table_add_entry, "Adds entry to table, data is specified such that each field is separated by |")
+
+stack.pop()
+stack.pop()
+
+stack.pushCommand("entry")
+stack.pushVariable("entry_id")
+
+def show_entry(name, entry_id, **kw):
+    introduce("Displaying entry")
+    tables = db.downloadTables()
+    table = find_table_by_name(name, tables)
+    if table == None:
+        log.print("Not found")
+        return 
+    e = table.getEntries()[int(entry_id)-1]
+    i = 0 
+    for field in table.getFields():
+        log.print("%s: %s" % (field, e[i]))
+        i = i + 1
+stack.assignAction(show_entry, "Show specified entry")
+stack.pushCommand("show")
+stack.assignAction(show_entry, "Show specified entry")
+stack.pop()
+
+def table_delete_entry(name, entry_id, **kw):
+    introduce("Removing entry %s" % entry_id)
+    tables = db.downloadTables()
+    table = find_table_by_name(name, tables)
+    if table != None:
+        table.removeEntry(int(entry_id))
+        db.uploadTables(tables)
+stack.pushCommand("delete")
+stack.assignAction(table_delete_entry, "Deletes specified entry")
+stack.pop()
+
+def table_update_entry(name, entry_id, data, **kw):
+    introduce("Updating entry %s" % entry_id)
+    tables = db.downloadTables()
+    table = find_table_by_name(name, tables)
+    if table != None:
+        table.updateEntry(int(entry_id), data.split("|"))
+        db.uploadTables(tables)
+stack.pushCommand("update")
+stack.pushVariable("data")
+stack.assignAction(table_update_entry, "Updates specified entry with new data such that each field is separated by |")
+stack.pop()
+stack.pop()
+
+
+stack.popAll()
+stack.pushCommand("database")
+stack.pushCommand("export")
+def export_json(path, **kw):
+    introduce("Exporting database to %s" % path)
+    f = open(path, "w")
+    f.write(json.dumps(db.toDict()))
+    f.close()
+stack.pushCommand("json")
+stack.pushVariable("path")
+stack.assignAction(export_json, "Export whole database to JSON file")
+stack.pop()
+stack.pop()
+
+stack.pop()
+stack.pushCommand("import")
+def import_json(path, **kw):
+    introduce("Importing database from %s" % path)
+    f = open(path)
+    db.fromDict(json.loads(f.read()))
+    f.close()
+stack.pushCommand("json")
+stack.pushVariable("path")
+stack.assignAction(import_json, "Import database contained in JSON file")
+stack.pop()
+stack.pop()
+
+def import_taskwarrior(path, **kw):
+    introduce("Importing database from taskwarrior")
+    twdb = MakoTaskWarriorDatabase(path)
+    projects = twdb.downloadProjects()
+    db.uploadProjects(projects)
+stack.pushCommand("taskwarrior")
+stack.pushVariable("path")
+stack.assignAction(import_taskwarrior, "Import data from task warrior database") 
+stack.pop()
+stack.pop()
+stack.pop()
+
+stack.pushCommand("save")
+stack.assignAction(lambda **kw: db.exportToHistory(), "Save current state of database to histoory")
+stack.pop()
+
+stack.popAll()
+stack.pushCommand("help")
+stack.assignAction(lambda: log.print(stack.getHelp()), "Get help")
+
+if os.path.basename(args[0]) == "mako":
+    stack.execute(args)
+elif os.path.basename(args[0]) == "mako-messenger":
+    def messenger_error(err):
+        print(err)
+        print("Error: Please make ~/.mako/messenger.json file where you will define 'token', 'port', 'verify_token' and 'my_id'")
+        exit(1)
+    if not os.path.exists(os.environ["HOME"] + "/.mako/messenger.json"):
+        messenger_error("File not found")
+    config_file = open("%s/.mako/messenger.json" % os.environ["HOME"])
+    bot_config = {}
+    try:
+        bot_config = json.loads(config_file.read())
+    except Exception as e:
+        messenger_error("JSON decode error: %s" % str(e))
+    config_file.close()
+    if not ("token" in bot_config and "verify_token" in bot_config and "port" in bot_config and "my_id" in bot_config):
+        messenger_error("Configuration not complete")
+    log = ToStringLogger()
+    class MyHook(WebHookServer):
+        def handle_message(self, sender_id, text, timestamp):
+            print("Got message")
+            if sender_id != bot_config["my_id"]:
+                return "You are not authorized to perform this operation."
+            else:
+                log.clear()
+                stack.execute(["mako"] + shlex.split(text))
+                return log.get().split("\n")
+
+                
+    MyHook(bot_config["token"].strip(), port=bot_config["port"], verify_token=bot_config["verify_token"].strip()).serve()
+else:
+    print("Wrong executable name")
