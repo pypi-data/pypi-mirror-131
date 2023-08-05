@@ -1,0 +1,11 @@
+{
+  "additions": ["plus"],
+  "subtractions": ["minus"],
+  "multiplications": ["times", "multiplied by"],
+  "divisions": ["divided by"],
+  "exponentiations": ["to the power of"],
+  "absolutes": ["absolute of", "absolute value of"],
+  "modulos" : ["modulo", "mod"],
+  "roots": ["root of"],
+  "questions": ["what is the result of", "what is", "calculate", "result of", "how do you", "find", "how much", "how much is", "which number is result of", "what"]
+}
