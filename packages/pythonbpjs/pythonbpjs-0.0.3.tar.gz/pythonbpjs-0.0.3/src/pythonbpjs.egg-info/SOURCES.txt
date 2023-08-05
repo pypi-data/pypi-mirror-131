@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pythonbpjs/__init__.py
+src/pythonbpjs/bpjs.py
+src/pythonbpjs.egg-info/PKG-INFO
+src/pythonbpjs.egg-info/SOURCES.txt
+src/pythonbpjs.egg-info/dependency_links.txt
+src/pythonbpjs.egg-info/requires.txt
+src/pythonbpjs.egg-info/top_level.txt
