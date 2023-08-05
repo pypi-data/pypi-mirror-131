@@ -1,0 +1,8 @@
+﻿__pycache__
+.eggs
+.qt_for_python
+i2cx_scanner_lite.egg-info
+dist
+build
+i2cx.egg-info
+*.autosave
