@@ -1,0 +1,89 @@
+# clearList
+Customized function pack for lists
+
+Documentation; 
+
+-> clearAndCombineList(mainList) --> Concatenates the elements in the list and converts them to string values
+
+
+
+-> getListType(mainList) --> Shows the type value of the elements in the list
+
+
+
+-> convertStrLİst(mainList) --> Converts the elements in the list to str
+
+
+
+-> getOnlyInt(mainList) --> It only returns int values ​​in the list
+
+
+
+-> getOnlyStr(mainList) --> It only returns str values ​​in the list
+
+
+
+-> getOnlyFloat(mainList) --> It only returns float values ​​in the list
+
+
+
+HOW TO USE ?
+_____________________________________________________________________
+
+from ClearList import clearList
+
+listOne =[1,2,3,4,5,6,7]
+newList = clearList.clearAndCombineList(listOne)
+
+print(newList) ----> "1234567"
+______________________________________________________________________
+
+from ClearList import clearList
+
+listOne =[1,2,3,4,5,6,7]
+clearList.getListType(listOne)
+
+----> int | 0. Element 1
+----> int | 1. Element 2
+----> int | 2. Element 3
+----> int | 3. Element 4
+----> int | 4. Element 5
+
+_______________________________________________________________________
+
+from ClearList import clearList
+
+listOne =[1,2,3,4,5,6,7]
+newList = clearList.convertStrLİst(lisOne)
+
+print(newList) ----> ["1","2","3","4","5","6","7"]
+
+_______________________________________________________________________
+
+from ClearList import clearList
+
+listOne =[1,2,"InterFaze","Turkey",3.14]
+
+newList = clearList.getOnlyInt(listOne)
+
+print(newList) ----> [1,2]
+
+_______________________________________________________________________
+
+from ClearList import clearList
+
+listOne =[1,2,"InterFaze","Turkey",3.14]
+
+newList = clearList.getOnlyStr(listOne)
+
+print(newList) ----> ["InterFaze","Turkey",3.14]
+
+______________________________________________________________________
+
+from ClearList import clearList
+
+listOne =[1,2,"InterFaze","Turkey",3.14]
+
+newList = clearList.getOnlyFloat(listOne)
+
+print(newList) ----> [3.14]

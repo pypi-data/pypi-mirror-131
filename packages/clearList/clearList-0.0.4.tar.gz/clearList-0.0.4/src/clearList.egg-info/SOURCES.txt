@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ClearList/__init__.py
+src/ClearList/clearList.py
+src/clearList.egg-info/PKG-INFO
+src/clearList.egg-info/SOURCES.txt
+src/clearList.egg-info/dependency_links.txt
+src/clearList.egg-info/top_level.txt
