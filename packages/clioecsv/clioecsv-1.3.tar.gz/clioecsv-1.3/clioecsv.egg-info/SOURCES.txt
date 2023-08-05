@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+clioecsv/__init__.py
+clioecsv/clioecsv.py
+clioecsv.egg-info/PKG-INFO
+clioecsv.egg-info/SOURCES.txt
+clioecsv.egg-info/dependency_links.txt
+clioecsv.egg-info/top_level.txt
