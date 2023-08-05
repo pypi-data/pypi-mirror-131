@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: flood_forecast
+Version: 0.992.dev0
+Summary: An open source framework for deep time series forecasting built with PyTorch.
+Home-page: UNKNOWN
+License: GPL 3.0
+Platform: UNKNOWN
+Provides-Extra: dev
+License-File: LICENSE
+
+Flow Forecast is the top open source deep learning for time series forecasting and classification framework. We were the original TS framework to contain models like the transformer and have now expanded to include all popular deep learning models.
+
