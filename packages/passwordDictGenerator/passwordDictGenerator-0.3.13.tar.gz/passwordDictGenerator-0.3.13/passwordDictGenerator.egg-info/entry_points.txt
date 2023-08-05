@@ -1,0 +1,4 @@
+[console_scripts]
+pwdgen = pwdgen:main
+snake = pwdgen.pwdgen:main
+
