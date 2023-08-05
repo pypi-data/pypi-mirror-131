@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: odc-algo
+Version: 0.2.2
+Summary: Miscellaneous Algorithmic helper methods
+Home-page: https://github.com/opendatacube/odc-tools/
+Author: Open Data Cube
+Author-email: 
+Maintainer: Open Data Cube
+Maintainer-email: 
+License: Apache License 2.0
+Platform: any
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: hdstats
+Provides-Extra: s3
+License-File: LICENSE
+
+odc.algo
+========
+
+Algorithm utils of various kind.
+
+Installation
+------------
+
+```
+pip install odc-algo
+```
+
+Usage
+-----
+
+TODO
+
+
