@@ -1,0 +1,10 @@
+feedback/DataFormation.py,sha256=YVRZ9DWJPS2nOWh0XgJFBhSucHY1rGPcFSTBHXXs-OE,236
+feedback/GetData.py,sha256=hbKK16OHkPyqzbVKNHBIZ8Fke3vNizEKzvJGUDovzyA,1226
+feedback/Scheduler.py,sha256=j2bmMLR16x6nBIwakxvxddZgxrUeu6TcLPiNamDl5-8,1719
+feedback/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+feedback/application.py,sha256=w2b_pEdn5w9OLnwzrIGgfxK82fHGKZ3oPI7E3cr5Has,1933
+dynamodb_feeds_to_sqs-0.0.2.dist-info/LICENSE.txt,sha256=16emV2NW_vgjVOZH96VdpJwems6QhlfmuFNB9FA14Rs,1287
+dynamodb_feeds_to_sqs-0.0.2.dist-info/METADATA,sha256=GELI7O-BprDxzh3TLW_70RewL6PCXOANQHWambUxhv0,678
+dynamodb_feeds_to_sqs-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dynamodb_feeds_to_sqs-0.0.2.dist-info/top_level.txt,sha256=vO3wO1kznfGFAyTaVg9zdl4we6qXVgi9qJh8Nni6jIo,9
+dynamodb_feeds_to_sqs-0.0.2.dist-info/RECORD,,
