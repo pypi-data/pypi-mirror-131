@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: etosdk
+Version: 0.1
+Summary: Eto Labs python SDK
+Author: Eto Devs
+Author-email: devs@eto.ai
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: rikai (>=0.0.13,<0.0.14)
+Requires-Dist: urllib3 (>=1.26.7,<2.0.0)
