@@ -1,0 +1,6 @@
+# workaround pytz shortcomings
+backports.zoneinfo;python_version<"3.9"
+# needed for docs
+sphinxcontrib-napoleon
+# cscap_utils stuff
+git+https://github.com/smartsheet-platform/smartsheet-python-sdk.git
