@@ -1,0 +1,11 @@
+pennylane_ionq/__init__.py,sha256=6KHteYsli83Mt-vUCy-PaYJclK_Cl8ywx-AKiLZ98FA,730
+pennylane_ionq/_version.py,sha256=3c49X8ztAixHJXReMyhafnmCOO2UQ4dLqIXiE8jVL_M,692
+pennylane_ionq/api_client.py,sha256=gEUnqnu6G4bepR3zmsdOm18VMYlVtyiBNsLF8tMYdZI,15534
+pennylane_ionq/device.py,sha256=SWUBSw6zFucaAyhZOlnYqBJLtETGYMWFwcX2Yp0RmcY,10533
+pennylane_ionq/ops.py,sha256=8xizyMwIFwn9tXoyDBLC8Q7ZRQ_iLjNQu9QY-XDRcXM,2539
+PennyLane_IonQ-0.20.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+PennyLane_IonQ-0.20.0.dist-info/METADATA,sha256=jwZ2YDAi5VsY_PTL2oIoTCGBuYcyIiI7MM0nu8JZn88,7452
+PennyLane_IonQ-0.20.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+PennyLane_IonQ-0.20.0.dist-info/entry_points.txt,sha256=TO5zT4A_v9uWr56RONoKu1azMdfTzDiKsbPYv93t2NA,105
+PennyLane_IonQ-0.20.0.dist-info/top_level.txt,sha256=h7SUpFvNeWjPT7Hb7NB7Aem-tVLDPnBpvm1Ve-0H5uk,15
+PennyLane_IonQ-0.20.0.dist-info/RECORD,,
