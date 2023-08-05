@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: mysqlx
+Version: 1.1.1
+Summary: mysqlx is a simple python sql executor for MySQL like iBatis.
+Home-page: https://gitee.com/summry/mysqlx/mysqlx
+Author: summry
+Author-email: xiazhongbiao@126.com
+License: UNKNOWN
+Description-Content-Type: text/markdown
+Description: UNKNOWN
+Keywords: sql,MySQL,iBatis,MyBatis,python
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
