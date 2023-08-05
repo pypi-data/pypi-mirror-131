@@ -1,0 +1,9 @@
+mlflow_kernel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlflow_kernel/__main__.py,sha256=YdX-YcrgTPhrISGicLgzpVhBMCobZzB8QZpx5PYCrGM,188
+mlflow_kernel/install.py,sha256=IODpEOuyVy83XycwiMk0dgsLlQ7iJduEGF-t9iH92Lk,1668
+mlflow_kernel/kernel.json,sha256=ju-VXhLNWhIxNVfKmrp9guHbZELITz-L-AegAVdelEE,112
+mlflow_kernel/mlflow_kernel.py,sha256=KVSCZ0poM1T03sC4E5It1JLhjSeQwS1VhO-jNWaByRA,10135
+mlflow_kernel-0.1.8.dist-info/METADATA,sha256=qFs4qMa1WN-Pev0tLNKlBnXzWjcwJRwB1OVYQVPQfvQ,364
+mlflow_kernel-0.1.8.dist-info/WHEEL,sha256=gm79cMopkncyn0iSnI0vQNiDJ8t9on0H4_iz-CrpXMk,92
+mlflow_kernel-0.1.8.dist-info/top_level.txt,sha256=ok0KtDj_yMDhQ8DPXSkFgw_Spg2cW0YmSnN09kl1ADI,14
+mlflow_kernel-0.1.8.dist-info/RECORD,,
