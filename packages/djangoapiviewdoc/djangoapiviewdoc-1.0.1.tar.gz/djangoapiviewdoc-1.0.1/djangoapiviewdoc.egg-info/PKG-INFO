@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: djangoapiviewdoc
+Version: 1.0.1
+Summary: Django APIView decorator create Api Doc
+Home-page: https://gitee.com/zhsjch/djangoapiviewdoc.git
+Author: JiChao Song
+Author-email: jichaosong@outlook.com
+License: BSD
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# djangoapiviewdoc
+
+### 根据装饰器生成api文档
+
+
+
+
