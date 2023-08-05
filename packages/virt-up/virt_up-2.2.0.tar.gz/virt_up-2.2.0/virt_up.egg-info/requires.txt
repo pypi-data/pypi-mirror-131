@@ -1,0 +1,4 @@
+Click
+cookiecutter
+libvirt-python
+sh

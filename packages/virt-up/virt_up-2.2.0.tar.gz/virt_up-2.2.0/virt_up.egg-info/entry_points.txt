@@ -1,0 +1,4 @@
+[console_scripts]
+virt-up = virt_up.cli:main
+vu = virt_up.cli:main
+
