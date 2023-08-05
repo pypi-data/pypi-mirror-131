@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/dreammake/__init__.py
+src/dreammake/canvas.py
+src/dreammake/gui.py
+src/dreammake/locals.py
+src/dreammake.egg-info/PKG-INFO
+src/dreammake.egg-info/SOURCES.txt
+src/dreammake.egg-info/dependency_links.txt
+src/dreammake.egg-info/requires.txt
+src/dreammake.egg-info/top_level.txt
