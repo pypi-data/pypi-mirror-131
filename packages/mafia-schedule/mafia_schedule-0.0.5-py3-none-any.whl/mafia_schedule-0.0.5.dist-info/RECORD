@@ -1,0 +1,17 @@
+mafia_schedule/__init__.py,sha256=9i7D1olTrENEAXHPbtJk7EQVm77PXu29ylUPeyel1hE,573
+mafia_schedule/configuration.py,sha256=BcP0l5k6WDRZeKZBqaPHFE34QrjFwUqzEGTsUafn58Q,2242
+mafia_schedule/game.py,sha256=RyZOVEELgWwufVggRQaKDTLEN4HGuJibmfD1xtrKKdI,1520
+mafia_schedule/helpers.py,sha256=4PyYjyTd3e3PaCi9OdS0Wx1pCJBz7oG8W5_leVnvV2I,1463
+mafia_schedule/metrics.py,sha256=JFOceIMo2R0w4-wbFTpkGuIQJxSkq9hhQ_sIdTWSVGs,6030
+mafia_schedule/optimize_opponents.py,sha256=MEXD0W56kVGHjynYZRfhcG_JQngkbl3SVljgTC2hvoc,8347
+mafia_schedule/optimize_seats.py,sha256=1y1LBy2ANtSTbLyYbv11-38DfSmD0OfDJpXsj_3NSrQ,5381
+mafia_schedule/output.py,sha256=jPpdnCrLqqPYbR5wBpHbfuhgYdlz5nlAMcukhArHGCk,5126
+mafia_schedule/player.py,sha256=lIZLCKUeI54NSBV6KfKujHJUNugNbc9m88Mxl_vHDJU,1942
+mafia_schedule/round.py,sha256=wLHH3FgOqEQfY2JZBv6Ho7tJyd988MEnTNCjsorS8ds,453
+mafia_schedule/schedule.py,sha256=bzaLyJWm3YHVTibY4AiQvBkhDaOGVWzJES1sJ_jCPbg,7536
+mafia_schedule/schedule_factory.py,sha256=dmCcZAhZvPpuU9dK-Iy4wrsz79JpNMg8r2P_xqB6OSM,1188
+mafia_schedule-0.0.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mafia_schedule-0.0.5.dist-info/METADATA,sha256=q8LzT5OWrj_8vq7ScwRtE9mEU7UZXKGegCUqDWxoDD0,1093
+mafia_schedule-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mafia_schedule-0.0.5.dist-info/top_level.txt,sha256=ltMofSAvQIBn-TN4-eFRBUfPfUWESmdxE6_igH0CHRU,15
+mafia_schedule-0.0.5.dist-info/RECORD,,
