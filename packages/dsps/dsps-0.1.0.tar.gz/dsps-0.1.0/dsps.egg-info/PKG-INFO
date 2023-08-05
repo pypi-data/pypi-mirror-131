@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dsps
+Version: 0.1.0
+Summary: Differentiable Stellar Population Synthesis
+Home-page: https://github.com/ArgonneCPAC/dsps
+Author: Andrew Hearin
+Author-email: ahearin@anl.gov
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+
+Differentiable Stellar Population Synthesis
+
