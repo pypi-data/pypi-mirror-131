@@ -1,0 +1,14 @@
+deepl/__init__.py,sha256=KZEN566hMn4nG6D0qI2lM-eCEqTLram17WuW8yvubV0,50
+deepl/__main__.py,sha256=Qkwkl5wtzctrgCeU3d1_oexx7OTQ4pTCI2xLQ8F_huA,1630
+deepl/api.py,sha256=ljhxacOsi97UE6CjaZV2Xd0YN6ZX4GEj0L-7zAviyh0,2012
+deepl/extractors.py,sha256=HO_Cp5IfLEc6j8YHiNvQvEunjGtSkkK2zNjO8xqvhNg,375
+deepl/generators.py,sha256=bmeUxnuU-lNbG7LRmHs-RAqL5sr0zoq2Dyv-TmwHrwo,1934
+deepl/hacks.py,sha256=f3tg8Mpyvibk7zk26a7s9r-1nBzjehzcdkPfIiSe4Zk,492
+deepl/settings.py,sha256=UqWd00u8znHoPXe8ENl_Lw6rwjnXAu6XBYQa2QhZCFg,1194
+deepl/utils.py,sha256=Y87D8LvFANCYN1BgKIV335BLE20BeBchBFVU4Af2XM0,631
+deepl_translate-1.2.0.dist-info/LICENSE,sha256=U4ZXM5vqXY03Jc46LDWSQ4An6ovgg4B4sqn9yjg_j4M,1068
+deepl_translate-1.2.0.dist-info/METADATA,sha256=OPHjW1QGNtOHBLU3F5lzV6Wnl2s5uRtjCBISfJDQK6Q,4733
+deepl_translate-1.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+deepl_translate-1.2.0.dist-info/entry_points.txt,sha256=Qbm-YYU0PzaeiugKn2p-N6QpFtsvaXDMNkiQd4S0ajQ,47
+deepl_translate-1.2.0.dist-info/top_level.txt,sha256=BkxZ1Mxwj0hAguuP4Ge0UeCrscI28xTT3spKtI3DkKs,6
+deepl_translate-1.2.0.dist-info/RECORD,,
