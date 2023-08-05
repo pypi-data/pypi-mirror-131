@@ -1,0 +1,3 @@
+[console_scripts]
+av1clip = av1clip.av1clip:main
+
