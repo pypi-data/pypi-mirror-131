@@ -1,0 +1,6 @@
+napari
+numpy
+xarray
+SimpleITK
+qtpy
+napari-animation
