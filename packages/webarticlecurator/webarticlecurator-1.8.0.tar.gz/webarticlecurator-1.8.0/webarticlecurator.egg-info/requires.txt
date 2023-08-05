@@ -1,0 +1,12 @@
+beautifulsoup4
+chardet
+lxml
+pyyaml
+ratelimit
+requests
+urllib3
+warcio
+yamale
+
+[newspaper3k]
+newspaper3k<1.0.0,>=0.2.8
