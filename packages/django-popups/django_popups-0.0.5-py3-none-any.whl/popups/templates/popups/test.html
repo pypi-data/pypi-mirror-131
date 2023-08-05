@@ -1,0 +1,185 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="{% static 'popups/js/jquery-3.6.0.min.js' %}"></script>
+
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+    {% for npopup in noti_popups.all %}
+      {% if npopup.activate %}
+      #npopup_{{ npopup.pk }} .modal-dialog .modal-body {
+      background-size: cover;
+      background-image: url({% static 'popups/img/'|add:npopup.background|add:'.jpg' %});
+      {% if npopup.text_color == 'BL' %}
+        color: #082744;
+      {% elif npopup.text_color == 'WH' %}
+        color: #ffffff;
+      {% elif npopup.text_color == 'GR' %}
+        color: #444444;
+      {% endif %}
+      }
+      {% endif %}
+    {% endfor %}
+    {% for epopup in event_popups.all %}
+      {% if epopup.activate %}
+      #epopup_{{ epopup.pk }} .modal-dialog .modal-body {
+      background-size: cover;
+      background-image: url({% static 'popups/img/'|add:epopup.background|add:'.jpg' %});
+      {% if epopup.text_color == 'BL' %}
+        color: #082744;
+      {% elif epopup.text_color == 'WH' %}
+        color: #ffffff;
+      {% elif epopup.text_color == 'GR' %}
+        color: #444444;
+      {% endif %}
+      }
+      {% endif %}
+    {% endfor %}
+    {% for ipopup in image_popups.all %}
+      {% if ipopup.activate %}
+      #epopup_{{ ipopup.pk }} .modal-dialog .modal-body {
+      background-size: cover;
+      background-image: url({% static 'popups/img/'|add:ipopup.background|add:'.jpg' %});
+      {% if ipopup.text_color == 'BL' %}
+        color: #082744;
+      {% elif ipopup.text_color == 'WH' %}
+        color: #ffffff;
+      {% elif ipopup.text_color == 'GR' %}
+        color: #444444;
+      {% endif %}
+      }
+      {% endif %}
+    {% endfor %}
+    </style>
+
+    <title>Hello, world!</title>
+</head>
+
+<script>
+  {% for npopup in noti_popups.all %}
+    {% if npopup.activate %}
+    $(document).ready(function(){
+        $("#npopup_{{ npopup.pk }}").modal('show');
+    });
+    {% endif %}
+  {% endfor %}
+  {% for epopup in event_popups.all %}
+    {% if epopup.activate %}
+    $(document).ready(function(){
+        $("#epopup_{{ epopup.pk }}").modal('show');
+    });
+    {% endif %}
+  {% endfor %}
+  {% for ipopup in image_popups.all %}
+    {% if ipopup.activate %}
+    $(document).ready(function(){
+        $("#ipopup_{{ ipopup.pk }}").modal('show');
+    });
+    {% endif %}
+  {% endfor %}
+</script>
+<body>
+
+<!-- Noti Popup Modal -->
+{% for npopup in noti_popups.all %}
+  {% if npopup.activate %}
+  <div class="modal fade" id="npopup_{{ npopup.pk }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+       aria-labelledby="nstaticBackdropLabel_{{ npopup.pk }}" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="nstaticBackdropLabel_{{ npopup.pk }}">{{ npopup.title }}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <h4 class="text-center">{{ npopup.subtitle }}</h4>
+            {% autoescape off %}
+            <p class="text-center">{{ npopup.description }}</p>
+            {% endautoescape %}
+          </div>
+        </div>
+         <div class="modal-footer">
+           {% if npopup.url %}
+            <a href="{{ npopup.url }}" target="_blank">자세히 보기</a>
+           {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+{% endfor %}
+
+<!-- Event Popup Modal -->
+{% for epopup in event_popups.all %}
+  {% if epopup.activate %}
+  <div class="modal fade" id="epopup_{{ epopup.pk }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+       aria-labelledby="estaticBackdropLabel_{{ epopup.pk }}" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="estaticBackdropLabel_{{ epopup.pk }}">{{ epopup.title }}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <h4 class="text-center">{{ epopup.subtitle }}</h4>
+            {% autoescape off %}
+            <p class="text-center">{{ epopup.description }}</p>
+            {% endautoescape %}
+            {% if epopup.url %}
+            <a href="{{ epopup.url }}" class="btn-get-started scrollto">자세히 보기</a>
+            {% endif %}
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+{% endfor %}
+
+<!-- Image Popup Modal -->
+{% for ipopup in image_popups.all %}
+  {% if ipopup.activate %}
+  <div class="modal fade" id="ipopup_{{ ipopup.pk }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+       aria-labelledby="istaticBackdropLabel_{{ ipopup.pk }}" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="istaticBackdropLabel_{{ ipopup.pk }}">{{ ipopup.title }}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <h4 class="text-center">{{ ipopup.subtitle }}</h4>
+            {% autoescape off %}
+            <p class="text-center">{{ ipopup.description }}</p>
+            {% endautoescape %}
+            {% if ipopup.url %}
+            <a href="{{ ipopup.url }}" class="btn-get-started scrollto">자세히 보기</a>
+            {% endif %}
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+{% endfor %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
