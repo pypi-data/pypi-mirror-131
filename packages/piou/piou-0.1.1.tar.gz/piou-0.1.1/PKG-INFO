@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: piou
+Version: 0.1.1
+Summary: A CLI tool
+Home-page: https://github.com/andarius/pioupiou
+License: MIT
+Keywords: cli
+Author: Julien Brayere
+Author-email: julien.brayere@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: pydantic
+Requires-Dist: pydantic (>=1.8.2,<2.0.0); extra == "pydantic"
+Requires-Dist: rich (>=10.11.0,<11.0.0)
+Project-URL: Repository, https://github.com/andarius/pioupiou
+Description-Content-Type: text/markdown
+
+# Piou  
+
+
+A CLI tool to build beautiful command-line interfaces with type validation.
+
+It is as simple as
+
+```python
+from piou import Parser, CmdArg
+
+parser = Parser(description='A CLI tool')
+
+parser.add_argument('-h', '--help', help='Display this help message')
+parser.add_argument('-q', '--quiet', help='Do not output any message')
+parser.add_argument('--verbose', help='Increase verbosity')
+
+
+@parser.command(cmd='foo',
+                help='Run foo command')
+def foo_main(
+    foo1: int = CmdArg(..., help='Foo arguments'),
+    foo2: str = CmdArg('-f', '--foo2', help='Foo arguments')
+):
+    print('Ran foo main with ', foo1)
+    print('foo2: ', foo2)
+
+
+@parser.command(cmd='bar', help='Run bar command')
+def bar_main():
+    pass
+
+
+if __name__ == '__main__':
+    parser.print_help()
+    parser.run()
+```
+The output will look like this: 
+
+![example](./docs/example.png)
