@@ -1,0 +1,8 @@
+setup.py
+typedpkg_ns-stubs/b/__init__.pyi
+typedpkg_ns-stubs/b/bbb.pyi
+typedpkg_ns_b_stubs.egg-info/PKG-INFO
+typedpkg_ns_b_stubs.egg-info/SOURCES.txt
+typedpkg_ns_b_stubs.egg-info/dependency_links.txt
+typedpkg_ns_b_stubs.egg-info/namespace_packages.txt
+typedpkg_ns_b_stubs.egg-info/top_level.txt

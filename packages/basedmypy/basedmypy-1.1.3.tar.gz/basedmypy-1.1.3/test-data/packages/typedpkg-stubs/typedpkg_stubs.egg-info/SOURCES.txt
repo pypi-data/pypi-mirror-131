@@ -1,0 +1,8 @@
+setup.py
+typedpkg-stubs/__init__.pyi
+typedpkg-stubs/py.typed
+typedpkg-stubs/sample.pyi
+typedpkg_stubs.egg-info/PKG-INFO
+typedpkg_stubs.egg-info/SOURCES.txt
+typedpkg_stubs.egg-info/dependency_links.txt
+typedpkg_stubs.egg-info/top_level.txt
