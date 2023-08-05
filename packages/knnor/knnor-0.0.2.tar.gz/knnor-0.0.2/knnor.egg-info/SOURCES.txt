@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+knnor/__init__.py
+knnor/data_augment.py
+knnor.egg-info/PKG-INFO
+knnor.egg-info/SOURCES.txt
+knnor.egg-info/dependency_links.txt
+knnor.egg-info/not-zip-safe
+knnor.egg-info/requires.txt
+knnor.egg-info/top_level.txt
+knnor/tests/__init__.py
+knnor/tests/test_augmented.py
