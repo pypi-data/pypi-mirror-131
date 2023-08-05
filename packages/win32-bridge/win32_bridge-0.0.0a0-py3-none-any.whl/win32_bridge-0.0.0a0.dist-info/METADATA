@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: win32-bridge
+Version: 0.0.0a0
+Summary: Package for capturing an image from a windows window; capturing and sending keystroke events
+Home-page: https://github.com/d3dx13/win32-bridge
+Author: d3dx13
+Author-email: zhidkov2846@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/d3dx13/win32-bridge/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# win32-bridge
+
