@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: domain-check
+Version: 1.0.1
+Summary: Check which TLDs are still free for a given name
+Home-page: https://github.com/nonchris/check-domain/
+Author: nonchris
+Author-email: info@nonchris.eu
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/nonchris/domain-check/issues
+Project-URL: Source, https://github.com/nonchris/domain-check/
+Keywords: domain,tld,check,free
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Other Audience
+Classifier: Topic :: Internet
+Classifier: Typing :: Typed
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# domain-check
+A script running over all TLDs that fulfill specified requirements |check if `name.TLD` is still free. 
+Using `dig` to check for availability. The list of all TLD-domains will be requested from `do.de` (not sponsored).  
+
+## Options
+| Parameter | Description | Default |
+| --- | --- | --- |
+| name | The domain name to check for | required input |
+| \[-p\] \[--price\] | Max price for domain |  default=20.000 |
+| \[-l\] \[--maxlen\] | Max length the TLD shall have | default=18 |
+| \[-r\] \[--rate\] | Delay between whois-calls in seconds | default=0.2 |
+| \[-f\] \[--file\] | File the available results are written to | default="./free.txt" |
+
+## setup
+Make sure that you've got the CLI-tool `dig` installed since it's the part required for checking the domain.
+It should be part of `dnsutils`.   
+
+After that install the package with pip:  
+`pip install domain-check`  
+Run it using a command like: 
+`domain-check example -r 0.01 -f example.txt`  
+

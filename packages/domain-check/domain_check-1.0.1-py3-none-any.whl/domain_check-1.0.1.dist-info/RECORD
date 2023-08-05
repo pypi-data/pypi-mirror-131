@@ -1,0 +1,12 @@
+checker/__init__.py,sha256=wy93KenCIZM_2eFR2yv-RGK1QjfcNAdh5Rev1NKMTGQ,1313
+checker/fetch_and_prepare.py,sha256=7HUPfvR8fBheNyo6nFdVRdN17c-Eijl8-BkziB05DS0,1170
+checker/huge_dict.py,sha256=po46xUEMaplaquQ1ipSyEE0ajNCF69CvjkO28CEU-FQ,87825
+checker/log_setup.py,sha256=BgFjLGe9UZd7nUrEMDN-EsaWSnUHyfcL2R99dZC99vg,770
+checker/main.py,sha256=kjVqZifZTHjHxcYKcDo5r_tdjQNTM5vAQnjbSt6gYbc,2176
+checker/smaller_dict.py,sha256=Zkici6Q9YWPbwOCkQsNJ2ip2mswllJ5hyCzHnYj3sAA,20940
+domain_check-1.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+domain_check-1.0.1.dist-info/METADATA,sha256=E8iEP17gzdI-Vd2ZPt7eZf1fYZEXmy5285mTdUCd7EY,1978
+domain_check-1.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+domain_check-1.0.1.dist-info/entry_points.txt,sha256=jsDBD3a1iZXIY_hKh5rVN8GTdznODTqipevfl-2aIvc,47
+domain_check-1.0.1.dist-info/top_level.txt,sha256=1JuOQc-4s3Z5yyq8d7rWQCOWgXfRQp8_MnpXbXeRplE,8
+domain_check-1.0.1.dist-info/RECORD,,
