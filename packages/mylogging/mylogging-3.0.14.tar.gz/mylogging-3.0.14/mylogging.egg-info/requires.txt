@@ -1,0 +1,3 @@
+pygments
+typing_extensions
+typeguard
