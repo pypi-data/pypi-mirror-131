@@ -1,0 +1,3 @@
+[console_scripts]
+gitlab2mr = gitlab2mr.cli:main
+
