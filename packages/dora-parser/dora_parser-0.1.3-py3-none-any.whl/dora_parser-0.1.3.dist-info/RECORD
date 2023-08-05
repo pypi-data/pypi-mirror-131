@@ -1,0 +1,16 @@
+dora_parser/__init__.py,sha256=Nj9Z8fQMav8KiDPLWhA8Qg97P8e20DNwacE5i665SDI,927
+dora_parser/__main__.py,sha256=RkI2JPCvFSbj_wtntVRrHhrtWoySmbKW3BY5j3l6tR8,2944
+dora_parser/dialects/__init__.py,sha256=eo9-iJ84yf0xkIUKqHmLAQXIhRXdBeuntEKdCq_AVSI,5202
+dora_parser/dialects/athena.py,sha256=_iGKz5cH2qfsPyeZOjr8zmwtEKmoC7IspPzkHJMXkSM,14275
+dora_parser/dialects/hive.py,sha256=0g4gnPX3d5-ktfyIA_brnKeKxBy7mH7oqv6sQER9RhE,3096
+dora_parser/dialects/impala.py,sha256=3DnN0z5z4myotXVEQ63UlTzXhziGcGtehN4GSfx1KwQ,4002
+dora_parser/dialects/presto.py,sha256=O_dns7yLmHhFySRsPgb9utyN9LbPlEyK91tn8TIvyOs,82434
+dora_parser/dialects/spark.py,sha256=nz5RVtiFHZYuo5ffiDfgLpq3jDCvbZNsw924ggRc3z8,45913
+dora_parser/parser.py,sha256=vEffErBXM28SjCZovvTQRNkdT3vFgw8QZRzQkfGsO2U,1534
+dora_parser/reader.py,sha256=WLyEuj2hdNtQui15eOY4HLzghuaZOydr5otfHyibWNs,7893
+dora_parser/report.py,sha256=_wPv6kfZ5nTYyzbwozlTMdy4cLHG9Ft01iX1gmTgn-o,6579
+dora_parser/transpiler.py,sha256=bK-aJ4YKd14tVWWQmYeOdKRLpvdAGOc8qdK8XPpNR5s,4783
+dora_parser-0.1.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dora_parser-0.1.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+dora_parser-0.1.3.dist-info/METADATA,sha256=XyzmdBxO1i6afpXqPzw3GGx4Tc-Fu64KxKJiu4ENQiU,9377
+dora_parser-0.1.3.dist-info/RECORD,,
