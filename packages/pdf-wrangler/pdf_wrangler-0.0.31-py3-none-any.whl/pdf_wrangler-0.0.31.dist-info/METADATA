@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: pdf-wrangler
+Version: 0.0.31
+Summary: PDFMiner Wrapper for extractions
+Home-page: https://github.com/happilyeverafter95/pdf-wrangler
+Author: happilyeverafter95
+Author-email: author@example.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/happilyeverafter95/pdf-wrangler/issues
+Keywords: pdf parser,text mining
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: pdfminer.six (==20181108)
+
+# pdf-wrangler
+
+PDFMiner wrapper used to simplify PDF extraction and other PDF utilities.
+
+## Document class
+
+The `Document` class is used to represent a PDF document. It contains functionality to access the raw text by page, PDF metadata and images in the form of PDFMiner's `LTImage` object.
+
+## Example Usage
+
+```
+from pdf_wrangler import Document
+
+pdf_document = Document('path/to/pdf.pdf')
+
+# to access pdf metadata
+pdf_document.get_metadata()
+
+# to access full pdf text
+pdf_document.get_text()
+
+# print text by pdf page
+for page in pdf_document.pages:
+    print(page.get_text())
+
+# to access pdf images by page
+page_1_images = pdf_document.pages[0].images
+
+# get first image bytes representation
+page_1_images[0].stream.get_data()
+```
+
+## Installation
+
+To install, run:
+```
+pip install pdf-wrangler
+```
+

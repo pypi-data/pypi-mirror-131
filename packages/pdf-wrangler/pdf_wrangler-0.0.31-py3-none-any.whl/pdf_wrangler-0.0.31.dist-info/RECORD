@@ -1,0 +1,8 @@
+pdf_wrangler/__init__.py,sha256=DSxDOJZ6vHUSlx0EnydmRvUDFftg69m5AfuqZNbkTPE,31
+pdf_wrangler/document.py,sha256=FKacmVR_e1SySdwGM3krKV9UUeoewDVVyDPQrJ1kGFg,2654
+pdf_wrangler/page.py,sha256=lhPYzh0btAL-nGekpRqWnEHmDzD-Xkp3XEUdFC9wv-0,1223
+pdf_wrangler-0.0.31.dist-info/LICENSE,sha256=QQVdDXmUDANv51kBC0Sl2mHewNHd1rBjcddJ9NYe2Ac,1065
+pdf_wrangler-0.0.31.dist-info/METADATA,sha256=BJ6u7DPMuogUm_fpLnt8EZjOeTmeOiKeCTEYPwNYGOI,1467
+pdf_wrangler-0.0.31.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pdf_wrangler-0.0.31.dist-info/top_level.txt,sha256=9EkyZM4H_hMk4EaNpboNmHCPJhqcztsAdesPQSE5I0U,13
+pdf_wrangler-0.0.31.dist-info/RECORD,,
