@@ -1,0 +1,5 @@
+cinder<20.0.0,>=19.0.0
+os-brick>=5.0.1
+
+[:(python_version<'3.8')]
+importlib_metadata>=1.7.0
