@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/dynamodb_feeds_to_sqs.egg-info/PKG-INFO
+src/dynamodb_feeds_to_sqs.egg-info/SOURCES.txt
+src/dynamodb_feeds_to_sqs.egg-info/dependency_links.txt
+src/dynamodb_feeds_to_sqs.egg-info/top_level.txt
+src/feedback/DataFormation.py
+src/feedback/GetData.py
+src/feedback/Scheduler.py
+src/feedback/__init__.py
+src/feedback/application.py
