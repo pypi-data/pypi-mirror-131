@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+test/test.py
+tkitAutoMask/__init__.py
+tkitAutoMask/attention_mask.py
+tkitAutoMask/mask.py
+tkitAutoMask/spanmask.py
+tkitAutoMask.egg-info/PKG-INFO
+tkitAutoMask.egg-info/SOURCES.txt
+tkitAutoMask.egg-info/dependency_links.txt
+tkitAutoMask.egg-info/top_level.txt
