@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: fiddup
+Version: 2.0.0
+Summary: Find files with similar names.
+Home-page: https://github.com/jarviscodes/fiddup
+Author: Jarvis Codes
+Author-email: jarvis@jayradz.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: colorama
+Requires-Dist: alive-progress
+Requires-Dist: terminaltables
+
+# Fiddup
+
+**Fi**le **D**e**Dup**licator
+
+Small tool to quickly scan a directory for files of similar names.
+Useful to scan through archives of books, documents, downloads, movies, music, ...
+
+Outputs the original filename, the compared filename, and similarity.
+Only outputs above a specified similarity are stored.
+
+## Installation
+
+### From PyPi
+
+`pip3 install fiddup`
+
+### From Sauce
+* `git pull https://github.com/jarviscodes/fiddup`
+
+* `setup.py install`
+
+## Usage
+```
+Usage: python -m fiddup [OPTIONS]
+
+Options:
+  -i, --inpath TEXT      [required]
+  -a, --analyze BOOLEAN
+  -t, --threshold FLOAT
+  -e, --extensions TEXT  [required]
+  -d, --directory
+  -v, --verbose
+  --help                 Show this message and exit.
+
+```
+
+## Example output
+
+```
+(env) E:\Users\Jarvis\PycharmProjects\fiddup>python -m fiddup -i C:\Temp -e mp4 -d -v
+[Info] Starting with analyze: True
+[Info] Starting with match threshold: 0.7
+[Info] Scanning for extensions: mp4
+[Info] Found 7 directories.
+[Info] Found 0 files.
+|###################################| 7/7 [100%] in 0.0s (248.30/s)
+ Resultsâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â”‚ Name                  â”‚ Compared to           â”‚ Similarity â”‚
+â”‚ New folder            â”‚ New folder - Copy     â”‚       0.74 â”‚
+â”‚ New folder - Copy     â”‚ New folder - Copy (2) â”‚       0.89 â”‚
+â”‚ New folder - Copy     â”‚ New folder - Copy (3) â”‚       0.89 â”‚
+â”‚ New folder - Copy     â”‚ New folder - Copy (4) â”‚       0.89 â”‚
+â”‚ New folder - Copy     â”‚ New folder - Copy (5) â”‚       0.89 â”‚
+â”‚ New folder - Copy     â”‚ New folder - Copy (6) â”‚       0.89 â”‚
+â”‚ New folder - Copy (2) â”‚ New folder - Copy (3) â”‚       0.95 â”‚
+â”‚ New folder - Copy (2) â”‚ New folder - Copy (4) â”‚       0.95 â”‚
+â”‚ New folder - Copy (2) â”‚ New folder - Copy (5) â”‚       0.95 â”‚
+â”‚ New folder - Copy (2) â”‚ New folder - Copy (6) â”‚       0.95 â”‚
+â”‚ New folder - Copy (3) â”‚ New folder - Copy (4) â”‚       0.95 â”‚
+â”‚ New folder - Copy (3) â”‚ New folder - Copy (5) â”‚       0.95 â”‚
+â”‚ New folder - Copy (3) â”‚ New folder - Copy (6) â”‚       0.95 â”‚
+â”‚ New folder - Copy (4) â”‚ New folder - Copy (5) â”‚       0.95 â”‚
+â”‚ New folder - Copy (4) â”‚ New folder - Copy (6) â”‚       0.95 â”‚
+â”‚ New folder - Copy (5) â”‚ New folder - Copy (6) â”‚       0.95 â”‚
+ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ 
+```
+
