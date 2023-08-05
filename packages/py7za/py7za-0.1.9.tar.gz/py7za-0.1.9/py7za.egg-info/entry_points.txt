@@ -1,0 +1,3 @@
+[console_scripts]
+py7za-box = py7za.py7za_box:cli_entry_point
+
