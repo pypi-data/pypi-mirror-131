@@ -1,0 +1,10 @@
+stim/__init__.py,sha256=tHi0ZEjfXgJxh1g-TwNI6iPp5_Fu1mii41Fo3UcPXgw,885
+stim/_stim_march_avx2.cp36-win32.pyd,sha256=lBmOzafm5I8iPhoVuqvJnMAd_3QRJGuAYvTEzX3aUjI,1149440
+stim/_stim_march_polyfill.cp36-win32.pyd,sha256=127-OcbAho10NHfYLK5jG2-pChg1q5jQpf7xZG9bupE,1149440
+stim/_stim_march_sse2.cp36-win32.pyd,sha256=Mq5ePNC5Dm_qDLmAUZB2HAdNdZwR9NHhc2QIr4u-QMw,1149440
+stim-1.7.0.data/data/README.md,sha256=1Kg8Mlpjrb_VaMrVynPoZZQT3UcpmEG0uEyt8ZfWlwU,3995
+stim-1.7.0.dist-info/LICENSE,sha256=SbvpEU5JIU3yzMMkyzrI0dGqHDoJR_lMKGdl6GZHsy4,11558
+stim-1.7.0.dist-info/METADATA,sha256=_w6n-Ag1DrmFR5JvbfmjTlwrNRaOJOloEcDqW6TWUBQ,4199
+stim-1.7.0.dist-info/WHEEL,sha256=zg0xOMyemez8PVySo1B8lpbm0_VC89N75YtIdp1rWss,97
+stim-1.7.0.dist-info/top_level.txt,sha256=_h6lQZBgzVLumwrXyf13DY71YT6dUkd4SY-ZRjcljFQ,5
+stim-1.7.0.dist-info/RECORD,,
