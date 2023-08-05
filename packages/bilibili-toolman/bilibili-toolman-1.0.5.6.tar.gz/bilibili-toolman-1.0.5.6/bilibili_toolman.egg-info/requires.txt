@@ -1,0 +1,5 @@
+requests
+pycryptodome
+coloredlogs
+youtube-dl
+tqdm
