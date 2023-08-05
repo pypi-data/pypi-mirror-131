@@ -1,0 +1,3 @@
+[console_scripts]
+rater=rate.main:init
+
