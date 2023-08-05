@@ -1,0 +1,10 @@
+html_sanitizer/__init__.py,sha256=adMN75T2yTeDo_8aCUwTyNx9kwhouLKgMOVLGTTFbpI,155
+html_sanitizer/__main__.py,sha256=ABciMSOk56MPLwpE36DjlTdkiEfjQBUxDeiXXhFPNjM,293
+html_sanitizer/django.py,sha256=jSpT-b65z36JZ5sxcvwut6riA7-W0-krQB482EuzHNQ,1144
+html_sanitizer/sanitizer.py,sha256=IhuwLXan9_lPtNNzfDHU0l4ELITklyw5JXlg2YLTCoI,13360
+html_sanitizer/tests.py,sha256=IItksHlYECGOfaXvMp70TuooF70l4qbWjHHQun5VhQs,21579
+html_sanitizer-1.9.2.dist-info/LICENSE,sha256=cvWEVlfKiCpJ5EsYq5rG7bCveEZFdBT43o_uXa656v4,1553
+html_sanitizer-1.9.2.dist-info/METADATA,sha256=3gOuReOE3b1ssNzHPOMZfMO-hWubecKLXB8uaS4bFro,7601
+html_sanitizer-1.9.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+html_sanitizer-1.9.2.dist-info/top_level.txt,sha256=V8316_ckY2SSjoaTuBozTtd_UwFkHN9-3ajtm_lzLGs,15
+html_sanitizer-1.9.2.dist-info/RECORD,,
