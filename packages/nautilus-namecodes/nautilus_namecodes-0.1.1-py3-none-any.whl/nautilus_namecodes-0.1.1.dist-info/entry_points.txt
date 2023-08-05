@@ -1,0 +1,3 @@
+[console_scripts]
+nautilus-namecodes=nautilus_namecodes.main:app
+
