@@ -1,0 +1,17 @@
+include LICENSE.txt
+include requirements.txt
+include quinteng/qasm/libs/*.inc
+include quinteng/schemas/*.json
+include quinteng/schemas/examples/*.json
+include quinteng/VERSION.txt
+recursive-include quinteng *.pyx
+recursive-include quinteng *.pxd
+include quinteng/visualization/styles/*.json
+recursive-include quinteng/test/mock/backends *.json
+
+# Include the tests files.
+recursive-include test *.py
+include test/python/pickles/*.pickle
+include test/python/qasm/*.qasm
+include test/python/visualization/references/*.png
+include test/python/notebooks/*.ipynb

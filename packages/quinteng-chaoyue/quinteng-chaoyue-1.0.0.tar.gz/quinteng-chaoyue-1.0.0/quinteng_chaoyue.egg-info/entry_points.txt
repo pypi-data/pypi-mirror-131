@@ -1,0 +1,4 @@
+[quinteng.unitary_synthesis]
+aqc = quinteng.transpiler.synthesis.aqc.aqc_plugin:AQCSynthesisPlugin
+default = quinteng.transpiler.passes.synthesis.unitary_synthesis:DefaultUnitarySynthesis
+
