@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pyrequisites/__init__.py
+pyrequisites/_create_empty_dict.py
+pyrequisites/_flexible_multilevel_mkdir.py
+pyrequisites/_get_parent_directory.py
+pyrequisites.egg-info/PKG-INFO
+pyrequisites.egg-info/SOURCES.txt
+pyrequisites.egg-info/dependency_links.txt
+pyrequisites.egg-info/requires.txt
+pyrequisites.egg-info/top_level.txt
