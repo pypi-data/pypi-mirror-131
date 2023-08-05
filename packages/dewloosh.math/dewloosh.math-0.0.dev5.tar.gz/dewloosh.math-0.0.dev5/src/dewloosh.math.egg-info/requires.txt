@@ -1,0 +1,6 @@
+dewloosh.core
+scipy
+awkward
+numba
+networkx
+sympy
