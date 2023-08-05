@@ -1,0 +1,6 @@
+pyproject.toml
+setup.cfg
+src/example_pkg_ainursheg.egg-info/PKG-INFO
+src/example_pkg_ainursheg.egg-info/SOURCES.txt
+src/example_pkg_ainursheg.egg-info/dependency_links.txt
+src/example_pkg_ainursheg.egg-info/top_level.txt
