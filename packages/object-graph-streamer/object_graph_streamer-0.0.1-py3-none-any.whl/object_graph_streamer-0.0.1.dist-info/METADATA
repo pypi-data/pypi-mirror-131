@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: object-graph-streamer
+Version: 0.0.1
+Summary: ObjectGraphStreamerRepository
+Home-page: https://github.com/mabels/object-graph-streamer
+Author: Meno Abels
+Author-email: meno.abels@adviser.com
+License: UNKNOWN
+Keywords: serialization
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: base58
+
+# object-graph-streamer
+Object Graph Streamer
+
+
