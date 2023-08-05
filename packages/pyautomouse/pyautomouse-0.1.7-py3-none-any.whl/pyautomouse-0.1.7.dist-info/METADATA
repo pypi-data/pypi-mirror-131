@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pyautomouse
+Version: 0.1.7
+Summary: UNKNOWN
+Home-page: https://github.com/seoul2k/pyautomouse
+Author: xiongtianshuo
+Author-email: seoul1k@163.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/seoul2k/pyautomouse/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyautogui
+Requires-Dist: time
+
+# pyautomouse
+
+```python
+import pyautomouse
+
+#class Mouse
+m = pyautomouse.Mouse()
+# click
+m.mouseClick(count=,Time=,x=,y=,button=,isdoubleclick=,istripleClick=) => return None
+# getMouseXY
+x,y=m.getMouseXY() => return x,y
+# MoveTo
+m.MoveTo(x=,y=,duration=) => return None
+# dragTo
+m.dragTo(x=,y=,button=,duration=) => return None
+#class keyboard
+k = pyautomouse.keyboard()
+#hotkey
+k.hotkey(args=, count=, Time=)
+#press
+k.press(key=, count=, Time=)
+#keyUp
+k.keyUp(key=, count=, Time=)
+#keyUp
+k.keyDown(key=, count=, Time=)
+#keyUp
+k.typewrite(key=, count=, Time=)
+```[EOF]
+
+
