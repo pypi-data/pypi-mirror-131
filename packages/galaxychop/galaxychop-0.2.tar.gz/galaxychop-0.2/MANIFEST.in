@@ -1,0 +1,18 @@
+include LICENSE.txt
+include README.md
+
+recursive-include galaxychop *.dat
+recursive-include galaxychop *.npy
+recursive-include galaxychop *.f95
+
+recursive-exclude docs *
+recursive-exclude legacy *
+recursive-exclude legacy_test *
+recursive-exclude resource *
+recursive-exclude tests *
+recursive-exclude tools *
+
+exclude tox.ini
+exclude pyproject.toml
+exclude .header-template
+exclude .readthedocs.yml
