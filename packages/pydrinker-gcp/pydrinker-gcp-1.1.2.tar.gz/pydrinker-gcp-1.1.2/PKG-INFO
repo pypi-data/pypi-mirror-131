@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pydrinker-gcp
+Version: 1.1.2
+Summary: Google Cloud Platform 'plugin' for pydrinker
+Home-page: https://github.com/rafaelhenrique/pydrinker-gcp
+License: LGPLv3
+Keywords: gcp,consumer,pub-sub,google-cloud-platform,pydrinker
+Author: Rafael Henrique da Silva Correia
+Author-email: rafael@abraseucodigo.com.br
+Requires-Python: >=3.9,<3.10
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: System :: Distributed Computing
+Requires-Dist: google-cloud-pubsub (>=2.8.0,<3.0.0)
+Requires-Dist: pydrinker (>=1.0.0,<2.0.0)
+Project-URL: Repository, https://github.com/rafaelhenrique/pydrinker-gcp
+Description-Content-Type: text/markdown
+
+# pydrinker-gcp
+![build on github actions](https://github.com/pydrinker/pydrinker-gcp/actions/workflows/test.yml/badge.svg?branch=main)
+
+This is a extension of pydrinker for Google Cloud Provider to make pydrinker consume messages from [GCP Subscribers](https://cloud.google.com/pubsub/docs/subscriber).
+
+To understand more about pydrinker [see org page](https://github.com/pydrinker).
+
