@@ -1,0 +1,3 @@
+[console_scripts]
+pylint-ignore = pylint_ignore.__main__:main
+
