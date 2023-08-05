@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: captif-db
+Version: 0.10
+Summary: 
+License: MIT
+Keywords: CAPTIF
+Author: John Bull
+Author-email: john.bull@nzta.govt.nz
+Requires-Python: >=3.8,<3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: captif-data-structures (>=0.11,<0.12)
+Requires-Dist: captif-db-config (>=0.7,<0.8)
+Requires-Dist: captif-slp (>=0.5,<0.6)
+Requires-Dist: mysqlclient (>=2.0.3,<3.0.0)
+Requires-Dist: numpy (>=1.19.1,<2.0.0)
+Requires-Dist: pandas (>=1.1.0,<2.0.0)
+Requires-Dist: schema (>=0.7.2,<0.8.0)
+Requires-Dist: toml (>=0.10.1,<0.11.0)
+Description-Content-Type: text/markdown
+
+
+# captif-db
+
+Object relational mapping for the CAPTIF database.
+
+These are low-level methods.
+
+### Initialise database and generate a session object:
+
+```
+from captif_db.db import DbSession
+DbSession.global_init()
+session = DbSession.factory()
+```
+
+### Import and use models:
+
+```
+from captif_db.db.models import Project
+projects = session.query(Project).all()
+```
+
