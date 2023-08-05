@@ -1,0 +1,4 @@
+[console_scripts]
+gerrit_check_style = gerrit_coverage:check_style
+gerrit_coverage = gerrit_coverage:check_missing_lines
+
