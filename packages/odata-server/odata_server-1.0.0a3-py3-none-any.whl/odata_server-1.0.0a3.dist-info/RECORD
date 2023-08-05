@@ -1,0 +1,11 @@
+odata_server/__init__.py,sha256=ZO_umRU_j2dbj5xA-uOwoTJV-d9I6pLcDvT8HfoAn-8,24
+odata_server/edm.py,sha256=Qg-ajKFFIjP3UZ-BTaGSaRMtqpOmXoTQATJ42mml8UY,16457
+odata_server/flask.py,sha256=2UFoei_BlypTA5Q5zhhGQAxS5yWShyKBM8M--0U2jcU,12980
+odata_server/meta.py,sha256=58rZVesU9piYiiXwdB2TrBwmvpcm0pnwwX1z5_PUp20,1022
+odata_server/parser.py,sha256=bOOGl5v5yp9Z7-4S2hKXcUI0R4wx9j6kPXH7pgCx8qQ,98
+odata_server/utils.py,sha256=lxTsCY0TdlcGh2CkBHRBpoXuA-aX0t8pFPdLnKc59wM,21589
+odata_server/data/odata.abnf,sha256=SF4FvNWWm__srbvX0EvXb7iXDr8X-M2zOnRlDTJTqbI,58160
+odata_server-1.0.0a3.dist-info/METADATA,sha256=tRr-gOLffyTCq2gUm6Kk4ILkJUKKXuEwF__q0ozL-jw,733
+odata_server-1.0.0a3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+odata_server-1.0.0a3.dist-info/top_level.txt,sha256=JlnU_kSygiVymL1hgF5Q2_tQ2-nGuv8GZ3uCHqAuoOY,13
+odata_server-1.0.0a3.dist-info/RECORD,,
