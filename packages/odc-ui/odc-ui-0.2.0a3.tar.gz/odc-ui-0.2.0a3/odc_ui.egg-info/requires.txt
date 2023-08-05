@@ -1,0 +1,11 @@
+datacube
+ipyleaflet
+ipython
+ipywidgets
+jupyter_ui_poll
+matplotlib
+numpy
+odc-algo
+pandas
+rasterio
+xarray
