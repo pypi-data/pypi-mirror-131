@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/crow_api.core.egg-info/PKG-INFO
+src/crow_api.core.egg-info/SOURCES.txt
+src/crow_api.core.egg-info/dependency_links.txt
+src/crow_api.core.egg-info/requires.txt
+src/crow_api.core.egg-info/top_level.txt
+src/crow_api/core/__init__.py
+src/crow_api/core/py.typed
+src/crow_api/core/_jsii/__init__.py
+src/crow_api/core/_jsii/crow-api@2.0.0.jsii.tgz
+src/crow_api/core/_jsii/bin/crow-api
