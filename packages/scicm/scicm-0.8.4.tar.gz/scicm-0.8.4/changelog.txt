@@ -1,0 +1,77 @@
+0.8.4 (14/12/2021):
+-Added extra check for data type and updated documentation for all scicm.tools.
+
+0.8.3 (09/12/2021):
+-Fixing issues with included images
+
+0.8.2 (09/12/2021):
+-Check for PyPI file size issue
+
+0.8.1 (09/12/2021):
+-Fixed issue with passing non-ndarray for vlims to scicm.tools.stitch
+
+0.8.0 (06/09/2021):
+-Added multiple colour maps: diverging, isoluminant, bichromatic_middlegrey, X2080.
+
+0.7.1 (26/08/2021):
+-Fixing the images in PyPI
+
+0.7.0 (26/08/2021):
+-Added soft colour maps
+
+0.6.0 (25/08/2021):
+-Added new teal colour map.
+-Updated names of previous "cyan" colour maps that are closer to teal.
+-Standarised the lightness of all monochromatic colour maps, so they play nicer with merge.
+
+0.5.0 (15/07/2021):
+-Added new cmap tools. Ran the full package through pylint and acted accordingly. Hid CwO and PwO until further notice.
+
+0.4.0 (15/07/2021):
+-Added additional diverging colourmaps: BwG, CwO, PwO, YkB
+-Fixed bug in figure heights in Example_images.ipynb
+
+0.3.0 (17/05/2021):
+-Added inverted names of existing diverging colour maps (e.g., now OkC is a valid name and is equal to CkO_r).
+
+0.2.3 (25/03/2021):
+-Modified README.md
+
+0.2.2 (25/03/2021):
+-Modified README.md
+
+0.2.1 (24/03/2021):
+-Small update to Garnet
+
+0.2.0 (24/03/2021):
+-Added Garnet colourmap
+
+0.1.0 (23/03/2021):
+-Added new multicolour map (Ripe).
+
+0.0.8 (04/03/2021):
+-Added Edges colour map
+
+0.0.7 (04/03/2021):
+-Added first multicolour map (Tropical).
+
+0.0.6 (26/02/2021):
+-Added cylic maps.
+
+0.0.5 (26/02/2021):
+-Renamed cmaps.py as cm.py (consistent with matplotlib and cmocean).
+
+0.0.4 (24/02/2021):
+-Renamed existing colour maps for consistency.
+
+0.0.3 (23/02/2021):
+-Fixed metadata in setup.cfg
+
+0.0.2 (23/02/2021):
+-Added all other colour maps.
+
+0.0.1 (23/02/2021):
+-Package working with one colour map.
+
+0.0.0 (12/02/2021):
+-Set up GitHub repository.
