@@ -1,0 +1,14 @@
+coredotseries/__init__.py,sha256=s6e-Kuuv8OnkrrKDSa-sYVjej5iIKbxANB2EGyBLSIA,249
+coredotseries/cli.py,sha256=wwx0Z0tgSIF_Bse60mCw9ITtXKm6hTxTr6-7f3787XI,396
+coredotseries/series.py,sha256=kGPUgzYmj_4vrJ79lgeUEPfec18l-XNSU5xPR2UhY_E,11145
+coredotseries/util.py,sha256=pVK63kdczvT5WaPAa_18Ddt-OtJlrG1B5o12_PTmVjM,523
+coredotseries/version.py,sha256=rq5OMW-khxQo_5FAvSrPaAS1lRfG9aG2hSuo-KK2Yfk,22
+tests/__init__.py,sha256=3XQgIfeCbqsFkNB6iIo8imffKDrD5c-xu-gkV68XF-c,36
+tests/test_series.py,sha256=D-b0um8gLsHBTo4h4ZWJxdxgB-sN1A1gFn14pb_f054,974
+coredotseries-0.1.8.dist-info/AUTHORS.md,sha256=TvZyfMqIe3aZGGAc_b7fNdteUdPDK6_pig04LTV0aHo,221
+coredotseries-0.1.8.dist-info/LICENSE,sha256=_Ukxvya_JlIHknVTZIfkAZJlKzQGeXsNOt4LgxLc4bU,584
+coredotseries-0.1.8.dist-info/METADATA,sha256=sjrxL7Zlbr3618HaOC2IEVHeDIhalj_4XWcQs7FHL7A,1430
+coredotseries-0.1.8.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+coredotseries-0.1.8.dist-info/entry_points.txt,sha256=KSA_DBPPhZZSSi_gvIkemgcIdCsFXaoP02j0kyduDts,44
+coredotseries-0.1.8.dist-info/top_level.txt,sha256=YApPfgK4ETFgKhPflaZmtb-fch6uqbmVVSGYM0lOeXA,20
+coredotseries-0.1.8.dist-info/RECORD,,
