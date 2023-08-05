@@ -1,0 +1,461 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>hifis_surveyval.plotting.matplotlib_color_map_parameters &mdash; hifis_surveyval  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> hifis_surveyval
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.5.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../pages/getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pages/preprocessing.html">Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pages/accessing_data.html">Accessing the Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pages/development.html">Developer Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pages/api.html">API Documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">hifis_surveyval</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>hifis_surveyval.plotting.matplotlib_color_map_parameters</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for hifis_surveyval.plotting.matplotlib_color_map_parameters</h1><div class="highlight"><pre>
+<span></span><span class="c1"># hifis-surveyval</span>
+<span class="c1"># Framework to help developing analysis scripts for the HIFIS Software survey.</span>
+<span class="c1">#</span>
+<span class="c1"># SPDX-FileCopyrightText: 2021 HIFIS Software &lt;support@hifis.net&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># SPDX-License-Identifier: GPL-3.0-or-later</span>
+<span class="c1">#</span>
+<span class="c1"># This program is free software: you can redistribute it and/or modify</span>
+<span class="c1"># it under the terms of the GNU General Public License as published by</span>
+<span class="c1"># the Free Software Foundation, either version 3 of the License, or</span>
+<span class="c1"># (at your option) any later version.</span>
+<span class="c1">#</span>
+<span class="c1"># This program is distributed in the hope that it will be useful,</span>
+<span class="c1"># but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="c1"># MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="c1"># GNU General Public License for more details.</span>
+<span class="c1">#</span>
+<span class="c1"># You should have received a copy of the GNU General Public License</span>
+<span class="c1"># along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.</span>
+
+<span class="sd">&quot;&quot;&quot;Module offers functionality to create color maps and fill pattern maps.&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">enum</span> <span class="kn">import</span> <span class="n">Enum</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">List</span>
+
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">colors</span><span class="p">,</span> <span class="n">pyplot</span>
+
+
+<div class="viewcode-block" id="FillPattern"><a class="viewcode-back" href="../../../modules/hifis_surveyval.plotting.html#hifis_surveyval.plotting.matplotlib_color_map_parameters.FillPattern">[docs]</a><span class="k">class</span> <span class="nc">FillPattern</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Represents different fill patterns in Matplotlib plots.&quot;&quot;&quot;</span>
+
+    <span class="n">PATTERN_01</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">PATTERN_02</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="n">PATTERN_03</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="n">PATTERN_04</span> <span class="o">=</span> <span class="mi">4</span>
+    <span class="n">PATTERN_05</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="n">PATTERN_06</span> <span class="o">=</span> <span class="mi">6</span>
+    <span class="n">PATTERN_07</span> <span class="o">=</span> <span class="mi">7</span>
+    <span class="n">PATTERN_08</span> <span class="o">=</span> <span class="mi">8</span>
+    <span class="n">PATTERN_09</span> <span class="o">=</span> <span class="mi">9</span>
+    <span class="n">PATTERN_10</span> <span class="o">=</span> <span class="mi">10</span></div>
+
+
+<div class="viewcode-block" id="DefaultFillPattern"><a class="viewcode-back" href="../../../modules/hifis_surveyval.plotting.html#hifis_surveyval.plotting.matplotlib_color_map_parameters.DefaultFillPattern">[docs]</a><span class="k">class</span> <span class="nc">DefaultFillPattern</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Defines a default fill pattern map to be used in plots.&quot;&quot;&quot;</span>
+
+    <span class="c1"># Define mapping from enum FillPattern to string representation of fill</span>
+    <span class="c1"># pattern.</span>
+    <span class="n">SLASH_FILL_PATTERN</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="n">FillPattern</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="n">FillPattern</span><span class="o">.</span><span class="n">PATTERN_01</span><span class="p">:</span> <span class="s1">&#39;#FFFFFF&#39;</span><span class="p">,</span>
+        <span class="n">FillPattern</span><span class="o">.</span><span class="n">PATTERN_02</span><span class="p">:</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span>
+        <span class="n">FillPattern</span><span class="o">.</span><span class="n">PATTERN_03</span><span class="p">:</span> <span class="s1">&#39;//&#39;</span><span class="p">,</span>
+        <span class="n">FillPattern</span><span class="o">.</span><span class="n">PATTERN_04</span><span class="p">:</span> <span class="s1">&#39;///&#39;</span><span class="p">,</span>
+        <span class="n">FillPattern</span><span class="o">.</span><span class="n">PATTERN_05</span><span class="p">:</span> <span class="s1">&#39;////&#39;</span><span class="p">,</span>
+        <span class="n">FillPattern</span><span class="o">.</span><span class="n">PATTERN_06</span><span class="p">:</span> <span class="s1">&#39;#000000&#39;</span><span class="p">,</span>
+    <span class="p">}</span></div>
+
+
+<div class="viewcode-block" id="CustomColors"><a class="viewcode-back" href="../../../modules/hifis_surveyval.plotting.html#hifis_surveyval.plotting.matplotlib_color_map_parameters.CustomColors">[docs]</a><span class="k">class</span> <span class="nc">CustomColors</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Represents different colors in Matplotlib plots.&quot;&quot;&quot;</span>
+
+    <span class="n">CUSTOM_01</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">CUSTOM_02</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="n">CUSTOM_03</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="n">CUSTOM_04</span> <span class="o">=</span> <span class="mi">4</span>
+    <span class="n">CUSTOM_05</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="n">CUSTOM_06</span> <span class="o">=</span> <span class="mi">6</span></div>
+
+
+<div class="viewcode-block" id="DefaultColors"><a class="viewcode-back" href="../../../modules/hifis_surveyval.plotting.html#hifis_surveyval.plotting.matplotlib_color_map_parameters.DefaultColors">[docs]</a><span class="k">class</span> <span class="nc">DefaultColors</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Defines default colors to be used in plots.&quot;&quot;&quot;</span>
+
+    <span class="c1"># Define mapping from enum Colors to hex representation of colors.</span>
+    <span class="n">HELMHOLTZ_BLUE</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="n">CustomColors</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="n">CustomColors</span><span class="o">.</span><span class="n">CUSTOM_01</span><span class="p">:</span> <span class="s2">&quot;#99BDD9&quot;</span><span class="p">,</span>
+        <span class="n">CustomColors</span><span class="o">.</span><span class="n">CUSTOM_02</span><span class="p">:</span> <span class="s2">&quot;#669CC6&quot;</span><span class="p">,</span>
+        <span class="n">CustomColors</span><span class="o">.</span><span class="n">CUSTOM_03</span><span class="p">:</span> <span class="s2">&quot;#337BB3&quot;</span><span class="p">,</span>
+        <span class="n">CustomColors</span><span class="o">.</span><span class="n">CUSTOM_04</span><span class="p">:</span> <span class="s2">&quot;#005AA0&quot;</span><span class="p">,</span>
+        <span class="n">CustomColors</span><span class="o">.</span><span class="n">CUSTOM_05</span><span class="p">:</span> <span class="s2">&quot;#004880&quot;</span><span class="p">,</span>
+        <span class="n">CustomColors</span><span class="o">.</span><span class="n">CUSTOM_06</span><span class="p">:</span> <span class="s2">&quot;#002D50&quot;</span><span class="p">,</span>
+    <span class="p">}</span></div>
+
+
+<div class="viewcode-block" id="ColorMapParameters"><a class="viewcode-back" href="../../../modules/hifis_surveyval.plotting.html#hifis_surveyval.plotting.matplotlib_color_map_parameters.ColorMapParameters">[docs]</a><span class="k">class</span> <span class="nc">ColorMapParameters</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Creates a color map and a fill pattern map from parameters.&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="ColorMapParameters.__init__"><a class="viewcode-back" href="../../../modules/hifis_surveyval.plotting.html#hifis_surveyval.plotting.matplotlib_color_map_parameters.ColorMapParameters.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">number_colors_required</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">use_color</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="n">use_pattern</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="n">color_map_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">use_inverted_color_map</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="n">brightness_factor</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span>
+        <span class="n">custom_color_map</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="n">Enum</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">DefaultColors</span><span class="o">.</span><span class="n">HELMHOLTZ_BLUE</span><span class="p">,</span>
+        <span class="n">pattern_map</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="n">Enum</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">DefaultFillPattern</span><span class="o">.</span><span class="n">SLASH_FILL_PATTERN</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialize parameters and creates color map and fill pattern map.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            number_colors_required (int):</span>
+<span class="sd">                Number to specify how many colors are needed.</span>
+<span class="sd">            use_color (bool):</span>
+<span class="sd">                Flag to specify whether to fill plot objects with colors.</span>
+<span class="sd">            use_pattern (bool):</span>
+<span class="sd">                Flag to specify whether to fill plot objects with patterns.</span>
+<span class="sd">            color_map_name (str):</span>
+<span class="sd">                Name of the color map to use.</span>
+<span class="sd">            use_inverted_color_map (bool):</span>
+<span class="sd">                Flag to specify whether color map need to be inverted.</span>
+<span class="sd">            brightness_factor (float):</span>
+<span class="sd">                Number to specify brightness of colors in color map.</span>
+<span class="sd">            custom_color_map (Dict[CustomColors, str]):</span>
+<span class="sd">                List to specify custom colors in a color map.</span>
+<span class="sd">            pattern_map (Dict[FillPattern, str]):</span>
+<span class="sd">                Dictionary of FillPattern to hatch pattern string mappings.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_number_colors_required</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">number_colors_required</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_use_color</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">use_color</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_use_pattern</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">use_pattern</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_color_map_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">color_map_name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_use_inverted_color_map</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">use_inverted_color_map</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_brightness_factor</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">brightness_factor</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_custom_color_map</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="n">CustomColors</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">custom_color_map</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fill_pattern_map</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="n">FillPattern</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">pattern_map</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_color_map</span><span class="p">:</span> <span class="n">colors</span><span class="o">.</span><span class="n">Colormap</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_pattern_map</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">create_color_map_and_patterns</span><span class="p">()</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">use_color</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Access for use color flag.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_use_color</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">use_pattern</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Access for use pattern flag.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_use_pattern</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">color_map</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">colors</span><span class="o">.</span><span class="n">Colormap</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Access color map property.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_color_map</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">pattern_map</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;Access fill pattern map property.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pattern_map</span>
+
+<div class="viewcode-block" id="ColorMapParameters.create_color_map_and_patterns"><a class="viewcode-back" href="../../../modules/hifis_surveyval.plotting.html#hifis_surveyval.plotting.matplotlib_color_map_parameters.ColorMapParameters.create_color_map_and_patterns">[docs]</a>    <span class="k">def</span> <span class="nf">create_color_map_and_patterns</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Create a color map and fill pattern map from parameters.&quot;&quot;&quot;</span>
+        <span class="c1"># Custom color map is given</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_color_map_name</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_custom_color_map</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">color_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_custom_color_map</span><span class="p">)</span>
+            <span class="c1"># Set number of colors required to number of all colors in custom</span>
+            <span class="c1"># map if not number is given.</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_number_colors_required</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_number_colors_required</span> <span class="o">=</span> <span class="n">color_count</span>
+            <span class="c1"># Raise exception if there are not enough colors in the</span>
+            <span class="c1"># selected color map.&lt;</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_number_colors_required</span> <span class="o">&gt;</span> <span class="n">color_count</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;Attempt to plot a chart &quot;</span>
+                    <span class="sa">f</span><span class="s2">&quot;with more then </span><span class="si">{</span><span class="n">color_count</span><span class="si">}</span><span class="s2"> columns.&quot;</span>
+                    <span class="sa">f</span><span class="s2">&quot;Color palette has not enough colors for all of them.&quot;</span>
+                <span class="p">)</span>
+            <span class="c1"># Reduce the colormap to have only as much colors as there</span>
+            <span class="c1"># are columns so each columns color index matches the column</span>
+            <span class="c1"># index.</span>
+            <span class="n">color_map_list</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_number_colors_required</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+                <span class="c1"># Get color specified in custom color map at respective</span>
+                <span class="c1"># position</span>
+                <span class="n">color</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_custom_color_map</span><span class="p">[</span><span class="n">CustomColors</span><span class="p">(</span><span class="n">index</span><span class="p">)]</span>
+                <span class="c1"># Use color specified in pattern map if given</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_use_color</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_use_pattern</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">FillPattern</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fill_pattern_map</span> <span class="ow">and</span> \
+                            <span class="s1">&#39;#&#39;</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fill_pattern_map</span><span class="p">[</span><span class="n">FillPattern</span><span class="p">(</span><span class="n">index</span><span class="p">)]:</span>
+                        <span class="c1"># Use bar color specified in pattern map</span>
+                        <span class="n">color</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fill_pattern_map</span><span class="p">[</span><span class="n">FillPattern</span><span class="p">(</span><span class="n">index</span><span class="p">)]</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="c1"># Use bar color white in case of hatch patterns given</span>
+                        <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;#FFFFFF&#39;</span>
+                <span class="c1"># Use a brightness factor that modifies the color in</span>
+                <span class="c1"># all color components.</span>
+                <span class="n">color_modified</span> <span class="o">=</span> <span class="p">[</span><span class="n">component</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_brightness_factor</span>
+                                  <span class="k">for</span> <span class="n">component</span> <span class="ow">in</span> <span class="n">colors</span><span class="o">.</span><span class="n">to_rgb</span><span class="p">(</span><span class="n">color</span><span class="p">)]</span>
+                <span class="n">color_map_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">color_modified</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_color_map</span> <span class="o">=</span> <span class="n">colors</span><span class="o">.</span><span class="n">ListedColormap</span><span class="p">(</span><span class="n">color_map_list</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># No custom color map given, hence use pre-defined color map</span>
+            <span class="c1"># Use default color map if no color map name is given</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_color_map_name</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_color_map_name</span> <span class="o">=</span> <span class="s2">&quot;Pastel1&quot;</span>
+            <span class="c1"># Use specified color map or the inverted counterpart</span>
+            <span class="n">map_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_color_map_name</span> \
+                <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_use_inverted_color_map</span> \
+                <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">_color_map_name</span> <span class="o">+</span> <span class="s2">&quot;_r&quot;</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_color_map</span> <span class="o">=</span> <span class="n">pyplot</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="n">map_name</span><span class="p">)</span>
+            <span class="n">color_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_color_map</span><span class="o">.</span><span class="n">colors</span><span class="p">)</span>
+            <span class="c1"># Raise exception if there are not enough colors in the</span>
+            <span class="c1"># selected color map.</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_number_colors_required</span> <span class="o">&gt;</span> <span class="n">color_count</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;Attempt to plot a chart &quot;</span>
+                    <span class="sa">f</span><span class="s2">&quot;with more then </span><span class="si">{</span><span class="n">color_count</span><span class="si">}</span><span class="s2"> columns.&quot;</span>
+                    <span class="sa">f</span><span class="s2">&quot;Color palette has not enough colors for all of them.&quot;</span>
+                <span class="p">)</span>
+            <span class="c1"># Reduce the colormap to have only as much colors as there</span>
+            <span class="c1"># are columns so each columns color index matches the column</span>
+            <span class="c1"># index.</span>
+            <span class="n">color_map_list</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_number_colors_required</span><span class="p">):</span>
+                <span class="c1"># Get color specified in color map at respective position</span>
+                <span class="n">color</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_color_map</span><span class="o">.</span><span class="n">colors</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+                <span class="c1"># Use color specified in pattern map if given</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_use_color</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_use_pattern</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">FillPattern</span><span class="p">(</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fill_pattern_map</span> <span class="ow">and</span> \
+                            <span class="s1">&#39;#&#39;</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fill_pattern_map</span><span class="p">[</span>
+                                <span class="n">FillPattern</span><span class="p">(</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]:</span>
+                        <span class="c1"># Use bar color specified in pattern map</span>
+                        <span class="n">color</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fill_pattern_map</span><span class="p">[</span><span class="n">FillPattern</span><span class="p">(</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="c1"># Use bar color white in case of hatch patterns given</span>
+                        <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;#FFFFFF&#39;</span>
+                <span class="c1"># Use a brightness factor that modifies the color in</span>
+                <span class="c1"># all color components.</span>
+                <span class="n">color_modified</span> <span class="o">=</span> <span class="p">[</span><span class="n">component</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_brightness_factor</span>
+                                  <span class="k">for</span> <span class="n">component</span> <span class="ow">in</span> <span class="n">color</span><span class="p">]</span>
+                <span class="n">color_map_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">color_modified</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_color_map</span> <span class="o">=</span> <span class="n">colors</span><span class="o">.</span><span class="n">ListedColormap</span><span class="p">(</span><span class="n">color_map_list</span><span class="p">)</span>
+
+        <span class="c1"># Generate pattern map</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_pattern_map</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fill_pattern_map</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="c1"># Raise exception if there are not enough patterns in the selected</span>
+            <span class="c1"># pattern map.</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_number_colors_required</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_fill_pattern_map</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;Attempt to plot a chart &quot;</span>
+                    <span class="sa">f</span><span class="s2">&quot;with more then </span><span class="si">{</span><span class="n">color_count</span><span class="si">}</span><span class="s2"> columns.&quot;</span>
+                    <span class="sa">f</span><span class="s2">&quot;Color palette has not enough colors for all of them.&quot;</span>
+                <span class="p">)</span>
+            <span class="c1"># Reduce the pattern  map to have only as much patterns as there</span>
+            <span class="c1"># are columns so each columns pattern index matches the column</span>
+            <span class="c1"># index.</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_pattern_map</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_fill_pattern_map</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+                <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fill_pattern_map</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+            <span class="p">]</span></div></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, HIFIS Software.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

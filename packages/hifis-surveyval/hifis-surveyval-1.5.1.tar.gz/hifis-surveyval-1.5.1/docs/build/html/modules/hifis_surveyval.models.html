@@ -1,0 +1,690 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>hifis_surveyval.models package &mdash; hifis_surveyval  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/sphinx_rtd_theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="hifis_surveyval.models.mixins package" href="hifis_surveyval.models.mixins.html" />
+    <link rel="prev" title="hifis_surveyval.core package" href="hifis_surveyval.core.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> hifis_surveyval
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.5.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../pages/getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/preprocessing.html">Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/accessing_data.html">Accessing the Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/development.html">Developer Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../pages/api.html">API Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../pages/api.html#cli-interface">CLI Interface</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../pages/api.html#modules">Modules</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="modules.html">hifis_surveyval</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="hifis_surveyval.html">hifis_surveyval package</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">hifis_surveyval</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../pages/api.html">API Documentation</a> &raquo;</li>
+        
+          <li><a href="modules.html">hifis_surveyval</a> &raquo;</li>
+        
+          <li><a href="hifis_surveyval.html">hifis_surveyval package</a> &raquo;</li>
+        
+      <li>hifis_surveyval.models package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/modules/hifis_surveyval.models.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="hifis-surveyval-models-package">
+<h1>hifis_surveyval.models package<a class="headerlink" href="#hifis-surveyval-models-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="hifis_surveyval.models.mixins.html">hifis_surveyval.models.mixins package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hifis_surveyval.models.mixins.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hifis_surveyval.models.mixins.html#module-hifis_surveyval.models.mixins.mixins">hifis_surveyval.models.mixins.mixins module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hifis_surveyval.models.mixins.html#module-hifis_surveyval.models.mixins.uses_settings">hifis_surveyval.models.mixins.uses_settings module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hifis_surveyval.models.mixins.html#module-hifis_surveyval.models.mixins.yaml_constructable">hifis_surveyval.models.mixins.yaml_constructable module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hifis_surveyval.models.mixins.html#module-hifis_surveyval.models.mixins">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-hifis_surveyval.models.answer_option">
+<span id="hifis-surveyval-models-answer-option-module"></span><h2>hifis_surveyval.models.answer_option module<a class="headerlink" href="#module-hifis_surveyval.models.answer_option" title="Permalink to this headline">¶</a></h2>
+<p>This module contains a class to represent survey answers.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="hifis_surveyval.models.answer_option.AnswerOption">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">hifis_surveyval.models.answer_option.</span></span><span class="sig-name descname"><span class="pre">AnswerOption</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">option_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#hifis_surveyval.models.translated.Translated" title="hifis_surveyval.models.translated.Translated"><span class="pre">hifis_surveyval.models.translated.Translated</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">settings</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="hifis_surveyval.core.html#hifis_surveyval.core.settings.Settings" title="hifis_surveyval.core.settings.Settings"><span class="pre">hifis_surveyval.core.settings.Settings</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#hifis_surveyval.models.answer_types.AnswerType" title="hifis_surveyval.models.answer_types.AnswerType"><span class="pre">hifis_surveyval.models.answer_types.AnswerType</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/hifis_surveyval/models/answer_option.html#AnswerOption"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hifis_surveyval.models.answer_option.AnswerOption" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Generic</span></code>[<a class="reference internal" href="#hifis_surveyval.models.answer_types.AnswerType" title="hifis_surveyval.models.answer_types.AnswerType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hifis_surveyval.models.answer_types.AnswerType</span></code></a>], <a class="reference internal" href="hifis_surveyval.models.mixins.html#hifis_surveyval.models.mixins.yaml_constructable.YamlConstructable" title="hifis_surveyval.models.mixins.yaml_constructable.YamlConstructable"><code class="xref py py-class docutils literal notranslate"><span class="pre">hifis_surveyval.models.mixins.yaml_constructable.YamlConstructable</span></code></a>, <a class="reference internal" href="hifis_surveyval.models.mixins.html#hifis_surveyval.models.mixins.mixins.HasID" title="hifis_surveyval.models.mixins.mixins.HasID"><code class="xref py py-class docutils literal notranslate"><span class="pre">hifis_surveyval.models.mixins.mixins.HasID</span></code></a>, <a class="reference internal" href="hifis_surveyval.models.mixins.html#hifis_surveyval.models.mixins.mixins.HasLabel" title="hifis_surveyval.models.mixins.mixins.HasLabel"><code class="xref py py-class docutils literal notranslate"><span class="pre">hifis_surveyval.models.mixins.mixins.HasLabel</span></code></a>, <a class="reference internal" href="hifis_surveyval.models.mixins.html#hifis_surveyval.models.mixins.mixins.HasText" title="hifis_surveyval.models.mixins.mixins.HasText"><code class="xref py py-class docutils literal notranslate"><span class="pre">hifis_surveyval.models.mixins.mixins.HasText</span></code></a></p>
+<p>The AnswerOption models allowed answers for a specific Question.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="hifis_surveyval.models.answer_option.AnswerOption.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">option_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#hifis_surveyval.models.translated.Translated" title="hifis_surveyval.models.translated.Translated"><span class="pre">hifis_surveyval.models.translated.Translated</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">settings</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="hifis_surveyval.core.html#hifis_surveyval.core.settings.Settings" title="hifis_surveyval.core.settings.Settings"><span class="pre">hifis_surveyval.core.settings.Settings</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#hifis_surveyval.models.answer_types.AnswerType" title="hifis_surveyval.models.answer_types.AnswerType"><span class="pre">hifis_surveyval.models.answer_types.AnswerType</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="../_modules/hifis_surveyval/models/answer_option.html#AnswerOption.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hifis_surveyval.models.answer_option.AnswerOption.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an answer option from the metadata.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>parent_id:</dt><dd><p>The full ID of the question this answer option belongs to.</p>
+</dd>
+<dt>option_id (str):</dt><dd><p>A unique string identifying the answer.</p>
+</dd>
+<dt>text:</dt><dd><p>A Translated object containing the texts that represent the
+answer option across various languages.</p>
+</dd>
+<dt>label:</dt><dd><p>A short string used to represent the answer option in plotting.</p>
+</dd>
+<dt>settings:</dt><dd><p>An object reflecting the application settings.</p>
+</dd>
+<dt>value:</dt><dd><p>(Optional) A value to represent the AnswerOption, e.g. for
+sorting, calculations or to represent an underlying value if
+the label can not easily be cast to the intended AnswerType.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hifis_surveyval.models.answer_option.AnswerOption.schema">
+<span class="sig-name descname"><span class="pre">schema</span></span><em class="property"><span class="pre">:</span> <span class="pre">schema.Schema</span></em><em class="property"> <span class="pre">=</span> <span class="pre">Schema({'id':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'label':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'text':</span> <span class="pre">&lt;class</span> <span class="pre">'dict'&gt;,</span> <span class="pre">Optional('value'):</span> <span class="pre">&lt;class</span> <span class="pre">'object'&gt;})</span></em><a class="headerlink" href="#hifis_surveyval.models.answer_option.AnswerOption.schema" title="Permalink to this definition">¶</a></dt>
+<dd><p>The default schema of a YamlConstructable validates everything which
+is formatted like a YamlDictionary</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hifis_surveyval.models.answer_option.AnswerOption.token_ID">
+<span class="sig-name descname"><span class="pre">token_ID</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'id'</span></em><a class="headerlink" href="#hifis_surveyval.models.answer_option.AnswerOption.token_ID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hifis_surveyval.models.answer_option.AnswerOption.token_VALUE">
+<span class="sig-name descname"><span class="pre">token_VALUE</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'value'</span></em><a class="headerlink" href="#hifis_surveyval.models.answer_option.AnswerOption.token_VALUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="hifis_surveyval.models.answer_option.AnswerOption.value">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">value</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional[hifis_surveyval.models.answer_types.AnswerType]</span></em><a class="headerlink" href="#hifis_surveyval.models.answer_option.AnswerOption.value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Access the underlying value type, if present.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>The underlying value if it is defined, None otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-hifis_surveyval.models.answer_types">
+<span id="hifis-surveyval-models-answer-types-module"></span><h2>hifis_surveyval.models.answer_types module<a class="headerlink" href="#module-hifis_surveyval.models.answer_types" title="Permalink to this headline">¶</a></h2>
+<p>This contains information about the data types supported by answers.</p>
+<p>The currently supported types are bool, int, float and str. The type names
+are the only valid identifiers in YAML metadata for the data type of questions.</p>
+<dl class="py data">
+<dt class="sig sig-object py" id="hifis_surveyval.models.answer_types.AnswerType">
+<span class="sig-prename descclassname"><span class="pre">hifis_surveyval.models.answer_types.</span></span><span class="sig-name descname"><span class="pre">AnswerType</span></span><a class="headerlink" href="#hifis_surveyval.models.answer_types.AnswerType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Type variable for the generic type used in AnswerOption.</p>
+<p>It may be a placeholder for any of the accepted answer types.</p>
+<p>alias of TypeVar(‘AnswerType’)</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="hifis_surveyval.models.answer_types.VALID_ANSWER_TYPES">
+<span class="sig-prename descclassname"><span class="pre">hifis_surveyval.models.answer_types.</span></span><span class="sig-name descname"><span class="pre">VALID_ANSWER_TYPES</span></span><em class="property"><span class="pre">:</span> <span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">type</span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">=</span> <span class="pre">{'bool':</span> <span class="pre">&lt;class</span> <span class="pre">'bool'&gt;,</span> <span class="pre">'float':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'int':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'str':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;}</span></em><a class="headerlink" href="#hifis_surveyval.models.answer_types.VALID_ANSWER_TYPES" title="Permalink to this definition">¶</a></dt>
+<dd><p>A mapping from the names of accepted types to the actual types.</p>
+<p>This allows to infer the actual types from the string representations present
+in the YAML metadata.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-hifis_surveyval.models.question">
+<span id="hifis-surveyval-models-question-module"></span><h2>hifis_surveyval.models.question module<a class="headerlink" href="#module-hifis_surveyval.models.question" title="Permalink to this headline">¶</a></h2>
+<p>This module contains classes to represent survey questions.</p>
+<p>These can be constructed from YAML through the YamlConstructable abstract
+class.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="hifis_surveyval.models.question.Question">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">hifis_surveyval.models.question.</span></span><span class="sig-name descname"><span class="pre">Question</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">question_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#hifis_surveyval.models.translated.Translated" title="hifis_surveyval.models.translated.Translated"><span class="pre">hifis_surveyval.models.translated.Translated</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mandatory</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">settings</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="hifis_surveyval.core.html#hifis_surveyval.core.settings.Settings" title="hifis_surveyval.core.settings.Settings"><span class="pre">hifis_surveyval.core.settings.Settings</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/hifis_surveyval/models/question.html#Question"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hifis_surveyval.models.question.Question" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Generic</span></code>[<a class="reference internal" href="#hifis_surveyval.models.answer_types.AnswerType" title="hifis_surveyval.models.answer_types.AnswerType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hifis_surveyval.models.answer_types.AnswerType</span></code></a>], <a class="reference internal" href="hifis_surveyval.models.mixins.html#hifis_surveyval.models.mixins.yaml_constructable.YamlConstructable" title="hifis_surveyval.models.mixins.yaml_constructable.YamlConstructable"><code class="xref py py-class docutils literal notranslate"><span class="pre">hifis_surveyval.models.mixins.yaml_constructable.YamlConstructable</span></code></a>, <a class="reference internal" href="hifis_surveyval.models.mixins.html#hifis_surveyval.models.mixins.mixins.HasID" title="hifis_surveyval.models.mixins.mixins.HasID"><code class="xref py py-class docutils literal notranslate"><span class="pre">hifis_surveyval.models.mixins.mixins.HasID</span></code></a>, <a class="reference internal" href="hifis_surveyval.models.mixins.html#hifis_surveyval.models.mixins.mixins.HasLabel" title="hifis_surveyval.models.mixins.mixins.HasLabel"><code class="xref py py-class docutils literal notranslate"><span class="pre">hifis_surveyval.models.mixins.mixins.HasLabel</span></code></a>, <a class="reference internal" href="hifis_surveyval.models.mixins.html#hifis_surveyval.models.mixins.mixins.HasText" title="hifis_surveyval.models.mixins.mixins.HasText"><code class="xref py py-class docutils literal notranslate"><span class="pre">hifis_surveyval.models.mixins.mixins.HasText</span></code></a>, <a class="reference internal" href="hifis_surveyval.models.mixins.html#hifis_surveyval.models.mixins.mixins.HasMandatory" title="hifis_surveyval.models.mixins.mixins.HasMandatory"><code class="xref py py-class docutils literal notranslate"><span class="pre">hifis_surveyval.models.mixins.mixins.HasMandatory</span></code></a></p>
+<p>Questions model concrete questions that could be answered in the survey.</p>
+<p>They can be constructed from YAML metadata via from_yaml_dictionary(). For
+this to be successful the YAML data has to adhere to Question.schema which
+describes the required fields and their data types.
+Answers then have to be added separately via add_answer().</p>
+<p>A Question may have answer_options which are an optional set of
+predefined answers. If there are none given, the question can have any
+answer, otherwise the answer must be the short ID of one of the given
+answer options.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="hifis_surveyval.models.question.Question.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">question_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#hifis_surveyval.models.translated.Translated" title="hifis_surveyval.models.translated.Translated"><span class="pre">hifis_surveyval.models.translated.Translated</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mandatory</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">settings</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="hifis_surveyval.core.html#hifis_surveyval.core.settings.Settings" title="hifis_surveyval.core.settings.Settings"><span class="pre">hifis_surveyval.core.settings.Settings</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/hifis_surveyval/models/question.html#Question.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hifis_surveyval.models.question.Question.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize a question object with metadata.</p>
+<p>The answers have to be added separately via add_answer().
+The data type of the answers is given by the generic AnswerType.
+It must be one of the supported data types. See also:
+hifis_surveyval.models.answer_types.VALID_ANSWER_TYPES</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>parent_id:</dt><dd><p>The ID of the question collection this question is embedded in.</p>
+</dd>
+<dt>question_id:</dt><dd><p>An identifier assigned to the question. Must be unique within
+the question collection.</p>
+</dd>
+<dt>text:</dt><dd><p>A Translated object representing the text that describes the
+question.</p>
+</dd>
+<dt>label:</dt><dd><p>A short label that can be used in plotting to represent the
+question collection.</p>
+</dd>
+<dt>mandatory:</dt><dd><p>Whether there is an answer to this question expected from each
+participant in order to consider the participant’s answer data
+complete.</p>
+</dd>
+<dt>settings:</dt><dd><p>An object reflecting the application settings.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="hifis_surveyval.models.question.Question.add_answer">
+<span class="sig-name descname"><span class="pre">add_answer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">participant_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value_text</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="../_modules/hifis_surveyval/models/question.html#Question.add_answer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hifis_surveyval.models.question.Question.add_answer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Store a given answer to this question.</p>
+<p>The answer value will be casted to the expected answer type.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>participant_id:</dt><dd><p>The ID of the participant who gave the answer</p>
+</dd>
+<dt>value_text:</dt><dd><p>The text-version of the answer as stored in the CSV.
+If the question is mandatory, the value must not be empty.
+If answer options are defined the value must match the short id
+of the selected answer option.</p>
+</dd>
+</dl>
+</dd>
+<dt>Raises:</dt><dd><dl class="simple">
+<dt>KeyError:</dt><dd><p>If answer options were present, but none of the answer options
+had an ID that matched the given value</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="hifis_surveyval.models.question.Question.answers">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">answers</span></span><em class="property"><span class="pre">:</span> <span class="pre">Dict[str,</span> <span class="pre">Optional[hifis_surveyval.models.answer_types.AnswerType]]</span></em><a class="headerlink" href="#hifis_surveyval.models.question.Question.answers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain the given answers as read from the survey data.</p>
+<p>The answers are given as a mapping:
+participant ID -&gt; participant answer</p>
+<p>The participant ID will be a string, while the answers may be
+assumed to be of the answer_type of the Question.
+If the Question is not mandatory, answers may also be None.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>The mapping from participant ID to the participant’s answer for
+this question.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="hifis_surveyval.models.question.Question.as_series">
+<span class="sig-name descname"><span class="pre">as_series</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">&lt;MagicMock</span> <span class="pre">id=’140501826994816’&gt;</span></span></span><a class="reference internal" href="../_modules/hifis_surveyval/models/question.html#Question.as_series"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hifis_surveyval.models.question.Question.as_series" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain the answers to this question as a pandas.Series.</p>
+<p>The series’ index are the participant IDs, while data for the
+indices are the respective answers.</p>
+<p>The series will be named with the question’s full ID.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>A pandas.Series representing the answers for each participant</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="hifis_surveyval.models.question.Question.remove_answers">
+<span class="sig-name descname"><span class="pre">remove_answers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">participant_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Set</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="../_modules/hifis_surveyval/models/question.html#Question.remove_answers"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hifis_surveyval.models.question.Question.remove_answers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove the answers by the specified participants.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>participant_ids:</dt><dd><p>The IDs of the participants whose answers are to be removed.
+Invalid IDs are ignored.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hifis_surveyval.models.question.Question.schema">
+<span class="sig-name descname"><span class="pre">schema</span></span><em class="property"><span class="pre">:</span> <span class="pre">schema.Schema</span></em><em class="property"> <span class="pre">=</span> <span class="pre">Schema({'id':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'label':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'text':</span> <span class="pre">&lt;class</span> <span class="pre">'dict'&gt;,</span> <span class="pre">'datatype':</span> <span class="pre">&lt;function</span> <span class="pre">Question.&lt;lambda&gt;&gt;,</span> <span class="pre">Optional('mandatory'):</span> <span class="pre">&lt;class</span> <span class="pre">'bool'&gt;,</span> <span class="pre">Optional('answers'):</span> <span class="pre">&lt;class</span> <span class="pre">'list'&gt;,</span> <span class="pre">Optional(&lt;class</span> <span class="pre">'str'&gt;):</span> <span class="pre">&lt;class</span> <span class="pre">'object'&gt;})</span></em><a class="headerlink" href="#hifis_surveyval.models.question.Question.schema" title="Permalink to this definition">¶</a></dt>
+<dd><p>The default schema of a YamlConstructable validates everything which
+is formatted like a YamlDictionary</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hifis_surveyval.models.question.Question.token_ANSWER_OPTIONS">
+<span class="sig-name descname"><span class="pre">token_ANSWER_OPTIONS</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'answers'</span></em><a class="headerlink" href="#hifis_surveyval.models.question.Question.token_ANSWER_OPTIONS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hifis_surveyval.models.question.Question.token_DATA_TYPE">
+<span class="sig-name descname"><span class="pre">token_DATA_TYPE</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'datatype'</span></em><a class="headerlink" href="#hifis_surveyval.models.question.Question.token_DATA_TYPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hifis_surveyval.models.question.Question.token_ID">
+<span class="sig-name descname"><span class="pre">token_ID</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'id'</span></em><a class="headerlink" href="#hifis_surveyval.models.question.Question.token_ID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-hifis_surveyval.models.question_collection">
+<span id="hifis-surveyval-models-question-collection-module"></span><h2>hifis_surveyval.models.question_collection module<a class="headerlink" href="#module-hifis_surveyval.models.question_collection" title="Permalink to this headline">¶</a></h2>
+<p>This module contains classes to represent groups of survey questions.</p>
+<p>These can be constructed from YAML through the YamlConstructable abstract
+class.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="hifis_surveyval.models.question_collection.QuestionCollection">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">hifis_surveyval.models.question_collection.</span></span><span class="sig-name descname"><span class="pre">QuestionCollection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">collection_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#hifis_surveyval.models.translated.Translated" title="hifis_surveyval.models.translated.Translated"><span class="pre">hifis_surveyval.models.translated.Translated</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">questions</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#hifis_surveyval.models.question.Question" title="hifis_surveyval.models.question.Question"><span class="pre">hifis_surveyval.models.question.Question</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mandatory</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">settings</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="hifis_surveyval.core.html#hifis_surveyval.core.settings.Settings" title="hifis_surveyval.core.settings.Settings"><span class="pre">hifis_surveyval.core.settings.Settings</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/hifis_surveyval/models/question_collection.html#QuestionCollection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hifis_surveyval.models.question_collection.QuestionCollection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="hifis_surveyval.models.mixins.html#hifis_surveyval.models.mixins.yaml_constructable.YamlConstructable" title="hifis_surveyval.models.mixins.yaml_constructable.YamlConstructable"><code class="xref py py-class docutils literal notranslate"><span class="pre">hifis_surveyval.models.mixins.yaml_constructable.YamlConstructable</span></code></a>, <a class="reference internal" href="hifis_surveyval.models.mixins.html#hifis_surveyval.models.mixins.mixins.HasID" title="hifis_surveyval.models.mixins.mixins.HasID"><code class="xref py py-class docutils literal notranslate"><span class="pre">hifis_surveyval.models.mixins.mixins.HasID</span></code></a>, <a class="reference internal" href="hifis_surveyval.models.mixins.html#hifis_surveyval.models.mixins.mixins.HasLabel" title="hifis_surveyval.models.mixins.mixins.HasLabel"><code class="xref py py-class docutils literal notranslate"><span class="pre">hifis_surveyval.models.mixins.mixins.HasLabel</span></code></a>, <a class="reference internal" href="hifis_surveyval.models.mixins.html#hifis_surveyval.models.mixins.mixins.HasText" title="hifis_surveyval.models.mixins.mixins.HasText"><code class="xref py py-class docutils literal notranslate"><span class="pre">hifis_surveyval.models.mixins.mixins.HasText</span></code></a>, <a class="reference internal" href="hifis_surveyval.models.mixins.html#hifis_surveyval.models.mixins.mixins.HasMandatory" title="hifis_surveyval.models.mixins.mixins.HasMandatory"><code class="xref py py-class docutils literal notranslate"><span class="pre">hifis_surveyval.models.mixins.mixins.HasMandatory</span></code></a></p>
+<p>QuestionCollections group a set of questions into a common context.</p>
+<p>This kind of question has no answers by itself. These are to be found in
+the according sub-questions.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="hifis_surveyval.models.question_collection.QuestionCollection.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">collection_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#hifis_surveyval.models.translated.Translated" title="hifis_surveyval.models.translated.Translated"><span class="pre">hifis_surveyval.models.translated.Translated</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">questions</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#hifis_surveyval.models.question.Question" title="hifis_surveyval.models.question.Question"><span class="pre">hifis_surveyval.models.question.Question</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mandatory</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">settings</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="hifis_surveyval.core.html#hifis_surveyval.core.settings.Settings" title="hifis_surveyval.core.settings.Settings"><span class="pre">hifis_surveyval.core.settings.Settings</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="../_modules/hifis_surveyval/models/question_collection.html#QuestionCollection.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hifis_surveyval.models.question_collection.QuestionCollection.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize an empty question collection.</p>
+<p>It is recommended to refer to from_yaml_dictionary() for constructing
+instances when parsing metadata.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>collection_id:</dt><dd><p>The unique ID that is to be assigned to the collection.
+Since QuestionCollections have no parent the collection ID
+serves as the full ID as well as the short ID.</p>
+</dd>
+<dt>text:</dt><dd><p>A Translated object representing the text that describes the
+question collection.</p>
+</dd>
+<dt>label:</dt><dd><p>A short label that can be used in plotting to represent the
+question collection.</p>
+</dd>
+<dt>questions:</dt><dd><p>A list of questions that are contained within the question
+collection.</p>
+</dd>
+<dt>mandatory:</dt><dd><p>Whether there is an answer to at least one of the contained
+questions expected from each participant in order to consider
+the participant’s answer data complete.</p>
+</dd>
+<dt>settings:</dt><dd><p>The settings used by the framework</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="hifis_surveyval.models.question_collection.QuestionCollection.as_data_frame">
+<span class="sig-name descname"><span class="pre">as_data_frame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exclude_labels</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">&lt;MagicMock</span> <span class="pre">id=’140501826574080’&gt;</span></span></span><a class="reference internal" href="../_modules/hifis_surveyval/models/question_collection.html#QuestionCollection.as_data_frame"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hifis_surveyval.models.question_collection.QuestionCollection.as_data_frame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gather the answers given to each question as a data frame.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>exclude_labels:</dt><dd><p>A short label or a list of short labels for questions that
+are to be excluded from the data frame.</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><p>A pandas data frame with participants in the rows and the
+questions of this collection in the columns. The fields in
+the data frame then contain the answer to a question for a
+given participant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="hifis_surveyval.models.question_collection.QuestionCollection.question_for_id">
+<span class="sig-name descname"><span class="pre">question_for_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">question_short_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#hifis_surveyval.models.question.Question" title="hifis_surveyval.models.question.Question"><span class="pre">hifis_surveyval.models.question.Question</span></a></span></span><a class="reference internal" href="../_modules/hifis_surveyval/models/question_collection.html#QuestionCollection.question_for_id"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hifis_surveyval.models.question_collection.QuestionCollection.question_for_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain a question from the collection for a given short ID.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>question_short_id:</dt><dd><p>The short id used within the collection for this question.</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><p>The question for the given ID.</p>
+</dd>
+<dt>Raises:</dt><dd><p>KeyError - if no question with the given ID did exist.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="hifis_surveyval.models.question_collection.QuestionCollection.questions">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">questions</span></span><em class="property"><span class="pre">:</span> <span class="pre">List[hifis_surveyval.models.question.Question]</span></em><a class="headerlink" href="#hifis_surveyval.models.question_collection.QuestionCollection.questions" title="Permalink to this definition">¶</a></dt>
+<dd><p>List all questions in this collection.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>A list with all question objects associated with this collection</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="hifis_surveyval.models.question_collection.QuestionCollection.remove_answers">
+<span class="sig-name descname"><span class="pre">remove_answers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">participant_ids</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Set</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="../_modules/hifis_surveyval/models/question_collection.html#QuestionCollection.remove_answers"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hifis_surveyval.models.question_collection.QuestionCollection.remove_answers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove the answers by the specified participants.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>participant_ids:</dt><dd><p>The IDs of the participants whose answers are to be removed.
+Invalid IDs are ignored.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hifis_surveyval.models.question_collection.QuestionCollection.schema">
+<span class="sig-name descname"><span class="pre">schema</span></span><em class="property"><span class="pre">:</span> <span class="pre">schema.Schema</span></em><em class="property"> <span class="pre">=</span> <span class="pre">Schema({'id':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'label':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'text':</span> <span class="pre">&lt;class</span> <span class="pre">'dict'&gt;,</span> <span class="pre">Optional('questions'):</span> <span class="pre">&lt;class</span> <span class="pre">'list'&gt;,</span> <span class="pre">Optional('mandatory'):</span> <span class="pre">&lt;class</span> <span class="pre">'bool'&gt;,</span> <span class="pre">Optional(&lt;class</span> <span class="pre">'str'&gt;):</span> <span class="pre">&lt;class</span> <span class="pre">'object'&gt;})</span></em><a class="headerlink" href="#hifis_surveyval.models.question_collection.QuestionCollection.schema" title="Permalink to this definition">¶</a></dt>
+<dd><p>The default schema of a YamlConstructable validates everything which
+is formatted like a YamlDictionary</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hifis_surveyval.models.question_collection.QuestionCollection.token_ID">
+<span class="sig-name descname"><span class="pre">token_ID</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'id'</span></em><a class="headerlink" href="#hifis_surveyval.models.question_collection.QuestionCollection.token_ID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hifis_surveyval.models.question_collection.QuestionCollection.token_QUESTIONS">
+<span class="sig-name descname"><span class="pre">token_QUESTIONS</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'questions'</span></em><a class="headerlink" href="#hifis_surveyval.models.question_collection.QuestionCollection.token_QUESTIONS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-hifis_surveyval.models.translated">
+<span id="hifis-surveyval-models-translated-module"></span><h2>hifis_surveyval.models.translated module<a class="headerlink" href="#module-hifis_surveyval.models.translated" title="Permalink to this headline">¶</a></h2>
+<p>Models survey elements that can be represented in multiple languages.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="hifis_surveyval.models.translated.Translated">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">hifis_surveyval.models.translated.</span></span><span class="sig-name descname"><span class="pre">Translated</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">translations</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/hifis_surveyval/models/translated.html#Translated"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hifis_surveyval.models.translated.Translated" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="hifis_surveyval.models.mixins.html#hifis_surveyval.models.mixins.yaml_constructable.YamlConstructable" title="hifis_surveyval.models.mixins.yaml_constructable.YamlConstructable"><code class="xref py py-class docutils literal notranslate"><span class="pre">hifis_surveyval.models.mixins.yaml_constructable.YamlConstructable</span></code></a></p>
+<p>A wrapper around text instances with multiple translations.</p>
+<p>Languages are identified by their ISO 693-1 two-letter codes.
+Optionally an uppercase region identifier may be appended as well. Region
+identifiers consist of a two or three letter code and must be separated by
+a dash from the language identifier.</p>
+<p>Examples for valid identifiers are <cite>de</cite>, <cite>en-US</cite> but not <cite>frFR</cite>.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="hifis_surveyval.models.translated.Translated.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">translations</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/hifis_surveyval/models/translated.html#Translated.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hifis_surveyval.models.translated.Translated.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new instance of translated text.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>translations:</dt><dd><p>A mapping from the language code to the translation in the
+respective language. The dictionary must not be empty.
+Keys are expected to be two-letter codes with an optional
+region code, and values must neither be None nor be empty.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="hifis_surveyval.models.translated.Translated.available_languages">
+<span class="sig-name descname"><span class="pre">available_languages</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../_modules/hifis_surveyval/models/translated.html#Translated.available_languages"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hifis_surveyval.models.translated.Translated.available_languages" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all languages for which translations exist.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>A list of language codes</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="hifis_surveyval.models.translated.Translated.get_translation">
+<span class="sig-name descname"><span class="pre">get_translation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">language_code</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="../_modules/hifis_surveyval/models/translated.html#Translated.get_translation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#hifis_surveyval.models.translated.Translated.get_translation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the translation for a specific language.</p>
+<p>If the passed in language code has a region specifier, and no
+translation for this region is given, a translation with only the
+language code will be looked up as a fallback.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>language_code:</dt><dd><p>The ISO 693-1 two letter code for the language the text is
+requested for. Optionally a dash followed by an uppercase
+two or three letter region code may be appended as well.</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><p>The text in the requested language or None if no translation for
+this language exists.</p>
+</dd>
+<dt>Raises:</dt><dd><dl class="simple">
+<dt>KeyError:</dt><dd><p>If no translation for the requested language (with or
+without region code) can be found.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hifis_surveyval.models.translated.Translated.schema">
+<span class="sig-name descname"><span class="pre">schema</span></span><em class="property"><span class="pre">:</span> <span class="pre">schema.Schema</span></em><em class="property"> <span class="pre">=</span> <span class="pre">Schema({And(&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">Regex('^[a-z]{2}(-[A-Z]{2,3})?$')):</span> <span class="pre">And(&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">&lt;function</span> <span class="pre">Translated.&lt;lambda&gt;&gt;)})</span></em><a class="headerlink" href="#hifis_surveyval.models.translated.Translated.schema" title="Permalink to this definition">¶</a></dt>
+<dd><p>The validation schema used for translation dictionaries.
+* The dictionary may not be empty
+* The key must exist, be a string and consist of two lower-case letters
+* The value must be a string and must not be empty</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-hifis_surveyval.models">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-hifis_surveyval.models" title="Permalink to this headline">¶</a></h2>
+<p>Provides data models used in this program.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="hifis_surveyval.models.mixins.html" class="btn btn-neutral float-right" title="hifis_surveyval.models.mixins package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="hifis_surveyval.core.html" class="btn btn-neutral float-left" title="hifis_surveyval.core package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, HIFIS Software.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+hifis\_surveyval.models.mixins package
+======================================
+
+Submodules
+----------
+
+hifis\_surveyval.models.mixins.mixins module
+--------------------------------------------
+
+.. automodule:: hifis_surveyval.models.mixins.mixins
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+hifis\_surveyval.models.mixins.uses\_settings module
+----------------------------------------------------
+
+.. automodule:: hifis_surveyval.models.mixins.uses_settings
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+hifis\_surveyval.models.mixins.yaml\_constructable module
+---------------------------------------------------------
+
+.. automodule:: hifis_surveyval.models.mixins.yaml_constructable
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: hifis_surveyval.models.mixins
+   :members:
+   :undoc-members:
+   :show-inheritance:
