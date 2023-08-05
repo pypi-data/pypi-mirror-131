@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: generate-files
+Version: 1.0.1
+Summary: Fetch data from API and generates csv, html , pdf , xlsx , xml files 
+Home-page: https://github.com/Mohammad-Toseef/Week1.git
+Author: Mohammad Toseef
+Author-email: mohammad.toseef059@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Mohammad-Toseef/Week1.git
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Generate Files
+
+This package includes Generate Files class having 
+various functions to generate CSV , PDF , HTML , XLSX , XML Files
+from the fetched API data. You can use
+[generate_files](https://github.com/Mohammad-Toseef/Week1.git)
+to contribute to the package.
+
