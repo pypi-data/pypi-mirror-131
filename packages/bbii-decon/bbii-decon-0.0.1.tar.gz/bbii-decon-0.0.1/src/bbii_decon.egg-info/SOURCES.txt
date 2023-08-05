@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+src/bbii_decon/__init__.py
+src/bbii_decon.egg-info/PKG-INFO
+src/bbii_decon.egg-info/SOURCES.txt
+src/bbii_decon.egg-info/dependency_links.txt
+src/bbii_decon.egg-info/entry_points.txt
+src/bbii_decon.egg-info/requires.txt
+src/bbii_decon.egg-info/top_level.txt
+src/bbii_decon/_tests/__init__.py
+src/bbii_decon/_tests/test_function.py
