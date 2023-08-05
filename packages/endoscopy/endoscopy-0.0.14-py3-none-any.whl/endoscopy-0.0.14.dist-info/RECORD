@@ -1,0 +1,11 @@
+endoscopy/__init__.py,sha256=0wrKmHMkjn11Vp6svU6sFMQTCFBjcOgtpJcY_4XybIY,139
+endoscopy/bounding_circle_detector.py,sha256=IIEXcsWS5YHG777k4JZDg6TUiKWgJbpleefqRuw6GLA,2416
+endoscopy/utils/__init__.py,sha256=TpWXpN3VeBm9EUOZg8CNbHHt3ciKzdt5GHblSgwQLgY,303
+endoscopy/utils/circle_linear_system.py,sha256=-Gp-eiXlsa4lr2DBpyIfj9LWrPp1Poeuyt4PhWqdhUo,990
+endoscopy/utils/cropping.py,sha256=_65N5nnTbZReC0hmxdBQDBdzNpwnRVWDsLsSUo4eHx8,2131
+endoscopy/utils/loader.py,sha256=smXxeIJiZ6UVdM4uZ1uNwC6fxTkvZa5djkykLhJwRCI,495
+endoscopy-0.0.14.dist-info/LICENSE,sha256=QoK-kKhblfSRuzA58iW1i4L4jNI5tcNlldn-W2cd0LE,1068
+endoscopy-0.0.14.dist-info/METADATA,sha256=BNd7EXdLiT0Hkt887AoSnj0hk0lceQ6CbypCitcReyo,1433
+endoscopy-0.0.14.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+endoscopy-0.0.14.dist-info/top_level.txt,sha256=I-4hFbfLt3AAVmBqHtoQRWcVQC5Hp4h4hctRWUN-Tl0,10
+endoscopy-0.0.14.dist-info/RECORD,,
