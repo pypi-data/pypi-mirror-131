@@ -1,0 +1,7 @@
+libsfst.so,sha256=ATcormAm4nVXdjjHSngIf5dbO2lpbMowuq_yRDW_BGo,511424
+sfst_transduce.cpython-36m-x86_64-linux-gnu.so,sha256=BKVD34eYHs4KiNhtYfFoIqb45aDJIb15XxTImS1rpcI,524000
+sfst_transduce-1.0.1.dist-info/METADATA,sha256=I3-bZB89X5KfKSeOMen2tjV_37O0PxSkNViik7uXB8M,2664
+sfst_transduce-1.0.1.dist-info/WHEEL,sha256=jSYAETKun3X8yDp_zvBDSaL0sIuDwtk9aq685DhXmcU,150
+sfst_transduce-1.0.1.dist-info/RECORD,,
+sfst_transduce-1.0.1.dist-info/COPYING,sha256=pFkyx5MX0VEW6tvxycb8WRF-w8RiHbOodgZt76cjljs,15127
+sfst_transduce-1.0.1.dist-info/top_level.txt,sha256=j4ZrgNBgPQ-ImEOznpEUsr-bay9S88rvdWXgV0xggrg,15
