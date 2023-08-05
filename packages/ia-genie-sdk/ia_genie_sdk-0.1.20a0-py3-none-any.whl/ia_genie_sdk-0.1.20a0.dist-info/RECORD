@@ -1,0 +1,14 @@
+ialib/__init__.py,sha256=ka75vd1qsSWuStvewKAr1C4oyQNDblAujVA8HwOJ0Uc,72
+ialib/back_testing.py,sha256=EWUEgkwyvDYm96UXltl-TAlbs2CsmEdChNVWlVIHRLc,11821
+ialib/bottle_client.py,sha256=tLf5dsS4YTjx_rr02nBZ43sjbtbJ-TeyhNPedr3rUGA,27846
+ialib/data_ops.py,sha256=L8GP64RhAoGzioctwv-xCXAVqOrzkJuFF6HEq8rgqJA,5037
+ialib/genie_metalanguage.py,sha256=tpDKEaD3OEYKwvq-8vE3fJrozVjvApA8FF3dTNWqTpA,894
+ialib/genome_info.py,sha256=T94EwzbhZXEPMxp9RxcbnzGdhRDPV-vEWTUlaUo-jmw,2538
+ialib/prediction_models.py,sha256=vuTp0WGEWZla7u8KmHK3AD9-iL6onu3SdUgq8_CAGWs,3609
+ialib/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ialib/tests/classification.py,sha256=juewL9NaHk4D7fGz_jJSfLdS069gR0_j2PUKlYjZAhA,2910
+ialib/tests/utility.py,sha256=oBc9zAUdWvs59STYsvLXh_TvL894m4EZhx5cqKENNsI,2478
+ia_genie_sdk-0.1.20a0.dist-info/METADATA,sha256=913HpUa61GWhn8fPXCnFkutvBqkpptNpA7E6S29vf-4,5734
+ia_genie_sdk-0.1.20a0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ia_genie_sdk-0.1.20a0.dist-info/top_level.txt,sha256=9SLKqV3LwMTm2DaI_n-L43GFusLtVXyIuXaJSl6c-nU,6
+ia_genie_sdk-0.1.20a0.dist-info/RECORD,,
