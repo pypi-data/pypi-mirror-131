@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        s4g=s4g.__main__:main
+    
