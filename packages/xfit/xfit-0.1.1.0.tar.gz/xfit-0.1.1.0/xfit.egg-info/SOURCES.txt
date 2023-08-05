@@ -1,0 +1,13 @@
+README.md
+install.py
+xfit/Constants.py
+xfit/Continuum.py
+xfit/FitMath.py
+xfit/SimpleMath.py
+xfit/SpectrumClass.py
+xfit/__init__.py
+xfit.egg-info/PKG-INFO
+xfit.egg-info/SOURCES.txt
+xfit.egg-info/dependency_links.txt
+xfit.egg-info/requires.txt
+xfit.egg-info/top_level.txt
