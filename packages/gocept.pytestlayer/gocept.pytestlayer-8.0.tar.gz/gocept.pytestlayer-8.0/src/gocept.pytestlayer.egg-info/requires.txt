@@ -1,0 +1,6 @@
+pytest>=6.0
+setuptools
+zope.dottedname
+
+[test]
+plone.testing
