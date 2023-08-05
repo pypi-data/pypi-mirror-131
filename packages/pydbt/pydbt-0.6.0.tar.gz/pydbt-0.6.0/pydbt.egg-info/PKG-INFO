@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pydbt
+Version: 0.6.0
+Summary: Python dbt executor with customizable logging and alerting
+Home-page: https://github.com/henriblancke/dbt-py
+Author: Henri Blancke
+Author-email: blanckehenri@gmail.com
+License: MIT
+Description: Python dbt executor with custom logging and alerting that fits into your stack
+Platform: any
+Requires-Python: >=3.6
+Provides-Extra: dev
