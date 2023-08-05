@@ -1,0 +1,7 @@
+consonance==0.1.5
+argparse
+python-axolotl==0.2.2
+six==1.10
+appdirs
+protobuf>=3.6.0
+readline
