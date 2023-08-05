@@ -1,0 +1,16 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "boto3",
+"botocore",
+"arrow",
+"jmespath",
+"python-dateutil",
+"python-dotenv",
+"s3transfer",
+"six",
+"urllib3",
+"schedule"
+]
+build-backend = "setuptools.build_meta"
