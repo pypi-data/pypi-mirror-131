@@ -1,0 +1,6 @@
+README.md
+setup.py
+beethoven.egg-info/PKG-INFO
+beethoven.egg-info/SOURCES.txt
+beethoven.egg-info/dependency_links.txt
+beethoven.egg-info/top_level.txt
