@@ -1,0 +1,11 @@
+xfit/Constants.py,sha256=78Lx_WJe_aQvWA-Q7wbb9oU2Uv_reqTv5XoLFcixAYo,66
+xfit/Continuum.py,sha256=HvA8prtmlgFxbgrwoqIu7QLkbKjpSV9gwSEx2vwmgRw,3700
+xfit/FitMath.py,sha256=bdjooha_zmkAaOffL_BRzIa5agMTpBYRFZQo0R_DB6g,7945
+xfit/SimpleMath.py,sha256=tfiBwgssiMnX7kojDU2Cz8SjAK39UVTryTec4O2icCM,9275
+xfit/SpectrumClass.py,sha256=B2AtYMh9qfzTjClRM0ONec0SzpfyLT-pJo4_7KD0aRs,7581
+xfit/__init__.py,sha256=poN97t7ryD4sxk9sx8UPhVQ2lhIZH1bpjnlVa_Zlnxs,83
+xfit/version.py,sha256=J-AwRIGc1uVEFy7EgFcQqtsS_KkhENqgTakvSszaCfM,17
+xfit-0.1.1.0.dist-info/METADATA,sha256=jS3DFSgZv_iwhzPhciR53Kb3v3Jp3snS_6nWSrgDbtY,3388
+xfit-0.1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+xfit-0.1.1.0.dist-info/top_level.txt,sha256=Tf7YkY5C-BwtxUQDU1K6msJmXY4saVAGaUE-9YwQ6kw,5
+xfit-0.1.1.0.dist-info/RECORD,,
