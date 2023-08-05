@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: looker_ingestion
+Version: 1.0.5
+Summary: Extracts adhoc queries from the Looker API to S3
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+This takes a JSON file with arguments for a custom Looker query, 
+        and runs it and sends the output in JSON or CSV to S3 
+
