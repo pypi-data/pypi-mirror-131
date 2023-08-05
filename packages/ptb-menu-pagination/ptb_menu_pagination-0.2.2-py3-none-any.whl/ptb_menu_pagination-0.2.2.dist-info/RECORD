@@ -1,0 +1,10 @@
+paginator/__init__.py,sha256=q2bF5_0VX822bfZE5e0lHWvZrzeNPEgesGg_48McRBQ,79
+paginator/composers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paginator/composers/map.py,sha256=5oF8mCtF_omRJXQGCzKUZYK2SNPhO30Vx2VlvPZMSzk,3534
+paginator/composers/menu.py,sha256=pKUiOXrBcPAqHZPlLbfvkBhQYQ-WkqX25hhM97V0H9k,1273
+paginator/consts.py,sha256=XmMZfEUyKu_LPfr5YnqObD8Ui8zcPnkvUqk0RXzQwtw,97
+paginator/main.py,sha256=_UJY2WgGHvD4ULqAEdnMgM3TS60TPUC0I5VbHuu_sI8,1053
+ptb_menu_pagination-0.2.2.dist-info/LICENSE,sha256=Q4TwQCWD1A3rxGZtM9HTD0Phs3XiU4-FwHw6GR_DqM0,1113
+ptb_menu_pagination-0.2.2.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+ptb_menu_pagination-0.2.2.dist-info/METADATA,sha256=rNp0KW-TBP3A9ddaz4qeSPeyMQMK1r1zQ1fzM3u7lwA,3175
+ptb_menu_pagination-0.2.2.dist-info/RECORD,,
