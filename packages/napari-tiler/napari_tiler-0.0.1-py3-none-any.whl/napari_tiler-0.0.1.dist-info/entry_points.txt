@@ -1,0 +1,3 @@
+[napari.plugin]
+napari-tiler = napari_tiler
+
