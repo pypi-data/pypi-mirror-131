@@ -1,0 +1,16 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+mkdocs_plugin_tags.egg-info/PKG-INFO
+mkdocs_plugin_tags.egg-info/SOURCES.txt
+mkdocs_plugin_tags.egg-info/dependency_links.txt
+mkdocs_plugin_tags.egg-info/entry_points.txt
+mkdocs_plugin_tags.egg-info/requires.txt
+mkdocs_plugin_tags.egg-info/top_level.txt
+tags/__init__.py
+tags/_version.py
+tags/plugin.py
+tags/templates/tags.md.template
