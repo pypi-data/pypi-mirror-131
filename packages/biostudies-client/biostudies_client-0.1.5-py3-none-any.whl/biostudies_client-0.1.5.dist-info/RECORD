@@ -1,0 +1,12 @@
+biostudiesclient/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biostudiesclient/api.py,sha256=RQh5yXnPTsrQHAaYmXdZQ014zyiOuq1SKLrzURdzF24,7275
+biostudiesclient/auth.py,sha256=jiRdESDGu9FON0eux7UoSQDTne-y2BY66SBs_0Fclyo,3041
+biostudiesclient/config.py,sha256=uE_onZ09YN7DG5EYQN4KsUSAmNMPXh3rpzXXGAMVA9Y,564
+biostudiesclient/exceptions.py,sha256=C4z8jf8ggyFcnuZ1acbauPfMh3vScpkf9a5DjGnL_wc,496
+biostudiesclient/models.py,sha256=iAuVkLLYY9KDJg_Q47LLseK8Ijt5iIFsLb2oJWkQURA,2434
+biostudiesclient/response_utils.py,sha256=EzkAH9R4AEJjxh0y-0ZvJfry3HonCBSWrlQj1oy3Vow,3641
+biostudies_client-0.1.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+biostudies_client-0.1.5.dist-info/METADATA,sha256=BQGL3FZ1yk6ODO1HkS3C_COaFXUyQDQbI1aliPx4QaY,8154
+biostudies_client-0.1.5.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+biostudies_client-0.1.5.dist-info/top_level.txt,sha256=hRX2PGmSNay9S58OZyv-CjPSw-AHjHs8GwLUMieSraM,17
+biostudies_client-0.1.5.dist-info/RECORD,,
