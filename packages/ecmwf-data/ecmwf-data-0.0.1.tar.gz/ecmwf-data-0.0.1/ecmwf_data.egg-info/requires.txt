@@ -1,0 +1,4 @@
+eccodes
+metview>=1.10.2
+ecmwflibs
+pyyaml

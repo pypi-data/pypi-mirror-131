@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ecmwf/data/__init__.py
+ecmwf_data.egg-info/PKG-INFO
+ecmwf_data.egg-info/SOURCES.txt
+ecmwf_data.egg-info/dependency_links.txt
+ecmwf_data.egg-info/requires.txt
+ecmwf_data.egg-info/top_level.txt
+ecmwf_data.egg-info/zip-safe
