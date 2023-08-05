@@ -1,0 +1,14 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+README.txt
+imagetobrailleart.py
+modifiedbraillegraph.py
+setup.py
+files/back.jpg
+imagetobrailleart.egg-info/PKG-INFO
+imagetobrailleart.egg-info/SOURCES.txt
+imagetobrailleart.egg-info/dependency_links.txt
+imagetobrailleart.egg-info/requires.txt
+imagetobrailleart.egg-info/top_level.txt
