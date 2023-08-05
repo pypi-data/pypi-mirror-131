@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: cobraclassifier
+Version: 1.4
+Summary: COBRA for classification tasks (on Imbalanced Data)
+Home-page: https://github.com/vishishtpriyadarshi/MA691-COBRA-6
+Author: ['Dr. Arabin Kumar Dey', 'Vishisht Priyadarshi', 'Aadi Gupta', 'Tejus Singla', 'Shashank Goyal']
+Author-email: vishishtpriyadarshi867@gmail.com
+License: MIT
+Download-URL: https://github.com/vishishtpriyadarshi/MA691-COBRA-6/archive/refs/tags/v1.4.tar.gz
+Description: UNKNOWN
+Keywords: Classification,Imbalanced Data,Machine Learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
