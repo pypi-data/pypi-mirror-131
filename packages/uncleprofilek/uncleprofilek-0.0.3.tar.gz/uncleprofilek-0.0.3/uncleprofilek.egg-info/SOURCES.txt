@@ -1,0 +1,10 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+uncleprofilek/__init__.py
+uncleprofilek/myprofile.py
+uncleprofilek.egg-info/PKG-INFO
+uncleprofilek.egg-info/SOURCES.txt
+uncleprofilek.egg-info/dependency_links.txt
+uncleprofilek.egg-info/top_level.txt
