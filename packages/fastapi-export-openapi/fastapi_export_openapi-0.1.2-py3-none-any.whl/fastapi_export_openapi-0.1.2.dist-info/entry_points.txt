@@ -1,0 +1,3 @@
+[console_scripts]
+fastapi-export-openapi=fastapi_export_openapi.main:app
+
