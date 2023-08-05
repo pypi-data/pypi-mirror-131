@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_usso.egg-info/PKG-INFO
+django_usso.egg-info/SOURCES.txt
+django_usso.egg-info/dependency_links.txt
+django_usso.egg-info/requires.txt
+django_usso.egg-info/top_level.txt
+tests/__init__.py
+tests/test_settings.py
+usso/__init__.py
+usso/apps.py
+usso/authentication.py
+usso/checks.py
+usso/settings.py
