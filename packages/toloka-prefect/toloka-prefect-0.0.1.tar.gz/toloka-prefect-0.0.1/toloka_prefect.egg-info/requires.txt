@@ -1,0 +1,5 @@
+attrs
+pandas>=1.1.0
+prefect
+requests
+toloka-kit>=0.1.21
