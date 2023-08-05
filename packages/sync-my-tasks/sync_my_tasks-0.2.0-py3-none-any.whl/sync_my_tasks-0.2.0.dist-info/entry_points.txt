@@ -1,0 +1,3 @@
+[console_scripts]
+sync-my-tasks=sync_my_tasks.command:main
+
