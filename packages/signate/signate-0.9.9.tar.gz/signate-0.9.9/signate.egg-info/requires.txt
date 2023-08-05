@@ -1,0 +1,7 @@
+click
+tabulate
+wget
+urllib3>=1.26.7
+six>=1.16
+certifi
+python-dateutil
