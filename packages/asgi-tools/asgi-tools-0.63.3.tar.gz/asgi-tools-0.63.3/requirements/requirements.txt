@@ -1,0 +1,4 @@
+http-router >= 2.6.5
+multidict
+sniffio
+yarl
