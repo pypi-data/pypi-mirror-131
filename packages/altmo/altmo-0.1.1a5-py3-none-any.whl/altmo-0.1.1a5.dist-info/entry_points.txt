@@ -1,0 +1,3 @@
+[console_scripts]
+altmo=altmo.main:cli
+
