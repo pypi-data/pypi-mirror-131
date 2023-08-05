@@ -1,0 +1,4 @@
+[console_scripts]
+cybuilder = cythonbuilder.cythonbuilder:main
+cythonbuilder = cythonbuilder.cythonbuilder:main
+
