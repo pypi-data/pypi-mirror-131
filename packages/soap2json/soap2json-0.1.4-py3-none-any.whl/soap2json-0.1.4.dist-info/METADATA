@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: soap2json
+Version: 0.1.4
+Summary: Soap to Json
+Home-page: https://github.com/bcn-dev/soap2json.git
+Author: Wilson Silva
+Author-email: wilson.silva@bcn.cv
+License: MIT
+Project-URL: Bug Tracker, https://github.com/bcn-dev/soap2json/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: xmlsec (==1.3.12)
+Requires-Dist: appdirs (==1.4.4)
+Requires-Dist: attrs (==21.2.0)
+Requires-Dist: cached-property (==1.5.2)
+Requires-Dist: certifi (==2021.5.30)
+Requires-Dist: charset-normalizer (==2.0.6)
+Requires-Dist: defusedxml (==0.7.1)
+Requires-Dist: idna (==3.2)
+Requires-Dist: isodate (==0.6.0)
+Requires-Dist: lxml (==4.6.5)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: requests-file (==1.5.1)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: urllib3 (==1.26.7)
+Requires-Dist: xmltodict (==0.12.0)
+Requires-Dist: zeep (==4.0.0)
+
+# soap2json - Soap 2 Json
+
+Soap 2 Json
+
+Install `soap2json` on your system using : 
+
+```
+pip install soap2json
+```
+
+
