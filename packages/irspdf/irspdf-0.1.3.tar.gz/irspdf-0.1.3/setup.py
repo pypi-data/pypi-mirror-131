@@ -1,0 +1,30 @@
+from setuptools import setup
+from setuptools.command.install import install
+
+VERSION = '0.1.3'
+DESCRIPTION = 'Information retrieval system for pdf documents'
+
+
+class Install(install):
+    def run(self):
+        install.run(self)
+        import nltk
+        nltk.download('stopwords')
+        nltk.download('punkt')
+
+
+setup(
+    name='irspdf',
+    version=VERSION,
+    author='Jibril Frej',
+    author_email="<frejjibril@gmail.com>",
+    description=DESCRIPTION,
+    packages=['irspdf'],
+    cmdclass={'install': Install},
+    install_requires=['nltk', 'numpy', 'pdfplumber'],
+    setup_requires=['nltk'],
+    keywords=['python', 'information retrieval'],
+    classifiers=[
+        'Programming Language :: Python :: 3'
+        ]
+)
