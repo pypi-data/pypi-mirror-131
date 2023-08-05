@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyfew
+Version: 0.0.4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: wearables@ox
+Author-email: angerhangy@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pyyaml
+Requires-Dist: catch22
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: tqdm
+
+UNKNOWN
+
+
