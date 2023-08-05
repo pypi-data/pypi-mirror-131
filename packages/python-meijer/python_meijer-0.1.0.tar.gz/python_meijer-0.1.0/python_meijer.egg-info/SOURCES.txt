@@ -1,0 +1,11 @@
+README.md
+setup.py
+meijer/Meijer.py
+meijer/MeijerList.py
+meijer/__init__.py
+meijer/requests.py
+python_meijer.egg-info/PKG-INFO
+python_meijer.egg-info/SOURCES.txt
+python_meijer.egg-info/dependency_links.txt
+python_meijer.egg-info/requires.txt
+python_meijer.egg-info/top_level.txt
