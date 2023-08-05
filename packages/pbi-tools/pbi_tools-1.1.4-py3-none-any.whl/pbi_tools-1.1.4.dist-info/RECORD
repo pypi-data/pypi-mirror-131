@@ -1,0 +1,15 @@
+pbi/__init__.py,sha256=tK4puol9S7Xz4LByojUKJNf9l39Zw1OmvYsMjjagOHg,299
+pbi/_version.py,sha256=VRn9-yyFwMXFlEtZWjH-lq7WghialR_8B2kw-CoTDH0,497
+pbi/capacity.py,sha256=BLJ7YTzAiseycP9vNh3mJ8nZaaFibD63Ts2P1CxFf90,2132
+pbi/dataset.py,sha256=sTK22OhgU62flfnd58Vf3VEZjSAdtHkFqiRjeH8nScc,7647
+pbi/datasource.py,sha256=hXfvKbRHC1GIAapBEmhvOGsi_KECc7yPBpSU30kpItk,3044
+pbi/report.py,sha256=QqouCbK26-sggoiCOzn0dGYQ-eYKCA4aEkhN2XaFi0c,2911
+pbi/tenant.py,sha256=b0Zaz21iYOStPNmJq_oUtJkwasFbtmdOCI6GWWQ6e_g,2179
+pbi/token.py,sha256=W-TbGiE0onS_bRVy1LfV-Wvqfbs8Q-e4Ss2FjxW_UEM,2085
+pbi/tools.py,sha256=g2rCcMPKx0BppdLiUZ39p24Hn0mRU0Typ5tPYwCkVaQ,2168
+pbi/workspace.py,sha256=ChG-dtIupJaIRZVSftyr7RGMxUGSYnH_1jBmK6UFE60,19384
+pbi_tools-1.1.4.dist-info/LICENSE,sha256=ul4YU28SjxTkGyD2pnJZV1qzmNMSWsHqlMAfPbs5T8I,1067
+pbi_tools-1.1.4.dist-info/METADATA,sha256=ybGNX4CXeZahQrZdbe2zmGpMaloQAushZXpF3S9PLzo,854
+pbi_tools-1.1.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pbi_tools-1.1.4.dist-info/top_level.txt,sha256=syrDveFZIExJ6M8Wj3JKJiVwxxwQjGIjNLcBRDmL9Kk,4
+pbi_tools-1.1.4.dist-info/RECORD,,
