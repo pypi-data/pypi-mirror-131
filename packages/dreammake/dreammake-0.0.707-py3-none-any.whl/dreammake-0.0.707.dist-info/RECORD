@@ -1,0 +1,13 @@
+dreammake/__init__.py,sha256=iIr7B41KuJKXxQ9mqlNwB4xmIwpZUkmLeci9LbUouGg,138
+dreammake/canvas.py,sha256=wlUTFSorVbqDUPCgQ_HHoKgYgujNbBZSKsuoyqi9ywk,1003
+dreammake/codekit.py,sha256=i89MjB88TgS4Qjm12NlVVqMQ4pCLckAoZNpiUVQsvKg,1608
+dreammake/colliders.py,sha256=pBGqVOkrjak2f6Et179P1gWYKviqts9YhvlXION-Szk,2866
+dreammake/gui.py,sha256=RVM1RlsZZ9g5IQZwTYzGZdgoLL2K0fdPqoobXtLAizo,30126
+dreammake/locals.py,sha256=Pv9Tk2zO9P4xOcXfs-cDQzsArh0fCmT3fBVvfbF44EY,27
+dreammake/shapes.py,sha256=ZXRYHieZUp6ExDeHZOIgO704S8434LHprifmFrNDnIQ,8312
+dreammake/tktools.py,sha256=xqIf5MFa34Cf9YaH1UtUYY-4IUlEqvQOyOAGfORh_Ys,217
+dreammake-0.0.707.dist-info/LICENSE.txt,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+dreammake-0.0.707.dist-info/METADATA,sha256=VolvM0ICrSVcPD8IegeD1YqfTQ5KE5sEp0zq7mxuQPk,599
+dreammake-0.0.707.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dreammake-0.0.707.dist-info/top_level.txt,sha256=NxygjAutRiPiN3hxiXAeWk2O7xmnlmd1u6NrecIeJeg,10
+dreammake-0.0.707.dist-info/RECORD,,
