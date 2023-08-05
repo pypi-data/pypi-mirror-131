@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: Pystringmini
+Version: 3.0.8
+Summary: UNKNOWN
+Home-page: https://github.com/thiyagarajan2002
+Author: Thiyagarajan
+Author-email: trj08012002@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/thiyagarajan2002/Pystringmini/blob/main/Documents
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+
+#Thiyagarajan V
+from pystringmini import *
+string="Hello"
+print(uppercase(string))
+print(lowercase(string))
+print(capitalize(string))
+print(length(string))
+print(digit(string))
+print(min(string))
+print(max(string))
+print(replace(string,'Hai','Everyone'))
+print(encodeing(string))
+print(decoding(string))
+print(split(string))
+print(help())
+
+
