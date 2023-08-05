@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+src/bpy_building_blocks.egg-info/PKG-INFO
+src/bpy_building_blocks.egg-info/SOURCES.txt
+src/bpy_building_blocks.egg-info/dependency_links.txt
+src/bpy_building_blocks.egg-info/top_level.txt
+src/bpybb/__init__.py
+src/bpybb/addon.py
+src/bpybb/collection.py
+src/bpybb/hdri.py
+src/bpybb/material.py
+src/bpybb/mesh.py
+src/bpybb/object.py
+src/bpybb/output.py
+src/bpybb/random.py
+src/bpybb/utils.py
