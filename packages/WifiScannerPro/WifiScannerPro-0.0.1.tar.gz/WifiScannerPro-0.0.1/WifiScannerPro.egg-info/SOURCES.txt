@@ -1,0 +1,8 @@
+README.md
+setup.py
+WifiScanner/__init__.py
+WifiScannerPro.egg-info/PKG-INFO
+WifiScannerPro.egg-info/SOURCES.txt
+WifiScannerPro.egg-info/dependency_links.txt
+WifiScannerPro.egg-info/requires.txt
+WifiScannerPro.egg-info/top_level.txt
