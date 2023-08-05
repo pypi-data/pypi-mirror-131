@@ -1,0 +1,9 @@
+napari
+numpy
+xarray
+SimpleITK
+opencv-python-headless
+qtpy
+pyqt5
+zarr
+napari-animation
