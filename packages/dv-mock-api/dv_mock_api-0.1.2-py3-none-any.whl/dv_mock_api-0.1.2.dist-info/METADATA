@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: dv-mock-api
+Version: 0.1.2
+Summary: UNKNOWN
+Home-page: https://gitlab.com/dqna/DV360-mock-api
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Requires-Dist: faker
+Requires-Dist: requests
+Requires-Dist: httplib2
+Requires-Dist: google-api-core
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth
+Requires-Dist: google-cloud-core
+Requires-Dist: google-resumable-media
+Requires-Dist: googleapis-common-protos
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: oauth2client
+
+# DV360 Mock api
+
+The DV360 mock api is a static api that can be configured to return many reponses like the DV360 and DBM api's. The difference is the calls are not real.
+
+
+## Local
+
+If you want to run locally please use a `virtual environment`. This can be done with `pipenv`. Next you can run the `./main.py` file. This will start a simple flask server with all endpoints. 
+
+To be able to test make sure to add the `google-credentials.json` OAuth credentials to the `secrets` folder.
+
+If you want to test the application you can use the `make run_all_tests` command. To add new tests, create a new test in the `tests` folder and add it to the makefile. This will ensure the tests are ran in the pipeline.
+
+## Usage
+
+To use the mock api in your testing suite make sure to target the `dv360-mock-api` host. If you are using the `googleapi` package, you will need to change the discovery url.
+
+This will look like the following:
+
+```py
+service = discovery.build(
+    api_service,
+    api_version,
+    http=self.http,
+    discoveryServiceUrl=f"http://localhost:5050/discover/{api_service}/{api_version}"
+)
+```
+
+When running the tests you will need to use the `runner` this will start the fake api in a seperate thread on port `:5050`. This will look like so:
+
+```py
+from django.test import TestCase
+from dv_mock_api import runner
+
+
+class ATestCase(TestCase):
+    def setUp(self):
+        runner.create_app()
+
+    def test_some_method(self):
+        pass # do testing here
+```
+
+
+
+

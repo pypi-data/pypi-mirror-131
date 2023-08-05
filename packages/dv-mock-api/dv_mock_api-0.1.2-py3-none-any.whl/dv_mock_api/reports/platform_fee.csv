@@ -1,0 +1,3 @@
+Advertiser ID,Line Item Type,Inventory Commitment,Advertiser Currency,Line Item,Line Item ID,Partner ID,Platform Fee Rate,Impressions
+1,Real-time bidding,Non-guaranteed,USD,"Some lineitem name 1",56616282,1,9.500%,2065
+1,Real-time bidding,Non-guaranteed,USD,"Some lineitem name 2",56616282,2,9.500%,2065

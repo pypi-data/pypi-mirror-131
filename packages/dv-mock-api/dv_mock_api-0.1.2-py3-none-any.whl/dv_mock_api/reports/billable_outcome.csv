@@ -1,0 +1,5 @@
+Advertiser ID,Line Item Type,Inventory Commitment,Advertiser Currency,Line Item,Line Item ID,Billable Outcome,Partner ID,Impressions
+1,Real-time bidding,Non-guaranteed,EUR,Some lineitem name 1,1,Impressions,1,113
+1,Real-time bidding,Non-guaranteed,EUR,Some lineitem name 2,2,Impressions,1,115
+
+
