@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sysubadminton
+Version: 0.1.0
+Summary: 用于中山大学珠海校区羽毛球场的预定
+Home-page: https://gist.github.com/834e635e82739ee23d1450357f4fcc6e
+Author: SYSUBad
+Author-email: sysu@bad.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
+UNKNOWN
+
