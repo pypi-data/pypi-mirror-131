@@ -1,0 +1,8 @@
+aiosqlite==0.17.0
+cryptg==0.2.post2
+ecdsa==0.16.1
+filetype==1.0.8
+pycryptodome==3.10.1
+regex
+sphinx-rtd-theme
+telethon==1.24.0
