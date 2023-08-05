@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+airflow_sqlcmd_operator/__init__.py
+airflow_sqlcmd_operator/sqlcmd.py
+airflow_sqlcmd_operator.egg-info/PKG-INFO
+airflow_sqlcmd_operator.egg-info/SOURCES.txt
+airflow_sqlcmd_operator.egg-info/dependency_links.txt
+airflow_sqlcmd_operator.egg-info/requires.txt
+airflow_sqlcmd_operator.egg-info/top_level.txt
