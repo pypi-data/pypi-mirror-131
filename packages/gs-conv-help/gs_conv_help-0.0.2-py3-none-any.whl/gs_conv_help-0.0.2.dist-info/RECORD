@@ -1,0 +1,12 @@
+gs_conv_help/__init__.py,sha256=gUdOKCk_TqqUm26SaQ4N-o1dmPbywNTqW8X5LApAOR8,317
+gs_conv_help/db_handler.py,sha256=EuHxR5i5SdRgCoXTAHoKqfz2Ee37DVuHtRnZ0_XTNCY,1810
+gs_conv_help/gs_global.py,sha256=0EmIjzBkGPmt1xyH-yHwJ7_81B4Ft93uidAxApuQHOk,19
+gs_conv_help/menu_handler.py,sha256=1YHyScekw6VjaASh1KL4R0oGV4eJk7jhBH0wKjlOq4Q,6821
+gs_conv_help/post_handler.py,sha256=wGMKMYvdihiF9WQ1nuZoR-YqHRpU5myXCfRKRpXuDZY,486
+gs_conv_help/pre_handler.py,sha256=jDql9H5zaPdR0D1-W7dcG6hfwbYG_2NAcbsT9PCOhsQ,1554
+gs_conv_help/response_cards.py,sha256=k-BVlAhaI8qn1yKj2EidP3Swyp8nx5a7lINSLnc24aw,11619
+gs_conv_help-0.0.2.dist-info/LICENSE,sha256=g58U2unr2ZqeVkFQ0uC0kZcJwmtemypkBCrQMteyasM,1067
+gs_conv_help-0.0.2.dist-info/METADATA,sha256=jQYLZCXvyvdJFYJwiBrhkS2tnhQs9hM3Jp5EpmTN6-4,10388
+gs_conv_help-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+gs_conv_help-0.0.2.dist-info/top_level.txt,sha256=mr8pSe_hdrIzqyaeP_6lZQBvVc7B3G8ZpI-xhMV5Zqc,13
+gs_conv_help-0.0.2.dist-info/RECORD,,
