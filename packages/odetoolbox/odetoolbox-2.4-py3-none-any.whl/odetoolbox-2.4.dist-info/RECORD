@@ -1,0 +1,17 @@
+odetoolbox/__init__.py,sha256=P6Xbh7Iaj92RusIhOb9Wseyo_Sy2gj8tAA5r_yiB-M0,18274
+odetoolbox/analytic_integrator.py,sha256=nOBY0OqzJ26dwsyR6SsO5id23klbSDf_bcS1g96aIww,8785
+odetoolbox/dependency_graph_plotter.py,sha256=l5q-DKvIZrvGeHxzBYXIokXdWKgfZZZzFGu1vGLkNX4,2710
+odetoolbox/integrator.py,sha256=ASzRphLHSqBQuOSaP6nPwNwGIl9F_Zyim_wiDRYixAg,3146
+odetoolbox/mixed_integrator.py,sha256=Q8d2VGvaojuWF0_jIFJqSsFY7t5CEja97cgNnm_-DKg,21609
+odetoolbox/plot_helper.py,sha256=BRWKku1hoVYVFYB_usKR9tqROaiIwBG26jAqrs7D13E,1601
+odetoolbox/shapes.py,sha256=pXT5VzJ6vLFgt4XRv16RN1TCOI2hNxBJI0dPmnb7d6c,29663
+odetoolbox/spike_generator.py,sha256=fr57JqFg-hEeM-Q86pKp32ykiRcCWq7Mw7N3o1zKCZo,3772
+odetoolbox/stiffness.py,sha256=ex7aDGGPxo7q7BkBM72ZfB7v3lMKW000iAv-Buzq3B4,9172
+odetoolbox/sympy_printer.py,sha256=0sucOAqFMzksGFMYkFel6N_zHmyTWlVi0wDsjeo-4rk,2262
+odetoolbox/system_of_shapes.py,sha256=PA_KOp5YfjAc9twSTWBWfTzdC_HWlB9Sl_27WzyA8iw,16527
+odetoolbox-2.4.data/scripts/ode_analyzer.py,sha256=uBNOnrPDnDxZvwLhsEXrJuVJhgywVbNrPwbYwSStbV0,4320
+odetoolbox-2.4.dist-info/LICENSE.md,sha256=YvFx1Ni2cm32Hximu8CnD3nEvCE02DfTXIH8Yomi2E0,17941
+odetoolbox-2.4.dist-info/METADATA,sha256=W9HnYvVZX5kAEwMFuMO8j6uJ4WLFKk98tZySZ-RITCU,1754
+odetoolbox-2.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+odetoolbox-2.4.dist-info/top_level.txt,sha256=rpuhlgOEUIJ5Lgc5X-XsIPm06wd2onwlQEC62bbm7d4,11
+odetoolbox-2.4.dist-info/RECORD,,
