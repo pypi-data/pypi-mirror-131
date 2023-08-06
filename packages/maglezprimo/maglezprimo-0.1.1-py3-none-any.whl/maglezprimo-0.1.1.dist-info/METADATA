@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: maglezprimo
+Version: 0.1.1
+Summary: A tool for searching & extracting information...
+Home-page: https://pypi.python.org/pypi/magr-primo
+Author: Miguel A Gonzalez
+Author-email: maglez@gmail.com
+License: GNU GPLv3
+Keywords: primo magr r
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+MAGR-PRIMO
+============
+
+Este paquete ha sido creado para hacer una prueba y publicarlo en pyp.org usando wheel y twin.
+
+
+
+Instalacion::
+
+    pip install primo
+
+
+
+Autor:
+maglez@gmail.com
+
