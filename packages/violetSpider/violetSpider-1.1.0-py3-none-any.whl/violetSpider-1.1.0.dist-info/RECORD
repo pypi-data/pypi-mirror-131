@@ -1,0 +1,8 @@
+violetSpider/__init__.py,sha256=OwdbqYHIUDQhvk9S9U5xSr4MeyhRfOFceVdCxg5x-rY,1005
+violetSpider/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+violetSpider/core/error.py,sha256=OXDpYWEHVFELsw1jlQGfTGIYh3aacJR9jC6MCmZ8-TQ,93
+violetSpider/core/model.py,sha256=-lzYpTyvZDxv93cahwzDsJVICfDNx_df6s0DNyVZL58,15621
+violetSpider-1.1.0.dist-info/METADATA,sha256=a4m4LGi0R3ElKTyVzrBVOhdUi98Flx4JUfYUTSLW_qU,236
+violetSpider-1.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+violetSpider-1.1.0.dist-info/top_level.txt,sha256=El6Setq19nN3ht7em0iMKopKbtrAD9WyCjNrh6X-TFM,13
+violetSpider-1.1.0.dist-info/RECORD,,

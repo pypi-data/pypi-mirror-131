@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: violetSpider
+Version: 1.1.0
+Summary: 爬取新冠疫情数据
+Home-page: UNKNOWN
+Author: violet
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: tqdm
+Requires-Dist: pymysql
+
+UNKNOWN
+
