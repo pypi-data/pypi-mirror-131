@@ -1,0 +1,3 @@
+[console_scripts]
+easyaspymutations = easyaspymutations.cli:main
+
