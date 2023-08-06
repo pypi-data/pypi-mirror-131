@@ -1,0 +1,15 @@
+dask_grblas/__init__.py,sha256=qoKMFKka4kxVP63Oh5LeDrI2r0ac0mq6ePMP8-pxBBA,1253
+dask_grblas/_version.py,sha256=A0BE50UdzNtyJsj5As18-cDGB3d005E9sG4cLMSgn4E,500
+dask_grblas/base.py,sha256=APglaPlK9fAmOoyXPDhq-FDlPx2PB4DPVlmSVChGxrM,9650
+dask_grblas/construction.py,sha256=DFDcRQnylZWnMeIhARlh8213xebqLSDakxnUJ5vwGkg,1141
+dask_grblas/expr.py,sha256=C5__IxMvcziOa6vuS3lw1gOIJCcX0gjqxrPa2NNmu0c,23036
+dask_grblas/mask.py,sha256=SOpih4gDupGzpAR03CkIpXnsV8vXRnBRCF12h0WkOKc,673
+dask_grblas/matrix.py,sha256=-Atmq0ZDtB5uqdT_vm4x58QHRgT41Gg3ELuG678LvUw,8658
+dask_grblas/scalar.py,sha256=bS-ZXds4dMvGSNMRX3EBDksPNYg5vxdM_nDSjyvqZF0,5539
+dask_grblas/utils.py,sha256=DVCwe48yl6HDO_3yvJ-9mhIq3zcpuo9aol49-I02yxc,504
+dask_grblas/vector.py,sha256=xm7wXNrMJLuBuhAtUwir7lul7Pf6uDKz6OtYCSEkizk,7982
+dask_grblas-0.0.1rc1.dist-info/LICENSE,sha256=vyCOmGx91rvVUCwsvQiqzC5wJS9MtmfsTWuuRYCQaMI,11362
+dask_grblas-0.0.1rc1.dist-info/METADATA,sha256=djr8J1K9U0sWMsZ-jZwcmgKjVcvAm8HZnIm4WY5wDLA,328
+dask_grblas-0.0.1rc1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dask_grblas-0.0.1rc1.dist-info/top_level.txt,sha256=9nWNxTpqJFCnLDIpIzYTTR1GtDeRvkkdXUmLkRWmIxY,12
+dask_grblas-0.0.1rc1.dist-info/RECORD,,
