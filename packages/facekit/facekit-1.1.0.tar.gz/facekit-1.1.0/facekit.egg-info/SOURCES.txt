@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+facekit/__init__.py
+facekit/__main__.py
+facekit/detectors.py
+facekit/loaders.py
+facekit/schemas.py
+facekit.egg-info/PKG-INFO
+facekit.egg-info/SOURCES.txt
+facekit.egg-info/dependency_links.txt
+facekit.egg-info/entry_points.txt
+facekit.egg-info/requires.txt
+facekit.egg-info/top_level.txt
