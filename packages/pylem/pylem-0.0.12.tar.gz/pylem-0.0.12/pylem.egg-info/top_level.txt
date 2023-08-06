@@ -1,0 +1,5 @@
+pylem
+pylem/Dicts
+pylem/morph_dict/data
+pylem/tests
+pylem_binary
