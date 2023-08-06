@@ -1,0 +1,13 @@
+hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hooks/add_pre_commit_hook.py,sha256=hCCMVNpfzlGHmP_A6C9Zew_OALTUCuxg8kAqu4HE4KI,7135
+hooks/cf_gh_pages_dns_records.py,sha256=gff4aWFwrRULr8bsds4wa0SfR96E8yrJPfOFBiPAFQA,4735
+hooks/dev_extras_required.py,sha256=IB8aTpAsW-W_ZIkqnBpM-r1XVPQzEJ-cbtjhNLcwR8M,7727
+hooks/nameservers_endswith.py,sha256=nrLKmun4YHLcBTYi5QPWgMhuNXA-LTfsyKJh3joY18g,2599
+hooks/root_editorconfig_required.py,sha256=NnbPNAIzyUUymW2_uSnXJ_wmQ0GIu_Oj62G3HzEVTOc,2589
+hooks/wavelint.py,sha256=GzdD9Ltdsw-hAdBrlCw5H7Veivpn78Sfu11x7AncbwY,8132
+mondeja_pre_commit_hooks-1.6.0.dist-info/LICENSE,sha256=tBE5SZiEgCnOCmd6ig2ISC91ZTQIHF0QYriS9It5UaQ,1531
+mondeja_pre_commit_hooks-1.6.0.dist-info/METADATA,sha256=qqjpAI0Carfcb25YVgvXzptgAn7CyxhdnU7X8fLNKiY,7382
+mondeja_pre_commit_hooks-1.6.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+mondeja_pre_commit_hooks-1.6.0.dist-info/entry_points.txt,sha256=2jtsCzCDtNG1ynjxEtTF5i4DjWHP6C7gwxmoCtZU7Xk,364
+mondeja_pre_commit_hooks-1.6.0.dist-info/top_level.txt,sha256=I0gcmmeA3xdjjkokY-bVx5WycqQcFVAk4RHQB-wl9h8,6
+mondeja_pre_commit_hooks-1.6.0.dist-info/RECORD,,
