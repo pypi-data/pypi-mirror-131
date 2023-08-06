@@ -1,0 +1,34 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+SinGAN/__init__.py
+SinGAN/functions copy.py
+SinGAN/functions.py
+SinGAN/imresize copy.py
+SinGAN/imresize.py
+SinGAN/manipulate copy.py
+SinGAN/manipulate.py
+SinGAN/models copy.py
+SinGAN/models.py
+SinGAN/training copy.py
+SinGAN/training.py
+SinGAN/utils.py
+singan_seg_polyp/__init__.py
+singan_seg_polyp/config.py
+singan_seg_polyp/config.yaml
+singan_seg_polyp/generate_data.py
+singan_seg_polyp/prepare_requirements.py
+singan_seg_polyp/style_transfer.py
+singan_seg_polyp.egg-info/PKG-INFO
+singan_seg_polyp.egg-info/SOURCES.txt
+singan_seg_polyp.egg-info/dependency_links.txt
+singan_seg_polyp.egg-info/requires.txt
+singan_seg_polyp.egg-info/top_level.txt
+singan_seg_polyp/SinGAN/__init__.py
+singan_seg_polyp/SinGAN/functions.py
+singan_seg_polyp/SinGAN/imresize.py
+singan_seg_polyp/SinGAN/manipulate.py
+singan_seg_polyp/SinGAN/models.py
+singan_seg_polyp/SinGAN/training.py
+singan_seg_polyp/SinGAN/utils.py
