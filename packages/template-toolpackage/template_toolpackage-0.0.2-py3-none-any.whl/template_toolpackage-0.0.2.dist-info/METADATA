@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: template-toolpackage
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.9.4
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+# template toolpackage
+
+This is a template toolpackage that can be used for to deploy functions that are shared between projects.
+
+This ci/cd pipeline is deploying the package on pypi.org making it available as a normal `pip install`.
+
+
