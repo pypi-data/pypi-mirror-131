@@ -1,0 +1,25 @@
+name: seamm
+channels:
+  - conda-forge
+dependencies:
+    # Base depends
+  - python>=3.7
+  - tk
+  - pip
+
+  # SEAMM
+  - seamm-installer
+  - seamm
+  - seamm-util
+  - seamm-widgets
+  - seamm-ff-util
+  - molsystem
+  - reference-handler
+  
+  - openkim-models
+  - kim-query
+
+  # Pip-only installs
+  - pip:
+        # SEAMM
+        - seamm-jobserver
