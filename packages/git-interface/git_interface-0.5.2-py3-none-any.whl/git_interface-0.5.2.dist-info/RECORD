@@ -1,0 +1,17 @@
+git_interface/__init__.py,sha256=IkB5V3IU6vhOIbrND5o1Pdq67k15WwCm2LlkOojTDNI,84
+git_interface/branch.py,sha256=oQa0wKqoPfV4EoVsm3kBVK-Y_RpeYC7IHzCJ-nr1eGQ,4550
+git_interface/cat_file.py,sha256=aaQke4tQKvH4ktK5HQ4O0DsRox511Or4uPx5wJbQ3SM,2467
+git_interface/constants.py,sha256=9owoXUbVP1wyTJ9o_Eyk7lXcc6qdF3J6g2x8CZmQiek,738
+git_interface/datatypes.py,sha256=h0f2KyiIi_QU5sB7dySy_jW3mgdBxlsaeLEbLyZ82Ig,1314
+git_interface/exceptions.py,sha256=N0M-87MS-POCYG-iltOf_Iht-0QMg84uyxPjS5Ns8XE,1106
+git_interface/log.py,sha256=Lh5Z91pSlJbWL9b18g8EYEOKyK1OGo_ZdVRiUUK3jao,2786
+git_interface/ls.py,sha256=JxmBM31VdkqLlbSFZwkPZj4kUP-IdbluJ_gv9TiPUYw,2456
+git_interface/rev_list.py,sha256=-2BeJ4A03LBhsQ_UJDV_pqyF37q_3a7b1NcKE0-g8yU,2213
+git_interface/show.py,sha256=qF0uzNFx1pxwgkL94wpRicoiXSa111fiE-MQVhHASaM,1361
+git_interface/symbolic_ref.py,sha256=J8iQO2R23srrtjtbxzQohAs2p4hLrM2GYDTa8Ecz4fQ,3100
+git_interface/utils.py,sha256=TJiQ4fiIbNZQEet3_JfQx9o-yfBixYGp5skoxQqQFIk,4666
+git_interface-0.5.2.dist-info/LICENSE,sha256=-uUfxsa2C_tCZaAknZw7PqqyQ2cyrqtvOV6iaHzaowE,1067
+git_interface-0.5.2.dist-info/METADATA,sha256=MXbmJWKU0LHrcqtWUe9br4rgLRqL40gxK1J54q7C4uI,2145
+git_interface-0.5.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+git_interface-0.5.2.dist-info/top_level.txt,sha256=QXz0dmc62o14F4AUPPVr-99nl9DuMDQkRVdSpPYLsWs,14
+git_interface-0.5.2.dist-info/RECORD,,
