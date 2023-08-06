@@ -1,0 +1,153 @@
+from .module_imports import *
+
+
+@headers({"Ocp-Apim-Subscription-Key": key})
+class Companies(Consumer):
+    """Inteface to Companies resource for the RockyRoad API."""
+
+    def __init__(self, Resource, *args, **kw):
+        self._base_url = Resource._base_url
+        super().__init__(base_url=Resource._base_url, *args, **kw)
+
+    def branches(self):
+        return self.__Branches(self)
+
+    def subscribers(self):
+        return self.__Subscribers(self)
+
+    @returns.json
+    @get("companies")
+    def list(
+        self,
+        company_name: Query(type=str) = None,
+        company_account: Query(type=str) = None,
+        company_account_uid: Query(type=str) = None,
+        is_dealer: Query(type=bool) = None,
+    ):
+        """This call will return detailed information for all companies or for those for the specified criteria."""
+
+    @returns.json
+    @json
+    @post("companies")
+    def insert(self, company: Body):
+        """This call will create a company with the specified parameters."""
+
+    @returns.json
+    @get("companies/{uid}")
+    def get(
+        self,
+        uid: str,
+    ):
+        """This call will return detailed information for the specified company."""
+
+    @delete("companies/{uid}")
+    def delete(self, uid: str):
+        """This call will delete the company for the specified uid."""
+
+    @json
+    @patch("companies/{uid}")
+    def update(self, uid: str, company: Body):
+        """This call will update the company with the specified parameters."""
+
+    @headers({"Ocp-Apim-Subscription-Key": key})
+    class __Subscribers(Consumer):
+        """Inteface to company Subscribers resource for the RockyRoad API."""
+
+        def __init__(self, Resource, *args, **kw):
+            super().__init__(base_url=Resource._base_url, *args, **kw)
+
+        @returns.json
+        @get("companies/{company_uid}/subscribed-users")
+        def list(
+            self,
+            company_uid: str,
+        ):
+            """This call will return detailed information for all company subscribers or for those for the specified criteria."""
+
+        @returns.json
+        @get("companies/{company_uid}/subscribed-users/{user_uid}")
+        def get(self, company_uid: str, user_uid: str):
+            """This call will return detailed information for a single subscriber."""
+
+        @delete("companies/{company_uid}/subscribed-users/{user_uid}")
+        def delete(
+            self,
+            company_uid: str,
+            user_uid: str,
+        ):
+            """This call will delete the company subscriber for the specified uid."""
+
+        @returns.json
+        @json
+        @post("companies/{company_uid}/subscribed-users/{user_uid}")
+        def insert(self, company_uid: str, user_uid: str):
+            """This call will create a company subscriber with the specified parameters."""
+
+    @headers({"Ocp-Apim-Subscription-Key": key})
+    class __Branches(Consumer):
+        """Inteface to company Branches resource for the RockyRoad API."""
+
+        def __init__(self, Resource, *args, **kw):
+            self._base_url = Resource._base_url
+            super().__init__(base_url=Resource._base_url, *args, **kw)
+
+        def subscribers(self):
+            return self.__Subscribers(self)
+
+        @returns.json
+        @get("companies/{company_uid}/branches")
+        def list_for(
+            self,
+            company_uid: str,
+        ):
+            """This call will return detailed branch information for the specified company."""
+
+        @returns.json
+        @json
+        @post("companies/{company_uid}/branches")
+        def insert(self, company_uid: str, branch: Body):
+            """This call will create a company branch  with the specified parameters."""
+
+        @returns.json
+        @get("/branches")
+        def list(
+            self,
+            include_machines: Query(type=bool) = None,
+        ):
+            """This call will return detailed information for all branches."""
+
+        @returns.json
+        @get("/branches/{uid}")
+        def get(self, uid: str):
+            """This call will return detailed branch information for the specified uid."""
+
+        @delete("branches/{uid}")
+        def delete(self, uid: str):
+            """This call will delete the company branch for the specified uid."""
+
+        @json
+        @patch("branches/{uid}")
+        def update(self, uid: str, branch: Body):
+            """This call will update the company branch  with the specified parameters."""
+
+        @headers({"Ocp-Apim-Subscription-Key": key})
+        class __Subscribers(Consumer):
+            """Inteface to company Branch Subscribers resource for the RockyRoad API."""
+
+            def __init__(self, Resource, *args, **kw):
+                super().__init__(base_url=Resource._base_url, *args, **kw)
+
+            @returns.json
+            @get("branches/{branch_uid}/subscribed-users")
+            def list(self, branch_uid: str):
+                """This call will return detailed information for company branch subscribers."""
+
+            @delete("branches/{branch_uid}/subscribed-users/{user_uid}")
+            def delete(self, branch_uid: str, user_uid: str):
+                """This call will delete the company branch subscriber for the specified uid."""
+
+            @returns.json
+            @json
+            @post("branches/{branch_uid}/subscribed-users/{user_uid}")
+            def insert(self, branch_uid: str, user_uid: str):
+                """This call will create a company branch subscriber."""
