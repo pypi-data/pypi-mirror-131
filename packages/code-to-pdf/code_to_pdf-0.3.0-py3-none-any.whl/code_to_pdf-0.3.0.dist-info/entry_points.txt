@@ -1,0 +1,3 @@
+[console_scripts]
+code_to_pdf = code_to_pdf.__main__:main
+
