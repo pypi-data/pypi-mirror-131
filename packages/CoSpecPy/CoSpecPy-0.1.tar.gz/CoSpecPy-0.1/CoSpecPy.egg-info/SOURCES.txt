@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+CoSpecPy/__init__.py
+CoSpecPy/download.py
+CoSpecPy.egg-info/PKG-INFO
+CoSpecPy.egg-info/SOURCES.txt
+CoSpecPy.egg-info/dependency_links.txt
+CoSpecPy.egg-info/top_level.txt
+CoSpecPy/test/__init__.py
