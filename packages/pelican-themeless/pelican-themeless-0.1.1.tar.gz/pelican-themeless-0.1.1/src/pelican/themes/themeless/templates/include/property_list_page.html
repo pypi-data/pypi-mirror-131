@@ -1,0 +1,15 @@
+{# Requires variables `property_list` and `title` to be defined. #}
+{% extends "include/base.html" %}
+
+{% block body %}
+  <h1>{{ title }}</h1>
+  <ul>
+    {% for property, articles in property_list %}
+      <li>
+        <a href="{{ SITEURL }}/{{ property.url }}">
+          {{ property.name }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

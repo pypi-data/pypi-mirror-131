@@ -1,0 +1,7 @@
+pelican>=4.7.1
+
+[dev]
+black>=21.9b0
+mypy>=0.910
+pytest>=6.2.5
+tox>=3.24.4

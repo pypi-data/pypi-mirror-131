@@ -1,0 +1,91 @@
+{% extends "include/base.html" %}
+
+{% block body %}
+  <main>
+    <h1>{{ SITENAME }}</h1>
+    {% for article in dates_page.object_list %}
+      {% include "include/article_summary.html" %}
+    {% endfor %}
+  </main>
+  {% set current_page = dates_page %}
+  {% set paginator = dates_paginator %}
+  {% include "include/paginator.html" %}
+  <hr>
+  <nav>
+    <ul>
+      {% if "archives" in DIRECT_TEMPLATES and articles %}
+        <li>
+          <a href="{{ SITEURL }}/{{
+            ARCHIVES_SAVE_AS|default("archives.html")
+          }}">Archives</a>
+        </li>
+      {% endif %}
+      {% if "authors" in DIRECT_TEMPLATES and authors %}
+        <li>
+          <a href="{{ SITEURL }}/{{
+            AUTHORS_SAVE_AS|default("authors.html")
+          }}">Authors</a>
+        </li>
+      {% endif %}
+      {% if categories %}
+        {% if "categories" in DIRECT_TEMPLATES
+          or DISPLAY_CATEGORIES_ON_MENU
+        %}
+          <li>
+            {% if "categories" in DIRECT_TEMPLATES %}
+              <a href="{{ SITEURL }}/{{
+                CATEGORIES_SAVE_AS | default("categories.html")
+              }}">Categories</a>
+            {% else %}
+              Categories
+            {% endif %}
+            {% if DISPLAY_CATEGORIES_ON_MENU %}
+              <ul>
+                {% for category_articles in categories %}
+                  <li>
+                    <a href="{{ SITEURL }}/{{
+                       category_articles[0].url
+                    }}">{{ category_articles[0].name }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+        {% endif %}
+      {% endif %}
+      {% if "tags" in DIRECT_TEMPLATES and tags %}
+        <li>
+          <a href="{{ SITEURL }}/{{
+            TAGS_SAVE_AS|default("tags.html")
+          }}">Tags</a>
+        </li>
+      {% endif %}
+      {% if pages %}
+        {% if "pages" in DIRECT_TEMPLATES
+          or DISPLAY_PAGES_ON_MENU
+        %}
+          <li>
+            {% if "pages" in DIRECT_TEMPLATES %}
+              <a href="{{ SITEURL }}/{{
+                PAGES_SAVE_AS|default("pages.html")
+              }}">Pages</a>
+            {% else %}
+              Pages
+            {% endif %}
+            {% if DISPLAY_PAGES_ON_MENU %}
+              <ul>
+                {% for page in pages %}
+                  <li>
+                    <a
+                      href="{{ SITEURL }}/{{ page.url }}"
+                    >{{ page.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+        {% endif %}
+      {% endif %}
+    </ul>
+  </nav>
+{% endblock %}
