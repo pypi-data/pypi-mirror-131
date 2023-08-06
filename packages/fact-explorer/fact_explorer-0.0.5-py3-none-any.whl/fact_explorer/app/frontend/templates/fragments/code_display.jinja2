@@ -1,0 +1,22 @@
+<pre>
+<code id="results" class="language-json line-numbers match-braces rainbow-braces"></code>
+</pre>
+
+{% raw %}
+
+<template id="json-response">
+  {{ data | dump(2) | safe}}
+</template>
+
+{% endraw %}
+
+{% block javascript %}
+
+<script>
+  htmx.on('htmx:afterSwap', function (event) {
+    var block = document.getElementById('results');
+    Prism.highlightElement(block);
+  });
+</script>
+
+{% endblock %}
