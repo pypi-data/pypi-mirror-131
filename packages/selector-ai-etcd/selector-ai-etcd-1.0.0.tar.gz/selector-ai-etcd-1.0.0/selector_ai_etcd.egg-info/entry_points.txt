@@ -1,0 +1,3 @@
+[console_scripts]
+selector_ai_etcd = selector_ai_etcd.__main__:main
+
