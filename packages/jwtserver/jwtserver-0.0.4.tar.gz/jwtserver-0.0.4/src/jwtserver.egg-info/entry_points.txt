@@ -1,0 +1,4 @@
+[console_scripts]
+devserver = jwtserver.server:dev
+start = jwtserver.server:prod
+
