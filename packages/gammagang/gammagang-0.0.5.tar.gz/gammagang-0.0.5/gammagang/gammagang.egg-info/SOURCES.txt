@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+gammagang/gammagang.egg-info/PKG-INFO
+gammagang/gammagang.egg-info/SOURCES.txt
+gammagang/gammagang.egg-info/dependency_links.txt
+gammagang/gammagang.egg-info/requires.txt
+gammagang/gammagang.egg-info/top_level.txt
