@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: numeprimos
+Version: 1.0
+Summary: Utilidad para calcular números primos.
+Home-page: UNKNOWN
+Author: Pablo Ruiz Vedia
+Author-email: pabloruizve+python@gmail.com
+License: GNU GPLv3
+Keywords: numeros primos mathematical operations
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+NUMEROS PRIMOS
+==============
+
+Este paquete contiene una funciÃ³n que calcula y presenta los nÃºmeros primos que hay entre el 1 y nÃºmero pasado como parÃ¡metro.
+
+This program is free software: You can redistribute it and/or modify it under the terms of license by the Free Software Foundation, either version 3 of the License(at your option) any other version.
+
+
+
