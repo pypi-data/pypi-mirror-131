@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: jwtserver
+Version: 0.0.4
+Summary: jwt authorization server
+Home-page: https://github.com/darkdealnet/jwtserver
+Author: Darkdeal
+Author-email: real@darkedal.net
+License: Apache2
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: uvicorn (==0.16.0)
+Requires-Dist: loguru (==0.5.3)
+Requires-Dist: aioredis (==2.0.0)
+Requires-Dist: fastapi (==0.70.1)
+Requires-Dist: sqlalchemy (==1.4.28)
+Requires-Dist: sqlalchemy-utils (==0.37.9)
+Requires-Dist: asyncpg (==0.25.0)
+Requires-Dist: psycopg2-binary (==2.9.2)
+Requires-Dist: httpx (==0.21.1)
+Requires-Dist: phonenumbers (==8.12.39)
+Requires-Dist: python-jose (==3.3.0)
+Requires-Dist: passlib (==1.7.4)
+Requires-Dist: starlette (~=0.16.0)
+Requires-Dist: pydantic (~=1.8.2)
+
+### start development server
+
+```python
+# dev.py
+from jwtserver.server import dev
+
+if __name__ == "__main__":
+    dev(host="localhost", port=5000, log_level="info")
+```
+
+### production server
+```python
+# main.py
+from jwtserver.app import app
+app.debug = False
+```
+
+### system.d
+```ini
+# jwtserver.service
+[Unit]
+Description = jwtserver daemon
+After = network.target
+
+[Service]
+User = {username}
+Group = {username_group}
+WorkingDirectory = /home/{username}/{project_folder}/jwtserver
+ExecStart = /home/{username}/.venvs/jwtserver/bin/gunicorn -c jwtserver/functions/gunicorn.py main:app
+Restart = on-failure
+
+[Install]
+WantedBy = multi-user.target
+```
+
