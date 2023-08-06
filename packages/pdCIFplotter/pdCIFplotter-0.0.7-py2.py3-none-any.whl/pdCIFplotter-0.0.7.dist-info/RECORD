@@ -1,0 +1,13 @@
+pdCIFplotter/__init__.py,sha256=1XhouwsAkeGPjkTsbjD36Leh6amzcKXZUTJEyYPCpbg,96
+pdCIFplotter/__main__.py,sha256=2Up7XHx9V9yiua6-WhiSYUFL5af4nH5wF33LO6w6pDI,403
+pdCIFplotter/gui.py,sha256=qByIxFA5oeKApeQPlGP3tv6FsiQ2NvBYlOgQNaHIA9k,63583
+pdCIFplotter/icon.png,sha256=o2ZX7Zqj8NjQC8JMCbs6s4GkFHjun4grw4U1n41-eTs,6556
+pdCIFplotter/parse_cif.py,sha256=MMh5U5IeWSVVLssSTIHahnF6U4w9U7c17g8DCmciNZc,35473
+pdCIFplotter/plot_cif.py,sha256=qd-gcNhIkLBOOXFsoEBx_vqW89lkp--Pr6RjbWiWQis,37177
+pdCIFplotter-0.0.7.dist-info/AUTHORS.rst,sha256=a5yQ6URNDaV3t6mTKfRZUOIGfXlT-OSxeD30irG2BPE,71
+pdCIFplotter-0.0.7.dist-info/LICENSE,sha256=ldpuyyhupKqMjayDYUmuY43nV__fpLPQ9OcW7rCzL7Q,11512
+pdCIFplotter-0.0.7.dist-info/METADATA,sha256=RnoSsJTGxdXMWR1u2YSOeZCTv-3FXfYy1cKfqQv-CNA,6328
+pdCIFplotter-0.0.7.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+pdCIFplotter-0.0.7.dist-info/entry_points.txt,sha256=0nnO-Ov3TUP0iA_MlIwyiA8jaRo_vKmvIbt8BrY0iuw,55
+pdCIFplotter-0.0.7.dist-info/top_level.txt,sha256=euV_PuqDqOF7qujRiRzQe__u2tZ3tYFa3o-HCR9H_O8,54
+pdCIFplotter-0.0.7.dist-info/RECORD,,
