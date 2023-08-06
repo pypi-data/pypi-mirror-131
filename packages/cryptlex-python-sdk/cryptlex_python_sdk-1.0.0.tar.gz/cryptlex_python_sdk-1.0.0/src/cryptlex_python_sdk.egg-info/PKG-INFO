@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: cryptlex-python-sdk
+Version: 1.0.0
+Summary: Cryptlex python client for Web APIs
+Home-page: https://github.com/ranjanp75/cryptlex-python-sdk
+Author: Ranjan P
+Author-email: ranjanp75@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: Cryptlex Python client SDK
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
