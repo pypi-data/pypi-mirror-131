@@ -1,0 +1,3 @@
+[console_scripts]
+obelist=obelist.cli.cmds:main
+
