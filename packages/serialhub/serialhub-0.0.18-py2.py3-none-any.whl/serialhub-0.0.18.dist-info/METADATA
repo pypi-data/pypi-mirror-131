@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: serialhub
+Version: 0.0.18
+Summary: WebSerial widget for Jupyter Hub/Lab
+Home-page: https://github.com/cdr4eelz/serialhub
+Author: cdr4eelz
+Author-email: 1408777+cdr4eelz@users.noreply.github.com
+License: BSD-3-Clause
+Keywords: Jupyter,JupyterLab,JupyterLab3
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: Jupyter
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: Framework :: Jupyter :: JupyterLab :: 3
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: ipywidgets (>=7.0.0)
+Requires-Dist: jupyter-server (<2,>=1.6)
+
+
+# serialhub
+
+[![Build Status](https://travis-ci.org/cdr4eelz/serialhub.svg?branch=master)](https://travis-ci.org/cdr4eelz/serialhub)
+[![codecov](https://codecov.io/gh/cdr4eelz/serialhub/branch/master/graph/badge.svg)](https://codecov.io/gh/cdr4eelz/serialhub)
+
+
+WebSerial widget for Jupyter Hub and Lab
+
+## Installation
+
+If you use jupyterlab:
+
+```bash
+pip install serialhub
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+```
+
+If you are using Jupyter Notebook 5.2 or earlier, you may also need to enable
+the nbextension:
+```bash
+jupyter nbextension enable --py [--sys-prefix|--user|--system] serialhub
+```
+
+
