@@ -1,0 +1,10 @@
+pokr/__init__.py,sha256=256UMpXWlnI51O3NihosTjYYxSeOGLQ9_K8UbgN1ozE,1451
+pokr/_version.py,sha256=g0RU_Fiae76hPEUjU6lGnapa9IZoqGcB4oFcTnsoMbM,142
+pokr/tasks.py,sha256=9WoOEFzPxUJ7HBa1imk_Xvoo0yVcS2eEh1DUqjtrtHU,98
+pokr/metrics/__init__.py,sha256=vtgPlhXhwo05nQl-l0AhayiviHftjigjKPSdg8JQANo,11102
+pokr/metrics/github.py,sha256=2OY3Apoplp11uP83Q1bzZT-B0Xd6FkgRBVc9SuRwy_o,1714
+pokr/metrics/todoist.py,sha256=uOam_NOiE8mFD1tqdLuXB-ix-bSVJKoKG_njK_jPWCo,2338
+pokr-0.2.0.dist-info/METADATA,sha256=tGnskVfLjSVWvl-LGJzBY63QO4yrnC5QN_BQdBwPcaE,1081
+pokr-0.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pokr-0.2.0.dist-info/top_level.txt,sha256=2iJMHPjUm1ymM1KrS4J6hmSTl-Ph8wMQdybkQlgwekU,5
+pokr-0.2.0.dist-info/RECORD,,
