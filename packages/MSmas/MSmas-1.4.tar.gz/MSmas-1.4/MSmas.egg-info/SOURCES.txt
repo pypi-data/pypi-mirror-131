@@ -1,0 +1,8 @@
+setup.py
+MSmas/MASSi.py
+MSmas/__init__.py
+MSmas.egg-info/PKG-INFO
+MSmas.egg-info/SOURCES.txt
+MSmas.egg-info/dependency_links.txt
+MSmas.egg-info/not-zip-safe
+MSmas.egg-info/top_level.txt
