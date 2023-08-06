@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: alfa_utilities
+Version: 0.5.1
+Summary: ALFA utilities for base detectors
+Home-page: https://svn.fra.syrocon.net:8181/scm/git/syrocon/ai-adas/machineLearning_env/alfa-utils-master
+Author: Tuan Anh Le
+Author-email: tuananh.le@syrocon.de
+License: MIT
+Download-URL: https://svn.fra.syrocon.net:8181/scm/git/syrocon/ai-adas/machineLearning_env/alfa-utils-master/dist/alfa_utilities-0.5.1.tar.gz
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+# Agglomerative Late Fusion Algorithm (ALFA) Utilities
+
+## Overview
+This python package contains all ALFA related utilities, so that the base detectors and the ALFA detector can interact with each other.
+
