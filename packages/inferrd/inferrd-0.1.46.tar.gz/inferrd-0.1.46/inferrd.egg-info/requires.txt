@@ -1,0 +1,9 @@
+joblib
+flask
+dill
+easysettings
+numpy
+tqdm
+pandas
+tensorflow
+requests
