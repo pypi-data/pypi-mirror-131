@@ -1,0 +1,14 @@
+pinyiniser/__init__.py,sha256=7mX3ixV0w-9wpDHsuQSwnFwMYTEJJzudgBMndS7N_R0,130
+pinyiniser/main.py,sha256=E2xu93YKFte6027eV8ZzyvDtvR4yw3yBQZGkautRpQc,2790
+pinyiniser/data/cc_cedict_parser.py,sha256=z2kgNBJJlzlNfzrSJL9oBysCkOsZCufjr0ErDve6Z70,1246
+pinyiniser/data/cedict_ts_no_space_numerals.u8,sha256=1RFcEF1FQHllmTrhw8NXRkzJWa9Rj5IEY9YvThoDLuo,9194235
+pinyiniser/data/cedict_ts_pinyin.u8,sha256=sB_uOm3pg8w31aOk_H4LWcqi7Bl06JNmokppXz4bKQo,9189531
+pinyiniser/data/jieba_dict_large.txt,sha256=GSyWVxCdFWiIZchbKxNZ7DeYz3Po_ki1v9l9SWIuO7k,9167572
+pinyiniser/data/pinyin_skip.py,sha256=Mqa6AzSqDqo7MiDP2diKZ615r7RJweyq_MXVuv7YZo0,416
+pinyiniser/data/__pycache__/cc_cedict_parser.cpython-39.pyc,sha256=nFe3IR55oPZoK_dYk-2N8HUDA7n32PeaiwAA2NUh_RY,1274
+pinyiniser/data/__pycache__/pinyin_skip.cpython-39.pyc,sha256=RL4hEMFizlPn0qwbXRbW2-vfgvsX8mDd9AJKWhusYCg,489
+Pinyiniser-1.0.0.dist-info/LICENSE.txt,sha256=ukEi8E0PKq1dQGTXHUflg3rppLymwAhr7il9x-0nPgg,1062
+Pinyiniser-1.0.0.dist-info/METADATA,sha256=pYIE-ZnSPaD3pXqoKNJIrg9jBvbNwdysaM59X3jFfKk,3071
+Pinyiniser-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+Pinyiniser-1.0.0.dist-info/top_level.txt,sha256=Qlz9N0ZeVws7XJJlJb2CqgmQ0Wae9meh-gwfOjziSoY,11
+Pinyiniser-1.0.0.dist-info/RECORD,,
