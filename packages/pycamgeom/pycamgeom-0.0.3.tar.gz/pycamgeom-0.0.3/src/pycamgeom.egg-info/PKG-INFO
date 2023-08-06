@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pycamgeom
+Version: 0.0.3
+Summary: 'camera models and associated classes'
+Home-page: https://github.com/bmhopkinson/pycamgeom
+Author: Brian Hopkinson
+Author-email: bmhopkin@uga.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pycamgeom
+Package for projective camera and associated classes
+
+Camera: projective camera class
+Frame: represents a image and its pose in world coordinates
+AABBtree: used to accelerate searches for world entities visible in camera image
+Projector: projects faces and vertices from mesh into frame to identify visible mesh elements
+
+
