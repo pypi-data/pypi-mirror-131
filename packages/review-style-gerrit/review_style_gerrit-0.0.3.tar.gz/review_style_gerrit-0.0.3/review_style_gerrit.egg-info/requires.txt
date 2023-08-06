@@ -1,0 +1,3 @@
+easy_exec
+gerrit-review-robot
+pylama[all]

@@ -1,0 +1,4 @@
+gerrit-review-robot
+pylama[all]
+easy_exec
+pytest
