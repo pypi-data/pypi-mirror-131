@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: ensaio
+Version: 0.0.post7
+Summary: "Practice datasets to probe your code"
+Home-page: https://github.com/fatiando/ensaio
+Author: The Ensaio Developers
+Author-email: fatiandoaterra@protonmail.com
+Maintainer: "Leonardo Uieda"
+Maintainer-email: leouieda@gmail.com
+License: BSD 3-Clause License
+Project-URL: Documentation, https://www.fatiando.org/ensaio
+Project-URL: Release Notes, https://github.com/fatiando/ensaio/releases
+Project-URL: Bug Tracker, https://github.com/fatiando/ensaio/issues
+Project-URL: Source Code, https://github.com/fatiando/ensaio
+Keywords: geophysics,geodesy,data
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+
+Ensaio
+======
+
+   Practice datasets to probe your code
+
+`Documentation <https://www.fatiando.org/ensaio>`__ |
+`Documentation (dev version) <https://www.fatiando.org/ensaio/dev>`__ |
+Part of the `Fatiando a Terra <https://www.fatiando.org>`__ project
+
+.. image:: http://img.shields.io/pypi/v/ensaio.svg?style=flat-square
+    :alt: Latest version on PyPI
+    :target: https://pypi.python.org/pypi/ensaio
+.. image:: https://img.shields.io/conda/vn/conda-forge/ensaio.svg?style=flat-square
+    :alt: Latest version on conda-forge
+    :target: https://github.com/conda-forge/ensaio-feedstock
+.. image:: https://img.shields.io/pypi/pyversions/ensaio.svg?style=flat-square
+    :alt: Compatible Python versions.
+    :target: https://pypi.python.org/pypi/ensaio
+
+
+Disclaimer
+----------
+
+🚨 **This package is in early stages of design and implementation.** 🚨
+
+We welcome any feedback and ideas!
+
+
+.. placeholder-for-doc-index
+
+
+About
+-----
+
+
+
+Project goals
+-------------
+
+
+
+
+Contributing
+------------
+
+See our
+`Contributing Guide <https://github.com/fatiando/ensaio/blob/master/CONTRIBUTING.md>`__
+for information on how you can help and give feedback.
+
+License
+-------
+
+This is free software: you can redistribute it and/or modify it under the terms
+of the **BSD 3-clause License**. A copy of this license is provided in
+`LICENSE.txt <https://github.com/fatiando/ensaio/blob/master/LICENSE.txt>`__.
+
+
