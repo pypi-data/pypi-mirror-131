@@ -1,0 +1,10 @@
+hcluster/__init__.py,sha256=FuA0kLeeVgQ1_LN01Hazz-1opOUSwZTaT4OmHHP_MyM,49
+hcluster/_distance_wrap.cpython-310-darwin.so,sha256=3NVCx4cSr1fFQhbn-jzDgjC9IZ1lA7akNiErAZmnoyI,74280
+hcluster/_hierarchy.cpython-310-darwin.so,sha256=WFERHb7UbuW6r7grOsrWQFZyWDqnrUlKs-V98J8KMK8,317016
+hcluster/distance.py,sha256=PbbN9nRYJmnXOlcRA6cGTBTYZ_Hgus8aXQKg-OX0DUg,72881
+hcluster/hierarchy.py,sha256=uslOrkH56k_jCKGUA7sdsXy4sdOKDQH5osklKesy4Gw,93466
+dedupe_hcluster-0.3.9.dist-info/LICENSE.txt,sha256=7zGYvKziah4VyS85xscp1Za8a-JyrNqAObBiKZQK3rk,1637
+dedupe_hcluster-0.3.9.dist-info/METADATA,sha256=tsamt9EFVNsYlTa-7S-S8wFzAY2HuqHOHbFiTXNXQsg,1653
+dedupe_hcluster-0.3.9.dist-info/WHEEL,sha256=QN3MNOFrRIeE9ccPTe5mH4Q_A2DBDdD7_qUigvuJeQU,111
+dedupe_hcluster-0.3.9.dist-info/top_level.txt,sha256=Inz6_YsyroIuO_nNL62-HsAv7OSAZydOdUcqtZmwRUU,9
+dedupe_hcluster-0.3.9.dist-info/RECORD,,
