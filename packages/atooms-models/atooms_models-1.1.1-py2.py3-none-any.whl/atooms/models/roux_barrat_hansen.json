@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "reference": "J.-N. Roux, J.-L. Barrat and J.-P. Hansen, J. Phys.: Condens. Matter 1, 7171 (1989)",
+    "potential": [
+	{
+	    "type": "inverse_power",
+	    "parameters": {
+		"exponent": 12,
+		"sigma": [[1.0, 1.1], [1.1, 1.2]],
+		"epsilon": [[1.0, 1.0], [1.0, 1.0]]}
+	}
+    ],
+    "cutoff": [
+	{
+	    "type": "cut_shift",
+	    "parameters": {"rcut": [[2.5, 2.5], [2.5, 2.5]]}
+	}
+    ],
+    "notes": "The actual cutoff was not reported in the original paper"
+}
+
+

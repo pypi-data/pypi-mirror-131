@@ -1,0 +1,19 @@
+{
+    "version": 1,
+    "reference": "",
+    "potential": [
+	{
+	    "type": "harmonic_potential",
+	    "parameters": {
+		"sigma": [[1.0, 1.2], [1.2, 1.4]],
+		"epsilon": [[1.0, 1.0], [1.0, 1.0]]}
+	}
+    ],
+    "cutoff": [
+	{
+	    "type": "cut_shift",
+	    "parameters": {"rcut": [[1.0, 1.2], [1.2, 1.4]]}
+	}
+    ],
+    "notes": ""
+}
