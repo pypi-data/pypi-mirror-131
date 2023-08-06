@@ -1,0 +1,12 @@
+README.md
+setup.py
+iosci/__init__.py
+iosci/a.py
+iosci/b.py
+iosci.egg-info/PKG-INFO
+iosci.egg-info/SOURCES.txt
+iosci.egg-info/dependency_links.txt
+iosci.egg-info/requires.txt
+iosci.egg-info/top_level.txt
+iosci/xcode/__init__.py
+iosci/xcode/podfile.py
