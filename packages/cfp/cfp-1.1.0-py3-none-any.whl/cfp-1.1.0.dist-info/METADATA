@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: cfp
+Version: 1.1.0
+Summary: Builds Amazon Web Services CloudFormation parameters
+Home-page: https://github.com/cariad/cfp
+Author: Cariad Eccleston
+Author-email: cariad@cariad.earth
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ansiscape (~=1.0)
+Requires-Dist: boto3 (~=1.20)
+
+# CFP: CloudFormation Parameters
+
+[![CircleCI](https://circleci.com/gh/cariad/cfp/tree/main.svg?style=shield)](https://circleci.com/gh/cariad/cfp/tree/main) [![codecov](https://codecov.io/gh/cariad/cfp/branch/main/graph/badge.svg?token=xyqHGoOyMM)](https://codecov.io/gh/cariad/cfp)
+
+**CFP** is a Python package for building Amazon Web Services CloudFormation stack parameters.
+
+- Supports cross-region and cross-account Systems Manager Parameter Store look-ups.
+- Renders beautiful, colourful parameter keys and values for your logs.
+- Compatible with Boto3.
+- Unit testable.
+
+**Read the full documentation at [cariad.github.io/cfp](https://cariad.github.io/cfp).**
+
+## 👋 Hello!
+
+Hello! 👋 I’m Cariad Eccleston and I’m a freelance DevOps and backend engineer. My contact details are available on my personal wiki at [cariad.earth](https://cariad.earth).
+
+Please consider supporting my open source projects by [sponsoring me on GitHub](https://github.com/sponsors/cariad/).
+
+
