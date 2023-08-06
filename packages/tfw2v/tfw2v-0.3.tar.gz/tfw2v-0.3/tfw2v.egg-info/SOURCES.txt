@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tfw2v/__init__.py
+tfw2v/similarity.py
+tfw2v.egg-info/PKG-INFO
+tfw2v.egg-info/SOURCES.txt
+tfw2v.egg-info/dependency_links.txt
+tfw2v.egg-info/not-zip-safe
+tfw2v.egg-info/requires.txt
+tfw2v.egg-info/top_level.txt
