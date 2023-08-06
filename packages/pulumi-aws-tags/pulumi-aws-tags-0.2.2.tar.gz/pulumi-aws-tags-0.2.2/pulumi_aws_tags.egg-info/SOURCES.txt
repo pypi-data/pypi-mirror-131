@@ -1,0 +1,10 @@
+README.md
+setup.py
+pulumi_aws_tags/__init__.py
+pulumi_aws_tags/autotag.py
+pulumi_aws_tags/taggable.py
+pulumi_aws_tags.egg-info/PKG-INFO
+pulumi_aws_tags.egg-info/SOURCES.txt
+pulumi_aws_tags.egg-info/dependency_links.txt
+pulumi_aws_tags.egg-info/requires.txt
+pulumi_aws_tags.egg-info/top_level.txt
