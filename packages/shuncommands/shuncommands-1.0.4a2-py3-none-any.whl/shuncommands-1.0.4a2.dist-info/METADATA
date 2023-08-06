@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: shuncommands
+Version: 1.0.4a2
+Summary: mypaceshun usefull commands
+Home-page: https://github.com/mypaceshun/shuncommands
+License: MIT
+Keywords: python,click
+Author: KAWAI Shun
+Author-email: mypaceshun@gmail.com
+Maintainer: KAWAI Shun
+Maintainer-email: mypaceshun@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0,<9.0)
+Requires-Dist: gitignore-parser (>=0.0.8,<0.0.9)
+Requires-Dist: pikepdf (>=4.1.0,<5.0.0)
+Project-URL: Repository, https://github.com/mypaceshun/shuncommands
+Description-Content-Type: text/markdown
+
+[![Tests](https://github.com/mypaceshun/shuncommands/actions/workflows/test.yml/badge.svg)](https://github.com/mypaceshun/shuncommands/actions/workflows/test.yml)
+# shuncommands
+
+my usefull commands
+
+
+# install
+
+```
+$ pip install shuncommands
+```
+
+# install commands
+
+  * rmtmp
+  * pdftool
+
+# rmtmp Usage
+
+```
+Usage: rmtmp [OPTIONS] TARGETDIR
+
+  tmpディレクトリの中身お掃除君
+
+  <TARGETDIR>で指定されたディレクトリの中身をせっせとお掃除してくれるかわいいやつ。
+  自分がよく ~/document/tmp/ とか雑にディレクトリ作ってしまうので、それのお掃除用に生まれた
+
+  <TARGETDIR>/.rmtmpignore のファイルに gitignore と同様の書式でファイルを指定することで、
+  削除対象から明示的に外すことができる。
+
+Options:
+  -q, --quiet              quiet output
+  --dry-run
+  -d, --day INTEGER RANGE  削除対象となる期日  [default: 3; x>=0]
+  --help                   Show this message and exit.
+```
+
+# pdftool usage
+
+```
+Usage: pdftool [OPTIONS] COMMAND [ARGS]...
+
+  PDF file をあれやこれやしたいがためのコマンド
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  unlock  パスワード付きPDFファイルを、パスワードなしPDFファイルにコピーする
+```
+
