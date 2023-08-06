@@ -1,0 +1,13 @@
+pykotokenizer/__init__.py,sha256=cumVZkEfrKA6UmyR3HkT0La80Xgb0FpbN4XhSj7ID4s,71
+pykotokenizer/ko_spacing.py,sha256=bmgdnCqKjg14xSDN8m6J2vVWMJvoMUBXI2u9UZujsKQ,4261
+pykotokenizer/ko_tokenizer.py,sha256=PsxRBLbbPx4ABHdN1ZIbAqLprRUhsoeLY_In9mdmtv0,6130
+pykotokenizer/resources/ko_spacing/dicts/c2v.dic,sha256=82O00F9ij2qNsqO9LvD_JFa6g3FmQFal_wHIOEDaLCM,29650
+pykotokenizer/resources/ko_spacing/models/ko_spacing_model,sha256=hC0Px4EXFYaCswXUY4o-766_KXKCa71_YOUJfG4b86w,2451992
+pykotokenizer/resources/ko_tokenizer/data/word2idx0.json,sha256=fFp1t3fjPi94qPZJHBkG2SW11qz1lmzhk_rnUxKbm30,59450
+pykotokenizer/resources/ko_tokenizer/models/model_th7.hdf5,sha256=9EIbMi5mZKhyWSwEoasrmtLoxNa70VWf3gkkJTq2Jx0,10421824
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pykotokenizer-0.0.1.dist-info/LICENSE,sha256=-Ugi32YAkE1--WhL3ZFG3JKXaGy70D3DHUUl_YMFnto,1077
+pykotokenizer-0.0.1.dist-info/METADATA,sha256=So6vZZBipz8oVU8RY2eVw7I-Eo-5464RzoaVFOkzKFM,3493
+pykotokenizer-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pykotokenizer-0.0.1.dist-info/top_level.txt,sha256=Kjcg-PLuahJNQPorl3-7pniLDGbj42AcmK7sk42LSO4,20
+pykotokenizer-0.0.1.dist-info/RECORD,,
