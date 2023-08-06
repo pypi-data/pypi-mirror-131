@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+phase_paper.egg-info/PKG-INFO
+phase_paper.egg-info/SOURCES.txt
+phase_paper.egg-info/dependency_links.txt
+phase_paper.egg-info/requires.txt
+phase_paper.egg-info/top_level.txt
