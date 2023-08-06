@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: gc-ims-tools
+Version: 0.1.0
+Summary: Analyze GC-IMS data
+Home-page: https://github.com/Charisma-Mannheim/gc-ims-tools
+Author: Joscha Christmann
+Author-email: j.christmann@hs-mannheim.de
+License: BSD 3-clause
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: h5py
+Requires-Dist: scikit-learn
+Requires-Dist: scikit-image
+
+# *gc-ims-tools*
+
+Python package to handle and analyze GC-IMS data in Python.
+
+## Installation
+
+*gc-ims-tools* requieres Python 3.8+ and can be installed with pip
+
+`pip install gc-ims-tools`
+
+
