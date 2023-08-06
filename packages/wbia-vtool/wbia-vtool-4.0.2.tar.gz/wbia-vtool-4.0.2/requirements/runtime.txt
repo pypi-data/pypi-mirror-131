@@ -1,0 +1,13 @@
+annoy
+networkx
+numpy
+opencv-contrib-python-headless
+Pillow
+scikit-image
+scikit-learn
+scipy
+six
+statsmodels
+ubelt
+wbia-pyflann
+wbia-utool

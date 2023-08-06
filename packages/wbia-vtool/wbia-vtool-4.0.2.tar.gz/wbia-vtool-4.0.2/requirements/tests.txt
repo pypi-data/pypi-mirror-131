@@ -1,0 +1,7 @@
+alabaster
+brunette
+codecov
+coverage
+pytest
+pytest-cov
+xdoctest
