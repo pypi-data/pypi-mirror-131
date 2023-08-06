@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: AI-Robot-Tools
+Version: 2.0.0.1
+Summary: AI_Robot_Tools
+Home-page: UNKNOWN
+Author: Rishabh
+Author-email: rinku87096@gmail.com
+License: UNKNOWN
+Keywords: Speak,Speech,Speak and Speech Tools,AI Robot Tools,AI Jarvis,python tutorial,Rishabh
+Platform: any
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyttsx3
+Requires-Dist: SpeechRecognition
+Requires-Dist: googletrans
+Requires-Dist: gTTS
+
+# AI_Robot_Tools
+
+AI-Robot-Tools is a machine-learning based.
+
+[Package Version](https://pypi.org/project/AI-Robot-Tools/2.0.0.0/)
+
+[Python 3](https://www.python.org/downloads/)
+
+## Installation
+
+This package can be installed from [PyPi](https://pypi.org/project/AI-Robot-Tools/2.0.0.0/) by running:
+
+```
+pip install AI-Robot-Tools
+```
+
+## Basic Usage
+
+```
+from AI_Robot_Tools import AI_Speak, AI_Speech_Recognition, AI_Tools
+
+AI_Speak.Speak(value=0,speed=150,Text="I am Rishabh") 
+# AI_Speak.Speak(value,speed,Text)
+
+AI_Speak.AI_Speak(Text="I am Rishabh")
+# AI_Speak.AI_Speak(Text)
+
+AI_Speech_Recognition.AI_SpeechRecognition() 
+# AI_Speech_Recognition.AI_SpeechRecognition(Pause_threshold=0.8,Timeout=2, Phrase_time_limit=4,Snowboy_Configuration=None,Key=None, language='en-US',Show_all=False,)
+
+result=AI_Tools.AI_Translate(Text="I am Rishabh",language='in')
+# AI_Tools.AI_Translate(Text,language)
+
+print(result)
+
+result=AI_Tools.AI_Wish_Time_Date(morning="Good Morning",afternoon=f"Good Afternoon The Time Is {Current_Time} .",evening=f"Good Evening The time an date is {Current_Time} {Current_Date} .",night=f"Good Night {Current_Time} {Current_Date}",otherText="I am Rishabh 1.1.2")
+
+# AI_Tools.AI_Wish_Time_Date(morning=Current_Time,afternoon=Current_Time,evening=Current_Time,night=Current_Time,Time_Show=NonePass,Date_Show=NonePass,otherText=NonePass):
+
+print(result)
+```
+
+
+## Rishabh Programmer
+
+My [GitHub](https://github.com/Rishabhprogrammer) Account.
+
+
+
