@@ -1,0 +1,7 @@
+setup.py
+libname/__init__.py
+libname/hello.py
+vidstrGeam.egg-info/PKG-INFO
+vidstrGeam.egg-info/SOURCES.txt
+vidstrGeam.egg-info/dependency_links.txt
+vidstrGeam.egg-info/top_level.txt
