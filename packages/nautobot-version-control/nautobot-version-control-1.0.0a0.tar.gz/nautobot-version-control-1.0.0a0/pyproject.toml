@@ -1,0 +1,113 @@
+[tool.poetry]
+name = "nautobot-version-control"
+version = "1.0.0-alpha.0"
+description = "Nautobot Version Control"
+authors = ["Network to Code, LLC <opensource@networktocode.com>"]
+license = "Apache-2.0"
+repository = "https://github.com/nautobot/nautobot-plugin-version-control"
+documentation = "https://nautobot-version-control.readthedocs.io"
+readme = "README.md"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+packages = [
+    { include = "nautobot_version_control" },
+]
+include = [
+    "LICENSE.txt",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6.2"
+nautobot = "~1.2.0"
+# MySQL database adapter
+mysqlclient = "^2.0.3"
+
+[tool.poetry.dev-dependencies]
+bandit = "*"
+black = "*"
+django-debug-toolbar = "*"
+flake8 = "*"
+invoke = "*"
+myst-parser = "0.15.2"
+pydocstyle = "*"
+pylint = "*"
+pylint-django = "*"
+Sphinx = "4.3.0"
+yamllint = "*"
+sphinx-autobuild = "2021.3.14"
+sphinx-rtd-theme = "1.0.0"
+
+[tool.black]
+line-length = 120
+target-version = ['py37']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+  | settings.py     # This is where you define files that should not be stylized by black
+                     # the root of the project
+)
+'''
+
+[tool.pylint.master]
+# Include the pylint_django plugin to avoid spurious warnings about Django patterns
+load-plugins="pylint_django"
+
+[tool.pylint.basic]
+# No docstrings required for private methods (Pylint default), or for test_ functions, or for inner Meta classes.
+no-docstring-rgx="^(_|test_|Meta$)"
+
+# Allow single letter variable names
+good-names="i,j,k,pk,x,y,v,c,mc,rt,e,id,db,m,pr,b,f,kw,ct,fn"
+
+[tool.pylint.messages_control]
+# Line length is enforced by Black, so pylint doesn't need to check it.
+# Pylint and Black disagree about how to format multi-line arrays; Black wins.
+disable = """,
+    line-too-long,
+    bad-continuation,
+    W0603,
+    W0703,
+    R0903,
+    R0901,
+    R0201,
+    R1705,
+    R0801
+    """
+
+[tool.pylint.miscellaneous]
+# Don't flag TODO as a failure, let us commit with things that still need to be done in the code
+notes = """,
+    FIXME,
+    XXX,
+    """
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests"
+]
+addopts = "-vv --doctest-modules"
+
