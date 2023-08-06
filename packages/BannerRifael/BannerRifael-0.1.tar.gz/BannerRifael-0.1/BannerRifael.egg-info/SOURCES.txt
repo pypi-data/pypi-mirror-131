@@ -1,0 +1,7 @@
+setup.py
+BannerRifael.egg-info/PKG-INFO
+BannerRifael.egg-info/SOURCES.txt
+BannerRifael.egg-info/dependency_links.txt
+BannerRifael.egg-info/top_level.txt
+lib/BannerRifael.py
+lib/__init__.py
