@@ -1,0 +1,7 @@
+setup.py
+helloIndia/__init__.py
+helloIndia/helloindia.py
+helloindia.egg-info/PKG-INFO
+helloindia.egg-info/SOURCES.txt
+helloindia.egg-info/dependency_links.txt
+helloindia.egg-info/top_level.txt
