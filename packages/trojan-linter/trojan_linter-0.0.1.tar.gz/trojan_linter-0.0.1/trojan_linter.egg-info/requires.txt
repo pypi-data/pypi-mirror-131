@@ -1,0 +1,11 @@
+precis-i18n
+regex
+click
+
+[lint]
+pyflakes
+
+[test]
+pytest
+hypothesis
+pyyaml
