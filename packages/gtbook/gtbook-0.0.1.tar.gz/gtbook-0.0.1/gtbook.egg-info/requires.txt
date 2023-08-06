@@ -1,0 +1,6 @@
+pip
+packaging
+graphviz
+gtsam
+
+[dev]
