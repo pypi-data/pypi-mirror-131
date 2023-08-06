@@ -1,0 +1,12 @@
+recursive-include djangophysics/templates *.html
+recursive-include djangophysics/static *.css
+recursive-include djangophysics/static *.js
+recursive-include djangophysics/static *.jpg
+recursive-include djangophysics/static *.png
+recursive-include djangophysics/locale *.mo
+recursive-include djangophysics/*/templates *.html
+recursive-include djangophysics/*/static *.css
+recursive-include djangophysics/*/static *.js
+recursive-include djangophysics/*/static *.jpg
+recursive-include djangophysics/*/static *.png
+recursive-include djangophysics/core/fixtures *.json
