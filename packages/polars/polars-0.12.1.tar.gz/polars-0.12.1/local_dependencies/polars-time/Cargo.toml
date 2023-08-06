@@ -1,0 +1,12 @@
+[dependencies]
+chrono = "0.4"
+
+[dependencies.polars-arrow]
+features = ["compute"]
+path = "../polars-arrow"
+version = "0.18.0"
+
+[package]
+edition = "2021"
+name = "polars-time"
+version = "0.18.0"
