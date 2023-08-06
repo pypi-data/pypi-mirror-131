@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pastekan
+Version: 1.0
+Summary: CLI client for pastekan server (pastekan.cf) written in Python.
+Home-page: https://github.com/SekaiKode/pastekan-cli
+Author: Made Wiguna
+Author-email: madewgn2@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities
+Requires-Dist: requests
+Requires-Dist: docopt
+
+UNKNOWN
+
+
