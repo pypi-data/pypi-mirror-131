@@ -1,0 +1,4 @@
+[console_scripts]
+rism1d = cdftpy.cdft1d.cli:rism1d_run_input
+rsdft1d = cdftpy.cdft1d.cli:rsdft1d_run_input
+
