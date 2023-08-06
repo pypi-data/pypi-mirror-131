@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+review_style_gerrit/__init__.py
+review_style_gerrit/__main__.py
+review_style_gerrit/review_style_gerrit.py
+review_style_gerrit.egg-info/PKG-INFO
+review_style_gerrit.egg-info/SOURCES.txt
+review_style_gerrit.egg-info/dependency_links.txt
+review_style_gerrit.egg-info/entry_points.txt
+review_style_gerrit.egg-info/requires.txt
+review_style_gerrit.egg-info/top_level.txt
