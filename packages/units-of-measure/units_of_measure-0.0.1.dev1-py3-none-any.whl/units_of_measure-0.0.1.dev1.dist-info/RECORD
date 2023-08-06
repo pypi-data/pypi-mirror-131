@@ -1,0 +1,11 @@
+unitsofmeasure/__init__.py,sha256=B8nDlK0y9jeWa22Lh_YVB036ImumnmjYpTLvsZ_MX2I,3194
+unitsofmeasure/base.py,sha256=iIFd5NSgw1MZJub1mFVn2WkeLGNlU1f6amTkMfxxB_o,711
+unitsofmeasure/test/__init__.py,sha256=h590GwVz2tyM9uX2Z1yXzAk_k8SbY-wpTBYrjGTcowU,23
+unitsofmeasure/test/test_base.py,sha256=Nexd3q6B86DiHcY2Eto9xUvJoKqoSO-BT7a7rbWGufc,150
+unitsofmeasure/test/test_dimension.py,sha256=tgri7FhZqoR4_7b89IsZPYRplba9G502k-9Thm68zdM,947
+unitsofmeasure/test/test_unit.py,sha256=0UFsaQUn_VIrxd2cMQ-FgUgv5OWBevs-QwbNzD4ycDY,919
+units_of_measure-0.0.1.dev1.dist-info/LICENSE,sha256=7CZhSePaxRcovd1uBArc4uh3xVlpAm_RfpVGdVaTIqE,1688
+units_of_measure-0.0.1.dev1.dist-info/METADATA,sha256=Bu47aJuftIz_vHDVgEfGG2m7Cq9Msgg4tRPHCU335OY,2133
+units_of_measure-0.0.1.dev1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+units_of_measure-0.0.1.dev1.dist-info/top_level.txt,sha256=9tBJ_q_wIHZpuNAHqIs8PUXfDjbvhPKsQC9WP0bG2wU,15
+units_of_measure-0.0.1.dev1.dist-info/RECORD,,
