@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: simple-localization
+Version: 1.0.1
+Summary: A simple localization package
+Home-page: https://github.com/MyselfLeo/simple-localization
+Author: myselfleo
+Author-email: myselfleo@outlook.fr
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/MyselfLeo/simple-localization/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Simple localization package for Python
+
+## Setup:
+1. Create a localization folder wherever you want in your project.
+2. Add localization files inside. This package use `.json` files.
+
+    ### Example:
+
+    ### (localization/en_EN.json)
+    ```json
+    {
+        "GREETINGS": "Hello !",
+        "GOODBYE": "Goodbye !"
+    }
+    ```
+    ### (localization/fr_FR.json)
+    ```json
+    {
+        "GREETINGS": "Bonjour !",
+        "GOODBYE": "Au revoir !"
+    }
+    ```
+
+## Usage
+
+```python
+from simple_localization import LocalizationManager
+
+localization = LocalizationManager('../localization', 'en_EN')
+```
+It's as simple as that !
+
+```python
+>>> localization['GREETINGS']
+Hello !
+```
+
+You can change the language of an already existing LocalizationManager object using `change_language`:
+
+```python
+>>> localization['GREETINGS']
+Hello !
+>>> localization.change_language("fr_FR")
+>>> localization['GREETINGS']
+Bonjour !
+```
+
