@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: aai-face-search-db-builder-test
+Version: 0.0.2
+Summary: A simple CLI script to call Face Search DB Build API
+Home-page: UNKNOWN
+Author: AAI On-prem
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AAI Face Search DB Builder
+A simple Python script to help clients to add images in a local directory, Amazon S3, or Alibaba Cloud OSS to their Face Search database by calling the db-build API.
+
+## Installation
+```
+pip install aai-face-search-db-builder
+```
+## How to use
+After installation, run the following command to see the required arguments to pass.
+```
+$ dbbuilder -h
+```
+
+## Notes
+* The script will create a sqlite3 database called `images.db` to keep track of completed tasks.
+

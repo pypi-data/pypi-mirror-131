@@ -1,0 +1,3 @@
+[console_scripts]
+dbbuilder = db_builder:run
+
