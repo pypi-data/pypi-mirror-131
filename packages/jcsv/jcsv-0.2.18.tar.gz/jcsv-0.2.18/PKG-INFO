@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: jcsv
+Version: 0.2.18
+Summary: Convert csv to json and convert json to csv 
+Author: Deangellis Césari de Oliveira Santiago
+Author-email: deangellis1@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: pathlib (>=1.0.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# JCSV (JSON2CSV and CSV2JSON converter)
+
+Project developed in the Python for Data Science course - Artificial intelligence PUC-MG
+
+## Requirements
+- python ^3.7
+
+## Install
+```
+pip install jcsv
+or
+pip3 install jcsv
+```
+
+## Usage
+
+
+
+- convert csv to json
+
+```
+csv2json --input /path/to/csv/files --output /path/to/json/files --delimiter ,
+```
+
+- convert json to csv
+
+```
+json2csv --input /path/to/json/files --output /path/to/csv/files --delimiter ,
+```
+
+### Default
+- input = "./"
+- output = "./"
+- delimiter = ","
+
+## Help
+
+```
+csv2json --help
+Usage: csv2json [OPTIONS]
+
+Options:
+  -i, --input TEXT      Path where to find CSV files to be contered to JSON.
+  -o, --output TEXT     Path where the converted files will be saved.
+  -d, --delimiter TEXT  Separator used to split files.
+  --help                Show this message and exit.
+```
+
+```
+json2csv --help
+Usage: json2csv [OPTIONS]
+
+Options:
+  -i, --input TEXT      Path where to find JSON files to be contered to CSV.
+  -o, --output TEXT     Path where the converted files will be saved.
+  -d, --delimiter TEXT  Separator used to split files.
+  --help                Show this message and exit.
+```
+
+

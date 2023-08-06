@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "jcsv"
+version = "0.2.18"
+description = "Convert csv to json and convert json to csv "
+authors = ["Deangellis Césari de Oliveira Santiago <deangellis1@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^8.0.3"
+pathlib = "^1.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+flake8 = "^4.0.1"
+mypy = "^0.910"
+black = "^21.12b0"
+isort = "^5.10.1"
+ipython = "^7.30.1"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+csv2json = "jcsv.converter:csvJson"
+json2csv = "jcsv.converter:jsonCsv"
+
