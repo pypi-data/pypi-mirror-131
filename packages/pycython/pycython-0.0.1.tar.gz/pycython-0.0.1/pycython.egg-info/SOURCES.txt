@@ -1,0 +1,5 @@
+setup.py
+pycython.egg-info/PKG-INFO
+pycython.egg-info/SOURCES.txt
+pycython.egg-info/dependency_links.txt
+pycython.egg-info/top_level.txt
