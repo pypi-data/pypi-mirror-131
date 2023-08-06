@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: baico
+Version: 0.0.1
+Summary: Best-Arm Identification based Combinatorial Optimization Algorithms.
+Home-page: https://gitlab.com/tmaehara/baico
+Author: tmaehara
+Author-email: tmaehara@acm.org
+License: MIT
+Keywords: baico combinatorial-optimization
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 1 - Planning
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+# BAICO
+
+BALCO (**B**est **A**rm **I**dentification-based **C**ombinatorial **O**ptimization Algorithms) is a collection of discrete optimization algorithms for stochastic objective functions based on the best arm identification technique.
+
+## Install
+
+```bash
+pip3 install baico
+```
+
+## Usage
+
+```python
+fn = RandomLinearFunction()
+support = fn.support
+solver = StochasticGreedy(fn=fn, support=support, cardinality=5)
+S = solver.run()
+assert(len(S) == 5)
+```
+
+## Licenses
+
+This project is licensed under the MIT License.
+
+
