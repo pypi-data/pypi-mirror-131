@@ -1,0 +1,6 @@
+pytest
+certifi
+ibutsu-client>=2.1
+
+[dev]
+pre-commit
