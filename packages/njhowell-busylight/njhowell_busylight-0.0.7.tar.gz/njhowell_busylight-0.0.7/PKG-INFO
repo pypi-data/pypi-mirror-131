@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: njhowell_busylight
+Version: 0.0.7
+Summary: A small library to control a busylight
+Home-page: https://github.com/njhowell/python-busylight
+Author: njhowell
+Author-email: njhowell@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/njhowell/python-busylight/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# python-busylight
+Homeassistant library for controlling a busylight
+
+
