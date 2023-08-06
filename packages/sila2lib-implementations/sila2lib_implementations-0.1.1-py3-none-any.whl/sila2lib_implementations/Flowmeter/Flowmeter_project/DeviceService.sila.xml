@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="biovt.mw.tum.de" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>DeviceService</Identifier>
+    <DisplayName>Device Service</DisplayName>
+    <Description>
+		Delivers full information of the device, actual parameters, relevant information and allows modification of device parameters
+        By Lukas Bromig and Jose de Jesus Pina, Institute of Biochemical Engineering, Technical University of Munich, 12.02.2020
+    </Description>
+    <!-- Identification String -->
+	<Command>
+        <Identifier>GetIdentificationString</Identifier>
+        <DisplayName>Get Identification String</DisplayName>
+        <Description>Identification number of the device and software version</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentIdentificationString</Identifier>
+            <DisplayName>Current identification string</DisplayName>
+            <Description>Identification number of the device and software version</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Primary node address -->
+	<Command>
+        <Identifier>GetPrimaryNodeAddress</Identifier>
+        <DisplayName>Get primary node address </DisplayName>
+        <Description>Primary node address: network parameter Flow-Bus</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentPrimaryNodeAddress</Identifier>
+            <DisplayName>Current primary node address</DisplayName>
+            <Description>Primary node address: network parameter Flow-Bus</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetPrimaryNodeAddress</Identifier>
+        <DisplayName>Set primary node address</DisplayName>
+        <Description>Primary node address: network parameter Flow-Bus</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetPrimaryNodeAddress</Identifier>
+            <DisplayName>Set primary node address</DisplayName>
+            <Description>Primary node address: network parameter Flow-Bus</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set primary node address</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which the set primary node address applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Secondary node address -->
+	<Command>
+        <Identifier>GetSecondaryNodeAddress</Identifier>
+        <DisplayName>Get secondary node address </DisplayName>
+        <Description>Secondary node address: network parameter Flow-Bus</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentSecondaryNodeAddress</Identifier>
+            <DisplayName>Current secondary node address</DisplayName>
+            <Description>Secondary node address: network parameter Flow-Bus</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Next node address -->
+	<Command>
+        <Identifier>GetNextNodeAddress</Identifier>
+        <DisplayName>Get next node address</DisplayName>
+        <Description>Next node address: network parameter Flow-Bus</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentNextNodeAddress</Identifier>
+            <DisplayName>Current next node address</DisplayName>
+            <Description>Next node address: network parameter Flow-Bus</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Last node address -->
+	<Command>
+        <Identifier>GetLastNodeAddress</Identifier>
+        <DisplayName>Get last node address </DisplayName>
+        <Description>Last node address: network parameter Flow-Bus</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentLastNodeAddress</Identifier>
+            <DisplayName>current last node address</DisplayName>
+            <Description>Last node address: network parameter Flow-Bus</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Sensor Type -->
+	<Command>
+        <Identifier>GetSensorType</Identifier>
+        <DisplayName>Get sensor type</DisplayName>
+        <Description>Sensor type information for actual reading and sensor/controller indication</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentSensorType</Identifier>
+            <DisplayName>current sensor type</DisplayName>
+            <Description>Sensor type information for actual reading and sensor/controller indication</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Alarm Info -->
+    <Command>
+        <Identifier>GetAlarmInformation</Identifier>
+        <DisplayName>Get alarm information</DisplayName>
+        <Description>Information of several alarms/errors in the instrument</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentAlarmInformation</Identifier>
+            <DisplayName>Current alarm information</DisplayName>
+            <Description>Information of several alarms/errors in the instrument</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Device type -->
+	<Command>
+        <Identifier>GetDeviceType</Identifier>
+        <DisplayName>Get device type</DisplayName>
+        <Description>Flow bus device type information</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentDeviceType</Identifier>
+            <DisplayName>Current device type</DisplayName>
+            <Description>Current flow bus device type information</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Firmware version -->
+	<Command>
+        <Identifier>GetFirmwareVersion</Identifier>
+        <DisplayName>Get firmware version</DisplayName>
+        <Description> revision number of the firmware </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentFirmwareVersion</Identifier>
+            <DisplayName>Current firmware version</DisplayName>
+            <Description>revision number of the firmware</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Pressure sensor type -->
+	<Command>
+        <Identifier>GetPressureSensorType</Identifier>
+        <DisplayName>Get pressure sensor type</DisplayName>
+        <Description>type of pressure sensor</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentPressureSensorType</Identifier>
+            <DisplayName>Current pressure sensor type</DisplayName>
+            <Description>type of pressure sensor</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Sensor name -->
+	<Command>
+        <Identifier>GetSensorName</Identifier>
+        <DisplayName>Get sensor name</DisplayName>
+        <Description> label with information about stop sensor</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentSensorName</Identifier>
+            <DisplayName>Current sensor name</DisplayName>
+            <Description>label with information about stop sensor</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Identification number -->
+	<Command>
+        <Identifier>GetIdentificationNumber</Identifier>
+        <DisplayName>Get identification number</DisplayName>
+        <Description>Identification number type of instrument/device</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentIdentificationNumber</Identifier>
+            <DisplayName>Current identification number</DisplayName>
+            <Description>Identification number type of instrument/device</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Power mode -->
+	<Command>
+        <Identifier>GetPowerMode</Identifier>
+        <DisplayName>Get power mode</DisplayName>
+        <Description>power suppy indication in Vdc</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentPowerMode</Identifier>
+            <DisplayName>Current power mode</DisplayName>
+            <Description>power supply indication in Vdc</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Bus diagnostic string -->
+	<Command>
+        <Identifier>GetBusDiagnostic</Identifier>
+        <DisplayName>Get bus diagnostic</DisplayName>
+        <Description>Fieldbus baudrate (top interface)</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentBusDiagnostic</Identifier>
+            <DisplayName>Current bus diagnostic</DisplayName>
+            <Description>Fieldbus baudrate (top interface)</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Fliedbus string -->
+	<Command>
+        <Identifier>GetFieldbus</Identifier>
+        <DisplayName>Get fieldbus string</DisplayName>
+        <Description>Fieldbus string name of the top interface</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentFieldbus</Identifier>
+            <DisplayName>Current bus string</DisplayName>
+            <Description>Fieldbus string name of the top interface</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Instrument properties -->
+	<Command>
+        <Identifier>GetInstrumentProperties</Identifier>
+        <DisplayName>Get instrument properties</DisplayName>
+        <Description>instrument properties </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentInstrumentProperties</Identifier>
+            <DisplayName>Current instrument properties</DisplayName>
+            <Description>Instrument properties</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Communication Protocol -->
+	<Command>
+        <Identifier>GetCommunicationProtocol</Identifier>
+        <DisplayName>Get communication protocol</DisplayName>
+        <Description>
+            Current communication protocol between the program adn the device.
+            2 possible options: "binary" and "ascii"
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentCommunicationProtocol</Identifier>
+            <DisplayName>Current communication protocol</DisplayName>
+            <Description>Primary node address: network parameter Flow-Bus</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetCommunicationProtocol</Identifier>
+        <DisplayName>Set communication protocol</DisplayName>
+        <Description>
+            Allows to choose the communication protocol between the program adn the device.
+            2 possible options:_ "binary" and "ascii"
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetCommunicationProtocol</Identifier>
+            <DisplayName>Set communication protocol</DisplayName>
+            <Description>
+              Allows to choose the communication protocol between the program adn the device.
+            2 possible options:_ "binary" and "ascii"
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+    </Command>
+    <!-- Communication Port -->
+	<Command>
+        <Identifier>GetSerialPort</Identifier>
+        <DisplayName>Get serial port</DisplayName>
+        <Description>Current devices serial port</Description>
+        <Observable>No</Observable>
+    </Command>
+    <Command>
+        <Identifier>SetSerialPort</Identifier>
+        <DisplayName>Set serial port</DisplayName>
+        <Description>
+            Sets devices new serial port
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetSerialPort</Identifier>
+            <DisplayName>Set serial port</DisplayName>
+            <Description>Sets devices new serial port</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+    </Command>
+
+</Feature>
+

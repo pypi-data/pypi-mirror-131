@@ -1,0 +1,28 @@
+{
+  "service_name" : "DASGIP_Service",
+  "service_description": "This is a DASGIP Service",
+  "authors"      : "Lukas Bromig",
+  "creation_date" : "20190902",
+  "version" : "0.0.1",
+  "vendor_url" : "L.Bromig@lrz.tum.de",
+  "SiLA_standard_feature_list" : ["SiLAService"],
+  "SiLA_feature_list" : ["AgitationServicer", "DeviceServicer", "DOServicer", "GassingServicer", "IlluminationServicer", 
+"LevelServicer", "OffgasServicer", "OverlayServicer", "PHServicer", "PressureServicer", "PumpAServicer", "PumpBServicer", 
+"PumpCServicer", "PumpDServicer", "ReactorServicer", "RedoxServicer","TemperatureServicer", "TurbidityServicer"],
+  "communication_port" : "50001",
+  "IP_address" : "10.152.248.152",
+  "hostname" : "localhost"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

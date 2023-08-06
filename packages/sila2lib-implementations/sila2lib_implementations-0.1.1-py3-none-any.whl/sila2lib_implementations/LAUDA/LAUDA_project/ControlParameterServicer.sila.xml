@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="0.2" FeatureVersion="1.0" Originator="biovt.mw.tum.de" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>ControlParameterServicer</Identifier>
+    <DisplayName>Control Parameter Servicer</DisplayName>
+    <Description>
+		Set and retrieve the control parameter values of the in-built PID-controller of the LAUDA L250 Thermostat.
+        By Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 20.05.2019
+    </Description>
+    <Command>
+        <Identifier>SetControlParamXp</Identifier>
+        <DisplayName>Set Control Parameter Xp Value</DisplayName>
+        <Description>
+        Set the control parameter Xp of the PID controller in Kelvin, K. 
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>ControlParamXp</Identifier>
+            <DisplayName>Control Param Xp</DisplayName>
+            <Description>
+                The control parameter Xp for the proportional gain of the PID-controller in K.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>373.15</MaximalInclusive>
+                        <MinimalExclusive>273.15</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>ControlParamXpSet</Identifier>
+            <DisplayName>Control Param Xp Set</DisplayName>
+            <Description>Control Param Xp succeeded to Set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+		<DefinedExecutionErrors>
+            <Identifier>ControlParamXpInvalidRange</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>SetControlParamTn</Identifier>
+        <DisplayName>Set Control Parameter Tn Value</DisplayName>
+        <Description>
+        Set the control parameter Tn of the PID controller in seconds, s. 
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>ControlParamTn</Identifier>
+            <DisplayName>Control Param Tn</DisplayName>
+            <Description>
+                The control parameter Tn for the integral part of the PID-controller in s.
+                The length of the interval to be integrated to calculate the control deviation. 
+                A value of 181s deactivates the I-part of the PID-controller.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>181</MaximalInclusive>
+                        <MinimalExclusive>5</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>ControlParamTnSet</Identifier>
+            <DisplayName>Control Param Tn Set</DisplayName>
+            <Description>Control Param Tn succeeded to Set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+		<DefinedExecutionErrors>
+            <Identifier>ControlParamTnInvalidRange</Identifier>
+        </DefinedExecutionErrors>
+	</Command>
+    <Command>
+        <Identifier>SetControlParamTv</Identifier>
+        <DisplayName>Set Control Parameter Tv Value</DisplayName>
+        <Description>
+        Set the control parameter Tv of the PID controller in seconds, s. 
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>ControlParamTv</Identifier>
+            <DisplayName>Control Param Tv</DisplayName>
+            <Description>
+                The control parameter Tv for the derivative part of the PID-controller in s. 
+                The derivative time dampens the effect of the proportional and the integral part.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>0</MaximalInclusive>
+                        <MinimalExclusive>10000</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>ControlParamTvSet</Identifier>
+            <DisplayName>Control Param Tv Set</DisplayName>
+            <Description>Control Param Tv succeeded to Set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>ControlParamTvInvalidRange</Identifier>
+        </DefinedExecutionErrors>
+	</Command>
+    <Command>
+        <Identifier>SetControlParamTd</Identifier>
+        <DisplayName>Set Control Parameter Td Value</DisplayName>
+        <Description>
+        Set the control parameter Td of the PID controller in seconds, s. 
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>ControlParamTd</Identifier>
+            <DisplayName>Control Param Td</DisplayName>
+            <Description>
+                The control parameter Td introduces a dampening effect on the derivative part Tv of the PID-controller in s. 
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>0</MaximalInclusive>
+                        <MinimalExclusive>10000</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>ControlParamTdSet</Identifier>
+            <DisplayName>Control Param Td Set</DisplayName>
+            <Description>Control Param Td succeeded to Set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>ControlParamTdInvalidRange</Identifier>
+        </DefinedExecutionErrors>
+	</Command>
+	<Command>
+        <Identifier>GetControlParamXp</Identifier>
+        <DisplayName>Get Control Param Xp</DisplayName>
+        <Description>Get control parameter of the proportional factor, Xp, of the PID-controller in K.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentControlParamXp</Identifier>
+            <DisplayName>Current Control Param Xp</DisplayName>
+            <Description>Current control parameter of the proportional factor, Xp, of the PID-controller in K.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>GetControlParamTn</Identifier>
+        <DisplayName>Get Control Param Tn</DisplayName>
+        <Description>Get control parameter of the integral factor, Tn, of the PID-controller in s. 
+        A value of Tn=181 is equivalent to "off".</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentControlParamTn</Identifier>
+            <DisplayName>Current Control Param Tn</DisplayName>
+            <Description>Current control parameter of the integral factor, Tn, of the PID-controller in s. 
+        A value of Tn=181 is equivalent to "off".</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>GetControlParamTv</Identifier>
+        <DisplayName>Get Control Param Tv</DisplayName>
+        <Description>Get control parameter of the derivative factor, Tv, of the PID-controller in s.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentControlParamTv</Identifier>
+            <DisplayName>Current Control Param Tv</DisplayName>
+            <Description>Current control parameter of the derivative factor, Tv, of the PID-controller in s.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>GetControlParamTd</Identifier>
+        <DisplayName>Get Control Param Td</DisplayName>
+        <Description>Get control parameter dampening factor, Td, of the derivative factor, Tv, of the PID-controller in s.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentControlParamTd</Identifier>
+            <DisplayName>Current Control Param Td</DisplayName>
+            <Description>Current control parameter dampening factor, Td, of the derivative factor, Tv, of the PID-controller in s.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <DefinedExecutionError>
+        <Identifier>ControlParamXpInvalidRange</Identifier>
+        <DisplayName>Invalid user parameter input error</DisplayName>
+        <Description>The input value for Xp is out of range. Use a value between 0 and 100 . Error_6</Description>
+    </DefinedExecutionError>
+    <DefinedExecutionError>
+        <Identifier>ControlParamTnInvalidRange</Identifier>
+        <DisplayName>Invalid user parameter input error</DisplayName>
+        <Description>The input value for Tn is out of range. Use a value between 5 and 181. 181 deactivates the integral contribution. Error_6</Description>
+    </DefinedExecutionError>
+    <DefinedExecutionError>
+        <Identifier>ControlParamTvInvalidRange</Identifier>
+        <DisplayName>Invalid user parameter input error</DisplayName>
+        <Description>The input value for Tv is out of range. Use a value between 0 and 10000. Error_6</Description>
+    </DefinedExecutionError>
+    <DefinedExecutionError>
+        <Identifier>ControlParamTdInvalidRange</Identifier>
+        <DisplayName>Invalid user parameter input error</DisplayName>
+        <Description>The input value for Td is out of range. Use a value between 0 and 10000. Error_6</Description>
+    </DefinedExecutionError>
+</Feature>
+

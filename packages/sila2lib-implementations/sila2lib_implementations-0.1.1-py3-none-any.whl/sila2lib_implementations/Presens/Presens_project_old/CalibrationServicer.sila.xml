@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="biovt.mw.tum.de" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>CalibrationServicer</Identifier>
+    <DisplayName>Calibration Servicer</DisplayName>
+    <Description>
+		Calibrate the sensor bars by adjusting the temperature compensation and the dynamic averaging value.
+        By Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 14.02.2020
+    </Description>
+	<Command>
+        <Identifier>GetO2CalLow</Identifier>
+        <DisplayName>Get O2 Calibration Low</DisplayName>
+        <Description>Get the O2 calibration point value at 0% dissolved oxygen.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentO2CalLow</Identifier>
+            <DisplayName>Current O2 Calibration Low</DisplayName>
+            <Description>The current value of the lower (0% dissolved oxygen) calibration point. Default = 57.</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetO2CalLow</Identifier>
+        <DisplayName>Set O2 Calibration Low</DisplayName>
+        <Description>Set the O2 calibration point value at 0% dissolved oxygen. Default = 57.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetO2CalLow</Identifier>
+            <DisplayName>Setpoint O2 Calibration Low</DisplayName>
+            <Description>
+                The lower calibration point value setpoint for O2 up to two decimal points.
+            </Description>
+            <DataType>
+                <List>
+                    <DataType>
+                        <Constrained>
+                            <DataType>
+                                <Basic>Real</Basic>
+                            </DataType>
+                            <Constraints>
+                                <MaximalInclusive>0</MaximalInclusive>
+                                <MinimalExclusive>90</MinimalExclusive>
+                            </Constraints>
+                        </Constrained>
+                    </DataType>
+                </List>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentO2CalLow</Identifier>
+            <DisplayName>Current O2 Calibration Low</DisplayName>
+            <Description>The current lower calibration point value for O2.</Description>
+	        <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>GetO2CalHigh</Identifier>
+        <DisplayName>Get O2 Calibration High</DisplayName>
+        <Description>Get the O2 calibration point value at 100% dissolved oxygen. Default = 27.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentO2CalHigh</Identifier>
+            <DisplayName>Current O2 Calibration High</DisplayName>
+            <Description>The current value of the higher (100% dissolved oxygen) calibration point in %.</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetO2CalHigh</Identifier>
+        <DisplayName>Set O2 Calibration High</DisplayName>
+        <Description>Set the O2 calibration point value at 100% dissolved oxygen. Default = 27.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetO2CalHigh</Identifier>
+            <DisplayName>Setpoint O2 Calibration High in percent</DisplayName>
+            <Description>
+                The higher calibration point value setpoint for O2 up to two decimal points.
+            </Description>
+            <DataType>
+                <List>
+                    <DataType>
+                        <Constrained>
+                            <DataType>
+                                <Basic>Real</Basic>
+                            </DataType>
+                            <Constraints>
+                                <MaximalInclusive>0</MaximalInclusive>
+                                <MinimalExclusive>90</MinimalExclusive>
+                            </Constraints>
+                        </Constrained>
+                    </DataType>
+                </List>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentO2CalHigh</Identifier>
+            <DisplayName>Current O2 Calibration High</DisplayName>
+            <Description>The current higher calibration point value for O2 in %.</Description>
+	        <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>GetO2CalTemp</Identifier>
+        <DisplayName>Get O2 Calibration Temperature</DisplayName>
+        <Description>Get the value of the oxygen sensor calibration temperature in degrees Celsius. Default = 20.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentO2CalTemp</Identifier>
+            <DisplayName>Current O2 Calibration Temperature</DisplayName>
+            <Description>The current value of the oxygen calibration temperature in degree Celsius.</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetO2CalTemp</Identifier>
+        <DisplayName>Set O2 Calibration Temperature</DisplayName>
+        <Description>Set the value of the oxygen calibration temperature in degree Celsius. Default = 20.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetO2CalTemp</Identifier>
+            <DisplayName>Setpoint O2 Calibration Temperature</DisplayName>
+            <Description>
+                The oxygen calibration temperature value to be set up to one decimal point in degree Celsius.
+            </Description>
+            <DataType>
+                <List>
+                    <DataType>
+                        <Constrained>
+                            <DataType>
+                                <Basic>Real</Basic>
+                            </DataType>
+                            <Constraints>
+                                <MaximalInclusive>-10</MaximalInclusive>
+                                <MinimalExclusive>60</MinimalExclusive>
+                            </Constraints>
+                        </Constrained>
+                    </DataType>
+                </List>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentO2CalTemp</Identifier>
+            <DisplayName>Current O2 Calibration Temperature</DisplayName>
+            <Description>The current value of the oxygen sensor calibration temperature in degree Celsius.</Description>
+	        <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+    </Command>	
+	<Command>
+        <Identifier>GetPHImax</Identifier>
+        <DisplayName>Get phi max</DisplayName>
+        <Description>Get the given value of the first calibration point (phi max) of the pH sensor. Default = 0.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentPHImax</Identifier>
+            <DisplayName>Current phi max</DisplayName>
+            <Description>The current value of the first calibration point (phi max) of the pH sensor.</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetPHImax</Identifier>
+        <DisplayName>Set phi max</DisplayName>
+        <Description>Set the value of the first calibration point (phi max) of the pH sensor. Default = 0.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetPHImax</Identifier>
+            <DisplayName>Setpoint phi max</DisplayName>
+            <Description>
+                The set value of the first calibration point (phi max) of the pH sensor up to two decimal points.
+            </Description>
+            <DataType>
+                <List>
+                    <DataType>
+                        <Constrained>
+                            <DataType>
+                                <Basic>Real</Basic>
+                            </DataType>
+                            <Constraints>
+                                <MaximalInclusive>0</MaximalInclusive>
+                                <MinimalExclusive>90</MinimalExclusive>
+                            </Constraints>
+                        </Constrained>
+                    </DataType>
+                </List>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentPHImax</Identifier>
+            <DisplayName>Current phi max</DisplayName>
+            <Description>The current value of the first calibration point (phi max) of the pH sensor.</Description>
+	        <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+    </Command>		
+	<Command>
+        <Identifier>GetPHImin</Identifier>
+        <DisplayName>Get phi min</DisplayName>
+        <Description>Get the given value of the second calibration point (phi min) of the pH sensor. Default = -.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentPHImin</Identifier>
+            <DisplayName>Current phi min</DisplayName>
+            <Description>The current value of the second calibration point (phi min) of the pH sensor.</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetPHImin</Identifier>
+        <DisplayName>Set phi min</DisplayName>
+        <Description>Set the value of the second calibration point (phi min) of the pH sensor. Default = -.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetPHImin</Identifier>
+            <DisplayName>Setpoint phi min</DisplayName>
+            <Description>
+                The set value of the second calibration point (phi min) of the pH sensor up to two decimal points.
+            </Description>
+            <DataType>
+                <List>
+                    <DataType>
+                        <Constrained>
+                            <DataType>
+                                <Basic>Real</Basic>
+                            </DataType>
+                            <Constraints>
+                                <MaximalInclusive>0</MaximalInclusive>
+                                <MinimalExclusive>90</MinimalExclusive>
+                            </Constraints>
+                        </Constrained>
+                    </DataType>
+                </List>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentPHImin</Identifier>
+            <DisplayName>Current phi min</DisplayName>
+            <Description>The current value of the second calibration point (phi min) of the pH sensor.</Description>
+	        <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+    </Command>	
+	<Command>
+        <Identifier>GetPHpH0</Identifier>
+        <DisplayName>Get PH pH0</DisplayName>
+        <Description>Get the given value of the third calibration point (pH0) of the pH sensor. Default = 0.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentPHpH0</Identifier>
+            <DisplayName>Current PH pH0</DisplayName>
+            <Description>The current value of the third calibration point (pH0) of the pH sensor.</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetPHpH0</Identifier>
+        <DisplayName>Set PH pH0</DisplayName>
+        <Description>Set the value of the third calibration point (pH0) of the pH sensor. Default = 0.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetPHpH0</Identifier>
+            <DisplayName>Setpoint PH pH0</DisplayName>
+            <Description>
+                The set value of the third calibration point (pH0) of the pH sensor up to two decimal points.
+            </Description>
+            <DataType>
+                <List>
+                    <DataType>
+                        <Constrained>
+                            <DataType>
+                                <Basic>Real</Basic>
+                            </DataType>
+                            <Constraints>
+                                <MaximalInclusive>0</MaximalInclusive>
+                                <MinimalExclusive>50</MinimalExclusive>
+                            </Constraints>
+                        </Constrained>
+                    </DataType>
+                </List>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentPHpH0</Identifier>
+            <DisplayName>Current PH pH0</DisplayName>
+            <Description>The current value of the third calibration point (pH0) of the pH sensor.</Description>
+	        <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+    </Command>	
+	<Command>
+        <Identifier>GetPHdpH</Identifier>
+        <DisplayName>Get PH dpH</DisplayName>
+        <Description>Get the given value of the fourth calibration point (dpH) of the pH sensor. Default = 0.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentPHdpH</Identifier>
+            <DisplayName>Current PH dpH</DisplayName>
+            <Description>The current value of the fourth calibration point (dpH) of the pH sensor.</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetPHdpH</Identifier>
+        <DisplayName>Set PH dpH</DisplayName>
+        <Description>Set the value of the fourth calibration point (dpH) of the pH sensor. Default = 0.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetPHdpH</Identifier>
+            <DisplayName>Setpoint PH dpH</DisplayName>
+            <Description>
+                The set value of the fourth calibration point (dpH) of the pH sensor up to two decimal points.
+            </Description>
+            <DataType>
+                <List>
+                    <DataType>
+                        <Constrained>
+                            <DataType>
+                                <Basic>Real</Basic>
+                            </DataType>
+                            <Constraints>
+                                <MaximalInclusive>0</MaximalInclusive>
+                                <MinimalExclusive>10</MinimalExclusive>
+                            </Constraints>
+                        </Constrained>
+                    </DataType>
+                </List>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentPHdpH</Identifier>
+            <DisplayName>Current PH dpH</DisplayName>
+            <Description>The current value of the fourth calibration point (dpH) of the pH sensor.</Description>
+	        <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>GetPHCalTemp</Identifier>
+        <DisplayName>Get PH Calibration Temperature</DisplayName>
+        <Description>Get the value of the pH sensor calibration temperature in degree Celsius. Default = 20.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentPHCalTemp</Identifier>
+            <DisplayName>Current PH Calibration Temperature</DisplayName>
+            <Description>The current value of the pH calibration temperature in degree Celsius.</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetPHCalTemp</Identifier>
+        <DisplayName>Set PH Calibration Temperature</DisplayName>
+        <Description>Set the value of the pH calibration temperature in degree Celsius. Default = 20.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetPHCalTemp</Identifier>
+            <DisplayName>Setpoint PH Calibration Temperature</DisplayName>
+            <Description>
+                The pH calibration temperature value to be set in degree Celsius up to one decimal point.
+            </Description>
+            <DataType>
+                <List>
+                    <DataType>
+                        <Constrained>
+                            <DataType>
+                                <Basic>Real</Basic>
+                            </DataType>
+                            <Constraints>
+                                <MaximalInclusive>-10</MaximalInclusive>
+                                <MinimalExclusive>60</MinimalExclusive>
+                            </Constraints>
+                        </Constrained>
+                    </DataType>
+                </List>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentPHCalTemp</Identifier>
+            <DisplayName>Current PH Calibration Temperature</DisplayName>
+            <Description>The current value of the pH sensor calibration temperature in degree Celsius.</Description>
+	        <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+    </Command>	
+</Feature>

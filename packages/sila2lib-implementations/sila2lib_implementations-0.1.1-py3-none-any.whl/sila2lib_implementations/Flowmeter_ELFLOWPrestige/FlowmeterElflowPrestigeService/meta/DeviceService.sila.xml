@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="biovt.mw.tum.de" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>DeviceService</Identifier>
+    <DisplayName>Device Service</DisplayName>
+    <Description>
+		Allows full control of the device features of the flowmeter.
+        By Lukas Bromig and Jose de Jesus Pina, Institute of Biochemical Engineering, Technical University of Munich, 02.12.2020
+    </Description>
+    <!-- Valve output-->
+    <Command>
+        <Identifier>GetValveOutput</Identifier>
+        <DisplayName>Get valve output</DisplayName>
+        <Description>
+            It represents the controller output signal for control valve operation. It goes from 0 to 300mAdc.
+                In reality it reaches until 250mAdc
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentValveOutput</Identifier>
+            <DisplayName>Current valve output</DisplayName>
+            <Description>
+            It shows the setpoint in the capacity unit for which the instrument is set.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>300</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Response>
+    </Command>
+    <!--Capacity 100%-->
+    <Command>
+        <Identifier>GetCapacity100</Identifier>
+        <DisplayName>Get capacity 100</DisplayName>
+        <Description>
+            This parameter sets the maximum readout/control value (100%) for the current fluid in readout units corresponding to Capacity Unit.
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentCapacity100</Identifier>
+            <DisplayName>Current capacity 100</DisplayName>
+            <Description>
+            This parameter sets the maximum readout/control value (100%) for the current fluid in readout units corresponding to Capacity Unit.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>1E+10</MaximalInclusive>
+                        <MinimalExclusive>-1E+10</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Capacity unit-->
+    <Command>
+        <Identifier>GetCapacityUnit</Identifier>
+        <DisplayName>Get capacity unit</DisplayName>
+        <Description>
+            This parameter defines the units in which is the measured value and set value are represented.
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentCapacityUnit</Identifier>
+            <DisplayName>Current capacity unit</DisplayName>
+            <Description>
+            current  parameter which defines the units in which is the measured value and set value are represented.
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Serial number-->
+	<Command>
+        <Identifier>GetSerialNumber</Identifier>
+        <DisplayName>Get serial number</DisplayName>
+        <Description>Serial number of the device and software version</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentSerialNumber</Identifier>
+            <DisplayName>Current serial number</DisplayName>
+            <Description>it gets the serial number of the device and software version</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Primary node address -->
+	<Command>
+        <Identifier>GetPrimaryNodeAddress</Identifier>
+        <DisplayName>Get primary node address </DisplayName>
+        <Description>Primary node address: network parameter Flow-Bus</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentPrimaryNodeAddress</Identifier>
+            <DisplayName>Current primary node address</DisplayName>
+            <Description>Primary node address: network parameter Flow-Bus</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+     <!-- Firmware version -->
+	<Command>
+        <Identifier>GetFirmwareVersion</Identifier>
+        <DisplayName>Get firmware version</DisplayName>
+        <Description> revision number of the firmware </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentFirmwareVersion</Identifier>
+            <DisplayName>Current firmware version</DisplayName>
+            <Description>revision number of the firmware</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Communication Protocols -->
+	<Command>
+        <Identifier>GetCommunicationProtocol</Identifier>
+        <DisplayName>Get communication protocol</DisplayName>
+        <Description>
+            Current communication protocol between the program adn the device.
+            2 possible options: "binary" and "ascii"
+            Binary is the default protocol
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentCommunicationProtocol</Identifier>
+            <DisplayName>Current communication protocol</DisplayName>
+            <Description>Current communication protocol working with</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetCommunicationProtocolBinary</Identifier>
+        <DisplayName>Set communication protocol binary</DisplayName>
+        <Description>
+            it sets the protocol communication to binary
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentCommunicationProtocolBinary</Identifier>
+            <DisplayName>Current communication protocol</DisplayName>
+            <Description>Current Communication Protocol: binary </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetCommunicationProtocolAscii</Identifier>
+        <DisplayName>Set communication protocol ascii</DisplayName>
+        <Description>
+            it sets the protocol communication to ascii
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentCommunicationProtocolAscii</Identifier>
+            <DisplayName>Current communication protocol ascii</DisplayName>
+            <Description>Current Communication Protocol: ascii </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Communication Port -->
+	<Command>
+        <Identifier>GetSerialPort</Identifier>
+        <DisplayName>Get serial port</DisplayName>
+        <Description>Current devices serial port. "50001" is the predefined value</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentSerialPort</Identifier>
+            <DisplayName>Current serial port</DisplayName>
+            <Description>Current serial port. "50001" is the predefined value</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetSerialPort</Identifier>
+        <DisplayName>Set serial port</DisplayName>
+        <Description>
+            Sets devices new serial port
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetSerialPort</Identifier>
+            <DisplayName>Set serial port</DisplayName>
+            <Description>
+                Sets devices new serial port. "50001" is the predefined value
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>NewSerialPort</Identifier>
+            <DisplayName>New serial port</DisplayName>
+            <Description>New serial port. </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+</Feature>

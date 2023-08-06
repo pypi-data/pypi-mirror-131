@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="0.2" FeatureVersion="1.0" Originator="biovt.mw.tum.de" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>TemperatureControlServicer</Identifier>
+    <DisplayName>Temperature Control Servicer</DisplayName>
+    <Description>
+		Set and retrieve information regarding the temperature setpoints and current temperature readings of the LAUDA LOOP 250 thermostat. Setpoint thresholds may be defined within the range of the upper and lower temperature limits THi and TLo.
+        By Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 20.05.2019
+    </Description>
+	<Command>
+        <Identifier>SetPointTemperature</Identifier>
+        <DisplayName>Set Temperature value</DisplayName>
+        <Description>Set the desired temperature of the thermostat</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetTemperature</Identifier>
+            <DisplayName>Set Temperature</DisplayName>
+            <Description>
+                The target temperature that the thermostat will try to reach. Depending on the control mechanism 
+				and the selected correcting values, the temperature might oscillate around or not reach the set 
+				temperature at all. More on the control mechanism can be found in the user manual, p29.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>373.15</MaximalInclusive>
+                        <MinimalExclusive>273.15</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SetTemperatureSet</Identifier>
+            <DisplayName>Set Temperature Set</DisplayName>
+            <Description>Set Temperature succeeded to Set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>SetTemperatureInvalidRange</Identifier>
+            <Identifier>SetTemperatureSyntax</Identifier>
+        </DefinedExecutionErrors>
+	</Command>
+	<Command>
+        <Identifier>SetUpperLimTemperature</Identifier>
+        <DisplayName>Set Upper Lim Temperature Value</DisplayName>
+        <Description>
+        Set the upper limit of the feed line temperature of the thermostat, Tih.
+        The temperature limits restrict the input range of the temperature setpoint, Tset.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UpperLimTemperature</Identifier>
+            <DisplayName>Upper Lim Temperature</DisplayName>
+            <Description>
+                Value of the upper limit of the feed line temperature, Tih, for the thermostat. 
+                Tih restricts the maximum of the input range of the temperature setpoint, Tset.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>373.15</MaximalInclusive>
+                        <MinimalExclusive>273.15</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>UpperLimTemperatureSet</Identifier>
+            <DisplayName>Upper Lim Temperature Set</DisplayName>
+            <Description>Upper limit temperature succeeded to Set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>SetTemperatureInvalidRange</Identifier>
+            <Identifier>SetTemperatureSyntax</Identifier>
+            <Identifier>SetLimitLogicError</Identifier>
+        </DefinedExecutionErrors>
+	</Command>	
+    <Command>
+        <Identifier>SetLowerLimTemperature</Identifier>
+        <DisplayName>Set Lower Lim Temperature Value</DisplayName>
+        <Description>
+        Set the lower limit of the feed line temperature of the thermostat, Til.
+        The temperature limits restrict the input range of the temperature setpoint, Tset.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>LowerLimTemperature</Identifier>
+            <DisplayName>Lower Lim Temperature</DisplayName>
+            <Description>
+                Set the lower limit of the feed line temperature, Til, for the thermostat. 
+                Til restricts the maximum of the input range of the temperature setpoint, Tset.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>373.15</MaximalInclusive>
+                        <MinimalExclusive>273.15</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>LowerLimTemperatureSet</Identifier>
+            <DisplayName>Lower Lim Temperature Set</DisplayName>
+            <Description>Lower limit temperature succeeded to Set (Bool).</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>SetTemperatureInvalidRange</Identifier>
+            <Identifier>SetTemperatureSyntax</Identifier>
+            <Identifier>SetLimitLogicError</Identifier>
+        </DefinedExecutionErrors>
+	</Command>
+	<Command>
+        <Identifier>GetFeedLineTemperature</Identifier>
+        <DisplayName>Get Feed Line Temperature</DisplayName>
+        <Description>Get Feed Line Temperature of the Thermostat.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentFeedLineTemperature</Identifier>
+            <DisplayName>Current Feed Line Temperature</DisplayName>
+            <Description>Current Feed Line Temperature of the Thermostat.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>GetSetpointTemperature</Identifier>
+        <DisplayName>Get Setpoint Temperature value</DisplayName>
+        <Description>Get the desired setpoint temperature of the thermostat</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentTemperatureSetpoint</Identifier>
+            <DisplayName>Current Temperature Setpoint</DisplayName>
+            <Description>Current Temperature setpoint of the thermostat is retrieved.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>GetUpperLimTemperature</Identifier>
+        <DisplayName>Get Upper Lim Temperature</DisplayName>
+        <Description>Get upper limit temperature.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentUpperLimTemperature</Identifier>
+            <DisplayName>Current Upper Lim Temperature</DisplayName>
+            <Description>Current upper limit temperature.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>GetLowerLimTemperature</Identifier>
+        <DisplayName>Get Lower Lim Temperature</DisplayName>
+        <Description>Get lower limit temperature.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentLowerLimTemperature</Identifier>
+            <DisplayName>Current Lower Lim Temperature</DisplayName>
+            <Description>Current lower limit temperature.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <DefinedExecutionError>
+        <Identifier>SetTemperatureInvalidRange</Identifier>
+        <DisplayName>Invalid user set temperature error</DisplayName>
+        <Description>Set Temperature value exceeds temperature limits. Error_6.</Description>
+    </DefinedExecutionError>
+    <DefinedExecutionError>
+        <Identifier>SetTemperatureSyntax</Identifier>
+        <DisplayName>User input syntax error</DisplayName>
+        <Description>The input format is invalid. Use XXX.XX as input format. Error_5</Description>
+    </DefinedExecutionError> 
+    <DefinedExecutionError>
+        <Identifier>SetLimitLogicError</Identifier>
+        <DisplayName>Invalid Limit</DisplayName>
+        <Description>The set upper temperaturelimit Tih is lower or equal to the lower temperature limit Til. Error_32</Description>
+    </DefinedExecutionError>
+</Feature>
+

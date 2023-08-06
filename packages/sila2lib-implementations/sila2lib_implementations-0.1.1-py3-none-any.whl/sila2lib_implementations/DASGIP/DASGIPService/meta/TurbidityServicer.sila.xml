@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="org.silastandard" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>TurbidityServicer</Identifier>
+    <DisplayName>Turbidity Servicer</DisplayName>
+    <Description>
+        Control a DASGIP turbidity module. Enables read and write operations for various parameters, including turbidity sensor, controller, and alarm. 
+        By Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 20.05.2019
+    </Description>
+    <Command>
+        <Identifier>GetAUPV</Identifier>
+        <DisplayName>Get AU PV</DisplayName>
+        <Description>Get present value in absorption unit. Turbidity signal in absorption units.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentAUPV</Identifier>
+            <DisplayName>Current AU PV</DisplayName>
+            <Description>Current present value in absorption unit. Turbidity signal in absorption units.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetCXPV</Identifier>
+        <DisplayName>Get CX PV</DisplayName>
+        <Description>Get calculated turbidity present value. Calculated turbidity signal, i.e. OD600, CDW or others.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentCXPV</Identifier>
+            <DisplayName>Current CX PV</DisplayName>
+            <Description>Current calculated turbidity present value. Calculated turbidity signal, i.e. OD600, CDW or others.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetType</Identifier>
+        <DisplayName>Get Function Type</DisplayName>
+        <Description>Get function type.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentType</Identifier>
+            <DisplayName>Current Function Type</DisplayName>
+            <Description>Current function type value of the turbidity module.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetAvailable</Identifier>
+        <DisplayName>Get Function Availability</DisplayName>
+        <Description>Get function availability.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentAvailable</Identifier>
+            <DisplayName>Current Function Availability</DisplayName>
+            <Description>Current function availability value of the turbidity module.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetName</Identifier>
+        <DisplayName>Get Function Name</DisplayName>
+        <Description>Get function name.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentName</Identifier>
+            <DisplayName>Current Function Name</DisplayName>
+            <Description>Current function name of the turbidity module.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetVersion</Identifier>
+        <DisplayName>Get Function Version</DisplayName>
+        <Description>Get function model version number.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentVersion</Identifier>
+            <DisplayName>Current Function Version</DisplayName>
+            <Description>Current function model version number of the turbidity module.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <DefinedExecutionError>
+        <Identifier>ParameterInvalidRange</Identifier>
+        <DisplayName>Parameter Invalid Range</DisplayName>
+        <Description>Invalid range of the input parameter</Description>
+    </DefinedExecutionError>
+</Feature>

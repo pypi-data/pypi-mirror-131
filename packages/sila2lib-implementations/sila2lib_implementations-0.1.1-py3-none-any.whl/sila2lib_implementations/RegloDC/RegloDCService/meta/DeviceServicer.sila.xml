@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="org.silastandard" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>DeviceServicer</Identifier>
+    <DisplayName>Device Servicer</DisplayName>
+    <Description>
+        General device software and hardware information can be retrieved and changed within this function (Reglo DC (digital control) pump).
+        Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 15.03.2021
+    </Description>
+    <Property>
+        <Identifier>CurrentStatus</Identifier>
+        <DisplayName>Current Status</DisplayName>
+        <Description>Get the current status of the device from the internal state machine of the SiLA server.</Description>
+        <Observable>Yes</Observable>
+        <DataType>
+            <Basic>String</Basic>
+        </DataType>
+    </Property>
+    <Command>
+        <Identifier>GetLog</Identifier>
+        <DisplayName>Get Log</DisplayName>
+        <Description>Get the current status of the device from the state machine of the SiLA server.</Description>
+        <Observable>Yes</Observable>
+        <Response>
+            <Identifier>CurrentLogLevel</Identifier>
+            <DisplayName>Current Log Level</DisplayName>
+            <Description>The current log level of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentLogTimestamp</Identifier>
+            <DisplayName>Current Log Timestamp</DisplayName>
+            <Description>The current log timestamp of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>Timestamp</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentLogMessage</Identifier>
+            <DisplayName>Current Log Level</DisplayName>
+            <Description>The current log level of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetPumpAddress</Identifier>
+        <DisplayName>Set Pump Address</DisplayName>
+        <Description>
+          Set the address of the pump (1-8).
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Address</Identifier>
+            <DisplayName>Address</DisplayName>
+            <Description>
+                Set the address of the pump (1-8).
+            </Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+          <Identifier>PumpAddressSet</Identifier>
+          <DisplayName>Pump Address Set</DisplayName>
+          <Description>Pump Address succeeded to Set.</Description>
+          <DataType>
+              <Basic>String</Basic>
+          </DataType>
+        </Response>
+  </Command>
+  <Command>
+      <Identifier>GetPumpStatus</Identifier>
+      <DisplayName>Get Pump Status</DisplayName>
+      <Description>Get pump status. +=running, -=stopped/standby.</Description>
+      <Observable>No</Observable>
+      <Response>
+          <Identifier>CurrentPumpStatus</Identifier>
+          <DisplayName>Current Pump Status</DisplayName>
+          <Description>Current pump status. +=running, -=stopped/standby.</Description>
+          <DataType>
+              <Basic>String</Basic>
+          </DataType>
+      </Response>
+  </Command>
+	<Command>
+      <Identifier>GetVersionType</Identifier>
+      <DisplayName>Get Version Type</DisplayName>
+      <Description>Get pump information. Response is string of model description (variable length), software version (3 digits) and pump head model type code (3 digits). </Description>
+      <Observable>No</Observable>
+      <Response>
+          <Identifier>CurrentVersionType</Identifier>
+          <DisplayName>Current Version Type</DisplayName>
+          <Description>Current pump information. Response is string of model description (variable length), software version (3 digits) and pump head model type code (3 digits). </Description>
+          <DataType>
+              <Basic>String</Basic>
+          </DataType>
+      </Response>
+    </Command>
+	<Command>
+        <Identifier>GetVersionSoftware</Identifier>
+        <DisplayName>Current Version Software</DisplayName>
+        <Description>Get pump software version. Response is string. </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentVersionSoftware</Identifier>
+            <DisplayName>Current Version Software</DisplayName>
+            <Description>Current pump software version. Response is string. </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>GetPumpID</Identifier>
+        <DisplayName>Get Pump ID</DisplayName>
+        <Description>Get pump head identification number. </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>ID</Identifier>
+            <DisplayName>Identification Number</DisplayName>
+            <Description>Pump head identification number query response. </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetPumpID</Identifier>
+        <DisplayName>Set Pump ID</DisplayName>
+        <Description>Set pump head identification number. </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>PumpID</Identifier>
+            <DisplayName>Pump ID</DisplayName>
+            <Description>The new pump head identification number</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>ID</Identifier>
+            <DisplayName>Identification Number</DisplayName>
+            <Description>Pump head identification number query response. </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>ResetToDefault</Identifier>
+        <DisplayName>Reset To Default</DisplayName>
+        <Description>
+        Resets all user configurable data to default values.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Reset</Identifier>
+            <DisplayName>Reset</DisplayName>
+            <Description>
+              Resets all user configurable data to default values.
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>ResetStatus</Identifier>
+            <DisplayName>Reset Status</DisplayName>
+            <Description>Reset of pump succeeded.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+          <Identifier>GetTotalVolume</Identifier>
+          <DisplayName>Get Total Volume</DisplayName>
+          <Description>Get total volume pumped since last reset, in muL, mL, or L. </Description>
+          <Observable>No</Observable>
+          <Response>
+              <Identifier>TotalVolume</Identifier>
+              <DisplayName>Total Volume</DisplayName>
+              <Description>The total volume pumped since last reset, in muL, mL, or L </Description>
+              <DataType>
+                  <Basic>Real</Basic>
+              </DataType>
+          </Response>
+    </Command>
+    <Command>
+          <Identifier>ResetTotalVolume</Identifier>
+          <DisplayName>Reset Total Volume</DisplayName>
+          <Description>Reset the total dispensed volume since the last reset. </Description>
+          <Observable>No</Observable>
+          <Response>
+              <Identifier>ResetResponse</Identifier>
+              <DisplayName>ResetResponse</DisplayName>
+              <Description>Successfully reset the total dispensed volume.</Description>
+              <DataType>
+                  <Basic>String</Basic>
+              </DataType>
+          </Response>
+    </Command>
+    <Command>
+      <Identifier>UnlockControlPanel</Identifier>
+      <DisplayName>Unlock Control Panel</DisplayName>
+      <Description>
+        Switch control panel to manual operation.
+      </Description>
+      <Observable>No</Observable>
+      <Response>
+        <Identifier>ControlPanelUnlocked</Identifier>
+        <DisplayName>Control Panel Unlocked</DisplayName>
+        <Description>Control panel switched to manual operation.</Description>
+        <DataType>
+            <Basic>String</Basic>
+        </DataType>
+      </Response>
+</Command>
+<Command>
+    <Identifier>LockControlPanel</Identifier>
+    <DisplayName>Lock Control Panel</DisplayName>
+    <Description>
+      Set control panel to inactive (Input via control keys is not possible).
+    </Description>
+    <Observable>No</Observable>
+    <Response>
+      <Identifier>ControlPanelLocked</Identifier>
+      <DisplayName>Control Panel Locked</DisplayName>
+      <Description>The control panel has been locked.</Description>
+      <DataType>
+          <Basic>String</Basic>
+      </DataType>
+    </Response>
+</Command>
+<Command>
+    <Identifier>SetDisplayNumbers</Identifier>
+    <DisplayName>Set Display Numbers</DisplayName>
+    <Description>
+      Write numbers to the pump to display while under external control - float of length 5 including +/- and decimal points.
+    </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>DisplayNumbers</Identifier>
+        <DisplayName>Display Numbers</DisplayName>
+        <Description>
+            Write numbers to the pump to display while under external control - float of length 5 including +/- and decimal points.
+        </Description>
+        <DataType>
+            <Basic>Real</Basic>
+        </DataType>
+    </Parameter>
+    <Response>
+      <Identifier>DisplayNumbersSet</Identifier>
+      <DisplayName>Display Numbers Set</DisplayName>
+      <Description>Display Numbers succeeded to Set.</Description>
+      <DataType>
+          <Basic>String</Basic>
+      </DataType>
+    </Response>
+    </Command>
+    <Command>
+        <Identifier>SetDisplayLetters</Identifier>
+        <DisplayName>Set Display Letters</DisplayName>
+        <Description>
+          Write letters to the pump to display while under external control - string of length 4.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>DisplayLetters</Identifier>
+            <DisplayName>Display Letters</DisplayName>
+            <Description>
+                Write letters to the pump to display while under external control - string of length 4.
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+          <Identifier>DisplayLettersSet</Identifier>
+          <DisplayName>Display Letters Set</DisplayName>
+          <Description>Display Letters succeeded to Set.</Description>
+          <DataType>
+              <Basic>String</Basic>
+          </DataType>
+        </Response>
+    </Command>
+    <Property>
+        <Identifier>PortName</Identifier>
+        <DisplayName>Port Name</DisplayName>
+        <Description>The name of the serial port. </Description>
+        <Observable>No</Observable>
+        <DataType>
+            <Basic>String</Basic>
+        </DataType>
+    </Property>
+    <Property>
+        <Identifier>BaudRate</Identifier>
+        <DisplayName>Baud Rate</DisplayName>
+        <Description>The baud rate of the serial port connection. </Description>
+        <Observable>No</Observable>
+        <DataType>
+            <Basic>Integer</Basic>
+        </DataType>
+    </Property>
+    <Property>
+        <Identifier>Parity</Identifier>
+        <DisplayName>Parity</DisplayName>
+        <Description> Enable parity checking. Possible values: NONE, EVEN, ODD, MARK, SPACE. Default is NONE</Description>
+        <Observable>No</Observable>
+        <DataType>
+            <Basic>String</Basic>
+        </DataType>
+    </Property>
+    <Property>
+        <Identifier>StopBits</Identifier>
+        <DisplayName>Stop Bits</DisplayName>
+        <Description> Number of stop bits. Possible values: ONE, ONE_POINT_FIVE, TWO. Default is ONE</Description>
+        <Observable>No</Observable>
+        <DataType>
+            <Basic>String</Basic>
+        </DataType>
+    </Property>
+    <Property>
+        <Identifier>Timeout</Identifier>
+        <DisplayName>Timeout</DisplayName>
+        <Description>Set a read timeout value. Default is 1.</Description>
+        <Observable>No</Observable>
+        <DataType>
+            <Basic>Real</Basic>
+        </DataType>
+    </Property>
+    <Command>
+        <Identifier>SetCommunicationPort</Identifier>
+        <DisplayName>Set Pump ID</DisplayName>
+        <Description>Set pump head identification number. </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>PortName</Identifier>
+            <DisplayName>Port Name</DisplayName>
+            <Description>The name of the serial port.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>BaudRate</Identifier>
+            <DisplayName>Baud Rate</DisplayName>
+            <Description>The baud rate of the serial port connection. </Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>Parity</Identifier>
+            <DisplayName>Parity</DisplayName>
+            <Description> Enable parity checking. Possible values: NONE, EVEN, ODD, MARK, SPACE. Default is NONE</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>StopBits</Identifier>
+            <DisplayName>Stop Bits</DisplayName>
+            <Description> Number of stop bits. Possible values: ONE, ONE_POINT_FIVE, TWO. Default is ONE</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>Timeout</Identifier>
+            <DisplayName>Timeout</DisplayName>
+            <Description>Set a read timeout value. Default is 1.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SetCommunicationPortStatus</Identifier>
+            <DisplayName>Set Communication Port Status</DisplayName>
+            <Description>The status of the set command.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>ConnectDevice</Identifier>
+        <DisplayName>Connect Device</DisplayName>
+        <Description>Sets up a serial connection with the device using the specified connection details. </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>ConnectionStatus</Identifier>
+            <DisplayName>ConnectionStatus</DisplayName>
+            <Description>The connection status. If connection was unsuccessful, the error will be returned.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>ResetOverload</Identifier>
+        <DisplayName>Reset Overload</DisplayName>
+        <Description>Reset the device command input buffer overload.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>ResetOverloadStatus</Identifier>
+            <DisplayName>Reset Overload Status</DisplayName>
+            <Description>The reset overload status. If reset was unsuccessful, the error will be returned.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+</Feature>

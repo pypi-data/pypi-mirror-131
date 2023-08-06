@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="org.silastandard" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>AgitationServicer</Identifier>
+    <DisplayName>Agitation Servicer</DisplayName>
+    <Description>
+        Control a DASGIP agitation module. Enables read and write operations for various parameters, including the agitation actuator. 
+        By Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 20.05.2019
+    </Description>
+    <Command>
+        <Identifier>GetPV</Identifier>
+        <DisplayName>Get PV</DisplayName>
+        <Description>Get present value</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentPV</Identifier>
+            <DisplayName>Current PV</DisplayName>
+            <Description>Current present value</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetSPA</Identifier>
+        <DisplayName>Set Automatic Setpoint</DisplayName>
+        <Description>
+        Set the automatic pH setpoint.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>SPA</Identifier>
+            <DisplayName>Automatic Setpoint</DisplayName>
+            <Description>
+                The automatic setpoint of the pH module.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SPASet</Identifier>
+            <DisplayName>Automatic Setpoint Set</DisplayName>
+            <Description>The set automatic setpoint.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>ParameterInvalidRange</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>SetSPM</Identifier>
+        <DisplayName>Set Manual Setpoint</DisplayName>
+        <Description>
+        Set the manual pH setpoint.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>SPM</Identifier>
+            <DisplayName>Manual Setpoint</DisplayName>
+            <Description>
+                The manual setpoint of the pH module.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SPMSet</Identifier>
+            <DisplayName>Manual Setpoint Set</DisplayName>
+            <Description>The set manual setpoint.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>ParameterInvalidRange</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>SetSPE</Identifier>
+        <DisplayName>Set External Setpoint</DisplayName>
+        <Description>
+        Set the external pH setpoint.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>SPE</Identifier>
+            <DisplayName>External Setpoint</DisplayName>
+            <Description>
+                The external setpoint of the pH module.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SPESet</Identifier>
+            <DisplayName>External Setpoint Set</DisplayName>
+            <Description>The set external setpoint.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>ParameterInvalidRange</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>GetSP</Identifier>
+        <DisplayName>Get SP</DisplayName>
+        <Description>Get setpoint value</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentSP</Identifier>
+            <DisplayName>Current SP</DisplayName>
+            <Description>Current setpoint value</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetSPA</Identifier>
+        <DisplayName>Get SPA</DisplayName>
+        <Description>Get automatic setpoint value</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentSPA</Identifier>
+            <DisplayName>Current SPA</DisplayName>
+            <Description>Current automatic setpoint value</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetSPM</Identifier>
+        <DisplayName>Get SPM</DisplayName>
+        <Description>Get manual setpoint value</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentSPM</Identifier>
+            <DisplayName>Current SPM</DisplayName>
+            <Description>Current manual setpoint value</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetSPE</Identifier>
+        <DisplayName>Get SPE</DisplayName>
+        <Description>Get external setpoint value</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentSPE</Identifier>
+            <DisplayName>Current SPE</DisplayName>
+            <Description>Current external setpoint value</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetSPR</Identifier>
+        <DisplayName>Get SPR</DisplayName>
+        <Description>Get remote setpoint value</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentSPR</Identifier>
+            <DisplayName>Current SPR</DisplayName>
+            <Description>Current remote setpoint value</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetAccess</Identifier>
+        <DisplayName>Get Access Mode</DisplayName>
+        <Description>Get access mode value. Controller access (Local, Remote).</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentAccess</Identifier>
+            <DisplayName>Current Access Mode</DisplayName>
+            <Description>Current access mode value. Controller access (Local, Remote)</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetCmd</Identifier>
+        <DisplayName>Set Controller Command</DisplayName>
+        <Description>
+        Set the controller command. Controller command (Nothing, Stop, Start).
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>Cmd</Identifier>
+            <DisplayName>Controller Command</DisplayName>
+            <Description>
+                The controller command of the pH module. Controller command (Nothing, Stop, Start).
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+
+                        <MaximalInclusive>2</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CmdSet</Identifier>
+            <DisplayName>Cmd Set</DisplayName>
+            <Description>The set controller command.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>ParameterInvalidRange</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>GetCmd</Identifier>
+        <DisplayName>Get Controller Command</DisplayName>
+        <Description>Get the controller command. Controller command (Nothing, Stop, Start).</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentCmd</Identifier>
+            <DisplayName>Current Controller Command</DisplayName>
+            <Description>Current controller command value of the pH module. Controller command (Nothing, Stop, Start)</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetMode</Identifier>
+        <DisplayName>Get Controller Mode</DisplayName>
+        <Description>Get the controller mode. Controller mode (Manual, Automatic).</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentMode</Identifier>
+            <DisplayName>Current Controller Mode</DisplayName>
+            <Description>Current controller mode value of the pH module. Controller mode (Manual, Automatic).</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetSetpointSelect</Identifier>
+        <DisplayName>Set SetpointSelect</DisplayName>
+        <Description>
+        Set the selected setpoint that should be used. Setpoint selection (Local, Manual, Internal, Script, External).
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>SetpointSelect</Identifier>
+            <DisplayName>Set SetpointSelect</DisplayName>
+            <Description>
+                The selected setpoint of the pH module. Setpoint selection (Local, Manual, Internal, Script, External).
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+
+                        <MaximalInclusive>5</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SetpointSelectSet</Identifier>
+            <DisplayName>Setpoint selection Set</DisplayName>
+            <Description>The set setpoint selection.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>ParameterInvalidRange</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>GetSetpointSelect</Identifier>
+        <DisplayName>Get SetpointSelect</DisplayName>
+        <Description>Get the setpoint selection. Controller state (Off, On, Error).</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentSetpointSelect</Identifier>
+            <DisplayName>Current Setpoint Selection</DisplayName>
+            <Description>Current setpoint selection value of the pH module. Controller state (Off, On, Error).</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetState</Identifier>
+        <DisplayName>Get State</DisplayName>
+        <Description>Get controller state. Controller state (Off, On, Error).</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentState</Identifier>
+            <DisplayName>Current Controller State</DisplayName>
+            <Description>Current controller state value of the pH module. Controller state (Off, On, Error).</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetType</Identifier>
+        <DisplayName>Get Function Type</DisplayName>
+        <Description>Get function type.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentType</Identifier>
+            <DisplayName>Current Function Type</DisplayName>
+            <Description>Current function type value of the pH module.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetAvailable</Identifier>
+        <DisplayName>Get Function Availability</DisplayName>
+        <Description>Get function availability.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentAvailable</Identifier>
+            <DisplayName>Current Function Availability</DisplayName>
+            <Description>Current function availability value of the pH module.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetName</Identifier>
+        <DisplayName>Get Function Name</DisplayName>
+        <Description>Get function name.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentName</Identifier>
+            <DisplayName>Current Function Name</DisplayName>
+            <Description>Current function name of the pH module.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetVersion</Identifier>
+        <DisplayName>Get Function Version</DisplayName>
+        <Description>Get function model version number.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentVersion</Identifier>
+            <DisplayName>Current Function Version</DisplayName>
+            <Description>Current function model version number of the pH module.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetActuatorDirPV</Identifier>
+        <DisplayName>Get Actuator Direct PV</DisplayName>
+        <Description>Get actuator direct present value.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentActuatorDirPV</Identifier>
+            <DisplayName>Current Actuator Direct PV</DisplayName>
+            <Description>Current actuator direct present value.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetActuatorPwrPV</Identifier>
+        <DisplayName>Get Actuator Power PV</DisplayName>
+        <Description>Get actuator actual stirred power present value.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentActuatorPwrPV</Identifier>
+            <DisplayName>Current Actuator Power PV</DisplayName>
+            <Description>Current actuator actual stirred power present value.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetActuatorTStirPV</Identifier>
+        <DisplayName>Get Actuator Torque Stir PV</DisplayName>
+        <Description>Get actuator actual stirrer torque present value.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the adressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentActuatorTStirPV</Identifier>
+            <DisplayName>Current Actuator Torque Stir PV</DisplayName>
+            <Description>Current actuator actual stirrer torque present value.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <DefinedExecutionError>
+        <Identifier>ParameterInvalidRange</Identifier>
+        <DisplayName>Parameter Invalid Range</DisplayName>
+        <Description>Invalid range of the input parameter</Description>
+    </DefinedExecutionError>
+</Feature>

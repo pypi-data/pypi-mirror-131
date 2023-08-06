@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="org.silastandard" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>DeviceServicer</Identifier>
+    <DisplayName>Device Servicer</DisplayName>
+    <Description>
+        General device settings of the DASGIP reactor system can be retrieved and changed within this function. 
+        By Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 20.05.2019
+    </Description>
+    <Property>
+        <Identifier>CurrentStatus</Identifier>
+        <DisplayName>Current Status</DisplayName>
+        <Description>Get the current status of the device from the internal state machine of the SiLA server.</Description>
+        <Observable>Yes</Observable>
+        <DataType>
+            <Basic>String</Basic>
+        </DataType>
+    </Property>
+    <Command>
+        <Identifier>GetLog</Identifier>
+        <DisplayName>Get Log</DisplayName>
+        <Description>Get the current status of the device from the state machine of the SiLA server.</Description>
+        <Observable>Yes</Observable>
+        <Response>
+            <Identifier>CurrentLogLevel</Identifier>
+            <DisplayName>Current Log Level</DisplayName>
+            <Description>The current log level of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentLogTimestamp</Identifier>
+            <DisplayName>Current Log Timestamp</DisplayName>
+            <Description>The current log timestamp of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>Timestamp</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentLogMessage</Identifier>
+            <DisplayName>Current Log Level</DisplayName>
+            <Description>The current log level of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetRuntimeClock</Identifier>
+        <DisplayName>Get Runtime Clock</DisplayName>
+        <Description>Get the current local time of the system.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentRuntime</Identifier>
+            <DisplayName>Current Runtime</DisplayName>
+            <Description>The current runtime of the DASGIP reactor system. </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetStartedUTC</Identifier>
+        <DisplayName>Get Started UTC</DisplayName>
+        <Description>Get time stamp of system start in UTC</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentStartedUTC</Identifier>
+            <DisplayName>Current Started UTC</DisplayName>
+            <Description>The current timestamnp of the system start in UTC </Description>
+            <DataType>
+                <Basic>Timestamp</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetStarted</Identifier>
+        <DisplayName>Get Started</DisplayName>
+        <Description>Get time stamp of system start</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentStarted</Identifier>
+            <DisplayName>Current Started</DisplayName>
+            <Description>The current timestamnp of the system start</Description>
+            <DataType>
+                <Basic>Timestamp</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetStoppedUTC</Identifier>
+        <DisplayName>Get Stopped UTC</DisplayName>
+        <Description>Get time stamp of system stop in UTC</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentStoppedUTC</Identifier>
+            <DisplayName>Current Stopped UTC</DisplayName>
+            <Description>The current timestamnp of the system stop in UTC </Description>
+            <DataType>
+                <Basic>Timestamp</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetStopped</Identifier>
+        <DisplayName>Get Stopped</DisplayName>
+        <Description>Get time stamp of system stop</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentStopped</Identifier>
+            <DisplayName>Current Stopped</DisplayName>
+            <Description>The current timestamnp of the system stop</Description>
+            <DataType>
+                <Basic>Timestamp</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetUserId</Identifier>
+        <DisplayName>Get UserId</DisplayName>
+        <Description>Get User Id of the System</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentUserId</Identifier>
+            <DisplayName>Current User ID</DisplayName>
+            <Description>The current user ID of the system</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetBatchId</Identifier>
+        <DisplayName>Get BatchId</DisplayName>
+        <Description>Get Batch Id of the System</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentBatchId</Identifier>
+            <DisplayName>Current Batch ID</DisplayName>
+            <Description>The current batch ID of the system</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetInoculatedUTC</Identifier>
+        <DisplayName>Get InoculatedUTC</DisplayName>
+        <Description>Get Inoculation time in UTC</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentInoculationUTC</Identifier>
+            <DisplayName>Current InoculationUTC</DisplayName>
+            <Description>The current inoculation time in UTC</Description>
+            <DataType>
+                <Basic>Timestamp</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetInoculated</Identifier>
+        <DisplayName>Get Inoculated</DisplayName>
+        <Description>Get Inoculation time</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentInoculation</Identifier>
+            <DisplayName>Current Inoculation</DisplayName>
+            <Description>The current inoculation time</Description>
+            <DataType>
+                <Basic>Timestamp</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetAvailable</Identifier>
+        <DisplayName>Get Available</DisplayName>
+        <Description>Get System Availability</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentAvailable</Identifier>
+            <DisplayName>Current Available</DisplayName>
+            <Description>The current system availability</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetName</Identifier>
+        <DisplayName>Get Name</DisplayName>
+        <Description>Get System Name</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentName</Identifier>
+            <DisplayName>Current Name</DisplayName>
+            <Description>The current system name</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetVersion</Identifier>
+        <DisplayName>Get Version</DisplayName>
+        <Description>Get System Version</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentVersion</Identifier>
+            <DisplayName>Current Version</DisplayName>
+            <Description>The current system version</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+</Feature>
+

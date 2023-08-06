@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="biovt.mw.tum.de" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>AlarmService</Identifier>
+    <DisplayName>Alarm Service</DisplayName>
+    <Description>
+		Allows full control of the alarms and limits of the flowmeter
+        By Lukas Bromig and Jose de Jesus Pina, Institute of Biochemical Engineering, Technical University of Munich, 02.12.2020
+    </Description>
+    <!-- Alarm Limit  maximum -->
+    <Command>
+        <Identifier>GetAlarmLimitMaximum</Identifier>
+        <DisplayName>Get alarm limit maximum</DisplayName>
+        <Description>The current maximum limit for sensor signal to trigger alarm situation.
+            Value in percentage. Range between 0 and 100</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentAlarmLimitMaximum</Identifier>
+            <DisplayName>Current alarm limit maximum</DisplayName>
+            <Description>Current alarm limit maximum value. In percentage. </Description>
+            <DataType>
+                <Basic>Real</Basic>
+                 <!--
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>100</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>  -->
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetAlarmLimitMaximum</Identifier>
+        <DisplayName>Set alarm limit maximum</DisplayName>
+        <Description>Set maximum limit for sensor to trigger alarm situation</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetAlarmLimitMaximum</Identifier>
+            <DisplayName>Set alarm limit maximum</DisplayName>
+            <Description>
+               Maximum limit for sensor to trigger alarm situation to be set. Value in percentage.
+                Range from 0.00 to 100
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+                 <!--
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>100</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>  -->
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command alarm limit maximum</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>Index pointing to the first byte in the send message for which the alarm limit maximum status applies</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Alarm Limit minimum -->
+    <Command>
+        <Identifier>GetAlarmLimitMinimum</Identifier>
+        <DisplayName>Get alarm limit minimum</DisplayName>
+        <Description>The current minimum limit for sensor signal to trigger alarm situation.
+            Value in percentage. Range between 0,0 and 100,0
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentAlarmLimitMinimum</Identifier>
+            <DisplayName>Current alarm limit minimum</DisplayName>
+            <Description>Current alarm limit minimum. In percentage</Description>
+            <DataType>
+                <Basic>Real</Basic>
+                 <!--
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>100</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>  -->
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetAlarmLimitMinimum</Identifier>
+        <DisplayName>Set alarm limit minimum</DisplayName>
+        <Description>
+            Minimum limit for sensor to trigger alarm situation to be set. Value in percentage.
+                Range from 0.00 to 100.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetAlarmLimitMinimum</Identifier>
+            <DisplayName>Set alarm limit minimum</DisplayName>
+            <Description>
+               Minimum limit for sensor to trigger alarm situation to be set. Value in percentage. Range from 0.00 to 100
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>100</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>-->
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command alarm limit minimum</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>Index pointing to the first byte in the send message for which the alarm limit minimum status applie
+                s</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Alarm mode -->
+    <Command>
+        <Identifier>GetAlarmMode</Identifier>
+        <DisplayName>Get alarm Mode</DisplayName>
+        <Description>Current alarm mode</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentAlarmMode</Identifier>
+            <DisplayName>Current alarm mode</DisplayName>
+            <Description>Current alarm mode</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetAlarmMode</Identifier>
+        <DisplayName>Set alarm mode</DisplayName>
+        <Description>Set the alarm mode</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetAlarmMode</Identifier>
+            <DisplayName>Set alarm mode</DisplayName>
+            <Description>
+                The alarm mode to be set. 255 different mode available to be set.
+            </Description>
+            <DataType>
+                <Basic>Integer</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>255</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set alarm mode</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which the alarm mode status applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Alarm output mode -->
+    <Command>
+        <Identifier>GetAlarmOutputMode</Identifier>
+        <DisplayName>Get alarm output mode</DisplayName>
+        <Description>Alarm release mode during alarm situation.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentAlarmOutputMode</Identifier>
+            <DisplayName>Current alarm output mode</DisplayName>
+            <Description>Current alarm output mode</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetAlarmOutputMode</Identifier>
+        <DisplayName>Set alarm output mode</DisplayName>
+        <Description>Set alarm release activity mode during alarm situation</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetAlarmOutputMode</Identifier>
+            <DisplayName>Set alarm output mode</DisplayName>
+            <Description>
+                The alarm output mode to be set. 255 different settable modes available
+            </Description>
+            <DataType>
+                <Basic>Integer</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>255</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set alarm mode</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>Index pointing to the first byte in the send message for which the alarm mode status applies</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+
+    </Command>
+    <!-- Alarm setpoint mode -->
+    <Command>
+        <Identifier>GetAlarmSetpoint</Identifier>
+        <DisplayName>Get alarm setpoint</DisplayName>
+        <Description>
+            The threshold value or alarm setpoint which triggers an alarm situation
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentAlarmSetpointMode</Identifier>
+            <DisplayName>Current alarm setpoint mode</DisplayName>
+            <Description>Current alarm setpoint mode</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetAlarmSetpoint</Identifier>
+        <DisplayName>Set alarm setpoint</DisplayName>
+        <Description>
+            Set new alarm setpoint which triggers an alarm situation. 255 different settable modes available
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetAlarmSetpoint</Identifier>
+            <DisplayName>Set Alarm Setpoint</DisplayName>
+            <Description>
+                The new alarm setpoint
+            </Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            <!--    <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>255</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set alarm setpint</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>Index pointing to the first byte in the send message for which the alarm setpoint status applies</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+</Feature>

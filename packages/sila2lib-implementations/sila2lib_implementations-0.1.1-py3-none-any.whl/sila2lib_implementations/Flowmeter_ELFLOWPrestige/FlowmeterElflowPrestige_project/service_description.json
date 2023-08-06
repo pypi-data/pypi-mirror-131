@@ -1,0 +1,13 @@
+{
+  "service_name" : "FlowmeterElflowPrestigeService",
+  "service_description": "This is a flowmeter service",
+  "authors"      : "Lukas Bromig and Jose de Jesus Pina",
+  "creation_date" : "20210401",
+  "version" : "1.0",
+  "vendor_url" : "lukas.bromig@tum.de",
+  "SiLA_standard_feature_list" : ["SiLAService", "SimulationController"],
+  "SiLA_feature_list" : ["DeviceService", "MeasurementService"],
+  "communication_port" : "50001",
+  "IP_address" : "127.0.0.1",
+  "hostname" : "localhost"
+}

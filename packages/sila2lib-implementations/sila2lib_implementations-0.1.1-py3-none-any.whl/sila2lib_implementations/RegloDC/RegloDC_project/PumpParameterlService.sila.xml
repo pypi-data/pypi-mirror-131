@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="org.silastandard" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>ParameterControlServicer</Identifier>
+    <DisplayName>Parameter Control Servicer</DisplayName>
+    <Description>
+		Set and retrieve information regarding the parameter settings of the Reglo DC (digital control) pump.
+        Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 15.03.2021.
+    </Description>
+    <Command>
+        <Identifier>SetRPMMode</Identifier>
+        <DisplayName>Set RPM Mode</DisplayName>
+        <Description>
+        Set the pump mode to RPM mode (MODE PUMP% rpm).
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>PumpModeSet</Identifier>
+            <DisplayName>Pump Mode Set</DisplayName>
+            <Description>RPM pump mode successfully set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+          <Identifier>SetFlowRateMode</Identifier>
+          <DisplayName>Set Flow Rate Mode</DisplayName>
+          <Description>
+          Set the pump mode to Flow Rate mode (MODE PUMP% Flow rate).
+          </Description>
+          <Observable>No</Observable>
+          <Response>
+              <Identifier>PumpModeSet</Identifier>
+              <DisplayName>Pump Mode Set</DisplayName>
+              <Description>Flow rate pump mode successfully set.</Description>
+              <DataType>
+                  <Basic>String</Basic>
+              </DataType>
+          </Response>
+    </Command>
+    <Command>
+          <Identifier>SetDispenseVolumeMode</Identifier>
+          <DisplayName>Set Dispense Volume Mode</DisplayName>
+          <Description>
+              Set the pump mode to dispense volume mode (MODE DISP Volume).
+          </Description>
+          <Observable>No</Observable>
+          <Response>
+              <Identifier>PumpModeSet</Identifier>
+              <DisplayName>Pump Mode Set</DisplayName>
+              <Description>Dispense volume pump mode successfully set.</Description>
+              <DataType>
+                  <Basic>String</Basic>
+              </DataType>
+          </Response>
+    </Command>
+    <Command>
+        <Identifier>SetDispenseTimeMode</Identifier>
+        <DisplayName>Set Dispense Time Mode</DisplayName>
+        <Description>
+            Set the pump mode to dispense time mode (MODE DISP Time).
+        </Description>
+        <Observable>No</Observable>
+          <Response>
+              <Identifier>PumpModeSet</Identifier>
+              <DisplayName>Pump Mode Set</DisplayName>
+              <Description>Dispense time pump mode successfully set.</Description>
+              <DataType>
+                  <Basic>String</Basic>
+              </DataType>
+          </Response>
+    </Command>
+    <Command>
+         <Identifier>SetPauseTimeMode</Identifier>
+         <DisplayName>Set Pause Time Mode</DisplayName>
+         <Description>
+             Set the current pump mode to pause-time mode (MODE PAUSE Time).
+         </Description>
+         <Observable>No</Observable>
+         <Response>
+             <Identifier>PumpModeSet</Identifier>
+             <DisplayName>Pump Mode Set</DisplayName>
+             <Description>Pause time pump mode successfully set.</Description>
+             <DataType>
+                 <Basic>String</Basic>
+              </DataType>
+         </Response>
+    </Command>
+    <Command>
+          <Identifier>SetDispenseTimePauseTimeMode</Identifier>
+          <DisplayName>Set Time Mode</DisplayName>
+          <Description>
+          Set the pump mode to dispense time/ pause time mode (DISP Time + PAUSE Time).
+          </Description>
+          <Observable>No</Observable>
+          <Response>
+              <Identifier>PumpModeSet</Identifier>
+              <DisplayName>Pump Mode Set</DisplayName>
+              <Description>Dispense time/ pause time pump mode successfully set.</Description>
+              <DataType>
+                  <Basic>String</Basic>
+              </DataType>
+          </Response>
+     </Command>
+     <Command>
+           <Identifier>SetDispenseVolumePauseTimeMode</Identifier>
+           <DisplayName>Set Dispense Volume Pause Time Mode</DisplayName>
+           <Description>
+           Set the pump mode to dispense volume/ pause time mode (DISP Volume + PAUSE Time).
+           </Description>
+           <Observable>No</Observable>
+           <Response>
+               <Identifier>PumpModeSet</Identifier>
+               <DisplayName>Pump Mode Set</DisplayName>
+               <Description>Dispense volume/ pause time pump mode successfully set.</Description>
+               <DataType>
+                   <Basic>String</Basic>
+               </DataType>
+           </Response>
+    </Command>
+    <Command>
+        <Identifier>GetDispenseVolume</Identifier>
+        <DisplayName>Get Dispense Volume</DisplayName>
+        <Description>Get the current setting for the dispensing volume in mL/min.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>DispenseVolume</Identifier>
+            <DisplayName>Dispense Volume</DisplayName>
+            <Description>Current setting for the dispensing volume in mL/min.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetDispenseVolume</Identifier>
+        <DisplayName>Set Dispense Volume</DisplayName>
+        <Description>
+        Set the dispensing volume in mL.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Volume</Identifier>
+            <DisplayName>Volume</DisplayName>
+            <Description>
+                The volume to be set in mL.
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>VolumeSet</Identifier>
+            <DisplayName>Volume Set</DisplayName>
+            <Description>Volume successfully set</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetDispenseVolumeModeVolume</Identifier>
+        <DisplayName>Set Dispense Volume Mode Volume</DisplayName>
+        <Description>
+        Set the dispensing volume for the mode DISP Volume in mL (The entered dispensing volume is rounded down to complete roller steps).
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Volume</Identifier>
+            <DisplayName>Volume</DisplayName>
+            <Description>
+                The dispensing volume  to be set in mL for mode DISP Volume.
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>VolumeSet</Identifier>
+            <DisplayName>Volume Set</DisplayName>
+            <Description>Volume successfully set</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>GetFlowRate</Identifier>
+        <DisplayName>Get Flow Rate</DisplayName>
+        <Description>Get current flow rate (mL/min).</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentFlowRate</Identifier>
+            <DisplayName>Current Flow Rate</DisplayName>
+            <Description>Current flow rate of the pump.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetFlowRate</Identifier>
+        <DisplayName>Set Flow Rate</DisplayName>
+        <Description>Set current flow rate (mL/min).</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>FlowRate</Identifier>
+            <DisplayName>Flow Rate</DisplayName>
+            <Description>
+                Set flow rate in mL/min.
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SetFlowRateSet</Identifier>
+            <DisplayName>Set Flow Rate</DisplayName>
+            <Description>Flow rate in mL/min successfully set</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetRPM</Identifier>
+        <DisplayName>Get RPM</DisplayName>
+        <Description>Get current rpm.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentRPM</Identifier>
+            <DisplayName>Current RPM</DisplayName>
+            <Description>Current rpm of the pump.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetRPM</Identifier>
+        <DisplayName>Set RPM</DisplayName>
+        <Description>Set pump speed in rpm (100 - 10000 (4 channel type); 160 - 16000 (2 channel type)).</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>RPM</Identifier>
+            <DisplayName>RPM</DisplayName>
+            <Description>
+                Set pump speed in rpm (0.1 - 1000 (4 channel type); 0.16 - 1600 (2 channel type)).
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SetRPMSet</Identifier>
+            <DisplayName>Set RPM</DisplayName>
+            <Description>RPM successfully set</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetPauseTime</Identifier>
+        <DisplayName>Get Pause Time</DisplayName>
+        <Description>Get pause time in s.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentPauseTime</Identifier>
+            <DisplayName>Current Pause Pause Time</DisplayName>
+            <Description>Current pause time in s.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetPauseTime</Identifier>
+        <DisplayName>Set Pause Time</DisplayName>
+        <Description>Set pause time in s, min, and h.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>PauseTimeS</Identifier>
+            <DisplayName>Pause Time S</DisplayName>
+            <Description>
+                Set pumping pause time in s. (0 - 999.9).
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>PauseTimeMin</Identifier>
+            <DisplayName>Pause Time Min</DisplayName>
+            <Description>
+                Set pumping pause time in min. (0 - 899).
+            </Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>PauseTimeH</Identifier>
+            <DisplayName>Pause Time H</DisplayName>
+            <Description>
+                Set pumping pause time in H. (0 - 999).
+            </Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SetPauseTimeSet</Identifier>
+            <DisplayName>Set Pause Time</DisplayName>
+            <Description>Pumping pause time successfully set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetDispenseCycles</Identifier>
+        <DisplayName>Get Dispense Cycle</DisplayName>
+        <Description>Get number of dispense cycles.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>DispenseCycles</Identifier>
+            <DisplayName>Dispense Cycles</DisplayName>
+            <Description>Number of dispense cycles.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetDispenseCycles</Identifier>
+        <DisplayName>Set Dispense Cycles</DisplayName>
+        <Description>Set number of dispensing cycles (integer).</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>DispenseCycles</Identifier>
+            <DisplayName>Dispense Cycles</DisplayName>
+            <Description>
+                The number of dispense cycles to be set.
+            </Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SetDispenseCycleSet</Identifier>
+            <DisplayName>Set Dispense Cycle</DisplayName>
+            <Description>Number of dispense cycles successfully set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetDispenseTime</Identifier>
+        <DisplayName>Get Dispense Time</DisplayName>
+        <Description>Get the time to dispense in s.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentDispenseTime</Identifier>
+            <DisplayName>CurrentDispenseTime</DisplayName>
+            <Description>CurrentDispenseTime in s.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetDispenseTime</Identifier>
+        <DisplayName>Set Dispense Time</DisplayName>
+        <Description>Set the time to dispense in s, min, and h.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>CurrentDispenseTimeS</Identifier>
+            <DisplayName>Current Dispense Time S</DisplayName>
+            <Description>Current dispense time in s (0 - 999).</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>CurrentDispenseTimeMin</Identifier>
+            <DisplayName>Current Dispense Time Min</DisplayName>
+            <Description>Current dispense time in min (0 - 899).</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>CurrentDispenseTimeH</Identifier>
+            <DisplayName>Current Dispense Time H</DisplayName>
+            <Description>Current dispense time in h (0 - 999).</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SetDispenseTimeSet</Identifier>
+            <DisplayName>Set Dispense Time S</DisplayName>
+            <Description>The dispense time in s was set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetRollerSteps</Identifier>
+        <DisplayName>Get Roller Steps</DisplayName>
+        <Description>Get roller steps for mode DISP Volume.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentRollerSteps</Identifier>
+            <DisplayName>Current Roller Steps</DisplayName>
+            <Description>Current roller steps for mode DISP Volume.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetRollerSteps</Identifier>
+        <DisplayName>Set Roller Steps</DisplayName>
+        <Description>Set the roller steps for mode DISP Volume.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>CurrentRollerSteps</Identifier>
+            <DisplayName>Current Roller Steps</DisplayName>
+            <Description>Current roller steps for mode DISP Volume.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SetRollerStepsSet</Identifier>
+            <DisplayName>Set Current Roller Steps Set</DisplayName>
+            <Description>The set roller steps for mode DISP Volume.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetRollerStepVolume</Identifier>
+        <DisplayName>Get Roller Step Volume</DisplayName>
+        <Description>Get roller step volume in nano-liters (nL).</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentRollerStepVolume</Identifier>
+            <DisplayName>Current Roller Step Volume</DisplayName>
+            <Description>Current roller step volume in nano-liters (nL).</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetRollerStepVolume</Identifier>
+        <DisplayName>Set Roller Step Volume</DisplayName>
+        <Description>Set the roller step volume in nano-liters (nL).</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>CurrentRollerStepVolume</Identifier>
+            <DisplayName>Current Roller Step Volume</DisplayName>
+            <Description>Current roller step volume in nano-liters (nL).</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SetRollerStepVolumeSet</Identifier>
+            <DisplayName>Set Current Roller Step Volume Set</DisplayName>
+            <Description>The set roller step volume in nano-liters (nL).</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>ResetRollerStepVolume</Identifier>
+        <DisplayName>Reset Roller Step Volume</DisplayName>
+        <Description>Reset the roller step volume back to default.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>ResetRollerStepVolumeSet</Identifier>
+            <DisplayName>Reset Current Roller Step Volume Set</DisplayName>
+            <Description>The roller step volume is set to default.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetRollerBackSteps</Identifier>
+        <DisplayName>Get Roller Back Steps</DisplayName>
+        <Description>Get roller back-steps (0 - 100).</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentRollerBackSteps</Identifier>
+            <DisplayName>Current Roller Back Step</DisplayName>
+            <Description>Current roller back-steps (0 - 100).</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetRollerBackSteps</Identifier>
+        <DisplayName>Set Roller Back Steps</DisplayName>
+        <Description>Set the roller back-steps (1 - 100).</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>RollerBackSteps</Identifier>
+            <DisplayName>Roller Back Step</DisplayName>
+            <Description>The roller back-steps to be set (0 - 100).</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SetRollerBackStepsSet</Identifier>
+            <DisplayName>Set Current Roller Back Steps Set</DisplayName>
+            <Description>The set roller back-steps (0 - 100).</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SaveApplicationParameters</Identifier>
+        <DisplayName>Save Application Parameters</DisplayName>
+        <Description>Save changes made to the application parameters in this feature.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>SaveResponse</Identifier>
+            <DisplayName>Save Response</DisplayName>
+            <Description>The response of this command</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetTubingDiameter</Identifier>
+        <DisplayName>Get Tubing Diameter</DisplayName>
+        <Description>Get the inside diameter of the tubing in mm. Response 0.00 = rpm-Mode.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentTubingDiameter</Identifier>
+            <DisplayName>Current Tubing Diameter</DisplayName>
+            <Description>Current the inside diameter of the tubing in mm.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetTubingDiameter</Identifier>
+        <DisplayName>Set Tubing Inside Diameter Value</DisplayName>
+        <Description>
+        Set the inside diameter of the tubing in mm.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>TubingDiameter</Identifier>
+            <DisplayName>Tubing Diameter</DisplayName>
+            <Description>
+                The inside diameter of the tubing in mm. (must be one of following list:
+                [0.13,0.19,0.25,0.38,0.44,0.51,0.57,0.64,0.76,0.89,0.95,1.02,1.09,1.14,1.22,1.3,1.42,1.52,1.65,1.75,1.85,2.06,2.29,2.54,2.79,3.17])
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>TubingDiameterSet</Identifier>
+            <DisplayName>Tubing Diameter Set</DisplayName>
+            <Description>Tubing Diameter succeeded to Set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+	</Command>
+</Feature>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="org.silastandard" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_base/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>DeviceServicer</Identifier>
+    <DisplayName>Device Servicer</DisplayName>
+    <Description>
+        General device settings can be retrieved and changed within this function. 
+        By Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 20.05.2019
+    </Description>
+    <Property>
+        <Identifier>CurrentStatus</Identifier>
+        <DisplayName>Current Status</DisplayName>
+        <Description>Get the current status of the device from the internal state machine of the SiLA server.</Description>
+        <Observable>Yes</Observable>
+        <DataType>
+            <Basic>String</Basic>
+        </DataType>
+    </Property>
+    <Command>
+        <Identifier>GetLog</Identifier>
+        <DisplayName>Get Log</DisplayName>
+        <Description>Get the current status of the device from the state machine of the SiLA server.</Description>
+        <Observable>Yes</Observable>
+        <Response>
+            <Identifier>CurrentLogLevel</Identifier>
+            <DisplayName>Current Log Level</DisplayName>
+            <Description>The current log level of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentLogTimestamp</Identifier>
+            <DisplayName>Current Log Timestamp</DisplayName>
+            <Description>The current log timestamp of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>Timestamp</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentLogMessage</Identifier>
+            <DisplayName>Current Log Level</DisplayName>
+            <Description>The current log level of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetKeyLockMode</Identifier>
+        <DisplayName>Set Key Lock Mode</DisplayName>
+        <Description>
+        Set the lock mode of the keyboard lock. 
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>KeyLockMode</Identifier>
+            <DisplayName>Key Lock Mode</DisplayName>
+            <Description>
+                The lock mode of the keyboard lock. 0=free/1=locked.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>String</Basic>
+                    </DataType>
+					<Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>KeyLockModeSet</Identifier>
+            <DisplayName>Key Lock Mode Set</DisplayName>
+            <Description>Mode of the keyboard lock succeeded to Set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+		<DefinedExecutionErrors>
+            <Identifier>ModeKeyLockInvalidInput</Identifier>
+        </DefinedExecutionErrors>
+	</Command>	
+	<Command>
+        <Identifier>GetKeyLockMode</Identifier>
+        <DisplayName>Get Key Lock MOde</DisplayName>
+        <Description>Get mode of the keyboard lock feature. 0=unlocked, 1=locked.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentKeyLockMode</Identifier>
+            <DisplayName>Current Key Lock Mode</DisplayName>
+            <Description>Current mode of the keyboard lock feature. 0=unlocked, 1=locked.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>	
+	</Command>	
+    <Command>
+        <Identifier>StartThermostat</Identifier>
+        <DisplayName>Start The Thermostat</DisplayName>
+        <Description>
+        Starts the thermostat out of stand-by mode. 
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Start</Identifier>
+            <DisplayName>Start</DisplayName>
+            <Description>
+                Boolean that defines wether system is started or not. User input 0 = no start, 1 = start up.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>String</Basic>
+                    </DataType>
+					<Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>StartStatus</Identifier>
+            <DisplayName>Start Status</DisplayName>
+            <Description>Start of thermostat succeeded.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>StartInvalidInput</Identifier>
+        </DefinedExecutionErrors>
+	</Command>	
+    <Command>
+        <Identifier>StopThermostat</Identifier>
+        <DisplayName>Stop Thermostat</DisplayName>
+        <Description>
+        Stops the thermostat and puts it into stand-by mode. 
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Stop</Identifier>
+            <DisplayName>Stop</DisplayName>
+            <Description>
+                Boolean that defines wether system is shut down or not. 
+                User input 0 = no shut-down, 1 = shut-down.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>String</Basic>
+                    </DataType>
+					<Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>StopStatus</Identifier>
+            <DisplayName>Stop Status</DisplayName>
+            <Description>Shut-down of thermostat succeeded.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>StopInvalidInput</Identifier>
+        </DefinedExecutionErrors>
+	</Command>
+    <Command>
+        <Identifier>GetDeviceStatus</Identifier>
+        <DisplayName>Get Device Status</DisplayName>
+        <Description>
+			Get the device status. 0 = status ok/ 1 = malfunction.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>DeviceStatus</Identifier>
+            <DisplayName>Device Status</DisplayName>
+            <Description>The device status. 0 = status ok/ 1 = malfunction.</Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>String</Basic>
+                    </DataType>
+					<Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>	
+		<Response>
+			<Identifier>CurrentDeviceStatus</Identifier>
+			<DisplayName>Current Device Status</DisplayName>
+			<Description>Current device status query. 0 = status ok/ 1 = malfunction.</Description>
+			<DataType>
+				<Basic>String</Basic>
+			</DataType>
+		</Response>
+	</Command>
+	<Command>
+        <Identifier>GetDeviceStatusDiagnosis</Identifier>
+        <DisplayName>Get Device Status Diagnosis</DisplayName>
+        <Description>
+		Get the device status malfunction diagnosis. String of form XXXXXXX; 0=no malfunction,1=malfunction. 
+		For X1 = Error, X2-X4 = unassigned, X5 = sublevel, X6-X7 = unassigned.
+		</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>DeviceStatusDiagnosis</Identifier>
+            <DisplayName>Device Status Diagnosis</DisplayName>
+            <Description>
+                The device status malfunction diagnosis. String of form XXXXXXX; 0=no malfunction,1=malfunction. 
+				For X1 = Error, X2-X4 = unassigned, X5 = sublevel, X6-X7 = unassigned.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>String</Basic>
+                    </DataType>
+					<Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>		
+		<Response>
+			<Identifier>CurrentDeviceStatusDiagnosis</Identifier>
+			<DisplayName>Current Device Status Diagnosis</DisplayName>
+			<Description>
+			Current device status malfunction diagnosis. String of form XXXXXXX; 0=no malfunction,1=malfunction. 
+			For X1 = Error, X2-X4 = unassigned, X5 = sublevel, X6-X7 = unassigned.
+			</Description>
+			<DataType>
+				<Basic>String</Basic>
+			</DataType>
+		</Response>
+	</Command>
+	<Command>
+        <Identifier>GetPowerStatus</Identifier>
+        <DisplayName>Get Power Status</DisplayName>
+        <Description>Get power/standby mode. 0=On, 1=Off/Standby.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentPowerStatus</Identifier>
+            <DisplayName>Current Power Status</DisplayName>
+            <Description>Current power/standby mode. 0=On, 1=Off/Standby.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <DefinedExecutionError>
+        <Identifier>ModeKeyLockInvalidInput</Identifier>
+        <DisplayName>Invalid user input error</DisplayName>
+        <Description>The input value for keybord lock mode must be boolean. Use 0 or 1 to set. Error_6</Description>
+    </DefinedExecutionError>
+    <DefinedExecutionError>
+        <Identifier>StartInvalidInput</Identifier>
+        <DisplayName>Invalid user input error</DisplayName>
+        <Description>The input value for START must be either "y" or "n". Error_3</Description>
+    </DefinedExecutionError>
+    <DefinedExecutionError>
+        <Identifier>StopInvalidInput</Identifier>
+        <DisplayName>Invalid user input error</DisplayName>
+        <Description>The input value for STOP must be either "y" or "n". Error_3</Description>
+    </DefinedExecutionError>
+	<Property>
+        <Identifier>CurrentSoftwareVersion</Identifier>
+        <DisplayName>Current Software Version</DisplayName>
+        <Description>Get thermostat software version. Response is string. </Description>
+        <Observable>No</Observable>
+		<DataType>
+			<Basic>String</Basic>
+		</DataType>
+    </Property>
+</Feature>
+

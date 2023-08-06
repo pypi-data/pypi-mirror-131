@@ -1,0 +1,2 @@
+Device;Device Name;Server File Name;Client File Name;IP;Port;required COM/USB ports;baudrate;parity;stopbits;bytesize;timeout
+Presens;PresensService; PresensService_server;PresensService_client;127.0.0.1; 50002 ;'COM12', 'COM13', 'COM14', 'COM15', 'COM7', 'COM8' ; 115200 ; serial.PARITY_NONE; serial.STOPBITS_ONE; serial.EIGHTBITS; 0.1

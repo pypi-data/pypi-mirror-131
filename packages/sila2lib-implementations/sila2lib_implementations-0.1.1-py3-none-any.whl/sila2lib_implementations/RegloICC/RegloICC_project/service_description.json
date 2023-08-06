@@ -1,0 +1,26 @@
+{
+  "service_name" : "RegloICCService",
+  "service_description": "This is a RegloICC Service",
+  "authors"      : "Lukas Bromig",
+  "creation_date" : "20200416",
+  "version" : "1.0",
+  "vendor_url" : "",
+  "SiLA_standard_feature_list" : ["SiLAService", "SimulationController"],
+  "SiLA_feature_list" : ["CalibrationServicer","ConfigurationServicer","DeviceServicer", "DriveControlServicer","ParameterControlServicer"],
+  "communication_port": "50001",
+  "IP_address" : "127.0.0.1",
+  "hostname" : "localhost"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

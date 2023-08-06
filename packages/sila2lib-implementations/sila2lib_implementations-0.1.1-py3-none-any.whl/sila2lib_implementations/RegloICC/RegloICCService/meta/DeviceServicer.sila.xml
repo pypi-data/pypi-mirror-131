@@ -1,0 +1,1914 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="org.silastandard" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>DeviceServicer</Identifier>
+    <DisplayName>Device Servicer</DisplayName>
+    <Description>
+        General device software and hardware information can be retrieved and changed within this function.
+        By Valeryia Sidarava, Institute of Biochemical Engineering, Technical University of Munich, 31.07.2019 and
+        Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 15.04.2020
+    </Description>
+    <Property>
+        <Identifier>CurrentStatus</Identifier>
+        <DisplayName>Current Status</DisplayName>
+        <Description>Get the current status of the device from the internal state machine of the SiLA server.</Description>
+        <Observable>Yes</Observable>
+        <DataType>
+            <Basic>String</Basic>
+        </DataType>
+    </Property>
+    <Command>
+        <Identifier>GetLog</Identifier>
+        <DisplayName>Get Log</DisplayName>
+        <Description>Get the current status of the device from the state machine of the SiLA server.</Description>
+        <Observable>Yes</Observable>
+        <Response>
+            <Identifier>CurrentLogLevel</Identifier>
+            <DisplayName>Current Log Level</DisplayName>
+            <Description>The current log level of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentLogTimestamp</Identifier>
+            <DisplayName>Current Log Timestamp</DisplayName>
+            <Description>The current log timestamp of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>Timestamp</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentLogMessage</Identifier>
+            <DisplayName>Current Log Level</DisplayName>
+            <Description>The current log level of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetPumpAddress</Identifier>
+        <DisplayName>Set Pump Address</DisplayName>
+        <Description>
+          Set the address of the pump (1-8).
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Address</Identifier>
+            <DisplayName>Address</DisplayName>
+            <Description>
+                Set the address of the pump (1-8).
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+				        <Constraints>
+                </Constraints>
+              </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+          <Identifier>PumpAddressSet</Identifier>
+          <DisplayName>Pump Address Set</DisplayName>
+          <Description>Pump Address succeeded to Set.</Description>
+          <DataType>
+              <Basic>String</Basic>
+          </DataType>
+        </Response>
+  </Command>
+    <Command>
+        <Identifier>SetLanguage</Identifier>
+        <DisplayName>Set Language</DisplayName>
+        <Description>
+          Set the language of the pump.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Address</Identifier>
+            <DisplayName>Address</DisplayName>
+            <Description>
+                Gets the pump, on which the command will be executed
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>Language</Identifier>
+            <DisplayName>Language</DisplayName>
+            <Description>
+                The language of the pump. 0=English / 1=French / 2=Spanish / 3=German.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+				        <Constraints>
+                </Constraints>
+              </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+          <Identifier>LanguageSet</Identifier>
+          <DisplayName>Language Set</DisplayName>
+          <Description>Language of the pump succeeded to Set.</Description>
+          <DataType>
+              <Basic>String</Basic>
+          </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>LanguageInvalidInput</Identifier>
+        </DefinedExecutionErrors>
+  </Command>
+	<Command>
+        <Identifier>GetLanguage</Identifier>
+        <DisplayName>Get Language</DisplayName>
+        <Description>Get The language of the pump. 0=English / 1=French / 2=Spanish / 3=German.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Address</Identifier>
+            <DisplayName>Address</DisplayName>
+            <Description>
+                Set the address of the pump (1-8).
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+				        <Constraints>
+                </Constraints>
+              </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentLanguage</Identifier>
+            <DisplayName>Current Language</DisplayName>
+            <Description>Current language of the pump. 0=English / 1=French / 2=Spanish / 3=German.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+  </Command>
+  <Command>
+      <Identifier>GetPumpStatus</Identifier>
+      <DisplayName>Get Pump Status</DisplayName>
+      <Description>Get pump status. +=running, -=stopped/standby.</Description>
+      <Observable>No</Observable>
+      <Parameter>
+          <Identifier>Address</Identifier>
+          <DisplayName>Address</DisplayName>
+          <Description>
+              Set the address of the pump (1-8).
+          </Description>
+          <DataType>
+              <Constrained>
+                  <DataType>
+                      <Basic>Integer</Basic>
+                  </DataType>
+              <Constraints>
+              </Constraints>
+            </Constrained>
+          </DataType>
+      </Parameter>
+      <Response>
+          <Identifier>CurrentPumpStatus</Identifier>
+          <DisplayName>Current Pump Status</DisplayName>
+          <Description>Current pump status. +=running, -=stopped/standby.</Description>
+          <DataType>
+              <Basic>String</Basic>
+          </DataType>
+      </Response>
+  </Command>
+	<Command>
+      <Identifier>GetVersionType</Identifier>
+      <DisplayName>Get Version Type</DisplayName>
+      <Description>Get pump information. Response is string of model description (variable length), software version (3 digits) and pump head model type code (3 digits). </Description>
+      <Observable>No</Observable>
+      <Parameter>
+          <Identifier>Address</Identifier>
+          <DisplayName>Address</DisplayName>
+          <Description>
+              Set the address of the pump (1-8).
+          </Description>
+          <DataType>
+              <Constrained>
+                  <DataType>
+                      <Basic>Integer</Basic>
+                  </DataType>
+              <Constraints>
+              </Constraints>
+            </Constrained>
+          </DataType>
+      </Parameter>
+      <Response>
+          <Identifier>CurrentVersionType</Identifier>
+          <DisplayName>Current Version Type</DisplayName>
+          <Description>Current pump information. Response is string of model description (variable length), software version (3 digits) and pump head model type code (3 digits). </Description>
+          <DataType>
+              <Basic>String</Basic>
+          </DataType>
+      </Response>
+  </Command>
+	<Command>
+        <Identifier>CurrentVersionSoftware</Identifier>
+        <DisplayName>Current Version Software</DisplayName>
+        <Description>Get pump software version. Response is string. </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Address</Identifier>
+            <DisplayName>Address</DisplayName>
+            <Description>
+                Set the address of the pump (1-8).
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+				        <Constraints>
+                </Constraints>
+              </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentVersionSoftware</Identifier>
+            <DisplayName>Current Version Software</DisplayName>
+            <Description>Current pump software version. Response is string. </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>GetSerialNumber</Identifier>
+        <DisplayName>Get Serial Number</DisplayName>
+        <Description>Get pump serial number. </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Address</Identifier>
+            <DisplayName>Address</DisplayName>
+            <Description>
+                Set the address of the pump (1-8).
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+				        <Constraints>
+                </Constraints>
+              </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SerialNumber</Identifier>
+            <DisplayName>Serial Number</DisplayName>
+            <Description>Pump serial number query. </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetChannelAddressing</Identifier>
+        <DisplayName>Set Channel Addressing</DisplayName>
+        <Description>
+          Set whether (1) or not (0) channel addressing is enabled.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Address</Identifier>
+            <DisplayName>Address</DisplayName>
+            <Description>
+                Gets the pump, on which the command will be executed
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>ChannelAddressing</Identifier>
+            <DisplayName>Channel Addressing</DisplayName>
+            <Description>
+                Set whether (1) or not (0) channel addressing is enabled.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Boolean</Basic>
+                    </DataType>
+				        <Constraints>
+                </Constraints>
+              </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+          <Identifier>ChannelAddressingSet</Identifier>
+          <DisplayName>Channel Addressing Set</DisplayName>
+          <Description>Channel Addressing of the pump succeeded to Set.</Description>
+          <DataType>
+              <Basic>String</Basic>
+          </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>ChannelAddressingInvalidInput</Identifier>
+          </DefinedExecutionErrors>
+  </Command>
+	<Command>
+        <Identifier>GetChannelAddressing</Identifier>
+        <DisplayName>Get Channel Addressing</DisplayName>
+        <Description>Get information whether (1) or not (0) channel addressing is enabled. </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Address</Identifier>
+            <DisplayName>Address</DisplayName>
+            <Description>
+                Set the address of the pump (1-8).
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+				        <Constraints>
+                </Constraints>
+              </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>ChannelAddressing</Identifier>
+            <DisplayName>Channel Addressing</DisplayName>
+            <Description>Information whether or not channel addressing is enabled String of form XXXXXXX; 0=disabled,1=enabled. </Description>
+            <DataType>
+                <Basic>Boolean</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetEventMessages</Identifier>
+        <DisplayName>Set Event Messages</DisplayName>
+        <Description>
+          Set whether (1) or not (0) event messages are enabled.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Address</Identifier>
+            <DisplayName>Address</DisplayName>
+            <Description>
+                Gets the pump, on which the command will be executed
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>EventMessages</Identifier>
+            <DisplayName>Event Messages</DisplayName>
+            <Description>
+                Set whether (1) or not (0) event messages are enabled.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Boolean</Basic>
+                    </DataType>
+				        <Constraints>
+                </Constraints>
+              </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+          <Identifier>EventMessagesSet</Identifier>
+          <DisplayName>Event Messages Set</DisplayName>
+          <Description>Event Messages of the pump succeeded to Set.</Description>
+          <DataType>
+              <Basic>String</Basic>
+          </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>EventMessagesInvalidInput</Identifier>
+        </DefinedExecutionErrors>
+  </Command>
+    <Command>
+          <Identifier>GetEventMessages</Identifier>
+          <DisplayName>Get Event Messages</DisplayName>
+          <Description>Get information whether (1) or not (0) event messages are enabled. </Description>
+          <Observable>No</Observable>
+          <Parameter>
+              <Identifier>Address</Identifier>
+              <DisplayName>Address</DisplayName>
+              <Description>
+                  Set the address of the pump (1-8).
+              </Description>
+              <DataType>
+                  <Constrained>
+                      <DataType>
+                          <Basic>Integer</Basic>
+                      </DataType>
+  				        <Constraints>
+                  </Constraints>
+                </Constrained>
+              </DataType>
+          </Parameter>
+          <Response>
+              <Identifier>EventMessages</Identifier>
+              <DisplayName>Event Messages</DisplayName>
+              <Description>information whether or not event messages are enabled; 0=disabled,1=enabled. </Description>
+              <DataType>
+                  <Basic>Boolean</Basic>
+              </DataType>
+          </Response>
+      </Command>
+      <Command>
+            <Identifier>GetSerialProtocol</Identifier>
+            <DisplayName>Get Serial Protocol</DisplayName>
+            <Description>Get an integer representing the version of the serial protocol. </Description>
+            <Observable>No</Observable>
+            <Parameter>
+                <Identifier>Address</Identifier>
+                <DisplayName>Address</DisplayName>
+                <Description>
+                    Set the address of the pump (1-8).
+                </Description>
+                <DataType>
+                    <Constrained>
+                        <DataType>
+                            <Basic>Integer</Basic>
+                        </DataType>
+    				        <Constraints>
+                    </Constraints>
+                  </Constrained>
+                </DataType>
+            </Parameter>
+            <Response>
+                <Identifier>SerialProtocol</Identifier>
+                <DisplayName>Serial Protocol</DisplayName>
+                <Description>Integer representing the version of the serial protocol. </Description>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+            </Response>
+        </Command>
+        <Command>
+            <Identifier>SetPumpName</Identifier>
+            <DisplayName>Set Pump Name</DisplayName>
+            <Description>
+              Set pump name for display under remote control string.
+            </Description>
+            <Observable>No</Observable>
+            <Parameter>
+                <Identifier>Address</Identifier>
+                <DisplayName>Address</DisplayName>
+                <Description>
+                    Gets the address, on which the command will be executed
+                </Description>
+                <DataType>
+                    <Constrained>
+                        <DataType>
+                            <Basic>Integer</Basic>
+                        </DataType>
+                        <Constraints>
+                        </Constraints>
+                    </Constrained>
+                </DataType>
+            </Parameter>
+            <Parameter>
+                <Identifier>PumpName</Identifier>
+                <DisplayName>Pump Name</DisplayName>
+                <Description>
+                    Set pump name for display under remote control string.
+                </Description>
+                <DataType>
+                    <Constrained>
+                        <DataType>
+                            <Basic>String</Basic>
+                        </DataType>
+    				        <Constraints>
+                    </Constraints>
+                  </Constrained>
+                </DataType>
+            </Parameter>
+            <Response>
+              <Identifier>PumpNameSet</Identifier>
+              <DisplayName>Pump Name Set</DisplayName>
+              <Description>Pump Name succeeded to Set.</Description>
+              <DataType>
+                  <Basic>String</Basic>
+              </DataType>
+            </Response>
+      </Command>
+      <Command>
+            <Identifier>GetChannelNumber</Identifier>
+            <DisplayName>Get ChannelNumber</DisplayName>
+            <Description>Get number of pump channels. </Description>
+            <Observable>No</Observable>
+            <Parameter>
+                <Identifier>Address</Identifier>
+                <DisplayName>Address</DisplayName>
+                <Description>
+                    Set the address of the pump (1-8).
+                </Description>
+                <DataType>
+                    <Constrained>
+                        <DataType>
+                            <Basic>Integer</Basic>
+                        </DataType>
+    				        <Constraints>
+                    </Constraints>
+                  </Constrained>
+                </DataType>
+            </Parameter>
+            <Response>
+                <Identifier>ChannelNumber</Identifier>
+                <DisplayName>Channel Number</DisplayName>
+                <Description>Number of pump channels </Description>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+            </Response>
+      </Command>
+      <Command>
+          <Identifier>SetChannelNumber</Identifier>
+          <DisplayName>Set Channel Number</DisplayName>
+          <Description>
+            Set number of pump channels.
+          </Description>
+          <Observable>No</Observable>
+          <Parameter>
+              <Identifier>Address</Identifier>
+              <DisplayName>Address</DisplayName>
+              <Description>
+                  Gets the pump, on which the command will be executed
+              </Description>
+              <DataType>
+                  <Constrained>
+                      <DataType>
+                          <Basic>Integer</Basic>
+                      </DataType>
+                      <Constraints>
+                      </Constraints>
+                  </Constrained>
+              </DataType>
+          </Parameter>
+          <Parameter>
+              <Identifier>ChannelNumber</Identifier>
+              <DisplayName>Channel Number</DisplayName>
+              <Description>
+                  Set number of pump channels.
+              </Description>
+              <DataType>
+                  <Constrained>
+                      <DataType>
+                          <Basic>Integer</Basic>
+                      </DataType>
+                  <Constraints>
+                  </Constraints>
+                </Constrained>
+              </DataType>
+          </Parameter>
+          <Response>
+            <Identifier>ChannelNumberSet</Identifier>
+            <DisplayName>Channel Number Set</DisplayName>
+            <Description>Channel Number succeeded to Set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+          </Response>
+    </Command>
+    <Command>
+        <Identifier>GetRevolutions</Identifier>
+        <DisplayName>Get Revolutions</DisplayName>
+        <Description>Get total number of revolutions. </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Channel</Identifier>
+            <DisplayName>Channel</DisplayName>
+            <Description>Channel
+              </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                <Constraints>
+                </Constraints>
+              </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Revolutions</Identifier>
+            <DisplayName>Revolutions</DisplayName>
+            <Description>Get total number of revolutions </Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+          <Identifier>GetChannelTotalVolume</Identifier>
+          <DisplayName>Get Channel Total Volume</DisplayName>
+          <Description>Get channel total volume pumped since last reset, mL. </Description>
+          <Observable>No</Observable>
+          <Parameter>
+              <Identifier>Channel</Identifier>
+              <DisplayName>Channel</DisplayName>
+              <Description>Channel
+                </Description>
+              <DataType>
+                  <Constrained>
+                      <DataType>
+                          <Basic>Real</Basic>
+                      </DataType>
+                  <Constraints>
+                  </Constraints>
+                </Constrained>
+              </DataType>
+          </Parameter>
+          <Response>
+              <Identifier>ChannelTotalVolume</Identifier>
+              <DisplayName>Channel Total Volume</DisplayName>
+              <Description>Channel total volume pumped since last reset, mL </Description>
+              <DataType>
+                  <Basic>Real</Basic>
+              </DataType>
+          </Response>
+    </Command>
+    <Command>
+          <Identifier>GetTotalTime</Identifier>
+          <DisplayName>Get Total Time</DisplayName>
+          <Description>Get total time pumped for a channel since last reset, mL. </Description>
+          <Observable>No</Observable>
+          <Parameter>
+              <Identifier>Channel</Identifier>
+              <DisplayName>Channel</DisplayName>
+              <Description>Channel
+                </Description>
+              <DataType>
+                  <Constrained>
+                      <DataType>
+                          <Basic>Integer</Basic>
+                      </DataType>
+                  <Constraints>
+                  </Constraints>
+                </Constrained>
+              </DataType>
+          </Parameter>
+          <Response>
+              <Identifier>TotalTime</Identifier>
+              <DisplayName>Total Time</DisplayName>
+              <Description>Get total time pumped for a channel since last reset, mL.</Description>
+              <DataType>
+                  <Basic>Integer</Basic>
+              </DataType>
+          </Response>
+    </Command>
+    <Command>
+          <Identifier>GetHeadModel</Identifier>
+          <DisplayName>Get Head Model</DisplayName>
+          <Description>Get pump head model type code indicating the ID number of the pump head. The first two digits encode the number of channels on the head, and the second 2 digits represent the number of rollers. </Description>
+          <Observable>No</Observable>
+          <Parameter>
+              <Identifier>Address</Identifier>
+              <DisplayName>Address</DisplayName>
+              <Description>
+                  Set the address of the pump (1-8).
+              </Description>
+              <DataType>
+                  <Constrained>
+                      <DataType>
+                          <Basic>Integer</Basic>
+                      </DataType>
+                  <Constraints>
+                  </Constraints>
+                </Constrained>
+              </DataType>
+          </Parameter>
+          <Response>
+              <Identifier>HeadModel</Identifier>
+              <DisplayName>Head Model</DisplayName>
+              <Description>Get pump head model type code indicating the ID number of the pump head. The first two digits encode the number of channels on the head, and the second 2 digits represent the number of rollers.</Description>
+              <DataType>
+                  <Basic>String</Basic>
+              </DataType>
+          </Response>
+    </Command>
+    <Command>
+        <Identifier>SetHeadModel</Identifier>
+        <DisplayName>Set Head Model</DisplayName>
+        <Description>
+          Set pump head model type code up to 4 digits indicating the ID number of the pump head. The first two digits encode the number of channels on the head, and the second 2 digits represent the number of rollers
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Address</Identifier>
+            <DisplayName>Address</DisplayName>
+            <Description>
+                Gets the pump, on which the command will be executed
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>HeadModel</Identifier>
+            <DisplayName>Head Model</DisplayName>
+            <Description>
+                Set pump head model type code indicating the ID number of the pump head. The first two digits encode the number of channels on the head, and the second 2 digits represent the number of rollers
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>String</Basic>
+                    </DataType>
+                <Constraints>
+                </Constraints>
+              </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+          <Identifier>HeadModelSet</Identifier>
+          <DisplayName>Head Model Set</DisplayName>
+          <Description>Head Model succeeded to Set.</Description>
+          <DataType>
+              <Basic>String</Basic>
+          </DataType>
+        </Response>
+  </Command>
+  <Command>
+      <Identifier>SetUserInterface</Identifier>
+      <DisplayName>Set User Interface</DisplayName>
+      <Description>
+        Set control from the pump user interface
+      </Description>
+      <Observable>No</Observable>
+      <Parameter>
+          <Identifier>UserInterface</Identifier>
+          <DisplayName>User Interface</DisplayName>
+          <Description>
+              Set control from the pump user interface. Variable - pump address
+          </Description>
+          <DataType>
+              <Constrained>
+                  <DataType>
+                      <Basic>String</Basic>
+                  </DataType>
+              <Constraints>
+              </Constraints>
+            </Constrained>
+          </DataType>
+      </Parameter>
+      <Response>
+        <Identifier>UserInterfaceSet</Identifier>
+        <DisplayName>User Interface Set</DisplayName>
+        <Description>User Interface succeeded to Set.</Description>
+        <DataType>
+            <Basic>String</Basic>
+        </DataType>
+      </Response>
+</Command>
+<Command>
+    <Identifier>SetDisableInterface</Identifier>
+    <DisplayName>Set Disable Interface</DisplayName>
+    <Description>
+      Disable pump user interface
+    </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>DisableInterface</Identifier>
+        <DisplayName>Disable Interface</DisplayName>
+        <Description>
+            Disable pump user interface. Variable - pump address
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>String</Basic>
+                </DataType>
+            <Constraints>
+            </Constraints>
+          </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+      <Identifier>DisableInterfaceSet</Identifier>
+      <DisplayName>Disable Interface Set</DisplayName>
+      <Description>Disable Interface succeeded to Set.</Description>
+      <DataType>
+          <Basic>String</Basic>
+      </DataType>
+    </Response>
+</Command>
+<Command>
+    <Identifier>SetDisplayNumbers</Identifier>
+    <DisplayName>Set Display Numbers</DisplayName>
+    <Description>
+      Write numbers to the pump to display while under external control - string (less than 17 characters)
+    </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>Address</Identifier>
+        <DisplayName>Address</DisplayName>
+        <Description>
+            Gets the pump, on which the command will be executed
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+                <Constraints>
+                </Constraints>
+            </Constrained>
+        </DataType>
+    </Parameter>
+    <Parameter>
+        <Identifier>DisplayNumbers</Identifier>
+        <DisplayName>Display Numbers</DisplayName>
+        <Description>
+            Write numbers to the pump to display while under external control - string (less than 17 characters)
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>String</Basic>
+                </DataType>
+            <Constraints>
+            </Constraints>
+          </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+      <Identifier>DisplayNumbersSet</Identifier>
+      <DisplayName>Display Numbers Set</DisplayName>
+      <Description>Display Numbers succeeded to Set.</Description>
+      <DataType>
+          <Basic>String</Basic>
+      </DataType>
+    </Response>
+</Command>
+<Command>
+    <Identifier>SetDisplayLetters</Identifier>
+    <DisplayName>Set Display Letters</DisplayName>
+    <Description>
+      Write letters to the pump to display while under external control - string (less than 17 characters)
+    </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>Address</Identifier>
+        <DisplayName>Address</DisplayName>
+        <Description>
+            Gets the pump, on which the command will be executed
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>String</Basic>
+                </DataType>
+                <Constraints>
+                </Constraints>
+            </Constrained>
+        </DataType>
+    </Parameter>
+    <Parameter>
+        <Identifier>DisplayLetters</Identifier>
+        <DisplayName>Display Letters</DisplayName>
+        <Description>
+            Write letters to the pump to display while under external control - string (less than 17 characters)
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>String</Basic>
+                </DataType>
+            <Constraints>
+            </Constraints>
+          </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+      <Identifier>DisplayLettersSet</Identifier>
+      <DisplayName>Display Letters Set</DisplayName>
+      <Description>Display Letters succeeded to Set.</Description>
+      <DataType>
+          <Basic>String</Basic>
+      </DataType>
+    </Response>
+</Command>
+<Command>
+      <Identifier>GetTimeSetting</Identifier>
+      <DisplayName>Get Time Setting</DisplayName>
+      <Description>Get current setting for pump time in 1/10 seconds. </Description>
+      <Observable>No</Observable>
+      <Parameter>
+          <Identifier>Channel</Identifier>
+          <DisplayName>Channel</DisplayName>
+          <Description>Channel
+            </Description>
+          <DataType>
+              <Constrained>
+                  <DataType>
+                      <Basic>Integer</Basic>
+                  </DataType>
+              <Constraints>
+              </Constraints>
+            </Constrained>
+          </DataType>
+      </Parameter>
+      <Response>
+          <Identifier>TimeSetting</Identifier>
+          <DisplayName>Time Setting</DisplayName>
+          <Description>Get current setting for pump time in 1/10 seconds.</Description>
+          <DataType>
+              <Basic>Real</Basic>
+          </DataType>
+      </Response>
+</Command>
+<Command>
+    <Identifier>SetTimeSetting</Identifier>
+    <DisplayName>Set Time Setting</DisplayName>
+    <Description>
+      Set current setting for pump time in 1/10 seconds.
+    </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>Channel</Identifier>
+        <DisplayName>Channel</DisplayName>
+        <Description>
+            Gets the channel, on which the command will be executed
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+                <Constraints>
+                </Constraints>
+            </Constrained>
+        </DataType>
+    </Parameter>
+    <Parameter>
+        <Identifier>TimeSetting</Identifier>
+        <DisplayName>Time Setting</DisplayName>
+        <Description>
+          Set current setting for pump time in 1/10 seconds.
+          </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Real</Basic>
+                </DataType>
+            <Constraints>
+            </Constraints>
+          </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+      <Identifier>TimeSettingSet</Identifier>
+      <DisplayName>Time Setting Set</DisplayName>
+      <Description>Time Setting succeeded to Set.</Description>
+      <DataType>
+          <Basic>String</Basic>
+      </DataType>
+    </Response>
+</Command>
+<Command>
+    <Identifier>SetRunTimeM</Identifier>
+    <DisplayName>Set Run Time in Minutes</DisplayName>
+    <Description>
+      Set current run time setting for dispensing in minutes (0-999)
+    </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>Channel</Identifier>
+        <DisplayName>Channel</DisplayName>
+        <Description>
+            Gets the channel, on which the command will be executed
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+                <Constraints>
+                </Constraints>
+            </Constrained>
+        </DataType>
+    </Parameter>
+    <Parameter>
+        <Identifier>RunTimeM</Identifier>
+        <DisplayName>Run Time in Minutes</DisplayName>
+        <Description>
+          Set current run time setting for dispensing in minutes (0-999)
+          </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+            <Constraints>
+            </Constraints>
+          </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+      <Identifier>RunTimeMSet</Identifier>
+      <DisplayName>Run Time in Minutes Set</DisplayName>
+      <Description>Run Time succeeded to Set.</Description>
+      <DataType>
+          <Basic>String</Basic>
+      </DataType>
+    </Response>
+</Command>
+<Command>
+    <Identifier>SetRunTimeH</Identifier>
+    <DisplayName>Set Run Time in Hours</DisplayName>
+    <Description>
+      Set current run time setting for dispensing in hours (0-999)
+    </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>Channel</Identifier>
+        <DisplayName>Channel</DisplayName>
+        <Description>
+            Gets the channel, on which the command will be executed
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+                <Constraints>
+                </Constraints>
+            </Constrained>
+        </DataType>
+    </Parameter>
+    <Parameter>
+        <Identifier>RunTimeM</Identifier>
+        <DisplayName>Run Time in hours</DisplayName>
+        <Description>
+          Set current run time setting for dispensing in hours (0-999)
+          </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+            <Constraints>
+            </Constraints>
+          </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+      <Identifier>RunTimeHSet</Identifier>
+      <DisplayName>Run Time in Hours Set</DisplayName>
+      <Description>Run Time succeeded to Set.</Description>
+      <DataType>
+          <Basic>String</Basic>
+      </DataType>
+    </Response>
+</Command>
+<Command>
+      <Identifier>GetRollerStepsLow</Identifier>
+      <DisplayName>Get Roller Steps low order</DisplayName>
+      <Description>Get current setting for volume to pump in low order roller steps. The total number of roller steps
+        which are dispensed during an operation is computed as [ u*65536 + U]. </Description>
+      <Observable>No</Observable>
+      <Parameter>
+          <Identifier>Channel</Identifier>
+          <DisplayName>Channel</DisplayName>
+          <Description>Channel
+            </Description>
+          <DataType>
+              <Constrained>
+                  <DataType>
+                      <Basic>Integer</Basic>
+                  </DataType>
+              <Constraints>
+              </Constraints>
+            </Constrained>
+          </DataType>
+      </Parameter>
+      <Response>
+          <Identifier>RollerStepsLow</Identifier>
+          <DisplayName>Roller Steps low order</DisplayName>
+          <Description>Get current setting for volume to pump in low order roller steps. The total number of roller steps
+            which are dispensed during an operation is computed as [ u*65536 + U].</Description>
+          <DataType>
+              <Basic>Integer</Basic>
+          </DataType>
+      </Response>
+</Command>
+<Command>
+    <Identifier>SetRollerStepsLow</Identifier>
+    <DisplayName>Set Roller Steps low order</DisplayName>
+    <Description>
+      Set current setting for volume to pump in roller steps (0 - 65536).
+    </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>Channel</Identifier>
+        <DisplayName>Channel</DisplayName>
+        <Description>
+            Gets the channel, on which the command will be executed
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+                <Constraints>
+                </Constraints>
+            </Constrained>
+        </DataType>
+    </Parameter>
+    <Parameter>
+        <Identifier>RollerStepsLow</Identifier>
+        <DisplayName>Roller Steps low order</DisplayName>
+        <Description>
+          Set current setting for volume to pump in roller steps (0 - 65536).
+          </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+            <Constraints>
+            </Constraints>
+          </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+      <Identifier>RollerStepsLowSet</Identifier>
+      <DisplayName>Roller Steps low order Set</DisplayName>
+      <Description>Roller Steps low order succeeded to Set.</Description>
+      <DataType>
+          <Basic>String</Basic>
+      </DataType>
+    </Response>
+</Command>
+<Command>
+      <Identifier>GetRollerStepsHigh</Identifier>
+      <DisplayName>Get Roller Steps high order </DisplayName>
+      <Description>Get current setting for volume to pump in high order roller steps. The total number of roller steps
+        which are dispensed during an operation is computed as [ u*65536 + U]. </Description>
+      <Observable>No</Observable>
+      <Parameter>
+          <Identifier>Channel</Identifier>
+          <DisplayName>Channel</DisplayName>
+          <Description>Channel
+            </Description>
+          <DataType>
+              <Constrained>
+                  <DataType>
+                      <Basic>Integer</Basic>
+                  </DataType>
+              <Constraints>
+              </Constraints>
+            </Constrained>
+          </DataType>
+      </Parameter>
+      <Response>
+          <Identifier>RollerStepsHigh</Identifier>
+          <DisplayName>Roller Steps high order</DisplayName>
+          <Description>Get current setting for volume to pump in high order roller steps. The total number of roller steps
+            which are dispensed during an operation is computed as [ u*65536 + U].</Description>
+          <DataType>
+              <Basic>Integer</Basic>
+          </DataType>
+      </Response>
+</Command>
+<Command>
+    <Identifier>SetRollerStepsHigh</Identifier>
+    <DisplayName>Set Roller Steps High order</DisplayName>
+    <Description>
+      Set current setting for volume to pump in roller steps (greater than 65536).
+    </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>Channel</Identifier>
+        <DisplayName>Channel</DisplayName>
+        <Description>
+            Gets the channel, on which the command will be executed
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+                <Constraints>
+                </Constraints>
+            </Constrained>
+        </DataType>
+    </Parameter>
+    <Parameter>
+        <Identifier>RollerSteps</Identifier>
+        <DisplayName>Roller Steps in hours</DisplayName>
+        <Description>
+          Set current setting for volume to pump in roller steps (0 - 65536).
+          </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+            <Constraints>
+            </Constraints>
+          </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+      <Identifier>RollerStepsHighSet</Identifier>
+      <DisplayName>Roller Steps High order Set</DisplayName>
+      <Description>Roller Steps High order succeeded to Set.</Description>
+      <DataType>
+          <Basic>String</Basic>
+      </DataType>
+    </Response>
+</Command>
+<Command>
+      <Identifier>GetRSV</Identifier>
+      <DisplayName>Get Roller Step Volume </DisplayName>
+      <Description>Get the pump's current setting for roller step volume (RSV) based on the current calibration,
+        tubing diameter and roller count in nL. If no calibration has been performed, the default volume is returned </Description>
+      <Observable>No</Observable>
+      <Parameter>
+          <Identifier>Channel</Identifier>
+          <DisplayName>Channel</DisplayName>
+          <Description>Channel
+            </Description>
+          <DataType>
+              <Constrained>
+                  <DataType>
+                      <Basic>Integer</Basic>
+                  </DataType>
+              <Constraints>
+              </Constraints>
+            </Constrained>
+          </DataType>
+      </Parameter>
+      <Response>
+          <Identifier>RSV</Identifier>
+          <DisplayName>Roller Steps high order</DisplayName>
+          <Description>Get the pump's current setting for roller step volume (RSV) based on the current calibration,
+            tubing diameter and roller count in nL. If no calibration has been performed, the default volume is returned.</Description>
+          <DataType>
+              <Basic>Real</Basic>
+          </DataType>
+      </Response>
+</Command>
+<Command>
+    <Identifier>SetRSV</Identifier>
+    <DisplayName>Set Roller Step Volume</DisplayName>
+    <Description>
+      Set the calibrated roller step volume (RSV) in nL to use for this pump/channel.
+      The value is used as calibration value and is overwritten by subsequent calibrations and reset by changing tubing diameter.
+    </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>Channel</Identifier>
+        <DisplayName>Channel</DisplayName>
+        <Description>Channel
+          </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Real</Basic>
+                </DataType>
+            <Constraints>
+            </Constraints>
+          </Constrained>
+        </DataType>
+    </Parameter>
+    <Parameter>
+        <Identifier>RSV</Identifier>
+        <DisplayName>Roller Step Volume</DisplayName>
+        <Description>
+          Set the calibrated roller step volume (RSV) in nL to use for this pump/channel.
+          The value is used as calibration value and is overwritten by subsequent calibrations and reset by changing tubing diameter.
+          </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Real</Basic>
+                </DataType>
+            <Constraints>
+            </Constraints>
+          </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+      <Identifier>RSVSet</Identifier>
+      <DisplayName>Roller Step Volume Set</DisplayName>
+      <Description>Roller Step Volume succeeded to Set.</Description>
+      <DataType>
+          <Basic>String</Basic>
+      </DataType>
+    </Response>
+</Command>
+<Command>
+    <Identifier>SetRSVReset</Identifier>
+    <DisplayName>Set Roller Step Volume Reset</DisplayName>
+    <Description>
+      Reset the pump to discard calibration data, use default roller step volume
+      </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>RSVReset</Identifier>
+        <DisplayName>Roller Step Volume Reset</DisplayName>
+        <Description>
+          Reset the pump to discard calibration data, use default roller step volume
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>String</Basic>
+                </DataType>
+            <Constraints>
+            </Constraints>
+          </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+      <Identifier>RSVResetSet</Identifier>
+      <DisplayName>Roller Step Volume Reset Set</DisplayName>
+      <Description>Roller Step Volume Reset succeeded.</Description>
+      <DataType>
+          <Basic>String</Basic>
+      </DataType>
+    </Response>
+</Command>
+<Command>
+    <Identifier>ResetRSVTable</Identifier>
+    <DisplayName>Reset Roller Step Volume Table</DisplayName>
+    <Description>
+      Reset roller step value table to default
+      </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>RSVTableReset</Identifier>
+        <DisplayName>Roller Step Volume Table Reset</DisplayName>
+        <Description>
+          Reset roller step value table to default
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>String</Basic>
+                </DataType>
+            <Constraints>
+            </Constraints>
+          </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+      <Identifier>ResetRSVTableSet</Identifier>
+      <DisplayName>Reset Roller Step Volume Table Set</DisplayName>
+      <Description>Reset Roller Step Volume Table succeeded.</Description>
+      <DataType>
+          <Basic>String</Basic>
+      </DataType>
+    </Response>
+</Command>
+<Command>
+    <Identifier>SetNonFactoryRSV</Identifier>
+    <DisplayName>Set Non-Factory Roller Step Volume</DisplayName>
+    <Description>
+      Change factory roller step volume for a particular roller count and tubing size using roller count (6,8,12);
+       index of the tubing diameter; RSV
+      </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>Channel</Identifier>
+        <DisplayName>Channel</DisplayName>
+        <Description>
+            Gets the channel, on which the command will be executed
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+                <Constraints>
+                </Constraints>
+            </Constrained>
+        </DataType>
+    </Parameter>
+    <Parameter>
+        <Identifier>RollerCount</Identifier>
+        <DisplayName>Roller Count</DisplayName>
+        <Description>
+            Gets roller count of the channel
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+                <Constraints>
+                </Constraints>
+            </Constrained>
+        </DataType>
+    </Parameter>
+    <Parameter>
+        <Identifier>TubingID</Identifier>
+        <DisplayName>Tubing ID</DisplayName>
+        <Description>
+            Index of tubing diameter, see manual p.16 of 36)
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>String</Basic>
+                </DataType>
+                <Constraints>
+                </Constraints>
+            </Constrained>
+        </DataType>
+    </Parameter>
+    <Parameter>
+        <Identifier>NonFactoryRSV</Identifier>
+        <DisplayName>Non-Factory Roller Step Volume</DisplayName>
+        <Description>Roller step volume in nL
+          Change factory roller step volume for a particular roller count and tubing size using roller count (6,8,12);
+         index of the tubing diameter; RSVReset roller step value table to default
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Real</Basic>
+                </DataType>
+            <Constraints>
+            </Constraints>
+          </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+      <Identifier>SetNonFactoryRSVSet</Identifier>
+      <DisplayName>Set Non-Factory Roller Step Volume Set</DisplayName>
+      <Description>Non-Factory Roller Step Volume succeeded.</Description>
+      <DataType>
+          <Basic>String</Basic>
+      </DataType>
+    </Response>
+</Command>
+<Command>
+      <Identifier>GetPauseTime</Identifier>
+      <DisplayName>Get Pause Time </DisplayName>
+      <Description>Get current setting for pause time in 1/10 seconds</Description>
+      <Observable>No</Observable>
+      <Parameter>
+          <Identifier>Channel</Identifier>
+          <DisplayName>Channel</DisplayName>
+          <Description>Channel
+            </Description>
+          <DataType>
+              <Constrained>
+                  <DataType>
+                      <Basic>Integer</Basic>
+                  </DataType>
+              <Constraints>
+              </Constraints>
+            </Constrained>
+          </DataType>
+      </Parameter>
+      <Response>
+          <Identifier>PauseTime</Identifier>
+          <DisplayName>Pause Time</DisplayName>
+          <Description>Get current setting for pause time in 1/10 seconds</Description>
+          <DataType>
+              <Basic>Real</Basic>
+          </DataType>
+      </Response>
+</Command>
+<Command>
+    <Identifier>SetPauseTime</Identifier>
+    <DisplayName>Set Pause Time</DisplayName>
+    <Description>
+      Set current setting for pause time in 1/10 seconds
+      </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>Channel</Identifier>
+        <DisplayName>Channel</DisplayName>
+        <Description>
+            Gets the channel, on which the command will be executed
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+                <Constraints>
+                </Constraints>
+            </Constrained>
+        </DataType>
+    </Parameter>
+    <Parameter>
+        <Identifier>PauseTime</Identifier>
+        <DisplayName>Pause Time</DisplayName>
+        <Description>
+          Set current setting for pause time in 1/10 seconds
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Real</Basic>
+                </DataType>
+            <Constraints>
+            </Constraints>
+          </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+      <Identifier>PauseTimeSet</Identifier>
+      <DisplayName>Pause Time Set</DisplayName>
+      <Description>Pause Time succeeded to Set.</Description>
+      <DataType>
+          <Basic>String</Basic>
+      </DataType>
+    </Response>
+</Command>
+<Command>
+    <Identifier>SetPauseTimeM</Identifier>
+    <DisplayName>Set Pause Time in Minutes</DisplayName>
+    <Description>
+      Set current setting for pause time in minutes (0-999)
+    </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>Channel</Identifier>
+        <DisplayName>Channel</DisplayName>
+        <Description>
+            Gets the channel, on which the command will be executed
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+                <Constraints>
+                </Constraints>
+            </Constrained>
+        </DataType>
+    </Parameter>
+    <Parameter>
+        <Identifier>PauseTimeM</Identifier>
+        <DisplayName>Pause Time in Minutes</DisplayName>
+        <Description>
+          Set current setting for pause time in minutes (0-999)
+          </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+            <Constraints>
+            </Constraints>
+          </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+      <Identifier>PauseTimeMSet</Identifier>
+      <DisplayName>Pause Time in Minutes Set</DisplayName>
+      <Description>Pause Time succeeded to Set.</Description>
+      <DataType>
+          <Basic>String</Basic>
+      </DataType>
+    </Response>
+</Command>
+<Command>
+    <Identifier>SetPauseTimeH</Identifier>
+    <DisplayName>Set Pause Time in Hours</DisplayName>
+    <Description>
+      Set current setting for pause time in hours (0-999)
+    </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>Channel</Identifier>
+        <DisplayName>Channel</DisplayName>
+        <Description>
+            Gets the channel, on which the command will be executed
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+                <Constraints>
+                </Constraints>
+            </Constrained>
+        </DataType>
+    </Parameter>
+    <Parameter>
+        <Identifier>PauseTimeM</Identifier>
+        <DisplayName>Pause Time in hours</DisplayName>
+        <Description>
+          Set current setting for pause time in hours (0-999)
+          </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+            <Constraints>
+            </Constraints>
+          </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+      <Identifier>PauseTimeHSet</Identifier>
+      <DisplayName>Pause Time in Hours Set</DisplayName>
+      <Description>Pause Time succeeded to Set.</Description>
+      <DataType>
+          <Basic>String</Basic>
+      </DataType>
+    </Response>
+</Command>
+<Command>
+    <Identifier>GetTotalVolume</Identifier>
+    <DisplayName>Get Total Volume</DisplayName>
+    <Description>Get total volume dispensed since the last reset in uL, mL or L. </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>Channel</Identifier>
+        <DisplayName>Channel</DisplayName>
+        <Description>Channel
+          </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+            <Constraints>
+            </Constraints>
+          </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+        <Identifier>CurrentTotalVolume</Identifier>
+        <DisplayName>Current Total Volume</DisplayName>
+        <Description>Get total volume dispensed since the last reset in uL, mL or L. </Description>
+        <DataType>
+            <Basic>Real</Basic>
+        </DataType>
+    </Response>
+</Command>
+<Command>
+      <Identifier>SaveSettings</Identifier>
+      <DisplayName>Save Settings</DisplayName>
+      <Description>Saves the current pump settings values to memory.</Description>
+      <Observable>No</Observable>
+      <Parameter>
+          <Identifier>PumpAddress</Identifier>
+          <DisplayName>Pump Address</DisplayName>
+          <Description>Pump Address
+            </Description>
+          <DataType>
+              <Constrained>
+                  <DataType>
+                      <Basic>Integer</Basic>
+                  </DataType>
+              <Constraints>
+              </Constraints>
+            </Constrained>
+          </DataType>
+      </Parameter>
+      <Response>
+          <Identifier>Save</Identifier>
+          <DisplayName>Save</DisplayName>
+          <Description>Saves the current pump settings values to memory.</Description>
+          <DataType>
+              <Basic>String</Basic>
+          </DataType>
+      </Response>
+</Command>
+<Command>
+      <Identifier>SaveSetRoller</Identifier>
+      <DisplayName>Save Set Roller Step</DisplayName>
+      <Description>Saves set roller step settings.</Description>
+      <Observable>No</Observable>
+      <Parameter>
+          <Identifier>PumpAddress</Identifier>
+          <DisplayName>Pump Address</DisplayName>
+          <Description>Pump Address
+            </Description>
+          <DataType>
+              <Constrained>
+                  <DataType>
+                      <Basic>Integer</Basic>
+                  </DataType>
+              <Constraints>
+              </Constraints>
+            </Constrained>
+          </DataType>
+      </Parameter>
+      <Response>
+          <Identifier>Save</Identifier>
+          <DisplayName>Save</DisplayName>
+          <Description>Saves set roller step settings.</Description>
+          <DataType>
+              <Basic>String</Basic>
+          </DataType>
+      </Response>
+</Command>
+<Command>
+      <Identifier>GetFootSwitchStatus</Identifier>
+      <DisplayName>Get Foot Switch Status</DisplayName>
+      <Description>Get the current status of the foot switch:   - open  /  + grounded.</Description>
+      <Observable>No</Observable>
+      <Parameter>
+          <Identifier>PumpAddress</Identifier>
+          <DisplayName>Pump Address</DisplayName>
+          <Description>Pump Address
+            </Description>
+          <DataType>
+              <Constrained>
+                  <DataType>
+                      <Basic>Integer</Basic>
+                  </DataType>
+              <Constraints>
+              </Constraints>
+            </Constrained>
+          </DataType>
+      </Parameter>
+      <Response>
+          <Identifier>FootSwitchStatus</Identifier>
+          <DisplayName>Foot Switch Status</DisplayName>
+          <Description>Get the current status of the foot switch:   - open  /  + grounded..</Description>
+          <DataType>
+              <Basic>String</Basic>
+          </DataType>
+      </Response>
+</Command>
+<Command>
+    <Identifier>SetRollersNumber</Identifier>
+    <DisplayName>Set Rollers Number</DisplayName>
+    <Description>
+      Set number of rollers for channel
+    </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>Channel</Identifier>
+        <DisplayName>Channel</DisplayName>
+        <Description>
+            Gets the channel, on which the command will be executed
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+                <Constraints>
+                </Constraints>
+            </Constrained>
+        </DataType>
+    </Parameter>
+    <Parameter>
+        <Identifier>RollersNumber</Identifier>
+        <DisplayName>Rollers Number</DisplayName>
+        <Description>
+          Set number of rollers for channel
+          </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+            <Constraints>
+            </Constraints>
+          </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+      <Identifier>RollersNumber</Identifier>
+      <DisplayName>Rollers Number Set</DisplayName>
+      <Description>Rollers Number succeeded to Set.</Description>
+      <DataType>
+          <Basic>String</Basic>
+      </DataType>
+    </Response>
+</Command>
+<Command>
+    <Identifier>GetRollersNumber</Identifier>
+    <DisplayName>Get Rollers Number</DisplayName>
+    <Description>Get number of rollers for channel </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>Channel</Identifier>
+        <DisplayName>Channel</DisplayName>
+        <Description>Channel
+          </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+            <Constraints>
+            </Constraints>
+          </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+        <Identifier>RollersNumber</Identifier>
+        <DisplayName>Rollers Number</DisplayName>
+        <Description>Get number of rollers for channel. </Description>
+        <DataType>
+            <Basic>Integer</Basic>
+        </DataType>
+    </Response>
+</Command>
+<Command>
+    <Identifier>SetPumpSerialNumber</Identifier>
+    <DisplayName>Set Pump Serial Number</DisplayName>
+    <Description>
+      Set pump serial number string.
+    </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>Address</Identifier>
+        <DisplayName>Address</DisplayName>
+        <Description>
+            Gets the pump, on which the command will be executed
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+                <Constraints>
+                </Constraints>
+            </Constrained>
+        </DataType>
+    </Parameter>
+    <Parameter>
+        <Identifier>PumpSerialNumber</Identifier>
+        <DisplayName>Pump Serial Number</DisplayName>
+        <Description>
+            Set pump serial number string.
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>String</Basic>
+                </DataType>
+            <Constraints>
+            </Constraints>
+          </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+      <Identifier>PumpSerialNumberSet</Identifier>
+      <DisplayName>Pump Serial Number Set</DisplayName>
+      <Description>Pump Serial Number succeeded to Set.</Description>
+      <DataType>
+          <Basic>String</Basic>
+      </DataType>
+    </Response>
+</Command>
+    <DefinedExecutionError>
+        <Identifier>LanguageInvalidInput</Identifier>
+        <DisplayName>Invalid user input error</DisplayName>
+        <Description>The input value for language must be in range between 0 and 3.</Description>
+    </DefinedExecutionError>
+    <DefinedExecutionError>
+        <Identifier>ChannelAddressingInvalidInput</Identifier>
+        <DisplayName>Invalid user input error</DisplayName>
+        <Description>The input value for ChannelAddressing must be boolean.</Description>
+    </DefinedExecutionError>
+    <DefinedExecutionError>
+        <Identifier>EventMessagesInvalidInput</Identifier>
+        <DisplayName>Invalid user input error</DisplayName>
+        <Description>The input value for ChannelAddressing must be boolean.</Description>
+      </DefinedExecutionError>
+</Feature>

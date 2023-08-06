@@ -1,0 +1,1524 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="org.silastandard" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>PressureServicer</Identifier>
+    <DisplayName>Pressure Servicer</DisplayName>
+    <Description>
+        Control a DASGIP pressure module. Enables read and write operations for various parameters, including pressure sensor and controller. 
+        By Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 20.05.2019
+    </Description>
+    <Command>
+        <Identifier>GetPV</Identifier>
+        <DisplayName>Get PV</DisplayName>
+        <Description>Get present value</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentPV</Identifier>
+            <DisplayName>Current PV</DisplayName>
+            <Description>Current present value</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetSPM</Identifier>
+        <DisplayName>Set Manual Setpoint</DisplayName>
+        <Description>
+        Set the manual pressure setpoint.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>SPM</Identifier>
+            <DisplayName>Manual Setpoint</DisplayName>
+            <Description>
+                The manual setpoint of the pressure module.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+
+                        <MaximalInclusive>14</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SPMSet</Identifier>
+            <DisplayName>Manual Setpoint Set</DisplayName>
+            <Description>The set manual setpoint.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>ParameterInvalidRange</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>SetSPE</Identifier>
+        <DisplayName>Set External Setpoint</DisplayName>
+        <Description>
+        Set the external pressure setpoint.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>SPE</Identifier>
+            <DisplayName>External Setpoint</DisplayName>
+            <Description>
+                The external setpoint of the pressure module.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+
+                        <MaximalInclusive>14</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SPESet</Identifier>
+            <DisplayName>External Setpoint Set</DisplayName>
+            <Description>The set external setpoint.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>ParameterInvalidRange</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>GetSP</Identifier>
+        <DisplayName>Get SP</DisplayName>
+        <Description>Get setpoint value</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentSP</Identifier>
+            <DisplayName>Current SP</DisplayName>
+            <Description>Current setpoint value</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetSPA</Identifier>
+        <DisplayName>Get SPA</DisplayName>
+        <Description>Get automatic setpoint value</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentSPA</Identifier>
+            <DisplayName>Current SPA</DisplayName>
+            <Description>Current automatic setpoint value</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetSPM</Identifier>
+        <DisplayName>Get SPM</DisplayName>
+        <Description>Get manual setpoint value</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentSPM</Identifier>
+            <DisplayName>Current SPM</DisplayName>
+            <Description>Current manual setpoint value</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetSPE</Identifier>
+        <DisplayName>Get SPE</DisplayName>
+        <Description>Get external setpoint value</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentSPE</Identifier>
+            <DisplayName>Current SPE</DisplayName>
+            <Description>Current external setpoint value</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetSPR</Identifier>
+        <DisplayName>Get SPR</DisplayName>
+        <Description>Get remote setpoint value</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentSPR</Identifier>
+            <DisplayName>Current SPR</DisplayName>
+            <Description>Current remote setpoint value</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetAccess</Identifier>
+        <DisplayName>Get Access Mode</DisplayName>
+        <Description>Get access mode value. Controller access (Local, Remote).</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentAccess</Identifier>
+            <DisplayName>Current Access Mode</DisplayName>
+            <Description>Current access mode value. Controller access (Local, Remote)</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetCmd</Identifier>
+        <DisplayName>Set Controller Command</DisplayName>
+        <Description>
+        Set the controller command. Controller command (Nothing, Stop, Start).
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>Cmd</Identifier>
+            <DisplayName>Controller Command</DisplayName>
+            <Description>
+                The controller command of the pressure module. Controller command (Nothing, Stop, Start).
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+
+                        <MaximalInclusive>2</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CmdSet</Identifier>
+            <DisplayName>Cmd Set</DisplayName>
+            <Description>The set controller command.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>ParameterInvalidRange</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>GetCmd</Identifier>
+        <DisplayName>Get Controller Command</DisplayName>
+        <Description>Get the controller command. Controller command (Nothing, Stop, Start).</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentCmd</Identifier>
+            <DisplayName>Current Controller Command</DisplayName>
+            <Description>Current controller command value of the pressure module. Controller command (Nothing, Stop, Start)</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetMode</Identifier>
+        <DisplayName>Set Controller Mode</DisplayName>
+        <Description>
+        Set the controller mode. Controller mode (Manual, Automatic).
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>Mode</Identifier>
+            <DisplayName>Controller Mode</DisplayName>
+            <Description>
+                The controller mode of the pressure module. Controller mode (Manual, Automatic).
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+
+                        <MaximalInclusive>1</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>ModeSet</Identifier>
+            <DisplayName>Controller Mode Set</DisplayName>
+            <Description>The set controller mode.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>ParameterInvalidRange</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>GetMode</Identifier>
+        <DisplayName>Get Controller Mode</DisplayName>
+        <Description>Get the controller mode. Controller mode (Manual, Automatic).</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentMode</Identifier>
+            <DisplayName>Current Controller Mode</DisplayName>
+            <Description>Current controller mode value of the pressure module. Controller mode (Manual, Automatic).</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetSetpointSelect</Identifier>
+        <DisplayName>Set SetpointSelect</DisplayName>
+        <Description>
+        Set the selected setpoint that should be used. Setpoint selection (Local, Manual, Internal, Script, External).
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>SetpointSelect</Identifier>
+            <DisplayName>Set SetpointSelect</DisplayName>
+            <Description>
+                The selected setpoint of the pressure module. Setpoint selection (Local, Manual, Internal, Script, External).
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+
+                        <MaximalInclusive>5</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SetpointSelectSet</Identifier>
+            <DisplayName>Setpoint selection Set</DisplayName>
+            <Description>The set setpoint selection.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>ParameterInvalidRange</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>GetSetpointSelect</Identifier>
+        <DisplayName>Get SetpointSelect</DisplayName>
+        <Description>Get the setpoint selection. Controller state (Off, On, Error).</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentSetpointSelect</Identifier>
+            <DisplayName>Current Setpoint Selection</DisplayName>
+            <Description>Current setpoint selection value of the pressure module. Controller state (Off, On, Error).</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetState</Identifier>
+        <DisplayName>Get State</DisplayName>
+        <Description>Get controller state. Controller state (Off, On, Error).</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentState</Identifier>
+            <DisplayName>Current Controller State</DisplayName>
+            <Description>Current controller state value of the pressure module. Controller state (Off, On, Error).</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetType</Identifier>
+        <DisplayName>Get Function Type</DisplayName>
+        <Description>Get function type.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentType</Identifier>
+            <DisplayName>Current Function Type</DisplayName>
+            <Description>Current function type value of the pressure module.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetAvailable</Identifier>
+        <DisplayName>Get Function Availability</DisplayName>
+        <Description>Get function availability.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentAvailable</Identifier>
+            <DisplayName>Current Function Availability</DisplayName>
+            <Description>Current function availability value of the pressure module.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetName</Identifier>
+        <DisplayName>Get Function Name</DisplayName>
+        <Description>Get function name.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentName</Identifier>
+            <DisplayName>Current Function Name</DisplayName>
+            <Description>Current function name of the pressure module.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetVersion</Identifier>
+        <DisplayName>Get Function Version</DisplayName>
+        <Description>Get function model version number.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentVersion</Identifier>
+            <DisplayName>Current Function Version</DisplayName>
+            <Description>Current function model version number of the pressure module.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetSensorOffset</Identifier>
+        <DisplayName>Set Sensor Offset</DisplayName>
+        <Description>
+        Set the sensor offset value that should be used. Sensor offset calibration parameter.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>SensorOffset</Identifier>
+            <DisplayName>Set SensorOffset</DisplayName>
+            <Description>
+                The sensor offset value that should be used. Sensor offset calibration parameter.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+
+                        <MaximalInclusive>14</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SensorOffsetSet</Identifier>
+            <DisplayName>Sensor Offset Set</DisplayName>
+            <Description>The set sensor offset value that is used. Sensor offset calibration parameter.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>ParameterInvalidRange</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>GetSensorOffset</Identifier>
+        <DisplayName>Get Sensor Offset</DisplayName>
+        <Description>Get the sensor offset value that is used. Sensor offset calibration parameter.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentSensorOffset</Identifier>
+            <DisplayName>Current Sensor Offset</DisplayName>
+            <Description>Current sensor offset value of the pressure module. Sensor offset calibration parameter.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetSensorPVRaw</Identifier>
+        <DisplayName>Get Sensor PVRaw</DisplayName>
+        <Description>Get the sensor present raw value. Actual process raw value.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentSensorPVRaw</Identifier>
+            <DisplayName>Current Sensor PVRaw</DisplayName>
+            <Description>Current sensor present raw value of the pressure module. Actual process raw value.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetSensorCompensation</Identifier>
+        <DisplayName>Set Sensor Compensation</DisplayName>
+        <Description>
+        Set the sensor compensation value. Sensor temperature compensation parameter.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>SensorCompensation</Identifier>
+            <DisplayName>Set Sensor Compensation</DisplayName>
+            <Description>
+                The sensor slope value. Sensor temperature compensation parameter.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SensorCompensationSet</Identifier>
+            <DisplayName>Sensor Compensation Set</DisplayName>
+            <Description>The set sensor compensation value. Sensor temperature compensation parameter.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetSensorCompensation</Identifier>
+        <DisplayName>Get Sensor Compensation</DisplayName>
+        <Description>Get the sensor compensation value. Sensor temperature compensation parameter.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentSensorCompensation</Identifier>
+            <DisplayName>Current Sensor Compensation</DisplayName>
+            <Description>Current sensor compensation value of the pressure module. Sensor temperature compensation parameter.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetControllerDB</Identifier>
+        <DisplayName>Set Controller DB</DisplayName>
+        <Description>
+        Set the controller deadband value. PID controller: deadband (set to zero to disable). 
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>ControllerDB</Identifier>
+            <DisplayName>Set Controller DB</DisplayName>
+            <Description>
+                The controller deadband value. PID controller: deadband (set to zero to disable). 
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>ControllerDBSet</Identifier>
+            <DisplayName>Controller DB Set</DisplayName>
+            <Description>The set controller deadband value. PID controller: deadband (set to zero to disable). </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetControllerDB</Identifier>
+        <DisplayName>Get Controller DB</DisplayName>
+        <Description>Get the controller deadband value. PID controller: deadband (set to zero to disable). </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentControllerDB</Identifier>
+            <DisplayName>Current Controller DB</DisplayName>
+            <Description>Current controller deadband value of the pressure module. PID controller: deadband (set to zero to disable). </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetControllerOut</Identifier>
+        <DisplayName>Get Controller Out</DisplayName>
+        <Description>Get the controller output value. PID controller: actual output value. </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentControllerOut</Identifier>
+            <DisplayName>Current Controller Out</DisplayName>
+            <Description>Current controller output value of the pressure module. PID controller: actual output value. </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetControllerP</Identifier>
+        <DisplayName>Set Controller P</DisplayName>
+        <Description>
+        Set the controller proportional parameter value. PID controller: proportional parameter.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>ControllerP</Identifier>
+            <DisplayName>Set Controller P</DisplayName>
+            <Description>
+                The controller proportional parameter value. PID controller: proportional parameter.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>ControllerPSet</Identifier>
+            <DisplayName>Controller P Set</DisplayName>
+            <Description>The set controller proportional parameter value. PID controller: proportional parameter. </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetControllerP</Identifier>
+        <DisplayName>Get Controller P</DisplayName>
+        <Description>Get the controller proportional parameter value. PID controller: proportional parameter.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentControllerP</Identifier>
+            <DisplayName>Current Controller P</DisplayName>
+            <Description>Current controller proportional parameter value of the pressure module. PID controller: proportional parameter. </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetControllerTd</Identifier>
+        <DisplayName>Set Controller Td</DisplayName>
+        <Description>
+        Set the controller differentiator time constant. PID controller: differentiator time constant (set to zero to disable).
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>ControllerTd</Identifier>
+            <DisplayName>Set Controller Td</DisplayName>
+            <Description>
+                The controller differentiator time constant. PID controller: differentiator time constant (set to zero to disable).
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>ControllerTdSet</Identifier>
+            <DisplayName>Controller Td Set</DisplayName>
+            <Description>The set controller differentiator time constant. PID controller: differentiator time constant (set to zero to disable). </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetControllerTd</Identifier>
+        <DisplayName>Get Controller Td</DisplayName>
+        <Description>Get the controller differentiator time constant. PID controller: differentiator time constant (set to zero to disable).</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentControllerTd</Identifier>
+            <DisplayName>Current Controller Td</DisplayName>
+            <Description>Current controller differentiator time constant of the pressure module. PID controller: differentiator time constant (set to zero to disable). </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetControllerTi</Identifier>
+        <DisplayName>Set Controller Ti</DisplayName>
+        <Description>
+        Set the controller integrator time constant. PID controller: integrator time constant (set to zero to disable).
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>ControllerTi</Identifier>
+            <DisplayName>Set Controller Ti</DisplayName>
+            <Description>
+                The controller integrator time constant. PID controller: integrator time constant (set to zero to disable).
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>ControllerTiSet</Identifier>
+            <DisplayName>Controller Ti Set</DisplayName>
+            <Description>The set controller integrator time constant. PID controller: integrator time constant (set to zero to disable). </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetControllerTi</Identifier>
+        <DisplayName>Get Controller Ti</DisplayName>
+        <Description>Get the controller integrator time constant. PID controller: integrator time constant (set to zero to disable).</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentControllerTi</Identifier>
+            <DisplayName>Current Controller Ti</DisplayName>
+            <Description>Current controller integrator time constant of the pressure module. PID controller: integrator time constant (set to zero to disable). </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetControllerMin</Identifier>
+        <DisplayName>Set Controller Min</DisplayName>
+        <Description>
+        Set the controller minimal output value. PID controller: minimal output value.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>ControllerMin</Identifier>
+            <DisplayName>Set Controller Min</DisplayName>
+            <Description>
+                The controller minimal output value. PID controller: minimal output value.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>ControllerMinSet</Identifier>
+            <DisplayName>Controller Min Set</DisplayName>
+            <Description>The set controller minimal output value. PID controller: minimal output value. </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetControllerMin</Identifier>
+        <DisplayName>Get Controller Min</DisplayName>
+        <Description>Get the controller minimal output value. PID controller: minimal output value.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentControllerMin</Identifier>
+            <DisplayName>Current Controller Min</DisplayName>
+            <Description>Current controller minimal output value of the pressure module. PID controller: minimal output value. </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetControllerMax</Identifier>
+        <DisplayName>Set Controller Max</DisplayName>
+        <Description>
+        Set the controller maximal output value. PID controller: maximal output value.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>ControllerMax</Identifier>
+            <DisplayName>Set Controller Max</DisplayName>
+            <Description>
+                The controller maximal output value. PID controller: maximaloutput value.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>ControllerMaxSet</Identifier>
+            <DisplayName>Controller Max Set</DisplayName>
+            <Description>The set controller maximal output value. PID controller: maximal output value. </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetControllerMax</Identifier>
+        <DisplayName>Get Controller Max</DisplayName>
+        <Description>Get the controller maximal output value. PID controller: maximal output value.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentControllerMax</Identifier>
+            <DisplayName>Current Controller Max</DisplayName>
+            <Description>Current controller maximal output value of the pressure module. PID controller: maximal output value. </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <DefinedExecutionError>
+        <Identifier>ParameterInvalidRange</Identifier>
+        <DisplayName>Parameter Invalid Range</DisplayName>
+        <Description>Invalid range of the input parameter</Description>
+    </DefinedExecutionError>
+</Feature>

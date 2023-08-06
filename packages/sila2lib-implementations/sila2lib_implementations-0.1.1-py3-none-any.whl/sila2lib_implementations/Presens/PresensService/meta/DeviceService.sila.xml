@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="biovt.mw.tum.de" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>DeviceService</Identifier>
+    <DisplayName>Device Service</DisplayName>
+    <Description>
+		Allows full control of the stirrer speed and power. Starts and stops the stirrer of the bioREACTOR48.
+        By Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 14.02.2020
+    </Description>
+    <Property>
+        <Identifier>CurrentStatus</Identifier>
+        <DisplayName>Current Status</DisplayName>
+        <Description>Get the current status of the device from the internal state machine of the SiLA server.</Description>
+        <Observable>Yes</Observable>
+        <DataType>
+            <Basic>String</Basic>
+        </DataType>
+    </Property>
+    <Command>
+        <Identifier>GetLog</Identifier>
+        <DisplayName>Get Log</DisplayName>
+        <Description>Get the current status of the device from the state machine of the SiLA server.</Description>
+        <Observable>Yes</Observable>
+        <Response>
+            <Identifier>CurrentLogLevel</Identifier>
+            <DisplayName>Current Log Level</DisplayName>
+            <Description>The current log level of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentLogTimestamp</Identifier>
+            <DisplayName>Current Log Timestamp</DisplayName>
+            <Description>The current log timestamp of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>Timestamp</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentLogMessage</Identifier>
+            <DisplayName>Current Log Level</DisplayName>
+            <Description>The current log level of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>GetReport</Identifier>
+        <DisplayName>Get Report</DisplayName>
+        <Description>Get a full device report.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentReport</Identifier>
+            <DisplayName>Current Report</DisplayName>
+            <Description>The current report response.</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>String</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>GetTComp</Identifier>
+        <DisplayName>Get Temperature Compensation</DisplayName>
+        <Description>Get the temperature compensation value.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentTComp</Identifier>
+            <DisplayName>Current Temperature Compensation</DisplayName>
+            <Description>The current temperature compensation value.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetTComp</Identifier>
+        <DisplayName>Set Temperature Compensation</DisplayName>
+        <Description>Set the temperature compensation value. Values must be between 0-60 degrees Celsius. Default = 20.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetTComp</Identifier>
+            <DisplayName>SetTComp</DisplayName>
+            <Description>
+                The temperature compensation value to be set.
+            </Description>
+            <DataType>
+                <List>
+                    <DataType>
+                        <Constrained>
+                            <DataType>
+                                <Basic>Real</Basic>
+                            </DataType>
+                            <Constraints>
+                                <MaximalInclusive>0</MaximalInclusive>
+                                <MinimalExclusive>60</MinimalExclusive>
+                            </Constraints>
+                        </Constrained>
+                    </DataType>
+                </List>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentTComp</Identifier>
+            <DisplayName>Current Temperature Compensation</DisplayName>
+            <Description>The current temperature compensation value.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetDynAveraging</Identifier>
+        <DisplayName>Get Dynamic Averaging</DisplayName>
+        <Description>Get the dynamic averaging value.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentDynAverage</Identifier>
+            <DisplayName>Current Dynamic Average</DisplayName>
+            <Description>The current dynamic averaging value.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetDynAveraging</Identifier>
+        <DisplayName>Set Dynamic Averaging</DisplayName>
+        <Description>Set the dynamic averaging value.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetDynAverage</Identifier>
+            <DisplayName>Set Dynamic Average</DisplayName>
+            <Description>
+                The dynamic averaging value to be set. Must be between 0-9. Default = 4.
+            </Description>
+            <DataType>
+                <List>
+                    <DataType>
+                        <Constrained>
+                            <DataType>
+                                <Basic>Real</Basic>
+                            </DataType>
+                            <Constraints>
+                                <MaximalInclusive>0</MaximalInclusive>
+                                <MinimalExclusive>9</MinimalExclusive>
+                            </Constraints>
+                        </Constrained>
+                    </DataType>
+                </List>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentDynAverage</Identifier>
+            <DisplayName>Current Dynamic Average</DisplayName>
+            <Description>The current dynamic average value.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SwitchOffDevice</Identifier>
+        <DisplayName>Switch Off Device</DisplayName>
+        <Description>Switch off the device to save power.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentStatus</Identifier>
+            <DisplayName>Current Status</DisplayName>
+            <Description>The current stop status response.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+</Feature>
+

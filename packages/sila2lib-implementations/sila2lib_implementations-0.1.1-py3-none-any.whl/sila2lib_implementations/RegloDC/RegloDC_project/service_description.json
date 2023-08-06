@@ -1,0 +1,13 @@
+{
+  "service_name" : "RegloDCService",
+  "service_description": "This is a RegloDC Service",
+  "authors"      : "Lukas Bromig",
+  "creation_date" : "20210316",
+  "version" : "1.0",
+  "vendor_url" : "",
+  "SiLA_standard_feature_list" : ["SiLAService", "SimulationController"],
+  "SiLA_feature_list" : ["CalibrationService", "DeviceService", "DriveControlService","ParameterControlService"],
+  "communication_port": "50015",
+  "IP_address" : "127.0.0.1",
+  "hostname" : "localhost"
+}

@@ -1,0 +1,19 @@
+# comment
+# maybe source = has to be changed to include = due to usage of regex pattern *
+
+[run]
+source =
+    # tests/*/*_simulation.py
+    sila2lib_implementations/BioREACTOR48/test_bioreactor48.py
+    sila2lib_implementations/BlueVary/*
+    # sila2lib_implementations/DASGIP/*
+    sila2lib_implementations/Flowmeter_ELFLOWPrestige/*
+    sila2lib_implementations/LAUDA/*
+    sila2lib_implementations/MT_Viper_SW/*
+    sila2lib_implementations/Presens/test_presens.py
+    # sila2lib_implementations/RegloICC/*
+
+omit =
+    sila2lib_implementations/Presens/PresensService_old/*
+    tests/unit_tests/*
+    tests/*/*_real.py

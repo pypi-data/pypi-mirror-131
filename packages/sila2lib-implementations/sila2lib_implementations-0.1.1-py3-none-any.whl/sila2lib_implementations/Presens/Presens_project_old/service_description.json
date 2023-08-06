@@ -1,0 +1,26 @@
+{
+  "service_name" : "PresensService",
+  "service_description": "This is a Presens MCR Service",
+  "authors"      : "Lukas Bromig",
+  "creation_date" : "20200214",
+  "version" : "1.0",
+  "vendor_url" : "",
+  "SiLA_standard_feature_list" : ["SiLAService", "SimulationController"],
+  "SiLA_feature_list" : ["DeviceServicer","CalibrationServicer","SensorProvider"],
+  "communication_port" : "50001",
+  "IP_address" : "127.0.0.1",
+  "hostname" : "localhost"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

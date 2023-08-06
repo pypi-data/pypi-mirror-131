@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="org.silastandard" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>ParameterControlServicer</Identifier>
+    <DisplayName>Parameter Control Servicer</DisplayName>
+    <Description>
+		Set and retrieve information regarding the parameter settings of the Reglo DC (digital control) pump.
+        Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 15.03.2021.
+    </Description>
+    <Command>
+        <Identifier>SetRPMMode</Identifier>
+        <DisplayName>Set RPM Mode</DisplayName>
+        <Description>
+        Set the pump mode to RPM mode (MODE PUMP% rpm).
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>PumpModeSet</Identifier>
+            <DisplayName>Pump Mode Set</DisplayName>
+            <Description>RPM pump mode successfully set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+          <Identifier>SetFlowRateMode</Identifier>
+          <DisplayName>Set Flow Rate Mode</DisplayName>
+          <Description>
+          Set the pump mode to Flow Rate mode (MODE PUMP% Flow rate).
+          </Description>
+          <Observable>No</Observable>
+          <Response>
+              <Identifier>PumpModeSet</Identifier>
+              <DisplayName>Pump Mode Set</DisplayName>
+              <Description>Flow rate pump mode successfully set.</Description>
+              <DataType>
+                  <Basic>String</Basic>
+              </DataType>
+          </Response>
+    </Command>
+    <Command>
+          <Identifier>SetDispenseVolumeMode</Identifier>
+          <DisplayName>Set Dispense Volume Mode</DisplayName>
+          <Description>
+              Set the pump mode to dispense volume mode (MODE DISP Volume).
+          </Description>
+          <Observable>No</Observable>
+          <Response>
+              <Identifier>PumpModeSet</Identifier>
+              <DisplayName>Pump Mode Set</DisplayName>
+              <Description>Dispense volume pump mode successfully set.</Description>
+              <DataType>
+                  <Basic>String</Basic>
+              </DataType>
+          </Response>
+    </Command>
+    <Command>
+        <Identifier>SetDispenseTimeMode</Identifier>
+        <DisplayName>Set Dispense Time Mode</DisplayName>
+        <Description>
+            Set the pump mode to dispense time mode (MODE DISP Time).
+        </Description>
+        <Observable>No</Observable>
+          <Response>
+              <Identifier>PumpModeSet</Identifier>
+              <DisplayName>Pump Mode Set</DisplayName>
+              <Description>Dispense time pump mode successfully set.</Description>
+              <DataType>
+                  <Basic>String</Basic>
+              </DataType>
+          </Response>
+    </Command>
+    <Command>
+         <Identifier>SetPauseTimeMode</Identifier>
+         <DisplayName>Set Pause Time Mode</DisplayName>
+         <Description>
+             Set the current pump mode to pause-time mode (MODE PAUSE Time).
+         </Description>
+         <Observable>No</Observable>
+         <Response>
+             <Identifier>PumpModeSet</Identifier>
+             <DisplayName>Pump Mode Set</DisplayName>
+             <Description>Pause time pump mode successfully set.</Description>
+             <DataType>
+                 <Basic>String</Basic>
+              </DataType>
+         </Response>
+    </Command>
+    <Command>
+          <Identifier>SetDispenseTimePauseTimeMode</Identifier>
+          <DisplayName>Set Time Mode</DisplayName>
+          <Description>
+          Set the pump mode to dispense time/ pause time mode (DISP Time + PAUSE Time).
+          </Description>
+          <Observable>No</Observable>
+          <Response>
+              <Identifier>PumpModeSet</Identifier>
+              <DisplayName>Pump Mode Set</DisplayName>
+              <Description>Dispense time/ pause time pump mode successfully set.</Description>
+              <DataType>
+                  <Basic>String</Basic>
+              </DataType>
+          </Response>
+     </Command>
+     <Command>
+           <Identifier>SetDispenseVolumePauseTimeMode</Identifier>
+           <DisplayName>Set Dispense Volume Pause Time Mode</DisplayName>
+           <Description>
+           Set the pump mode to dispense volume/ pause time mode (DISP Volume + PAUSE Time).
+           </Description>
+           <Observable>No</Observable>
+           <Response>
+               <Identifier>PumpModeSet</Identifier>
+               <DisplayName>Pump Mode Set</DisplayName>
+               <Description>Dispense volume/ pause time pump mode successfully set.</Description>
+               <DataType>
+                   <Basic>String</Basic>
+               </DataType>
+           </Response>
+    </Command>
+</Feature>

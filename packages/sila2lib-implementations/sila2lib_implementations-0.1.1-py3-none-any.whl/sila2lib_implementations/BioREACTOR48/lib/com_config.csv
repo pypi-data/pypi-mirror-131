@@ -1,0 +1,2 @@
+Device;Device Name;Server File Name;Client File Name;IP;Port;required COM/USB ports;baudrate;parity;stopbits;bytesize;timeout
+BioREACTOR48;BioREACTOR48Service; BioREACTOR48Service_server;BioREACTOR48Service_client;127.0.0.1; 50001 ;'COM1' ; 9600 ; serial.PARITY_NONE; serial.STOPBITS_ONE; serial.EIGHTBITS; 1
