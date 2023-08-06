@@ -1,0 +1,4 @@
+fire
+lxml>=4
+PyStemmer>=2
+requests>=2
