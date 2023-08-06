@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: keyboard-api
+Version: 1.0.0
+Summary: KeyLog -> if you press a any button on your keyboard, this key was starting auto-save to file....
+Author: FlameNicoo
+Author-email: 86409467+DiscordBotML@users.noreply.github.com
+Requires-Python: >=3.9.7,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
