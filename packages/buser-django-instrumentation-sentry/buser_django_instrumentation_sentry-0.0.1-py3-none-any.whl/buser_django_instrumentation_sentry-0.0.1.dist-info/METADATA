@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: buser-django-instrumentation-sentry
+Version: 0.0.1
+Summary: A helper library to configure centry instrumentation in Django projects.
+Home-page: http://packages.python.org/buser-django-instrumentation-sentry
+Author: Erle Carrara
+Author-email: erle.carrara@buser.com.br
+License: MIT
+Keywords: buser sentry django
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: django (<4)
+Requires-Dist: raven (<7)
+Requires-Dist: sentry-sdk (<2)
+Provides-Extra: redis_dedup
+Requires-Dist: redis (<5) ; extra == 'redis_dedup'
+
+# buser-django-instrumentation-sentry
+
+Projeto com alguns utilitários para ajudar no envio de erros para o Sentry.
+
+O que tem aqui que pode ajudar no seu projeto?
+
+* Rate-limiting de envio de erros usando REDIS
+* Sanitizadores padrões para ajudar não enviar PII para o Sentry
+
+## Como usar?
+
+```shellscript
+pip install buser-django-instrumentation-sentry
+# coloca no seu requirements.in!
+```
+
+E então no projeto inicializa o Sentry usando os utilitários disponíveis aqui.
+
+```python
+import sentry_sdk
+import redis
+from buser_django_instrumentation_sentry.redis_dedup_integration import RedisDedupIntegration
+from buser_django_instrumentation_sentry.sanitize import create_event_sanitizer
+
+redis_client = redis.StrictRedis()
+
+sentry_sdk.init(
+    before_send=create_event_sanitizer(),
+    integrations=[
+        RedisDedupIntegration(redis_client)
+    ]
+)
+```
+
