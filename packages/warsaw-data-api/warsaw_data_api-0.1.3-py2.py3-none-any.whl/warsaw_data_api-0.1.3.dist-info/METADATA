@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: warsaw-data-api
+Version: 0.1.3
+Summary: Warsaw data python api
+License: MIT
+Author: Radoslaw Wielonski
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# Pythonic way to use Warsaw data API
+This package allow to fetch data from API provided by "UM Warszawa" - https://api.um.warszawa.pl/
+
+## Quick start
+
+### Instalation
+
+TODO
+
+### Using ZTM module 
+
+We can fetch all location data for buses:
+
+```
+import warsaw_data_api
+
+ztm = warsaw_data_api.client('ztm', apikey='your_api_key')
+buses = ztm.get_buses_location()
+
+for bus in buses:
+    print(bus)
+```
+
+We can do the same for trams, as a parameter we can set number of tram line 
+```
+import warsaw_data_api
+
+ztm = warsaw_data_api.client('ztm', apikey='your_api_key')
+trams = ztm.get_trams_location(lines=17)
+
+for tram in trams:
+    print(tram)
+```
