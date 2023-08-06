@@ -1,0 +1,3 @@
+[console_scripts]
+dlg_example_cmpts = dlg_example_cmpts.__main__:main
+
