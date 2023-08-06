@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pourl/__init__.py
+pourl/__main__.py
+pourl/util.py
+pourl.egg-info/PKG-INFO
+pourl.egg-info/SOURCES.txt
+pourl.egg-info/dependency_links.txt
+pourl.egg-info/entry_points.txt
+pourl.egg-info/top_level.txt
