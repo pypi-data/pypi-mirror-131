@@ -1,0 +1,11 @@
+unifhycontrib_gr4-0.1.0-py3.8-nspkg.pth,sha256=vp9kt0-BRL7cwYQx7_Dg4qk1aGWZW0PMf6F5Qjko9eA,574
+unifhycontrib/gr4/__init__.py,sha256=hNJO9NcoqXmOoYgQ-nEUeOA2KZJ7C3lvPB9d6Ng_HYc,134
+unifhycontrib/gr4/openwater.py,sha256=OVwS3FN2wuAB-0r2TafDYJgHvQQRzUc5l7MXYT9rgH8,4444
+unifhycontrib/gr4/subsurface.py,sha256=Fk6o4vqBiSV_Mdj4HmeNPCFO8EhKfng814rfE1REpHY,6322
+unifhycontrib/gr4/surfacelayer.py,sha256=BvOzbMOIwsxoYRJdRhVPT1a6mgYD7NvSGmNm1A5w6eY,5064
+unifhycontrib/gr4/version.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+unifhycontrib_gr4-0.1.0.dist-info/METADATA,sha256=5JVqROk6pYH_UZ4jTbGDv9NSMsjo24WOkPsO0eQW1jU,2554
+unifhycontrib_gr4-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+unifhycontrib_gr4-0.1.0.dist-info/namespace_packages.txt,sha256=wZbZYRIH7myrvsMQZALzb41Arwf528TFNzQLK5nRcI8,14
+unifhycontrib_gr4-0.1.0.dist-info/top_level.txt,sha256=wZbZYRIH7myrvsMQZALzb41Arwf528TFNzQLK5nRcI8,14
+unifhycontrib_gr4-0.1.0.dist-info/RECORD,,
