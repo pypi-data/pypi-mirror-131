@@ -1,0 +1,17 @@
+README.md
+setup.py
+beets_extended_metadata.egg-info/PKG-INFO
+beets_extended_metadata.egg-info/SOURCES.txt
+beets_extended_metadata.egg-info/dependency_links.txt
+beets_extended_metadata.egg-info/requires.txt
+beets_extended_metadata.egg-info/top_level.txt
+beetsplug/__init__.py
+beetsplug/emd_audiofilefields.py
+beetsplug/emd_command.py
+beetsplug/emd_command_options.py
+beetsplug/emd_metadata.py
+beetsplug/emd_query.py
+beetsplug/extendedmetadata.py
+test/test_beets_integration.py
+test/test_query_oneof_matcher.py
+test/test_query_regex_matcher.py
