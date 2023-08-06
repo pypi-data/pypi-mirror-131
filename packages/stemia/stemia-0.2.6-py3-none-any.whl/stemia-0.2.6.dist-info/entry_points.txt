@@ -1,0 +1,7 @@
+[console_scripts]
+center_filament = stemia.center_filament:main
+correlate = stemia.correlate:main
+csplot = stemia.csplot:main
+flip_z = stemia.flip_z:main
+rescale = stemia.rescale:main
+
