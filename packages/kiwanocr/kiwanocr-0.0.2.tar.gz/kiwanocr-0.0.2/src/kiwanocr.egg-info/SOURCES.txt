@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/kiwano/__init__.py
+src/kiwano/ocr.py
+src/kiwanocr.egg-info/PKG-INFO
+src/kiwanocr.egg-info/SOURCES.txt
+src/kiwanocr.egg-info/dependency_links.txt
+src/kiwanocr.egg-info/top_level.txt
