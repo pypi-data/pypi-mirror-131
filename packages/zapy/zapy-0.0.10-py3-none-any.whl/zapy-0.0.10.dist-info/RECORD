@@ -1,0 +1,10 @@
+templates/__init__.py,sha256=kPM5132VEfEGqg0kVMmXqnRhGYHoiC57fO3gXlraUng,14
+templates/api_class.py,sha256=FHRhbcN5Cx-1mZCQ6Woe82m3Hdex4A_NEy4mo_DJH08,534
+templates/class.py,sha256=NXmN0PVM6zighPb2ldssOVgAGnfzqPklb6TdwzEMV3c,91
+templates/method.py,sha256=i9c3mJA5fU0V6ueYgXtcpxQfmnlmJzMHBAuUhJX9sec,314
+templates/method_without_param.py,sha256=DbC2vVbdx9ieaV5n4S_SNqcG8ISfL0VfXr2zBron7E4,178
+zapy-0.0.10.dist-info/LICENSE.md,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+zapy-0.0.10.dist-info/METADATA,sha256=hLlb1EHd7cN5vsIpCgkwMN5Nesz8TmNEhCnf316aJHo,402
+zapy-0.0.10.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+zapy-0.0.10.dist-info/top_level.txt,sha256=Fm_uifOIeZdeTkA7g1vBrg8_icDP_XC7Gw4TPobfX0s,10
+zapy-0.0.10.dist-info/RECORD,,
