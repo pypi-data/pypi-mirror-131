@@ -1,0 +1,13 @@
+regtag/__init__.py,sha256=1xn_CDdLL_HiwtEJju7P8Vw5Httser6EDjhqVNgsu1c,24
+regtag/main.py,sha256=h26OJFNgffiJH7zLpijfuye1xdZuH1cvGQwkeaXsDAs,5064
+regtag/redate.py,sha256=EvTEWnve0yvTwTDY0WVSFo4WjH0FsqZ5uOVnQnNPoCc,83
+regtag/reid.py,sha256=9IsaTjTELDl5xhZpnD12KPMVsf-cm5qJjZrtoot_jbE,80
+regtag/renumbers.py,sha256=XimwHsVW7DJpbQU0NGvLLJJuzo9gV8Dyp2GIlQ5leg0,145
+regtag/renumberscales.py,sha256=Chc34nsj5ak48KzBrw4MqGzKn5IrC0zNZ0u9IZ9_lEU,294
+regtag/reoov.py,sha256=eUAZQNs4kNWfj_0rW7WJFkjnIuDMBlaWyfjkO9LBvZQ,601
+regtag/vidict.txt,sha256=QBdSqVyMl2OOz034RF3tYNnbh6jxu8ouf8O20A6xEy4,114755
+regtag-0.0.6.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+regtag-0.0.6.dist-info/METADATA,sha256=x49d9M9nHA_r9whPHWUtqCsjVxlJkGAzhJjnGXy3YtQ,582
+regtag-0.0.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+regtag-0.0.6.dist-info/top_level.txt,sha256=p_xCN4KxubhXa0cWjSbQtpg0LtdvJ-_PIV74dk2M1aI,7
+regtag-0.0.6.dist-info/RECORD,,
