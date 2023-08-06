@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: gtbook
+Version: 0.0.1
+Summary: test of nbdev
+Home-page: https://github.com/dellaert/gtbook/tree/master/
+Author: Frank Dellaert
+Author-email: dellaert@gmail.com
+License: Apache Software License 2.0
+Keywords: python,nbdev
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pip
+Requires-Dist: packaging
+Requires-Dist: graphviz
+Requires-Dist: gtsam
+Provides-Extra: dev
+
+# gtbook
+> An <a href='https://nbdev.fast.ai/'>nbdev</a> powered toolbox for Frank and Seth's robotics book.
+
+
+## Notes while installing
+
+- *Needs* `pip3 install -U nbdev`, not conda (has old version)
+- just do 'make' after changing any notebook.
+
+## Install
+
+`pip install gtbook`
+
+## How to use
+
+Fill me in please! Don't forget code examples:
+
+```python
+1+1
+```
+
+
+
+
+    2
+
+
+
+
