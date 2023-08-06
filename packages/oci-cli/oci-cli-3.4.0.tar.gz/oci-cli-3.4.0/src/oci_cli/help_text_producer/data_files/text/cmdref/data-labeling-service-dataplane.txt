@@ -1,0 +1,58 @@
+data-labeling-service-dataplane
+*******************************
+
+
+Description
+===========
+
+A description of the DlsDataPlane CLI.
+
+
+Available Commands
+==================
+
+* annotation
+
+  * create
+
+  * delete
+
+  * get
+
+  * update
+
+* annotation-analytics-aggregation-collection
+
+  * summarize-annotation-analytics
+
+* annotation-collection
+
+  * list-annotations
+
+* dataset
+
+  * get
+
+* record
+
+  * create
+
+  * create-record-create-object-storage-source-details
+
+  * delete
+
+  * get
+
+  * get-record-content
+
+  * get-record-preview-content
+
+  * update
+
+* record-analytics-aggregation-collection
+
+  * summarize-record-analytics
+
+* record-collection
+
+  * list-records
