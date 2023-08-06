@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+arithmetic-goimoi/__init__.py
+arithmetic-goimoi/add.py
+arithmetic-goimoi/divide.py
+arithmetic-goimoi/multiply.py
+arithmetic-goimoi/subtract.py
+arithmetic_goimoi.egg-info/PKG-INFO
+arithmetic_goimoi.egg-info/SOURCES.txt
+arithmetic_goimoi.egg-info/dependency_links.txt
+arithmetic_goimoi.egg-info/top_level.txt
