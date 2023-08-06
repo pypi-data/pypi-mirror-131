@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: vracer
+Version: 0.1.0
+Summary: creates a json data file after debugging the code
+Home-page: https://github.com/Ki6an/vracer
+Author: Kiran R
+Author-email: kiranr8k@gmail.com
+License: apache-2.0
+Project-URL: Repo, https://github.com/Ki6an/vracer
+Project-URL: Bug Tracker, https://github.com/Ki6an/vracer/issues
+Description: UNKNOWN
+Keywords: debug,python,create_debug_json
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
