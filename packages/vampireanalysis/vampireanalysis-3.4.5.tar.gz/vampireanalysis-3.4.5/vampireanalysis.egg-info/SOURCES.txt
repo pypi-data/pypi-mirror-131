@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+vampireanalysis.egg-info/PKG-INFO
+vampireanalysis.egg-info/SOURCES.txt
+vampireanalysis.egg-info/dependency_links.txt
+vampireanalysis.egg-info/entry_points.txt
+vampireanalysis.egg-info/requires.txt
+vampireanalysis.egg-info/top_level.txt
