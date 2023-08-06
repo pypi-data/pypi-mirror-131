@@ -1,0 +1,9 @@
+sans_db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sans_db/context_managers.py,sha256=YK4U12a7eV_mdmnUZCeOHY0Gfq2aISU9k9U2dVgcxLg,340
+sans_db/exceptions.py,sha256=LfXJE03D1mbtdN2gJiGqqce2HHlpqxIxLWHXXiUzFA4,49
+sans_db/template_backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sans_db/template_backends/django_sans_db.py,sha256=70W9xb79COSeu_LxMNGLHPoOGp7YGPSQpugV59cRMQQ,968
+django_sans_db-0.1.0.dist-info/LICENSE,sha256=kxvXLdZJpFeKHYSkQmkxbjD5myVmZo-sSEsJBBPd09Y,1071
+django_sans_db-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+django_sans_db-0.1.0.dist-info/METADATA,sha256=D0aGtX4ZPqunfzK1y7fMa-7rc_YgkGIQVqiOcHEUf94,1424
+django_sans_db-0.1.0.dist-info/RECORD,,
