@@ -1,0 +1,3 @@
+[opentelemetry_traces_exporter]
+zipkin = opentelemetry.exporter.zipkin.proto.http:ZipkinExporter
+
