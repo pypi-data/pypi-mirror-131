@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+zucker/__init__.py
+zucker/exceptions.py
+zucker/utils.py
+zucker.egg-info/PKG-INFO
+zucker.egg-info/SOURCES.txt
+zucker.egg-info/dependency_links.txt
+zucker.egg-info/top_level.txt
