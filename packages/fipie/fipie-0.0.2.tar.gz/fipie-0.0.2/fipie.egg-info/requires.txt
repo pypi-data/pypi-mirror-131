@@ -1,0 +1,9 @@
+pandas>=0.25
+scipy>=1.0
+
+[dev]
+pytest>=6.2.5
+coverage>=6.0.2
+sphinx==4.2.0
+sphinx-book-theme==0.1.6
+myst_parser==0.15.2
