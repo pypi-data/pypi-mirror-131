@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: MergeATSClient
+Version: 1.2.0
+Summary: Merge ATS API
+Home-page: UNKNOWN
+Author: Merge Team
+Author-email: hello@merge.dev
+License: UNKNOWN
+Description:     The unified API for building rich integrations with multiple Applicant Tracking System platforms.  # noqa: E501
+            
+Keywords: OpenAPI,OpenAPI-Generator,Merge ATS API
+Platform: UNKNOWN
+Requires-Python: >=3.6
