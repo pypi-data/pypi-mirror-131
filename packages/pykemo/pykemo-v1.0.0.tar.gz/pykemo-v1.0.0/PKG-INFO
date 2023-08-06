@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: pykemo
+Version: v1.0.0
+Summary: make a Fuzzy C-Means Clustering model in just 1 line of code 
+Home-page: https://github.com/Kareem-negm
+Author: kareem negm 
+Author-email: eng.kareem.negm@gmail.com
+License: MIT
+Download-URL: https://github.com/Kareem-negm/pykemo/archive/refs/tags/v1.0.0.tar.gz
+Description: UNKNOWN
+Keywords: fuzzy,clustering,machine learning,fuzzy c-means
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
