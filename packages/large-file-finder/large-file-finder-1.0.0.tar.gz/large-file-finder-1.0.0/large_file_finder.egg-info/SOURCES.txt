@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+large_file_finder.egg-info/PKG-INFO
+large_file_finder.egg-info/SOURCES.txt
+large_file_finder.egg-info/dependency_links.txt
+large_file_finder.egg-info/entry_points.txt
+large_file_finder.egg-info/requires.txt
+large_file_finder.egg-info/top_level.txt
