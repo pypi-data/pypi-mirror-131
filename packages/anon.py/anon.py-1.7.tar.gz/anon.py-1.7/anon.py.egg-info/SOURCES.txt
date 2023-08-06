@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+anon.py.egg-info/PKG-INFO
+anon.py.egg-info/SOURCES.txt
+anon.py.egg-info/dependency_links.txt
+anon.py.egg-info/not-zip-safe
+anon.py.egg-info/requires.txt
+anon.py.egg-info/top_level.txt
+anonym/__init__.py
+anonym/client.py
+anonym/util/exceptions.py
+anonym/util/headers.py
+anonym/util/helping.py
+anonym/util/objects.py
