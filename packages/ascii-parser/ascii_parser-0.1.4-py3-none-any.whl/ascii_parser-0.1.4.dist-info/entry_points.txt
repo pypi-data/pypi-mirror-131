@@ -1,0 +1,3 @@
+[console_scripts]
+ascii_parser=ascii_parser.__main__:app
+

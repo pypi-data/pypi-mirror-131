@@ -1,0 +1,8 @@
+ascii_parser/__init__.py,sha256=iYQlfi2ZExdWRRXPt5cdmHuHrgHLWiQEiZ4KLFTpQZk,551
+ascii_parser/__main__.py,sha256=SdEDMAwqGI1L_2duvLMlZxOhdbNQAcaMXTaTFFU9f74,974
+ascii_parser/parser.py,sha256=DWKsYEulkiS4eSfQJSflu43YNULHdudxqg4KeSuHGIU,1205
+ascii_parser-0.1.4.dist-info/entry_points.txt,sha256=STn9aqa9Q6xqoH9rABwl8klJof6TaH_nzhOM2VssIII,58
+ascii_parser-0.1.4.dist-info/LICENSE,sha256=0ElQUwUZZ-vnb7H6zSh9edHtgA2hvnXPUBpVa8OaBHI,32471
+ascii_parser-0.1.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+ascii_parser-0.1.4.dist-info/METADATA,sha256=WFxFPSHECy4ULFcVOJA6cYlCTy3iTwkCOqLqwBw_SAc,14250
+ascii_parser-0.1.4.dist-info/RECORD,,
