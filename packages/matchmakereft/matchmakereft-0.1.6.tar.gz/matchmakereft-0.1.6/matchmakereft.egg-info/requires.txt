@@ -1,0 +1,5 @@
+colorama
+requests
+setuptools
+tqdm
+yolk3k
