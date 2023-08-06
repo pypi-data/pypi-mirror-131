@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "zdpapi_ssh"
+version = "0.1.0"
+description = "python实现ssh操作"
+authors = ["张大鹏 <lxgzhw@163.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/zhangdapeng520/zdpapi_ssh"
+repository = "https://github.com/zhangdapeng520/zdpapi_ssh"
+documentation = "https://github.com/zhangdapeng520/zdpapi_ssh"
+keywords = ["zdpapi", "ssh", "zhangdapeng"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+paramiko = "^2.8.1"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
