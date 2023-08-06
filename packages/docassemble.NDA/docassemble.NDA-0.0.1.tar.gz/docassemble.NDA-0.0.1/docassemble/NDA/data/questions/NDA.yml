@@ -1,0 +1,50 @@
+question: What course do you take?
+fields:
+  - Course: course
+    choices:
+      - 'LLAW3254 Law, Innovation, Technology and Entrepreneurship (LITE): Tech Startup Law'
+      - 'LLAW3272 Law, Innovation, Technology and Entrepreneurship (LITE) Lab: Lawtech & Regtech Sandbox'
+      - 'LLAW6302/JDOC6302 Law, Innovation, Technology and Entrepreneurship (LITE): Tech Startup Law+'
+      - 'LLAW3255 Law, Innovation, Technology and Entrepreneurship (LITE): Tech Startup Law'
+      - 'LLAW3271 Law, Innovation, Technology and Entrepreneurship (LITE) Lab: Undergraduate Internship'
+      - 'LLAW6301/JDOC6301 Law, Innovation, Technology and Entrepreneurship (LITE): Postgraduate Internship'
+---
+question: What is your name?
+fields:
+  - Name: name
+---
+question: What is your HKU ID number?
+fields:
+  - ID: ID
+---
+question: What is your HKU email address?
+fields:
+  - Email: email
+    datatype: email
+---
+question: |
+  Do you hereby undertake to the University of Hong Kong and the LITE Lab instructors
+subquestion: |
+  i.	to keep any non-public information received regarding the project partners, internship hosts, projects and/or matters related to LITE Lab strictly confidential, and that I will not disclose, copy, or otherwise share any such information in any fashion with any third party without the prior written approval of the LITE Lab instructors; and
+  
+  ii.	to declare all my interests that may conflict with the interests of any project partner, internship host, and/or projects related to LITE Lab that I am involved in and recuse myself from working on any such matters. 
+
+signature: signature
+under: |
+  ${ name }
+---
+question: This is your signed NDA form
+attachment:
+  name: NDA
+  filename: LLAWNDA
+  docx template file: LLAW3254_LITE_Student_undertaking_on_confidentiality_and_conflicts_2.docx
+  field code:
+    - date: today()
+
+buttons:
+  - Exit: exit
+  
+mandatory: True
+---
+  
+  
