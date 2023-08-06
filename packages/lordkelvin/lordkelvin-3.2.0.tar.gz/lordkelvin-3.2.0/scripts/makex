@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+import os, sys
+while 1:
+    dl = os.listdir('.')
+    if 'Makefile' in dl:
+        os.execlp('make', *sys.argv)
+    elif os.path.realpath('.') == '/':
+        raise SystemExit("Error: '%s' Not Found" % mf)
+    os.chdir('..')
+    pass
+raise exit()
