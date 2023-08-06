@@ -1,0 +1,10 @@
+pycamgeom/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycamgeom/aabbtree.py,sha256=6t1jNV-9Qua22SAsJuYMTpPCORcBxCfeFAJ6bJA1I_Y,27725
+pycamgeom/camera.py,sha256=tA2p-gFQOLHW4ds2h-u0honEfjQmnQzIV3l4DDgbp6A,5471
+pycamgeom/frame.py,sha256=YiPV3ZqJZheubc0IG46h-OrHKGdmcT8BhzNDxffzQ8Y,6857
+pycamgeom/projector.py,sha256=U3l5HEi5nEJISe3UfxwnwnkdR1QyiIVlQvdETCUUsog,3491
+pycamgeom-0.0.4.dist-info/LICENSE,sha256=s8ek7yMEEWWM-rhQK_Qi7qzCr5uBpmyrlLEhbRrMFGA,1072
+pycamgeom-0.0.4.dist-info/METADATA,sha256=xhsHK14dO7csK979H9r0yiGJHy9Ygqv_ObLiLmIzC3w,763
+pycamgeom-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pycamgeom-0.0.4.dist-info/top_level.txt,sha256=7xNZmYY3tBQ4Y8iOL4LSToEgZecSpgPHpT7ttz1z7Mc,10
+pycamgeom-0.0.4.dist-info/RECORD,,
