@@ -1,0 +1,26 @@
+cython
+dill
+prophet
+GitPython
+JPype1==1.0.2
+matplotlib
+numpy!=1.18.*
+packaging
+pandas>=1.1.0
+pystan<3.0"
+scikit-learn>=0.22
+statsmodels>=0.12.2
+torch>=1.1.0
+lightgbm
+tqdm
+wheel
+pytest
+
+[:python_version < "3.7"]
+scipy>=1.5.0
+
+[:python_version >= "3.7"]
+scipy>=1.6.0
+
+[plot]
+plotly>=4.13
