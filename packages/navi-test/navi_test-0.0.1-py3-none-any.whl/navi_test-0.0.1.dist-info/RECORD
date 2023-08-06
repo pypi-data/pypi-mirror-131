@@ -1,0 +1,10 @@
+navi-test/__init__.py,sha256=yiXBKeGwjPmbDkL9p-yG_b4IF0C-Yix3k5LCy-z757A,124
+navi-test/add.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+navi-test/subtract.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+navi-test/extras/__init__.py,sha256=XTHSCT_9-eDje28KOeDfsIs7CxiDvs6YAAYXGBrWiEE,58
+navi-test/extras/divide.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+navi-test/extras/multiply.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+navi_test-0.0.1.dist-info/METADATA,sha256=S7vboekbVySlDlVz_dzDa9UVZy5CyQMk1rOQf6NprZw,586
+navi_test-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+navi_test-0.0.1.dist-info/top_level.txt,sha256=lb8z4WGA6vs6tMNd4Uni9JlwP3Fb_jgO8r4AN0q-80k,10
+navi_test-0.0.1.dist-info/RECORD,,
