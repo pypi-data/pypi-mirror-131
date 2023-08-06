@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+SMComPy.egg-info/PKG-INFO
+SMComPy.egg-info/SOURCES.txt
+SMComPy.egg-info/dependency_links.txt
+SMComPy.egg-info/not-zip-safe
+SMComPy.egg-info/requires.txt
+SMComPy.egg-info/top_level.txt
+SMComPy_src/pybind11_config.cpp
+include/SMCom.h
+include/SMCom.tpp
+src/SMCom.cpp
