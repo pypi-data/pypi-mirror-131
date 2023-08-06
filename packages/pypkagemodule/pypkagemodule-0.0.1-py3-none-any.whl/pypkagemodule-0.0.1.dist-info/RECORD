@@ -1,0 +1,10 @@
+pypkagemodule/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypkagemodule/add.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypkagemodule/subtract.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypkagemodule/extra/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypkagemodule/extra/devide.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypkagemodule/extra/multiply.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypkagemodule-0.0.1.dist-info/METADATA,sha256=mB8dLRUD6cw7XKpp3jXjnmKbmsyDDocpt6FY7VJ1LcI,583
+pypkagemodule-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pypkagemodule-0.0.1.dist-info/top_level.txt,sha256=zuWHLjtXZ-QJujmmV-OX_TCV0X3LFMjXYMvGpH_yfBw,14
+pypkagemodule-0.0.1.dist-info/RECORD,,
