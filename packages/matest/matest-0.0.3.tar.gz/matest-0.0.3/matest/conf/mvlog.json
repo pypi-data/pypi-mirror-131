@@ -1,0 +1,21 @@
+{
+    "short_run": "v",
+    "context": {},
+    "argv": {
+        "-d": {
+            "require": ":",
+            "desc": "总持续时间，秒数",
+            "full": "duration"
+        },
+        "-f": {
+            "require": ":",
+            "desc": "多少帧，每秒",
+            "full": "fps"
+        }
+    },
+    "params": {
+        "fps": 12,
+        "duration": 15,
+        "region": [14, 88, 910, 512]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "short_run": "p",
+    "context": {},
+    "argv": {
+        "-h": {
+            "require": ":",
+            "desc": "字段名转小驼峰",
+            "full": "xtf"
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "short_run": "m",
+    "context": {},
+    "argv": {
+        "-r": {
+            "require": ":",
+            "desc": "动态运行哪个脚本",
+            "full": "run"
+        },
+        "-y": {
+            "require": "",
+            "desc": "是，确认提示框：比如是否覆盖文件？",
+            "full": "yes"
+        },
+        "-i": {
+            "require": ":",
+            "desc": "输入",
+            "full": "input"
+        },
+        "-o": {
+            "require": ":",
+            "desc": "输出",
+            "full": "output"
+        },
+        "-u": {
+            "require": ":",
+            "desc": "用户名",
+            "full": "user"
+        },
+        "-p": {
+            "require": ":",
+            "desc": "密码",
+            "full": "password"
+        }
+    }
+}
