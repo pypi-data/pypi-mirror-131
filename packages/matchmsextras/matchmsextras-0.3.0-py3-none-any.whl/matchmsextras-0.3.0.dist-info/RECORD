@@ -1,0 +1,11 @@
+matchmsextras/__init__.py,sha256=ET_VLeiDwo3Ibz2diJXQEmWeo2D2UHnQ4Ljd4XF5Gj8,231
+matchmsextras/__version__.py,sha256=3wVEs2QD_7OcTlD97cZdCeizd2hUbJJ0GeIO8wQIjrk,22
+matchmsextras/library_search.py,sha256=IDeR5nLsNz-YN0HWZB3rZd4TcMKyexf7sqnerUxwnkc,9541
+matchmsextras/networking.py,sha256=lUmST5qg5wHoVLdkpwGlfNbV9_r0rFGjptelfthg9j8,44924
+matchmsextras/plotting_functions.py,sha256=u7sOyOYBLCut_uwcXKvyScrEX7NeOJAJDQUim_jkp-k,15111
+matchmsextras/pubchem_lookup.py,sha256=JpH6BV8NAj4sJcZKuDB6j6mSq1v7ckcxyiDnhe-nyuw,16195
+matchmsextras-0.3.0.dist-info/LICENSE,sha256=OPzV6bHGPCXFylyiCR3GYAK-EP8seLDbcbgO87DYM1o,11359
+matchmsextras-0.3.0.dist-info/METADATA,sha256=n0xh5oFJyT6Ek5QgsQljlHNZ9AZ78kVDc4bRo9zeFCM,3971
+matchmsextras-0.3.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+matchmsextras-0.3.0.dist-info/top_level.txt,sha256=vtDoPUB3tyj6WgnVsU4mhMLO5MzT5TSa5tFXgRSySF4,14
+matchmsextras-0.3.0.dist-info/RECORD,,
