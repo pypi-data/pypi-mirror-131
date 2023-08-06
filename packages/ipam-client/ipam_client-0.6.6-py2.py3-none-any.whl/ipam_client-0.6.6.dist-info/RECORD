@@ -1,0 +1,15 @@
+ipam/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipam/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipam/client/abstractipam.py,sha256=bt_5cqw6DB9cQZ9LfV-K09tSUavdeLtKqoJTl6Jn9mo,2915
+ipam/client/backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipam/client/backends/phpipam.py,sha256=BjfGE0hMpcO3loOp8wKPq-ZVM4Y3P4S8Il2DOc2ept4,32931
+ipam/client/tests/test_phpipam.py,sha256=jMyNXEJpp47V-SxmNWMyPzO7ZhweF074-i0LZaYRxKI,40597
+ipam/client/tests/data/db-no-settings.sql,sha256=EW8dynygV18YfgclNYgvsEeV8uuCy1hm_ljjqFop83Y,3384
+ipam/client/tests/data/db-old-version.sql,sha256=rlCPEYd-AMzGuKJWbKHBBqF8ubKEL2xwZ-nvd7hNk88,6234
+ipam/client/tests/data/db-recent-version.sql,sha256=Nw91QJJNtvDd4SjCnCQYAh8a0vM7JIif4aZ7819duNo,6290
+ipam_client-0.6.6.dist-info/AUTHORS,sha256=5YnRRSS4fHfoLVWxQQnu0FYG4-f5rgLHlYwBp7yGcxo,33
+ipam_client-0.6.6.dist-info/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ipam_client-0.6.6.dist-info/METADATA,sha256=C32ee6V5Z-ygsoDzlY8E0kLklZ6Uyv64HnOEunCzhAk,940
+ipam_client-0.6.6.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+ipam_client-0.6.6.dist-info/top_level.txt,sha256=hLAiFWm09E88OULzygfneQeUB4c6I6MEZY5iAl9FxQ0,5
+ipam_client-0.6.6.dist-info/RECORD,,
