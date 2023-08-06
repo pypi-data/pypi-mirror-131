@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: split-merge-dir
+Version: 6.0.0
+Summary: 文件拆分 & 合并
+Home-page: UNKNOWN
+Author: Shawn
+Author-email: shx15979391664@163.com
+License: MIT Licence
+Keywords: pip,split,merge
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+文件拆分 & 合并
+
