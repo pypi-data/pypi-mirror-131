@@ -1,0 +1,9 @@
+LICENSE,sha256=wnDJSiK4s6YIHkjIH1ans03uUeNqDVfh89qB69C0Na4,1333
+incolumepy/gwa/__init__.py,sha256=3355GVVtMcg0KeYsZ6uxpHzwBI1nY3NZNieP1V8mnbE,454
+incolumepy/gwa/hello.py,sha256=zO-HL5TOaVkmZRwmciAPUDImN2tsrFnGeOrPxITupBY,409
+incolumepy/gwa/version.txt,sha256=D5MIFXJSgRIl7HxO5xL5m2X8UopV7QEgfWUjxmSXn7Q,7
+pyproject.toml,sha256=B4zMPbrPnv3uQHjMikz5ZBWhX2R8NIpG5jbim4L354o,4008
+incolumepy.gwa-0.1.32.dist-info/LICENSE,sha256=wnDJSiK4s6YIHkjIH1ans03uUeNqDVfh89qB69C0Na4,1333
+incolumepy.gwa-0.1.32.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+incolumepy.gwa-0.1.32.dist-info/METADATA,sha256=uNd__aoy82suWjmaIvj_PGPlXWFnRaqPiCOWSL5w4SM,10202
+incolumepy.gwa-0.1.32.dist-info/RECORD,,
