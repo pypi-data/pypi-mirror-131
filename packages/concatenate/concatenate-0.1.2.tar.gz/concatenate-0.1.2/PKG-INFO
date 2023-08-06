@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: concatenate
+Version: 0.1.2
+Summary: Concatenate two objects of the same type
+Home-page: https://github.com/tombulled/concatenate
+License: MIT
+Keywords: python,concatenate,join
+Author: Tom Bulled
+Author-email: 26026015+tombulled@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: registrate (>=0.1.6,<0.2.0)
+Project-URL: Repository, https://github.com/tombulled/concatenate
+Description-Content-Type: text/markdown
+
+# concatenate
+Concatenate two objects of the same type
+
+## Installation
+```sh
+pip install concatenate
+```
+
+## Usage
+```python
+>>> from concatenate import concatenate
+>>>
+>>> # int
+>>> assert concatenate(123, 456) == 123456
+>>> assert concatenate(0xdead, 0xbeef, base=16) == 0xdeadbeef
+>>> assert concatenate(0b1010, 0b1100, base=2) == 0b10101100
+>>> assert concatenate(0o137, 0o246, base=8) == 0o137246
+>>>
+>>> # str
+>>> assert concatenate('foo', 'bar') == 'foobar'
+>>>
+>>> # dict
+>>> assert concatenate({'a': 1}, {'b': 2}) == {'a': 1, 'b': 2}
+>>>
+>>> # list
+>>> assert concatenate([1, 2, 3], [4, 5, 6]) == [1, 2, 3, 4, 5, 6]
+>>>
+>>> # tuple
+>>> assert concatenate((1, 2, 3), (4, 5, 6)) == (1, 2, 3, 4, 5, 6)
+>>>
+>>> # set
+>>> assert concatenate({1, 2, 3}, {3, 4, 5}) == {1, 2, 3, 4, 5}
+```
