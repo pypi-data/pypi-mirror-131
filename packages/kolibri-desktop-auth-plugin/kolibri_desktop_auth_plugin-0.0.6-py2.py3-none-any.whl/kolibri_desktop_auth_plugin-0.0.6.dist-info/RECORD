@@ -1,0 +1,15 @@
+kolibri_desktop_auth_plugin/__init__.py,sha256=QiiYsv0kcJaB8wCWyT-FnI2b6be87HA-CrrIUn8LQhg,22
+kolibri_desktop_auth_plugin/backends.py,sha256=qfVf5zzki5BFgNqfmGjv3qVOPtJk07rpcLQNxDySUdk,1465
+kolibri_desktop_auth_plugin/kolibri_plugin.py,sha256=zNBYPAL6qo7xICuPFNLD-aN0b0tZC0sWzR69NVuMzGM,211
+kolibri_desktop_auth_plugin/models.py,sha256=6I37nJfvNY4R9CWBpkt8DEE6KeR3-Mj0H6yCf512lKs,2433
+kolibri_desktop_auth_plugin/options.py,sha256=0JKkWPRVKeLEmAqrUBx-ujNWS8zzfGJamlKnx4KDJJo,319
+kolibri_desktop_auth_plugin/settings.py,sha256=WiLlpVaRa65smRoAKvrBLbkrgzJjdTv_rOENCLTo5XU,90
+kolibri_desktop_auth_plugin/urls.py,sha256=wNrR2ORsei_40g-TbtlZFEdtaoGopKQo0w-obGZEmGA,157
+kolibri_desktop_auth_plugin/views.py,sha256=vU3j6QGZetV3HJnnyPCjPmGe9UZ1BZ-oWADM8y7FTws,616
+kolibri_desktop_auth_plugin/migrations/0001_initial.py,sha256=1qgWHNPp0kdK8ay05KJsfjsULnWJIKhqybs0fR-HTZw,1076
+kolibri_desktop_auth_plugin/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kolibri_desktop_auth_plugin-0.0.6.dist-info/METADATA,sha256=jtWDMK_MqSSVxmmogSiS43V24u9DS68-8_gkPA91JGk,899
+kolibri_desktop_auth_plugin-0.0.6.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+kolibri_desktop_auth_plugin-0.0.6.dist-info/entry_points.txt,sha256=M6ydUWYgVZBC0WDphzbe2bqkZXmfHKw_4etTL0hpqxY,77
+kolibri_desktop_auth_plugin-0.0.6.dist-info/top_level.txt,sha256=xOOMfPYFcCJFkAE200AwEJANkgfufVhGF-mqynLvUM4,28
+kolibri_desktop_auth_plugin-0.0.6.dist-info/RECORD,,
