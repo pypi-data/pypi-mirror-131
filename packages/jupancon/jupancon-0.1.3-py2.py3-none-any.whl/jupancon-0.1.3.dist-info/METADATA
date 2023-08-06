@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: jupancon
+Version: 0.1.3
+Summary: Jupancon, connector to several DBs that returns pandas. Magic included.
+Author-email: Juan González-Vallinas <juan@multilayer.io>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pandas==1.3.3
+Requires-Dist: sshtunnel==0.4.0
+Requires-Dist: psycopg2-binary==2.9.1
+Requires-Dist: pyparsing==2.4.7
+Requires-Dist: sqlalchemy-redshift==0.8.6
+Requires-Dist: sqlalchemy-bigquery==1.2.1
+Requires-Dist: google-cloud-bigquery-storage==2.9.1
+Requires-Dist: pyarrow==6.0.0
+Requires-Dist: pytest==6.2.5
+Requires-Dist: pytest==6.2.5 ; extra == "test"
+Requires-Dist: jupyter==1.0.0 ; extra == "test"
+Requires-Dist: jupyterlab==3.1.14 ; extra == "test"
+Requires-Dist: black==21.9b0 ; extra == "test"
+Requires-Dist: flake8==3.9.2 ; extra == "test"
+Requires-Dist: isort==5.9.3 ; extra == "test"
+Project-URL: Home, https://github.com/multilayer-io/jupancon
+Provides-Extra: test
+
+# jupancon
+
+Database Connectors and SQL magics for Jupyter lab.
+
+(What follows is all still *very* WIP)
+
+### Install
+
+```
+pip install jupancon
+```
+### Configure
+
+Write a `~/.jupycon/config.yml` (old name, have to fix that) YAML file that looks like so (C&P from my actual config file, but heavily censored for obvious reasons):
+
+```
+default: my-redshift-cluster
+
+my-redshift-cluster: 
+    type: redshift
+    host: XXXXXX.XXXXXX.XXXXXXX.redshift.amazonaws.com
+    # explicitly setting redshift port (optional)
+    port: 5439
+    user: XXXXXXXX
+    pass: XXXXXXXX
+    dbname: XXXXXX
+
+
+my-gcp:
+    type: bigquery
+    project: XXXXX-XXXXX-123456
+
+```
+
+# How to use
+
+### Regular usage
+
+```
+from jupancon import query, list_schemas, list_tables
+
+list_schemas()
+
+list_tables()
+
+query("select * from foo")
+```
+
+### Magical usage
+
+```
+from jupancon import load_magics
+
+load_magics()
+```
+
+```
+select * from foo
+```
+
+```
+df = %select * from foo
+```
+
+```
+%%sql
+
+select * 
+from foo
+where cond = 1
+and whatever
+```
+
