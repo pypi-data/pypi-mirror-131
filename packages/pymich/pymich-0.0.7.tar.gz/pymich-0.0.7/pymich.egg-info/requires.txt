@@ -1,0 +1,7 @@
+pytezos
+cli2
+
+[test]
+freezegun
+pytest
+pytest-cov
