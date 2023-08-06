@@ -1,0 +1,72 @@
+from __future__ import annotations
+
+{% if unobservable_properties or observable_properties or unobservable_commands or observable_commands %}
+from typing import Any, Dict
+from sila2.framework import FullyQualifiedIdentifier
+{% endif %}
+
+{% for i in definition_imports %}
+from ..generated.{{ feature._identifier|lower }} import {{ i }}
+{% endfor %}
+
+{% for import_ in imports %}
+from {{ import_.origin }} import {{ import_.target }}
+{% endfor %}
+
+{% if metadata %}
+from typing import List, Union
+from sila2.framework import Feature, Command, Property, FullyQualifiedIdentifier
+{% endif %}
+
+{% if observable_properties or observable_commands %}
+from queue import Queue
+{% endif %}
+
+{% if observable_commands %}
+from sila2.framework import CommandExecutionInfo
+{% endif %}
+
+{% for cmd in unobservable_commands %}
+from ..generated.{{ feature._identifier|lower }} import {{ cmd.name }}_Responses
+{% endfor %}
+{% for cmd in observable_commands %}
+from ..generated.{{ feature._identifier|lower }} import {{ cmd.name }}_Responses
+    {% if cmd.intermediate_responses %}
+from ..generated.{{ feature._identifier|lower }} import {{ cmd.name }}_IntermediateResponses
+    {% endif %}
+{% endfor %}
+
+from ..generated.{{ feature._identifier|lower }} import {{ feature._identifier }}Base
+
+class {{ feature._identifier }}Impl({{ feature._identifier }}Base):
+{% for prop in unobservable_properties %}
+    def get_{{ prop.name }}(self, *, metadata: Dict[FullyQualifiedIdentifier, Any]) -> {{ prop.type.representation }}:
+        raise NotImplementedError  # TODO
+{% endfor %}
+
+{% for cmd in unobservable_commands %}
+    def {{ cmd.name }}(
+    self,
+    {% for param in cmd.parameters %}{{ param.name }}: {{ param.type.representation }},{% endfor %}
+    *,
+    metadata: Dict[FullyQualifiedIdentifier, Any]
+    ) -> {{ cmd.name }}_Responses:
+        raise NotImplementedError  # TODO
+{% endfor %}
+
+{% for cmd in observable_commands %}
+    def {{ cmd.name }}(
+        self,
+        {% for param in cmd.parameters %}{{ param.name }}: {{ param.type.representation }},{% endfor %}
+        *,
+        metadata: Dict[FullyQualifiedIdentifier, Any],
+        execution_info_queue: Queue[CommandExecutionInfo],
+        {% if cmd.intermediate_responses %}intermediate_response_queue: Queue[{{ cmd.name }}_IntermediateResponses],{% endif %}
+    ) -> {{ cmd.name }}_Responses:
+        raise NotImplementedError  # TODO
+{% endfor %}
+
+{% for meta in metadata %}
+    def get_calls_affected_by_{{ meta.name }}(self) -> List[Union[Feature, Command, Property, FullyQualifiedIdentifier]]:
+        raise NotImplementedError  # TODO
+{% endfor %}
