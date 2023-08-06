@@ -1,0 +1,48 @@
+<div>
+    <ul class="layui-nav layui-nav-tree layui-nav-side layui-nav-child-c" style="width: 225px" >
+        <div class="logo-title">
+            <a href="/docs">{{ title }}</a>
+        </div>
+
+        {% if data %}
+            {% for item in data %}
+                <!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a>{{ item.tag.description }}</a>
+                    <dl class="layui-nav-child">
+                        {% for path in item.paths %}
+                            {% if request.GET.path ==  path.path  %}
+                                <dd class="layui-this" ><a href="/docs?tag={{ item.tag.name }}&path={{ path.path }}">{{ path.summary }}</a></dd>
+                            {% else %}
+                                <dd ><a href="/docs?tag={{ item.tag.name }}&path={{ path.path }}">{{ path.summary }}</a></dd>
+                            {% endif %}
+                        {% endfor %}
+                    </dl>
+                </li>
+            {% endfor %}
+        {% endif %}
+
+    </ul>
+
+</div>
+
+<style>
+    .logo-title {
+        line-height: 60px;
+        background-color: #23262E;
+    }
+
+    .logo-title a {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+</style>
+
+<script>
+    $(function () {
+        $("dd").click(function () {
+            $(this).addClass("layui-this").siblings().removeClass("layui-this");
+        });
+    });
+</script>

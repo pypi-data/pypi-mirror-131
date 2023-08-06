@@ -1,0 +1,317 @@
+{% if data %}
+    {% for item in data %}
+        {% if item.tag.name == request.GET.tag and request.get_full_path != '/docs' %}
+            {% for path in item.paths %}
+                {% if path.path == request.GET.path %}
+                    <div class="main-title layui-elem-quote">
+                        <p>{{ path.summary }}</p>
+                    </div>
+                    <hr>
+                    <div class="layui-form">
+
+                        <table class="layui-table">
+                            <colgroup>
+                                <col width="100">
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <td>URL</td>
+                                <td>
+                                    <span class="path-label">
+                                        {{ path.path }}
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>请求方式</td>
+                                <td>
+                                    <span class="label label-primary">{{ path.method }}</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div class="label-title">
+                        <span>请求参数</span>
+
+                    </div>
+                    <div class="layui-form">
+
+                        <table class="layui-table">
+
+                            <thead>
+                            <tr>
+                                <th>参数</th>
+                                <th>说明</th>
+                                <th>类型</th>
+                                <th>必填</th>
+                                <th>示例</th>
+                                <th>备注</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for param in path.params %}
+
+                                    <tr>
+                                        <td>{{ param.name }}</td>
+                                        <td>{{ param.description }}</td>
+                                        <td>{{ param.type }}</td>
+                                        {% if param.require == True %}
+                                            <td style="color: red">{{ param.require }}</td>
+                                        {% else %}
+                                            <td>{{ param.require }}</td>
+                                        {% endif %}
+
+                                        <td>{{ param.example }}</td>
+                                        <td>{{ param.remark }}</td>
+                                    </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="label-title">
+                        <span>状态码</span>
+                    </div>
+                    <div class="pre-code">
+                        {% for datum in status_code %}
+                            <div>{{ datum.code }} {{ datum.message }}</div>
+                        {% endfor %}
+                    </div>
+
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+
+
+    {% endfor %}
+    {% if request.get_full_path == '/docs' %}
+        <h3 id="toc_2">返回格式说明</h3>
+
+        <div><pre><code class="language-none">{
+    &quot;status&quot;:&quot;succ&quot;,//状态 成功:succ 异常:fail
+    &quot;code&quot;:20000,//状态码
+    &quot;message&quot;:&quot;请求成功&quot;,//状态码对应提示语
+    &quot;data&quot;:{},//业务数据块
+    &quot;systemTime&quot;:1500000000000//服务器当前时间戳
+}</code></pre>
+        </div>
+    {% endif %}
+
+
+
+{% endif %}
+
+<style>
+    .main-title {
+        font-weight: bold;
+    }
+
+    .label-title {
+        font-size: 14px;
+    }
+    .main-title h3 {
+        border-left: #009688 4px solid;
+        padding-left: 10px;
+    }
+
+    hr {
+        background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+        border: 0 none;
+        color: #cccccc;
+        height: 4px;
+        padding: 0;
+    }
+
+    .pre-code {
+        background-color: #f8f8f8;
+        border: 1px solid #cccccc;
+        font-size: 14px;
+        line-height: 19px;
+        overflow: auto;
+        padding: 6px 10px;
+        border-radius: 3px;
+        margin: 10px 0;
+    }
+</style>
+
+<script>
+    layui.use('code', function () { //加载code模块
+        layui.code(); //引用code方法
+    });
+    layui.use(['form'], function () {
+        var form = layui.form; //只有执行了这一步，部分表单元素才会自动修饰成功
+        var $ = layui.$;
+
+        //但是，如果你的HTML是动态生成的，自动渲染就会失效
+        //因此你需要在相应的地方，执行下述方法来手动渲染，跟这类似的还有 element.init();
+        //form.render();
+
+        //表单取值
+        layui.$('#LAY-component-form-getval').on('click', function(){
+            var data = form.val('example');
+            console.log(data)
+        });
+
+        form.on('submit(*)', function(data){
+            console.log(data.elem) //被执行事件的元素DOM对象，一般为button对象
+            console.log(data.form) //被执行提交的form对象，一般在存在form标签时才会返回
+            console.log(data.field) //当前容器的全部表单字段，名值对形式：{name: value}
+            return false; //阻止表单跳转。如果需要表单跳转，去掉这段即可。
+        });
+    });
+</script>
+
+<style type="text/css">
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 20px 0 10px;
+        padding: 0;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+        cursor: text;
+        position: relative;
+    }
+
+
+    h3 tt, h3 code {
+        font-size: inherit;
+    }
+
+    h4 tt, h4 code {
+        font-size: inherit;
+    }
+
+    h5 tt, h5 code {
+        font-size: inherit;
+    }
+
+    h6 tt, h6 code {
+        font-size: inherit;
+    }
+
+    h1 {
+        font-size: 28px;
+        color: black;
+    }
+
+    h2 {
+        font-size: 24px;
+        border-bottom: 1px solid #cccccc;
+        color: black;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    code, tt {
+        margin: 0 2px;
+        padding: 0 5px;
+        white-space: nowrap;
+        border: 1px solid #eaeaea;
+        background-color: #f8f8f8;
+        border-radius: 3px;
+    }
+
+    pre code {
+        margin: 0;
+        padding: 0;
+        white-space: pre;
+        border: none;
+        background: transparent;
+    }
+
+    .highlight pre {
+        background-color: #f8f8f8;
+        border: 1px solid #cccccc;
+        font-size: 13px;
+        line-height: 19px;
+        overflow: auto;
+        padding: 6px 10px;
+        border-radius: 3px;
+    }
+
+    pre {
+        background-color: #f8f8f8;
+        border: 1px solid #cccccc;
+        font-size: 13px;
+        line-height: 19px;
+        overflow: auto;
+        padding: 6px 10px;
+        border-radius: 3px;
+    }
+
+    pre code, pre tt {
+        background-color: transparent;
+        border: none;
+    }
+
+    sup {
+        font-size: 0.83em;
+        vertical-align: super;
+        line-height: 0;
+    }
+
+    kbd {
+        display: inline-block;
+        padding: 3px 5px;
+        font-size: 11px;
+        line-height: 10px;
+        color: #555;
+        vertical-align: middle;
+        background-color: #fcfcfc;
+        border: solid 1px #ccc;
+        border-bottom-color: #bbb;
+        border-radius: 3px;
+        box-shadow: inset 0 -1px 0 #bbb
+    }
+
+    * {
+        -webkit-print-color-adjust: exact;
+    }
+
+    @media screen and (min-width: 914px) {
+        body {
+            width: 854px;
+            margin: 0 auto;
+        }
+    }
+
+    @media print {
+        table, pre {
+            page-break-inside: avoid;
+        }
+
+        pre {
+            word-wrap: break-word;
+        }
+    }
+
+    .label {
+        display: inline;
+        font-size: 75%;
+        font-weight: 700;
+        line-height: 1;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        padding: 0.2em 0.6em 0.3em;
+        border-radius: 0.25em;
+    }
+
+    .label-primary {
+        background-color: #009688;
+    }
+
+    .path-label {
+        color: rgb(199, 37, 78);
+        background-color: rgb(249, 242, 244);
+        padding: 2px 4px;
+        border-radius: 4px;
+    }
+</style>
