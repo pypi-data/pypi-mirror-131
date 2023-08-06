@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.py
+sttable2/__init__.py
+sttable2/parser.py
+sttable2/table.py
+sttable2.egg-info/PKG-INFO
+sttable2.egg-info/SOURCES.txt
+sttable2.egg-info/dependency_links.txt
+sttable2.egg-info/top_level.txt
