@@ -1,0 +1,10 @@
+leila/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+leila/calidad_datos.py,sha256=v4szunvPmD2NjYwO2kP-DGkV7Pajkx-b09nX9KMugOg,55927
+leila/datos_gov.py,sha256=-EYp1xgW2Ks9Hzd2v3I3lq9tZi0LtTAd1xJxOwI_Iq8,14753
+leila/reporte.py,sha256=JZ19x7F3Rl96qK7w20pGuSMUy3cXs2f2HmMUOgyn2Q4,27454
+leila/templates/template.html,sha256=FQtUUNNgl3c8hPcFl10KY1JbFyKFju_ktXZZLbpk1X4,59535
+leila-0.2.dist-info/LICENSE,sha256=pT5c_pV0kr0pyTxyWIVwq1zt-AEJ5HID1YXGDyXHCP8,1330
+leila-0.2.dist-info/METADATA,sha256=FQtzWnr9YyE_fdLA7vV4Lh2JjrZvik9dAK3XG1rMBN4,6135
+leila-0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+leila-0.2.dist-info/top_level.txt,sha256=m1Vc_3cb-FnneRavU2oXPAyEwJawTFA_xwK78NPfnZ0,6
+leila-0.2.dist-info/RECORD,,
