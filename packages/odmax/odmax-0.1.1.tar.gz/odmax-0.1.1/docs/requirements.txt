@@ -1,0 +1,9 @@
+sphinxcontrib-programoutput
+ipykernel
+nbsphinx
+sphinx-gallery
+pandoc
+opencv-python-headless
+matplotlib
+git+https://github.com/localdevices/py360convert.git
+git+https://github.com/localdevices/ODMax.git

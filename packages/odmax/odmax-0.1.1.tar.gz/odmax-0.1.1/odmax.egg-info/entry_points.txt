@@ -1,0 +1,3 @@
+[console_scripts]
+odmax = odmax.cli:main
+
