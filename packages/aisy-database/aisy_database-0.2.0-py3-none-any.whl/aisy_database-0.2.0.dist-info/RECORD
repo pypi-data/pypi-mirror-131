@@ -1,0 +1,12 @@
+aisy_database/__init__.py,sha256=fLd38v3vKLr2bVuScnJz-cGVAQyliIIvK0krgDhUrXM,154
+aisy_database/db_delete.py,sha256=B-EflqYiyCRBByAVqtWQhQNaSIJrQPT43ALoZeL1Slw,836
+aisy_database/db_save.py,sha256=JdCHLOb9Cof2YksVUx3w7HhsJCcd3L3vlpzFZEZ_ShU,8627
+aisy_database/db_select.py,sha256=HXUBQzgmELK2TNecE1r1es8Q2rbyBZpLsrUYiaHYAUo,14488
+aisy_database/db_tables.py,sha256=8dk-mSsS1ITb5WrtQaB7cGV7KDZ1DKPOb1HZYbTYZB8,6142
+aisy_database/db_update.py,sha256=Fsyo8XwVCRQBMY201T42miRUcBi9qOpQnqKTIsAiHcA,2682
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aisy_database-0.2.0.dist-info/LICENSE,sha256=Ny1VomsUTnyawqBaapKRtBDU3pJCq4rBPK6BhhwLkWc,1075
+aisy_database-0.2.0.dist-info/METADATA,sha256=ZG4g-CYM3dFzSeza_g7s0muECj7c3yCLu-FI3N_1Jo0,972
+aisy_database-0.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aisy_database-0.2.0.dist-info/top_level.txt,sha256=p865aKT8-xGcgLFThnyzVlYyvm1xVJbISdfupi-5Qj4,20
+aisy_database-0.2.0.dist-info/RECORD,,
