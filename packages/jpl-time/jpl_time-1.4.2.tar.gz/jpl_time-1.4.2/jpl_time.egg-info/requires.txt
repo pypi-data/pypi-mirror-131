@@ -1,0 +1,6 @@
+setuptools==38.0.0
+certifi<=2020.04.05.1
+pytz<=2020.1
+wheel==0.34.2
+numpy==1.16.4
+spiceypy==2.3.2
