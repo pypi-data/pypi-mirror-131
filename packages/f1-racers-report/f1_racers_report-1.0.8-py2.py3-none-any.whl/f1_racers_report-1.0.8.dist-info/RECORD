@@ -1,0 +1,11 @@
+racers_report/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+racers_report/__main__.py,sha256=zRV8zXO4qQWYCY3KcTryZK6BaZN-lwD31XD88SA0uV0,60
+racers_report/report_generator.py,sha256=MmnNmzwSA8UsYAdIy7RDue6YH-kEBYEb_j8DQLg3JeI,6144
+racers_report/data/abbreviations.txt,sha256=3GAAVS7XOzXvfIC90WS8pEuCKtavQwGHV97do8xJ20o,663
+racers_report/data/end.log,sha256=Urvr8f8OE55h48dPEqqwjBuARz7zCcF2uP764bREtaw,493
+racers_report/data/start.log,sha256=cLWAqtQrhozD9HMofIXgMgkDXqv6ByvCBLScrgyrjvU,514
+f1_racers_report-1.0.8.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+f1_racers_report-1.0.8.dist-info/METADATA,sha256=MijBVJ_2tHAEpILdRHZNtcIrlYIarOjAsA1-sSEzkL0,2362
+f1_racers_report-1.0.8.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+f1_racers_report-1.0.8.dist-info/top_level.txt,sha256=wT7lDXAIEf8O6hcO65ha-dTcoiS9k0gHmqKGocyvEc4,14
+f1_racers_report-1.0.8.dist-info/RECORD,,
