@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: published-with-poetry
+Version: 0.1.0
+Summary: 
+Author: Hosam Almoghraby
+Author-email: hosam.moghraby@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
