@@ -1,0 +1,42 @@
+attrs>=19.2
+deprecated
+hepunits>=2.0.0
+
+[:python_version < "3.4"]
+enum34>=1.1
+
+[:python_version < "3.5"]
+typing>=3.7
+
+[:python_version < "3.8"]
+typing-extensions
+
+[:python_version < "3.9"]
+importlib-resources>=2.0
+
+[all]
+check-manifest>=0.42
+pytest
+pytest-benchmark
+tabulate
+
+[all:python_version > "3.4"]
+pandas
+
+[dev]
+check-manifest>=0.42
+pytest
+pytest-benchmark
+tabulate
+
+[dev:python_version > "3.4"]
+pandas
+
+[test]
+pytest
+pytest-benchmark
+pytest-cov
+tabulate
+
+[test:python_version > "3.4"]
+pandas
