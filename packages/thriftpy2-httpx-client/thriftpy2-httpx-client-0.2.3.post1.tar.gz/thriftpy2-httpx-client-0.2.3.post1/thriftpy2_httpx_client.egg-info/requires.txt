@@ -1,0 +1,5 @@
+thriftpy2>=0.4.11
+httpx<0.22,>=0.16
+
+[:python_version < "3.8"]
+typing_extensions
