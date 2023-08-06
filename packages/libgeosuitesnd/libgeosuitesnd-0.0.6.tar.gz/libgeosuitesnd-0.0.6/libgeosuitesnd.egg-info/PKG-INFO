@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: libgeosuitesnd
+Version: 0.0.6
+Summary: Parser for the GeoSuite<tm> SND export format
+Home-page: https://github.com/emerald-geomodelling/libgeosuitesnd
+Author: Egil Moeller, Craig William Christensen and others 
+Author-email: em@emeraldgeo.no, cch@emeraldgeo.no
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Parser for the GeoSuite<tm> SND export format
+

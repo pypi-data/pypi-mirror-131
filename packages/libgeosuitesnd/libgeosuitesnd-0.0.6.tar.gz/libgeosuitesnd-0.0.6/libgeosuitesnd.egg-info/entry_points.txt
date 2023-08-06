@@ -1,0 +1,3 @@
+[libsgfdata.parsers]
+snd = libgeosuitesnd:parse
+

@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+libgeosuitesnd/__init__.py
+libgeosuitesnd/flags.csv
+libgeosuitesnd/methods.csv
+libgeosuitesnd/stop_reasons.csv
+libgeosuitesnd.egg-info/PKG-INFO
+libgeosuitesnd.egg-info/SOURCES.txt
+libgeosuitesnd.egg-info/dependency_links.txt
+libgeosuitesnd.egg-info/entry_points.txt
+libgeosuitesnd.egg-info/requires.txt
+libgeosuitesnd.egg-info/top_level.txt
