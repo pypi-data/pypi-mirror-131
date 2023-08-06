@@ -1,0 +1,1 @@
+To run this package, run: `python -m aicore_xmas`

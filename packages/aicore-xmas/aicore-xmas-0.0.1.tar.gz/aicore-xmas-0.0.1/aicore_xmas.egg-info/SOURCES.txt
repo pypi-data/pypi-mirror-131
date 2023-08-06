@@ -1,0 +1,8 @@
+README.md
+setup.py
+aicore_xmas/__init__.py
+aicore_xmas/__main__.py
+aicore_xmas.egg-info/PKG-INFO
+aicore_xmas.egg-info/SOURCES.txt
+aicore_xmas.egg-info/dependency_links.txt
+aicore_xmas.egg-info/top_level.txt

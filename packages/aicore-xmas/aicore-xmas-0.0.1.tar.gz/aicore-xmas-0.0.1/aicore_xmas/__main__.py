@@ -1,0 +1,1 @@
+print('Happy Holidays! Don\'t forget to buy some presents and to complete those quizzes! \n https://portal.theaicore.com/')
