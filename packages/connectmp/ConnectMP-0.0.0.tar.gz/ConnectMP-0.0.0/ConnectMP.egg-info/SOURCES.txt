@@ -1,0 +1,6 @@
+README.md
+setup.py
+ConnectMP.egg-info/PKG-INFO
+ConnectMP.egg-info/SOURCES.txt
+ConnectMP.egg-info/dependency_links.txt
+ConnectMP.egg-info/top_level.txt
