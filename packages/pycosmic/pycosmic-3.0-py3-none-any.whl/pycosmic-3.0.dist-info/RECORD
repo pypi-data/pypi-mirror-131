@@ -1,0 +1,10 @@
+pc/__init__.py,sha256=YaK0rH2Tl80g9rjxz1AGiw_860NghFnwEup2JMzB8kM,125
+pc/code.py,sha256=dC-ljx82zPrHCaQLa7z8EAhjq8nwVx_uoCb3Y6u-Nac,214
+pc/file_crud.py,sha256=Veyoq_vRjEKxXf9wIAYsx6erJK3xOICWVqNfqHNeWVY,570
+pc/models.py,sha256=8n0NhXNuVP3cEnYAYdPMnHX3SIBmGGHkbqxoE1nQDAE,216
+pc/qr.py,sha256=bPPngBPrsak7z995v4VDNACGez0pnei566rKzEj_k04,612
+pc/utils.py,sha256=9gRTVsiPtwACTvb5KtMRyZ9hGnxPDw867-4CbxpqbuE,890
+pycosmic-3.0.dist-info/METADATA,sha256=0FdGVldcmK--nbMsApL7EOm7Gvh6UlPjQCdm5wmxfrI,279
+pycosmic-3.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pycosmic-3.0.dist-info/top_level.txt,sha256=IsEgDA2HT7TlROr3cGmINNW_WNUEdiW5KKt9tNqFlZ0,3
+pycosmic-3.0.dist-info/RECORD,,

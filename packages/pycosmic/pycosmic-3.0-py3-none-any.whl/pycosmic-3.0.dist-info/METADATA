@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pycosmic
+Version: 3.0
+Summary: This is a very useful pacakge that saves time 
+Home-page: UNKNOWN
+Author: Rishabh
+Author-email: rishivisionworld@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: qrcode
+Requires-Dist: opencv-python
+
+UNKNOWN
+
+
