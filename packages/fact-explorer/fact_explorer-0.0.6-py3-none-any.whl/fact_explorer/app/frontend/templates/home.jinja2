@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block style %}
+<style>
+  li.htmx-swapping {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<h1 class="title"> Retrieve Events from Last X Minutes </h1>
+
+<div hx-ext="client-side-list-enabled-nunjucks">
+
+  <div class="box">
+    <form id="form" hx-get="last" hx-target="#res" hx-params="*">
+    <div class="field">
+      <label class="label">Minutes</label>
+      <div class="control">
+        <input id="minutes" name="minutes" class="input" type="text" value="15">
+        <label class="checkbox">
+          <input type="checkbox" name="decrypt" class="checkbox" value="true">
+          Decrypt Result
+        </label>
+      </div>
+
+      <button type="submit" class="button is-primary">
+        Get Events
+        <figure class="image is-16x16">
+          <img class="htmx-indicator" src="/static/bars.svg">
+        </figure>
+      </button>
+    </div>
+    </form>
+  </div>
+</div>
+
+<div id="res"></div>
+
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}
