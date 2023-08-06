@@ -1,0 +1,15 @@
+numpy>=1.20.3
+scipy>=1.6.3
+mendeleev>=0.7.0
+tabulate>=0.8.9
+pylibxc2>=6.0.0
+joblib>=1.0.1
+
+[dev]
+bump2version
+
+[docs]
+docutils==0.16
+myst-parser==0.15.1
+Sphinx==4.0.2
+sphinx-rtd-theme==0.5.2
