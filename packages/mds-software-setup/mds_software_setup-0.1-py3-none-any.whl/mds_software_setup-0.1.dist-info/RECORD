@@ -1,0 +1,17 @@
+mds_software_setup/User_Input.py,sha256=bbkpqcUVyKOKUDXVrDEHWeBeJXsZ6-Za8yX2X-Y6po4,5144
+mds_software_setup/__init__.py,sha256=4H4Hj_xt8u4SoT5AI0wbwfYSYIGN_0q4RJiPM9mkQZs,279
+mds_software_setup/base_class.py,sha256=rqQ7Per8O_cp7ZvM2S__tW6lUqWTGkM8bjdaJiTaOAM,400
+mds_software_setup/data_load.py,sha256=kc9gW24Ts7_CzgZVWFAMegEjpvFvJHiYxOPkXuqQ-b8,685
+mds_software_setup/mac/__init__.py,sha256=SmK2imM9ecU6b9iJPo6kLc8rmoo-kHsbmGFmHwTyFRc,72
+mds_software_setup/mac/anaconda.py,sha256=hkE7bavv114O7rXVqflHS9eEEfjOurdpIVaOrBRJK3g,1654
+mds_software_setup/mac/postgresql.py,sha256=eV_HvfW6LdYs0MXVTeqlHxPvXGLd8fSNzwccFACZto4,1641
+mds_software_setup/mac/vscode.py,sha256=CvHcrixNHe_kLD91_da28URhwS75SfxbcBAvQcIbDAo,1584
+mds_software_setup/windows/__init__.py,sha256=SmK2imM9ecU6b9iJPo6kLc8rmoo-kHsbmGFmHwTyFRc,72
+mds_software_setup/windows/anaconda.py,sha256=bkWTRwTbFvOtNNAwy2QXFvGJrcxsJAxa8FKhnAS_Cvo,1656
+mds_software_setup/windows/postgresql.py,sha256=x6Zg5IVqQSQDC5IxVKcN3HQgfJEmaaVWs_-B5H6RIPU,1656
+mds_software_setup/windows/vscode.py,sha256=nk9hMkYb93CRzEOz5rqPEQKl8QQkr2QasdTvzfNb3_Q,1598
+mds_software_setup-0.1.dist-info/LICENSE.txt,sha256=GgRdh3OqvlBMR8qL3v5P0sB1XQLWsyxH2N_Tql8uEtw,1117
+mds_software_setup-0.1.dist-info/METADATA,sha256=AT-puYYX2u01PwzNk_jqQK_iHX6CCWSdhOqYdUdImZc,317
+mds_software_setup-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mds_software_setup-0.1.dist-info/top_level.txt,sha256=rM8VbIvKdyRIGX2CIg6mzAjKWqRN2Xv9YZWjNBi5Xfc,19
+mds_software_setup-0.1.dist-info/RECORD,,
