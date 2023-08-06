@@ -1,0 +1,11 @@
+boto3
+crowdstrike-falconpy
+google-cloud-securitycenter
+google-cloud-resource-manager>=1.0.2
+tls-syslog
+
+[devel]
+flake8
+pylint
+pytest
+bandit
