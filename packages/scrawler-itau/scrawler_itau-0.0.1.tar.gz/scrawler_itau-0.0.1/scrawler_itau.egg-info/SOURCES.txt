@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+scrawler_itau/__init__.py
+scrawler_itau/scrawler_itau.py
+scrawler_itau.egg-info/PKG-INFO
+scrawler_itau.egg-info/SOURCES.txt
+scrawler_itau.egg-info/dependency_links.txt
+scrawler_itau.egg-info/requires.txt
+scrawler_itau.egg-info/top_level.txt
