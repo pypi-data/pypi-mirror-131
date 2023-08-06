@@ -1,0 +1,194 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls static admin_modify mazer %}
+{% get_mazer_settings request as mazer_settings %}
+
+{% block extrastyle %}
+    {{ block.super }}
+{#    <link rel="stylesheet" href="{% static 'assets/vendors/filepond/css/filepond.css' %}">#}
+{#    <link rel="stylesheet" href="{% static 'assets/vendors/filepond/css/filepond-plugin-image-preview.css' %}">#}
+{#    <link rel="stylesheet" href="{% static 'assets/vendors/filepond/css/filepond-plugin-image-edit.css' %}">#}
+    <link rel="stylesheet" href="{% static 'assets/vendors/select2/css/select2.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/change.css' %}">
+{% endblock %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
+    {{ media }}
+{% endblock %}
+
+{% block coltype %}colM{% endblock %}
+
+{% block bodyclass %}{{ block.super }} app-{{ opts.app_label }} model-{{ opts.model_name }} change-form{% endblock %}
+
+{% if not is_popup %}
+    {% block breadcrumbs %}
+        <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'admin:index' %}">{% trans 'Home' %}</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a></li>
+                <li class="breadcrumb-item">
+                    {% if has_view_permission %}
+                        <a href="{% url opts|admin_urlname:'changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a>
+                    {% else %}
+                        {{ opts.verbose_name_plural|capfirst }}
+                    {% endif %}
+                </li>
+                <li class="breadcrumb-item active">
+                    {% if add %}
+                        {% blocktrans with name=opts.verbose_name %}Add {{ name }}{% endblocktrans %}
+                    {% else %}
+                        {{ original|truncatewords:"18" }}
+                    {% endif %}
+                </li>
+            </ol>
+        </nav>
+    {% endblock %}
+{% endif %}
+
+{% block content_title %} {{ opts.verbose_name_plural|capfirst }} {% endblock %}
+
+{% block content %}
+<form {% if has_file_field %}enctype="multipart/form-data" {% endif %}action="{{ form_url }}" method="post" id="{{ opts.model_name }}_form" class="form form-vertical needs-validation was-validated" novalidate>
+    {% csrf_token %}
+    {% block form_top %}{% endblock %}
+
+    {% if errors %}
+    <div class="alert alert-danger">
+        {% if errors|length == 1 %}
+            {% trans "Please correct the error below." %}
+        {% else %}
+            {% trans "Please correct the errors below." %}
+        {% endif %}
+    </div>
+    {% for error in adminform.form.non_field_errors %}
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <i class="icon bi bi-slash-circle"></i>{{ error|capfirst }}
+        </div>
+    {% endfor %}
+    {% endif %}
+
+    <div class="row form-group">
+
+        {% if is_popup %}<input type="hidden" name="{{ is_popup_var }}" value="1">{% endif %}
+        {% if to_field %}<input type="hidden" name="{{ to_field_var }}" value="{{ to_field }}">{% endif %}
+
+        {% block field_sets %}
+            <div class="col-12 col-lg-9">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            {{ title }}{% block pretitle %}{% endblock %}
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        {% get_changeform_template adminform as changeform_template %}
+                        {% include changeform_template %}
+                    </div>
+                </div>
+            {% get_inline_template adminform as changeform_template %}
+            {% include changeform_template %}
+            </div>
+        {% endblock %}
+
+        {% block after_field_sets %}{% endblock %}
+
+        {% block inline_field_sets %}{% endblock %}
+
+        {% block after_related_objects %}{% endblock %}
+
+        <div class="col-12 col-lg-3">
+            <div id="jazzy-actions" class="{{ mazer_ui.actions_classes }}">
+                {% block submit_buttons_bottom %}
+                    {% submit_row %}
+                    {% block object-tools %}
+                        {% if change %}
+                            {% if not is_popup %}
+                                <div class="object-tools p-0">
+                                    {% block object-tools-items %}
+                                        {% change_form_object_tools %}
+                                        {% block extra_actions %}{% endblock %}
+                                    {% endblock %}
+                                </div>
+                            {% endif %}
+                        {% endif %}
+                    {% endblock %}
+                {% endblock %}
+            </div>
+        </div>
+
+        {% block admin_change_form_document_ready %}
+            <script type="text/javascript" id="django-admin-form-add-constants" src="{% static 'admin/js/change_form.js' %}" {% if adminform and add %}data-model-name="{{ opts.model_name }}"{% endif %}></script>
+        {% endblock %}
+
+        {% prepopulated_fields_js %}
+    </div>
+</form>
+{% endblock %}
+
+{% block extrajs %}
+    {{  block.super }}
+    <!-- filepond validation -->
+{#    <script type="text/javascript" src="{% static 'assets/vendors/filepond/js/filepond-plugin-image-validate-size.js' %}"></script>#}
+{#    <script type="text/javascript" src="{% static 'assets/vendors/filepond/js/filepond-plugin-file-validate-size.js' %}"></script>#}
+{##}
+{#    <!-- image editor -->#}
+{#    <script type="text/javascript" src="{% static 'assets/vendors/filepond/js/filepond-plugin-image-preview.js' %}"></script>#}
+{#    <script type="text/javascript" src="{% static 'assets/vendors/filepond/js/filepond-plugin-image-exif-orientation.js' %}"></script>#}
+{#    <script type="text/javascript" src="{% static 'assets/vendors/filepond/js/filepond-plugin-image-edit.js' %}"></script>#}
+{##}
+{#    <!-- filepond -->#}
+{#    <script type="text/javascript" src="{% static 'assets/vendors/filepond/js/filepond.js' %}"></script>#}
+
+
+    <script type="text/javascript" src="{% static 'assets/vendors/select2/js/select2.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/change_form.js' %}"></script>
+{#    <script>#}
+{#        /*//#$('#id_file').each(function (){#}
+{#        $('input[type=file]').each(function (){#}
+{#        let d_prev = $(this).data('preview-height');#}
+{#        if (d_prev === undefined) d_prev = null;#}
+{#        FilePond.create(this, {#}
+{#            imagePreviewHeight: d_prev,#}
+{#            allowMultiple: this.multiple,#}
+{#            required: this.required,#}
+{#            chunkUploads: true,#}
+{#            chunkSize: 500000,#}
+{#            /*server: {#}
+{##}
+{#                url: '/fp',#}
+{#                process: {#}
+{#                    url: '/process/{{ opts.app_config.name }}/{{ opts.model_name }}',#}
+{#                    method: 'POST',#}
+{#                    headers: {"X-CSRFToken": '{{ csrf_token }}'},#}
+{#                    withCredentials: false,#}
+{#                    ondata: (formData) => {#}
+{#                      let upload_field = '';#}
+{#                      for (let item of formData.keys()) {#}
+{#                        upload_field = item;#}
+{#                        break;#}
+{#                      }#}
+{#                      if (upload_field !== '') {#}
+{#                        formData.append('fp_upload_field', upload_field);#}
+{#                      }#}
+{#                      return formData;#}
+{#                    },#}
+{#                    onerror: (response) => { console.log(response.data); },#}
+{#                },#}
+{#                patch: {#}
+{#                    url: '/patch',#}
+{#                    headers: {"X-CSRFToken": '{{ csrf_token }}'},#}
+{#                },#}
+{#                revert: {#}
+{#                    url: '/revert',#}
+{#                    headers: {"X-CSRFToken": '{{ csrf_token }}'},#}
+{#                },#}
+{#            }*/#}
+{#        });#}
+{#    });*/#}
+{#    </script>#}
+    {% if mazer_settings.related_modal_active %}
+    <script type="text/javascript" src="{% static 'assets/js/related-modal.js' %}"></script>
+    {% endif %}
+{% endblock %}
