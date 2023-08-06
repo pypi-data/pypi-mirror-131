@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+CAImport/APITools.py
+CAImport/__init__.py
+CAImport/tools.py
+CAImport.egg-info/PKG-INFO
+CAImport.egg-info/SOURCES.txt
+CAImport.egg-info/dependency_links.txt
+CAImport.egg-info/requires.txt
+CAImport.egg-info/top_level.txt
