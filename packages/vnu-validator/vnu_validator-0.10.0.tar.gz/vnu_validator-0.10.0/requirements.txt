@@ -1,0 +1,6 @@
+coverage
+pytest
+pytest-cov
+requests
+six>=1.12
+twine

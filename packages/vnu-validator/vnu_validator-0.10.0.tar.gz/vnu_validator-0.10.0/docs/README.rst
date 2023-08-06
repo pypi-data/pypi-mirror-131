@@ -1,0 +1,160 @@
+==============================================================================
+vnu-validator.  Python Wrapper for the v.Nu HTML Validator
+==============================================================================
+:Info: This is the README file for vnu-validator.
+:Author: Shlomi Fish <shlomif@cpan.org>
+:Copyright: © 2018, Shlomi Fish.
+:Date: 2021-12-20
+:Version: 0.10.0
+
+.. index: README
+.. image:: https://travis-ci.org/shlomif/vnu_validator.svg?branch=master
+   :target: https://travis-ci.org/shlomif/vnu_validator
+
+========
+Overview
+========
+
+.. start-badges
+
+.. list-table::
+    :stub-columns: 1
+
+    * - docs
+      - |docs|
+    * - tests
+      - | |travis| |appveyor| |requires|
+        | |codecov|
+    * - package
+      - | |version| |wheel| |supported-versions| |supported-implementations|
+        | |commits-since|
+
+.. |docs| image:: https://readthedocs.org/projects/python-vnu_validator/badge/?style=flat
+    :target: https://readthedocs.org/projects/python-vnu_validator
+    :alt: Documentation Status
+
+
+.. |travis| image:: https://travis-ci.org/shlomif/python-vnu_validator.svg?branch=master
+    :alt: Travis-CI Build Status
+    :target: https://travis-ci.org/shlomif/python-vnu_validator
+
+.. |appveyor| image:: https://ci.appveyor.com/api/projects/status/github/shlomif/python-vnu_validator?branch=master&svg=true
+    :alt: AppVeyor Build Status
+    :target: https://ci.appveyor.com/project/shlomif/python-vnu_validator
+
+.. |requires| image:: https://requires.io/github/shlomif/python-vnu_validator/requirements.svg?branch=master
+    :alt: Requirements Status
+    :target: https://requires.io/github/shlomif/python-vnu_validator/requirements/?branch=master
+
+.. |codecov| image:: https://codecov.io/github/shlomif/python-vnu_validator/coverage.svg?branch=master
+    :alt: Coverage Status
+    :target: https://codecov.io/github/shlomif/python-vnu_validator
+
+.. |version| image:: https://img.shields.io/pypi/v/vnu-validator.svg
+    :alt: PyPI Package latest release
+    :target: https://pypi.python.org/pypi/vnu-validator
+
+.. |commits-since| image:: https://img.shields.io/github/commits-since/shlomif/python-vnu_validator/v0.1.0.svg
+    :alt: Commits since latest release
+    :target: https://github.com/shlomif/python-vnu_validator/compare/v0.1.0...master
+
+.. |wheel| image:: https://img.shields.io/pypi/wheel/vnu-validator.svg
+    :alt: PyPI Wheel
+    :target: https://pypi.python.org/pypi/vnu-validator
+
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/vnu-validator.svg
+    :alt: Supported versions
+    :target: https://pypi.python.org/pypi/vnu-validator
+
+.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/vnu-validator.svg
+    :alt: Supported implementations
+    :target: https://pypi.python.org/pypi/vnu-validator
+
+
+.. end-badges
+
+Python Wrapper for the v.Nu HTML Validator. It allows one to recursively test
+a directory
+of XHTML5 or HTML5 files for HTML validity (see
+https://www.shlomifish.org/philosophy/computers/web/validate-your-html/ and
+https://github.com/validator/validator/ ). It provides a caching feature for
+speedup of subsequent runs.
+
+See:
+
+::
+   pydoc vnu-validator
+
+* Free software: MIT license
+
+Installation
+============
+
+::
+
+    pip install vnu-validator
+
+Documentation
+=============
+
+
+https://python-vnu_validator.readthedocs.io/
+
+
+Development
+===========
+
+To run the all tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+
+COPYRIGHT
+---------
+Copyright © 2018, Shlomi Fish.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions, and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions, and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+
+3. Neither the name of the author of this software nor the names of
+   contributors to this software may be used to endorse or promote
+   products derived from this software without specific prior written
+   consent.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
