@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: shreejt_validator
+Version: 0.0.1
+Summary: A simple mobile number validator for ireland, india and usa
+Home-page: UNKNOWN
+Author: Shreejit
+Author-email: sumithkumar710@gmail.com
+License: MIT
+Keywords: number validator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+This is a very simple mobile number validator that can be used to very the phone number of three countries like India, Ireland and USA.
+
+Log Record
+==========
+
+0.0.1 (15/12/2021)
+-------------------
+- First Release
+

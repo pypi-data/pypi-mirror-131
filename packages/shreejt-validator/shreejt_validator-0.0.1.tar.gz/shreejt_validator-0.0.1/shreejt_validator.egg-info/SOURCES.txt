@@ -1,0 +1,9 @@
+CHANGELOG.txt
+MANIFEST.in
+README.txt
+setup.py
+shree_validator/__init__.py
+shreejt_validator.egg-info/PKG-INFO
+shreejt_validator.egg-info/SOURCES.txt
+shreejt_validator.egg-info/dependency_links.txt
+shreejt_validator.egg-info/top_level.txt
