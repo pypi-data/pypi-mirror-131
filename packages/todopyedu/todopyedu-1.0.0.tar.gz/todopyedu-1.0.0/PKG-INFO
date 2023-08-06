@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: todopyedu
+Version: 1.0.0
+Summary: Issue log created for educational purposes
+Home-page: https://gitlab.com/kekbek/python-todo
+Author: kekbek
+Author-email: vadyusha.surin@gmail.com
+License: MIT
+Description: # python-todo
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
