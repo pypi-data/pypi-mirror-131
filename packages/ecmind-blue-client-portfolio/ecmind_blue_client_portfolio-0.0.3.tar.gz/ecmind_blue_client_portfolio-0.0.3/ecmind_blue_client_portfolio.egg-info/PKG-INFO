@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: ecmind-blue-client-portfolio
+Version: 0.0.3
+Summary: Helper modules for the ecmind_blue_client to ease the work with the portfolio API functions.
+Home-page: https://gitlab.ecmind.ch/open/ecmind_blue_client_portfolio
+Author: Roland Koller
+Author-email: info@ecmind.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ECMind blue client: Portfolio
+
+Helper modules for the ecmind_blue_client to ease the work with the portfolio API functions.
+
+## Installation
+
+`pip install ecmind_blue_client_portfolio`
+
+
+## Usage
+
+```python
+
+from ecmind_blue_client.tcp_client import TcpClient as Client
+from ecmind_blue_client_portfolio import portfolio
+
+client = Client(hostname='localhost', port=4000, appname='test', username='root', password='optimal')
+
+all_portfolios_of_user_root = portfolio.search(client, creator='ROOT')
+print(all_portfolios_of_user_root)
+```
+
