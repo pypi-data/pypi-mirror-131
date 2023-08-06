@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+requirements.txt
+setup.py
+gerrit_review_robot/__init__.py
+gerrit_review_robot/gerrit.py
+gerrit_review_robot/gerrit_review_robot.py
+gerrit_review_robot.egg-info/PKG-INFO
+gerrit_review_robot.egg-info/SOURCES.txt
+gerrit_review_robot.egg-info/dependency_links.txt
+gerrit_review_robot.egg-info/requires.txt
+gerrit_review_robot.egg-info/top_level.txt
+scripts/publish.sh
+scripts/test.sh
+test/__init__.py
+test/test_gerrit_robot.py
