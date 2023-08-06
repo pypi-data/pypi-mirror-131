@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pydspace/__init__.py
+src/pydspace/pydspace.py
+src/pydspace.egg-info/PKG-INFO
+src/pydspace.egg-info/SOURCES.txt
+src/pydspace.egg-info/dependency_links.txt
+src/pydspace.egg-info/requires.txt
+src/pydspace.egg-info/top_level.txt

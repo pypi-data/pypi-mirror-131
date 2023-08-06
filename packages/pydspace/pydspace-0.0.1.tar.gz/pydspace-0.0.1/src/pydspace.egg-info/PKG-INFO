@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pydspace
+Version: 0.0.1
+Summary: Python interface to operate with dspace.
+Home-page: UNKNOWN
+Author: Kevin Lopez, Lucas Pompe
+Author-email: kevinlopezandrade@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# WIP
+Python interface for interoperability with dSpace running in Matlab.
+
+# Dependencies
+- python >= 3.6
+- numpy
+- matlabengineforpython
+
+# Installation
+```shell
+pip install pydspace
+```
+
+# Example
+
+```python
+import pydspace
+import numpy as np
+
+dspace_path = "YOUR PATH TO MATLAB DSPACE"
+
+M1 = np.random.rand(100,100)
+M2 = np.random.rand(100,100
+M_no_name = np.random.rand(100,100)
+
+pydspace.dspace("matrix1", M1, "matrix2", M2, M_no_name, path=dspace_path)
+```
+
+
