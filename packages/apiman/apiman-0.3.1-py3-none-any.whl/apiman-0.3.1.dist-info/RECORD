@@ -1,0 +1,12 @@
+apiman/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apiman/flask.py,sha256=JA1Shqh4crZDfxKLZd0f5rU3AxLizVCdlsWUWEVpk4A,6029
+apiman/openapi.py,sha256=7Dm0Yf90qrjko_aeqTissSl7mRxSGQoA-450tVhBHFs,7534
+apiman/starlette.py,sha256=ecLkbPoKgBB039ar_1kBwff9TiXvvyx_0MRbR28dPuM,6475
+apiman/static/index.html,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apiman/static/redoc.html,sha256=FEga46lZQSek84GGk_7FqKvM59ZBemNjs3esvZDoDEU,655
+apiman/static/swagger.html,sha256=Nen-UpvLARtvCVvfuNtCkqQorh1H8Pn46HOFMoKjkaI,1567
+apiman/static/template.yaml,sha256=XSOWsbRdx5f_nO3R2Eosgn3TaJMKlRiRpocHRHA2684,86
+apiman-0.3.1.dist-info/LICENSE,sha256=R6qPdMZD-B5I2jTus6tLXAomhEwfmzr3sqAbzHdeAcQ,1508
+apiman-0.3.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+apiman-0.3.1.dist-info/METADATA,sha256=9b-wOqalo3zOiTbic2BcAKQLHhW9ibYpSbQcg4c8NJ8,4908
+apiman-0.3.1.dist-info/RECORD,,
