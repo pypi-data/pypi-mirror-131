@@ -1,0 +1,11 @@
+sims/__init__.py,sha256=4Xpl6NJ8eRV5iDHNL261UGQCo5o5G6CV_KXu_bt2yi0,385
+sims/_version.py,sha256=Ok7XR8wZrOp38SaOYinpYmIxf_sT0PLyMemjrG3VZsI,142
+sims/instruments.py,sha256=JGMmrVVVTumlR_8rJZp2JFTEXLbUEu6BgJuuO-eYleA,42
+sims/interface.py,sha256=9DUrV_rEnVi6FaVU2qDCIMUVrmutxSkTRfaANzwJa1k,8433
+sims/likelihoods.py,sha256=XsvtQctF7hZt7xDhvoXmf7ZwyszH5fKceXFP7W1TvN4,527
+sims/thomson.py,sha256=x8XaqLKAq831_AK0Pz3_JX_jrqfdpldDQQjph-a8zTQ,6350
+sim_solps-0.1.1.dist-info/LICENSE,sha256=cUBVQ70q5DDA8C9sIUu1arvLMtkcUJ8WKFrHDz6U-yA,1069
+sim_solps-0.1.1.dist-info/METADATA,sha256=1d6wyb_I3ZJw20PLQh94IS0lgMcTjCfJAGG_fiXLRHg,1914
+sim_solps-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+sim_solps-0.1.1.dist-info/top_level.txt,sha256=kbbSq-jC-gDZGhunVdvpJE7_unozCVwDObNj-YIxN_g,5
+sim_solps-0.1.1.dist-info/RECORD,,
