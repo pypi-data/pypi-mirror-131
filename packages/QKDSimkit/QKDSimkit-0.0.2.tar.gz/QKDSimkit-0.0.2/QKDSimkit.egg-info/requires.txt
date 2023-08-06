@@ -1,0 +1,4 @@
+cryptography
+fastapi[all]
+aiocache[memcached,redis]
+aioredis==1.3.1
