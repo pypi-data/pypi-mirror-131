@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: binance-bot-helper
+Version: 0.1.0
+Summary: Binance bot helper functions
+Home-page: UNKNOWN
+Author: Mariano Billinghurst
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: pandas
+
+UNKNOWN
+
