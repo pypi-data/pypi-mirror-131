@@ -1,0 +1,10 @@
+pyyaml
+yamlpath
+requests
+
+[dev]
+setuptools
+wheel
+
+[test]
+coverage
