@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+pykotokenizer/__init__.py
+pykotokenizer/ko_spacing.py
+pykotokenizer/ko_tokenizer.py
+pykotokenizer.egg-info/PKG-INFO
+pykotokenizer.egg-info/SOURCES.txt
+pykotokenizer.egg-info/dependency_links.txt
+pykotokenizer.egg-info/top_level.txt
+pykotokenizer/resources/ko_spacing/dicts/c2v.dic
+pykotokenizer/resources/ko_spacing/models/ko_spacing_model
+pykotokenizer/resources/ko_tokenizer/data/word2idx0.json
+pykotokenizer/resources/ko_tokenizer/models/model_th7.hdf5
+tests/__init__.py
