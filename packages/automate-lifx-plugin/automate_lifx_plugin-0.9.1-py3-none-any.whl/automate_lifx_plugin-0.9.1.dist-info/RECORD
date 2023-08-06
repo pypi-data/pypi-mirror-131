@@ -1,0 +1,13 @@
+lifx_plugin/__init__.py,sha256=TzMO0Vnvr7uPHteOe6DVS7k_Y5EOwssbwCwW0q5jvfg,705
+lifx_plugin/client.py,sha256=sD7RPkUbDGDR4WFBhm--4ijyvHalZdIIEwxKBWQtwMo,3377
+lifx_plugin/command.py,sha256=aoBHnzCYfOTX7n5tCaNFr9L-J-G_uE3kBbMoI7C0XPI,6585
+lifx_plugin/gateway.py,sha256=we0u8h3qZoAPQKRvDJdE1fdHFtXjaKu01MXUTcRarwo,3998
+lifx_plugin/message.py,sha256=wiLX6-Dt1_HAS58a2hMrDoWGILlX7JmQ2-JYcvzxjTI,10801
+lifx_plugin/trigger.py,sha256=IM5ST2K_FnEPfqWnoIQ6jDaia3lkomvlNNOFarjXCR4,2074
+lifx_plugin/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lifx_plugin/tests/test_doctests.py,sha256=wlL0zdFvDYq2GE3w4YO9q2L8-JG8uudOmOy44K6eQro,341
+automate_lifx_plugin-0.9.1.dist-info/LICENSE,sha256=CPMlUijlcbemoDr7dtQNjnZX3s4EXe1xqj0Jm9aQvBk,1089
+automate_lifx_plugin-0.9.1.dist-info/METADATA,sha256=MLGtLe3Y2CvETxesGyej5iLq13se1m5_KAWXEBhO9LY,2688
+automate_lifx_plugin-0.9.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+automate_lifx_plugin-0.9.1.dist-info/top_level.txt,sha256=F5f3CKbROySmzvWBQnE1jTtUC40iIQYZ29gx8bO_BNE,12
+automate_lifx_plugin-0.9.1.dist-info/RECORD,,
