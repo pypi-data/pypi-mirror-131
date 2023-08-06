@@ -1,0 +1,125 @@
+CHANGES
+=======
+
+* Add content in README file for it's needed to publish on pypi
+
+0.8.4
+-----
+
+* Add required fields for pypi upload
+
+0.8.2
+-----
+
+* add upload-pypi, set pod to zuul-worker-ubi7 for py36
+
+0.8.1
+-----
+
+* user CRUD with keycloak
+* Auth: add support for keycloak
+* Switching Fedora runc nodeset to pod
+
+0.7.0
+-----
+
+* Update package to python3
+
+0.6.0
+-----
+
+* Clean up obsolete code, move to python3
+
+0.5.1
+-----
+
+* Remove version pinning from requirements
+
+0.5.0
+-----
+
+* Simplify logging and remove default log file
+* Remove deprecated system backup command
+* Replace old gerrit apikey command with new cauth apikey endpoint
+* Import pysflib code
+* Avoid TypeError when user already exists
+
+0.4.1
+-----
+
+* Fix some pep8 errors
+
+0.4.0
+-----
+
+* use sphinx\_rtd\_theme
+
+0.3.0
+-----
+
+* Add a project clone option to clone all repo from a SF project
+* Use stream=True in backup\_action
+* Update CLI documentation with much-needed details
+* Fix obsolete dependency failing tox tests
+
+0.2.0
+-----
+
+* fix: help message for dib-image cmd: replace '\_' by '-' in msg
+* Add support for DIB commands
+* Add some doc
+* Set the pep8 target to be executed with a python2.7 base env
+* Update gitreview file
+* Fix github sfmanager command
+* package: add doc
+* Fix wrong help msg for user command
+
+0.1.0
+-----
+
+* Support for RC files
+* Add image API to CLI
+* Add included spec file for sfmanager
+* Die more nicely if an HTTP 401 error is raised
+* docs: remove sfmanager docs section about old endpoints
+* cleaning: remove discared endpoints tests and pages from sfmanager
+* remove useless project and membership commands
+* cleaning: remove group management from the CLI
+* Refactor requests usage
+* Fixes for nodes API client side
+* Nodes API client implementation
+* Remove use\_ssl parameter
+* Jobs API
+* Add new sfconfig.yaml path
+* setup.py: use pbr
+* Add an external documentation ref to fix a SF doc build warning
+* backup: remove trust requirements
+* Nicer error message when url protocol is missing
+* Fix sfmanager cmd line arguments for membership group management
+* doc: fixs invalid options and subsubsections prefixes
+* Use local sfconfig.yaml when available
+* Prettify sfmanager output command
+* Allow to pass group containing '/' via the membership API
+* Add the group management commands
+* Add API key auth
+* Remove deprecated option from python-sfmanager
+* Deprecate sfmanager membership list
+* Registered users management
+* Add note to save private gpg key to the documentation
+* Thin code cleaning on sfmanager
+* Fix sfmanager doc to remove part related to the replication
+* Remove commands related to replication and sshconfig config
+* Add note to trust import gpg key to the documentation
+* Fix typo in sfmanager doc
+* Improve the tox setup
+* Add doc update on encrypted backups
+* Encode the project name when making API call
+* Add renaming of a forked repo for github action
+* Add Github repo creation, deletion and deploy key setting
+* Add CLI command for pages controller of managesf
+* Add readonly option
+* Added the feature to add all upstream branches
+* Add missing RST doc for sfmanager
+* Import managesf cli in its own project
+* ManageSF commit
+* Initial empty repository

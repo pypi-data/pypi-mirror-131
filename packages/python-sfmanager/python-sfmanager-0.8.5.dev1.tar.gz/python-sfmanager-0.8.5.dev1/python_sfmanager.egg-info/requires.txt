@@ -1,0 +1,6 @@
+requests
+pycrypto
+urllib3
+PrettyTable
+pyyaml<6.0.0
+GitPython
