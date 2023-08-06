@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pylpsd
+Version: 0.1.4
+Summary: Method for calulating power spectrum on logarithmic frequency axis.
+Home-page: https://github.com/bleykauf/py-lpsd
+Author: Rudolf W. Byker
+Maintainer: Bastian Leykauf
+Maintainer-email: leykauf@physik.hu-berlin.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown; charset=UTF-8
+License-File: LICENSE
+
+# py-lpsd
+
+ Python implementation of the pylpsd algorithm for computing power spectral density with logarithmically spaced points. 
+
+## Installation
+
+This package can be installed via pip:
+
+```
+pip install pylpsd
+```
+
+In case you want to edit this, clone this repository and install it in editable mode:
+
+```
+git clone https://github.com/bleykauf/py-lpsd
+cd py-lpsd
+pip install -e .
+```
+
+## Usage
+See the Jupyter notebook in the examples folder and the docstring.
+
+ ## Implementation in other languages
+
+ [Matlab](https://github.com/tobin/lpsd): py-lpsd is based on this implementation.
+
+
