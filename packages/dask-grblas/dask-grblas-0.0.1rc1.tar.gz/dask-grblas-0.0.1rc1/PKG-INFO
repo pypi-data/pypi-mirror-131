@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dask-grblas
+Version: 0.0.1rc1
+Summary: Python interface to GraphBLAS and distributed via Dask
+Home-page: https://github.com/eriknw/dask-grblas
+Author: Erik Welch
+License: Apache License 2.0
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
