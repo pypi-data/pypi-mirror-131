@@ -1,0 +1,4 @@
+[console_scripts]
+codefire = codehub.clitools.codefire:main
+codehub = codehub.clitools.cli:main
+
