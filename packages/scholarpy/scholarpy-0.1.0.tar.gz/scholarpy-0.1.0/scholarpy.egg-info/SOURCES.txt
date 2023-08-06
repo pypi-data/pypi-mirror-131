@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+scholarpy/__init__.py
+scholarpy/common.py
+scholarpy/scholarpy.py
+scholarpy.egg-info/PKG-INFO
+scholarpy.egg-info/SOURCES.txt
+scholarpy.egg-info/dependency_links.txt
+scholarpy.egg-info/not-zip-safe
+scholarpy.egg-info/requires.txt
+scholarpy.egg-info/top_level.txt
