@@ -1,0 +1,8 @@
+recursive-include collective *.css
+recursive-include collective *.js
+recursive-include collective *.pt
+recursive-include collective *.xml
+recursive-include collective *.zcml
+recursive-include docs *.GPL
+recursive-include docs *.rst
+recursive-include docs *.txt
