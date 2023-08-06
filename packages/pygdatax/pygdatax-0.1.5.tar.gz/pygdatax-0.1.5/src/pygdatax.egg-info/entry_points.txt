@@ -1,0 +1,4 @@
+[console_scripts]
+pygdatax_gui = pygdatax.gui.gui_xeuss:main
+pygdatax_sansllb = pygdatax.gui.gui_sansllb:main
+
