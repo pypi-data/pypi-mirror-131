@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: kbackground
+Version: 0.1.2
+Summary: 
+Author: Christina Hedges
+Author-email: christina.l.hedges@nasa.gov
+Requires-Python: >=3.8,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: astropy (>=4.2)
+Requires-Dist: numpy (>=1.21.4,<2.0.0)
+Requires-Dist: patsy (>=0.5.2,<0.6.0)
+Requires-Dist: scipy (>=1.7.3,<2.0.0)
