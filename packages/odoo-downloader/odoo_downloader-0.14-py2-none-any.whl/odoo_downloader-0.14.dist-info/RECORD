@@ -1,0 +1,13 @@
+odoo_downloader/README.md,sha256=rF6e5jZH2Wub0kVWFabqx-pNH4IADLcRXaqettGpWOU,2367
+odoo_downloader/__init__.py,sha256=cDCP-IF6vYKdbIB3DkQqheLtbi-hv1GRDU9WBfEyz2Q,151
+odoo_downloader/__meta__.py,sha256=VcglvLGkFr9kk5TwyBF5dQgTsrY2IxzLgKNvE5ZgMd0,6894
+odoo_downloader/__version__.py,sha256=6T8KM6N2Ntj65pl7F8ijMOA6JuZepkc2xTxxX9qdMgA,16
+odoo_downloader/downloader.py,sha256=jK2yAcZWU6OePrYCEoegrjfW86I0tIQJ-LmemK3hurY,4291
+odoo_downloader/odoo_downloader.ini,sha256=sUjGIuvOLByzx-rgFOw9ySpGiArBNJxaw2Bbb2Qi510,19
+odoo_downloader/odoo_downloader.py,sha256=ZD1IaIRUpqvZBX_-gWn38_bFRhHNU1gosyEIiCiCNLM,10986
+odoo_downloader-0.14.dist-info/LICENSE.rst,sha256=ZWRWlLiwjJ1Pzfi_oSDH9C9h_86GXxS7ZwkgkLGt5no,1922
+odoo_downloader-0.14.dist-info/METADATA,sha256=HsuU8kkCEEqYLwdEFnJLsX59kiDy_4WFA_Am7BmRHLI,1217
+odoo_downloader-0.14.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+odoo_downloader-0.14.dist-info/entry_points.txt,sha256=XWP0BDjylU0BOpMn1we-ILbqrpnAXSaVMR14YLm70KI,75
+odoo_downloader-0.14.dist-info/top_level.txt,sha256=fQIRX8wgvE11O_dChT-JWc8DRHuzcRT2A2sm_7IzvO4,16
+odoo_downloader-0.14.dist-info/RECORD,,
