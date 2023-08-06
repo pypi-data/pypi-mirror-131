@@ -1,0 +1,17 @@
+sqlalchemy>=1.4.1<2.0.0
+prettytable
+
+[docs]
+sphinx==1.8.1
+sphinx_rtd_theme
+sphinx-jinja
+sphinx-copybutton
+docfly>=0.0.17
+rstobj>=0.0.5
+pygments
+
+[tests]
+pytest
+pytest-cov
+psycopg2-binary
+pandas
