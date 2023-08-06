@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "shuncommands"
+version = "1.0.4a0"
+description = "mypaceshun usefull commands"
+authors = ["KAWAI Shun <mypaceshun@gmail.com>"]
+maintainers = ["KAWAI Shun <mypaceshun@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/mypaceshun/shuncommands"
+repository = "https://github.com/mypaceshun/shuncommands"
+keywords = ["python", "click"]
+packages = [
+  {include = 'shuncommands/'}
+]
+include = ["CHANGELOG.md"]
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = 'git'
+style = 'pep440'
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^8.0"
+gitignore-parser = "^0.0.8"
+pikepdf = "^4.1.0"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.16.0"
+poethepoet = "^0.11.0"
+flake8 = "^4.0.1"
+autoflake = "^1.4"
+autopep8 = "^1.6.0"
+isort = "^5.10.1"
+git-changelog = "^0.5.0"
+pytest = "^6.2.5"
+
+[tool.poetry.scripts]
+rmtmp = "shuncommands.rmtmp:ctx"
+pdftool = "shuncommands.pdftool:ctx"
+
+[tool.poe.tasks.changelog]
+cmd = "git-changelog -o CHANGELOG.md .git"
+
+[tool.poe.tasks.lint]
+cmd = "flake8 shuncommands/"
+
+[tool.poe.tasks.format]
+sequence = [
+  { cmd = "autopep8 -ir shuncommands/" },
+  { cmd = "autoflake -ir --remove-all-unused-imports --remove-unused-variables --ignore-init-module-imports shuncommands/" },
+  { cmd = "isort shuncommands/" }
+]
+[tool.poe.tasks.test]
+cmd = "pytest tests/"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
