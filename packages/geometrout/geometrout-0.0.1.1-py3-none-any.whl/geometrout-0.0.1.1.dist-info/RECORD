@@ -1,0 +1,9 @@
+geometrout/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geometrout/pointcloud.py,sha256=eXWusG_f9PoKS_DniePB7nL0uLXVmhkH0DGmHQ7CCys,1853
+geometrout/primitive.py,sha256=pxvJ5ER1wM_UYrWNApKB8AQZ4TokgXCqmRqwtZh5SoM,7811
+geometrout/transform.py,sha256=Daeec_k7nM5zG7WVGKu9TxU92wH0lVtokFQ9Vzk5p_8,5106
+geometrout-0.0.1.1.dist-info/LICENSE,sha256=B-PrpsqMc0w-6mdqF0KSwBqrd7DKMRjSk1aTIHNau-E,1069
+geometrout-0.0.1.1.dist-info/METADATA,sha256=Hz9zK4117eQqB0_apDhHxHC4oZd8V73pp3xT7t9IkPQ,397
+geometrout-0.0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+geometrout-0.0.1.1.dist-info/top_level.txt,sha256=RCOInKkUZsjGhvg_fMItHH6rqSXLecSQOfWR45VeDbM,11
+geometrout-0.0.1.1.dist-info/RECORD,,
