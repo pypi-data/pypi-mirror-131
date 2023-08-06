@@ -1,0 +1,16 @@
+typing-extensions
+psutil
+gputil
+scikit-learn
+matplotlib
+numpy
+pytorchcv
+quadprog
+wandb
+tensorboard
+pycocotools
+tqdm
+torch
+torchvision
+gdown
+setuptools<=59.5.0
