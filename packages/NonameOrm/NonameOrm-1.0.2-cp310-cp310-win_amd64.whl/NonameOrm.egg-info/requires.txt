@@ -1,0 +1,5 @@
+astor~=0.8.1
+setuptools
+Cython~=0.29.24
+aiomysql
+aiosqlite
