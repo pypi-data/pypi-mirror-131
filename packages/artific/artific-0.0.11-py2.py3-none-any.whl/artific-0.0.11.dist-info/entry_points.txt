@@ -1,0 +1,3 @@
+[console_scripts]
+artific = artific.cli:main
+
