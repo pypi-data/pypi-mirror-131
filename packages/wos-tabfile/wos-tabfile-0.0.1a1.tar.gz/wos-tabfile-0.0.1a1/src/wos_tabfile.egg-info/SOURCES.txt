@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/wos_tabfile.egg-info/PKG-INFO
+src/wos_tabfile.egg-info/SOURCES.txt
+src/wos_tabfile.egg-info/dependency_links.txt
+src/wos_tabfile.egg-info/requires.txt
+src/wos_tabfile.egg-info/top_level.txt
+src/wostabfile/__init__.py
+src/wostabfile/core.py
+src/wostabfile/__pycache__/__init__.cpython-36.pyc
+src/wostabfile/__pycache__/core.cpython-36.pyc
