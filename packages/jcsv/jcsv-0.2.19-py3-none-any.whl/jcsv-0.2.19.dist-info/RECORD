@@ -1,0 +1,7 @@
+jcsv/__init__.py,sha256=ryAfvAaW7VM8g1gnCrFCPrXmcbbm99Xw44aLkwGZzaI,23
+jcsv/converter_csv2json.py,sha256=R18hrvA0xjw3hNDhQ9saDmigd7C01WfLm15jEa4RLm4,2680
+jcsv/converter_json2csv.py,sha256=r15iTYK4oU_hvIi_fFv7hXoU27-bm1gnFO1Ior7R3h4,2869
+jcsv-0.2.19.dist-info/entry_points.txt,sha256=9FZv9RuCRKdA_PjzKzI_SChivCMc4jUz8DqXKPgYTTw,101
+jcsv-0.2.19.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+jcsv-0.2.19.dist-info/METADATA,sha256=g8MrNd-w2sMQTxE7dpmyWtTJs66-NR0T5a0HOHGKZkk,1740
+jcsv-0.2.19.dist-info/RECORD,,
