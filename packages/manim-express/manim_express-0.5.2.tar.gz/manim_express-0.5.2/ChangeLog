@@ -1,0 +1,185 @@
+CHANGES
+=======
+
+0.5.2
+-----
+
+* Fixed that preview mode could not be used on the server
+* Update python-package-conda.yml
+* Update python-package-conda.yml
+* Update python-package-conda.yml
+* Update python-publish.yml
+* Create python-package-conda.yml
+* Create python-publish.yml
+
+0.5.0
+-----
+
+* version bump to 0.5.0
+* update bezier func
+* update points&bezier
+* daily update
+* update README
+* Some improvements
+* fixed errors
+* update examples
+* add submodule
+* Version upgrade
+
+0.4.8
+-----
+
+* fixed
+* Version upgrade
+* delete file
+
+0.4.5
+-----
+
+* test
+* Update
+* update README
+* experimental
+* update math
+* fixed typo
+* Refactor q
+* hand drawn example
+* keep up
+* Version upgrade
+* Update some examples
+* Upload data
+* Upgrade
+* hand draw
+* jupyter video support
+* vec&quaternion support iteration
+* Optimize the logical structure & len() and slice supports
+* len() and slice supports
+* update tests
+* Add test imshow
+* Rename SceneArgs to CONFIG
+* Move test parts to manim\_express\_tests/
+* fix some format error
+* Version upgrade
+* improve method \`get\_exponent\_num\`
+* Add some method to show 2D array
+* Smart display tick labels
+* update
+* Add chinese version README
+* Version update
+* Improve plot performence
+* change default rate\_func
+* move clip\_control to EagerScene
+* Update
+* Add symbolic connection
+* Add up/down animation operation in interactive mode
+* add nn
+* version upgrade
+* neural network graph
+* Use vc.upload
+* Fix indentation errors
+* add animate examples
+* function play with ate\_func
+* Refactor
+* add some arrows
+* Refactor base class \`Vec\`
+* Fix typo
+* Add workflow
+* version upgrade
+* Wrong simple pendulum
+* angle\_between
+* Make class Vec support addition, subtraction, multiplication and other operations
+* change the quaternion default value
+* Add some examples
+* ignore widcardw/
+* rebase 3b1b
+* Add new line
+* Update
+* Use \`ppath\` in package sparrow
+* Apply \`sparrow\` package
+* Introduction of package sparrow-tool
+* update version
+* news
+* Add helium version
+* add parameter num\_decimal\_places
+* point scale ratio
+* font examples
+* update
+* update
+* :new: Update version
+* :new: update version
+* :new:
+* Updates
+* Support online latex
+* improvements
+* Update
+* improvements
+* Support online latex
+* Some improvements
+* ignore some files
+* update plot
+* ignore files
+* Add axes labels
+* Grassmann Product
+* update
+* refactor format
+* add rotate vector example
+* Add Quaternion and Vec3
+* More automated
+* Improvements
+* Update examples
+* Add Camera type
+* window control
+* Window control description
+* :new: Auto coordinate label scale
+* add LOGO/
+* :new: Add plot feature
+* :fire:
+* :sunglasses: New features
+* :art
+* Some trivial improvements
+* Improvement
+* Fix typo
+* Compared with matplotlib
+* Add Quick start
+* Allow user save default config to current directory
+* update
+* Add Config class
+* cleanup&new release
+* Add type to camera
+* draft
+* cleanup
+* cleanup
+* Redeploy code structure
+* delete submodules
+* update
+* released
+* update
+* update
+* update readme & eager mode
+* Add Eager mode
+* manim express
+* update
+* Remove manim\_community
+* Update
+* Update
+* update
+* Update
+* Add axes3d
+* Update README
+* Fix p>3
+* Use manim style build particle scattering
+* Add particles scattering light for p < 5
+* Update manim\_ky
+* update
+* update manim
+* Add README.md
+* update
+* Update README
+* delete useless submodule
+* add my personal submodule
+* update
+* add submodule manim\_community
+* Add manim\_gl
+* add submodule manim\_gl
+* modified
+* Initial commit

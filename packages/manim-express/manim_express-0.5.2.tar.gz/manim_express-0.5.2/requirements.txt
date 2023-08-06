@@ -1,0 +1,7 @@
+
+manim_kunyuan >= 0.33
+sparrow_tool
+fake_headers
+requests
+# helium
+# pyperclip
