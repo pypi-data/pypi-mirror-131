@@ -1,0 +1,4 @@
+[console_scripts]
+pdftool=src.pdftool:ctx
+rmtmp=src.rmtmp:ctx
+

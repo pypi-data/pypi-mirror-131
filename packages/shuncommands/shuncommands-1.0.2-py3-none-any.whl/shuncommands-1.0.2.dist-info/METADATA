@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: shuncommands
+Version: 1.0.2
+Summary: mypaceshun usefull commands
+Home-page: https://github.com/mypaceshun/shuncommands
+License: MIT
+Keywords: python,click
+Author: KAWAI Shun
+Author-email: mypaceshun@gmail.com
+Maintainer: KAWAI Shun
+Maintainer-email: mypaceshun@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0,<9.0)
+Requires-Dist: gitignore-parser (>=0.0.8,<0.0.9)
+Requires-Dist: pikepdf (>=4.1.0,<5.0.0)
+Project-URL: Repository, https://github.com/mypaceshun/shuncommands
+Description-Content-Type: text/markdown
+
+# shuncommands
+my usefull commands
+
+# install
+
+```
+$ pip install --user git+https://github.com/mypaceshun/shuncommands
+```
+
