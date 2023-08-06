@@ -1,0 +1,4 @@
+django-author
+Django>=3.1
+celery
+django-import-export
