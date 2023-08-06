@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/iupy/__init__.py
+src/iupy/misc.py
+src/iupy/myconfig.py
+src/iupy/network.py
+src/iupy.egg-info/PKG-INFO
+src/iupy.egg-info/SOURCES.txt
+src/iupy.egg-info/dependency_links.txt
+src/iupy.egg-info/top_level.txt
