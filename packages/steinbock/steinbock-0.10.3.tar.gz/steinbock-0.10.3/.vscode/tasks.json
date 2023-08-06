@@ -1,0 +1,42 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "docker-build",
+			"type": "docker-build",
+			"platform": "python",
+			"dockerBuild": {
+				"tag": "ghcr.io/bodenmillergroup/steinbock:latest",
+				"dockerfile": "${workspaceFolder}/Dockerfile",
+				"context": "${workspaceFolder}",
+				"pull": true
+			}
+		},
+		{
+			"label": "docker-run",
+			"type": "docker-run",
+			"dependsOn": [
+				"docker-build"
+			],
+			"python": {
+				"module": "steinbock"
+			}
+		},
+		{
+			"label": "compose-up: steinbock-debug",
+			"type": "shell",
+			"dependsOn": [
+				"docker-build"
+			],
+			"command": "docker-compose up -d steinbock-debug"
+		},
+		{
+			"label": "compose-up: pytest-debug",
+			"type": "shell",
+			"dependsOn": [
+				"docker-build"
+			],
+			"command": "docker-compose up -d pytest-debug"
+		}
+	]
+}
