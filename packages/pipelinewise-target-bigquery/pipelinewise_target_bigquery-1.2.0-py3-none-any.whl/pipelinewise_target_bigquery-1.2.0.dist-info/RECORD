@@ -1,0 +1,10 @@
+target_bigquery/__init__.py,sha256=1Gk7X3wP8NFKWvgraOfM0FRs6NYVuBH4-4Is4sFRjOI,13603
+target_bigquery/db_sync.py,sha256=nc_VDL03GgTnPN36Sb-iF8N2ItS0CHdQoMJ9jghIzs4,32429
+target_bigquery/exceptions.py,sha256=7Tg3ixRoS6ETls9PR7eP0QPRVUJuvRCUBHC2iACVI38,783
+target_bigquery/stream_utils.py,sha256=spDDsuM3y6jmnKQ4ZC7KuLXkKO4f19zcUmfpswSdiT8,5243
+pipelinewise_target_bigquery-1.2.0.dist-info/LICENSE,sha256=jIxGZfKZZKmzBWbYAj3iSoFNi7o87Hp3aowDsnkr0Pw,10409
+pipelinewise_target_bigquery-1.2.0.dist-info/METADATA,sha256=Y4_VQuRyvHZLz_l05N5m5xaPkQppdO-fo54Lod60EYg,21756
+pipelinewise_target_bigquery-1.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pipelinewise_target_bigquery-1.2.0.dist-info/entry_points.txt,sha256=avCkay2olp2Ypg_xPVPTH4YVONxXOG65aigtIFhJ4y4,82
+pipelinewise_target_bigquery-1.2.0.dist-info/top_level.txt,sha256=28UyIAPswiBKqnK4kn8vtGUofV7eamKJK5Hk9zC9a3E,16
+pipelinewise_target_bigquery-1.2.0.dist-info/RECORD,,
