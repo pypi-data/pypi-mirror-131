@@ -1,0 +1,10 @@
+scine_xtb_wrapper/LICENSE.txt,sha256=HL7XYi_sSTmCYI_nS-recOmhyZb7qNS9Fx2HejGhjlo,1498
+scine_xtb_wrapper/__init__.py,sha256=qEvxCmKBdMYo-bnhSRuw5aIgzcYNhQbSI6-X2d0j7YY,1279
+scine_xtb_wrapper/xtb.module.so,sha256=jRlkja8lFJNji3QYIq6hJlux1aFa-zo7v9bbRPFDA7k,18521968
+scine_xtb_wrapper-1.0.0.dist-info/METADATA,sha256=ZPcsh2b4DzpVecaRvlWy3Grgb9FDgsQjjeT1dre2D8o,4028
+scine_xtb_wrapper-1.0.0.dist-info/WHEEL,sha256=paN2rHE-sLfyg0Z4YvQnentMRWXxZnkclRDH8E5J6qk,148
+scine_xtb_wrapper-1.0.0.dist-info/top_level.txt,sha256=cb6kiMxuoQskSuqXpZf1RxxPWP0ZPOKprOa2FqJj5Uc,18
+scine_xtb_wrapper-1.0.0.dist-info/RECORD,,
+scine_xtb_wrapper.libs/libgomp-a34b3233.so.1.0.0,sha256=1GXGWfRf6XU3wOEAn66x6m5ApWQt3_3un8G3PAcyQh4,168192
+scine_xtb_wrapper.libs/libgfortran-040039e1.so.5.0.0,sha256=R6s7aClbCjzomQpEjef6sRq928Fg-IlZcsqapxLPhtA,2686064
+scine_xtb_wrapper.libs/libquadmath-96973f99.so.0.0.0,sha256=l82oXdtRY-Labh7bTh1rVXgzqZpA7aB5rjflA5Rltl0,247608
