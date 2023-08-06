@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="procwind">
+    <file>../images/tack.png</file>
+    <file>../images/memo.png</file>
+    <file>../images/cpud.png</file>
+  </qresource>
+</RCC>
