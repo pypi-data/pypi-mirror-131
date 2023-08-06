@@ -1,0 +1,3 @@
+[console_scripts]
+pykalimux = pykalimux.pykalimux:main
+
