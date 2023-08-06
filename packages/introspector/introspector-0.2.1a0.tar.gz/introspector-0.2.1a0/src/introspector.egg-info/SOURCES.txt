@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/introspector/__init__.py
+src/introspector/introspector.py
+src/introspector/strict.py
+src/introspector.egg-info/PKG-INFO
+src/introspector.egg-info/SOURCES.txt
+src/introspector.egg-info/dependency_links.txt
+src/introspector.egg-info/top_level.txt
