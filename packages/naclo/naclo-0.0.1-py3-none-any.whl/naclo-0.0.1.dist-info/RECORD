@@ -1,0 +1,8 @@
+df_ops/__init__.py,sha256=7JbjoexrpAphj7hkRCUJFsFzDsh5xPy5QBCZXyjw4co,64
+df_ops/df_ops.py,sha256=nrjvjjt87Uc_sVfGEvdf42TR64ZwMaNPjYV6yskd1vg,4949
+df_ops/duplicates.py,sha256=z8TSkD5nDFZUKgLUOM3znDj1pTp04ZlgZpOmlYL72cE,1207
+df_ops/sdf.py,sha256=w6gpuN04n_Yrem9hPznzPMcNDdh37UOfzqSS2eVljgI,1245
+naclo-0.0.1.dist-info/METADATA,sha256=RS1YrWbhfpqInH-3LHxq7uim3tbPhw0N_NN56lGVkKY,586
+naclo-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+naclo-0.0.1.dist-info/top_level.txt,sha256=41hxgHYICHQCCnzSrFUQwpIlM9rS0uKj_1FPQbQ0ISA,7
+naclo-0.0.1.dist-info/RECORD,,
