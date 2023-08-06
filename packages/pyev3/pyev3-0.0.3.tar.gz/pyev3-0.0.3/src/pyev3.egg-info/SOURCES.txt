@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/pyev3/__init__.py
+src/pyev3/brick.py
+src/pyev3/comm.py
+src/pyev3/devices.py
+src/pyev3/io.py
+src/pyev3.egg-info/PKG-INFO
+src/pyev3.egg-info/SOURCES.txt
+src/pyev3.egg-info/dependency_links.txt
+src/pyev3.egg-info/requires.txt
+src/pyev3.egg-info/top_level.txt
