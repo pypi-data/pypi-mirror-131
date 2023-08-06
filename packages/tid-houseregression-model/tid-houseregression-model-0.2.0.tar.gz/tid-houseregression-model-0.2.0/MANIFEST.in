@@ -1,0 +1,18 @@
+include *.txt
+include *.md
+include *.pkl
+recursive-include ./houseregression_model/*
+
+include houseregression_model/datasets/train.csv
+include houseregression_model/datasets/test.csv
+include houseregression_model/trained_models/*.pkl
+include houseregression_model/VERSION
+include houseregression_model/config.yml
+
+include ./requirements/requirements.txt
+include ./requirements/test_requirements.txt
+exclude *.log
+exclude *.cfg
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
