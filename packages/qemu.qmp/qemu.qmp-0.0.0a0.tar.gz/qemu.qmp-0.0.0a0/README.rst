@@ -1,0 +1,129 @@
+QEMU Monitor Protocol (QMP) Library
+===================================
+
+This package provides an asyncio library used for communicating with
+QEMU Monitor Protocol ("QMP") servers. It requires Python 3.6+ and has
+no other dependencies.
+
+This library can be used for communicating with QEMU emulators or with
+the QEMU Guest Agent (QGA), QEMU Storage Daemon (QSD) or any other
+utility or application that speaks QMP.
+
+This library makes as little assumptions as possible about the actual
+version or what type of endpoint it will be communicating with;
+i.e. this library does not contain command definitions and does not seek
+to be an SDK or a replacement for tools like libvirt/virsh. It is
+"simply" the protocol (QMP) and not the vocabulary (QAPI). It is up to
+the programmer (you!) to know which commands and arguments you want to
+send.
+
+
+Who is this library for?
+------------------------
+
+It is firstly for developers of QEMU themselves; as the test
+infrastructure of QEMU itself needs a convenient and scriptable
+interface for testing QEMU. This library was split out of the QEMU
+source tree in order to share a reference version of a QMP library that
+was usable both within and outside of the QEMU source tree.
+
+Second, it's for those who are developing *for* QEMU by adding new
+architectures, devices, or functionality; as well as targeting those who
+are developing *with* QEMU, i.e. developers working on integrating QEMU
+features into other projects such as libvirt, kubevirt, kata
+containers, etc. Occasionally, using existing VM management stacks that
+integrate QEMU+kvm can make developing, testing, and debugging features
+difficult and more 'raw' access is required. This library is for you.
+
+Lastly, it's for power users who already use QEMU directly without the
+aid of libvirt because they require the raw control and power this
+affords them.
+
+
+Who is this library NOT for?
+----------------------------
+
+It is not designed for anyone looking for a turn-key solution for VM
+management. QEMU is a low-level component that resembles a swiss army
+knife with 5,000 attachments. This library does not manage that
+complexity at all and is largely "QEMU ignorant", and so it is not a
+replacement for projects like libvirt, virtual machine manager, boxes,
+etc.
+
+
+Installing
+----------
+
+This package can be installed with pip using ``pip3 install qemu.qmp``.
+
+
+Usage
+-----
+
+At its simplest, script-style usage looks like this::
+
+  from qemu.qmp import QMPClient
+
+  qmp = QMPClient('my-vm-nickname')
+  await qmp.connect('/path/to/qmp.sockfile')
+
+  res = await qmp.execute('query-status')
+  print(f"VM status: {res['status']}")
+
+  await qmp.disconnect()
+
+
+The above script will connect to the UNIX socket located at
+``/path/to/qmp.sockfile`` and query the VM's runstate and print it out
+to the terminal.
+
+For more complex usages, especially those that make full advantage of
+monitoring asynchronous events; refer to the online documentation or
+type ``help(qemu.qmp)`` in your Python terminal of choice.
+
+
+Contributing
+------------
+
+Contributions are quite welcome! Please file bugs using the `GitLab
+issue tracker <https://gitlab.com/jsnow/qemu.qmp/-/issues>`_. This
+project will accept GitLab merge requests, but due to the close
+association with the QEMU project, there are some additional guidelines:
+
+1. Please use the "Signed-off-by" tag in your commit messages. See
+   https://wiki.linuxfoundation.org/dco for more information on this
+   requirement.
+
+2. This repository won't squash merge requests into a single commit on
+   pull; each commit should seek to be self-contained (within reason).
+
+3. Owing to the above, each commit sent as part of a merge request
+   should not introduce any temporary regressions, even if fixed later
+   in the same merge request. This is done to preserve bisectability.
+
+4. Please associate every merge request with at least one GitLab
+   issue. This helps with generating Changelog text and staying
+   organized. Thank you 🙇
+
+
+Developing
+^^^^^^^^^^
+
+Optional packages necessary for running code quality analysis for this
+package can be installed with the optional dependency group "devel":
+``pip install qemu.qmp[devel]``.
+
+``make develop`` can be used to install this package in editable mode
+(to the current environment) *and* bring in testing dependencies in one
+command.
+
+``make check`` can be used to run the available tests. Consult ``make
+help`` for other targets and tests that make sense for different
+occasions. (Personally: I run ``make check-tox && make check-pipenv``
+locally before submitting to GitLab CI as my due diligence.)
+
+
+Changelog
+---------
+
+- No public release yet.
