@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.py
+katsuyou/__init__.py
+katsuyou.egg-info/PKG-INFO
+katsuyou.egg-info/SOURCES.txt
+katsuyou.egg-info/dependency_links.txt
+katsuyou.egg-info/top_level.txt
+katsuyou/conjugate/__init__.py
+katsuyou/conjugate/godan_verb.py
+katsuyou/conjugate/i_adjective.py
+katsuyou/conjugate/ichidan_verb.py
+katsuyou/conjugate/irregular.py
+katsuyou/conjugate/util/__init__.py
+katsuyou/conjugate/util/bundle.py
+katsuyou/util/__init__.py
+katsuyou/util/matcher.py
