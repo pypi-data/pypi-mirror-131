@@ -1,0 +1,8 @@
+opentelemetry-api~=1.3
+opentelemetry-instrumentation==0.27b0
+opentelemetry-sdk==1.8.0
+
+[otlp]
+opentelemetry-exporter-otlp==1.8.0
+
+[test]
