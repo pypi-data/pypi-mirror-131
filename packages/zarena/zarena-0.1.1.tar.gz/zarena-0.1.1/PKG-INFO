@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: zarena
+Version: 0.1.1
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Rust
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: numpy>=1,<2
+Requires-Dist: gym>=0,<1
+Summary: Rust Game Collection with Reninforcement Learning gym environments
+Keywords: rust,performance,games,wasm,gym-environments,gyms,maturin
+Author: zetiworld
+Author-email: zetiapp@gmail.com
+Requires-Python: >=3.6
+Project-URL: repository, https://github.com/ZetiAi/zarena
