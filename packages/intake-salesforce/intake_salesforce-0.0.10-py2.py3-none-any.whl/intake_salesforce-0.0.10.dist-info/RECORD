@@ -1,0 +1,10 @@
+intake_salesforce/__init__.py,sha256=4SWKzLhFdBUMnyiQUjw0MKAmESOh0PC2VwXEDVxv2Rc,91
+intake_salesforce/_version.py,sha256=wr9WDH4h0G9ok0gS5clP3cK12PyZJEvB3mPPndOE1tQ,498
+intake_salesforce/core.py,sha256=0OanllnGhjJdP1HRN1X4g-72XV5V9I76D91CO6IcyxY,7190
+intake_salesforce/versioneer.py,sha256=dYmTUQJtADX7jooK0TVZIkyu_IVRRTQq4-fbTUfTdc4,70144
+intake_salesforce-0.0.10.dist-info/LICENSE,sha256=dm6UQyu4ERR26Ltr5qH8TwvX1CJ_26bvBLUuRL4eZn4,1505
+intake_salesforce-0.0.10.dist-info/METADATA,sha256=Lz2y_uXbV_CSZIkIlZmKfDPakzmyDjUef9vUWPo7rAk,619
+intake_salesforce-0.0.10.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+intake_salesforce-0.0.10.dist-info/entry_points.txt,sha256=5fs8Vd0SHjT7diIWp8Grz2f9D4bD10HhU_2ySIcphoA,144
+intake_salesforce-0.0.10.dist-info/top_level.txt,sha256=ojswbnyNl8wZHLTg8tR2csFyVhOxeMsddhEHzLxQXyM,18
+intake_salesforce-0.0.10.dist-info/RECORD,,
