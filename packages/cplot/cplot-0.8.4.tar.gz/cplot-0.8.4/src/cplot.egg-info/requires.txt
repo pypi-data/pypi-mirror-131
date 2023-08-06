@@ -1,0 +1,4 @@
+colorio<0.11.0,>=0.10.1
+matplotlib
+matplotx[all]>=0.2.4
+numpy>=1.20.0

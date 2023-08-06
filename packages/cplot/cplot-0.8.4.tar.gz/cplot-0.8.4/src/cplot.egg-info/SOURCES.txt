@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/cplot/__init__.py
+src/cplot/_colors.py
+src/cplot/_main.py
+src/cplot/_tri.py
+src/cplot/benchmark.py
+src/cplot/create.py
+src/cplot.egg-info/PKG-INFO
+src/cplot.egg-info/SOURCES.txt
+src/cplot.egg-info/dependency_links.txt
+src/cplot.egg-info/requires.txt
+src/cplot.egg-info/top_level.txt
