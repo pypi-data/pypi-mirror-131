@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pypedrive-api
+Version: 0.0.1
+Summary: Asyncio/aiohttp based library for interacting with the Pipedrive API.
+Home-page: UNKNOWN
+Author: Austin Howard
+Author-email: austin@tangibleintelligence.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.6.1
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp[speedups] (<4,>=3.7)
+Requires-Dist: pydantic (<2,>=1.7.3)
+
+# pypedrive-api
+
+Asyncio/aiohttp based library for interacting with the [Pipedrive API](https://developers.pipedrive.com/docs/api/v1).
+
