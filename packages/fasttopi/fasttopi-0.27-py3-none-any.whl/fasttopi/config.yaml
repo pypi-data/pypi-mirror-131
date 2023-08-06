@@ -1,0 +1,36 @@
+dataset:
+  url: https://archive.ics.uci.edu/ml/machine-learning-databases/00359/NewsAggregatorDataset.zip
+  path_dir: data
+  path_zip: dataset.zip
+  path_source: data/newsCorpora.csv
+  path_preprocessed: data/dataset-preprocessed.csv
+
+sample:
+  path: data/dataset-sample.csv
+
+model:
+  c: [0.1, 1]
+  c_best: 0.1
+  max_iter: [100]
+  max_iter_best: 8000
+  path: models/model.pkl
+  path_training: models/models-training.pkl
+
+experiment:
+  holdout_percentage: 0.1
+  splits_count: 5
+  path_holdout: data/holdout.csv
+  path_training: data/training.csv
+
+experiment-sample:
+  path_holdout: data/holdout-sample.csv
+  path_training: data/training-sample.csv
+  size: 10000
+
+baseline:
+  path: models/baseline.pkl
+
+baseline-testing:
+  path: models/baseline-testing.pkl
+
+rest-api:
