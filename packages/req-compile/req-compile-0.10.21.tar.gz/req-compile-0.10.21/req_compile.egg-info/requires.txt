@@ -1,0 +1,11 @@
+requests
+six
+toml
+appdirs
+packaging
+wheel
+
+[:python_version < "3.0"]
+functools32
+enum34
+typing
