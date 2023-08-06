@@ -1,0 +1,6 @@
+*.txt
+/dist/
+/lash.egg-info/
+/build/
+/.idea/
+/__pycache__/
