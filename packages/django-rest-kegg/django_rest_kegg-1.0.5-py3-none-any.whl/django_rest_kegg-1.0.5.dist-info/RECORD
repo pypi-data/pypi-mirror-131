@@ -1,0 +1,17 @@
+django_rest_kegg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_rest_kegg/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+django_rest_kegg/apps.py,sha256=8wVmvmSmqnpDoWOTW6ViR6vxPJyf9LdtLBw9eG1NUhs,162
+django_rest_kegg/models.py,sha256=NCorEaPDIuJa4XV_7VKhO9veq3_QIpq0-Af1LuyxCX4,385
+django_rest_kegg/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_rest_kegg/urls.py,sha256=1PIdZ0IduxYXpMhkYcswzm4eHu5igz_HGW0CLemgDHo,174
+django_rest_kegg/utils.py,sha256=mUys-27JouejAnUGV6mh-S6aXbsMQ1TIGTDSTEKySx0,1741
+django_rest_kegg/views.py,sha256=XeH0oCzvfPPLdKVXaqs1P9hWjm8fu4r6T31kXPUm4zg,5098
+django_rest_kegg/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_rest_kegg/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_rest_kegg/management/commands/build.py,sha256=Kk_OlDuZB5lbSgEyliKVKXjhMwX-l0VKoopUE-fGZpM,2360
+django_rest_kegg/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_rest_kegg/version/version.json,sha256=WClVkYjj73veRHDzr6S3xdhPZi8dRBT-G9_Zo9lnHKI,268
+django_rest_kegg-1.0.5.dist-info/METADATA,sha256=8ogTy073_-ox6eBlBAHfqSaYW7SPmlxZ3Zeltw25fWM,2837
+django_rest_kegg-1.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_rest_kegg-1.0.5.dist-info/top_level.txt,sha256=6yRiM2wrn8QifVaXWJJ8HjdguUmaj8TnxUxX9Zdpccw,17
+django_rest_kegg-1.0.5.dist-info/RECORD,,
