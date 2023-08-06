@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: cmp-sdk
+Version: 1.0.14
+Summary: cmp sdk
+Home-page: UNKNOWN
+Author: quwan
+Author-email: Csjs1-2@example.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: python-dateutil
+Requires-Dist: bumpversion
+
+设置下列环境变量
+
+* CMP_SERVER
+* CMP_AUTH_NAME
+* CMP_AUTH_PASSWORD
+* CMP_CRED_TTL
+* CMP_COMPANY_ID
+
