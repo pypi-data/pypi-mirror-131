@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: kia-uvo-hyundai-bluelink
+Version: 0.1.0
+Summary: Python wrapper for getting vehicle data from Kia and Hyundai servers.
+Home-page: https://github.com/fuatakgun/KiaUvoHyundaiBluelinkAPI
+Author: Fuat Akgun
+Author-email: fuatakgun@gmail.com
+License: Apache-2.0 License
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+
+test
+
