@@ -1,0 +1,8 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "serialhub",
+  "description": "serialhub settings.",
+  "type": "object",
+  "properties": {},
+  "additionalProperties": false
+}
