@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: sphinxcontrib-slide
+Version: 1.0.0
+Summary: Sphinx "slide" extension
+Home-page: https://github.com/sphinx-contrib/slide
+Author: Takeshi KOMIYA
+Author-email: i.tkomiya@gmail.com
+License: BSD
+Download-URL: https://pypi.org/project/sphinxcontrib-slide/
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Documentation
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+
+
+This package contains the slide Sphinx extension.
+
+This extension enable you to embed your slides on slideshare_ and other sites.
+Following code is sample::
+
+   .. slide:: https://www.slideshare.net/TakeshiKomiya/blockdiag-a-simple-diagram-generator
+
+
+.. _slideshare: https://www.slideshare.net/
+
+
