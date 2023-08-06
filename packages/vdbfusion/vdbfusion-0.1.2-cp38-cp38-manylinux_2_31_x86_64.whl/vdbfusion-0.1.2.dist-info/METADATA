@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: vdbfusion
+Version: 0.1.2
+Summary: 3D Volumetric Surface Reconstruction using the VDB data structure
+Home-page: UNKNOWN
+Author: Ignacio Martin Vizzo (aka Nacho) and Cyrill Stachniss
+Author-email: ignaciovizzo@gmail.com
+License: UNKNOWN
+Keywords: TSDF,Mapping,SLAM,LiDAR,Odometry,Localization
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.20)
+
+**NOTE:** The support for this pip pacakge it is still under develpment and therefore might not be
+so stable.
+
+# VDBFusion
+
+This is a small utility library that implement the VDBFusion algorithm, similar to TSDF-based
+reconstruction pipelines but using a different data-structure(VDB).
+
+## Installation
+
+Take a seat and relax, you only need to:
+
+```shell
+pip install vdbfusion
+```
+
+## Usage
+
+```python
+from vdbfusion import VDBVolume
+
+tsdf = VDBVolume(voxel_size=0.1, sdf_trunc=0.3, space_carving=False)
+
+# You need to define your own Dataset, see snippet below
+dataset = Dataset(...)
+
+for scan, origin in dataset:
+    vdb_volume.integrate(scan, origin)
+
+# Extract your map
+vertices, triangles = tsdf_volume.extract_triangle_mesh()
+
+```
+
+## Visualizing the output
+
+### Open3D(`pip install open3d`)
+
+```python
+import open3d as o3d
+mesh = o3d.geometry.TriangleMesh(
+    o3d.utility.Vector3dVector(vertices),
+    o3d.utility.Vector3iVector(triangles),
+)
+mesh.compute_vertex_normals()
+o3d.visualization.draw_geometries([mesh])
+```
+
+### trimesh(`pip install trimesh')
+
+```python
+import trimesh
+mesh = trimesh.Trimesh(vertices=vertices, faces=triangles)
+mesh.show()
+```
+
+## Dataset snippet
+
+You `Dataset` class must only define a `__len__` and `__getitem__` methods, similar to
+`torch.Dataset`:
+
+```python
+
+class Dataset:
+    def __init__(self, *args, **kwargs):
+        # Initialize your dataset here ..
+
+    def __len__(self) -> int:
+        return len(self.n_scans)
+
+    def __getitem__(self, idx: int) -> Tuple[np.ndarray, np.ndarray]:
+        # points: list of np.array points (N, 3)
+        # origin: sensor origin on the global coordinate frame (np.ndarray(3))
+        return points, origin
+```
+
+
