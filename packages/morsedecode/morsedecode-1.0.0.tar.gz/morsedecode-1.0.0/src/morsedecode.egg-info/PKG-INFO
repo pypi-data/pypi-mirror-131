@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: morsedecode
+Version: 1.0.0
+Summary: Morse code encoder and decoder utility
+Home-page: https://github.com/tusharsadhwani/morsedecode
+Author: Tushar Sadhwani
+Author-email: tushar.sadhwani000@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# morsedecode
+
+A morse code encoder and decoder utility.
+
+## Installation
+
+Install it via pip:
+
+```console
+pip install morsedecode
+```
+
+Alternatively, you can use `pipx` to run it without installing:
+
+```console
+pipx run morsedecode .... .. -.-.--
+```
+
+## Usage
+
+```console
+$ morsecode Hello World!
+.... . .-.. .-.. --- / .-- --- .-. .-.. -.. -.-.--
+
+$ morsedecode .... . .-.. .-.. --- / .-- --- .-. .-.. -.. -.-.--
+HELLO WORLD!
+```
+
+## Development / Testing
+
+To setup a development environment, run
+
+```console
+pip install -r requirements-dev.txt
+```
+
+Then run tests using:
+
+```console
+pytest
+```
+
+Or type-check your code using:
+
+```console
+mypy .
+```
+
+
