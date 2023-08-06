@@ -1,0 +1,6 @@
+nsgt
+Plotting-funcs
+numpy
+matplotlib
+pywt
+scipy
