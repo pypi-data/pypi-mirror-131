@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/swapdb/__init__.py
+src/swapdb.egg-info/PKG-INFO
+src/swapdb.egg-info/SOURCES.txt
+src/swapdb.egg-info/dependency_links.txt
+src/swapdb.egg-info/top_level.txt
