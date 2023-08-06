@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "brandaniethical"
+version = "0.1.0"
+description = "A package for green consumers and investors to quickly get a view of fashion brands’ animal policy, rate, and animal material usage and check trendy tickers esg from yahoo finance and esg api"
+authors = ["Maggiey01 <90772815+Maggiey01@users.noreply.github.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.3.5"
+lxml = "^4.7.1"
+requests = "^2.26.0"
+bs4 = "^0.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
