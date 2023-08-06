@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: deepcv
+Version: 1.1.0
+Summary: Computer vision related algorithms
+Home-page: https://github.com/Barrnett/DeepCV
+Author: zhuwenwen
+Author-email: stephenbarrnet@outlook.com
+License: MIT Licence
+Keywords: pip,pathtool,timetool,magetool,mage
+Platform: any
+
+time and path tool
+
