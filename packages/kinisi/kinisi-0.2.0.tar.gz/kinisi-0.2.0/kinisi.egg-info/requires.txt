@@ -1,0 +1,6 @@
+numpy
+scikit-learn
+scipy
+tqdm
+uravu>=1.2.4
+emcee>=3.1.1
