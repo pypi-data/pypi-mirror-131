@@ -1,0 +1,7 @@
+LICENSE.txt
+README.txt
+setup.py
+randofacts.egg-info/PKG-INFO
+randofacts.egg-info/SOURCES.txt
+randofacts.egg-info/dependency_links.txt
+randofacts.egg-info/top_level.txt

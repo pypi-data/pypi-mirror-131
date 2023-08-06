@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: randofacts
+Version: 0.0.1
+Summary: Gives good random facts
+Home-page: UNKNOWN
+Author: Joshua Lowe
+Author-email: palash.yesok@gmail.com
+License: MIT
+Description: It gives you a random fact using popctdev api wrapper
+        
+        Change Log
+        ==========
+        
+        0.0.1 (19/02/2021) 
+Keywords: facts
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
