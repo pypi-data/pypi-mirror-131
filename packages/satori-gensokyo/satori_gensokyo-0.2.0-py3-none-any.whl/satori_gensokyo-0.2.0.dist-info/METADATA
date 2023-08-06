@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: satori-gensokyo
+Version: 0.2.0
+Summary: Gensokyo style spellcard fight generator
+License: GPL-3.0-or-later
+Author: Ravenclaw-OIer
+Author-email: lilywhite2005@outlook.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
+Requires-Dist: tomlkit (>=0.7.2,<0.8.0)
