@@ -1,0 +1,3 @@
+[console_scripts]
+mariana-trench = mariana_trench.shim.shim:main
+
