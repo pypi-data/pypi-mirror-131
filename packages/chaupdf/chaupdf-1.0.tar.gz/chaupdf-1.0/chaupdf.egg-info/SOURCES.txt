@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+chaupdf.egg-info/PKG-INFO
+chaupdf.egg-info/SOURCES.txt
+chaupdf.egg-info/dependency_links.txt
+chaupdf.egg-info/top_level.txt
