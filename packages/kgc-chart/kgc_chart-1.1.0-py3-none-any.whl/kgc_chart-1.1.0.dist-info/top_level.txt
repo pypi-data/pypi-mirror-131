@@ -1,0 +1,2 @@
+kgc_chart
+krueger_gauge_circular_chart
