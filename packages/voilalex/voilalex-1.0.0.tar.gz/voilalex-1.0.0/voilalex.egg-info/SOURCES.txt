@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+setup.py
+voilalex/__init__.py
+voilalex.egg-info/PKG-INFO
+voilalex.egg-info/SOURCES.txt
+voilalex.egg-info/dependency_links.txt
+voilalex.egg-info/top_level.txt
