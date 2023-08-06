@@ -1,0 +1,3 @@
+[console_scripts]
+postbook = postbook.main:main
+

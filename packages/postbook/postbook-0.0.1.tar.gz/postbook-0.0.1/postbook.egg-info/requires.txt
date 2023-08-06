@@ -1,0 +1,5 @@
+nbconvert>=6.3.0
+typer>=0.4.0
+Jinja2>=3.0.3
+paramiko>=2.8.1
+nbformat>=5.1.3
