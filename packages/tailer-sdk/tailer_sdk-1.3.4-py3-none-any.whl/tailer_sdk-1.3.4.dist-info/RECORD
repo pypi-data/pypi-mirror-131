@@ -1,0 +1,16 @@
+tailer_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tailer_sdk/sql_dag_generator.py,sha256=KEzs2FVMJiYKUCH3fcRQyB4-TEZ1CPmVYWMRDa959MI,149186
+tailer_sdk/tailer_auth.py,sha256=sK_e1PGRJeHgfKkA9ZnZpnBc52YRvgHh-XT247SSwlg,7170
+tailer_sdk/tailer_config.py,sha256=06bKrxQ5jrAq0OBwlhG0C4n3a1y4276NxCezNoHVRPQ,16580
+tailer_sdk/tailer_configuration_manager.py,sha256=Vqh40ndM7yHK6iNl6pJisflNEAAsDaJ1PCqi8KNsx-U,33910
+tailer_sdk/tailer_crypto.py,sha256=KoInwerwltvlnEhSn1UQu69m5JhxxHB2muX3Hi1GLFQ,2421
+tailer_sdk/tailer_gcp_cf_manager.py,sha256=ZE9Ve0Co_b-jP29UUqVPPmo2Q0uKY3AHebWlECLkxG4,4194
+tailer_sdk/tailer_help.py,sha256=B_TRaYYVwu7-4x2_eqrQ-2GaRdolKK1tX89XoRWPfpA,1192
+tailer_sdk/tailer_misc.py,sha256=8bkhWU3nl6omSYw69Vesk9YvS24t4FH8HXRXJMyK3Q0,9224
+tailer_sdk/tailersdk.py,sha256=54tgdo6E4cWSOGNIQjhulDBn3G3Nn4wWeZE-VrojXQ8,4830
+tailer_sdk-1.3.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tailer_sdk-1.3.4.dist-info/METADATA,sha256=azwilhr129a-a9OfyaJ3O33sGjhdybEIXm25bR0i9FQ,2827
+tailer_sdk-1.3.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+tailer_sdk-1.3.4.dist-info/entry_points.txt,sha256=OfYDJpEmY0gCF7SAivOwWjMsNBEyqtqWrdm5oPhvMZc,54
+tailer_sdk-1.3.4.dist-info/top_level.txt,sha256=jkfXqEW45U_J0psaU2NHS6_VZe5jFlAafJjXnpWlDGM,11
+tailer_sdk-1.3.4.dist-info/RECORD,,
