@@ -1,0 +1,11 @@
+sgtl/__init__.py,sha256=fZUngnqvQoxqem-OB3y5sDICN9Q6P-8k4cSkDobfSLg,134
+sgtl/algorithms.py,sha256=U05zIRm20Z-bXfZithFv4Zlsb0ocTBpJBRA2XqfShc4,3110
+sgtl/clustering.py,sha256=2PT6ENJ4Dt5diqeUcNjiTi4UjXmMGH58DIO_zFhedrE,2068
+sgtl/graph.py,sha256=HC8xiqteQKljm_1KWgCQDySiK3sboNoaz1rs5lSb9n8,14229
+sgtl/random.py,sha256=alnugI3ZkE8BiXb7S6GI1sIidB0Wzw6_CPN8OeljDi8,11890
+sgtl/sbm.py,sha256=rKvOt5n5Ce2yRmw_JnehE86JoDCA778OJirV--ZA6Xs,9034
+sgtl-0.4.dist-info/LICENSE,sha256=Pq66oq_JyIytYKeffi6aJV0S9yucYGiQ-YZX8CcsU9A,1072
+sgtl-0.4.dist-info/METADATA,sha256=VK8o_mKbPJBFLVnr2VVpVLUICgn95zEfnxri-UV-NTA,858
+sgtl-0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sgtl-0.4.dist-info/top_level.txt,sha256=RGp-pI0-8AL1XNlZckJ5CQ1MFbNXypl5cRY-PNRF4jU,5
+sgtl-0.4.dist-info/RECORD,,
