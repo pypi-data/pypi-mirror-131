@@ -1,0 +1,12 @@
+data_analytics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data_analytics/births_deaths_marriages_dataframe_labels.py,sha256=ex5881aJEeWAuN2cDbJkbZ_iJGhu4hYfW3Mh1xPJoVw,1766
+data_analytics/exploratory_data_analysis.py,sha256=-5tedtFOIoEVWMwBNTVI4c5VR9NuCnsbSu6JSqHj8Gg,4524
+data_analytics/exploratory_data_analysis_reports.py,sha256=eOAKy7H7EKezEEaf2mU5Z01KkfaJPtDdLmbYU4Bcj3Q,2869
+data_analytics/github.py,sha256=VRebUFmElNdz6tCNOJMun3PFYwwWwtPbzKvy6EysWAA,3139
+data_analytics/graphs.py,sha256=7bhqGAPY95AtrtfRs_xndGvfyDQYPTR0lxoK9XZ4Na8,6481
+data_analytics/project_manager.py,sha256=cDL2Q5dUbArMiG52oFvIb9ucNwo5RGW2NKIxWgsba-g,4864
+markcrowe-0.0.4.dist-info/METADATA,sha256=Q0dakDeeL3NZtZRyJYC3IKgExNNhuVtCq_uQNJ5mLkc,657
+markcrowe-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+markcrowe-0.0.4.dist-info/license,sha256=GNrUDSgAqRnHtmgH_3Jk3ZogQCncVnv_UBQ_463xQBE,86
+markcrowe-0.0.4.dist-info/top_level.txt,sha256=_mhsWgwotyxRBut5Ld4C7b5fvJ4mQ2Z_RF1qoMyDQVc,15
+markcrowe-0.0.4.dist-info/RECORD,,
