@@ -1,0 +1,12 @@
+pyzendesk/__init__.py,sha256=n7fP8FfT58wi4dwYRTvCrBo0iLOl8B0rYYMuY-yQwIg,1707
+pyzendesk/api.py,sha256=j0hCtVmdpcoome0KZ7MXMAvOf_cBZNuBLTNxPShZlH8,4381
+pyzendesk/attachments.py,sha256=W2QvAoHkWCftn50sJ4tqZ6WuYn8QNH-Q4XWOXg5zJtU,1546
+pyzendesk/constants.py,sha256=MciVlGnkiyIuVc7BRHSzuITVqkYu5V8iag37rn0BxCo,1107
+pyzendesk/support_tickets.py,sha256=y5XCpKYY2HO4Pi6EjOMyCFW_s8-Lj168V_LxerPaeOQ,2750
+pyzendesk/tickets.py,sha256=I33EckabXRC1DjZycbgDjyCChVUYA2j7fvHTSlBuKeU,9230
+pyzendesk/users.py,sha256=rGB6HAUTemNX__bqyqaesQQfhDYgM5rR_qATnTLCUww,1050
+PyZendesk-0.2.1.dist-info/LICENSE,sha256=KXtvAwlDxFxMIdHxHJfaPxp2LLs4cZoPCATTgfcKCTE,613
+PyZendesk-0.2.1.dist-info/METADATA,sha256=b2dh4E14CaWWJ6Al9ZWsu1pgjUanLE0dExO0-0AND-k,1769
+PyZendesk-0.2.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+PyZendesk-0.2.1.dist-info/top_level.txt,sha256=FC6_b-l6Dz_xhENCaGpkf6qymdcybg8rXsyREdLIUUM,10
+PyZendesk-0.2.1.dist-info/RECORD,,
