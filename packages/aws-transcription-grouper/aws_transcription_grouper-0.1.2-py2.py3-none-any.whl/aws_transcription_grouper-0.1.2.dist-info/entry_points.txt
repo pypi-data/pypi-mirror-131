@@ -1,0 +1,3 @@
+[console_scripts]
+grouper = aws_transcription_grouper.cli:main
+
