@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: specclassify
+Version: 0.3.1
+Summary: A Python package for multi- or hyperspectral image classification.
+Home-page: https://git.gfz-potsdam.de/geomultisens/specclassify
+Author: Daniel Scheffler
+Author-email: daniel.scheffler@gfz-potsdam.de
+License: Apache-2.0
+Keywords: specclassify,remote sensing,multispectral,hyperspectral,image classification
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+============
+specclassify
+============
+
+A Python package for multi- or hyperspectral image classification.
+
+* Free software: Apache-2.0
+* **Documentation:** https://geomultisens.git-pages.gfz-potsdam.de/specclassify/doc/
+* Submit feedback by filing an issue `here <https://git.gfz-potsdam.de/geomultisens/specclassify/issues>`__.
+
+
+Status
+------
+
+.. image:: https://git.gfz-potsdam.de/geomultisens/specclassify/badges/master/pipeline.svg
+        :target: https://git.gfz-potsdam.de/geomultisens/specclassify/commits/master
+.. image:: https://git.gfz-potsdam.de/geomultisens/specclassify/badges/master/coverage.svg
+        :target: https://geomultisens.git-pages.gfz-potsdam.de/specclassify/coverage/
+.. image:: https://img.shields.io/pypi/v/specclassify.svg
+        :target: https://pypi.python.org/pypi/specclassify
+.. image:: https://img.shields.io/pypi/l/specclassify.svg
+        :target: https://git.gfz-potsdam.de/geomultisens/specclassify/blob/master/LICENSE
+.. image:: https://img.shields.io/pypi/pyversions/specclassify.svg
+        :target: https://img.shields.io/pypi/pyversions/specclassify.svg
+
+See also the latest coverage_ report and the pytest_ HTML report.
+
+
+Features
+--------
+
+* TODO
+
+
+Credits
+-------
+
+The specclassify package was developed within the context of the GeoMultiSens project funded
+by the German Federal Ministry of Education and Research (project grant code: 01 IS 14 010 A-C)
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+.. _coverage: https://geomultisens.git-pages.gfz-potsdam.de/specclassify/coverage/
+.. _pytest: https://geomultisens.git-pages.gfz-potsdam.de/specclassify/test_reports/report.html
+
+
+=======
+History
+=======
+
+0.1.0 (2019-08-14)
+------------------
+
+* First release on PyPI.
+
+

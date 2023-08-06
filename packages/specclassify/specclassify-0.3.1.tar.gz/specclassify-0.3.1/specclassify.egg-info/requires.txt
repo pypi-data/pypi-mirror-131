@@ -1,0 +1,6 @@
+numpy
+tqdm
+matplotlib
+scikit-learn
+geoarray>=0.15.0
+py_tools_ds>=0.18.0
