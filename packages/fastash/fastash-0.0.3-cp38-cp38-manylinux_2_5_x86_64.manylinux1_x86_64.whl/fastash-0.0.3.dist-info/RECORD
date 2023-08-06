@@ -1,0 +1,14 @@
+ashfunc.cpython-38-x86_64-linux-gnu.so,sha256=BeXbrjugUw1IGIkCuDjpJ5Nwsl2RcDZUhU1QxZC1yPo,143504
+fastash-0.0.3.dist-info/LICENSE,sha256=Z5SjK8S3aFMGCOhqsG_17igiaXMJWNRfa-ClpfxEwEw,1520
+fastash-0.0.3.dist-info/top_level.txt,sha256=Wg3x1QXFTFANWxAxyuuz3-noZCWka3IyuTPym9PnFrk,8
+fastash-0.0.3.dist-info/WHEEL,sha256=ADPbk2GqRVT5hIX8WDZ0BGAHxZlKqG3zpP6WIS3h6QE,144
+fastash-0.0.3.dist-info/METADATA,sha256=aBVCER07b_00SG6_6tlZ1KBphVOv6O2CPZgssbWx3xY,493
+fastash-0.0.3.dist-info/RECORD,,
+fastash/__init__.py,sha256=ZHPF8tkSaflC1dEwYfNhLTQAtGHZ134r-U7yEwvB794,45
+fastash/hyperplane.py,sha256=rW5HhFuz5RNl8haY3qg0LifO95dcQTc4WAw3-YlJV5c,3501
+fastash/whitening_transformer.py,sha256=eYE6cZLcpijhCsiJOBzr9IM6ijLiI1vu8IVEhNlufqQ,2381
+fastash/ash.py,sha256=Ssa-5bpa52i9PzNAuz9Gwqlom0zTIVAIFkyf43oHqEU,3158
+fastash/density_estimator.py,sha256=t1Zlbgw3jOzutHHK3GqDnd_fgyKL2U3lkhFzYVOOo8k,3353
+fastash/ashfunc.cpython-38-x86_64-linux-gnu.so,sha256=BeXbrjugUw1IGIkCuDjpJ5Nwsl2RcDZUhU1QxZC1yPo,143504
+fastash/bandwidth_selection/__init__.py,sha256=wXdJ-iQEngFfs-uVopzFwB444Y9yAuvuNNCmtL5SBSs,62
+fastash/bandwidth_selection/_scotts_rule.py,sha256=AeZzWT8SwXcNvM9llOVgaSHFc3FwOvf-yTnCI4XWAeg,567

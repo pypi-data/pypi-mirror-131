@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: fastash
+Version: 0.0.3
+Summary: Fast Averaged Shifted Histogram module.
+Home-page: https://github.com/francoisremi/fash
+Author: François-Rémi Mazy
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.20.3)
+
+# FastASH
+Fast Averaged Shifted Histograms
+
+## help for packaging
+
+script files are provided and based on this tutorial :
+https://levelup.gitconnected.com/how-to-deploy-a-cython-package-to-pypi-8217a6581f09
+
