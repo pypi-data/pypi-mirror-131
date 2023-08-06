@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+faasfx/__init__.py
+faasfx/apifx.py
+faasfx/faasfx.py
+faasfx/ws.py
+faasfx_genwch.egg-info/PKG-INFO
+faasfx_genwch.egg-info/SOURCES.txt
+faasfx_genwch.egg-info/dependency_links.txt
+faasfx_genwch.egg-info/requires.txt
+faasfx_genwch.egg-info/top_level.txt
