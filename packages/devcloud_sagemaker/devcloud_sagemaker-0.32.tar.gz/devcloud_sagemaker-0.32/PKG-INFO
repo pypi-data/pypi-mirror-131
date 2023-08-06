@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: devcloud_sagemaker
+Version: 0.32
+Summary: Devcloud with Sagemaker
+Home-page: https://github.com/DEV3L/python-package-archetype
+Author: Jim
+Author-email: nowhere@test.com
+License: UNKNOWN
+Download-URL: https://github.com/DEV3L/python-package-archetype/tarball/0.4
+Description: UNKNOWN
+Keywords: sagemaker,devcloud
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
