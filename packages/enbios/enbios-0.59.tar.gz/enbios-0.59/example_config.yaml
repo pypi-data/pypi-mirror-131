@@ -1,0 +1,5 @@
+nis_file_location: "https://docs.google.com/spreadsheets/d/1AXCBJZEr8Gw6c9OeCTId3TwUaWZt_ePAOx34HgDJdSI/edit?usp=sharing"
+correspondence_files_path: ""
+simulation_type: sentinel
+simulation_files_path: "/home/rnebot/Downloads/borrame/calliope-output/datapackage.json"
+output_directory: "/home/rnebot/Downloads/borrame/enviro-output-2/"
