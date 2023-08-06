@@ -1,0 +1,7 @@
+payload_dumper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+payload_dumper/dumper.py,sha256=SVE6hVHwRUaKqxUKv50xaGo93Mu1CIff0okWp9lUQQQ,6978
+payload_dumper/update_metadata_pb2.py,sha256=n6fadcn1qVPch_BvGMSLox7_pyni729k2RNb4lurYXY,36973
+payload_dumper-0.1.0.dist-info/entry_points.txt,sha256=H_DbxUdouNqvT-YuK9mGXk1JY3a-h7f31HY65d_Dqz4,61
+payload_dumper-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+payload_dumper-0.1.0.dist-info/METADATA,sha256=n-elmcmd2IrK7jbtiTWkqRD9offWdvvWf0TVNCDqrss,368
+payload_dumper-0.1.0.dist-info/RECORD,,
