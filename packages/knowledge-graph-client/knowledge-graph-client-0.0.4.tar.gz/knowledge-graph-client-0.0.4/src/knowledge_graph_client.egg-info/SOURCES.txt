@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/knowledge_graph_client.egg-info/PKG-INFO
+src/knowledge_graph_client.egg-info/SOURCES.txt
+src/knowledge_graph_client.egg-info/dependency_links.txt
+src/knowledge_graph_client.egg-info/top_level.txt
+src/pykg/__init__.py
