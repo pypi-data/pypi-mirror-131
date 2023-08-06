@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+wechsel.egg-info/PKG-INFO
+wechsel.egg-info/SOURCES.txt
+wechsel.egg-info/dependency_links.txt
+wechsel.egg-info/requires.txt
+wechsel.egg-info/top_level.txt
