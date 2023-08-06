@@ -1,0 +1,17 @@
+pydid/__init__.py,sha256=bHNNWGx7BKIfG3rbuaC0sLvlR1Bg4q01qhACtB4EF3w,1680
+pydid/common.py,sha256=wAJlr8k_BH0UjKka4YTDX1vfMa2M73m9_etkES6Yyeo,318
+pydid/did.py,sha256=okn5B3qqboBIA2_wvc06nb3iuttAkmonGwXU4_vXOvM,2215
+pydid/did_url.py,sha256=m_3VnsocxrpaPvOQB7ywpg0z-P97zd51M5hBV1PMxRw,2773
+pydid/doc/__init__.py,sha256=qUNE3SI88WdJ2rqfvCS33OlWK3x4eAoysYz1yCEro6E,560
+pydid/doc/builder.py,sha256=oxSNUWYA4iNLxWxHwJZExkB7m9fBOXXmF_oSzOglf1k,8105
+pydid/doc/corrections.py,sha256=-m1onfDzofdGsTn8fOy49ad8IPXoTyzAB9t0MYfSNos,1322
+pydid/doc/doc.py,sha256=ZY0zGOiKSDDeYM9d0YQ1wE1bVsQ0may9mX7yd5su4hc,8247
+pydid/doc/generic.py,sha256=4Qa1csWrOTPVsf-nubsWtUYH07KHoOUiq8ybQQWPvm8,1807
+pydid/resource.py,sha256=tVahhVnVXP0Bv_RXOK84SfoDG9Gbe8YQbeBu_RbjAiY,4648
+pydid/service.py,sha256=sA-pjCUFHXhD3peV6Ehownd8_IupXwbEORI8kTuzRL0,737
+pydid/validation.py,sha256=O3F5pQy2BAPzgP8YB5aUT6n1ecO9njrPj-XGNuwjC6s,1002
+pydid/verification_method.py,sha256=fbBUHlwCrdzRCtL4W-vxbUnSUap7_ZBYPgm9fu_CZhs,7935
+pydid-0.3.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pydid-0.3.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pydid-0.3.3.dist-info/METADATA,sha256=fj46eGrCJXKfPedLjGc9mUELxvROgJiWOfkaTRxlcXo,1702
+pydid-0.3.3.dist-info/RECORD,,
