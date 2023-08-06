@@ -1,0 +1,2 @@
+[drb.impl]
+image = drb_impl_image.drb_impl_signature
