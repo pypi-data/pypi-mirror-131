@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: requezts
+Version: 0.0.1
+Summary: HTTP client over encrypted P2P sockets using ZeroTier
+Home-page: https://gitlab.com/bostonwalker/requezts
+Author: Boston Walker
+Author-email: boston@bostonwalker.ca
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/bostonwalker/requezts/-/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP :: Session
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+# requezts
+
+HTTP client over encrypted p2p ZeroTier sockets, built on https://github.com/psf/requests
+
+## Usage
+
+    import requezts
+    
+    with requezts.session(net_id=0x0123456789abcdef) as session:
+        response = session.get("http://10.144.174.53:8000/index.html")
+
+
+
