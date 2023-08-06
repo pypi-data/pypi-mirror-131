@@ -1,0 +1,12 @@
+vava_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vava_utils/smartiq/__init__.py,sha256=lXi01EdoXBTFMHj09uOx52JMGo6MrqkBz-RJ7WQvyOo,84
+vava_utils/smartiq/smartiq_helper.py,sha256=HsheAIq3VQnNJY3w4RYxG1YzuFPV5OfwrBCv_ITmXwI,4515
+vava_utils/turkey/__init__.py,sha256=LpVwszwlRpF5FaPR60Y9OwX3A9bovLsxKxepm3jB1hc,147
+vava_utils/turkey/dates.py,sha256=zAm5n1WJW42V_9tx3OSK7u_Ixeeh8qCc7J-iNRXyUL0,906
+vava_utils/utils/__init__.py,sha256=qiDkQna1LFaFHeBaorH7WKAVm4Ae0Gk1YsV_phS7FXA,80
+vava_utils/utils/comparisons.py,sha256=qtsYedx5IDeyGyjxVFr1ZPfwJ_QFBvR6Mn-7GblvZ9o,839
+vavacars_data_utils-0.0.6.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vavacars_data_utils-0.0.6.dist-info/METADATA,sha256=jyjieXP91sBBNGs_0cy3NzFF7yen6wAJi629SZK-qNc,676
+vavacars_data_utils-0.0.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+vavacars_data_utils-0.0.6.dist-info/top_level.txt,sha256=y3_OAMpNkASW9ifaalt2yEpAEQh6HeyIoqElmPzQrjk,11
+vavacars_data_utils-0.0.6.dist-info/RECORD,,
