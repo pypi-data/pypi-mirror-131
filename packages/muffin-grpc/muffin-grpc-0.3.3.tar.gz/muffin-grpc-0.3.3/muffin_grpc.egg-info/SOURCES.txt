@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+muffin_grpc/__init__.py
+muffin_grpc/proto3.py
+muffin_grpc/utils.py
+muffin_grpc.egg-info/PKG-INFO
+muffin_grpc.egg-info/SOURCES.txt
+muffin_grpc.egg-info/dependency_links.txt
+muffin_grpc.egg-info/requires.txt
+muffin_grpc.egg-info/top_level.txt
+requirements/requirements-tests.txt
+requirements/requirements.txt
