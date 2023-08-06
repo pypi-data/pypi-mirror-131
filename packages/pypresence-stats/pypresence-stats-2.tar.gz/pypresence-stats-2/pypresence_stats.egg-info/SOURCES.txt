@@ -1,0 +1,9 @@
+README.md
+presencestats.py
+setup.py
+pypresence_stats.egg-info/PKG-INFO
+pypresence_stats.egg-info/SOURCES.txt
+pypresence_stats.egg-info/dependency_links.txt
+pypresence_stats.egg-info/entry_points.txt
+pypresence_stats.egg-info/requires.txt
+pypresence_stats.egg-info/top_level.txt

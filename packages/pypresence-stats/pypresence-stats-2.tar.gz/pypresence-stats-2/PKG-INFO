@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pypresence-stats
+Version: 2
+Summary: Presence-stats but you can make python script and launch it.
+Home-page: https://redirect.rukchadisa.live/7SoIfy9ZMa
+Author: Rukchad Wongprayoon
+Author-email: contact@biomooping.tk
+License: MIT
+Keywords: Tools
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# presence-stats
+Discord presence stats show your pc stats<br>
+yea i made this because i bored
+## usage
+install python (*of course*)<br>
+open command prompt and do any of these commands
+```bash
+Script/activate
+```
+or
+```
+pip install -r requirements.txt
+```
+yea that's it then run program
+
+### but i get this from pypi
+then just do
+```py
+import presencestats
+
+presencestats.launch()
+```
+that's it<br>
+want cli?
+```bash
+pypresence
+```
+there.
+=======
+
+
+
