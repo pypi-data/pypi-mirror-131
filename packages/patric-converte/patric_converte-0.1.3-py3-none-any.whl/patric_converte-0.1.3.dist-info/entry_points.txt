@@ -1,0 +1,4 @@
+[console_scripts]
+csv_converter=patric_converte.converter:conversor_de_csv_para_json
+json_converter=patric_converte.converter:conversor_de_json_para_csv
+
