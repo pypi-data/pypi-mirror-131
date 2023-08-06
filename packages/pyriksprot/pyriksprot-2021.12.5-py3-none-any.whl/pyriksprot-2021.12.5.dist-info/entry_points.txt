@@ -1,0 +1,5 @@
+[console_scripts]
+riksprot2any=pyriksprot.scripts.riksprot2any:main
+riksprot2text=pyriksprot.scripts.riksprot2text:main
+riksprot2tfs=pyriksprot.scripts.riksprot2tfs:main
+
