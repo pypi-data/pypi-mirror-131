@@ -1,0 +1,3 @@
+jpeglib
+jpeglib/cjpeglib/cjpeglib_6b
+jpeglib/cjpeglib/cjpeglib_8d
