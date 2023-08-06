@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: csv-converter-01
+Version: 0.2.0
+Summary: Convert CSV to JSON
+Author: Rogerio Segura Perez
+Author-email: rogeriosperez@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: pandas (>=1.3.4,<2.0.0)
+Description-Content-Type: text/markdown
+
+Convert a CSV file to JSON and from JSON to CSV
+
+Parameter:
+
+--input", "-i", default="./"
+--output", "-o", default="./"
+--delimiter", "-d", default=","
+--prefix, -prefix
+
