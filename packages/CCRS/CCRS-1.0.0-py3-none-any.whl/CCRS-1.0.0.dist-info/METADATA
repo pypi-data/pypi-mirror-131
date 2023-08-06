@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: CCRS
+Version: 1.0.0
+Summary: Risk stratification of coronary heart disease and ischemic stroke
+Home-page: https://github.com/VVictorChen/CCR
+Author: Victor
+Author-email: chenweibang@genomics.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# CCRS
+
+The CCRS is a python package that could provide individual risk stratification of coronary heart disease and ischemic stroke in batches.
+
+
+## Installation and dependency package
+ dependency package	
+```
+python >=3.7
+```
+ Installation
+```
+pip install CCRS
+```
+
+## Example
+```
+import pickle
+import scipy.stats as st
+import pandas as pd
+import numpy as np
+import CCRS
+result = CCR(your_data)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
