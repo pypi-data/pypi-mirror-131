@@ -1,0 +1,16 @@
+requests
+
+[dev]
+coverage
+flake8
+pytest
+pytest-cov
+vcrpy
+bumpversion
+
+[test]
+coverage
+flake8
+pytest
+pytest-cov
+vcrpy
