@@ -1,0 +1,13 @@
+firebird/driver/__init__.py,sha256=b-LLSo8fcWIL0kK6mIMjJRtpJTiTRVN5mHBq27Kg4AE,3108
+firebird/driver/config.py,sha256=ur4ofFZY-y-9ZULTT2_3L32_oQQMdDLv82X_ixUo9MQ,14351
+firebird/driver/core.py,sha256=l4QrjxHPFZ9__TFsJT0WbsOusJ8lDTWudpzihPQfQqE,255004
+firebird/driver/fbapi.py,sha256=bv3yoqi4zqSKbYuo6Rom6IJW5O494SMAFJPUCWafrbc,97816
+firebird/driver/hooks.py,sha256=u3K85sw0aeE_dSGSylL0IrX1fS8VJEyFUB2ndyW5YIg,1987
+firebird/driver/interfaces.py,sha256=7n1DK5HyoOc-w9wM1XxWzzk0g_H_Zv3L_8OH6fpLDXU,80634
+firebird/driver/types.py,sha256=790B1eKr4o87ukg1Pli6EBh431R0KvR-kuYn2my4vxw,34090
+firebird_driver-1.4.0.dist-info/LICENSE,sha256=YTwIXyaFd_rWEk_eESM50PgPUc87Lw_H2uBr_Z-6_KY,1068
+firebird_driver-1.4.0.dist-info/METADATA,sha256=HQZ79oeb8dAY9V2YoKKfihF3mZ_31rDttWyXpVdQQg0,1733
+firebird_driver-1.4.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+firebird_driver-1.4.0.dist-info/top_level.txt,sha256=N4Gw4cmu0RmoDDexl12jzkFggSpBGYYdf0HwZenEza4,9
+firebird_driver-1.4.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+firebird_driver-1.4.0.dist-info/RECORD,,
