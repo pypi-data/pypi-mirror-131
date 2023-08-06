@@ -1,0 +1,5 @@
+rocksdb3-0.0.4.dist-info/METADATA,sha256=MyZFxrs4XkP7XdMMeNQcDevTU8nOYzWqqbBlLRXcYU4,2449
+rocksdb3-0.0.4.dist-info/WHEEL,sha256=gBPZsymCecNflgWa3OfowGbMVyZg1D6Gdkxd_SYfXJ0,95
+rocksdb3/__init__.py,sha256=Xo5AWPZeHg4-lFaq8-tYEDYyWHPo-wQOJF6a2qTivOY,52
+rocksdb3/rocksdb3.pyd,sha256=-sR3Yv4M5AV5-CGDYUIsdcZWym9fV1Z4-h9BZWHz7bY,3869184
+rocksdb3-0.0.4.dist-info/RECORD,,
