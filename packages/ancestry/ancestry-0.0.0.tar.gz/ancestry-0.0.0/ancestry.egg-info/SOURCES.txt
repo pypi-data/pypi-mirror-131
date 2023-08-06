@@ -1,0 +1,6 @@
+README.md
+setup.py
+ancestry.egg-info/PKG-INFO
+ancestry.egg-info/SOURCES.txt
+ancestry.egg-info/dependency_links.txt
+ancestry.egg-info/top_level.txt
