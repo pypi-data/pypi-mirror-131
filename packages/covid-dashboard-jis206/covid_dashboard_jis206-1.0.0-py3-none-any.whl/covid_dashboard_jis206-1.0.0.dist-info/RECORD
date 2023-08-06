@@ -1,0 +1,10 @@
+covid-dashboard-jis206/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+covid-dashboard-jis206/covid_data_handler.py,sha256=j2rLCoKNjP_FjLKVnU7AoPh7j0pDhw8-aNpxOutoJ2U,6700
+covid-dashboard-jis206/covid_news_handling.py,sha256=8UarRP293l-o9hJ2EVEWmRdsSDFECK3xksfMW76V6mU,4629
+covid-dashboard-jis206/main.py,sha256=697bxPU3JLsgF9D0BI_U1MRy49r0Dw_Wwn5zX0rcNwA,6130
+covid-dashboard-jis206/time_handler.py,sha256=uI0eB4DCjdCFQP2hRRedewdwWK188SLHmU4TpYnR4rg,1457
+covid_dashboard_jis206-1.0.0.dist-info/LICENSE,sha256=mWELMw7G6KF09Ki67qpWFRH5ClLwXRiSOrcgtSYLx5w,1080
+covid_dashboard_jis206-1.0.0.dist-info/METADATA,sha256=f23NvsCLQwTMOOzD4Q0VKnZQD7MCtQ2GlZLIA5Dp9ZI,4506
+covid_dashboard_jis206-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+covid_dashboard_jis206-1.0.0.dist-info/top_level.txt,sha256=qXqqs7xOFfyCv3_HcLhpPXQ4QUIJZUxMtPXglW_wQnQ,23
+covid_dashboard_jis206-1.0.0.dist-info/RECORD,,
