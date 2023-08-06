@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: blackbeard2109
+Version: 0.2
+Summary: This library is designed for people who need to optimize time in an agile way with an ease of understanding and could 
+  solve the main projects you may have in Data Science, starting with cleaning dataframe (including images), visualization and machine learning.
+Home-page: https://github.com/ds2109fulltime/BLACKBEARD
+Author: DS2109FULLTIME
+Author-email: datascience2109thebridge@gmail.com
+License: MIT
+Download-URL: https://github.com/ds2109fulltime/BLACKBEARD/dist/blackbeard2109-0.2.tar.gz
+Description: UNKNOWN
+Keywords: machinelearning,scrum,datascience
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8

@@ -1,0 +1,37 @@
+from distutils.core import setup
+setup(
+  name = 'blackbeard2109',         
+  packages = ['blackbeard2109'],   
+  version = '0.2',    
+  license='MIT',        
+  description = '''This library is designed for people who need to optimize time in an agile way with an ease of understanding and could 
+  solve the main projects you may have in Data Science, starting with cleaning dataframe (including images), visualization and machine learning.''',   
+  author = 'DS2109FULLTIME',                   
+  author_email = 'datascience2109thebridge@gmail.com',     
+  url = 'https://github.com/ds2109fulltime/BLACKBEARD',   
+  download_url = 'https://github.com/ds2109fulltime/BLACKBEARD/dist/blackbeard2109-0.2.tar.gz',    
+  keywords = ['machinelearning', 'scrum', 'datascience'],  
+  install_requires=['pandas',
+                    'numpy',
+                    'opencv-python',
+                    'scikit-learn',
+                    'imageio',
+                    'folium',
+                    'plotly',
+                    'scipy',
+                    'IPython',
+                    'matplotlib',
+                    'seaborn',
+                    'tensorflow',
+                    'xgboost',
+                    'mljar-supervised'
+      ],
+  classifiers=[
+    'Development Status :: 4 - Beta',      
+    'Intended Audience :: Developers',      
+    'Topic :: Software Development :: Build Tools',
+    'License :: OSI Approved :: MIT License',   
+    'Programming Language :: Python :: 3.7',      
+    'Programming Language :: Python :: 3.8',
+  ],
+)
