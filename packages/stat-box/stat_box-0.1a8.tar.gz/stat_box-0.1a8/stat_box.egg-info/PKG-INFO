@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: stat-box
+Version: 0.1a8
+Summary: Convinient statistical description of dataframes and time series.
+Home-page: https://gitlab.com/dmatryus.sqrt49/stat_box
+Author: dmatryus
+Author-email: dmatryus.sqrt49@yandex.ru
+License: GPLv3
+Description: # Welcome to Stat Box рџ‘‹
+        
+        ![Version](https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000)
+        [![License: GPLv3](https://img.shields.io/badge/License-GPLv3-yellow.svg)](https://gitlab.com/dmatryus.sqrt49/stat_box/-/blob/b6399bd3cc0f3282c2a54bc9b8952456723ccada/LICENSE)
+        
+        > A low-code python utility for fast statistics collection
+        
+        ## Install
+        
+        ```sh
+        pip install stat-box
+        ```
+        
+        ## Usage
+        
+        ```python3
+        print(StatisticSet({Quantile(i / 100) for i in range(1, 100)}).stat_table(df))
+        ```
+        
+        ## Author
+        
+        рџ‘¤ **dmatryus**
+        
+        * Github: [@dmatryus.sqrt49](https://github.com/dmatryus.sqrt49)
+        
+        ## рџ¤ќ Contributing
+        
+        Contributions, issues and feature requests are welcome!
+        
+        Feel free to check [issues page](https://gitlab.com/dmatryus.sqrt49/stat_box/-/issues). PRs are welcome!
+        
+        ## Show your support
+        
+        Give a в­ђпёЏ if this project helped you!
+        
+        ## рџ“ќ License
+        
+        Copyright В© 2021 [dmatryus](https://github.com/dmatryus.sqrt49).
+        
+        This project is [GPLv3](https://gitlab.com/dmatryus.sqrt49/stat_box/-/blob/b6399bd3cc0f3282c2a54bc9b8952456723ccada/LICENSE) licensed.
+        
+        ***
+        _This README was generated with вќ¤пёЏ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+        
+Keywords: STATICS,TIME_SERIES
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
