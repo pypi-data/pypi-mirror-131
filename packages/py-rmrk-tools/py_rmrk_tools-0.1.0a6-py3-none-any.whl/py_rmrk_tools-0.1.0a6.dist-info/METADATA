@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: py-rmrk-tools
+Version: 0.1.0a6
+Summary: Python port of Typescript rmrk-tools.
+Home-page: https://github.com/khssnv/py-rmrk-tools
+License: MIT
+Keywords: rmrk,nft,kusama,polkadot
+Author: Alisher A. Khassanov
+Author-email: a.khssnv@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/khssnv/py-rmrk-tools
+Description-Content-Type: text/markdown
+
+py-rmrk-tools
+=============
+
+A port of [rmrk-tools](https://github.com/rmrk-team/rmrk-tools) for Python.
+
+Installation
+------------
+
+Python 3.9 and higher supported.
+
+```console
+pip install py-rmrk-tools
+```
+
+ToDo
+----
+
+- [ ] Entities definition
+    - [x] NFT
+    - [ ] Collection
+- [ ] CLI
+- [ ] Consolidator
+- [ ] RemarkListener
+- [ ] fetchRemarks
+- [ ] IPFS helpers
+- [ ] Validation
+
