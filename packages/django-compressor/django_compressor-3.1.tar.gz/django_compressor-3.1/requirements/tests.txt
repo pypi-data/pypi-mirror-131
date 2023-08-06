@@ -1,0 +1,13 @@
+Jinja2==3.0.3
+beautifulsoup4==4.9.3
+brotli==1.0.9
+calmjs==3.4.2
+coverage==5.5
+csscompressor==0.9.5
+django-sekizai==2.0.0
+flake8==3.9.1
+html5lib==1.1
+lxml==4.6.5
+rcssmin==1.1.0
+rjsmin==1.2.0
+slimit==0.8.1
