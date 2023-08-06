@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fipie
+Version: 0.0.1
+Summary: A simple portfolio optimiser beyond the mean-variance optimisation
+Home-page: https://github.com/thoriuchi0531/fipie
+Author: thoriuchi0531
+Author-email: thoriuchi0531@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: finance investment optimisation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev

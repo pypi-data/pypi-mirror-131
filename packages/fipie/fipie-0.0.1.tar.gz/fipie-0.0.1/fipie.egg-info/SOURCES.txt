@@ -1,0 +1,8 @@
+setup.py
+fipie/__init__.py
+fipie.egg-info/PKG-INFO
+fipie.egg-info/SOURCES.txt
+fipie.egg-info/dependency_links.txt
+fipie.egg-info/not-zip-safe
+fipie.egg-info/requires.txt
+fipie.egg-info/top_level.txt
