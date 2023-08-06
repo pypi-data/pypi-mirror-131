@@ -1,0 +1,12 @@
+name: pysme
+channels:
+  - defaults
+  - astropy
+  - anaconda
+dependencies:
+  - numpy
+  - astropy
+  - pandas
+  - requests
+  - scipy
+  - wget
