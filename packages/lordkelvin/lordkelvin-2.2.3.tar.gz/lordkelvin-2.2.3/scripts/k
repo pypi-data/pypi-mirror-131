@@ -1,0 +1,3 @@
+#!/usr/bin/env python3
+import sys, lordkelvin.__main__
+lordkelvin.__main__.main()

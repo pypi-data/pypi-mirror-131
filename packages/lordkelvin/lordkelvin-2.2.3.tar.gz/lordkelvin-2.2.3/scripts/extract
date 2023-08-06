@@ -1,0 +1,5 @@
+#!/bin/bash
+for n in {0..9}; do
+    grep "($n)" $1 | grep -v ETH | cut -d' ' -f2 >$n.prv
+    grep "($n)" $1 | grep    ETH | cut -d' ' -f2 >$n.pub
+done
