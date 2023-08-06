@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ilo
+Version: 0.0.10
+Summary: Control ilo robot using python command.
+Home-page: https://github.com/ilorobot/python-library
+Author: ilo robot (SLB)
+Author-email: <ilotherobot@gmail.com>
+License: UNKNOWN
+Keywords: python
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+A package that allows user to control ilo the new education robot using python line command.
+
+
