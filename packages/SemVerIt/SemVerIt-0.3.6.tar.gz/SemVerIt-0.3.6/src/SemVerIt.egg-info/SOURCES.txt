@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+requirements.txt
+setup.cfg
+src/SemVerIt.egg-info/PKG-INFO
+src/SemVerIt.egg-info/SOURCES.txt
+src/SemVerIt.egg-info/dependency_links.txt
+src/SemVerIt.egg-info/requires.txt
+src/SemVerIt.egg-info/top_level.txt
+src/semverit/__init__.py
+src/semverit/semverit.py
