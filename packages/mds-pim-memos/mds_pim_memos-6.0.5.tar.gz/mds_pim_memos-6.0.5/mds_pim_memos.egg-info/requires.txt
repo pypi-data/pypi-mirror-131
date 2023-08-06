@@ -1,0 +1,2 @@
+mds-sqlextension>=0.1.11
+trytond<6.1,>=6.0
