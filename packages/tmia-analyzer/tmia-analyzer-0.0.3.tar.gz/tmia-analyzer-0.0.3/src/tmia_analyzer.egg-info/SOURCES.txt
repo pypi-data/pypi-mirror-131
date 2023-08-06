@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/tmia_analyzer/__init__.py
+src/tmia_analyzer/analyzers.py
+src/tmia_analyzer.egg-info/PKG-INFO
+src/tmia_analyzer.egg-info/SOURCES.txt
+src/tmia_analyzer.egg-info/dependency_links.txt
+src/tmia_analyzer.egg-info/top_level.txt
