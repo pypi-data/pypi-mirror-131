@@ -1,0 +1,3 @@
+[console_scripts]
+docker-charon = docker_charon.__main__:main
+
