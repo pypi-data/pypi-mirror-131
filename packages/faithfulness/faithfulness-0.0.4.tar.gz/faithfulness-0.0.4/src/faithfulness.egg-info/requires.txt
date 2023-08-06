@@ -1,0 +1,6 @@
+jsonnet
+allennlp==2.1.0
+allennlp-models==2.1.0
+transformers
+stanza
+sentence_transformers
