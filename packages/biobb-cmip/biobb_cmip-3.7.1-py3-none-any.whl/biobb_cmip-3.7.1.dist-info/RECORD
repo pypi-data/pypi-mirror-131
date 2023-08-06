@@ -1,0 +1,17 @@
+biobb_cmip/__init__.py,sha256=dvtb12GPzIRtp_IZswiOV_BLN2nh2c4ZkQb4X_gXy9A,40
+biobb_cmip/cmip/__init__.py,sha256=PQVkpGznDAuCS2P39ZTwjmjZ0FOpWh12WB8IviBA4ZU,66
+biobb_cmip/cmip/cmip.py,sha256=jL69njH0ySqWep5RxgeiGE4IqyNCHfc0_d62F2myMAU,12792
+biobb_cmip/cmip/common.py,sha256=CvJzeUbfgVcM_uFi-C74I90sPhnP-FXYWTaUuTC7f8w,16160
+biobb_cmip/cmip/prepare_structure.py,sha256=uJ5L-mH-xxc4bUMzvT7UHQd2eirkcsoC0geK1BeQkqQ,6658
+biobb_cmip/cmip/titration.py,sha256=syJwWBd0kvXlteK0JC6mexlj_Mlr4FGiOLBWW-tGTuk,10581
+biobb_cmip/cmip/dat/aa.lib,sha256=hp7q90N2du9sSawV0hgiwgxgk3T9piVBXmQ5pNqTDh4,32705
+biobb_cmip/cmip/dat/nuc.lib,sha256=QreJpB9Wbn_KOHRz7Vebm_5xzqoC4s10mmr-1u-sRkQ,24096
+biobb_cmip/cmip/dat/solv.vdwprm,sha256=R1ShLJaV1pyI2lC-3sBeyakLwErZGFJxmjVQoxDHJ6c,766
+biobb_cmip/cmip/dat/vdwprm,sha256=nVs3HB7ezWiPPISkICpKET640BfHuEKem_Lj5aHauEE,611
+biobb_cmip/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biobb_cmip-3.7.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+biobb_cmip-3.7.1.dist-info/METADATA,sha256=o9S5T7cm36wA1SxN5MGwrTEDJ4y1bQUJlJ4vrkKJ0No,3885
+biobb_cmip-3.7.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+biobb_cmip-3.7.1.dist-info/entry_points.txt,sha256=CQlsNj7U5Gl4UMv5HSHEBAdvdJDyi-tn8Yo8HHgMQek,154
+biobb_cmip-3.7.1.dist-info/top_level.txt,sha256=WLzNLjCKQXb9wyV5fxBHoDz0Uz2toyMTqCbADOgc8Dk,11
+biobb_cmip-3.7.1.dist-info/RECORD,,
