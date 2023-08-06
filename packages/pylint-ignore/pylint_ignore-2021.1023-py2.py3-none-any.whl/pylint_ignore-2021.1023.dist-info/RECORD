@@ -1,0 +1,10 @@
+pylint_ignore/__init__.py,sha256=-y1Zk0AmA_XJpgCNnNpigGSPAzDVKuQe5ND8NGV13_0,229
+pylint_ignore/__main__.py,sha256=5pkYYOYcnBKR4SUG_b5eiC98OF37KEu4RzyzUcH41dc,14984
+pylint_ignore/ignorefile.py,sha256=yY2bmrNuPRbtHyCCB4UTkyhEh4sby5Y4DCNCaLygXOw,16866
+pylint_ignore-2021.1023.dist-info/LICENSE,sha256=XWpCa9WmoJP06WBm9s4FeS0zVN38FEjy3tQUbiPgAAQ,1097
+pylint_ignore-2021.1023.dist-info/METADATA,sha256=g7tKofDh8R6uxUKz4oZe_Jel3L-2ttXbRjT5MCIdJNM,22970
+pylint_ignore-2021.1023.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+pylint_ignore-2021.1023.dist-info/entry_points.txt,sha256=6VGZ3RHZt5I-poN8ppQ0UTfs28wLz0opTgR5ZP30Gek,63
+pylint_ignore-2021.1023.dist-info/top_level.txt,sha256=9Kx5daNvH3wjs4g6769JPXuQ4B7hwb8NG2HKl2bSBaY,14
+pylint_ignore-2021.1023.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pylint_ignore-2021.1023.dist-info/RECORD,,
