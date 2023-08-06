@@ -1,0 +1,2 @@
+turberfield-dialogue>=0.39.0
+turberfield-utils>=0.38.0
