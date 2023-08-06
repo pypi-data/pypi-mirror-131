@@ -1,0 +1,275 @@
+feature_names,sample,qsampled,random_sample
+wrkstat,retired,keeping house,working fulltime
+HRS2,e,,a
+evwork,yes,yes,yes
+wrkslf,self-employed,,someone else
+wrkgovt,government,,private
+marital,divorced,,married
+COHRS1,e,,e
+COHRS2,e,e,b
+SPPRES10,e,,b
+SPPRES105PLUS,e,,b
+pawrkslf,self-employed,,self-employed
+PAOCC10,d,d,c
+PAPRES105PLUS,c,,c
+PAIND10,d,c,d
+MAPRES10,c,b,b
+sibs,c,,d
+age,d,,e
+agekdbrn,c,,d
+paeduc,b,c,c
+maeduc,b,e,c
+speduc,e,e,a
+degree,graduate,high school,lt high school
+madeg,lt high school,,junior college
+sex,male,female,female
+race,black,,white
+RES16,"country,nonfarm",,50000 to 250000
+FAMDIF16,"divorce,separated",other,other
+INCOM16,below average,below average,far above average
+parborn,neither in u.s,,both in u.s
+babies,c,,e
+teens,c,,e
+adults,1,,3
+earnrs,b,,e
+region,middle atlantic,pacific,w. nor. central
+xnorcsiz,city gt 250000,,open country
+srcbelt,12 lrgst smsa's,,"suburb, 13-100"
+size,8175,11,15
+partyid,"ind,near dem",,strong democrat
+VOTE16,voted,,did not vote
+PRES16,clinton,,clinton
+polviews,liberal,slightly liberal,conservative
+natspac,about right,,too much
+natheal,too much,too little,about right
+natcity,too little,,about right
+natdrug,too much,,too much
+natarms,too much,too much,too much
+natfare,too little,,too much
+natroad,too little,about right,too little
+natpark,too little,,too little
+natenrgy,too little,,too little
+tax,about right,too high,too low
+spkath,allowed,,not allowed
+colath,allowed,allowed,not allowed
+libath,not remove,,not remove
+spkrac,allowed,allowed,allowed
+colrac,allowed,,allowed
+librac,not remove,,not remove
+spkmil,allowed,,not allowed
+libmil,not remove,remove,remove
+colhomo,allowed,allowed,allowed
+libhomo,not remove,not remove,remove
+spkmslm,"yes, allowed",,not allowed
+colmslm,"yes, allowed",,"yes, allowed"
+libmslm,not remove,not remove,remove
+pray,several times a day,,once a week
+RELIG16,protestant,,other
+FUND16,fundamentalist,,moderate
+racopen,cant discriminate,cant discriminate,neither
+affrmact,support pref,,strongly support pref
+wrkwayup,agree somewhat,disagree strongly,agree somewhat
+happy,not too happy,,not too happy
+health,excellent,,excellent
+life,routine,,routine
+socommun,once a year,,once a month
+weekswrk,b,e,e
+rank,d,d,a
+satfin,more or less,,more or less
+finalter,worse,,worse
+abdefect,yes,,yes
+abrape,no,,no
+abany,no,,yes
+sexeduc,favor,,oppose
+divlaw,easier,stay same,easier
+premarsx,not wrong at all,,always wrong
+teensex,almst always wrg,always wrong,always wrong
+xmarsex,almst always wrg,,not wrong at all
+spanking,agree,disagree,agree
+LETDIE1,yes,,no
+SUICIDE1,yes,,no
+SUICIDE3,yes,,yes
+owngun,no,no,yes
+pistol,no,,yes
+rifle,no,,refused
+hunt,neither,,resp
+news,once a week,,few times a week
+coop,"friendly,interested",,"restless,impatient"
+RACDIF1,yes,,yes
+RACDIF2,no,,no
+helpsick,e,e,e
+helpblk,e,c,e
+reborn,yes,,yes
+savesoul,yes,yes,yes
+wlthblks,c,c,c
+workblks,c,c,e
+workhsps,c,,c
+intlwhts,c,,e
+intlblks,c,,c
+intlhsps,c,,e
+marblk,neither favor nor oppose,,favor
+discaff,not very likely,not very likely,very likely
+yousup,e,,c
+CLOSETO3,e,,b
+SEETALK1,e,,e
+SEETALK2,e,,d
+MYPROBS1,e,,c
+MYPROBS3,e,e,c
+SEVERE1,e,,e
+SEVERE2,e,,c
+SEVERE3,e,e,c
+SEVERE4,e,,b
+SEVERE5,e,,d
+DANGOTH1,e,,e
+DANGOTH2,e,,e
+DANGOTH4,e,,e
+DANGOTH5,e,,d
+DANGSLF2,e,,e
+othlang,no,,no
+compuse,yes,,yes
+wwwmin,c,c,d
+waypaid,e,,e
+hrsrelax,e,,b
+physhlth,e,e,d
+mntlhlth,e,c,c
+hlthdays,e,,d
+hurtatwk,e,,c
+usetech,e,,c
+weight,e,,a
+height,e,e,b
+disrspct,a few times a year,a few times a month,almost every day
+poorserv,less than once a year,,a few times a month
+afraidof,a few times a year,less than once a year,almost every day
+hlthphys,very good,,fair
+hlthmntl,good,,good
+actssoc,very good,,poor
+emoprobs,c,,e
+abmelegl,it depends,it depends,should
+abmoral,morally opposed,,morally opposed
+ABHELP4,yes,,yes
+abinspay,people should be able,,people should not be able
+numemps,c,,c
+wrkslffam,no,,yes
+seeksci,tv,,magazines
+astrolgy,yes,yes,yes
+scibnfts,about equal if volunteered,,about equal if volunteered
+scistudy,general sense,,clear understanding
+exptext,correct vague reason,correct wrong reason,wrong other reason
+ODDS1,no,,no
+radioact,False,False,False
+boyorgrl,False,False,True
+bigbang,False,True,True
+evolved,True,True,True
+COLDEG1,master's,,mba
+colsci,yes,yes,yes
+hsbio,yes,no,no
+nanowill,harmful results greater,benefits greater,about equal:if volunteered
+nanoharm,strongly in favor,,slightly in favor
+intintl,very interested,,very interested
+inteduc,moderately interested,,not at all interested
+intsci,very interested,,not at all interested
+intspace,very interested,,very interested
+intenvir,very interested,,not at all interested
+intmil,not at all interested,,moderately interested
+visnhist,c,,e
+vissci,c,,c
+scienthe,agree,,disagree
+buyvalue,e,,e
+compwage,e,,e
+numorg,e,c,e
+posslq,no steady partner,,"partner, not together"
+trbigbus,e,,c
+intcntct,e,c,c
+meovrwrk,agree,,agree
+SATFAM7,fairly satisfied,,fairly satisfied
+XMARSEX1,wrong only sometimes,,not wrong at all
+conbiz,very little confidence,no confidence at all,some confidence
+churhpow,right amount pwr,,right amount pwr
+godchnge,"believe now, always have",,"don't believe now, never have"
+miracles,"yes, definitely","yes, definitely","yes, definitely"
+fatalism,disagree,,strongly disagree
+nihilism,disagree,neither agree nor disagree,disagree
+madenkid,"baptist, dk which","baptist, dk which",other baptist chs
+relactiv,about once or twice a year,,several times a week
+relmarry,definitely accept,,probably not accept
+RELEXT3,probably,definitely,probably
+ancestrs,"no, probably not","no, probably not","no, probably not"
+mywaygod,strongly agree,,neither agree nor disagree
+vistholy,never,about once or twice a year,less than once a year
+relsprt,i follow a religion and consider myself to be a spiritual person interested in the sacred and the sup,"i follow a religion, but dont consider myself to be a spiritual person interested in the sacred and","i follow a religion, but dont consider myself to be a spiritual person interested in the sacred and"
+difrel,agree,disagree,strongly disagree
+relpast,disagree,disagree,agree
+relrlvnt,disagree,,neither agree nor disagree
+christns,very positive,,somewhat positive
+hindus,neither positive nor negative,,very positive
+buddhsts,neither positive nor negative,,somewhat negative
+nukegen,very dangerous,,somewhat dangerous
+chemgen,very dangerous,,not dangerous
+tempgen,very dangerous,,extremely dangerous
+genegen,somewhat dangerous,somewhat dangerous,extremely dangerous for environment
+LETIN1A,remain the same as it is,,remain the same as it is
+numwomen,e,e,d
+GENETST1,not very much,,not very much
+maleornt,r is not homosexual/gay,r is not homosexual/gay,r is not homosexual/gay
+GENEABRT2,no,,no
+realinc,c,b,e
+realrinc,e,,e
+coninc,c,c,c
+ethnic,africa,poland,arabic
+ETH1,africa,,hungary
+yearsusa,c,,e
+vetyears,none,,less than 2 yrs
+worda,correct,correct,correct
+wordb,correct,correct,correct
+wordd,correct,,incorrect
+worde,correct,,incorrect
+wordh,correct,,correct
+wordi,correct,correct,incorrect
+GENDER1,male,,male
+MAR1,widowed,,divorced
+OLD3,e,,e
+OLD4,e,,d
+OLD5,e,e,d
+OLD7,e,,e
+OLD9,e,,e
+OLD10,e,,c
+OLD11,e,,d
+hefinfo,1st person,1st person,1st person
+respnum,1st person,,5th person
+rplace,head of household,,parent or parent-in-law
+visitors,no visitors,no visitors,1 visitor
+dateintv,423,,827
+PAISCO88,c,,e
+ISCO08,accountants,,chemical and physical science technicians
+SEI10EDUC,d,,d
+SEI10INC,d,,e
+PASEI10EDUC,c,,e
+PASEI10INC,b,c,c
+MASEI10,c,c,e
+MASEI10INC,c,,d
+SPSEI10,e,,b
+COSEI10,e,,e
+COSEI10INC,e,,c
+COPRES105PLUS,e,,c
+cohort,b,b,b
+zodiac,leo,,capricorn
+WHOELSE1,yes,,yes
+WHOELSE3,no,,yes
+WHOELSE4,no,no,no
+feeused,"yes, money",no,no
+feelevel,b,,d
+lngthinv,181,123,125
+intsex,male,,male
+intyrs,0,0,2
+consent,r consents to recording interview,,r consents to recording interview
+ballot,ballot a,,ballot a
+version,1,1,1
+issp,did issp,did issp,did issp
+spaneng,english,english,spanish
+dwellpre,"apartment house (5 or more units, 4 stories or more)",detached single family house,detached 3-4 family house
+respond,high,,high
+neisafe,very safe,,very unsafe
+rlooks,about average,attractive,attractive
+wtss,c,c,c
+wtssnr,c,c,d
+vstrat,3304,,3374
