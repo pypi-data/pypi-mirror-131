@@ -1,0 +1,12 @@
+av_clipboard_lib/__init__.py,sha256=O_UabYluoKTtNvESj8GSPabqfRkI6HLJOPgnMRGsALA,508
+av_clipboard_lib/av_objects.py,sha256=iGLaeMiXSLdWUbk8FmOQoi364tAT3OvONJv5hIC5hTs,7495
+av_clipboard_lib/base85.py,sha256=oXO_zyjmXJPmRI9GMmdGs-SKsZrxkkda7Kwn0TPP-EM,2019
+av_clipboard_lib/base_types.py,sha256=Kz8cr9zi-ZL-84Dt4TOMB38MJ4QfoxD-7ROHlAOpBSw,1243
+av_clipboard_lib/clipboard_data.py,sha256=rj3MyF5LN-D6jAj2CHl6Fh9429eLvwhwagwQPJ6AWjI,4106
+av_clipboard_lib/tests.py,sha256=vRTNAdVP3DC5hCLz7NgspUmf1yi4jdbB-1gb6q8UF8A,5076
+av_clipboard_lib/varint.py,sha256=YWBZ0cvigmlfiUtzqVlr20kk6alFs-xG4K2q4ajxZaI,1118
+av_clipboard_lib-1.9.0.dist-info/LICENSE,sha256=Q4Df-tVKiicMj55DOo4x2LLpuG5AgltV-AyUq7UFNPE,1091
+av_clipboard_lib-1.9.0.dist-info/METADATA,sha256=d390WUX7AQE2vbAX3JJ_Z4iXWgROZGvgbBVWaimX3s4,2638
+av_clipboard_lib-1.9.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+av_clipboard_lib-1.9.0.dist-info/top_level.txt,sha256=lL4A8QCcOF-HAIPjOFLuVUFVozCZ1lN6JGeyZe9xvas,17
+av_clipboard_lib-1.9.0.dist-info/RECORD,,
