@@ -1,0 +1,3 @@
+[console_scripts]
+cldr = cldr:main
+
