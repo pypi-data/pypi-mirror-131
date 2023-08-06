@@ -1,0 +1,10 @@
+metadata_driver_onprem/__init__.py,sha256=vUALcXBFTjJv_9PC2soeoDfHjE7K1NmMciPEGdspVQI,52
+metadata_driver_onprem/computing_plugin.py,sha256=s01mUbstKQNoSD0BWLFQeEZuVoUWFYLU71UMZWiP-J8,761
+metadata_driver_onprem/data_plugin.py,sha256=ClwS8C3ldvLafvTeam4WtSe7mqRXdQnTzUoLFDNRw4U,860
+metadata_driver_onprem/log.py,sha256=SwghYYVZlEiI4rEQCPLMw7auIfJDtjpYXHEPHC76HDA,950
+nevermined_metadata_driver_onprem-0.2.0.dist-info/LICENSE,sha256=o2v4qP0_oyBys4nfvXggQyBHudYcA5NGc6M8-JRXYkc,11459
+nevermined_metadata_driver_onprem-0.2.0.dist-info/METADATA,sha256=UujFbsZiTd6QBt87Zk_IQBXKpFujMW50BINT0Dwbruo,4313
+nevermined_metadata_driver_onprem-0.2.0.dist-info/NOTICE,sha256=ANivn6A3MhHsTrD7VPQS5799NXNXJfY5F8pUkQ5mqbw,153
+nevermined_metadata_driver_onprem-0.2.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+nevermined_metadata_driver_onprem-0.2.0.dist-info/top_level.txt,sha256=vGht5ZFgIClbnUa0XIcxUiKcImuxNgTrV8RtfT3ekfo,23
+nevermined_metadata_driver_onprem-0.2.0.dist-info/RECORD,,
