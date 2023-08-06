@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/nnfpy/__init__.py
+src/nnfpy/costs.py
+src/nnfpy/learningrate.py
+src/nnfpy.egg-info/PKG-INFO
+src/nnfpy.egg-info/SOURCES.txt
+src/nnfpy.egg-info/dependency_links.txt
+src/nnfpy.egg-info/top_level.txt
+src/nnfpy/layers/__init__.py
+src/nnfpy/layers/fullyconnected/__init__.py
+src/nnfpy/layers/speciallayers/__init__.py
+src/nnfpy/network/__init__.py
+src/nnfpy/network/onednet.py
