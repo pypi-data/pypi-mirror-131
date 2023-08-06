@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: flyermlops
+Version: 0.0.26
+Summary: Helper package for deploying sagemaker pipelines on AWS and MLOPs
+Home-page: https://git.delta.com/ods/machine-learning/flyermlops
+Author: Steven Forrester
+Author-email: steven.forrester@delta.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/x-rst
+
+Helper functions for MLOps
+
