@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+src/example_package/__init__.py
+src/example_package/example.py
+src/meeep_example.egg-info/PKG-INFO
+src/meeep_example.egg-info/SOURCES.txt
+src/meeep_example.egg-info/dependency_links.txt
+src/meeep_example.egg-info/top_level.txt
