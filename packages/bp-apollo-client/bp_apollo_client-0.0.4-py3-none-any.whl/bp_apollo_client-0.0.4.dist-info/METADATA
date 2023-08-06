@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: bp-apollo-client
+Version: 0.0.4
+Summary: bp-apollo-client
+Home-page: https://github.com/foxliu/pyapollo.git
+Author: foxliu
+Author-email: foxliu2012@gmail.com
+License: UNKNOWN
+Platform: any
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+PyApollo - Python Client for Ctrip's Apollo
+================
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+Easy python client to use [Apollo](https://github.com/ctripcorp/apollo)。
+Tested with python 3.7
+
+Installation
+------------
+- 启动客户端长连接监听
+
+``` python
+from bp_apollo_client.apollo_client import ApolloClient, ApolloData
+client = ApolloClient(app_id=<appId>, cluster=<clusterName>, config_server_url=<configServerUrl>)
+client.client.add_callback_funcs(<cb_funs>)  # add callback fun for get apollo push config when changed
+client.start()
+
+
+```
+
+- get apollo config data
+  ```
+  client.get_value(Key, DefaultValue)
+  # or
+  ApolloData.get(Key, DefaultValue)
+  ```
+
+
