@@ -1,0 +1,7 @@
+# Install requirements
+
+tox
+coverage
+flake8
+
+-r requirements.txt
