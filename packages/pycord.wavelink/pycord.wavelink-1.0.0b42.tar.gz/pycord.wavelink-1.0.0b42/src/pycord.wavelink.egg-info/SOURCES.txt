@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+src/pycord.wavelink.egg-info/PKG-INFO
+src/pycord.wavelink.egg-info/SOURCES.txt
+src/pycord.wavelink.egg-info/dependency_links.txt
+src/pycord.wavelink.egg-info/requires.txt
+src/pycord.wavelink.egg-info/top_level.txt
