@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/maxheap/__init__.py
+src/maxheap/maxheap.py
+src/maxheapq.egg-info/PKG-INFO
+src/maxheapq.egg-info/SOURCES.txt
+src/maxheapq.egg-info/dependency_links.txt
+src/maxheapq.egg-info/top_level.txt
