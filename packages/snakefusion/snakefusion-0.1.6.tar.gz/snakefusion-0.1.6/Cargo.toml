@@ -1,0 +1,56 @@
+[package]
+name = "snakefusion"
+version = "0.1.6"
+authors = ["Daniël de Kok <me@danieldk.eu>"]
+edition = "2018"
+description = "Read and use many word embedding formats"
+homepage = "https://github.com/danieldk/snakefusion"
+repository = "https://github.com/danieldk/snakefusion.git"
+license = "MIT OR Apache-2.0"
+exclude = [
+  "build",
+  "dist",
+  "docs",
+  "examples",
+  "*.so",
+  ".*"
+]
+
+[lib]
+name = "snakefusion"
+crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "0.15.1"
+features = ["extension-module", "abi3", "abi3-py36"]
+
+[dependencies]
+itertools = "0.10"
+finalfusion = "0.17.2"
+ndarray = "0.15"
+numpy = "0.15"
+pyo3-log = "0.5"
+reductive = "0.9"
+toml = "0.5"
+
+# Fix incompatibility between anyhow and intel-mkl tool. Remove with
+# the next release of intel-mkl too. For more information, see:
+# https://github.com/rust-math/intel-mkl-src/issues/68
+anyhow = { version = "<=1.0.48", optional = true }
+
+[dependencies.accelerate-src]
+version = "0.3"
+optional = true
+
+[dependencies.intel-mkl-src]
+version = "0.6"
+optional = true
+default-features = false
+
+[features]
+accelerate = ["opq", "ndarray/blas", "accelerate-src"]
+intel-mkl = ["opq", "ndarray/blas", "intel-mkl-src/mkl-static-lp64-seq", "anyhow"]
+opq = ["reductive/opq-train"]
+
+[package.metadata.maturin]
+requires-dist = ["numpy"]
