@@ -1,0 +1,8 @@
+aiohttp
+fastapi
+pydantic
+unimatrix>=0.23.0
+unimatrix.ext.model>=0.4.2
+unimatrix.ext.crypto
+unimatrix.ext.jose
+unimatrix.ext.webapi>=0.37.0
