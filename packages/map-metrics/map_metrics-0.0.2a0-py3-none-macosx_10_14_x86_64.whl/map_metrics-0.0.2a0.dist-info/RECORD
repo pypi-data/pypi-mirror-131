@@ -1,0 +1,13 @@
+map_metrics-0.0.2a0.data/purelib/map_metrics/__init__.py,sha256=yAArjhcTu0XcTBJrKyjo81XxaaFnZIUOxrksJ84Fgqg,2771
+map_metrics-0.0.2a0.data/purelib/map_metrics/libmap_metrics_cpp.dylib,sha256=ZmDSta3MfZ5m0qIwt1DS0_LkdfoFKVX_8AYIn2NJrOc,243856
+map_metrics-0.0.2a0.data/purelib/map_metrics/map_metrics.cpython-310-darwin.so,sha256=8y1oi1ASebHVCopig8Os64de_n9HTup1meXlbfpscrs,131048
+map_metrics-0.0.2a0.data/purelib/map_metrics/map_metrics.cpython-35m-darwin.so,sha256=26P2US6O1urqnfyv87F5y7MviVwM8oAdnrdcEP9HU9g,131328
+map_metrics-0.0.2a0.data/purelib/map_metrics/map_metrics.cpython-36m-darwin.so,sha256=Q7MhwE5524edOISJcItIHjO98orYY_9NSbMc7Sd-bb0,131328
+map_metrics-0.0.2a0.data/purelib/map_metrics/map_metrics.cpython-37m-darwin.so,sha256=_Vpb5l_bOegSDeA2xoZknXIy-vzDwgfPtZRfOND3NC4,131376
+map_metrics-0.0.2a0.data/purelib/map_metrics/map_metrics.cpython-38-darwin.so,sha256=Op8XhfCJysk9NXqQK7tnEqTANi-4x93bt90U7AYTxX0,131376
+map_metrics-0.0.2a0.data/purelib/map_metrics/map_metrics.cpython-39-darwin.so,sha256=RdkZLA2Mj2XJVvu3bUNvr36hv8kpAsS5kN4R-L51rpo,131424
+map_metrics-0.0.2a0.dist-info/LICENSE,sha256=38DJQOotXHHY4am863dtedjStiuDafLxblCftMQorhI,592
+map_metrics-0.0.2a0.dist-info/METADATA,sha256=UUmSizoen06cL8RwunUgp0jpGFdvW9YJzWKXj1SvPKs,3357
+map_metrics-0.0.2a0.dist-info/WHEEL,sha256=T2KMnXTCh29_qH3us2azKEoeWJuf6dtcylyFzddl_hc,109
+map_metrics-0.0.2a0.dist-info/top_level.txt,sha256=s_hS25eIoypnxv-wuwL_KaA5mcbSr830gK1dLTvn4dQ,12
+map_metrics-0.0.2a0.dist-info/RECORD,,
