@@ -1,0 +1,7 @@
+pipelinewise-singer-python==1.*
+dpath==2.0.*
+
+[test]
+pytest==6.2.*
+pytest-cov==3.0.*
+pylint==2.12.*
