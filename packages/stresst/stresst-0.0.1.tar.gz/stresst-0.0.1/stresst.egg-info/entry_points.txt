@@ -1,0 +1,3 @@
+[console_scripts]
+stresst = stress.strs:main
+
