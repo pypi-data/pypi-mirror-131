@@ -1,0 +1,9 @@
+hedger/__init__.py,sha256=i0vZ4R8sP_VkxoNwW4KbFrJqg6CBLW3BYQcSH9KdJW4,195
+hedger/util.py,sha256=GWEHCxdwEVaLj7ISpFPt0AsnL3HgjSXwjpXpIUJwz1k,935
+hedger/scrap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hedger/scrap/web_results_search.py,sha256=JGWnvSr3yqe8pzPkdefvL5LN4R-nME1AR1AoFbmz54k,760
+hedger-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+hedger-0.0.3.dist-info/METADATA,sha256=V7QMPxBC4ueuu6A8ZQVUWEsnDyujtyZfc8hHNuxD_f4,606
+hedger-0.0.3.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+hedger-0.0.3.dist-info/top_level.txt,sha256=09RYPW3m7JFB2UtskImVXLTZu6Zh4T8s9b0LtH5ru-8,7
+hedger-0.0.3.dist-info/RECORD,,
