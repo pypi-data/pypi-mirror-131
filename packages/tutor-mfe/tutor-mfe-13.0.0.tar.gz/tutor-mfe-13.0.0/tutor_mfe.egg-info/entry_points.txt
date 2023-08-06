@@ -1,0 +1,3 @@
+[tutor.plugin.v0]
+mfe = tutormfe.plugin
+
