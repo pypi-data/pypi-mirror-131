@@ -1,0 +1,3 @@
+[console_scripts]
+biosimulators-boolnet = biosimulators_boolnet.__main__:main
+
