@@ -1,0 +1,7 @@
+brainpylib/__init__.py,sha256=2vdvye7USJ-k8gSM_FKlTCpAG63zI9L_G9Ofgd5WUHQ,75
+brainpylib/_event_add.py,sha256=yjqQGI3Yve01qhW5UFYKQy8IzxwSVXR7dX8GCQcvaLM,7563
+brainpylib/cpu_ops.cpython-39-darwin.so,sha256=WYjLYtkrh1fRdCd3xDcqOIw4UIJuCDZzWdS2gCN8cdQ,112648
+brainpylib-0.0.1.dist-info/METADATA,sha256=bJeLmAE6ny98ONcqkjPC_bxoi_7OecBbQDjKPZCOTdk,361
+brainpylib-0.0.1.dist-info/WHEEL,sha256=JIE30nfOWUuazI4Vcfiuv_cYm-SkZCh6YOqQQjhm90A,109
+brainpylib-0.0.1.dist-info/top_level.txt,sha256=qczHV3JRN-O1VyZXmefYBZ3KnR9kdcBiSWSlAGIHtjM,19
+brainpylib-0.0.1.dist-info/RECORD,,
