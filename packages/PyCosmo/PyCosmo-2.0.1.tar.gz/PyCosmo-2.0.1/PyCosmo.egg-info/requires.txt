@@ -1,0 +1,7 @@
+numpy<1.21
+scipy>=0.14.0
+recfast4py>=0.2.3
+dill
+matplotlib
+numba
+sympy2c>=0.22.3
