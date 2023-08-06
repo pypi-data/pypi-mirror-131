@@ -1,0 +1,309 @@
+{
+	"navigation": {
+		"dashboard": "instrumentbräda",
+		"settings": "inställningar",
+		"dataPanels": "Datapaneler",
+		"account": "konto",
+		"login": "Logga in",
+		"logout": "Logga ut",
+		"config": "Konfig",
+		"documentation": "Dokumentation",
+		"library": "Bibliotek",
+		"workers": "Arbetare",
+		"plugins": "Plugins",
+		"link": "Länk",
+		"general": "Allmän",
+		"helpAndSupport": "Hjälp & Support",
+		"container": "behållare",
+		"videoEncoding": "Videokodning",
+		"audioEncoding": "Ljudkodning",
+		"advancedOptions": "Avancerade alternativ",
+		"info": "Info",
+		"top": "Topp",
+		"new": "Ny",
+		"show": "Show",
+		"ask": "Fråga",
+		"job": "Jobb",
+		"recordsPerPage": "Rekord per sida",
+		"showMore": "Visa mer",
+		"search": "Sök",
+		"save": "Spara",
+		"backToDashboard": "Tillbaka till Dashboard",
+		"options": "alternativ",
+		"submit": "Skicka in",
+		"cancel": "Avbryt",
+		"close": "Stänga",
+		"back": "Tillbaka"
+	},
+	"status": {
+		"enabled": "aktiverad",
+		"disabled": "Inaktiverad",
+		"cannotLoadImage": "Det går inte att ladda bilden",
+		"success": "Framgång",
+		"failed": "Misslyckades"
+	},
+	"pagination": {
+		"prev": "föregående",
+		"more": "Mer"
+	},
+	"time": {
+		"ago": "sedan",
+		"units": {
+			"minute": "minut | minuter",
+			"hour": "timme | timmar",
+			"day": "dag | dagar"
+		}
+	},
+	"notifications": {
+		"saved": "Sparad.",
+		"installed": "Installerad.",
+		"backendConnectionWarning": "Det går inte att ansluta till Unmanic backend. Kontrollera att den är igång.",
+		"failedToFetchSession": "Ett fel påträffades vid hämtning av sessionsdata från Unmanic.",
+		"failedToFetchLoginUrl": "Det gick inte att hämta inloggnings-URL.",
+		"failedToFetchLogoutUrl": "Det gick inte att hämta webbadressen för utloggning.",
+		"failedToSaveSettings": "Det gick inte att spara inställningarna.",
+		"failedToFetchSettings": "Det gick inte att hämta Unmanics nuvarande inställningar.",
+		"failedToFetchSystemConfig": "Det gick inte att hämta Unmanics systemkonfiguration.",
+		"SavedPluginSettings": "Plugin-inställningarna sparade.",
+		"failedToSavePluginSettings": "Det gick inte att spara plugin-inställningarna.",
+		"failedToInstallPlugin": "Ett fel påträffades vid försök att installera det begärda pluginprogrammet.",
+		"repoAlreadyExists": "Lagret finns redan.",
+		"newRepoAddFailed": "Det gick inte att spara det nya arkivet.",
+		"reposRefreshSuccess": "Alla arkiv har uppdaterats.",
+		"reposRefreshFailure": "Det går inte att uppdatera dina konfigurerade arkiv. Kanske är det ett fel i en av webbadresserna?",
+		"repoRemovedSuccess": "Repository har tagits bort.",
+		"repoRemovedFailed": "Något gick fel när arkivet skulle tas bort.",
+		"failedToFetchEnabledDataPanelPlugins": "Det gick inte att hämta listan över aktiverade datapanelpluginprogram",
+		"allowPopups": "Tillåt popup-fönster för denna webbplats.",
+		"invalidWorkerEvent": "Det gick inte att lägga till ogiltig arbetshändelse.",
+		"remoteInstallationAlreadyInList": "Adressen du angav finns redan i listan över fjärrinstallationer.",
+		"invalidRemoteInstallationAddress": "Adressen du angav var inte en giltig Unmanic-installation.",
+		"incompatibleRemoteInstallation": "Fjärrinstallationen av Unmanic som du försöker lägga till är inte kompatibel med länkning. Försök att uppdatera den först.",
+		"serverMessages": {
+			"defaults": {
+				"info": "Okänt meddelande från servern",
+				"error": "Okänt fel uppstod på servern",
+				"warning": "Okänd varning från servern",
+				"success": "Okänt meddelande från servern",
+				"status": "Okänd statusuppdatering från servern"
+			},
+			"incompatiblePlugin": "Unmanic har slutat bearbeta uppgifter eftersom den har upptäckt en inkompatibel plugin",
+			"pluginEnabledLimits": "Unmanic har slutat bearbeta uppgifter eftersom du har för många plugins aktiverade för en icke-supporternivå. Överväg att sponsra projektet för att aktivera fler än tio plugins.",
+			"pluginSettingsChangeWorkersStopped": "Unmanic har stoppat alla arbetare eftersom den har upptäckt en ändring av plugins-konfigurationen. När du är redo, återuppta arbetarna från instrumentpanelen.",
+			"libraryScanProgress": "Bibliotekssökning körs",
+			"pendingTaskHaltedPostProcessorQueueFull": "Efterbehandlingskön nådde sin gräns",
+			"pendingTaskHaltedPostProcessorQueueFullMessage": "Arbetare kommer inte att få en ny väntande uppgift förrän efterbehandlarkön sjunker under det nuvarande konfigurerade antalet arbetare",
+			"receivingRemoteFile": "Tar emot fjärrfil",
+			"linkedInstallationLimits": "Unmanic har slutat bearbeta uppgifter eftersom du har länkat för många fjärrinstallationer för en icke-supporternivå. Överväg att sponsra projektet för att länka mer än en fjärrinstallation."
+		}
+	},
+	"headers": {
+		"workers": "Arbetare",
+		"pendingTasks": "Väntande uppgifter",
+		"completedTasks": "Genomförda uppgifter",
+		"privacyPolicy": "Integritetspolicy",
+		"plugins": "Plugins",
+		"pluginInfo": "Plugin info",
+		"pluginSettings": "Plugin-inställningar",
+		"pluginInstaller": "Plugin Installer",
+		"pluginFlow": "Konfigurera Plugin Flow",
+		"information": "Info",
+		"selectDirectory": "Välj en katalog",
+		"selectFile": "Välj en fil",
+		"librarySettings": "Biblioteksinställningar",
+		"completedTaskDetails": "Slutförd uppgiftsdetaljer",
+		"supportFutureDevelopment": "Stöd framtida utveckling",
+		"confirm": "Bekräfta",
+		"configureRemoteInstallationLink": "Konfigurera länk för fjärrinstallation"
+	},
+	"tooltips": {
+		"close": "Stänga",
+		"back": "Tillbaka",
+		"download": "Ladda ner",
+		"install": "Installera",
+		"reinstall": "Installera om",
+		"update": "Uppdatering",
+		"information": "Information",
+		"pluginInfo": "Plugin info",
+		"position": "Placera",
+		"moveUp": "Flytta upp",
+		"moveDown": "Flytta ner",
+		"etc": "Beräknad tidpunkt för färdigställande",
+		"add": "Lägg till"
+	},
+	"components": {
+		"settings": {
+			"pleaseEnterAValidNumber": "var vänlig skriv in ett giltigt nummer",
+			"library": {
+				"pathConfiguration": "Bibliotekssökvägskonfiguration",
+				"path": "Bibliotekets väg",
+				"libraryScanner": "Biblioteksskanner",
+				"enableLibraryScanner": "Aktivera periodiska bibliotekssökningar",
+				"libraryScannerSchedule": "Biblioteksskanningsschema på några minuter",
+				"libraryScannerScheduleNotValid": "Bibliotekets skanningsschema är inte giltigt",
+				"followSymlinks": "Följ symbollänkar på biblioteksskanningar",
+				"runLibraryScanOnStart": "Kör en biblioteksskanning en gång vid start",
+				"fileMonitor": "Biblioteksfilövervakare",
+				"enableLibraryFileMonitor": "Aktivera bibliotekets filövervakning",
+				"pendingTasks": "Väntande uppgifter",
+				"clearPendingTasksOnStart": "Rensa alla väntande uppgifter vid start",
+				"fileTesting": "Filtestning",
+				"concurrentFileTesters": "Samtidiga filtestare"
+			},
+			"workers": {
+				"workerCount": "Antal arbetare",
+				"path": "Cache-väg",
+				"schedule": "Schema för arbetarhändelser",
+				"newScheduledEvent": "Ny planerad händelse",
+				"repetition": "Upprepning",
+				"task": "Uppgift",
+				"addEvent": "Lägg till händelse",
+				"scheduleLabels": {
+					"daily": "Dagligen",
+					"weekday": "Varje veckodag",
+					"weekend": "Varje lördag och söndag",
+					"monday": "Varje måndag",
+					"tuesday": "Varje tisdag",
+					"wednesday": "Varje onsdag",
+					"thursday": "Varje torsdag",
+					"friday": "Varje fredag",
+					"saturday": "Varje lördag",
+					"sunday": "Varje söndag",
+					"count": "Ställ in antalet arbetare",
+					"pause": "Pausa alla arbetare",
+					"resume": "Återuppta alla arbetare"
+				}
+			},
+			"link": {
+				"thisInstallation": "Lokal",
+				"nameThisInstall": "Namnge denna installation",
+				"remoteInstallations": "Fjärrinstallationer",
+				"name": "namn",
+				"version": "Version",
+				"addRemoteInstallation": "Lägg till fjärrinstallation",
+				"address": "Adress",
+				"add": "Lägg till",
+				"connection": "Förbindelse",
+				"configuration": "Konfiguration",
+				"allowReceivingTasks": "Ta emot uppgifter från denna installation när arbetare är tillgängliga",
+				"allowSendingTasks": "Skicka uppgifter till den här installationen när arbetare är tillgängliga",
+				"enableTaskPreloading": "Förladda en uppgift på fjärrinstallationens kön för väntande uppgifter",
+				"enableDistributedWorkerCount": "Aktivera distribuerat antal arbetare för denna länk",
+				"workerTarget": "Arbetarmål"
+			},
+			"support": {
+				"logs": "Loggar",
+				"enableDebugging": "Aktivera felsökning",
+				"currentSystemLogs": "Aktuella systemloggar",
+				"downloadSystemLogs": "Ladda ner systemloggar",
+				"configuration": "Konfiguration",
+				"appVersion": "Omanisk version",
+				"pythonVersion": "Python-version",
+				"platform": "Plattform (operativsystem)",
+				"configPath": "Konfigurationsväg",
+				"logsPath": "Loggar sökväg",
+				"userdataPath": "Användardatasökväg",
+				"docs": "Dokumentation",
+				"apiSpec": "API-specifikation",
+				"applicationDocumentation": "Ansökningsdokumentation",
+				"support": "Stöd",
+				"unmanicAppSourceRequests": "Begär funktion i Unmanic Application",
+				"unmanicFrontendSourceRequests": "Begär funktion i Unmanic Frontend",
+				"unmanicOfficialPluginRequests": "Begär en plugin för Unmanic"
+			}
+		},
+		"workers": {
+			"listEmpty": "Det finns inga arbetare igång för närvarande. Öka antalet arbetare i Unmanics inställningar för att skapa en arbetare.",
+			"pauseWorker": "Pausa den här arbetaren",
+			"workerPaused": "Arbetaren har pausats",
+			"workerPauseFailed": "Unmanic kunde av någon anledning inte pausa den här arbetaren",
+			"resumeWorker": "Återuppta den här arbetaren",
+			"workerResumed": "Arbetaren har återupptagits",
+			"workerResumedFailed": "Unmanic kunde av någon anledning inte återuppta den här arbetaren",
+			"terminateWorker": "Avsluta den här arbetaren",
+			"terminateWorkerWarning": "Är du säker på att du vill avsluta den här arbetaren och dess nuvarande uppgift? Den aktuella uppgiften kommer att markeras som misslyckad i den slutförda uppgiftslistan.",
+			"workerTerminated": "Arbetaren har sagts upp",
+			"workerTerminationFailed": "Unmanic kunde av någon anledning inte säga upp den här arbetaren",
+			"pauseAllWorkers": "Pausa alla arbetare",
+			"resumeAllWorkers": "Återuppta alla arbetare",
+			"workerLog": "Arbetarlogg",
+			"status": "Status",
+			"stateLabel": "stat",
+			"currentRunnerLabel": "Nuvarande löpare",
+			"startTimeLabel": "Starttid",
+			"totalProcessingTimeLabel": "Total handläggningstid",
+			"state": {
+				"waiting": "Väntar på en annan uppgift...",
+				"processing": "Bearbetar uppgift...",
+				"paused": "Arbetaren pausade..."
+			},
+			"currentRunner": {
+				"none": "Ingen",
+				"indeterminate": "Obestämd"
+			}
+		},
+		"pendingTasks": {
+			"listEmpty": "Listan över väntande uppgifter är tom",
+			"rescanLibrary": "Skanna biblioteket igen nu",
+			"moveToTop": "Flytta markerade till toppen",
+			"moveToBottom": "Flytta markerade till botten",
+			"removeSelected": "Ta bort valda"
+		},
+		"completedTasks": {
+			"listEmpty": "Listan med slutförda uppgifter är tom",
+			"details": "Detaljer",
+			"errorGettingDetails": "Ett fel påträffades när detaljerna för denna uppgift skulle hämtas"
+		},
+		"plugins": {
+			"updateAvailable": "uppdatering tillgänglig",
+			"upToDate": "aktuell",
+			"enablePlugins": "Aktivera plugins",
+			"disablePlugins": "Inaktivera plugins",
+			"updatePlugins": "Uppdatera plugins",
+			"removePlugins": "Ta bort plugins",
+			"addNew": "Lägg till ny",
+			"configurePluginFow": "Konfigurera Plugin Flow",
+			"listEmpty": "Det finns inga plugins att visa",
+			"categoryFilter": "Kategorifilter",
+			"name": "namn",
+			"author": "Författare",
+			"version": "Version",
+			"repo": "Förvar",
+			"repoList": "Förvarslista",
+			"refreshRepositories": "Uppdatera förråd",
+			"addRepository": "Lägg till förråd",
+			"newRepository": "New Repository",
+			"repoName": "namn",
+			"repoSource": "Repository URL",
+			"errorSavingFlow": "Ett fel påträffades när pluginflödet skulle sparas",
+			"configurePluginFlowSection": {
+				"line1": "Konfigurera i vilken ordning plugins anropas.",
+				"line2": "Nedan finns en lista över sektioner av plugintyp. Varje instickstypssektion kan innehålla en lista med insticksprogram.",
+				"line3": "Se beskrivningen under varje instickstyp för detaljer när de inneslutna insticksmodulerna kommer att anropas.",
+				"line4": "En plugin kan bestå av flera plugintyper. Om så är fallet kommer det att anropas av Unmanic vid vart och ett av de beskrivna avsnitten."
+			},
+			"types": {
+				"libraryManagement": {
+					"fileTest": "Bibliotekshantering - Filtest",
+					"fileTestCaption": "Dessa plugins anropas för att testa om filer ska läggas till i den väntande uppgiftslistan"
+				},
+				"postprocessor": {
+					"fileMove": "Post-processor - Filrörelser",
+					"fileMoveCaption": "Dessa plugins anropas när uppgiften är klar för att lägga till ytterligare filrörelser",
+					"taskResult": "Efterbehandlare - Markera uppgiften lyckad/misslyckad",
+					"taskResultCaption": "Dessa plugins anropas vid slutförandet av en uppgift för att markera den övergripande framgången eller misslyckandet för den uppgiften"
+				},
+				"worker": {
+					"processItem": "Arbetare - Bearbetar fil",
+					"processItemCaption": "Dessa plugins anropas av en arbetare och producerar ett anpassat kommando som ska köras och hanteras av den arbetaren"
+				}
+			}
+		},
+		"dataPanels": {
+			"noDataPanelsEnabled": "Du har inga datapaneler aktiverade. Installera en från dina plugin-inställningar."
+		},
+		"footer": {
+			"version": "Version"
+		}
+	}
+}

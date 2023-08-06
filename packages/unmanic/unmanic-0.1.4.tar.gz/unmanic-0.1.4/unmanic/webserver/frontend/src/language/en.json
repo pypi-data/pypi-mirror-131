@@ -1,0 +1,309 @@
+{
+  "navigation": {
+    "dashboard": "Dashboard",
+    "settings": "Settings",
+    "dataPanels": "Data Panels",
+    "account": "Account",
+    "login": "Login",
+    "logout": "Logout",
+    "config": "Config",
+    "documentation": "Documentation",
+    "library": "Library",
+    "workers": "Workers",
+    "plugins": "Plugins",
+    "link": "Link",
+    "general": "General",
+    "helpAndSupport": "Help & Support",
+    "container": "container",
+    "videoEncoding": "Video Encoding",
+    "audioEncoding": "Audio Encoding",
+    "advancedOptions": "Advanced Options",
+    "info": "Info",
+    "top": "Top",
+    "new": "New",
+    "show": "Show",
+    "ask": "Ask",
+    "job": "Jobs",
+    "recordsPerPage": "Records per page",
+    "showMore": "Show more",
+    "search": "Search",
+    "save": "Save",
+    "backToDashboard": "Back to Dashboard",
+    "options": "Options",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "close": "Close",
+    "back": "Back"
+  },
+  "status": {
+    "enabled": "enabled",
+    "disabled": "disabled",
+    "cannotLoadImage": "Cannot load image",
+    "success": "Success",
+    "failed": "Failed"
+  },
+  "pagination": {
+    "prev": "prev",
+    "more": "more"
+  },
+  "time": {
+    "ago": "ago",
+    "units": {
+      "minute": "minute | minutes",
+      "hour": "hour | hours",
+      "day": "day | days"
+    }
+  },
+  "notifications": {
+    "saved": "Saved.",
+    "installed": "Installed.",
+    "backendConnectionWarning": "Unable to connect to Unmanic backend. Please check that it is running.",
+    "failedToFetchSession": "An error was encountered while fetching the session data from Unmanic.",
+    "failedToFetchLoginUrl": "Failed to get login URL.",
+    "failedToFetchLogoutUrl": "Failed to get logout URL.",
+    "failedToSaveSettings": "Failed to save settings.",
+    "failedToFetchSettings": "Failed to fetch Unmanic's current settings.",
+    "failedToFetchSystemConfig": "Failed to fetch Unmanic's system configuration.",
+    "SavedPluginSettings": "Plugin settings saved.",
+    "failedToSavePluginSettings": "Failed to save Plugin settings.",
+    "failedToInstallPlugin": "An error was encountered while attempting to install the requested Plugin.",
+    "repoAlreadyExists": "Repository already exists.",
+    "newRepoAddFailed": "New repository failed to save.",
+    "reposRefreshSuccess": "Successfully updated all repositories.",
+    "reposRefreshFailure": "Unable to update your configured repositories. Perhaps there is an error in one of the URLs?",
+    "repoRemovedSuccess": "Successfully removed repository.",
+    "repoRemovedFailed": "Something went wrong while trying to remove repository.",
+    "failedToFetchEnabledDataPanelPlugins": "Failed to fetch the enabled data panel plugins list",
+    "allowPopups": "Please allow popups for this website.",
+    "invalidWorkerEvent": "Unable to add invalid worker event.",
+    "remoteInstallationAlreadyInList": "The address you entered is already in the list of remote installations.",
+    "invalidRemoteInstallationAddress": "The address you entered was not a valid Unmanic installation.",
+    "incompatibleRemoteInstallation": "The remote Unmanic installation that you are trying to add is not compatible with linking. Try updating it first.",
+    "serverMessages": {
+      "defaults": {
+        "info": "Unknown message from server",
+        "error": "Unknown error occurred on server",
+        "warning": "Unknown warning from server",
+        "success": "Unknown message from server",
+        "status": "Unknown status update from server"
+      },
+      "incompatiblePlugin": "Unmanic has stopped processing tasks as it has detected an incompatible Plugin",
+      "pluginEnabledLimits": "Unmanic has stopped processing tasks as you have too many Plugins enabled for a non-supporter tier. Consider sponsoring the project to enable more than ten Plugins.",
+      "pluginSettingsChangeWorkersStopped": "Unmanic has stopped all workers as it has detected a change to the Plugins configuration. When you are ready, resume the workers from the dashboard.",
+      "libraryScanProgress": "Library scan running",
+      "pendingTaskHaltedPostProcessorQueueFull": "The Post-processor queue reached its limit",
+      "pendingTaskHaltedPostProcessorQueueFullMessage": "Workers will not receive a new pending task until the Post-processor queue drops below the current configured worker count",
+      "receivingRemoteFile": "Receiving remote file",
+      "linkedInstallationLimits": "Unmanic has stopped processing tasks as you have linked too many remote installations for a non-supporter tier. Consider sponsoring the project to link more than one remote installation."
+    }
+  },
+  "headers": {
+    "workers": "Workers",
+    "pendingTasks": "Pending Tasks",
+    "completedTasks": "Completed Tasks",
+    "privacyPolicy": "Privacy Policy",
+    "plugins": "Plugins",
+    "pluginInfo": "Plugin Info",
+    "pluginSettings": "Plugin Settings",
+    "pluginInstaller": "Plugin Installer",
+    "pluginFlow": "Configure Plugin Flow",
+    "information": "Info",
+    "selectDirectory": "Select a directory",
+    "selectFile": "Select a file",
+    "librarySettings": "Library Settings",
+    "completedTaskDetails": "Completed Task Details",
+    "supportFutureDevelopment": "Support future development",
+    "confirm": "Confirm",
+    "configureRemoteInstallationLink": "Configure remote installation link"
+  },
+  "tooltips": {
+    "close": "Close",
+    "back": "Back",
+    "download": "Download",
+    "install": "Install",
+    "reinstall": "Reinstall",
+    "update": "Update",
+    "information": "Information",
+    "pluginInfo": "Plugin Info",
+    "position": "Position",
+    "moveUp": "Move up",
+    "moveDown": "Move down",
+    "etc": "Estimated Time of Completion",
+    "add": "Add"
+  },
+  "components": {
+    "settings": {
+      "pleaseEnterAValidNumber": "Please enter a valid number",
+      "library": {
+        "pathConfiguration": "Library path configuration",
+        "path": "Library path",
+        "libraryScanner": "Library scanner",
+        "enableLibraryScanner": "Enable periodic library scans",
+        "libraryScannerSchedule": "Library scan schedule in minutes",
+        "libraryScannerScheduleNotValid": "Library scan schedule not valid",
+        "followSymlinks": "Follow symlinks on library scans",
+        "runLibraryScanOnStart": "Run a one off library scan on startup",
+        "fileMonitor": "Library file monitor",
+        "enableLibraryFileMonitor": "Enable the library file monitor",
+        "pendingTasks": "Pending tasks",
+        "clearPendingTasksOnStart": "Clear all pending tasks on startup",
+        "fileTesting": "File testing",
+        "concurrentFileTesters": "Concurrent file testers"
+      },
+      "workers": {
+        "workerCount": "Worker count",
+        "path": "Cache path",
+        "schedule": "Worker event schedule",
+        "newScheduledEvent": "New scheduled event",
+        "repetition": "Repetition",
+        "task": "Task",
+        "addEvent": "Add Event",
+        "scheduleLabels": {
+          "daily": "Daily",
+          "weekday":"Every Weekday",
+          "weekend": "Every Saturday and Sunday",
+          "monday":"Every Monday",
+          "tuesday": "Every Tuesday",
+          "wednesday":"Every Wednesday",
+          "thursday": "Every Thursday",
+          "friday":"Every Friday",
+          "saturday": "Every Saturday",
+          "sunday":"Every Sunday",
+          "count":"Set worker count",
+          "pause":"Pause all workers",
+          "resume":"Resume all workers"
+        }
+      },
+      "link": {
+        "thisInstallation": "Local",
+        "nameThisInstall": "Name this installation",
+        "remoteInstallations": "Remote installations",
+        "name": "Name",
+        "version": "Version",
+        "addRemoteInstallation": "Add remote installation",
+        "address": "Address",
+        "add": "Add",
+        "connection": "Connection",
+        "configuration": "Configuration",
+        "allowReceivingTasks": "Receive tasks from this installation when workers are available",
+        "allowSendingTasks": "Send tasks to this installation when workers are available",
+        "enableTaskPreloading": "Preload a task on the remote installation Pending Tasks queue",
+        "enableDistributedWorkerCount": "Enable distributed worker count for this link",
+        "workerTarget": "Worker target"
+      },
+      "support": {
+        "logs": "Logs",
+        "enableDebugging": "EnableDebugging",
+        "currentSystemLogs": "Current System Logs",
+        "downloadSystemLogs": "Download System Logs",
+        "configuration": "Configuration",
+        "appVersion": "Unmanic Version",
+        "pythonVersion": "Python Version",
+        "platform": "Platform (Operating System)",
+        "configPath": "Configuration Path",
+        "logsPath": "Logs Path",
+        "userdataPath": "Userdata Path",
+        "docs": "Documentation",
+        "apiSpec": "API Specification",
+        "applicationDocumentation": "Application Documentation",
+        "support": "Support",
+        "unmanicAppSourceRequests": "Request feature in Unmanic Application",
+        "unmanicFrontendSourceRequests": "Request feature in Unmanic Frontend",
+        "unmanicOfficialPluginRequests": "Request a Plugin for Unmanic"
+      }
+    },
+    "workers": {
+      "listEmpty": "There are no workers currently running. Increase the worker count in Unmanic's settings to spawn a worker.",
+      "pauseWorker": "Pause this worker",
+      "workerPaused": "Worker has been paused",
+      "workerPauseFailed": "Unmanic was unable to pause this worker for some reason",
+      "resumeWorker": "Resume this worker",
+      "workerResumed": "Worker has been resumed",
+      "workerResumedFailed": "Unmanic was unable to resume this worker for some reason",
+      "terminateWorker": "Terminate this worker",
+      "terminateWorkerWarning": "Are you sure you want to terminate this worker and its current task? The current task will be marked as failed in the completed task list.",
+      "workerTerminated": "Worker has been terminated",
+      "workerTerminationFailed": "Unmanic was unable to terminate this worker for some reason",
+      "pauseAllWorkers": "Pause all workers",
+      "resumeAllWorkers": "Resume all workers",
+      "workerLog" : "Worker Log",
+      "status" : "Status",
+      "stateLabel": "State",
+      "currentRunnerLabel": "Current Runner",
+      "startTimeLabel": "Start Time",
+      "totalProcessingTimeLabel": "Total Processing Time",
+      "state": {
+        "waiting": "Waiting for another task...",
+        "processing": "Processing task...",
+        "paused": "Worker paused..."
+      },
+      "currentRunner": {
+        "none": "None",
+        "indeterminate": "Indeterminate"
+      }
+    },
+    "pendingTasks": {
+      "listEmpty": "The Pending Tasks list is empty",
+      "rescanLibrary": "Rescan library now",
+      "moveToTop": "Move selected to top",
+      "moveToBottom": "Move selected to bottom",
+      "removeSelected": "Remove selected"
+    },
+    "completedTasks": {
+      "listEmpty": "The Completed Tasks list is empty",
+      "details": "Details",
+      "errorGettingDetails": "An error was encountered while fetching the details for this task"
+    },
+    "plugins": {
+      "updateAvailable": "update available",
+      "upToDate": "up-to-date",
+      "enablePlugins": "Enable Plugins(s)",
+      "disablePlugins": "Disable Plugins(s)",
+      "updatePlugins": "Update Plugins(s)",
+      "removePlugins": "Remove Plugins(s)",
+      "addNew": "Add New",
+      "configurePluginFow": "Configure Plugin Flow",
+      "listEmpty": "There are no Plugins to display",
+      "categoryFilter": "Category Filter",
+      "name": "Name",
+      "author": "Author",
+      "version": "Version",
+      "repo": "Repository",
+      "repoList": "Repository List",
+      "refreshRepositories": "Refresh Repositories",
+      "addRepository": "Add Repository",
+      "newRepository": "New Repository",
+      "repoName": "Name",
+      "repoSource": "Repository URL",
+      "errorSavingFlow": "An error was encountered while saving the Plugin Flow",
+      "configurePluginFlowSection": {
+        "line1": "Configure the order in which Plugins are called.",
+        "line2": "Below is a list of Plugin Type sections. Each Plugin Type section may contain a list of Plugins.",
+        "line3": "See the description below each Plugin Type for details when the contained Plugins will be called.",
+        "line4": "A Plugin may consist of multiple Plugin Types. If so, it will be called by Unmanic at each of those described sections."
+      },
+      "types": {
+        "libraryManagement": {
+          "fileTest": "Library Management - File test",
+          "fileTestCaption": "These Plugins are called to test if files should be added to the pending task list"
+        },
+        "postprocessor": {
+          "fileMove": "Post-processor - File movements",
+          "fileMoveCaption": "These Plugins are called on completion of task to add additional file movements",
+          "taskResult": "Post-processor - Marking task success/failure",
+          "taskResultCaption": "These Plugins are called on the completion of a task to mark the overall success or failure of that task"
+        },
+        "worker": {
+          "processItem": "Worker - Processing file",
+          "processItemCaption": "These Plugins are called by a worker and produce a custom command to be executed and managed by that worker"
+        }
+      }
+    },
+    "dataPanels" : {
+      "noDataPanelsEnabled": "You do not have any Data Panels enabled. Install one from your Plugin settings."
+    },
+    "footer": {
+      "version": "Version"
+    }
+  }
+}

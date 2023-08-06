@@ -1,0 +1,309 @@
+{
+	"navigation": {
+		"dashboard": "Dashboard",
+		"settings": "Instellingen",
+		"dataPanels": "Gegevenspanelen",
+		"account": "Rekening",
+		"login": "Log in",
+		"logout": "Uitloggen",
+		"config": "Configuratie",
+		"documentation": "Documentatie",
+		"library": "Bibliotheek",
+		"workers": "arbeiders",
+		"plugins": "Plug-ins",
+		"link": "Koppeling",
+		"general": "Algemeen",
+		"helpAndSupport": "Help & Ondersteuning",
+		"container": "container",
+		"videoEncoding": "Videocodering",
+		"audioEncoding": "Audiocodering",
+		"advancedOptions": "Geavanceerde mogelijkheden",
+		"info": "Info",
+		"top": "Bovenkant",
+		"new": "Nieuw",
+		"show": "Laten zien",
+		"ask": "Vragen",
+		"job": "Banen",
+		"recordsPerPage": "Records per pagina",
+		"showMore": "Laat meer zien",
+		"search": "Zoeken",
+		"save": "Opslaan",
+		"backToDashboard": "Terug naar Dashboard",
+		"options": "Opties",
+		"submit": "Indienen",
+		"cancel": "Annuleren",
+		"close": "Dichtbij",
+		"back": "Rug"
+	},
+	"status": {
+		"enabled": "ingeschakeld",
+		"disabled": "gehandicapt",
+		"cannotLoadImage": "Kan afbeelding niet laden",
+		"success": "Succes",
+		"failed": "mislukt"
+	},
+	"pagination": {
+		"prev": "vorige",
+		"more": "meer"
+	},
+	"time": {
+		"ago": "geleden",
+		"units": {
+			"minute": "minuut | minuten",
+			"hour": "uur | uur",
+			"day": "dag | dagen"
+		}
+	},
+	"notifications": {
+		"saved": "Opgeslagen.",
+		"installed": "Geïnstalleerd.",
+		"backendConnectionWarning": "Kan geen verbinding maken met de Unmanic-backend. Controleer of het actief is.",
+		"failedToFetchSession": "Er is een fout opgetreden bij het ophalen van de sessiegegevens van Unmanic.",
+		"failedToFetchLoginUrl": "Kan inlog-URL niet ophalen.",
+		"failedToFetchLogoutUrl": "Kan uitlog-URL niet ophalen.",
+		"failedToSaveSettings": "Kan instellingen niet opslaan.",
+		"failedToFetchSettings": "Kan de huidige instellingen van Unmanic niet ophalen.",
+		"failedToFetchSystemConfig": "Kan de systeemconfiguratie van Unmanic niet ophalen.",
+		"SavedPluginSettings": "Plugin-instellingen opgeslagen.",
+		"failedToSavePluginSettings": "Kan plug-in-instellingen niet opslaan.",
+		"failedToInstallPlugin": "Er is een fout opgetreden bij het installeren van de gevraagde plug-in.",
+		"repoAlreadyExists": "Opslagplaats bestaat al.",
+		"newRepoAddFailed": "Nieuwe opslagplaats kan niet worden opgeslagen.",
+		"reposRefreshSuccess": "Alle repository's zijn bijgewerkt.",
+		"reposRefreshFailure": "Kan uw geconfigureerde opslagplaatsen niet bijwerken. Misschien staat er een fout in een van de URL's?",
+		"repoRemovedSuccess": "Repository is verwijderd.",
+		"repoRemovedFailed": "Er is iets misgegaan bij het verwijderen van de repository.",
+		"failedToFetchEnabledDataPanelPlugins": "Kan de lijst met ingeschakelde plug-ins van het gegevenspaneel niet ophalen",
+		"allowPopups": "Sta pop-ups voor deze website toe.",
+		"invalidWorkerEvent": "Kan ongeldige werknemergebeurtenis niet toevoegen.",
+		"remoteInstallationAlreadyInList": "Het door u ingevoerde adres staat al in de lijst met installaties op afstand.",
+		"invalidRemoteInstallationAddress": "Het ingevoerde adres was geen geldige Unmanic-installatie.",
+		"incompatibleRemoteInstallation": "De externe Unmanic-installatie die u probeert toe te voegen, is niet compatibel met koppelen. Probeer het eerst te updaten.",
+		"serverMessages": {
+			"defaults": {
+				"info": "Onbekend bericht van server",
+				"error": "Er is een onbekende fout opgetreden op de server",
+				"warning": "Onbekende waarschuwing van server",
+				"success": "Onbekend bericht van server",
+				"status": "Onbekende statusupdate van server"
+			},
+			"incompatiblePlugin": "Unmanic is gestopt met het verwerken van taken omdat het een incompatibele plug-in heeft gedetecteerd",
+			"pluginEnabledLimits": "Unmanic is gestopt met het verwerken van taken omdat je te veel plug-ins hebt ingeschakeld voor een niet-supporterlaag. Overweeg het project te sponsoren om meer dan tien plug-ins mogelijk te maken.",
+			"pluginSettingsChangeWorkersStopped": "Unmanic heeft alle werkers gestopt omdat het een wijziging in de configuratie van de plug-ins heeft gedetecteerd. Als u klaar bent, hervat u de werknemers vanaf het dashboard.",
+			"libraryScanProgress": "Bibliotheekscan wordt uitgevoerd",
+			"pendingTaskHaltedPostProcessorQueueFull": "De wachtrij van de postprocessor heeft zijn limiet bereikt",
+			"pendingTaskHaltedPostProcessorQueueFullMessage": "Werknemers ontvangen geen nieuwe taak die in behandeling is totdat de wachtrij na de processor onder het huidige geconfigureerde aantal werknemers komt",
+			"receivingRemoteFile": "Bestand op afstand ontvangen",
+			"linkedInstallationLimits": "Unmanic is gestopt met het verwerken van taken omdat u te veel externe installaties hebt gekoppeld voor een niet-supporterlaag. Overweeg het project te sponsoren om meer dan één installatie op afstand te koppelen."
+		}
+	},
+	"headers": {
+		"workers": "arbeiders",
+		"pendingTasks": "Taken in behandeling",
+		"completedTasks": "Voltooide taken",
+		"privacyPolicy": "Privacybeleid",
+		"plugins": "Plug-ins",
+		"pluginInfo": "Plugin-info",
+		"pluginSettings": "Instellingen voor plug-ins",
+		"pluginInstaller": "Installatieprogramma voor plug-ins",
+		"pluginFlow": "Plugin-stroom configureren",
+		"information": "Info",
+		"selectDirectory": "Selecteer een map",
+		"selectFile": "Selecteer een bestand",
+		"librarySettings": "Bibliotheekinstellingen",
+		"completedTaskDetails": "Details van voltooide taak",
+		"supportFutureDevelopment": "Ondersteuning toekomstige ontwikkeling",
+		"confirm": "Bevestigen",
+		"configureRemoteInstallationLink": "Link voor installatie op afstand configureren"
+	},
+	"tooltips": {
+		"close": "Dichtbij",
+		"back": "Rug",
+		"download": "Downloaden",
+		"install": "Installeren",
+		"reinstall": "Opnieuw installeren",
+		"update": "Update",
+		"information": "Informatie",
+		"pluginInfo": "Plugin-info",
+		"position": "Positie",
+		"moveUp": "Omhoog gaan",
+		"moveDown": "Naar beneden verplaatsen",
+		"etc": "Geschatte voltooiingstijd",
+		"add": "Toevoegen"
+	},
+	"components": {
+		"settings": {
+			"pleaseEnterAValidNumber": "Gelieve een geldig nummer invoeren",
+			"library": {
+				"pathConfiguration": "Configuratie bibliotheekpad",
+				"path": "Bibliotheekpad",
+				"libraryScanner": "Bibliotheekscanner",
+				"enableLibraryScanner": "Periodieke bibliotheekscans inschakelen",
+				"libraryScannerSchedule": "Bibliotheekscanschema in minuten",
+				"libraryScannerScheduleNotValid": "Scanschema bibliotheek niet geldig",
+				"followSymlinks": "Symlinks volgen op bibliotheekscans",
+				"runLibraryScanOnStart": "Voer een eenmalige bibliotheekscan uit bij het opstarten",
+				"fileMonitor": "Bibliotheek bestandsmonitor",
+				"enableLibraryFileMonitor": "De bibliotheekbestandsmonitor inschakelen",
+				"pendingTasks": "Taken in behandeling",
+				"clearPendingTasksOnStart": "Wis alle lopende taken bij het opstarten",
+				"fileTesting": "Bestand testen",
+				"concurrentFileTesters": "Gelijktijdige bestandstesters"
+			},
+			"workers": {
+				"workerCount": "Aantal werknemers",
+				"path": "Cache pad",
+				"schedule": "Werkrooster voor evenementen",
+				"newScheduledEvent": "Nieuw gepland evenement",
+				"repetition": "Herhaling",
+				"task": "Taak",
+				"addEvent": "Voeg evenement toe",
+				"scheduleLabels": {
+					"daily": "Dagelijks",
+					"weekday": "Elke weekdag",
+					"weekend": "Elke zaterdag en zondag",
+					"monday": "Elke maandag",
+					"tuesday": "Elke dinsdag",
+					"wednesday": "Elke woensdag",
+					"thursday": "Elke donderdag",
+					"friday": "Elke vrijdag",
+					"saturday": "Elke zaterdag",
+					"sunday": "Elke zondag",
+					"count": "Aantal werknemers instellen",
+					"pause": "Pauzeer alle werkers",
+					"resume": "Alle werknemers hervatten"
+				}
+			},
+			"link": {
+				"thisInstallation": "lokaal",
+				"nameThisInstall": "Geef deze installatie een naam",
+				"remoteInstallations": "Installaties op afstand",
+				"name": "Naam",
+				"version": "Versie",
+				"addRemoteInstallation": "Installatie op afstand toevoegen",
+				"address": "Adres",
+				"add": "Toevoegen",
+				"connection": "Verbinding",
+				"configuration": "Configuratie",
+				"allowReceivingTasks": "Taken van deze installatie ontvangen wanneer er werkers beschikbaar zijn",
+				"allowSendingTasks": "Stuur taken naar deze installatie wanneer er werkers beschikbaar zijn",
+				"enableTaskPreloading": "Laad een taak vooraf in de wachtrij voor installatie op afstand in afwachting van taken",
+				"enableDistributedWorkerCount": "Gedistribueerd aantal werknemers inschakelen voor deze link",
+				"workerTarget": "Werknemer doel"
+			},
+			"support": {
+				"logs": "Logboeken",
+				"enableDebugging": "Foutopsporing inschakelen",
+				"currentSystemLogs": "Huidige systeemlogboeken",
+				"downloadSystemLogs": "Systeemlogboeken downloaden",
+				"configuration": "Configuratie",
+				"appVersion": "Unmanic Version",
+				"pythonVersion": "Python-versie",
+				"platform": "Platform (besturingssysteem)",
+				"configPath": "Configuratiepad",
+				"logsPath": "Logboekpad",
+				"userdataPath": "Pad gebruikersgegevens",
+				"docs": "Documentatie",
+				"apiSpec": "API-specificatie:",
+				"applicationDocumentation": "Toepassingsdocumentatie",
+				"support": "Steun",
+				"unmanicAppSourceRequests": "Functie aanvragen in Unmanic Application",
+				"unmanicFrontendSourceRequests": "Functie aanvragen in Unmanic Frontend",
+				"unmanicOfficialPluginRequests": "Vraag een plug-in aan voor Unmanic"
+			}
+		},
+		"workers": {
+			"listEmpty": "Er zijn momenteel geen arbeiders actief. Verhoog het aantal werkers in de instellingen van Unmanic om een werker te spawnen.",
+			"pauseWorker": "Deze werknemer onderbreken",
+			"workerPaused": "Werknemer is onderbroken",
+			"workerPauseFailed": "Unmanic kan deze werker om de een of andere reden niet pauzeren",
+			"resumeWorker": "Deze werknemer hervatten",
+			"workerResumed": "Werknemer is hervat",
+			"workerResumedFailed": "Unmanic kon deze werknemer om de een of andere reden niet hervatten",
+			"terminateWorker": "Deze werknemer beëindigen",
+			"terminateWorkerWarning": "Weet u zeker dat u deze werknemer en zijn huidige taak wilt beëindigen? De huidige taak wordt gemarkeerd als mislukt in de lijst met voltooide taken.",
+			"workerTerminated": "Werknemer is beëindigd",
+			"workerTerminationFailed": "Unmanic kon deze werknemer om de een of andere reden niet beëindigen",
+			"pauseAllWorkers": "Pauzeer alle werkers",
+			"resumeAllWorkers": "Alle werknemers hervatten",
+			"workerLog": "Werknemerslogboek",
+			"status": "Toestand",
+			"stateLabel": "Staat",
+			"currentRunnerLabel": "Huidige Runner",
+			"startTimeLabel": "Starttijd",
+			"totalProcessingTimeLabel": "Totale verwerkingstijd",
+			"state": {
+				"waiting": "Wachten op een andere taak...",
+				"processing": "Taak verwerken...",
+				"paused": "Werknemer gepauzeerd..."
+			},
+			"currentRunner": {
+				"none": "Geen",
+				"indeterminate": "onbepaald"
+			}
+		},
+		"pendingTasks": {
+			"listEmpty": "De lijst met lopende taken is leeg",
+			"rescanLibrary": "Bibliotheek nu opnieuw scannen",
+			"moveToTop": "Verplaats geselecteerde naar boven",
+			"moveToBottom": "Geselecteerde naar beneden verplaatsen",
+			"removeSelected": "Verwijder geselecteerde"
+		},
+		"completedTasks": {
+			"listEmpty": "De lijst Voltooide taken is leeg",
+			"details": "Details",
+			"errorGettingDetails": "Er is een fout opgetreden bij het ophalen van de details voor deze taak"
+		},
+		"plugins": {
+			"updateAvailable": "update beschikbaar",
+			"upToDate": "actueel",
+			"enablePlugins": "Plug-ins(s) inschakelen",
+			"disablePlugins": "Plug-ins(s) uitschakelen",
+			"updatePlugins": "Plug-ins(s) bijwerken",
+			"removePlugins": "Verwijder plug-ins(s)",
+			"addNew": "Nieuw toevoegen",
+			"configurePluginFow": "Plugin-stroom configureren",
+			"listEmpty": "Er zijn geen plug-ins om weer te geven",
+			"categoryFilter": "Categoriefilter",
+			"name": "Naam",
+			"author": "Auteur",
+			"version": "Versie",
+			"repo": "Opslagplaats",
+			"repoList": "Lijst met opslagplaatsen",
+			"refreshRepositories": "Opslagplaatsen vernieuwen",
+			"addRepository": "Opslagplaats toevoegen",
+			"newRepository": "Nieuwe opslagplaats",
+			"repoName": "Naam",
+			"repoSource": "Repository-URL",
+			"errorSavingFlow": "An error was encountered while saving the Plugin Flow",
+			"configurePluginFlowSection": {
+				"line1": "Configureer de volgorde waarin plug-ins worden aangeroepen.",
+				"line2": "Hieronder vindt u een lijst met secties over het type plug-in. Elke sectie Plug-intype kan een lijst met plug-ins bevatten.",
+				"line3": "Zie de beschrijving onder elk type plug-in voor details wanneer de plug-ins worden aangeroepen.",
+				"line4": "Een plug-in kan uit meerdere typen plug-ins bestaan. Als dat zo is, wordt het door Unmanic aangeroepen in elk van de beschreven secties."
+			},
+			"types": {
+				"libraryManagement": {
+					"fileTest": "Bibliotheekbeheer - Bestandstest",
+					"fileTestCaption": "Deze plug-ins worden aangeroepen om te testen of bestanden moeten worden toegevoegd aan de in behandeling zijnde takenlijst"
+				},
+				"postprocessor": {
+					"fileMove": "Postprocessor - Bestandsverplaatsingen",
+					"fileMoveCaption": "Deze plug-ins worden aangeroepen na voltooiing van de taak om extra bestandsverplaatsingen toe te voegen",
+					"taskResult": "Post-processor - Taak succes/mislukking markeren",
+					"taskResultCaption": "Deze plug-ins worden aangeroepen bij het voltooien van een taak om het algehele succes of falen van die taak te markeren"
+				},
+				"worker": {
+					"processItem": "Werknemer - Bestand wordt verwerkt",
+					"processItemCaption": "Deze plug-ins worden aangeroepen door een werker en produceren een aangepast commando dat door die werker moet worden uitgevoerd en beheerd"
+				}
+			}
+		},
+		"dataPanels": {
+			"noDataPanelsEnabled": "U heeft geen datapanelen ingeschakeld. Installeer er een vanuit uw plug-in-instellingen."
+		},
+		"footer": {
+			"version": "Versie"
+		}
+	}
+}
