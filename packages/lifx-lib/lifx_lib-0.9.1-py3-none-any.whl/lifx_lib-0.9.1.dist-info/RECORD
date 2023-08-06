@@ -1,0 +1,16 @@
+lifx/__init__.py,sha256=FnqPIGQP4hxvG4cIW9FdVeXeV7B1ORkunkRh_3Qcr-8,54
+lifx/msg.py,sha256=c8B8EweEWceCeAoW1WdqfWQc3yLWrYH9ToQEupnspTs,3777
+lifx/lan/__init__.py,sha256=F6uYwzyOsrFYgFujVjaz0i3OpzlyiggoUqyYn3FqF14,160
+lifx/lan/discovery.py,sha256=D8T-sZMS2PYN5ToLoEjmMpcbszes7t9AwcRS212Fks4,2091
+lifx/lan/header.py,sha256=O1IIKIIp3nH8gV4KJiqI1_xkl-e66hVLtVxXGYpcnVs,3409
+lifx/lan/light.py,sha256=l6rUDSzJ-1LqnmF7RCEn3TClFsy7JLEQM8xJVHY6czk,12787
+lifx/lan/msg.py,sha256=GzRqfsZcOr79tG8MBo7gC366PNokzXfmNmx2nO4rRVI,5661
+lifx/lan/client/__init__.py,sha256=Kl60IlqT-eDtIWTlFpu8DkkvQLkcFyOZkQKRdf_sMOk,41
+lifx/lan/client/asynchronous.py,sha256=tdOU2f40Bt8wWfJIq47gHMgEgWk0vRvuBrJDV2tBQmQ,3288
+lifx/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lifx/tests/test_doctests.py,sha256=ju3onjcq1llKxiyKmxLJmAbof4PhDwkBDLGrvGpDlPY,538
+lifx_lib-0.9.1.dist-info/LICENSE,sha256=CPMlUijlcbemoDr7dtQNjnZX3s4EXe1xqj0Jm9aQvBk,1089
+lifx_lib-0.9.1.dist-info/METADATA,sha256=YRpOth5cOefUweT1UcKj2fNIllTYms7ZmFJ0VDn0Ug0,4416
+lifx_lib-0.9.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+lifx_lib-0.9.1.dist-info/top_level.txt,sha256=ug5aK9JgE24KvgTetUvMNi9TxkEFDyxd8rcWJ69NQes,5
+lifx_lib-0.9.1.dist-info/RECORD,,
