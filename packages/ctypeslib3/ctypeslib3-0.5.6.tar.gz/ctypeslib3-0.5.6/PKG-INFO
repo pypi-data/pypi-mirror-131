@@ -1,0 +1,35 @@
+Metadata-Version: 1.1
+Name: ctypeslib3
+Version: 0.5.6
+Summary: ctypeslib - useful additions to the ctypes FFI library
+Home-page: UNKNOWN
+Author: Thomas Heller
+Author-email: theller@ctypes.org
+License: MIT License
+Description: ctypeslib contains these packages:
+        
+         - ``ctypeslib.codegen``       - a code generator
+        
+         - ``ctypeslib.contrib``       - various contributed modules
+        
+         - ``ctypeslib.util``          - assorted small helper functions
+        
+         - ``ctypeslib.test``          - unittests
+        
+        There is not yet an official release, but ctypeslib can be installed
+        directly from the subversion repository with::
+        
+            easy_install ctypeslib==dev
+        
+        The SVN repository is here:
+        
+        http://svn.python.org/projects/ctypes/trunk/ctypeslib/#egg=ctypeslib-dev
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
