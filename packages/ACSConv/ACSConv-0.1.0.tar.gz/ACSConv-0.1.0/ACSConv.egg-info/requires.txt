@@ -1,0 +1,11 @@
+fire
+numpy
+matplotlib
+pandas
+tqdm
+scikit-image
+scikit-learn
+scipy
+tensorboardx
+torch
+torchvision
