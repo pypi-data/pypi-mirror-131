@@ -1,0 +1,46 @@
+
+# ᵛᶦᵐᵛᶦᵐ'ˢ Connecty
+## Overview
+1. Install python (Windows or debian)
+2. Install connecty
+3. Setup and run connecty
+## Install python on Windows
+#### Install Python
+Get the installer [here](https://www.python.org/downloads/).
+Although you installed python, you will not run python directly, but use the cmd/terminal/powershell
+
+## Install python on Debian
+Get python 3 through your package manager
+```
+sudo apt-get install python3
+```
+## Install Connecty
+Install connecty
+```
+python3 -m pip install connecty
+```
+
+## Setup
+### Create a config file
+Save a new text file with your config. You can save it anywhere on your computer.
+The file must be in the .ini format and contain your token and all your connections.
+ ```ini
+[BOT]
+token = tokengoeshere
+
+[my_connection_1]
+channels = 123456789 123456789 123456789
+
+[my_connection_2]
+channels = 123456789 123456789 123456789
+```
+The first section should be called `[BOT]` and contain your token.
+Each subsequent section is a different connection.
+The exact name doesn't matter so name them something memorable.
+
+### Run the bot
+Run this command in cmd/terminal (installing connecty added the `connecty` command)
+ ```
+python3 -m connecty path/to/config.ini
+ ```
+
