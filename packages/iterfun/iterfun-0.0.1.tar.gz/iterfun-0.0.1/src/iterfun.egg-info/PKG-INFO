@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: iterfun
+Version: 0.0.1
+Summary: Implements an iterator interface reminscent of languages such as Elixier of F#.
+Home-page: https://github.com/StefanGreve/iterfun
+Author: StefanGreve
+Author-email: greve.stefan@outlook.jp
+License: MIT
+Project-URL: Documentation, https://github.com/StefanGreve/iterfun/blob/master/README.md
+Project-URL: Source Code, https://github.com/StefanGreve/iterfun
+Project-URL: Bug Reports, https://github.com/StefanGreve/iterfun/issues
+Project-URL: Changelog, https://github.com/StefanGreve/iterfun/blob/master/CHANGELOG.md
+Keywords: utils,functional programming,functools,itertools,extension
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# iterfun
+
+Implements an iterator interface reminscent of languages such as Elixier of F#.
+
+
