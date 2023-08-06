@@ -1,0 +1,9 @@
+zwift_parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zwift_parser/zwift_intervals.py,sha256=HsnIFuekSt0HdqBQqZO97o4AxYGsV2wesxfY1UGgF3s,5809
+zwift_parser/zwift_parser.py,sha256=vSaTbugjF7DkTI77eq1v9n5obXFJTd2fu56HmT42NkI,4738
+zwift_parser/zwift_workout.py,sha256=cgxKDmObrIi67onPYVl-3Cr_3qRuqZSZ_RKcGOWKoWQ,7480
+zwift_workouts_parser-1.0.0.dist-info/LICENSE,sha256=58Rvg2SXQaYfjh-5X0fStV_rgRVoX6wugtB-20qDPXI,1098
+zwift_workouts_parser-1.0.0.dist-info/METADATA,sha256=imrMHO0rmjpeblU3b1VT0yDjiA4qVjfGT9J77lJo2Zg,982
+zwift_workouts_parser-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+zwift_workouts_parser-1.0.0.dist-info/top_level.txt,sha256=dVcNfZ6mXr--8p2EtksSYHQKMtEPqd7w0Neo7WytU-c,13
+zwift_workouts_parser-1.0.0.dist-info/RECORD,,
