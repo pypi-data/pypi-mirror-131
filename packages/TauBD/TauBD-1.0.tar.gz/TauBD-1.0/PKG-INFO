@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: TauBD
+Version: 1.0
+Summary: TBD: Tau Be Damned.
+Home-page: https://github.com/Intrinsically-Disordered/TBD
+Author: TBD
+Author-email: hjwgogo@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Provides-Extra: docs
+Provides-Extra: test
+Provides-Extra: dev
+License-File: LICENSE
+
+UNKNOWN
+
