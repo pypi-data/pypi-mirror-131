@@ -1,0 +1,6 @@
+pytube>=11.0.2
+requests==2.26.0
+rich>=10.15.2
+emoji==1.6.1
+tqdm==4.62.3
+pyperclip==1.8.2
