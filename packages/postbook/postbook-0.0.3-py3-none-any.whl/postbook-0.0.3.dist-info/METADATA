@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: postbook
+Version: 0.0.3
+Summary: Convert IPython Notebook to Blog Post
+Home-page: https://github.com/aswin4400/postbook.git
+Author: Aswin Rajasekharan
+Author-email: aswin4400@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nbconvert (>=6.3.0)
+Requires-Dist: typer (>=0.4.0)
+Requires-Dist: Jinja2 (>=3.0.3)
+Requires-Dist: paramiko (>=2.8.1)
+Requires-Dist: nbformat (>=5.1.3)
+
+
+Install the package using pip
+`pip install postbook`
+
+
+

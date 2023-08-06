@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{blog_name}}</title>
+
+     <link rel="stylesheet" href="css/site.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+<div class="row">
+    <div class="col text-center">
+        <h1>{{ blog_name }}</h1>
+    </div>
+</div>
+
+<div class="row">
+<div class="col text-center">
+<ul class="list-group">
+{% for post in posts %}
+    <li class="list-group-item">
+     <a href="{{ post }}"> 
+      {{ post.title }}
+     </a>
+    </li>
+{% endfor %}
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
