@@ -1,0 +1,17 @@
+pymare/__init__.py,sha256=SjKCiJioRIyDAUZ2xNgBSU3PaOF0iNeNn0-pODePu9A,394
+pymare/_version.py,sha256=97J-rvxQsh3WlOms45sLybx84HN81h9LtqIx24gBD50,500
+pymare/core.py,sha256=d82F8X4hgf0MKv-qxXcK5D52VPLIZca18ye6CUTN19M,8027
+pymare/results.py,sha256=CfM_Ess2WQqZuWjkFYVb4OQ7I-k9pkTm9L74up0Oi-U,16263
+pymare/stats.py,sha256=OhKnkSJUw8oCrThMgEHP4CNnJJLidOyWyOhcLPgjFWY,4942
+pymare/effectsize/__init__.py,sha256=KQm4o1MujMCfHQtXqdp672MgyZC74Fq2o5KucZlaaG4,416
+pymare/effectsize/base.py,sha256=cof6oFYkWGC-g8VJqssjG31zUJ2Hqnvn28dJCF6BvTg,21693
+pymare/effectsize/expressions.json,sha256=S7U6U5UxS7gcZ987dP0ymIaCSGlZ4F0wY5ZlRVqnwoc,2688
+pymare/effectsize/expressions.py,sha256=MZZQvHkF55azewjus3NYpJKU7GWufG5k5_M7HZYU6Gs,4385
+pymare/estimators/__init__.py,sha256=6T3-NuvBifK_YKSvu6aCMtqbMME1IFkNwaSZnZQb8Ys,568
+pymare/estimators/combination.py,sha256=REM42hbDvYZqBiDFg_abvYAcIIgp3cMVevviYzURrO4,6956
+pymare/estimators/estimators.py,sha256=Ui_C0_3f1F4ZKT1Pd-VfghyGp3sMVqOCVKxpIwsaffw,21111
+PyMARE-0.0.3rc1.dist-info/LICENSE,sha256=yein4zEX2jiPlaSUi8V_KSzV9zc3SC6l1MDdxrFeOLQ,1074
+PyMARE-0.0.3rc1.dist-info/METADATA,sha256=O9anNEpCjOFT-LYwnzzEc5ILuRuI0aCFd0FCVjBnKJ0,3493
+PyMARE-0.0.3rc1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+PyMARE-0.0.3rc1.dist-info/top_level.txt,sha256=1SWQIHP_NlHVbY3ojBc1YT0jvGIVwfhrcx6PPe6u79o,7
+PyMARE-0.0.3rc1.dist-info/RECORD,,
