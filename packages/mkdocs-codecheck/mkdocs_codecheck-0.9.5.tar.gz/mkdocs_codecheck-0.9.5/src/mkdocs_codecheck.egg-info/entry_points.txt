@@ -1,0 +1,3 @@
+[console_scripts]
+mkdocs-codecheck = mkdocs_codecheck.__main__:main
+
