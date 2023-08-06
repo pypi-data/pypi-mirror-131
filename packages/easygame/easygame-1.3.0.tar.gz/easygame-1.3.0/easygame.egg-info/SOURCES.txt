@@ -1,0 +1,8 @@
+README.md
+setup.py
+easygame/__init__.py
+easygame.egg-info/PKG-INFO
+easygame.egg-info/SOURCES.txt
+easygame.egg-info/dependency_links.txt
+easygame.egg-info/requires.txt
+easygame.egg-info/top_level.txt

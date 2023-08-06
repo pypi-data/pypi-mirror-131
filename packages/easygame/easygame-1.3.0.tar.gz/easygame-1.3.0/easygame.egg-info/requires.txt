@@ -1,0 +1,7 @@
+pygame
+pyperclip
+playsound
+pycaw
+opencv-python
+jinja2
+webbrowser

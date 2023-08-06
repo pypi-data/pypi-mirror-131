@@ -1,0 +1,655 @@
+# 环境
+- `easygame`需要python3.6及以上的python版本，最好的使用版本为python3.8。
+- `easygame`不需要联网。
+- `easygame`需要pygame2.0.1及以上的pygame版本，最好的使用版本为pygame2.0.1。
+- `easygame`适用于Windows、MacOS、Linux。不同的操作系统，窗口样式会不同。非Windows系统下剪贴板功能可能有误。
+# 下载
+使用pip下载:
+```shell script
+pip install easygame -i https://pypi.org/project
+```
+使用easy-install下载:
+```shell script
+easy-install easygame -i https://pypi.org/project
+```
+# 示例
+`easygame`使用pygame为基础类。
+对比:<br>
+在`pygame`中显示**hello world**:
+```python
+import pygame as pg
+import sys
+
+
+def destroy():
+    pg.quit()
+    sys.exit(0)
+
+
+pg.init()
+pg.font.init()
+screen = pg.display.set_mode((800, 800))
+pg.display.set_caption('hello world')
+font = pg.font.Font(None, 50)
+clock = pg.time.Clock()
+fps = 60
+while True:
+    clock.tick(fps)
+    text_surface = font.render('hello world', True, (0, 0, 0))
+    screen.blit(text_surface, screen.get_rect().center)
+    for event in pg.event.get():
+        if event.type == pg.QUIT:
+            destroy()
+        elif event.type == pg.KEYDOWN:
+            if event.key == pg.K_ESCAPE:
+                destroy()
+    pg.display.update()
+    
+```
+而使用`easygame`:
+```python
+import easygame as eg
+window = eg.window()
+text = eg.Text(window, 'Hello World!', size=50,
+               position=window.rectangle.center)
+text.pack()
+window.mainloop()
+```
+------
+`easygame`的另一个优点是与`tkinter`很相似。
+`easygame`对于学习过Scratch的小朋友很适用。
+# 文档
+## 创建项目
+使用如下命令新建一个名为`game1`的项目:
+```shell script
+python -m easygame.project game1
+```
+## 素材安装
+使用如下命令安装`mblock`的图片素材(需要在WIFI环境下，并要等待):
+```shell script
+python -m easygame.installer install
+```
+使用如下命令卸载`mblock`的图片素材:
+```shell script
+python -m easygame.installer uninstall
+```
+安装后使用如下代码获取一个资源:
+```python
+import easygame as eg
+path = eg.get_downloaded_image('Airplane15.svg')
+# path = "downloads/Airplane15.svg"
+```
+## 窗口
+使用`easygame.window`创建一个窗口对象：
+```python
+import easygame as eg
+window = eg.window()
+```
+`eg.window`的参数:
+```python
+window(
+    title='easygame.screen',  # 窗口标题, str
+    size=(800, 800),   # 窗口大小, Tuple[int, int]
+    full_screen=False,   # 是否全屏, bool
+    fps=70,  # 每秒帧率, int
+    depth=0,   # 位深, int
+    display=0,   # 媒体, int
+    vsync=0,   # 同步, int
+    icon=None,   # 窗口图标路径，支持png、jpg等等，str
+    icon_title='game',  # 图标标题, str
+    bgcolor=(255, 255, 255)  # 背景色, Tuple[int, int, int]
+)
+```
+*(`easygame`是白色主题的)*<br>
+由于`easygame`使用`pygame`编写，它对`pygame`有很好的兼容性。
+```python
+import easygame as eg
+window = eg.window()
+surface = window.get_surface()  # 通过get_surface方法获得pygame.Surface的窗口对象
+```
+`window`有一个组件队列`window.widgets`，在前面的Widget可能被后面的遮挡(Background类永远置于底层)
+在0项的组件置于底层，在最后一项的组件置于顶层。
+```python
+import easygame as eg
+window = eg.window()
+widget = eg.Widget(window)
+widgets = window.widgets  # 获取组件队列(list)
+widgets_deque = window.widget_queue  # 获取组件队列(collections.deque)
+window.add_widget(widget)  # 添加一个组件，必须为easygame.Widget类或其子类
+window.delete_widget(widget)  # 删除一个组件，必须为easygame.Widget类或其子类，从底层开始匹配
+window.random_widget()  # 获取随机组件
+window.move_widget_to(widget, 0)  # 改变组件图层关系，将组件移动至某层
+```
+`window`有如下标题方法:
+```python
+import easygame as eg
+window = eg.window()
+title = window.get_title()  # 获取窗口标题
+window.set_title('new title', 'new icon-title')  # 重设窗口标题
+```
+`window`有如下pygame方法:
+```python
+import easygame as eg
+window = eg.window()
+window.init()  # 初始化pygame，多次调用安全。在环境变量中"EASY_GAME_INIT"不为空的情况下将自动初始化
+window.quit(0)  # 退出pygame和python程序,0为退出状态码。
+```
+`window`有如下Getter属性:
+```python
+import easygame as eg
+window = eg.window()
+rect = window.rectangle  # 获取窗口的pygame.Rect对象
+center = rect.center  # 获取窗口中心
+pos = window.mouse_position  # 获取鼠标位置
+```
+使用`stop`关闭`window`:
+```python
+import easygame as eg
+window = eg.window()
+window.stop(a=1)  # 关闭window，调用over_function，传入的是over_function的参数。
+```
+使用`mainloop`显示窗口:
+```python
+import easygame as eg
+window = eg.window()
+window.mainloop(
+    status=0,  # 退出状态码
+    esc_quit=True,  # 按下ESC键是否退出
+    event_handler=eg.do_something,  # 处理pygame事件的函数，要有一个入参。
+    up_func=eg.do_something,  # 事件处理前调用的函数，用于绘制组件。
+    down_func=eg.do_something,  # 事件处理后调用的函数，用于判断并反馈。
+    over_function=eg.do_something,  # 退出后调用的函数
+)
+```
+Tips: `window.mainloop`方法会返回*Game Over*的字符。
+## 异常
+在`easygame`中可能抛出`EasyGameError`:
+```python
+import easygame as eg
+try:
+    window = eg.window()
+except eg.EasyGameError:
+    pass
+```
+## 颜色
+`easygame`收录了一些颜色的RGB元组:
+```python
+import easygame as eg
+eg.LIGHTPINK = (255, 182, 193)
+eg.PINK = (255, 192, 203)
+eg.CRIMSON = (220, 20, 60)
+eg.LAVENDERBLUSH = (255, 240, 245)
+eg.PALEVIOLETRED = (219, 112, 147)
+eg.HOTPINK = (255, 105, 180)
+eg.DEEPPINK = (255, 20, 147)
+eg.MEDIUMVIOLETRED = (199, 21, 133)
+eg.ORCHID = (218, 112, 214)
+eg.THISTLE = (216, 191, 216)
+eg.PLUM = (221, 160, 221)
+eg.VIOLET = (238, 130, 238)
+eg.MAGENTA = (255, 0, 255)
+eg.FUCHSIA = (255, 0, 255)
+eg.DARKMAGENTA = (139, 0, 139)
+eg.PURPLE = (128, 0, 128)
+eg.MEDIUMORCHID = (186, 85, 211)
+eg.DARKVOILET = (148, 0, 211)
+eg.DARKORCHID = (153, 50, 204)
+eg.INDIGO = (75, 0, 130)
+eg.BLUEVIOLET = (138, 43, 226)
+eg.MEDIUMPURPLE = (147, 112, 219)
+eg.MEDIUMSLATEBLUE = (123, 104, 238)
+eg.SLATEBLUE = (106, 90, 205)
+eg.DARKSLATEBLUE = (72, 61, 139)
+eg.LAVENDER = (230, 230, 250)
+eg.GHOSTWHITE = (248, 248, 255)
+eg.BLUE = (0, 0, 255)
+eg.MEDIUMBLUE = (0, 0, 205)
+eg.MIDNIGHTBLUE = (25, 25, 112)
+eg.DARKBLUE = (0, 0, 139)
+eg.NAVY = (0, 0, 128)
+eg.ROYALBLUE = (65, 105, 225)
+eg.CORNFLOWERBLUE = (100, 149, 237)
+eg.LIGHTSTEELBLUE = (176, 196, 222)
+eg.LIGHTSLATEGRAY = (119, 136, 153)
+eg.SLATEGRAY = (112, 128, 144)
+eg.DODERBLUE = (30, 144, 255)
+eg.ALICEBLUE = (240, 248, 255)
+eg.STEELBLUE = (70, 130, 180)
+eg.LIGHTSKYBLUE = (135, 206, 250)
+eg.SKYBLUE = (135, 206, 235)
+eg.DEEPSKYBLUE = (0, 191, 255)
+eg.LIGHTBLUE = (173, 216, 230)
+eg.POWDERBLUE = (176, 224, 230)
+eg.CADETBLUE = (95, 158, 160)
+eg.AZURE = (240, 255, 255)
+eg.LIGHTCYAN = (225, 255, 255)
+eg.PALETURQUOISE = (175, 238, 238)
+eg.CYAN = (0, 255, 255)
+eg.AQUA = (0, 255, 255)
+eg.DARKTURQUOISE = (0, 206, 209)
+eg.DARKSLATEGRAY = (47, 79, 79)
+eg.DARKCYAN = (0, 139, 139)
+eg.TEAL = (0, 128, 128)
+eg.MEDIUMTURQUOISE = (72, 209, 204)
+eg.LIGHTSEAGREEN = (32, 178, 170)
+eg.TURQUOISE = (64, 224, 208)
+eg.AUQAMARIN = (127, 255, 170)
+eg.MEDIUMAQUAMARINE = (0, 250, 154)
+eg.MEDIUMSPRINGGREEN = (245, 255, 250)
+eg.MINTCREAM = (0, 255, 127)
+eg.SPRINGGREEN = (60, 179, 113)
+eg.SEAGREEN = (46, 139, 87)
+eg.HONEYDEW = (240, 255, 240)
+eg.LIGHTGREEN = (144, 238, 144)
+eg.PALEGREEN = (152, 251, 152)
+eg.DARKSEAGREEN = (143, 188, 143)
+eg.LIMEGREEN = (50, 205, 50)
+eg.LIME = (0, 255, 0)
+eg.FORESTGREEN = (34, 139, 34)
+eg.GREEN = (0, 128, 0)
+eg.DARKGREEN = (0, 100, 0)
+eg.CHARTREUSE = (127, 255, 0)
+eg.LAWNGREEN = (124, 252, 0)
+eg.GREENYELLOW = (173, 255, 47)
+eg.OLIVEDRAB = (85, 107, 47)
+eg.BEIGE = (107, 142, 35)
+eg.LIGHTGOLDENRODYELLOW = (250, 250, 210)
+eg.IVORY = (255, 255, 240)
+eg.LIGHTYELLOW = (255, 255, 224)
+eg.YELLOW = (255, 255, 0)
+eg.OLIVE = (128, 128, 0)
+eg.DARKKHAKI = (189, 183, 107)
+eg.LEMONCHIFFON = (255, 250, 205)
+eg.PALEGODENROD = (238, 232, 170)
+eg.KHAKI = (240, 230, 140)
+eg.GOLD = (255, 215, 0)
+eg.CORNISLK = (255, 248, 220)
+eg.GOLDENROD = (218, 165, 32)
+eg.FLORALWHITE = (255, 250, 240)
+eg.OLDLACE = (253, 245, 230)
+eg.WHEAT = (245, 222, 179)
+eg.MOCCASIN = (255, 228, 181)
+eg.ORANGE = (255, 165, 0)
+eg.PAPAYAWHIP = (255, 239, 213)
+eg.BLANCHEDALMOND = (255, 235, 205)
+eg.NAVAJOWHITE = (255, 222, 173)
+eg.ANTIQUEWHITE = (250, 235, 215)
+eg.TAN = (210, 180, 140)
+eg.BRULYWOOD = (222, 184, 135)
+eg.BISQUE = (255, 228, 196)
+eg.DARKORANGE = (255, 140, 0)
+eg.LINEN = (250, 240, 230)
+eg.PERU = (205, 133, 63)
+eg.PEACHPUFF = (255, 218, 185)
+eg.SANDYBROWN = (244, 164, 96)
+eg.CHOCOLATE = (210, 105, 30)
+eg.SADDLEBROWN = (139, 69, 19)
+eg.SEASHELL = (255, 245, 238)
+eg.SIENNA = (160, 82, 45)
+eg.LIGHTSALMON = (255, 160, 122)
+eg.CORAL = (255, 127, 80)
+eg.ORANGERED = (255, 69, 0)
+eg.DARKSALMON = (233, 150, 122)
+eg.TOMATO = (255, 99, 71)
+eg.MISTYROSE = (255, 228, 225)
+eg.SALMON = (250, 128, 114)
+eg.SNOW = (255, 250, 250)
+eg.LIGHTCORAL = (240, 128, 128)
+eg.ROSYBROWN = (188, 143, 143)
+eg.INDIANRED = (205, 92, 92)
+eg.RED = (255, 0, 0)
+eg.BROWN = (165, 42, 42)
+eg.FIREBRICK = (178, 34, 34)
+eg.DARKRED = (139, 0, 0)
+eg.MAROON = (128, 0, 0)
+eg.WHITE = (255, 255, 255)
+eg.WHITESMOKE = (245, 245, 245)
+eg.GAINSBORO = (220, 220, 220)
+eg.LIGHTGREY = (211, 211, 211)
+eg.SILVER = (192, 192, 192)
+eg.DARKGRAY = (169, 169, 169)
+eg.GRAY = (128, 128, 128)
+eg.DIMGRAY = (105, 105, 105)
+eg.BLACK = (0, 0, 0)
+```
+## 音量
+easygame使用`volume`模块控制音量。
+```python
+import easygame.volume as vol
+```
+获得当前音量:
+```python
+import easygame.volume as vol
+v = vol.volume_engine.get_volume(no_found_value=0)  # no_found_value表示错误情况下返回的值，默认为0
+```
+设置当前音量:
+```python
+import easygame.volume as vol
+v = vol.volume_engine.set_volume(100, no_found_value=0)  # no_found_value表示音量不在范围内返回的值，默认为0
+```
+## 视频
+`easygame`使用`video`模块播放视频。
+```python
+import easygame.video as egv
+```
+`easygame`需要专用的`egv`格式视频文件，可以使用如下方式转换。
+```python
+from easygame.video.video2egv import VideoToEgv
+mp4_file = 'test.mp4'
+VideoToEgv(mp4_file).start_convert(
+    output='test.egv',  # 输出文件路径
+    password='easygame',  # 文件密码(暂不支持)
+    quality=100,   # 视频质量
+    ignore_errors=True,  # 忽略错误
+)
+```
+播放:
+```python
+import easygame.video as egv
+import easygame as eg
+
+window = eg.window()
+video = egv.Video(window)
+video.load('test.egv')  # load方式一：使用默认参数加载egv文件
+
+egv_file = egv.EasygameVideoFile('test.egv')
+egv_file.dump(
+    password='easygame',  # 文件密码(暂不支持)
+    image_size=(400, 200),  # 视屏大小，设为None不缩放
+    ignore_errors=True,  # 忽略错误
+    show_process_bar=True,  # 显示转换进度条
+)
+video.load(egv_file)  # load方式二：使用EasygameVideoFile类加载egv文件
+
+video.pack()
+window.mainloop()
+```
+## 项目
+easygame使用`project`模块管理项目:
+创建项目:
+```shell script
+python -m easygame.project new    
+```
+发布项目:
+```shell script
+python -m easygame.project pack 
+```
+## 版本
+easygame使用`version`模块为版本系统。
+```python
+from easygame.version import *
+print(version)  # str型的版本号
+print(vernum)  # tuple型的版本号
+print(micro)   # 小版本号
+print(minor)   # 中版本号
+print(major)  # 大版本号
+```
+下面是一个使用`version`的例子:
+```python
+from easygame.version import vernum
+if vernum < (1, 2, 0):
+    raise SystemExit
+```
+## 组件
+### secret-key
+`get_secret_key`可以保证安全性。
+```python
+import easygame as eg
+if eg.get_secret_key() != eg.SECRET_KEY:
+    raise SystemExit('secret-key is wrong')
+```
+### Widget
+`Widget`为组件基类，参数:
+```python
+Widget(
+    screen,  # easygame.window对象
+    *images,  # 造型图片
+    size=(40, 40),   # 图片大小
+    position=(0, 0),  # 初始位置
+)
+```
+使用`pack`方法添加到组件队列:
+```python
+import easygame as eg
+window = eg.window()
+widget = eg.Widget(window, 'test.png')
+widget.pack()  # 等同于 window.add_widget(widget)
+window.mainloop()
+```
+widget对象具有__call__方法:
+```python
+import easygame as eg
+window = eg.window()
+widget = eg.Widget(window, 'test.png')
+widget = widget(window, 'test2.png')  # 重设widget
+widget = widget.reset(window, 'test3.png')  # 使用此方法与上面的相同
+widget.pack()  # 等同于 window.add_widget(widget)
+window.mainloop()
+```
+使用`update`绘制widget:
+```python
+import easygame as eg
+def up_func():  # 回调函数
+    widget.update()
+window = eg.window()
+widget = eg.Widget(window, 'test.png')
+window.mainloop(up_func=up_func)
+```
+`widget`有如下造型方法:
+```python
+import easygame as eg
+window = eg.window()
+widget = eg.Widget(window, 'test.png', 'test2.png')
+widget.add_modelling()  # 增加一个造型编号
+widget.set_modelling(0)  # 设置造型编号
+number = widget.modelling  # 获取造型编号
+widget.pack()  # 等同于 window.add_widget(widget)
+window.mainloop()
+```
+`widget`有如下pygame方法:
+```python
+import easygame as eg
+window = eg.window()
+widget = eg.Widget(window, 'test.png')
+rect = widget.rectangle  # 组件的pygame.Rect对象
+surface = widget.get_screen()  # 窗口对象
+widget.pack()  # 等同于 window.add_widget(widget)
+window.mainloop()
+```
+`widget`有如下图层方法:
+```python
+import easygame as eg
+window = eg.window()
+widget1 = eg.Widget(window, 'test.png')
+widget2 = eg.Widget(window, 'test2.png')
+widget1.pack()
+widget2.pack()
+# pack之后才能对图层操作
+widget1.set_layer(0)  # 设置图层为0层(底层)
+widget1.set_layer_down()  # 移动至底层
+widget2.set_layer_up()   # 移动至顶层
+window.mainloop()
+```
+`widget`有如下移动方法:
+```python
+import easygame as eg
+window = eg.window()
+widget = eg.Widget(window, 'test.png')
+widget.move_to(100, 100)  # 移动至(100, 100)
+widget.move_x(50)  # 增加x坐标50
+widget.move_y(100)  # 增加y坐标100
+widget.move_to_mouse()  # 移动至鼠标指针
+widget.pack()
+window.mainloop()
+```
+我们可以写一个当鼠标点击就移动过去的程序:
+```python
+import easygame as eg
+def handler(event):
+    if event.type == eg.MOUSEBUTTONDOWN:
+        widget.move_to_mouse()
+window = eg.window()
+widget = eg.Widget(window, 'test.png')
+widget.pack()
+window.mainloop(event_handler=handler)
+```
+`widget`有如下检测方法:
+```python
+import easygame as eg
+window = eg.window()
+widget = eg.Widget(window, 'test.png')
+widget2 = eg.Widget(window, 'test2.png')
+widget.pack()
+near_x_side, near_y_side = widget.near_edge()
+# widget.near_edge方法返回两个值，第一个值为碰到上/下边缘，第二个值为碰到左/右边缘
+is_collide = widget.collide_other(widget2)  # 判断组件矩形对象是否相撞
+window.mainloop(esc_quit=False)
+```
+`widget`有如下转换方法:
+```python
+import easygame as eg
+window = eg.window()
+widget = eg.Widget(window, 'test.png', 'test2.png')
+widget.set_angel(0, 45)  # 将造型0设为45度
+widget.set_size(1, (60, 60))  # 将造型1设为60×60
+widget.pack()
+window.mainloop()
+```
+`widget`有如下音乐方法:
+```python
+import easygame as eg
+window = eg.window()
+widget = eg.Widget(window, 'test.png')
+widget.play_sound('test.wav', async_play=True)  # 异步播放音频，不支持MP3
+widget.play_sound('test.mp3', async_play=False)  # 同步播放音频，支持音频与操作系统有关
+widget.pause_sound()  # 暂停异步播放音频
+widget.unpause_sound()  # 继续异步播放音频
+widget.stop_sound()   # 停止异步播放音频
+widget.pack()
+window.mainloop()
+```
+### Background
+`Background`是一个背景类，默认置于底层。继承`Widget`类。
+```python
+import easygame as eg
+window = eg.window()
+background = eg.Background(window, 'back.png')
+background.pack()
+window.mainloop()
+```
+`Background`会自动适应窗口大小。<br>
+`Background`可以实现滚动背景:
+```python
+import easygame as eg
+def up_func():  # 更新回调
+    background1.rolling(speed=3)  # 滚动背景，速度为3
+    background2.rolling(speed=3)  # 需要2个背景对象
+window = eg.window()
+background1 = eg.Background(window, 'back.png')
+background2 = eg.Background(window, 'back.png')
+background1.pack()
+background2.pack()
+window.mainloop(up_func=up_func)
+```
+### Button
+`Button`是一个按钮类，继承`Widget`类。
+```python
+import easygame as eg
+window = eg.window()
+# 按钮类需要两个造型，为鼠标离开时的造型和鼠标碰到时的造型
+button = eg.Button(window, 'up.png', 'down.png')
+button.pack()
+window.mainloop()
+```
+`Button`提供了如下鼠标方法:
+```python
+import easygame as eg
+def handler(event: eg.EVENT_TYPE):  # 事件处理回调
+    if button.near_mouse():  # 鼠标指针碰到
+        print('near mouse')
+    if button.click(event):  # 按钮被点击
+        button.play_sound('pop.wav', async_play=False)  # 播放点击音效
+window = eg.window()
+# 按钮类需要两个造型，为鼠标离开时的造型和鼠标碰到时的造型
+button = eg.Button(window, 'up.png', 'down.png')
+button.pack()
+window.mainloop(event_handler=handler)
+```
+### Text
+`Text`是一个文字类，继承`Widget`类，无法执行大多数组件方法。
+```python
+import easygame as eg
+window = eg.window(title='hello world', size=(200, 200),
+                   bgcolor=eg.orange)
+text = eg.Text(window, 'hello world', font='test.ttf',
+               color=eg.black, size=40)   # 设置文字类
+text.set_text('hello easy-game')  # 重设文字
+text.pack() 
+window.mainloop(esc_quit=False)      
+```
+### Input
+`Input`类继承至`Button`类，按钮按下时输入才有效。<br>
+`Input`类的稳定性差，开发中不要使用。
+```python
+import easygame as eg
+def handler(event: eg.EVENT_TYPE): 
+    print(input_btn.input(event))  # 获取输入值
+window = eg.window(title='hello world', size=(200, 200),
+                   bgcolor=eg.orange)
+input_btn = eg.Input(window, 'up.png', 'down.png')
+window.mainloop(esc_quit=False, event_handler=handler)      
+```
+### Sprite
+`Sprite`继承至`Widget`类，与`Widget`无区别。<br>
+以下是它的增加的方法:
+```python
+import easygame as eg
+window = eg.window()
+sprite = eg.Sprite(window, 'test.png')
+sprite.say('hello!')  # 显示一个提示框，内容为hello
+sprite.pack()
+window.mainloop()
+```
+在开发中建议使用`Sprite`而不是`Widget`。
+### Canvas
+画布类，画笔只能在画布上绘画，继承至`Widget`
+类似tkinter中的Canvas。
+通过`pen = Canvas.init_pen()`获取一个画笔对象。
+```python
+import easygame as eg
+window = eg.window()
+canvas = eg.Canvas(window, position=(100, 100), size=(300, 300),
+                   bgcolor=eg.red)
+pen = canvas.init_pen(pen_position=(100, 100), pen_color=eg.banana)   # 创建画笔对象
+pen.go_to(200, 200)  # 移动至(200, 200)
+pen.clear()  # 清空画布
+pen.go_to(200, 300)     # 移动至(200, 300)   
+canvas.pack()
+window.mainloop()
+```
+## 测试安装
+使用如下命令测试`easygame`的安装:
+```shell script
+python -m easygame debug
+```
+使用如下命令测试`easygame`中`Pen`的安装:
+```shell script
+python -m easygame pen
+```
+# 更新日志
+- 0.9.3版本: 实现基础功能
+- 1.0.0版本: 增加mblock资源下载功能
+- 1.0.1版本: 增加`EVENT_TYPE`类型
+- 1.0.2版本: 完善文档和`setup`
+- 1.0.3版本: 解决窗口创建的bug
+- 1.1.0版本: 新增音量控制、创建项目功能
+- 1.1.1版本: 完善mblock资源下载提示
+- 1.2.0版本: 增加视频播放系统video模块，将版本号系统迁移至version模块
+- 1.3.0版本: 完善文档，解决窗口自动创建的bug，增加项目管理模块，将color模块更新
+# 信息
+作者: stripe-python
+维护者: stripe-python
+版本: 1.3.0
+
+pypi网址: [https://pypi.org/project/easygame/](https://pypi.org/project/easygame/)
+csdn: [https://blog.csdn.net/weixin_38805653?spm=1001.2101.3001.5343](https://blog.csdn.net/weixin_38805653?spm=1001.2101.3001.5343)
