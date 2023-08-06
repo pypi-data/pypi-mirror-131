@@ -1,0 +1,16 @@
+hypatie/__init__.py,sha256=z1EHckMw_kPn6s7n6lZgCLn2WPmbjSogcr8PueS81JA,485
+hypatie/animation.py,sha256=-0zaVBCvsCos8pPd2tCSoXLd3Y1KaXB4CpqpGK2QoT8,6760
+hypatie/catalogues.py,sha256=sGjnxMoYYMIXYAxe00wSIDLKRJ51_qk9FNnV9XSMLho,9123
+hypatie/cosmology.py,sha256=ZuXMM94761WU10HS3XoWPTGWrmiZt06pk7eLBo1Bw4w,4457
+hypatie/horizons.py,sha256=1iKRFTL7j7ETfDg33pP6jgvrP1Ut1e3KET-y6O-kGOg,12441
+hypatie/major_bodies.py,sha256=_m6c4DfzCsd79WGQj1oGk0xGzQ9guQ9OyuRHIThqqTs,4765
+hypatie/plots.py,sha256=IlQKj552UCuwTuLkL2xuXoqkbR_7T6qzWx0Stvsk3fQ,7333
+hypatie/simbad.py,sha256=0LTA3aUzLkRdOUKIU0O5GG-iUNEP2nXkksdlsPgjCqg,8802
+hypatie/simbad_bright_objects.py,sha256=1kwdHUeozHmWXLaGYQKYJn1t33-CutIH9tWF_CNCEq8,54475
+hypatie/simbad_otypes.py,sha256=YsXS08FykBHfzFI3GaauDZi8G90eWsIevVRNvLD45-M,8574
+hypatie/transform.py,sha256=AA-5ZOiB9MyKrNoxHK8c3o_nCJgopZY443QZV6V52tk,6203
+hypatie-2.8.0.dist-info/LICENSE.txt,sha256=xUUPh7-Cezg7Tj6iSBkhBbwkYRfWJBRmR38hLa9IKrM,1071
+hypatie-2.8.0.dist-info/METADATA,sha256=vU95mKc3iRW2DOPfuIaLBjjvSsvg3ky6w1P7MwuPIlU,4592
+hypatie-2.8.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+hypatie-2.8.0.dist-info/top_level.txt,sha256=tK_m_b0Bvus_LgEgYeiasZAE3RzjCXfYoSIq0mhHGRw,8
+hypatie-2.8.0.dist-info/RECORD,,
