@@ -1,0 +1,13 @@
+attrs>=19.0.0
+dectate>=0.12
+
+[docs]
+sphinx
+requests
+selenium
+
+[examples]
+selenium
+
+[test]
+pytest
