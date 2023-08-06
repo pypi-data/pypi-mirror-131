@@ -1,0 +1,11 @@
+Biopython
+numpy
+
+[test]
+pytest
+coverage
+pytest-cov
+collective.checkdocs
+pygments
+Biopython
+numpy
