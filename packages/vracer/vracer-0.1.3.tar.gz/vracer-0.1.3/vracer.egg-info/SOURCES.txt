@@ -1,0 +1,16 @@
+README.md
+setup.py
+vracer/__init__.py
+vracer/snoop_debug_some.py
+vracer.egg-info/PKG-INFO
+vracer.egg-info/SOURCES.txt
+vracer.egg-info/dependency_links.txt
+vracer.egg-info/requires.txt
+vracer.egg-info/top_level.txt
+vracer/snoop/__init__.py
+vracer/snoop/configuration.py
+vracer/snoop/formatting.py
+vracer/snoop/pp_module.py
+vracer/snoop/tracer.py
+vracer/snoop/utils.py
+vracer/snoop/variables.py
