@@ -1,0 +1,7 @@
+setup.py
+cnsns3n4.egg-info/PKG-INFO
+cnsns3n4.egg-info/SOURCES.txt
+cnsns3n4.egg-info/dependency_links.txt
+cnsns3n4.egg-info/top_level.txt
+lib/__init__.py
+lib/ns3.py
