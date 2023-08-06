@@ -1,0 +1,3 @@
+[console_scripts]
+biosimulators-xpp = biosimulators_xpp.__main__:main
+
