@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: codetmpl
+Version: 0.0.1.4
+Summary: Code templates.
+Home-page: https://gitee.com/peiiii/codetmpl
+Author: Wang Pei
+Author-email: 1535376447@qq.com
+License: UNKNOWN
+Description: # codetmpl
+        Code templates.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown

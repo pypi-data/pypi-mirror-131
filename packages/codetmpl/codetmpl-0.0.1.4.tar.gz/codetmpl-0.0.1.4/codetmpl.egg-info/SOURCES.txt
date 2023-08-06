@@ -1,0 +1,15 @@
+README.md
+setup.py
+codetmpl/__init__.py
+codetmpl/get_tmpl.py
+codetmpl/pkg_info.py
+codetmpl.egg-info/PKG-INFO
+codetmpl.egg-info/SOURCES.txt
+codetmpl.egg-info/dependency_links.txt
+codetmpl.egg-info/entry_points.txt
+codetmpl.egg-info/requires.txt
+codetmpl.egg-info/top_level.txt
+codetmpl/clitools/__init__.py
+codetmpl/clitools/cli.py
+codetmpl/code/__init__.py
+codetmpl/code/hi.py
