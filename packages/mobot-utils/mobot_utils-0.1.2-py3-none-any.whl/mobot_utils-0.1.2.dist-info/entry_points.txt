@@ -1,0 +1,4 @@
+[console_scripts]
+mobot_disp_cam = mobot_utils.disp_cam:main
+mobot_teleop = mobot_utils.teleop:main
+
