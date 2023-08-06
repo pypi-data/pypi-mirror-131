@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pindo
+Version: 0.2.4
+Summary: Build and Run Code in Docker.
+Home-page: https://github.com/clivern/pindo/
+Author: Clivern
+Author-email: hello@clivern.com
+License: MIT
+Project-URL: Documentation, https://github.com/clivern/pindo/
+Project-URL: Source, https://github.com/clivern/pindo/
+Project-URL: Changelog, https://github.com/Clivern/Pindo/blob/main/CHANGELOG.rst
+Project-URL: Tracker, https://github.com/Clivern/Pindo/issues
+Project-URL: Download, https://pypi.org/project/Pindo/#files
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/x-rst; charset=UTF-8
+Provides-Extra: testing
+License-File: LICENSE.txt
+
+.. image:: https://img.shields.io/pypi/v/Pindo.svg
+    :alt: PyPI-Server
+    :target: https://pypi.org/project/Pindo/
+.. image:: https://github.com/Clivern/Pindo/actions/workflows/ci.yml/badge.svg
+    :alt: Build Status
+    :target: https://github.com/Clivern/Pindo/actions/workflows/ci.yml
+
+|
+
+=====
+Pindo
+=====
+
+    Build and Run Code in Docker.
+
+
+It supports a broad range of programming languages and versions.
+
+
+.. _pyscaffold-notes:
+
+Note
+====
+
+This project is created and maintained for Cookie. see https://github.com/Clivern/Cookie
+
+
