@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "watchmen-storage-engine"
+version = "15.2.1"
+description = ""
+authors = ["luke0623 <luke0623@outlook.com>"]
+
+
+packages = [
+    { include = "storage" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^1.8.2"
+arrow = "^1.1.0"
+SQLAlchemy = "^1.4.27"
+#watchmen-boot = "^15.1.13"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
