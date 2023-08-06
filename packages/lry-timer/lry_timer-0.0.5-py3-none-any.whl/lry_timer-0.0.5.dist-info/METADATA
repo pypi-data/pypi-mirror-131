@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: lry-timer
+Version: 0.0.5
+Summary: this package is made by lry
+Home-page: https://github//lry-123456789
+Author: lry
+Author-email: 1224137702@qq.com
+Maintainer: lry
+Maintainer-email: 1224137702@qq.com
+License: MIT LICENSE
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.1
+License-File: LICENSE
+Requires-Dist: turtle
+
+UNKNOWN
+
