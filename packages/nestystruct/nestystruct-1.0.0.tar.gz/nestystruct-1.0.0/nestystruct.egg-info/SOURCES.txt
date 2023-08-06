@@ -1,0 +1,6 @@
+nestystruct.py
+setup.py
+nestystruct.egg-info/PKG-INFO
+nestystruct.egg-info/SOURCES.txt
+nestystruct.egg-info/dependency_links.txt
+nestystruct.egg-info/top_level.txt
