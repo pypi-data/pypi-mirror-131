@@ -1,0 +1,51 @@
+question: |
+  You are invited to participate in the production of videos related to LITE Lab (LLAW3254) at the University of Hong Kong.
+subquestion: |
+  Classes, including your final class presentation on 25th November, are being recorded and you may separately be invited to answer questions regarding your learning experience and details of your projects.
+
+  By indicating your consent in this form, you fully understand and consent to the capture, reproduction and republication of materials captured during or outside class in relation to LITE Lab in any form of media, including but not limited to texts, images and videos. The material will be used to promote LITE Lab or any activities in relation to it.
+  
+  Please fill in your personal information
+fields:
+  - Name: name
+  - HKUID: HKUID
+  - Degree: Degree
+  - Major: Major
+  - Year: Year
+    choices:
+      - Year 1
+      - Year 2
+      - Year 3
+      - Year 4
+      - Year 5
+      - Year 6
+---
+question: |
+  Do you hereby agree to the following terms
+subquestion: |
+ By signing this form, I hereby grant permission to allow the rights of my image, in video or still, and of the likeness and sound of my voice as recorded on audio or video without payment or any other consideration. I understand that my image may be edited, copied, exhibited, published or distributed and waive the right to inspect or approve the finished product wherein my likeness appears.
+  Additionally, I waive any right to royalties or other compensation arising or related to the use of my image or recording. I also understand that this material may be used in diverse educational settings within The University of Hong Kong or respective areas and the Internet.
+  Photographic, audio or video recordings may be used for the media content of The University of Hong Kong – Faculty of Law and LITE Lab@HKU, which may include but is not limited to:
+  ·       Presentations
+  ·       Promotional Content (print and social media)
+  ·       Online/Internet Videos
+  ·       Media - News (Press Releases) 
+
+signature: signature
+under: |
+  ${ name }
+---
+question: |
+  This is your signed Video Release Form
+attachment:
+  name: VRF
+  filename: LLAWVRF
+  docx template file: Video_Release_Form.docx
+  field code:
+    - date: today()
+
+buttons:
+  - Exit: exit
+  
+mandatory: True
+---
