@@ -1,0 +1,8 @@
+emcee==3.1.0
+pycheops-ultra==1.0.1
+ultranest==3.3.0
+cython==0.29.24
+pathos==0.2.8
+mpi4py==3.0.3
+scikit-learn==0.24.2
+statsmodels==0.12.2
