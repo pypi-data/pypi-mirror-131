@@ -1,0 +1,16 @@
+murmurhash/__init__.pxd,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+murmurhash/__init__.py,sha256=bTp8Ywc1mmax2aLd0Trvrx8GHDXR7evW-xBjLPwQAig,187
+murmurhash/about.py,sha256=AvAZXevwRgGNe4K1H967zPStDDR7kwbaldqp_TT97DA,242
+murmurhash/mrmr.cp37-win_amd64.pyd,sha256=xQgRSpZyP3cn-dBrYRO_jbNEePIXqZWFBuQOlXuw14o,32768
+murmurhash/mrmr.pxd,sha256=TeG084GacpkLfrVZGL9JAcrKIOnU1BgjO5JRFFMd0JI,423
+murmurhash/mrmr.pyx,sha256=abqAs4akJxdtxGapmL8tICCMFsES1-T6WBRX-6Loc9o,1720
+murmurhash/include/murmurhash/MurmurHash2.h,sha256=XdB7m8rwmkmUD4xvkRdFRTeWdZjhO9w_6JtaDQom1WA,951
+murmurhash/include/murmurhash/MurmurHash3.h,sha256=L2TItRHLAG51WGp3Oyjl5IV_8_xWM9I7XQmjs0_Uh-U,832
+murmurhash/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+murmurhash/tests/test_against_mmh3.py,sha256=plfvb6yqu336TNzjJVik3GJkRNxlLBWNB_RS1Y6L12c,250
+murmurhash/tests/test_import.py,sha256=xRJwTAWHgV476hbrnwVxc0X7ZoaIQIVJpv7OeF-tM1A,74
+murmurhash-1.0.7.dev0.dist-info/LICENSE,sha256=qYmw8fjg63eB_mpcW8U1cABGlUhzAEvGNDTX8tL9UPk,1149
+murmurhash-1.0.7.dev0.dist-info/METADATA,sha256=XQdWbHyttSoL24maK4eUJqJosXfRoDTrMN32lLaHDy8,2152
+murmurhash-1.0.7.dev0.dist-info/WHEEL,sha256=OmDKD3JmZjhMu_YdpkiJDfFL1rf8n9nexhWCGhSBGVE,101
+murmurhash-1.0.7.dev0.dist-info/top_level.txt,sha256=37hvI7C4Z2cW11PztHPQCxMfr24Z7qJcMPaBDDj4F_s,11
+murmurhash-1.0.7.dev0.dist-info/RECORD,,
