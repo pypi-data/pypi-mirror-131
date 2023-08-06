@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: odoo10-addons-oca-delivery-carrier
+Version: 10.0.20211220.0
+Summary: Meta package for oca-delivery-carrier Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 10.0
+Requires-Dist: odoo10-addon-base-delivery-carrier-files
+Requires-Dist: odoo10-addon-base-delivery-carrier-files-document
+Requires-Dist: odoo10-addon-base-delivery-carrier-label
+Requires-Dist: odoo10-addon-delivery-auto-refresh
+Requires-Dist: odoo10-addon-delivery-carrier-b2c
+Requires-Dist: odoo10-addon-delivery-carrier-category
+Requires-Dist: odoo10-addon-delivery-carrier-default-tracking-url
+Requires-Dist: odoo10-addon-delivery-carrier-deposit
+Requires-Dist: odoo10-addon-delivery-carrier-file-tnt
+Requires-Dist: odoo10-addon-delivery-carrier-label-default
+Requires-Dist: odoo10-addon-delivery-carrier-label-postlogistics
+Requires-Dist: odoo10-addon-delivery-carrier-partner
+Requires-Dist: odoo10-addon-delivery-dropoff-site
+Requires-Dist: odoo10-addon-delivery-multi-destination
+Requires-Dist: odoo10-addon-delivery-price-by-category
+Requires-Dist: odoo10-addon-delivery-price-rule-untaxed
+Requires-Dist: odoo10-addon-sale-delivery-rate
+Requires-Dist: odoo10-addon-stock-picking-delivery-info-computation
+Requires-Dist: odoo10-addon-stock-picking-delivery-rate
+
+UNKNOWN
+
