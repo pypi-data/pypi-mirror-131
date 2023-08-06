@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+fastproaudio/__init__.py
+fastproaudio/_nbdev.py
+fastproaudio/core.py
+fastproaudio.egg-info/PKG-INFO
+fastproaudio.egg-info/SOURCES.txt
+fastproaudio.egg-info/dependency_links.txt
+fastproaudio.egg-info/entry_points.txt
+fastproaudio.egg-info/not-zip-safe
+fastproaudio.egg-info/requires.txt
+fastproaudio.egg-info/top_level.txt

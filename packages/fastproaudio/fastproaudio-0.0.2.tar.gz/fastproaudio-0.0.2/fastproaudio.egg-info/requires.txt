@@ -1,0 +1,10 @@
+audioread
+fastai
+librosa
+packaging
+pip
+pyzenodo3
+soundfile
+torchaudio
+
+[dev]
