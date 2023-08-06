@@ -1,0 +1,190 @@
+方法目录
+=
+---
+
+b_c_components：
+=
+
+ 获取当前时间段内页面所产生的请求方法: info
+
+         引用路径:from b_c_components.Intercept_requests.selenium_network import info
+         入参:driver实体对象
+         返回:一个嵌套字典的List集合
+ 获取excel内容类: 
+
+         引用路径 from b_c_components.get_excel.do_excel import do_excel 
+         类初始化参数: 
+                 r_filename:Excel文件路径， 必填 
+                 r_sheet_name: sheet名称，非必填，无值时，取第一个sheet 
+         类方法:read_excel 
+                 is_namedtuple: 是否返回命名元组，1是，0返回excel所有列的list嵌套 
+                 min_row: 读取数据从最小的第几行开始读取 
+                 max_col: 读取数据最大列到第几列 
+                 namedtuple_name: 命名元组名称 
+                 col: 命名元组获取的名称为多行时，指定第几行为元组的key 
+                 namedtuple_min_row:命名元组获取名称从第几行开始获取 
+                 namedtuple_max_row:命名元组获取名称到第几行终止 
+                 namedtuple_min_col:命名元组获取名称从第几列开始获取 
+                 namedtuple_max_col:命名元组获取名称到第几列终止 
+         返回list集合（集合内嵌套字典｜命名元组） 
+ 读取config配置文件: 
+
+         引用路径: from b_c_components.get_config import Settings 
+         类初始化参数: 
+                 config_path:配置文件的绝对路径 
+         类方法: get_setting 
+                 section: 区块名称 
+                 my_setting: setting名称 
+         返回:string类型的数据 
+         类方法: get_int 
+                 section: 区块名称 
+                 my_setting: setting名称 
+         返回:int类型的数据 
+ 自动根据当前系统的chrome版本获取chromedriver对应版本的驱动 
+
+         引用路径: from b_c_components.get_b_version.get_version import auto_get_browser_driver 
+         入参: 
+                 config_path 方法依赖配置文件的路径 
+         返回参数: 下载好的驱动地址 
+         配置文件中的节点: 
+                 [windows_browser_path] 
+                 chrome_browser_path = 当前windows操作系统的chrome执行文件地址 
+                 service_chrome_browser_path = C:\Program Files\Google\Chrome\Application\chrome.exe # 40.28服务器的chrome执行文件地址
+                 [mac_browser_plist_path]
+                 chrome_list_path = 当前mac操作系统的chrome执行文件地址
+ 自定义异常类型类:
+
+         引用路径: from b_c_components.custom_module.custom_exceptions import Configuration_file_error
+         类初始化参数:Configuration_file_error(msg='自定义返回错误信息')
+         抛出异常类型为:Configuration_file_error
+         抛出异常内容为:定义的msg，不定义默认为空
+ log封装类:
+
+         引用路径:from b_c_components.log.log import Logging
+         类初始化参数:
+                 log_path:log落地文件地址
+                 loh_Level: log等级，默认值为INFO
+         例:
+
+            def demo():
+                 log = Logging("path/log.log", 'DEBUG')
+                 try:
+                     int("触发异常")
+                 except Exception as e:
+                     log.logger.log(log.logger.level, msg=e)
+ 获取环境对应url：
+
+    引用路径:from b_c_components.get_environment_data import get_environment_data
+    方法参数：environment， 默认值None
+        参数为none时，优先调用临时环境变量中的environment值；
+        environment值为空时，调用配置文件获取environment；以上兼容，需要前置定义环境变量
+
+---
+v3_components:
+=
+UI登陆接口类 v3_login_ui:
+
+    引用路径: from v3_components.page.login import v3_login_ui
+    类初始化参数:
+        config_path:类依赖配置文件路径
+        driver:driver实例，非必填，不传时，自动创建实例（基础，不包含任何设置的实例）
+    -类方法:login_tms
+        入参:
+        app_name:应用名称[测评，360...]
+        username:邮箱
+        password:密码
+        返回参数: 带cookie的driver实例
+    配置文件依赖节点:
+        [environment_data] 环境节点
+            environment = test 或 prod
+
+interface登陆接口 v3_login_interface:
+
+    引用路径: from v3_components.page.login import v3_login_interface
+    类无初始化参数
+    类方法:login_tms
+        入参:
+        environment:环境
+        username:邮箱
+        password:密码
+---
+v5_components:
+=
+italent UI 登陆 login
+
+    引用路径: from v5_components.page.module import login
+    入参:
+        environment:环境
+        username:邮箱
+        password:密码
+        driver:driver实例
+    无返回参数
+italent_interface 登陆 login_interface
+
+    引用路径: from v5_components.page.module import login_interface
+    入参:
+        environment:环境
+        username:邮箱
+        password:密码
+    返回:带cookie的session
+italent UI 代办处理 unfinished_transactions
+
+    引用路径: from v5_components.page.module import unfinished_transactions
+    入参:
+        driver:driver实例
+        environment:环境link|cn
+        transaction_type: 产品名称[绩效管理、测评中心、人才模型]
+        transaction_name: 活动名称
+    无返回参数:UI进行页面跳转至待办链接
+切换菜单 go_to_menu
+
+    引用路径: from v5_components.page.module import go_to_menu
+    入参:
+        driver:driver实例
+        environment:环境
+        menu_name:菜单名称
+    无返回参数:UI进行页面跳转至对应用页面
+    菜单名称与链接的映射由远程文件控制，地址:http://8.141.50.128/static/json_data/menu_mapping.json
+获取页面产生的fromview的最后一个请求中的字段数据 get_form_view
+
+    引用路径: from v5_components.page.module import get_form_view
+    入参
+        driver:driver实例
+    返回参数:一个包含字典的list集合
+                list[{
+                    'cmp_id': 'cmp_id',
+                    'cmp_label': 'cmp_label',
+                    'cmp_name': 'cmp_name',
+                    'cmp_type': 'cmp_type',
+                    'cmp_data': 'cmp_data'
+                }]
+操作表单方法，自动填充所有传入的的字段 option_form
+
+    引用路径: from v5_components.page.module import option_form
+    入参:
+        driver: driver实例
+        fields_to_operate_on_list: 需要操作的字段嵌套List （get_form_view的返回值）
+    无返回参数：对应页面的表单自动填充
+视图新增按钮的操作 add_or_edit_manipulate_fields
+
+    引入路径: from v5_components.page.module import add_or_edit_manipulate_fields
+    入参:
+        driver: driver实例
+        button_xpath: 新增功能按钮的xpath路径
+    无返回参数:调用此方法，自动对视图的新增按钮进行点击、表单填充、保存
+视图复制按钮的操作 copy_list_data
+
+    引用路径: from v5_components.page.module import copy_list_data
+    入参:
+        driver: driver实例
+        list_index: 要复制的数据的在当前页面列表的位置
+        button_xpath: 复制功能按钮的xpath路径
+    无返回参数: 调用此方法，自动对视图的复制功能进行操作，复制数据
+视图删除按钮的操作 delete_list_data
+
+    引用路径: from v5_components.page.module import delete_list_data
+    入参:
+        driver: driver实例
+        list_index: 要删除的数据的在当前页面列表的位置
+        button_xpath: 新增功能按钮的xpath路径
+    无返回参数: 调用此方法，自动对视图的删除功能进行操作，删除数据
