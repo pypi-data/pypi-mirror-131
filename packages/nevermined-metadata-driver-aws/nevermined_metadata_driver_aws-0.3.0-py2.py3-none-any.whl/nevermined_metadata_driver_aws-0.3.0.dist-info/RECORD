@@ -1,0 +1,11 @@
+metadata_driver_aws/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+metadata_driver_aws/config_parser.py,sha256=SfgqXE-dhu6OnCmjFhu_Uxq0R5-3I_DRKtifRyk5BOg,1051
+metadata_driver_aws/data_plugin.py,sha256=uw3MIgrNv8uTYkHBVdI_15pDWfh5ftPTWy8MTanQPQI,10774
+metadata_driver_aws/log.py,sha256=Rv6bSmKQcHwDmFPjNDzWlRfRVro7LWdZBa_MKWknLIw,1032
+metadata_driver_aws/s3_client.py,sha256=nsd1S5zujDjme7fN3RoO3NkuNeyi73hDmkIl0jSGDwI,2156
+nevermined_metadata_driver_aws-0.3.0.dist-info/LICENSE,sha256=o2v4qP0_oyBys4nfvXggQyBHudYcA5NGc6M8-JRXYkc,11459
+nevermined_metadata_driver_aws-0.3.0.dist-info/METADATA,sha256=Gkb-OFgxtl9bWX-tpoyHHd8PBLoBl9DY9CL2TFRgyPs,3480
+nevermined_metadata_driver_aws-0.3.0.dist-info/NOTICE,sha256=ANivn6A3MhHsTrD7VPQS5799NXNXJfY5F8pUkQ5mqbw,153
+nevermined_metadata_driver_aws-0.3.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+nevermined_metadata_driver_aws-0.3.0.dist-info/top_level.txt,sha256=Cj-P-yJ4GwOy5lpBdP3_rPWwiODC1G233hOXtHscPa0,20
+nevermined_metadata_driver_aws-0.3.0.dist-info/RECORD,,
