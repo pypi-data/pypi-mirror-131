@@ -1,0 +1,3 @@
+[console_scripts]
+blenderproc = blenderproc.command_line:cli
+
