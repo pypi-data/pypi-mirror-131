@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/optax_shampoo/__init__.py
+src/optax_shampoo/distributed_shampoo.py
+src/optax_shampoo.egg-info/PKG-INFO
+src/optax_shampoo.egg-info/SOURCES.txt
+src/optax_shampoo.egg-info/dependency_links.txt
+src/optax_shampoo.egg-info/top_level.txt
