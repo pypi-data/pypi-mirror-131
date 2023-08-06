@@ -1,0 +1,5 @@
+rocksdb3-0.0.5.dist-info/METADATA,sha256=8K-eGg0inevjXwjaJISmZ8Icra3KdOUxwhC-bzVYiak,2917
+rocksdb3-0.0.5.dist-info/WHEEL,sha256=-rUOFMl45PDnLJexcW16eeOi8dJm28MUM_M2AFzNr8c,106
+rocksdb3/__init__.py,sha256=Xo5AWPZeHg4-lFaq8-tYEDYyWHPo-wQOJF6a2qTivOY,52
+rocksdb3/rocksdb3.cpython-310-darwin.so,sha256=6mH5a_ToHZiqyb3KL2KIjA7t37a7sjBY7cRUbLxYUUM,5513808
+rocksdb3-0.0.5.dist-info/RECORD,,
