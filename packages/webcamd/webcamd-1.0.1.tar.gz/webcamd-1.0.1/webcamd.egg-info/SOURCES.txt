@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+tests/__init__.py
+tests/spec_webcamd.py
+webcamd/__init__.py
+webcamd/__main__.py
+webcamd.egg-info/PKG-INFO
+webcamd.egg-info/SOURCES.txt
+webcamd.egg-info/dependency_links.txt
+webcamd.egg-info/entry_points.txt
+webcamd.egg-info/requires.txt
+webcamd.egg-info/top_level.txt
