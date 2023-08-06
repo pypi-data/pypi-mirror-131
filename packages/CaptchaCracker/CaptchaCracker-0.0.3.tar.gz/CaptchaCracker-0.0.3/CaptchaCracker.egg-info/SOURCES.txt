@@ -1,0 +1,7 @@
+README.md
+setup.py
+CaptchaCracker/__init__.py
+CaptchaCracker.egg-info/PKG-INFO
+CaptchaCracker.egg-info/SOURCES.txt
+CaptchaCracker.egg-info/dependency_links.txt
+CaptchaCracker.egg-info/top_level.txt
