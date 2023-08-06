@@ -1,0 +1,12 @@
+facekit/__init__.py,sha256=Zrv57EzpjdsuSPqsYvFkVsQKKRUOHFG7yURCf7qN-Tk,23
+facekit/__main__.py,sha256=ylmaJG7x6MPXiAYb9VBlC5tD2uVj3CVcZhQswNNEuII,2148
+facekit/detectors.py,sha256=rjYL6c4fQFse7PgJtXXL9qgotCe5qai_jYAC7bjs0Kg,4272
+facekit/loaders.py,sha256=_vKaeFai0IdbUqjhVtH4K5UBFUa7_629l4V3tgYu7eU,389
+facekit/models.py,sha256=JKzBYU227zq-jTEstlAdYIGS2J7RqefUNLdGc9yq5jI,5112
+facekit/schemas.py,sha256=K58xcHOlwK3nf85m29GDMzncnv4ZE0MNW8PiJRtQr1U,577
+facekit-1.1.0.dist-info/LICENSE,sha256=9xSNRlAQyGg64uC7e4P01AD2g-fx6vGYVbddv2EgDXU,1089
+facekit-1.1.0.dist-info/METADATA,sha256=hGooVmvRc_rUFcCn-uiNJ-u_4sz_mTW6cT-wak3ocvw,2566
+facekit-1.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+facekit-1.1.0.dist-info/entry_points.txt,sha256=HIw7ZfzvmnucX0IPdOhm13Df0NBhPXqauB6GDioyumg,51
+facekit-1.1.0.dist-info/top_level.txt,sha256=7AfSsh2bPhuuRBRp8vf2WtPt7wvLHUcqn72cS0GM4No,8
+facekit-1.1.0.dist-info/RECORD,,

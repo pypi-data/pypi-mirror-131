@@ -1,0 +1,3 @@
+[console_scripts]
+facekit = facekit.__main__:main
+
