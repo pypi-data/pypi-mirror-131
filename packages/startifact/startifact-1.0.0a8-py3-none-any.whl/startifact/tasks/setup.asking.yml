@@ -1,0 +1,91 @@
+start:
+  - title: Startifact organisation setup
+  - text: Refer to https://cariad.github.io/startifact for guidance.
+  - goto: regions
+
+regions:
+  - text: Enter the comma-separated list of regions that Startifact should use.
+  - text: For example, "us-east-1,eu-west-2".
+  - ask:
+      question: Regions?
+      key: regions
+      recall: true
+      branches:
+        - response: "^[a-z0-9\\-,\\s]+$"
+          then:
+            - goto: bucket_name_param
+
+bucket_name_param:
+  - text:
+      Enter the name of the Systems Manager parameter that holds the name of
+      your artifacts S3 bucket.
+  - text:
+      This parameter must exist already in every region you entered above.
+  - ask:
+      question: Parameter name?
+      key: bucket_name_param
+      recall: true
+      branches:
+        - response: "^.+$"
+          then:
+            - goto: bucket_key_prefix
+
+bucket_key_prefix:
+  - text:
+      A key prefix isn't necessary if Startifact is the only tool that will use
+      the artifacts buckets.
+  - text:
+      If the bucket needs to be shared with other processes then a unique key
+      prefix can prevent clobbering.
+  - text:
+      If you enter a key prefix then it must contain only alphanumeric, "-", "_"
+      or "." characters, and must end with a "/".
+  - ask:
+      question: Bucket key prefix?
+      key: bucket_key_prefix
+      recall: true
+      branches:
+        - response: "(^$)|(^[a-zA-Z0-9\\-_\\.]*/$)"
+          then:
+            - goto: parameter_name_prefix
+
+parameter_name_prefix:
+  - text:
+      By default, projects will be recorded in the root of Systems Manager
+      Parameter Store under their name.
+  - text:
+      For example, the "SugarWater" project will be recorded under a
+      "/SugarWater" parameter.
+  - text:
+      A prefix is optional. If you enter a prefix then it must start with a "/"
+      but not end with a  "/".
+  - text:
+      For example, the prefix "/my-platform" would cause the "SugarWater"
+      project to be recorded under "/my-platform/SugarWater".
+  - ask:
+      question: Project parameter name prefix?
+      key: parameter_name_prefix
+      recall: true
+      branches:
+        - response: "(^$)|(^\\/.*[^\\/]$)"
+          then:
+            - goto: finalise
+
+finalise:
+  - text:
+      Startifact is now ready to save your configuration to Systems Manager
+      parameters named {param_fmt} in your requested regions.
+  - text:
+      If Startifact is already in use in your organisation then this change will
+      take effect as soon as it is saved.
+  - responses: json
+  - ask:
+      question: Okay to save?
+      key: save_ok
+      branches:
+        - response: y
+          then:
+            - stop: true
+        - response: n
+          then:
+            - stop: false

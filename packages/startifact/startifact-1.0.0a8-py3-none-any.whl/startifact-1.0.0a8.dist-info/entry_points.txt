@@ -1,0 +1,3 @@
+[console_scripts]
+startifact = startifact.__main__:entry
+
