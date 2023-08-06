@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/calculations/__init__.py
+src/calculations/addition.py
+src/calculations/division.py
+src/calculations/multiply.py
+src/calculations/subtraction.py
+src/example_pkg_Irene.egg-info/PKG-INFO
+src/example_pkg_Irene.egg-info/SOURCES.txt
+src/example_pkg_Irene.egg-info/dependency_links.txt
+src/example_pkg_Irene.egg-info/top_level.txt
