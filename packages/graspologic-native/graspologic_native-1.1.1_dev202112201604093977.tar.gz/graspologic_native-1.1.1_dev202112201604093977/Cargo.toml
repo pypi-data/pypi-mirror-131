@@ -1,0 +1,37 @@
+[dependencies]
+rand = "0.8"
+rand_xorshift = "0.3"
+
+[dependencies.chrono]
+optional = true
+version = "0.4"
+
+[dependencies.network_partitions]
+path = "local_dependencies/network_partitions"
+
+[dependencies.pyo3]
+features = ["extension-module", "abi3-py36"]
+logging = ["network_partitions/logging", "chrono"]
+version = "0.15.1"
+
+[lib]
+crate-type = ["rlib", "cdylib"]
+name = "graspologic_native"
+
+[package]
+authors = ["daxpryce@microsoft.com"]
+description = "Python native companion module to the graspologic library"
+edition = "2018"
+license = "MIT"
+name = "graspologic_native"
+readme = "README.md"
+version = "1.1.1-dev202112201604093977"
+[package.metadata.maturin]
+classifier = ["Development Status :: 5 - Production/Stable", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Topic :: Scientific/Engineering :: Mathematics"]
+maintainer = "Dax Pryce"
+maintainer-email = "daxpryce@microsoft.com"
+requires-python = ">=3.6,<3.11"
+
+[package.metadata.maturin.project-url]
+Github = "https://github.com/microsoft/graspologic-native"
+Graspologic = "https://github.com/microsoft/graspologic"
