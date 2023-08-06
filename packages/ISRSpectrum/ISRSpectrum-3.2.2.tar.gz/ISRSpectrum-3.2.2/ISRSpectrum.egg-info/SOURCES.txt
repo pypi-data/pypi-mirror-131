@@ -1,0 +1,16 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+ISRSpectrum/ISRSpectrum.py
+ISRSpectrum/__init__.py
+ISRSpectrum/_version.py
+ISRSpectrum/ion2ion.csv
+ISRSpectrum/ion2neu.csv
+ISRSpectrum/mathutils.py
+ISRSpectrum.egg-info/PKG-INFO
+ISRSpectrum.egg-info/SOURCES.txt
+ISRSpectrum.egg-info/dependency_links.txt
+ISRSpectrum.egg-info/requires.txt
+ISRSpectrum.egg-info/top_level.txt
+test/test_isr.py

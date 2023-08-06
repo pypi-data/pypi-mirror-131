@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ISRSpectrum
+Version: 3.2.2
+Summary: Creates ISR Spectrums
+Home-page: https://github.com/jswoboda/ISRSpectrum
+Author: John Swoboda
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
+Provides-Extra: plot
+License-File: LICENSE.md
+
+UNKNOWN
+
