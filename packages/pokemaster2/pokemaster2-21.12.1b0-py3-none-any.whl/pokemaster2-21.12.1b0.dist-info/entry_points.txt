@@ -1,0 +1,3 @@
+[console_scripts]
+pokemaster2=pokemaster2.cli:main
+
