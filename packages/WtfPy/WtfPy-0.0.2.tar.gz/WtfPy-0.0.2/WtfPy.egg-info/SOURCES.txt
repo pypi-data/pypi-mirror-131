@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+WtfPy/WtfPy.py
+WtfPy/__init__.py
+WtfPy/__main__.py
+WtfPy.egg-info/PKG-INFO
+WtfPy.egg-info/SOURCES.txt
+WtfPy.egg-info/dependency_links.txt
+WtfPy.egg-info/requires.txt
+WtfPy.egg-info/top_level.txt
