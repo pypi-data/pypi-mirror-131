@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+counter_properties_pkg/__init__.py
+counter_properties_pkg/counter_properties.py
+example_pkg_offer_counter.egg-info/PKG-INFO
+example_pkg_offer_counter.egg-info/SOURCES.txt
+example_pkg_offer_counter.egg-info/dependency_links.txt
+example_pkg_offer_counter.egg-info/top_level.txt
