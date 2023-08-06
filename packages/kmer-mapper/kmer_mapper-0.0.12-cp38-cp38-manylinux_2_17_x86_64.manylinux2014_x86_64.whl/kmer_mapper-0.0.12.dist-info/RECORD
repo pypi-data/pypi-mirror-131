@@ -1,0 +1,17 @@
+mapper.cpython-38-x86_64-linux-gnu.so,sha256=VLk0hXjfGwmFUfU_BQESHf9fanTJzlEsWG2JsZ0c-S4,2313880
+kmer_mapper/numpy_mapping.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kmer_mapper/mapper.cpython-38-x86_64-linux-gnu.so,sha256=KXhQvhqP4-K6HQ_VBuVljdnbGIYWGI8sN_4aAAa4mNU,2447352
+kmer_mapper/encodings.py,sha256=QqdCcIzzGKANMUisXOT6Bc8rZYO5jztHbAhuHbEsYdY,3853
+kmer_mapper/parser.py,sha256=jNBqqpvyj3CTgqoN2QT6Hqb8ZRFeh7WisHH6SGjcdcg,13775
+kmer_mapper/sequences.py,sha256=YQFyISZXZwV41EL8i23YRvyBQHJLad88oaW9N25PzJk,783
+kmer_mapper/kmer_counting.py,sha256=8DBBi0B6sSvNik713q_v6qNKCILkFVlIh-F35_1wLyY,2123
+kmer_mapper/mapping.py,sha256=15_f6ceZXAo-mveYMconBOUFwP8CwyCX_SBN_-W6poo,11650
+kmer_mapper/kmer_lookup.py,sha256=hrb3q27C2nR-K6ycQzq6YAN-r4T3_CylBKVhYKS1EwY,6908
+kmer_mapper/kmers.py,sha256=c4yo3l2imDuXVAUKTTSGPdCBA5gdOQMyZQPHX9O_Z94,3822
+kmer_mapper/command_line_interface.py,sha256=wiTAicwPj2EdikG1qOmDeE2MG2L2u-LzyimW_JfP5i4,4175
+kmer_mapper/util.py,sha256=SkwLaS7uMg4S1gf1iX_X-SXwXF0FYVotxM_oFJXJREk,591
+kmer_mapper-0.0.12.dist-info/METADATA,sha256=Wu3oA_hs4c2oMYbN7NRVLr10ByJaH_C07VXrJ_pd4IM,456
+kmer_mapper-0.0.12.dist-info/RECORD,,
+kmer_mapper-0.0.12.dist-info/top_level.txt,sha256=yP3gOgnVAF2eSTSB4cKyVIVJogaXHBYMF7n2CZcaTvQ,19
+kmer_mapper-0.0.12.dist-info/WHEEL,sha256=-wEwnAhBgqhLB_NAD2KzS7dbAc3SQLDBPW_-dm4yWTE,148
+kmer_mapper-0.0.12.dist-info/entry_points.txt,sha256=Ao2MA1F5GuRb8-waKPSsQx7E8XvgN3gCr8eXHyS1Ka4,73
