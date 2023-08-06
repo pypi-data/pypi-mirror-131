@@ -1,0 +1,34 @@
+[package]
+name = "saku"
+version = "0.1.6"
+edition = "2021"
+readme = "README.md"
+description = "A simple yet efficient rule-based Japanese Sentence Tokenizer."
+exclude = ["rust-toolchain", "target/*", "Cargo.lock", "benches/*.txt", "benches/*.json", "data/*"]
+license = "MIT"
+repository = "https://github.com/hppRC/saku"
+homepage = "https://github.com/hppRC/saku"
+
+[lib]
+name = "saku"
+path = "src/lib.rs"
+bench = false
+
+# [[bin]]
+# name = "cli"
+# path = "src/cli.rs"
+# bench = false
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.3.5"
+pprof = { version = "0.6", features = ["flamegraph", "criterion"] }
+
+[[bench]]
+name = "basic"
+harness = false
+
+[[bench]]
+name = "raw"
+harness = false

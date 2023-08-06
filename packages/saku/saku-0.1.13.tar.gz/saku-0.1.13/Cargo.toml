@@ -1,0 +1,19 @@
+[dependencies.pyo3]
+features = ["extension-module"]
+version = "0.15.1"
+
+[dependencies.saku]
+path = "local_dependencies/saku"
+version = "*"
+
+[dev-dependencies]
+
+[lib]
+crate-type = ["cdylib"]
+name = "saku"
+
+[package]
+edition = "2021"
+name = "saku"
+readme = "README.md"
+version = "0.1.13"
