@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: vavacars_data_utils
+Version: 0.0.6
+Summary: Package with utils
+Home-page: https://dev.azure.com/vavacars/VavaCars/_git/Data.Utils
+Author: Vavacars Data Science Team
+Author-email: acg@vava.cars
+License: UNKNOWN
+Project-URL: Bug Tracker, https://dev.azure.com/vavacars/VavaCars/_git/Data.Utils/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Vavacars
+
+Vavacars utils library.
+
+## Building
+Check:
+https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+
+
