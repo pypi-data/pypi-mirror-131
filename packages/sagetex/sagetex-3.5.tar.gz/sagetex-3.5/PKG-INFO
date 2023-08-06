@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: sagetex
+Version: 3.5
+Summary: Embed Sage code and plots into LaTeX
+Home-page: https://github.com/sagemath/sagetex
+Author: SageMath developers
+Author-email: sage-devel@googlegroups.com
+License: GPLv2+
+Description: The SageTeX package allows you to embed code,
+          results of computations, and plots from the Sage mathematics
+          software suite (http://sagemath.org) into LaTeX documents.
+Platform: UNKNOWN
