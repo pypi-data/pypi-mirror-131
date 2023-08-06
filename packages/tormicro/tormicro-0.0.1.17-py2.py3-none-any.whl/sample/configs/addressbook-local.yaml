@@ -1,0 +1,12 @@
+addr-db:
+  memory: null
+
+logging:
+  handlers:
+    sls:
+      log_store: demolog
+  loggers:
+    addressbook:
+      handlers:
+        - console
+        - sls

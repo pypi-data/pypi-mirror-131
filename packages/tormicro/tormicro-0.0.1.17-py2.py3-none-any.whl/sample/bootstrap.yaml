@@ -1,0 +1,25 @@
+application:
+  name: addressbook
+  description: 地址（sample）服务
+server:
+  port: 8081
+config:
+  loader: configs.nacos.load_config_nacos
+  nacos:
+    dataId: "com.xiaomai.cloud.acm:tam.yaml"
+    group: "DEFAULT_GROUP"
+    namespace: "9cc1a30a-b34f-4b2b-bf51-921f61969f27"
+    accessKey: "LTAICJxzmaULYj9c"
+    secretKey: "IuyLYoZsUgyXtpVUBHuY7kxD7Jaszk"
+    endpoint: "acm.aliyun.com"
+    dev:
+      namespace: "118f1761-5aab-4f0b-a50c-42bb930fcba0"
+    rc:
+      namespace: "b8c88ce4-f782-46c1-b3a8-2e59187efa3f"
+    canary:
+      endpoint: "addr-hz-internal.edas.aliyun.com"
+      namespace: "d9b8edba-8a69-4f0a-9827-e3e6f1d7ed8"
+    prod:
+      endpoint: "addr-hz-internal.edas.aliyun.com"
+      namespace: "d4dd870f-befb-434c-989c-bebc41665c9"
+
