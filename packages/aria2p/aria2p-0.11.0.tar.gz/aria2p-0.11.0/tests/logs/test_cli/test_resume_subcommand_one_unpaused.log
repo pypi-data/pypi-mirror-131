@@ -1,0 +1,313 @@
+2021-12-16 23:58:58.425 | DEBUG    | aria2p.api:resume:579 - Failed to resume download 0000000000000001
+2021-12-16 23:58:58.426 | TRACE    | aria2p.api:resume:580 - GID#0000000000000001 cannot be unpaused now
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "<string>", line 8, in <module>
+
+  File "/home/pawamoy/.cache/pdm/packages/execnet-1.9.0-py2.py3-none-any/lib/execnet/gateway_base.py", line 1554, in serve
+    WorkerGateway(io=io, id=id, _startcount=2).serve()
+    │                │      └ 'gw1-worker'
+    │                └ <execnet.gateway_base.Popen2IO object at 0x7f2b067304c0>
+    └ <class 'execnet.gateway_base.WorkerGateway'>
+
+  File "/home/pawamoy/.cache/pdm/packages/execnet-1.9.0-py2.py3-none-any/lib/execnet/gateway_base.py", line 1060, in serve
+    self._execpool.integrate_as_primary_thread()
+    │    │         └ <function WorkerPool.integrate_as_primary_thread at 0x7f2b066b3a60>
+    │    └ <execnet.gateway_base.WorkerPool object at 0x7f2b0657d200>
+    └ <execnet.gateway_base.WorkerGateway object at 0x7f2b06556a80>
+
+  File "/home/pawamoy/.cache/pdm/packages/execnet-1.9.0-py2.py3-none-any/lib/execnet/gateway_base.py", line 267, in integrate_as_primary_thread
+    self._perform_spawn(reply)
+    │    │              └ <execnet.gateway_base.Reply object at 0x7f2b0657d9c0>
+    │    └ <function WorkerPool._perform_spawn at 0x7f2b066b3c40>
+    └ <execnet.gateway_base.WorkerPool object at 0x7f2b0657d200>
+
+  File "/home/pawamoy/.cache/pdm/packages/execnet-1.9.0-py2.py3-none-any/lib/execnet/gateway_base.py", line 285, in _perform_spawn
+    reply.run()
+    │     └ <function Reply.run at 0x7f2b066b3920>
+    └ <execnet.gateway_base.Reply object at 0x7f2b0657d9c0>
+
+  File "/home/pawamoy/.cache/pdm/packages/execnet-1.9.0-py2.py3-none-any/lib/execnet/gateway_base.py", line 220, in run
+    self._result = func(*args, **kwargs)
+    │              │     │       └ {}
+    │              │     └ ((<Channel id=1 open>, ('"""\n    This module is executed in remote subprocesses and helps to\n    control a remote testing s...
+    │              └ <bound method WorkerGateway.executetask of <execnet.gateway_base.WorkerGateway object at 0x7f2b06556a80>>
+    └ <execnet.gateway_base.Reply object at 0x7f2b0657d9c0>
+
+  File "/home/pawamoy/.cache/pdm/packages/execnet-1.9.0-py2.py3-none-any/lib/execnet/gateway_base.py", line 1084, in executetask
+    do_exec(co, loc)  # noqa
+    │       │   └ {'channel': <Channel id=1 open>, '__name__': '__channelexec__', '__builtins__': {'__name__': 'builtins', '__doc__': "Built-in...
+    │       └ <code object <module> at 0x7f2b06579fb0, file "/home/pawamoy/.cache/pdm/packages/pytest_xdist-2.5.0-py3-none-any/lib/xdist/re...
+    └ <built-in function exec>
+
+  File "/home/pawamoy/.cache/pdm/packages/pytest_xdist-2.5.0-py3-none-any/lib/xdist/remote.py", line 291, in <module>
+    config.hook.pytest_cmdline_main(config=config)
+    │      │    │                          └ <_pytest.config.Config object at 0x7f2b05005a40>
+    │      │    └ <_HookCaller 'pytest_cmdline_main'>
+    │      └ <pluggy._hooks._HookRelay object at 0x7f2b04ff9140>
+    └ <_pytest.config.Config object at 0x7f2b05005a40>
+
+  File "/home/pawamoy/.cache/pdm/packages/pluggy-1.0.0-py2.py3-none-any/lib/pluggy/_hooks.py", line 265, in __call__
+    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)
+           │    │         │    │     │    │                │       └ True
+           │    │         │    │     │    │                └ {'config': <_pytest.config.Config object at 0x7f2b05005a40>}
+           │    │         │    │     │    └ <function _HookCaller.get_hookimpls at 0x7f2b052e4ae0>
+           │    │         │    │     └ <_HookCaller 'pytest_cmdline_main'>
+           │    │         │    └ 'pytest_cmdline_main'
+           │    │         └ <_HookCaller 'pytest_cmdline_main'>
+           │    └ <bound method PluginManager._hookexec of <_pytest.config.PytestPluginManager object at 0x7f2b04ff9040>>
+           └ <_HookCaller 'pytest_cmdline_main'>
+
+  File "/home/pawamoy/.cache/pdm/packages/pluggy-1.0.0-py2.py3-none-any/lib/pluggy/_manager.py", line 80, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'config': <_pytest.config.Config object at 0x7f2b05005a40>}
+           │    │               │          └ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from '/home/pawamoy/.cache/pdm/packages/pytest-6.2.5-py3-none-an...
+           │    │               └ 'pytest_cmdline_main'
+           │    └ <function _multicall at 0x7f2b052a72e0>
+           └ <_pytest.config.PytestPluginManager object at 0x7f2b04ff9040>
+
+  File "/home/pawamoy/.cache/pdm/packages/pluggy-1.0.0-py2.py3-none-any/lib/pluggy/_callers.py", line 39, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<_pytest.config.Config object at 0x7f2b05005a40>]
+          │         └ <function pytest_cmdline_main at 0x7f2b052553a0>
+          └ <HookImpl plugin_name='main', plugin=<module '_pytest.main' from '/home/pawamoy/.cache/pdm/packages/pytest-6.2.5-py3-none-any...
+
+  File "/home/pawamoy/.cache/pdm/packages/pytest-6.2.5-py3-none-any/lib/_pytest/main.py", line 316, in pytest_cmdline_main
+    return wrap_session(config, _main)
+           │            │       └ <function _main at 0x7f2b05255440>
+           │            └ <_pytest.config.Config object at 0x7f2b05005a40>
+           └ <function wrap_session at 0x7f2b05255300>
+
+  File "/home/pawamoy/.cache/pdm/packages/pytest-6.2.5-py3-none-any/lib/_pytest/main.py", line 269, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+    │       │            │    │       └ <Session tests exitstatus=ExitCode.OK testsfailed=0 testscollected=476>
+    │       │            │    └ <_pytest.config.Config object at 0x7f2b05005a40>
+    │       │            └ <function _main at 0x7f2b05255440>
+    │       └ ExitCode.OK
+    └ <Session tests exitstatus=ExitCode.OK testsfailed=0 testscollected=476>
+
+  File "/home/pawamoy/.cache/pdm/packages/pytest-6.2.5-py3-none-any/lib/_pytest/main.py", line 323, in _main
+    config.hook.pytest_runtestloop(session=session)
+    │      │    │                          └ <Session tests exitstatus=ExitCode.OK testsfailed=0 testscollected=476>
+    │      │    └ <_HookCaller 'pytest_runtestloop'>
+    │      └ <pluggy._hooks._HookRelay object at 0x7f2b04ff9140>
+    └ <_pytest.config.Config object at 0x7f2b05005a40>
+
+  File "/home/pawamoy/.cache/pdm/packages/pluggy-1.0.0-py2.py3-none-any/lib/pluggy/_hooks.py", line 265, in __call__
+    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)
+           │    │         │    │     │    │                │       └ True
+           │    │         │    │     │    │                └ {'session': <Session tests exitstatus=ExitCode.OK testsfailed=0 testscollected=476>}
+           │    │         │    │     │    └ <function _HookCaller.get_hookimpls at 0x7f2b052e4ae0>
+           │    │         │    │     └ <_HookCaller 'pytest_runtestloop'>
+           │    │         │    └ 'pytest_runtestloop'
+           │    │         └ <_HookCaller 'pytest_runtestloop'>
+           │    └ <bound method PluginManager._hookexec of <_pytest.config.PytestPluginManager object at 0x7f2b04ff9040>>
+           └ <_HookCaller 'pytest_runtestloop'>
+
+  File "/home/pawamoy/.cache/pdm/packages/pluggy-1.0.0-py2.py3-none-any/lib/pluggy/_manager.py", line 80, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'session': <Session tests exitstatus=ExitCode.OK testsfailed=0 testscollected=476>}
+           │    │               │          └ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from '/home/pawamoy/.cache/pdm/packages/pytest-6.2.5-py3-none-an...
+           │    │               └ 'pytest_runtestloop'
+           │    └ <function _multicall at 0x7f2b052a72e0>
+           └ <_pytest.config.PytestPluginManager object at 0x7f2b04ff9040>
+
+  File "/home/pawamoy/.cache/pdm/packages/pluggy-1.0.0-py2.py3-none-any/lib/pluggy/_callers.py", line 39, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Session tests exitstatus=ExitCode.OK testsfailed=0 testscollected=476>]
+          │         └ <bound method WorkerInteractor.pytest_runtestloop of <__channelexec__.WorkerInteractor object at 0x7f2b04336f00>>
+          └ <HookImpl plugin_name='139822730800896', plugin=<__channelexec__.WorkerInteractor object at 0x7f2b04336f00>>
+
+  File "/home/pawamoy/.cache/pdm/packages/pytest_xdist-2.5.0-py3-none-any/lib/xdist/remote.py", line 91, in pytest_runtestloop
+    self.run_one_test(torun)
+    │    │            └ [423]
+    │    └ <function WorkerInteractor.run_one_test at 0x7f2b04ff2520>
+    └ <__channelexec__.WorkerInteractor object at 0x7f2b04336f00>
+
+  File "/home/pawamoy/.cache/pdm/packages/pytest_xdist-2.5.0-py3-none-any/lib/xdist/remote.py", line 110, in run_one_test
+    self.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+    │    │      │    │                            │              └ <Function test_main_show_subcommand>
+    │    │      │    │                            └ <Function test_resume_subcommand_one_unpaused>
+    │    │      │    └ <_HookCaller 'pytest_runtest_protocol'>
+    │    │      └ <pluggy._hooks._HookRelay object at 0x7f2b04ff9140>
+    │    └ <_pytest.config.Config object at 0x7f2b05005a40>
+    └ <__channelexec__.WorkerInteractor object at 0x7f2b04336f00>
+
+  File "/home/pawamoy/.cache/pdm/packages/pluggy-1.0.0-py2.py3-none-any/lib/pluggy/_hooks.py", line 265, in __call__
+    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)
+           │    │         │    │     │    │                │       └ True
+           │    │         │    │     │    │                └ {'item': <Function test_resume_subcommand_one_unpaused>, 'nextitem': <Function test_main_show_subcommand>}
+           │    │         │    │     │    └ <function _HookCaller.get_hookimpls at 0x7f2b052e4ae0>
+           │    │         │    │     └ <_HookCaller 'pytest_runtest_protocol'>
+           │    │         │    └ 'pytest_runtest_protocol'
+           │    │         └ <_HookCaller 'pytest_runtest_protocol'>
+           │    └ <bound method PluginManager._hookexec of <_pytest.config.PytestPluginManager object at 0x7f2b04ff9040>>
+           └ <_HookCaller 'pytest_runtest_protocol'>
+
+  File "/home/pawamoy/.cache/pdm/packages/pluggy-1.0.0-py2.py3-none-any/lib/pluggy/_manager.py", line 80, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'item': <Function test_resume_subcommand_one_unpaused>, 'nextitem': <Function test_main_show_subcommand>}
+           │    │               │          └ [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from '/home/pawamoy/.cache/pdm/packages/pytest-6.2.5-py3-non...
+           │    │               └ 'pytest_runtest_protocol'
+           │    └ <function _multicall at 0x7f2b052a72e0>
+           └ <_pytest.config.PytestPluginManager object at 0x7f2b04ff9040>
+
+  File "/home/pawamoy/.cache/pdm/packages/pluggy-1.0.0-py2.py3-none-any/lib/pluggy/_callers.py", line 39, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_resume_subcommand_one_unpaused>, <Function test_main_show_subcommand>]
+          │         └ <function pytest_runtest_protocol at 0x7f2b04b49ee0>
+          └ <HookImpl plugin_name='rerunfailures', plugin=<module 'pytest_rerunfailures' from '/home/pawamoy/.cache/pdm/packages/pytest_r...
+
+  File "/home/pawamoy/.cache/pdm/packages/pytest_rerunfailures-9.1.1-py3-none-any/lib/pytest_rerunfailures.py", line 240, in pytest_runtest_protocol
+    reports = runtestprotocol(item, nextitem=nextitem, log=False)
+              │               │              └ <Function test_main_show_subcommand>
+              │               └ <Function test_resume_subcommand_one_unpaused>
+              └ <function runtestprotocol at 0x7f2b0523b4c0>
+
+  File "/home/pawamoy/.cache/pdm/packages/pytest-6.2.5-py3-none-any/lib/_pytest/runner.py", line 126, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+    │       │      │               │             └ False
+    │       │      │               └ <Function test_resume_subcommand_one_unpaused>
+    │       │      └ <function call_and_report at 0x7f2b0523bba0>
+    │       └ <method 'append' of 'list' objects>
+    └ [<TestReport 'test_cli.py::test_resume_subcommand_one_unpaused' when='setup' outcome='passed'>]
+
+  File "/home/pawamoy/.cache/pdm/packages/pytest-6.2.5-py3-none-any/lib/_pytest/runner.py", line 215, in call_and_report
+    call = call_runtest_hook(item, when, **kwds)
+           │                 │     │       └ {}
+           │                 │     └ 'call'
+           │                 └ <Function test_resume_subcommand_one_unpaused>
+           └ <function call_runtest_hook at 0x7f2b0523bce0>
+
+  File "/home/pawamoy/.cache/pdm/packages/pytest-6.2.5-py3-none-any/lib/_pytest/runner.py", line 254, in call_runtest_hook
+    return CallInfo.from_call(
+           │        └ <classmethod(<function CallInfo.from_call at 0x7f2b05254360>)>
+           └ <class '_pytest.runner.CallInfo'>
+
+  File "/home/pawamoy/.cache/pdm/packages/pytest-6.2.5-py3-none-any/lib/_pytest/runner.py", line 311, in from_call
+    result: Optional[TResult] = func()
+            │        │          └ <function call_runtest_hook.<locals>.<lambda> at 0x7f2afeae2fc0>
+            │        └ +TResult
+            └ typing.Optional
+
+  File "/home/pawamoy/.cache/pdm/packages/pytest-6.2.5-py3-none-any/lib/_pytest/runner.py", line 255, in <lambda>
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+            │          │       └ {}
+            │          └ <Function test_resume_subcommand_one_unpaused>
+            └ <_HookCaller 'pytest_runtest_call'>
+
+  File "/home/pawamoy/.cache/pdm/packages/pluggy-1.0.0-py2.py3-none-any/lib/pluggy/_hooks.py", line 265, in __call__
+    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)
+           │    │         │    │     │    │                │       └ False
+           │    │         │    │     │    │                └ {'item': <Function test_resume_subcommand_one_unpaused>}
+           │    │         │    │     │    └ <function _HookCaller.get_hookimpls at 0x7f2b052e4ae0>
+           │    │         │    │     └ <_HookCaller 'pytest_runtest_call'>
+           │    │         │    └ 'pytest_runtest_call'
+           │    │         └ <_HookCaller 'pytest_runtest_call'>
+           │    └ <bound method PluginManager._hookexec of <_pytest.config.PytestPluginManager object at 0x7f2b04ff9040>>
+           └ <_HookCaller 'pytest_runtest_call'>
+
+  File "/home/pawamoy/.cache/pdm/packages/pluggy-1.0.0-py2.py3-none-any/lib/pluggy/_manager.py", line 80, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ False
+           │    │               │          │        └ {'item': <Function test_resume_subcommand_one_unpaused>}
+           │    │               │          └ [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from '/home/pawamoy/.cache/pdm/packages/pytest-6.2.5-py3-non...
+           │    │               └ 'pytest_runtest_call'
+           │    └ <function _multicall at 0x7f2b052a72e0>
+           └ <_pytest.config.PytestPluginManager object at 0x7f2b04ff9040>
+
+  File "/home/pawamoy/.cache/pdm/packages/pluggy-1.0.0-py2.py3-none-any/lib/pluggy/_callers.py", line 39, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_resume_subcommand_one_unpaused>]
+          │         └ <function pytest_runtest_call at 0x7f2b0523b6a0>
+          └ <HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from '/home/pawamoy/.cache/pdm/packages/pytest-6.2.5-py3-none...
+
+  File "/home/pawamoy/.cache/pdm/packages/pytest-6.2.5-py3-none-any/lib/_pytest/runner.py", line 162, in pytest_runtest_call
+    item.runtest()
+    │    └ <function Function.runtest at 0x7f2b050b0040>
+    └ <Function test_resume_subcommand_one_unpaused>
+
+  File "/home/pawamoy/.cache/pdm/packages/pytest-6.2.5-py3-none-any/lib/_pytest/python.py", line 1641, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+    │    │                                   └ <Function test_resume_subcommand_one_unpaused>
+    │    └ <property object at 0x7f2b051f0450>
+    └ <Function test_resume_subcommand_one_unpaused>
+
+  File "/home/pawamoy/.cache/pdm/packages/pluggy-1.0.0-py2.py3-none-any/lib/pluggy/_hooks.py", line 265, in __call__
+    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)
+           │    │         │    │     │    │                │       └ True
+           │    │         │    │     │    │                └ {'pyfuncitem': <Function test_resume_subcommand_one_unpaused>}
+           │    │         │    │     │    └ <function _HookCaller.get_hookimpls at 0x7f2b052e4ae0>
+           │    │         │    │     └ <_HookCaller 'pytest_pyfunc_call'>
+           │    │         │    └ 'pytest_pyfunc_call'
+           │    │         └ <_HookCaller 'pytest_pyfunc_call'>
+           │    └ <bound method PluginManager._hookexec of <_pytest.config.PytestPluginManager object at 0x7f2b04ff9040>>
+           └ <_HookCaller 'pytest_pyfunc_call'>
+
+  File "/home/pawamoy/.cache/pdm/packages/pluggy-1.0.0-py2.py3-none-any/lib/pluggy/_manager.py", line 80, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           │    │               │          │        │       └ True
+           │    │               │          │        └ {'pyfuncitem': <Function test_resume_subcommand_one_unpaused>}
+           │    │               │          └ [<HookImpl plugin_name='python', plugin=<module '_pytest.python' from '/home/pawamoy/.cache/pdm/packages/pytest-6.2.5-py3-non...
+           │    │               └ 'pytest_pyfunc_call'
+           │    └ <function _multicall at 0x7f2b052a72e0>
+           └ <_pytest.config.PytestPluginManager object at 0x7f2b04ff9040>
+
+  File "/home/pawamoy/.cache/pdm/packages/pluggy-1.0.0-py2.py3-none-any/lib/pluggy/_callers.py", line 39, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Function test_resume_subcommand_one_unpaused>]
+          │         └ <function pytest_pyfunc_call at 0x7f2b05098680>
+          └ <HookImpl plugin_name='python', plugin=<module '_pytest.python' from '/home/pawamoy/.cache/pdm/packages/pytest-6.2.5-py3-none...
+
+  File "/home/pawamoy/.cache/pdm/packages/pytest-6.2.5-py3-none-any/lib/_pytest/python.py", line 183, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+             │              └ {'tmp_path': PosixPath('/tmp/pytest-of-pawamoy/pytest-43/popen-gw1/test_resume_subcommand_one_unp0'), 'port': 15114, 'capsys'...
+             └ <function test_resume_subcommand_one_unpaused at 0x7f2affa198a0>
+
+  File "/media/data/dev/aria2p/tests/test_cli.py", line 186, in test_resume_subcommand_one_unpaused
+    assert resume(server.api, ["0000000000000001", "0000000000000002"]) == 1
+           │      │      └ API(Client(host='http://localhost', port=15114, secret='********'))
+           │      └ <tests.conftest._Aria2Server object at 0x7f2afeb07500>
+           └ <function resume at 0x7f2affa182c0>
+
+  File "/media/data/dev/aria2p/src/aria2p/cli/commands/resume.py", line 33, in resume
+    result = api.resume(downloads)
+             │   │      └ [<aria2p.downloads.Download object at 0x7f2affa1ec80>, <aria2p.downloads.Download object at 0x7f2afeb64e00>]
+             │   └ <function API.resume at 0x7f2affe7d760>
+             └ API(Client(host='http://localhost', port=15114, secret='********'))
+
+> File "/media/data/dev/aria2p/src/aria2p/api.py", line 577, in resume
+    self.client.unpause(download.gid)
+    │    │      │       │        └ <property object at 0x7f2affe5bd80>
+    │    │      │       └ <aria2p.downloads.Download object at 0x7f2affa1ec80>
+    │    │      └ <function Client.unpause at 0x7f2affe040e0>
+    │    └ Client(host='http://localhost', port=15114, secret='********')
+    └ API(Client(host='http://localhost', port=15114, secret='********'))
+
+  File "/media/data/dev/aria2p/src/aria2p/client.py", line 740, in unpause
+    return self.call(self.UNPAUSE, [gid])  # type: ignore
+           │    │    │    │         └ '0000000000000001'
+           │    │    │    └ 'aria2.unpause'
+           │    │    └ Client(host='http://localhost', port=15114, secret='********')
+           │    └ <function Client.call at 0x7f2afffef600>
+           └ Client(host='http://localhost', port=15114, secret='********')
+
+  File "/media/data/dev/aria2p/src/aria2p/client.py", line 262, in call
+    return self.res_or_raise(self.post(payload))
+           │    │            │    │    └ '{"jsonrpc": "2.0", "method": "aria2.unpause", "id": -1, "params": ["0000000000000001"]}'
+           │    │            │    └ <function Client.post at 0x7f2afffef7e0>
+           │    │            └ Client(host='http://localhost', port=15114, secret='********')
+           │    └ <staticmethod(<function Client.res_or_raise at 0x7f2afffef920>)>
+           └ Client(host='http://localhost', port=15114, secret='********')
+
+  File "/media/data/dev/aria2p/src/aria2p/client.py", line 389, in res_or_raise
+    raise Client.response_as_exception(response)
+          │      │                     └ {'id': -1, 'jsonrpc': '2.0', 'error': {'code': 1, 'message': 'GID#0000000000000001 cannot be unpaused now'}}
+          │      └ <staticmethod(<function Client.response_as_exception at 0x7f2afffef880>)>
+          └ <class 'aria2p.client.Client'>
+
+aria2p.client.ClientException: GID#0000000000000001 cannot be unpaused now

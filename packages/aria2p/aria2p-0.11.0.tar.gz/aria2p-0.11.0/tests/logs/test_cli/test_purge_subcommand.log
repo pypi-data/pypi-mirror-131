@@ -1,0 +1,1 @@
+2021-12-16 23:58:50.767 | WARNING  | aria2p.api:autopurge:614 - Deprecation warning: API method 'autopurge' is deprecated, use 'purge' instead.

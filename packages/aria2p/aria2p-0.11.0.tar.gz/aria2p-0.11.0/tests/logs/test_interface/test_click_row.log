@@ -1,0 +1,7 @@
+2021-12-16 23:58:47.321 | DEBUG    | aria2p.interface:run:504 - Created new screen <tests.test_interface.MockedScreen object at 0x7f2f1a6d6540>
+2021-12-16 23:58:47.322 | DEBUG    | aria2p.interface:run:519 - Got event None
+2021-12-16 23:58:47.322 | DEBUG    | aria2p.interface:run:535 - Tick! Updating data and rows
+2021-12-16 23:58:47.335 | DEBUG    | aria2p.interface:run:542 - Refresh! Printing text
+2021-12-16 23:58:47.340 | DEBUG    | aria2p.interface:run:519 - Got event MouseEvent (10, 2) 1
+2021-12-16 23:58:47.340 | DEBUG    | aria2p.interface:run:531 - Got event KeyboardEvent: 113
+2021-12-16 23:58:47.340 | DEBUG    | aria2p.interface:run:525 - Received exit command

@@ -1,0 +1,1 @@
+2021-12-16 23:58:54.933 | DEBUG    | aria2p.client:listen_to_notifications:1721 - Notifications (ws://localhost:15789/jsonrpc): opening WebSocket with timeout=1
