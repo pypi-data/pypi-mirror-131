@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: telegrab
+Version: 0.0.5
+Summary: telegrab
+Keywords: download,telegram,images,image,jpeg,jpg
+Author-email: James Hodgkinson <james@terminaloutcomes.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: click >=8.0.1
+Requires-Dist: telethon >=1.24.0
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: mypy ; extra == "dev"
+Requires-Dist: flit ; extra == "dev"
+Project-URL: Home, https://github.com/yaleman/telegrab
+Provides-Extra: dev
+
+# telegrab
+
+A tool for downloading files from telegram channels.
+
+## Configuration
+
+It's a JSON file in `~/.config/telegrab.json` or your OS equivalent.
+
+Generate a session id using something like `openssl rand -hex 32` - keeping it stable means you don't have to log in each time.
+
+```json
+{
+"session_id" : "asdfasdfasfsfasd",
+"api_id" : "123456",
+"api_hash" : "asdfasdfasdfasdf"
+}
+
+```
+
+You specify the `download_dir` in config or on the command line (with `--download-dir`).
+
+## Session storage
+
+It'll take the "session_id" value and store session data in `~/.config/telegrab/{session_id}`
+
+
