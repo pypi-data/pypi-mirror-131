@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: fastnsfw
+Version: 0.6
+Summary: NSFW Detection Library
+Home-page: https://github.com/bossauh/fastnsfw
+Author: Philippe Mathew
+Author-email: philmattdev@gmail.com
+License: MIT
+Download-URL: https://github.com/bossauh/fastnsfw/archive/refs/tags/v_06.tar.gz
+Description: UNKNOWN
+Keywords: nsfw,detection
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
