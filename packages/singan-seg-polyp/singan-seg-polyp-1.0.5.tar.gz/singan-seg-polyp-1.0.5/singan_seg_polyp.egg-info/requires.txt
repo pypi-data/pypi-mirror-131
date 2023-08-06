@@ -1,0 +1,10 @@
+numpy
+tqdm
+pandas
+pathlib
+PyYAML
+scipy
+scikit-image
+scikit-learn
+requests
+natsort
