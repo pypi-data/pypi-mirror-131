@@ -1,0 +1,10 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/spec_webcamd.py,sha256=lZ8RHGuUciGOUYHjdojrO7IcNAQ6jdsVjqLwIbQVCsk,107
+webcamd/__init__.py,sha256=EpxkQBxWc3-OY5NLF2LWte0WpN72XSLvdJlbfa1Q_V4,395
+webcamd/__main__.py,sha256=BbOCrfEgP0xlNbFkGJhcLeR18fE5Nujy512sRWGZ2D8,3450
+webcamd-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+webcamd-1.0.0.dist-info/METADATA,sha256=HBQr1_mAgyfYpF8k5J7PNQV5P8HCl7hZCNmE31zmpcw,3457
+webcamd-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+webcamd-1.0.0.dist-info/entry_points.txt,sha256=KLfV5Q3em6qambP0xC-Zs_GyH5yevduTo6qsct_6rsY,51
+webcamd-1.0.0.dist-info/top_level.txt,sha256=OiAsy79tI8tiLFAIizUbVBQ-LcWfWjKBz2FpAu0WpEE,14
+webcamd-1.0.0.dist-info/RECORD,,
