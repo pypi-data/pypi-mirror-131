@@ -1,0 +1,13 @@
+aiokilogram/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiokilogram/action.py,sha256=GIuPsL3vmgbbz1hh4_gXIsSeBiNdKt3jN8ZoHiyEubI,4841
+aiokilogram/bot.py,sha256=typIOmulQ--guBDosZJLufG5fw1x5KNaYqQSsRUEc6A,1117
+aiokilogram/data.py,sha256=vUqAIMVmGYI1k0xpduvrcHMtTSK7CCuHi3OBxTXrJIE,1952
+aiokilogram/dispatcher.py,sha256=ji5QnL7ZkUAuMQC5eTLhUsJLTtwGe1IlipZVf-6KiUs,1507
+aiokilogram/handler.py,sha256=BIAG9NWOcHlvAWQ80MJ29_9qnnly2et-0H2b8SjsKQY,2108
+aiokilogram/page.py,sha256=rx3yVtVMz6bzXxBpwlks325WRpqxiFSu2ozw-2Xcwro,2180
+aiokilogram/settings.py,sha256=g5XN09akicA2Mq2qi_g-tplGJCHvGttYnw4yJH1JvmE,230
+aiokilogram-0.0.10.dist-info/LICENSE,sha256=pyhqjIsFfdNPFpJ1MJiWHqi2BjMGr8fxS-FF9oRbiHM,1074
+aiokilogram-0.0.10.dist-info/METADATA,sha256=_UpwPkBn9Glh5XXrOXf7v_vGBj_fG2gbk657bA8KJ70,1619
+aiokilogram-0.0.10.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aiokilogram-0.0.10.dist-info/top_level.txt,sha256=aV1QBUjsrOBx9bFhOf1dSWqGTvZKjtbNF2AZiDU09Zk,12
+aiokilogram-0.0.10.dist-info/RECORD,,
