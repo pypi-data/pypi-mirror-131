@@ -1,0 +1,21 @@
+ewokscore
+Orange3
+
+[dev]
+black
+flake8
+pytest
+ewokscore[test]
+
+[dev:python_version < "3.7"]
+importlib_resources
+
+[doc]
+sphinx
+
+[test]
+pytest
+ewokscore[test]
+
+[test:python_version < "3.7"]
+importlib_resources
