@@ -1,0 +1,4 @@
+[console_scripts]
+csv_converter=luana_santos_csv_converter.converter:converter
+json_converter=luana_santos_csv_converter.converterj:converterj
+
