@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: cnn_complexity_analyzer
+Version: 0.3
+Summary: Analyzer computational complexities of CONV layer and FC layers in CNNs
+Home-page: https://github.com/rexxy-sasori/cnn_complexity_analyzer
+Author: Rex Geng
+Author-email: hgeng4@illinois.edu
+License: MIT
+Download-URL: https://github.com/rexxy-sasori/cnn_complexity_analyzer/archive/refs/tags/v0.3.tar.gz
+Description: UNKNOWN
+Keywords: Complexity,Profiler,CNN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
