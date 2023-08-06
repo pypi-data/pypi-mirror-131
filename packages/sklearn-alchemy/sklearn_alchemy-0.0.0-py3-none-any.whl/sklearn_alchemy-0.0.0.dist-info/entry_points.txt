@@ -1,0 +1,3 @@
+[console_scripts]
+alchemy = sklearn_alchemy.alchemy:main
+
