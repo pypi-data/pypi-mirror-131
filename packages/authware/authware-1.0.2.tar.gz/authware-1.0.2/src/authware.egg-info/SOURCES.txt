@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/authware/__init__.py
+src/authware/application.py
+src/authware/cryptography.py
+src/authware/exceptions.py
+src/authware/hwid.py
+src/authware/user.py
+src/authware/utils.py
+src/authware.egg-info/PKG-INFO
+src/authware.egg-info/SOURCES.txt
+src/authware.egg-info/dependency_links.txt
+src/authware.egg-info/top_level.txt
