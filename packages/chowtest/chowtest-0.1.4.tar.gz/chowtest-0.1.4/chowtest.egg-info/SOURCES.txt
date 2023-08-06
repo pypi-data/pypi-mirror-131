@@ -1,0 +1,8 @@
+README.md
+setup.py
+chow_test/__init__.py
+chowtest.egg-info/PKG-INFO
+chowtest.egg-info/SOURCES.txt
+chowtest.egg-info/dependency_links.txt
+chowtest.egg-info/requires.txt
+chowtest.egg-info/top_level.txt
