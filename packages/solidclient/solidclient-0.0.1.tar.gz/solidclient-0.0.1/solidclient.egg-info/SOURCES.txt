@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+solidclient/__init__.py
+solidclient/solid_client.py
+solidclient.egg-info/PKG-INFO
+solidclient.egg-info/SOURCES.txt
+solidclient.egg-info/dependency_links.txt
+solidclient.egg-info/top_level.txt
