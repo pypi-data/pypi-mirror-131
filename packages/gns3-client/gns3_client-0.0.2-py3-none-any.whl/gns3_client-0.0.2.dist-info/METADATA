@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gns3-client
+Version: 0.0.2
+Summary: Python API client for GNS3 network simulation tool
+Home-page: https://github.com/desnoe/gns3-client
+Author: Olivier Desnoë
+Author-email: olivier@delarche.fr
+License: MIT License
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: urllib3 (~=1.26.7)
+Requires-Dist: requests-cache (~=0.8.1)
+Requires-Dist: logzero (~=1.7.0)
+
+*gns3-client* is a Python library that can be used to interact with a [GNS3 server](https://github.com/GNS3/gns3-server) using its HTTP REST API. A GNS3 server manages emulators such as Dynamips, VirtualBox or Qemu/KVM.
+
