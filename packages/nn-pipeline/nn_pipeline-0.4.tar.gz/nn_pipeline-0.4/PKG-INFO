@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: nn_pipeline
+Version: 0.4
+Summary: Common utility functions for training and evaluating neural networks as well as analyzing computational complexity
+Home-page: https://github.com/rexxy-sasori/nnutils.git
+Author: Rex Geng
+Author-email: hgeng4@illinois.edu
+License: MIT
+Download-URL: https://github.com/rexxy-sasori/nnutils/archive/refs/tags/v0.4.tar.gz
+Description: UNKNOWN
+Keywords: Complexity,Profiler,CNN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
