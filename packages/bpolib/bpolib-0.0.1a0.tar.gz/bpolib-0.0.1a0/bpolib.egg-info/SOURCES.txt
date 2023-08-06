@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+bpolib.py
+setup.cfg
+setup.py
+bpolib.egg-info/PKG-INFO
+bpolib.egg-info/SOURCES.txt
+bpolib.egg-info/dependency_links.txt
+bpolib.egg-info/requires.txt
+bpolib.egg-info/top_level.txt
