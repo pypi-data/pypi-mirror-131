@@ -1,0 +1,9 @@
+rlr/__init__.py,sha256=NHOAXgLVHbPwL5g2URW4mn4ZjNOIvJuoBFhkNPJBIYM,46
+rlr/backport.py,sha256=YKrACft25sPNb2gScA_ad9zamk0vk96sTqttEQV4Gro,1497
+rlr/crossvalidation.py,sha256=gU-ze7Bk_dJVNYKlZwbmCDneGwyHoEtMnFFOoBszgvo,4187
+rlr/lr.py,sha256=o4OigVcquP2lt7iU_8PuWWqdfG1jkBWlnZRX_pP3Dsc,2746
+rlr-2.4.6.dist-info/COPYING,sha256=ERgokn48uW8YGfNxlMD_jOip06r6FHm5bWyJ-MqHSOs,1547
+rlr-2.4.6.dist-info/METADATA,sha256=2avFmNcmMFaYQC9ljDE_oWxXhFAOCJd9GxsKp30M_aM,904
+rlr-2.4.6.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+rlr-2.4.6.dist-info/top_level.txt,sha256=hMFKZqjp14xziNk5ktD9s4M4Gae33VSvvWWGDiKux7o,4
+rlr-2.4.6.dist-info/RECORD,,
