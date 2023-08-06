@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+upload_to_S3_folder_pkg/__init__.py
+upload_to_S3_folder_pkg/upload_to_S3_folder.py
+upload_to_s3_folder_pkg.egg-info/PKG-INFO
+upload_to_s3_folder_pkg.egg-info/SOURCES.txt
+upload_to_s3_folder_pkg.egg-info/dependency_links.txt
+upload_to_s3_folder_pkg.egg-info/top_level.txt
