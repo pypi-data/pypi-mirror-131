@@ -1,0 +1,40 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "py-rmrk-tools"
+version = "0.1.0a6"
+description = "Python port of Typescript rmrk-tools."
+license = "MIT"
+
+authors = ["Alisher A. Khassanov <a.khssnv@gmail.com>"]
+homepage = "https://github.com/khssnv/py-rmrk-tools"
+keywords = ["rmrk", "nft", "kusama", "polkadot"]
+packages = [
+    { include = "rmrk_tools" },
+]
+readme = "README.md"
+repository = "https://github.com/khssnv/py-rmrk-tools"
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+ipython = "^7.30.1"
+black = "^21.12b0"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+pre-commit = "^2.16.0"
+pylint = "^2.12.2"
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+experimental_string_processing = true
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
