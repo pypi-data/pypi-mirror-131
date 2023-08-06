@@ -1,0 +1,14 @@
+puzzle_solvers/__init__.py,sha256=anjycod1oaR0Zo-Lj9ax6F7wnpd-gXRno8H4VYi4Ook,1587
+puzzle_solvers/elimination.py,sha256=WeAgU3I7XUzP3CBZe38jxZzbb2GZUGCCnJk4KURmezI,84164
+puzzle_solvers/version.py,sha256=sY2b39jiCDezC13gklThqhmUwQsCmhEmFFGfKqzo60c,1709
+puzzle_solvers/demos/__init__.py,sha256=SIT8XNN6DMflz9gRVM4o46VibI4fGL-tw7puyfjcZ6c,1559
+puzzle_solvers/demos/elimination.py,sha256=5DDbzjr28WeI5Ozl38KLxSk4ToPxcb4wOUblPUqKt1A,5265
+puzzle_solvers/demos/elimination_zebra.py,sha256=QCmPZk5Mtf_iElJUlB-hgQN8FV9dcXf0DfTHQB0BEXY,3007
+puzzle_solvers-0.0.1b2.data/data/CHANGELOG,sha256=F_R_M3iibpLm_LwZrQMrObDozToUnkj_9NFbysIVoQo,456
+puzzle_solvers-0.0.1b2.data/data/LICENSE,sha256=W-O_mSDlqDpwY5wT60V5BgR_0nHVROcYZ2OvQCQVZ1U,1078
+puzzle_solvers-0.0.1b2.data/data/README,sha256=dlQ1mEUksFyli3GKRDSx6CG5SkFqi05JrpEXj7xZqXM,142
+puzzle_solvers-0.0.1b2.dist-info/LICENSE,sha256=W-O_mSDlqDpwY5wT60V5BgR_0nHVROcYZ2OvQCQVZ1U,1078
+puzzle_solvers-0.0.1b2.dist-info/METADATA,sha256=amQ_TNXxUcMMaLEhe9g7DlEUsx7kviB_C0Ou9IyEv0Q,2065
+puzzle_solvers-0.0.1b2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+puzzle_solvers-0.0.1b2.dist-info/top_level.txt,sha256=FuiKuEo-WAMFqhdPoMvZ5kQJAYPshvI4RPsf-h-qvic,15
+puzzle_solvers-0.0.1b2.dist-info/RECORD,,
