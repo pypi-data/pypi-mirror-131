@@ -1,0 +1,6 @@
+apispec
+pydantic
+tornado
+
+[:python_version >= "3.8"]
+typed-ast
