@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: fbgbp
+Version: 0.0.3
+Summary: Optimized belief propagation on a grid MRF with binary states.
+Home-page: https://github.com/Lioscro/fbgbp
+Author: Kyung Hoi (Joseph) Min
+Author-email: phoenixter96@gmail.com
+License: MIT
+Description: # fbgbp
+        Fast Binary Grid Belief Propagation
+        
+Keywords: belief-propagation markov-random-field
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Cython
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
