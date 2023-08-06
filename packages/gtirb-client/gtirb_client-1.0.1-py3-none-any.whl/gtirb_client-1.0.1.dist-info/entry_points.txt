@@ -1,0 +1,3 @@
+[console_scripts]
+gtirb-client = gtirb_client.client:main
+

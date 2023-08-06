@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: gtirb-client
+Version: 1.0.1
+Summary: A GTIRB Server Protocol client.
+Home-page: UNKNOWN
+Author: GrammaTech, Inc.
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: requests
+
+UNKNOWN
+
+
