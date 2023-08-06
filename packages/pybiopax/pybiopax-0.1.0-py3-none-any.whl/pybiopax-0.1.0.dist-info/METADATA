@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: pybiopax
+Version: 0.1.0
+Summary: A Python implementation of the BioPAX object model, and parts of PaxTools.
+Home-page: https://github.com/indralab/pybiopax
+Author: Benjamin M. Gyori, Harvard Medical School
+Author-email: benjamin_gyori@hms.harvard.edu
+License: UNKNOWN
+Keywords: biology,pathway
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: BSD License
+Description-Content-Type: text/markdown
+Requires-Dist: lxml
+Requires-Dist: requests
+Requires-Dist: tqdm
+
+PyBioPAX: A python implementation of the BioPAX object model
+------------------------------------------------------------
+[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
+[![DOI](https://zenodo.org/badge/261255657.svg)](https://zenodo.org/badge/latestdoi/261255657)
+[![Build](https://github.com/indralab/pybiopax/workflows/Tests/badge.svg)](https://github.com/indralab/pybiopax/actions)
+[![Documentation](https://readthedocs.org/projects/pybiopax/badge/?version=latest)](https://pybiopax.readthedocs.io/en/latest/?badge=latest)
+[![PyPI version](https://badge.fury.io/py/pybiopax.svg)](https://badge.fury.io/py/pybiopax)
+[![Python 3](https://img.shields.io/pypi/pyversions/pybiopax.svg)](https://www.python.org/downloads/release/python-357/)
+
+PyBioPAX implements the BioPAX level 3 object model (
+http://www.biopax.org/release/biopax-level3-documentation.pdf) as a set of
+Python classes. It exposes API functions to read OWL files into this
+object model, and to dump OWL files from this object model.
+This allows for the processing and creation of BioPAX models natively in
+Python.
+
+Installation
+------------
+PyBioPAX can be installed from PyPI as a package:
+
+```bash
+$ pip install pybiopax
+```
+
+Usage
+-----
+Reading an OWL file into a BioPaxModel object:
+
+```python
+import pybiopax
+model = pybiopax.model_from_owl_file('test.owl')
+```
+
+
+Writing a BioPaxModel into an OWL file:
+
+```python
+import pybiopax
+pybiopax.model_to_owl_file(model, 'test.owl')
+```
+
+Querying Pathway Commons to get a BioPaxModel object:
+
+```python
+import pybiopax
+model = pybiopax.model_from_pc_query('pathsfromto', ['MAP2K1'], ['MAPK1'])
+```
+
+Working with the elements of the Python object model:
+
+```python
+import pybiopax
+model = pybiopax.model_from_pc_query('pathsfromto', ['MAP2K1'], ['MAPK1'])
+
+# Each BioPaxModel instance has an objects attribute which is a dict
+# whose keys are object URIs (strings) and values are BioPaxObject instances.
+assert isinstance(model.objects, dict)
+assert all(isinstance(obj, pybiopax.biopax.BioPaxObject)
+           for obj in model.objects.values())
+
+# Let's look at a specific object
+bcr = model.objects['BiochemicalReaction_4f689747397d98089c551022a3ae2d88']
+
+# This is a BiochemicalReaction which has a left and a right side. All list/set
+# types per the BioPAX specification are represented as lists in the Python
+# object model
+# Both left and right consist of a single protein
+left = bcr.left[0]
+assert isinstance(left, pybiopax.biopax.Protein)
+assert left.display_name == 'ERK1-2'
+right = bcr.right[0]
+assert isinstance(right, pybiopax.biopax.Protein)
+assert right.display_name == 'ERK1-2-active'
+```
+
+We can also use the `pybiopax.paths` module to construct iterators over
+objects based on a string specification from a given starting point.
+Continuing from the block of code above, we take the BiochemicalReaction
+`bcr` and link to reactants on its left hand side, then linking to their
+entity references, and finally linking back to all the physical entities
+that those are references of.
+
+```python
+from pybiopax.paths import find_objects
+
+erks = find_objects(bcr, 'left/entity_reference/entity_reference_of')
+```
+
+Contribution and support
+------------------------
+To contribute to the code, please submit a pull request after
+reading the [contribution guidelines](https://github.com/indralab/pybiopax/blob/master/CONTRIBUTING.md).
+To report bugs and issues, or ask questions related to PyBioPAX, please
+submit an [issue](https://github.com/indralab/pybiopax/issues).
+
+Funding
+-------
+Development of this software was supported by the Defense Advanced Research
+Projects Agency under award W911NF-15-1-0544 and the National Cancer Institute
+under award U54-CA225088.
+
+
