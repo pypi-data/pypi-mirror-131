@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: to-requirements.txt
+Version: 1.0.1
+Summary: Reserved for future.
+Home-page: https://github.com/VoIlAlex/russian
+Author: Ilya Vouk
+Author-email: ilya.vouk@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+UNKNOWN
+
