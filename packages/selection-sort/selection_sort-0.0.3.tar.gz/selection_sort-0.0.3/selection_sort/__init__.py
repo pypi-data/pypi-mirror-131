@@ -1,0 +1,1 @@
+from selection_sort.selection_sort import selection_sort_1,selection_sort_2
