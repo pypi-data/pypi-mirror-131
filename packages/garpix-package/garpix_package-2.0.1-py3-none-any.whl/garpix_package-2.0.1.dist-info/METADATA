@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: garpix-package
+Version: 2.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/garpixcms/garpix_package
+Author: Garpix LTD
+Author-email: info@garpix.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: m2r (==0.2.1)
+Requires-Dist: twine (==3.4.1)
+Requires-Dist: mistune (==0.8.4)
+
+
+Garpix Pack
+===========
+
+Create and upload packages to pypi.org.
+
+Quickstart
+----------
+
+Install with pip:
+
+.. code-block:: bash
+
+   pip install garpix_qa
+
+Add the ``garpix_package`` to your ``INSTALLED_APPS``\ :
+
+.. code-block:: python
+
+   # settings.py
+
+   INSTALLED_APPS = [
+       # ...
+       'garpix_package',
+   ]
+
+Create new package in your project.
+
+.. code-block:: bash
+
+   python manage.py startpackage <app_name>
+
+Upload package to pypi.org.
+
+.. code-block:: bash
+
+   python manage.py pack <app_name>
+
+Example
+^^^^^^^
+
+.. code-block::
+
+   python manage.py startpackage my_app
+   python manage.py pack my_app
+
+Changelog
+=========
+
+See `CHANGELOG.md <CHANGELOG.md>`_.
+
+Contributing
+============
+
+See `CONTRIBUTING.md <CONTRIBUTING.md>`_.
+
+License
+=======
+
+`MIT <LICENSE>`_
+
+----
+
+Developed by Garpix / `https://garpix.com <https://garpix.com>`_
+
+

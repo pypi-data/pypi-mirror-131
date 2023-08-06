@@ -1,0 +1,15 @@
+garpix_package/MANIFEST.in,sha256=llWlvo5ssQa3oz5RZJg50lOkNkb-2Vf81Q38-QRzBlw,34
+garpix_package/__init__.py,sha256=STcC_q_2Wd5NaUZqPxN951z_Or9pKZQzcu-k6QwRbXE,60
+garpix_package/apps.py,sha256=gfxILQEJS7MSvWRgTdLsQIjT4f3IPAs1GAZgZKxBsyo,131
+garpix_package/setup.py,sha256=eVPmqJ2n3fDJ0ipCMjEKkCHMWFwXA7edXU4hVhXYNY4,1098
+garpix_package/__pycache__/__init__.cpython-38.pyc,sha256=U9OXZpFBPkEvY9a_si1Kg3S7IxxFWUo3mTENlBFG5lY,222
+garpix_package/__pycache__/apps.cpython-38.pyc,sha256=U9IgiHcrO3bMAcp-gEQKCO_zqQUtRlQEs8_qH3a5Ci4,427
+garpix_package/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+garpix_package/management/__pycache__/__init__.cpython-38.pyc,sha256=ouVIh6IgvlM42iHwCpSpG5KSBu1GV48C_yrHd0guG4U,174
+garpix_package/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+garpix_package/management/commands/pack.py,sha256=RSFeq-NuMhtxEWwRnHhvvmRmLLXYKWFbULKg0iYUDDE,1675
+garpix_package/management/commands/startpackage.py,sha256=3Zz3ir2fweRQg657LYKIC7f2FA0u0fcy4EShTsgscVo,2899
+garpix_package-2.0.1.dist-info/METADATA,sha256=Yb_zlS_iXX6YLzK_h5s23wDr-rJqBtLGezJkp7OamIE,1515
+garpix_package-2.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+garpix_package-2.0.1.dist-info/top_level.txt,sha256=lhKVTfqxInxBsmex2kQrraOTRNkprISxJrek_QQx_EE,15
+garpix_package-2.0.1.dist-info/RECORD,,
