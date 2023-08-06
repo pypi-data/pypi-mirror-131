@@ -1,0 +1,10 @@
+gutenberg2kindle/__init__.py,sha256=mB0MVgZJ3aUyfeHp_BS-8TsrBkjPOLj4-dlE2mGNQAk,137
+gutenberg2kindle/cli.py,sha256=66mVPLIGe3mOfRybC1ZdKAvvCA0vTpgki6lVghRTI3Y,3798
+gutenberg2kindle/config.py,sha256=-0kAgNsH30UoLXMmf4bGJ1K6pMntlUIesUddCePH4oM,2296
+gutenberg2kindle/email.py,sha256=b17DD3tQ6vE23rk46pXEtABNBTV_WlDlCQBPuH3xjsQ,2300
+gutenberg2kindle/gutenberg.py,sha256=AJ7dcLdn1qThrk1OTrpgj9rPKYtRzKvSNu1gnPuHtrE,1854
+gutenberg2kindle-0.1.1.dist-info/entry_points.txt,sha256=2BmjollBKivHc3-myMEHiTVpYju8I4kbF6ryGiWlfro,62
+gutenberg2kindle-0.1.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+gutenberg2kindle-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+gutenberg2kindle-0.1.1.dist-info/METADATA,sha256=J6bOhWAbLTykHdrEVws1JxcfCk15sfCyu134Fal-YJs,3443
+gutenberg2kindle-0.1.1.dist-info/RECORD,,
