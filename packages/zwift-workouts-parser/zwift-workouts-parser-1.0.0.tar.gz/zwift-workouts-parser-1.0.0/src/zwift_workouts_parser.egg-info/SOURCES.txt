@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/zwift_parser/__init__.py
+src/zwift_parser/zwift_intervals.py
+src/zwift_parser/zwift_parser.py
+src/zwift_parser/zwift_workout.py
+src/zwift_workouts_parser.egg-info/PKG-INFO
+src/zwift_workouts_parser.egg-info/SOURCES.txt
+src/zwift_workouts_parser.egg-info/dependency_links.txt
+src/zwift_workouts_parser.egg-info/top_level.txt
