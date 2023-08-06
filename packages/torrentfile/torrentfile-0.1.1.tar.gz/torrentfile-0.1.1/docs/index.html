@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bittorrent Meta File Creator.">
+    
+    <link rel="canonical" href="https://alexpdev.github.io/torrentfile/">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>TorrentFile</title>
+    <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="./css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/highlight.css">
+    <link href="//use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
+    <link href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css" rel="stylesheet">
+    <link href="css/mkapi-common.css" rel="stylesheet">
+    <link href="assets/_mkdocstrings.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap-3.3.7.min.js"></script>
+    <script src="./js/highlight.pack.js"></script>
+    
+      <script src="./js/elasticlunr.min.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '.';
+      var is_top_frame = (window === window.parent);
+        
+        var pageToc = [
+          {title: "torrentfile", url: "#_top", children: [
+              {title: "Bittorrent File Creator (.torrent)", url: "#bittorrent-file-creator-torrent" },
+              {title: "Features", url: "#features" },
+              {title: "Documentation", url: "#documentation" },
+              {title: "Installation", url: "#installation" },
+              {title: "License", url: "#license" },
+          ]},
+        ];
+
+    </script>
+    <script src="./js/base.js"></script>
+      <script src="js/mkapi.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+<nav class="navbar wm-page-top-frame">
+  <div class="container-fluid wm-top-container">
+    
+    <div class="wm-top-tool pull-right wm-vcenter">
+      <form class="dropdown wm-vcentered" id="wm-search-form" action="./search.html">
+        
+        <button id="wm-search-show" class="btn btn-sm btn-default" type="submit"
+          ><i class="fa fa-search" aria-hidden="true"></i></button>
+
+        <div class="input-group input-group-sm wm-top-search">
+          <input type="text" name="q" class="form-control" id="mkdocs-search-query" placeholder="Search" autocomplete="off">
+          <span class="input-group-btn" role="search">
+            
+            <button class="btn btn-default dropdown-toggle collapse" data-toggle="dropdown" type="button"><span class="caret"></span></button>
+            <ul id="mkdocs-search-results" class="dropdown-menu dropdown-menu-right"></ul>
+            <button id="wm-search-go" class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </span>
+        </div>
+      </form>
+    </div>
+
+    
+    <div class="wm-top-tool wm-vcenter pull-right wm-small-left">
+      <button id="wm-toc-button" type="button" class="btn btn-sm btn-default wm-vcentered"><i class="fa fa-th-list" aria-hidden="true"></i></button>
+    </div>
+
+    
+    
+
+    
+    <a href="" class="wm-top-brand wm-top-link wm-vcenter">
+      
+      <div class="wm-top-title">
+        TorrentFile<br>
+        
+      </div>
+    </a>
+  </div>
+</nav>
+
+  <div id="main-content" class="wm-page-top-frame">
+    
+<nav class="wm-toc-pane">
+  
+    <ul class="wm-toctree wm-toc-repo">
+      <li class="wm-toc-li wm-toc-lev1">
+      <a class="wm-article-link wm-toc-text" href="https://github.com/alexpdev/torrentfile/">
+        <i class="fa fa-github"></i>
+
+        GitHub
+      </a>
+      </li>
+    </ul>
+  <ul class="wm-toctree">
+        <li class="wm-toc-li wm-toc-lev1 "><a href="" class="wm-article-link wm-toc-text">home</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="cli/" class="wm-article-link wm-toc-text">CLI</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="hasher/" class="wm-article-link wm-toc-text">Hasher</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="torrent/" class="wm-article-link wm-toc-text">Torrent</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="utils/" class="wm-article-link wm-toc-text">Utils</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="recheck/" class="wm-article-link wm-toc-text">Recheck</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="LGPLv3/" class="wm-article-link wm-toc-text">license</a>
+</li>
+  </ul>
+</nav>
+
+    <div class="wm-content-pane">
+      <iframe class="wm-article" name="article"></iframe>
+    </div>
+  </div>
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="cli/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="cli/" class="btn btn-xs btn-link">
+        CLI
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="torrentfile">torrentfile</h1>
+<p><img alt="torrentfile" src="https://github.com/alexpdev/torrentfile/blob/master/assets/torrentfile.png?raw=true" /></p>
+<hr />
+<h2 id="bittorrent-file-creator-torrent">Bittorrent File Creator (.torrent)</h2>
+<p><a href="https://www.codacy.com/gh/alexpdev/torrentfile/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=alexpdev/torrentfile&amp;utm_campaign=Badge_Grade"><img alt="Codacy Badge" src="https://app.codacy.com/project/badge/Grade/2da47ec1b5904538a40230f049a02be4" /></a>
+<a href="https://www.codacy.com/gh/alexpdev/torrentfile/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=alexpdev/torrentfile&amp;utm_campaign=Badge_Coverage"><img alt="Codacy Badge" src="https://app.codacy.com/project/badge/Coverage/2da47ec1b5904538a40230f049a02be4" /></a>
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/alexpdev/torrentfile?style=plastic" />
+<img alt="GitHub" src="https://img.shields.io/github/license/alexpdev/torrentfile?style=plastic" /></p>
+<p><em>TorrentFile</em> can create torrent files, Check content for accuracy and completeness with a
+.torrent file, and display detailed information contained in a .torrent file.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Create meta files for Bittorrent v1, v2 and hybrid torrent files.</li>
+<li>Display detailed information contained in torrent file.</li>
+<li>Check/ReCheck content and torrent file for download completion details and data integrity.</li>
+<li>Supports all .torrent files.</li>
+<li>GUI project can be found at <a href="https://github.com/alexpdev/TorrentfileQt">https://github.com/alexpdev/TorrentfileQt</a></li>
+</ul>
+<h2 id="documentation">Documentation</h2>
+<p>Documentation can be found in the <code>./docs</code> directory, or online at <a href="https://alexpdev.github.io/torrentfile">https://alexpdev.github.io/torrentfile</a>.</p>
+<h2 id="installation">Installation</h2>
+<h3 id="via-pypi">via PyPi</h3>
+<p><code>pip install torrentfile</code></p>
+<h3 id="via-git">via Git</h3>
+<p>```bash:
+git clone https://github.com/alexpdev/torrentfile.git
+python setup.py install</p>
+<pre><code>
+### download
+
+Or download the latest release from the Release page on github.
+[https://github.com/alexpdev/torrentfile/releases](https://github.com/alexpdev/torrentfile/releases)
+
+## CLI Help Message
+
+```bash:
+usage: TorrentFile [-h] [-v] [-d] [-p] [-s &lt;source&gt;] [-c &lt;comment&gt;]
+                   [-o &lt;path&gt;] [--meta-version &lt;int&gt;] [-l &lt;int&gt;]
+                   [-t &lt;url&gt; [&lt;url&gt; ...]] [-w &lt;url&gt; [&lt;url&gt; ...]]
+                   [-r &lt;.torrent&gt;]
+                   &lt;content&gt;
+
+Terminal based tool for creating, checking, or editing Bittorrent
+meta(.torrent) files. TorrentFile supports all meta file versions including
+hybrid files.
+
+positional arguments:
+  &lt;content&gt;                             path to content file or directory
+
+optional arguments:
+  -h, --help                            show this help message and exit
+  -v, --version                         show program version and exit
+  -d, --debug                           output debug information
+  -p, --private                         create file for private tracker
+  -s &lt;source&gt;, --source &lt;source&gt;        specify source tracker
+  -c &lt;comment&gt;, --comment &lt;comment&gt;     include a comment in file metadata
+  -o &lt;path&gt;, --out &lt;path&gt;               output path for created .torrent file
+  --meta-version &lt;int&gt;                  Bittorrent metafile version.
+                                        Options = 1, 2 or 3.
+                                        (1) = Bittorrent v1 (Default)
+                                        (2) = Bittorrent v2
+                                        (3) = Bittorrent v1 &amp; v2 hybrid
+
+  -l &lt;int&gt;, --piece-length &lt;int&gt;        Fixed amount of bytes for each chunk of data. (Default: None)
+                                        Acceptable input values include integers 14-24, which
+                                        will be interpreted as the exponent for 2^n, or any perfect
+                                        power of two integer between 16Kib and 16MiB (inclusive).
+                                        Examples:: [--piece-length 14] [-l 20] [-l 16777216]
+
+  -t &lt;url&gt; [&lt;url&gt; ...], --tracker &lt;url&gt; [&lt;url&gt; ...]
+                                        One or more Bittorrent tracker announce url(s).
+                                        Examples:: [-a url1 url2 url3]  [--anounce url1]
+
+  -w &lt;url&gt; [&lt;url&gt; ...], --web-seed &lt;url&gt; [&lt;url&gt; ...]
+                                        One or more url(s) linking to a http server hosting
+                                        the torrent contents.  This is useful if the torrent
+                                        tracker is ever unreachable. Example:: [-w url1 [url2 [url3]]]
+
+  -r &lt;.torrent&gt;, --check &lt;.torrent&gt;, --recheck &lt;.torrent&gt;
+                                        Activates the torrent checker mode.
+                                        &lt;.torrent&gt; is the path to a torrent meta file.
+                                        Check &lt;content&gt; data integrity with &lt;.torrent&gt; file.
+                                        If this is active, all other options are ignored (except --debug)
+                                        Ex:: :~$ torrentfile -r path/to/file.torrent path/to/contents
+</code></pre>
+<h2 id="license">License</h2>
+<p>Distributed under the GNU LGPL v3. See <code>LICENSE</code> for more information.</p>
+<p><a href="https://github.com/alexpdev/">https://github.com/alexpdev</a></p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="cli/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="cli/" class="btn btn-xs btn-link">
+        CLI
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/alexpdev/torrentfile/edit/master/docs/index.md"><i class="fa fa-github"></i>
+Edit on GitHub</a>
+      </p><p>alexpdev 2021</p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
+<!--
+MkDocs version : 1.2.3
+Build Date UTC : 2021-12-17 03:16:18.365784+00:00
+-->
