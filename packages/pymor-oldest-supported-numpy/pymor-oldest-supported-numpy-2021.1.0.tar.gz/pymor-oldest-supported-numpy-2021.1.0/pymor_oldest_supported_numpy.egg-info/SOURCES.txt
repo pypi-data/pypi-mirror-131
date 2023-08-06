@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+pymor_oldest_supported_numpy.egg-info/PKG-INFO
+pymor_oldest_supported_numpy.egg-info/SOURCES.txt
+pymor_oldest_supported_numpy.egg-info/dependency_links.txt
+pymor_oldest_supported_numpy.egg-info/requires.txt
+pymor_oldest_supported_numpy.egg-info/top_level.txt
