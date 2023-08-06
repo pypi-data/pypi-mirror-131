@@ -1,0 +1,3 @@
+[console_scripts]
+download = youtube_video_downloader.main:main
+
