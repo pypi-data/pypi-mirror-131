@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+__init__.py
+setup.py
+foo_doo_who_2.egg-info/PKG-INFO
+foo_doo_who_2.egg-info/SOURCES.txt
+foo_doo_who_2.egg-info/dependency_links.txt
+foo_doo_who_2.egg-info/top_level.txt
