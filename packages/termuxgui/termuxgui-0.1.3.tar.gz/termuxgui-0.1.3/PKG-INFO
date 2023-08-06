@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: termuxgui
+Version: 0.1.3
+Summary: Python bindings for the Termux:GUI plugin.
+Home-page: https://github.com/tareksander/termux-gui-python-bindings
+Author: Tarek Sander
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/tareksander/termux-gui-python-bindings/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Other OS
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Termux:GUI Python Bindings
+A Python library to interact with the Termux:GUI plugin.  
+  
+See [here](https://github.com/tareksander/termux-gui-python-bindings/blob/main/TUTORIAL.md) for a tutorial.  
+  
+There is also [documentation](https://tareksander.github.io/termux-gui-python-bindings/termuxgui/index.html) generated from the docstrings.   
+
+
+Installing and updating:  
+Download a wheel from the releases and then run `pip install wheel.whl` to install or update the library.
+
+
+
+
+
