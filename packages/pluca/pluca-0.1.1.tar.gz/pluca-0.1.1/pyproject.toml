@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools >= 40.9.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.mypy]
+files = "."
+
+[[tool.mypy.overrides]]
+module = [
+       "setuptools",
+       "appdirs"
+       ]
+ignore_missing_imports = true
