@@ -1,0 +1,15 @@
+proctoring/__init__.py,sha256=c8eO8lz3H1dMfy33sjTO8deyT_uzJ6m4zm-tlFvwOjA,17
+proctoring/classes.TXT,sha256=M8d3YeEkzHSRE0aGXjvBIZuHwtt9DxBuM3a_XvN4WTM,624
+proctoring/deploy.prototxt,sha256=9iYhyskj1vN71mkpjEKLt-5yIztfjDOJu4k-Neu895U,28092
+proctoring/opencv_face_detector.pbtxt,sha256=LixyBldoSkPHyZ8yHNhyE4qj5oywNvYQPB2KT3MmCOA,34911
+proctoring/opencv_face_detector_uint8.pb,sha256=XHHXUu8svy9Fesgv3VgPyyUi_QTF79rtGOttnihD--0,2727750
+proctoring/proctoring.py,sha256=LKgxxoOgVIxw3EqG-3ieeOaOfwg1GVOAztWM9Xbb9N0,33263
+proctoring/res10_300x300_ssd_iter_140000.caffemodel,sha256=KlahGlekopWVawZgtKPXa73KIgbElhzqjv59lcfLLy0,10666211
+proctoring/pose_model/saved_model.pb,sha256=pNYLwc8A8_8XfkC0TiiORBKWG9imNUSYy8nZQwbdD_8,66569
+proctoring/pose_model/variables/variables.data-00000-of-00001,sha256=yb1xNvBR-VyC_dwVpRmK_LwLWSeM6eXcvdnNOKv0lC8,29363240
+proctoring/pose_model/variables/variables.index,sha256=p42l80CO26TLQ5WnL5LG-3liU44PbrLMqTIYUB-cf3E,898
+proctoring-0.0.1.dist-info/LICENSE,sha256=J-80QSEyV8FQfYYNlyna2Ae5GdnZzVYTxlG8BtMENMg,397
+proctoring-0.0.1.dist-info/METADATA,sha256=gyWxce2NvO8RzPG9HexpmhofhvMj4R4-_tjzDhlkQMw,1559
+proctoring-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+proctoring-0.0.1.dist-info/top_level.txt,sha256=530Qst3MJkasnKSZFzCvj-bXPLaL_hf0N0cp83NXUTk,11
+proctoring-0.0.1.dist-info/RECORD,,
