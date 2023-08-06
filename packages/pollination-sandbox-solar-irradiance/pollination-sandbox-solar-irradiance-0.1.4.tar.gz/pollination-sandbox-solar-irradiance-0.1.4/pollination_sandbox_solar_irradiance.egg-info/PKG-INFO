@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pollination-sandbox-solar-irradiance
+Version: 0.1.4
+Summary: A recipe to assess average solar irradiance beneath Sandbox Solar agrivoltaic panels.
+Home-page: https://github.com/pollination/sandbox-solar-irradiance
+Author: ladybug-tools
+Author-email: info@ladybug.tools
+Maintainer: mostapha, ladybug-tools
+Maintainer-email: mostapha@ladybug.tools, info@ladybug.tools
+License: PolyForm Shield License 1.0.0, https://polyformproject.org/wp-content/uploads/2020/06/PolyForm-Shield-1.0.0.txt
+Project-URL: icon, https://raw.githubusercontent.com/ladybug-tools/artwork/master/icons_components/ladybug/png/incidentrad.png
+Project-URL: docker, https://hub.docker.com/r/ladybugtools/honeybee-radiance
+Description: # Incident Irradiance
+        
+        A recipe to assess average solar irradiance beneath Sandbox Solar agrivoltaic panels.
+        
+        ## Methods
+        
+        This recipe calculates the total amount of irradiance by calculating the direct solar
+        irradiance from sun disks and adding them to the contribution from indirect sky irradiance.
+        
+        ```console
+        incident_irradiance = direct_sun_irradiance + indirect_sky_irradiance
+        ```
+        
+        The recipe is structured in a manner that ambient bounces are NOT included.
+        
+Keywords: honeybee,radiance,ladybug-tools,daylight,sandbox-solar-irradiance
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
