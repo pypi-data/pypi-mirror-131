@@ -1,0 +1,15 @@
+grammark/__init__.py,sha256=hsv5iMH1eciw20FCrXEM2qizN0kK6lFelT8FhgG0GVo,12386
+resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+resources/academic.json,sha256=8ySwWaqEXPYhA8IeOV60GZSwDIHTBM24Db-VqgcunWk,4711
+resources/eggcorns.json,sha256=HfJDt_Q8zuBn314xDmpygRpF4XzGzyb-w0pElGY6sEk,4396
+resources/grammar.json,sha256=NE7CTS-XoFjisgkWEsiyhbr2GIqr1VdBfPcvbZrByqA,45256
+resources/nominalizations.json,sha256=CZ1w69VdmFAmS_oRs3ENLkpl_oLypU5OkliKkhLGOxc,209
+resources/passive_voice.json,sha256=iiJkOPY3e2AaklK6QHqFN9VOfjThUdhUqpHMhdz1VWQ,1157
+resources/sentences.json,sha256=FdDQts0Xcx2R0nmD-g7HuWF5Y1moELSjK4YpaP1ehfk,46
+resources/transitions.json,sha256=cxEgrAMVY2N_aR4BN--zI5tfCF_H-dRCRn-X5Z2zm08,2982
+resources/wordiness.json,sha256=eVNKozYDTgeaXNpCfW3so5raToNaeOD4e_Wy_AVdcfU,47028
+py_grammark-0.0.1.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+py_grammark-0.0.1.dist-info/METADATA,sha256=98SHhIZTc2VZEGxnfTUO5W82mTgxmM0eIH1tdTiHiA0,6702
+py_grammark-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+py_grammark-0.0.1.dist-info/top_level.txt,sha256=pUzwDmr4YCZLnkwf-7zNRgDxbWnNGdNy1i7UdoO4pTo,19
+py_grammark-0.0.1.dist-info/RECORD,,
