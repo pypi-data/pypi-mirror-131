@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: hello_python_world
+Version: 0.0.13
+Summary: The Hello Python World module
+Home-page: https://github.com/mbiemann/hello-python-world
+Author: Marcell Biemann
+Author-email: mbiemann@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/mbiemann/hello-python-world/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Hello Python World
+
+All the best practices, design patterns, good manners and references of Python programming language, by me, until now.
+
+
+First, install module from PyPI:
+
+```bash
+$ pip install -U hello-python-world
+```
+
+
+Second, import the class and execute the message:
+
+```python
+from hello_python_world import HelloPythonWorld
+
+HelloPythonWorld().message() # -->> 'Hello Python World'
+
+HelloPythonWorld('OPEN-SOURCE').message() # -->> 'Hello OPEN-SOURCE World'
+```
+
+
+Check this project on GitHub: 
+https://github.com/mbiemann/hello-python-world
+
