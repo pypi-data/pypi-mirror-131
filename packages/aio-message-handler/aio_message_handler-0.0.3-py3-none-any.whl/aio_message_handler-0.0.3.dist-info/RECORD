@@ -1,0 +1,10 @@
+aio_message_handler/__init__.py,sha256=U33k6poV6_eT2CfDZM3k_F98NahIOndXixiTF6oLBPY,447
+aio_message_handler/consumer.py,sha256=hNd1ds6zFabD6JBhyUsts-EmS5Adrmrvr2799gjMpCc,2195
+aio_message_handler/exceptions.py,sha256=4otxZs5zC4L-pUesaCgZ-Hg4kxlo5j4o2r1xGT0lJe4,636
+aio_message_handler/handler.py,sha256=SdrgNrd5rSgjQmi8LFWgeuCLZ-NgzmLLCUtXjhJmRGk,1759
+aio_message_handler/version.py,sha256=V-7gNjRA9lDaY0zyARX8HqKuoTavGmdGDfj3Vkbn6b4,362
+aio_message_handler-0.0.3.dist-info/LICENSE,sha256=ICx69uF_QBT04e11GCzHLZtOtHHtUU0YIVsfxIWgvSE,1062
+aio_message_handler-0.0.3.dist-info/METADATA,sha256=wBGZpnxNe-KDG0i1Bw8X2rENTTQVuDi7kWiMurWPjIs,2016
+aio_message_handler-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aio_message_handler-0.0.3.dist-info/top_level.txt,sha256=B3DeKDWEZmnq7Tb76OrRyAR1uOZKmWsneNIf6-wCWW8,20
+aio_message_handler-0.0.3.dist-info/RECORD,,
