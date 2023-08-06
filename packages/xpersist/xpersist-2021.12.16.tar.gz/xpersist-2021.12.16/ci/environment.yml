@@ -1,0 +1,27 @@
+name: xpersist-dev
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - catalogue
+  - cftime
+  - codecov
+  - dask>=2021.1.0
+  - fsspec
+  - ipython
+  - joblib
+  - netcdf4>=1.5.5
+  - pandas
+  - pip
+  - pooch
+  - pre-commit
+  - prefect>=0.15.9,<2.0
+  - pytest
+  - pytest-cov
+  - pytest-sugar
+  - pytest-xdist
+  - xarray
+  - zarr>=2.5
+  - pip:
+      - -r ../requirements.txt
+      - -e ..
