@@ -1,0 +1,9 @@
+hlucb/__init__.py,sha256=7WcCGp2EB_LxwdVzoggeSu1Ud1_S4fQ-k0SBwYtqxEg,80
+hlucb/_cli/__init__.py,sha256=fUje7vgFT24oJYk375-geUaz4RIVixNYE5PqOL9VmUo,19
+hlucb/_cli/main.py,sha256=l6yItIaC-_YvdJTaH0hYv-Ohk7WJro9Zl1P87udt7Zw,503
+hlucb/_ranking/__init__.py,sha256=fUje7vgFT24oJYk375-geUaz4RIVixNYE5PqOL9VmUo,19
+hlucb/_ranking/rankers.py,sha256=zN7oiMSEnZKF4D74IUeeTerPXCRc7lGvpAoEn2zJDps,29
+hlucb-0.1.1.dist-info/entry_points.txt,sha256=vzoZQWlRI9KbxitVGvwWNDuHGWnYJAJ8hFiQnLS4TWA,45
+hlucb-0.1.1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+hlucb-0.1.1.dist-info/METADATA,sha256=hRcwjhMI1dr5q_wpP0VjO_wREapm65I1ltoEE1i5hvI,1040
+hlucb-0.1.1.dist-info/RECORD,,

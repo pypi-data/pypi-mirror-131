@@ -1,0 +1,3 @@
+[console_scripts]
+hlucb=hlucb._cli.main:run
+
