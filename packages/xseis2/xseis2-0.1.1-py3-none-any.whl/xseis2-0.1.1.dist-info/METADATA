@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: xseis2
+Version: 0.1.1
+Summary: 
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.8,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Cython (>=0.29.25,<0.30.0)
+Requires-Dist: conan (>=1.43.0,<2.0.0)
+Requires-Dist: obspy (>=1.2.2,<2.0.0)
+Requires-Dist: setuptools (>=59.6.0,<60.0.0)
