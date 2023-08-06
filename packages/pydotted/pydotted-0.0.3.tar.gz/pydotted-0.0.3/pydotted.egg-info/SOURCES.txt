@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+pydotted.egg-info/PKG-INFO
+pydotted.egg-info/SOURCES.txt
+pydotted.egg-info/dependency_links.txt
+pydotted.egg-info/top_level.txt
