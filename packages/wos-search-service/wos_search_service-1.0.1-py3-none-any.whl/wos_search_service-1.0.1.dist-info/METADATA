@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: wos-search-service
+Version: 1.0.1
+Summary: Web of Science Search Service
+Home-page: https://github.com/mantis-software-company/wos-search-service
+Author: Furkan Kalkan
+Author-email: furkankalkan@mantis.com.tr
+License: UNKNOWN
+Platform: all
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >3.8.*, <4
+Description-Content-Type: text/markdown
+Requires-Dist: Flask (~=2.0.2)
+Requires-Dist: flask-smorest (~=0.35.0)
+Requires-Dist: marshmallow (~=3.14.0)
+Requires-Dist: pyctuator (~=0.16.0)
+Requires-Dist: wos (~=0.2.5)
+Requires-Dist: lxml (~=4.6.4)
+
+# wos-search-service
+
+WOS Search Service is a RESTful web service that provides access to the Web of Science (WOS) citation data.
+It use Web of Science SOAP API to access WOS data. You need premium API account in order use this service.
+
+Mantis Software Company has no relation with Thomson Reuters, Web of Science and Web of Science WWS API. 
+This web service is just a wrapper, was built top on [wos python package](https://github.com/enricobacis/wos).
+See [this section](https://github.com/enricobacis/wos#faq-i-cannot-connect-) for more information.
+
+Currently , the service supports the following WOS search queries:
+- Author search (with combinations of author name)
+
+
+## Environment Variables
+- `__SERVICE_WOS_USER`: Username to access WOS SOAP API
+- `__SERVICE_WOS_PASSWORD`: Password to access WOS SOAP API
+
+
+
