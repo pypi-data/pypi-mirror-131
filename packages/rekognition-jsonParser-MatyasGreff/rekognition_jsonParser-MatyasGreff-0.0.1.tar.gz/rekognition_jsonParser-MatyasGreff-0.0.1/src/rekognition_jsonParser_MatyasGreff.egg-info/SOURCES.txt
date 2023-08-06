@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/rekognition_jsonParser/__init__.py
+src/rekognition_jsonParser/rekognition_jsonParser.py
+src/rekognition_jsonParser_MatyasGreff.egg-info/PKG-INFO
+src/rekognition_jsonParser_MatyasGreff.egg-info/SOURCES.txt
+src/rekognition_jsonParser_MatyasGreff.egg-info/dependency_links.txt
+src/rekognition_jsonParser_MatyasGreff.egg-info/top_level.txt
