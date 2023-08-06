@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+Sythe.py.egg-info/PKG-INFO
+Sythe.py.egg-info/SOURCES.txt
+Sythe.py.egg-info/dependency_links.txt
+Sythe.py.egg-info/requires.txt
+Sythe.py.egg-info/top_level.txt
+sythe/__init__.py
+sythe/api.py
+sythe.py.egg-info/PKG-INFO
+sythe.py.egg-info/SOURCES.txt
+sythe.py.egg-info/dependency_links.txt
+sythe.py.egg-info/requires.txt
+sythe.py.egg-info/top_level.txt
