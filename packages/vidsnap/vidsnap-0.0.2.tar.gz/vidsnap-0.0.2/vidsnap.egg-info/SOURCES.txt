@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+vidsnap/__init__.py
+vidsnap/__main__.py
+vidsnap.egg-info/PKG-INFO
+vidsnap.egg-info/SOURCES.txt
+vidsnap.egg-info/dependency_links.txt
+vidsnap.egg-info/entry_points.txt
+vidsnap.egg-info/requires.txt
+vidsnap.egg-info/top_level.txt
