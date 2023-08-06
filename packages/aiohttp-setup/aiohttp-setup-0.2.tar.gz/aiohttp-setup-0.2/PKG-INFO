@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: aiohttp-setup
+Version: 0.2
+Summary: A function for setting up aiohttp web server.
+Home-page: https://github.com/yababay/aiohttp-setup
+Author: Михаил Беляков (Michael Belyakov)
+Author-email: bigbelk@live.ru
+License: MIT
+Download-URL: https://github.com/yababay/aiohttp-setup/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: aiohttp,web server
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
