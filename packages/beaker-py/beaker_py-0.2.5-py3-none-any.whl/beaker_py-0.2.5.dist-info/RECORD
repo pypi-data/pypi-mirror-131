@@ -1,0 +1,10 @@
+beaker/__init__.py,sha256=66kuD2oqCgmCG_N7lQL8UUshhirfsKFCoHu_s5vlZ30,80
+beaker/client.py,sha256=IFl8fN7GLQNX2q7n9g2Z2h3o9gC7D_84U1eW1p1QRZY,9654
+beaker/config.py,sha256=1jYk-pas7SKUGE7GOxNQ89-srV5eq47Qp79uFqV7jf4,3568
+beaker/exceptions.py,sha256=DBjGEXDUeL2kEMk-9PN9_Wb1jzcDy6YxD7cIhT4mVHQ,659
+beaker/version.py,sha256=OfmbE6fxiT5iJ16sTJhzYneLWTfqXP9AZvg2aaJnj6g,407
+beaker_py-0.2.5.dist-info/LICENSE,sha256=YvuKOpYh3COIF0yqq-nCMXtpS7mh1GyYvPVlW2j1G-M,11359
+beaker_py-0.2.5.dist-info/METADATA,sha256=Iu7NHSzAUmfNo65cZphkEltwcRm9FKvVfMXbh938ERY,2703
+beaker_py-0.2.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+beaker_py-0.2.5.dist-info/top_level.txt,sha256=iD739B33exabsmjhPCj-CHqXx0U7iVhaR3S5ShNBQCQ,7
+beaker_py-0.2.5.dist-info/RECORD,,
