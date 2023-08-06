@@ -1,0 +1,1240 @@
+paths:
+  /aa-sequences:match-amino-acids:
+    post:
+      description: 'Returns AA Sequences that exactly match the provided amino acids.
+
+        '
+      operationId: matchAminoAcidsAaSequences
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AaSequencesMatchBases'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AaSequencesPaginatedList'
+          description: A filtered list of AA Sequences
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequestError'
+          description: Bad Request
+      summary: List entities with matching amino acids
+      tags:
+      - AA Sequences
+  /aa-sequences:search-amino-acids:
+    post:
+      description: 'Returns AA Sequences that contain the provided amino acids. Search
+        indexing is asynchronous, so results my be not be available immediately after
+        creation.
+
+        '
+      operationId: searchAaSequences
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AaSequencesSearchBases'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AaSequencesPaginatedList'
+          description: A filtered list of AA Sequences
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequestError'
+          description: Bad Request
+      summary: Search AA Sequences
+      tags:
+      - AA Sequences
+  /dna-sequences:match-bases:
+    post:
+      description: 'Returns DNA Sequences that exactly match the provided bases.
+
+        '
+      operationId: matchBasesDnaSequences
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DnaSequencesMatchBases'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DnaSequencesPaginatedList'
+          description: A filtered list of DNA Sequences
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequestError'
+          description: Bad Request
+      summary: List entities with matching bases
+      tags:
+      - DNA Sequences
+  /dna-sequences:search-bases:
+    post:
+      description: 'Returns DNA Sequences that contain the provided bases. Search
+        indexing is asynchronous, so results my be not be available immediately after
+        creation.
+
+        '
+      operationId: searchDnaSequences
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DnaSequencesSearchBases'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DnaSequencesPaginatedList'
+          description: A filtered list of DNA Sequences
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequestError'
+          description: Bad Request
+      summary: Search DNA Sequences
+      tags:
+      - DNA Sequences
+  /organizations:
+    get:
+      description: "Returns all organizations that the caller has permission to view.\
+        \ The following roles have view permission:\n  - tenant admins\n  - members\
+        \ of the organization\n"
+      operationId: listOrganizations
+      parameters:
+      - description: 'Comma-separated list of ids. Matches all of the provided IDs,
+          or returns a 400 error that includes a list of which IDs are invalid.
+
+          '
+        in: query
+        name: ids
+        schema:
+          example: ent_ZJy8RTbo,ent_8GVbVkPj,ent_qREJ33rn
+          type: string
+      - description: Name of an organization. Restricts results to those with the
+          specified name.
+        in: query
+        name: name
+        schema:
+          type: string
+      - description: Name substring of an organization. Restricts results to those
+          with names that include the provided substring.
+        in: query
+        name: nameIncludes
+        schema:
+          type: string
+      - description: 'Comma-separated list of names. Restricts results to those that
+          match any of the specified names, case insensitive.  Warning - this filter
+          can be non-performant due to case insensitivity.
+
+          '
+        in: query
+        name: names.anyOf
+        schema:
+          example: MyName1,MyName2
+          type: string
+      - description: 'Comma-separated list of names. Restricts results to those that
+          match any of the specified names, case sensitive.
+
+          '
+        in: query
+        name: names.anyOf.caseSensitive
+        schema:
+          example: MyName1,MyName2
+          type: string
+      - description: 'Datetime, in RFC 3339 format. Supports the > and < operators.
+          Time zone defaults to UTC. Restricts results to those modified in the specified
+          range. e.g. > 2017-04-30.
+
+          '
+        in: query
+        name: modifiedAt
+        schema:
+          type: string
+      - description: Comma-separated list of user or Benchling app IDs. Restricts
+          results to organizations that include all the given users/apps as members.
+        in: query
+        name: hasMembers
+        schema:
+          type: string
+      - description: Comma-separated list of user or Benchling app IDs. Restricts
+          results to organizations that include all the given users/apps as admins.
+        in: query
+        name: hasAdmins
+        schema:
+          type: string
+      - in: query
+        name: pageSize
+        schema:
+          default: 50
+          maximum: 100
+          minimum: 0
+          type: integer
+      - description: Token for pagination
+        in: query
+        name: nextToken
+        schema:
+          type: string
+      - in: query
+        name: sort
+        schema:
+          default: modifiedAt:desc
+          description: 'Sets the sort-order of the response. Valid sorts are modifiedAt
+            (modified time, most recent first) and name (organization name, alphabetical).
+            Optionally add :asc or :desc to specify ascending or descending order.
+
+            '
+          enum:
+          - modifiedAt
+          - modifiedAt:asc
+          - modifiedAt:desc
+          - name
+          - name:asc
+          - name:desc
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrganizationsPaginatedList'
+          description: OK
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequestError'
+          description: Bad Request
+      summary: List organizations
+      tags:
+      - Organizations
+  /organizations/{organization_id}:
+    get:
+      description: "Returns an organization by ID if the caller has permission to\
+        \ view. The following roles have view permission:\n  - tenant admins\n  -\
+        \ members of the organization\n"
+      operationId: getOrganization
+      parameters:
+      - description: ID of organization to get
+        in: path
+        name: organization_id
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Organization'
+          description: OK
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotFoundError'
+          description: Not Found
+      summary: Get an organization by ID
+      tags:
+      - Organizations
+  /teams:
+    get:
+      description: "Returns all teams that the caller has permission to view. The\
+        \ following roles have view permission:\n  - tenant admins\n  - members of\
+        \ the team's organization\n"
+      operationId: listTeams
+      parameters:
+      - description: 'Comma-separated list of ids. Matches all of the provided IDs,
+          or returns a 400 error that includes a list of which IDs are invalid.
+
+          '
+        in: query
+        name: ids
+        schema:
+          example: team_ZJy8RTbo,team_8GVbVkPj,team_qREJ33rn
+          type: string
+      - description: Name of a team. Restricts results to those with the specified
+          name.
+        in: query
+        name: name
+        schema:
+          type: string
+      - description: Name substring of a team. Restricts results to those with names
+          that include the provided substring.
+        in: query
+        name: nameIncludes
+        schema:
+          type: string
+      - description: 'Comma-separated list of names. Restricts results to those that
+          match any of the specified names, case insensitive.  Warning - this filter
+          can be non-performant due to case insensitivity.
+
+          '
+        in: query
+        name: names.anyOf
+        schema:
+          example: MyName1,MyName2
+          type: string
+      - description: 'Comma-separated list of names. Restricts results to those that
+          match any of the specified names, case sensitive.
+
+          '
+        in: query
+        name: names.anyOf.caseSensitive
+        schema:
+          example: MyName1,MyName2
+          type: string
+      - description: 'Datetime, in RFC 3339 format. Supports the > and < operators.
+          Time zone defaults to UTC. Restricts results to those modified in the specified
+          range. e.g. > 2017-04-30.
+
+          '
+        in: query
+        name: modifiedAt
+        schema:
+          type: string
+      - description: 'Comma-separated list of entry IDs. Restricts results to teams
+          mentioned in those entries.
+
+          '
+        in: query
+        name: mentionedIn
+        schema:
+          example: etr_1X1AlQPD, etr_tv7m7B78
+          type: string
+      - description: Restricts results to those in the organization.
+        in: query
+        name: organizationId
+        schema:
+          type: string
+      - description: Comma-separated list of user or Benchling app IDs. Restricts
+          results to teams that include all the given users/apps as members.
+        in: query
+        name: hasMembers
+        schema:
+          type: string
+      - description: Comma-separated list of user or Benchling app IDs. Restricts
+          results to teams that include all the given users/apps as admins.
+        in: query
+        name: hasAdmins
+        schema:
+          type: string
+      - in: query
+        name: pageSize
+        schema:
+          default: 50
+          maximum: 100
+          minimum: 0
+          type: integer
+      - description: Token for pagination
+        in: query
+        name: nextToken
+        schema:
+          type: string
+      - in: query
+        name: sort
+        schema:
+          default: modifiedAt:desc
+          description: 'Sets the sort-order of the response. Valid sorts are modifiedAt
+            (modified time, most recent first) and name (team name, alphabetical).
+            Optionally add :asc or :desc to specify ascending or descending order.
+
+            '
+          enum:
+          - modifiedAt
+          - modifiedAt:asc
+          - modifiedAt:desc
+          - name
+          - name:asc
+          - name:desc
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TeamsPaginatedList'
+          description: OK
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequestError'
+          description: Bad Request
+      summary: List teams
+      tags:
+      - Teams
+  /teams/{team_id}:
+    get:
+      description: "Returns a team by ID if the caller has permission to view. The\
+        \ following roles have view permission:\n  - tenant admins\n  - members of\
+        \ the team's organization\n"
+      operationId: getTeam
+      parameters:
+      - description: ID of team to get
+        in: path
+        name: team_id
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Team'
+          description: OK
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotFoundError'
+          description: Not Found
+      summary: Get a team by ID
+      tags:
+      - Teams
+  /users:
+    get:
+      description: "Returns all users that the caller has permission to view. The\
+        \ following roles have view permission:\n  - tenant admins\n  - members of\
+        \ the user's organizations\n"
+      operationId: listUsers
+      parameters:
+      - description: 'Comma-separated list of ids. Matches all of the provided IDs,
+          or returns a 400 error that includes a list of which IDs are invalid.
+
+          '
+        in: query
+        name: ids
+        schema:
+          example: ent_ZJy8RTbo,ent_8GVbVkPj,ent_qREJ33rn
+          type: string
+      - description: Name of a user. Restricts results to those with the specified
+          name.
+        in: query
+        name: name
+        schema:
+          type: string
+      - description: Name substring of a user. Restricts results to those with names
+          that include the provided substring.
+        in: query
+        name: nameIncludes
+        schema:
+          type: string
+      - description: 'Comma-separated list of names. Restricts results to those that
+          match any of the specified names, case insensitive.  Warning - this filter
+          can be non-performant due to case insensitivity.
+
+          '
+        in: query
+        name: names.anyOf
+        schema:
+          example: MyName1,MyName2
+          type: string
+      - description: 'Comma-separated list of names. Restricts results to those that
+          match any of the specified names, case sensitive.
+
+          '
+        in: query
+        name: names.anyOf.caseSensitive
+        schema:
+          example: MyName1,MyName2
+          type: string
+      - description: 'Datetime, in RFC 3339 format. Supports the > and < operators.
+          Time zone defaults to UTC. Restricts results to those modified in the specified
+          range. e.g. > 2017-04-30.
+
+          '
+        in: query
+        name: modifiedAt
+        schema:
+          type: string
+      - description: Comma-separated list of organization and/or team API IDs. Restricts
+          results to users that are members of all given groups.
+        in: query
+        name: memberOf
+        schema:
+          type: string
+      - description: Comma-separated list of organization and/or team API IDs. Restricts
+          results to users that are admins of all given groups.
+        in: query
+        name: adminOf
+        schema:
+          type: string
+      - description: Comma-separated list of handles. Restricts results to the users
+          with the specified handles.
+        in: query
+        name: handles
+        schema:
+          type: string
+      - in: query
+        name: pageSize
+        schema:
+          default: 50
+          maximum: 100
+          minimum: 0
+          type: integer
+      - description: Token for pagination
+        in: query
+        name: nextToken
+        schema:
+          type: string
+      - in: query
+        name: sort
+        schema:
+          default: modifiedAt:desc
+          description: 'Sets the sort-order of the response. Valid sorts are modifiedAt
+            (modified time, most recent first) and name (user name, alphabetical).
+            Optionally add :asc or :desc to specify ascending or descending order.
+
+            '
+          enum:
+          - modifiedAt
+          - modifiedAt:asc
+          - modifiedAt:desc
+          - name
+          - name:asc
+          - name:desc
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UsersPaginatedList'
+          description: OK
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequestError'
+          description: Bad Request
+      summary: List users
+      tags:
+      - Users
+  /users/{user_id}:
+    get:
+      description: "Returns a user by ID if the caller has permission to view. The\
+        \ following roles have view permission:\n  - tenant admins\n  - members of\
+        \ any of the user's organizations\n"
+      operationId: getUser
+      parameters:
+      - description: ID of user to get
+        in: path
+        name: user_id
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+          description: OK
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotFoundError'
+          description: Not Found
+      summary: Get a user by ID
+      tags:
+      - Users
+components:
+  schemas:
+    AaAnnotation:
+      properties:
+        color:
+          type: string
+        end:
+          type: integer
+        id:
+          example: prtnann_o7zMPG0P
+          type: string
+        name:
+          type: string
+        start:
+          type: integer
+        type:
+          example: Site
+          maxLength: 255
+          type: string
+      type: object
+    AaSequence:
+      properties:
+        aliases:
+          description: Array of aliases
+          items:
+            type: string
+          type: array
+        aminoAcids:
+          description: Amino acids of the AA sequence.
+          example: IKTATARRELAETSWTGDRLWGFSDNWAPALRRPSPSALGK
+          type: string
+        annotations:
+          description: Array of annotation objects on the AA sequence.
+          items:
+            $ref: '#/components/schemas/AaAnnotation'
+          type: array
+        apiURL:
+          description: The canonical url of the AA Sequence in the API.
+          example: https://benchling.com/api/v2/aa-sequences/prtn_7nMBOMm0
+          format: uri
+          readOnly: true
+          type: string
+        archiveRecord:
+          allOf:
+          - $ref: '#/components/schemas/ArchiveRecord'
+          nullable: true
+        createdAt:
+          description: DateTime the AA sequence was created.
+          format: date-time
+          readOnly: true
+          type: string
+        creator:
+          $ref: '#/components/schemas/UserSummary'
+        customFields:
+          allOf:
+          - $ref: '#/components/schemas/CustomFields'
+          description: Custom fields set on the AA sequence.
+        entityRegistryId:
+          description: Registry ID of the AA sequence if registered.
+          nullable: true
+          type: string
+        fields:
+          $ref: '#/components/schemas/Fields'
+        folderId:
+          description: ID of the folder that contains the AA sequence.
+          nullable: true
+          type: string
+        id:
+          description: ID of the AA sequence.
+          example: prtn_ObbdtGhC
+          type: string
+        length:
+          description: Number of amino acids in the AA sequence.
+          type: integer
+        modifiedAt:
+          description: DateTime the AA sequence was last modified.
+          format: date-time
+          readOnly: true
+          type: string
+        name:
+          description: Name of the AA sequence.
+          type: string
+        registrationOrigin:
+          allOf:
+          - $ref: '#/components/schemas/RegistrationOrigin'
+          nullable: true
+          readOnly: true
+        registryId:
+          description: Registry the AA sequence is registered in.
+          nullable: true
+          type: string
+        schema:
+          allOf:
+          - $ref: '#/components/schemas/SchemaSummary'
+          nullable: true
+        webURL:
+          description: URL of the protein.
+          example: https://benchling.com/benchling/f/lib_55UxcIps-registry/prtn_7nMBOMm0-kedchain11/edit"
+          format: uri
+          readOnly: true
+          type: string
+      type: object
+    AaSequencesMatchBases:
+      additionalProperties: false
+      properties:
+        aminoAcids:
+          type: string
+        archiveReason:
+          default: NOT_ARCHIVED
+          enum:
+          - NOT_ARCHIVED
+          - Other
+          - Archived
+          type: string
+        nextToken:
+          type: string
+        pageSize:
+          default: 50
+          maximum: 100
+          minimum: 0
+          type: integer
+        registryId:
+          description: 'ID of a registry. Restricts results to those registered in
+            this registry. Specifying `null` returns unregistered items.
+
+            '
+          nullable: true
+          type: string
+        sort:
+          default: modifiedAt:desc
+          enum:
+          - modifiedAt:asc
+          - modifiedAt:desc
+          - name:asc
+          - name:desc
+          type: string
+      required:
+      - aminoAcids
+      type: object
+    AaSequencesPaginatedList:
+      properties:
+        aaSequences:
+          items:
+            $ref: '#/components/schemas/AaSequence'
+          type: array
+        nextToken:
+          type: string
+      type: object
+    AaSequencesSearchBases:
+      additionalProperties: false
+      properties:
+        aminoAcids:
+          minLength: 3
+          type: string
+        archiveReason:
+          default: NOT_ARCHIVED
+          enum:
+          - NOT_ARCHIVED
+          - Other
+          - Archived
+          type: string
+        nextToken:
+          type: string
+        pageSize:
+          default: 50
+          maximum: 100
+          minimum: 0
+          type: integer
+        registryId:
+          description: 'ID of a registry. Restricts results to those registered in
+            this registry. Specifying `null` returns unregistered items.
+
+            '
+          nullable: true
+          type: string
+        sort:
+          default: modifiedAt:desc
+          enum:
+          - modifiedAt:asc
+          - modifiedAt:desc
+          - name:asc
+          - name:desc
+          type: string
+      required:
+      - aminoAcids
+      type: object
+    ArchiveRecord:
+      properties:
+        reason:
+          example: Made in error
+          type: string
+      type: object
+    BadRequestError:
+      properties:
+        error:
+          allOf:
+          - $ref: '#/components/schemas/BaseError'
+          - properties:
+              type:
+                enum:
+                - invalid_request_error
+                type: string
+      type: object
+    BaseError:
+      properties:
+        message:
+          type: string
+        type:
+          type: string
+        userMessage:
+          type: string
+      type: object
+    CustomField:
+      properties:
+        value:
+          type: string
+      type: object
+    CustomFields:
+      additionalProperties:
+        $ref: '#/components/schemas/CustomField'
+      example:
+        Legacy ID:
+          value: STR100
+      type: object
+    DnaAnnotation:
+      properties:
+        color:
+          example: '#F58A5E'
+          type: string
+        end:
+          type: integer
+        name:
+          type: string
+        notes:
+          example: Cong et al Science. 2013 Jan 3.
+          maxLength: 10000
+          type: string
+        start:
+          type: integer
+        strand:
+          maximum: 1
+          minimum: -1
+          type: integer
+        type:
+          type: string
+      type: object
+    DnaSequence:
+      properties:
+        aliases:
+          items:
+            type: string
+          type: array
+        annotations:
+          items:
+            $ref: '#/components/schemas/DnaAnnotation'
+          type: array
+        apiURL:
+          description: The canonical url of the DNA Sequence in the API.
+          example: https://benchling.com/api/v2/dna-sequences/seq_asQya4lk
+          format: uri
+          readOnly: true
+          type: string
+        archiveRecord:
+          allOf:
+          - $ref: '#/components/schemas/ArchiveRecord'
+          nullable: true
+        bases:
+          type: string
+        createdAt:
+          format: date-time
+          readOnly: true
+          type: string
+        creator:
+          $ref: '#/components/schemas/UserSummary'
+        customFields:
+          $ref: '#/components/schemas/CustomFields'
+        entityRegistryId:
+          nullable: true
+          type: string
+        fields:
+          $ref: '#/components/schemas/Fields'
+        folderId:
+          nullable: true
+          type: string
+        id:
+          type: string
+        isCircular:
+          type: boolean
+        length:
+          type: integer
+        modifiedAt:
+          format: date-time
+          readOnly: true
+          type: string
+        name:
+          type: string
+        primers:
+          items:
+            $ref: '#/components/schemas/Primer'
+          type: array
+        registrationOrigin:
+          allOf:
+          - $ref: '#/components/schemas/RegistrationOrigin'
+          nullable: true
+          readOnly: true
+        registryId:
+          nullable: true
+          type: string
+        schema:
+          allOf:
+          - $ref: '#/components/schemas/SchemaSummary'
+          nullable: true
+        translations:
+          items:
+            $ref: '#/components/schemas/Translation'
+          type: array
+        webURL:
+          readOnly: true
+          type: string
+      type: object
+    DnaSequencesMatchBases:
+      additionalProperties: false
+      properties:
+        archiveReason:
+          default: NOT_ARCHIVED
+          enum:
+          - NOT_ARCHIVED
+          - Other
+          - Archived
+          type: string
+        bases:
+          type: string
+        nextToken:
+          type: string
+        pageSize:
+          default: 50
+          maximum: 100
+          minimum: 0
+          type: integer
+        registryId:
+          description: 'ID of a registry. Restricts results to those registered in
+            this registry. Specifying `null` returns unregistered items.
+
+            '
+          nullable: true
+          type: string
+        sort:
+          default: modifiedAt:desc
+          enum:
+          - modifiedAt:asc
+          - modifiedAt:desc
+          - name:asc
+          - name:desc
+          type: string
+      required:
+      - bases
+      type: object
+    DnaSequencesPaginatedList:
+      properties:
+        dnaSequences:
+          items:
+            $ref: '#/components/schemas/DnaSequence'
+          type: array
+        nextToken:
+          type: string
+      type: object
+    DnaSequencesSearchBases:
+      additionalProperties: false
+      properties:
+        archiveReason:
+          default: NOT_ARCHIVED
+          enum:
+          - NOT_ARCHIVED
+          - Other
+          - Archived
+          type: string
+        bases:
+          example: GATTACAA
+          minLength: 8
+          type: string
+        nextToken:
+          type: string
+        pageSize:
+          default: 50
+          maximum: 100
+          minimum: 0
+          type: integer
+        registryId:
+          description: 'ID of a registry. Restricts results to those registered in
+            this registry. Specifying `null` returns unregistered items.
+
+            '
+          example: src_pwKo8pHh
+          nullable: true
+          type: string
+        schemaId:
+          description: 'ID of the DNA sequence''s schema.
+
+            '
+          example: ts_Y6t0Zbhg
+          type: string
+        sort:
+          default: modifiedAt:desc
+          enum:
+          - modifiedAt:asc
+          - modifiedAt:desc
+          - name:asc
+          - name:desc
+          type: string
+      required:
+      - bases
+      type: object
+    Field:
+      properties:
+        displayValue:
+          nullable: true
+          readOnly: true
+          type: string
+        isMulti:
+          readOnly: true
+          type: boolean
+        textValue:
+          example: Amp
+          nullable: true
+          readOnly: true
+          type: string
+        type:
+          allOf:
+          - $ref: '#/components/schemas/FieldType'
+          readOnly: true
+        value:
+          description: 'For single link fields, use the id of the item you want to
+            link (eg. "seq_jdf8BV24").
+
+            For multi-link fields, use an array of ids of the items you want to link
+            (eg. ["seq_jdf8BV24"])
+
+            '
+          nullable: true
+          oneOf:
+          - type: string
+          - type: boolean
+          - type: number
+          - type: object
+          - items:
+              type: string
+            type: array
+      required:
+      - value
+      type: object
+    FieldType:
+      enum:
+      - dna_sequence_link
+      - aa_sequence_link
+      - custom_entity_link
+      - entity_link
+      - mixture_link
+      - dropdown
+      - part_link
+      - translation_link
+      - blob_link
+      - text
+      - long_text
+      - batch_link
+      - storage_link
+      - entry_link
+      - assay_request_link
+      - assay_result_link
+      - assay_run_link
+      - boolean
+      - float
+      - integer
+      - datetime
+      - date
+      - json
+      type: string
+    Fields:
+      additionalProperties:
+        $ref: '#/components/schemas/Field'
+      type: object
+    NotFoundError:
+      properties:
+        error:
+          allOf:
+          - $ref: '#/components/schemas/BaseError'
+          - properties:
+              invalidId:
+                type: string
+              type:
+                enum:
+                - invalid_request_error
+                type: string
+      type: object
+    Organization:
+      properties:
+        handle:
+          type: string
+        id:
+          type: string
+        name:
+          type: string
+      type: object
+    OrganizationSummary:
+      properties:
+        handle:
+          type: string
+        id:
+          type: string
+        name:
+          type: string
+      type: object
+    OrganizationsPaginatedList:
+      allOf:
+      - $ref: '#/components/schemas/Pagination'
+      - properties:
+          organizations:
+            items:
+              $ref: '#/components/schemas/Organization'
+            type: array
+      type: object
+    Pagination:
+      properties:
+        nextToken:
+          type: string
+    PartySummary:
+      properties:
+        handle:
+          type: string
+        id:
+          type: string
+        name:
+          type: string
+      type: object
+    Primer:
+      properties:
+        bases:
+          type: string
+        bindPosition:
+          type: integer
+        color:
+          readOnly: true
+          type: string
+        end:
+          type: integer
+        name:
+          readOnly: true
+          type: string
+        oligoId:
+          type: string
+        overhangLength:
+          type: integer
+        start:
+          type: integer
+        strand:
+          type: integer
+      type: object
+    RegistrationOrigin:
+      properties:
+        originEntryId:
+          nullable: true
+          readOnly: true
+          type: string
+        registeredAt:
+          format: date-time
+          readOnly: true
+          type: string
+      type: object
+    SchemaSummary:
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+      type: object
+    Team:
+      allOf:
+      - $ref: '#/components/schemas/TeamSummary'
+      - example:
+          handle: elion_team
+          id: team_5cjIguqc
+          name: Elion's Team
+          organization: Elion's Org
+      - properties:
+          organization:
+            $ref: '#/components/schemas/OrganizationSummary'
+      type: object
+    TeamSummary:
+      allOf:
+      - $ref: '#/components/schemas/PartySummary'
+      - example:
+          handle: elion_team
+          id: team_5cjIguqc
+          name: Elion's Team
+    TeamsPaginatedList:
+      allOf:
+      - $ref: '#/components/schemas/Pagination'
+      - properties:
+          teams:
+            items:
+              $ref: '#/components/schemas/Team'
+            type: array
+    Translation:
+      properties:
+        aminoAcids:
+          readOnly: true
+          type: string
+        end:
+          type: integer
+        regions:
+          items:
+            properties:
+              end:
+                type: integer
+              start:
+                type: integer
+            type: object
+          type: array
+        start:
+          type: integer
+        strand:
+          type: integer
+      type: object
+    User:
+      allOf:
+      - $ref: '#/components/schemas/UserSummary'
+      - example:
+          email: lpasteur@benchling.com
+          handle: lpasteur
+          id: ent_a0SApq3z
+          name: Louis Pasteur
+      - properties:
+          email:
+            type: string
+      type: object
+    UserSummary:
+      allOf:
+      - $ref: '#/components/schemas/PartySummary'
+      - example:
+          handle: lpasteur
+          id: ent_a0SApq3z
+          name: Louis Pasteur
+    UsersPaginatedList:
+      allOf:
+      - $ref: '#/components/schemas/Pagination'
+      - properties:
+          users:
+            items:
+              $ref: '#/components/schemas/User'
+            type: array
+externalDocs:
+  description: Additional API Documentation
+  url: https://docs.benchling.com/v2-beta
+info:
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  title: Benchling API
+  version: 2.0.0
+openapi: 3.0.1
+servers:
+- url: /api/v2-beta
+tags:
+- description: 'AA Sequences are the working units of cells that make everything run
+    (they help make structures, catalyze reactions and allow for signaling - a kind
+    of internal cell communication). On Benchling, these are comprised of a string
+    of amino acids and collections of other attributes, such as annotations and primers.
+
+    '
+  name: AA Sequences
+- description: 'DNA sequences are the bread and butter of the Benchling Molecular
+    Biology suite. On Benchling, these are comprised of a string of nucleotides and
+    collections of other attributes, such as annotations and primers.
+
+    '
+  name: DNA Sequences
+- description: View organization objects.
+  name: Organizations
+- description: View team objects.
+  name: Teams
+- description: View user objects.
+  name: Users
