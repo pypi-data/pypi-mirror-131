@@ -1,0 +1,17 @@
+odoo10_addon_delivery_carrier_label_default-10.0.1.0.1-py3.8-nspkg.pth,sha256=3hYKiD3YF7y9FeWjACJq1b9R_GVRzuQo9SAZlvZgumg,1672
+odoo/addons/delivery_carrier_label_default/README.rst,sha256=ARnrTZ2Z3O6R6pp2i5hWlHyOtcwvYvttR-krZrtRdhI,1434
+odoo/addons/delivery_carrier_label_default/__init__.py,sha256=s33fzihUzRuQEt21H8xtpMPZzfUyN-Wx2F1WjKbwWOw,140
+odoo/addons/delivery_carrier_label_default/__manifest__.py,sha256=iPZ5Jm4QlWa-GNdSJAJ6YuG_m_1R8GOGvivx_tDS0ZI,600
+odoo/addons/delivery_carrier_label_default/i18n/delivery_carrier_label_default.pot,sha256=vWIK0dxZon7FknLygARPHCP8Tg7h3-ewnCQNF7CXNGI,680
+odoo/addons/delivery_carrier_label_default/models/__init__.py,sha256=9Gw5nzIN0q4qvnkvZFkiHs2qO0RmReuLrMGvKnrPzys,147
+odoo/addons/delivery_carrier_label_default/models/stock_picking.py,sha256=rYlFMNQ5pBpVsAeJ8eLPpj3F0rud1qmAaLFUJKFa4AI,661
+odoo/addons/delivery_carrier_label_default/reports/report_default_label.xml,sha256=NmeRsaV5DMpgy6YftSSa6l4jQvgPorG3Ygd6YTsGlv0,640
+odoo/addons/delivery_carrier_label_default/reports/report_paper_format.xml,sha256=TDW7me79dhLz6SDfURMzwFDq89OOTR_RqqFo7IQanRM,785
+odoo/addons/delivery_carrier_label_default/static/description/icon.svg,sha256=pdI3huMfBA6YEDWuxZfBDnMtFeb9gzzdaT-wCLN_aRs,35998
+odoo/addons/delivery_carrier_label_default/tests/__init__.py,sha256=ASZtrWcUlYQRfL2sllxX2V0fK-xehzm1mj3NUum7MJY,150
+odoo/addons/delivery_carrier_label_default/tests/test_print_label.py,sha256=4azZEqkqyfZnz-7usgWunN4SvU3YocVbXI2lM2XEulw,3670
+odoo10_addon_delivery_carrier_label_default-10.0.1.0.1.dist-info/METADATA,sha256=JU0DbEqGQuRYbjaMkDz_VIPPCp1fELRR-APekOw2o1c,2066
+odoo10_addon_delivery_carrier_label_default-10.0.1.0.1.dist-info/WHEEL,sha256=IhjwRKCBU_-qWYU-9mADzLY2DSoO4crUVcAQt39lCCc,92
+odoo10_addon_delivery_carrier_label_default-10.0.1.0.1.dist-info/namespace_packages.txt,sha256=igDP6S4ywc6jzcMqzrKZpRtAUXrS-iYaA_Hu1EtlI48,17
+odoo10_addon_delivery_carrier_label_default-10.0.1.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo10_addon_delivery_carrier_label_default-10.0.1.0.1.dist-info/RECORD,,
