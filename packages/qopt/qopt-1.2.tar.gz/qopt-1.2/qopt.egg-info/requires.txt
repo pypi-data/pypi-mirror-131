@@ -1,0 +1,16 @@
+numpy
+scipy
+matplotlib
+filter_functions
+
+[doc]
+ipython
+ipykernel
+nbsphinx
+numpydoc
+sphinx
+jupyter_client
+sphinx_rtd_theme
+
+[qopt_tests]
+pytest
