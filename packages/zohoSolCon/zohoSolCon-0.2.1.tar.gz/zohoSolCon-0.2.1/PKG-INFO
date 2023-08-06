@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: zohoSolCon
+Version: 0.2.1
+Summary: Implementation tools for Zoho CRM
+Home-page: UNKNOWN
+Author: Dylan Garrett
+Author-email: dylan.g@zohocorp.com
+License: UNKNOWN
+Description: A pet project I'm working, makes API calls to Zoho APIS
+Keywords: zoho,crm,api
+Platform: UNKNOWN
