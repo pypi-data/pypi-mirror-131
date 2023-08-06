@@ -1,0 +1,8 @@
+{
+  "service_worker.js": "/frontend_es5/service_worker.e1e005ba.js",
+  "app.js": "/frontend_es5/app.072b8468.js",
+  "authorize.js": "/frontend_es5/authorize.16d4ac4b.js",
+  "onboarding.js": "/frontend_es5/onboarding.1deee050.js",
+  "core.js": "/frontend_es5/core.3e07d4ab.js",
+  "custom-panel.js": "/frontend_es5/custom-panel.02c59b1b.js"
+}
