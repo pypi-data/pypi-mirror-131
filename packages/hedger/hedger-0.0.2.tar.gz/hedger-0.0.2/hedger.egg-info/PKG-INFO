@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: hedger
+Version: 0.0.2
+Summary: Semantic Finance
+Home-page: https://github.com/thorwhalen/hedger
+Author: Thor Whalen
+License: apache-2.0
+Description: # hedger
+        Semantic Finance.
+        
+        To install:	```pip install hedger```
+        
+        # Examples
+        
+        ## get a small set of tickers (offline, from a local file)
+        
+        ```python
+        from hedger import get_ticker_symbols
+        tickers = get_ticker_symbols()
+        len(tickers)
+        # 4039
+        'GOOG' in tickers
+        # True
+        ```
+        
+Keywords: finance,natural language processing,NLP,transformers
+Platform: any
+Description-Content-Type: text/markdown
