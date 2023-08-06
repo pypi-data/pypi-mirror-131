@@ -1,0 +1,14 @@
+{
+  "SimNow": {
+    "qsid": "502",
+    "wt_info": {
+      "CTP": "6679"
+    }
+  },
+  "SimTrade": {
+    "qsid": "6408",
+    "wt_info": {
+      "SIMULATE": "6916"
+    }
+  }
+}
