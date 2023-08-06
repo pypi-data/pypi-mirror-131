@@ -1,0 +1,12 @@
+bodo_platform_ipyparallel_kernel/__init__.py,sha256=rlum_jPELy2dO-s-pYBs3RDkHoATvp7dIMgZI8zjsZs,176
+bodo_platform_ipyparallel_kernel/__main__.py,sha256=s4I2DBpSQ4u1ki0RWOD8bXx7_mNGb6DN0hhGwgh6z7A,137
+bodo_platform_ipyparallel_kernel/_version.py,sha256=2xPmXBzUUEQVb3d0WDFVFF591SKB88_BdEQx2kxk16w,498
+bodo_platform_ipyparallel_kernel/helpers.py,sha256=4XgnmRrZnjbEl10-UjHD1lhhTXi1uN7j5C3vVLLcYzI,836
+bodo_platform_ipyparallel_kernel/install.py,sha256=IEV7e4TvIUvwgeimtj1HOCTUOCdfvGDaAm3pxreZQEg,1873
+bodo_platform_ipyparallel_kernel/kernel.py,sha256=4EYneKz2Us-GdwqjsJh_zT6iq4sXR7MUEAcJjnKBKzA,2571
+bodo_platform_ipyparallel_kernel/platform_hostfile_update.py,sha256=FVF9s5kKX7xIgfU0u_-_2--UkO8vk--e5LDu8bPVbKA,946
+bodo_platform_ipyparallel_kernel-1.0.0.dist-info/LICENSE,sha256=M-BciWPiiDRstHrd8A8MLuKNW53hxJ7qCvcD3GpcDLk,1317
+bodo_platform_ipyparallel_kernel-1.0.0.dist-info/METADATA,sha256=dmhPiOYPNNZxdftYEYuBDCCRscBNUOvC9S_kZqH5bzA,1219
+bodo_platform_ipyparallel_kernel-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+bodo_platform_ipyparallel_kernel-1.0.0.dist-info/top_level.txt,sha256=IpaICKK82bO6bYY4vv2u0hkug_-WMKh9OtTvzz7NXmQ,33
+bodo_platform_ipyparallel_kernel-1.0.0.dist-info/RECORD,,
