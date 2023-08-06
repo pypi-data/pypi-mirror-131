@@ -1,0 +1,9 @@
+spacex/starlink/__init__.py,sha256=q_mqLrFvme12ZXbONqKyYVOZafZdcqJp7Sv-xStGGe8,607
+spacex/starlink/alert.py,sha256=9EddTzPV_nb9-tgdGGXKYTR1mfQMF-2EHBMdx9pD02o,1063
+spacex/starlink/dish.py,sha256=JLttQxJzy2yQ6KPHxOevkLx3Z9Km3zrvSxKCHvz3OME,4756
+spacex/starlink/outage_reason.py,sha256=ayoUBYxia08ib7afHIUqSSdkE9d_CuwepTIoj87pua4,1084
+spacex/starlink/status.py,sha256=9rmShRYFTi0rtqJ9i4HinXPfYxpCfbwqEVdpsXuAbiI,2418
+starlink_python-0.1.1.dist-info/METADATA,sha256=H8nMRUYsO2Xnf9-7YfmCdYqqsyUbyvsIxVmgxnfDdyk,1791
+starlink_python-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+starlink_python-0.1.1.dist-info/top_level.txt,sha256=rARTBp30eAfTG0qqEF7tfS3zpw0soiPpUDA2PTcgNCc,7
+starlink_python-0.1.1.dist-info/RECORD,,
