@@ -1,0 +1,8 @@
+flask
+requests
+paho-mqtt
+websocket-server
+sqlalchemy
+psycopg2
+oss2
+crypto
