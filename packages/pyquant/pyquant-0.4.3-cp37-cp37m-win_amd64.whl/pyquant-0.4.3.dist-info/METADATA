@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pyquant
+Version: 0.4.3
+Summary: A framework for the analysis of quantitative mass spectrometry data
+Home-page: http://www.github.com/chris7/pyquant
+Author: Chris Mitchell <chris.mit7@gmail.com>
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+License-File: LICENSE.txt
+Requires-Dist: cython (~=0.29)
+Requires-Dist: numpy (~=1.21)
+Requires-Dist: scipy (~=1.7)
+Requires-Dist: patsy (~=0.5)
+Requires-Dist: pythomics (>=0.3.46)
+Requires-Dist: pandas (~=1.3)
+Requires-Dist: lxml (~=4.7)
+Requires-Dist: scikit-learn (~=0.22)
+Requires-Dist: simplejson (~=3.17)
+
+UNKNOWN
+
