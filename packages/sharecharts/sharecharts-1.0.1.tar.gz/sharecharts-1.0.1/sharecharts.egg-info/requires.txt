@@ -1,0 +1,10 @@
+requests
+numba
+diskcache
+pandas
+numpy
+chartspy
+tqdm
+akshare
+simplejson
+setuptools
