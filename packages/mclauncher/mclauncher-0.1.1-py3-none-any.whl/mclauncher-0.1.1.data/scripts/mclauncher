@@ -1,0 +1,6 @@
+#!python
+import mclauncher
+
+
+if __name__ == '__main__':
+    mclauncher.launch()
