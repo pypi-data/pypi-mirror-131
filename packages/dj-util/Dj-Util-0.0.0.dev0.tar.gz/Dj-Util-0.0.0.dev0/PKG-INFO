@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: dj-util
+Version: 0.0.0.dev0
+Summary: Django Utilities
+Home-page: https://GitHub.com/Django-AI/DjUtil
+License: MIT
+Keywords: Django,util,utils,utilities
+Author: STEAM for Vietnam Foundation AI & Robotics Educational Initiative
+Author-email: Edu.AI@STEAMforVietNam.org
+Maintainer: STEAM for Vietnam Foundation AI & Robotics Educational Initiative
+Maintainer-email: Edu.AI@STEAMforVietNam.org
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 7
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8.1
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: Other OS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: Django (>=4.0,<5.0)
+Requires-Dist: Django-Autocomplete-Light (>=3.9.0rc5,<4.0.0)
+Requires-Dist: Django-Model-Utils (>=4.2.0,<5.0.0)
+Project-URL: Documentation, https://Django-AI.GitHub.io/DjUtil
+Project-URL: GitHub, https://GitHub.com/Django-AI/DjUtil
+Project-URL: Repository, https://GitHub.com/Django-AI/DjUtil
+Description-Content-Type: text/markdown
+
+# Django Utilities
+
