@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+testflows.texts.egg-info/PKG-INFO
+testflows.texts.egg-info/SOURCES.txt
+testflows.texts.egg-info/dependency_links.txt
+testflows.texts.egg-info/not-zip-safe
+testflows.texts.egg-info/requires.txt
+testflows.texts.egg-info/top_level.txt
+testflows/texts/__init__.py
+testflows/texts/core.py
+testflows/texts/executable.py
+testflows/texts/run.py
