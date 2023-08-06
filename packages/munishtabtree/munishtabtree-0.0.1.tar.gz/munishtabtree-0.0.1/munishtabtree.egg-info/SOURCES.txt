@@ -1,0 +1,5 @@
+setup.py
+munishtabtree.egg-info/PKG-INFO
+munishtabtree.egg-info/SOURCES.txt
+munishtabtree.egg-info/dependency_links.txt
+munishtabtree.egg-info/top_level.txt
