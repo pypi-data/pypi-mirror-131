@@ -1,0 +1,3 @@
+[console_scripts]
+ulozto-search = ulozto_search.__main__:cmd
+
