@@ -1,0 +1,185 @@
+{
+   "definitions": {
+      "level_logging": {
+         "type": "string",
+         "enum": [
+            "NOTSET",
+            "DEBUG",
+            "INFO",
+            "WARNING",
+            "WARN",
+            "ERROR",
+            "CRITICAL"
+         ],
+         "default": "ERROR"
+      },
+      "handlers": {
+         "type": "array",
+         "uniqueItems": true,
+         "items": {
+            "type": "object",
+            "properties": {
+               "type_handler": {
+                  "type": "string",
+                  "enum": [
+                     "file",
+                     "db",
+                     "console"
+                  ]
+               },
+               "level_logging": {
+                  "$ref": "#/definitions/level_logging"
+               },
+               "directory_log": {
+                  "type": "string"
+               },
+               "logging_rotation_type": {
+                  "type": "string",
+                  "enum": [
+                     "TIMED",
+                     "SIZE"
+                  ]
+               },
+               "backup_count": {
+                  "type": "integer",
+                  "minimum": 0
+               },
+               "logging_interval": {
+                  "type": [
+                     "string",
+                     "integer"
+                  ]
+               },
+               "enabled_handler": {
+                  "type": "boolean"
+               },
+               "compression": {
+                  "type": "boolean"
+               }
+            },
+            "if": {
+               "properties": {
+                  "type_handler": {
+                     "const": "file"
+                  }
+               }
+            },
+            "then": {
+               "if": {
+                  "properties": {
+                     "logging_rotation_type": {
+                        "const": "TIMED"
+                     }
+                  }
+               },
+               "then": {
+                  "properties": {
+                     "logging_interval": {
+                        "type": "string",
+                        "pattern": "[s,S,M,m,H,h,D,d,W,w] [1-9]"
+                     }
+                  }
+               },
+               "else": {
+                  "properties": {
+                     "logging_interval": {
+                        "type": "integer",
+                        "minimum": 100
+                     }
+                  }
+               },
+               "required": [
+                  "directory_log",
+                  "logging_rotation_type",
+                  "backup_count",
+                  "logging_interval",
+                  "compression"
+               ]
+            },
+            "required": [
+               "type_handler"
+            ],
+            "additionalProperties": false
+         },
+         "default": [{"type_handler":  "console"}]
+      }
+   },
+   "properties": {
+      "logging": {
+         "type": "object",
+         "properties": {
+            "level_logging": {
+               "$ref": "#/definitions/level_logging"
+            },
+            "format_logging": {
+               "type": "string",
+               "default": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            },
+            "handlers": {
+               "$ref": "#/definitions/handlers"
+            },
+            "settings_overload": {
+               "type": "array",
+               "uniqueItems": true,
+               "items": {
+                  "type": "object",
+                  "properties": {
+                     "name_logger": {
+                        "type": "string"
+                     },
+                     "parent": {
+                        "type": "string"
+                     },
+                     "settings": {
+                        "type": "object",
+                        "properties": {
+                           "level_logging": {
+                              "$ref": "#/definitions/level_logging"
+                           },
+                           "format_logging": {
+                              "type": "string"
+                           },
+                           "handlers": {
+                              "$ref": "#/definitions/handlers"
+                           }
+                        },
+                        "required": [],
+                        "additionalProperties": false
+                     }
+                  },
+                  "required": [
+                     "name_logger"
+                  ],
+                  "additionalProperties": false
+               },
+               "default": [
+                  {
+                     "name_logger": "General",
+                     "settings": {
+                        "handlers": {
+                           "enabled_handler": true,
+							"type_handler": "file",
+							"directory_log": "/usr/telegram-bot",
+							"logging_rotation_type": "TIMED",
+							"compression": true,
+							"backup_count": 3,
+							"logging_interval": "d 1"
+                        }
+                     }
+                  }
+               ]
+            }
+         },
+         "required": [
+            "level_logging",
+            "handlers",
+            "format_logging",
+            "settings_overload"
+         ],
+         "additionalProperties": false
+      }
+   },
+   "required": [
+      "logging"
+   ]
+}
