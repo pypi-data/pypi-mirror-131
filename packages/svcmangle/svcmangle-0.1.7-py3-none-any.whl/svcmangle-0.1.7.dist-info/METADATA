@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: svcmangle
+Version: 0.1.7
+Summary: Query and control Windows services.
+Home-page: https://github.com/dmwyatt/svcmangle
+License: MIT
+Keywords: windows,service,control
+Author: dustin
+Author-email: dustin.wyatt@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Systems Administration
+Requires-Dist: pywin32 (==302)
+Project-URL: Repository, https://github.com/dmwyatt/svcmangle
+Description-Content-Type: text/markdown
+
+Query and control Windows services.
+
+Provides a simple CLI for basic service management.
+
