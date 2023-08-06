@@ -1,0 +1,14 @@
+pyriksdagen/LICENSE,sha256=u7ASEd9iADmZ6WmwdhT4o7O4bkbi-vUEesioi-XdsUM,1107
+pyriksdagen/__init__.py,sha256=Ayi9gh1vYzPtExJHyqWpwoO6chG-4OsiDQNDiC8sZFM,84
+pyriksdagen/db.py,sha256=wLUiNVUnUx8PbVTPiSYu3-axW1oZSp6dk7_2jcUb4Io,1881
+pyriksdagen/download.py,sha256=SSNjqIuWCOcZK5sVOuQ3M7amTteLwfan4XByA6AbLjs,11236
+pyriksdagen/export.py,sha256=by4wwYXbEswNPfWQ4pv8nLx1iSOP3i3zGLJ5MmMliv8,8663
+pyriksdagen/match_mp.py,sha256=9XE-W31329R1cgcUM_HLLtx1p7FIksZiG-i-dejdxz8,5043
+pyriksdagen/mp.py,sha256=AUNNF12ptHW87T-uO1eVQPv2hU0foUDgyPZCEx5SPVM,11120
+pyriksdagen/refine.py,sha256=aJuvryDEPG824Co9t5v3OW4olsixay_ilInovhOgygU,14208
+pyriksdagen/segmentation.py,sha256=UDhgMEhG2qvzgZgcuBZwEM_eEHq-pkbKYSyVFLxllqI,7765
+pyriksdagen/utils.py,sha256=jAtokdgGNq_jPKlVsgffee2k9CrkPosCAktwA6kbYT4,3409
+pyriksdagen-0.2.1.dist-info/LICENSE,sha256=Uz-MXRw6NnGltjGgKIF5uBMA3iuqk1MoF9fLgQ2DJgc,1249
+pyriksdagen-0.2.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pyriksdagen-0.2.1.dist-info/METADATA,sha256=j6h7dFrX1X_en2ILEwf901r5IO4LCdEvD6rygmsBmZk,2274
+pyriksdagen-0.2.1.dist-info/RECORD,,
