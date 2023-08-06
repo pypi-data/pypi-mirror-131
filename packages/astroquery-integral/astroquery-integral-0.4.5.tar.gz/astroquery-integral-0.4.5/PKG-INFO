@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: astroquery-integral
+Version: 0.4.5
+Summary: Functions and classes to access online astronomical data resources
+Home-page: http://astropy.org/astroquery
+Author: The Astroquery Developers
+License: BSD
+Platform: UNKNOWN
+Provides-Extra: test
+Provides-Extra: docs
+Provides-Extra: all
+Provides-Extra: all_lt_39
+License-File: LICENSE.rst
+
+UNKNOWN
+
