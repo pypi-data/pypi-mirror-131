@@ -1,0 +1,10 @@
+file_type_guesser/__init__.py,sha256=thU3mX1svVvluhkeVeSjbDa6VKLzhRt8fFamqCTMpf8,165
+file_type_guesser/constants.py,sha256=txjw2WAEXmqnPxOlt8dgIWJW5wupVzbOSUry5XE2hI8,1838
+file_type_guesser/core.py,sha256=Hx5LpmVVG6d7SwhJF8JYHTxnpPHUWBwI-hC9ok59rdw,4205
+file_type_guesser/signatures.py,sha256=pYAPHwbU3RDKuWrVShGrrzciiULC60Dl3lHziBZNriw,881
+file_type_guesser/types.py,sha256=dLxsARwrh7dssVdt5xVQVWIuQxoHRq7G6TqTA0p_5ZY,1005
+file_type_guesser-0.2.0.dist-info/LICENSE,sha256=-uUfxsa2C_tCZaAknZw7PqqyQ2cyrqtvOV6iaHzaowE,1067
+file_type_guesser-0.2.0.dist-info/METADATA,sha256=5rMpxusUb2pa0vLx94Vo9c3660kIVE8_cA03nCmIQXc,2431
+file_type_guesser-0.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+file_type_guesser-0.2.0.dist-info/top_level.txt,sha256=f3bCc-m_khvUoGQrCMgjGVs73Mh-xrhgxmmZwBV4SCo,18
+file_type_guesser-0.2.0.dist-info/RECORD,,
