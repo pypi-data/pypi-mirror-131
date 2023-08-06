@@ -1,0 +1,15 @@
+django-lbattachment>=1.1.0
+django-lbutils>=1.1.0
+django<4.0,>=2.2
+jinja2>=2.9.6
+jsonfield>=1.0.1
+xlsxwriter>=0.9.6
+
+[options]
+django-bootstrap-pagination>=1.7.0
+django-compressor>=2.1.1
+django-crispy-forms>=1.6
+django-impersonate
+django-lb-adminlte>=1.2.1
+django-stronghold
+django_select2>=7.2.0
