@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pyinline
+Version: 0.0.1
+Summary: pyinline, a script for inlining functions that have been decorated with the `@inline` decorator.
+Author: Anthony Shaw
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: libcst >= 0.3.23,<0.4
+Project-URL: Home, https://github.com/tonybaloney/pyinline
