@@ -1,0 +1,14 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/base.py,sha256=7IBVdzQPa3_hEV1NDwjoU_qpNQmOAX1LZDRAZmzwFJ8,8000
+tests/test_examples.py,sha256=KIoXOZH8Hdgiy79xHQ0dxJiK9lcT5BYszXD4SKDdm9U,1132
+tests/test_functions.py,sha256=2eaXRYGpMO7__O-RVUxWCmAF4UaM4Xf3W97bGxwTS1I,1484
+tests/test_types.py,sha256=VOrLfeRimzuPL7SIhpMJRo4IURVSqCBeiB24g4W34gI,6088
+validatedata/__init__.py,sha256=uGJFkYyv7eGQR9E0WZJAJvTXwDgVzaZsI5aMXuUTYZo,49
+validatedata/messages.py,sha256=9-wDokuNCRNaFfliYJsTT49N7F__g_riO3rBdoZ1HYM,1385
+validatedata/validatedata.py,sha256=PPXXzqV-AHnVRZwS2vVvqcgqA0twVLJ3weJ0l4uFoIo,5188
+validatedata/validator.py,sha256=XMnW_4oKr_tbmL-adoTv6s0F7ClDZizIFCCBP-SiWXI,16123
+validatedata-0.0.1.5.dist-info/LICENSE,sha256=7QcxW9Ro75rS0_4v2KkmE4jHuOtdwQzVVkQqw7Oy2y4,1070
+validatedata-0.0.1.5.dist-info/METADATA,sha256=-WKlRSgkAMUcJtzDMFZy_BIJvo5XeeiGidasosq-QiQ,6041
+validatedata-0.0.1.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+validatedata-0.0.1.5.dist-info/top_level.txt,sha256=9Kt6BXZx5irSch6TuYwAXn1SXebB644cXEP0CpDO_Pg,19
+validatedata-0.0.1.5.dist-info/RECORD,,
