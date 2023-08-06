@@ -1,0 +1,9 @@
+hrep/__init__.py,sha256=wbPx-d5-DmdnIM3THbW_SZmgZJ0clNAgjtUgXVqyu1U,23
+hrep/__main__.py,sha256=42AcJFO_SrAN1ie2xbBUIrWY34WBq17CwOJ2cwrNTUg,15008
+hrep/hexdump.py,sha256=BaZo9_9Sf8c6CxA0M8YuXG47n_26VwVOx2T1Z3UyD_o,2745
+hrep-0.4.1a0.data/scripts/hrep,sha256=WzGOs2L8XgMqETKKKzGfqGrzyBLcY4WDa2cpfGEFVRM,52
+hrep-0.4.1a0.dist-info/LICENSE,sha256=gkpUPiGIV_Bz-zRpLAg4J2Dl4jWvkyyhpxonbLwYeQU,1063
+hrep-0.4.1a0.dist-info/METADATA,sha256=_QELE-_GI-j4xJz0gG6D3oeSezDsao1k8VkR6VGPMb0,2986
+hrep-0.4.1a0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+hrep-0.4.1a0.dist-info/top_level.txt,sha256=W-ofBThqGouitMWTDHUJDYzguRoKdX7U0yffq1z2pq8,5
+hrep-0.4.1a0.dist-info/RECORD,,
