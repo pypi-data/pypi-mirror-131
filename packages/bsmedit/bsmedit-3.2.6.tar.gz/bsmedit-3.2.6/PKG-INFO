@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bsmedit
+Version: 3.2.6
+Summary: C/C++/SystemC Visualizer
+Home-page: http://bsmedit.feiyilin.com
+Author: Tianzhu Qiao
+Author-email: tq@feiyilin.com
+License: MIT
+Description: 
+        **bsmedit** is a C/C++/SystemC Visualizer.
+        - [Documentation](http://bsmedit.feiyilin.com)
+        
+Platform: any
+Description-Content-Type: text/markdown

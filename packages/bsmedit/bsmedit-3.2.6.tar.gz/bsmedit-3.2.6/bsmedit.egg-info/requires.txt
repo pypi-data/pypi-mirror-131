@@ -1,0 +1,6 @@
+wxpython>=4.0.4
+matplotlib
+numpy
+click
+PyOpenGL
+PyOpenGL_accelerate
