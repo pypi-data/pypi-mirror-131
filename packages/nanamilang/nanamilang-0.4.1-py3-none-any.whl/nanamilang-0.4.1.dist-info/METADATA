@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: nanamilang
+Version: 0.4.1
+Summary: NanamiLang - Chiaki Nanami Language
+Home-page: https://nanamilang.jedi2light.moe/
+Author: @jedi2light
+Author-email: stoyan.minaev@gmail.com
+Maintainer: @jedi2light
+Maintainer-email: stoyan.minaev@gmail.com
+License: GNU GPL v2
+Project-URL: Documentation, https://nanamilang.readthedocs.io/en/latest/
+Project-URL: Bug Tracker, https://gitea.jedi2light.moe/jedi2light/nanamilang/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# NanamiLang - Chiaki Nanami Language
+
+<img src="https://nanamilang.jedi2light.moe/res/pic/NanamiLang-Logo-v0.1.svg" alt="Logo" width="250"/>
+
+[NanamiLang](https://nanamilang.jedi2light.moe) is an experimental LISP language dialect with immutable data structures.
+
+## Documentation
+
+Read the NanamiLang documentation at the [ReadDocs](https://nanamilang.readthedocs.io/en/latest/)
+
+## Key points
+
+1. The project main goal is to create a LISP language dialect with immutable data structures.
+2. The project name was inspired by the character Chiaki Nanami from the game named Danganronpa v2.
+
+## Data Types
+
+### Simple Types
+
+| Type Name       | Purpose                                                             |
+|-----------------|---------------------------------------------------------------------|
+| *Nil*           | To mark as a nil                                                    |
+| *Boolean*       | Encapsulate Python 3 bool                                           |
+| *String*        | Encapsulate Python 3 str                                            |
+| *Date*          | Encapsulate Python 3 datetime.datetime class                        |
+| *FloatNumber*   | Encapsulate Python 3 float                                          |
+| *IntegerNumber* | Encapsulate Python 3 int                                            |
+| *Keyword*       | Encapsulate Python 3 str                                            |
+| *NException*    | Encapsulate Python 3 Exception class                                |
+| *Undefined*     | To mark as an undefined at parse-time                               |
+| *Macro*         | Encapsulate macro name and its Python 3 handle                      |
+| *Function*      | Encapsulate function name and its Python 3 handle                   |
+
+### Complex Types
+
+| Type Name       | Purpose                                                             |
+|-----------------|---------------------------------------------------------------------|
+| *Set*           | Implements a Set of NanamiLang Base data types                      |
+| *Vector*        | Implements a Vector of NanamiLang Base data types                   |
+| *HashMap*       | Implements a HashMap of NanamiLang Base data types                  |
+
+## Collaborators
+
+1. @jedi2light - (aka. Stoian Minaiev) - Creator & Maintainer of the project.
+2. @buzzer13 - the project contains `AST._create()` method that was initially written by that person.
+
+## Installation methods and proposed ways to use
+
+0. Ensure that you have `GNU Make` installed on your system, then go to the project root and run `make install`.
+    1. Alternatively, you can install `nanamilang` from PyPi repository, just run `pip3 install nanamilang` command.
+1. Check whether your `~/.local/bin` and `~/.local/lib` directories are present in your `$PATH` environment variable.
+2. `nanamilang-repl.py` allows you to type expressions, and evaluate them on-the-fly.
+3. `nanamilang-eval.py` reads a file (if it exists), evaluates it, and returns a corresponding value to a host system.
+
+## NanamiLang eval script options explained
+
+Instead of writing large `help` messages for every option, here you can find an explanation for all of them:  
+1. `<program>`  
+   First argument, must be a path to the source code of your Nanamilang program. You can omit that.
+2. `--lisence`  
+   It just tells the script to show NanamiLang core license. Output would be `License is GNU GPL v2`
+3. `--version`  
+   It just tells the script to show Nanamilang core version. Output would be `NanamiLang <MAJ>.<MIN>.<P>`
+4  `--include-traceback`  
+   It tells REPL script to show you a traceback of occurred exception.  
+   Technically, its just tells `nanamilang.datatypes/NException.format(include_traceback=True)` to include tb.
+
+## NanamiLang frmt script options explained
+
+Instead of writing large `help` messages for every option, here you can find an explanation for all of them:  
+1. `<program>`  
+   First argument, must be a path to the source code of your Nanamilang program. You can omit that.
+2. `--lisence`  
+   It just tells the script to show NanamiLang core license. Output would be `License is GNU GPL v2`
+3. `--version`  
+   It just tells the script to show Nanamilang core version. Output would be `NanamiLang <MAJ>.<MIN>.<P>`
+
+## NanamiLang REPL script options explained
+
+Instead of writing large `help` messages for every option, here you can find an explanation for all of them:  
+1. `--no-greeting`  
+   It tells REPL script to not show you certain information like:  
+   `readline` history path, 'how to get doc' and 'how to exit from REPL' tips.
+2. `--include-traceback`  
+   It tells REPL script to show you a traceback of occurred exception.  
+   Technically, its just tells `nanamilang.datatypes/NException.format(include_traceback=True)` to include tb.
+3. `--show-measurements`  
+   You can measure evaluation time using `(measure ...)` macro (see also `(doc measure)` to get more).  
+   But `--show-measurements` tells the REPL to display `nanamilang.program.Program.mesaurements()` for each stage
+   of `nanamilang.program.Program` evaluation, including: `Tokenizer.tokenize()`, `AST._create()`, `AST.evaluate()`.
+
+## NanamiLang Core API Usage Example in Python 3
+
+```python3
+from nanamilang import program
+
+source = '(+ 2 2 (* 2 2))'
+program: program.Program = program.Program(str(source))
+program.format()  # => "(+ 2 2 (* 2 2))"
+program.ast()  # => get encapsulated AST instance
+program.tokenized()  # => collection of a Token instances
+
+results = program.evaluate() # => ((<IntegerNumber>: 8, ...),)
+```
+
+## License
+
+**NanamiLang is licensed under GNU GPL version 2, was initially made by @jedi2light (aka Stoian Minaiev), October 2021**
+
