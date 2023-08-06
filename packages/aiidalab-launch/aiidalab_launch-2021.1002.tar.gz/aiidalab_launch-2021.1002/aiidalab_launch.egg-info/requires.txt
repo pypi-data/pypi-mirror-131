@@ -1,0 +1,16 @@
+click==8.0.3
+docker==5.0.3
+docker-compose==1.29.2
+python-dotenv==0.19.1
+tabulate==0.8.9
+toml==0.10.2
+
+[dev]
+bumpver==2021.1114
+dunamai==1.7.0
+
+[pre_commit]
+pre-commit==2.15.0
+
+[tests]
+pytest==6.2.5
