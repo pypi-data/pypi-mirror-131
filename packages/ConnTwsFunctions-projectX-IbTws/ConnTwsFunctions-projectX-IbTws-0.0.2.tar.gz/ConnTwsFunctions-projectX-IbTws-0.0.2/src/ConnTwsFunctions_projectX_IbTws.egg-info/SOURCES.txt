@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/ConnTwsFunctions_projectX_IbTws.egg-info/PKG-INFO
+src/ConnTwsFunctions_projectX_IbTws.egg-info/SOURCES.txt
+src/ConnTwsFunctions_projectX_IbTws.egg-info/dependency_links.txt
+src/ConnTwsFunctions_projectX_IbTws.egg-info/top_level.txt
+src/tws_integrated_functions/__init__.py
+src/tws_integrated_functions/account_summary.py
+src/tws_integrated_functions/appConnectionTws.py
+src/tws_integrated_functions/contract_charact.py
+src/tws_integrated_functions/market_reader.py
+src/tws_integrated_functions/submit_order.py
