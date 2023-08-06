@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+.idea/.gitignore
+.idea/EDAproject.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/inspectionProfiles/profiles_settings.xml
+src/easy_report.py
+src/EasyReport.egg-info/PKG-INFO
+src/EasyReport.egg-info/SOURCES.txt
+src/EasyReport.egg-info/dependency_links.txt
+src/EasyReport.egg-info/requires.txt
+src/EasyReport.egg-info/top_level.txt
