@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: catwalk-common
+Version: 0.0.1
+Summary: Common code used in catwalk project
+Home-page: UNKNOWN
+Author: ERST
+Author-email: noreply@erst.dk
+License: GPLv3+
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Information Technology
+Requires-Python: >=3.8.0
+Requires-Dist: pydantic (==1.8.2)
+
+UNKNOWN
+
