@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+src/calculator_pkg_GACI_GIT.egg-info/PKG-INFO
+src/calculator_pkg_GACI_GIT.egg-info/SOURCES.txt
+src/calculator_pkg_GACI_GIT.egg-info/dependency_links.txt
+src/calculator_pkg_GACI_GIT.egg-info/top_level.txt
+src/gacilator/__init__.py
+src/gacilator/example.py
+src/gacilator/gacilator.py
