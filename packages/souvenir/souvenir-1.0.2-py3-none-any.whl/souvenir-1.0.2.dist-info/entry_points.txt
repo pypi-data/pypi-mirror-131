@@ -1,0 +1,3 @@
+[console_scripts]
+sv=souvenir.__main__:sv
+

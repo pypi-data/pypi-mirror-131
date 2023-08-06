@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: souvenir
+Version: 1.0.2
+Summary: Little CLI program which helps creating and viewing flashcards
+Home-page: https://github.com/codingjerk/souvenir
+License: MIT
+Keywords: flashcard,cli,tool
+Author: Denis Gruzdev
+Author-email: codingjerk@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: tabulate (>=0.8.9,<0.9.0)
+Requires-Dist: typer (>=0.4.0,<0.5.0)
+Project-URL: Repository, https://github.com/codingjerk/souvenir
+Description-Content-Type: text/markdown
+
+# Souvenir
+
+> Little CLI program which helps creating and viewing flashcards
+
+## Usage
+
+```sh
+$ cat words.yml
+
+- fr: souvenir
+  en: to remember
+  ru: помнить
+
+- fr: parler
+  en: to speak
+  ru: говорить
+```
+
+```sh
+$ sv list words fr
++----------+-------------+----------+----------+
+| fr       | en          | ru       | bucket   |
+|----------+-------------+----------|----------|
+| souvenir | to remember | помнить  | 1        |
+| parler   | to speak    | говорить | 3        |
++----------+-------------+----------+----------+
+```
+
+```sh
+$ sv repeat words fr
+=> souvenir
+   en: to remember
+   ru: помнить
+=| correct? [y/n]
+
+=> parler
+   en: to speak
+   ru: говорить
+=| correct? [y/n]
+```
+
