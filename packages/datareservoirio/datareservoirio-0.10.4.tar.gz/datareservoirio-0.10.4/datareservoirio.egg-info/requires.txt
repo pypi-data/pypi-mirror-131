@@ -1,0 +1,8 @@
+azure-storage-blob>=12.4.0
+numpy
+oauthlib
+pandas
+pyarrow
+requests
+requests-oauthlib
+importlib_resources
