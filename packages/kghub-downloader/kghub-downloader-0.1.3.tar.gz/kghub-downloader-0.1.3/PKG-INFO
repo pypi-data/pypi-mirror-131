@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: kghub-downloader
+Version: 0.1.3
+Summary: Downloads and caches files for knowledge graph ETL
+Author: The Monarch Initiative
+Author-email: info@monarchinitiative.org
+Requires-Python: >=3.7,<3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>5.0,<7.0)
+Requires-Dist: compress-json (>1.0,<2.0)
+Requires-Dist: elasticsearch
