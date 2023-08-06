@@ -1,0 +1,9 @@
+README.md
+setup.py
+spoceatmos/__init__.py
+spoceatmos/util.py
+spoceatmos.egg-info/PKG-INFO
+spoceatmos.egg-info/SOURCES.txt
+spoceatmos.egg-info/dependency_links.txt
+spoceatmos.egg-info/entry_points.txt
+spoceatmos.egg-info/top_level.txt
