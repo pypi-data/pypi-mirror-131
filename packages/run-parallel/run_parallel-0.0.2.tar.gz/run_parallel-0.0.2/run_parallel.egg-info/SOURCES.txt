@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+run_parallel/__init__.py
+run_parallel/run_parallel.py
+run_parallel.egg-info/PKG-INFO
+run_parallel.egg-info/SOURCES.txt
+run_parallel.egg-info/dependency_links.txt
+run_parallel.egg-info/top_level.txt
+test/test_run_parallel.py
