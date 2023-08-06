@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.mypy_cache" />
+      <excludeFolder url="file://$MODULE_DIR$/.eggs" />
+      <excludeFolder url="file://$MODULE_DIR$/openmodule_test/.eggs" />
+      <excludeFolder url="file://$MODULE_DIR$/openmodule_test/openmodule_test.egg-info" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.8 (controller-fraport)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="PyDocumentationSettings">
+    <option name="format" value="PLAIN" />
+    <option name="myDocStringFormat" value="Plain" />
+  </component>
+  <component name="TemplatesService">
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/.tox/py37/lib/python3.7/site-packages/alembic/templates" />
+      </list>
+    </option>
+  </component>
+</module>
