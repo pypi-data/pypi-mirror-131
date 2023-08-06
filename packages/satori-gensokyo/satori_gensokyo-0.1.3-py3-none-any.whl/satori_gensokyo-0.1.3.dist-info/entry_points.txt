@@ -1,0 +1,3 @@
+[console_scripts]
+satori=satori_gensokyo:main
+
