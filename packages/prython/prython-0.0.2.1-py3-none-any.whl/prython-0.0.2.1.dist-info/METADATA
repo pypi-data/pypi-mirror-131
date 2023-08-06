@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: prython
+Version: 0.0.2.1
+Summary: Runtime microdebugger for Python, inspire by Ruby's pry gem.
+Home-page: https://github.com/otamm/Prython
+Author: Otavio Ehrenberger
+Author-email: ehren.dev.mail@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: pathlib ; python_version < "3.4"
+
+# Prython
+
+Inspired by [Ruby's pry gem](https://raw.githubusercontent.com/pry/pry) and [this snippet](https://gist.github.com/obfusk/208597ccc64bf9b436ed).
+
+Prython is a debugging aid, made to be lightweight and very easy to use. If you want to take a look at Python's official debugger, [this is it](https://docs.python.org/3/library/pdb.html).
+
+## Installation
+
+### Python 3
+Install from PyPi with:
+
+```bash
+pip install prython
+```
+or, in case you have 2 versions in your system and hasn't mapped Python 3 as the main one:
+
+```bash
+pip3 install prython
+```
+
+## Usage
+
+All of this package's methods are listed below (I told you it was lightweight and easy to use).
+Remember to `import prython` at the top of your file.
+
+### `pry()`
+
+```python
+import prython
+
+a = "Are you prying?"
+def example_function():
+    b = "With prython?"
+    prython.pry()
+    c = "Yep!"
+```
+
+If you run this file, say, from the command line, a REPL interpreter will pop up at the context of the line calling `prython.pry()`, which means you will have access to variables `a` and `b` but not `c`, as the line wasn't ran when prython was called.
+
+
+
+

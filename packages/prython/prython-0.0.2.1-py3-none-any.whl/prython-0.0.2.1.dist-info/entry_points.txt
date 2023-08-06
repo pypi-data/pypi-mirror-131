@@ -1,0 +1,3 @@
+[console_scripts]
+prython = prython.__main__:main
+
