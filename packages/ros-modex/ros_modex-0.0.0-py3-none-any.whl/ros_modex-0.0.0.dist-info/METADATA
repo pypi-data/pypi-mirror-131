@@ -1,0 +1,131 @@
+Metadata-Version: 2.1
+Name: ros-modex
+Version: 0.0.0
+Summary: A model extraction and analysis tool for ROS systems
+Home-page: https://github.com/git-afsantos/ros-modex
+Author: André Santos
+Author-email: haros.framework@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/git-afsantos/ros-modex/
+Project-URL: Tracker, https://github.com/git-afsantos/ros-modex/issues
+Keywords: ros,variability,model extraction,feature models
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+
+# ROS Model Extractor (WIP)
+
+This project provides a model extraction tool for ROS Launch applications.
+It should be able to read launch files, interpret them, and build a model of the expected architecture of the ROS system at runtime.
+
+- [Package Structure](#package-structure)
+- [Tooling](#tooling)
+
+## Package Structure
+
+It provides a `src` directory, under which your own packages sit. Example files for `__init__.py`, `__main__.py` and `cli.py` are already provided.
+
+Tests are placed under the `tests` directory, and documentation under the `docs` directory.
+
+To start your new project, you should change its name, URL and metadata details at:
+
+1. `README.md`
+2. `CHANGELOG.md`
+3. `setup.py`
+4. `tests/*.py`
+5. `src/*`
+
+## Tooling
+
+This package sets up various `tox` environments for static checks, testing, building and publishing.
+It is also configured with `pre-commit` hooks to perform static checks and automatic formatting.
+
+If you do not use `tox`, you can build the package with `build` and install a development version with `pip`.
+
+Assume `cd` into the repository's root.
+
+To install the `pre-commit` hooks:
+
+```bash
+pre-commit install
+```
+
+To run type checking:
+
+```bash
+tox -e typecheck
+```
+
+To run linting tools:
+
+```bash
+tox -e lint
+```
+
+To run automatic formatting:
+
+```bash
+tox -e format
+```
+
+To run tests:
+
+```bash
+tox
+```
+
+To build the package:
+
+```bash
+tox -e build
+```
+
+To build the package (with `build`):
+
+```bash
+python -m build
+```
+
+To clean the previous build files:
+
+```bash
+tox -e clean
+```
+
+To test package publication (publish to *Test PyPI*):
+
+```bash
+tox -e publish
+```
+
+To publish the package to PyPI:
+
+```bash
+tox -e publish -- --repository pypi
+```
+
+To install an editable version:
+
+```bash
+pip install -e .
+```
+
+

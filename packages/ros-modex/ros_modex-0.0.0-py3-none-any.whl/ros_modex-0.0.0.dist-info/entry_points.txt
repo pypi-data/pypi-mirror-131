@@ -1,0 +1,3 @@
+[console_scripts]
+ros-modex = rosmodex.cli:main
+
