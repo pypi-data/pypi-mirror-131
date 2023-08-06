@@ -1,0 +1,3 @@
+[console_scripts]
+svcm=svcmangle.cli:main
+
