@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "my_csvtojson_converter"
+version = "0.1.1"
+description = "Converte arquivos .csv para .json. Publicado apenas para fins educativos da PUC/Minas, classe de Pós Graduação."
+authors = ["Mirian Machado <miriancosta.m@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.0.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+flake8 = "^4.0.1"
+mypy = "^0.920"
+black = "^21.12b0"
+ipython = "^7.30.1"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+csv_converter = 'my_csvtojson_converter.converter:converter'
+
+[tool.black]
+line-length = 99
+
+[tool.isort]
+profile = 'black'
