@@ -1,0 +1,8 @@
+navmesh/__init__.py,sha256=EmcA1IvUFf1zVDbQe514IPUG3eQKpPnRDr7p6PSKPN0,12430
+navmesh/navmesh_bvh.py,sha256=b9yE9Ugbxh3mNZJY7Qqn7QkmXRvhIlX2c7fgJosB-44,6816
+navmesh/navmesh_graph.py,sha256=3zbmYUhBeezBKGTCxRNfiP-OmpYyWArs5xBzjvRtrU4,6753
+navmesh/navmesh_node.py,sha256=0VedMAUUZdE2_cr4WYPLAf3b0dBDc62j43ExD1cTxWc,7139
+pynavmesh-1.0.0.dist-info/METADATA,sha256=aXkTaIUg1rBCS0gXccWFLxnUuP7n5OAkPSAwzTHy0EY,9911
+pynavmesh-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pynavmesh-1.0.0.dist-info/top_level.txt,sha256=GYjR-Xpx7nVElbsynOc9m7MkW66B-Puk_GOE9FY2MPc,8
+pynavmesh-1.0.0.dist-info/RECORD,,
