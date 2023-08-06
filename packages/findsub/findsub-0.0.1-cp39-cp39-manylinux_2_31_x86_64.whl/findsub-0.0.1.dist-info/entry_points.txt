@@ -1,0 +1,3 @@
+[console_scripts]
+finsub=findsub.__main__:run
+
