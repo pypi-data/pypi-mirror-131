@@ -1,0 +1,13 @@
+docxtpl/__init__.py,sha256=ruVhOAE4g_M9tLiPJL1DmlxgQRRcEz6R8Dtvr6gua0c,280
+docxtpl/__main__.py,sha256=zNT50u6iUOErqJnhNGknwml1ix24x9VXnNBlDWyOkwc,5517
+docxtpl/inline_image.py,sha256=SoFClTsashsuDVRhQdWCqYdIvi0xZ0xJePdFM-Gngss,966
+docxtpl/listing.py,sha256=lqxATu9Vdpw1Yu6QCfeiEOGT3-loAY2Li6n0e5X8f80,850
+docxtpl/richtext.py,sha256=y3TR9z510sKaRDTGqorJxQJiWtiaxwU3LZkyhR08o2U,2982
+docxtpl/subdoc.py,sha256=TX0ZIF7Jvo1K-V26k5VnJH-RXufSbHe8NvSkF51KZns,3328
+docxtpl/template.py,sha256=dgvLVE5V76NBPxWhwvzh-2XT7b9_oQrjYYyRH2qF0XY,30045
+docxtpl-0.15.0.dist-info/LICENSE.txt,sha256=m4cqigcLitMpxL04D7G_AAD1ZMdQI-yOHmgD8VNkuek,26461
+docxtpl-0.15.0.dist-info/METADATA,sha256=mWWJ_42ZFxQCh-cfCg7rlmUlcUbjiLm1P7vEOrR3Uw8,7724
+docxtpl-0.15.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+docxtpl-0.15.0.dist-info/eager_resources.txt,sha256=DasNALQuzzpDEPJb9O4UzE5CjrpnNxe1HOrTNOUH5hs,5
+docxtpl-0.15.0.dist-info/top_level.txt,sha256=0Anh3gYd0awULDgYPAMUnFjvYS2qS1WjtX36T1wVWdQ,8
+docxtpl-0.15.0.dist-info/RECORD,,
