@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+NNHedge.egg-info/PKG-INFO
+NNHedge.egg-info/SOURCES.txt
+NNHedge.egg-info/dependency_links.txt
+NNHedge.egg-info/requires.txt
+NNHedge.egg-info/top_level.txt
