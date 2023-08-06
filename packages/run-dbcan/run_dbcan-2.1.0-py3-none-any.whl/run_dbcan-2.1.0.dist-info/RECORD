@@ -1,0 +1,16 @@
+Hotpep_bkp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Hotpep_bkp/add_functions_orf.py,sha256=6wLsz6p08NXgVktLb4eY_Sjl1TQxwkLc2lpxoI70kn4,5213
+Hotpep_bkp/bact_group_many_proteins_many_patterns.py,sha256=wZDiTpxl70MQq6FJ_yoh81gMBPOMepbWyFJ6qsg25co,4427
+Hotpep_bkp/hotpep_data.py,sha256=PyBJ98d8a27I4ZWkvdJHiZDKwVJFAzhTh_ccNS3oQDA,232
+Hotpep_bkp/list_multidomain_proteins.py,sha256=k2z5ZQ4cF-Qopv6sMjyYSRpondMb1KsEtmEvLXdRtak,1284
+Hotpep_bkp/parallel_group_many_proteins_many_patterns_noDNA.py,sha256=r3eFU6jUUENkWXshLIglWiOY0e30b2YLTjGhwUWt3_4,3452
+Hotpep_bkp/train_many_organisms_many_families.py,sha256=6XMwodjj86PcEmoK9yGvKnJVdtrYZgB5H-Y8iSUv500,2218
+run_dbcan-2.1.0.data/scripts/CGCFinder.py,sha256=oZu3EuxqFHoQwnZazA4sHRLtnkGdSV-bHWqRRjke8zA,5260
+run_dbcan-2.1.0.data/scripts/hmmscan-parser.py,sha256=045W4b0OamOY35TFzg2sPFWrSgG2APxp0OTcvMM_104,1812
+run_dbcan-2.1.0.data/scripts/run_dbcan.py,sha256=a1nH-lRyLaRTTp9D3_p181q9K5pSGFXvJooxxoJSj4g,27412
+run_dbcan-2.1.0.data/scripts/simplify_cgc.py,sha256=06Es8Ht9oTruXnIgekoHM-X6orr6jeAb2vyvSVFNecE,3244
+run_dbcan-2.1.0.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+run_dbcan-2.1.0.dist-info/METADATA,sha256=N3HFi1WaSY8dPcLGvLVAFYkXMl-hp0_siGtsXs5UL3A,957
+run_dbcan-2.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+run_dbcan-2.1.0.dist-info/top_level.txt,sha256=0lvjW7Mlh2XAZJ3OT-E31JJx-bf4Ws6tnBnZ6jJqn6k,11
+run_dbcan-2.1.0.dist-info/RECORD,,
