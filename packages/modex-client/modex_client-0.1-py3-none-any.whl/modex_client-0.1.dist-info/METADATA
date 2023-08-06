@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: modex-client
+Version: 0.1
+Summary: Modex client
+Home-page: https://git.vbrlabs.io/vanea/veelancing-modex
+Author: Veelancing Inc
+Author-email: stefan@velancing.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+Modex Python Client
+
