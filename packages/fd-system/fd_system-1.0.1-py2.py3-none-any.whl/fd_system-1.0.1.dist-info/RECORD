@@ -1,0 +1,14 @@
+fd-system/__init__.py,sha256=92m_Mi9MrN9Hsln4AEBVCdxJS9pUaSFitITm_Ya0FGo,121
+fd-system/client.py,sha256=9O-MrUi-DfdpWNuudi1ti13nJqHUPyEHx8wDLlBw44w,2081
+fd-system/compiler.py,sha256=YRgPMYOnj3c3e_DK7nQs3x50ZyC9cBdM7E0mSKo9KAA,1457
+fd-system/server.py,sha256=9DEpUtDnJZj7AzvX7th-cyAcEwzOKGDjjffaRVu8m7c,786
+fd-system/version.py,sha256=5hAFwLOJS4nh02cUUfk9pXkUdYIW8fGKCvTDIgane68,375
+fd-system/utils/__init__.py,sha256=HlZRNAdsMddrpSzlzp0bnS-2_5y366uojkGLfCJlh8w,66
+fd-system/utils/fdd.py,sha256=aqUNAHIwth0I1-II68Yo31pD9cFpMhBKeMwJu2c_73Q,2772
+fd-system/utils/fdf.py,sha256=WYx3Oj4jKQeM47dm6cp7tKBATRNeOjqNpRyF6tcTPeA,4105
+fd-system/utils/fdv.py,sha256=_cSsaAT8DsFga7z6Ipsqji4F_Cyb0CeMsWm6EzlGPdo,2139
+fd_system-1.0.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+fd_system-1.0.1.dist-info/METADATA,sha256=W_Q15VV9pevUTfS41F8W3AgDfVI6rbW9YKfGlHgLOaI,1318
+fd_system-1.0.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+fd_system-1.0.1.dist-info/top_level.txt,sha256=H2R2TrL6KkAzuRTH725uV73xXurBMYD6XQVSGVV3wJ4,10
+fd_system-1.0.1.dist-info/RECORD,,
