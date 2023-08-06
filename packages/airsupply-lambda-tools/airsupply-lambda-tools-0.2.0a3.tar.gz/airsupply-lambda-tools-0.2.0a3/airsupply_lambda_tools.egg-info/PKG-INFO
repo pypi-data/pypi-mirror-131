@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: airsupply-lambda-tools
+Version: 0.2.0a3
+Summary: A toolkit for creating and deploying Python code to AWS Lambda
+Home-page: https://github.com/airsupply-solutions/air-supply
+Author: Tim Martin
+Author-email: tim@airsupply.org.uk
+License: MIT
+Keywords: aws-lambda,aws
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.txt
+
+UNKNOWN
+
