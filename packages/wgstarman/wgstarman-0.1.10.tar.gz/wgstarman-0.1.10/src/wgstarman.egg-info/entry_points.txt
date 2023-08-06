@@ -1,0 +1,3 @@
+[console_scripts]
+wgstarman = wgstarman.cli.wgstarman:main
+
