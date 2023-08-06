@@ -1,0 +1,14 @@
+numpy
+pandas
+seaborn
+jinja2
+
+[dev]
+pytest
+pytest-cov
+pytest-mock
+pytest-xdist
+tox
+
+[interactive]
+matplotlib
