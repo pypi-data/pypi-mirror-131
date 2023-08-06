@@ -1,0 +1,8 @@
+blessings~=1.7
+lark>=1.0.0
+
+[dev]
+pytest>=3.7
+check-manifest
+twine
+requests>=2.26.0
