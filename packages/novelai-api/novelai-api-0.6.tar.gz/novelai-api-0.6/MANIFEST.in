@@ -1,0 +1,2 @@
+graft novelai_api
+global-exclude *.pyc
