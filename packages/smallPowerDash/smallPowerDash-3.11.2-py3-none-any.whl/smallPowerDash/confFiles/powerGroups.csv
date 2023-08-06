@@ -1,0 +1,7 @@
+"powerGroup","pattern"
+"armoire","SEH0\.JTW"
+"enceinte thermique","STB_HER.*JTW_00"
+"chauffant stack","STB_STK.*JTW_00"
+"chauffant GV","STG.*JTW"
+"blowers","BLR.*JTW"
+"pompes","PMP.*JTW"
