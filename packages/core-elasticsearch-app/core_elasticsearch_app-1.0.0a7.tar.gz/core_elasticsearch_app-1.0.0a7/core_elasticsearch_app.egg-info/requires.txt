@@ -1,0 +1,5 @@
+Django
+elasticsearch==7.16.1
+core-main-app==1.18.*
+core-explore-keyword-app==1.18.*
+signals-utils==1.12.*
