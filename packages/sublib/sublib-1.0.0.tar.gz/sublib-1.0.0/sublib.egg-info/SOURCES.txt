@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+sublib/__init__.py
+sublib/sublib.py
+sublib.egg-info/PKG-INFO
+sublib.egg-info/SOURCES.txt
+sublib.egg-info/dependency_links.txt
+sublib.egg-info/top_level.txt
+sublib/tests/__init__.py
+sublib/tests/test_sublib.py
