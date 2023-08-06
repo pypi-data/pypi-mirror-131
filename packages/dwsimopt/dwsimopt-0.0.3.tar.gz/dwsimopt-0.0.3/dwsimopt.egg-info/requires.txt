@@ -1,0 +1,10 @@
+numpy
+scipy
+wheel
+pythonnet==3.0.0a2
+pywin32
+pypiwin32
+
+[dev]
+build
+twine
