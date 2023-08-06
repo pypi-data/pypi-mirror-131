@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+swu_api/__init__.py
+swu_api/swu_demo_data.py
+swu_api/swu_fuctions.py
+swu_api/swu_helper.py
+swu_api.egg-info/PKG-INFO
+swu_api.egg-info/SOURCES.txt
+swu_api.egg-info/dependency_links.txt
+swu_api.egg-info/requires.txt
+swu_api.egg-info/top_level.txt
