@@ -1,0 +1,12 @@
+aiohttp
+typing-extensions
+certifi
+
+[docs]
+sphinx>=4.1.1
+sphinx-material
+sphinx-copybutton
+readthedocs-sphinx-search
+
+[performance]
+aiohttp[speedups]
