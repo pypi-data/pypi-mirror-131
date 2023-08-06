@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: rate
+Version: 0.1.2
+Summary: 
+License: GPL-3
+Author: blankalmasry
+Author-email: blankhussien@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyInquirer (==1.0.3)
+Requires-Dist: elote (>=0.1.0,<0.2.0)
+Requires-Dist: glicko2 (==2.0.0)
+Requires-Dist: tqdm (>=4.32,<5.0)
+Requires-Dist: trueskill (>=0.4.5,<0.5.0)
