@@ -1,0 +1,13 @@
+cmdw/.gitignore,sha256=C6ctEGRQvlwyuUA32h4SNN_K9gLtxubR3-wypFe0IMY,88
+cmdw/__init__.py,sha256=bvKV8RJQKpRG2KMfvMFwwJmyS-GzZ1s5Ykhd_tEwoJY,160
+cmdw/__meta__.py,sha256=VcglvLGkFr9kk5TwyBF5dQgTsrY2IxzLgKNvE5ZgMd0,6894
+cmdw/__version__.py,sha256=q0hVwkkX3LRnXesggXK5SsRXBYXaPWCD8Jn3QghBBc8,16
+cmdw/cmdw.py,sha256=rdpOvOkASmbRhtq4azg11UVZ_87xNovBDm52BpkoHWc,3866
+cmdw-0.26.data/data/LICENSE.rst,sha256=COKA-_Epr4VEQFYAqSxO2yEnehIvUbPXE9RYkBGW7vY,1886
+cmdw-0.26.data/data/README.rst,sha256=4e8-Z99ADl68lZr-UXT-kTL1kz2VAUDEt9xmckcqV0Q,950
+cmdw-0.26.data/data/__version__.py,sha256=q0hVwkkX3LRnXesggXK5SsRXBYXaPWCD8Jn3QghBBc8,16
+cmdw-0.26.dist-info/LICENSE.rst,sha256=COKA-_Epr4VEQFYAqSxO2yEnehIvUbPXE9RYkBGW7vY,1886
+cmdw-0.26.dist-info/METADATA,sha256=TJ3YR4eZfN8FUPF173YSUMzN-EHtIsnRvv-KQO8TcH4,1933
+cmdw-0.26.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+cmdw-0.26.dist-info/top_level.txt,sha256=wApemGpB2WiLEGbXLfYaImPqG6CdyCwPuthd9JC3kLo,5
+cmdw-0.26.dist-info/RECORD,,
