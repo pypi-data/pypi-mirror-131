@@ -1,0 +1,37 @@
+{% load fav_stock_custom_tags %}
+
+{% if is_exist %}
+<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#DelFavForm">
+{% else %}
+<button type="button" class="btn btn-secondary btn-sm" disabled>
+{% endif %}
+  {{ mode|upper }}
+</button>
+
+{# DelFavStockForm  #}
+<div class="modal fade" id="DelFavForm"
+     data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="DelFav" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form action="{% url 'fav_stock:del_fav' %}" method="post">
+        {% csrf_token %}
+        <div class="modal-header">
+          <h5 class="modal-title" id="delFavStock">Delete Favorites</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Are you sure want to delete {{ code }} in favorites?</p>
+          <input type="hidden" name="code" value="{{ code }}">
+          {# For redirect to previous page #}
+          {# https://stackoverflow.com/questions/35796195/how-to-redirect-to-previous-page-in-django-after-post-request/35796330 #}
+          <input type="hidden" name="next" value="{{ request.path }}">
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Delete</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
