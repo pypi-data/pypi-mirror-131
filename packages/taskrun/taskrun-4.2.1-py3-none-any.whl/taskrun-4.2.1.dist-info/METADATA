@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: taskrun
+Version: 4.2.1
+Summary: Parallel task management with dependencies
+Home-page: http://github.com/nicmcd/taskrun
+Author: Nic McDonald
+Author-email: n.mcdonald83@gmail.com
+License: BSD
+Platform: UNKNOWN
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: termcolor (>=1.1.0)
+Requires-Dist: psutil (>=4.0.0)
+
+UNKNOWN
+
