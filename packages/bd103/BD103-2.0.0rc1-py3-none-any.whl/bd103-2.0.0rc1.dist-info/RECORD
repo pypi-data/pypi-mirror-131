@@ -1,0 +1,12 @@
+bd103/__init__.py,sha256=vsqRvGCq4TT4xB0mKehpHZ4O0aEk0KkzqeJ4n_WMrU0,158
+bd103/data/__init__.py,sha256=-6ZL46rt4an5feNEs8LyrJu6655HFkV5xwyWoIO-WB8,94
+bd103/decorators.py,sha256=R2JL9GEPbEadFWI1geVumkc814pMvaz_dD_cdx-4VlM,3941
+bd103/ext/__init__.py,sha256=tiOmYT1w7bAUD1QLRtToBTQaChcwW54sNHTYHoALlY8,359
+bd103/ext/trio.py,sha256=kKRoQs0-RIVH6wizFxXXNYq2ig5fJFCUEeyOFmEQ5ww,1410
+bd103/richtext.py,sha256=S8YL82_zAqdo0JmlSn265PvWiM8Nco3imZUYDzSNERE,1211
+bd103/shared/__init__.py,sha256=6z-2p5h-XOWnPyhjehzwsqn4LwRdCI9Ti-G4Df64-Vs,178
+bd103-2.0.0rc1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bd103-2.0.0rc1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bd103-2.0.0rc1.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+bd103-2.0.0rc1.dist-info/METADATA,sha256=zMqideJlNnPP7IX7ZfoEAyknvSbttudIys_t2GHQSFs,1491
+bd103-2.0.0rc1.dist-info/RECORD,,

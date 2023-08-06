@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: bd103
+Version: 2.0.0rc1
+Summary: BD103's Python Package
+Home-page: https://bd103.github.io
+License: Apache-2.0
+Author: BD103
+Author-email: dont@stalk.me
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: docs
+Provides-Extra: ext
+Requires-Dist: sphinx (>=4.3.1,<5.0.0); extra == "docs"
+Requires-Dist: trio (>=0.19.0,<0.20.0); extra == "ext"
+Project-URL: Repository, https://github.com/BD103/BD103-Python
+Description-Content-Type: text/markdown
+
+# BD103 Python Package
+
+These are some utility modules and fun stuff that might make a good dependency. There are some subpackages that has special purposes.
+
+- `bd103.ext`: Contains extensions and plugins to other Python packages
+- `bd103.shared`: Contains modules that are shared between different implementations of BD103's library
+- `bd103.data`: Contains data types for various formats
+
+## Installation
+
+```shell
+python -m pip install -U bd103
+```
+
+## Getting Started
+
+A good idea is too look through the [documentation](https://bd103.github.io/BD103-Python/) to find modules that might pique your interest. A recommended one is the [decorators](https://bd103.github.io/BD103-Python/api/decorators.html) module.
+
+## Contributing
+
+Feel free to submit a PR if you want to contribute to the package. For more information, see [CONTRIBUTING.md](CONTRIBUTING.md).
+
