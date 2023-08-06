@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: bitlogs
+Version: 1.0.1
+Summary: This python library allows you to easily create logs for your code.
+Home-page: UNKNOWN
+Author: Vladislav Korecký
+Author-email: vladislav.ml@korecky.org
+License: MIT
+Keywords: bitlogs,bitlog,logs,log,logging,logger,python log
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# BitLogs
+**Version 1.0.1**
+
+This python library allows you to easily create logs for your code.
+
+## Installation instructions
+1. Open up your terminal
+2. Run ```pip install bitlogs```
+3. Import it to your project (```import bitlogs```)
+
+## Example code
+Code:
+```python
+from bitlogs import Logger
+from bitlogs.message_types.debug_message import DebugMessage
+
+Logger.log(DebugMessage(), "Hello world!")
+```
+Output:
+```
+[DEBUG] Hello world!
+```
+---
+Code:
+```python
+from bitlogs import Logger
+from bitlogs.message_types.critical_message import CriticalMessage
+
+
+def add(a, b):
+    if (not isinstance(a, float)) or (not isinstance(a, float)):
+        Logger.log(CriticalMessage(), "A and B have to be of the type float.")
+        # you should probably raise an error here
+    return a + b
+
+add(1, 2)
+```
+Output:
+```
+[CRITICAL] A and B have to be of the type float.
+```
+---
+```python
+from bitlogs import Logger
+from bitlogs.message_types.debug_message import DebugMessage
+
+Logger.log_to_file(DebugMessage(), "Hello world!", "example.bitlog")
+```
+You can display the content of the file by running: ```cat example.bitlog``` on macOS + Linux and ```type example.bitlog``` on Windows
+
+
