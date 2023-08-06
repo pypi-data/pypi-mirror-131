@@ -1,0 +1,10 @@
+caospy/__init__.py,sha256=M7ThahLYzESSKWlszBD8DhNBBIy67DX1jL9dNqICdvQ,735
+caospy/core.py,sha256=p8bX2SRE5gz1sdOcfuznS28OeaCXBZJK4vakKvwGlOw,41508
+caospy/poincare.py,sha256=37XagbOFivmRdPSI8MJw4lqJJwjynnPDA1xkJQ0s8Ss,11154
+caospy/predet_systems.py,sha256=UItKSmuueH02kfHAsCVLsQPxTBVUxvPBi-VWGAyYr1Y,4751
+caospy/trajectories.py,sha256=gShf22iTIvVCF2Ee5G54jsnhUruhEXeEhE31TFwPTts,6937
+Caospy-0.0.1.dist-info/LICENSE,sha256=TKFanWyYwat6xiHto8FPbvk-hpg-L-kcTwyAKOm2Mzo,1095
+Caospy-0.0.1.dist-info/METADATA,sha256=JfujZxID-JYTS5GW49DxiQiiTcrnOjcfBMfwZGSpQOM,5312
+Caospy-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+Caospy-0.0.1.dist-info/top_level.txt,sha256=L9oqqpWDMebuS0EqRMjsszgqhq9o-ck4TMJL_QZ9nhg,7
+Caospy-0.0.1.dist-info/RECORD,,
