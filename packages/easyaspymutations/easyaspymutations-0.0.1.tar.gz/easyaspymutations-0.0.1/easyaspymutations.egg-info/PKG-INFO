@@ -1,0 +1,67 @@
+Metadata-Version: 1.2
+Name: easyaspymutations
+Version: 0.0.1
+Summary: Assorted utility functions for working with mutation files (vcfs/mafs/etc)
+Home-page: https://github.com/selkmand/easyaspymutations
+Author: Sam El-Kamand
+Author-email: selkamand@ccia.org.au
+License: MIT license
+Description: =================
+        easyaspymutations
+        =================
+        
+        
+        .. image:: https://img.shields.io/pypi/v/easyaspymutations.svg
+                :target: https://pypi.python.org/pypi/easyaspymutations
+        
+        .. image:: https://img.shields.io/travis/selkmand/easyaspymutations.svg
+                :target: https://travis-ci.com/selkmand/easyaspymutations
+        
+        .. image:: https://readthedocs.org/projects/easyaspymutations/badge/?version=latest
+                :target: https://easyaspymutations.readthedocs.io/en/latest/?version=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        Assorted utility functions for working with mutation files (vcfs/mafs/etc)
+        
+        
+        * Free software: MIT license
+        * Documentation: https://easyaspymutations.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.0.1 (2021-12-16)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: easyaspymutations
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
