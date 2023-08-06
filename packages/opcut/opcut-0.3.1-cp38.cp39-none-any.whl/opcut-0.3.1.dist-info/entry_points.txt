@@ -1,0 +1,6 @@
+[console_scripts]
+opcut = opcut.main:main
+
+[gui_scripts]
+
+
