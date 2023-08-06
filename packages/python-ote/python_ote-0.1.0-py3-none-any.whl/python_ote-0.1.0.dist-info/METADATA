@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: python-ote
+Version: 0.1.0
+Summary: Python library for scraping daily electricity prices from OTE (ote-cr.cz)
+Home-page: https://github.com/dankeder/python-ote
+Author: Dan Keder
+Author-email: dan.keder@protonmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: attrs (==21.2.0)
+Requires-Dist: automat (==20.2.0)
+Requires-Dist: cffi (==1.15.0)
+Requires-Dist: constantly (==15.1.0)
+Requires-Dist: cryptography (==36.0.0)
+Requires-Dist: cssselect (==1.1.0)
+Requires-Dist: h2 (==3.2.0)
+Requires-Dist: hpack (==3.0.0)
+Requires-Dist: hyperframe (==5.2.0)
+Requires-Dist: hyperlink (==21.0.0)
+Requires-Dist: idna (==3.3)
+Requires-Dist: incremental (==21.3.0)
+Requires-Dist: itemadapter (==0.4.0)
+Requires-Dist: itemloaders (==1.0.4)
+Requires-Dist: jmespath (==0.10.0)
+Requires-Dist: lxml (==4.6.5)
+Requires-Dist: parsel (==1.6.0)
+Requires-Dist: priority (==1.3.0)
+Requires-Dist: protego (==0.1.16)
+Requires-Dist: pyasn1 (==0.4.8)
+Requires-Dist: pyasn1-modules (==0.2.8)
+Requires-Dist: pycparser (==2.21)
+Requires-Dist: pydispatcher (==2.0.5)
+Requires-Dist: pyopenssl (==21.0.0)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: queuelib (==1.6.2)
+Requires-Dist: scrapy (==2.5.1)
+Requires-Dist: service-identity (==21.1.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: twisted[http2] (==21.7.0)
+Requires-Dist: typing-extensions (==4.0.1)
+Requires-Dist: w3lib (==1.22.0)
+Requires-Dist: zope.interface (==5.4.0)
+
+# python-ote
+
+Electricity prices scraper for OTE (ote-cr.cz)
+
+## Install
+
+```
+pip install python-ote
+```
+
+## Usage
+
+```
+from ote import Ote
+from dateutil import parser
+
+# Create client
+ote = Ote()
+```
+
+Use `getDayMarketPrices(date_from, date_to)` method to get electricity prices
+for the given time range. It accepts a `date_from` and optionally a `date_to`,
+both of which have to be a [datetime.date](https://docs.python.org/3/library/datetime.html#datetime.date)
+object. If `date_to` is not specified the method returns data to today.
+
+```
+# Get water consumption data from the specified date to now
+date_from = parser.parse('2020-08-01').date()
+data = ote.getDayMarketPrices(date_from);
+
+# Get water consumption data for a date interval
+date_from = parser.parse('2020-08-01').date()
+date_to = parser.parse('2020-08-11').date()
+data = ote.getDayMarketPrices(date_from, date_to);
+
+# Get water consumption data for a specific date (just 1 day)
+date = parser.parse('2020-08-01').date()
+data = ote.getDayMarketPrices(date, date);
+```
+
+Keep in mind the library is using [Scrapy](https://scrapy.org) internally which
+means it is scraping the OTE website. If OTE comes to think you are abusing the
+website they may block your IP address.
+
+
+# License
+
+See [LICENSE](./LICENSE).
+
+
