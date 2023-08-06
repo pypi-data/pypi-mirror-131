@@ -1,0 +1,5 @@
+py_bip39_bindings-0.1.8.dist-info/METADATA,sha256=9mBaG_FUudu-516Mrw_mpW5SVfQF42KxHmxAOBkP3Eo,1997
+py_bip39_bindings-0.1.8.dist-info/WHEEL,sha256=_YHCXai5T_qPKgciOIiTGEWJMa2PRvvRWBEsHkuQcCY,125
+bip39/__init__.py,sha256=i9d1Hz1DuSptdLSOUA1OcpHtMpGJJVvHYq6ZpuQ6L_c,46
+bip39/bip39.cpython-37m-x86_64-linux-gnu.so,sha256=nCgd5jzfjQMfx8JM1YQP-Zi3bPHnUs-S3D5KfsqIapM,3911128
+py_bip39_bindings-0.1.8.dist-info/RECORD,,
