@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pytest-sosu
+Version: 0.1.0
+Summary: Unofficial PyTest plugin for Sauce Labs
+Home-page: https://github.com/apragacz/pytest-sosu
+Author: Andrzej Pragacz
+Author-email: apragacz@o2.pl
+License: MIT
+Project-URL: Bug Tracker, https://github.com/apragacz/pytest-sosu/issues
+Project-URL: Documentation, https://github.com/apragacz/pytest-sosu/README.md
+Project-URL: Source Code, https://github.com/apragacz/pytest-sosu
+Keywords: pytest,selenium,webdriver
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8
+License-File: LICENSE
+Requires-Dist: pytest
+Requires-Dist: selenium
+
+# Pytest-Sosu
+
+Pytest-Sosu (pronounced Sōsu, ソース) is a Pytest plugin for running tests
+on Sauce Labs platforms.
+
+

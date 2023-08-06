@@ -1,0 +1,12 @@
+pytest_sosu/__init__.py,sha256=9tgJbhJB6YQCJuGABOa9vNregFiaKpAi0CQXvu8jbf8,59
+pytest_sosu/_version.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+pytest_sosu/plugin.py,sha256=dMgRSLBBg_Ia9NIH9JUyZiOe1gbI88NpcRbLvw0qpuQ,3894
+pytest_sosu/settings.py,sha256=YqUF3HCZ5IVigTmZU9b0ip5a1lCdO_J-x3dACt9Hkxk,562
+pytest_sosu/utils.py,sha256=syLFnWFG6wr1IWja7r3LI6B8ObcdSJuPNtTtY9eVxUM,300
+pytest_sosu/webdriver.py,sha256=WSf89awgZXPmpF4V1iHmBBKybcow-HbpTJZBQu_ZU4g,8698
+pytest_sosu-0.1.0.dist-info/LICENSE,sha256=2hsC7EO_ncP_p51vygVAVyebv0CLnqBozibNvAs9qEI,1072
+pytest_sosu-0.1.0.dist-info/METADATA,sha256=XxQkhi9JwAvEv3WtYcpLtbBNUUTGFvI5kuBCE2TzVeI,1270
+pytest_sosu-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pytest_sosu-0.1.0.dist-info/entry_points.txt,sha256=MJcK3yTmMELFU2-pS5TeHG8ab5XdaainLZ5ObDkA2vk,38
+pytest_sosu-0.1.0.dist-info/top_level.txt,sha256=PEDXOlmhxQldBafyqhmIAARnnORje62UFl0gXfJXMu0,12
+pytest_sosu-0.1.0.dist-info/RECORD,,
