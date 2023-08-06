@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: wataash-utils
+Version: 0.5.0
+Summary: wataash's personal utilities
+Home-page: https://github.com/wataash/wataash_utils_py
+Author: Wataru Ashihara
+Author-email: wataash@wataash.com
+License: Apache-2.0
+Keywords: wataash_utils
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+Requires-Dist: click (>=8.0.1)
+Requires-Dist: logzero (>=1.6.3)
+Requires-Dist: wcwidth (>=0.2.5)
+
+# wataash_utils
+
+- https://github.com/wataash/wataash_utils_py
+- https://pypi.org/project/wataash-utils/
+
+wataash's personal utilities.
+
+
