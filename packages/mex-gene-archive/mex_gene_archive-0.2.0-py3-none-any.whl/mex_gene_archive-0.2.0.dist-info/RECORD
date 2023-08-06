@@ -1,0 +1,16 @@
+mex_gene_archive/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mex_gene_archive/_version.py,sha256=g0RU_Fiae76hPEUjU6lGnapa9IZoqGcB4oFcTnsoMbM,142
+mex_gene_archive/filter.py,sha256=1fZORw4cpDGQGUVVqIEISFWbALVHPFRFx_LoqyqhsGs,4593
+mex_gene_archive/manifest.py,sha256=Bp3S4M0INRD7R5K7vOHo4oYksTFBpaSh3RDuwZQIfJA,3853
+mex_gene_archive/reader.py,sha256=VNsmlXV6hR0oSJUGpL9XbdoB8g4isv14ntu5Li5_NG4,4289
+mex_gene_archive/starsolo.py,sha256=GM1fdwSufHR34IxTZSjMgx03-aDm8GIEnkZwvxwA128,6150
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/stage_data.py,sha256=hAt6QlLnZIAIv7ySr9yibXrCPl_E66gqcdsO2OMRGZ8,31823
+tests/test_filter.py,sha256=TvIumAzDEgvPNCRNO2Q-omq-ILrZ3G2hRxRGY7iOgHU,2431
+tests/test_manifest.py,sha256=gKZYDE8F6zK_pKtS_s9p-YSfMmEJHURFxe356RjCfQo,2580
+tests/test_starsolo.py,sha256=G49hlfUYCOT5OnGuM0h5NI1T2llbYwcoClqBJGsNA_8,10544
+mex_gene_archive-0.2.0.dist-info/LICENSE.txt,sha256=ilQn1XKdSJgvdOF5WhnpThI7KH6OjAPce64hQdchaXU,1547
+mex_gene_archive-0.2.0.dist-info/METADATA,sha256=tuMXg_MTfCe6B-p8x4Ol9FgvoF7QKqpxTTc5HrkHij4,2925
+mex_gene_archive-0.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mex_gene_archive-0.2.0.dist-info/top_level.txt,sha256=L1eJ4eueiQZikbvJW5evlzrNUUuUvuWba3SbNYVouzQ,23
+mex_gene_archive-0.2.0.dist-info/RECORD,,
