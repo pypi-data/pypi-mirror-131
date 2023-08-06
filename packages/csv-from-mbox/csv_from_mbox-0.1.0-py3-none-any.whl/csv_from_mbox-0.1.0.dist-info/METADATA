@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: csv-from-mbox
+Version: 0.1.0
+Summary: Python script for extracting all email addresses you received mail from in a .csv formatt from a .mbox file.
+Home-page: https://github.com/vsevolod-mineev/csv-from-mbox
+License: MIT
+Author: Vsevolod Mineev
+Author-email: vsevolod.mineev@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Documentation, https://github.com/vsevolod-mineev/csv-from-mbox
+Project-URL: Repository, https://github.com/vsevolod-mineev/csv-from-mbox

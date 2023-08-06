@@ -1,0 +1,3 @@
+[console_scripts]
+csv-from-mbox=main:main
+
