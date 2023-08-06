@@ -1,0 +1,5 @@
+pdfkit
+tkDocViewer
+tkPDFViewer
+PyPDF2
+lorem
