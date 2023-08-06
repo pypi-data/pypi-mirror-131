@@ -1,0 +1,14 @@
+Vídeo de carta psicrométrica em DWSIM com um pouco de python script dentro do DWSIM
+https://www.youtube.com/watch?v=npru6v-Pr94&ab_channel=CascaGrossaSuprema
+
+Idea of pyDWSIMopt package:
+pyDWSIMopt:
+    interface:
+        Stabilish interface
+        Create DWSIM object
+    optProblem:
+        Define f_obj
+        Define g_i, i=1,...,p
+        Define x, xlo, xup
+Examples:
+    use pyDWSIMopt with different simulations & solvers
