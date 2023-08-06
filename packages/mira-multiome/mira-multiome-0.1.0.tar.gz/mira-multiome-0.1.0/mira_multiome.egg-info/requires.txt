@@ -1,0 +1,13 @@
+torch<2,>=1.8.0
+tqdm
+MOODS-python>=1.9.4.1
+pyfaidx<1,>=0.5
+matplotlib<4,>=3.4
+lisa2<2.3,>=2.2.5
+requests<3,>=2
+pyro-ppl<2,>=1.5.2
+networkx<3,>=2.3
+numpy<2,>=1.19.0
+scipy<2,>=1.5
+optuna<3,>=2.8
+anndata<1,>=0.7.6
