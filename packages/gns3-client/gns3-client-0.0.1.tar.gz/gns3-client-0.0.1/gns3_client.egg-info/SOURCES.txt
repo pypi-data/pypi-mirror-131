@@ -1,0 +1,7 @@
+LICENSE.md
+README.md
+setup.py
+gns3_client.egg-info/PKG-INFO
+gns3_client.egg-info/SOURCES.txt
+gns3_client.egg-info/dependency_links.txt
+gns3_client.egg-info/top_level.txt
