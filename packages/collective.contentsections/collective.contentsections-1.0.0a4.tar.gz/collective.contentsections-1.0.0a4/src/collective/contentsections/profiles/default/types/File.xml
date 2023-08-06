@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<object name="File">
+
+  <property name="global_allow">False</property>
+
+  <property name="behaviors" purge="true">
+    <element value="collective.contentsections.namefromuuid"/>
+    <element value="plone.categorization" />
+    <element value="plone.leadimage"/>
+  </property>
+
+</object>
