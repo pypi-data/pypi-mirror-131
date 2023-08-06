@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+visart/__init__.py
+visart/visart.py
+visart.egg-info/PKG-INFO
+visart.egg-info/SOURCES.txt
+visart.egg-info/dependency_links.txt
+visart.egg-info/not-zip-safe
+visart.egg-info/top_level.txt
