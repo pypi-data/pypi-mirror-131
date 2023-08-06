@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: shamnet
+Version: 0.1.0
+Summary: Differentiable abundance matching
+Home-page: https://github.com/ArgonneCPAC/shamnet
+Author: Andrew Hearin
+Author-email: ahearin@anl.gov
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: jax
+Requires-Dist: corrfunc
+Requires-Dist: h5py
+Requires-Dist: numba
+
+Differentiable abundance matching
+
