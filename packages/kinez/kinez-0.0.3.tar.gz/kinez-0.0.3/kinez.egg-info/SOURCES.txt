@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+kinez/__init__.py
+kinez.egg-info/PKG-INFO
+kinez.egg-info/SOURCES.txt
+kinez.egg-info/dependency_links.txt
+kinez.egg-info/top_level.txt
