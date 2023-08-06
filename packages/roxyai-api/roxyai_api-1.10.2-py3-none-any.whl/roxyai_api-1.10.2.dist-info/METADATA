@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: roxyai-api
+Version: 1.10.2
+Summary: Roxy AI inspect-server python API package
+Home-page: https://gitlab.com/roxy-ai/roxy-ai-dev/-/tree/master/python/roxyai-api
+Author: Roxy Corp.
+Author-email: support@roxy-ai.jp
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python (<4.3.0,>=4.2.0)
+Requires-Dist: psutil (>=5.7.0)
+Requires-Dist: json5
+Requires-Dist: termcolor
+Provides-Extra: develop
+Requires-Dist: pytest ; extra == 'develop'
+Requires-Dist: wheel ; extra == 'develop'
+Requires-Dist: twine ; extra == 'develop'
+Requires-Dist: flake8 ; extra == 'develop'
+
+Pleease see the folloeing Wiki page about detailed.
+https://roxy-ai-support.atlassian.net/wiki/spaces/RAD/overview
+
