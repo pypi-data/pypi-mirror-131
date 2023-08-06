@@ -1,0 +1,10 @@
+README.md
+setup.py
+codavi/__init__.py
+codavi/codavi.py
+codavi/constantes.py
+codavi.egg-info/PKG-INFO
+codavi.egg-info/SOURCES.txt
+codavi.egg-info/dependency_links.txt
+codavi.egg-info/requires.txt
+codavi.egg-info/top_level.txt

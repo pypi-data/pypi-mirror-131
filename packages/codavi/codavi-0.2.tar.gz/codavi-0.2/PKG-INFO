@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: codavi
+Version: 0.2
+Summary: Obtención de datos sobre el COVID-19
+Home-page: https://github.com/manucabral/Codavi
+Author: Manuel Cabral
+Author-email: cabral.manuel@yandex.com
+License: apache-2.0
+Description: # Paquete Codavi
+        Codavi es una libreria de Python que te facilita la obtención de datos sobre el COVID-19 de toda Argentina.
+        
+        ## Instalación
+        ```
+        pip install codavi
+        ```
+        
+        ## Uso
+        ```py
+        from codavi import Codavi
+        
+        # instanciamos el objeto de Codavi
+        cod = Codavi()
+        
+        # especificamos la dosis y si es acumulado o no
+        data = cod.aplicadas(dosis='primera', acumulado=True)
+        
+        print(data) # salida: ['fecha', 'cantidad']
+        ```
+        
+        ### Parámetros requeridos
+        - **dosis**: primera, segunda o total.
+        - **fecha**: en formato 'año-mes-día' ejemplo: '2021-12-12'
+        - **acumulado**: True o False.
+        
+        ## Fuente de datos
+        Todos los análisis y comparativas estan basados de los datos que provee el gobierno Argentino sobre el virus, estos datos lo puedes descargar [aquí](https://datos.gob.ar/dataset/salud-vacunas-contra-covid-19-dosis-aplicadas-republica-argentina---registro-desagregado).
+        Los datos son actualizados diariamente por el mismo gobierno del país.
+Keywords: python,covid,covid-19,covid-argentina,covid-data
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >= 3.4
+Description-Content-Type: text/markdown
