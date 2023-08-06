@@ -1,0 +1,16 @@
+pyechelle/__init__.py,sha256=QTYqXqSTHFRkM9TEgpDFcHvwLbvqHDqvqfQ9EiXkcAM,23
+pyechelle/CCD.py,sha256=GwWA52BA2m6moswd8qXCA2nhBNn4IadOc7gO8XCWb_0,3402
+pyechelle/efficiency.py,sha256=RmwZb0nKu837RcJhOLcYCzhuEUHCEzWwUdhBH_b_WBQ,6078
+pyechelle/model_viewer.py,sha256=uSyytFC59i0lNIcFlDYWoO4DiJXHL-_W18Qz4jpuWZs,4418
+pyechelle/models/available_models.txt,sha256=Ih97r2PXfHg1komeTbbtBzoYTbXo9zLu4xeJYep0Eho,67
+pyechelle/randomgen.py,sha256=suWseVpvvejz-GGsdXyRMucgvHpuQt4G9KzamatprTE,4827
+pyechelle/simulator.py,sha256=k0s2Iy1CqziWpq1ULaPL4TJxNRuQdt1eYAB0cineL9c,16476
+pyechelle/sources.py,sha256=3ucMhQ_BKR89W7vi4wEorC4gwDC9q-GvhkGa7Jq4IFI,11656
+pyechelle/spectrograph.py,sha256=NhgBIHWLcQzshxdAiTaZUr9c2MmqDqMtbl5tGUpiZKc,7776
+pyechelle/telescope.py,sha256=mfQnKydXY1bi22mK9eij_AGM9pcPAtIcVrcyzksfwTw,618
+pyechelle/transformation.py,sha256=Bx6pdAZQfXeQ0kk-9kV9nBTBNya_-KtQwokJ0rNqLOI,4381
+pyechelle-0.1.7.dist-info/entry_points.txt,sha256=pI3iCNCS7uW2X7AD2V_bbZ2V59FdKZajdzX4REt-udg,54
+pyechelle-0.1.7.dist-info/LICENSE,sha256=zxbM0_PdD23IUk4BB_nHSHIl7KE7WYm2ZNuUQ27Gmgg,1086
+pyechelle-0.1.7.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+pyechelle-0.1.7.dist-info/METADATA,sha256=qlZUE4iUqrDI8x7SGR5Lh1e8b3mxW5uFLlX7U9BVq9M,2787
+pyechelle-0.1.7.dist-info/RECORD,,
