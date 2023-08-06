@@ -1,0 +1,6 @@
+flatdata-generator==0.4.5
+numpy
+pandas
+
+[inspector]
+IPython

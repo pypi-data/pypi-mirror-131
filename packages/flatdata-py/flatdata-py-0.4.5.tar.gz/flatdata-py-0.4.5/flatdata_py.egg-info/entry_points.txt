@@ -1,0 +1,4 @@
+[console_scripts]
+flatdata-inspector = flatdata.lib.inspector:main [inspector]
+flatdata-writer = flatdata.lib.writer:main [writer]
+
