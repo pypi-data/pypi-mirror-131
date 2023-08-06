@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Yapps2-logilab
+Version: 2.2.1
+Summary: Yet Another Python Parser System
+Home-page: https://github.com/mk-fg/yapps
+Author: Amit J. Patel, Matthias Urlichs
+Author-email: amitp@cs.stanford.edu, smurf@debian.org
+Maintainer: Mike Kazantsev
+Maintainer-email: mk.fraggod@gmail.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
