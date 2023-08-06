@@ -1,0 +1,3 @@
+[console_scripts]
+termy = termy.controller.controller:init_cli_app
+
