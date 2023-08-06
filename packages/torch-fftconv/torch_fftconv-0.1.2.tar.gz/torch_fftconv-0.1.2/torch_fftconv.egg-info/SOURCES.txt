@@ -1,0 +1,12 @@
+README.md
+setup.py
+tests/__init__.py
+tests/test_values.py
+torch_fftconv/__init__.py
+torch_fftconv/functional.py
+torch_fftconv/modules.py
+torch_fftconv.egg-info/PKG-INFO
+torch_fftconv.egg-info/SOURCES.txt
+torch_fftconv.egg-info/dependency_links.txt
+torch_fftconv.egg-info/requires.txt
+torch_fftconv.egg-info/top_level.txt
