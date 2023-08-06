@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+slapr/__init__.py
+slapr/main.py
+slapr.egg-info/PKG-INFO
+slapr.egg-info/SOURCES.txt
+slapr.egg-info/dependency_links.txt
+slapr.egg-info/entry_points.txt
+slapr.egg-info/requires.txt
+slapr.egg-info/top_level.txt
