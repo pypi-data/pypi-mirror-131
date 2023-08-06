@@ -1,0 +1,13 @@
+AUTHORS.rst
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+lambda_requests/__init__.py
+lambda_requests/lambda_request.py
+lambda_requests.egg-info/PKG-INFO
+lambda_requests.egg-info/SOURCES.txt
+lambda_requests.egg-info/dependency_links.txt
+lambda_requests.egg-info/not-zip-safe
+lambda_requests.egg-info/requires.txt
+lambda_requests.egg-info/top_level.txt
