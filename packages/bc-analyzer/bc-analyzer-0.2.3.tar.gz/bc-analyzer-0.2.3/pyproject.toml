@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "bc-analyzer"
+version = "0.2.3"
+description = "A package to create a BehaviorCloud compatible data analyzer."
+authors = [
+    "Christian Lent <christian@behaviorcloud.com>"
+]
+license = "MIT"
+
+readme = "README.md"
+
+homepage = "https://github.com/behaviorcloud/bc-analyzer-py"
+repository = "https://github.com/behaviorcloud/bc-analyzer-py"
+
+keywords = ["behaviorcloud", "behavior", "cloud", "analyzer", "analyze", "analysis", "data", "daemon", "api"]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+]
+
+packages = [
+    { include = "behaviorcloud" },
+    { include = "behaviorcloud/**/*.py" },
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py37']
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "2.23.0"
+python-dateutil = "^2.8.1"
+sentry-sdk = "^0.14.4"
+deepdiff = "^4.3.2"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+flake8 = "^3.8.1"
+isort = "^5.8"
+mypy = "^0.910"
