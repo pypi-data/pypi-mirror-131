@@ -1,0 +1,3 @@
+incqueryserver-api-python-client==0.22.0rc3
+mms-python-client
+ipywidgets
