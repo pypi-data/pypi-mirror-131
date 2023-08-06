@@ -1,0 +1,9 @@
+ddsp
+pretty_midi
+music21
+pandas
+tensorflow_datasets
+
+[test]
+pytest
+pylint!=2.5.0
