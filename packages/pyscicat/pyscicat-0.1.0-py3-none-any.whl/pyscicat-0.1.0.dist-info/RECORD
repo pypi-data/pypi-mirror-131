@@ -1,0 +1,15 @@
+pyscicat/__init__.py,sha256=t9KZdp_DIvv91kyAlbqfXkrky_63qicYujvE-nd8xlM,93
+pyscicat/_version.py,sha256=3jsb8vF0v97o7EL-Sm_qcU2QRT_lgv5hmqig9l8CPqs,497
+pyscicat/client.py,sha256=H2oS5l-P3uPQhoH9vClaNYceVu42aagf4P1y1j_oRvY,8999
+pyscicat/model.py,sha256=QH_NO9zY7aKS7FKyjFow2IdJ-ZkFSphrJjlVuw9LKGE,2285
+pyscicat/ingest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyscicat/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyscicat/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyscicat/tests/test_client.py,sha256=OnQbx01EJJeeuwYNnL31GvwwZSnZVmat-sDu9v7IB-I,2858
+pyscicat-0.1.0.dist-info/AUTHORS.rst,sha256=nN0IAdLlZjJucG2aZRh8bX0UUjpidihmp0pR4VaFc-A,171
+pyscicat-0.1.0.dist-info/LICENSE,sha256=2K5ehr51meRaXRPr0_LB1kn23EdML1LBXgtkEFH8iIs,2463
+pyscicat-0.1.0.dist-info/LICENSE.txt,sha256=rj6Ur8nVKfDGxQOFG2zA7-mxzfY1MtdncHiqqZ0FDBs,2617
+pyscicat-0.1.0.dist-info/METADATA,sha256=TflVvsxrui4vYoOWNpBwHVHGgB4BbBvhn0dA3Z3j-SM,716
+pyscicat-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pyscicat-0.1.0.dist-info/top_level.txt,sha256=g2b4B0RsXZAkAWICdC6TpB7QKFfWwWtnd1-InCUzJv0,9
+pyscicat-0.1.0.dist-info/RECORD,,
