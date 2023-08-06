@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pcompress"
+version = "1.1.1"
+authors = ["Max Fan <root@max.fan>"]
+description = "Experimental, efficient, and performant binary representation of districting plans"
+# readme = "README.md"
+repository = "https://github.com/InnovativeInventor/pcompress"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+gerrychain = "^0.2.17"
+GitPython = "^3.1.24"
+requests = "^2.26.0"
+dataset = "^1.5.2"
+pydantic = "^1.8.2"
+python-dateutil = "^2.8.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
