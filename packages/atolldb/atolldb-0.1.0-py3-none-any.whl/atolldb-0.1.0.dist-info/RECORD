@@ -1,0 +1,15 @@
+atolldb/__init__.py,sha256=ly_ysObOeKR4PFN2CWoW07H8qOg_M-1YuZ26KU-r6n8,135
+atolldb/database.py,sha256=97zzknl9eHJvIdmVdX1lE6uKS3ttoFeflQCsroVmtM4,40015
+atolldb/index.acc_num.txt,sha256=Q1-c5WHP6PWQap0SfQmnTULbdOrorbqcoj3XhpXqpOc,501379
+atolldb/io.py,sha256=ZhKa9Cptkak0-FY-umP1NGDw0BbNWE12ON2M4v1DnbY,9855
+atolldb/island.py,sha256=Su2AjGu_Sj2MAuiTt5j2zOCJijYcVteWV5dvrzpxHKg,8033
+atolldb/parsing/__init__.py,sha256=pdq6i7l9N8UwylcZHv8goaVnS95Zze3ezCVRBYiA3W4,162
+atolldb/parsing/html.py,sha256=K_nShchzZ2CntNy0WgatvYaNF__px17T-vlzU5Jwuc4,7525
+atolldb/parsing/islander_db.py,sha256=MVAYshpkfKKqbD1g8F8yjeBD_NkYTcV5HkpjVrFRhaQ,4197
+atolldb/parsing/mysql2sqlite,sha256=yySX8zzEcYJ2qZhrbN0s37NjSA4pB3LEp-3tUBmegwo,8768
+atolldb/parsing/sql.py,sha256=myU86wU9KemjwNWIaw9ZjD5iWH8D_qTsj6vcYnLxLkw,4508
+atolldb/parsing/text.py,sha256=s4Jh5b3B6d9FADzg6a4oBsQgIC4_G2p5vNKKf_LvYV4,1156
+atolldb/utils.py,sha256=VySoQtCIulgzaQjGEecLgkVJ-eAchWrIgQggll7Z2js,1059
+atolldb-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+atolldb-0.1.0.dist-info/METADATA,sha256=63BgXPF8QldVzLdTtvs69nbiRtwuSJvz9UMQdPqcWi0,1351
+atolldb-0.1.0.dist-info/RECORD,,
