@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/goveelights/__init__.py
+src/goveelights/client.py
+src/goveelights/color.py
+src/goveelights/consts.py
+src/goveelights/device.py
+src/goveelights/exceptions.py
+src/goveelights/hub.py
+src/goveelights/settings.py
+src/goveelights.egg-info/PKG-INFO
+src/goveelights.egg-info/SOURCES.txt
+src/goveelights.egg-info/dependency_links.txt
+src/goveelights.egg-info/top_level.txt
