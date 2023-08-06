@@ -1,0 +1,3 @@
+[console_scripts]
+xpdt = xpdt.__main__:main
+
