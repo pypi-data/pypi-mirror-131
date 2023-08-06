@@ -1,0 +1,6 @@
+[cid.plugins]
+Core = cid.builtin.core
+
+[console_scripts]
+cid_cmd = cid.cli:main
+
