@@ -1,0 +1,7 @@
+[console_scripts]
+har2case=apirunner.cli:main_har2case_alias
+hmake=apirunner.cli:main_make_alias
+hrun=apirunner.cli:main_hrun_alias
+httprunner=apirunner.cli:main
+locusts=apirunner.ext.locust:main_locusts
+
