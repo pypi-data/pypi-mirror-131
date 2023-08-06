@@ -1,0 +1,15 @@
+README.md
+setup.py
+formal/__init__.py
+formal/sqlcommenter/__init__.py
+formal/sqlcommenter/psycopg2/__init__.py
+formal/sqlcommenter/psycopg2/extension.py
+formal_sqlcommenter.egg-info/PKG-INFO
+formal_sqlcommenter.egg-info/SOURCES.txt
+formal_sqlcommenter.egg-info/dependency_links.txt
+formal_sqlcommenter.egg-info/requires.txt
+formal_sqlcommenter.egg-info/top_level.txt
+tests/generic/__init__.py
+tests/generic/test_generate_sql_comment.py
+tests/psycopg2/__init__.py
+tests/psycopg2/tests.py
