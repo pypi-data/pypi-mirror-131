@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ibutsu-utils
+Version: 0.1.0
+Summary: Some command line utilities for Ibutsu
+Home-page: https://github.com/ibutsu/ibutsu-utils
+Author: Raoul Snyman
+Author-email: rsnyman@redhat.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ibutsu/ibutsu-utils/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ibutsu-client (>=2.2.1)
+
+# ibutsu-utils
+Some command line utilities for Ibutsu
+
+
