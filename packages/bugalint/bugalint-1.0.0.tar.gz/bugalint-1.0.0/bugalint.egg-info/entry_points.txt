@@ -1,0 +1,3 @@
+[console_scripts]
+bugalint = bugalint.cli:main
+

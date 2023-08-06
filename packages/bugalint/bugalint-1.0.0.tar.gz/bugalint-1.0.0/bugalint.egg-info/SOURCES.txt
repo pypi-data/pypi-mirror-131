@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+setup.cfg
+setup.py
+.github/workflows/lint.yml
+bugalint/__init__.py
+bugalint/__main__.py
+bugalint/cli.py
+bugalint.egg-info/PKG-INFO
+bugalint.egg-info/SOURCES.txt
+bugalint.egg-info/dependency_links.txt
+bugalint.egg-info/entry_points.txt
+bugalint.egg-info/not-zip-safe
+bugalint.egg-info/requires.txt
+bugalint.egg-info/top_level.txt
