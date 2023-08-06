@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Caospy.egg-info/PKG-INFO
+Caospy.egg-info/SOURCES.txt
+Caospy.egg-info/dependency_links.txt
+Caospy.egg-info/requires.txt
+Caospy.egg-info/top_level.txt
+caospy/__init__.py
+caospy/core.py
+caospy/poincare.py
+caospy/predet_systems.py
+caospy/trajectories.py
