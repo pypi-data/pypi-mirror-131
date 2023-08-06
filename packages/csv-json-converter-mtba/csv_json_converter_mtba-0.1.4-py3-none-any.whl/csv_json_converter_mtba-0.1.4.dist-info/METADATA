@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: csv-json-converter-mtba
+Version: 0.1.4
+Summary: Conversor CSV-JSON
+Author: Marco Andrade
+Author-email: marcotbandrade@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Description-Content-Type: text/markdown
+
+# CSV-JSON Converter
+
+Conversor de CSV para JSON / JSON para CSV.
+
+## Introduction
+
+Trabalho desenvolvido para a disciplina Python para Ciência de Dados do curso de pós-graduação em Ciência de Dados e Big Data da PUC Minas - 2021.
+
+### What this project can do
+
+Lê arquivos **csv/json** e os converte para **csv/json**.
+Este projeto é um programa de execução no terminal.
+Instalar preferencialmente com pipx:
+
+```bash
+pipx install csv_json_converter_mtba
+```
+
+Para usar, digite:
+
+```bash
+csv_json_converter --help
+```
+
+Esse comando listará todas as opções disponíveis.

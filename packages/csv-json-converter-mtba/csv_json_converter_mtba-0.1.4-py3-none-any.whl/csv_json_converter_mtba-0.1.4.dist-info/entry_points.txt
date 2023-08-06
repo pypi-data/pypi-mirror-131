@@ -1,0 +1,3 @@
+[console_scripts]
+csv_json_converter=csv_json_converter_mtba.converter:converter
+
