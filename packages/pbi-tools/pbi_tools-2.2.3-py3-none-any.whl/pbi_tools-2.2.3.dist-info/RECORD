@@ -1,0 +1,17 @@
+pbi/__init__.py,sha256=wUxzvS4GM3dgCmfSbgYdP8VCnkN2BjGe_Hcc6u7vs8M,159
+pbi/_version.py,sha256=hEgKacgztwhOUQUR2qe3Sh05R2wp205em0HBqVjn1gg,497
+pbi/deploy.py,sha256=xRFVBJRYceTtNC4vtcLsarrm4BfQTHoml8sGIa-3umI,3504
+pbi/token.py,sha256=ycGWgLqVmluRruFHXmWsB-uSRZReNkodaKE7-tFNRQ0,2049
+pbi/tools.py,sha256=OiasvuhwcD0mtnpnd9ZBcQx5GdCim544aFcP57CbFyw,3137
+pbi/api/__init__.py,sha256=kV9asJHBjimvD-dA7hy0ZJWDm8z4ag7hATxR6ZccEy8,182
+pbi/api/capacity.py,sha256=b3UUkHRiUtjnlTIOQ6hT-zY2ZM54vuKGXN0g8oYwDiE,2298
+pbi/api/dataset.py,sha256=fr8qZA2YLA_WJIbqKRq4sLII23kTrfM_3l78KdQg4jg,8155
+pbi/api/datasource.py,sha256=OSh5N9rS70_wTCdvnhY8TZwN3eb4m9eSFf_KOupXGL4,3110
+pbi/api/report.py,sha256=OMGGAqR-PvgmyML53tTr6vx5syD8IeEcKaodwWN7FG4,3083
+pbi/api/tenant.py,sha256=ATqEPCj3qvdxxJR1pFeQpKVFb5skMmrUtoznUyZ_kkw,4084
+pbi/api/workspace.py,sha256=aTyItvZRB6MfooLBHdns3oFUUZo50v7d6V8TpbvzPDo,20122
+pbi_tools-2.2.3.dist-info/LICENSE,sha256=ul4YU28SjxTkGyD2pnJZV1qzmNMSWsHqlMAfPbs5T8I,1067
+pbi_tools-2.2.3.dist-info/METADATA,sha256=VLVBt883XZKgmpiTg2Ey2tclS5FthSQd9e-XME_cQw4,879
+pbi_tools-2.2.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pbi_tools-2.2.3.dist-info/top_level.txt,sha256=syrDveFZIExJ6M8Wj3JKJiVwxxwQjGIjNLcBRDmL9Kk,4
+pbi_tools-2.2.3.dist-info/RECORD,,
