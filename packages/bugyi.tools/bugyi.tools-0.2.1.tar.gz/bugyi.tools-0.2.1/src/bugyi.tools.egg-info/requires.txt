@@ -1,0 +1,4 @@
+pydantic
+pylogutils
+python-clap
+rich~=10.16
