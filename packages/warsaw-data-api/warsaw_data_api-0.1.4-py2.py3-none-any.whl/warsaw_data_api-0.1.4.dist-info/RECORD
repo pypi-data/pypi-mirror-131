@@ -1,0 +1,9 @@
+warsaw_data_api/__init__.py,sha256=BiZa7Uneg5FLynAoTpl91_A0z2ZhrbLu-hhGb7w2cZ4,450
+warsaw_data_api/exceptions.py,sha256=HXse6NmfPoaz673aLqXU2SQOSfXB2I508jbTwGZrW2U,688
+warsaw_data_api/session.py,sha256=-MUN8pWipwyYq4rVKpSABcBB1Ln86aX_91Gryib10IA,264
+warsaw_data_api/session_factory.py,sha256=K9eMrXSoLK4pHR-cxZhBRlYW1nRMXlAKVhqk80Lnirk,362
+warsaw_data_api/tests/ztm.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+warsaw_data_api/ztm/__init__.py,sha256=e2aPXq8RKDqOYG9D-0sVqxGLgGFOdOGCIQuL6VAbnic,3356
+warsaw_data_api-0.1.4.dist-info/WHEEL,sha256=Fs47bPI6GdEUUVU2cC1ZH87S4TSequgq1XeoqimcqIE,87
+warsaw_data_api-0.1.4.dist-info/METADATA,sha256=kGAOK41_hQCDP6vkNuD1pNHFxhbGsfQwcgbz57gWHIU,1639
+warsaw_data_api-0.1.4.dist-info/RECORD,,
