@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/model_parallelism/__init__.py
+src/model_parallelism.egg-info/PKG-INFO
+src/model_parallelism.egg-info/SOURCES.txt
+src/model_parallelism.egg-info/dependency_links.txt
+src/model_parallelism.egg-info/top_level.txt
