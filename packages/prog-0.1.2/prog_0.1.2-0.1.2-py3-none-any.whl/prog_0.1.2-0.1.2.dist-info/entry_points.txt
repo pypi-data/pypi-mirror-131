@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        prog=prog.cli:cli
+        
