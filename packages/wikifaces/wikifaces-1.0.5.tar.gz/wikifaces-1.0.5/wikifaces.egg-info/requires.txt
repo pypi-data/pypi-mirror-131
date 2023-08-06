@@ -1,0 +1,6 @@
+requestsfacenet-pytorch
+pymediawiki
+tqdm
+numpy
+pillow
+opencv-python
