@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+hedger/__init__.py
+hedger/util.py
+hedger.egg-info/PKG-INFO
+hedger.egg-info/SOURCES.txt
+hedger.egg-info/dependency_links.txt
+hedger.egg-info/not-zip-safe
+hedger.egg-info/requires.txt
+hedger.egg-info/top_level.txt
+hedger/scrap/__init__.py
+hedger/scrap/web_results_search.py
