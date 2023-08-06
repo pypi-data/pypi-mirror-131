@@ -1,0 +1,16 @@
+gma/__init__.py,sha256=ybgmgSxHH6DWeiNHzWOqftxaCQ_2HjWZX3xE8OC4xoM,127
+gma/index.pyd,sha256=WMjihsDviE0wGWtFsNr5HX9fmQq3q275XxDT_42GRQs,90112
+gma/math.pyd,sha256=yDdLtfz9snFm1ljCaFW8QT1tG6zX5LumAFp5i_Ha1BA,98816
+gma/osf.pyd,sha256=-iI2PkdHPm5YCfZ98BQingd8YMSZJOv6paZdO_3Vs-8,100352
+gma/rasp.pyd,sha256=9F3S-Ulqntyc-yzdlqM2FFQbbI_RVcxqqC_NRsDzlXA,114688
+gma/vesp.pyd,sha256=zi-UT8R6FVnPVWnx4mkNVk8H2zU5FtznytgMoIrjtRQ,66048
+gma/Relation/__init__.py,sha256=gkqSdDiN4guvs5-N1q4u3P-OigPP-yot9lPeroWSewU,63
+gma/Relation/error.pyd,sha256=Bg2iLG-XDPm03jEwhrxSbISi-AjbEjRFwQF5nhFg_ks,108544
+gma/Relation/key.pyd,sha256=KlwdNL6O9-GNcPseCtCZ36WSh520KTTjmXo0-iPirLk,57344
+gma/algorithm/__init__.py,sha256=xD1AxNGT2XpWNJ6hRQJtM87Z-wsF5Q88HV6fdwnDJzg,51
+gma/algorithm/raster.pyd,sha256=EVTAqLmXST5Jkyc8XSjUjh9kizh2u_7RYfSX-5ooZOg,238592
+gma/algorithm/vector.pyd,sha256=_eoAMYZearine71LRBcT4IpU9yzSB2Yo2fJYkvpZm4U,97792
+gma-1.0.3.dist-info/METADATA,sha256=zeUryqbEVxjjffPsgzvDGAI5o0QKzbvk_wPl51CKemI,1377
+gma-1.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+gma-1.0.3.dist-info/top_level.txt,sha256=Uj57N8N3qcpIfsD3McCrMuGqQGKWVQ3NM8d37KeaRl4,4
+gma-1.0.3.dist-info/RECORD,,
