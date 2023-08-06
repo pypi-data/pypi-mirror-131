@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+connectapi_core/__init__.py
+connectapi_core/client.py
+connectapi_core/exceptions.py
+connectapi_core/singleton.py
+connectapi_core.egg-info/PKG-INFO
+connectapi_core.egg-info/SOURCES.txt
+connectapi_core.egg-info/dependency_links.txt
+connectapi_core.egg-info/requires.txt
+connectapi_core.egg-info/top_level.txt
