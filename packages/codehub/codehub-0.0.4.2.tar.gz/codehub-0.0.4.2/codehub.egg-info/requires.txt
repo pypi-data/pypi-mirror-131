@@ -1,0 +1,4 @@
+jinja2
+fire
+pyyaml>=6.0
+freehub
