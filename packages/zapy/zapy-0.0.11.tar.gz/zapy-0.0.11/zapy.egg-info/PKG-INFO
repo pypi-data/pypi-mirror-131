@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: zapy
+Version: 0.0.11
+Summary: OWASP ZAP Proxy API python package
+Home-page: https://github.com/midnight-repo/ZAPY
+Author: midnight_repo
+Author-email: midnight_repo@protonmail.com
+License: GPL-3.0
+Platform: UNKNOWN
+License-File: LICENSE.md
+
+UNKNOWN
+
