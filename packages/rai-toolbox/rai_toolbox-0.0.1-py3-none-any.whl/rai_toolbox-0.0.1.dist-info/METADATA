@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: rai-toolbox
+Version: 0.0.1
+Summary: Creating and verifying robust AI systems
+Home-page: UNKNOWN
+Author: Justin Goodwin, Ryan Soklaski
+Author-email: ryan.soklaski@gmail.com
+License: MIT
+Keywords: AI pytorch machine learning robustness adversarial metrics calibration
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+
+UNKNOWN
+
