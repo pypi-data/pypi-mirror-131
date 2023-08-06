@@ -1,0 +1,3 @@
+pyxero>=0.9.3
+pathvalidate>=2.5.0
+tenacity>=8.0.1
