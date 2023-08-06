@@ -1,0 +1,14 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+bin/savory
+savory/__init__.py
+savory/exceptions.py
+savory/savory.py
+savory.egg-info/PKG-INFO
+savory.egg-info/SOURCES.txt
+savory.egg-info/dependency_links.txt
+savory.egg-info/requires.txt
+savory.egg-info/top_level.txt
+savory.egg-info/zip-safe
