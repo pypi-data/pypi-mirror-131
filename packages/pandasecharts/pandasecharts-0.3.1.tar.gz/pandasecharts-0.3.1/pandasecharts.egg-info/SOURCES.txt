@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+./pandasecharts/__init__.py
+./pandasecharts/chart_tool.py
+./pandasecharts/config.py
+./pandasecharts/data_tool.py
+./pandasecharts/echart.py
+pandasecharts.egg-info/PKG-INFO
+pandasecharts.egg-info/SOURCES.txt
+pandasecharts.egg-info/dependency_links.txt
+pandasecharts.egg-info/requires.txt
+pandasecharts.egg-info/top_level.txt
