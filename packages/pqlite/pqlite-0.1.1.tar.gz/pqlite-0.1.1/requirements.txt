@@ -1,0 +1,7 @@
+click
+cython
+docarray
+lmdb
+loguru
+numpy
+scipy
