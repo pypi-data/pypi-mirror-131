@@ -1,0 +1,5 @@
+graph_kmer_index
+numpy==1.20.3
+pathos
+shared_memory_wrapper
+tqdm
