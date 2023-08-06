@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: light-cnns
+Version: 0.4.2
+Summary: Implementation of Lightweight Network in Pytorch
+Home-page: https://github.com/murufeng/awesome_lightweight_networks
+Author: murufeng
+Author-email: 2923204420@qq.com
+License: MIT
+Keywords: artificial intelligence,lightweight neural network,image classification,image segmentation,computer vision,Real-Time Networks
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+
+UNKNOWN
+
