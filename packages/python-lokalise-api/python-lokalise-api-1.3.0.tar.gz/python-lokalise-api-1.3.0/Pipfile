@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "~=6.2"
+vcrpy = "~=4.1"
+pytest-vcr = "~=1.0.2"
+pytest-cov = "~=3.0"
+pylint = "~= 2.11"
+pytest-pylint = "~= 0.3"
+mypy = "~= 0.910"
+python-dotenv = "~= 0.19.2"
+autopep8 = "~= 1.6"
+
+[packages]
+requests = "~=2.26"
+
+[requires]
+python_version = "3.10"
