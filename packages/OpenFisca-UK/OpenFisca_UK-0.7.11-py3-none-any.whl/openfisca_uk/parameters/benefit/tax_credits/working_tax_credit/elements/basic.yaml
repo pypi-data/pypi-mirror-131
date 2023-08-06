@@ -1,0 +1,12 @@
+description: Working Tax Credit basic element
+values:
+  2019-04-06: 1_960
+  # NB: EUROMOD reports 2_000 for 2020. This is the gov.uk value.
+  2020-04-06: 3_040
+  2021-04-06: 2_005
+metadata:
+  period: year
+  unit: currency-GBP
+  reference:
+  - https://www.gov.uk/working-tax-credit/what-youll-get
+  - https://www.gov.uk/government/publications/rates-and-allowances-tax-credits-child-benefit-and-guardians-allowance/tax-credits-child-benefit-and-guardians-allowance
