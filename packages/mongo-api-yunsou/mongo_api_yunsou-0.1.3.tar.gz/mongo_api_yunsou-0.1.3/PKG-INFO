@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: mongo_api_yunsou
+Version: 0.1.3
+Summary: A database api for inserting, searching, updating and deleting based on mongdb
+Home-page: https://github.com/pypa/sampleproject
+Author: sysuyanxp
+Author-email: yanxp3@mail2.sysu.edu.cn
+License: UNKNOWN
+Description: # A database api for inserting, searching, updating and deleting based on mongdb
+        
+        ## A mongo database api for storing large vid tar pair data (1 billion) and searching targets
+        
+        ### features:
+          
+            1. multi processes for inserting and searching
+        
+            2. batch data for inserting and searching
+            
+            3. batch data for updating and deleting
+        
+        ### Usage:
+        
+        ```
+        pip install mongo_api_yunsou
+        
+        pip install pymongo
+        ```
+        
+        ### Test
+        
+        ```
+        python test_api.py
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
