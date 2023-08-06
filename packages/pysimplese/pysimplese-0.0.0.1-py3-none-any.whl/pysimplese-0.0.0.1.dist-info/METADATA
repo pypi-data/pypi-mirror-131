@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pysimplese
+Version: 0.0.0.1
+Summary: A simple search engine for fun and simple use cases.
+Home-page: https://gitee.com/peiiii/pysimplese
+Author: Wang Pei
+Author-email: 1535376447@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+Requires-Dist: fire
+Requires-Dist: lxml (>=4)
+Requires-Dist: PyStemmer (>=2)
+Requires-Dist: requests (>=2)
+
+# pysimplese
+A simple search engine for fun and simple use cases.
+

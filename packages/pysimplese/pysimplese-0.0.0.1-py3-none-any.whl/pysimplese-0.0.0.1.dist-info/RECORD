@@ -1,0 +1,17 @@
+pysimplese/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysimplese/download.py,sha256=hoXNkDEPI4tM4dofG8NM7WIXj66HIpwHhqvWVb2SoPM,617
+pysimplese/load.py,sha256=lDUaOfBDY8VjJmom_Fm1RZJw5GInHz0vlvmADPGumwA,670
+pysimplese/run.py,sha256=6NSMPXcoYqkl07lSk1HAZF97ubejFS40gnxjJ0MZNvE,1068
+pysimplese/clitools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysimplese/clitools/cli.py,sha256=B8yIPJuwwzzBcOxmQCIxHG1TRRID1NrLRKztc0SljnY,632
+pysimplese/search/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysimplese/search/analysis.py,sha256=OQ5UY--VpP8tv6wdmwotikJKVycQ8we2TgQMK8mDonw,1142
+pysimplese/search/documents.py,sha256=rDRVYrRBu8VgBD1IQ6KmDddaQbxym2QtV9F5bWkaSfY,501
+pysimplese/search/index.py,sha256=iO1n4l4bDsXtTPXQ9XbLILnck0GT9t62I3SJv9ur7BI,2687
+pysimplese/search/timing.py,sha256=SakPk0mXLAMlkaXQZIHb-cyeqhqX61Jnx9RpvRjuhGY,925
+pysimplese-0.0.0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+pysimplese-0.0.0.1.dist-info/METADATA,sha256=Ei6rjePY55VNyHt72LZinJLs5_MKWGsxYIHHzMKVjcg,633
+pysimplese-0.0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pysimplese-0.0.0.1.dist-info/entry_points.txt,sha256=NlukyRSwhJ74Fn8vtezr-QJqkGzu7XtfNs8vBsY3T7o,61
+pysimplese-0.0.0.1.dist-info/top_level.txt,sha256=VG2BLuskwxd2DJB1zM2OTcS_LJpPsggaATqKw9lOFy8,11
+pysimplese-0.0.0.1.dist-info/RECORD,,
