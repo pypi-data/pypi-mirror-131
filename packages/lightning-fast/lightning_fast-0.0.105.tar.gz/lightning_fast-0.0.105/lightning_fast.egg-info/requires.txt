@@ -1,0 +1,13 @@
+pandas
+numpy
+aiosmtplib
+python-dateutil
+pymongo
+redis
+pyyaml
+motor
+
+[full]
+luigi
+scikit-learn
+joblib
