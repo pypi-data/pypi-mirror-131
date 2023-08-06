@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+GeneratorFEC/__init__.py
+GeneratorFEC/generator.py
+GeneratorFEC.egg-info/PKG-INFO
+GeneratorFEC.egg-info/SOURCES.txt
+GeneratorFEC.egg-info/dependency_links.txt
+GeneratorFEC.egg-info/top_level.txt
