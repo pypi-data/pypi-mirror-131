@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: toy-driving
+Version: 0.0.1
+Summary: A gym-like autonomous driving environment for debugging RL algorithms.
+Home-page: https://github.com/zhangdongkun98/toy-driving
+Author: Zhang Dongkun
+Author-email: zhangdongkun98@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
