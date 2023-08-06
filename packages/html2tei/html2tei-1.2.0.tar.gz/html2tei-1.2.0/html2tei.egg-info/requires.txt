@@ -1,0 +1,11 @@
+beautifulsoup4<5.0.0,>=4.9.0
+lxml<5.0.0,>=4.5.0
+pyyaml<6.0.0,>=5.3.0
+warcio<2.0.0,>=1.7.0
+webarticlecurator<2.0.0,>=1.4.0
+
+[justext]
+justext<3.0.0,>=2.2.0
+
+[newspaper3k]
+newspaper3k<1.0.0,>=0.2.8
