@@ -1,0 +1,10 @@
+alquran_id/__init__.py,sha256=oDo68PZYf8SbHCcuJnuxRmv09SZOBqfU34tm5pj-YNk,45
+alquran_id/quran.py,sha256=dyNhPw_MNW2XQf4YE12jHT76NGmJsnUTZUkTlQEZ3TQ,1432
+alquran_id/source/quran.xml,sha256=FLZ4XdzLmJNBrV3SJkTub7DbKcZANbAWA7IeOhMSUVc,1541387
+alquran_id/source/tafsir.xml,sha256=psdSfCV9l9x2LPmVGDRDQpN4gkszRxOYHf4q0cfw0Io,2914292
+alquran_id/source/terjemahan.xml,sha256=f6NdMyq6jGzHgPSlc70PkodzvZLwv_Q53cwVZiAVtms,1313849
+alquran_id-0.0.2.dist-info/LICENSE,sha256=BUj6Dx-N_F2ZtKOAOcU0d7d8WSJ9qhzhRxPXQhFFvNE,1064
+alquran_id-0.0.2.dist-info/METADATA,sha256=u5zFiT0X-AqhXnpwQvBS4AODkmCXdSTK8VSaJ5u3OWU,1943
+alquran_id-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+alquran_id-0.0.2.dist-info/top_level.txt,sha256=J797oEct8najoTn3QJ-OROquMGNWysDQmnZ3fsNWnzs,11
+alquran_id-0.0.2.dist-info/RECORD,,
