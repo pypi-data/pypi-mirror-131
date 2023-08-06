@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: types-mypy-extensions
+Version: 0.4.9
+Summary: Typing stubs for mypy-extensions
+Home-page: https://github.com/python/typeshed
+License: Apache-2.0 license
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+
+## Typing stubs for mypy-extensions
+
+This is a PEP 561 type stub package for the `mypy-extensions` package.
+It can be used by type-checking tools like mypy, PyCharm, pytype etc. to check code
+that uses `mypy-extensions`. The source for this package can be found at
+https://github.com/python/typeshed/tree/master/stubs/mypy-extensions. All fixes for
+types and metadata should be contributed there.
+
+See https://github.com/python/typeshed/blob/master/README.md for more details.
+This package was generated from typeshed commit `1b80461b96e483c15ec48e8539ec64c409d0f65e`.
+
+
