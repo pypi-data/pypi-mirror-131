@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+setup.py
+anus/__init__.py
+anus.egg-info/PKG-INFO
+anus.egg-info/SOURCES.txt
+anus.egg-info/dependency_links.txt
+anus.egg-info/top_level.txt
+anus/shit/__init__.py
+anus/shit/average_shit.py
+anus/shit/base.py
+anus/shit/big_shit.py
+anus/shit/small_shit.py
