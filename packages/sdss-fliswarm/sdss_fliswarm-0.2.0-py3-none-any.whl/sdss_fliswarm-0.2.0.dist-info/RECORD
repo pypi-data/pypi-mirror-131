@@ -1,0 +1,13 @@
+fliswarm/__init__.py,sha256=bp9Wn_DAMW0F17xHE2UwYrm5-1n4Rewuuhh4ADsyFh0,155
+fliswarm/__main__.py,sha256=oPbHrmlYsdJ8mybRSb2sHtF-nYKNMzd3E8nZt5f42C4,1864
+fliswarm/actor.py,sha256=F6m6mYO3o6tIELE7cBbRQoxFYwZTsOMauiOYn2TYuPk,2524
+fliswarm/commands.py,sha256=DBf-jCiu6KL8O05gLzobZ8ZmIQUZHoIa5286bUzzk38,11350
+fliswarm/device.py,sha256=XLO_xyVvYhIYoxJhT4oAa_ZkGlYITbysK3JcIN1Ui-I,4227
+fliswarm/etc/fliswarm.yaml,sha256=TtQCZImAcexTd5WwFtcUW7GXgIAqb7-BDb11fwmRT1o,1841
+fliswarm/node.py,sha256=DpOh5OLsY4CSdU2JHwEORQ-5pyBN6XnkF603tpCOVFE,14710
+fliswarm/tools.py,sha256=x6cWJ5v3WMutE49brH_Gu_6Exn46024oM7JigroFfqo,3206
+sdss_fliswarm-0.2.0.dist-info/entry_points.txt,sha256=5KvWzMHbdobR0ZTVvtK-DI6_TSD0qQa7-vATND9ZBK4,51
+sdss_fliswarm-0.2.0.dist-info/LICENSE.md,sha256=_7dAUQQ5Ph_x1hcFXhi9aHBcqq9H11zco12eO4B3Cyg,1504
+sdss_fliswarm-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+sdss_fliswarm-0.2.0.dist-info/METADATA,sha256=WlojYB15xl55x4UEPoPnfXBrQziFYwGHmTymr5weaV8,2706
+sdss_fliswarm-0.2.0.dist-info/RECORD,,
