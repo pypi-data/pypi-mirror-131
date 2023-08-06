@@ -1,0 +1,2 @@
+recursive-include etalumacontrol/resources *.hex *.dll
+include LICENSE
