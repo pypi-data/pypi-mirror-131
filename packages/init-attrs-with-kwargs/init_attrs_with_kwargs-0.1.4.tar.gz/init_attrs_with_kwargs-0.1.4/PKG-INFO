@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: init_attrs_with_kwargs
+Version: 0.1.4
+Summary: A helper for type-checked command-line argument store
+Home-page: https://github.com/tos-kamiya/init_attrs_with_kwargs
+Author: Toshihiro kamiya
+Author-email: kamiya@mbj.nifty.com
+License: BSD 2-Clause License
+Description: ![test workflow](https://github.com/tos-kamiya/init_attrs_with_kwargs/workflows/Tests/badge.svg)
+        
+        init_attrs_with_kwargs
+        ======================
+        
+        A helper for type-checked command-line argument store.
+        
+        ## Sample
+        
+        ```python
+        from init_attrs_with_kwargs import InitAttrsWKwArgs
+        
+        class MyArgs(InitAttrsWKwArgs):
+            count: int
+            name: str
+            max_length: int
+        
+        # Initialize from docopt's return value, with casting str to int
+        args: MyArgs = MyArgs(_cast_str_values=True, **{'<count>': '1', '--name': "Joe", '--max-length': '100'})
+        
+        print("args.count=%s" % repr(args.count))
+        print("args.name=%s" % repr(args.name))
+        print("args.max_length=%s" % repr(args.max_length))
+        ```
+        
+        ### Another samples:
+        
+        * [sample1.py](https://github.com/tos-kamiya/init_attrs_with_kwargs/blob/main/sample1.py). Describes data type conversion and error handling.
+        * [sample2.py](https://github.com/tos-kamiya/init_attrs_with_kwargs/blob/main/sample2.py). Storing `docopt`-parsed command line arguments in a type-hinted class's object.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
