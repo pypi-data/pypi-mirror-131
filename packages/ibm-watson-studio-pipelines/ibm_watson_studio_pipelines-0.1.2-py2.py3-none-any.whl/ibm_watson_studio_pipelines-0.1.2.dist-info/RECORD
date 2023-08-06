@@ -1,0 +1,11 @@
+ibm_watson_studio_pipelines/__init__.py,sha256=GiaQZbURtTz1vkYHoiyig5nfH8Oa6a9S-2b0tgc1b-w,344
+ibm_watson_studio_pipelines/client.py,sha256=S7x1Z08A4lUgDXkt7OcjzzR5UiVg6-mV_RLBceSKWb0,21828
+ibm_watson_studio_pipelines/client_errors.py,sha256=gxUEyLo8tENXFgGh9qw1w24Uk5BVrsqzu4TqiaODfvI,7341
+ibm_watson_studio_pipelines/cpd_paths.py,sha256=ClvNA15PXI4DICQ16sQIpsGdyVhDGBPr8YSE_2hBFGA,3518
+ibm_watson_studio_pipelines/utils.py,sha256=OfXPBkMQWe4Ixg93boJ1_BTcCHUr7wwXTsjIx3Q3hzs,6610
+ibm_watson_studio_pipelines/version.py,sha256=1numh27Jog1NBIHyX-ZpJx457NBJ2V84JFEYEhvCois,73
+ibm_watson_studio_pipelines-0.1.2.dist-info/LICENSE,sha256=xllut76FgcGL5zbIRvuRc7aezPbvlMUTWJPsVr2Sugg,11358
+ibm_watson_studio_pipelines-0.1.2.dist-info/METADATA,sha256=WSOMuUQUTj2x0Mqx7YtKNs-tI2biO7rCXwNuPCI2WIk,3023
+ibm_watson_studio_pipelines-0.1.2.dist-info/WHEEL,sha256=oh0NKYrTcu1i1-wgrI1cnhkjYIi8WJ-8qd9Jrr5_y4E,110
+ibm_watson_studio_pipelines-0.1.2.dist-info/top_level.txt,sha256=QVA8F2etX6edHq6xHWKW53cW2FMS6ZKTLlDql38rMxU,28
+ibm_watson_studio_pipelines-0.1.2.dist-info/RECORD,,
