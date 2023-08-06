@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "luana_santos_csv_converter"
+version = "0.1.0"
+description = "Convert csv to json and vice versa. For learning purposes."
+authors = ["Luana Santos <luanasilvia.lss@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.3.5"
+click = "^8.0.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+flake8 = "^4.0.1"
+mypy = "^0.910"
+black = "^21.12b0"
+isort = "^5.10.1"
+pandas-stubs = "^1.2.0"
+ipython = "^7.30.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length=99
+
+[tool.isort]
+profile = "black"
+
+
+[tool.poetry.scripts]
+csv_converter = 'luana_santos_csv_converter.converter:converter'
+json_converter = 'luana_santos_csv_converter.converterj:converterj'
