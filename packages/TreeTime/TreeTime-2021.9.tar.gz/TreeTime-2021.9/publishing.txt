@@ -1,0 +1,66 @@
+
+Adjust version number
+ 1. Open the qt designer and adapt the version number in the GUI to "YYYY.M".
+    Make sure to open treetime's "Edit" tool page before saving.
+ 2. Edit setup.py to create a new version number and update information.
+ 3. Edit the README.md file to point users to download the latest release from the tag YYYY.M
+ 4. Edit the docs/introduction.rst file to point users to download the latest release
+ 5. Edit the docs/_site/index.md file to point users to download the latest release
+ 6. Using git/log, complete history/release notes in README.md and docs/releases.rst
+ 6. Make docs and check (cd docs; make html; cd ..)
+ 4. Compile UI  (cd treetime; python3 compile-ui.py; cd ..)
+ 5. Run once to test (python3 main.py)
+ 6. Commit and push
+
+Build a Python package
+ 1. yes | rm -r build
+ 2. python3 setup.py sdist bdist_wheel
+ 3. tar tzf dist/TreeTime-YYYY.M.tar.gz
+ 4. twine check dist/TreeTime-YYYY.M*
+
+Upload to PyPi
+ 1. twine upload dist/TreeTime-YYYY.M.tar.gz
+
+Draft a Release on github
+ 1. Go to https://github.com/jkanev/treetime/releases and create new draft
+ 2. Type a tag name "YYYY.M", title "Release YYYY.M"
+ 3. Create a description (use **x** for bold, and * for bullet points).
+    Format:
+    **New Features**
+    * _Key word._ Description.
+
+    **Bug Fixes**
+    * _Key word._ Description.
+ 4. Save as draft
+
+Build a Windows Installer
+ 1. Log into a Windows machine, go to an elevated command line
+ 2. pip install pyinstaller --upgrade
+ 3. pip install PyQt5 --upgrade
+ 4. on a normal command line: E:\treetime
+ 5. git pull origin master
+ 6. pyinstaller -n treetime --onefile main.py
+ 7. Test: dist\treetime.exe
+ 8. Create a directory and copy new treetime and data
+    (del dist\treetime, mkdir dist\treetime, copy dist\treetime.exe dist\treetime,
+     copy data dist\treetime)
+ 9. From the file manager, zip to dist\treetime to treetime_YYYY-MM_windows.zip
+10. In the github web page, go to treetime/released/YYYY.M and upload the windows zip file
+
+Build a Linux Installer
+ 1. pyinstaller -n treetime --onefile main.py
+ 2. Test: dist/treetime
+ 3. Create tar ball including dist/treetime and data, call it treetime_YYYY-MM_linux.tar.gz
+    (cd dist, mkdir treetime-dist, mv treetime treetime-dist/, mv treetime-dist treetime,
+     cp -r ../data treetime/, rm treetime/data/treetime-logo.xcf, tar cvvzf treetime_YYYY-MM_linux.tar.gz treetime)
+ 4. Clean up (rm -r treetime)
+ 5. In the github web page, go to treetime/released/YYYY.M and upload the linux zip file
+
+Finalise Release on github
+ 1. In github page, click "Publish Release".
+
+Advertise
+ 1. Adapt the text "TreeTime ... just released. New: ... https://github.com/jkanev/treetime#---treetime 
+#treetime #tree #editor #software Download here: https://github.com/jkanev/treetime/releases
+or on PyPi using pip install." and post on twitter and facebook.
+
