@@ -1,0 +1,13 @@
+[build-system]
+requires = [
+    "setuptools >= 41.0.0",
+    "wheel >= 0.30.0",
+    "setuptools_scm >= 2",
+    "numpy",
+    "Cython"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "src/_version.py"
+write_to_template = "__version__ = \"{version}\""
