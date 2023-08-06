@@ -1,0 +1,27 @@
+# Teaching Tools
+
+Tool for generating questions and answers for students.
+
+The script connects to an S3 bucket with the questions. Those questions are stored usign the lesson id, and in order to get those ids, it connects to an RDS to make a query to check it.
+
+## Installation
+
+Run `python aicore_nb_tool` in your terminal and let the magic happen.
+
+You can also install the package to work in any directory and without worrying about dependencies. Simply run `pip install aicore-nb-tools`, and once installed run `python -m aicore_nb_tool`. It will ask you for the API token, please, ask the team how to get one.
+
+## Usage
+
+You can pass the API token as an argument to the tool, for example:
+
+`python -m aicore_nb_tool --token <token>`
+
+The module also accepts the following arguments:
+
+`-p, --pathway: Pathway of the cohort that is going to be asked` The argument uses regex, so anything similar to the name of the pathway will work. For example `-p Science` will match `Data Science`
+
+`-ng, --no_groups: Whether to create groups or not`
+
+So for example, if you want to generate a notebook for the Data Science Pathway with no defined groups, you can run:
+
+`python -m aicore_nb_tool --pathway Science --no_groups --token <token>`
