@@ -1,0 +1,3 @@
+
+[pygments.lexers]
+w3c_ebnflexer = w3c_ebnflexer:W3CEbnfLexer
