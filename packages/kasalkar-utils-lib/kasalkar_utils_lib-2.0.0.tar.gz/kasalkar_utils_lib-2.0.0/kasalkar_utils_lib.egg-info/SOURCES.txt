@@ -1,0 +1,8 @@
+README.md
+setup.py
+kasalkar_utils_lib.egg-info/PKG-INFO
+kasalkar_utils_lib.egg-info/SOURCES.txt
+kasalkar_utils_lib.egg-info/dependency_links.txt
+kasalkar_utils_lib.egg-info/requires.txt
+kasalkar_utils_lib.egg-info/top_level.txt
+kasalkar_utils_lib/sdk/kasalkar_utils.py
