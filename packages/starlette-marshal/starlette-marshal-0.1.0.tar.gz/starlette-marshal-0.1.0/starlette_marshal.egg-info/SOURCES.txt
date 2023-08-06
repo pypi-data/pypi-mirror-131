@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+starlette_marshal/__init__.py
+starlette_marshal/rapidjson.py
+starlette_marshal.egg-info/PKG-INFO
+starlette_marshal.egg-info/SOURCES.txt
+starlette_marshal.egg-info/dependency_links.txt
+starlette_marshal.egg-info/not-zip-safe
+starlette_marshal.egg-info/requires.txt
+starlette_marshal.egg-info/top_level.txt

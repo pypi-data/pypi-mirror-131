@@ -1,0 +1,4 @@
+starlette>=0.17
+
+[rapidjson]
+python-rapidjson>=1.5
