@@ -1,0 +1,8 @@
+dataflows_ckan/__init__.py,sha256=7jgv0U96hykE0ftfYt4qDuviH7_GU-6e6X9U09s7778,64
+dataflows_ckan/helpers.py,sha256=HUocD1NvWiMpjhqMgj8HAKSOsyWpVhcb87N-4_5f70U,1009
+dataflows_ckan/processors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataflows_ckan/processors/dump_to_ckan.py,sha256=7j4x9fPbqa7sbE0DiQ-YIvS-PAz-IGlFPz7ijICT2gs,7314
+dataflows_ckan-0.3.5.dist-info/LICENSE.md,sha256=byidz57u_6lFv0EONR565N4_Vo4nbxTuErUBBr_HBHE,1114
+dataflows_ckan-0.3.5.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+dataflows_ckan-0.3.5.dist-info/METADATA,sha256=xPtgFegnVNrFCLnhq5pD-04cuRGhQtFZ_6VsTfjURns,2336
+dataflows_ckan-0.3.5.dist-info/RECORD,,
