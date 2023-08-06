@@ -1,0 +1,10 @@
+aws_cdk/aws_iotcoredeviceadvisor/__init__.py,sha256=ploStq5iF2zaFAZ9hogGvmYm4-qWmeewDqUwfzrfX-A,10458
+aws_cdk/aws_iotcoredeviceadvisor/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_iotcoredeviceadvisor/_jsii/__init__.py,sha256=o6zLwu7UrAj4a8aqMnElwbR13-zraLVwprJLm7DgqoA,388
+aws_cdk/aws_iotcoredeviceadvisor/_jsii/aws-iotcoredeviceadvisor@1.136.0.jsii.tgz,sha256=0l2Egk19JwRP7DGHzLLz_hY7unu0aVNQitmGjNZZ0-c,17035
+aws_cdk.aws_iotcoredeviceadvisor-1.136.0.dist-info/LICENSE,sha256=PPdRlpoLCV1CRrCV1eKpp3m0lNjchFAP4a9zfc8tRLo,11391
+aws_cdk.aws_iotcoredeviceadvisor-1.136.0.dist-info/METADATA,sha256=DeXPEt4xMVuRsH_9-t6LsBTbhpqdcNLWKa99Q7yF_9c,2528
+aws_cdk.aws_iotcoredeviceadvisor-1.136.0.dist-info/NOTICE,sha256=xo56krus2e5ShfXqz_B7vuvGcMn_D0F7TjjpfTz8YMw,113
+aws_cdk.aws_iotcoredeviceadvisor-1.136.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aws_cdk.aws_iotcoredeviceadvisor-1.136.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_iotcoredeviceadvisor-1.136.0.dist-info/RECORD,,
