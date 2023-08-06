@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+pwmg/__init__.py
+pwmg/pwmg.py
+pwmg.egg-info/PKG-INFO
+pwmg.egg-info/SOURCES.txt
+pwmg.egg-info/dependency_links.txt
+pwmg.egg-info/entry_points.txt
+pwmg.egg-info/top_level.txt
