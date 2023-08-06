@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/django_cdk/__init__.py
+src/django_cdk/py.typed
+src/django_cdk.egg-info/PKG-INFO
+src/django_cdk.egg-info/SOURCES.txt
+src/django_cdk.egg-info/dependency_links.txt
+src/django_cdk.egg-info/requires.txt
+src/django_cdk.egg-info/top_level.txt
+src/django_cdk/_jsii/__init__.py
+src/django_cdk/_jsii/django-cdk@0.0.29.jsii.tgz
