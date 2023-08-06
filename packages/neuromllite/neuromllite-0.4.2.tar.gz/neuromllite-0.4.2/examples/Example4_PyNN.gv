@@ -1,0 +1,27 @@
+digraph Example4_PyNN {
+	subgraph cluster_region1 {
+		color="#444444" fontcolor="#444444"
+		label=region1
+		node [color="#ff0000" fontcolor="#000000" shape=ellipse style=filled]
+		pop0 [label=<pop0<br/><i>2 cells</i>>]
+	}
+	subgraph cluster_region1 {
+		color="#444444" fontcolor="#444444"
+		label=region1
+		node [color="#00ff00" fontcolor="#000000" shape=ellipse style=filled]
+		pop1 [label=<pop1<br/><i>2 cells</i>>]
+	}
+	subgraph cluster_region1 {
+		color="#444444" fontcolor="#444444"
+		label=region1
+		node [color="#0000ff" fontcolor="#ffffff" shape=ellipse style=filled]
+		pop2 [label=<pop2<br/><i>1 cell</i>>]
+	}
+	node [color="#444444" fontcolor="#444444" style=""]
+	stim [label=<stim<br/><i>1 input</i>>]
+	stim -> pop0 [arrowhead=empty]
+	edge [arrowhead=normal arrowsize=1 color="#ff0000" fontcolor="#ff0000" penwidth=4.2 style=solid]
+	pop0 -> pop1
+	edge [arrowhead=dot arrowsize=0.7 color="#ff0000" fontcolor="#ff0000" penwidth=0.7 style=solid]
+	pop0 -> pop2
+}
