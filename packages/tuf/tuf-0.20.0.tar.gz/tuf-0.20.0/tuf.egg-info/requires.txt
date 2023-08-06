@@ -1,0 +1,2 @@
+requests>=2.19.1
+securesystemslib>=0.20.0

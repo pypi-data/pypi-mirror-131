@@ -1,0 +1,15 @@
+# License files
+include LICENSE*
+
+# Development and testing
+include *.txt
+global-include pylintrc
+include tox.ini
+graft tests
+
+# Documentation
+graft docs
+recursive-include tuf *.md
+
+# To remove
+recursive-include tuf/scripts *.py
