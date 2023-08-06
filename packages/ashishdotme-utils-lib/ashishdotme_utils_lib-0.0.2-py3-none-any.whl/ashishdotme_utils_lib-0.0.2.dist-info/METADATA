@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ashishdotme-utils-lib
+Version: 0.0.2
+Summary: Python library for dashboard
+Home-page: https://github.com/ashishdotme/ashishdotme-utils
+Author: Ashish Patel
+Author-email: ashishsushilpatel@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+Requires-Dist: colorlog
+Requires-Dist: requests
+
+# ashishdotme-utils
+
+Python library for dashboard
+
+
+
