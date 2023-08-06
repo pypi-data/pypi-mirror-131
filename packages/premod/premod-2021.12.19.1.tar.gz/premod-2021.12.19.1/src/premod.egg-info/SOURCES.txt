@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+src/premod/__init__.py
+src/premod/prepocessing_text.py
+src/premod.egg-info/PKG-INFO
+src/premod.egg-info/SOURCES.txt
+src/premod.egg-info/dependency_links.txt
+src/premod.egg-info/top_level.txt
