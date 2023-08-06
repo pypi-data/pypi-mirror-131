@@ -1,0 +1,7 @@
+include LICENSE
+include README.rst
+graft requirements
+graft tests
+prune *.egg-info
+prune __pycache__
+global-exclude *.py[cod]

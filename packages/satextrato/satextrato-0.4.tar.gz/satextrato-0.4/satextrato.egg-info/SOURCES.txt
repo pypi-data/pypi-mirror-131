@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+requirements/dev.txt
+satextrato/__init__.py
+satextrato/base.py
+satextrato/cancelamento.py
+satextrato/config.py
+satextrato/venda.py
+tests/conftest.py
+tests/test_config.py
+tests/test_satextrato.py
+tests/data/cfe_cancelamento.xml
+tests/data/cfe_venda.xml
