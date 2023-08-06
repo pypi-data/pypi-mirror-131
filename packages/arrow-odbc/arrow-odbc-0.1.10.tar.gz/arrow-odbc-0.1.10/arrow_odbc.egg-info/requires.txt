@@ -1,0 +1,6 @@
+pyarrow
+milksnake
+
+[test]
+pytest
+pandas
