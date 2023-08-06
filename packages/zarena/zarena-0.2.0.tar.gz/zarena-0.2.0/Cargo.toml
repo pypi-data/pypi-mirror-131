@@ -1,0 +1,22 @@
+[package]
+name = "zarena"
+version = "0.2.0"
+authors = ["zetiworld <zetiapp@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "zarena"
+crate-type = ["cdylib"]
+
+[package.metadata.maturin]
+requires-dist = ["gym>=0,<1", "numpy>=1,<2", "six>=1,<2"]
+
+[dependencies]
+lazy_static = "1.4.0"
+rand = "0.8.4"
+pyo3 = { version = "0.15.0", features = ["abi3-py36", "extension-module"] }
+
+[features]
+default = ["pyo3/extension-module", "python"]
+python = []
