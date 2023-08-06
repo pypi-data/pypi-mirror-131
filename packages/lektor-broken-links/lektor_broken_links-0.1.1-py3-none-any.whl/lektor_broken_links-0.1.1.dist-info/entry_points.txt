@@ -1,0 +1,3 @@
+[lektor.plugins]
+broken-links = lektor_broken_links:BrokenLinksPlugin
+
