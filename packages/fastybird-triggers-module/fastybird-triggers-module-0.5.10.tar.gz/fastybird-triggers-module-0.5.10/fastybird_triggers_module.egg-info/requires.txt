@@ -1,0 +1,7 @@
+fastnumbers
+fastybird-exchange-plugin
+fastybird-modules-metadata
+kink
+pony
+setuptools
+mysqlclient
