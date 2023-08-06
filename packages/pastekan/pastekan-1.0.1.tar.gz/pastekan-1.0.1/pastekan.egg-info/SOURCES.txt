@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pastekan
+setup.py
+pastekan.egg-info/PKG-INFO
+pastekan.egg-info/SOURCES.txt
+pastekan.egg-info/dependency_links.txt
+pastekan.egg-info/requires.txt
+pastekan.egg-info/top_level.txt
