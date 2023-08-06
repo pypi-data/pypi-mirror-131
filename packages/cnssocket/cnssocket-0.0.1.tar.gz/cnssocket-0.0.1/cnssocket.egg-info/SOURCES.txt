@@ -1,0 +1,7 @@
+setup.py
+cnssocket.egg-info/PKG-INFO
+cnssocket.egg-info/SOURCES.txt
+cnssocket.egg-info/dependency_links.txt
+cnssocket.egg-info/top_level.txt
+lib/__init__.py
+lib/socket.py
