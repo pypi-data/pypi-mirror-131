@@ -1,0 +1,12 @@
+dotflz/__init__.py,sha256=2mCc4jygov2kRBsw8ouwi3WYKnhY_vMRDOiuG-Pvw2I,21
+dotflz/cli.py,sha256=PqXPcpbCZr1JOd2DceScb1xOlbEV-oJJ2FvmB4gB7MQ,2334
+dotflz/config.py,sha256=eP19OEEW65OLrnDjHM9EgCPNfK92ljcQhG-6aQv6BnE,1574
+dotflz/config_item.py,sha256=hwoFR7K6xYmZXBIzuS8pZXa2SQLJpa2G-EYDSfsPT_0,3439
+dotflz/dotflz.py,sha256=riTVC2Lavoy9N97W-iSqS7WYdxhIQaycXbeEo403744,3254
+dotflz/filesystem.py,sha256=kOhYtKTahjVjzsx4osWQrB217cumBqTHV9rN7IEbUcU,1284
+dotflz-0.4.dist-info/LICENSE,sha256=ggHrmzUo8K33WQhfaDs_jlM-eeTGZYO8JaZXduQv98Q,1069
+dotflz-0.4.dist-info/METADATA,sha256=5YWLwNu71Fk9unyYf0QRIq5ImAw0BBLhYPKpxItboz4,1624
+dotflz-0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dotflz-0.4.dist-info/entry_points.txt,sha256=C9rZEKJxo0bpy-nZ6nUrzyzw2qzsaJvWSSneQrPy5nc,67
+dotflz-0.4.dist-info/top_level.txt,sha256=PetYLqib0xI-Ar4PYK62TQlfcirsBhGOO1f1-kZZUmg,7
+dotflz-0.4.dist-info/RECORD,,
