@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: eu2020
+Version: 0.4.0
+Summary: Textová hra Evropská Unie 2020
+Home-page: https://github.com/underground-lab/eu2020
+Author: Jaroslav Beran, Michal Porteš
+Author-email: jaroslav.beran@gmail.com, michalportes1@gmail.com
+License: GPL-3.0
+Project-URL: Bug Tracker, https://github.com/underground-lab/eu2020/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Experimentální Textová hra Evropská Unie 2020
+
+Staňte se vládcem Evropské Unie a vyzkoušejte zda byste byli schopni uspokojit zájmy všech člsenských států a dalších temných zájmových skupin.
+
+Hra stále není hotová - jedná se jen o prototyp.
+
+## Spuštění
+
+Udělejte si klon repozitáře a spusťte hru následujícím příkazem.
+
+```
+python -m pip install -r requirements.txt
+python -m eu2020
+```
+
+## Spolupráce
+
+Pokud vás napadne jakékoliv vylepšení tak neváhejte vytvořit issue nebo pull request.
+
+
