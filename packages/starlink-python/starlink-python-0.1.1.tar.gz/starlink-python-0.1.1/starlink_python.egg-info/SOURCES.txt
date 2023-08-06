@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+spacex/starlink/__init__.py
+spacex/starlink/alert.py
+spacex/starlink/dish.py
+spacex/starlink/outage_reason.py
+spacex/starlink/status.py
+starlink_python.egg-info/PKG-INFO
+starlink_python.egg-info/SOURCES.txt
+starlink_python.egg-info/dependency_links.txt
+starlink_python.egg-info/requires.txt
+starlink_python.egg-info/top_level.txt
