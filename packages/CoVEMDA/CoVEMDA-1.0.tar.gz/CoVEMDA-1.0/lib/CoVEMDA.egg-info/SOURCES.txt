@@ -1,0 +1,13 @@
+README.md
+setup.py
+lib/CoVEMDA.egg-info/PKG-INFO
+lib/CoVEMDA.egg-info/SOURCES.txt
+lib/CoVEMDA.egg-info/dependency_links.txt
+lib/CoVEMDA.egg-info/requires.txt
+lib/CoVEMDA.egg-info/top_level.txt
+lib/covemda/__init__.py
+lib/covemda/baseline_estimator.py
+lib/covemda/data_structure.py
+lib/covemda/integration.py
+lib/covemda/regressor.py
+lib/covemda/visualizer.py

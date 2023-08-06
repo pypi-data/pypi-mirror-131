@@ -1,0 +1,38 @@
+# CoVEMDA (Python Version)
+
+**CoronaVirus - Electricity Market Data Analyzer (CoVEMDA)** is an open-access and ready-to-use toolbox to track COVID-19 impacts on U.S. power systems. This document is a quick overview of this toolbox.
+ 
+
+## Features
+ 
+CoVEMDA is primarily working with COVID-EMDA+ data hub, with some major functions such as: baseline estimation, regression analysis, scientific visualization, and other useful supplementary functions.
+ 
+Extenal data and models are allowed for further extensions.
+
+
+## Navigation
+
+CoVEMDA root directory contains four folders, a setup.py script, a README.md document, and a LICENSE text file. One can run the setup script to check the dependencies of current environment, or use pip command to retrieve from PyPI.
+
+Folder `lib/` contains the source codes for CoVEMDA, which are collectively organized in several script files according to the realized functions. It is recommended to call the **integrated functions** or **high-level functions** as they are user-oriented and simple to use. Turn to **low-level functions** only in case that more flexible and refined configurations are required.
+
+Folder `docs/` contains a **User Manual** for CoVEMDA. This manual includes simple guidance for first-time users, as well as detailed explanation of all the features and functions, along with illustrative examples. Though this is a complete guide for anyone that is interested in more details, reading **Section 1 (Introduction)** and **Section 2 (Getting Started)** is enough for beginners to try it out.
+
+Folder `data/` contains the temporary files of CoVEMDA, including a data collection updated to March 2021 (`data/data_archive/`) and several pretrained backcast models (`data/backcast`).
+
+
+## User Manual
+
+An extensive **User Manual** is attached to the toolbox, which can be found at `docs/`. In this manual, users may find some basic-level guidances as well as comprehensive details of the toolbox implementation. Here, the the manual are organized with the following sections:
+
+1. Introduction
+2. Getting Started
+3. Data Hub
+4. Toolbox
+5. Baseline Estimation
+6. Regression Analysis
+7. Scientific Visualization
+8. Acknowledgments
+
+We highly recommend you to read Section 1 and 2 before using CoVEMDA. The rest of the manual introduces all the features, classes, and functions from principle to practice in detail. Read Section 3 and 4 to get some knowledge of the programming architecture and useful interfaces. Read Section 5, 6, and 7 for advanced usage and customization. 
+
