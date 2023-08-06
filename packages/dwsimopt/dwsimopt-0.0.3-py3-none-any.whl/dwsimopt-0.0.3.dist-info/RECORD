@@ -1,0 +1,10 @@
+pyDWSIMopt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyDWSIMopt/sim_opt.py,sha256=ISaStWLVuUWT2Pt0xT_7qp_oUFQWZbGDyYCc-CT7dYU,8847
+pyDWSIMopt/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyDWSIMopt/tests/test_interface.py,sha256=DWhOoq6U8ehCve8OLFLJNnVzf8Q4KuVNS_PjRERX4Yw,3192
+pyDWSIMopt/tests/test_sim_opt.py,sha256=kp_V70Gx40DuMjvcjBZ58SQn1b85maJLHjQfP2mggrU,4716
+dwsimopt-0.0.3.dist-info/LICENSE,sha256=naH_JP3PntYg4ZEhhRf5TmylWrQ4e6oMlEzxWqvbA-g,1104
+dwsimopt-0.0.3.dist-info/METADATA,sha256=vzNozsCXqJzcPPvHkmHKyJtbCFhEUI9aos12M6qMBys,5184
+dwsimopt-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dwsimopt-0.0.3.dist-info/top_level.txt,sha256=vDy6hs2S7rv7498-U_b99l10bsPBpiJ2PGN4NyOJqKM,28
+dwsimopt-0.0.3.dist-info/RECORD,,
