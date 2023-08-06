@@ -1,0 +1,9 @@
+sublib/__init__.py,sha256=em4wWzxQCXwJlyBL2DUWQeBEXZ8PM-1rxmMnTDVqCt8,44
+sublib/sublib.py,sha256=VI0Ug4j_9w7z8qItYcUlomqm4I1g15EWhi8ECmc24og,7681
+sublib/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sublib/tests/test_sublib.py,sha256=b9kAVaPpYDKe99QLZ4-6b44_QRrrfUV3X10y3Lg-0zk,7592
+sublib-1.0.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+sublib-1.0.0.dist-info/METADATA,sha256=dbqO3x9K-13umC8BIx6Vp4MwE2Z_FfJQ8-AjiVq5Zjc,4074
+sublib-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+sublib-1.0.0.dist-info/top_level.txt,sha256=3CYlSoCDzKvt825tR3FoBAtiCriLCA2J977qVsXHPLs,7
+sublib-1.0.0.dist-info/RECORD,,
