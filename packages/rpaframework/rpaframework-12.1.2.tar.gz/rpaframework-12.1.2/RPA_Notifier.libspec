@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="RPA.Notifier" type="LIBRARY" format="REST" scope="GLOBAL" generated="2021-12-14T12:49:26Z" specversion="3" source="./RPA/Notifier.py" lineno="5">
+<version/>
+<doc>`Notifier` is a library interfacting with different notification services.
+
+Supported services:
+
+- email
+- gmail
+- pushover
+- slack
+- telegram
+- twilio
+
+Services not supported yet:
+
+- gitter
+- join
+- mailgun
+- pagerduty
+- popcornnotify
+- pushbullet
+- simplepush
+- statuspage
+- zulip
+
+Read more at https://notifiers.readthedocs.io/en/latest/
+
+**Examples**
+
+**Robot Framework**
+
+.. code-block:: robotframework
+
+   *** Settings ***
+   Library  RPA.Notifier
+
+   *** Variables ***
+   ${SLACK_WEBHOOK}   https://hooks.slack.com/services/WEBHOOKDETAILS
+   ${CHANNEL}         notification-channel
+
+   *** Tasks ***
+   Lets notify
+      Notify Slack   message from robot  channel=${CHANNEL}  webhook_url=${SLACK_WEBHOOK}
+
+**Python**
+
+.. code-block:: python
+
+   from RPA.Notifier import Notifier
+
+   library = Notifier()
+
+   slack_attachments = [
+      {
+         "title": "attachment 1",
+         "fallback": "liverpool logo",
+         "image_url": "https://upload.wikimedia.org/wikipedia/fi/thumb/c/cd/Liverpool_FC-n_logo.svg/1200px-Liverpool_FC-n_logo.svg.png",
+      }
+   ]
+
+   library.notify_slack(
+      message='message for the Slack',
+      channel="notification-channel",
+      webhook_url=slack_webhook_url,
+      attachments=slack_attachments,
+   )</doc>
+<tags>
+</tags>
+<inits>
+</inits>
+<keywords>
+<kw name="Notify Email" source="./RPA/Notifier.py" lineno="159">
+<arguments repr="message: str | None = None, to: str | None = None, username: str | None = None, password: str | None = None, **kwargs: dict">
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="message: str | None = None">
+<name>message</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="to: str | None = None">
+<name>to</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="username: str | None = None">
+<name>username</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="password: str | None = None">
+<name>password</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="VAR_NAMED" required="false" repr="**kwargs: dict">
+<name>kwargs</name>
+<type>dict</type>
+</arg>
+</arguments>
+<doc>Notify using email service
+
+:param message: notification message
+:param to: target of email message
+:param username: email service username
+:param password: email service password
+:return: True is notification was success, False if not</doc>
+<shortdoc>Notify using email service</shortdoc>
+</kw>
+<kw name="Notify Gmail" source="./RPA/Notifier.py" lineno="133">
+<arguments repr="message: str | None = None, to: str | None = None, username: str | None = None, password: str | None = None, **kwargs: dict">
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="message: str | None = None">
+<name>message</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="to: str | None = None">
+<name>to</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="username: str | None = None">
+<name>username</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="password: str | None = None">
+<name>password</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="VAR_NAMED" required="false" repr="**kwargs: dict">
+<name>kwargs</name>
+<type>dict</type>
+</arg>
+</arguments>
+<doc>Notify using Gmail service
+
+:param message: notification message
+:param to: target of email message
+:param username: GMail service username
+:param password: GMail service password
+:return: True is notification was success, False if not</doc>
+<shortdoc>Notify using Gmail service</shortdoc>
+</kw>
+<kw name="Notify Pushover" source="./RPA/Notifier.py" lineno="78">
+<arguments repr="message: str | None = None, user: str | None = None, token: str | None = None, **kwargs: dict">
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="message: str | None = None">
+<name>message</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="user: str | None = None">
+<name>user</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="token: str | None = None">
+<name>token</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="VAR_NAMED" required="false" repr="**kwargs: dict">
+<name>kwargs</name>
+<type>dict</type>
+</arg>
+</arguments>
+<doc>Notify using Pushover service
+
+:param message: notification message
+:param user: target user for the notification
+:param token: service token
+:return: True is notification was success, False if not</doc>
+<shortdoc>Notify using Pushover service</shortdoc>
+</kw>
+<kw name="Notify Slack" source="./RPA/Notifier.py" lineno="91">
+<arguments repr="message: str | None = None, channel: str | None = None, webhook_url: str | None = None, **kwargs: dict">
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="message: str | None = None">
+<name>message</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="channel: str | None = None">
+<name>channel</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="webhook_url: str | None = None">
+<name>webhook_url</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="VAR_NAMED" required="false" repr="**kwargs: dict">
+<name>kwargs</name>
+<type>dict</type>
+</arg>
+</arguments>
+<doc>Notify using Slack service
+
+:param message: notification message
+:param channel: target channel for the notification
+:param webhook_url: Slack webhook url
+:return: True is notification was success, False if not</doc>
+<shortdoc>Notify using Slack service</shortdoc>
+</kw>
+<kw name="Notify Telegram" source="./RPA/Notifier.py" lineno="114">
+<arguments repr="message: str | None = None, chat_id: str | None = None, token: str | None = None, **kwargs: dict">
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="message: str | None = None">
+<name>message</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="chat_id: str | None = None">
+<name>chat_id</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="token: str | None = None">
+<name>token</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="VAR_NAMED" required="false" repr="**kwargs: dict">
+<name>kwargs</name>
+<type>dict</type>
+</arg>
+</arguments>
+<doc>Notify using Telegram service
+
+:param message: notification message
+:param chat_id: target chat id for the notification
+:param token: service token
+:return: True is notification was success, False if not</doc>
+<shortdoc>Notify using Telegram service</shortdoc>
+</kw>
+<kw name="Notify Twilio" source="./RPA/Notifier.py" lineno="185">
+<arguments repr="message: str | None = None, number_from: str | None = None, number_to: str | None = None, account_sid: str | None = None, token: str | None = None, **kwargs: dict">
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="message: str | None = None">
+<name>message</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="number_from: str | None = None">
+<name>number_from</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="number_to: str | None = None">
+<name>number_to</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="account_sid: str | None = None">
+<name>account_sid</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="token: str | None = None">
+<name>token</name>
+<type>str</type>
+<type>None</type>
+<default>None</default>
+</arg>
+<arg kind="VAR_NAMED" required="false" repr="**kwargs: dict">
+<name>kwargs</name>
+<type>dict</type>
+</arg>
+</arguments>
+<doc>Notify using Twilio service
+
+:param message: notification message
+:param number_from: number where the message comes from
+:param number_to: number where the messages goes to
+:param account_sid: Twilio account SID
+:param token: Twilio account token
+:return: True is notification was success, False if not</doc>
+<shortdoc>Notify using Twilio service</shortdoc>
+</kw>
+</keywords>
+<datatypes>
+</datatypes>
+</keywordspec>
