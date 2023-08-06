@@ -1,0 +1,224 @@
+# Boltlight - a BOLT-on interface to the Lightning Network
+
+Boltlight is a Lightning Network node wrapper.
+
+It is not a LN node itself and connects to an existing node of one of the
+supported implementations, providing a uniform interface and set of features.
+Client code that uses boltlight can thus be agnostic on which node is running
+under the hood.
+
+This means that the underlying LN node implementation can be
+changed anytime with minimal intervention and no effects on client code.
+
+Each underlying implementation implements some features with "little"
+differences. Boltlight strives to keep a uniform interface at all times,
+drawing a common line where implementations differ and always choosing to stay
+BOLT-compliant as much as possible.
+
+LAPP developers should be free to code, without the need to lock-in to any
+particular implementation.
+
+
+### Supported LN implementations :zap:
+
+Currently, the main LN implementations <sup>1</sup> are supported:
+
+- [c-lightning](https://github.com/ElementsProject/lightning)
+  (v0.10.1) by Blockstream
+- [eclair](https://github.com/ACINQ/eclair) (v0.6.1) by Acinq
+- [electrum](https://github.com/spesmilo/electrum) (v4.1.5)
+  by Thomas Voegtlin
+- [lnd](https://github.com/lightningnetwork/lnd) (v0.13.3-beta) by Lightning
+  Labs
+
+### How it works
+
+On the client side, boltlight exposes a gRPC client interface, by default on
+port 1708. On the node side, it proxies all the received calls to the
+underlying implementation, using the appropriate transport and authentication
+to connect and applying the appropriate format and data translations to each
+implemented call.
+
+See [Supported APIs](/doc/supported_apis.md) for a table of the supported calls
+for each implementation.
+
+Calls that are not yet implemented return an `UNIMPLEMENTED` error.
+
+Software dependencies and configurations are the only significant differences
+between the supported implementations.
+
+See [Implementation Specific](/doc/implementation_specific.md) for an
+incomplete list of configuration tips and nuances that are dependent on the
+particular lightning implementation.
+
+
+#### Notes
+1. _at the moment, only the specified versions of the LN nodes are supported_
+
+
+## Requirements
+
+First of all, boltlight will need to connect to an existing and supported LN
+node.
+
+In order to run boltlight it needs to be configured and software dependencies
+have to be met. Some dependencies and configuration choices are determined by
+the implementation of choice. Availability of the required dependencies will be
+checked at runtime.
+
+The supported architectures are `amd64` and `arm32v7`. The latter may require
+additional dependencies.
+
+
+### System dependencies
+
+- Linux <sup>1,2</sup>
+- Python 3.7+ <sup>3</sup>
+- [optional] libscrypt 1.8+ (_faster start_)
+
+### Resources
+
+Resource demand should be pretty low:
+
+- CPU: 1 core
+- RAM: ~64MB when idling
+- disk: docker image weights ~350MB
+
+#### Notes
+
+1. _tested on Debian 10 Buster_
+2. _macOS should work but is not well tested, Windows may work but is not
+   actively supported_
+3. _tested with python 3.7+_
+
+
+## Installing
+
+Boltlight can be installed with:
+```
+$ pip install boltlight
+```
+
+Usage of a `virtualenv` is recommended.
+
+
+## Configuring and securing
+
+Boltlight needs to be configured before it can connect to a LN node and make
+itself useful. [Configuring](/doc/configuring.md) contains all the instructions
+on how to configure boltlight.
+
+One last step is necessary after configuration is complete: security.
+
+On the node side, as with configuration, this partially depends on the chosen
+implementation. On the client side, authorization is handled with gRPC
+macaroons.
+
+For faster setup and execution, TLS and macaroons can be turned off. This is
+not suitable for production use but can be useful for testing or development.
+
+To configure the necessary secrets and set a password to manage and protect
+them run:
+```bash
+$ boltlight-secure
+```
+
+It can be run interactively or unattended and will create or update boltlight's
+database and macaroon files.
+
+All secrets will be encrypted and stored in the database, so they won't be
+accessible at rest. Secrets are decrypted with boltlight's password as part
+of the unlocking process, will only be available to boltlight at runtime and
+are never written to disk in plaintext.
+
+Please read [Security](/doc/security.md) for all the details.
+
+
+## Using
+
+### Running
+
+To start boltlight run:
+```bash
+$ boltlight
+```
+
+This will start its gRPC server, through which Boltlight can be operated.
+
+The `boltlight.proto` defines the structure for the data to be serialized
+and can be found [here](/boltlight/boltlight.proto).
+gRPC client libraries for supported languages can be generated from this file.
+See the [Generation instructions](/doc/client_libraries.md) for more
+information.
+
+The proto file contains three services: _Unlocker_, _Lightning_ and _Locker_.
+The first does not require macaroon authorization and can only unlock
+boltlight, the other two start after boltlight is unlocked, require
+authorization and provide all the supported operations, locking included.
+
+### API documentation
+
+Documentation for the gRPC APIs along with example code in Python, Go,
+Node.js and Bash can be found at
+[API page](https://hashbeam.gitlab.io/boltlight/).
+
+### CLI
+
+A CLI named `blink`, with bash and zsh completion support, is available for
+interactive usage, maintenance or testing.
+
+To activate completion support, first locate completion scripts, which are in
+`share/doc/boltlight/examples/`, relative to python installation path.
+Possible installation paths: `/path/to/venvh/`, `~/.local/`, `/usr/local/`.
+
+Then, you can add completion support by adding the appropriate line to your
+shell's RC file:
+- `~/.bashrc`: `. /path/to/complete-blink-bash.sh`
+- `~/.zshrc`: `. /path/to/complete-blink-zsh.sh`
+
+For a full list of the available CLI commands use the `--help` option:
+```bash
+$ blink --help
+```
+
+### Pairing
+
+To **pair** boltlight with a client, run:
+```bash
+$ boltlight-pairing
+```
+
+This will generate two URIs that allow easy retrieval of connection data
+(`boltlightconnect://<host>:<port>[?cert=<PEM certificate>]`)
+and macaroon (`macaroon:<chosen macaroon>`).
+The URIs can be displayed as QR codes, suitable for easy reading from client
+apps, or as text for easy copying.
+
+The [Globular](https://gitlab.com/hashbeam/globular) Android wallet is an
+example app that supports pairing with boltlight.
+
+
+## The fork
+
+Boltlight has been forked from [Lighter](https://gitlab.com/inbitcoin/lighter)
+and continues on the same path, aiming to:
+- make it easier to get started
+- add support for more implementations
+- keep the existing support up-to-date
+- add more features
+
+Boltlight is not 100% backwards-compatible with Lighter because of the name
+change, so a re-configuration is needed in order to upgrade.
+
+
+## Contributing
+
+All contributions are welcome!
+
+If you're a developer and want to get involved, see
+[CONTRIBUTING.md](/CONTRIBUTING.md) for info on how to join the effort.
+
+If boltlight is missing that key feature you need, please get in touch.
+Feel free to open issues to request new features or report bugs, or send an
+email to `hashbeam@protonmail.com`.
+

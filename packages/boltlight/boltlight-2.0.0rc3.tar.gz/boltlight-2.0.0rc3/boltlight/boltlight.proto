@@ -1,0 +1,909 @@
+// Boltlight - a LN node wrapper
+//
+// Copyright (C) 2021 boltlight contributors
+// Copyright (C) 2018 inbitcoin s.r.l.
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as published
+// by the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+//
+// For a full list of contributors, please see the AUTHORS.md file.
+
+syntax = "proto3";
+
+package boltlight;
+
+// Unlocker service exposes a single operation used to unlock boltlight and
+// optionally LN nodes with locking mechanisms.
+service Unlocker {
+
+    /**
+    Unlock unlocks boltlight's secrets using the password chosen during the
+    secure phase. The underlying node can also be unlocked, but failures will
+    be ignored. This call does not require macaroon authentication.
+    */
+    rpc Unlock (UnlockRequest) returns (UnlockResponse);
+
+}
+
+// Boltlight service exposes all operations related to boltlight itself.
+service Boltlight {
+
+    /**
+    GetInfo returns info about boltlight and the wrapped implementation
+    details.
+    */
+    rpc GetInfo (GetInfoRequest) returns (GetInfoResponse);
+
+    /**
+    Lock locks boltlight by stopping the runtime server (Lightning +
+    Boltlight services) and deleting secrets from runtime memory.
+    */
+    rpc Lock (LockRequest) returns (LockResponse);
+
+}
+
+// Lightning service exposes all LN node related operations. It activates
+// after unlocking boltlight and it requires valid macaroons, if they are
+// enabled, for each call.
+service Lightning {
+
+    /**
+    BalanceOffChain returns the off-chain balance, in millisatoshi, available
+    across all channels.
+    */
+    rpc BalanceOffChain (BalanceOffChainRequest)
+        returns (BalanceOffChainResponse);
+
+    /**
+    BalanceOnChain returns the on-chain balance, in satoshi.
+    */
+    rpc BalanceOnChain (BalanceOnChainRequest) returns (BalanceOnChainResponse);
+
+    /**
+    CheckInvoice checks if a LN invoice has been paid.
+    */
+    rpc CheckInvoice (CheckInvoiceRequest) returns (CheckInvoiceResponse);
+
+    /**
+    CloseChannel closes a LN channel.
+    If the operation succeds it returns the ID of the closing transaction.
+    If the operation takes more than the client timeout, it returns an empty
+    response. The operation could still complete.
+    In the other cases the operation will fail with an appropriate message.
+    */
+    rpc CloseChannel (CloseChannelRequest) returns (CloseChannelResponse);
+
+    /**
+    CreateInvoice creates a LN invoice (BOLT 11).
+    */
+    rpc CreateInvoice (CreateInvoiceRequest) returns (CreateInvoiceResponse);
+
+    /**
+    DecodeInvoice returns information of a LN invoice from its payment
+    request (BOLT 11).
+    */
+    rpc DecodeInvoice (DecodeInvoiceRequest) returns (DecodeInvoiceResponse);
+
+    /**
+    GetNodeInfo returns info about the connected LN node.
+    */
+    rpc GetNodeInfo (GetNodeInfoRequest) returns (GetNodeInfoResponse);
+
+    /**
+    ListChannels returns a list of channels of the connected LN node.
+    */
+    rpc ListChannels (ListChannelsRequest) returns (ListChannelsResponse);
+
+    /**
+    ListInvoices returns a list of invoices created by the connected LN node.
+    If called without filtering parameters (paid, pending, expired, unknown) it
+    returns an unfiltered list.
+    */
+    rpc ListInvoices (ListInvoicesRequest) returns (ListInvoicesResponse);
+
+    /**
+    ListPayments returns a list of invoices the connected LN node has paid.
+    */
+    rpc ListPayments (ListPaymentsRequest) returns (ListPaymentsResponse);
+
+    /**
+    ListPeers returns a list of peers connected to the connected LN node.
+    */
+    rpc ListPeers (ListPeersRequest) returns (ListPeersResponse);
+
+    /**
+    ListTransactions returns a list of on-chain transactions of the connected
+    LN node.
+    */
+    rpc ListTransactions (ListTransactionsRequest)
+        returns (ListTransactionsResponse);
+
+    /**
+    NewAddress creates a new bitcoin address under control of the connected LN
+    node.
+    */
+    rpc NewAddress (NewAddressRequest) returns (NewAddressResponse);
+
+    /**
+    OpenChannel tries to connect and open a channel with a peer.
+    */
+    rpc OpenChannel (OpenChannelRequest) returns (OpenChannelResponse);
+
+    /**
+    PayInvoice tries to pay a LN invoice from its payment request (BOLT 11).
+    An amount can be specified if the invoice doesn't already have it
+    included. If a description hash is included in the invoice, its preimage
+    must be included in the request.
+    */
+    rpc PayInvoice (PayInvoiceRequest) returns (PayInvoiceResponse);
+
+    /**
+    PayOnChain tries to pay a bitcoin payment request.
+    */
+    rpc PayOnChain (PayOnChainRequest) returns (PayOnChainResponse);
+
+    /**
+    UnlockNode tries to unlock the underlying node using the node's secrets
+    provided during boltlight's secure phase. If an implementation doesn't
+    support a locking mechanism, a successful response is returned without even
+    checking the request.
+    */
+    rpc UnlockNode (UnlockNodeRequest) returns (UnlockNodeResponse);
+
+}
+
+message UnlockRequest {
+    /**
+    Boltlight's password to unlock the runtime service
+    */
+    string password = 1;
+    /**
+    Whether to also unlock the LN node. Node unlock may not be available
+    (implementation does not have a locking system) or fail (missing
+    configuration or connection issues) but the whole Unlock operation
+    will still succeed
+    */
+    bool unlock_node = 2;
+}
+
+message UnlockResponse {
+    /**
+    Whether the underlying node is unlocked.
+    This is only set if unlock_node was True in UnlockRequest
+    */
+    bool node_unlocked = 1;
+}
+
+message GetInfoRequest {
+}
+
+message GetInfoResponse {
+  /**
+  Boltlight's version
+  */
+  string version = 1;
+  /**
+  Name of the LN node implementation boltlight is wrapping
+  */
+  string node_implementation = 2;
+  /**
+  Version of the LN node boltlight is wrapping
+  */
+  string node_version = 3;
+}
+
+message LockRequest {
+}
+
+message LockResponse {
+}
+
+message BalanceOffChainRequest {
+}
+
+message BalanceOffChainResponse {
+    /**
+    Local balance (sum of open channels local balances, including reserves),
+    in millisatoshi
+    */
+    uint64 out_tot_msat = 1;
+    /**
+    Total spendable amount (sum of active channels local balances,
+    excluding reserves), in millisatoshi
+    */
+    uint64 out_tot_now_msat = 2;
+    /**
+    Remote balance (sum of open channels remote balances, including reserves),
+    in millisatoshi
+    */
+    uint64 in_tot_msat = 4;
+    /**
+    Total receivable amount (sum of active channels remote balances,
+    excluding reserves), in millisatoshi
+    */
+    uint64 in_tot_now_msat = 5;
+}
+
+message CheckInvoiceRequest {
+    /**
+    SHA256 of the payment preimage
+    */
+    string payment_hash = 1;
+}
+
+message CheckInvoiceResponse {
+    /**
+    Invoice state (paid, pending, expired or unknown)
+    */
+    Invoice.State state = 1;
+}
+
+message CloseChannelRequest {
+    /**
+    Channel ID of the channel to be closed
+    */
+    string channel_id = 1;
+    /**
+    Whether to force a unilateral close (necessary if peer's offline)
+    */
+    bool force = 2;
+}
+
+message CloseChannelResponse {
+    /**
+    Transaction ID of the closing transaction
+    */
+    string closing_txid = 1;
+}
+
+message CreateInvoiceRequest {
+    /**
+    Invoice amount, in millisatoshi
+    */
+    uint64 amount_msat = 1;
+    /**
+    Description of the invoice
+    */
+    string description = 2;
+    /**
+    Invoice expiration time, in seconds (default: 420)
+    */
+    uint32 expiry = 3;
+    /**
+    CTLV delay (absolute) to use for the final hop in the route
+    */
+    uint32 min_final_cltv_expiry = 4;
+    /**
+    Fallback address (on-chain) to use if the LN payment fails
+    */
+    string fallback_addr = 5;
+}
+
+message CreateInvoiceResponse {
+    /**
+    Bech32 encoded LN invoice
+    */
+    string payment_request = 1;
+    /**
+    SHA256 of the payment preimage
+    */
+    string payment_hash = 2;
+    /**
+    Timestamp of the invoice expiration
+    */
+    uint64 expires_at = 3;
+}
+
+message GetNodeInfoRequest {
+}
+
+message DecodeInvoiceRequest {
+    /**
+    Payment request to decode
+    */
+    string payment_request = 1;
+    /**
+    Invoice description, whose hash should match the description hash
+    in the payment request (if present)
+    */
+    string description = 2;
+}
+
+message DecodeInvoiceResponse {
+    /**
+    Invoice amount (if exists), in millisatoshi
+    */
+    uint64 amount_msat = 1;
+    /**
+    SHA256 of the payment preimage
+    */
+    string payment_hash = 2;
+    /**
+    Identity pubkey of the payee
+    */
+    string destination_pubkey = 3;
+    /**
+    Description of the invoice
+    */
+    string description = 4;
+    /**
+    Description hash of the invoice
+    */
+    string description_hash = 5;
+    /**
+    Invoice creation timestamp
+    */
+    uint64 timestamp = 6;
+    /**
+    Invoice expiration time, in seconds
+    */
+    uint32 expiry = 7;
+    /**
+    CTLV delay (absolute) to use for the final hop in the route
+    */
+    uint32 min_final_cltv_expiry = 8;
+    /**
+    Fallback address (on-chain) of the invoice (if exists)
+    */
+    string fallback_addr = 9;
+    /**
+    Lists of route hints to reach a node through private channels (if provided)
+    */
+    repeated RouteHint route_hints = 10;
+}
+
+message RouteHint {
+    /**
+    List of hops in a route
+    */
+    repeated HopHint hop_hints = 1;
+}
+
+message HopHint {
+    /**
+    Identity pubkey of the node
+    */
+    string pubkey = 1;
+    /**
+    Short channel ID (block height + txid + vout)
+    */
+    string short_channel_id = 2;
+    /**
+    Base fee of the channel, in msat
+    */
+    uint32 fee_base_msat = 3;
+    /**
+    Amount charged per transferred satoshi, in millionths of a satoshi
+    */
+    uint32 fee_proportional_millionths = 4;
+    /**
+    Delta to use for the time-lock of the CLTV (absolute) extended to the
+    final hop
+    */
+    uint32 cltv_expiry_delta = 5;
+}
+
+message Network {
+    /**
+    Bitcoin network names
+    */
+    enum Name {
+        /**
+        Unkown bitcoin network
+        */
+        UNKNOWN = 0;
+        /**
+        Bitcoin main network
+        */
+        MAINNET = 1;
+        /**
+        Bitcoin test network
+        */
+        TESTNET = 2;
+        /**
+        Bitcoin regression test network
+        */
+        REGTEST = 3;
+    }
+}
+
+message GetNodeInfoResponse {
+    /**
+    Node's uri
+    */
+    string node_uri = 1;
+    /**
+    Node's identity pubkey
+    */
+    string identity_pubkey = 2;
+    /**
+    Node's alias
+    */
+    string alias = 3;
+    /**
+    Node's RGB color
+    */
+    string color = 4;
+    /**
+    Node's current block height view
+    */
+    uint32 block_height = 5;
+    /**
+    Node's network
+    */
+    Network.Name network = 6;
+}
+
+message ListChannelsRequest {
+    /**
+    Whether to return active channels only (channel is open and peer is online)
+    */
+    bool active_only = 1;
+}
+
+message ListChannelsResponse {
+    /**
+    List of channels
+    */
+    repeated Channel channels = 1;
+}
+
+message Channel {
+    /**
+    LN channel current state
+    */
+    enum State {
+        /**
+        Channel state is unknown
+        */
+        UNKNOWN = 0;
+        /**
+        Channel is opening (waiting for funding tx to be confirmed)
+        */
+        PENDING_OPEN = 1;
+        /**
+        Channel is open and is ready to operate (funding tx has reached enough
+        confirmations)
+        */
+        OPEN = 2;
+        /**
+        Channel is cooperatively closing
+        */
+        PENDING_MUTUAL_CLOSE = 3;
+        /**
+        Channel is unilaterally closing
+        */
+        PENDING_FORCE_CLOSE = 4;
+    }
+
+    /**
+    Identity pubkey of the remote node
+    */
+    string remote_pubkey = 1;
+    /**
+    Short channel ID (block height + txid + vout)
+    */
+    string short_channel_id = 2;
+    /**
+    Channel ID (XOR of the funding_txid and the funding_output_index)
+    */
+    string channel_id = 3;
+    /**
+    Transaction ID of the (non-malleable) funding transaction
+    */
+    string funding_txid = 4;
+    /**
+    Total amount of funds held in the channel, in millisatoshi
+    */
+    uint64 capacity_msat = 5;
+    /**
+    Current balance on the local (our) side, in millisatoshi
+    */
+    uint64 local_balance_msat = 6;
+    /**
+    Current balance on the remote (counterparty) side, in millisatoshi
+    */
+    uint64 remote_balance_msat = 7;
+    /**
+    Local reserve for the channel (minimum amount that this node is required
+    to keep), in sat
+    */
+    uint64 local_reserve_sat = 8;
+    /**
+    Remote reserve for the channel (minimum amount that the other node is
+    required to keep), in sat
+    */
+    uint64 remote_reserve_sat = 9;
+    /**
+    CSV delay (relative) to wait when initiating a force close of the channel
+    */
+    uint32 to_self_delay = 10;
+    /**
+    Whether the channel is private or public (announced to the network
+    and available for routing)
+    */
+    bool private = 11;
+    /**
+    Channel state (pending open, open, pending mutual/forced close or unknown)
+    */
+    State state = 12;
+    /**
+    Whether the channel is active (channel is open and peer is online)
+    */
+    bool active = 13;
+}
+
+message ListInvoicesRequest {
+    /**
+    Maximum number of invoices to be returned (default: 200)
+    */
+    uint32 max_items = 1;
+    /**
+    Timestamp to be used as starting point for the search
+    */
+    uint64 search_timestamp = 2;
+    /**
+    Search direction - requires search_timestamp (default: ascending)
+    */
+    Order.Direction search_order = 3;
+    /**
+    Order of the returned invoices (default: ascending)
+    */
+    Order.Direction list_order = 4;
+    /**
+    Whether to include paid invoices
+    */
+    bool paid = 5;
+    /**
+    Whether to include pending invoices
+    */
+    bool pending = 6;
+    /**
+    Whether to include expired invoices
+    */
+    bool expired = 7;
+    /**
+    Whether to include unknown state invoices
+    */
+    bool unknown = 8;
+}
+
+message ListInvoicesResponse {
+    /**
+    List of invoices
+    */
+    repeated Invoice invoices = 1;
+}
+
+message Order {
+  /**
+  Order directions
+  */
+  enum Direction {
+      /**
+      Ascending chronological order (oldest to newest)
+      */
+      ASCENDING = 0;
+      /**
+      Descending chronological order (newest to oldest)
+      */
+      DESCENDING = 1;
+  }
+}
+
+message Invoice {
+    /**
+    LN invoice current state
+    */
+    enum State {
+        /**
+        Invoice has unknown state
+        */
+        UNKNOWN = 0;
+        /**
+        Invoice has been paid
+        */
+        PAID = 1;
+        /**
+        Invoice has not been paid yet and has not expired
+        */
+        PENDING = 2;
+        /**
+        Invoice has expired and has not been paid
+        */
+        EXPIRED = 3;
+    }
+
+    /**
+    Amount encoded in the invoice (if any), in millisatoshi
+    */
+    uint64 amount_encoded_msat = 1;
+    /**
+    Received amount (if any), in millisatoshi
+    */
+    uint64 amount_received_msat = 2;
+    /**
+    SHA256 of the payment preimage
+    */
+    string payment_hash = 3;
+    /**
+    Description of the invoice
+    */
+    string description = 4;
+    /**
+    Description hash of the invoice
+    */
+    string description_hash = 5;
+    /**
+    Invoice creation timestamp
+    */
+    uint64 timestamp = 6;
+    /**
+    Invoice expiration time, in seconds
+    */
+    uint32 expiry = 7;
+    /**
+    Fallback address (on-chain) of the invoice (if exists)
+    */
+    string fallback_addr = 8;
+    /**
+    Lists of route hints to reach a node through private channels (if provided)
+    */
+    repeated RouteHint route_hints = 9;
+    /**
+    Invoice state (paid, pending or expired)
+    */
+    State state = 10;
+    /**
+    Bech32 encoded LN invoice
+    */
+    string payment_request = 11;
+}
+
+message ListPaymentsRequest {
+}
+
+message ListPaymentsResponse {
+    /**
+    List of payments
+    */
+    repeated Payment payments = 1;
+}
+
+message Payment {
+    /**
+    Invoice amount, in millisatoshi
+    */
+    uint64 amount_msat = 1;
+    /**
+    Invoice creation timestamp
+    */
+    uint64 timestamp = 2;
+    /**
+    SHA256 of the payment preimage
+    */
+    string payment_hash = 3;
+    /**
+    Proof that payment has been received
+    */
+    string payment_preimage = 4;
+    /**
+    Fee charged for the payment, in millisatoshi
+    */
+    uint64 fee_msat = 5;
+}
+
+message ListPeersRequest {
+}
+
+message ListPeersResponse {
+    /**
+    List of currently connected peers
+    */
+    repeated Peer peers = 1;
+}
+
+message Peer {
+    /**
+    Identity pubkey of the peer
+    */
+    string pubkey = 1;
+    /**
+    Address of the peer
+    */
+    string address = 2;
+    /**
+    Alias of the peer
+    */
+    string alias = 3;
+    /**
+    RGB color of the peer
+    */
+    string color = 4;
+}
+
+message ListTransactionsRequest {
+}
+
+message ListTransactionsResponse {
+    /**
+    List of transactions
+    */
+    repeated Transaction transactions = 1;
+}
+
+message Transaction {
+    /**
+    Transaction amount, in satoshi. Negative amounts represent outgoing
+    payments
+    */
+    int64 amount_sat = 1;
+    /**
+    Transaction hash
+    */
+    string txid = 2;
+    /**
+    Number of confirmations
+    */
+    uint32 confirmations = 3;
+    /**
+    Height of the block the transaction was included in
+    */
+    uint32 block_height = 4;
+    /**
+    Hash of the block the transaction was included in
+    */
+    string block_hash = 5;
+    /**
+    Timestamp of the transaction
+    */
+    uint64 timestamp = 6;
+    /**
+    Fees paid for the transaction
+    */
+    uint64 fee_sat = 7;
+}
+
+message NewAddressRequest {
+    /**
+    Bitcoin address type (P2WPKH or NP2WPKH)
+    */
+    Address.Type addr_type = 1;
+}
+
+message NewAddressResponse {
+    /**
+    Generated bitcoin address
+    */
+    string address = 1;
+}
+
+message Address {
+    /**
+    Bitcoin address types
+    */
+    enum Type {
+        option allow_alias = true;
+        /**
+        Pay to witness public key hash
+        */
+        P2WPKH = 0;
+        NATIVE_SEGWIT = 0;
+        /**
+        Nested pay to witness public key hash
+        */
+        NP2WPKH = 1;
+        NESTED_SEGWIT = 1;
+    }
+}
+
+message OpenChannelRequest {
+    /**
+    Uri (identity_pubkey@host:port) of the remote peer
+    */
+    string node_uri = 1;
+    /**
+    Funding transaction amount, in satoshi
+    */
+    uint64 funding_sat = 2;
+    /**
+    Amount (taken from funding_sat) to be pushed to peer, in millisatoshi
+    */
+    uint64 push_msat = 3;
+    /**
+    Whether the channel will be private (not anonunced)
+    */
+    bool private = 4;
+}
+
+message OpenChannelResponse {
+    /**
+    Funding transaction hash
+    */
+    string funding_txid = 1;
+}
+
+message PayInvoiceRequest {
+    /**
+    Bech32 encoded LN invoice
+    */
+    string payment_request = 1;
+    /**
+    Value to be paid, in millisatoshi
+    */
+    uint64 amount_msat = 2;
+    /**
+    Invoice description, whose hash should match the description hash
+    in the payment request (if present)
+    */
+    string description = 3;
+    /**
+    Delta to use for the time-lock of the CLTV (absolute) extended to the
+    final hop
+    */
+    uint32 cltv_expiry_delta = 4;
+}
+
+message PayInvoiceResponse {
+    /**
+    Proof that payment has been received, initially held only by the final
+    recipient
+    */
+    string payment_preimage = 1;
+}
+
+message PayOnChainRequest {
+    /**
+    Bitcoin destination address
+    */
+    string address = 1;
+    /**
+    Amount to be paid, in satoshi
+    */
+    uint64 amount_sat = 2;
+    /**
+    Fee rate in satoshi per byte
+    */
+    uint32 fee_sat_byte = 3;
+}
+
+message PayOnChainResponse {
+    /**
+    Hash of the newly created bitcoin transaction
+    */
+    string txid = 1;
+}
+
+message UnlockNodeRequest {
+    /**
+    Boltlight's password to decrypt the underlying node's secret
+    */
+    string password = 1;
+}
+
+message UnlockNodeResponse {
+}
+
+message BalanceOnChainRequest {
+}
+
+message BalanceOnChainResponse {
+    /**
+    Confirmed balance of the wallet, in satoshi
+    */
+    uint64 confirmed_sat = 1;
+    /**
+    Total balance of the wallet, in satoshi
+    */
+    uint64 total_sat = 2;
+}

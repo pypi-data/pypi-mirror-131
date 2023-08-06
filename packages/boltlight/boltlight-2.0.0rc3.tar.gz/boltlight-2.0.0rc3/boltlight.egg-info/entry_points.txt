@@ -1,0 +1,6 @@
+[console_scripts]
+blink = boltlight.blink:entrypoint
+boltlight = boltlight.boltlight:start
+boltlight-pairing = boltlight.pairing:start
+boltlight-secure = boltlight.secure:secure
+
