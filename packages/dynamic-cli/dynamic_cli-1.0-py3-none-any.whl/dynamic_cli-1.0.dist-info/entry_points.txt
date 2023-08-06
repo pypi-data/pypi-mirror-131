@@ -1,0 +1,3 @@
+[console_scripts]
+dynamic = dynamic.__main__:main
+
