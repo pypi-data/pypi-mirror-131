@@ -1,0 +1,9 @@
+gp/__init__.py,sha256=jaSCjcxAgN7zN2_bJnQ3Hj1OLcKuBAD1NKBOcJ9CN6M,415
+gp/core.py,sha256=XEFfgU0WKwvGMIqzQYw-CCXIUqWoRphcIWQ65rdvtxw,32339
+gp/data.py,sha256=LMqhWKb-08Dea9RtyLaVHw3Int5vPFY_qP28ccGtlxE,12458
+gp/modules.py,sha256=-xZo7d7FGu3o8SI_mLtDwQFe2T9qYmVIVTNKyihGvpo,24783
+genepattern_python-21.12.dist-info/LICENSE.txt,sha256=i1wkweflWuN_D5Xh8iRjRAxC0KrSukagcPq--L4rFfI,1561
+genepattern_python-21.12.dist-info/METADATA,sha256=y7rNqQ11Wpp7DpHwm4o4KitQ-fWVhX7sp4iyqzPLUkU,2191
+genepattern_python-21.12.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+genepattern_python-21.12.dist-info/top_level.txt,sha256=assBi-rPeHPOF1DELwZJfAVFrVMlRrz_JTlc1hH5KBM,3
+genepattern_python-21.12.dist-info/RECORD,,
