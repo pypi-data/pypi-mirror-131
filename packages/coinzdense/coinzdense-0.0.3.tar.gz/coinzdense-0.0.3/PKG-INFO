@@ -1,0 +1,38 @@
+Metadata-Version: 1.1
+Name: coinzdense
+Version: 0.0.3
+Summary: Simple Post-Quantum Signature library
+Home-page: https://github.com/pibara/coinzdense-python
+Author: Rob J Meijer
+Author-email: pibara@gmail.com
+License: BSD
+Description: Library for hash-based signatures.
+            
+        The CoinZdense projects aim to provide simple post-quantum-ready 
+        hash-based signatures geared specifically at :
+        
+        * utility blockchain projects
+        * distributed exchange projects
+        * other blockchain projects that are commonly used in a key-reuse 
+          by design way.
+        
+        CoinZdense explicitly does NOT aim at being a post-quantum solution 
+        for blockchain projects that neither rely nor would benefit from 
+        extensive re-usage of signing keys.
+        
+        See https://coin.z-den.se/ for more info.
+        
+        
+Keywords: signing postquantum blake2 merkletree ots
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Security :: Cryptography
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Other Environment
