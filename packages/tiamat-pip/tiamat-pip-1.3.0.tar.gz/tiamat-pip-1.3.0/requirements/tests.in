@@ -1,0 +1,5 @@
+pytest
+tiamat>=7.10
+virtualenv
+pytest-subtests
+pytest-skip-markers

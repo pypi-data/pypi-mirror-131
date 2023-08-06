@@ -1,0 +1,7 @@
+pathspec
+platformdirs
+regex
+tests
+tiamatpip
+tomli
+typed_ast
