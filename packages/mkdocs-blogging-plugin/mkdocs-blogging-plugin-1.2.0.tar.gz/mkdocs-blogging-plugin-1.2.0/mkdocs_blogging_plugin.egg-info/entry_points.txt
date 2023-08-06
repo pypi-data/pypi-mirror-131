@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+blogging = mkdocs_blogging_plugin.plugin:BloggingPlugin
+
