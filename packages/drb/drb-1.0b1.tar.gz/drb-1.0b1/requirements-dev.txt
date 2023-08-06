@@ -1,0 +1,9 @@
+pip>=21.1
+setuptools>=57.4.0
+wheel>=0.37.0
+twine>=3.4.2
+pycodestyle>=2.7.0
+coverage==5.1
+coverage-badge==1.0.1
+bandit>=1.7.0
+semgrep>=0.65.0

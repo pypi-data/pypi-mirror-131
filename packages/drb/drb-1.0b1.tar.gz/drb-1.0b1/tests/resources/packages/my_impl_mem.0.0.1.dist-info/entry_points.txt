@@ -1,0 +1,2 @@
+[drb.impl]
+mem = my_drb.impl.mem.drb_mem_factory

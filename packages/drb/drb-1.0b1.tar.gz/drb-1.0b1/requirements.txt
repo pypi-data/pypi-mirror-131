@@ -1,0 +1,2 @@
+importlib-metadata>=4.6.4
+deprecation==2.0.6

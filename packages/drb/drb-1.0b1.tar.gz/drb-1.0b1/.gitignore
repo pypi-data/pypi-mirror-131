@@ -1,0 +1,15 @@
+.eggs
+.idea
+__pycache__
+*.egg-info
+dist
+venv
+build
+builds
+cache
+*.swp
+htmlcov
+.coverage
+coverage.xml
+.DS_Store
+public/
