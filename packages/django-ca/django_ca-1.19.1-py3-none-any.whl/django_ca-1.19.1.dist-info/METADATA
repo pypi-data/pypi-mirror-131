@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: django-ca
+Version: 1.19.1
+Summary: A Django app providing a SSL/TLS certificate authority.
+Home-page: https://github.com/mathiasertl/django-ca
+Author: Mathias Ertl
+Author-email: mati@er.tl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Security
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: Django (>=2.2)
+Requires-Dist: asn1crypto (>=1.0.1)
+Requires-Dist: cryptography (>=3.3)
+Requires-Dist: django-object-actions (>=1.1)
+Requires-Dist: idna (>=2.10)
+Requires-Dist: pytz (>=2021)
+Requires-Dist: packaging
+Requires-Dist: typing-extensions ; python_version < "3.8"
+Provides-Extra: acme
+Requires-Dist: acme (>=1.12) ; extra == 'acme'
+Requires-Dist: josepy (>=1.5.0) ; extra == 'acme'
+Requires-Dist: requests ; extra == 'acme'
+Requires-Dist: dnspython (>=2.0) ; extra == 'acme'
+Provides-Extra: celery
+Requires-Dist: celery (>=5.0) ; extra == 'celery'
+Provides-Extra: mysql
+Requires-Dist: mysqlclient (>=1.4) ; extra == 'mysql'
+Provides-Extra: postgres
+Requires-Dist: psycopg2 (>2.8) ; extra == 'postgres'
+Provides-Extra: redis
+Requires-Dist: hiredis (>=1.1) ; extra == 'redis'
+Requires-Dist: redis (>=3.5) ; extra == 'redis'
+Requires-Dist: django-redis-cache (>=2.1) ; extra == 'redis'
+
+**django-ca** is a tool to manage TLS certificate authorities and easily issue and revoke certificates. It is
+based `cryptography <https://cryptography.io/>`_ and `Django <https://www.djangoproject.com/>`_. It can be
+used as an app in an existing Django project or stand-alone with the basic project included. Everything can be
+managed via the command line via `manage.py` commands - so no web server is needed, if you’re happy with the
+command-line.
+
+Features:
+
+#. Set up a secure local certificate authority in just a few minutes.
+#. Certificate revocation via CRLs and OCSP.
+#. Preliminary ACMEv2 support.
+#. Written in Python 3.6+, Django 2.2+ and cryptography 3.3+.
+#. Management via command line and/or via Djangos admin interface.
+#. Get email notifications about certificates about to expire.
+
+Please see https://django-ca.readthedocs.org for more extensive documentation.
+
