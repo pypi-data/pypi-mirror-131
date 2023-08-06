@@ -1,0 +1,18 @@
+# templates
+include benchmark_runner/benchmark_operator/workload_flavors/templates/common.yaml
+include benchmark_runner/benchmark_operator/workload_flavors/templates/current_run/*
+include benchmark_runner/benchmark_operator/workload_flavors/templates/hammerdb/*.yaml
+include benchmark_runner/benchmark_operator/workload_flavors/templates/hammerdb/internal_data/*.yaml
+include benchmark_runner/benchmark_operator/workload_flavors/templates/stressng/*.yaml
+include benchmark_runner/benchmark_operator/workload_flavors/templates/stressng/internal_data/*.yaml
+include benchmark_runner/benchmark_operator/workload_flavors/templates/uperf/*.yaml
+include benchmark_runner/benchmark_operator/workload_flavors/templates/uperf/internal_data/*.yaml
+
+# ocp resource
+include benchmark_runner/common/ocp_resources/cnv/template/*.yaml
+include benchmark_runner/common/ocp_resources/kata/template/*.sh
+include benchmark_runner/common/ocp_resources/kata/template/*.yaml
+include benchmark_runner/common/ocp_resources/local_storage/template/*.yaml
+include benchmark_runner/common/ocp_resources/ocs/template/*.sh
+include benchmark_runner/common/ocp_resources/ocs/template/*.yaml
+
