@@ -1,0 +1,3 @@
+[console_scripts]
+csv_converter=fellipems_csv_json_converter.converter:Converte_JSONCSV
+
