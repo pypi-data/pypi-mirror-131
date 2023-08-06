@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "typebuf"
+version = "0.1.1"
+description = "Dead simple way to define shared type definitions between applications"
+authors = ["John Shanahan <shanahan.jrs@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+PyYAML = "^6.0"
+click = "^8.0.3"
+pydantic = "^1.8.2"
+
+[tool.poetry.dev-dependencies]
+invoke = "^1.6.0"
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+typebuf = "scripts.cli:cli"
