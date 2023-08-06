@@ -1,0 +1,10 @@
+biosimulators_libsbmlsim/__init__.py,sha256=b288wTphI6DQ9LowiQWdyBDvwJ1dgv4U2ZRTBmy18Mo,499
+biosimulators_libsbmlsim/__main__.py,sha256=zQ0h0K2iHWkKT0skXvZ5GCRs58ikcaXiugw1A8c2YXU,679
+biosimulators_libsbmlsim/_version.py,sha256=CHUdJvPS3l7PphMt_r17ufrpB0TIJkmifpqmTNjwh84,22
+biosimulators_libsbmlsim/core.py,sha256=iPNrOL7bSnKrrqWSowNxdW1EBfNk_Fqku0lo1afyTa4,18071
+biosimulators_libsbmlsim/data_model.py,sha256=wS9GvZk9eSN6IpUWdZTA7d5ZVKNwqT6MjwHRTvuLeD4,5760
+biosimulators_libsbmlsim-0.0.6.dist-info/METADATA,sha256=aLNdkfCndDQb6YP4u1TwQAu2CXemoE4_WcjV9WEai4k,5281
+biosimulators_libsbmlsim-0.0.6.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+biosimulators_libsbmlsim-0.0.6.dist-info/entry_points.txt,sha256=sBDYBIbRHJ6Kye6WXi_hNd1taoxKavKnGmikhtwAUd0,85
+biosimulators_libsbmlsim-0.0.6.dist-info/top_level.txt,sha256=diuRGrUVozWDEbK-PqAOwmBYh8BnfppYQwMPSKQQe7k,25
+biosimulators_libsbmlsim-0.0.6.dist-info/RECORD,,
