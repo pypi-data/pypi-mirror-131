@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: codehub
+Version: 0.0.3.6
+Summary: Cloud python code library.
+Home-page: https://gitee.com/peiiii/codehub
+Author: Wang Pei
+Author-email: 1535376447@qq.com
+License: UNKNOWN
+Description: # codehub
+        Cloud python code library.
+        A demo package manager.
+        
+        # Install
+        ```shell
+        pip install codehub
+        ```
+        
+        # Usage
+        ```
+        codehub -- --help
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
