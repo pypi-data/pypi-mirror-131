@@ -1,0 +1,8 @@
+README.md
+setup.py
+crash_ipdb/__init__.py
+crash_ipdb.egg-info/PKG-INFO
+crash_ipdb.egg-info/SOURCES.txt
+crash_ipdb.egg-info/dependency_links.txt
+crash_ipdb.egg-info/requires.txt
+crash_ipdb.egg-info/top_level.txt
