@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: timeseria
+Version: 0.1.4
+Summary: A time series processing library
+Home-page: https://github.com/sarusso/timeseria
+Author: Stefano Alberto Russo
+Author-email: stefano.russo@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Requires-Dist: Keras (<3.0.0,>=2.1.3)
+Requires-Dist: chardet (<4.0.0,>=3.0.4)
+Requires-Dist: convertdate (<3.0.0,>=2.1.2)
+Requires-Dist: cython (<1.0.0,>=0.29.17)
+Requires-Dist: h5py (<4.0.0,>=2.10.0)
+Requires-Dist: holidays (<1.0.0,>=0.10.3)
+Requires-Dist: lunarcalendar (<1.0.0,>=0.0.9)
+Requires-Dist: matplotlib (<4.0.0,>=2.1.2)
+Requires-Dist: numpy (<2.0.0,>=1.19.5)
+Requires-Dist: pandas (<2.0.0,>=0.23.4)
+Requires-Dist: requests (<3.0.0,>=2.20.0)
+Requires-Dist: scikit-learn (<2.0.0,>=0.2.2)
+Requires-Dist: scipy (<2.0.0,>=1.5.4)
+Provides-Extra: arima
+Requires-Dist: pmdarima (<2.0.0,>=1.8) ; extra == 'arima'
+Requires-Dist: statsmodels (<1.0.0,>=0.12.1) ; extra == 'arima'
+Provides-Extra: prophet
+Requires-Dist: fbprophet (==0.6) ; extra == 'prophet'
+Provides-Extra: tensorflow
+Requires-Dist: tensorflow (<3.0.0,>=1.15.2) ; extra == 'tensorflow'
+Provides-Extra: tensorflow-aarch64
+Requires-Dist: tensorflow-aarch64 (<3.0.0,>=1.15.2) ; extra == 'tensorflow-aarch64'
+Provides-Extra: tensorflow-gpu
+Requires-Dist: tensorflow-gpu (<3.0.0,>=1.15.2) ; extra == 'tensorflow-gpu'
+Provides-Extra: tensorflow-macos
+Requires-Dist: tensorflow-macos (<3.0.0,>=1.15.2) ; extra == 'tensorflow-macos'
+
+UNKNOWN
+
+
