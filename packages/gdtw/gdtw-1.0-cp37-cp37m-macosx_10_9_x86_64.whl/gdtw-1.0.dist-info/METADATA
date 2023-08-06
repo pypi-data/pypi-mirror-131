@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gdtw
+Version: 1.0
+Summary: General Dynamic Time Warping
+Home-page: https://dderiso.github.io/gdtw
+Author: Dave Deriso
+Author-email: dderiso@alumni.stanford.edu
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/dderiso/gdtw/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C++
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Dist: numpy
+
+GDTW is a Python/C++ library that performs dynamic time warping. It is based on the paper by Dave Deriso and Stephen Boyd.
+
+
