@@ -1,0 +1,4 @@
+httpx>=0.16,<0.22
+gssapi
+pytest
+k5test
