@@ -1,0 +1,17 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cache.py,sha256=tohpOLAK4QJtkXhSxGu7_vEdwTOBzamW4CuwRM-hyhM,1564
+tests/test_registry.py,sha256=mSYzZyFYhCUAP6MEr3aKd0LlAHtu_BHJMtBsC15UOeI,1306
+tests/test_serializers.py,sha256=3VdilKoHjYPN8Bqp0Wzu2y3jZmP_iEV6MLTlejkKRqk,742
+tests/prefect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/prefect/test_result.py,sha256=6OYh1SLj8l_iPl23eKM-y5qeBgqvYUeSVn-mOEEegBw,1400
+xpersist/__init__.py,sha256=ujU1ZoExF8VbinCzysgMFYmSqWfCnPlwctrHttGAW5w,439
+xpersist/cache.py,sha256=TsoBPE-H79JDB_mq0HJkN0g97aa2Dptoyc3XROHZkzg,10505
+xpersist/registry.py,sha256=BrD1Oz3T7N_hdDrqpPzR0GuG4QI4cDCUdaGU1goMwfs,2522
+xpersist/serializers.py,sha256=RGuh5nB-0bJBXQXBPATbz6ttyYVkaFfhHrz4tIpQx_o,1624
+xpersist/prefect/__init__.py,sha256=IPlr-XtWx1uLMt5EJ1B0i4u_FfdtZj_77RT1kPy0HEw,71
+xpersist/prefect/result.py,sha256=aMicLuMlYmWTCTfq4I1G1plxVlLnua_nroOJGRp4dOY,5008
+xpersist-2021.12.17.dist-info/LICENSE,sha256=ZB2I9_mFOoLjmq6cppIKelzqUvckDeRPFXiSdooTKCY,11390
+xpersist-2021.12.17.dist-info/METADATA,sha256=MVk09jeB-L0Fy5xUNWaHQf63lUoqko5oTkkEjdwl7XQ,3422
+xpersist-2021.12.17.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+xpersist-2021.12.17.dist-info/top_level.txt,sha256=fjnScG7mM4oEyt9B_GTrJUYByZSBjFVGDAOCZUyyeyA,15
+xpersist-2021.12.17.dist-info/RECORD,,
