@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: serialhub
+Version: 0.0.7
+Summary: WebSerial widget for Jupyter Hub/Lab
+Home-page: https://github.com/cdr4eelz/serialhub
+Author: cdr4eelz
+Author-email: cdr4eelz-pypy@yahoo.com
+License: BSD
+Keywords: Jupyter,Widgets,IPython
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Jupyter
+Classifier: Framework :: IPython
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: examples
+Provides-Extra: docs
+License-File: LICENSE.txt
+
+
+# serialhub
+
+[![Build Status](https://travis-ci.org/cdr4eelz/serialhub.svg?branch=master)](https://travis-ci.org/cdr4eelz/serialhub)
+[![codecov](https://codecov.io/gh/cdr4eelz/serialhub/branch/master/graph/badge.svg)](https://codecov.io/gh/cdr4eelz/serialhub)
+
+
+WebSerial widget for Jupyter Hub and Lab
+
+## Installation
+
+If you use jupyterlab:
+
+```bash
+pip install serialhub
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+```
+
+If you are using Jupyter Notebook 5.2 or earlier, you may also need to enable
+the nbextension:
+```bash
+jupyter nbextension enable --py [--sys-prefix|--user|--system] serialhub
+```
+
+
