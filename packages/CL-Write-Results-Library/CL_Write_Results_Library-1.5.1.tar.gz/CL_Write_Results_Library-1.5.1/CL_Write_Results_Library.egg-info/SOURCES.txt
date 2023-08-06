@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+CL_Write_Results_Library/CL_Write_Results_Library.py
+CL_Write_Results_Library/__init__.py
+CL_Write_Results_Library.egg-info/PKG-INFO
+CL_Write_Results_Library.egg-info/SOURCES.txt
+CL_Write_Results_Library.egg-info/dependency_links.txt
+CL_Write_Results_Library.egg-info/top_level.txt
