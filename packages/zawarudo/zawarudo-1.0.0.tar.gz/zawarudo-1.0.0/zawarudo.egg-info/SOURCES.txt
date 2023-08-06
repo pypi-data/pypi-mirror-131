@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+setup.py
+zawarudo/__init__.py
+zawarudo.egg-info/PKG-INFO
+zawarudo.egg-info/SOURCES.txt
+zawarudo.egg-info/dependency_links.txt
+zawarudo.egg-info/top_level.txt
