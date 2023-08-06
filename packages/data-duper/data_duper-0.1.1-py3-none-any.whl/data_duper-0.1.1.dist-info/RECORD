@@ -1,0 +1,15 @@
+duper/__init__.py,sha256=vSvcAGz0RcZc8IHxYfryNyCf2RRhaGNtNC5nn6nY2UM,32
+duper/analysis.py,sha256=mUZOntUYjaC2NMOMYxz4YqkVfOIpzumw1HcgWymkpX4,1672
+duper/base.py,sha256=yZ-thwFm1jqDXRlYZwlbbckWtvP5MkaEhCn0qdXp7Kg,3172
+duper/helper.py,sha256=k0p93fyHwBV6dHwaa2wKgmr1MWu2lN9NB_aFf3xF7tk,1785
+duper/generator/__init__.py,sha256=cMUFOA4R12A4NFZrGXTSUN1XbquIgJg-kw5OwE8fyCM,244
+duper/generator/base.py,sha256=vSrZ1PNxRhP8Dp-ghuUmEzSTkILOCnPG_ITtTb-MH54,1410
+duper/generator/category.py,sha256=G9wMU3C-yvHos8WbdvAgtgIcuHt1yhoMVx5F0zegb4k,1460
+duper/generator/constant.py,sha256=4qWla6mhUIJkKlD17oUed4SoiJ_UaTzcaHm4-W-Q8ks,1261
+duper/generator/quantile.py,sha256=6ZMIR56bQYlCWHnWcqmlpx4bfOf65Hf0nAh_A1r-N28,5651
+duper/generator/regex.py,sha256=uMGO2YeWfLpSJcL4UE1JIMVLQeA68-kK_KrQCi-vgXI,3363
+data_duper-0.1.1.dist-info/LICENSE,sha256=85aiRGU9Ob3lmPtSwOmS8R_6sKnVZX4_pyypzwWk1bw,1054
+data_duper-0.1.1.dist-info/METADATA,sha256=4vbV_EWJB_SRtW5qWFOIYF6VfRURWHemrRFyQAVwAm4,3580
+data_duper-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+data_duper-0.1.1.dist-info/top_level.txt,sha256=vNiQa8lmUxhc-vpB8pOLoYXMjgqRKcWyI-0WBed7cOY,6
+data_duper-0.1.1.dist-info/RECORD,,
