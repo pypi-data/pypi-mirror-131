@@ -1,0 +1,32 @@
+-------------------------------------------------------------------
+Fri Dec 17 05:40:58 PM UTC 2021 - Sean Marlow <sean.marlow@suse.com>
+
+- v0.1.1
+  + Add rpm-macros to build requirements in spec.
+
+-------------------------------------------------------------------
+Fri Dec 10 06:21:25 PM UTC 2021 - Sean Marlow <sean.marlow@suse.com>
+
+- v0.1.0
+  + Retry all failed requests
+
+-------------------------------------------------------------------
+Tue Oct  5 04:29:49 PM UTC 2021 - Sean Marlow <sean.marlow@suse.com>
+
+- v0.0.3
+  + Migrate changes file.
+
+-------------------------------------------------------------------
+Thu Sep 29 08:02:35 PM UTC 2021 - Sean Marlow <sean.marlow@suse.com>
+
+- v0.0.2
+  + Fix singledispatch registration of get_blob_service for py3.6
+    compatibility.
+  + Setup CI/CT workflows.
+
+-------------------------------------------------------------------
+Thu Aug 17 08:02:35 PM UTC 2021 - Sean Marlow <sean.marlow@suse.com>
+
+- v0.0.1
+  + Initial release
+
