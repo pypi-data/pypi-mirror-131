@@ -1,0 +1,8 @@
+setup.py
+extras/__init__.py
+extras/divide.py
+extras/multiply.py
+simplemoduledemo.egg-info/PKG-INFO
+simplemoduledemo.egg-info/SOURCES.txt
+simplemoduledemo.egg-info/dependency_links.txt
+simplemoduledemo.egg-info/top_level.txt
