@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: pixel.py
+Version: 1.0.2
+Summary: Image Data Preprocessing Toolkit
+Home-page: https://github.com/filipsedivy/pixel.py
+Author: Filip Sedivy
+Author-email: mail@filipsedivy.cz
+License: Apache-2.0 License
+Download-URL: https://github.com/filipsedivy/pixel.py/tarball/master
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: System
+Classifier: Topic :: System :: Filesystems
+Classifier: Topic :: Utilities
+Requires: pillow
+Requires: filetype
+Requires-Python: >=3
+License-File: LICENSE
+
+Pixel.py
+=========================================================
+
+|PyVersion| |PyPI|
+
+Image Data Preprocessing Toolkit
+
+What can Pixel.py be used for?
+--------------------------------
+- Creating a unified dataset
+- Image data preprocessing
+
+Motivation to create another API for image data processing
+----------------------------------------------------------
+In the course of writing my bachelor thesis, I encountered many problems when processing image datasets. These were mostly incomplete libraries that did not cover my need. For this reason I decided to develop my own library and put it for public use.
+
+
+.. |PyPI| image:: https://img.shields.io/pypi/v/pixel.py.svg?style=flat-square
+.. |PyVersion| image:: https://img.shields.io/pypi/pyversions/pixel.py.svg?style=flat-square
+
