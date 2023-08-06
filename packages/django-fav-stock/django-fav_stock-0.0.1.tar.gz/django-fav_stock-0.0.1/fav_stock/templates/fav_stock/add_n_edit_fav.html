@@ -1,0 +1,44 @@
+{% load fav_stock_custom_tags %}
+
+<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#AddEditFavForm">
+  {{ mode|upper }}
+</button>
+
+{# AddEditFavForm #}
+<div class="modal fade" id="AddEditFavForm"
+     data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="addEditFav" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form action="{% url 'fav_stock:add_n_edit_fav' %}" method="post">
+        {% csrf_token %}
+        <div class="modal-header">
+          <h5 class="modal-title" id="addEditFav">Edit favorite</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="aef_code" class="col-form-label">Code</label>
+            <input type="text" readonly class="form-control" id="aef_code" name="code" value="{{ code }}">
+          </div>
+          <div class="form-group">
+            <label for="aef_name" class="col-form-label">Name</label>
+            <input type="text" readonly class="form-control" id="aef_name" name="name" value="{{ name }}">
+          </div>
+          <div class="form-group">
+            <label for="aef_remarks" class="col-form-label">Remarks</label>
+            <textarea class="form-control" id="aef_remarks" rows="5" name="remarks">{{ remarks }}</textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          {# For redirect to previous page #}
+          {# https://stackoverflow.com/questions/35796195/how-to-redirect-to-previous-page-in-django-after-post-request/35796330 #}
+          <input type="hidden" name="next" value="{{ request.path }}">
+          <input type="hidden" name="mode" value="{{ mode }}">
+          <button type="submit" class="btn btn-primary">Save</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
