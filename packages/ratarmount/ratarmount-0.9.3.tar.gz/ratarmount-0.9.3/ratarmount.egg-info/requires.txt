@@ -1,0 +1,31 @@
+fusepy
+indexed_bzip2>=1.3.0
+indexed_gzip>=1.6.3
+python-xz>=0.1.2
+rarfile>=4.0
+
+[:platform_system == "Linux"]
+indexed_zstd>=1.2.2
+
+[:python_version < "3.7.0"]
+dataclasses
+
+[bzip2]
+
+[full]
+
+[full:sys_platform == "darwin"]
+indexed_zstd>=1.3.1
+
+[gzip]
+
+[rar]
+
+[xz]
+
+[zip]
+
+[zstd]
+
+[zstd:sys_platform == "darwin"]
+indexed_zstd>=1.3.1
