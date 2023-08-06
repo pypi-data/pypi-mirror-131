@@ -1,0 +1,19 @@
+# VS Code 国内镜像下载器
+
+## 概述
+
+由于一些原因，国内下载 vs code 速度较慢，其实，微软在国内是提供了一个 CDN 地址可以快速的下载 vs code 的，但是不知为何在下载时并没有根据 IP 来源返回这个 CDN 的地址。该工程通过可以通过从 vs code 官网取得下载地址后，将地址替换成 CDN 地址然后进行下载。
+
+## 使用方法
+
+```shell
+# 依据当前系统下载最新稳定版本，保存到当前目录
+python3 -m vs-code-downloader
+
+# 下载 win64 的 insider 版本，下载到 /data 目录
+python3 -m vs-code-downloader -o win32-x64 -b insider -d /data
+
+# 更多内容请查看帮助信息
+python3 -m vs-code-downloader -h
+```
+
