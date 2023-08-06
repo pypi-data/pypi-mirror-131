@@ -1,0 +1,2 @@
+bitcoinrpc
+emercoin
