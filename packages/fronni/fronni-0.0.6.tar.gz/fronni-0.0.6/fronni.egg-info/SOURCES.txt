@@ -1,0 +1,11 @@
+README.md
+setup.py
+fronni/__init__.py
+fronni/benchmarks.py
+fronni/classification.py
+fronni/regression.py
+fronni/tests.py
+fronni.egg-info/PKG-INFO
+fronni.egg-info/SOURCES.txt
+fronni.egg-info/dependency_links.txt
+fronni.egg-info/top_level.txt
