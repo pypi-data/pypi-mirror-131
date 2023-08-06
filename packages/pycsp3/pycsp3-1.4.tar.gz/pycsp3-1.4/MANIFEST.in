@@ -1,0 +1,10 @@
+
+include pycsp3/version.txt
+recursive-include pycsp3/problems/ *.*
+recursive-include pycsp3/solvers/abscon/ *.*
+recursive-include pycsp3/solvers/chocosolver/ *.*
+
+global-exclude __pycache__
+global-exclude *.pyc
+prune __pycache__
+prune *.pyc
