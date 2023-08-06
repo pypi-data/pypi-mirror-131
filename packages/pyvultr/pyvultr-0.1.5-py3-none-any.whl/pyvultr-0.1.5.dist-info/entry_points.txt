@@ -1,0 +1,3 @@
+[console_scripts]
+pyvultr=pyvultr.cli:main
+
