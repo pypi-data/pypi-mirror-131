@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mrz-mess-server
+Version: 0.0.1
+Summary: Серверная часть мессенджера
+Home-page: UNKNOWN
+Author: morozov1982
+Author-email: morozov1982@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+
+UNKNOWN
+
+
