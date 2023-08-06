@@ -1,0 +1,3 @@
+[edgetest]
+hub = edgetest_hub.plugin
+
