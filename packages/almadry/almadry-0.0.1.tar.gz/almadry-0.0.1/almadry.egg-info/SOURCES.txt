@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+almadry.egg-info/PKG-INFO
+almadry.egg-info/SOURCES.txt
+almadry.egg-info/dependency_links.txt
+almadry.egg-info/top_level.txt
+joshbasiccalculator/__init__.py
