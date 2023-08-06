@@ -1,0 +1,3 @@
+[console_scripts]
+html2tei = html2tei.__main__:main
+
