@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: FuzzyMath
+Version: 0.3.2
+Summary: Small lightweight library for Python (version >= 3.6) that performs basic Interval and Fuzzy Arithmetic.
+Home-page: https://github.com/JanCaha/FuzzyMath
+Author: Jan Caha
+Author-email: jan.caha@outlook.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Provides-Extra: test
