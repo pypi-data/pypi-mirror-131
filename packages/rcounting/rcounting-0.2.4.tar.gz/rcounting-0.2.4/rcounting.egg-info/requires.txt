@@ -1,0 +1,7 @@
+pandas
+praw
+psaw
+
+[analysis]
+numpy
+matplotlib
