@@ -1,0 +1,7 @@
+flask
+htmlmin
+jsmin
+lesscpy
+pyyaml
+rcssmin
+xxhash
