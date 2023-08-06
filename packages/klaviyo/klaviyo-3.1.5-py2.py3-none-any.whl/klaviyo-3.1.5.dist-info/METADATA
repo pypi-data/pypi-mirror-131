@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: klaviyo
+Version: 3.1.5
+Summary: Deprecated Klaviyo SDK
+Home-page: http://github.com/klaviyo/python-klaviyo
+Author: Klaviyo
+Author-email: developers@klaviyo.com
+License: MIT License
+Keywords: klaviyo
+Platform: UNKNOWN
+Requires-Dist: requests (>=2.2.1)
+Requires-Dist: simplejson (>=3.17.0)
+
+
+Deprecation Notice: This package is set to be deprecated on 2023-01-01 and will not receive further updates. To continue receiving API and SDK improvements, we recommend switching over to our latest package/sdk: https://pypi.org/project/klaviyo-sdk/
+
+
