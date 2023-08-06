@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools >= 58.5.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+python_files = "tests.py test_*.py *_tests.py"
+addopts = [
+  "--cov=tests",
+  "--cov=bcom_client",
+  "--cov-report=term-missing",
+  "--cov-report=xml",
+  "--no-cov-on-fail",
+]
+
+[tool.coverage.run]
+branch = true
+omit = [
+  "*/generated_schema_*.py",
+]
+
+[tool.coverage.report]
+skip_covered = true
+show_missing = true
+exclude_lines = [
+  "pragma: no cover",
+  # ignore non-implementations
+  '^\s*\.\.\.',
+  "if TYPE_CHECKING:",
+  "raise NotImplementedError",
+]
