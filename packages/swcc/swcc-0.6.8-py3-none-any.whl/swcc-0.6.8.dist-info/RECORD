@@ -1,0 +1,10 @@
+swcc/__init__.py,sha256=QAUN6Zc9va4wK5pgsLTVxALnD_dJRq5nAqLRc8aLDJc,552
+swcc/api.py,sha256=cEBw1IIud2b857WXLLFKMDe7JFr05H0iNGHioqIjfKg,2139
+swcc/cli.py,sha256=NlVGQnqG_JpfVn_zZxiRcumAasjfp5dI_0CRYvAt_ms,4303
+swcc/models.py,sha256=G5ywU1smssdNg3rhoWgCWguUleXJoUJ6kupIuaL4U8s,25074
+swcc/utils.py,sha256=T75WNNJXAr-zYaiwhYbp3Wu3uTgFugQb2TyBz606IZ0,2800
+swcc-0.6.8.dist-info/METADATA,sha256=VJO40ovLLuJhUc1OQuRb08jFjyFp7PpNig4kEuPWBoE,1065
+swcc-0.6.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+swcc-0.6.8.dist-info/entry_points.txt,sha256=4BWO8YBjTnVXFUrDCHZHBap3I79kUDaNnT6qTxRVS8A,40
+swcc-0.6.8.dist-info/top_level.txt,sha256=4nkdA0UWDMi3q2OqVqa3R3ECUBvC0lSPGMLZMAFRJvI,5
+swcc-0.6.8.dist-info/RECORD,,
