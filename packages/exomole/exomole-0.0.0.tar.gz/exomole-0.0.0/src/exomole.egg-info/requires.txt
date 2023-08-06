@@ -1,0 +1,10 @@
+pandas
+requests
+pyvalem>=2.3
+
+[dev]
+check-manifest
+pytest
+black
+coverage
+ipython
