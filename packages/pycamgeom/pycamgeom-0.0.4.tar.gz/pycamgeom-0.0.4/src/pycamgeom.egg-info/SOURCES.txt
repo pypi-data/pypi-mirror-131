@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pycamgeom/__init__.py
+src/pycamgeom/aabbtree.py
+src/pycamgeom/camera.py
+src/pycamgeom/frame.py
+src/pycamgeom/projector.py
+src/pycamgeom.egg-info/PKG-INFO
+src/pycamgeom.egg-info/SOURCES.txt
+src/pycamgeom.egg-info/dependency_links.txt
+src/pycamgeom.egg-info/top_level.txt
