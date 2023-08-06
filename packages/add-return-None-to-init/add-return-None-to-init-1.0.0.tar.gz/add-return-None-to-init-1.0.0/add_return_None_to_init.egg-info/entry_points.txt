@@ -1,0 +1,3 @@
+[console_scripts]
+py-add-return-None-to-all-init = add_return_None_to_init:main
+
