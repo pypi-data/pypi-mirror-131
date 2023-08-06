@@ -1,0 +1,10 @@
+better-exceptions
+gevent
+httpx[http2]
+mysqlclient
+oss2
+pymysql
+redis>=3.0.0
+tqdm
+urllib3
+user-agent2
