@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: startcp-cli
+Version: 0.0.1
+Summary: A CLI boiler plate for current competition.
+Home-page: https://github.com/asprazz/startcp-cli
+Author: Team Stark
+Author-email: ankushpatil6174@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: startcp,codechef,codeforces,python
+Platform: UNKNOWN

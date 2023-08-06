@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+startcp/__init__.py
+startcp/__main__.py
+startcp/codechef.py
+startcp/constants.py
+startcp/functions.py
+startcp/printer.py
+startcp_cli.egg-info/PKG-INFO
+startcp_cli.egg-info/SOURCES.txt
+startcp_cli.egg-info/dependency_links.txt
+startcp_cli.egg-info/entry_points.txt
+startcp_cli.egg-info/requires.txt
+startcp_cli.egg-info/top_level.txt
