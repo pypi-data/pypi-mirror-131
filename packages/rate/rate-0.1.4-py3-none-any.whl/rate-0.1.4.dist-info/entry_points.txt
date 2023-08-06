@@ -1,0 +1,3 @@
+[console_scripts]
+rate=rate.main:main
+
