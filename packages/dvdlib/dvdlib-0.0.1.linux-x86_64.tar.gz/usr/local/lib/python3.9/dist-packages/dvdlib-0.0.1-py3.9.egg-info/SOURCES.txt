@@ -1,0 +1,7 @@
+setup.py
+dvdlib/__init__.py
+dvdlib/myfuncs.py
+dvdlib.egg-info/PKG-INFO
+dvdlib.egg-info/SOURCES.txt
+dvdlib.egg-info/dependency_links.txt
+dvdlib.egg-info/top_level.txt
