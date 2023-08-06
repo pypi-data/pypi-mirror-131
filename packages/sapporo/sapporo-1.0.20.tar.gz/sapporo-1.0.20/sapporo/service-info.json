@@ -1,0 +1,31 @@
+{
+  "workflow_type_versions": {
+    "CWL": {
+      "workflow_type_version": ["v1.0", "v1.1", "v1.2"]
+    },
+    "Nextflow": {
+      "workflow_type_version": ["v1.0"]
+    },
+    "Snakemake": {
+      "workflow_type_version": ["v1.0"]
+    },
+    "WDL": {
+      "workflow_type_version": ["1.0"]
+    }
+  },
+  "supported_filesystem_protocols": ["http", "https", "file", "s3"],
+  "default_workflow_engine_parameters": [],
+  "workflow_engine_versions": {
+    "cwltool": "3.1.20211107152837",
+    "nextflow": "21.04.3",
+    "toil (experimental)": "4.1.0",
+    "cromwell": "71",
+    "snakemake": "v6.9.1",
+    "ep3 (experimental)": "v1.7.0"
+  },
+  "auth_instructions_url": "https://github.com/sapporo-wes/sapporo-service",
+  "contact_info_url": "https://github.com/sapporo-wes/sapporo-service",
+  "tags": {
+    "wes_name": "sapporo"
+  }
+}
