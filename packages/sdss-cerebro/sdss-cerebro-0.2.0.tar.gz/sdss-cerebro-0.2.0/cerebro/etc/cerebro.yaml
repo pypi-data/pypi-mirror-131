@@ -1,0 +1,159 @@
+name: cerebro
+ntp_server: us.pool.ntp.org
+logfile: /data/logs/cerebro/cerebro.log
+
+profiles:
+  lvm-lab:
+    sources:
+      - lvm_govee_clean_room
+      - lvm_govee_lab
+      - lvm_sens4_r1
+      - lvm_sens4_b1
+      - lvm_sens4_z1
+      - lvm_actors
+      - lvm_sp1_ieb
+      - ln2_scale_sp1
+    observers:
+      - influxdb
+      - influxdb_cloud:
+          type: influxdb
+          url: https://europe-west1-1.gcp.cloud2.influxdata.com
+          token: ${INFLUXDB_CLOUD_TOKEN}
+          org: c61507bd4e709b18
+          default_bucket: sensors
+
+  fps-osu:
+    sources:
+      - ieb:
+          type: ieb
+          bucket: FPS
+          config: ${JAEGER_DIR}/python/jaeger/etc/ieb.yaml
+    observers:
+      - influxdb
+
+  apo:
+    sources:
+      - ieb:
+          type: drift
+          bucket: FPS
+          config: ${JAEGER_DIR}/python/jaeger/etc/ieb.yaml
+      - chiller:
+          type: drift
+          bucket: FPS
+          config: ${JAEGER_DIR}/python/jaeger/etc/chiller.yaml
+          measure_timeout: 15.0
+      - tron:
+          type: tron
+          bucket: apo-actors
+          host: sdss5-hub.apo.nmsu.edu
+          port: 6093
+          tags:
+            observatory: ${OBSERVATORY}
+          actors:
+            - fliswarm
+          commands:
+            'fliswarm talk status': 60
+    observers:
+      - influxdb_apo
+
+sources:
+  tron:
+    type: tron
+    bucket: Actors
+    host: localhost
+    port: 6093
+    tags:
+      observatory: ${OBSERVATORY}
+    actors:
+      - tcc
+      - apo
+  ieb:
+    type: drift
+    bucket: IEB
+    config: ${JAEGER_DIR}/python/jaeger/etc/ieb.yaml
+  lvm_govee_clean_room:
+    type: govee
+    host: 10.7.45.30
+    port: 1111
+    device: H5179
+    address: 'e0:13:d5:71:d0:66'
+    bucket: sensors
+    delay: 30
+    tags:
+      location: 'Clean room'
+  lvm_govee_lab:
+    type: govee
+    host: 10.7.45.30
+    port: 1111
+    device: H5072_1
+    address: 'a4:c1:38:82:a2:88'
+    bucket: sensors
+    delay: 30
+    tags:
+      location: 'Outside clean room'
+  lvm_sens4_r1:
+    type: sens4
+    host: 10.7.45.30
+    port: 1112
+    device_id: 253
+    ccd: r1
+    delay: 30
+    bucket: sensors
+  lvm_sens4_b1:
+    type: sens4
+    host: 10.7.45.30
+    port: 1114
+    device_id: 253
+    ccd: b1
+    delay: 30
+    bucket: sensors
+  lvm_sens4_z1:
+    type: sens4
+    host: 10.7.45.30
+    port: 1115
+    device_id: 253
+    ccd: z1
+    delay: 30
+    bucket: sensors
+  lvm_actors:
+    type: amqp
+    bucket: actors
+    keywords:
+      - archon.status.mod2/tempa
+      - archon.status.mod2/tempb
+      - archon.status.mod2/tempc
+      - archon.status.mod12/tempa
+      - archon.status.mod12/tempb
+      - archon.status.mod12/tempc
+      - archon.status.mod2/heateraoutput
+      - archon.status.mod2/heaterboutput
+      - archon.status.mod12/heateraoutput
+      - archon.status.mod12/heaterboutput
+    commands:
+      'archon status': 30
+  lvm_sp1_ieb:
+    type: lvm_ieb
+    bucket: sensors
+    controller: sp1
+    delay: 30
+    config: ${ARCHON_DIR}/archon/lvm/config/lvm.yaml
+  ln2_scale_sp1:
+    type: ln2_scale
+    host: 10.7.45.45
+    port: 10001
+    bucket: sensors
+    delay: 300
+
+observers:
+  influxdb:
+    type: influxdb
+    url: http://localhost:9999
+    token: null
+    org: SDSS
+    default_bucket: Actors
+  influxdb_apo:
+    type: influxdb
+    url: http://sdss5-influx.apo.nmsu.edu:8086
+    token: null
+    org: apo
+    default_bucket: FPS
