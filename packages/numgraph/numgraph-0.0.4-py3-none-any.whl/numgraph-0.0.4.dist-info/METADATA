@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: numgraph
+Version: 0.0.4
+Summary: Utility package for generating graph structures
+Home-page: https://github.com/gravins/graph-generator
+Author: Alessio Gravina, Danilo Numeroso
+Author-email: alessio.gravina@phd.unipi.it, danilo.numeroso@phd.unipi.it
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/gravins/graph-generator
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (==1.21)
+
+[pypi-image]: https://github.com/gravins/NumGraph/blob/main/img/NumGraph_logo.svg
+[pypi-url]: https://pypi.org/project/numgraph/
+
+<p align="center">
+  <img width="30%" src="https://github.com/gravins/NumGraph/blob/main/img/NumGraph_logo.svg" />
+</p>
+
+
+# NumGraph
+Numpy library for synthetic graph generation.
+
+## Implemented distributions
+
+- Star graph
+- Clique
+- Two-dimensional rectangular grid lattice graph
+- Random Tree
+- Erdos Renyi
+- Barabasi Albert
+- Stochastic Block Model
+- Susceptible-Infected Dissemination Process Simulation
+
+## Installation
+
+``` python3 -m pip install numgraph ```
+
+
+
+
