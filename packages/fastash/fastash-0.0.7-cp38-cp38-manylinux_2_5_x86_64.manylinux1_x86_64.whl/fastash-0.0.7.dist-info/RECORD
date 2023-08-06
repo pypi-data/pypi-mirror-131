@@ -1,0 +1,13 @@
+fastash-0.0.7.dist-info/LICENSE,sha256=Z5SjK8S3aFMGCOhqsG_17igiaXMJWNRfa-ClpfxEwEw,1520
+fastash-0.0.7.dist-info/top_level.txt,sha256=Wg3x1QXFTFANWxAxyuuz3-noZCWka3IyuTPym9PnFrk,8
+fastash-0.0.7.dist-info/WHEEL,sha256=ADPbk2GqRVT5hIX8WDZ0BGAHxZlKqG3zpP6WIS3h6QE,144
+fastash-0.0.7.dist-info/METADATA,sha256=Sl6cOuyRQEhr7O99dNRPLMfo76KsdVKSsbq9ih4ByH4,1223
+fastash-0.0.7.dist-info/RECORD,,
+fastash/__init__.py,sha256=VPuOn9GLwuMmb9kCi4X670mpCnw-PrCIqPy-jchJrb8,67
+fastash/hyperplane.py,sha256=rW5HhFuz5RNl8haY3qg0LifO95dcQTc4WAw3-YlJV5c,3501
+fastash/whitening_transformer.py,sha256=eYE6cZLcpijhCsiJOBzr9IM6ijLiI1vu8IVEhNlufqQ,2381
+fastash/ash.py,sha256=JPls35AydNZXEPmr_WsZlXMuvfqwV8Ks-KWwNowDX1I,4927
+fastash/ashfunc.cpython-38-x86_64-linux-gnu.so,sha256=5R4_UAYa0Au4WhgdUycGpcKlNpFZZcGlzZfmtTGJQeQ,119384
+fastash/datasets.py,sha256=MuqAQx72c2UmKK9VF2TwDbY6rXMmDgHCvP8EizkLJ-U,1196
+fastash/bandwidth_selection/__init__.py,sha256=wXdJ-iQEngFfs-uVopzFwB444Y9yAuvuNNCmtL5SBSs,62
+fastash/bandwidth_selection/_scotts_rule.py,sha256=AeZzWT8SwXcNvM9llOVgaSHFc3FwOvf-yTnCI4XWAeg,567
