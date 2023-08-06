@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+SunshineLib/__init__.py
+SunshineLib.egg-info/PKG-INFO
+SunshineLib.egg-info/SOURCES.txt
+SunshineLib.egg-info/dependency_links.txt
+SunshineLib.egg-info/top_level.txt
