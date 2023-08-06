@@ -1,0 +1,10 @@
+from enum import Enum
+
+
+class TxStatus(Enum):
+    RECEIVED = "RECEIVED"
+    NOT_RECEIVED = "NOT_RECEIVED"
+    REJECTED = "REJECTED"
+    PENDING = "PENDING"
+    ACCEPTED_ONCHAIN = "ACCEPTED_ONCHAIN"
+    ACCEPTED_ON_L1 = "ACCEPTED_ON_L1"
