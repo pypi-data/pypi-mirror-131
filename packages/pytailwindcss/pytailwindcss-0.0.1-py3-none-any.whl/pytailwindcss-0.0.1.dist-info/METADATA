@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pytailwindcss
+Version: 0.0.1
+Summary: Install and invoke tailwindcss from Python
+Home-page: https://github.com/timonweb/pytailwindcss
+License: MIT
+Author: Tim Kamanin
+Author-email: tim@timonweb.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# Tailwind CSS binary Python bindings
+
+[WIP]
+
+Run *TailwindCSS* binary in *Python* without *Node*!
+
