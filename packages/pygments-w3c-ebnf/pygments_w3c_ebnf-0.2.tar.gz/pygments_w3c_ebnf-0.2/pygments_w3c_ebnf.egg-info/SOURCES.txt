@@ -1,0 +1,8 @@
+README.md
+setup.py
+pygments_w3c_ebnf.egg-info/PKG-INFO
+pygments_w3c_ebnf.egg-info/SOURCES.txt
+pygments_w3c_ebnf.egg-info/dependency_links.txt
+pygments_w3c_ebnf.egg-info/entry_points.txt
+pygments_w3c_ebnf.egg-info/top_level.txt
+w3c_ebnflexer/__init__.py
