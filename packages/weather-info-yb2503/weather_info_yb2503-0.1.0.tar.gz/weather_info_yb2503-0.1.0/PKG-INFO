@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: weather-info-yb2503
+Version: 0.1.0
+Summary: weather_info_yb2503 will provide convenient weather infomation providing service with simple functions. 
+Home-page: https://github.com/QMSS-G5072-2021/yb2503
+License: MIT
+Author: Yunxin Bo
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/QMSS-G5072-2021/yb2503
+Description-Content-Type: text/markdown
+
+# weather_info_yb2503
+
+weather_info_yb2503 will provide convenient weather infomation providing service with simple functions. 
+
+## Installation
+
+```bash
+$ pip install weather_info_yb2503
+```
+
+## Usage
+
+- TODO
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`weather_info_yb2503` was created by Yunxin Bo. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`weather_info_yb2503` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+

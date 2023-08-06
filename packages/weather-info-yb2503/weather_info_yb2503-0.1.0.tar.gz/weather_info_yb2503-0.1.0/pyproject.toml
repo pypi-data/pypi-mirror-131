@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "weather_info_yb2503"
+version = "0.1.0"
+description = "weather_info_yb2503 will provide convenient weather infomation providing service with simple functions. "
+authors = ["Yunxin Bo"]
+license = "MIT"
+readme = "README.md"
+ homepage = "https://github.com/QMSS-G5072-2021/yb2503"
+ repository = "https://github.com/QMSS-G5072-2021/yb2503"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
