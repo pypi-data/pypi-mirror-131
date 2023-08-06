@@ -1,0 +1,7 @@
+regexify/__init__.py,sha256=GTD_jzk3Mtxpa61prJi-bgNa-UeE713Hw1Oy9JKIOD8,224
+regexify/pattern.py,sha256=GCXREL7bmev9cFRts5tS2wg7tYEeihkDydN45sP_MDE,8650
+regexify/pattern_trie.py,sha256=BIPHj2M5wAe4N7bSQFi6YWXBNJ0TNo96uaR63yKjtko,2088
+regexify-0.2.1.dist-info/LICENSE,sha256=fIraIAkhzc9616B_nFWH72calYpH5rH0JnnXH42vaCg,1086
+regexify-0.2.1.dist-info/WHEEL,sha256=LVOPL_YDMEiGvRLgDK1hLkfhFCnTcxcAYZJtpNFses0,81
+regexify-0.2.1.dist-info/METADATA,sha256=OnkzWNTVq46DS2qovtPYS_5clh7AEINWudjmlaxdVN8,3643
+regexify-0.2.1.dist-info/RECORD,,
