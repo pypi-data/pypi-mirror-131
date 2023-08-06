@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: zoomlog
+Version: 1.0
+Summary: Simple python logger
+Home-page: https://github.com/Zoom-Developer/zoomlog
+Author: Zoom Developer
+Author-email: sa-mp12345@yandex.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<h1>ZOOM LOG</h1>
+<h3>Simple python logger</h3>
+
+***Quick start:***
+
+```python
+from zoomlog import Logger, DEBUG, INFO
+
+logger = Logger("test.log", name="test", level=DEBUG)
+logger.debug("My logger is work!")
+name = "Sergey"
+logger.addLevel("NEW USER", INFO)
+logger.log("NEW USER", "Created new user - %s" % name)
+```
+
+```
+00:00:00 01.01.22  DEBUG:test >>  My logger is work!
+00:00:01 01.01.22  NEW USER:test >>  Created new user - Sergey
+```
+*test.log*
+```
+00:00:00 01.01.22
+
+
+00:00:00 01.01.22  DEBUG:test >>  My logger is work!
+00:00:01 01.01.22  NEW USER:test >>  Created new user - Sergey
+```
+
+
