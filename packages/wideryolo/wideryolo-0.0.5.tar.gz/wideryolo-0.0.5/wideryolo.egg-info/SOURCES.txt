@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+wideryolo/predict.py
+wideryolo.egg-info/PKG-INFO
+wideryolo.egg-info/SOURCES.txt
+wideryolo.egg-info/dependency_links.txt
+wideryolo.egg-info/requires.txt
+wideryolo.egg-info/top_level.txt
