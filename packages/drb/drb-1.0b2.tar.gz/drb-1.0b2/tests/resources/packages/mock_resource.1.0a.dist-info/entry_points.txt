@@ -1,0 +1,2 @@
+[drb.impl]
+mock_resource = mock_resource

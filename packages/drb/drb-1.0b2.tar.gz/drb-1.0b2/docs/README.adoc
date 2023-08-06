@@ -1,0 +1,277 @@
+[#_data_request_broker_drb]
+= Data Request Broker (DRB)
+:toc:
+:icons: font
+
+WARNING: Under construction
+
+Product format is a major key point for the successful use of data in many
+domains. In space domain, processing, archiving, distribution, end-users
+habits and existing tools introduce different needs and constraints that must
+be taken into account when a format is defined. This results exponential number
+of data formats are created to respond to the operational needs.
+
+DRB was born from this consideration: Trying to define a simple and extensible
+data model able to simplify data access without reinvent the wheel at each new
+format, reducing the coding skills required to implement new format and then,
+reduce these recurrent costs.
+
+Originated from GAEL Systems development team since 1994, primary called
+_Fmt_ (C implementation), improved with C++ _LiveLink_ library, then the major
+improvement with Java version born in 1999.
+DRB moved into the public domain with its Open Source licence since 2006. It is
+still maintained by Gael Systems and partially financed by European Space
+Agency, and internal efforts of the company.
+
+The python version of DRB is the new major improvement of this library, with
+the objective to improve the Drb accessibility, capabilities and performances
+with python interpreted language, its libraries database and its great
+performances.
+
+== What is DRB
+image::tree-illustration.png[Illustration of tree, float=right, width=120]
+The Data Request Broker (DRB) software allows the physical and logical
+description of data structures and file formats through the use of XML schema
+in combination with SDF (Structured Data File) description tags which can
+describe a data format down to the bit level. The DRB processor utilises
+XQuery to provide access, extraction, validation and transformation of data
+from multiple sources. By using DRB to describe a data format as a  set of
+tree nodes with each node being given an identifier, the tree data structure
+can be accessed and traversed using XPath expressions. Semantic information
+can be informally recorded in the description by using the XML schema
+documentation tag. It is also possible to perform calculations using XQuery
+from within the data description allowing full description of files where the
+locations of data fields within a file must be calculated from other data
+fields. However, calculations must be described in XQuery and can lead to
+increased complexity and a decrease in human readability. Due to DRB using XML
+schema for the description language it is possible to use standard XML software
+packages such as XMLSpy to create the schemas.
+
+[.text-center]
+.Caption Physical To Logical representation of DRB data model
+image::tree-illustration-physical-to-logical.png[Physical to logical illustration, width=300]
+
+Its primary implementation has been set with Java Language, using all the java
+standards and its good practices. XML data model, XSD schema for formats
+verification, Interpreted XQuery and XPath language to request inside and
+across products where successfully experimented in EO context.
+
+.Caption DRB Domain model
+image::DRB-UML-domain-model.png[DRB Domain model, width=700]
+
+This smart and reliable architecture remains the same with python language. Major difference between java and python could help to again simplify the architecture:
+
+    - Java shall be compiled vs Python is an interpreted language,
+    - java primitive types are final vs python type are not final,
+    - Python natively support json dicts
+    - Python manages dynamic package loading with build in module loader and entry point solution.
+    - Python class can be _multi-morphic_ with dynamic properties functions, that simplifies the management of the mutable DrbNodeSpi
+
+The simplified UML class diagram for Drb encoded in Python:
+
+.Caption DRB python simplified model
+image::python_classes.png[DRB simple pthyoon, width=500]
+
+
+== Implementation options
+This section aims to describe the choices made during the implementation of the Drb python mechanisms.
+Drb is composed of its root data model which defines abstract classes of DrbNode and DrbItem. A set of other modules are available to decode data where they are stored.
+
+=== The factory
+The factory is the mechanism used by Drb to load implementations. The java implementation used the _reflection_ API able to dynamically load classes into the classpath from their names. This solution oblige to install Drb implementation into a fixed package name with a fixed class name (`fr.gael.drb.imp.file.DrbFileNode`, `fr.gael.drb.imp.xml.DrbXmlNode`...). _Java service loader_ had not been envisaged as an evolution of this mechanism to reduce the implementation constraints.
+
+The python ecosystem include package loading solutions. The basic solution may consist in importing the package with the dedicated import library (`importlib.import_module`). Coupled with the `entry_points` mechanism, loading of the implementation are performed dynamicaly without any constraint.
+Entry point can be included into the project `setup.py`, or as internal resource file:
+
+```properties
+ [drb.impl]
+ mem = my_drb.impl.mem.drb_mem_factory
+```
+
+Then the implementation:
+
+```python
+ uri = "mem:/my/path/to/my_file/"
+ factory = DrbFactoryResolver..resolve(uri)
+```
+
+==== Factory API
+The factory objective is to create DrbNodes according to the encoding of the data.
+For example, the factory for an XML datatset:
+```xml
+<root attr_root="attribute of root node">
+    <children attr_children="childen node">
+        <child attr_child="numeric">1</child>
+        <child attr_child="numeric">2</child>
+        <child attr_child="numeric">3</child>
+    </children>
+</root>
+```
+
+Then the factory shall be able to generate DrbNode tree with the following hierarchy:
+```xpath
+root [@attr_root="attribute of root node"]
+└── children [@attr_children="childen node"]
+     ├── child [@attr_child="numeric"] = 1
+     ├── child [@attr_child="numeric"] = 2
+     └── child [@attr_child="numeric"] = 3
+```
+
+The factory API is defines into the link:../drb/factory/factory.py[drb/factory/factory.py] module, `DrbFactory` abstract class. The Factory class defines the abstract class to be implemented in order to build drb nodes according to their physical form. The factory is aware of the implementations available to build nodes and builds a relation between the physical data and its virtual node  representation.
+
+|===
+| method | parameter(s) | description
+
+| `valid` | uri as string | Checks the given uri is supported by this factory implementation
+| `_create_from_uri` | uri as string | Builds a DrbNode from the provided URI.
+| `_create_from_node` | node as DrbNode | Builds a DrbNode from the provided base node.
+|===
+
+
+=== The factory resolver
+The factory resolver is the mechanism implemented to match the factory with a data.
+
+==== The factory resolver mechanism
+The resolver aims to retrieve the most accurate implementation for a node.
+Implementation in DRB manages a very large scope of supports that can be encapsulated.
+For example a file stored into a tar archive, compressed with gzip and available via ftp service shall be normal work for drb API.
+A set of category can be defined to handle these priorities:
+
+- the *_Security_* Category: The highest priority level able to manage low level encryption, tunneling or any security layer. An example of security layer could be SSL able to secure http or ftp connection.
+- the *_Protocol_* Category : Handles the communication with the service exposing data. It may be a file, http, ftp, or webdav... The Protocol implementation might be recursive in service such as webdav or odata which encapsulates http.
+
+image::zip-tree.png[Illustration of tree,  float=right, width=500]
+image::tar-tree.png[Illustration of tree,  float=right, width=500]
+- the *_Container_* Category : The container is the tree representation of the storage containing data. So the content of a container is container or a formatted data. The implementation of the container category is a directory, zip, tar, or tgz (for tar encapsulated in a gzip) ...
+
+image::xml-tree.png[Illustration of tree,  float=right, width=500]
+- the *_Formatting_* Category: This later category aims to descramble the data into a structured hierarchy of nodes. XML, binaries (sdf representation), netcdf, TIFF data could be represented in structured hierarchy.
+
+These categories are used by the factory mechanism to handle priorities and identify the implementation sequence to encapsulated into the SPI.
+
+
+The factory interface setup single node creation via 2 separate signatures:
+
+```python
+    @abstractmethod
+    def _create_from_uri(self, uri: str) -> DrbNode:
+...
+
+    @abstractmethod
+    def _create_from_node(self, node: DrbNode) -> DrbNode:
+...
+```
+
+The node creation from an URI is a possible entry point to retrieve a single
+node from its URI. Depending on the implementation, but this method shall be
+used only when the data and its source is well known.
+
+It shall be possible to use the signature which handles a base node as input parameter.
+
+for example if the data is located into the following URL:
+```python
+uri = 'http://www.gael.fr/data/zip/container.zip/directory/file.xml'
+factory = DrbFactoryResolver.resolve(uri)
+node = factory.create(uri)
+...
+```
+This snippet show a basic usage of the factory resolver, whereas when the client is able to bypass the resolver using the accurate factories, the following sequence of code is also possible:
+```python
+from drb_impl_http import DrbHttpFactory
+from drb_impl_zip import DrbZipFactory
+from drb_impl_xml import DrbXmlFactory
+node = DrbXmlFactory.create(DrbZipFactory.create(DrbHttpFactory.create(
+    'http://www.gael.fr/data/zip').get_named_child('container.zip', 1)).
+     get_named_child('directory', 1).get_named_child('file.xml'))
+```
+
+The created node encapsulates 3 implementations:
+```bash
+  └── HTTP implemenation (server="www.gael.fr", path="data/zip/container.zip")
+       └── ZIP implementation (container.zip, path_from_zip_index="/directory")
+            └── XML implementation (file.xml)
+```
+
+
+then the node hierarchy returned is
+```bash
+www.gael.fr/
+└── data/
+    └── zip/
+        └── container.zip/
+            └── directory/
+                └── file.xml/
+                    └── root
+...
+```
+Each node level here is decoded from the device from its drb implementation.
+Then to manage 'legacy' mode and forbid the node to enter into xml file, the XML module shall be removed from the project:
+
+```bash
+www.gael.fr/
+└── data/
+    └── zip/
+        └── container.zip/
+            └── directory/
+                └── file.xml
+```
+
+Then removing zip implementation the drb node hierarchy becomes:
+```bash
+www.gael.fr/
+└── data/
+    └── zip/
+        └── container.zip
+```
+
+==== Switching resolvers
+A basic resolver mechanism is available. It consists in iterating on the execution of each `DrbFacrtory.valid(uri)` implemented within `drb.impl` entry point. Once found a valid factory for this `uri`, it is returned by the resolver. This implementation is quite simple and available for testing purpose only.
+
+Linked to the java experience, an extended resolver is available. This resolver is based on a textual description using RDF/OWL syntax. This resolver is called _Cortex_ and allow a full textual description of the recognition mechanism.
+Categories (security, protocol, container, formatting) where defined as classes to organise the implementations within individuals and help the software to retrieve the nodes implementations.
+
+Example of an individual
+```xml
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:drb="http://www.gael.fr/drb#">
+
+  <owl:NamedIndividual rdf:about="http://www.gael.fr/drb#file">
+        <rdf:type rdf:resource="http://www.gael.fr/drb#Protocol"/>
+        <drb:implementation>file</drb:implementation>
+        <drb:signature rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.gael.fr/drb#Signature" />
+            <drb:nameMatch>(file://)?.+</drb:nameMatch>
+        </drb:signature>
+  </owl:NamedIndividual>
+</rdf:RDF>
+```
+This individual is an instance of the protocol class. it references the `file` implementation entry point and defines a regular expression to match the factory with the data.
+
+=== URI and path representation
+The drb node tree might be very complex as well as browsing inside. The XPath syntax allows to fine defines a data to target.
+
+The factory resolver shall resolve the given uri from its protocol and each level of the path. The example proposed here before:
+```bash
+www.gael.fr/                   -> resolved by http factory
+└── data/                      -> build by HTTP node
+    └── zip/                   -> build by HTTP node
+        └── container.zip/     -> resolved by ZIP factory (HTTP as base node)
+            └── directory/     -> build by ZIP node
+                └── file.xml/  -> resolved by XML factory (ZIP as base node)
+                    └── root   -> build by XML node
+...
+```
+
+== Getting Started
+
+To open a new node with Drb python:
+```python
+uri = 'http://www.gael.fr/data/zip/container.zip/directory/file.xml'
+with node in DrbFactoryResolver.create(uri)
+    with child in node.get_children()
+        print (f"Node name = {child.name}")
+...
+```
+

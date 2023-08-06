@@ -1,0 +1,2 @@
+[drb.impl]
+mockurl = mock_url
