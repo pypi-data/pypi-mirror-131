@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: tormicro
+Version: 0.0.1.17
+Summary: A tornado-based microservice booster
+Home-page: https://github.com/bailaohe/parade
+Author: He Bai
+Author-email: bailaohe@gmail.com
+License: UNKNOWN
+Description: # tormicro
+        
+        A tornado-based microservice booster
+        
+Keywords: tornado,microservice,web,restful
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX

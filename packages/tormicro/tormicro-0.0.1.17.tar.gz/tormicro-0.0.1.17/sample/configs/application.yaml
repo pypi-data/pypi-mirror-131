@@ -1,0 +1,50 @@
+logging:
+  version: 1
+  formatters:
+    brief:
+      format: '%(asctime)s %(name)s %(levelname)s : %(message)s'
+    detailed:
+      format: 'time="%(asctime)s" logger="%(name)s" level="%(levelname)s" file="%(filename)s" lineno=%(lineno)d function="%(funcName)s" %(message)s'
+  handlers:
+    console:
+      class: logging.StreamHandler
+      level: INFO
+      formatter: brief
+      stream: ext://sys.stdout
+    file:
+      class : logging.handlers.RotatingFileHandler
+      level: DEBUG
+      formatter: detailed
+      filename: /tmp/addrservice-app.log
+      backupCount: 3
+    sls:
+      class: aliyun.log.QueuedLogHandler
+      level: INFO
+      formatter: brief
+      end_point: cn-hangzhou.log.aliyuncs.com
+      access_key_id: LTAIoZSUPbdnq342
+      access_key: VZ2zbEcoXmavhf9dtF94taoJSTefjn
+      project: xmservice
+  loggers:
+    addressbook:
+      level: DEBUG
+      handlers:
+        - console
+        - file
+      propagate: no
+    tornado.access:
+      level: DEBUG
+      handlers:
+        - file
+    tornado.application:
+      level: DEBUG
+      handlers:
+        - file
+    tornado.general:
+      level: DEBUG
+      handlers:
+        - file
+  root:
+    level: WARNING
+    handlers:
+      - console
