@@ -1,0 +1,15 @@
+squeak/__init__.py,sha256=f0U2dnkNe4AON8p35KBME9zjhICOiZYASmOSfbFCeGI,1133
+squeak/messages.py,sha256=UBCL3gCrdR1H5feiQzHCMCSRIBxYaLRgrfuPuq7fSBI,11444
+squeak/net.py,sha256=oQFDpA2Kt3pO_36Aa05PdtJHjQcZmp_fRiDYhzyxbwU,4451
+squeak/params.py,sha256=iJOZB7gcfnUYskG26BOEwH5FDLWZhBZRqUdviAY6fLo,2669
+squeak/core/__init__.py,sha256=Fr9Cu7oiV343Lk6q9sqa_adEYvca_FbTlj-ubSxxXw0,15908
+squeak/core/elliptic.py,sha256=UuEd0bTgVoI5UBp7Cbtft-GFH6RhGaHWlwYTFFz9lvw,3721
+squeak/core/encryption.py,sha256=RDBpLlYXWxllK_9x4Jta3-BncOtp4ANSooIXJ1NouuM,4703
+squeak/core/hashing.py,sha256=AR5FgMjE2Nuwxu637rf6abMO_oYivKYWdfV66UYiWFs,1186
+squeak/core/signing.py,sha256=l-LLT9_XcJU4dOOI4C6NpYvKDVLTKNpbgeKUJjRzCdw,4046
+squeaklib-0.8.4.dist-info/LICENSE,sha256=oNw4szszNql0uk5hgS5d7Nsr9uZiKPpo2Z_AdV6d97g,1072
+squeaklib-0.8.4.dist-info/METADATA,sha256=kunTdFTNYaKeMBDOqogTbOCyMPA5eeYUbT_DZDOyEgk,1538
+squeaklib-0.8.4.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+squeaklib-0.8.4.dist-info/top_level.txt,sha256=_9LKT77tjv_bzXsILCbjmle2RQc1z5GPJRCx0koOrkw,7
+squeaklib-0.8.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+squeaklib-0.8.4.dist-info/RECORD,,
