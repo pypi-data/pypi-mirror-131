@@ -1,0 +1,4 @@
+ansicolors
+numpy
+qrcode
+termcolor
