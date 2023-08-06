@@ -1,0 +1,10 @@
+tableschema_ckan_datastore/VERSION,sha256=zFL2eISLgUNzdXtGA4O_YZYOSUPCA3Na3eCjULPlCYk,6
+tableschema_ckan_datastore/__init__.py,sha256=TBFG4C7GSjJ3y9qwmA-1IJBROE2oaA2F1Lva-HqEvZA,383
+tableschema_ckan_datastore/mapper.py,sha256=rLFnM5Zo6EozW6mYFZ-M85M9gef4MqraOxzYc7MLXMo,5350
+tableschema_ckan_datastore/storage.py,sha256=2dIxjANH2uOaySGt9Ni-2g5F314IT0idOKurfviqaWA,8897
+tableschema_ckan_datastore/utils.py,sha256=c82gzRKAGtWYB0K9UIZRmXv-kWBOlVpLB5_JKJmu1ik,1096
+tableschema_ckan_datastore-1.1.1.dist-info/LICENSE.md,sha256=njBRH60GHXL1vp2BrHKG_-vpSPJX9LVh2jkgS2dkALM,1082
+tableschema_ckan_datastore-1.1.1.dist-info/METADATA,sha256=4eXKBHUr0FYDT41RdEoguAmGWjCWg7gghxcOhruGCQg,6409
+tableschema_ckan_datastore-1.1.1.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+tableschema_ckan_datastore-1.1.1.dist-info/top_level.txt,sha256=c5ANCd2QWAWSaIsEh9WWC3Nl0E6lZ4nSdM3EoMljeX8,27
+tableschema_ckan_datastore-1.1.1.dist-info/RECORD,,
