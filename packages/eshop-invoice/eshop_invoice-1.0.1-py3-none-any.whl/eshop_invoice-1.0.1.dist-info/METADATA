@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: eshop-invoice
+Version: 1.0.1
+Summary: Create PDF invoices for Eshop from YAML files.
+Home-page: https://github.com/anupama.bmmutt/eshop-generator
+Author: Anupama Bitmandi Mutt
+Author-email: anupama.bm@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: weasyprint (>=47)
+Requires-Dist: pybars3 (>=0.9.6)
+Requires-Dist: pyyaml (>=5.1)
+
+
+<div align="center">
+    <img alt="eshop-invoice" src="">
+    <h1>eshop-invoice generator</h1>
+    <img alt="License" src="">
+    <img alt="Travis Build Status" src="">
+    <img alt="PyPI Package" src="">
+</div>
+
+
+Generate invoices using python, weasyprint and yaml.
+
+<div align="center">
+    <h5>Sample Invoice</h5>
+</div>
+
+## Usage
+```
+usage: eshop-invoice [-h] [--template TEMPLATE] [--defaults-file DEFAULTS_FILE]
+                   --invoice-data-file INVOICE_DATA_FILE --out-file OUT_FILE
+                   [--locale LOCALE]
+
+Create PDF invoices from YAML files.
+
+```
+
+```shell
+./eshop-invoice --invoice-data-file invoice.yml --template documents/invoice/template --out-file out.pdf
+```
+<table style="width: 100%;">
+    <tbody>
+        <tr>
+            <td><code>~/.default-invoice-data.yml</code></td>
+            <td><code>invoice.yml</code></td>
+        </tr>
+        <tr>
+            <td class="highlight highlight-source-yaml">
+<pre><code>
+currency: â‚¬
+from:
+  name: Kids Eshop
+  address:
+    street: Dorse Point
+    postal_code: "01337"
+    city: Dublin
+</code></pre></td>
+            <td class="highlight highlight-source-yaml">
+<pre><code>
+to:
+  name: Customer Ec2
+  customer_id: 10004
+  address:
+    street: Dorse Point 4
+    postal_code: "042424"
+    city: Dublin
+tax_rate: 19
+invoice:
+  number: R10006
+  date: 16.12.2021
+  pay_until_date: 22.12.2021
+positions:
+  - net_price: 215
+    amount: 1
+    text: |
+      Server
+      Windows Server
+      Monat 08.2021
+  - net_price: 215
+    amount: 2
+    text: |
+      Have a Nice Day
+</code></pre></td>
+        </tr>
+    </tbody>
+</table>
+
+
+

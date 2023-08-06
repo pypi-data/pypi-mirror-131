@@ -1,0 +1,156 @@
+#!python
+
+# This project is based on
+# https://github.com/ecmonline/invoice-generator
+
+import os
+import sys
+import codecs
+import yaml
+import locale
+import argparse
+
+from pathlib import Path
+
+from pybars import Compiler
+from weasyprint import HTML
+
+DEFAULT_DEFAULTS_FILE_PATH = '~/.default-invoice-data.yml'
+
+def get_default_locale():
+    language_code, encoding = locale.getdefaultlocale()
+    return language_code + '.' + encoding
+
+def create_argument_parser():
+    parser = argparse.ArgumentParser(
+        description='Create PDF invoices from YAML files.',
+    )
+    parser.add_argument(
+        '--template-path',
+        help='Path to the directory containing the HTML template. Can also be set in the YAML file.',
+        default=None,
+        required=False,
+    )
+    parser.add_argument(
+        '--defaults-file',
+        help=f'The yaml file path to use for default data like "from", "currency", etc. Defaults to {DEFAULT_DEFAULTS_FILE_PATH} (if it exists).',
+        default=None,  # We're checking if the user passed the file name explicitly later
+        required=False,
+    )
+    parser.add_argument(
+        '--invoice-data-file',
+        help='The yaml file path to use for the individual invoice data. Overrides values set via "--defaults-file" if they differ.',
+        required=True,
+    )
+    parser.add_argument(
+        '--out-file',
+        help='The output pdf file',
+        required=True,
+    )
+    parser.add_argument(
+        '--locale',
+        help=f'The locale to use. Defaults to the system locale ({get_default_locale()})',
+        default=get_default_locale(),
+        required=False,
+    )
+    return parser
+
+def read_file(path: Path) -> str:
+    with open(path, mode='r') as f:
+        return f.read()
+
+def get_defaults_file(args) -> str:
+    assert args is not None
+
+    if args.defaults_file is None:
+        if os.path.exists(DEFAULT_DEFAULTS_FILE_PATH):
+            return read_file(DEFAULT_DEFAULTS_FILE_PATH)
+        return ''
+
+    if not os.path.exists(args.defaults_file):
+        print(f'File {args.defaults_file} was not found.')
+        return sys.exit(-1)
+    return read_file(args.defaults_file)
+
+def get_individual_file(args) -> str:
+    assert args is not None
+    assert args.invoice_data_file is not None
+
+    if not os.path.exists(args.invoice_data_file):
+        print(f'File {args.invoice_data_file} was not found.')
+        return sys.exit(-1)
+
+    return read_file(args.invoice_data_file)
+
+def fill_document_data(locale, document_data):
+    pos_number = 1
+    document_data['totals'] = {
+        'netto' : 0,
+        'gross': 0,
+        'tax': 0
+    }
+
+    try:
+        for pos in document_data['positions']:
+            if not 'tax_rate' in pos:
+                pos['tax_rate'] = document_data['tax_rate']
+
+            pos['pos_number'] = pos_number
+            pos['total_net_price'] = pos['net_price'] * pos['amount']
+            pos['total_tax'] = pos['total_net_price'] * (pos['tax_rate'] / float(100))
+            pos['total_gross_price'] = pos['total_net_price'] + pos['total_tax']
+
+            document_data['totals']['netto'] += pos['total_net_price']
+            document_data['totals']['gross'] += pos['total_gross_price']
+            document_data['totals']['tax'] += pos['total_tax']
+
+            pos['amount'] = locale.format('%.2f', pos['amount'])
+            pos['tax_rate'] = locale.format('%.2f', pos['tax_rate'])
+            pos['net_price'] = locale.format('%.2f', pos['net_price'])
+            pos['total_net_price'] = locale.format('%.2f', pos['total_net_price'])
+            pos['text'] = pos['text'].replace('\n', '<br>')
+
+            pos_number += 1
+    except KeyError: 
+        print(f'ERROR: key not found!')
+
+        document_data['totals']['netto'] = locale.format('%.2f', document_data['totals']['netto'])
+        document_data['totals']['gross'] = locale.format('%.2f', document_data['totals']['gross'])
+        document_data['totals']['tax'] = locale.format('%.2f', document_data['totals']['tax'])
+
+def main():
+    parser = create_argument_parser()
+
+    args = parser.parse_args()
+    locale.setlocale(locale.LC_ALL, args.locale)
+
+    defaults_file = get_defaults_file(args)
+    individual_data = get_individual_file(args)
+
+    merged_data = (defaults_file + '\n' + individual_data).strip()
+
+    document_data = yaml.safe_load(merged_data)
+    fill_document_data(locale, document_data)
+
+    template_path = args.template_path or document_data.get('template-path')
+    if template_path is None:
+        print(f'No template directory path provided. Set one in the YAML as "template-path" or pass it via --template-path')
+        return sys.exit(-1)
+
+    template_path = Path(template_path.strip())
+    index_html = template_path / 'index.html'
+    with open(index_html) as index_file:
+        html_text = index_file.read()
+
+        compiler = Compiler()
+        template = compiler.compile(html_text)
+
+        html_text = template(document_data)
+
+        weasytemplate = HTML(string=html_text, base_url=str(template_path))
+        weasytemplate.write_pdf(args.out_file)
+
+    return sys.exit(0)
+
+if __name__ == '__main__':
+    main()
