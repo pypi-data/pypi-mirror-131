@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ghostdev.recipe-catalog
+Version: 1.0.2
+Summary: Custom Recipe Catalog
+Home-page: UNKNOWN
+Author: Dani Casper
+Author-email: dani@ghostdev.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: wxPython (~=4.1.1)
+Requires-Dist: ghostdev.pyform (~=1.0.5)
+
+UNKNOWN
+
