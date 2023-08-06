@@ -1,0 +1,4 @@
+requests
+pytest
+easy_exec
+git-diff-lines
