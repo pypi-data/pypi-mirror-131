@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tmu
+Version: 0.3.7
+Summary: Implements the Tsetlin Machine, Coalesced Tsetlin Machine, Convolutional Tsetlin Machine, Regression Tsetlin Machine, and Weighted Tsetlin Machine, with support for continuous features and drop clause. TMU is written in Python with wrappers for C and CUDA-based clause evaluation and updating.
+Home-page: https://github.com/cair/tmu/
+Author: Ole-Christoffer Granmo
+Author-email: ole.granmo@uia.no
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+Implements the Tsetlin Machine, Coalesced Tsetlin Machine, Convolutional Tsetlin Machine, Regression Tsetlin Machine, and Weighted Tsetlin Machine, with support for continuous features and drop clause. TMU is written in Python with wrappers for C and CUDA-based clause evaluation and updating.
+
