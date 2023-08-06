@@ -1,0 +1,7 @@
+soco>=0.25.0
+tabulate
+rangehttpserver
+
+[:python_version >= "3.6"]
+fastapi
+uvicorn
