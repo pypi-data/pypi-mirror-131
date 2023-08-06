@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "shuncommands"
+version = "1.0.1"
+description = "my usefull commands"
+authors = ["KAWAI Shun <shun@osstech.co.jp>"]
+license = "MIT"
+packages = [
+  {include = 'src/'}
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.0.3"
+gitignore-parser = "^0.0.8"
+pikepdf = "^4.1.0"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.16.0"
+poethepoet = "^0.11.0"
+flake8 = "^4.0.1"
+autoflake = "^1.4"
+autopep8 = "^1.6.0"
+isort = "^5.10.1"
+git-changelog = "^0.5.0"
+
+[tool.poetry.scripts]
+rmtmp = "src.rmtmp:ctx"
+pdftool = "src.pdftool:ctx"
+
+[tool.poe.tasks.changelog]
+cmd = "git-changelog -o CHANGELOG.md .git"
+
+[tool.poe.tasks.lint]
+cmd = "flake8 src/"
+
+[tool.poe.tasks.format]
+sequence = [
+  { cmd = "autopep8 -ir src/" },
+  { cmd = "autoflake -ir --remove-all-unused-imports --remove-unused-variables --ignore-init-module-imports src/" },
+  { cmd = "isort src/" }
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

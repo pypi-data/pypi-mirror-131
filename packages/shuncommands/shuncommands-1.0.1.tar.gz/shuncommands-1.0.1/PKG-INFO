@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: shuncommands
+Version: 1.0.1
+Summary: my usefull commands
+License: MIT
+Author: KAWAI Shun
+Author-email: shun@osstech.co.jp
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: gitignore-parser (>=0.0.8,<0.0.9)
+Requires-Dist: pikepdf (>=4.1.0,<5.0.0)
