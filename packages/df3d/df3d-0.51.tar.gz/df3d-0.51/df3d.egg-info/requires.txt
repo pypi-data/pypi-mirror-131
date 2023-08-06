@@ -1,0 +1,13 @@
+PyQt5
+sklearn
+scipy<=1.2.1
+scikit-video
+scikit-image
+matplotlib
+opencv-python==4.1.2.30
+tqdm
+colorama
+progress
+pytorch_lightning
+pyba
+df2d
