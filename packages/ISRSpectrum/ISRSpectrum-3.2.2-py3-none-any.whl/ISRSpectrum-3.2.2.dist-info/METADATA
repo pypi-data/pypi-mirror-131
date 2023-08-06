@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ISRSpectrum
+Version: 3.2.2
+Summary: Creates ISR Spectrums
+Home-page: https://github.com/jswoboda/ISRSpectrum
+Author: John Swoboda
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
+License-File: LICENSE.md
+Requires-Dist: nose
+Requires-Dist: six
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Provides-Extra: plot
+Requires-Dist: matplotlib ; extra == 'plot'
+Requires-Dist: jupyter ; extra == 'plot'
+Requires-Dist: seaborn ; extra == 'plot'
+
+UNKNOWN
+
