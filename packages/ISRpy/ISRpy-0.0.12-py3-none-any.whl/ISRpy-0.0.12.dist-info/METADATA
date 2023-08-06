@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: ISRpy
+Version: 0.0.12
+Summary: Radar Tools
+Home-page: https://github.com/radars-eceillinois/isrpy
+Author: Erhan Kudeki
+Author-email: erhan@illinois.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# ISRpy
+
+Utility and application modules for ISR (and CSR) data processing and modeling
+
+where:
+
+    ISR=Incoherent Scatter Radar
+    CSR=smaller ionospheric/atmospheric radars than ISR's that can only detect
+stronger coherent scatter than minimal level ionospheric incoherent scatter
+
+
+Try "ISRpy. TAB" in ipython for module methods and submodules...
+
+-readpack and beampack provides data read and target positioning
+routines for a collection of ISR's and CSR's.
+
+-pyigrf is a packet for geomagnetic vector field computataions based on the
+IGRF model.
+
+-kmltools provides routines for placing radar beam and data maps in Google Earth.
+
+-enoise is spectral noise level estimator based on Hildebrand-Sekhon algorithm.
+
+
