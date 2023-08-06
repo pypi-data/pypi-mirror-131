@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/SolMap.egg-info/PKG-INFO
+src/SolMap.egg-info/SOURCES.txt
+src/SolMap.egg-info/dependency_links.txt
+src/SolMap.egg-info/top_level.txt
