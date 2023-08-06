@@ -1,0 +1,360 @@
+Metadata-Version: 2.1
+Name: teachable-school-manager
+Version: 2.1
+Summary: Manage your Teachable school using the unofficial Teachable API
+Home-page: https://github.com/stezz/teachable-scripts
+Author: Stefano Mosconi
+Author-email: stefano.mosconi@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/stezz/teachable-scripts/issues
+Project-URL: Source, https://github.com/stezz/teachable-scripts/
+Keywords: scripts teachable
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >3.7, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+[![pypi][pypi-image]][pypi-link]
+[![docker][docker-v-image]][docker-link]
+[![Docker Image Size (latest by date)][docker-s-image]][docker-link]
+
+[pypi-image]: https://img.shields.io/pypi/v/teachable-school-manager
+[pypi-link]: https://pypi.org/project/teachable-school-manager/
+[docker-v-image]: https://img.shields.io/docker/v/instezz/teachable-school-manager?label=Docker%20version
+[docker-link]: https://hub.docker.com/repository/docker/instezz/teachable-school-manager
+[docker-s-image]: https://img.shields.io/docker/image-size/instezz/teachable-school-manager?label=Docker%20image%20size
+
+
+# Teachable School Manager 
+A complete suite to (automatically) manage your Teachable school like a pro.
+
+### Note
+This project was forked from [maxbritto's project](https://github.com/maxbritto/teachable-scripts/) which was itself forked from [buzkall's project](https://github.com/buzkall/teachable-reports-export) (thanks guys!) because of major refactoring and added features which changes the goal of the original project.
+Pull requests are accepted if you want to add new features/apis.
+
+
+   
+
+## Disclaimer
+**This project is unofficial and not supported by Teachable. It is published and made open source in order to help other teachers but it comes with no warranty whatsoever from the author or any contributor.**
+
+Teachable.com doesn't have an official API to manage your school. It has some webhooks to trigger events and use them with services like Zapier, but there is no fast and practical solution to manage your school, especially for large student groups.
+The website is done using Angular, and needs some api urls to load the content, so this project uses those api to collect data and perform actions as if you were using the web admin panel.
+
+**This mean that if Teachable changes their APIs, scripts from this project could stop working and potentially do damage to your school data. At any time. 
+Please take that into consideration before using this project and don't come to me to ask for repairs afterwards ;)** 
+
+## Install and Config
+
+### Install as standalone python package
+This script has been tested with python 3.9
+
+In case you wanted just the python package you can find it on PyPi, that's how to install:
+```commandline
+pip install teachable-school-manager 
+```
+After that you should copy the file that you find in `/usr/local/etc/teachable/config_example.ini`, rename it as `config.ini` and set your username, password and your teachable custom domain
+```ini
+[DEFAULT]
+username=YOUR_TEACHABLE_USERNAME
+password=YOUR_TEACHABLE_PASSWORD
+site_url=https://YOUR_TEACHABLE_URL
+```
+alongside all the other variables that you find there
+
+### Docker 
+
+You will find a Dockerfile in case you want to build yourself your own docker image.
+
+If you just want the pre-built app this is also available in [Docker hub](https://hub.docker.com/repository/docker/instezz/teachable-school-manager), you can pull it simply by:
+```commandline
+docker pull instezz/teachable-school-manager:latest
+```
+Check the `docker-compose.yml` to configure your server to use this application.
+
+## Scripts
+
+The package will install scripts in `/usr/local/bin/` so you can just call them from cmdline. 
+
+There is a single script called `teachable` and by running `teachable -h` you will get all the commands that you can execute.
+### Enroll users to a course
+If you want to enroll a whole list of users to a new course, you can do it with `teachable enroll` script that receives a user list Excel or CSV file (you'll only need 2 columns: `fullname` and `email`) and a course id.
+
+```commandline
+usage: teachable enroll [-h] -i INPUT_FILE -c COURSEID [--dryrun]
+
+Mass enroll users from Excel or CSV file into a specified course
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i INPUT_FILE, --input_file INPUT_FILE
+                        Excel or CSV file. The only needed columns are 'fullname' and 'email'
+  -c COURSEID, --courseId COURSEID
+                        The id of the course they should be enrolled in
+  --dryrun              Don't send the messages for real, just do a dry run
+
+```
+
+If your file is Userlist.xlsx and course id is 1234 you can enroll all the users in the file into this course by typing :
+```commandline
+teachable enroll -i path/to/file/Userlist.xlsx -c 1234
+```   
+If some of thoses users are already enrolled in the course, Teachable API currently ignores them.
+
+### Unenrolling users from a course
+In case you wanted to unenroll a specific set of users from a course, you only have to prepare a file with their fullname and email and give it to the `teachable unenroll` script and it will handle the rest.
+
+```commandline
+usage: teachable unenroll [-h] -i INPUT_FILE -c COURSEID [--dryrun]
+
+Mass unenroll users from Excel or CSV file from a specified course.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i INPUT_FILE, --input_file INPUT_FILE
+                        Excel or CSV file. The only needed columns are 'fullname' and 'email'
+  -c COURSEID, --courseId COURSEID
+                        The id of the course they should be enrolled in
+  --dryrun              Don't send the messages for real, just do a dry run
+``` 
+### Auto-unenrolling users that have been enrolled for too long
+In case you wanted to unenroll everyone that has been enrolled to a course for a certain period of time (e.g. 365 days) there is a super cool script that handle that automaticall: `teachable auto_unenroll`.
+
+```commandline
+usage: teachable auto_unenroll [-h] -d DAYS [--dryrun]
+
+Automatically unenroll all users that have been enrolled for a certain amount of days specified with -d option
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -d DAYS, --days DAYS  Specifies the number of days after which a user will be unenrolled. For instance -d 365 will unenroll every user that has been enrolled for 366 days or more. IMPORTANT: This action cannot be recovered. Use at your own risk.
+  --dryrun              Don't send the messages for real, just do a dry run
+``` 
+
+### Quickly search users from the command line
+If you wanted to get info about some users and what courses they are enrolled in just use `teachable users` script:
+
+```commandline
+usage: teachable users [-h] -s SEARCH
+
+Searches for users and returns a list
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -s SEARCH, --search SEARCH
+                        What to search for (text contained in either email or user name)
+```
+If no search is provided it will list ALL the users in the course, so pay attention ;)
+
+### Quickly get a list of courses in your school
+If you wanted to get a list of courses in your school just use the `teachable courses` script, pretty simple and sweet:
+```commandline
+usage: teachable courses [-h]
+
+List courses in school
+
+optional arguments:
+  -h, --help  show this help message and exit
+```
+
+
+
+### Get User Reports
+
+Use `teachable user_report`. Typing --help will show the parameters info
+```commandline
+usage: teachable user_report [-h] [--emails EMAILS [EMAILS ...] | --search [SEARCH]] [--format [FORMAT]] [--courseid [COURSEID]] [--output_file [OUTPUT_FILE]] [--detailed]
+
+Get your Teachable students report. By default, if no --emails or --search options are provided it will generate a progress summary report of all the students that are enrolled in all your courses. This is very similar to using teachable leaderboard: while this allows to specify a specific set of users, the
+other one allows to specify a course.Pay attention if you have a lot of students because this will be rate limited at some point.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --emails EMAILS [EMAILS ...], -e EMAILS [EMAILS ...]
+                        list of emails (separated by spaces)
+  --search [SEARCH], -s [SEARCH]
+                        Searches specific text in name or email. For instance -s @gmail.com or -s *@gmail.com will look for all the users that have an email ending in @gmail.com. Or -s Jack will look for all the users that have Jack in their name (or surname)
+  --format [FORMAT], -f [FORMAT]
+                        Output format (excel, csv, txt [default])
+  --courseid [COURSEID], -c [COURSEID]
+                        Limit search to this course id only (numeric value)
+  --output_file [OUTPUT_FILE], -o [OUTPUT_FILE]
+                        Output file
+  --detailed, -d        Get detailed progress report
+
+```
+
+By default it will generate a progress summary report on screen of all the students that are enrolled in all your courses.
+
+If you add a specific email it will generate the student summary for the specific email or emails on screen.
+```commandline
+teachable user_report -e STUDENT_EMAIL
+teachable user_report -e STUDENT_EMAIL1 STUDENT_EMAIL2
+```
+Specifying the output file won't output anything to the screen and will save it into a file:
+```commandline
+teachable user_report -e STUDENT_EMAIL -o FILENAME.txt
+```
+You also can choose to export as a csv file (comma separated values):
+```commandline
+teachable user_report -e STUDENT_EMAIL -o FILENAME.csv -f csv
+```    
+If you want a detailed report of the activity of a student or all the students just use the -d flag. For instance:
+```commandline
+teachable user_report -e STUDENT_EMAIL -o FILENAME.csv -f csv
+```
+If you want to do a lazy search of all the students with a specific name or email you can use the flag -s (which can't be used with the flag -e). For instance if you want to search for all the users with a @gmail.com address or named Martin:
+```commandline
+teachable user_report -s @gmail.com -o FILENAME.csv -f csv -d
+teachable user_report -s Martin -o FILENAME.csv -f csv -d
+```    
+### Get Leaderboard directly from Teachable site
+
+With the script `teachable leaderboard` you can get the Leaderboard, i.e. the Summary of the progress report for all the students enrolled in a specific course with just one API call.
+
+Calling teachable leaderboard --help will show:
+```commandline
+usage: teachable leaderboard [-h] [--search [SEARCH]]
+
+Get a Leaderboard CSV in just one command. It will save as many leaderboards CSV as you have courses.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --search [SEARCH], -s [SEARCH]
+                        Searches specific text in the name of the course
+
+```  
+By default this will generate leaderboards for all the courses in your school. If you want to generate the leaderboard for a specific course you can use
+```commandline
+teachable leaderboard -s PART_OF_THE_NAME_OF_YOUR_COURSE
+```
+
+### Remind people to take a course
+
+This is taken care of by the `teachable remind` script:
+```commandline
+usage: teachable remind [-h] [--reportonly | --notifyonly] [--dryrun]
+
+Polls Teachable and sends reminders to those that haven't started a course or haven't done a lesson in a week.
+
+optional arguments:
+  -h, --help        show this help message and exit
+  --reportonly, -r  Send the weekly report, not the notifications to all the users
+  --notifyonly, -n  Send the notifications to the users not the weekly report
+  --dryrun, -d      Don't send the messages for real, just do a dry run
+```
+
+There's a host of variables that you will find in `config_example.ini` that will help you send automatic reminders to people that are enrolled but are inactive (and have not done 100% of the course).
+
+The first part deals with sending emails:
+```ini
+# the username you use to login to your emailserver
+smtp_user = name.surname@email.com
+# the password you use to login to your emailserver
+smtp_pwd = asfagrbsfva
+# your emailserver
+smtp_server = smtp.email.com
+# emailserver port
+smtp_port = 587
+# The from friendly name you will use in your emails
+smtp_from = 'Your Friendly User (Company)'
+```
+Then there is a section dedicated to configure some parameters that help you decide who will receive notifications
+```ini
+# the frequency of the reminders (days) you will config below
+freq = 7
+# the amount of days of inactivity you want to give a user before sending a
+# reminder
+alert_days = 7
+# The amount of days that we wait before flagging to the contact person that
+# a user is not working enough 
+warning = 21
+```
+And finally you can add as many sections as you want for as many companies you are serving through with your course. This can also be configured to send emails to everyone but pay attention, if you have plenty of users it's going to be expensive.
+```ini
+[ACMEINC]
+# the frequency of the reminders (days), in case different than the default
+# freq = 7
+# what domain to search for the users of the specific company have in Teachable
+emailsearch = @acme.com
+# the contact person email you are going to send company reports to 
+contact_email = name.surname@acme.com
+# the contact person name you are going to send company reports to 
+contact_name = Friendly Contact
+# The course IDs these users are signed up to, comma separated
+# course_id = 123513, 1243151, 235345, ...
+course_id = 134135
+```
+Once you have configured all of this you only have to fire the right script (first run with `--dryrun` to see what happens)
+```commandline
+teachable remind --dryrun
+# and then if all goes well...
+teachable remind
+```
+You will find logs for all of this in `/usr/local/var/log/teachable.log`
+
+If you are using the Docker image this script will run every week (or whenever you configure in the `scheduler.ini` file) via the `teachable scheduler`.
+
+### Get your earning statements (and email them to you)
+You can regularly poll Teachable to get your earning statements as an Excel (default) or CSV file using the `teachable statements` script. 
+
+By using the `--email` option the statements will be automatically sent to your email address (the one you use for sending the email that you have configured in `config.ini`) 
+
+```commandline
+usage: teachable statements [-h] [--email] [--all] [--format [FORMAT]] [--ofile [OFILE]]
+
+Get the latest earning statement as Excel (default) or CSV. Optionally send them over email to the school owner
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --email, -e           Send the statements to the school owner
+  --all, -a             Get all the statements, not just the last one
+  --format [FORMAT], -f [FORMAT]
+                        Output format (excel[default], csv)
+  --ofile [OFILE], -o [OFILE]
+                        Output file name
+```
+
+If you are using the Docker image this script will run every week (or whenever you configure in the `scheduler.ini` file) via the `teachable_scheduler`.
+
+## Scheduler
+If you are like me you want to automate as much as possible your school management and put things on auto-pilot (which is the whole reason why I have built this suite of management scripts ;) ).
+
+That's why we have `teachable scheduler` which gets configured by setting up the `scheduler.ini` config file (there is an example no worries), for instance you can run `echo test` every minute just by setting the following config section in that file:
+
+```ini
+[dumb_echo]
+# Name of the script to call
+script = echo
+# options to the script
+opts = test
+# how often it should run
+every = 1
+# when to schedule the task (you can put here a day like saturday, sunday, ... or
+# you can put here weeks . Check schedule docs for all possible syntax
+when = minute
+# at what time
+at_when =
+```
+
+The scheduler will reload automatically every time you re-configure the `scheduler.ini` config file, so you don't have to restart every time the container for a simple configuration change.
+
+## Cache and rate limits
+To avoid reaching any rate limit, the script caches the courses' data into a file using `shelve`. This file caching mechanism does not support concurrent reading/writing; because of this if you try to run 2 instances of the API the second one will wait until the first one is done and released the cache files.
+
+The default cache file expiration is set to 3 days in the `config_example.ini`, but you can configure that how you want.
+
+## Debugging
+Remember: this is still in active development and in beta so there will be some debugging to do every once in a while. Everything gets logged in the logfile that you find at `/usr/local/teachable/log/` in the Docker container. I hope things are clear in there and will help you.
+
+That's it, enjoy ;)
+
+Stefano
+
+
