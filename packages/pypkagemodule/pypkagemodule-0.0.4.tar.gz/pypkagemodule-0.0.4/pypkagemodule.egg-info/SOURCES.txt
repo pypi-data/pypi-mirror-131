@@ -1,0 +1,13 @@
+README.md
+setup.py
+pypkagemodule.egg-info/PKG-INFO
+pypkagemodule.egg-info/SOURCES.txt
+pypkagemodule.egg-info/dependency_links.txt
+pypkagemodule.egg-info/top_level.txt
+pypkg/__init__.py
+pypkg/add.py
+pypkg/manage.py
+pypkg/subtract.py
+pypkg/src/__init__.py
+pypkg/src/devide.py
+pypkg/src/multiply.py
