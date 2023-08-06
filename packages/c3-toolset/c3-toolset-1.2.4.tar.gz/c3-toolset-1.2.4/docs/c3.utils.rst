@@ -1,0 +1,42 @@
+Utilities package
+==================
+
+Parsers module
+--------------
+
+.. automodule:: c3.utils.parsers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Qutip utilities module
+-----------------------
+
+.. automodule:: c3.utils.qt_utils
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Tensorflow utilities module
+----------------------------
+
+.. automodule:: c3.utils.tf_utils
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Miscellaneous utilities module
+------------------------------
+
+.. automodule:: c3.utils.utils
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: c3.utils
+   :members:
+   :undoc-members:
+   :show-inheritance:
