@@ -1,0 +1,3 @@
+[console_scripts]
+gestured-meeting=gestured_meeting:cli
+
