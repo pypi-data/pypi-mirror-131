@@ -1,0 +1,9 @@
+# Install packages from requirements.txt
+-r requirements.txt
+
+markdown
+docutils
+
+flake8
+coverage
+coveralls
