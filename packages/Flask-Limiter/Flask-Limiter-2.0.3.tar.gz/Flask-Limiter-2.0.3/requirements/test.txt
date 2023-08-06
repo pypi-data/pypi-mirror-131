@@ -1,0 +1,13 @@
+-r main.txt
+pytest
+pytest-cov
+mock
+coverage
+hiro>0.1.6
+ordereddict
+flask-restful
+flask-restx
+redis
+pymemcache
+Flask[async]>=2.0.0
+asgiref>=3.2
