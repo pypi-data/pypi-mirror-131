@@ -1,0 +1,17 @@
+ameilisearch/__init__.py,sha256=dGEL8BBa5efA7JHs3exB1MaF3i9Xqd3Y88Y9UacHA0c,49
+ameilisearch/_httprequests.py,sha256=StXKc2JU3s76_Aon3_slA66EiWlzqU_KDln_yabVlNI,4030
+ameilisearch/client.py,sha256=8_2PJTpwLzJb77g3e6jf41B4Icru7NeS5xx61bjf7Yg,11647
+ameilisearch/config.py,sha256=mFRHeqTvBgn2yRpGzomooU8LtJxlT_ibJBnJeYl1zVg,1294
+ameilisearch/errors.py,sha256=vlQ788G8JkasZN4iT7Ziuf28Utn0y4GUPJs9O8_nU2c,1523
+ameilisearch/index.py,sha256=osMGLakOBDUlP5C7OOI7Egc_VYr8vcAZVX_6oxM-OBk,45356
+ameilisearch/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=JquEk811o6Xk23DiwnGXurR2P9w4cXqM80m5SUvncw0,84
+tests/common.py,sha256=qEeMqo_vjdc2C9mjvIgVN66OXbhSu5dGUWePQA8CoFk,346
+tests/conftest.py,sha256=q-aH0tBhMfo-mbXgY1CqZeS1HmP_Km_hXOIRQPsOyn4,3136
+tests/helper.py,sha256=3p2GbdknDx34uS5RPqvL8cdR9t8PrvRdqoUfUXf_bFE,781
+tests/types.py,sha256=O7jiMxohlwcmx2VJGZvx-Fjqefq_eVt3rouZi1nX9r0,136
+ameilisearch-0.2.2.dist-info/LICENSE,sha256=SPOewHncEosCes-kCGliAcxjHAPA_haCMYOjTiqozhw,1067
+ameilisearch-0.2.2.dist-info/METADATA,sha256=ueqPN8sFfofdEBmJ44IMtUV2iO8dGu-sm7jMWdvNWps,2360
+ameilisearch-0.2.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ameilisearch-0.2.2.dist-info/top_level.txt,sha256=N7lNveLux0Vhq7beLTz-W-a8-aV5jiGVnWns2ucshQE,19
+ameilisearch-0.2.2.dist-info/RECORD,,
