@@ -1,0 +1,6 @@
+requests==2.21.0
+lxml==4.6.2
+pytest==4.6.3
+allure-pytest==2.9.45
+psycopg2-binary==2.9.2
+cx-Oracle==8.3.0
