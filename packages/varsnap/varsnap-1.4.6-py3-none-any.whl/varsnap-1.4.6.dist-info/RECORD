@@ -1,0 +1,14 @@
+varsnap/__init__.py,sha256=PspjnTlHNbTz-auch2-hlySaeuS3GJP-bTtk4CPduoU,132
+varsnap/__version__.py,sha256=S32TURTnK6YqqMTV_yPlUChTzspEJPjH7a2gxdwP_Sc,63
+varsnap/assert_generator.py,sha256=3fWPN5D-CqEiqujxW1056YYvTZe6UIRV1vpm3rFymlA,2459
+varsnap/core.py,sha256=33HbyQ0EbmUmrEG7yZIUSQZiZJn5vmyHBQKNLIAF-04,14957
+varsnap/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+varsnap/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+varsnap/tests/test_assert_generator.py,sha256=tjhPfTtWyTWWosphe6pWo7yABxudMC8F5AV31jdR3Gk,4667
+varsnap/tests/test_core.py,sha256=gMkF-zROki0Hu5B1yq-yp_cfVYb-_hGQWIOhNsd1pek,13783
+varsnap/tests/test_integration.py,sha256=zYV7cWwv0EeZ6QMuMlB2OYNzMAdmroe-8zAI2YMls1A,7223
+varsnap/tests/test_version.py,sha256=kpwuiGG6oMBGBr_8blGDmZaIwcC-8o2KedvTLpF690Q,168
+varsnap-1.4.6.dist-info/METADATA,sha256=uwLm34tUSI-IW7p5RT1_HhVLz3ttnRv0Tv5KjsY8riU,3182
+varsnap-1.4.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+varsnap-1.4.6.dist-info/top_level.txt,sha256=QS1KuZB7CWhYscPNsTb8HugtSHrZ2tVRSwWzhBjlgko,8
+varsnap-1.4.6.dist-info/RECORD,,
