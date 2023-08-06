@@ -1,0 +1,188 @@
+'''
+# Daily spend to slack
+
+A construct that deploys a CloudWatch cronjob that will trigger a Lambda that will fetch the yesterday usage of AWS and send it to a SNS as a spoofed ECR CloudWatch event that can be parsed by AWS Chatbot and send to Slack.
+
+Yes, that was a mouthful. But the general idea is that to create a FinOps/Cost optimization culture in your team, your team also needs to know what they are spending. That is why I created this. This construct will deliver the yesterday usage to your slack channel of choice. This can also be a private channel.
+
+![Example of Daily Spend Bot](https://github.com/stroobants-dev/daily-spend-to-slack/raw/main/images/slackexample.png)
+
+## Installation
+
+### Manual steps
+
+Your AWS account must be connected with your Slack channel. This **can't be done by IaC** but involves manual steps.
+
+1. Follow [the steps of Step 1](https://docs.aws.amazon.com/chatbot/latest/adminguide/getting-started.html#chat-client-setup) in the category "Setting up AWS Chatbot with Slack"
+
+### CDK steps
+
+```python
+# Example automatically generated from non-compiling source. May contain errors.
+'use strict';
+import { App, Stack } from 'aws-cdk-lib';
+import { Schedule } from 'aws-cdk-lib/aws-events';
+import { DailySpendToSlack } from './index';
+
+const app = new App();
+const stack = new Stack(app, 'DailySpendToSlack');
+
+new DailySpendToSlack(stack, 'DailySpendToSlack', {
+  schedule: Schedule.cron({ minute: '0', hour: '9' }),
+  slackWorkspaceId: '',
+  slackChannelId: '',
+  slackChannelName: '',
+  accountName: 'stroobants.dev',
+});
+```
+
+#### Parameters
+
+* `schedule`: Schedule - The schedule it should run on, for example `Schedule.cron({ minute: '0', hour: '9' })` means everyday at 09:00 UTC
+* `slackWorkspaceId`: string - The ID that AWS generates for (see picture below)
+* `slackChannelId`: string - The ID of the Slack Channel (Open slack, right-click on the channel you want the bot in, Copy link) -> `https://cloudar.slack.com/archives/{slackChannelId}`)
+* `slackChannelName`: string - The name of the Slack channel (this will be used to generate the Configuration name)
+* `accountName`: string - You can give the bot a recognizable name, lowercase, max 30 and only `.-` allowed (could be more but that is what I tested)
+
+![your workspace](https://github.com/stroobants-dev/daily-spend-to-slack/blob/main/images/workspace-id.png)
+
+## License
+
+[Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
+'''
+import abc
+import builtins
+import datetime
+import enum
+import typing
+
+import jsii
+import publication
+import typing_extensions
+
+from ._jsii import *
+
+import aws_cdk.aws_events
+import constructs
+
+
+class DailySpendToSlack(
+    constructs.Construct,
+    metaclass=jsii.JSIIMeta,
+    jsii_type="daily-spend-to-slack.DailySpendToSlack",
+):
+    def __init__(
+        self,
+        scope: constructs.Construct,
+        id: builtins.str,
+        *,
+        account_name: builtins.str,
+        schedule: aws_cdk.aws_events.Schedule,
+        slack_channel_id: builtins.str,
+        slack_channel_name: builtins.str,
+        slack_workspace_id: builtins.str,
+    ) -> None:
+        '''
+        :param scope: -
+        :param id: -
+        :param account_name: 
+        :param schedule: 
+        :param slack_channel_id: 
+        :param slack_channel_name: 
+        :param slack_workspace_id: 
+        '''
+        props = DailySpendToSlackProps(
+            account_name=account_name,
+            schedule=schedule,
+            slack_channel_id=slack_channel_id,
+            slack_channel_name=slack_channel_name,
+            slack_workspace_id=slack_workspace_id,
+        )
+
+        jsii.create(self.__class__, self, [scope, id, props])
+
+
+@jsii.data_type(
+    jsii_type="daily-spend-to-slack.DailySpendToSlackProps",
+    jsii_struct_bases=[],
+    name_mapping={
+        "account_name": "accountName",
+        "schedule": "schedule",
+        "slack_channel_id": "slackChannelId",
+        "slack_channel_name": "slackChannelName",
+        "slack_workspace_id": "slackWorkspaceId",
+    },
+)
+class DailySpendToSlackProps:
+    def __init__(
+        self,
+        *,
+        account_name: builtins.str,
+        schedule: aws_cdk.aws_events.Schedule,
+        slack_channel_id: builtins.str,
+        slack_channel_name: builtins.str,
+        slack_workspace_id: builtins.str,
+    ) -> None:
+        '''
+        :param account_name: 
+        :param schedule: 
+        :param slack_channel_id: 
+        :param slack_channel_name: 
+        :param slack_workspace_id: 
+        '''
+        self._values: typing.Dict[str, typing.Any] = {
+            "account_name": account_name,
+            "schedule": schedule,
+            "slack_channel_id": slack_channel_id,
+            "slack_channel_name": slack_channel_name,
+            "slack_workspace_id": slack_workspace_id,
+        }
+
+    @builtins.property
+    def account_name(self) -> builtins.str:
+        result = self._values.get("account_name")
+        assert result is not None, "Required property 'account_name' is missing"
+        return typing.cast(builtins.str, result)
+
+    @builtins.property
+    def schedule(self) -> aws_cdk.aws_events.Schedule:
+        result = self._values.get("schedule")
+        assert result is not None, "Required property 'schedule' is missing"
+        return typing.cast(aws_cdk.aws_events.Schedule, result)
+
+    @builtins.property
+    def slack_channel_id(self) -> builtins.str:
+        result = self._values.get("slack_channel_id")
+        assert result is not None, "Required property 'slack_channel_id' is missing"
+        return typing.cast(builtins.str, result)
+
+    @builtins.property
+    def slack_channel_name(self) -> builtins.str:
+        result = self._values.get("slack_channel_name")
+        assert result is not None, "Required property 'slack_channel_name' is missing"
+        return typing.cast(builtins.str, result)
+
+    @builtins.property
+    def slack_workspace_id(self) -> builtins.str:
+        result = self._values.get("slack_workspace_id")
+        assert result is not None, "Required property 'slack_workspace_id' is missing"
+        return typing.cast(builtins.str, result)
+
+    def __eq__(self, rhs: typing.Any) -> builtins.bool:
+        return isinstance(rhs, self.__class__) and rhs._values == self._values
+
+    def __ne__(self, rhs: typing.Any) -> builtins.bool:
+        return not (rhs == self)
+
+    def __repr__(self) -> str:
+        return "DailySpendToSlackProps(%s)" % ", ".join(
+            k + "=" + repr(v) for k, v in self._values.items()
+        )
+
+
+__all__ = [
+    "DailySpendToSlack",
+    "DailySpendToSlackProps",
+]
+
+publication.publish()
