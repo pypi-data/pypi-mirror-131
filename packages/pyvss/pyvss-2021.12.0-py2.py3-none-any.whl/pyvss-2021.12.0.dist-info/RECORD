@@ -1,0 +1,11 @@
+pyvss/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyvss/const.py,sha256=OOM3MDq5pBzxmx_nh4qZjNJ48L3G0Vu2CdTXe_B3RMU,6414
+pyvss/enums.py,sha256=DoIMJ9YPbvwtmjP91m9Gho7W-NGi7sxWjDh1McvWa6I,1409
+pyvss/exceptions.py,sha256=_6MmBLDeo4xLhV3fOpbT-3RDKA0zxBFTU2Xk43CBVuE,1020
+pyvss/helper.py,sha256=ZW0ccP_tisMfE1PEMUFDdqmxzieTigKjpFdoF-xKOXE,2808
+pyvss/manager.py,sha256=XvRCniv5l3gicrgUAOcETSaxDJnC8ewM_vvU1pDoD_w,258271
+pyvss-2021.12.0.dist-info/LICENSE,sha256=S-66BixOgVGxq5L07VPMJgSQVMtUbT8OVkJVLtb9hyo,1077
+pyvss-2021.12.0.dist-info/METADATA,sha256=Hliqy9rkkjgN7gfjlhDnYaVV9QCnNNZdkWt20yLDIcE,8527
+pyvss-2021.12.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pyvss-2021.12.0.dist-info/top_level.txt,sha256=G2sITBKMrEXH1oNfoVLXQWXi3KE0kw1QbA95o5cb7x4,6
+pyvss-2021.12.0.dist-info/RECORD,,
