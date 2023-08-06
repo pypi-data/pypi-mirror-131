@@ -1,0 +1,14 @@
+cram2fastq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cram2fastq/cram2fastq.py,sha256=yZhggga4Uu1JGQXjxTapXkgCGVNx9NURV_WXIi1G04U,12288
+cram2fastq/cramfastq.sh,sha256=k5Gwpd_SiaY9_ZjJvEkowKkRw25T1vZho4F7k1LVnSA,645
+cram2fastq/cramfastq_bulk.sh,sha256=QJoTubIuyDe0IvA_PU1sZSpQANQaLF4pQ4HPyAcGC4o,672
+cram2fastq/rename_fastq.py,sha256=4gfIL-EJLu12XkCRHDin8EA_QXH6clfKATXHb0MLyKk,352
+cram2fastq/rename_fastq2.py,sha256=o_2qL85_Q3otTjjgyh0bQRaDIDkRcMolAWhDyJ9oqyU,431
+cram2fastq-0.0.2.data/data/bin/cram2fastq.py,sha256=yZhggga4Uu1JGQXjxTapXkgCGVNx9NURV_WXIi1G04U,12288
+cram2fastq-0.0.2.data/data/bin/cramfastq.sh,sha256=k5Gwpd_SiaY9_ZjJvEkowKkRw25T1vZho4F7k1LVnSA,645
+cram2fastq-0.0.2.data/data/bin/cramfastq_bulk.sh,sha256=QJoTubIuyDe0IvA_PU1sZSpQANQaLF4pQ4HPyAcGC4o,672
+cram2fastq-0.0.2.data/data/bin/rename_fastq.py,sha256=4gfIL-EJLu12XkCRHDin8EA_QXH6clfKATXHb0MLyKk,352
+cram2fastq-0.0.2.dist-info/METADATA,sha256=sz9X1U0wrI2ItPRISkGls1TLD0pNtsNZqmmMi_4oHYo,3565
+cram2fastq-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cram2fastq-0.0.2.dist-info/top_level.txt,sha256=QRk1H8GqVSVbJTS8mvhSNTozkRnU5XsfEVqbb18XdYA,11
+cram2fastq-0.0.2.dist-info/RECORD,,
