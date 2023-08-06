@@ -1,0 +1,12 @@
+Hey {{firstname}},
+
+whether you remembered it or not it's been {{days}} days or more that you have been having access to the {{course}} course.
+
+This email is to notify that we have just revoked access for you.
+
+If you believe this is a mistake please get in touch by replying to this email.
+
+Thanks for having been with us and happy learning!
+--
+{{name_from}}
+
