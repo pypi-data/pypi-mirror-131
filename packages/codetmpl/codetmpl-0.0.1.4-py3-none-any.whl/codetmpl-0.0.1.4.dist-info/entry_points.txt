@@ -1,0 +1,3 @@
+[console_scripts]
+codetmpl = codetmpl.clitools.cli:main
+
