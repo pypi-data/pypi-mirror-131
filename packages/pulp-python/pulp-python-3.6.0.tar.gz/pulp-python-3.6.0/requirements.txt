@@ -1,0 +1,5 @@
+pulpcore>=3.17.0,<3.20
+pkginfo
+packaging
+bandersnatch>=5.0.0
+pypi-simple
