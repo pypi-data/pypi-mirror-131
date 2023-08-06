@@ -1,0 +1,12 @@
+.gitignore
+README.md
+setup.py
+aicore_nb_tool/__init__.py
+aicore_nb_tool/__main__.py
+aicore_nb_tool/gui.py
+aicore_nb_tool/questions_utils.py
+aicore_nb_tools.egg-info/PKG-INFO
+aicore_nb_tools.egg-info/SOURCES.txt
+aicore_nb_tools.egg-info/dependency_links.txt
+aicore_nb_tools.egg-info/requires.txt
+aicore_nb_tools.egg-info/top_level.txt
