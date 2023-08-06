@@ -1,0 +1,12 @@
+formal/__init__.py,sha256=UHqEfwNPyMiG8-B46ZQsouLL6YBGiLaFEjHcG89ecpI,591
+formal/sqlcommenter/__init__.py,sha256=h1wci_UBdiHbwmyLgN8F_5jveRh38FJo6QHtq3r2LoQ,934
+formal/sqlcommenter/psycopg2/__init__.py,sha256=UHqEfwNPyMiG8-B46ZQsouLL6YBGiLaFEjHcG89ecpI,591
+formal/sqlcommenter/psycopg2/extension.py,sha256=YZaKrBbNK29aUbpPoXHcpa7PpbyYL0lS6cHGVB5_m8E,1100
+tests/generic/__init__.py,sha256=UHqEfwNPyMiG8-B46ZQsouLL6YBGiLaFEjHcG89ecpI,591
+tests/generic/test_generate_sql_comment.py,sha256=KP6B4EoNuFp-6w5ttJN_vB07h0krAsOIXIjfM-FwOSs,1039
+tests/psycopg2/__init__.py,sha256=UHqEfwNPyMiG8-B46ZQsouLL6YBGiLaFEjHcG89ecpI,591
+tests/psycopg2/tests.py,sha256=ukpopX4FdtP2xrNxj68V2RlJmj0JROKew5N_6As7wyE,1635
+formal_sqlcommenter-1.0.6.dist-info/METADATA,sha256=vMR3qNWDaZ6MsukU7aLVSAofIyy-AnesaNk-HCe6YvA,1986
+formal_sqlcommenter-1.0.6.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+formal_sqlcommenter-1.0.6.dist-info/top_level.txt,sha256=JPoILDaTPobiMmvAUl3lL6czGVPsjmZGBZLluHmklQ8,13
+formal_sqlcommenter-1.0.6.dist-info/RECORD,,
