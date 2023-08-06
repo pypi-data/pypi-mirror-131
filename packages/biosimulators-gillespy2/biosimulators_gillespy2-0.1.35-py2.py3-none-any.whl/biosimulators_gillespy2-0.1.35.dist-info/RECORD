@@ -1,0 +1,11 @@
+biosimulators_gillespy2/__init__.py,sha256=zTwTRm_j4-46s2wjCLNCrv4OeSpv3ex_nNvSWLxv0Is,529
+biosimulators_gillespy2/__main__.py,sha256=m2kzXsoHZT9p8EhF0Nqn5CI3wqTTJ1do_-4ojwHbpM4,729
+biosimulators_gillespy2/_version.py,sha256=kfWM57rrSEHztBqFbzbAZB_ZGDNbRWAvfcijVfDyyH8,23
+biosimulators_gillespy2/core.py,sha256=oU_TQjx9GYtUiwOdvYU0cAlI1aFlyLY07hY4zDwrsok,17355
+biosimulators_gillespy2/data_model.py,sha256=h6eFDlFRuxY4Gu4QKxASK1yLoHNRjs_M3v2Erts9o7g,11891
+biosimulators_gillespy2-0.1.35.dist-info/LICENSE,sha256=HEgoRB3A2xcLy7Uu8JZdMvnKnnJLmifKaaJQwEePmUo,1110
+biosimulators_gillespy2-0.1.35.dist-info/METADATA,sha256=xXRVerBstpbtrsOyV3WmtT7lchkBPAcY9MqMATKFoTs,5210
+biosimulators_gillespy2-0.1.35.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+biosimulators_gillespy2-0.1.35.dist-info/entry_points.txt,sha256=UF2Eu5Ct8JWUtWG8wVgi_uj7WT8ZgnLFoYwF74wPqw4,83
+biosimulators_gillespy2-0.1.35.dist-info/top_level.txt,sha256=JpFHAjPB1JEYczx-6Qe2IOkrGfVho_kEwHeViiPKTsw,24
+biosimulators_gillespy2-0.1.35.dist-info/RECORD,,
