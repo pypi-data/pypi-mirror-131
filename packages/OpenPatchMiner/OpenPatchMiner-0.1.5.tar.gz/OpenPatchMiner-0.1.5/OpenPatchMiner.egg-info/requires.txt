@@ -1,0 +1,10 @@
+openslide-python
+scikit-image
+matplotlib
+numpy
+tqdm
+pandas
+wheel
+twine
+keyring
+pyyaml
