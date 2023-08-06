@@ -1,0 +1,17 @@
+CPCLI/__init__.py,sha256=ywTL2d0Fy9NmQUA56qJfvwdLzWJ-XeDVXppx6GbBZ3o,1184
+CPCLI/core.py,sha256=IEozuINPFKtHUbpmd550ntaUWZKeMQ_-8pNgMrgE4CA,1554
+CPCLI/file_filtering_functions.py,sha256=9ypU_1IEpp77fR57GhraeJJV4I0ik0ZNHw9cLOh9hfI,899
+CPCLI/utils.py,sha256=eKXwx7HzSYK_4iEnluFwokUpfrBLggZ6z9uY7CFt1kc,4411
+CPCLI/decorator/__init__.py,sha256=F4aynwAhgN8e1UEisxg8PuSUHNc535F62gpoRKRyqgU,315
+CPCLI/overall_processing_function/__init__.py,sha256=RFBsf2tfkmkK5gLmXdnyzyK5GwUaHgHBMVgejromI4U,339
+CPCLI/overall_processing_function/_future_top.py,sha256=ifWmiLAPkkDH1e5tPaXbnSZkaIMpOHqvIrfchcrivUE,1649
+CPCLI/overall_processing_function/group.py,sha256=HMcfZqI7-ZjFQlmFDhynbyboaFcBpV3Sd4lM0ucv0ho,4683
+CPCLI/processing_function/__init__.py,sha256=15hPM-jgY7E_e53idBylMtFsyGFEhPZ3U3xr2tmQO0k,453
+CPCLI/processing_function/addhead.py,sha256=fyYO7KYiMiVVp9JXe4a56hw40i4uanBEzFuAqqVQE-A,657
+CPCLI/processing_function/delete_blank_lines.py,sha256=2v3bctpiCHrYVHMIG0zwAWVZQvwtBEd5UkWvu_bafRg,731
+CPCLI/processing_function/delete_useless_strings.py,sha256=61UjA8uqV4xxQX3EOXOcnPd_a-Tul4tqIWgbb-u6MYU,1238
+CP_CLI-1.0.2.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+CP_CLI-1.0.2.dist-info/METADATA,sha256=vcBbeR7PHNS9MfaYPAcwuUAqMU953nGQIEXz9XlSRMc,2703
+CP_CLI-1.0.2.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+CP_CLI-1.0.2.dist-info/top_level.txt,sha256=kRGZvR21BV8Sw9CC01GtEYu6IRqBXiDql_I2tqXwwZQ,6
+CP_CLI-1.0.2.dist-info/RECORD,,
