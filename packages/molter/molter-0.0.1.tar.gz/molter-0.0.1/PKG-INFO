@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: molter
+Version: 0.0.1
+Summary: Shedding a new skin on Dis-Snek's commands.
+Home-page: https://github.com/Astrea49/molter
+Author: Astrea49
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# molter
+(WIP) Shedding a new skin on Dis-Snek's commands.
+
+
