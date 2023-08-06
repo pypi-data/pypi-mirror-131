@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+<title>POLITICO Minutes | Native Advertisement</title>
+{% endblock %}
+
+{% block api %}
+  {{ block.super }}
+  <meta name="NATIVE_AD" content="{{ native_ad }}">
+{% endblock %}
+
+{% block styles %}
+  {{ block.super }}
+
+  <link rel="stylesheet" href="{% static 'minutes/css/main.native-ad.css' %}">
+{% endblock %}
+
+{% block app %}
+<script type="text/javascript" src="{% static 'minutes/js/main.native-ad.js' %}"></script>
+{% endblock %}
