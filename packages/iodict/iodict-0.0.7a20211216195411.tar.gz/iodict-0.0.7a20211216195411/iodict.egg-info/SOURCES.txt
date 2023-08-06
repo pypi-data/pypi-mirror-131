@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+iodict/__init__.py
+iodict/meta.py
+iodict.egg-info/PKG-INFO
+iodict.egg-info/SOURCES.txt
+iodict.egg-info/dependency_links.txt
+iodict.egg-info/not-zip-safe
+iodict.egg-info/top_level.txt
