@@ -1,0 +1,8 @@
+pandas
+numpy
+rdkit-to-params
+molecular-rectifier
+requests
+
+[jupyter]
+jupyter
