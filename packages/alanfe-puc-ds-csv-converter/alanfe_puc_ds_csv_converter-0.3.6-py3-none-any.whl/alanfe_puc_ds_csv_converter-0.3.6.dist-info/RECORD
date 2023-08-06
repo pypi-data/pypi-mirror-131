@@ -1,0 +1,10 @@
+alanfe_puc_ds_csv_converter/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+alanfe_puc_ds_csv_converter/converter.py,sha256=FDDs8w29bLEMkIT-mMyyYZ-Vz49J50oFCERpaubVC3o,3384
+alanfe_puc_ds_csv_converter/model/Matrix.py,sha256=B6GB7KcLWAqVRNxRKU9I1mus0FCpWV3cT-otKz4j-as,441
+alanfe_puc_ds_csv_converter/readers.py,sha256=NoXxmd8sdOCzfchXggCVGmJvFk2L4XIgHlMlU82ULaE,3229
+alanfe_puc_ds_csv_converter/utils.py,sha256=ze0WEmkkA9E1NGyPvXJj8ZPbqA2ARaS2tPpD8CI1b-M,481
+alanfe_puc_ds_csv_converter/writers.py,sha256=Un4aG-9sHnTv3ORXeebWtHLm1tdDMGEMzOIug5_Yuww,3076
+alanfe_puc_ds_csv_converter-0.3.6.dist-info/entry_points.txt,sha256=g-ptAqqHF_3FvORMSgMZlqOAnp0lsKAKhY4DCXXWJAo,77
+alanfe_puc_ds_csv_converter-0.3.6.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+alanfe_puc_ds_csv_converter-0.3.6.dist-info/METADATA,sha256=fmr4D4_XKTThtHphPJ819ypzN4KlnMRQgeSkSYJnO7E,2071
+alanfe_puc_ds_csv_converter-0.3.6.dist-info/RECORD,,
