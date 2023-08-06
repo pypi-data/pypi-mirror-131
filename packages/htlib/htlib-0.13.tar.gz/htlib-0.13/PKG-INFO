@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: htlib
+Version: 0.13
+Summary: htlib package
+Home-page: https://github.com/harol1997/htlib
+Author: Harol Alvarado
+Author-email: harolav3@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+License-File: License.txt
+
+documentation >> https://htlib.readthedocs.io/en/latest/
+
