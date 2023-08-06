@@ -1,0 +1,10 @@
+django_querycache/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_querycache/cacheman.py,sha256=5qP1rScCOStsn0Kiv5Y4K9vumpR9QCONu15AjhHZ8zY,6210
+django_querycache/fingerprinting.py,sha256=CJB9wcXxmH_7ni6kUkdvGhUcJ7tMzgtY98nDvlMD3y4,10591
+django_querycache/hashfunctions.py,sha256=KkpDqZpb42megjMd_rXK7OB_HryYt3aAIonrxWrt8uQ,2043
+django_querycache/type_annotations.py,sha256=v1-dXiC7rF4nbU2qyUt3IFKa4nLEVwNUaUD4sjhI_MY,1311
+django_querycache/utils.py,sha256=hLmy7HHJ_RM3HcN-z6lexvBjh4zfkCuTi9HRlcF4xb0,2632
+django_querycache-0.2.1.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+django_querycache-0.2.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+django_querycache-0.2.1.dist-info/METADATA,sha256=pCMfYQDb-gNWaANVwm0Swgr6rJw6tkZ5E8_ivJjeycA,473
+django_querycache-0.2.1.dist-info/RECORD,,
