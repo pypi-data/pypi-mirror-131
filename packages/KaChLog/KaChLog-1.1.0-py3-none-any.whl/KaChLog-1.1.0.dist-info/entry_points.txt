@@ -1,0 +1,6 @@
+[console_scripts]
+changelog = kachlog.commands:cli
+cl = kachlog.commands:cli
+kachlog = kachlog.commands:cli
+kl = kachlog.commands:cli
+

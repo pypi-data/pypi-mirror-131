@@ -1,0 +1,178 @@
+Metadata-Version: 2.1
+Name: KaChLog
+Version: 1.1.0
+Summary: Command line interface for managing CHANGELOG.md files
+Home-page: https://gitlab.com/schunka/kachlog
+Author: Ales Jirasek
+Author-email: schunkac@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Provides-Extra: dev
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: invoke ; extra == 'dev'
+Requires-Dist: mock ; extra == 'dev'
+Requires-Dist: prospector ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+
+# KaChLog
+
+A command line interface for managing your CHANGELOG.md files. Designed to make it easy to manage your repositories
+release history according to [Keep a Changelog](http://keepachangelog.com/) v1.1.0. and [Semantic Versioning](http://semver.org/)
+
+## Installation
+install using `pip` via:
+
+```
+pip install kachlog
+```
+
+## How To
+To keep an accurate changelog, whenever you commit a change that affects how end users use
+your project, use this command line tool to add a line to the changelog. 
+
+If you added a new feature, use something like `kachlog added "added feature x"`. This will add a
+line to your `CHANGELOG.md` under the `### Added` section. 
+
+When you are ready for release, run `kachlog release` and that will infer the correct semantic 
+version based on the types of changes since the last release. For example your `added` change should
+prompt a `minor (0.X.0)` release. A `removed` change would prompt a `major (X.0.0)` version bump and `fixed` or `changed` changes
+ would prompt a `patch (0.0.X)`.
+ 
+You can manually override what type of of release via `kachlog release --minor` using the `--patch`, `--minor` or `--major`
+flags. You can also explicitly pick any version complying with semantic versioning by using `--custom=VERSION` where `VERSION` is any higher version you want.
+
+
+## Commands
+`kachlog init (--sections)` -> Creates a CHANGELOG.md with some basic documentation in it.
+
+`kachlog (added|changed|deprecated|removed|fixed|security) "<message>"` -> adds a line to the appropriate section
+
+`kachlog release (--major|minor|patch|suggest) (--custom=VERSION) (--yes) (--sections)` -> Cuts a release for the changelog, incrementing the version.
+
+`kachlog current` -> returns the current version of the project based on the changelog
+
+`kachlog suggest` -> returns the suggested version of the next release based on the current logged changes
+
+`kachlog --version` -> get the current version of the changelog tool
+
+`kachlog --help` -> show help screen
+
+`kachlog <command> --help` -> show help screen for `command`
+
+## Shortcut
+If you get tired of typing out `kachlog` for every command, it can also be accessed via its shorthand `kl`
+This applies to commnds too, eg. you can use `kachlog init` shortened to `kl i` or `kachlog release` to `kl rel`,
+sadly due to used cli (click) parsing library, it is not possible to automaticaly expand long commands. 
+There is also an `changelog` alias build in a CLI, which means you can use `changelog` instead of `kachlog` and the same aplies for shorthand there is `cl` command shortcut.
+
+## Example Usage
+```
+>>> kachlog current  # can also be written as kl cu or changelog cu or cl current you name it
+1.4.1
+>>> kachlog added "add new feature x"
+>>> kachlog suggest
+1.5.0
+>>> kachlog removed "removing key feature y"
+>>> kl release
+Planning on releasing version 2.0.0. Proceed? [y/N]: n
+>>> kl release --minor
+>>> kl current
+1.5.0
+```
+
+Example Changelog as a result of the above
+
+```
+# CHANGELOG
+
+All notable changes to this project will be documented in this file.
+This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a Changelog](http://keepachangelog.com/).
+
+
+## [Unreleased]
+
+## [1.5.0] - 2017-06-09
+
+### Added
+- add new feature x
+
+### Removed
+- remove key feature y
+
+
+## [1.4.1] - 2017-05-29
+
+### Changed
+- updating documentation
+
+...
+```
+
+## empty Unreleased sections
+
+KaChLog can outputs all sections for `Unreleased` version. As not everone uses this tool and when sections are already written down, it helps others to use proper section for their changes.
+
+```
+>>> kl init --sections
+Initializing Changelog
+Created CHANGELOG.md
+
+>>> cat CHANGELOG.md
+# CHANGELOG
+
+All notable changes to this project will be documented in this file.
+This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a Changelog](http://keepachangelog.com/).
+
+## [Unreleased]
+### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+```
+
+
+## pyhon Usage
+
+It is possible to use underlying library in `setuptools` or any other python tool to get version (current or suggested) for packaging, deploying and any other type of scripting.
+
+```python
+from kachlog.utils import ChangelogUtils
+
+current_version = ChangelogUtils.get_current_version()
+new_version = ChangelogUtils.get_new_release_version()
+...
+
+```
+
+[utils.py](src/kachlog/utils.py) is a huge source of posibilities to programatically work with CHANGELOG.md
+
+## next
+
+As the `CHANGELOG.md` file is internaly parsed into structure, it should be easy to export/output into other formats that suits your needs and helps to automate things.
+
+
