@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+src/guirlande_hub_client.egg-info/PKG-INFO
+src/guirlande_hub_client.egg-info/SOURCES.txt
+src/guirlande_hub_client.egg-info/dependency_links.txt
+src/guirlande_hub_client.egg-info/top_level.txt
+src/guirlande_hub_client_package/__init__.py
+src/guirlande_hub_client_package/ghc.py

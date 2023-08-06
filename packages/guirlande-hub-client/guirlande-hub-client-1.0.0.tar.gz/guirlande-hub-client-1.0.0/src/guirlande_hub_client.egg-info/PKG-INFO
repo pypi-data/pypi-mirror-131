@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: guirlande-hub-client
+Version: 1.0.0
+Summary: Guirlande Hub module Python client used to communicate with the backend
+Home-page: https://github.com/la-guirlande/module-client
+Author: Lelberto
+Author-email: jsurieux@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/la-guirlande/module-client/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# Guirlande Hub - Module client
+
+This client is used to communicate with the Guirlande Hub backend. All connected objects must integrate this library.
+
+
