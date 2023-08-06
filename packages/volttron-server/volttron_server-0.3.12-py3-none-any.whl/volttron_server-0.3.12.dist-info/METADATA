@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: volttron-server
+Version: 0.3.12
+Summary: Server component for VOLTTRON
+Home-page: UNKNOWN
+Author: The VOLTTRON Team
+Author-email: volttron@pnnl.gov
+License: Apache 2
+Project-URL: Bug Reports, https://github.com/VOLTTRON/volttron-server/issues
+Project-URL: Source, https://github.com/VOLTTRON/volttron-server/
+Keywords: volttron, iot platform, building automation, agent framework
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+License-File: AUTHORS
+Requires-Dist: asn1crypto (==1.4.0)
+Requires-Dist: certifi (==2021.10.8)
+Requires-Dist: cffi (==1.15.0)
+Requires-Dist: cryptography (==2.3)
+Requires-Dist: dateutils (==0.6.12)
+Requires-Dist: gevent (==20.6.1)
+Requires-Dist: grequests (==0.6.0)
+Requires-Dist: idna (==3.3)
+Requires-Dist: importlib-metadata (==4.8.2)
+Requires-Dist: pbr (==5.8.0)
+Requires-Dist: psutil (==5.8.0)
+Requires-Dist: pycparser (==2.21)
+Requires-Dist: pyopenssl (==19.0.0)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: pytz (==2021.3)
+Requires-Dist: pyyaml (==6.0)
+Requires-Dist: pyzmq (==22.3.0)
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: tzlocal (==2.1)
+Requires-Dist: urllib3 (==1.26.7)
+Requires-Dist: volttron-client (==0.3.8)
+Requires-Dist: volttron-utils (==0.3.4)
+Requires-Dist: watchdog-gevent (==0.1.1)
+Requires-Dist: watchdog (==2.1.6)
+Requires-Dist: wheel (==0.37.0)
+Requires-Dist: zipp (==3.6.0)
+Requires-Dist: zmq (==0.0.0)
+Requires-Dist: zope.event (==4.5.0)
+Requires-Dist: zope.interface (==5.4.0)
+Requires-Dist: greenlet (==0.4.16) ; (platform_python_implementation == 'CPython')
+Requires-Dist: charset-normalizer (==2.0.9) ; (python_version >= '3')
+
+Server component for VOLTTRON
+
