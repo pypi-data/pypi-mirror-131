@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: paoding-dl
+Version: 0.0.1
+Summary: Stochastic data-free robustness preserving neural network pruning
+Home-page: https://github.com/mark-h-meng/nnprune
+Author: Mark H. Meng
+Author-email: <menghs@i2r.a-star.edu.sg>
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/mark-h-meng/nnprune
+Description: # PAODING-DL: A Stochastic Data-free Robustness-preserving Neural Network Pruning Solution
+        
+        Our python package performs pruning progressively and evaluate robustness automatically. The code is written and tested through Microsoft VS Code.
+        
+        The execution environment of the experiments on paper is summarised as follows: 
+        * Tensorflow 2.3.0 (Anaconda, tensorflow-gpu version)
+        * Python 3.8
+        * Ubuntu 20.04 LTS
+        
+        More technical details and documentations will be published soon in the future release.
+Keywords: python,neural network pruning
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
