@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: PolynomialRegression
+Version: 0.0.1
+Summary: A library for polynomial regression
+Home-page: UNKNOWN
+Author: Sabrina Marshal and Sharon Immanuel
+Author-email: sharonimmanuel01@gmail.com
+License: MIT
+Description: This library is for calculating polynomial regression. 
+        It will calculate the weights and result of any given hypothesis using either normal equation 
+        or gradient descent method. There is a function to try finding the
+        best hypothesis by changing the degree of each term to find the hypothesis with
+        the least error.
+        
+        
+        Change Log
+        
+        ====================
+        
+        0.0.1 (1/12/2021)
+        --------------
+        -First Release 
+Keywords: polynomial regression,best hypothesis
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown

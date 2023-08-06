@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+PolynomialRegression/__init__.py
+PolynomialRegression.egg-info/PKG-INFO
+PolynomialRegression.egg-info/SOURCES.txt
+PolynomialRegression.egg-info/dependency_links.txt
+PolynomialRegression.egg-info/requires.txt
+PolynomialRegression.egg-info/top_level.txt
