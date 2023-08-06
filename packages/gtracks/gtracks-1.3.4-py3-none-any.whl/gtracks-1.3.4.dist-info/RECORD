@@ -1,0 +1,11 @@
+gtracks/__init__.py,sha256=3euhM3Pw817Ge14OHbCRSxEtuyp2sNmF27pQ1iGODIg,215
+gtracks/gtracks.py,sha256=E_vlWU3Z3TMm6cDhZXt9lGulgY3RFYniy9d4PnZETUk,6956
+gtracks/hg19.bed12.bed.gz,sha256=nAraoIHGDdYCugBkeDXizdnxx8x85ruo8Ih06YDPz00,2636512
+gtracks/hg38.bed12.bed.gz,sha256=Xp-iJ7qqnEW0HJEpOXeYfKHUPgALXhlITNvmoQJbgIE,5047093
+gtracks/pancreatic_islet_atac_seq_ins_igf2.bw,sha256=HEoSY9-hXJLzmhL_PqLh0pcCc8xu_DGHZzhnj-Sx1zM,19422
+gtracks-1.3.4.dist-info/LICENSE,sha256=xEaaWsDj7uQwr4g9FEmmvn3Mlhbrs0f0IJlliw73D54,1059
+gtracks-1.3.4.dist-info/METADATA,sha256=21GLqiySJ-_8il_q2DO3lLrrJ1sEo_7fboVUSSXvj-4,4554
+gtracks-1.3.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+gtracks-1.3.4.dist-info/entry_points.txt,sha256=TJKv80Ziw-W1fTwFyzRxfmdZ-J6QrmSTzQ5ZFMykG18,113
+gtracks-1.3.4.dist-info/top_level.txt,sha256=yRYc7Ml6nLhMhJG_su5F-ZAY8Z45HdBLK2OnV2tfyGw,8
+gtracks-1.3.4.dist-info/RECORD,,
