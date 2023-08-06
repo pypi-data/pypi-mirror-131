@@ -1,0 +1,43 @@
+from typing import Union
+
+from .python import PythonTransformer
+from .typescript import TypeScriptTransformer
+from .php import PHPTransformer
+
+TokenT = Union[
+    PythonTransformer,
+    TypeScriptTransformer,
+    PHPTransformer
+]
+
+
+def get_transformer_class(language: str):
+    if language.lower() == 'python':
+        return PythonTransformer
+    if language.lower() == 'typescript':
+        return TypeScriptTransformer
+    else:
+        raise ValueError(
+            'No compilation tokens found for programming language [%s]..' % language
+        )
+
+
+class BaseTransformer:
+    # This is the main docstring that will appear at the top of each generated file
+    # it must be able to handle the following format vars:
+    # `{classname}`
+    TOP_COMMENT: str = ...
+    # Translate the yaml type names to the correct syntax in the target language
+    # Ex Python: "string": "str"
+    TYPE_STRS: dict[str, str] = ...
+    WS: str = ...
+    OPTIONAL: str = ...
+    FILENAME: str = ...
+    COMMENT_CHAR: str = ...
+    CLASS_DEF: str = ...
+    CLASS_ATTR_WITH_T: str = ...
+    def generate_filename(self): ...
+    def scan_for_required_imports(self): ...
+    def generate_top_comment(self): ...
+    def generate_attributes(self): ...
+    def method_order(self): ...
