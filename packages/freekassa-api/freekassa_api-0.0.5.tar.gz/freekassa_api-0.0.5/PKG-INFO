@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: freekassa_api
+Version: 0.0.5
+Summary: Freekassa API
+Home-page: https://github.com/LDmitriy7/freekassa_api.git
+Author: LDmitriy7
+Author-email: ldm.work2019@gmail.com
+License: MIT
+Platform: UNKNOWN
+
+TODO: 
+ - "us_key" param for get_payment_form_url
+
