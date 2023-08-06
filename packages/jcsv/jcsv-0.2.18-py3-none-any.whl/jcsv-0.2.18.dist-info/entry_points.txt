@@ -1,0 +1,4 @@
+[console_scripts]
+csv2json=jcsv.converter:csvJson
+json2csv=jcsv.converter:jsonCsv
+
