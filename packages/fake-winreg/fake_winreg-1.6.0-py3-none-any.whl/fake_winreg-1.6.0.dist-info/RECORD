@@ -1,0 +1,16 @@
+fake_winreg/__init__.py,sha256=A4BmtGnuwdZcIZ2O6N4MiQFqIKo1VLPi6ny89vsUDVo,469
+fake_winreg/__init__conf__.py,sha256=G4Y81GX6SPYEBC_gwuohss9LU5qu1XWzjspCC66BF-g,557
+fake_winreg/fake_reg.py,sha256=tcNjqBr-R-eT51DFCBZb1l4bcJtUtUxyIjGqOOWQS0s,8095
+fake_winreg/fake_reg_tools.py,sha256=-JfT3dbsVYx6rtSG5zIvfUpmBNAGNyL692UsqDsVF64,5709
+fake_winreg/fake_winreg.py,sha256=TuRwezPIvYNi2Y1GGRQeaQRFxl56WYjooRVyQ41JV9M,84548
+fake_winreg/fake_winreg_cli.py,sha256=VqERkxi1Yr2NeancRwHVR_r45_D0mF4BKWPEDDs9auI,1496
+fake_winreg/helpers.py,sha256=7fb-ZYOH7-fg6EDNXX9onweDd7L4QDf7K2GYrgjDZlQ,1263
+fake_winreg/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fake_winreg/registry_constants.py,sha256=GPcsiIMRIRZvtxHF5QVRhN1twSMfs0Z66W5t59YMcN0,3656
+fake_winreg/types_custom.py,sha256=QMcYrSGYI7VOd4CZoUumlhJscJBOPYqR7gR1OmrvEmE,205
+fake_winreg-1.6.0.dist-info/LICENSE,sha256=w_bnCCwX7aLLaw3L9PSWXvCRrhsEJmSIXzaPZgNYHQc,1076
+fake_winreg-1.6.0.dist-info/METADATA,sha256=YtZdIGwgxOy5T9_V3iLzPOqa7zUAUxKOuJ55xUHGA6w,81978
+fake_winreg-1.6.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fake_winreg-1.6.0.dist-info/entry_points.txt,sha256=ReyZ5CK2OSajoL6iHEvMUIFF7uTNp7afHR5r8eAbQ9I,70
+fake_winreg-1.6.0.dist-info/top_level.txt,sha256=kyBMoHMMOki-LYo4SwVmGp89BUcddRRT_ylrSR-Umnc,12
+fake_winreg-1.6.0.dist-info/RECORD,,
