@@ -1,0 +1,12 @@
+README.md
+setup.py
+irspdf/__init__.py
+irspdf/build_collection.py
+irspdf/collection.py
+irspdf/query_collection.py
+irspdf.egg-info/PKG-INFO
+irspdf.egg-info/SOURCES.txt
+irspdf.egg-info/dependency_links.txt
+irspdf.egg-info/requires.txt
+irspdf.egg-info/top_level.txt
+test/test_basic.py
