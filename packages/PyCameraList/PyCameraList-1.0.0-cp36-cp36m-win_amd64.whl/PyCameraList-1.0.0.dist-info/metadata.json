@@ -1,0 +1,1 @@
+{"extensions": {"python.details": {"contacts": [{"name": "Peter Jiang", "role": "author"}], "document_names": {"description": "DESCRIPTION.rst"}}}, "generator": "bdist_wheel (0.29.0)", "metadata_version": "2.0", "name": "PyCameraList", "requires_python": ">=3.6", "summary": "List all camera/audio sources for windows users.", "version": "1.0.0"}
