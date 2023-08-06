@@ -1,0 +1,22 @@
+- file: introduction
+- part: Getting started
+  chapters:
+    - file: installation
+
+- part: Using pyslim
+  chapters:
+    - file: tutorial
+    - file: vignette_space
+    - file: vignette_continuing
+    - file: vignette_coalescent_diversity
+    - file: vignette_parallel_phylo
+    - file: metadata
+    - file: previous_versions
+
+- part: pyslim reference
+  chapters:
+    - file: python_api
+
+- part: Miscellaneous
+  chapters:
+  - file: development
