@@ -1,0 +1,73 @@
+[tool.poetry]
+name = "obelist"
+version = "0.0.0-a2"
+description = """\
+A CLI tool for generating standard annotations for linting tools, tests, and \
+so on (including support for GitHub Actions)\
+"""
+authors = ["Naomi Rose <23469+nomiro@users.noreply.github.com>"]
+repository = "https://github.com/nomiro/obelist"
+readme = "README.md"
+keywords = [
+  "linting",
+  "continuous-integration",
+  "annotations",
+  "tests",
+  "github-actions",
+  "problem-matcher"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Information Technology",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Build Tools",
+  "Topic :: Software Development :: Quality Assurance",
+  "Topic :: Software Development :: Testing",
+  "Topic :: Utilities"
+]
+packages = [
+  { include = "obelist", "from" = "src" },
+]
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pastel = "^0.2.1"
+click = "^8.0.3"
+sh = "^1.14.2"
+inflection = "^0.5.1"
+wrapt = "^1.13.3"
+charset-normalizer = "^2.0.7"
+lxml = "^4.6.4"
+pyjq = "^2.5.2"
+PyYAML = "^6.0"
+natsort = "^8.0.0"
+pyroma = "^3.2"
+vulture = "^2.3"
+urlextract = "^1.4.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.11b1"
+ipython = "^7.28.0"
+icecream = "^2.1.1"
+reorder-python-imports = "^2.6.0"
+prospector = "^1.5.3"
+flake8= "^3.8.4"
+tox = "^3.24.4"
+flake8-cognitive-complexity = "^0.1.0"
+
+[tool.black]
+line-length = 79
+
+# [tool.bandit]
+#  # Skip `B320` and `B410` because the suggestion is out-of-date (see
+#  # https://git.io/JM7Ow)
+# skips = ["B320", "B410"]
+
+[tool.poetry.scripts]
+obelist = "obelist.cli.cmds:main"
