@@ -1,0 +1,165 @@
+Metadata-Version: 2.1
+Name: nameko-structlog
+Version: 0.2.2
+Summary: Nameko extension exposing a structlog dependency injector
+Home-page: https://github.com/tyler46/nameko-structlog
+Author: Spyros Markopoulos
+Author-email: mail.doctor46@gmail.com
+License: Apache License, Version 2.0
+Keywords: nameko logging structlog
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet
+Requires-Dist: nameko (>=2.5.0)
+Requires-Dist: structlog (>=18.2.0)
+Provides-Extra: colors
+Requires-Dist: colorama (>=0.4.0) ; extra == 'colors'
+Provides-Extra: dev
+Requires-Dist: coverage (==4.5.1) ; extra == 'dev'
+Requires-Dist: pip (==18.1) ; extra == 'dev'
+Requires-Dist: bumpversion (==0.5.3) ; extra == 'dev'
+Requires-Dist: flake8 (==3.5.0) ; extra == 'dev'
+Requires-Dist: twine (>=1.12.1) ; extra == 'dev'
+Requires-Dist: wheel (>=0.32.2) ; extra == 'dev'
+
+nameko-structlog
+================
+
+
+Structlog as nameko extension
+
+
+* Free software: Apache Software License 2.0
+
+
+Extension for `nameko <https://www.nameko.io>`_ that replaces python logging module with structlog.
+The idea behind this module is to use `JSONRenderer <https://www.structlog.org/en/stable/api.html#structlog.processors.JSONRenderer>`_
+to be able to use advanced log aggregation and analysis tools like `Logstash <https://www.elastic.co/products/logstash>`_.
+
+Apart from JSONRenderer structlog processor, it's also supported `KeyValueRenderer <https://www.structlog.org/en/stable/api.html#structlog.processors.KeyValueRenderer>`_
+processor.
+
+
+Installation
+------------
+
+To install nameko-structlog, simply use pip.
+
+.. code-block:: bash
+
+   pip install nameko-structlog
+
+
+Usage
+-----
+
+Add Structlog log level to your nameko config file:
+
+.. code-block:: yaml
+
+   # config.yml when using JSONRenderer
+   STRUCTLOG:
+      INCLUDE_WORKER_NAME: ${INCLUDE_WORKER_NAME:true}
+      INCLUDE_LOG_TRANSACTON_ID: true
+      PROCESSOR_NAME: JSONRenderer
+      PROCESSOR_OPTIONS:
+        sort_keys: true
+      EXTRA_PARAMETERS:
+         pin: 1234
+         env: dev
+
+  LOGGING:
+    version: 1
+    formatters:
+      simple:
+        format: "%(message)s"
+
+    handlers:
+      console:
+        class: logging.StreamHandler
+        formatter: simple
+
+    root:
+      level: DEBUG
+      handlers: [console]
+   ...
+
+Option *INCLUDE_WORKER_NAME* will add or not *worker_ctx.call_id* to
+every log entry. Option *INCLUDE_LOG_TRANSACTON_ID* will group all
+logs that refer to same nameko entrypoint, with a unique *log_transaction_id*.
+Doing so may be useful to follow request/data flow on a log aggregation
+tool. Option *EXTRA_PARAMETERS* can contain any keys that you
+want to appear on every log entry.
+
+
+Include the ``StructlogDependency`` dependency in your service class:
+
+.. code-block:: python 
+
+   # service.py
+   from nameko.rpc import rpc 
+
+   from nameko_structlog import StructlogDependency
+
+   class MyService(object):
+      name = "demo"
+
+      log = StructlogDependency()
+
+      @rpc 
+      def my_method(self, name):
+         self.log.info(message=f"Your name is {name}", type="greeting")
+
+
+Run your service, providing the config file:
+
+.. code-block:: shell
+
+   $ nameko run service --config config.yaml
+
+   $ nameko shell --config config.yaml
+   >>> n.rpc.demo.my_method("Alice")
+   {"level": "info", "log_transaction_id": "b2cd5506-339e-4e59-9a14-a3cd7548bfe5", "logger": "demo", "env": "dev", message": "Your name is Alice", "pin": "1234", "timestamp": "2020-09-27T11:24:30.379918Z", "type": "greeting"}
+
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.2.1 (2020-12-28)
+-------------------
+
+* Fix bug `#8 <https://github.com/tyler46/nameko-structlog/issues/8>`_.
+
+0.2.0 (2020-12-28)
+------------------
+
+* Drop `indent=2` for log records
+* Drop `colorama` and `development` mode.
+* Support two structlog processors, `JSONRenderer <https://www.structlog.org/en/stable/api.html#structlog.processors.JSONRenderer>`_
+  and `KeyValueRenderer <https://www.structlog.org/en/stable/api.html#structlog.processors.KeyValueRenderer>`_.
+* Configuration is more clean now.
+* Decouple Structlog configuration from nameko dependency.
+
+0.1.1 (2018-10-29)
+------------------
+
+* First release on PyPI.
+
+
