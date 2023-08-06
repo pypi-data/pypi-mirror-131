@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+src/phonk/__init__.py
+src/phonk/rhymescore.py
+src/phonk.egg-info/PKG-INFO
+src/phonk.egg-info/SOURCES.txt
+src/phonk.egg-info/dependency_links.txt
+src/phonk.egg-info/top_level.txt
