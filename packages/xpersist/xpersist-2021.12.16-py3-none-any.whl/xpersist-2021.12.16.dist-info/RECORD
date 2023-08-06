@@ -1,0 +1,9 @@
+xpersist/__init__.py,sha256=8NN5HGkhwnvL_NxR47VCcHbnglk_3pnxxlCDjKCS70w,446
+xpersist/cache.py,sha256=TsoBPE-H79JDB_mq0HJkN0g97aa2Dptoyc3XROHZkzg,10505
+xpersist/registry.py,sha256=BrD1Oz3T7N_hdDrqpPzR0GuG4QI4cDCUdaGU1goMwfs,2522
+xpersist/serializers.py,sha256=RGuh5nB-0bJBXQXBPATbz6ttyYVkaFfhHrz4tIpQx_o,1624
+xpersist-2021.12.16.dist-info/LICENSE,sha256=ZB2I9_mFOoLjmq6cppIKelzqUvckDeRPFXiSdooTKCY,11390
+xpersist-2021.12.16.dist-info/METADATA,sha256=Lj5R4K8V0W5wd9M2YP9h4MpI3_Pryz0dxwTAFTyxiWA,2909
+xpersist-2021.12.16.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+xpersist-2021.12.16.dist-info/top_level.txt,sha256=-9SIYS7N07ORuMHzpzRgVF0Gnxf6z-iWFRME1nKv6jk,9
+xpersist-2021.12.16.dist-info/RECORD,,
