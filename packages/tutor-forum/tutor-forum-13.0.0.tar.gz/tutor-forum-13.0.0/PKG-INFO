@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: tutor-forum
+Version: 13.0.0
+Summary: forum plugin for Tutor
+Home-page: https://github.com/overhangio/tutor-forum
+Author: Overhang.IO
+License: AGPLv3
+Project-URL: Code, https://github.com/overhangio/tutor-forum
+Project-URL: Issue tracker, https://github.com/overhangio/tutor-forum/issues
+Description: Forum plugin for `Tutor <https://docs.tutor.overhang.io>`__
+        ============================================================
+        
+        This plugin adds `discussion forums <https://github.com/edx/cs_comments_service>`__ to your `Open edX <https://open.edx.org/>`__ platform, such that students can have conversations about the courses they are following right in your LMS.
+        
+        .. image:: https://overhang.io/static/catalog/screenshots/forum.png
+          :alt: Forum screenshot
+        
+        Installation
+        ------------
+        
+        ::
+        
+            pip install tutor-forum
+        
+        Usage
+        -----
+        
+        ::
+        
+            tutor plugins enable forum
+            tutor local quickstart
+        
+        Configuration
+        -------------
+        
+        - ``FORUM_DOCKER_IMAGE`` (default: ``""{{ DOCKER_REGISTRY }}overhangio/openedx-forum:{{ FORUM_VERSION }}"``)
+        - ``FORUM_MONGODB_DATABASE`` (default: ``"cs_comments_service"``)
+        - ``FORUM_PORT`` (default: ``"4567""``)
+        - ``FORUM_API_KEY`` (default: ``"forumapikey"``)
+        
+        License
+        -------
+        
+        This software is licensed under the terms of the `AGPLv3 <https://www.gnu.org/licenses/agpl-3.0.en.html>`__.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
