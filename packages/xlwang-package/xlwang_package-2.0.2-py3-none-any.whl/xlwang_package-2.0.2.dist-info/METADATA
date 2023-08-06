@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: xlwang-package
+Version: 2.0.2
+Summary: A small simple package
+Home-page: https://github.com/cassiewang123
+Author: xlwang
+Author-email: 172783266@qq.com
+License: BSD License
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.5
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+
+**鍒朵綔绗竴涓猵ython鍖**
+
+--杩欐槸绗竴涓寘
+
