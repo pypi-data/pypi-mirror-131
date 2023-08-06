@@ -1,0 +1,11 @@
+aioridwell/__init__.py,sha256=XzsgWU_KD4Rrvo8m7_u7D4P89-2N7-3SaXT5wYxDHak,83
+aioridwell/client.py,sha256=JdrLb55plCAGP3RwkKQC0FilB5wbhJ7oN3qAnOMKDUE,5774
+aioridwell/const.py,sha256=9SVwtsu3UAaxyJxcKtIN2GGXsQdgXaSLZdOQMreVk3A,88
+aioridwell/errors.py,sha256=yW97qsmHDDufihgy8mNGzWbLWH5Sd7pRMapqHD1jeio,1106
+aioridwell/model.py,sha256=kqB3-yno5bZKo76TePV2aZ6SPvU97BgO2FFX61bxOXs,7274
+aioridwell/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aioridwell/query.py,sha256=HbUaE6RpJfTUvNyi-spa9YdSzFGMt2xw_p9Sngwfby0,1384
+aioridwell-2021.12.1.dist-info/LICENSE,sha256=scz6gEaGZXJPFxvuQ2FiKekDHrpn4ri_vbec1ZXqQp8,1067
+aioridwell-2021.12.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+aioridwell-2021.12.1.dist-info/METADATA,sha256=5qaeFqcSgc0BzHOYChF5JKJF6h6ccTsK0x8unIWMPUs,7074
+aioridwell-2021.12.1.dist-info/RECORD,,
