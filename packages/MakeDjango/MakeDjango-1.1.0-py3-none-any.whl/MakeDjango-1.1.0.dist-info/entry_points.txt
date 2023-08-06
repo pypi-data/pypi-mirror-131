@@ -1,0 +1,3 @@
+[console_scripts]
+MakeDjango = MakeDjango.MakeDjango:main
+
