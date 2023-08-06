@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: idiota
+Version: 1.1.0
+Summary: idiota is a minimal version control system built on python
+Home-page: https://github.com/prakashsellathurai/idiota
+Author: Prakash Sellathurai
+Author-email: prakashsellathurai@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Idiota
+idiota is a minimal version control system built on 
+python
+
+![PyPI](https://img.shields.io/pypi/v/idiota)
+![Upload Python Package](https://github.com/prakashsellathurai/idiota/workflows/Upload%20Python%20Package/badge.svg)
+
+## Etymology
+The project is named after the Spanish word "idiota", from Latin idiōta (“idiot”). Since the goal of 
+this project is to be a stupidly simple version control system(vcs).
+
+
+
+## Development:
+For development purposes.To setup the package in your local environment  Run 
+
+``python setup.py develop``
+## Documentation
+check /Doc for code documentation
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[Apache-2.0](https://choosealicense.com/licenses/apache-2.0/)
+
+
