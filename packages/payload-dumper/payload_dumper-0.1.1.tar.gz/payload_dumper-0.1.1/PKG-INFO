@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: payload-dumper
+Version: 0.1.1
+Summary: Dump partitions from Android's payload.bin
+Home-page: https://github.com/nnsee/payload_dumper
+Author: Rasmus Moorats
+Author-email: xx@nns.ee
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: bsdiff4 (>=1.2.1,<2.0.0)
+Requires-Dist: enlighten (>=1.10.2,<2.0.0)
+Requires-Dist: protobuf (>=3.19.1,<4.0.0)
+Project-URL: Repository, https://github.com/nnsee/payload_dumper
+Description-Content-Type: text/markdown
+
+# payload dumper
+
+Dumps the `payload.bin` image found in Android update images.
+
+## Installation
+
+### Requirements
+
+- Python3
+- pip
+
+### Install using pip
+
+```sh
+pip install --user payload_dumper
+```
+
+## Usage
+
+### Dumping the entirety of `payload.bin`
+
+```
+payload_dumper payload.bin
+```
+
+### Dumping specific partitions
+
+Use a comma-separated list of partitions to dump:
+```
+payload_dumper --partitions boot,dtbo,vendor
+```
+
+### Patching older image with OTA
+
+Assuming the old partitions are in a directory named `old/`:
+```
+payload_dumper --diff payload.bin
+```
+
