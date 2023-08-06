@@ -1,0 +1,17 @@
+cachetools<4
+consolemsg
+cryptography<3.4
+decorator<5
+google-auth
+google-auth-oauthlib<0.4.2
+gspread<4
+httplib2<0.18
+oauthlib<3
+pathlib2
+psycopg2-binary<2.9
+pytz
+pyyaml<6
+requests-oauthlib<1.2
+rsa<4.6
+setuptools_rust<0.11
+yamlns>=0.7
