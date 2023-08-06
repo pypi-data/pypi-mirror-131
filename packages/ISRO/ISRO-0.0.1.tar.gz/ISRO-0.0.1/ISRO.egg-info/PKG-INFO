@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: ISRO
+Version: 0.0.1
+Summary: Indian Space Research Organisation
+Home-page: UNKNOWN
+Author: Fayas Noushad
+License: MIT
+Project-URL: Tracker, https://github.com/FayasNoushad/ISRO/issues
+Project-URL: Source, https://github.com/FayasNoushad/ISRO
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ISRO
+Indian Space Research Organisation API
+
+## Installation
+
+```
+pip install ISRO
+```
+
+## Usage
+
+```py
+import isro
+
+
+isro.spacecrafts()
+# returns spacecrafts data
+
+isro.launchers()
+# returns launchers data
+
+isro.customer_satellites()
+# returns customer satellites data
+
+isro.centres()
+# returns centers data
+```
+
+
