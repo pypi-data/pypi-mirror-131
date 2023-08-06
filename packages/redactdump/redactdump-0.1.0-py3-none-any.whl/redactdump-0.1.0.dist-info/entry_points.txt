@@ -1,0 +1,3 @@
+[console_scripts]
+redactdump = redactdump.app:start_application
+
