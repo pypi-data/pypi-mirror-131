@@ -1,0 +1,26 @@
+{
+    "active": true,
+    "type": "latex",
+    "array_chart_id": [
+        "100",
+        "101"
+    ],
+    "download_images": false,
+    "download_images_url":[
+        {
+            "name": "example.png",
+            "url":"https://example.org"
+        }
+     
+    ],    
+    "generate_pdf": false,
+    "filename": "<your_texfile>.tex",
+    "use_nextcloud":false,
+    "E-Mail": false,
+    "mail_recipient": [
+        "first_name.last_name@example.org"
+    ],
+    "mail_subject": "E-Mail from superset-pdf-report",
+    "mail_text": "Dear Ladies and Gentlemen\nThis is a generated E-Mail from superset-pdf-report\n"
+                
+}
