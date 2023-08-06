@@ -1,0 +1,8 @@
+setup.py
+quimera/__init__.py
+quimera/start.py
+quimera/wifi.py
+quimera.egg-info/PKG-INFO
+quimera.egg-info/SOURCES.txt
+quimera.egg-info/dependency_links.txt
+quimera.egg-info/top_level.txt
