@@ -1,0 +1,5 @@
+requests>=2.22.0
+cryptography>=36.0.0
+cbor2>=5.4.2
+leb128>=1.0.4
+waiter>=1.2

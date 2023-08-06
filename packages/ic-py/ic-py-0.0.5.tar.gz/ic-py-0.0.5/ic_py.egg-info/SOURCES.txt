@@ -1,0 +1,16 @@
+setup.py
+ic/__init__.py
+ic/agent.py
+ic/candid.py
+ic/canister.py
+ic/certificate.py
+ic/client.py
+ic/constants.py
+ic/identity.py
+ic/principal.py
+ic/utils.py
+ic_py.egg-info/PKG-INFO
+ic_py.egg-info/SOURCES.txt
+ic_py.egg-info/dependency_links.txt
+ic_py.egg-info/requires.txt
+ic_py.egg-info/top_level.txt
