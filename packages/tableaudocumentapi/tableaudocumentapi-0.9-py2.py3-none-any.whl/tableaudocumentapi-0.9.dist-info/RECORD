@@ -1,0 +1,14 @@
+tableaudocumentapi/__init__.py,sha256=pQblARvdD2BAiX_VS_ygLoMfdz0iEEPgkgF5fNDVrtM,193
+tableaudocumentapi/connection.py,sha256=VatU9P9sBqNQ9qfTai6Ba1aVaDDJq0hP3CEWbS8KW7w,5837
+tableaudocumentapi/datasource.py,sha256=L2DElmjqUE1TzRSFsOn69L1j_nGrCYL4q9ZmnBVin7E,10518
+tableaudocumentapi/dbclass.py,sha256=vvx-9z1_6VabjM5SVutCb40BVRweydC92SRJNB9VHM4,1895
+tableaudocumentapi/field.py,sha256=c6B8S-1KHlO46ctcYyT_h8eQrV0Sq14nBsmhhEqzssU,11952
+tableaudocumentapi/multilookup_dict.py,sha256=fhWdAtv8B-VXTx1UcSsENXhdjvlVzn5lMwVQd92zS1E,1779
+tableaudocumentapi/property_decorators.py,sha256=PKfZ3z2Pd73rZvxdsbXSz8xbOfR8ln1-FDPvOIIOBWU,492
+tableaudocumentapi/workbook.py,sha256=r59fB6Xhkud6x6fkPwgAVfSUJxUC4LBvkQ9B-DJy6K8,4288
+tableaudocumentapi/xfile.py,sha256=Rz3HGWiVa-sFXbyCe8iT0-QIQIx5nRl3xeJlILEFSm8,4545
+tableaudocumentapi-0.9.dist-info/LICENSE,sha256=POG1S6fq2CpC1x_hmUHmrsWXNAFmCnXN-NJpjQIMiO8,1074
+tableaudocumentapi-0.9.dist-info/METADATA,sha256=6Fg_UEBnJj68QI5pM7enPCcDMAJPQngmOBgPfYxOfYc,266
+tableaudocumentapi-0.9.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+tableaudocumentapi-0.9.dist-info/top_level.txt,sha256=a2lCm3DPNphaI8wZZZogsBr0RxE6ob3KnRPD0xQLJqk,19
+tableaudocumentapi-0.9.dist-info/RECORD,,
