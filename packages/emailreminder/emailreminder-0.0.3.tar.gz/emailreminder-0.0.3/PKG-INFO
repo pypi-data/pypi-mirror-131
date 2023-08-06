@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: emailreminder
+Version: 0.0.3
+Summary: A decorator
+Home-page: https://github.com/Oswells/reminder.git
+Author: Junjie Zhang
+Author-email: zjunjie@hust.edu.cn
+License: Apache License 2.0
+Description: Use http post requests to send a email to remind you that your program has been break up or finished normally.
+Platform: UNKNOWN

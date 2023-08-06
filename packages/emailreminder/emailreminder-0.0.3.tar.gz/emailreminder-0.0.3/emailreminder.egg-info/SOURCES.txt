@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+emailreminder/__init__.py
+emailreminder/emailreminder.py
+emailreminder.egg-info/PKG-INFO
+emailreminder.egg-info/SOURCES.txt
+emailreminder.egg-info/dependency_links.txt
+emailreminder.egg-info/requires.txt
+emailreminder.egg-info/top_level.txt
