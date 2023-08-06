@@ -1,0 +1,11 @@
+cheope/cheope.py,sha256=4YkGVYQYFNw8ZXpUkmpZ_7ds56sHq3dIfw5fbN-_zpw,5639
+cheope/linear_ephemeris.py,sha256=NiFHXfV6G1tTHR1gx8fWixNC7ykAQZAcXRFSPB9rAQQ,8035
+cheope/parameters.py,sha256=U5UWS_QIpdvUNeienpNiolo_75LoSlPgXS3EDqtOdAk,19406
+cheope/pycheops_analysis.py,sha256=CLBRimBPU08a5LCKM1R9qCIP6W-GJwMzLhLj1Jl1Yx4,257086
+cheope/pyconstants.py,sha256=DYWYwQCLUZunqQmoRvaiXk2cZM4mi5RfEzYzAIX25fw,4078
+cheope-0.1.0.dist-info/LICENSE,sha256=PwbJguAnxH1LtjssyPfbMIl2WPlZI-vx02qFwsVNTTU,1600
+cheope-0.1.0.dist-info/METADATA,sha256=YZJNwOdm0uygr8QFxcWf9Sufs0_ybbKrN3bVAI6H2pE,4282
+cheope-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cheope-0.1.0.dist-info/entry_points.txt,sha256=2UNcyBtKMKpBiN6EASnOsXtfWNLZ4ONf5O5VfADxUJE,47
+cheope-0.1.0.dist-info/top_level.txt,sha256=dyH2t3Qyb3P0MbPfric85nRgvUb8YejXh7stlOVXS5I,7
+cheope-0.1.0.dist-info/RECORD,,
