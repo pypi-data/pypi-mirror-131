@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: hybridbackend-cpu-legacy
+Version: 0.5.2.post1
+Summary: Efficient training of deep recommenders on cloud.
+Home-page: https://github.com/alibaba/HybridBackend
+Author: Alibaba Group Holding Limited
+License: Apache License 2.0
+Download-URL: https://github.com/alibaba/HybridBackend/tags
+Project-URL: Bug Tracker, https://github.com/alibaba/HybridBackend/issues
+Project-URL: Documentation, https://hybridbackend.readthedocs.io/en/latest/
+Project-URL: Source Code, https://github.com/alibaba/HybridBackend
+Keywords: deep learning,recommendation system
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: tensorflow (<1.15,>=1.14)
+
+HybridBackend is a training framework for deep recommenders which bridges gap between evolving cloud infrastructure and complex training process.
+
