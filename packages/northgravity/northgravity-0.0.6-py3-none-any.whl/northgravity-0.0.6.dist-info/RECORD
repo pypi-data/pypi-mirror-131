@@ -1,0 +1,12 @@
+northgravity/Authenticator.py,sha256=Xe9icJuQBfs7zfVpSiSi8xw-ihu7vAiZpUxXKuCi7cI,1312
+northgravity/DatalakeHandler.py,sha256=Qftff2pOpEfVUHxe9caIvDawv_Se5VnXjpx8J9C-D0c,9173
+northgravity/HTTPCalller.py,sha256=xRH8n8-KIaEfHoRSLuWXIjguPLp2u9aI2Y4MgVpiivk,6679
+northgravity/StatusHandler.py,sha256=QC4tWGSkl3IBdRvfrwrNvDXxcmtPvJVg5xMlh6zw878,2030
+northgravity/TaskHandler.py,sha256=qd6horcSosINh2S7M-4_3W5GLMt9mqJpPzOGUc7U5Qc,8664
+northgravity/Timeseries.py,sha256=uj-DsLaZoFfTohuU6bMDNYRdKvtjR1zgdlHx8eADcB4,11204
+northgravity/__init__.py,sha256=X-cH2-E79ZgmkoVychmXLTpu-pJqu_oNZgbU8RF88l8,1281
+northgravity-0.0.6.dist-info/LICENSE,sha256=dbCr_gOqjtZL8jPT1E7g3KCo_tCRL1eCoWNlC3rwBac,1055
+northgravity-0.0.6.dist-info/METADATA,sha256=mPLIlcc-tJ84jk-BaAtkpBlhMdFcsso7KE9VU0WwwwQ,25095
+northgravity-0.0.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+northgravity-0.0.6.dist-info/top_level.txt,sha256=EjpRiRG5pmVAqvkrNiLF6kRjPqhiAVrxvLqvi-Xbe0c,13
+northgravity-0.0.6.dist-info/RECORD,,
