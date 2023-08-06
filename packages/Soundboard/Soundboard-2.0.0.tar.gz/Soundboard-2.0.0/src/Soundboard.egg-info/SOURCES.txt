@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/Soundboard.egg-info/PKG-INFO
+src/Soundboard.egg-info/SOURCES.txt
+src/Soundboard.egg-info/dependency_links.txt
+src/Soundboard.egg-info/top_level.txt
