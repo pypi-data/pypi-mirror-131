@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: dmypy-ls
+Version: 1.2
+Summary: super fast mypy language server
+Home-page: https://github.com/sileht/dmypy-ls
+Author: Mehdi Abaakouk
+Author-email: sileht@sileht.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+Requires-Dist: pygls
+Requires-Dist: mypy
+Provides-Extra: pep8
+Requires-Dist: bandit ; extra == 'pep8'
+Requires-Dist: flake8 ; extra == 'pep8'
+Requires-Dist: flake8-black ; extra == 'pep8'
+Requires-Dist: flake8-blind-except ; extra == 'pep8'
+Requires-Dist: flake8-bugbear ; extra == 'pep8'
+Requires-Dist: flake8-builtins ; extra == 'pep8'
+Requires-Dist: flake8-comprehensions ; extra == 'pep8'
+Requires-Dist: flake8-docstrings ; extra == 'pep8'
+Requires-Dist: flake8-logging-format ; extra == 'pep8'
+Requires-Dist: flake8-rst-docstrings ; extra == 'pep8'
+Requires-Dist: flake8-use-fstring ; extra == 'pep8'
+Requires-Dist: isort ; extra == 'pep8'
+Requires-Dist: mypy (<0.920,>=0.901) ; extra == 'pep8'
+Provides-Extra: test
+
+UNKNOWN
+
