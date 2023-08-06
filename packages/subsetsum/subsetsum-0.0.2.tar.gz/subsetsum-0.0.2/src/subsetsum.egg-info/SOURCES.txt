@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/main.cpp
+src/subsetsum/__init__.py
+src/subsetsum.egg-info/PKG-INFO
+src/subsetsum.egg-info/SOURCES.txt
+src/subsetsum.egg-info/dependency_links.txt
+src/subsetsum.egg-info/not-zip-safe
+src/subsetsum.egg-info/requires.txt
+src/subsetsum.egg-info/top_level.txt
