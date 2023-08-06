@@ -1,0 +1,37 @@
+% !Mode:: "TeX:UTF-8" 
+
+\BiChapter{灵活性改造的概念}{}
+
+受电力规划总院有限公司委托，西安热工研究院有限公司按照合同要求，派出技术人员对101国家综合能源示范项目电源工程中
+
+打造成重力储能专家，储能所，储能专业领军人才，电机工程学会会议论文。
+
+根据能量守恒定律，冷却塔的换热过程成立以下方程：
+$$ Q_{w1}\cdot h_{w1}+Q_{a1}\cdot h_{a1}=Q_{w2}\cdot h_{w2}+Q_{a2}\cdot h_{a2}$$
+
+假设冷却塔蒸发水量为$Q_v$，则：
+\begin{equation}
+	Q_{w1}\cdot h_{w1}+Q_{a1}\cdot h_{a1}=(Q_{w1}-Q_v)\cdot h_{w2}+(Q_{a1}+Q_v)\cdot h_{a2}\label{equ:energy}
+\end{equation}
+
+该式中，$Q_{a1}$和$Q_v$是待求解变量。还需要建立一个方程，根据质量守恒定律，进出口干空气质量相等，则有：
+\begin{equation}
+	Q_{a1}\cdot \frac{1}{(1+R_1)}=(Q_{a1}+Q_v) \cdot \frac{1}{1+R_2}
+\end{equation}
+
+整理两个方程：
+$$	Q_{a1}\cdot (1+R_2) = (Q_{a1}+Q_v)\cdot (1+R_1)$$
+$$	Q_{a1}\cdot (1+R_2)=(1+R_1)Q_{a1}+(1+R_1)Q_v$$
+$$ (1+R_2-1-R_1)Q_{a1}=(1+R_1)Q_v $$
+\begin{equation}
+Q_v=\frac{R_2-R_1}{1+R_1}\cdot Q_{a1} \label{equation:qv}
+\end{equation}
+
+将式(\ref{equation:qv})代入式(\ref{equ:energy}):
+$$ Q_{w1}\cdot h_{w1}+Q_{a1}\cdot h_{a1}=(Q_{w1}-\frac{R_2-R_1}{1+R_1}\cdot Q_{a1})\cdot h_{w2}+(Q_{a1}+\frac{R_2-R_1}{1+R_1}\cdot Q_{a1})\cdot h_{a2} $$
+$$ Q_{a1}\cdot h_{a1}=Q_{w1}\cdot h_{w2}-\frac{R_2-R_1}{1+R_1} h_{w2} Q_{a1}+(1+\frac{R_2-R_1}{1+R_1}) h_{a2}Q_{a1} -Q_{w1}\cdot h_{w1} $$
+$$ Q_{a1}\cdot h_{a1}=Q_{w1}\cdot h_{w2}-\frac{R_2-R_1}{1+R_1} h_{w2} Q_{a1}+\frac{1+R_2}{1+R_1} h_{a2}Q_{a1} -Q_{w1}\cdot h_{w1} $$
+$$ Q_{a1}\cdot (h_{a1}+\frac{R_2-R_1}{1+R_1} h_{w2}-\frac{1+R_2}{1+R_1} h_{a2})=Q_{w1}\cdot h_{w2} -Q_{w1}\cdot h_{w1} $$
+$$ Q_{a1}= \frac{Q_{w1}(h_{w2} -h_{w1})}{h_{a1}+\frac{R_2-R_1}{1+R_1} h_{w2}-\frac{1+R_2}{1+R_1} h_{a2}} $$
+
+

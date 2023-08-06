@@ -1,0 +1,473 @@
+net:
+  batch: 16
+  subdivisions: 1
+  width: 416
+  height: 416
+  channels: 3
+  momentum: 0.9
+  decay: 0.0005
+  angle: 0
+  saturation: 1.5
+  exposure: 1.5
+  hue: 0.1
+
+  learning_rate: 0.001
+  burn_in: 1000
+  max_batches: 500200
+  policy: steps
+  steps: "400000, 450000"
+  scales: "0.1,0.1"
+
+layer_1:
+  conv: # 升通道数，输出形状为(416, 416, 32)
+    batch_normalize: 1
+    filters: 32
+    size: 3
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_2:
+  conv: # 降采样，升通道，降采样层一般都会把通道数扩大两倍，(208, 208, 64)
+    batch_normalize: 1
+    filters: 64 # 降采样层的卷积核个数为上一层的两倍，用来降输出通道数扩大两倍
+    size: 3
+    stride: 2  # yolo3模型中，只有降采样层的步长为2，其余层都是1
+    pad: 1
+    activation: leaky
+
+layer_3:
+  conv: # (208, 208, 32)
+    batch_normalize: 1
+    filters: 32
+    size: 1
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_4:
+  conv: # (208, 208, 64)
+    batch_normalize: 1
+    filters: 64
+    size: 3
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_5: # 改成用于将第二层和第四层的输出结果相加，第二层和第四层的输出形状是相同的
+  shortcut:  # 输出形状(208, 208, 64)
+    from: -3
+    activation: linear
+
+layer_6:
+  conv: # 降采样 (104, 104, 128)
+    batch_normalize: 1
+    filters: 128
+    size: 3
+    stride: 2
+    pad: 1
+    activation: leaky
+
+layer_7~12: # (104, 104, 128)
+  residual_block_2: 2  # 表示残差块residual_block_2重复2次
+
+layer_13: # (104, 104, 128)->(52, 52, 256)
+  conv: # 降采样
+    batch_normalize: 1
+    filters: 256
+    size: 3
+    stride: 2
+    pad: 1
+    activation: leaky
+
+layer_14~37: # (52, 52, 256)->(52, 52, 256)
+  residual_block_3: 8  # 表示残差块residual_block_3重复8次
+
+# 36层（即shortcut层的前一层）输出结果route到第三个yolo层，作为第三个yolo层的部分输入
+
+layer_38: #(52, 52, 256)->(26, 26, 512)
+  conv: # 降采样
+    batch_normalize: 1
+    filters: 512
+    size: 3
+    stride: 2
+    pad: 1
+    activation: leaky
+
+layer_39~62:  # 39+24-1=62 (26, 26, 512)->(26, 26, 512)
+  residual_block_4: 8 # 表示残差块residual_block_4重复8次
+
+# 62层（即shortcut的前一层）输出结果route到第二个yolo层，作为第二个yolo层的部分输入
+
+layer_63: # (26, 26, 512)->(13, 13, 1024)
+  conv: # 降采样
+    batch_normalize: 1
+    filters: 1024
+    size: 3
+    stride: 2
+    pad: 1
+    activation: leaky
+
+layer_64~75: # 64+12-1=75 (13, 13, 1024)->(13, 13, 1024)
+  residual_block_5: 4 # 表示残差块residual_block_5重复4次
+
+# 至此，darknet网络结构结束
+# 下面开始第一个yolo层的构建
+
+layer_76:  # (13, 13, 1024)->(13, 13, 512)
+  conv:
+    batch_normalize: 1
+    filters: 512
+    size: 1
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_77:  # (13, 13, 512)->(13, 13, 1024)
+  conv:
+    batch_normalize: 1
+    filters: 1024
+    size: 3
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_78:  # (13, 13, 1024)->(13, 13, 512)
+  conv:
+    batch_normalize: 1
+    filters: 512
+    size: 1
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_79:  # (13, 13, 512)->(13, 13, 1024)
+  conv:
+    batch_normalize: 1
+    filters: 1024
+    size: 3
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_80:  # (13, 13, 1024)->(13, 13, 512)
+  conv:
+    batch_normalize: 1
+    filters: 512
+    size: 1
+    stride: 1
+    pad: 1
+    activation: leaky
+# 第80层的输出route到第二个yolo层，作为第二个yolo层输入的另一部分
+
+layer_81:  # (13, 13, 512)->(13, 13, 1024)
+  conv:
+    batch_normalize: 1
+    filters: 1024
+    size: 3
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_82: # (13, 13, 1024)->(13, 13, 18)
+  conv:
+    filters: 255
+    size: 1
+    stride: 1
+    pad: 1
+    activation: linear
+
+layer_83:
+  yolo:
+    mask: 6,7,8
+    anchors: 10,13,  16,30,  33,23,  30,61,  62,45,  59,119,  116,90,  156,198,  373,326
+    classes: 80
+    num: 9
+    jitter: 0.3
+    ignore_thresh: 0.7
+    truth_thresh: 1
+    random: 1
+
+# 下面开始构建第二个yolo层
+layer_84:  # (13, 13, 512)->(13, 13, 512)
+  route:  # 对接第80层的输出
+    layers: -4
+
+layer_85: # (13, 13, 512)->(13, 13, 256)
+  conv:  # 降通道
+    batch_normalize: 1
+    filters: 256
+    size: 1
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_86:  # (13, 13, 256)->(26,26,256)
+  upsample:  # 上采样
+    stride: 2
+
+layer_87:
+  route: # 将如下两层拼接，(26,26,256)+(26,26,512)->(26,26,768)
+    layers: -1,61  # -1的输出形状是(26,26,256), 61的输出形状是(26,26,512)
+
+layer_88:
+  conv:  # (26,26,768)->(26,26,256)
+    batch_normalize: 1
+    filters: 256
+    size: 1
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_89:
+  conv:  # (26,26,256)->(26,26,512)
+    batch_normalize: 1
+    filters: 512
+    size: 3
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_90:
+  conv:  # (26,26,512)->(26,26,256)
+    batch_normalize: 1
+    filters: 256
+    size: 1
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_91:
+  conv:  # (26,26,256)->(26,26,512)
+    batch_normalize: 1
+    filters: 512
+    size: 3
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_92:
+  conv:  # (26,26,512)->(26,26,256)
+    batch_normalize: 1
+    filters: 256
+    size: 1
+    stride: 1
+    pad: 1
+    activation: leaky
+# 92层的输出route到第三个yolo层，作为第三个yolo层的另一部分输入
+
+layer_93:
+  conv:  # (26,26,256)->(26,26,512)
+    batch_normalize: 1
+    filters: 512
+    size: 3
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_94:
+  conv:  # (26,26,512)->(26,26,255)
+    filters: 255
+    size: 1
+    stride: 1
+    pad: 1
+    activation: linear
+
+layer_95:
+  yolo:
+    mask: 3,4,5
+    anchors: 10,13,  16,30,  33,23,  30,61,  62,45,  59,119,  116,90,  156,198,  373,326
+    classes: 80
+    num: 9
+    jitter: 0.3
+    ignore_thresh: 0.7
+    truth_thresh: 1
+    random: 1
+
+layer_96:
+  route: # 对接92层的输出 (26,26,256)->(26,26,256)
+    layers: -4
+
+layer_97:
+  conv: # (26,26,256)->(26,26,128)
+    batch_normalize: 1
+    filters: 128
+    size: 1
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_98:  # (26,26,128)->(52,52,128)
+  upsample:
+    stride: 2
+
+layer_99:
+  route:  # 将如下两层拼接，(52,52,128)+(52,52,256)->(52,52,384)
+    layers: -1, 36
+
+layer_100:  # (52,52,384)->(52,52,128)
+  conv:
+    batch_normalize: 1
+    filters: 128
+    size: 1
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_101:    # (52,52,128)->(52,52,256)
+  conv:
+    batch_normalize: 1
+    filters: 256
+    size: 3
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_102:  # (52,52,256)->(52,52,128)
+  conv:
+    batch_normalize: 1
+    filters: 128
+    size: 1
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_103:  # (52,52,128)->(52,52,256)
+  conv:
+    batch_normalize: 1
+    filters: 256
+    size: 3
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_104:  # (52,52,256)->(52,52,128)
+  conv:
+    batch_normalize: 1
+    filters: 128
+    size: 1
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_105:  # (52,52,128)->(52,52,256)
+  conv:
+    batch_normalize: 1
+    filters: 256
+    size: 3
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_106:  # (52,52,256)->(52,52,255)
+  conv:
+    # yolo层前面一层不需要bn层
+    filters: 255
+    size: 1
+    pad: 1
+    stride: 1
+    activation: linear
+
+layer_107:
+  yolo:
+    mask: 0,1,2
+    anchors: 10,13,  16,30,  33,23,  30,61,  62,45,  59,119,  116,90,  156,198,  373,326
+    classes: 80
+    num: 9
+    jitter: 0.3
+    ignore_thresh: 0.7
+    truth_thresh: 1
+    random: 1
+
+
+#不使用残差块，按层顺序定义也是可以的
+residual_block_2:  # 因为后面的层会重复多次，如果分层定义，需要很多重复配置，这里配置残差块
+  layer_1: # 残差块一般有3层，这是第一层 (104, 104, 128)->(104, 104, 64)，残差块的输入和输出形状是一样的
+    conv:
+      batch_normalize: 1
+      filters: 64
+      size: 1
+      stride: 1
+      pad: 1
+      activation: leaky
+  layer_2: # (104, 104, 128)
+    conv:
+      batch_normalize: 1
+      filters: 128
+      size: 3
+      stride: 1
+      pad: 1
+      activation: leaky
+  layer_3: # (104, 104, 128)
+    shortcut:
+      from: -3
+      activation: linear
+
+residual_block_3:
+  # 14 ~ 37
+  layer_1: # 残差块一般有3层，这是第一层 (52, 52, 256)->(52, 52, 128)，残差块的输入和输出形状是一样的
+    conv:
+      batch_normalize: 1
+      filters: 128
+      size: 1
+      stride: 1
+      pad: 1
+      activation: leaky
+    layer_2: # (52, 52, 128)->(52, 52, 256)
+      conv:
+        batch_normalize: 1
+        filters: 256
+        size: 3
+        stride: 1
+        pad: 1
+        activation: leaky
+    layer_3: # (52, 52, 256)
+      shortcut:
+        from: -3
+        activation: linear
+
+residual_block_4:  # (26, 26, 512)->(26, 26, 512)，残差块的输入和输出形状是一样的
+  # layers 39 ~ 62
+  layer_1: # 残差块一般有3层，这是第一层 (26, 26, 512)->(26, 26, 256)
+    conv:
+      batch_normalize: 1
+      filters: 256
+      size: 1
+      stride: 1
+      pad: 1
+      activation: leaky
+    layer_2: # (26, 26, 1024)->(26, 26, 512)
+      conv:
+        batch_normalize: 1
+        filters: 512
+        size: 3
+        stride: 1
+        pad: 1
+        activation: leaky
+    layer_3: # (26, 26, 512)->(26, 26, 512)
+      shortcut:
+        from: -3
+        activation: linear
+
+residual_block_5:  # (13, 13, 1024)->(13, 13, 1024)，残差块的输入和输出形状是一样的
+  # layer 64 ~ 75
+  layer_1: # 残差块一般有3层，这是第一层 (13, 13, 1024)->(13, 13, 512)
+    conv:
+      batch_normalize: 1
+      filters: 512
+      size: 1
+      stride: 1
+      pad: 1
+      activation: leaky
+    layer_2: # (13, 13, 512)->(13, 13, 1024)
+      conv:
+        batch_normalize: 1
+        filters: 1024
+        size: 3
+        stride: 1
+        pad: 1
+        activation: leaky
+    layer_3: # (13, 13, 1024)->(13, 13, 1024)
+      shortcut:
+        from: -3
+        activation: linear

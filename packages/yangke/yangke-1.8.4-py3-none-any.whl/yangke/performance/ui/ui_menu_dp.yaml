@@ -1,0 +1,22 @@
+menu:
+  - # 第一个菜单ribbon
+    name: "文件"
+    items:
+      - action_name: "保存当前项目"
+        short_cut: "Ctrl+S"
+        connect: "self.button_clicked"
+  - # 种群图类型
+    name: "设置"
+    items:
+      - action_name: "表压/绝压设置"
+        connect: "self.setting_abs_or_rel"
+      - action_name: "字体设置"
+        connect: "self.set_font"
+      - action_name: "数据格式设置"
+        connect: "self.set_digits"
+  - name: "帮助"
+    items:
+      - action_name: "关于"
+        connect: "self.about"
+      - action_name: "帮助"
+        connect: "self.help"
