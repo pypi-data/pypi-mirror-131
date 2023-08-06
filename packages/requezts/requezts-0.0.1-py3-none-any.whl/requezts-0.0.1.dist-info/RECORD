@@ -1,0 +1,12 @@
+requezts/__init__.py,sha256=46DM9PUwlRUECNMDYtQ1RKMpzchwmmL9x8y1L4-8CTU,224
+requezts/adapters.py,sha256=nl8mgEGwd8hBXe3pCQNAUTdZdm0EnGobug1Q3CvW-gw,1123
+requezts/connection.py,sha256=r8rhH1k3mxLy3SuHpQlltPbHxurcYx0s8QZY_1FNpuw,2246
+requezts/connectionpool.py,sha256=As4SsXT_O8q9V7h6m5mInKZ_P86GWjqp4UAM9gQ9p7A,236
+requezts/poolmanager.py,sha256=KgOh_zLPA4lmMqSNMl7TbxmaoLCwvxijwAvckzZvTkE,379
+requezts/sessions.py,sha256=TIQ1BS83WVYuedA4IiZC-FJzktZKZNRJ1LgppQykvl0,2214
+requezts/socket.py,sha256=XXPiLgjYY9YPw7cC9AGE9eCYZNp7IE6fnetC6NyRVQk,6535
+requezts-0.0.1.dist-info/LICENSE,sha256=yIWKWnZEC7ykhOE0z330Y4XQkN0YssWOZQ-TkliALls,10141
+requezts-0.0.1.dist-info/METADATA,sha256=7lpe-LXB5H3cPkqquXjPqh4zrZwJoJt13EjJpG964GM,1161
+requezts-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+requezts-0.0.1.dist-info/top_level.txt,sha256=sf9OHvdG-wO1_33QKGK-1uSlae9ecXtfTITYIehXBcE,9
+requezts-0.0.1.dist-info/RECORD,,
