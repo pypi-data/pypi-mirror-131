@@ -1,0 +1,16 @@
+# hiccough
+Hiccough is a simple html templating tool. It allow for the generation of 
+html strings from nested lists of python like so
+```
+hiccough.html(["div.myclass", ["p", "Hello World!"]])
+=> '<div class="myclass"><p>Hello World!</p></div>'
+```
+
+
+## Nesting Shorthand
+Hiccough supports a nesting syntax via `>` for multiple nested tags
+with only classes and ids. 
+```
+html(["div.a>div.b>div.c", "It's divs all the way down!"])
+=>'<div class="a"><div class="b"><div class="c"></div>It's divs all the way down!</div></div>'
+```
