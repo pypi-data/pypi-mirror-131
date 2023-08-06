@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+src/sklearn_alchemy/__init__.py
+src/sklearn_alchemy/__main__.py
+src/sklearn_alchemy/alchemy.py
+src/sklearn_alchemy.egg-info/PKG-INFO
+src/sklearn_alchemy.egg-info/SOURCES.txt
+src/sklearn_alchemy.egg-info/dependency_links.txt
+src/sklearn_alchemy.egg-info/entry_points.txt
+src/sklearn_alchemy.egg-info/requires.txt
+src/sklearn_alchemy.egg-info/top_level.txt
+src/sklearn_alchemy/modules/module.py
