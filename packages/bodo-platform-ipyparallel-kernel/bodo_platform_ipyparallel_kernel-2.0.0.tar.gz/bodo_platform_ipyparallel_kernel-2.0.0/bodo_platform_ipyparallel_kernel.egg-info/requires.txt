@@ -1,0 +1,4 @@
+jupyter_client>=7
+ipython>=7
+ipykernel>=6
+ipyparallel>=8
