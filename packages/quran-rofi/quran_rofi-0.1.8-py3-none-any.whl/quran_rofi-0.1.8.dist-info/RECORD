@@ -1,0 +1,15 @@
+quran_rofi/__init__.py,sha256=Txvk49kpGCKheOtDN0yfEIPpIw8Y8yviaTCJKWeyc6c,23
+quran_rofi/config.py,sha256=3RxyBQRLiDM1o9b8t5Lb0-ZnnO_-Og6NOCl7HIw14mg,1341
+quran_rofi/murotal.py,sha256=89Un0BnOBAfjYJAG0iPmyIUbq75Bwn8Ok9vIAWC3dhQ,325
+quran_rofi/quran.py,sha256=TxmgtRCdZBNEJtpBwPF_Cy2w_ysQuCEqJzb2NULTu1k,4566
+quran_rofi/surat.py,sha256=e2O9jrbiIgr3nvy5rgqvMh-nG8k8XFcQfKrOJnF-Iso,4707
+quran_rofi/assets/quran.desktop,sha256=GuXOOjngxZQo48Nfh4uwA5s0kpo_ZVfkkpa8a3dNvr0,117
+quran_rofi/assets/quran.png,sha256=d2b79g0M9GhQ28GntXcboz5hQsHEEUwr91DA2wvvH7Q,13759
+quran_rofi-0.1.8.data/data/share/applications/quran.desktop,sha256=GuXOOjngxZQo48Nfh4uwA5s0kpo_ZVfkkpa8a3dNvr0,117
+quran_rofi-0.1.8.data/data/share/icons/quran.png,sha256=d2b79g0M9GhQ28GntXcboz5hQsHEEUwr91DA2wvvH7Q,13759
+quran_rofi-0.1.8.dist-info/LICENSE,sha256=BUj6Dx-N_F2ZtKOAOcU0d7d8WSJ9qhzhRxPXQhFFvNE,1064
+quran_rofi-0.1.8.dist-info/METADATA,sha256=Z2EL2N4VVWPuhOnMj-LXsorMPuMeV3Cj0yuql0LxKmI,1263
+quran_rofi-0.1.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+quran_rofi-0.1.8.dist-info/entry_points.txt,sha256=u0J91jBpKPlN0LuN25EVouL5tSbJmpRhJAiAHknzwG4,59
+quran_rofi-0.1.8.dist-info/top_level.txt,sha256=TZgs7CtNnVEEfQnciseQIgu0CFqAu3_GKlpeMfI3QkU,11
+quran_rofi-0.1.8.dist-info/RECORD,,

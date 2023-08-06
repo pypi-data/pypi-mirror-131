@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: quran-rofi
+Version: 0.1.8
+Summary: Al-Quran dengan Terjemahan / Tafsir Jalalayn
+Home-page: https://gitlab.com/nesstero/Al-Quran-Rofi
+Author: nestero
+Author-email: nestero@mail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyrof
+Requires-Dist: alquran-id
+
+# Al-Quran Rofi
+Al-Quran dengan Terjemahan / Tafsir Jalalayn
+
+## Install
+#### Requirements
+- [Rofi](https://github.com/davatorium/rofi)
+- [xclip](https://github.com/astrand/xclip)
+- Al-Quran Rofi menggunakan font [Al Qalam Quran Majeed](https://github.com/nesstero/Al-Quran-Rofi/raw/master/quran_rofi/Font/Al%20Qalam%20Quran%20Majeed.ttf)
+#### Installasi
+- `pip install quran-rofi`
+
+## Configure
+untuk pengaturan font Quran ada di file `~/.config/quran-rofi.ini`
+
+## Icon Desktop
+File `.desktop` Al-Quran Rofi ada di `~/.local/share/applications/quran.desktop`, jika icon desktop pada `rofi drun` tidak muncul bisa di ubah file `quran.desktop` pada bagian Icon:
+```
+[Desktop Entry]
+Type=Application
+Name=Al'Quran Rofi
+Icon=~/.local/share/icons/quran.png
+TryExec=quran-rofi
+Exec=quran-rofi
+Terminal=false
+```
+
+## Preview Al-Quran Rofi
+![Al-Quran Rofi](https://github.com/nesstero/Al-Quran-Rofi/raw/master/ss.png)
+
+
