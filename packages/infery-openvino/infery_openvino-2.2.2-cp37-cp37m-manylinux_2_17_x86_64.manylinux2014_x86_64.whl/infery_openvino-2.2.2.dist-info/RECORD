@@ -1,0 +1,9 @@
+infery.pyi,sha256=iQs_L8sUggLVOIiHT-jrwRjoeoqH_TDpEOBVxsleFyM,2323
+tests.cpython-37m-x86_64-linux-gnu.so,sha256=MmDD0MM88hgLeusnIvbxxr2XYTks4AsOegKYjtzIQJg,1391400
+tests.pyi,sha256=F_utLcdOkk90FJCU_QPIXyUAxYsGo-97OkacUg9Ju5Y,2449
+infery.cpython-37m-x86_64-linux-gnu.so,sha256=OUcHBloHelA1cdVyGRqtVBrDf_amoCT74Sl6E9bM_Yg,1846376
+infery_openvino-2.2.2.dist-info/METADATA,sha256=ovsWeMtk5E-Iu3rlxoIvOyVSmVtGGeBN8mpnKQG8e-g,623
+infery_openvino-2.2.2.dist-info/top_level.txt,sha256=W4SjdZWE39rdkEfVRcpvypJPYLe0ug4Ln3kP9OUZYu8,13
+infery_openvino-2.2.2.dist-info/WHEEL,sha256=vQ-Mo5jXEL_-NtHPy04K4h9z1bGvmynJur1NIK6k5qA,147
+infery_openvino-2.2.2.dist-info/LICENSE,sha256=xbk3exNmWGQ0V59U9TUVZts5p2BI-mzMEdSMc_GldQ4,11342
+infery_openvino-2.2.2.dist-info/RECORD,,
