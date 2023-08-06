@@ -1,0 +1,16 @@
+frida_hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frida_hooks/agent.py,sha256=GjbUvgdBdrb7YrARA3ww_Gxq7yyEpc_FeDrZBkrLGpA,39040
+frida_hooks/colors.py,sha256=eP_U7ICSsu7cOj90dgn4Av3B-DifStLH2lwqlf3aBdg,3168
+frida_hooks/httphandler.py,sha256=oUvgX9zN6Z4w3p60Jyc4Z8AQsJOX_oTh-xwBj5JAQBg,1723
+frida_hooks/main.py,sha256=GRhn1hCQfdsXcHEEyC97FDkkZwCKL_qoy3Ax1BMWqz4,2994
+frida_hooks/scriptor.py,sha256=XTiImmJyh4OXAnig75X0OHeWYb89JWJmjHLgPpN9O_0,37691
+frida_hooks/scripts.js,sha256=vpTlNjuTxrIWvBanpQrx268qt_eYSJJuJ3p2TWiD7u4,115138
+frida_hooks/utils.py,sha256=tNFSh7X0pqyHXqDYg5QwwLJo-WEg2jDEGZyWl1pJf04,5097
+frida_hooks/bin/SoFixer-Windows-32.exe,sha256=aNSQWxMKhPVrQyEtgpCTU_yJVBrWbwPUB_rTyuqHvM4,2429084
+frida_hooks/bin/SoFixer-Windows-64.exe,sha256=sL6K8KNgNlwd_QOSsLXsc1Lu-ylRSS5AL1YXG06_u7A,2431251
+frida_hooks-0.9.15.dist-info/LICENSE,sha256=vf23C4GZR1HkTq9GyjlXB4C51sdOxRDka2M0CCR90Zk,11537
+frida_hooks-0.9.15.dist-info/METADATA,sha256=ETgpCy_93-RdYP6Mm8Px5cWnga0FWyzb8wcxp5ZLrWY,298
+frida_hooks-0.9.15.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+frida_hooks-0.9.15.dist-info/entry_points.txt,sha256=B2iVn-O1ab_VRbZiwGx5HixlTTTlapV1zkEAK0lyywQ,55
+frida_hooks-0.9.15.dist-info/top_level.txt,sha256=q-FKU6SU2nMEgYCulaWWCNXvK5Y_-XMo2HhvpBNFXP0,12
+frida_hooks-0.9.15.dist-info/RECORD,,
