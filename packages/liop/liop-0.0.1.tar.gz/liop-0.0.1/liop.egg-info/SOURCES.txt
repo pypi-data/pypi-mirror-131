@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+liop/__init__.py
+liop.egg-info/PKG-INFO
+liop.egg-info/SOURCES.txt
+liop.egg-info/dependency_links.txt
+liop.egg-info/top_level.txt

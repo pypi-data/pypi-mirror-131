@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: liop
+Version: 0.0.1
+Summary: To Do Operation With Every Elements Of Lists
+Home-page: UNKNOWN
+Author: HARI PRASANTH S
+Author-email: hariprasanth581@gmail.com
+License: MIT
+Keywords: List Calculator,List,Operator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+Simply List-List Calculator to Add(+),Subract(-),Multipy(*),Divide(/),Exponention(**) of Each of the Elemnets in a list 
+
+
+Change Log
+==========
+
+0.0.1 (15.12.2021)
+
+-----------------
+
+- First Release
+
