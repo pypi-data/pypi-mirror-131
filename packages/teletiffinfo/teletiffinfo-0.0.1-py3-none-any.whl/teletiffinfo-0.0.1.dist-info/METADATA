@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: teletiffinfo
+Version: 0.0.1
+Summary: Fetch metadata from remote (https) tiff.
+Home-page: UNKNOWN
+Author: Xiao Gui
+Author-email: xgui3783@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests (>=2.26.0)
+
+UNKNOWN
+
