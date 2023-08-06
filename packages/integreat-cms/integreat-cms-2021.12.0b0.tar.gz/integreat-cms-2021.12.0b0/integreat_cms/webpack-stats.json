@@ -1,0 +1,270 @@
+{
+  "status": "done",
+  "assets": {
+    "fonts/noto-sans-sc-v12-chinese-simplified-regular.8eb6f57fc5755ebc11858e5e7ee56427.ttf": {
+      "name": "fonts/noto-sans-sc-v12-chinese-simplified-regular.8eb6f57fc5755ebc11858e5e7ee56427.ttf",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/noto-sans-sc-v12-chinese-simplified-regular.8eb6f57fc5755ebc11858e5e7ee56427.ttf"
+    },
+    "fonts/noto-sans-sc-v12-chinese-simplified-700.b867cc3cec9c2e072f34b6b2e6ebbdc5.ttf": {
+      "name": "fonts/noto-sans-sc-v12-chinese-simplified-700.b867cc3cec9c2e072f34b6b2e6ebbdc5.ttf",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/noto-sans-sc-v12-chinese-simplified-700.b867cc3cec9c2e072f34b6b2e6ebbdc5.ttf"
+    },
+    "fonts/noto-sans-sc-v12-chinese-simplified-regular.8c0bad55bd9447d3b35c66a8307ef4cf.eot": {
+      "name": "fonts/noto-sans-sc-v12-chinese-simplified-regular.8c0bad55bd9447d3b35c66a8307ef4cf.eot",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/noto-sans-sc-v12-chinese-simplified-regular.8c0bad55bd9447d3b35c66a8307ef4cf.eot"
+    },
+    "fonts/noto-sans-sc-v12-chinese-simplified-regular.0dace2414f772ca670389b4f78e32f23.woff2": {
+      "name": "fonts/noto-sans-sc-v12-chinese-simplified-regular.0dace2414f772ca670389b4f78e32f23.woff2",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/noto-sans-sc-v12-chinese-simplified-regular.0dace2414f772ca670389b4f78e32f23.woff2"
+    },
+    "fonts/noto-sans-sc-v12-chinese-simplified-regular.60625dd9dcbb711cebd58c4353830ad6.woff": {
+      "name": "fonts/noto-sans-sc-v12-chinese-simplified-regular.60625dd9dcbb711cebd58c4353830ad6.woff",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/noto-sans-sc-v12-chinese-simplified-regular.60625dd9dcbb711cebd58c4353830ad6.woff"
+    },
+    "fonts/noto-sans-sc-v12-chinese-simplified-700.efd42de14d40546bc74f04b1a3be2e59.eot": {
+      "name": "fonts/noto-sans-sc-v12-chinese-simplified-700.efd42de14d40546bc74f04b1a3be2e59.eot",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/noto-sans-sc-v12-chinese-simplified-700.efd42de14d40546bc74f04b1a3be2e59.eot"
+    },
+    "fonts/noto-sans-sc-v12-chinese-simplified-700.9205a26a00cb2f63a368d9058987f740.woff2": {
+      "name": "fonts/noto-sans-sc-v12-chinese-simplified-700.9205a26a00cb2f63a368d9058987f740.woff2",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/noto-sans-sc-v12-chinese-simplified-700.9205a26a00cb2f63a368d9058987f740.woff2"
+    },
+    "fonts/noto-sans-sc-v12-chinese-simplified-700.b76b22f5feed95af23eb80024395a240.woff": {
+      "name": "fonts/noto-sans-sc-v12-chinese-simplified-700.b76b22f5feed95af23eb80024395a240.woff",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/noto-sans-sc-v12-chinese-simplified-700.b76b22f5feed95af23eb80024395a240.woff"
+    },
+    "aea20abe0bcd2f39f3e3aad787f90a60.svg": {
+      "name": "aea20abe0bcd2f39f3e3aad787f90a60.svg",
+      "path": "/home/circleci/project/integreat_cms/static/dist/aea20abe0bcd2f39f3e3aad787f90a60.svg"
+    },
+    "fonts/lateef-v18-arabic-regular.a383651a01c32033fb02fc509322a424.eot": {
+      "name": "fonts/lateef-v18-arabic-regular.a383651a01c32033fb02fc509322a424.eot",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/lateef-v18-arabic-regular.a383651a01c32033fb02fc509322a424.eot"
+    },
+    "fonts/lateef-v18-arabic-regular.b8e846f592b89cae88655b65a930d1a8.woff2": {
+      "name": "fonts/lateef-v18-arabic-regular.b8e846f592b89cae88655b65a930d1a8.woff2",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/lateef-v18-arabic-regular.b8e846f592b89cae88655b65a930d1a8.woff2"
+    },
+    "fonts/lateef-v18-arabic-regular.3df0ec86f8e3077a6721dfc59b504d3a.woff": {
+      "name": "fonts/lateef-v18-arabic-regular.3df0ec86f8e3077a6721dfc59b504d3a.woff",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/lateef-v18-arabic-regular.3df0ec86f8e3077a6721dfc59b504d3a.woff"
+    },
+    "fonts/lateef-v18-arabic-regular.103e24d61d5cded8198a2d09f0877056.ttf": {
+      "name": "fonts/lateef-v18-arabic-regular.103e24d61d5cded8198a2d09f0877056.ttf",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/lateef-v18-arabic-regular.103e24d61d5cded8198a2d09f0877056.ttf"
+    },
+    "1d0d8b66fa1da76d69b95b6d0ed5cca9.svg": {
+      "name": "1d0d8b66fa1da76d69b95b6d0ed5cca9.svg",
+      "path": "/home/circleci/project/integreat_cms/static/dist/1d0d8b66fa1da76d69b95b6d0ed5cca9.svg"
+    },
+    "926388f043fc8117b35b84b241a7f688.svg": {
+      "name": "926388f043fc8117b35b84b241a7f688.svg",
+      "path": "/home/circleci/project/integreat_cms/static/dist/926388f043fc8117b35b84b241a7f688.svg"
+    },
+    "fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-regular.a509a050157734e120b3b1bd883d2d43.ttf": {
+      "name": "fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-regular.a509a050157734e120b3b1bd883d2d43.ttf",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-regular.a509a050157734e120b3b1bd883d2d43.ttf"
+    },
+    "fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-700.07aedd3c4c1c9402ec76cecafb242139.ttf": {
+      "name": "fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-700.07aedd3c4c1c9402ec76cecafb242139.ttf",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-700.07aedd3c4c1c9402ec76cecafb242139.ttf"
+    },
+    "fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-regular.75444dbf942ce53191852ef4f27210e5.eot": {
+      "name": "fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-regular.75444dbf942ce53191852ef4f27210e5.eot",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-regular.75444dbf942ce53191852ef4f27210e5.eot"
+    },
+    "fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-regular.3bd5f5c5dd54ccb0c7c26a01c3e99235.woff2": {
+      "name": "fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-regular.3bd5f5c5dd54ccb0c7c26a01c3e99235.woff2",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-regular.3bd5f5c5dd54ccb0c7c26a01c3e99235.woff2"
+    },
+    "fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-regular.4f2cda059485c5f324fa636221498084.woff": {
+      "name": "fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-regular.4f2cda059485c5f324fa636221498084.woff",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-regular.4f2cda059485c5f324fa636221498084.woff"
+    },
+    "fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-700.a5e0d3de063b3c16064aee622e79ad5a.eot": {
+      "name": "fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-700.a5e0d3de063b3c16064aee622e79ad5a.eot",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-700.a5e0d3de063b3c16064aee622e79ad5a.eot"
+    },
+    "fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-700.6264aa05c16dfc21416d9c305afb46b3.woff2": {
+      "name": "fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-700.6264aa05c16dfc21416d9c305afb46b3.woff2",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-700.6264aa05c16dfc21416d9c305afb46b3.woff2"
+    },
+    "fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-700.56a3dea428762836a958bb3e6a870d8c.woff": {
+      "name": "fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-700.56a3dea428762836a958bb3e6a870d8c.woff",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/open-sans-v18-latin_latin-ext_greek_greek-ext_cyrillic_cyrillic-ext_vietnamese-700.56a3dea428762836a958bb3e6a870d8c.woff"
+    },
+    "fonts/dejavu-sans.60fc56f7c4ca745a7664e9af5ac42ecb.ttf": {
+      "name": "fonts/dejavu-sans.60fc56f7c4ca745a7664e9af5ac42ecb.ttf",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/dejavu-sans.60fc56f7c4ca745a7664e9af5ac42ecb.ttf"
+    },
+    "fonts/dejavu-sans-bold.766ec7f37f27362a392234410ef61022.ttf": {
+      "name": "fonts/dejavu-sans-bold.766ec7f37f27362a392234410ef61022.ttf",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/dejavu-sans-bold.766ec7f37f27362a392234410ef61022.ttf"
+    },
+    "fonts/raleway-v19-latin-regular.7491e11d0b82835ace09fee5328f4fb3.ttf": {
+      "name": "fonts/raleway-v19-latin-regular.7491e11d0b82835ace09fee5328f4fb3.ttf",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/raleway-v19-latin-regular.7491e11d0b82835ace09fee5328f4fb3.ttf"
+    },
+    "fonts/raleway-v19-latin-700.c7b8aaf39cfd48a498b13f072b7562d7.ttf": {
+      "name": "fonts/raleway-v19-latin-700.c7b8aaf39cfd48a498b13f072b7562d7.ttf",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/raleway-v19-latin-700.c7b8aaf39cfd48a498b13f072b7562d7.ttf"
+    },
+    "308c8a3e6164fb22acf3f1dffd435643.svg": {
+      "name": "308c8a3e6164fb22acf3f1dffd435643.svg",
+      "path": "/home/circleci/project/integreat_cms/static/dist/308c8a3e6164fb22acf3f1dffd435643.svg"
+    },
+    "1ecb155e2b147b5d699e0eb3f313a368.png": {
+      "name": "1ecb155e2b147b5d699e0eb3f313a368.png",
+      "path": "/home/circleci/project/integreat_cms/static/dist/1ecb155e2b147b5d699e0eb3f313a368.png"
+    },
+    "bd9d33c21cb8f740babf18d0ba2257f6.png": {
+      "name": "bd9d33c21cb8f740babf18d0ba2257f6.png",
+      "path": "/home/circleci/project/integreat_cms/static/dist/bd9d33c21cb8f740babf18d0ba2257f6.png"
+    },
+    "fonts/raleway-v19-latin-regular.c257a0c11f1acc2e6279a47212bed887.eot": {
+      "name": "fonts/raleway-v19-latin-regular.c257a0c11f1acc2e6279a47212bed887.eot",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/raleway-v19-latin-regular.c257a0c11f1acc2e6279a47212bed887.eot"
+    },
+    "fonts/raleway-v19-latin-regular.d0033942a11996c403809bb1cb7ce49b.woff2": {
+      "name": "fonts/raleway-v19-latin-regular.d0033942a11996c403809bb1cb7ce49b.woff2",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/raleway-v19-latin-regular.d0033942a11996c403809bb1cb7ce49b.woff2"
+    },
+    "fonts/raleway-v19-latin-regular.f8d47ad7f580d88f48076cfd62edc6d3.woff": {
+      "name": "fonts/raleway-v19-latin-regular.f8d47ad7f580d88f48076cfd62edc6d3.woff",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/raleway-v19-latin-regular.f8d47ad7f580d88f48076cfd62edc6d3.woff"
+    },
+    "7b472857aeec6fd11f9254757cb0c86e.svg": {
+      "name": "7b472857aeec6fd11f9254757cb0c86e.svg",
+      "path": "/home/circleci/project/integreat_cms/static/dist/7b472857aeec6fd11f9254757cb0c86e.svg"
+    },
+    "fonts/raleway-v19-latin-700.153dd04d16bd4e8eee06fcf30f623675.eot": {
+      "name": "fonts/raleway-v19-latin-700.153dd04d16bd4e8eee06fcf30f623675.eot",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/raleway-v19-latin-700.153dd04d16bd4e8eee06fcf30f623675.eot"
+    },
+    "fonts/raleway-v19-latin-700.368328471c9cb6626306f1d83dd041f1.woff2": {
+      "name": "fonts/raleway-v19-latin-700.368328471c9cb6626306f1d83dd041f1.woff2",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/raleway-v19-latin-700.368328471c9cb6626306f1d83dd041f1.woff2"
+    },
+    "fonts/raleway-v19-latin-700.6aded4d72c6088cfa96bcd53740ecf9d.woff": {
+      "name": "fonts/raleway-v19-latin-700.6aded4d72c6088cfa96bcd53740ecf9d.woff",
+      "path": "/home/circleci/project/integreat_cms/static/dist/fonts/raleway-v19-latin-700.6aded4d72c6088cfa96bcd53740ecf9d.woff"
+    },
+    "main.css": {
+      "name": "main.css",
+      "path": "/home/circleci/project/integreat_cms/static/dist/main.css"
+    },
+    "editor_content.css": {
+      "name": "editor_content.css",
+      "path": "/home/circleci/project/integreat_cms/static/dist/editor_content.css"
+    },
+    "pdf.css": {
+      "name": "pdf.css",
+      "path": "/home/circleci/project/integreat_cms/static/dist/pdf.css"
+    },
+    "svg/call.svg": {
+      "name": "svg/call.svg",
+      "path": "/home/circleci/project/integreat_cms/static/dist/svg/call.svg"
+    },
+    "svg/clock.svg": {
+      "name": "svg/clock.svg",
+      "path": "/home/circleci/project/integreat_cms/static/dist/svg/clock.svg"
+    },
+    "svg/email.svg": {
+      "name": "svg/email.svg",
+      "path": "/home/circleci/project/integreat_cms/static/dist/svg/email.svg"
+    },
+    "svg/idea.svg": {
+      "name": "svg/idea.svg",
+      "path": "/home/circleci/project/integreat_cms/static/dist/svg/idea.svg"
+    },
+    "svg/no_translate.svg": {
+      "name": "svg/no_translate.svg",
+      "path": "/home/circleci/project/integreat_cms/static/dist/svg/no_translate.svg"
+    },
+    "svg/pin.svg": {
+      "name": "svg/pin.svg",
+      "path": "/home/circleci/project/integreat_cms/static/dist/svg/pin.svg"
+    },
+    "svg/select-down-arrow.svg": {
+      "name": "svg/select-down-arrow.svg",
+      "path": "/home/circleci/project/integreat_cms/static/dist/svg/select-down-arrow.svg"
+    },
+    "svg/www.svg": {
+      "name": "svg/www.svg",
+      "path": "/home/circleci/project/integreat_cms/static/dist/svg/www.svg"
+    },
+    "images/integreat-icon-contur-only.png": {
+      "name": "images/integreat-icon-contur-only.png",
+      "path": "/home/circleci/project/integreat_cms/static/dist/images/integreat-icon-contur-only.png"
+    },
+    "images/integreat-icon.png": {
+      "name": "images/integreat-icon.png",
+      "path": "/home/circleci/project/integreat_cms/static/dist/images/integreat-icon.png"
+    },
+    "images/integreat-logo-white.png": {
+      "name": "images/integreat-logo-white.png",
+      "path": "/home/circleci/project/integreat_cms/static/dist/images/integreat-logo-white.png"
+    },
+    "images/integreat-logo-yellow.png": {
+      "name": "images/integreat-logo-yellow.png",
+      "path": "/home/circleci/project/integreat_cms/static/dist/images/integreat-logo-yellow.png"
+    },
+    "images/integreat-logo.jpg": {
+      "name": "images/integreat-logo.jpg",
+      "path": "/home/circleci/project/integreat_cms/static/dist/images/integreat-logo.jpg"
+    },
+    "images/integreat-logo.png": {
+      "name": "images/integreat-logo.png",
+      "path": "/home/circleci/project/integreat_cms/static/dist/images/integreat-logo.png"
+    },
+    "images/integreat-logo.svg": {
+      "name": "images/integreat-logo.svg",
+      "path": "/home/circleci/project/integreat_cms/static/dist/images/integreat-logo.svg"
+    },
+    "skins/ui/oxide/skin.min.css": {
+      "name": "skins/ui/oxide/skin.min.css",
+      "path": "/home/circleci/project/integreat_cms/static/dist/skins/ui/oxide/skin.min.css"
+    },
+    "skins/ui/oxide/content.min.css": {
+      "name": "skins/ui/oxide/content.min.css",
+      "path": "/home/circleci/project/integreat_cms/static/dist/skins/ui/oxide/content.min.css"
+    },
+    "editor.8eb442f2d726a09a3a8c.js": {
+      "name": "editor.8eb442f2d726a09a3a8c.js",
+      "path": "/home/circleci/project/integreat_cms/static/dist/editor.8eb442f2d726a09a3a8c.js"
+    },
+    "editor_content.fd267cfe24c6bce3070c.js": {
+      "name": "editor_content.fd267cfe24c6bce3070c.js",
+      "path": "/home/circleci/project/integreat_cms/static/dist/editor_content.fd267cfe24c6bce3070c.js"
+    },
+    "pdf.302a2e46a0c7c105b6a4.js": {
+      "name": "pdf.302a2e46a0c7c105b6a4.js",
+      "path": "/home/circleci/project/integreat_cms/static/dist/pdf.302a2e46a0c7c105b6a4.js"
+    },
+    "main.764420a758183f9668de.js.LICENSE.txt": {
+      "name": "main.764420a758183f9668de.js.LICENSE.txt",
+      "path": "/home/circleci/project/integreat_cms/static/dist/main.764420a758183f9668de.js.LICENSE.txt"
+    },
+    "main.764420a758183f9668de.js": {
+      "name": "main.764420a758183f9668de.js",
+      "path": "/home/circleci/project/integreat_cms/static/dist/main.764420a758183f9668de.js"
+    }
+  },
+  "chunks": {
+    "main": [
+      "main.css",
+      "main.764420a758183f9668de.js"
+    ],
+    "editor": [
+      "editor.8eb442f2d726a09a3a8c.js"
+    ],
+    "editor_content": [
+      "editor_content.css",
+      "editor_content.fd267cfe24c6bce3070c.js"
+    ],
+    "pdf": [
+      "pdf.css",
+      "pdf.302a2e46a0c7c105b6a4.js"
+    ]
+  }
+}
