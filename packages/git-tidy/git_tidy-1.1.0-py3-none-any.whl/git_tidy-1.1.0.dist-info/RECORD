@@ -1,0 +1,17 @@
+tidy/__init__.py,sha256=oSFQvw3lMbJmsZJNpaNdkPfcojdGjtGFqaM419Sf09k,446
+tidy/cli.py,sha256=y7sfs1qm_EzUXhiX0DhgqNp4HOcV4gAsGcgcIQGPZsM,4133
+tidy/core.py,sha256=GjIPoyMHiosC1U1LrFKAWhGRMhbdQg86Sz5pMmazRmI,27645
+tidy/exceptions.py,sha256=K-pQaXcvlBklR7hQk3X9ETRZq8b4mZ0EsQKQtk5wQbA,759
+tidy/github.py,sha256=vT642iMMwoFVSBvnTw1d0TOkeI6aBgye2VMhMxyxdgc,4717
+tidy/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tidy/tests/test_cli.py,sha256=iukUwdyXBKW1Xy14AHuoSp6nJaz5xK42WBJLV6tbQS8,5440
+tidy/tests/test_core.py,sha256=Qv5mwZbb-MwselqyCtWpCgmO-xdMnLepLVUw9V-9ykM,5526
+tidy/tests/test_github.py,sha256=rvctGrQxNkRGytzG3w45vSW0A2fb3qjND-TAUuI1Lb4,7245
+tidy/tests/test_integration.py,sha256=kgggfkKu1P2XEfzfeepDJTVpEhucjJq-49nJ1JXlZoY,18617
+tidy/tests/test_utils.py,sha256=dXQBMoO6_gOK-FdzDQYk9QKNpJljA6LgMMb8nxI2nEM,798
+tidy/utils.py,sha256=KmBZ_H0k11VzMrU6nzJa_Xa6_YouO9c3NQwG_L5ClHI,988
+git_tidy-1.1.0.dist-info/entry_points.txt,sha256=1KhtqJLd_OC8zML_2NEIR1-9kt_LS6Lz3KpxW7K76Ys,160
+git_tidy-1.1.0.dist-info/LICENSE,sha256=5hfMFN5-gtZ2GzumP6qmAKXdSZ_A1gm5DuPNGDcT6QQ,1456
+git_tidy-1.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+git_tidy-1.1.0.dist-info/METADATA,sha256=ttWphtifWHiZk2gWjAkbEV90RNH10dN_DKWzjjvohwo,3198
+git_tidy-1.1.0.dist-info/RECORD,,
