@@ -1,0 +1,13 @@
+foxglove_websocket/__init__.py,sha256=OIgOg3tthiwOnQzCe6aflmrrcvr0IgA7ZY12KGq-x4A,848
+foxglove_websocket/server.py,sha256=4BOu7TumeD16LdtL5oG_wgvdON8zRffeGpRK5UfFrSg,12249
+foxglove_websocket/types.py,sha256=1_amsf1PjKSt4r83eh6qJCtoytPemCLZW8YiwlmR45E,1247
+foxglove_websocket/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+foxglove_websocket/examples/json_server.py,sha256=zoNErT7hSthO37bvmqIHTfdkHamgw-ghbALnsdec3dk,1531
+foxglove_websocket/examples/protobuf_server.py,sha256=MjduU-JsdojoLQ___n-Y38_xKihQ8r5aiYmhhTYZG0g,2890
+foxglove_websocket/examples/proto/ExampleMsg.bin,sha256=zoSLlpJdox2jiTJIdVx6jsdRBmiq5lmsAL-O3AGatVM,82
+foxglove_websocket/examples/proto/ExampleMsg_pb2.py,sha256=lwC1uqHdIUQzU3J6KK8bRwSq0wY3PooFCDYc1qoVOOI,2389
+foxglove_websocket/examples/proto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+foxglove_websocket-0.0.6.dist-info/METADATA,sha256=ADzXxywbV_oppO5-YOgB1RnxqH4060Ih0POmxLOVfqo,2463
+foxglove_websocket-0.0.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+foxglove_websocket-0.0.6.dist-info/top_level.txt,sha256=MEgzzFgGIo_AL3Mu7ek3yOA3U9xzvYjkeQpFMNZogBA,19
+foxglove_websocket-0.0.6.dist-info/RECORD,,
