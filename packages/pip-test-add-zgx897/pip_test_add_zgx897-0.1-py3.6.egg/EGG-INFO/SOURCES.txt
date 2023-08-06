@@ -1,0 +1,7 @@
+setup.py
+pip_test_add_zgx897/__init__.py
+pip_test_add_zgx897/add.py
+pip_test_add_zgx897.egg-info/PKG-INFO
+pip_test_add_zgx897.egg-info/SOURCES.txt
+pip_test_add_zgx897.egg-info/dependency_links.txt
+pip_test_add_zgx897.egg-info/top_level.txt
