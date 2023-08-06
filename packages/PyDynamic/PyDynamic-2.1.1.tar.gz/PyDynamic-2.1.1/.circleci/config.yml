@@ -1,0 +1,441 @@
+# Check https://circleci.com/docs/2.0/language-python/ for more details
+version: 2.1
+
+executors:
+  venv_tester:
+    working_directory: ~/repo
+    parameters:
+      tag:
+        type: string
+        default: "3.9"
+    docker:
+      - image: circleci/python:<< parameters.tag >>
+  conda_tester:
+    working_directory: ~/repo
+    docker:
+      - image: cimg/base:2021.04
+  publisher:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/python:3.9
+    environment:
+      PYENV: "py39"
+  tweeter:
+    working_directory: ~/repo
+    parameters:
+      tag:
+        type: string
+        default: "3.9"
+      pyenv:
+        type: string
+        default: "py39"
+    docker:
+      - image: circleci/python:<< parameters.tag >>
+    environment:
+      PYENV: << parameters.pyenv >>
+
+workflows:
+  nightly_test:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only: /master/
+    jobs:
+      - test:
+          name: "nightly_test_python_py36"
+          tag: "3.6"
+          toxenvs: "-e py36 -e py36-without_requirements"
+          posargs: "-- ''"
+      - test:
+          name: "nightly_test_python_py37"
+          tag: "3.7"
+          toxenvs: "-e py37 -e py37-without_requirements"
+          posargs: "-- ''"
+      - test:
+          name: "nightly_test_python_py38"
+          tag: "3.8"
+          toxenvs: "-e py38 -e py38-without_requirements"
+          posargs: "-- ''"
+      - test:
+          name: "nightly_test_python_py39"
+          tag: "3.9"
+          toxenvs: "-e py39 -e py39-without_requirements"
+          posargs: "-- ''"
+      - test:
+          name: "nightly_test_python_py310"
+          tag: "3.10"
+          toxenvs: "-e py310 -e py310-without_requirements"
+          posargs: "-- ''"
+      - test_conda_py39:
+          name: "nightly_test_conda_py39"
+          is_nightly_run: True
+
+  quick_test:
+    jobs:
+      - test:
+          name: "test_python_py39"
+          tag: "3.9"
+          toxenvs: "-e py39-without_requirements"
+      - test_conda_py39:
+          is_nightly_run: False
+
+  test_and_deploy:
+    jobs:
+      - test:
+          name: "test_python_py36"
+          tag: "3.6"
+          toxenvs: "-e py36-without_requirements"
+      - test:
+          name: "test_python_py36_slow_tests"
+          tag: "3.6"
+          toxenvs: "-e py36-without_requirements"
+          posargs: "-- -m 'slow'"
+          requires:
+            - test_python_py36
+      - test:
+          name: "test_python_py37"
+          tag: "3.7"
+          toxenvs: "-e py37-without_requirements"
+      - test:
+          name: "test_python_py37_slow_tests"
+          tag: "3.7"
+          toxenvs: "-e py37-without_requirements"
+          posargs: "-- -m 'slow'"
+          requires:
+            - test_python_py37
+      - test:
+          name: "test_python_py38"
+          tag: "3.8"
+          toxenvs: "-e py38-without_requirements"
+      - test:
+          name: "test_python_py38_slow_tests"
+          tag: "3.8"
+          toxenvs: "-e py38-without_requirements"
+          posargs: "-- -m 'slow'"
+          requires:
+            - test_python_py38
+      - test:
+          name: "test_python_py39_slow_tests"
+          tag: "3.9"
+          toxenvs: "-e py39-without_requirements"
+          posargs: "-- -m 'slow'"
+      - test:
+          name: "test_python_py310"
+          tag: "3.10"
+          toxenvs: "-e py310-without_requirements"
+      - test:
+          name: "test_python_py310_slow_tests"
+          tag: "3.10"
+          toxenvs: "-e py310-without_requirements"
+          posargs: "-- -m 'slow'"
+          requires:
+            - test_python_py310
+      - test_conda_py39:
+          name: "test_conda_py39_with_all_tests"
+          is_nightly_run: True
+      - preview_release:
+          requires:
+            - test_python_py36_slow_tests
+            - test_python_py37_slow_tests
+            - test_python_py38_slow_tests
+            - test_python_py39_slow_tests
+            - test_python_py310_slow_tests
+            - test_conda_py39_with_all_tests
+          filters:
+            branches:
+              ignore: /.*dev$/
+      - confirm_previewed_release_actions:
+          # This job allows for checking that the release we will create in the
+          # next step actually is the desired release, by observing the result of
+          # preview_release.
+          type: approval
+          requires:
+            - preview_release
+          filters:
+            branches:
+              only: /master/
+      - release:
+          # Job to potentially create a release based on python-semantic-release's
+          # decision and publish it on GitHub, Zenodo and PyPI.org. This requires manual
+          # approval in the previous step, which is only triggered on branch master,
+          # thus this job here is triggered only on master as well.
+          context:
+            - pypi.org publishing for PyDynamic
+            - GitHub pushes to BjoernLudwigPTB's public_repos
+          requires:
+            - confirm_previewed_release_actions
+      - tweet:
+          context: Twitter.com publish release
+          requires:
+            - release
+
+commands:
+  create_folders:
+    description: "Checkout code and prepare test results location."
+    steps:
+    - checkout
+    - run:
+        name: Create test result folder
+        command: |
+          mkdir test-results
+
+  create_venv:
+    description: "Prepare virtual environment."
+    steps:
+    - run:
+        name: Create virtual environment
+        command: |
+          python3 -m venv venv
+          source venv/bin/activate
+          pip install --upgrade pip
+
+  install_development_deps:
+    description: "Install development dependencies."
+    parameters:
+      pyenv:
+        type: string
+        default: "py38"
+    steps:
+
+    - run:
+        name: Install development dependencies
+        command: |
+          source venv/bin/activate
+          pip install -r requirements/dev-requirements-<< parameters.pyenv >>.txt
+
+  tox:
+    description: "Perform tox testing."
+    parameters:
+      toxenvs:
+        type: string
+        default: ""
+      posargs:
+        type: string
+        default: ""
+    steps:
+
+    - run:
+        name: Perform tox testing
+        command: |
+          source venv/bin/activate
+          tox << parameters.toxenvs >> << parameters.posargs >>
+
+  store_results:
+    description: "Store test results."
+    steps:
+    - store_test_results:
+        path: test-results
+
+jobs:
+
+  # Define one 'test' job with parameters to deal with all desired cases. The
+  # reason for this is the desire to ensure the following for all supported Python
+  # versions referring to the docs:
+  #
+  # - all tests are guaranteed to pass
+  # - PyDynamic with respect to its `setup.py` successfully installs
+  test:
+    # Define all parameters, where 'tag' is used for the docker image and 'toxenvs' is
+    # the string which is used in tox to identify the desired entries of envlist.
+    # 'posargs' will be handed over to the commands of tox step. We use this to
+    # extend the default test suite execution from only those tests not marked with
+    # 'slow' to all tests during the nightly scheduled pipeline runs.
+    parameters:
+      tag:
+        type: string
+        default: "3.9"
+      toxenvs:
+        type: string
+        default: ""
+      posargs:
+        type: string
+        default: ""
+
+    executor:
+      name: venv_tester
+      tag: << parameters.tag >>
+
+    steps:
+      - create_folders
+      - create_venv
+      - run:
+          name: Install tox
+          command: |
+            source venv/bin/activate
+            pip install tox
+      - tox:
+          toxenvs: << parameters.toxenvs >>
+          posargs: << parameters.posargs >>
+      - store_results
+
+  test_conda_py39:
+    parameters:
+      is_nightly_run:
+        description: execute only some tests during push-triggered runs
+        type: boolean
+        default: False
+
+    executor: conda_tester
+
+    steps:
+      - create_folders
+      - run:
+          name: Install Miniconda
+          command: |
+            wget "https://repo.anaconda.com/miniconda/\
+            Miniconda3-latest-Linux-x86_64.sh" -O $HOME/miniconda.sh
+            mkdir -p $HOME/.conda
+            bash $HOME/miniconda.sh -b -p /home/circleci/conda
+            source $HOME/conda/etc/profile.d/conda.sh
+            hash -r
+            conda config --set always_yes yes --set changeps1 no
+            conda update -q conda
+            echo 'export PATH=$HOME/conda/bin:$PATH' >> $BASH_ENV
+
+      - restore_cache:
+          keys:
+            - v3-conda-dependencies-{{ checksum "requirements/environment.yml" }}-{{ checksum "requirements/requirements.txt" }}
+            - v3-conda-dependencies-
+
+      - run:
+          name: Create or update environment
+          command: |
+            if [ -d "$HOME/conda/envs/" ]; then
+                conda env update --prune --file requirements/environment.yml
+            else
+                conda env create -f requirements/environment.yml
+            fi
+            source $HOME/conda/etc/profile.d/conda.sh
+            conda activate PyDynamic_conda_env
+            conda install pytest pytest-cov hypothesis psutil
+
+      - save_cache:
+          paths:
+            - /home/circleci/conda/envs/
+          key: >-
+            v3-conda-dependencies-{{ checksum "requirements/environment.yml" }}-{{ checksum "requirements/requirements.txt" }}
+
+      - when:
+          condition: << parameters.is_nightly_run >>
+          steps:
+            - run:
+                name: Run tests
+                command: |
+                  source $HOME/conda/etc/profile.d/conda.sh
+                  conda activate PyDynamic_conda_env
+                  pytest  --cov=PyDynamic --junitxml=test-results/pytest.xml .
+            - run:
+                name: Upload coverage report
+                command: |
+                  curl https://keybase.io/codecovsecurity/pgp_keys.asc | gpg --import
+                  curl -Os https://uploader.codecov.io/latest/linux/codecov
+                  curl -Os https://uploader.codecov.io/latest/linux/codecov.SHA256SUM
+                  curl -Os https://uploader.codecov.io/latest/linux/codecov.SHA256SUM.sig
+                  gpg --verify codecov.SHA256SUM.sig codecov.SHA256SUM
+                  shasum -a 256 -c codecov.SHA256SUM
+                  chmod +x codecov
+                  ./codecov
+
+      - unless:
+          condition: << parameters.is_nightly_run >>
+          steps:
+            - run:
+                name: Run tests
+                command: |
+                  source $HOME/conda/etc/profile.d/conda.sh
+                  conda activate PyDynamic_conda_env
+                  pytest -m "not slow" -v --junitxml=test-results/pytest.xml .
+
+      - store_results
+
+  release:
+    executor:
+      name: publisher
+
+    steps:
+      - create_folders
+      - create_venv
+      - install_development_deps:
+          pyenv: ${PYENV}
+
+      - run:
+          name: Run semantic-release publish
+          command: |
+            source venv/bin/activate
+            git config --global user.name "semantic-release (via CircleCI)"
+            git config --global user.email "bjoern.ludwig@ptb.de"
+            semantic-release publish
+
+  preview_release:
+    executor:
+      name: publisher
+
+    steps:
+      - create_folders
+      - create_venv
+      - install_development_deps:
+          pyenv: ${PYENV}
+
+      - run:
+          name: Generate file with tweet's content
+          command: |
+            source venv/bin/activate
+            new_version=$(semantic-release print-version)
+            if [ -z $new_version ]; then
+              rm -f tweet.txt
+              touch tweet.txt
+            else
+              echo "The generated tweet will be:"
+              echo "#PyDynamic "$new_version" just got released by \
+                  #PhysikalischTechnischeBundesanstalt! \
+                  Find out more about propagation \
+                  of #measurementuncertainty in #dynamicmeasurements on \
+                  https://github.com/PTB-M4D/PyDynamic/" \
+                  | tr -s ' ' | tee tweet.txt
+            fi
+
+      - persist_to_workspace:
+          root: .
+          paths:
+            - tweet.txt
+
+      - run:
+          name: Preview python-semantic-release actions
+          command: |
+            unset CIRCLE_PULL_REQUEST CIRCLE_PULL_REQUESTS CI_PULL_REQUEST \
+              CI_PULL_REQUESTS
+            export CIRCLE_BRANCH=master
+            source venv/bin/activate
+            git config --global user.name "semantic-release (via CircleCI)"
+            git config --global user.email "bjoern.ludwig@ptb.de"
+            echo "
+            The changelog of the next release will contain:
+            "
+            semantic-release --unreleased changelog
+            echo "
+            -----------------------------------------------------------
+
+            python-semantic-release would perform the following actions:
+            "
+            semantic-release --noop publish
+
+  tweet:
+    executor:
+      name: tweeter
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+
+      - create_venv
+      - install_development_deps:
+          pyenv: ${PYENV}
+      - run:
+          name: Tweet on new releases
+          command: |
+            if [[ -s tweet.txt ]]; then
+              source venv/bin/activate
+              python setup.py tweet
+            fi

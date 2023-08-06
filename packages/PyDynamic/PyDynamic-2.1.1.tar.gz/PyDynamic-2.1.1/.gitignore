@@ -1,0 +1,33 @@
+# Build artifacts #
+###################
+build/
+dist/
+PyDynamic.egg-info/
+docs/_build
+docs/CHANGELOG.md
+docs/CONTRIBUTING.md
+docs/INSTALL.md
+docs/README.md
+docs/CODE_OF_CONDUCT.md
+docs/**/*.ipynb
+
+# Testing artifacts #
+#####################
+.pytest_cache/
+__pycache__/
+.coverage
+.coverage.*
+coverage.xml
+pytest.xml
+.tox
+.hypothesis/*
+!.hypothesis/examples/
+codecov*
+
+# Jupyter Notebook artifacts #
+##############################
+.ipynb_checkpoints/
+
+# Environment artifacts #
+#########################
+.idea/
