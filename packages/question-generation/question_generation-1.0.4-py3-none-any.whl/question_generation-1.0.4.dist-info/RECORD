@@ -1,0 +1,13 @@
+question_generation/__init__.py,sha256=OACa4D7PzckZm0qZ-SfcPVx85vT-d8bPzdEtws-QfoM,44
+question_generation/run_qa.py,sha256=lywV4KCE9kBfcBSVJWUoXs-Q-vSnZcE36MZ1QmhtTBM,30046
+question_generation/run_qg.py,sha256=bRArNeAr1AKWIG7qqJBLHEorhn4vAMY90qzMuxaiCOQ,25554
+question_generation/train_qa.py,sha256=zWgY_kybEaCa2u8hDfvLqYxrP0y8BGYitFnlpMUZcF0,4741
+question_generation/pipelines/__init__.py,sha256=1cOnMbyYit56i9IruXbqpWJvVZfnIPrO20TN7zgr2Uo,2793
+question_generation/pipelines/question_answering.py,sha256=Lo8dqPpTkHP0PtqRSVWTIzQ4ctEgzl6xcaZw89QWa1c,7601
+question_generation/pipelines/question_generation.py,sha256=8ZdWdg-xKyeNeXQQg8FVcHZzDDFOobem2V5ftJF3kHU,2815
+question_generation/pipelines/utils_qa.py,sha256=d8boJIh1PoFBotZmDDaFPLoyZVLw9W2W5DF9GLNEXsk,20905
+question_generation-1.0.4.dist-info/LICENSE,sha256=uSj92H3nEHEIdpwgYbUMsuF0HbLqeMUnSoPcOV8lfrE,11413
+question_generation-1.0.4.dist-info/METADATA,sha256=X-VbJ3IMJT0UClWoVqxHTlgRqKAt3kB2RyCOUVxsNGQ,9444
+question_generation-1.0.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+question_generation-1.0.4.dist-info/top_level.txt,sha256=PB_ETumE8zPIK9B20zt1jmPtne9IEDSPPTA0p3_tRKs,20
+question_generation-1.0.4.dist-info/RECORD,,
