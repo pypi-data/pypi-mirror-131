@@ -1,0 +1,9 @@
+avocado_golang/__init__.py,sha256=bEAR-jtpA2HE09Dn-DTNHteWIZ25EYQ7Ljt6zrotq7E,3659
+avocado_golang/runner.py,sha256=9alw-O6e3CxJByMxhFI037Ev-RHfCSK4n_hHfxZlTwQ,2278
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_golang.py,sha256=5QP8tWxYKIISnj97OEaEhscChZkvGsPcmwZ0P3l2OBo,1658
+avocado_framework_plugin_golang-94.0.dist-info/METADATA,sha256=eZSt1tELdqb_Bt4SkLdYE72fPH5xCaHGSE6j7527bzg,328
+avocado_framework_plugin_golang-94.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+avocado_framework_plugin_golang-94.0.dist-info/entry_points.txt,sha256=K-dWDziZTP9tzJzuVcRKoEztkyD8XPMmwaMmNp9CbBA,216
+avocado_framework_plugin_golang-94.0.dist-info/top_level.txt,sha256=v8dIdcX27FuWGo8-s-FVIkB3whvNf3ro6KIcrebAXes,21
+avocado_framework_plugin_golang-94.0.dist-info/RECORD,,
