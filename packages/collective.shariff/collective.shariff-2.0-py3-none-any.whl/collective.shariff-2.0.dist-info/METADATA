@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: collective.shariff
+Version: 2.0
+Summary: Implement shariff - social media buttons with privacy
+Home-page: https://github.com/collective/collective.shariff
+Author: petschki
+Author-email: peter.mathis@kominat.at
+License: GPL
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: 5.1
+Classifier: Framework :: Plone :: 5.2
+Classifier: Framework :: Plone :: 6.0
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/x-rst
+Requires-Dist: setuptools
+Requires-Dist: plone.api (>=1.5)
+
+Introduction
+============
+
+This package contains resources of https://github.com/heiseonline/shariff −
+a social media button package with focus on privacy.
+
+Versions:
+---------
+
+- 1.x -> Plone 4.3
+- 2.x -> Plone 5.x/6.0
+
+
+To do
+=====
+
+- Add tests
+- Plone 5 compatibility
+- Create a ``shariff.json`` view
+
+
+
+Contributors
+============
+
+- Peter Mathis (original author)
+- Fred van Dijk
+- Alessandro Pisa
+- Tobias Herp
+
+This is a mere integration of the shariff_ Javascript package into Plone;
+thus, we like to say "Thank you!" to all contributors to this package as well.
+
+.. _shariff: https://github.com/heiseonline/shariff/
+
+
+Changelog
+=========
+
+2.0 (2021-12-20)
+----------------
+
+- Plone 5.x/6.0 compatibility.
+  [petschki]
+
+
+1.1 (2021-12-20)
+----------------
+
+- Update to `shariff v3.2.1`_
+  [tobiasherp]
+
+
+1.0 (2018-11-24)
+----------------
+
+- Add uninstall profile
+  [fredvd]
+
+- Update shariff build
+  [ale-rt]
+
+
+1.0b1 (2016-07-08)
+------------------
+
+- Initial release
+
+.. _`shariff v3.2.1`: https://github.com/heiseonline/shariff/blob/develop/CHANGELOG.md#v321-2019-05-27
+
+
