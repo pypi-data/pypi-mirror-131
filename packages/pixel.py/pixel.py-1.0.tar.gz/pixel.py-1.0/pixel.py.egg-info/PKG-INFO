@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pixel.py
+Version: 1.0
+Summary: Image Data Preprocessing Toolkit
+Home-page: https://github.com/filipsedivy/pixel.py
+Author: Filip Sedivy
+Author-email: mail@filipsedivy.cz
+License: Apache-2.0 License
+Platform: UNKNOWN
+Requires: pillow
+Requires: filetype
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Pixel.py
+
+Image Data Preprocessing Toolkit
+
+## API reference
+
+### pixel.preprocessing.dataset
+
+- create_from_class(_input_path_, _output_path_, _ratio_)
+    - **ratio**: Ratio between training and test data. Default is ``0.8``
+
