@@ -1,0 +1,12 @@
+fiddup/__init__.py,sha256=EPmgXOdWKks5S__ZMH7Nu6xpAeVrZpfxaFy4pykuyeI,22
+fiddup/__main__.py,sha256=q_zphu8ym04ENzP1tzpb5Ykw3PSUIpq95UuaACXXsAA,2248
+fiddup/constants.py,sha256=XbsP9bCLGLIBS6nE4-5CQta_t9psDUX1hLiXtb_fEPE,194
+fiddup/fiddup.py,sha256=8Zv9bsYsADZiTMOQittigdcrrFSEQyZmcH6ejCAZrrs,4222
+fiddup/result.py,sha256=Mij8pz4hDV9sDNjmzuYzvG5JWjx0iG0HT_NM6rVE21o,1332
+fiddup/views.py,sha256=UnKZ27_9nji6GezEBsHatCnh0TsLtd0jsbjtXDVrPz4,1808
+fiddup-3.0.0.dist-info/LICENSE,sha256=mx14uW03tkJd9Pwg-9VT3n8cXH9N2vNuavswP8nhZKE,1068
+fiddup-3.0.0.dist-info/METADATA,sha256=CB6EUyWbhHGY-EOD6YR5x3ZEiZNNOG0-ji7GGTf0zBU,3269
+fiddup-3.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fiddup-3.0.0.dist-info/entry_points.txt,sha256=8dmq7yIS8v7usOm1Sgyk4kz2kY_9zuXc3zZp1neLPHc,49
+fiddup-3.0.0.dist-info/top_level.txt,sha256=H1DbADgjMQZUwafmxG2Fr6RUu66OtvuyLebW939csnU,7
+fiddup-3.0.0.dist-info/RECORD,,
