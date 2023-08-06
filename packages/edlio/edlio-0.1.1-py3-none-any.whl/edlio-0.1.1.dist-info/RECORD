@@ -1,0 +1,15 @@
+edlio/__init__.py,sha256=tF1jkTqpmMCQnjZPfo2FHJvY-pOcJZXj5x5uNvYpHfI,2620
+edlio/collection.py,sha256=iBaS-tuSFyu-FSylYMU_mX6eP5nWr22iuvWsSaKiX3I,2325
+edlio/dataset.py,sha256=mUwIrbyw3ldpE3CfK3G7iWdAwmAjardhWei4AjhSyT4,9802
+edlio/group.py,sha256=zcRYlMs7qmaI69FIA6Qeq_AClV4QzwN_LsC8EAFPwmY,4842
+edlio/unit.py,sha256=WMv4BoeBMrd0aoaPuB914cq8cDejPJhCioGJcClFYCY,7274
+edlio/utils.py,sha256=IeVt0fbzM1LbbgFJ8y6pWe1hl1w5uLikyvwwd26b9QU,1445
+edlio/dataio/__init__.py,sha256=GT6ou6eMN1eyvkPe3V_CrL13DBlbost78vp6YZu8Qi8,1182
+edlio/dataio/csvdata.py,sha256=etGeTXfrd3Lk4g6QdubRHRyQbXNbFOHu2X2HraWYvdY,1189
+edlio/dataio/intan.py,sha256=-8lsdHrMXySg9BqdIcVl69lgTxhpt5rX2_GzBccgRKI,10670
+edlio/dataio/tsyncfile.py,sha256=kNNIVt0V6vWNi8H3RJsi0Zdw2csySbww8uLYRzlDFhI,18480
+edlio/dataio/video.py,sha256=T6YUifB0uK6fTZOjFOlpQNg-Zb_lAV98ecJZzpI6DKY,3868
+edlio-0.1.1.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+edlio-0.1.1.dist-info/WHEEL,sha256=VUbF57hf4yRZWWrOOjp25Fr4BQX9EtnVSbnP2vNxHDM,81
+edlio-0.1.1.dist-info/METADATA,sha256=uGlhqDdVHhboppc_Md1bZZYQVq3v_EzsAOcY-2ewwiU,943
+edlio-0.1.1.dist-info/RECORD,,
