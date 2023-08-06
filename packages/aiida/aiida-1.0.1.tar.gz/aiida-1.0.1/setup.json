@@ -1,0 +1,19 @@
+{
+    "author": "The AiiDA team", 
+    "author_email": "developers@aiida.net", 
+    "classifiers": [
+        "Development Status :: 7 - Inactive",
+        "License :: OSI Approved :: MIT License", 
+        "Programming Language :: Python",
+        "Framework :: AiiDA",
+        "Topic :: Scientific/Engineering"
+    ], 
+    "description": "AiiDA: an automated interactive infrastructure and database for computational science", 
+    "install_requires": [
+        "aiida-core"
+    ], 
+    "license": "MIT License", 
+    "name": "aiida", 
+    "url": "http://aiida.net", 
+    "version": "1.0.1"
+}
