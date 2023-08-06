@@ -1,0 +1,11 @@
+argh
+IPython
+matplotlib
+numpy
+packaging
+pandas
+scipy
+soundfile
+scikit-learn
+i2
+slink
