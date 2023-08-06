@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: redis-push
+Version: 0.0.3
+Summary: push data into redis follow protocol.
+Home-page: https://github.com/agarichan/redis-push
+Author: agarichan
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aioredis (>=2.0.0,<3.0.0)
+Requires-Dist: pydantic[dotenv] (>=1.8.2,<2.0.0)
+Project-URL: Repository, https://github.com/agarichan/redis-push
