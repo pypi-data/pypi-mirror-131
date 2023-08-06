@@ -1,0 +1,19 @@
+# systemd unit for boltlight
+
+[Unit]
+Description=Boltlight Daemon
+# if you're using your implementation with systemd, uncomment these lines
+# changing %IMPLEMENTATION% with your implementation unit name
+# Wants=%IMPLEMENTATION%.service
+# After=%IMPLEMENTATION%.service
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+# change with boltlight install path
+ExecStart=boltlight
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

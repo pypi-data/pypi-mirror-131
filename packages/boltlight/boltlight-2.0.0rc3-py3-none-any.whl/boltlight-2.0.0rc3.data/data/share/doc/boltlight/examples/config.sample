@@ -1,0 +1,108 @@
+# Values assigned to commented variables are the default ones
+# Option names are case insensitive
+# Paths are relative to boltlight's data directory (default ~/.boltlight)
+
+
+[boltlight]
+
+# Set which implementation to use
+# Possible values: clightning, eclair, electrum, lnd (case-insensitive)
+#implementation =
+
+# If set to 1, boltlight listens in cleartext (implies DISABLE_MACAROONS="1")
+# Possible values: 0, 1
+#insecure_connection = 0
+
+# Set boltlight's listening port
+#port = 1708
+
+# Specifies the private key path
+#server_key = ./certs/server.key
+
+# Specifies the certificate (chain) path
+#server_crt = ./certs/server.crt
+
+# Specifies the location which will contain the logs
+#logs_dir = ./logs
+
+# Specifies the desired console log level
+# Possible values: critical, error, warning, info, debug
+#logs_level = info
+
+# Specifies the location which will contain the database
+#db_dir = ./db
+
+# Specifies the location which will contain the macaroons
+#macaroons_dir = ./macaroons
+
+# If set to 1, macaroon authorization will be disabled
+# Note: do not disable macaroons in production
+# Possible values: 0, 1
+#disable_macaroons = 0
+
+
+[blink]
+
+# Specifies boltlight host (IP or FQDN) and optional port
+#rpcserver = localhost:1708
+
+# Specifies the location of boltlight's certificate (chain) path
+#tlscert = ./certs/server.crt
+
+# Specifies the location of boltlight's macaroon
+#macaroon = ./macaroons/admin.macaroon
+
+# If set to 1, blink tries to connect to boltlight in cleartext
+# (implies no_macaroon="1")
+# Possible values: 0, 1
+#insecure = 0
+
+# If set to 1, blink tries to connect to boltlight with no macaroon
+# Possible values: 0, 1
+#no_macaroon = 0
+
+
+[clightning]
+
+# Specifies the location containing the RPC file,
+# network subdirectory included (e.g. ~/.lightning/testnet/)
+#cl_rpc_dir =
+
+# Specifies the c-lightning JSON-RPC socket file, relative to CL_RPC_DIR
+#cl_rpc = lightning-rpc
+
+
+[eclair]
+
+# Specifies eclair host
+#ecl_host = localhost
+
+# Specifies eclair port
+#ecl_port = 8080
+
+
+[electrum]
+
+# Specifies electrum host
+#ele_host = localhost
+
+# Specifies electrum port
+#ele_port = 7777
+
+# Specifies electrum user
+#ele_user = user
+
+
+[lnd]
+
+# Specifies lnd host
+#lnd_host = localhost
+
+# Specifies lnd port
+#lnd_port = 10009
+
+# Specifies the location containing the lnd certificate file
+#lnd_cert_dir =
+
+# Specifies the lnd certificate file, relative to LND_CERT_DIR
+#lnd_cert = tls.cert
