@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: nPrimos-sLopez
+Version: 1.0
+Summary: NUMEROS PRIMOS  ================  Este es un ejemplo simple de un paquete de Python. Este paquete contiene un conjunto de funciones para el cÃ¡lculo de los nÃºmeros primos en el rango determinado. This program is free software: You can redistribute it and/or modify it under the terms of license by the Free Software Foundation, either version 3 of License (at your option) any other version. 
+Home-page: UNKNOWN
+Author: Sergio Lopez
+Author-email: slopez@asd.com
+License: GNU GPLv3
+Keywords: pyoperaciones_SergioLopez mathematical operations
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+UNKNOWN
+
