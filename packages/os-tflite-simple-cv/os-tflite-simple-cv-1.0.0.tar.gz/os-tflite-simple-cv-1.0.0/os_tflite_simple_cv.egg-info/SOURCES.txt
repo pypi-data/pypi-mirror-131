@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+os_tflite_simple_cv/__init__.py
+os_tflite_simple_cv/classify.py
+os_tflite_simple_cv/deeplabv3.tflite
+os_tflite_simple_cv/efficientnet_lite0.tflite
+os_tflite_simple_cv/image_classifier.py
+os_tflite_simple_cv/image_segmenter.py
+os_tflite_simple_cv/segment.py
+os_tflite_simple_cv/utils.py
+os_tflite_simple_cv.egg-info/PKG-INFO
+os_tflite_simple_cv.egg-info/SOURCES.txt
+os_tflite_simple_cv.egg-info/dependency_links.txt
+os_tflite_simple_cv.egg-info/top_level.txt
