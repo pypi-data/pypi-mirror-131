@@ -1,0 +1,3 @@
+[console_scripts]
+tap-cea-googlesheet=tap_cea_googlesheet.tap:Tapgooglesheet.cli
+
