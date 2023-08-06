@@ -1,0 +1,15 @@
+setux/modules/admin.py,sha256=unDfpFFzTIt4f5V6S6KLWykf1TzWpZLqGfQSiaqzFe0,483
+setux/modules/autotest.py,sha256=b261-hMnyTrMApVYc1KbEzVdjrJEXOtVZCNcYR63-Bs,393
+setux/modules/copy_id.py,sha256=C0Ei1IqKtNV6bTg593jR56PT14MfXAc20eNLmrkSNRc,673
+setux/modules/deployers.py,sha256=OKZjTXB3GZqu3_q7E1NlwZejWUKGzYhinU6zPcOP6WU,2351
+setux/modules/download.py,sha256=4t-3DXsLNBdUJZH9MYhnBCmDTM5Rp0_ELiH3lq2WGKM,1323
+setux/modules/infos.py,sha256=JH69grKHhibFZPexrMEj9nsXG8GX9-tijylDo4sXPRM,784
+setux/modules/ping.py,sha256=cwHt__omjSN1g5LoOyLHyHA9V5hyHHsL3kF-Ql0JeRg,551
+setux/modules/prepare.py,sha256=jApg9_fT6LKxUPbK8Gth5PLVUxC5-vSG881lpxQPEKQ,368
+setux/modules/sudoers.py,sha256=Y05TkrmU-UXPKD7qrBXnZfyvlUQTcST87CeLwFVrnzA,834
+setux/modules/upd_cfg.py,sha256=yvO2AJhBvsjbywAbDAc6sHJ7RqKdZA_CTQoHPJlY108,1012
+setux_modules-0.21.50.0.dist-info/LICENSE,sha256=0tNHXfCacj_eX-GwlIVtBc7i881BDBotZvM9QeCIUPY,1090
+setux_modules-0.21.50.0.dist-info/METADATA,sha256=2s3KngBCFPj0_lN3H9LKjD5XQUxZil7Lzn_vPKOegXA,1119
+setux_modules-0.21.50.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+setux_modules-0.21.50.0.dist-info/top_level.txt,sha256=kmCnG8Rj9-DTuv9TjsPUPItgUhXEAxy9VU24QddH_X4,6
+setux_modules-0.21.50.0.dist-info/RECORD,,
