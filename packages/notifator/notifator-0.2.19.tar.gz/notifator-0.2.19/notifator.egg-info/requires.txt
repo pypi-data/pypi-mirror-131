@@ -1,0 +1,4 @@
+fire
+gtts
+notify2
+pydub
