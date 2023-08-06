@@ -1,0 +1,10 @@
+gwak.py,sha256=3YSTdrADDYZchttM3QqqNzR5ZfOZgykmP5XAuLvxXzI,9208
+libgwak/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libgwak/manifest.py,sha256=7RTI1jwVT8C7f7mFEgJzfwm2PlR-5m342SFYLXZnxbo,4790
+libgwak/zy.py,sha256=EHsRK8ZP1jnO263PxzPWiMzxtJMXmgVajSivMG2SbV8,1848
+gwak-0.6.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+gwak-0.6.1.dist-info/METADATA,sha256=g1zKfcAozyhcLw-Hjst_-Tg84la3RGqtOc-TkJmna4U,713
+gwak-0.6.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+gwak-0.6.1.dist-info/entry_points.txt,sha256=lHWN02V2uv5-Y36F-XoTuoddwup01iozdXNk2hmtf-o,36
+gwak-0.6.1.dist-info/top_level.txt,sha256=dE64m8sU0mca2cm4U1W2SS7q2Ps3fSph8eqz8NPGDk0,13
+gwak-0.6.1.dist-info/RECORD,,

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: gwak
+Version: 0.6.1
+Summary: Directory gwaking utility
+Home-page: https://github.com/LiviaMedeiros/gwak
+Author: LiviaMedeiros
+Author-email: livia@cirno.name
+License: GPLv3
+Project-URL: Bug Tracker, https://github.com/LiviaMedeiros/gwak/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/plain
+License-File: LICENSE
+
+Gwak a directory by burying filebodies and replacing them with symlinks.
+
