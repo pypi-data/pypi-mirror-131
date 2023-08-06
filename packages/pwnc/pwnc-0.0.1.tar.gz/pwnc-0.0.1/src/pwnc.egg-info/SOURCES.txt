@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/pwnc/__init__.py
+src/pwnc/pwnc_exceptions.py
+src/pwnc/pwnc_helpers.py
+src/pwnc/pwnc_urllib3.py
+src/pwnc/version.py
+src/pwnc.egg-info/PKG-INFO
+src/pwnc.egg-info/SOURCES.txt
+src/pwnc.egg-info/dependency_links.txt
+src/pwnc.egg-info/requires.txt
+src/pwnc.egg-info/top_level.txt
