@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dmypy_ls/__init__.py
+dmypy_ls.egg-info/PKG-INFO
+dmypy_ls.egg-info/SOURCES.txt
+dmypy_ls.egg-info/dependency_links.txt
+dmypy_ls.egg-info/entry_points.txt
+dmypy_ls.egg-info/requires.txt
+dmypy_ls.egg-info/top_level.txt
