@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+tastyscrape.egg-info/PKG-INFO
+tastyscrape.egg-info/SOURCES.txt
+tastyscrape.egg-info/dependency_links.txt
+tastyscrape.egg-info/requires.txt
+tastyscrape.egg-info/top_level.txt
