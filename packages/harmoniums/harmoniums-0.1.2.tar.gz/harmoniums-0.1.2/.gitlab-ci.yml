@@ -1,0 +1,50 @@
+image:  "ubuntu:21.10"
+before_script:
+        # Install binary packages so that not all pip packages have to be rebuilt.
+        - >
+                apt update -qq &&
+                apt install -y -qq
+                python3-pip
+                python3-dev
+                python3-setuptools
+                python3-wheel
+                python3-numpy
+                python3-scipy
+                python3-pandas
+                python3-sklearn
+                python3-mypy
+                python3-seaborn
+                python3-cvxopt
+                python3-joblib
+
+
+
+        # Install libraries for compiling from source.
+        - >
+                apt update -qq &&
+                apt install -y -qq
+                libblas3
+                liblapack3
+                liblapack-dev
+                libblas-dev
+                gfortran
+                libatlas-base-dev
+                cmake
+                g++
+
+        - >
+                pip3 install
+                --prefer-binary
+                -r requirements.txt
+        -  ldconfig
+
+coverage:
+        #only:
+        #        refs:
+        #                - master
+        script:
+                - python3 -m coverage run -m --source=harmoniums unittest discover -s harmoniums.test
+                - python3 -m coverage report -m
+variables:
+        DEBIAN_FRONTEND: "noninteractive"
+        PIP_IGNORE_INSTALLED: 0

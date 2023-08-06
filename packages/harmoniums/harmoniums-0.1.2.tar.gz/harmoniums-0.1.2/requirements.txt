@@ -1,0 +1,34 @@
+# Our modules follow sci-kit learn API.
+scikit-learn>=0.24
+
+# Plotting.
+seaborn
+matplotlib
+
+# Analyse test coverage.
+coverage
+
+# Check type hints.
+mypy
+
+# Numerics libraries.
+numpy>=1.20
+# Just-in-time compile NumPy functions.
+numba>=0.52
+# Support additional SciPy functions in Numba JIT's.
+numba-scipy
+
+# For dataframes input.
+pandas>=1.1.0
+
+# Kaplan-Meier, Cox regression and time-to-event datasets.
+lifelines
+
+# Fast SVM, random survival forest, and Brier loss.
+scikit-survival
+
+# Intel compiler runtime for fast math.
+icc_rt
+
+# For pickling lambdas.
+dill
