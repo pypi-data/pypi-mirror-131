@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+verificac19/__init__.py
+verificac19/exceptions.py
+verificac19/verifier.py
+verificac19.egg-info/PKG-INFO
+verificac19.egg-info/SOURCES.txt
+verificac19.egg-info/dependency_links.txt
+verificac19.egg-info/requires.txt
+verificac19.egg-info/top_level.txt
+verificac19/service/__init__.py
+verificac19/service/_cache.py
+verificac19/service/service.py
