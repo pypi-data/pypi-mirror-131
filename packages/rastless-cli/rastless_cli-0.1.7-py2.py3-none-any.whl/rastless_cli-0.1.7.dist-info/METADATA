@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: rastless-cli
+Version: 0.1.7
+Summary: A cli for managing data for the cloud application rastless
+Home-page: https://github.com/EomapCompany/rastless-cli
+Author: Marcel Siegmann
+Author-email: siegmann@eomap.de
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: boto3
+Requires-Dist: botocore
+Requires-Dist: numpy
+Requires-Dist: click
+Requires-Dist: rasterio
+Requires-Dist: rio-cogeo
+
+
+Rastless-CLI
+=======================
+
+
+
+
