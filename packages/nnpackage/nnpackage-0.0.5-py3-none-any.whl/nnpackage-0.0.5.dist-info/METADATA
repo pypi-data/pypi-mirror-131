@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: nnpackage
+Version: 0.0.5
+Summary: NNPackage - Deep Neural Networks for Atomistic Systems (based on SchNetPack)
+Home-page: https://github.com/AlexanderDKazakov/schnetpack/
+Author: Alexander D. Kazakov
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: torch (>=1.1)
+Requires-Dist: numpy
+Requires-Dist: ase (>=3.18)
+Requires-Dist: h5py
+Requires-Dist: tensorboardX
+Requires-Dist: tqdm
+Requires-Dist: pyyaml
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: sacred ; extra == 'test'
+Requires-Dist: pytest-console-scripts ; extra == 'test'
+
+
+NNPackage is a reduced version of SchNetPack for internal needs.
+
