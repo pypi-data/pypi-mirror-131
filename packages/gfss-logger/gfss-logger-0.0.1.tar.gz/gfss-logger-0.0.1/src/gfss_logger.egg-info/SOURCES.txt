@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+src/gfss_logger.egg-info/PKG-INFO
+src/gfss_logger.egg-info/SOURCES.txt
+src/gfss_logger.egg-info/dependency_links.txt
+src/gfss_logger.egg-info/top_level.txt
+src/gfss_placeholder/__init__.py
