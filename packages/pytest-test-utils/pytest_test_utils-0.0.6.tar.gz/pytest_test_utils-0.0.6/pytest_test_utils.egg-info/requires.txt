@@ -1,0 +1,13 @@
+pytest>=5
+
+[dev]
+pytest==6.2.5
+pytest-sugar==0.9.4
+coverage==6.2
+pylint==2.11.1
+mypy==0.910
+
+[tests]
+pytest==6.2.5
+pytest-sugar==0.9.4
+coverage==6.2
