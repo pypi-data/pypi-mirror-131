@@ -1,0 +1,13 @@
+censuscoding/VERSION,sha256=PQl8MVocVDBA9UjaTHBRJl6Ux3IRokEc7R1GITRCcN4,7
+censuscoding/__init__.py,sha256=32fP1msSNThIQYJFdHHXKl6lN9Xa8RzETA_TKatL2Q0,7532
+censuscoding/__main__.py,sha256=wrverf5kkc0gDKmlpJSuthvZSKm9Eg0t3JUI1W6lncA,2307
+censuscoding/data/blkgrp-zip-street-names.csv,sha256=-88WyNSxsDge1B79qMNhpwusfUIx3m6qVVwqmR1SwYQ,508230
+censuscoding/data/blkgrp-zip-street-nums.csv,sha256=lgMib0GMibfqrVsUmEbjGZEgbJRlLVZN85yPnZxlSxU,5456308
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_blockgroup_assignment.py,sha256=YLr5k5AHg2b2CdEexeAOdJ0bdaBDPHDe_MYXjgVP_sg,1263
+censuscoding-0.1.0.dist-info/LICENSE,sha256=RExQTsDjjQmKMDm92e9vDdPGWBECAIfjzt6qYgJgY8E,1178
+censuscoding-0.1.0.dist-info/METADATA,sha256=UfHwlv0_lxBEKGWXwbaEZXrn0TJFhjgEYNM1bkvrBBE,3574
+censuscoding-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+censuscoding-0.1.0.dist-info/entry_points.txt,sha256=NQUJ9Txv68TTzZnBlwTsyAjipNzyxs0IV4T-N9xKUHg,61
+censuscoding-0.1.0.dist-info/top_level.txt,sha256=cL8xrDvtaU1sU-YwU7W7YhszFMNCbkX5MUZzkmOFxAI,18
+censuscoding-0.1.0.dist-info/RECORD,,
