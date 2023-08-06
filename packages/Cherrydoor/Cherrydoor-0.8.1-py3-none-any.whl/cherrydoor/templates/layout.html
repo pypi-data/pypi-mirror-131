@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Cherrydoor dashboard" />
+		<meta name="author" content="opliko" />
+		<title>Cherrydoor</title>
+		<link
+			rel="shortcut icon"
+			href="{{ static('images/logo/logo-48px.png') }}"
+		/>
+
+		<!-- Compiled and minified CSS
+		<link
+			rel="stylesheet"
+			href="{{ static('css/materialize.min.css') }}"
+			integrity="{{ sri('css/materialize.min.css') }}"
+		/>
+		<script
+			defer
+			src="{{ static('js/materialize.min.js') }}"
+			integrity="{{ sri('js/materialize.min.js') }}"
+		></script>-->
+
+		<link
+			rel="stylesheet"
+			href="{{ static('css/all.css') }}"
+			integrity="{{ sri('css/all.css') }}"
+		/>
+
+		{% block head %}{% endblock %}
+	</head>
+
+	<body>
+		<div class="app" id="app">{% block main %}{% endblock %}</div>
+		<footer>
+			Ikony wykorzystane z
+			<a href="https://icons8.com/" target="_blank">Icons8</a>
+		</footer>
+		{% block body_scripts %} {% endblock %}
+	</body>
+</html>
