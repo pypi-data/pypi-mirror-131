@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+include/ncompress.h
+ncompress.egg-info/PKG-INFO
+ncompress.egg-info/SOURCES.txt
+ncompress.egg-info/dependency_links.txt
+ncompress.egg-info/not-zip-safe
+ncompress.egg-info/requires.txt
+ncompress.egg-info/top_level.txt
+src/ncompress.cpp
+src/pystreambuf.h
+src/python.cpp
+test/test_ncompress.py
