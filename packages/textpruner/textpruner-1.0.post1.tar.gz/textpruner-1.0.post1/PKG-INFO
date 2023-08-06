@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: textpruner
+Version: 1.0.post1
+Summary: PyTorch-based model pruning toolkit for pre-trained language models
+Home-page: http://textpruner.hfl-rc.com
+Author: Ziqing Yang
+Author-email: ziqingyang@gmail.com
+License: UNKNOWN
+Description: PyTorch-based model pruning toolkit for pre-trained language models
+Keywords: NLP deep learning transformers pruning pytorch
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
