@@ -1,0 +1,10 @@
+pyproject.toml
+setup.cfg
+setup.py
+src/pincercli/__init__.py
+src/pincercli.egg-info/PKG-INFO
+src/pincercli.egg-info/SOURCES.txt
+src/pincercli.egg-info/dependency_links.txt
+src/pincercli.egg-info/entry_points.txt
+src/pincercli.egg-info/not-zip-safe
+src/pincercli.egg-info/top_level.txt

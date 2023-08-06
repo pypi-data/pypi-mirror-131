@@ -1,0 +1,3 @@
+[console_scripts]
+pincer = pincercli.__main__:main
+
