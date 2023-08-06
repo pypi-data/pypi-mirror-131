@@ -1,0 +1,9 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+    'datefinder',
+    'datetime',
+    'urllib3'
+]
+build-backend = "setuptools.build_meta"

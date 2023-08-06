@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ShynaSystemInfo
+Version: 0.2
+Summary: Shyna Backend Functionality Package to fetch System information
+Home-page: UNKNOWN
+Author: Shivam Sharma
+Author-email: shivamsharma1913@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Shyna Time Package
+ShynaSystemInfo Package to fetch all System information
+
+
