@@ -1,0 +1,5 @@
+py_sr25519_bindings-0.1.4.dist-info/METADATA,sha256=W0G6CRLLgolpeIbAelwWAGwJ6_I0T5AWTgmSmapRS1g,2256
+py_sr25519_bindings-0.1.4.dist-info/WHEEL,sha256=x2iXVrCT9UlCFrx4ZIigHjabIKEBH3OeuPDrJG194Vc,145
+sr25519/__init__.py,sha256=I-kncyUE-NCUVviQw_A4Zs_hzXSu_OdSr8cKP5-ZZiU,50
+sr25519/sr25519.cpython-39-darwin.so,sha256=FTWpa6ItUnbvp3jagMvTvOLVEZ-Hhl-d3TnyN4JNssQ,1499117
+py_sr25519_bindings-0.1.4.dist-info/RECORD,,
