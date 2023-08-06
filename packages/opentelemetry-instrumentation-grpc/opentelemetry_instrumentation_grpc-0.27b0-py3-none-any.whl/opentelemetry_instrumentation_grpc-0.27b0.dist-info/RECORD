@@ -1,0 +1,14 @@
+opentelemetry/instrumentation/grpc/__init__.py,sha256=ZncZF2ilPB8Xy9VJhlSpg2C4N1LlNhK1UTQ-ijcqVac,7478
+opentelemetry/instrumentation/grpc/_client.py,sha256=DpP78UBDYJAP9ZhJ-dtW24tRARgyeoRKO30TR7p_lkc,7136
+opentelemetry/instrumentation/grpc/_server.py,sha256=3Fcoopi844FFTXyxCpSggWgCd1VKK4Uc4jTzWNu7vxU,11145
+opentelemetry/instrumentation/grpc/_utilities.py,sha256=t5TlrcqY6iiVkQqQFm3aN7zmdzul-0-b37_rzb2JEwQ,997
+opentelemetry/instrumentation/grpc/package.py,sha256=jguteYg6XnWKSMGMe2OqzXv3xVe2yV-WnQcV97e71Ro,621
+opentelemetry/instrumentation/grpc/version.py,sha256=iJT8rGXtD6zEboukDWHCCTP1d5xKYJ4w6ax4vjINVz4,608
+opentelemetry/instrumentation/grpc/grpcext/__init__.py,sha256=TK3TiaftxAPDt5RwSR2H7uzLNpmVm9f5VpK3Sly6Ivg,4168
+opentelemetry/instrumentation/grpc/grpcext/_interceptor.py,sha256=iomVaMA9aUogsaeXr-0HuR6XnluVrOMPyfDs96hyUrM,10499
+opentelemetry_instrumentation_grpc-0.27b0.dist-info/LICENSE,sha256=h8jwqxShIeVkc8vOo9ynxGYW16f4fVPxLhZKZs0H5U8,11350
+opentelemetry_instrumentation_grpc-0.27b0.dist-info/METADATA,sha256=sTyAyz2G3JW83glSWRrlmwF8vmPHof5BtacKRYcajAo,2151
+opentelemetry_instrumentation_grpc-0.27b0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+opentelemetry_instrumentation_grpc-0.27b0.dist-info/entry_points.txt,sha256=6H9EWwAgp4JvZgq7nXu6FwNvgOcJ0n99P2ijkISLXg8,174
+opentelemetry_instrumentation_grpc-0.27b0.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_instrumentation_grpc-0.27b0.dist-info/RECORD,,
