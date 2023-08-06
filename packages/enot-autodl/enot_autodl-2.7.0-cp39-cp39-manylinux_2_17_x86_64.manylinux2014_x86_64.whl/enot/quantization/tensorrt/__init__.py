@@ -1,0 +1,1 @@
+from enot.quantization.tensorrt.trt_quantized_model import TrtFakeQuantizedModel
