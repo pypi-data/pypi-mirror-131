@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: paddlespeech-feat
+Version: 0.1.0
+Summary: python speech feature extraction in paddlespeech
+Home-page: https://github.com/PaddlePaddle/PaddleSpeech
+Author: PaddlePaddle Speech and Language Team
+Author-email: paddlesl@baidu.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: mock
+Requires-Dist: scipy
+Requires-Dist: numpy
+
+UNKNOWN
+

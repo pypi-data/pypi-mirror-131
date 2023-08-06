@@ -1,0 +1,10 @@
+python_speech_features/__init__.py,sha256=ERmmOxz_9mUkIuccNbzUa5Y6gVLLVDdyc4cCxbCCUbY,20
+python_speech_features/base.py,sha256=F8ayqeyh7MUdYGRnVw40_w1CEsobBWta47-PjDasTZ0,9359
+python_speech_features/base_orig.py,sha256=XandOpjr9pfVrA3sHMeeYF9t9IdNGqMnCWrPMAKqq9E,10904
+python_speech_features/sigproc.py,sha256=QEYH_k18M9z8C_L5Ys5zXUsY1MQ1WDTFxkICBtvr5CA,6938
+python_speech_features/sigproc_orig.py,sha256=pREYACJmXv7CSwVpSytot6q9-VChph15Qr5gty8u1yU,6124
+paddlespeech_feat-0.1.0.dist-info/LICENSE,sha256=-iiXE1t0wJDg8qMgUvkXFXFIeHMDaDyNjpYGC8uytA4,1078
+paddlespeech_feat-0.1.0.dist-info/METADATA,sha256=pwMovkvG7n9kkVJXf1qhDoqU5OrReQSqdh64PYUQkNA,379
+paddlespeech_feat-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+paddlespeech_feat-0.1.0.dist-info/top_level.txt,sha256=Kw_00hlO292CidmlVObwwAG3ksT-y5fdHCbkrUITCy8,23
+paddlespeech_feat-0.1.0.dist-info/RECORD,,
