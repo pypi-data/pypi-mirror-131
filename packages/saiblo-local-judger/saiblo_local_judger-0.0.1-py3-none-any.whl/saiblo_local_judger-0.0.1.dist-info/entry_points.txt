@@ -1,0 +1,4 @@
+[console_scripts]
+adapter = adapter.main:main
+judger = core.cli:main
+
