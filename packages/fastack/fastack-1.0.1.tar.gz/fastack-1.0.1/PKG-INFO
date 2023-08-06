@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: fastack
+Version: 1.0.1
+Summary: Fastack is a blah blah blah framework!!!
+License: MIT
+Author: aprilahijriyan
+Author-email: 37798612+aprilahijriyan@users.noreply.github.com
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: nosql
+Provides-Extra: redis
+Provides-Extra: sql
+Requires-Dist: aioredis (>=2.0.0,<3.0.0); extra == "redis"
+Requires-Dist: alembic (>=1.7.5,<2.0.0); extra == "sql"
+Requires-Dist: fastapi (>=0.70.1,<0.71.0)
+Requires-Dist: mongoengine (>=0.23.1,<0.24.0); extra == "nosql"
+Requires-Dist: sqlmodel (>=0.0.5,<0.0.6); extra == "sql"
+Requires-Dist: typer[all] (>=0.4.0,<0.5.0)
+Requires-Dist: uvicorn (>=0.16.0,<0.17.0)
