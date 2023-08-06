@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pomodoro-Dev3XoR
+Version: 0.8.4
+Summary: Pomodoro clock and timer
+Home-page: https://github.com/Dev3XOR/pomodoro/
+Author: Dev3XoR
+Author-email: devexor@protonmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: playsound
+Requires-Dist: plyer
+
+# pomodoro
+Clock and timer for pomodoro written in Python
+
+
