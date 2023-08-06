@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: torchfused
+Version: 0.0.3
+Summary: Fused layers for PyTorch
+Home-page: https://github.com/cpuhrsch/torchfused
+Author: Christian Puhrsch
+Author-email: cpuhrsch@fb.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Loose collection of fused layers.
+
+
