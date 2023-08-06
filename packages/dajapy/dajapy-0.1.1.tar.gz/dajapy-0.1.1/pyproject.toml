@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "dajapy"
+version = "0.1.1"
+license = "MIT"
+description = "日本語のダジャレを判定するPythonパッケージ"
+authors = ["fujitako03 <okome.osakana.oniku@gmail.com>"]
+homepage = "https://github.com/fujitako03"
+repository = "https://github.com/fujitako03/dajapy"
+documentation = "https://github.com/fujitako03/dajapy"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+SudachiPy = "^0.6.2"
+SudachiDict-core = "^20210802.post1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
