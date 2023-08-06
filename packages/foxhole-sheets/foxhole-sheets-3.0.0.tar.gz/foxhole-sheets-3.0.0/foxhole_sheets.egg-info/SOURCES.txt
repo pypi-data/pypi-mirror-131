@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+foxhole_sheets.egg-info/PKG-INFO
+foxhole_sheets.egg-info/SOURCES.txt
+foxhole_sheets.egg-info/dependency_links.txt
+foxhole_sheets.egg-info/requires.txt
+foxhole_sheets.egg-info/top_level.txt
+sheets/__init__.py
+sheets/__main__.py
+sheets/core.py
+sheets/ident.py
+sheets/stockpile.py
