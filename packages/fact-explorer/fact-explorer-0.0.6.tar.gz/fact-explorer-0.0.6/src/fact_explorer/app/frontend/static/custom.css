@@ -1,0 +1,20 @@
+code pre .number {
+  color: #905;
+  height:1em;
+  font-size:1em;
+  margin-right:0em;
+  padding: 0em 0em;
+  vertical-align: baseline;
+}
+
+code pre .string {
+  color: #690;
+}
+
+code pre .key {
+  color: #07a;
+}
+
+code pre .boolean {
+  color: #905;
+}

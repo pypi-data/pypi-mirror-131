@@ -1,0 +1,14 @@
+<pre>
+  <code id="results">
+  </code>
+</pre>
+
+{% block javascript %}
+<script>
+  renderjson.set_show_to_level(3);
+  renderjson.set_max_string_length(125)
+  document.getElementById("results").appendChild(
+    renderjson({{ data | safe }})
+  )
+</script>
+{% endblock %}

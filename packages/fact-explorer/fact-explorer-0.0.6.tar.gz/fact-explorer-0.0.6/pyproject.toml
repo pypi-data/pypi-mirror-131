@@ -1,0 +1,106 @@
+[tool.poetry]
+name = "fact-explorer"
+version = "0.0.6"
+description = "A fast and simple tool to explore facts."
+authors = ["Eduard Thamm <eduard.thamm@thammit.at>"]
+license = "Apache-2.0"
+readme = "README.md"
+documentation = "https://fact-explorer.readthedocs.io/en/stable/"
+repository = "https://gitlab.com/edthamm/fact-explorer"
+keywords = ["event-sourcing","factcast","cryptoschredding"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Database",
+    "Typing :: Typed"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+sphinx-autodoc-typehints = {version = "^1.12.0", optional = true}
+sphinx-rtd-theme = {version = "^0.5.2", optional = true}
+sphinx-click = {version = "^3.0.1", optional = true}
+Sphinx = {version = "<4", optional = true}
+typer = "^0.3.2"
+rich = "^10.4.0"
+psycopg2-binary = "^2.8.6"
+fastapi = "^0.65.0"
+uvicorn = "^0.13.4"
+asyncpg = "^0.22.0"
+aiofiles = "^0.6.0"
+cryptoshred = "^0.0.7"
+
+[tool.poetry.extras]
+docs = ["sphinx","sphinx-click","sphinx-rtd-theme","sp0i1x-autodoc-typehints"]
+
+[tool.poetry.dev-dependencies]
+black = "^21.11b1"
+pytest = "^6.2.5"
+flake8 = "^4.0.1"
+flake8-bugbear = "^21.11.29"
+mypy = "^0.910"
+rstcheck = "^3.3.1"
+sphinx-autobuild = "^2021.3.14"
+pytest-cov = "^3.0.0"
+pytest-randomly = "^3.10.3"
+pre-commit = "^2.16.0"
+pytest-mock = "^3.6.1"
+flake8-annotations = "^2.7.0"
+safety = "^1.10.3"
+flake8-docstrings = "^1.6.0"
+nox = "^2021.10.1"
+sphinx-autodoc-typehints = "^1.12.0"
+sphinx-rtd-theme = "^0.5.2"
+sphinx-click = "^3.0.2"
+pytest-asyncio = "^0.16.0"
+moto = "^2.2.17"
+boto3-stubs = "^1.20.20"
+Sphinx = "<4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+fact-explorer = 'fact_explorer.cli.main:app'
+
+[tool.coverage.run]
+omit = ["*__init__.py"]
+
+[tool.pytest.ini_options]
+addopts = "-rsxX -l --tb=short --strict-markers --cov-report term --cov=fact_explorer --cov-branch"
+# TODO: reenable later --cov-fail-under=85
+xfail_strict = true
+testpaths = [
+    "tests",
+]
+filterwarnings = "ignore:.*the imp module is deprecated.*:DeprecationWarning"
+markers = [
+  "integration: marks tests that use mock and are therefore slower.",
+  "usecase: marks tests that represent business logic.",
+  "containers: marks tests that will spin up test containers."
+]
+
+[tool.black]
+exclude = '''
+
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | \.nox
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+  | .cache
+  | .venv
+)
+'''
