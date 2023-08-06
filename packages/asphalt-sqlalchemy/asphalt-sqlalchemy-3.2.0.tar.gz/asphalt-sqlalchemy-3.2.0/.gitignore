@@ -1,0 +1,15 @@
+.pre-commit-config.yaml
+.project
+.pydevproject
+.idea
+.tox
+.coverage
+.cache
+.eggs/
+*.egg-info/
+__pycache__/
+docs/_build/
+dist/
+build/
+virtualenv/
+venv*
