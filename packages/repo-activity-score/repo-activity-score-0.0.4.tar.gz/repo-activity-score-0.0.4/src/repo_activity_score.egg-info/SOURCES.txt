@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/repo_activity/__init__.py
+src/repo_activity/score.py
+src/repo_activity_score.egg-info/PKG-INFO
+src/repo_activity_score.egg-info/SOURCES.txt
+src/repo_activity_score.egg-info/dependency_links.txt
+src/repo_activity_score.egg-info/top_level.txt
