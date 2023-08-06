@@ -1,0 +1,4 @@
+py-app-conf
+cookiecutter
+gitpython
+typer
