@@ -1,0 +1,10 @@
+setup.py
+olafo_distributions/Binomialdistribution.py
+olafo_distributions/Gaussiandistribution.py
+olafo_distributions/Generaldistribution.py
+olafo_distributions/__init__.py
+olafo_distributions.egg-info/PKG-INFO
+olafo_distributions.egg-info/SOURCES.txt
+olafo_distributions.egg-info/dependency_links.txt
+olafo_distributions.egg-info/not-zip-safe
+olafo_distributions.egg-info/top_level.txt
