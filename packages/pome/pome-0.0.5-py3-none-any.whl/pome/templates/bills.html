@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block main_title %}
+Bills
+{% endblock %}
+{% block content %}
+
+<header class="w-full flex justify-end">
+  <a href="/bills/new">
+    <div class="btn btn-success text-lg font-bold">New Bill</div>
+  </a>
+</header>
+
+<div class="mt-10">
+  <table class="w-full text-lg text-left">
+    <thead>
+      <th>Date</th>
+      <th>Provider</th>
+      <th>Status</th>
+      <th>Transactions</th>
+    </thead>
+
+    <tbody>
+
+      {% if not pending_bills and not paid_bills %}<tr>
+        <td colspan="4">No bill found.</td>
+      </tr>
+      {% endif %}
+
+      {% for bill_id, pending_bill in pending_bills %}
+      <tr>
+        <td> <a href="/bills/recorded/{{bill_id}}" class="normal-link"><span
+              data-date="{{all_transactions[pending_bill.transactions.bill].date}}"></span></a>
+        </td>
+        <td>{{pending_bill.provider}}</td>
+        <td><span class="dot" style="background-color: orange; height: 14px; width: 14px;" title="Pending"></span></td>
+        <td><a href="/transactions/recorded/{{pending_bill.transactions.bill}}" class="normal-link"
+            target="_blank">{{pending_bill.transactions.bill}}</a>
+        </td>
+      </tr>
+      {% endfor %}
+
+      {% for bill_id, paid_bill in paid_bills %}
+      <tr>
+        <td> <a href="/bills/recorded/{{bill_id}}" class="normal-link"><span
+              data-date="{{all_transactions[paid_bill.transactions.bill].date}}"></span></a>
+        </td>
+        <td>{{paid_bill.provider}}</td>
+        <td><span class="dot" style="background-color: springgreen; height: 14px; width: 14px;" title="Paid"></span>
+        </td>
+        <td class="text-sm">
+          <a href="/transactions/recorded/{{paid_bill.transactions.bill}}" class="normal-link"
+            target="_blank">{{paid_bill.transactions.bill}}</a>,
+          <a href="/transactions/recorded/{{paid_bill.transactions.payment}}" class="normal-link"
+            target="_blank">{{paid_bill.transactions.payment}}</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+
+  </table>
+</div>
+
+<script lang="js">
+  mountDates();
+</script>
+
+{% endblock %}

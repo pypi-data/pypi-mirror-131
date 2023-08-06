@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- highlight-within-textarea CSS/JS -->
+  <link href="{{ url_for('static', filename='jquery.highlight-within-textarea.css')}}" rel="stylesheet">
+  <script src="{{ url_for('static', filename='jquery.highlight-within-textarea.js')}}"></script>
+
+  <title>pome</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='tailwind.min.css') }}">
+  <link rel="stylesheet" href="{{url_for('static', filename='global.css') }}">
+  <link rel="stylesheet" href="{{url_for('static', filename='spinner.css') }}">
+  <script src="{{url_for('static',filename='global.js')}}"></script>
+  <!-- Using this technique at the moment to design re usable tailwind components because postcss is not part of the project yet. -->
+  {% set classes_info_box = "flex items-center bg-blue-500 text-white text-base px-4 py-3 mb-5"
+  %}
+  {% set classes_warning_box = "flex items-center bg-yellow-600 text-white text-base px-4 py-3 mb-5" %}
+
+</head>
+
+<body class="bg-gray-700 text-white mt-5 ml-10">
+  <nav class="fixed top-5 left-10" style="width: 200px;">
+    <header class="flex cursor-pointer" onclick="window.location='/'">
+
+      <img src="{{url_for('static', filename='pome-round.png')}}" width="70px" />
+      <div class="ml-5">
+        <h1 class="text-4xl">pome</h1>
+        <h2 class="text-xl">v{{POME_VERSION}}</h2>
+      </div>
+
+    </header>
+    {%if company %}
+    <h1 class="text-xl mt-5 my-2 text-center truncate px-1" title="{{company.name}}">{{company.name}}</h1>
+    {%endif%}
+    <div class="flex flex-col items-start">
+      <div class="inline-block">
+        {% set classes_nav_items = "mb-2 p-2 text-lg bg-blue-500 cursor-pointer hover:bg-blue-400 flex items-center
+        space-x-2" %}
+        {% set classes_nav_emojis = "mr-1" %}
+
+
+        <a href="/invoices">
+          <div class="{{classes_nav_items}}"><span class="{{classes_nav_emojis}}">💸</span><span>Invoices</span></div>
+        </a>
+
+
+        <a href="/bills">
+          <div class="{{classes_nav_items}}"><span class="{{classes_nav_emojis}}">🧾</span><span>Bills</span></div>
+        </a>
+
+        <a href="/">
+          <div class="{{classes_nav_items}}"><span class="{{classes_nav_emojis}}">📒</span><span>Accounts</span></div>
+        </a>
+        <a href="/journal">
+          <div class="{{classes_nav_items}}"><span class="{{classes_nav_emojis}}">📝</span> <span>Journal</span></div>
+        </a>
+        <a href="/metrics">
+          <div class="{{classes_nav_items}}"><span class="{{classes_nav_emojis}}">📈</span> <span>Metrics</span></div>
+        </a>
+        <a href="/eoy">
+          <div class="{{classes_nav_items}}"><span class="{{classes_nav_emojis}}">🔚</span> <span>End of year</span>
+          </div>
+        </a>
+        <a href="/company">
+          <div class="{{classes_nav_items}}"><span class="{{classes_nav_emojis}}">⚙️</span> <span>Company details</span>
+          </div>
+        </a>
+      </div>
+      <div class="mt-5 flex w-full justify-start items-center space-x-4">
+        <img src="{{url_for('static',filename='git.svg')}}" class="w-12" />
+        <div class="flex  items-center space-x-1 cursor-pointer " title="git pull" onclick="sendPullRequest()">
+
+          <div class="spinner hidden" id="spinner-git-pull">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+          </div>
+          <div class="p-1 bg-white rounded-sm" id="btn-git-pull">
+            <img src="{{url_for('static',filename='download.svg')}}" style="color: white" class="w-4" alt="git pull" />
+          </div>
+          <div class="text-xs" id="text-git-pull">pull</div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main style="margin-left: 360px;">
+    <header>
+      {% if not GIT_OK %}
+      <div class="inline-block rounded-sm text-white bg-red-500 p-5">
+        <h1 class="text-3xl">Git Error</h1>
+        <p class="text-lg p-2">{{CWD}} is not a valid git repository.</p>
+      </div>
+      {%else%}
+      {% if GIT_PULL_ERROR %}
+      <div class="mb-5 inline-block rounded-sm text-white bg-yellow-600 p-5">
+        <h1 class="text-3xl">Git Pull Error (non fatal)</h1>
+        <h2 class="text-2xl">Please solve by hand.</h2>
+        <pre class="text-lg p-2">{{GIT_PULL_ERROR}}</pre>
+      </div>
+      {% endif %}
+
+
+
+      {%if company %}
+      <h1 class="text-3xl">{{company.name}}</h1>
+      {%else%}
+      <h1 class="text-3xl text-yellow-500">Error</h1>
+      <p class="text-lg p-2">No file "company.json" was found at {{CWD}}.</p>
+      {%endif%}
+      {%endif%}
+    </header>
+    {%if company and GIT_OK %}
+    <main class="mt-2" style="width: 800px">
+
+
+      {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+      {% for category, message in messages %}
+      <div class="mb-5 inline-block rounded-sm text-white p-5 {{category}}">
+        {{ message }}
+      </div>
+      {% endfor %}
+      {% endif %}
+      {% endwith %}
+
+      <header>
+        <h1 class="text-3xl">{% block main_title %}{% endblock %}</h1>
+      </header>
+      <main class="mt-3">
+        <header class="mb-8">
+          {% block content_header %}{% endblock %}
+        </header>
+        <div class="mb-20">
+          {% block content %}{% endblock %}
+        </div>
+      </main>
+    </main>
+    {%endif%}
+  </main>
+</body>
+
+</html>
