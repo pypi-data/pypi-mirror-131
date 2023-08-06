@@ -1,0 +1,12 @@
+aiowebdav/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiowebdav/client.py,sha256=dg_7Vh_5kLVNYuAHd5RGmcVhxUgnv-qT_S2XAMUEhK8,58907
+aiowebdav/connection.py,sha256=6LmNvxhUCqMoNNca0MBpElrq1ehDc2JeOE1HaUPLMzc,2570
+aiowebdav/exceptions.py,sha256=svbR0SvuwPI7iTnG6-1v7utDe_qJZUtKhOsOB7iULb0,2843
+aiowebdav/typing.py,sha256=ROqG0kHAHl8aT18HQzIGWG2p09NukLzgkQr5fdikX1s,117
+aiowebdav/urn.py,sha256=jeVdp-xBsxk9drsNQVTaFfI4pyf97CbNtWEpiGgtisA,1914
+aiowebdav-0.1.0rc1.data/scripts/wdc,sha256=9iWT2QoTQy3dg-58OVrv5Xhbii5Bg08ZDziws2LFers,22081
+aiowebdav-0.1.0rc1.dist-info/LICENSE.md,sha256=Akonp9JjVNlJuq8h2jELsvUk0d1Q0Q7ZWs0taBtpdxE,1063
+aiowebdav-0.1.0rc1.dist-info/METADATA,sha256=Fbx7FBaRU0yd6SnCHzZ1or-P3kQAn9dzN_LhwVx3YFA,9571
+aiowebdav-0.1.0rc1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aiowebdav-0.1.0rc1.dist-info/top_level.txt,sha256=8TKGq9loDRMtUwv4DKcezRYEz3S67_tBzYIyYKMrkNY,10
+aiowebdav-0.1.0rc1.dist-info/RECORD,,
