@@ -1,0 +1,6 @@
+setup.py
+ignos_api_client.egg-info/PKG-INFO
+ignos_api_client.egg-info/SOURCES.txt
+ignos_api_client.egg-info/dependency_links.txt
+ignos_api_client.egg-info/requires.txt
+ignos_api_client.egg-info/top_level.txt
