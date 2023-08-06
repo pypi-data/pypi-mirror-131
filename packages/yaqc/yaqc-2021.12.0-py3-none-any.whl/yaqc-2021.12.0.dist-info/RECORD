@@ -1,0 +1,15 @@
+yaqc/HandshakeRequest.avsc,sha256=l6uy_ptUXgb4hckyjaGJRNwR5tl3Qw-rbQup9ygKOmI,372
+yaqc/HandshakeResponse.avsc,sha256=RA66FzatMmsvZwI9qxzWNV4u17N7Pc80nDN4pkI4ds8,484
+yaqc/VERSION,sha256=lZq1b_IktcTagw9EzAFTMLCwnluehHXVPrhxs8VLMdQ,10
+yaqc/__init__.py,sha256=FYKYMcXp0syhN_HGqb6jZckryjpq1mxBzu_Jq_VTbLw,104
+yaqc/__version__.py,sha256=F8Gu1ijHserpavRDzYA4YeVe9EBGMsjQKfatv8NjnHI,564
+yaqc/_avro_numpy.py,sha256=UyHmSYCOnJgrxsr_Dfo4r3wolPo9Cr9yQCICn5iTOqE,791
+yaqc/_client.py,sha256=QcU8hDC7F_XFb_Oj_DDUwThvLDXOvQu2rbsyK6Wu-jk,3183
+yaqc/_dotdict.py,sha256=YguSd9BJOMgsNPcaJmvZmm9SRDKTOeQ7G2eeXm57P1o,513
+yaqc/_properties.py,sha256=xSoL-3EdDe4u8XeWGOSlsWlLTpfEfEJDl1vrt_iOlao,1001
+yaqc/_schema.py,sha256=mZuVBciexuMYUxqr8yWtF30YvhabjXhbUjMB7ZhKw34,262
+yaqc/_socket.py,sha256=E7y1cFVsgEbsyfB5d0CoUJ3mPvsiE5z9XnsHx0H24gg,5135
+yaqc-2021.12.0.dist-info/LICENSE,sha256=l2KK_rxg8Cb1wrJddJHEalxO5h9pPnz6B_vSwDYFl5s,7652
+yaqc-2021.12.0.dist-info/WHEEL,sha256=rg7OlU52oY2dGF9P6-vT77byVLtCIN4joChV1HjAybU,81
+yaqc-2021.12.0.dist-info/METADATA,sha256=Ksg_WE380qQ_CODPJ-rzgYMvH6cY_IsP5rASOhTVg9M,1623
+yaqc-2021.12.0.dist-info/RECORD,,
