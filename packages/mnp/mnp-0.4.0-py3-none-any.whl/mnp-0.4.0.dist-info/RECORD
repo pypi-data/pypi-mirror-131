@@ -1,0 +1,16 @@
+mnp/__init__.py,sha256=M41jnTbqViO-q5VALIx_jfp7vIVJItOHFo3Cv_H5oBM,973
+mnp/_stubs/mantik/mnp/mnp_pb2.py,sha256=k_HxxsuXTVBhV84hjdWIgGAdn4wLf5RoHfUMUajrvzI,37241
+mnp/_stubs/mantik/mnp/mnp_pb2_grpc.py,sha256=qIxlzFPkYS-Pnk5RcwMDqM-dsItAWb3qANnv0SbLBOw,12223
+mnp/collectable_byte_buffer.py,sha256=rLgxxiClH6ki2aNJ45ejV8m8RJu0Nmd2xJg7hIPO49A,1304
+mnp/elements.py,sha256=EgLvZpcP895kf8mSl-vCOd3O0eBAt0JzMQY24Aj4kxY,3281
+mnp/forwarder.py,sha256=ydj17qhc_ID3gvLgnKQhA9py1eYuLpu2IEg2M6aN6XA,2163
+mnp/handler.py,sha256=bMCC4Ko3Tqfh6Hu9Wn4xcFISaA4VS0TyZyKjUVvyzNU,1460
+mnp/mnp_url.py,sha256=Az3IZ8122LCwHD3F6t0L0eHjG0KyzWYU8DB_qJWYDLs,1647
+mnp/rpc_converter.py,sha256=BBg_9K-MwQRayA4cDYpYwRZRDtglrLRwyu4tvDFzlLo,923
+mnp/server.py,sha256=CGOOB_WLqrqCiWZNXWwY1n2wNjAt2DSVoy_utWQ7U0g,1582
+mnp/service_server.py,sha256=Cjc31SfVQ2Htikh73mRxLqopnyUmcFw710wo5ts7XWs,9925
+mnp/session_handler.py,sha256=0ImFAaeMRhZoLBGMuKtMTMFjuTUpMtrRGEosTc3UrKE,2232
+mnp/streammultiplexer.py,sha256=JCmdynhVGSI8EZd3-MHsnQxgaSFmFCGLIaYM9oblOi8,3726
+mnp-0.4.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+mnp-0.4.0.dist-info/METADATA,sha256=rkupJDbGDYQidbI2aTQAJb5dd4jmqW4zN-g0mZT8Utg,393
+mnp-0.4.0.dist-info/RECORD,,
