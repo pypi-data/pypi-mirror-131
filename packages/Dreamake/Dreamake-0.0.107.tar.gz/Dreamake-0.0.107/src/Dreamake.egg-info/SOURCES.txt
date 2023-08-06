@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/Dreamake.egg-info/PKG-INFO
+src/Dreamake.egg-info/SOURCES.txt
+src/Dreamake.egg-info/dependency_links.txt
+src/Dreamake.egg-info/requires.txt
+src/Dreamake.egg-info/top_level.txt
+src/dreamake/__init__.py
+src/dreamake/canvas.py
+src/dreamake/codekit.py
+src/dreamake/colliders.py
+src/dreamake/gui.py
+src/dreamake/locals.py
+src/dreamake/shapes.py
+src/dreamake/tktools.py
