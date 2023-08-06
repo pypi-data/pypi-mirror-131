@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/banglanum2words/__init__.py
+src/banglanum2words/num_convert.py
+src/banglanum2words.egg-info/PKG-INFO
+src/banglanum2words.egg-info/SOURCES.txt
+src/banglanum2words.egg-info/dependency_links.txt
+src/banglanum2words.egg-info/requires.txt
+src/banglanum2words.egg-info/top_level.txt
