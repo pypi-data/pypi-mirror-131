@@ -1,0 +1,3 @@
+[console_scripts]
+ruprompts-train=ruprompts.cli.train:hydra_entry
+

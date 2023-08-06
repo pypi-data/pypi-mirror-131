@@ -1,0 +1,4 @@
+defaults:
+  - from_local
+
+path: csv
