@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/dimmerpatch/__init__.py
+src/dimmerpatch/dimmerpatch.py
+src/dimmerpatch.egg-info/PKG-INFO
+src/dimmerpatch.egg-info/SOURCES.txt
+src/dimmerpatch.egg-info/dependency_links.txt
+src/dimmerpatch.egg-info/top_level.txt
