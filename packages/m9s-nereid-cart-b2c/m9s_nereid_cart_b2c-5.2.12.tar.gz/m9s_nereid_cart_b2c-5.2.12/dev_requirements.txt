@@ -1,0 +1,10 @@
+# Install development requirements
+
+m9s-payment-gateway
+pycountry
+
+tox
+coverage
+flake8
+
+-r requirements.txt
