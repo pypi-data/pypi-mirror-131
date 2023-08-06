@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: uitestrunner-syberos
+Version: 0.30.2
+Summary: A ui automated testing tool for SyberOS
+Home-page: http://www.syberos.cn/
+Author: Jinzhe Wang
+Author-email: wangjinzhe@syberos.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6, <4
+License-File: LICENSE
+Requires-Dist: sseclient
+Requires-Dist: paramiko
+Requires-Dist: scp
+Requires-Dist: lxml
+Requires-Dist: urllib3
+Requires-Dist: opencv-python (==4.5.3.56)
+Requires-Dist: numpy
+Requires-Dist: psutil
+Requires-Dist: sympy
+Requires-Dist: scikit-build
+
+UNKNOWN
+
