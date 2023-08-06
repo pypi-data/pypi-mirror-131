@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+imreplace/__init__.py
+imreplace.egg-info/PKG-INFO
+imreplace.egg-info/SOURCES.txt
+imreplace.egg-info/dependency_links.txt
+imreplace.egg-info/top_level.txt
