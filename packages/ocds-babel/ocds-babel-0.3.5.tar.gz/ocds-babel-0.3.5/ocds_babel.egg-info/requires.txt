@@ -1,0 +1,12 @@
+
+[docs]
+furo
+sphinx
+sphinx-autobuild
+
+[markdown]
+markdown-it-py>=2
+mdformat
+
+[test]
+pytest
