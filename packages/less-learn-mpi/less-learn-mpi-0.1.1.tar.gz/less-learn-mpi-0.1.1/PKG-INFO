@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: less-learn-mpi
+Version: 0.1.1
+Summary: Learning with Subset Stacking - MPI
+Home-page: https://github.com/sibirbil/LESS-MPI
+Maintainer: Kaya Gokalp
+Maintainer-email: kayagokalp@sabanciuniv.edu
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+UNKNOWN
+
