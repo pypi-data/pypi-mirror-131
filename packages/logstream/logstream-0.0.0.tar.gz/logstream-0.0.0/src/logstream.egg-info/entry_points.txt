@@ -1,0 +1,3 @@
+[console_scripts]
+logstream = logstream.logstream:main
+

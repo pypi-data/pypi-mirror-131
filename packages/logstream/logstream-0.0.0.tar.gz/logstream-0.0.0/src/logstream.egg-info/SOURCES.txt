@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+src/logstream/__init__.py
+src/logstream/__main__.py
+src/logstream/logstream.py
+src/logstream.egg-info/PKG-INFO
+src/logstream.egg-info/SOURCES.txt
+src/logstream.egg-info/dependency_links.txt
+src/logstream.egg-info/entry_points.txt
+src/logstream.egg-info/top_level.txt
