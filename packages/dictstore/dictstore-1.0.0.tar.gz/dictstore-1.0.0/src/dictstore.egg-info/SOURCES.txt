@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/dictstore/__init__.py
+src/dictstore/exceptions.py
+src/dictstore/file_handler.py
+src/dictstore/helpers.py
+src/dictstore/interface.py
+src/dictstore.egg-info/PKG-INFO
+src/dictstore.egg-info/SOURCES.txt
+src/dictstore.egg-info/dependency_links.txt
+src/dictstore.egg-info/top_level.txt
