@@ -1,0 +1,16 @@
+LICENCE
+README.md
+setup.py
+camfitool/__init__.py
+camfitool/camfitool_main.py
+camfitool/class_fi_offline_ui.py
+camfitool/class_fi_realtime_ui.py
+camfitool/icons_rc.py
+camfitool/offline_fault_injector_ui.py
+camfitool/realtime_fault_injector_ui.py
+camfitool/ui_interface.py
+camfitool.egg-info/PKG-INFO
+camfitool.egg-info/SOURCES.txt
+camfitool.egg-info/dependency_links.txt
+camfitool.egg-info/requires.txt
+camfitool.egg-info/top_level.txt
