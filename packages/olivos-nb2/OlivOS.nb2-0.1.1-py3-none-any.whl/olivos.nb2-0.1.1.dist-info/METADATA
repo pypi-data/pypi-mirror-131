@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: olivos.nb2
+Version: 0.1.1
+Summary: Load OlivOS plugin in NoneBot2
+License: AGPL-3.0-only
+Author: jigsaw
+Author-email: j1g5aw@foxmail.com
+Requires-Python: >=3.7.3,<4.0.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: nonebot-adapter-cqhttp (>=2.0.0a13,<3.0.0)
+Requires-Dist: nonebot2 (>=2.0.0a13,<3.0.0)
+Description-Content-Type: text/markdown
+
+# OlivOS.nb2
+
+[NoneBot2](https://github.com/nonebot/nonebot2) 的 [OlivOS](https://github.com/OlivOS-Team/OlivOS) 兼容层插件
+
+[![License](https://img.shields.io/github/license/j1g5awi/OlivOS.nb2)](LICENSE)
+![Python Version](https://img.shields.io/badge/python-3.7.3+-blue.svg)
+![NoneBot Version](https://img.shields.io/badge/nonebot-2.0.0a13+-red.svg)
+![Pypi Version](https://img.shields.io/pypi/v/OlivOS.nb2.svg)
+
+### 安装
+
+#### 从 PyPI 安装（推荐）
+
+- 使用 nb-cli  
+
+```
+nb plugin install OlivOS.nb2
+```
+
+- 使用 poetry
+
+```
+poetry add OlivOS.nb2
+```
+
+- 使用 pip
+
+```
+pip install OlivOS.nb2
+```
+
+#### 从 GitHub 安装（不推荐）
+
+```
+pip install git+https://github.com/j1g5awi/OlivOS.nb2.git
+```
+
+### 使用
+
+目前只有 CQHTTP(OneBot) 平台的被动消息兼容层，其他平台待添加。
+
+OlivOS 插件请放入`./data/OlivOs/app/`。
+
