@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/pyassos.egg-info/PKG-INFO
+src/pyassos.egg-info/SOURCES.txt
+src/pyassos.egg-info/dependency_links.txt
+src/pyassos.egg-info/top_level.txt

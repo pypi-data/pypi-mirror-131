@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: pyassos
+Version: 0.1
+Summary: Bibliothèque fournissant une interface de connexion avec l'API open-source du Répertoire National des Associations (RNA) fournie par Etalab 
+Home-page: https://github.com/MatthieuBOUCHET/PyAssos/
+Author: Matthieu BOUCHET
+Author-email: matthieu.bouchet@outlook.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/MatthieuBOUCHET/PyAssos/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: French
+Classifier: Topic :: Utilities
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# PyAssos
+_PyAssos_ est une bibliothèque fournissant une interface de connexion avec [l'API _open-source_ du 
+Répertoire National des Associations (RNA) fournie par Etalab](https://entreprise.data.gouv.fr/api_doc/rna).
+![](https://entreprise.data.gouv.fr/img/etalab.6d769a61.svg "Logo Etalab")
+![](https://api.gouv.fr/images/api-logo/dinum.png)
+
+_Cette bibliothèque n'est pas officielle._
+## Fonctionnalités
+- La recherche par **nom d'association**
+- La recherche par **identifiant RNA**
+- La recherche par **son numéro SIRET**
+
+### La recherche par _nom d'association_
+La recherche par _nom d'association_ fonctionne grâce à la fonction `recherche_par_nom()`.
+
+La fonction `recherche_par_nom()` prend un argument `nom_cherche` (_string_).
+Elle renvoie une liste d'instance de la classe `Association()`.
+
+Si aucun résultat n'a été trouvé, une `ValueError` est levée.
+
+### La recherche par _identifiant RNA_
+La recherche par _identifiant RNA_ fonctionne grâce à la déclaration d'une instance `Association()` avec un passage de
+l'argument `id_rna`.
+
+Si aucun résultat n'a été trouvé, une `ValueError` est levée.
+
+### La recherche par _numéro de SIRET_
+La recherche par _numéro de SIRET_ fonctionne grâce à la déclaration d'une instance `Association()` avec un passage de
+l'argument `num_siret`.
+
+Si aucun résultat n'a été trouvé, une `ValueError` est levée.
+
