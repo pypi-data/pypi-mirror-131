@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: configula
+Version: 0.3.1
+Summary: Merges configuration from toml file and environment variables
+Author: Eugen Ciur
+Author-email: eugen@papermerge.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: tomlkit (>=0.7.2,<0.8.0)
