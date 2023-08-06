@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: ewoks
+Version: 0.0.5a0
+Summary: ESRF Workflow System
+Home-page: https://gitlab.esrf.fr/workflow/ewoks/ewoks
+Author: ESRF
+Author-email: wout.de_nolf@esrf.fr
+License: MIT
+Project-URL: Source, https://gitlab.esrf.fr/workflow/ewoks/ewoks
+Project-URL: Documentation, https://workflow.gitlab-pages.esrf.fr/ewoks/ewoks
+Project-URL: Tracker, https://gitlab.esrf.fr/workflow/ewoks/ewoks/issues
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dask
+Provides-Extra: ppf
+Provides-Extra: orange
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: doc
+License-File: LICENSE.md
+
+# Ewoks: ESRF Workflow System
+
+Many [workflow management systems](https://s.apache.org/existing-workflow-systems) exist to deal with data processing problems that can be expressed as a graph of tasks, also referred to as a *computational graph* or *workflow*. The main purpose of a workflow management system is to provide a framework for implementing tasks, creating graphs of tasks and executing these graphs.
+
+The purpose of *ewoks* is to provide an abstraction layer between graph representation and execution. This allows using the same tasks and graphs in different workflow management systems. *ewoks* itself is **not** a workflow management system.
+
+## Install
+
+```bash
+python -m pip install ewoks[orange,dask,ppf,test]
+```
+
+## Test
+
+```bash
+pytest --pyargs ewoks.tests
+```
+
+## Getting started
+
+Workflows can be loaded and executed from the command line
+
+```bash
+ewoks execute /path/to/graph.json [--scheduler dask]
+```
+
+or in a python script (using the core library or any of the bindings)
+
+```python
+from ewokscore import execute_graph
+# from ewoksppf import execute_graph
+# from ewoksdask import execute_graph
+# from ewoksorange import execute_graph
+
+result = execute_graph("/path/to/graph.json")
+```
+
+The core library `ewokscore` is used for loading graphs and can also be used for sequential execution.
+
+## Documentation
+
+https://workflow.gitlab-pages.esrf.fr/ewoks/ewoks
+
+
