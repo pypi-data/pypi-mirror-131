@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+./aerosol_dynamics/__init__.py
+./aerosol_dynamics/environment.py
+./aerosol_dynamics/environment_test.py
+./aerosol_dynamics/particle.py
+./aerosol_dynamics/particle_test.py
+./aerosol_dynamics/physical_parameters.py
+particula.egg-info/PKG-INFO
+particula.egg-info/SOURCES.txt
+particula.egg-info/dependency_links.txt
+particula.egg-info/requires.txt
+particula.egg-info/top_level.txt
