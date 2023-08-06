@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: libgeosuiteprv
+Version: 0.0.5
+Summary: Parser for the GeoSuite<tm> PRV export format
+Home-page: https://github.com/emerald-geomodelling/libgeosuiteprv
+Author: Egil Moeller, Craig William Christensen and others 
+Author-email: em@emeraldgeo.no, cch@emeraldgeo.no
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Parser for the GeoSuite<tm> PRV export format
+

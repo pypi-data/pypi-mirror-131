@@ -1,0 +1,3 @@
+[libsgfdata.parsers]
+prv = libgeosuiteprv:parse
+

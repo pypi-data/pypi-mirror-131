@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+libgeosuiteprv/__init__.py
+libgeosuiteprv.egg-info/PKG-INFO
+libgeosuiteprv.egg-info/SOURCES.txt
+libgeosuiteprv.egg-info/dependency_links.txt
+libgeosuiteprv.egg-info/entry_points.txt
+libgeosuiteprv.egg-info/requires.txt
+libgeosuiteprv.egg-info/top_level.txt
