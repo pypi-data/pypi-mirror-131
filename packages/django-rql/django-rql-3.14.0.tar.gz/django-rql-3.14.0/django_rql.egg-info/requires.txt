@@ -1,0 +1,6 @@
+lark-parser==0.11.0
+Django>=2.2.19
+cachetools>=4.2.4
+
+[drf]
+djangorestframework>=3.11.1
