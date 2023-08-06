@@ -1,0 +1,11 @@
+MANIFEST.in
+src/wagtail_cache_invalidator/__init__.py
+src/wagtail_cache_invalidator/admin_urls.py
+src/wagtail_cache_invalidator/apps.py
+src/wagtail_cache_invalidator/forms.py
+src/wagtail_cache_invalidator/models.py
+src/wagtail_cache_invalidator/views.py
+src/wagtail_cache_invalidator/wagtail_hooks.py
+src/wagtail_cache_invalidator/migrations/0001_initial.py
+src/wagtail_cache_invalidator/migrations/__init__.py
+src/wagtail_cache_invalidator/templates/ wagtailcacheinvalidator/purge.html

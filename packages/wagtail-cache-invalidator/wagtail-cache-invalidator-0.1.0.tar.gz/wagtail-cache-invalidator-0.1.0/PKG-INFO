@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: wagtail-cache-invalidator
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: R.Moorman <rob@vicktor.nl>
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: test
