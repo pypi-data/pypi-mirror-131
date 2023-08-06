@@ -1,0 +1,6 @@
+[console_scripts]
+xp = xpipeline.cli:main
+xp_clio_instrument_calibrate = xpipeline.commands:clio_instrument_calibrate
+xp_compute_sky_model = xpipeline.commands:compute_sky_model
+xp_local_to_irods = xpipeline.commands:local_to_irods
+

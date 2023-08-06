@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: xpipeline
+Version: 0.0.1
+Summary: The eXtreme (and eXtensible) pipeline for analysis of high contrast imaging and spectroscopy data
+Home-page: https://github.com/magao-x/xpipeline
+Author: Joseph D. Long
+Author-email: me@joseph-long.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: pytest (>=6.2.1)
+Requires-Dist: numpy (>=1.20.3)
+Requires-Dist: scipy (>=1.4.1)
+Requires-Dist: matplotlib (>=3.2.2)
+Requires-Dist: astropy (>=4.2)
+Requires-Dist: dask (>=2021.1.1)
+Requires-Dist: distributed (>=2021.1.1)
+Requires-Dist: python-irodsclient (>=0.8.6)
+Requires-Dist: coloredlogs (>=15.0)
+Requires-Dist: scikit-image (>=0.18.1)
+Requires-Dist: irods-fsspec
+Requires-Dist: fsspec (>=0.8.7)
+Requires-Dist: sphinx-argparse (>=0.2.5)
+Requires-Dist: sphinx-rtd-theme (>=0.4.3)
+Requires-Dist: python-dateutil (<3,>=2.8.1)
+Requires-Dist: dacite (<2.0,>=1.6.0)
+Requires-Dist: numba (<1.0,>=0.53)
+Requires-Dist: memory-profiler (>=0.58.0)
+Requires-Dist: ray (>=1.8)
+Requires-Dist: pylops (<2.0,>=1.14)
+Requires-Dist: tqdm (>=4.62)
+Requires-Dist: pandas (>=1.3.4)
+
+UNKNOWN
+
