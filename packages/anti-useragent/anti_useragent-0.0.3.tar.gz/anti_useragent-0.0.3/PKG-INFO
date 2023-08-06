@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: anti_useragent
+Version: 0.0.3
+Summary: fake chrome, firefox, opera browser header anti useragent
+Home-page: UNKNOWN
+Author: handmine
+Author-email: handmine@outlook.com
+License: MIT
+Description: UNKNOWN
+Keywords: user,agent,user agent,useragent,fake,fake useragent,fake user agent,anti,anti useragent
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
