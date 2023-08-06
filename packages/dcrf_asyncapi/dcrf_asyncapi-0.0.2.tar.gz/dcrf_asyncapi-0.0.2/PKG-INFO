@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: dcrf_asyncapi
+Version: 0.0.2
+Summary: AsyncAPI schema generation for Django Channels Rest Framework
+Home-page: https://github.com/vskrachkov/dcrf-asyncapi
+Author: Viacheslav Krachkov
+Author-email: vskrachkov@gmail.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# dcrf-asyncapi
+AsyncAPI schema generation for Django Channels Rest Framework
+
+[![PyPI Version][pypi-image]][pypi-url]
+
+[pypi-image]: https://img.shields.io/pypi/v/dcrf-asyncapi
+[pypi-url]: https://pypi.org/project/dcrf-asyncapi/
+
+# Installation
+
+Using pip
+
+`pip install dcrf-asyncapi`
+
+Using pipenv
+
+`pipenv install dcrf-asyncapi`
+
