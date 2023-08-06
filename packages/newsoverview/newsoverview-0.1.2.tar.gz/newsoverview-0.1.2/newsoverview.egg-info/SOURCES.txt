@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+newsoverview/__init__.py
+newsoverview/covid_news.py
+newsoverview/en_world_news.py
+newsoverview/hospital_news.py
+newsoverview/protests.py
+newsoverview/simple_search.py
+newsoverview/terror_monitor.py
+newsoverview/tr_world_news.py
+newsoverview/travel.py
+newsoverview.egg-info/PKG-INFO
+newsoverview.egg-info/SOURCES.txt
+newsoverview.egg-info/dependency_links.txt
+newsoverview.egg-info/requires.txt
+newsoverview.egg-info/top_level.txt
