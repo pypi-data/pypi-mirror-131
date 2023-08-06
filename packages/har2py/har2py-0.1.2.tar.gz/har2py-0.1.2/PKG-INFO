@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: har2py
+Version: 0.1.2
+Summary: 
+Author: S1M0N38
+Author-email: bertolottosimone@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Jinja2 (>=2.11.2,<3.0.0)
