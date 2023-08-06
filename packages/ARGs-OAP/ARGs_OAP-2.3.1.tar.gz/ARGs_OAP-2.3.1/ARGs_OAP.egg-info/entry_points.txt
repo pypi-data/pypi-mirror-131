@@ -1,0 +1,3 @@
+[console_scripts]
+ARGs_OAP = ARGs_OAP.ARGs_OAP:main
+
