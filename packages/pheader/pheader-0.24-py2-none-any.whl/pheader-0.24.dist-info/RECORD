@@ -1,0 +1,10 @@
+pheader/__init__.py,sha256=yNAn3M6MP-SwzQiYQ8I6gRSAfTHE84csGZslsiqjoS0,129
+pheader/__meta__.py,sha256=VcglvLGkFr9kk5TwyBF5dQgTsrY2IxzLgKNvE5ZgMd0,6894
+pheader/__version__.py,sha256=IgXRKa6lQCwgXDkDg8TFabB0PmDdEFIyl6OjKYTx1sY,16
+pheader/pheader.py,sha256=qjb5LdMzz8cJ3QJd1q4w6LuaicP7nRG9WduF55sMXGA,4787
+pheader-0.24.dist-info/LICENSE.rst,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pheader-0.24.dist-info/METADATA,sha256=9PE_dF8fcitMzgLPYVPv9TFRsVGjmebWQxEyrVWHhDQ,1016
+pheader-0.24.dist-info/WHEEL,sha256=IhjwRKCBU_-qWYU-9mADzLY2DSoO4crUVcAQt39lCCc,92
+pheader-0.24.dist-info/entry_points.txt,sha256=XFRTpF_muZg46BGiBM6wOmjz-GMJTnTMbZfUid2XuDo,51
+pheader-0.24.dist-info/top_level.txt,sha256=QtfWbLgLMMSzlLAmhqlFepGig6hbYYQ3KqqTy41M4h4,8
+pheader-0.24.dist-info/RECORD,,

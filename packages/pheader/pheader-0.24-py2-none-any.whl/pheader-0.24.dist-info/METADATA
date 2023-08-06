@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pheader
+Version: 0.24
+Summary: Just simple parse string to dict headers data from string/clipboard
+Home-page: https://github.com/cumulus13/pheader
+Author: Hadi Cahyadi LD
+Author-email: cumulus13@gmail.com
+Maintainer: cumulus13 Team
+Maintainer-email: cumulus13@gmail.com
+License: BSD
+Project-URL: Documentation, https://github.com/cumulus13/pheader
+Project-URL: Code, https://github.com/cumulus13/pheader
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=2.7
+Requires-Dist: make-colors (>=3.12)
+Requires-Dist: clipboard
+Requires-Dist: pydebugger
+
+UNKNOWN
+
+
