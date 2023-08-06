@@ -1,0 +1,3 @@
+[console_scripts]
+csv_converter=alanfe_puc_ds_csv_converter.converter:converter
+
