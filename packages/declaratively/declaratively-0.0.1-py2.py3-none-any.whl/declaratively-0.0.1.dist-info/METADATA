@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: declaratively
+Version: 0.0.1
+Summary: Enforced declarative specification of module-level code objects.
+Home-page: https://github.com/glyph/Declaratively
+Author: Glyph
+Author-email: glyph@twistedmatrix.com
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+
+# Declaratively
+
+This is a Python module for encouraging certain things be executed
+declaratively, at module-import time, so that those declarations are fixed
+throughout the lifetime of a program and are not (for example) subject to
+injection of untrusted data from a network or the user into a place that should
+only contain fixed information specified by a programmer.
+
+(At present the state of the code could charitably be described as
+"experimental".)
+
