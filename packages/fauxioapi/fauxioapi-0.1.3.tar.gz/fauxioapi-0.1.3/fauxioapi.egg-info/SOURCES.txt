@@ -1,0 +1,9 @@
+README.md
+setup.py
+fauxioapi/__init__.py
+fauxioapi/fauxioapi.py
+fauxioapi.egg-info/PKG-INFO
+fauxioapi.egg-info/SOURCES.txt
+fauxioapi.egg-info/dependency_links.txt
+fauxioapi.egg-info/requires.txt
+fauxioapi.egg-info/top_level.txt
