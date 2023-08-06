@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+hoogberta/__init__.py
+hoogberta/encoder.py
+hoogberta/multitagger.py
+hoogberta.egg-info/PKG-INFO
+hoogberta.egg-info/SOURCES.txt
+hoogberta.egg-info/dependency_links.txt
+hoogberta.egg-info/requires.txt
+hoogberta.egg-info/top_level.txt
