@@ -1,0 +1,3 @@
+[console_scripts]
+patlas = _patlas.util:main
+
