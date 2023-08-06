@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+alfa_utils.py
+setup.py
+alfa_utilities.egg-info/PKG-INFO
+alfa_utilities.egg-info/SOURCES.txt
+alfa_utilities.egg-info/dependency_links.txt
+alfa_utilities.egg-info/requires.txt
+alfa_utilities.egg-info/top_level.txt
