@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: scordt
+Version: 0.1.2
+Summary: Package to simplify the analysis of cilindrical-like       biological structures. Tailored specifically for axolotl spinal cord.
+Home-page: https://sysbioiflysib.files.wordpress.com/
+Author: Augusto Borges
+Author-email: borges.augustoar@gmail.com
+License: UNKNOWN
+Description: SCordT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+scordt/__init__.py
+scordt/arc2.py
+scordt/func.py
+scordt/plots.py
+scordt/reads.py
+scordt/setup_cython.py
+scordt/slicesPlot.py
+scordt/test_csv.py
+scordt.egg-info/PKG-INFO
+scordt.egg-info/SOURCES.txt
+scordt.egg-info/dependency_links.txt
+scordt.egg-info/top_level.txt
