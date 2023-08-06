@@ -1,0 +1,309 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Python &mdash; SCS 3.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/scs_theme.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="MATLAB" href="matlab.html" />
+    <link rel="prev" title="C / C++" href="c.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/scs_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                3.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../algorithm/index.html">Algorithm</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="cones.html">Cones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matrices.html">Data matrices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="info.html">Return information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exit_flags.html">Exit flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="compile_flags.html">Compile flags</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#interfaces">Interfaces</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="c.html">C / C++</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Python</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#warm-starting">Warm-starting</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matlab.html">MATLAB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="julia.html">Julia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="r.html">R</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../install/index.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../linear_solver/index.html">Linear System Solver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../blas_lapack/index.html">BLAS and LAPACK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/index.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../help/index.html">Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../citing/index.html">Citing SCS</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SCS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">API</a> &raquo;</li>
+        
+      <li>Python</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/api/python.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="python">
+<span id="python-interface"></span><h1>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h1>
+<p>After <a class="reference internal" href="../install/python.html#python-install"><span class="std std-ref">installing</span></a> you can import SCS using</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scs</span>
+</pre></div>
+</div>
+<p>This module provides a single function solve with the following call signature:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sol</span> <span class="o">=</span> <span class="n">scs</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">data</span><span class="p">,</span>
+                <span class="n">cone</span><span class="p">,</span>
+                <span class="n">use_indirect</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                <span class="n">gpu</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                <span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                <span class="n">max_iters</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="mf">1e5</span><span class="p">),</span>
+                <span class="n">scale</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+                <span class="n">adaptive_scale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                <span class="n">eps_abs</span><span class="o">=</span><span class="mf">1e-4</span><span class="p">,</span>
+                <span class="n">eps_rel</span><span class="o">=</span><span class="mf">1e-4</span><span class="p">,</span>
+                <span class="n">eps_infeas</span><span class="o">=</span><span class="mf">1e-7</span><span class="p">,</span>
+                <span class="n">alpha</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span>
+                <span class="n">rho_x</span><span class="o">=</span><span class="mf">1e-3</span><span class="p">,</span>
+                <span class="n">acceleration_lookback</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                <span class="n">acceleration_interval</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                <span class="n">time_limit_secs</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                <span class="n">write_data_filename</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                <span class="n">log_csv_filename</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>where <code class="code docutils literal notranslate"><span class="pre">data</span></code> is a dict containing <code class="code docutils literal notranslate"><span class="pre">P,</span> <span class="pre">A,</span> <span class="pre">b,</span> <span class="pre">c</span></code>, and <code class="code docutils literal notranslate"><span class="pre">cone</span></code> is
+a dict that contains that <a class="reference internal" href="cones.html#cones"><span class="std std-ref">Cones</span></a> information.
+The <code class="code docutils literal notranslate"><span class="pre">b</span></code>, and <code class="code docutils literal notranslate"><span class="pre">c</span></code> must be 1d numpy arrays and <code class="code docutils literal notranslate"><span class="pre">P</span></code> and <code class="code docutils literal notranslate"><span class="pre">A</span></code>
+must be scipy sparse matrices in CSC format; if they are not of the proper
+format, SCS will attempt to convert them. The remaining fields are explained
+in <a class="reference internal" href="settings.html#settings"><span class="std std-ref">Settings</span></a>.</p>
+<p>At termination <code class="code docutils literal notranslate"><span class="pre">sol</span></code> is a dict with fields <code class="code docutils literal notranslate"><span class="pre">x,</span> <span class="pre">y,</span> <span class="pre">s,</span> <span class="pre">info</span></code> where
+<code class="code docutils literal notranslate"><span class="pre">x,</span> <span class="pre">y,</span> <span class="pre">s</span></code> contains the primal-dual <a class="reference internal" href="../algorithm/index.html#optimality"><span class="std std-ref">solution</span></a> or the
+<a class="reference internal" href="../algorithm/index.html#infeasibility"><span class="std std-ref">certificate of infeasibility</span></a>, and <code class="code docutils literal notranslate"><span class="pre">info</span></code> is a dict
+containing the solve <a class="reference internal" href="info.html#info"><span class="std std-ref">Return information</span></a>.</p>
+<div class="section" id="warm-starting">
+<h2>Warm-starting<a class="headerlink" href="#warm-starting" title="Permalink to this headline">¶</a></h2>
+<p>Warm-starting SCS with a guess of the primal-dual solution can reduce the total
+solve time. This is useful, for example, when solving several similar problems
+sequentially. To do this add to the <code class="code docutils literal notranslate"><span class="pre">data</span></code> dict passed to
+<code class="code docutils literal notranslate"><span class="pre">scs.solve</span></code> the additional fields <code class="code docutils literal notranslate"><span class="pre">x</span></code>, <code class="code docutils literal notranslate"><span class="pre">y</span></code>, and <code class="code docutils literal notranslate"><span class="pre">s</span></code> (or
+any subset thereof) where <code class="code docutils literal notranslate"><span class="pre">x</span></code> and <code class="code docutils literal notranslate"><span class="pre">s</span></code> correspond to numpy arrays
+containing the primal solution guesses and <code class="code docutils literal notranslate"><span class="pre">y</span></code> corresponds to a numpy
+array containing the dual solution guess.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="matlab.html" class="btn btn-neutral float-right" title="MATLAB" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="c.html" class="btn btn-neutral float-left" title="C / C++" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Brendan O&#39;Donoghue.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-203326834-1', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+   
+
+</body>
+</html>
