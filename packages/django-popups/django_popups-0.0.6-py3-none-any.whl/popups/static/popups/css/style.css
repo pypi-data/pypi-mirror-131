@@ -1,0 +1,23 @@
+.modal .modal-dialog .modal-body .container {
+  padding: 100px 100px;
+}
+.modal .modal-dialog .modal-body .container h4 {
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-family: 'Sunflower', sans-serif;
+}
+.modal .modal-dialog .modal-body .container p {
+  font-family: 'Nanum Gothic', sans-serif;
+  line-height: 1.8;
+}
+.modal .modal-dialog .modal-footer a {
+  text-decoration: none;
+  color: #777777;
+  display: inline-block;
+  transition: 0.3s;
+  line-height: 1;
+}
+.modal .modal-dialog .modal-footer a:hover {
+  text-decoration: none;
+  color: #009970;
+}
