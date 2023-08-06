@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+termcolor_logger/__init__.py
+termcolor_logger/abstract_termcolor_logger.py
+termcolor_logger/colored_logger.py
+termcolor_logger.egg-info/PKG-INFO
+termcolor_logger.egg-info/SOURCES.txt
+termcolor_logger.egg-info/dependency_links.txt
+termcolor_logger.egg-info/entry_points.txt
+termcolor_logger.egg-info/not-zip-safe
+termcolor_logger.egg-info/requires.txt
+termcolor_logger.egg-info/top_level.txt
