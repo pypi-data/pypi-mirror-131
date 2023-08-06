@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: Aod_PyHTML
+Version: 0.4.0
+Summary: HTML but it's Python.
+Home-page: https://github.com/user/reponame
+Author: ItsTato
+Author-email: thatcoolcomputer@gmail.com
+License: GNU GPLv3
+Download-URL: https://github.com/ItsTato/PyHTML/archive/refs/tags/v0.4.0.tar.gz
+Description: UNKNOWN
+Keywords: HTML,PYTHON-HTML,PYTHON HTML,AOD
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
