@@ -1,0 +1,8 @@
+python-lsp-server
+mypy<0.920
+
+[test]
+tox
+pytest
+pytest-cov
+coverage
