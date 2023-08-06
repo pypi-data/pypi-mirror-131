@@ -1,0 +1,12 @@
+biosimulators_tellurium/__init__.py,sha256=H6L78MbTNhpkylcZPuL7HPc1oEWC4XFqLxS4Leun0tg,691
+biosimulators_tellurium/__main__.py,sha256=prLLgAWUDRT6iDyk7qP9GS8G8EwfEK6tLmHw3vkudME,1798
+biosimulators_tellurium/_version.py,sha256=RqkCU-9rU8hPrtcP4WPX2crYkJ6BSDVGoJWxiGTji4s,23
+biosimulators_tellurium/config.py,sha256=6BsANqdkM0cZeZ4u43H5CG9bZxhWem3I9TNNNcXPIII,1555
+biosimulators_tellurium/core.py,sha256=hggezYb1Y_899UE7zx_xkivLu-MsXaSR9VMv7TeK9iw,35981
+biosimulators_tellurium/data_model.py,sha256=ok09iZqpJNHqTtdaVGVVxilnFZx62FvqFgzlpkck2ok,10054
+biosimulators_tellurium-0.1.25.dist-info/LICENSE,sha256=HEgoRB3A2xcLy7Uu8JZdMvnKnnJLmifKaaJQwEePmUo,1110
+biosimulators_tellurium-0.1.25.dist-info/METADATA,sha256=VbxZIIFdp8MxgqwgjweIp7_lZaqMxdmVei6A3pix08s,5531
+biosimulators_tellurium-0.1.25.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+biosimulators_tellurium-0.1.25.dist-info/entry_points.txt,sha256=KyGiNYhxQ4h0I44nDERbdeUmx0rK_1wbZpqPA4pzh44,83
+biosimulators_tellurium-0.1.25.dist-info/top_level.txt,sha256=f5sC-WpGJ0edQp8hALJB8aw13PCbcCMtSdfrvH2-6m0,24
+biosimulators_tellurium-0.1.25.dist-info/RECORD,,
