@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+netaddr = "*"
+click = ">=8.0.0"
+rich = "*"
+
+[dev-packages]
+sphinx = "*"
+flake8 = "*"
+pytest = "*"
+sphinx-rtd-theme = "*"
+black = "*"
+setuptools_scm = "*"
+
+[pipenv]
+allow_prereleases = true
