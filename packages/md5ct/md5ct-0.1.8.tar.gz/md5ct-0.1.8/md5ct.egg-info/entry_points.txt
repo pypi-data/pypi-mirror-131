@@ -1,0 +1,3 @@
+[console_scripts]
+md5ct = md5ct:cli
+
