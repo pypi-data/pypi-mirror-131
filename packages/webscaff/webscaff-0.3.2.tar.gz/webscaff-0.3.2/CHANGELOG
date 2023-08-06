@@ -1,0 +1,37 @@
+webscaff changelog
+==================
+
+
+v0.3.2 [2021-12-19]
+-------------------
+* Enabled sys.apt.upgrade command.
+
+
+v0.3.1 [2021-01-15]
+-------------------
+* Fix 'run.initialize' command permission error.
+
+
+v0.3.0 [2021-01-15]
+-------------------
++ New 'cfg' command.
+* Enhance 'run.initialize' command: save progress to be able to resume.
+* Enhance 'sys.cat' command: add 'printout' param.
+
+
+v0.2.1 [2020-10-12]
+-------------------
+* Workaround patchwork issue: invoke.vendor.six.
+
+
+v0.2.0 [2020-09-20]
+-------------------
++ 'cache_init' now just empties cache directory by default.
++ 'info' now prints out current user information.
+* Bootstrap spooler directory with right permissions.
+* Improved boostrap of Certbot.
+
+
+v0.1.0 [2020-02-16]
+-------------------
++ Basic functionality.
