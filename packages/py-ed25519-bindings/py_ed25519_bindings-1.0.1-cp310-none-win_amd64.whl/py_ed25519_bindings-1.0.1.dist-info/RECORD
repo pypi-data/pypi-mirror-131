@@ -1,0 +1,5 @@
+py_ed25519_bindings-1.0.1.dist-info/METADATA,sha256=yV3gwbJEiWJxeP6k5cu2TZAsc_8KOc3WxRPcGAEHTIk,2203
+py_ed25519_bindings-1.0.1.dist-info/WHEEL,sha256=A-rSPmHQGAYX2kobbHvLj0t0YFnlcjsnX_LvKJo0-v4,96
+ed25519_dalek/__init__.py,sha256=WmVknl4OalThTNbkWljkQ2H6KLqgwNMj5oS8HogRUX4,62
+ed25519_dalek/ed25519_dalek.cp310-win_amd64.pyd,sha256=dyV3GOGkhz-q6v5DOJD9mq0ZRE-PGB1IY7AwPclCvJw,361984
+py_ed25519_bindings-1.0.1.dist-info/RECORD,,
