@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: torchgeo
+Version: 0.1.1
+Summary: TorchGeo: datasets, transforms, and models for geospatial data
+Home-page: https://github.com/microsoft/torchgeo
+Author: Adam J. Stewart
+Author-email: ajstewart426@gmail.com
+License: UNKNOWN
+Keywords: pytorch,deep learning,machine learning,remote sensing,satellite imagery,geospatial
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: GIS
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: einops
+Requires-Dist: fiona (>=1.5)
+Requires-Dist: kornia (>=0.5.4)
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: omegaconf (>=2.1)
+Requires-Dist: pillow (>=2.9)
+Requires-Dist: pyproj (>=2.2)
+Requires-Dist: pytorch-lightning (>=1.3)
+Requires-Dist: rasterio (>=1.0.16)
+Requires-Dist: rtree (>=0.5)
+Requires-Dist: scikit-learn (>=0.18)
+Requires-Dist: shapely (>=1.3)
+Requires-Dist: segmentation-models-pytorch (>=0.2)
+Requires-Dist: timm (>=0.2.1)
+Requires-Dist: torch (>=1.7)
+Requires-Dist: torchmetrics
+Requires-Dist: torchvision (>=0.3)
+Provides-Extra: datasets
+Requires-Dist: h5py ; extra == 'datasets'
+Requires-Dist: opencv-python ; extra == 'datasets'
+Requires-Dist: pycocotools ; extra == 'datasets'
+Requires-Dist: radiant-mlhub (>=0.2.1) ; extra == 'datasets'
+Requires-Dist: rarfile (>=3) ; extra == 'datasets'
+Requires-Dist: scipy (>=0.9) ; extra == 'datasets'
+Provides-Extra: style
+Requires-Dist: black (>=21.4b0) ; extra == 'style'
+Requires-Dist: flake8 (>=3.8) ; extra == 'style'
+Requires-Dist: isort[colors] (>=5.8) ; extra == 'style'
+Requires-Dist: pydocstyle[toml] (>=6.1) ; extra == 'style'
+Provides-Extra: tests
+Requires-Dist: mypy (>=0.900) ; extra == 'tests'
+Requires-Dist: nbmake (>=0.1) ; extra == 'tests'
+Requires-Dist: pytest (>=6) ; extra == 'tests'
+Requires-Dist: pytest-cov (>=2.4) ; extra == 'tests'
+
+<img src="https://raw.githubusercontent.com/microsoft/torchgeo/main/logo/logo-color.svg" width="400" alt="TorchGeo"/>
+
+TorchGeo is a [PyTorch](https://pytorch.org/) domain library, similar to [torchvision](https://pytorch.org/vision), that provides datasets, transforms, samplers, and pre-trained models specific to geospatial data.
+
+The goal of this library is to make it simple:
+
+1. for machine learning experts to use geospatial data in their workflows, and
+2. for remote sensing experts to use their data in machine learning workflows.
+
+See our [installation instructions](#installation-instructions), [documentation](#documentation), and [examples](#example-usage) to learn how to use torchgeo.
+
+External links:
+[![docs](https://readthedocs.org/projects/torchgeo/badge/?version=latest)](https://torchgeo.readthedocs.io/en/latest/?badge=latest)
+[![codecov](https://codecov.io/gh/microsoft/torchgeo/branch/main/graph/badge.svg?token=oa3Z3PMVOg)](https://codecov.io/gh/microsoft/torchgeo)
+
+Tests:
+[![style](https://github.com/microsoft/torchgeo/actions/workflows/style.yaml/badge.svg)](https://github.com/microsoft/torchgeo/actions/workflows/style.yaml)
+[![tests](https://github.com/microsoft/torchgeo/actions/workflows/tests.yaml/badge.svg)](https://github.com/microsoft/torchgeo/actions/workflows/tests.yaml)
+
+## Installation instructions
+
+The recommended way to install TorchGeo is with [pip](https://pip.pypa.io/):
+
+```console
+$ pip install torchgeo
+```
+
+For [conda](https://docs.conda.io/) and [spack](https://spack.io/) installation instructions, see the [documentation](https://torchgeo.readthedocs.io/en/latest/user/installation.html).
+
+## Documentation
+
+You can find the documentation for torchgeo on [ReadTheDocs](https://torchgeo.readthedocs.io).
+
+## Example usage
+
+The following sections give basic examples of what you can do with torchgeo. For more examples, check out our [tutorials](https://torchgeo.readthedocs.io/en/latest/tutorials/getting_started.html).
+
+### Train and test models using our PyTorch Lightning based training script
+
+We provide a script, `train.py` for training models using a subset of the datasets. We do this with the PyTorch Lightning `LightningModule`s and `LightningDataModule`s implemented under the `torchgeo.trainers` namespace.
+The `train.py` script is configurable via the command line and/or via YAML configuration files. See the [conf/](conf/) directory for example configuration files that can be customized for different training runs.
+
+```console
+$ python train.py config_file=conf/landcoverai.yaml
+```
+
+### Download and use the Tropical Cyclone Wind Estimation Competition dataset
+
+This dataset is from a competition hosted by [Driven Data](https://www.drivendata.org/) in collaboration with [Radiant Earth](https://www.radiant.earth/). See [here](https://www.drivendata.org/competitions/72/predict-wind-speeds/) for more information.
+
+Using this dataset in torchgeo is as simple as importing and instantiating the appropriate class.
+
+```python
+import torchgeo.datasets
+
+dataset = torchgeo.datasets.TropicalCycloneWindEstimation(split="train", download=True)
+print(dataset[0]["image"].shape)
+print(dataset[0]["label"])
+```
+
+## Contributing
+
+This project welcomes contributions and suggestions. If you would like to submit a pull request, see our [Contribution Guide](https://torchgeo.readthedocs.io/en/latest/user/contributing.html) for more information.
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
+contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+
