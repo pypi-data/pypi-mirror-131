@@ -1,0 +1,9 @@
+adash/__init__.py,sha256=Lyj-TI7WFW1aMsR7qClAYqaade01P7w89f7JY-wLdgY,241
+adash/date_util.py,sha256=oIm3_vrehSJZpIEZa8d2KK_Pjdui2b28CJURU_29zQw,1163
+adash/download.py,sha256=rhTP6zDP3ZzUe9AKO3bbtmYglA-iA36YuUn-W5N31k8,907
+adash/proportion.py,sha256=pO4vaTNwHNM2rtuUNHdCPo1Lb3qV9l-8qs4elD9I7_Y,1610
+adash/string_util.py,sha256=SNbpB7hPslWYsSvNI_9Xs-jS0rLB2ioRsEXqnzC_s-s,3241
+adash-0.2.0.dist-info/LICENSE,sha256=unajP-tBkaVZyQzsZk1HbZ8sB_hIP6JEvJYXqYBPKoA,1064
+adash-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+adash-0.2.0.dist-info/METADATA,sha256=HA0UwP_ALI63AmW9EjDZeNCzOrPKkhk9oXXKDfiEt1M,1025
+adash-0.2.0.dist-info/RECORD,,
