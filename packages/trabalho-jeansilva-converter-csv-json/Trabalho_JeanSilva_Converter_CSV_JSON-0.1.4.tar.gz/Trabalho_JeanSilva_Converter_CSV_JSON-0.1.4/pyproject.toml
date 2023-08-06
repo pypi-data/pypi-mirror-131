@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "Trabalho_JeanSilva_Converter_CSV_JSON"
+version = "0.1.4"
+description = "Função de converter arquivo csv para json, e json para csv."
+authors = ["Jean Silva <JeanSilvadSantos@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+bpython = "^0.22.1"
+path = "^16.2.0"
+click = "^8.0.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+csv_converter_para_json = 'Trabalho_JeanSilva_Converter_CSV_JSON.chamada1:converterCSV'
+json_converter_csv = 'Trabalho_JeanSilva_Converter_CSV_JSON.chamada2:converterJSON'
+
+
+[tool.black]
+line-length = 99
+
+[tool.isort]
+profile = "black"
