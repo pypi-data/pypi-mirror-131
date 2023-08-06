@@ -1,0 +1,10 @@
+elifecleaner/__init__.py,sha256=A3GacH6Wpic2j1BiGfmaHEWX8tLWsaEweJt-ZzTPoUA,544
+elifecleaner/parse.py,sha256=3axsEn9YYi1KtY0expH5GFva2WXdMQiXQcr6M4AuZ_g,12746
+elifecleaner/pdf_utils.py,sha256=z3kCBBLV2rlFj4f7-2sJlmfwXQpA4AllD_jv7hFyhiA,1010
+elifecleaner/transform.py,sha256=JGqvmkBXOGhe70A_hbZ8h3zNIDdhrB_0devfYqXZCVc,6627
+elifecleaner/zip_lib.py,sha256=56I-9f4oiGgZF5P1KuG1GstywpHFP4NRb-o_IWufGV8,1704
+elifecleaner-0.9.0.dist-info/LICENSE,sha256=SHCw6DmXR36K22W1YxiTbfXBYH_2lOdZStQnVq2xtO0,1088
+elifecleaner-0.9.0.dist-info/METADATA,sha256=JjlgvwcZqq5ALTp_sLdhmXw5mogsJ5G7m7cnmATk4Pw,1002
+elifecleaner-0.9.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+elifecleaner-0.9.0.dist-info/top_level.txt,sha256=tlJmR9hxwyz_UT7isdrJd3pN6-jsUzeVfBp01aBdo30,13
+elifecleaner-0.9.0.dist-info/RECORD,,
