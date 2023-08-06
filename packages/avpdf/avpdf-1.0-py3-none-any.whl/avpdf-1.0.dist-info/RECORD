@@ -1,0 +1,8 @@
+avpdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+avpdf/pdf2image.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+avpdf/pdf2text.py,sha256=5--64-OYoPnJr369BowREbCyMU2VZrAXDrr2AB1VAx4,39
+avpdf-1.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+avpdf-1.0.dist-info/METADATA,sha256=FjoQzs5iDDvnmgUnrrDo5KJHbhkZvUdLLIedrRQdRqE,150
+avpdf-1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+avpdf-1.0.dist-info/top_level.txt,sha256=_dnCo0mmK-yxwrezs_Xg0QiteHlxc2KgVRGylKtTyFY,6
+avpdf-1.0.dist-info/RECORD,,
