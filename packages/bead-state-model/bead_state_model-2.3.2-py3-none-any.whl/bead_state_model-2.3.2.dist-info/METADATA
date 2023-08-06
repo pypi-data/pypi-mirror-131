@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bead-state-model
+Version: 2.3.2
+Summary: "Wrapper for ReaDDy2 to set up simulations of actomyosin networks."
+Home-page: https://gitlab.com/ilyas.k/bead_state_model
+Author: Ilyas Kuhlemann
+Author-email: ilyasp.ku@gmail.com
+License: "GNU GPLv3"
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: toml (>=0.10.2)
+Provides-Extra: test
+Requires-Dist: actomyosin-analyser ; extra == 'test'
+
+UNKNOWN
+
