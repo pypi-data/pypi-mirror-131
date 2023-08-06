@@ -1,0 +1,5 @@
+numpy
+jax
+corrfunc
+h5py
+numba
