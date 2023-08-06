@@ -1,0 +1,10 @@
+matplotlib
+pymap3d
+shapely
+descartes
+
+[dev]
+check-manifest
+
+[test]
+coverage
