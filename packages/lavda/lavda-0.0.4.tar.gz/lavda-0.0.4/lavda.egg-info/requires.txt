@@ -1,0 +1,11 @@
+pandas
+numpy
+xlsxwriter
+joblib>=0.14.0
+xlrd
+pymysql
+emoji
+sklearn
+pyahocorasick
+openpyxl
+torch>=1.2.0
