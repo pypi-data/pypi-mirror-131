@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+trendvisualizer/__init__.py
+trendvisualizer/chart_display.py
+trendvisualizer/chart_prep.py
+trendvisualizer/marketdata.py
+trendvisualizer/pie_charts.py
+trendvisualizer/sector_mappings.py
+trendvisualizer/trend.py
+trendvisualizer/trend_params.py
+trendvisualizer/trenddata.py
+trendvisualizer.egg-info/PKG-INFO
+trendvisualizer.egg-info/SOURCES.txt
+trendvisualizer.egg-info/dependency_links.txt
+trendvisualizer.egg-info/requires.txt
+trendvisualizer.egg-info/top_level.txt
