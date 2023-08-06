@@ -1,0 +1,17 @@
+qBitrr/__init__.py,sha256=9pAkjaA_akQ6DfdvJoT9k9ZBpgNsze62wqAMSiAc0c0,29
+qBitrr/arr_tables.py,sha256=hT429GUKVHhUU7S1-5vhcNCqLioZ9rOQVceOW_O-UFM,3932
+qBitrr/arss.py,sha256=fiMihXsYe9fr0UZniIFVCpoBFQ4LDjXgPJ9oWNnD6fM,134708
+qBitrr/config.py,sha256=97yBBPrZv1wkz1fRdRX0wVwmZ83U0WEOKove3wGRr6w,2246
+qBitrr/errors.py,sha256=8izfwVJ4dQCqQvI3eLEa_AHPnSSqPOOr2pVaFC7PoYY,1147
+qBitrr/ffprobe.py,sha256=IEdBvjNmbK96wMwxhw2qPJMMl-0llLzxxXNkKaN7TAY,3759
+qBitrr/gen_config.py,sha256=OBLGoEH2vr2pDV94sJYzpDSmg8kfGa8N_jD9MyPeuMI,24974
+qBitrr/logger.py,sha256=dY8UZZoSd_dE_y4Giiz6L7rKwpiWHN2NMRwfFWXwEw0,4177
+qBitrr/main.py,sha256=Vdug7ckHXcmS3LS4eT6Zg8JndkNYI4y6InOIoMhAin4,3863
+qBitrr/tables.py,sha256=37-yLWykfuiKsGPwYdxVS0JD5rdODXIphkfkdmpEn5c,1724
+qBitrr/utils.py,sha256=xG2khDJpd9ISiPj4m_6KrJUtN3MI9v0NfWhk7y6Ouro,4625
+qBitrr-2.1.2.dist-info/LICENSE,sha256=wEAqTlnA30XFoEkcvDKirjjzZExGaRs1RjSSo_peY_0,1063
+qBitrr-2.1.2.dist-info/METADATA,sha256=NlUxNvwHATHNNVFa3Mn3FHm5o5kUFVQ_K658b8v96w0,5331
+qBitrr-2.1.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+qBitrr-2.1.2.dist-info/entry_points.txt,sha256=X5r-DEnjJvXNkSu9LDzrm1iP6Yk-Qe3lAMa4xg5WdsY,44
+qBitrr-2.1.2.dist-info/top_level.txt,sha256=jIINodarzsPcQeTf-vvK8-_g7cQ8CvxEg41ms14K97g,7
+qBitrr-2.1.2.dist-info/RECORD,,
