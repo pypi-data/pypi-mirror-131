@@ -1,0 +1,9 @@
+request_security/__init__.py,sha256=YNZjBpLQPor1lUM222iSKfz7Wnoh-80JgwgWEm82Fj4,34
+request_security/middleware.py,sha256=ErNDZvYLOl3h7PWkGev9PZexOAnChwLfufvZGxGDrNU,2108
+request_security/settings.py,sha256=M75VQCbRhjpvU7j31Qxb8qY2IRlvPIqgAJc-fErbMhc,1713
+request_security/signature.py,sha256=ZyDwX7i5SexnBphp1Iqqf8yrFdZfL67V438p5gtVgU8,5025
+request_security/utils.py,sha256=GQCvgkm-dkXRGN1AJTnMNFN3nn9GaCdwR_ReJqBZRSk,260
+django_request_security-0.0.2.dist-info/METADATA,sha256=6V60f7WG2-IKvmKdncXorKdxGh2gGxMY-jpfWgh4hfs,4140
+django_request_security-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_request_security-0.0.2.dist-info/top_level.txt,sha256=Pz8qD5ijGTodfuAB1KwXh_ixlIW1CoV8wkF_6Bu-4cI,17
+django_request_security-0.0.2.dist-info/RECORD,,
