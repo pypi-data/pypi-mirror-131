@@ -1,0 +1,13 @@
+README.txt
+setup.cfg
+setup.py
+package_1802/__init__.py
+package_1802/__main__.py
+package_1802/combinations.py
+package_1802/head.py
+package_1802/iterable_input.py
+package_1802/k_input.py
+package_1802.egg-info/PKG-INFO
+package_1802.egg-info/SOURCES.txt
+package_1802.egg-info/dependency_links.txt
+package_1802.egg-info/top_level.txt
