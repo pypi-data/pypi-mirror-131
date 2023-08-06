@@ -1,0 +1,12 @@
+Deprecated<2.0.0,>=1.2.12
+PyJWT<3.0.0,>=2.0.0
+cryptography<4.0.0,>=3.1.1
+nr.functional<1.0.0,>=0.2.0
+requests<3.0.0,>=2.25.0
+urllib3<2.0.0,>=1.26.6
+
+[test]
+PyGithub
+types-deprecated
+types-flask
+types-requests
