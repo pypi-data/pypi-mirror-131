@@ -1,0 +1,10 @@
+librapid-0.2.23.dist-info/RECORD,,
+librapid-0.2.23.dist-info/LICENSE,sha256=kTjI5Nc_1G-9SJdGPPgdgV3zq77vCvaDEQ3goPe0qpw,1066
+librapid-0.2.23.dist-info/WHEEL,sha256=f39CcpfLa79_zsJ6tiLfyOnVzzFPT_I_oONpJXyaa-4,103
+librapid-0.2.23.dist-info/top_level.txt,sha256=Zy1k91fqAOGCubeF3wqdeufpRPHuQFK3ZuchWqSrUTs,9
+librapid-0.2.23.dist-info/METADATA,sha256=5KZF5X7tnz7WQa5i67Z0BW2vQYmA2bx4rfQzLaVswVU,10369
+librapid/__init__.py,sha256=m78juJZf1b11vKloIaMJcjP-WUeM9azNw5wqsKlK6Qs,2034
+librapid/_librapid.cpython-38-darwin.so,sha256=FmcUbk_0GxIpBLYwkClQ1iKU8vi2h4ltZQS6iK43m10,2939536
+librapid/.dylibs/libstdc++.6.dylib,sha256=5kKcbKMc0gMnNqPUD47CZzcxb5l49g9nPa8hsxESN7Q,3655760
+librapid/.dylibs/libgcc_s.1.dylib,sha256=5kKdVHSjTZ1EzBv-GYCehYS-U6-9GT-wdTPUUn5fxCg,188816
+librapid/.dylibs/libgomp.1.dylib,sha256=TdV3yaTF_CO_rxmszbVS8LGgnO7bqRH7O959OVU1bDc,415024
