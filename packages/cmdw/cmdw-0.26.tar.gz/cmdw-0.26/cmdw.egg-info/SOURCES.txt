@@ -1,0 +1,17 @@
+.gitignore
+LICENSE.rst
+README.rst
+__meta__.py
+__version__.py
+cmdw.py
+setup.cfg
+setup.py
+cmdw/.gitignore
+cmdw/__init__.py
+cmdw/__meta__.py
+cmdw/__version__.py
+cmdw/cmdw.py
+cmdw.egg-info/PKG-INFO
+cmdw.egg-info/SOURCES.txt
+cmdw.egg-info/dependency_links.txt
+cmdw.egg-info/top_level.txt
