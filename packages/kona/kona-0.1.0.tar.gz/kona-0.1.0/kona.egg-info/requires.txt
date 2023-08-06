@@ -1,0 +1,14 @@
+yirgachefe
+lbry-rocksdb
+
+[dev]
+pytest
+flake8
+flake8-docstrings
+
+[lint]
+flake8
+flake8-docstrings
+
+[tests]
+pytest
