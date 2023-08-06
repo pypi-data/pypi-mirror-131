@@ -1,0 +1,17 @@
+cortex_serving_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cortex_serving_client/command_line_wrapper.py,sha256=wby4uFEGNh0N5tMGFBi5J3nq2JJF1w8GLTYhL40mwcU,2168
+cortex_serving_client/cortex_client.py,sha256=u0yB5XZTbKfQiBAXr50g26Nnof-1msf8aVWNAOTcTPU,35720
+cortex_serving_client/deployment_failed.py,sha256=9tLrRpOLcOwstg45XKJQssfeSKa_xM7lexwLiVksPZ4,687
+cortex_serving_client/hash_utils.py,sha256=3Dvk33SP0d56byGFnvNhBmU_9UEN3NatznaeWlZX9mc,194
+cortex_serving_client/printable_chars.py,sha256=EaKSfOV818kdCIiowBjyBTP9M9XCVeROjGCqdpoPKwk,185
+cortex_serving_client/retry_utils.py,sha256=7O3VsEwJOPMfKUjRlND5UduobqAztHUmJZNbJDbFTHg,1229
+cortex_serving_client/s3.py,sha256=C2BYbNv_12lQ2dNkZ_QKNho1ml1RSUv0ecFuc-kjkZQ,2179
+cortex_serving_client/shell_utils.py,sha256=QvQEJj43_8hkqcci_g3_3nKgQork9yOHkz0fpexpNRY,188
+cortex_serving_client/zip_utils.py,sha256=wJMkYgGfKRL_Mvb1MqJOZp1-yPSIFRMLV1NRpmK9FOQ,861
+cortex_serving_client/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cortex_serving_client/resources/main.py,sha256=Vy-13A-lNey9VZnuYrb0LT1jd6d2HyAzZsTmc5rMs-k,3461
+cortex_serving_client-0.40.10.dist-info/LICENCE,sha256=bE434Rr-8DYSivR5Fd6dom2faCygU6NYagxEeULXnq4,11346
+cortex_serving_client-0.40.10.dist-info/METADATA,sha256=wcLMpemMuJIy1vn0arM1N-4GnPcHxMzi9cCFAUbpYn4,7360
+cortex_serving_client-0.40.10.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cortex_serving_client-0.40.10.dist-info/top_level.txt,sha256=P4FqP9zDYscnbBpUltj4eCWEYhiyIaXNb-VG8JeponQ,22
+cortex_serving_client-0.40.10.dist-info/RECORD,,
