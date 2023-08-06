@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/task_stats_pkg/__init__.py
+src/task_stats_pkg/task_stats.py
+src/taskapp_status_pkg_ash93.egg-info/PKG-INFO
+src/taskapp_status_pkg_ash93.egg-info/SOURCES.txt
+src/taskapp_status_pkg_ash93.egg-info/dependency_links.txt
+src/taskapp_status_pkg_ash93.egg-info/top_level.txt
