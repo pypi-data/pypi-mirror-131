@@ -1,0 +1,9 @@
+README.txt
+setup.py
+stat_utils/__init__.py
+stat_utils/utils.py
+stat_utils.egg-info/PKG-INFO
+stat_utils.egg-info/SOURCES.txt
+stat_utils.egg-info/dependency_links.txt
+stat_utils.egg-info/requires.txt
+stat_utils.egg-info/top_level.txt
