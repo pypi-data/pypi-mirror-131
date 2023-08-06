@@ -1,0 +1,6 @@
+mlflow==1.19.0
+numpy
+opencv-python
+Pillow
+waveletai
+pika
