@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: openfisca-us-data
+Version: 0.1.4
+Summary: A Python package to manage OpenFisca-US-compatible microdata
+Home-page: http://github.com/PolicyEngine/openfisca-us-data
+Author: Nikhil Woodruff
+Author-email: nikhil.woodruff@outlook.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: dev
