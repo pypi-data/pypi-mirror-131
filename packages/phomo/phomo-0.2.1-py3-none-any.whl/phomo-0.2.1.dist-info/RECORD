@@ -1,0 +1,14 @@
+phomo/__init__.py,sha256=oXqVzKwqud-QBH7pbdDPjALXGaUa4tgYjqlhAjlwP24,172
+phomo/__main__.py,sha256=qW3Ajjz3m6X0f0YsFi1-GuLP9auMWb9XCMLGSzaU2D0,4707
+phomo/grid.py,sha256=EjSOQ8q8zPqX9ZrNnLUzc-UEbZlY3LMtDL0lbiqOOU0,6357
+phomo/master.py,sha256=gI_0AukkoQToDuThsJNfHfuDaiiEUgaIbI1BVKUFuVU,2633
+phomo/metrics.py,sha256=W514WwKBbHRiWg41MJTqZK4giE3-Dj6ztiMovEoeRtE,3632
+phomo/mosaic.py,sha256=vX_NHiQLk9h5sjK2UIYKFRrMf96LZhQcCNm0fVADk-A,8253
+phomo/palette.py,sha256=JrmILwhx6NEXoOX6sJqj6bsXVSLu_Ny8ms3bJun1vz4,1974
+phomo/pool.py,sha256=6RcGCzUve_Cc0biAfprV7m1emDuMfUo1_8GDM_x0Jds,4434
+phomo/utils.py,sha256=bTUca7T0pZ1h-sR_NeCRDn0huVcN5R1Q1zp-JkrUli0,4008
+phomo-0.2.1.dist-info/entry_points.txt,sha256=RLehBnEUAndEG-wJ9NoSq3UP-oY2UdwUjO2K92XO2-o,45
+phomo-0.2.1.dist-info/LICENSE,sha256=J_kFRpp_NHc43CUSviVlrMwdVyVYlvHhOUrvkPWkkJw,1068
+phomo-0.2.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+phomo-0.2.1.dist-info/METADATA,sha256=bH0N_KqrlYucYV0jnluaY4l3Dp15VF4LrPxSUYe2d8A,5156
+phomo-0.2.1.dist-info/RECORD,,
