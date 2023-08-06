@@ -1,0 +1,11 @@
+cython
+graph_kmer_index>=0.0.12
+graph_read_simulator
+kmer_mapper
+numpy
+obgraph>=0.0.8
+pathos
+pyfaidx
+scipy
+shared_memory_wrapper
+tqdm
