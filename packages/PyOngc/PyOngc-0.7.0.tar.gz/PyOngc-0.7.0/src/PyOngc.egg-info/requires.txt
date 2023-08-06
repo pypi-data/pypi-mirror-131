@@ -1,0 +1,15 @@
+Click
+numpy
+
+[data]
+pandas
+
+[development]
+pytest
+mock
+flake8
+pytest-cov
+
+[docs]
+sphinx
+sphinx_rtd_theme
