@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyTextColor/ANSI.py
+pyTextColor/Exceptions.py
+pyTextColor/__init__.py
+pyTextColor/pyTextColor.py
+pyTextColor.egg-info/PKG-INFO
+pyTextColor.egg-info/SOURCES.txt
+pyTextColor.egg-info/dependency_links.txt
+pyTextColor.egg-info/top_level.txt
