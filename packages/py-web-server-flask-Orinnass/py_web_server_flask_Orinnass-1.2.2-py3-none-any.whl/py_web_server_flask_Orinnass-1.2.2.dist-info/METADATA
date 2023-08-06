@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: py-web-server-flask-Orinnass
+Version: 1.2.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Download-URL: https://gitlab.com/Orinnass/python-web-server-flask
+Platform: UNKNOWN
+Requires-Python: >=3.10
+Requires-Dist: Flask (>=2.0.2)
+Requires-Dist: Jinja2 (>=3.0.2)
+Requires-Dist: MarkupSafe (>=2.0.1)
+Requires-Dist: PyMySQL (>=1.0.2)
+Requires-Dist: Werkzeug (>=2.0.2)
+Requires-Dist: attrs (>=21.2.0)
+Requires-Dist: click (>=8.0.3)
+Requires-Dist: itsdangerous (>=2.0.1)
+Requires-Dist: jsonschema (>=4.1.0)
+Requires-Dist: py-configuration-Orinnass (>=2.3.8)
+Requires-Dist: py-tools-Orinnass (>=2.0.10)
+Requires-Dist: pyrsistent (>=0.18.0)
+Requires-Dist: six (>=1.16.0)
+
+UNKNOWN
+
+
