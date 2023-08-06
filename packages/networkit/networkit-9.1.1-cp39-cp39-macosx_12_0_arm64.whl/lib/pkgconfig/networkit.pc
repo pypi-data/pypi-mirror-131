@@ -1,0 +1,11 @@
+prefix=/private/var/folders/k2/0_mpbgyx0m9_j33y7dkj5ljr0000gn/T/pip-req-build-2yrf75nt/build/lib.macosx-11.0-arm64-3.9
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: networkit
+Description: networkit
+URL: http://networkit.github.io
+Version: 9.1.1
+Cflags: -I${includedir}  -DNETWORKIT_RELEASE_LOGGING
+Libs: -L${libdir} -lnetworkit
