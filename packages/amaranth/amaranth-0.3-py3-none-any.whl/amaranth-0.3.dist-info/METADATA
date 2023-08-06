@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: amaranth
+Version: 0.3
+Summary: Amaranth hardware definition language
+Home-page: UNKNOWN
+Author: whitequark
+Author-email: whitequark@whitequark.org
+License: BSD
+Project-URL: Documentation, https://amaranth-lang.org/docs/amaranth/v0.3
+Project-URL: Source Code, https://github.com/amaranth-lang/amaranth
+Project-URL: Bug Tracker, https://github.com/amaranth-lang/amaranth/issues
+Platform: UNKNOWN
+Requires-Python: ~=3.6
+Requires-Dist: Jinja2 (~=2.11)
+Requires-Dist: pyvcd (~=0.2.2)
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Requires-Dist: importlib-resources ; python_version < "3.9"
+Provides-Extra: builtin-yosys
+Requires-Dist: amaranth-yosys (>=0.10.*) ; extra == 'builtin-yosys'
+Provides-Extra: remote-build
+Requires-Dist: paramiko (~=2.7) ; extra == 'remote-build'
+
+UNKNOWN
+
+
