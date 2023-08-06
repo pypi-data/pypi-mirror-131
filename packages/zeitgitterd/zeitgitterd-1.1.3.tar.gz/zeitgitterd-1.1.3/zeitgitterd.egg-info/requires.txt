@@ -1,0 +1,6 @@
+pygit2
+python-gnupg
+configargparse
+requests
+setuptools
+git-timestamp
