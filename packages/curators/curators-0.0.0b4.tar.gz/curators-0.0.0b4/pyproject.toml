@@ -1,0 +1,17 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+
+[tool.coverage.run]
+omit = [
+    # omit anything in a .local directory anywhere
+    "*venv/*",
+    "tests/*",
+    "docs/*"
+
+    ]
+
