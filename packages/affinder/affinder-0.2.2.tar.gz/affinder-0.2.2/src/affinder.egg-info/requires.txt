@@ -1,0 +1,15 @@
+napari-plugin-engine>=0.1.9
+napari>=0.4.12
+numpy
+scikit-image
+magicgui>=0.3.3
+napari
+toolz
+
+[testing]
+coverage
+pytest
+pytest-cov
+pytest-qt
+scikit-image[data]
+napari[pyqt5]
