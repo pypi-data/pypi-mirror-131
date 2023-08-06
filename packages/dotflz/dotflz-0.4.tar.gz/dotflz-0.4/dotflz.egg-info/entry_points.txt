@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        dotflz=dotflz.dotflz:dotflz
+    
