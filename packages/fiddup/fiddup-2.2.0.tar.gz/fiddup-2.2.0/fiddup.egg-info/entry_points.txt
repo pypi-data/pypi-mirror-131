@@ -1,0 +1,3 @@
+[console_scripts]
+fiddup = fiddup.__main__:main
+
