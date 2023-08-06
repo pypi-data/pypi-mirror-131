@@ -1,0 +1,10 @@
+README.md
+setup.py
+parse_ingredient/__init__.py
+parse_ingredient/ingredient.py
+parse_ingredient/internal/__init__.py
+parse_ingredient/internal/client.py
+zestful_parse_ingredient.egg-info/PKG-INFO
+zestful_parse_ingredient.egg-info/SOURCES.txt
+zestful_parse_ingredient.egg-info/dependency_links.txt
+zestful_parse_ingredient.egg-info/top_level.txt
