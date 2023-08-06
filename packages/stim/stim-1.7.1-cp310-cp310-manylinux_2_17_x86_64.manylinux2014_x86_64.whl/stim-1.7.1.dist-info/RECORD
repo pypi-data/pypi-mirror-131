@@ -1,0 +1,11 @@
+stim-1.7.1.data/data/pyproject.toml,sha256=dcHlbCgpdThGZB19BD3EJ38cN7HjvaKM0qnMrOijV2Q,102
+stim-1.7.1.data/data/README.md,sha256=qITm7I9S_CK9r32v57jRmEmPZVya_bUNgwHQ7beDi8c,3846
+stim/__init__.py,sha256=11j5e4xMRLvCPJF6QEMbxFD0vZdgGyJaozZNaeIWafw,868
+stim/_stim_march_sse2.cpython-310-x86_64-linux-gnu.so,sha256=UyNBrluynpIniUYvH_StL7c9fELifFScdbQQ-2I-dmw,2498240
+stim/_stim_march_avx2.cpython-310-x86_64-linux-gnu.so,sha256=YlDwQgcRctTgSAqowu3JrU96nd1cSA0R4DmXQQsP9t4,2531072
+stim/_stim_march_polyfill.cpython-310-x86_64-linux-gnu.so,sha256=VikH7JnM3HYW2UOjAETNmwEgMM4OlzRKwIbyY55rGi4,2498256
+stim-1.7.1.dist-info/METADATA,sha256=KhS3biKB3QWh_6PIP0HhjVfyWSnffRjZTjr3AKAaPOs,4199
+stim-1.7.1.dist-info/WHEEL,sha256=6B0vZ-Dd34LpGZN_4Y_GbBSl1fSb7keGXRzuHUFcOBA,152
+stim-1.7.1.dist-info/RECORD,,
+stim-1.7.1.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+stim-1.7.1.dist-info/top_level.txt,sha256=_h6lQZBgzVLumwrXyf13DY71YT6dUkd4SY-ZRjcljFQ,5
