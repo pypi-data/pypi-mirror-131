@@ -1,0 +1,17 @@
+zohoSolCon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zohoSolCon/attachments.py,sha256=6AG_kwUrFqb5KQa9A6lm61PeEalQzk6qT1az1CBbznk,585
+zohoSolCon/auth.py,sha256=O04p-GwAORF2DHlJFfTTdz4qvBUQNo5oicKdo964iu4,2493
+zohoSolCon/notes.py,sha256=Besc3I0IhxqmuvqDjlTgNDcGsYHZ0EKa1uDhfN6NagU,2282
+zohoSolCon/org.py,sha256=RsYhP_cl1SVmFIgUwNem8-XEyxlQ7GxmPdsqt_cVSyk,479
+zohoSolCon/records.py,sha256=KC3gabpbs9WDtkFz4KNzSw_tvtRtGP2VgpF4nIJSUcs,4379
+zohoSolCon/related_list.py,sha256=Lldi78bxDwF4bjcln4gP151fh1K6HKnMAowDYg1JNNU,1466
+zohoSolCon/roles.py,sha256=_tlbtOEbPGhaRwPwUntKTX-7G5Gca5u-Ikpa9V0T2Dk,894
+zohoSolCon/subforms.py,sha256=9FlgV-pqkEhkHQwsJmeeRt4Fu9agHwM0xNHeysJjCuU,28
+zohoSolCon/tags.py,sha256=lImfuZnMHtAtBuNyrby-nUVKxRqNkjiwfM54WNupasY,2664
+zohoSolCon/territory.py,sha256=g1sZffykoOqmwsDCv-6ka1IFMmqNmuN55QhgKfx47tQ,2954
+zohoSolCon/test.py,sha256=it2RtAkpsk_Lj5JX9phOBgeeOuPGVJsg_wng4ycVZ-Y,692
+zohoSolCon/users.py,sha256=jEX2XZ4oQ7hJfMxixHhuiU52R_rDSmu47gxheOY--DA,1076
+zohoSolCon-0.1.3.dist-info/METADATA,sha256=QnJYHVD0ERrKyW2sWqtwpcXDtG576xNJoPyFRfkXVa8,290
+zohoSolCon-0.1.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+zohoSolCon-0.1.3.dist-info/top_level.txt,sha256=nWwYDTF9BCMPd7m1IPfsFj6ZYaalOvC6a-M6iLpjuVs,11
+zohoSolCon-0.1.3.dist-info/RECORD,,
