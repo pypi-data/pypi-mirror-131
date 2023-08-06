@@ -1,0 +1,10 @@
+facenet-pytorch
+ipython
+pip-chill
+pymediawiki
+tqdm
+numpy
+pillow
+insightface
+opencv-python
+mxnet
