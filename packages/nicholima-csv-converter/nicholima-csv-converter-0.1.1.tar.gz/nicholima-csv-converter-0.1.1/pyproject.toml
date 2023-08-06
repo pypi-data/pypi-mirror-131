@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "nicholima-csv-converter"
+version = "0.1.1"
+description = "Converter csv to json."
+authors = ["Nicholas Lima <nicho.lima@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.0.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+flake8 = "^4.0.1"
+mypy = "^0.910"
+black = "^21.11b1"
+ipython = "^7.30.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+csv_converter = 'nicholima_csv_converter.converter:converter'
+
+[tool.black]
+line-Length = 99 
+
+[too.isort]
+profile = "black"
