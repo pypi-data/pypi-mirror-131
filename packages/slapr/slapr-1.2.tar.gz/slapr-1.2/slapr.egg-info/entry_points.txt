@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        slapr=slapr.main:cli
+    
