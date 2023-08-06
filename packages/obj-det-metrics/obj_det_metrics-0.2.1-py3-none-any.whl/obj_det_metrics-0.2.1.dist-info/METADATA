@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: obj-det-metrics
+Version: 0.2.1
+Summary: Simple package to compute metrics for object detection
+Home-page: https://github.com/yxlee245/obj-det-metrics
+Author: yxlee245
+Author-email: yxlee245@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy (>=1.18,<2.0)
+Requires-Dist: pipe (>=1.6.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# About this Repo
+
+This repo contains simple code to compute object detection metrics. The code in this repo can be packaged and published to PyPI via Poetry.
+
+# Getting Started
+
+## For package users
+
+Install the package with one of the following commands:
+
+```bash
+# Poetry users
+poetry add obj-det-metrics
+
+# Pip users
+pip install obj-det-metrics
+```
+
+Refer to the [bin/](./bin/) directory for examples of using the package.
+
+## For contributors
+
+1. Install Poetry (refer to the [documentation](https://python-poetry.org/docs/) for installation steps)
+2. Fork this repo and do git clone.
+3. Run `poetry install` to install dependency packages.
+
+# Acknowledgement
+- The codes for computing APs and mAP were adapted from [`mAP` repo by Cartucho](https://github.com/Cartucho/mAP) and [`mapcalc` repo by LeMuecke](https://github.com/LeMuecke/mapcalc).
+
