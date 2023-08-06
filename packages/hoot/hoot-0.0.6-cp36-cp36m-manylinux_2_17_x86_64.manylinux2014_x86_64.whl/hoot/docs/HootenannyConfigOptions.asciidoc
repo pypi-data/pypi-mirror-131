@@ -1,0 +1,92 @@
+[[Configuration]]
+== Configuration Options
+
+Configuration settings can dramatically change the operation of Hootenanny. The configuration
+options can be set in the configuration file (+$HOOT_HOME/conf/hoot.json+), with environment
+variables, or specified from the command line. Several of the configuration options are documented
+in more detail in the following sections.
+
+=== Specifying Configuration Options
+
+There are two ways to specify configuration options on the command line interface.
+
+1. Specify a single option with +--define+ or +-D+
+2. Specify multiple options in a configuration file with +--conf+ or +-C+
+
+An example using +-D+ is below:
+
+------
+hoot convert \
+  -D ogr.writer.script=test-files/io/SampleTranslation.js \
+  -D ogr.writer.pre.layer.name=bar \
+  test-files/io/SampleTranslation.osm \
+  PG:"dbname='osm_gis2' host='localhost' port='5432' user='hoot' password='hoottest'"
+------
+
+If you want to specify some values for a short iteration, or within a script you
+can specify the settings in the `HOOT_OPTIONS` environment variables. This
+environment variable uses the same syntax as the command line. For example:
+
+-----
+export HOOT_OPTIONS="-D ogr.writer.script=test-files/io/SampleTranslation.js \
+  -D ogr.writer.pre.layer.name=bar"
+hoot convert test-files/io/SampleTranslation.osm \
+  PG:"dbname='osm_gis2' host='localhost' port='5432' user='hoot' password='hoottest'"
+-----
+
+If you find yourself using a set of defines routinely you can specify them
+within a JSON configuration file such as:
+
+------
+{
+  "ogr.writer.script" : "test-files/io/SampleTranslation.js",
+  "ogr.writer.pre.layer.name" : "bar"
+}
+------
+
+If this file is placed in +$HOOT_HOME/conf/+ then it will be found with a relative path. E.g.
+
+------
+hoot convert \
+  -C Example.json \
+  test-files/io/SampleTranslation.osm \
+  PG:"dbname='osm_gis2' host='localhost' port='5432' user='hoot' password='hoottest'"
+------
+
+The +$HOOT_HOME/conf/hoot.json+ configuration file is used with all commands without specifying the configuration on the command line.
+
+For +List+ type options, additional options can be appended to the list of defaults by using the `+=` operator. This example adds the +RemoveUnknown2Visitor+ operation to the end of the post conflate operations list. The same is true for removing options from lists with the `-=` operator:
+
+-----
+hoot conflate \
+  -D conflate.post.ops+="RemoveUnknown2Visitor" \
+  test-files/ToyTestA.osm test-files/ToyTestB.osm \
+  test-output/ToyTestRemoveUnknown2.osm
+-----
+
+This example will not replace roundabouts in the post conflation operations because it is explicitly removed from the default list of post conflate operations:
+
+-----
+hoot conflate \
+  -D conflate.post.ops-="ReplaceRoundabouts" \
+  test-files/ToyTestA.osm test-files/ToyTestB.osm \
+  test-output/ToyTestRemoveUnknown2.osm
+-----
+
+This example prepends the +RemoveUnknown2Visitor+ operation to the post conflate operations list using `++=` operator:
+
+-----
+hoot conflate \
+  -D conflate.post.ops++="RemoveUnknown2Visitor" \
+  test-files/ToyTestA.osm test-files/ToyTestB.osm \
+  test-output/ToyTestRemoveUnknown2.osm
+-----
+
+[[Hoot-ConfigOptions]]
+=== Configuration Parameters
+
+:leveloffset: 1
+
+include::../conf/core/ConfigOptions.asciidoc[]
+
+:leveloffset: 0

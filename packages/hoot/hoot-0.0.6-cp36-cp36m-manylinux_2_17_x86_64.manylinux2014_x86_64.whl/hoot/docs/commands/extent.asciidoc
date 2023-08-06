@@ -1,0 +1,26 @@
+[[extent]]
+== extent
+
+=== Description
+
+The `extent` command displays the geospatial bounds of one or more maps.
+
+* `input(s)`    - Inputs(s); may be any supported input format (e.g. .osm file) or a directory if 
+                  `--recursive` is specified.
+* `--recursive` - Allows for processing the files contained in any directories specified in 
+                  `input(s)` recursively. This parameter has no effect on the processing of 
+                  non-directory inputs. This must be followed by either "*" to denote no filtering 
+                  or one or more wildcard name filters. e.g. "*.osm;*.json" or "*myFile*". This 
+                  parameter is not compatible with the OGR layer input syntax.
+
+=== Usage
+
+--------------------------------------
+hoot extent (input1) [input2...] [--recursive "*"|"filter1;filter2..."]
+--------------------------------------
+
+https://github.com/ngageoint/hootenanny/blob/master/docs/user/CommandLineExamples.asciidoc#display-the-geospatial-extent-of-a-map[Examples]
+
+=== See Also
+
+* https://github.com/ngageoint/hootenanny/blob/master/docs/user/SupportedDataFormats.asciidoc#applying-changes-1[Supported Input Formats]

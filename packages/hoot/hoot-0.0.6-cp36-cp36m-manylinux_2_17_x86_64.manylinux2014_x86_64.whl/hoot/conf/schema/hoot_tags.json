@@ -1,0 +1,9 @@
+[
+    {
+        "dataType": "text",
+        "influence": 1,
+        "isA": "metadata",
+        "name": "hoot:hash",
+        "objectType": "tag"
+    }
+]

@@ -1,0 +1,80 @@
+[[type-tagger-rules]]
+== type-tagger-rules
+
+=== Description
+
+The `type-tagger-rules` command allows for creating an implicit tag rules database that can be used to implicitly add type 
+tags to features based on their names. See the "Implicit Element Type Tagging Based On Name" section in the Hootenanny User 
+Guide for more information.
+
+=== Creating the Raw Implicit Type Tagging Rules File
+
+A raw rules file must be created before generating a rules database.  Use the `--create-raw` option to generate it:
+
+* `input(s)`       - Input(s); may be any supported input format (e.g. .osm file).
+* `translation(s)` - Translation scripts used to translate each input dataset; must be either a Javascript (.js) or Python 
+                     (.py) translation file. Specify 'none' as an individual entry to skip translation of an input.
+* `output`         - A implicit tag rules file (.implicitTagRules).
+
+Relevant configuration options are those beginning with implicit.tagging.raw.rules.deriver.*, and in some cases those beginning with implicit.tagging.*, in conf/core/ConfigOptions.asciidoc.
+
+==== Usage
+
+--------------------------------------
+hoot type-tagger-rules --create-raw ("input1;input2...") ("translation1;translation2...") (output)
+--------------------------------------
+
+==== Examples
+
+--------------------------------------
+hoot type-tagger-rules --create-raw "myInput.osm.pbf;myInput.geonames" \
+  "translations/OSM_Ingest.js;translations/GeoNames_to_OSM.js" \
+  myRules.implicitTagRules
+--------------------------------------
+
+=== Creating the Implicit Type Tagging Rules Database
+
+Once a raw rules file has been generated, an implicit type tag rules database may be generated with the `--create-db` option:
+
+* `input`  - Input; must be an implicit tag rules (.implicitTagRules) file
+* `output` - Output; must be a SQLLite database (.sqlite).
+
+Relevant configuration options are those beginning with implicit.tagging.database.deriver.*, and in some cases, also those 
+beginning with implicit.tagging.*, in conf/core/ConfigOptions.asciidoc.
+
+==== Usage
+
+--------------------------------------
+hoot type-tagger-rules --create-db (input) (output)
+--------------------------------------
+
+==== Examples
+
+--------------------------------------
+hoot type-tagger-rules --create-db myInput.implicitTagRules implicitTagRules.sqlite
+--------------------------------------
+
+=== Showing Rules Database Statistics
+
+Statistics for a rules database can be displayed with the `--db-stats` option:
+
+* `input` - Input; an implicit tag rules (.implicitTagRules) file
+
+==== Usage
+
+--------------------------------------
+hoot type-tagger-rules --db-stats (input)
+--------------------------------------
+
+==== Examples
+
+--------------------------------------
+hoot type-tagger-rules --db-stats implicitTagRules.sqlite
+--------------------------------------
+
+=== See Also
+
+* <<hootuser, ImplicitTypeTaggingUser>>
+* <<hootuser, ImplicitTypeTaggingAlg>>
+* <<hootuser, ImplicitTagRulesDatabaseGeneration>>
+* https://github.com/ngageoint/hootenanny/blob/master/docs/user/SupportedDataFormats.asciidoc#applying-changes-1[Supported Input Formats]

@@ -1,0 +1,162 @@
+[
+    {
+        "dataType": "enumeration",
+        "geometries": [ "node", "area" ],
+        "influence": 1,
+        "isA": "poi",
+        "name": "landuse",
+        "objectType": "tag"
+    },
+    {
+        "isA": "landuse",
+        "name": "landuse=*",
+        "objectType": "tag"
+    },
+     {
+        "isA": "landuse",
+        "geometries": ["node","linestring","area"],
+        "name": "landuse=aquaculture",
+        "objectType": "tag"
+    },
+    {
+        "aliases": [ "landuse=cemetary" ],
+        "isA": "landuse",
+        "name": "landuse=cemetery",
+        "objectType": "tag",
+        "similarTo": {
+                "name": "cemetery",
+                "weight": 0.8
+         }
+    },
+    {
+        "#": "TODO: This doesn't seem to exist in public OSM.",
+        "isA": "landuse",
+        "name": "landuse=installation",
+        "objectType": "tag",
+        "similarTo": { "name": "facility=yes", "weight": 0.9 }
+    },
+    {
+        "isA": "landuse",
+        "name": "landuse=military",
+        "objectType": "tag"
+    },
+    {
+        "categories": [ "multiuse" ],
+        "isA": "landuse",
+        "name": "landuse=basin",
+        "objectType": "tag"
+    },
+    {
+        "geometries": [ "area" ],
+        "categories": [ "multiuse" ],
+        "isA": "landuse",
+        "name": "landuse=commercial",
+        "objectType": "tag"
+    },
+    {
+        "geometries": [ "area" ],
+        "isA": "landuse",
+        "name": "landuse=grass",
+        "objectType": "tag"
+    },
+    {
+        "geometries": [ "area" ],
+        "categories": [ "multiuse" ],
+        "isA": "landuse",
+        "name": "landuse=forest",
+        "objectType": "tag"
+    },
+    {
+        "#": "TODO: This is deprecated; replaced by man_made=observatory.",
+        "categories": [ "multiuse" ],
+        "isA": "landuse",
+        "name": "landuse=observatory",
+        "objectType": "tag"
+    },
+    {
+        "categories": [ "multiuse" ],
+        "isA": "landuse",
+        "name": "landuse=industrial",
+        "objectType": "tag"
+    },
+    {
+        "categories": [ "multiuse" ],
+        "isA": "landuse",
+        "name": "landuse=quarry",
+        "objectType": "tag"
+    },
+    {
+        "geometries": [ "area" ],
+        "categories": [ "multiuse" ],
+        "isA": "landuse",
+        "name": "landuse=railway",
+        "objectType": "tag"
+    },
+    {
+        "geometries": [ "area" ],
+        "categories": [ "multiuse" ],
+        "isA": "landuse",
+        "name": "landuse=retail",
+        "objectType": "tag"
+    },
+    {
+        "#": "TODO: Should this be military=training_area instead? This doesn't seem to exist in public OSM.",
+        "description": "FCODE: FA165 Training Site",
+        "geometries": ["area"],
+        "isA": "landuse",
+        "name": "landuse=training_area",
+        "objectType": "tag",
+        "similarTo": [
+            { "name": "landuse=military", "weight": 0.9 },
+            { "name": "military=installation", "weight": 0.8 }
+         ]
+    },
+    {
+        "geometries": [ "area" ],
+        "categories": [ "multiuse" ],
+        "isA": "landuse",
+        "name": "landuse=recreation_ground",
+        "objectType": "tag",
+        "similarTo": {
+            "name": "leisure=recreation_ground",
+            "weight": 0.9
+        }
+    },
+    {
+        "isA": "landuse",
+        "name": "landuse=built_up_area",
+        "objectType": "tag",
+        "similarTo": { "name": "place=village", "weight": 0.9 }
+    },
+    {
+        "geometries": [ "area" ],
+        "categories": [ "multiuse" ],
+        "isA": "landuse",
+        "name": "landuse=residential",
+        "objectType": "tag",
+        "similarTo": { "name": "landuse=built_up_area", "weight": 0.9 }
+    },
+    {
+        "categories": [ "multiuse" ],
+        "isA": "landuse",
+        "name": "landuse=reservoir",
+        "objectType": "tag",
+        "similarTo": { "name": "man_made=water_works", "weight": 0.9 },
+        "similarTo": { "name": "water=lake", "weight": 0.9 }
+    },
+    {
+        "geometries": [ "area" ],
+        "categories": [ "poi" ],
+        "isA": "landuse",
+        "name": "landuse=farmyard",
+        "objectType": "tag"
+    },
+    {
+        "aliases": [ "landuse=farm" ],
+        "geometries": [ "area" ],
+        "categories": [ "poi" ],
+        "isA": "landuse",
+        "name": "landuse=farmland",
+        "objectType": "tag"
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+      "categories": [ "combination" ],
+      "dataType": "enumeration",
+      "geometries": [ "linestring" ],
+      "influence": 1,
+      "name": "route",
+      "objectType": "tag"
+    },
+    {
+      "isA": "route",
+      "name": "route=bus",
+      "objectType": "tag"
+    },
+    {
+      "isA": "route",
+      "name": "route=road",
+      "objectType": "tag"
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "dataType": "real",
+        "geometries": [ "linestring", "relation" ],
+        "name": "min_height",
+        "objectType": "tag"
+    }
+]

@@ -1,0 +1,380 @@
+[
+    {
+        "categories": [ "combination" ],
+        "dataType": "enumeration",
+        "geometries": [ "node", "area" ],
+        "influence": 1,
+        "name": "religion",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=*",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion=non-denominational",
+        "name": "religion=all",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=animist",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=ascended_master_teachings",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=atheist",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=bahai",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=bon",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=buddhist", "weight": 0.3 }
+    },
+    {
+        "isA": "religion",
+        "name": "religion=buddhist",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=cao_dai",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion=cao_dai",
+        "name": "religion=caodai",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=chinese",
+        "objectType": "tag"
+    },
+    {
+        "aliases": [ "religion=chtistian" ],
+        "isA": "religion",
+        "name": "religion=christian",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=christian and muslim",
+        "objectType": "tag",
+        "similarTo": [
+            { "name": "religion=christian", "weight": 0.5 },
+            { "name": "religion=muslim", "weight": 0.5 }
+        ]
+    },
+    {
+        "isA": "religion",
+        "name": "religion=confucian",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=humanist", "weight": 0.4 }
+    },
+    {
+        "isA": "religion=druze",
+        "name": "religion=drooze",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=druze",
+        "objectType": "tag",
+        "similarTo": [
+            { "name": "religion=muslim", "weight": 0.5 },
+            { "name": "religion=unitarian", "weight": 0.5 }
+        ]
+    },
+    {
+        "isA": "religion",
+        "name": "religion=eckankar",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=etruscan",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=gnostic",
+        "objectType": "tag",
+        "similarTo": [
+            { "name": "religion=christian", "weight": 0.6 },
+            { "name": "religion=buddhist", "weight": 0.4 }
+        ]
+    },
+    {
+        "isA": "religion",
+        "name": "religion=hare_krishna",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=hindu", "weight": 0.7 }
+    },
+    {
+        "isA": "religion",
+        "name": "religion=hindu",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=humanist",
+        "objectType": "tag",
+        "similarTo": [
+            { "name": "religion=christian", "weight": 0.5 },
+            { "name": "religion=jewish", "weight": 0.5 },
+            { "name": "religion=buddhist", "weight": 0.5 }
+        ]
+    },
+    {
+        "isA": "religion",
+        "name": "religion=jain",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=jewish",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=konkokyo",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=shinto", "weight": 0.7 }
+    },
+    {
+        "isA": "religion",
+        "name": "religion=maori",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=masonic",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=christian", "weight": 0.9 }
+    },
+    {
+        "isA": "religion=non-denominational",
+        "name": "religion=multi",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion=non-denominational",
+        "name": "religion=multi-denominational",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion=non-denominational",
+        "name": "religion=multifaith",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=muslim",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=non-denominational",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=none",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=norse_paganism",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=pagan", "weight": 0.8 }
+    },
+    {
+        "isA": "religion",
+        "name": "religion=oasqueira",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=other",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=pachamama",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=pagan",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=pastafarian",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=polynesian",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=popular",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=public",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=ravidasi",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=rosicrucian",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=christian", "weight": 0.7 }
+    },
+    {
+        "isA": "religion",
+        "name": "religion=sai_baba",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=scientologist",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=shamanic",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=animist", "weight": 0.5 }
+    },
+    {
+        "isA": "religion",
+        "name": "religion=shinto",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=shamanic", "weight": 0.4 }
+    },
+    {
+        "isA": "religion",
+        "name": "religion=sikh",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=spiritualist",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=christian", "weight": 0.3 }
+    },
+    {
+        "isA": "religion",
+        "name": "religion=sukyo_mahikari",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=tamil",
+        "objectType": "tag",
+        "similarTo": [
+            { "name": "religion=hindu", "weight": 0.4 },
+            { "name": "religion=jain", "weight": 0.4 },
+            { "name": "religion=buddhist", "weight": 0.4 }
+        ]
+    },
+    {
+        "isA": "religion",
+        "name": "religion=taoist",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=buddhist", "weight": 0.3 }
+    },
+    {
+        "isA": "religion=tenrikyo",
+        "name": "religion=tenri",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=tenrikyo",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=shinto", "weight": 0.7 }
+    },
+    {
+        "isA": "religion",
+        "name": "religion=theosophist",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=umbanda",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=christian", "weight": 0.4 }
+    },
+    {
+        "isA": "religion=unitarian_universalist",
+        "name": "religion=unitarian",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=unitarian_universalist",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion=unitarian_universalist",
+        "name": "religion=universalist",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=vale_do_amanhecer",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=voodoo",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=white_brotherhood",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=yazidi",
+        "objectType": "tag",
+        "similarTo": [
+            { "name": "religion=muslim", "weight": 0.7 },
+            { "name": "religion=zoroastrian", "weight": 0.7 }
+        ]
+    },
+    {
+        "isA": "religion",
+        "name": "religion=yes",
+        "objectType": "tag"
+    },
+    {
+        "isA": "religion",
+        "name": "religion=zoroastrian",
+        "objectType": "tag"
+    }
+]

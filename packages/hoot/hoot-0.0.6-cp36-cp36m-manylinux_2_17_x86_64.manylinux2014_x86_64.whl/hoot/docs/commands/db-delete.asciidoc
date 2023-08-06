@@ -1,0 +1,17 @@
+[[db-delete]]
+== db-delete
+
+=== Description
+
+The `db-delete` command deletes maps from the Hootenanny Web Services database.
+
+* `mapDatabaseLayerUrl(s)` - One or more URLs pointing to database maps.
+
+=== Usage
+
+--------------------------------------
+hoot db-delete (mapDatabaseLayerUrl1) [mapDatabaseLayerUrl2...}
+--------------------------------------
+
+https://github.com/ngageoint/hootenanny/blob/master/docs/user/CommandLineExamples.asciidoc#delete-a-map-from-the-hootenanny-web-services-database[Examples]
+

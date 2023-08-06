@@ -1,0 +1,39 @@
+[[score-matches]]
+== score-matches
+
+=== Description
+
+The `score-matches` command scores how well conflation performs using manually matched data as a reference. The command 
+will return an error if any manual match is invalid.
+
+* `input`            - One or more pairs of inputs where the first item in the pair contains REF1 data (no manual matches) 
+                       and the second item in the pair contains REF2 or REVIEW data (manual matches); may be any supported 
+                       input format (e.g. .osm file).
+* `output`           - Output for debugging; may be any supported output format (e.g. .osm file). Only the first conflated 
+                       file will be output. Invalid if `--optimize` is selected.
+* `--confusion`      - Prints a confusion matrix
+* `--optimize`       - Optimizes the scoring function; No file is output when this option is used.
+* `--validation-off` - Turns off manual match validation; recommended for debugging manual matches only
+
+=== Usage
+
+--------------------------------------
+hoot score-matches (input1 input2) [input1 input2 ...] (output) [--confusion] [--validation-off]
+hoot score-matches (input1 input2) [input1 input2 ...] [--confusion] [--optimize] [--validation-off]
+--------------------------------------
+
+=== Examples
+
+--------------------------------------
+# Displays match scores for multiple input pairs and writes conflated output a file
+hoot score-matches --confusion input1a.osm input2a.osm input2b.osm input2a.osm output.osm
+
+# Displays match scores for a single input pair with optimization
+hoot score-matches --confusion --optimize input1.osm input2.osm
+--------------------------------------
+
+=== See Also
+
+* <<hootuser, HootenannyManualConflation>>
+* https://github.com/ngageoint/hootenanny/blob/master/docs/user/SupportedDataFormats.asciidoc#applying-changes-1[Supported Input Formats]
+

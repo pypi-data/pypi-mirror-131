@@ -1,0 +1,21 @@
+[
+    {
+        "dataType": "enumeration",
+        "geometries": [ "node", "area" ],
+        "influence": 1,
+        "isA": "poi",
+        "name": "transport",
+        "objectType": "tag"
+    },
+    {
+        "isA": "transport",
+        "name": "transport=*",
+        "objectType": "tag"
+    },
+    {
+        "categories": ["poi"],
+        "isA": "transport",
+        "name": "transport=station",
+        "objectType": "tag"
+    }
+]

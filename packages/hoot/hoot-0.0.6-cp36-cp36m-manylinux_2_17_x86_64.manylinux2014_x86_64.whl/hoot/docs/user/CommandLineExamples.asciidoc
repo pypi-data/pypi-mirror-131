@@ -1,0 +1,1796 @@
+
+[[CommandLineExamples]]
+== Command Line Examples
+
+See the User Guide for more specific details on command usage. Most of these examples use .osm files, however, many https://github.com/ngageoint/hootenanny/blob/master/docs/user/SupportedDataFormats.asciidoc[other formats] are supported.
+
+=== Help
+
+-----
+    # display available commands
+    hoot
+    
+    # display help for a specific command
+    hoot help conflate
+-----
+
+* https://github.com/ngageoint/hootenanny/blob/master/docs/user/CommandLineExamples.asciidoc#alignment[Alignment]
+* https://github.com/ngageoint/hootenanny/blob/master/docs/user/CommandLineExamples.asciidoc#applying-changes[Applying Changes]
+* https://github.com/ngageoint/hootenanny/blob/master/docs/user/CommandLineExamples.asciidoc#cleaning[Cleaning]
+* https://github.com/ngageoint/hootenanny/blob/master/docs/user/CommandLineExamples.asciidoc#comparison[Comparison]
+* https://github.com/ngageoint/hootenanny/blob/master/docs/user/CommandLineExamples.asciidoc#conflation[Conflation]
+* https://github.com/ngageoint/hootenanny/blob/master/docs/user/CommandLineExamples.asciidoc#conversion[Conversion]
+* https://github.com/ngageoint/hootenanny/blob/master/docs/user/CommandLineExamples.asciidoc#language-translation[Language Translation]
+* https://github.com/ngageoint/hootenanny/blob/master/docs/user/CommandLineExamples.asciidoc#metainfo[MetaInfo]
+* https://github.com/ngageoint/hootenanny/blob/master/docs/user/CommandLineExamples.asciidoc#schema-translation[Schema Translation]
+* https://github.com/ngageoint/hootenanny/blob/master/docs/user/CommandLineExamples.asciidoc#statistics[Statistics]
+* https://github.com/ngageoint/hootenanny/blob/master/docs/user/CommandLineExamples.asciidoc#tag-info[Tag Info]
+* https://github.com/ngageoint/hootenanny/blob/master/docs/user/CommandLineExamples.asciidoc#tag-manipulation[Tag Manipulation]
+* https://github.com/ngageoint/hootenanny/blob/master/docs/user/CommandLineExamples.asciidoc#utilities[Utilities]
+* https://github.com/ngageoint/hootenanny/blob/master/docs/user/CommandLineExamples.asciidoc#validation[Validation]
+
+=== Alignment
+
+==== Bring two maps closer in alignment without merging them:
+
+-----
+    hoot align input1.osm input2.osm output.osm
+-----
+
+==== Derive an alignment transform for two maps:
+
+-----
+    hoot align --derive --ref input1.osm input2.osm transform.rs
+-----
+
+==== Apply an alignment transform for two maps:
+
+-----
+    hoot align --apply transform.rs input.osm output.osm
+-----
+
+=== Applying Changes
+
+==== Derive a changeset between two maps and write the result back to a OSM API endpoint:
+
+-----
+    hoot changeset-derive input1.osm input2.osm changeset.osc --stats myStats.json
+    hoot changeset-apply changeset.osc http://username:password@localhost --stats --progress
+-----
+
+==== Create a changeset that replaces all features in one dataset with features from another dataset within a specified bounding box:
+
+-----
+    hoot changeset-derive -D changeset.user.id=1 -D bounds="-71.4698,42.4866,-71.4657,42.4902" \
+      input1.osm input2.osm output.osc --replacement
+-----
+
+==== Create a changeset that completely replaces features with those from another dataset within a specified non-rectangular bounds:
+
+-----
+    hoot changeset-derive -D changeset.user.id=1 \
+      -D bounds="-71.4745,42.4841;-71.4669,42.4918;-71.4619,42.4839;-71.4745,42.4841" \
+      input1.osm input2.osm output.osc --replacement
+-----
+
+==== Derive a changeset from a single input:
+
+-----
+    hoot changeset-derive input.osm "" output.osc
+-----
+
+==== Apply changes from multiple changeset files to an API endpoint:
+
+-----
+    hoot changeset-apply changeset-001.osc changeset-002.osc https://username:password@localhost
+-----
+
+==== Apply changes from an OSM file to an API endpoint:
+
+-----
+    hoot changeset-apply input.osm http://username:password@localhost --stats --progress
+-----
+
+==== Derive a changeset between two maps and write the result directly to an OSM API database:
+
+-----
+    hoot changeset-derive inputData1.osm inputData2.osm changeset.osc.sql \
+      --osmApiDatabaseUrl osmapidb://username:password@localhost:5432/databaseName
+    hoot changeset-apply changeset.osc.sql osmapidb://username:password@localhost:5432/databaseName
+-----
+
+=== Cleaning
+
+==== Clean erroneous data from a map:
+
+-----
+    hoot clean input.osm output.osm
+-----
+
+==== Clean erroneous data recursively across multiple files under a directory:
+
+-----
+    hoot clean /my/dir output.osm --recursive "*"
+-----
+
+==== Clean erroneous data recursively across multiple OSM files under a directory:
+
+-----
+    hoot clean /my/dir output.osm --recursive "*.osm"
+-----
+
+==== Clean erroneous data from a map and write to separate output files:
+
+-----
+    hoot clean input1.osm input2.osm --separate-output
+-----
+
+==== Clean erroneous data from a map using Hooteanny's default cleaning operations plus JOSM's cleaning capabilities:
+
+-----
+    hoot clean -D map.cleaner.transforms++=JosmMapCleaner input.osm output.osm
+-----
+
+==== Run JOSM cleaning only on a map:
+
+-----
+    hoot convert -D convert.ops=JosmMapCleaner input.osm output.osm
+-----
+
+==== Prepend a cleaning operation to the existing set of cleaning operations:
+
+-----
+    hoot clean -D map.cleaner.transforms++=MyCleaningOp input.osm output.osm
+-----
+
+==== Append a cleaning operation to the existing set of cleaning operations:
+
+-----
+    hoot clean -D map.cleaner.transforms+=MyCleaningOp input.osm output.osm
+-----
+
+==== Remove a cleaning operation from the existing set of cleaning operations:
+
+-----
+    hoot clean -D map.cleaner.transforms-=NoInformationElementRemover input.osm output.osm
+-----
+
+==== Mark exactly duplicated features within a map:
+
+-----
+    hoot convert -D convert.ops="DuplicateElementMarker" input.osm output.osm
+-----
+
+==== Remove all duplicate ways from a map:
+
+-----
+    hoot convert -D convert.ops="DuplicateWayRemover" input.osm output.osm
+-----
+
+==== Remove all duplicate areas from a map:
+
+-----
+    hoot convert -D convert.ops="RemoveDuplicateAreasVisitor" input.osm output.osm
+-----
+
+==== Remove all empty areas from a map:
+
+-----
+    hoot convert -D convert.ops="RemoveEmptyAreasVisitor" input.osm output.osm
+-----
+
+==== Remove duplicate name tags from features:
+
+-----
+    hoot convert -D convert.ops="DuplicateNameRemover" input.osm output.osm
+-----
+
+==== Remove duplicate nodes:
+
+-----
+    hoot convert -D convert.ops="DuplicateNodeRemover" input.osm output.osm
+-----
+
+==== Remove elements that contain no useful information:
+
+-----
+    hoot convert -D convert.ops="NoInformationElementRemover" input.osm output.osm
+-----
+
+==== Remove features that have likely been incorrectly marked as roads:
+
+-----
+    hoot convert -D convert.ops="UnlikelyRoadRemover" input.osm output.osm
+-----
+
+==== Simplify ways in a map by removing unnecessary nodes from them:
+
+-----
+    hoot convert -D convert.ops="WayGeneralizeVisitor" -D way.generalizer.epsilon=5.0 input.osm output.osm
+-----
+
+==== Remove intra-map duplicates within a single map:
+
+-----
+    hoot de-duplicate input.osm output.osm
+-----
+
+==== Remove intra-map and inter-map duplicates across two maps:
+
+-----
+    hoot de-duplicate input1.osm input2.osm output1.osm output2.osm
+-----
+
+=== Comparison
+
+==== Calculate the difference between two maps:
+
+-----
+    hoot diff input1.osm input2.osm
+-----
+
+==== Compare two maps:
+
+-----
+    hoot compare input1.osm input2.osm
+
+    Attribute Score 1: 981 +/-5
+    Attribute Score 2: 993 +/-3
+    Attribute Score: 987 +/-4 (983 to 991)
+    Raster Score 1: 982
+    Raster Score 2: 989
+    Raster Score: 986
+    Graph Score 1: 944 +/-19 (925 to 963)
+    Graph Score 2: 996 +/-0 (996 to 996)
+    Graph Score: 970 +/-10 (960 to 980)
+    Overall: 981 +/-4 (977 to 985)
+-----
+
+==== Compare the tags in two maps:
+
+-----
+    hoot tag-compare input1.osm input2.osm
+
+    |                    | amenity=restaurant | building=yes | name=<NULL> | name=<SIMILAR> |
+    | amenity=restaurant |                  4 |              |             |                |
+    |       building=yes |                    |           28 |             |                |
+    |        name=<NULL> |                    |              |           4 |                |
+    |     name=<SIMILAR> |                    |              |             |             24 |
+-----
+
+=== Conflation
+
+==== Conflate two maps into a single map using the first map as a reference (Reference Conflation):
+
+-----
+    hoot conflate -C ReferenceConflation.conf -C UnifyingAlgorithm.conf input1.osm input2.osm output.osm
+-----
+
+==== Conflate two maps into a single map using the first map as a reference and the Network Algorithm for road matching (Reference Conflation):
+
+-----
+    hoot conflate -C ReferenceConflation.conf-C NetworkAlgorithm.conf input1.osm input2.osm output.osm
+-----
+
+==== Conflate two maps into a single map while averaging features (Average Conflation):
+
+-----
+    hoot conflate -C AverageConflation.conf -C UnifyingAlgorithm.conf input1.osm input2.osm output.osm
+-----
+
+==== Conflate two maps by cutting an area out of first and replacing it with data from the same area in the second map (Horizontal Conflation; aka Cookie Cutter):
+
+-----
+    hoot conflate -C ReferenceConflation.conf -C UnifyingAlgorithm.conf \
+      -D conflate.pre.ops=CookieCutterOp -D cookie.cutter.alpha=2500 \
+      -D cookie.cutter.alpha.shape.buffer=0 -D cookie.cutter.output.crop=false \
+      input1.osm input2.osm output.osm
+-----
+
+==== Conflate, adding data from the second map to output that does not conflict with data in the first map (Differential Conflation):
+
+-----
+    hoot conflate -C DifferentialConflation.conf -C UnifyingAlgorithm.conf input1.osm input2.osm \
+      output.osm --differential
+-----
+
+==== Conflate only tags from a second map into a first map without changing the first map's geometry (Attribute Conflation):
+
+-----
+    hoot conflate -C AttributeConflation.conf -C UnifyingAlgorithm.conf input1.osm input2.osm output.osm
+-----
+
+==== Translate features to a schema just before conflating them:
+
+-----
+    hoot conflate -C AttributeConflation.conf -C UnifyingAlgorithm.conf \
+      -D conflate.pre.ops++="SchemaTranslationVisitor" \
+      -D schema.translation.script=myTranslation.js input1.osm input2.osm output.osm
+-----
+
+==== Translate reference features to a schema just before conflating them:
+
+-----
+    hoot conflate -C AttributeConflation.conf -C UnifyingAlgorithm.conf \
+      -D conflate.pre.ops++="SchemaTranslationVisitor" \
+      -D schema.translation.element.status=Unknown1 \
+      -D schema.translation.script=myTranslation.js input1.osm input2.osm output.osm
+-----
+
+==== Translate secondary features to a schema just before conflating them:
+
+-----
+    hoot conflate -C AttributeConflation.conf -C UnifyingAlgorithm.conf \
+      -D conflate.pre.ops++="SchemaTranslationVisitor" \
+      -D schema.translation.element.status=Unknown2 \
+      -D schema.translation.script=myTranslation.js input1.osm input2.osm output.osm
+-----
+
+==== Keep provenance of select tags during conflation:
+
+-----
+    # The default behavior when merging the tags of conflated features is to overwrite conflicting
+    # tags in the target feature. See the list of tag mergers for other options. A slight
+    # modification is made to overwrite tag merging here by allowing certain fields not to be
+    # overwritten and to keep the provenance of their values by appending them to each other with
+    # each successive merge. Use of this option is valid with the OverwriteTag1Merger or
+    # OverwriteTag2Mergers only. e.g. A: { myField1=1, myField2=1 } merged with
+    # B: { myField2=1, myField3=1 } results in C: { myField1=1, myField2=1;2, myField3=1 }
+
+    hoot conflate -D tag.merger.overwrite.accumulate.values.keys="myField2;myField3" \
+      input1.osm input2.osm output.osm
+-----
+
+==== Conflate by adding geometry data from the second map to output that does not conflict with data in the first map (Differential Tag Only Conflation; tags may be overwritten):
+
+-----
+    hoot conflate -C DifferentialConflation.conf -C UnifyingAlgorithm.conf --include-tags \
+      input1.osm input2.osm output.osm --differential
+-----
+
+==== Conflate over a bounding box (not supported by all input formats):
+
+-----
+    # rectangular bounding box
+    hoot conflate -C ReferenceConflation.conf -C UnifyingAlgorithm.conf \
+      -D bounds="-71.4698,42.4866,-71.4657,42.4902" input1.osm input2.osm output.osm
+
+    # non-rectangular polygon bounds
+    hoot conflate -C ReferenceConflation.conf -C UnifyingAlgorithm.conf \
+      -D bounds="-71.4745,42.4841;-71.4669,42.4918;-71.4619,42.4839;-71.4745,42.4841" input1.osm \
+      input2.osm output.osm
+-----
+
+==== Conflate only buildings:
+
+-----
+    hoot conflate -C ReferenceConflation.conf -C UnifyingAlgorithm.conf \
+      -D match.creators="BuildingMatchCreator" -D merger.creators="BuildingMergerCreator" \ 
+      input1.osm input2.osm output.osm
+-----
+
+==== Conflate only restaurant buildings:
+
+-----
+    hoot conflate -C ReferenceConflation.conf -C UnifyingAlgorithm.conf \
+      -D match.creators="BuildingMatchCreator" -D merger.creators="BuildingMergerCreator" \ 
+      -D conflate.tag.filter="{ \"must\": [ { \"tag\": \"amenity=restaurant\" } ] }" \
+      input1.osm input2.osm output.osm
+-----
+
+==== Conflate only restaurant buildings with "Subway" in the name:
+
+-----
+    hoot conflate -C ReferenceConflation.conf -C UnifyingAlgorithm.conf \
+      -D match.creators="BuildingMatchCreator" -D merger.creators="BuildingMergerCreator" \ 
+      -D conflate.tag.filter="{ \"must\": [ { \"tag\": \"amenity=restaurant\" } ] }" \
+      -D conflate.pre.ops="TagCriterion" -D tag.criterion.kvps="name;Subway" \
+      input1.osm input2.osm output.osm
+-----
+
+==== Conflate specifying a JSON feature filter in a file (see the User Guide Feature Filtering section for more filter examples):
+
+-----
+    hoot conflate -C ReferenceConflation.conf -C UnifyingAlgorithm.conf \
+      -D conflate.tag.filter=myFilter.json input1.osm input2.osm output.osm
+-----
+
+==== Filter POIs out of maps before conflating them:
+
+-----
+    hoot conflate -C AttributeConflation.conf -C UnifyingAlgorithm.conf \
+      -D conflate.pre.ops="RemoveElementsVisitor" \
+      -D remove.elements.visitor.element.criteria="PoiCriterion" input1.osm input2.osm \
+      output.osm
+-----
+
+==== Filter maps down to rivers only before conflating them:
+
+-----
+    hoot conflate -C AttributeConflation.conf -C UnifyingAlgorithm.conf \
+      -D convert.ops=RemoveElementsVisitor \
+      -D remove.elements.visitor.element.criteria=RiverCriterion \
+      -D element.criteria.negate=true \
+      -D remove.elements.visitor.chain.element.criteria=true \
+      -D remove.elements.visitor.recursive=false input1.osm input2.osm output.osm
+-----
+
+==== Filter maps down to rivers only before conflating them and keep any relations that contain them:
+
+-----
+    hoot conflate -C AttributeConflation.conf -C UnifyingAlgorithm.conf \
+      -D convert.ops=RemoveElementsVisitor \
+      -D remove.elements.visitor.element.criteria=RiverCriterion;RelationWithRiverMembersCriterion \
+      -D element.criteria.negate=true \
+      -D remove.elements.visitor.chain.element.criteria=true \
+      -D remove.elements.visitor.recursive=false input1.osm input2.osm output.osm
+-----
+
+==== Preserve all values for a particular tag key during conflation:
+
+-----
+    # The value for myTagKey will consist of a semicolon delimited list of all the unique values 
+    # found when merging features together.
+    hoot conflate -C AttributeConflation.conf -C UnifyingAlgorithm.conf \
+      -D tag.merger.overwrite.accumulate.values.keys="myTagKey" input1.osm input2.osm
+-----
+
+==== Generate feature match scores between maps without merging them:
+
+-----
+    hoot conflate -C AttributeConflation.conf -C UnifyingAlgorithm.conf \
+      -D conflate.match.only=true -D writer.include.conflate.score.tags=true \
+      input1.osm input2.osm output.osm
+-----
+
+==== Conflate and automatically resolve any generated reviews:
+
+-----
+    hoot conflate -C ReferenceConflation.conf -C UnifyingAlgorithm.conf \
+      -D conflate.post.ops+="ResolveReviewsOp" \
+      input1.osm input2.osm output.osm --differential
+-----
+
+==== Conflate railways with the One To Many Railway Conflation Workflow:
+
+https://github.com/ngageoint/hootenanny/blob/master/docs/algorithms/RailwayConflation.asciidoc#one-to-many-matching[detail]
+
+-----
+    # Conflate railways by transferring only the "name" tag from secondary features to reference 
+    # rail features whose number of tracks are specified by the the tag keys: "lines" and "lanes".
+    hoot conflate -C ReferenceConflation.conf -C UnifyingAlgorithm.conf \
+      -D railway.one.to.many.match=true -D railway.one.to.many.identifying.keys="lines;lanes" \
+      -D railway.one.to.many.transfer.keys="name" input1.osm input2.osm output.osm
+-----
+
+==== Conflate roads with the Road Median to Divided Road Conflation Workflow:
+
+https://github.com/ngageoint/hootenanny/blob/master/docs/algorithms/RoadConflation.asciidoc#median-to-divided-highway-matching[detail]
+
+-----
+    # Conflate roads transferring only the "name" tag from secondary median features to reference divided road features.
+    hoot conflate -C ReferenceConflation.conf -C UnifyingAlgorithm.conf \
+      -D highway.median.to.dual.highway.match=true -D highway.median.identifying.tags="median=yes" \
+      -D highway.median.to.dual.highway.transfer.keys="name" input1.osm input2.osm output.osm
+-----
+
+=== Conversion
+
+==== Combine two maps into a single map without conflating:
+
+-----
+    hoot convert input1.osm input2.osm output.osm
+-----
+
+==== Combine multiple maps by name wildcard into a single map without conflating:
+
+-----
+    hoot convert input*.osm output.osm
+-----
+
+==== Combine two maps into a single map affecting data within a bounding box only:
+
+-----
+    hoot convert -D bounds="-71.4698,42.4866,-71.4657,42.4902" input1.osm input2.osm output.osm
+-----
+
+==== Combine two maps into a single map affecting data within a polygon area only:
+
+-----
+    hoot convert -D bounds="-71.4745,42.4841;-71.4669,42.4918;-71.4619,42.4839;-71.4745,42.4841" \
+      input1.osm input2.osm output.osm
+-----
+
+==== Combine multiple maps recursively across multiple files under a directory:
+
+-----
+    hoot convert /my/dir output.osm --recursive "*"
+-----
+
+==== Combine multiple maps recursively across multiple OSM files under a directory:
+
+-----
+    hoot convert /my/dir output.osm --recursive "*.osm"
+-----
+
+==== Convert files of multiple formats into OSM files while writing each to a separate output:
+
+-----
+    hoot convert input1.shp input2.osm.pbf osm --separate-output
+-----
+
+==== Combine like polygons together without using full-fledged conflation:
+
+-----
+    hoot convert -D convert.ops="UnionPolygonsOp" input.osm output.osm
+-----
+
+==== Retrieve OSM data around Paris, France from the OSM API:
+
+-----
+    hoot convert -D bounds=2.277303,48.851684,2.311635,48.864701 https://osm-api-url/api/0.6/map output.osm
+-----
+
+==== Retrieve OSM data around Paris, France from the OSM API specifying the bounds in a file:
+
+-----
+    hoot convert -D bounds.input.filename=bounds.osm https://osm-api-url/api/0.6/map output.osm
+-----
+
+==== Convert an OSM API database to a file geodatabase:
+
+-----
+    hoot convert PG:"dbname='mydb' host='myhost' port='5432' user='myuser' \
+      password='mypass'" output.gdb
+-----
+
+==== Convert an OSM file to a shape file while specifying export columns:
+
+-----
+    hoot convert -D shape.file.writer.cols="highway,surface,name,alt_name,oneway,bridge" input.osm output.shp
+-----
+
+==== Convert multiple shape files to an OSM file:
+
+-----
+    hoot convert input1.shp input2.shp output.osm
+-----
+
+==== Convert roads, bridges, overpasses and tunnels from a layers in a file geodatabase into a single .osm file:
+
+-----
+    # Note that each path;layer input combo must be surrounded in quotes. Otherwise, the entire
+    # input will be read.
+    hoot convert "input.gdb;ROAD_L" "input.gdb;BRIDGE_OVERPASS_L" "input.gdb;TUNNEL_L" output.osm
+-----
+
+==== Convert a shape file that is stored inside of a zip file:
+
+-----
+    hoot convert /vsizip//gis-data/input.zip/tds/LAP030.shp output.osm
+-----
+
+==== Convert all shape files inside of a zip file:
+
+-----
+    hoot convert /gis-data/input.zip output.osm
+-----
+
+==== Convert a shape file that is stored inside a compressed tar file:
+
+-----
+    hoot convert /vsitar//gis-data/input.tar.gz output.osm
+-----
+
+==== Convert all shape files stored inside a compressed tar file:
+
+-----
+    hoot convert /gis-data/input.tar.gz output.osm
+-----
+
+==== Convert an OSM file to a shape file, allowing the export columns to be automatically selected based on frequency:
+
+-----
+    hoot convert input.osm output.shp
+-----
+
+==== Bulk write a map to an offline OSM API database:
+
+-----
+    hoot convert -D changeset.user.id=1 \
+      -D osmapidb.bulk.inserter.disable.database.constraints.during.write=true \
+      -D osmapidb.bulk.inserter.disable.database.indexes.during.write=true \
+      input.osm.pbf osmapidb://username:password@localhost:5432/database
+-----
+
+==== Bulk write a map to an offline OSM API database specifying starting element IDs:
+
+-----
+    hoot convert -D changeset.user.id=1 \
+      -D osmapidb.bulk.inserter.disable.database.constraints.during.write=true \
+      -D osmapidb.bulk.inserter.disable.database.indexes.during.write=true \
+      -D apidb.bulk.inserter.starting.node.id=10 \
+      -D apidb.bulk.inserter.starting.way.id=10 -D apidb.bulk.inserter.starting.relation.id=10 \
+      input.osm.pbf osmapidb://username:password@localhost:5432/database
+-----
+
+==== Bulk write a map to an online OSM API database (element IDs managed automatically):
+
+-----
+    hoot convert -D changeset.user.id=1 \
+      -D osmapidb.bulk.inserter.reserve.record.ids.before.writing.data=true \
+      input.osm.pbf osmapidb://username:password@localhost:5432/database
+-----
+
+==== Remove relations from a map:
+
+-----
+    hoot convert -D convert.ops="RemoveElementsVisitor" \
+      -D remove.elements.visitor.element.criteria="RelationCriterion" input.osm output.osm
+-----
+
+==== Remove all but two specific relations:
+
+-----
+    hoot convert -D convert.ops="RemoveElementsVisitor" \
+    -D remove.elements.visitor.element.criteria="ElementIdCriterion" 
+    -D element.id.criterion.ids="Relation:-1;Relation:7387470" 
+    -D element.criteria.negate=true input.osm output.osm
+-----
+
+==== Remove relations and ways from a map:
+
+-----
+    hoot convert -D convert.ops="RemoveElementsVisitor" \
+      -D remove.elements.visitor.element.criteria="RelationCriterion;WayCriterion" input.osm output.osm
+-----
+
+==== Remove everything but polygon geometries and their constituent features from a map:
+
+-----
+    hoot convert -D convert.ops="RemoveElementsVisitor" \
+      -D remove.elements.visitor.element.criteria="PolygonCriterion" -D element.criteria.negate=true \
+      input.osm output.osm
+-----
+
+=== Language Translation
+
+Requires a language translation server installation.  See the Hootenanny Install Guide for details.
+
+==== Translate tags with specified keys from German or Spanish to English:
+
+-----
+    hoot convert -D convert.ops="ToEnglishTranslationVisitor" \
+      -D language.translation.source.languages="de;es" \
+      -D language.tag.keys="name;alt_name" input.osm output.osm
+-----
+
+==== Automatically determine all the name tags in the source map and then translate those tags to English, allowing the source language to first be detected:
+
+-----
+    hoot convert -D convert.ops="ToEnglishTranslationVisitor" \
+      -D language.translation.source.languages="detect" \
+      -D language.parse.names=true input.osm output.osm
+-----
+
+==== Translate names to English before conflation, allowing the source language to first be detected:
+
+-----
+    hoot conflate -C ReferenceConflation.conf -C UnifyingAlgorithm.conf \
+      -D conflate.pre.ops="ToEnglishTranslationVisitor" \
+      -D language.translation.source.languages="detect" \
+      -D language.translation.to.translate.tag.keys="name" input1.osm input2.osm output.osm
+      -D language.tag.keys="name" input.osm output.osm
+-----
+
+==== Determine the most prevalent source languages for non-English POI names in a map:
+
+-----
+    hoot convert -D language.parse.names=true \
+      -D convert.ops="PoiCriterion;NonEnglishLanguageDetectionVisitor" \
+      input.osm output.osm
+-----
+
+=== MetaInfo
+
+==== List all configuration option names:
+
+-----
+    hoot info --config-options
+-----
+
+==== List all supported input data formats:
+
+-----
+    hoot info --formats --input
+-----
+
+==== List all supported output data formats:
+
+-----
+    hoot info --formats --output
+-----
+
+==== List all configuration option names and their descriptions:
+
+-----
+    hoot info --config-options --option-details
+-----
+
+==== List all configuration option names containing "poi.polygon":
+
+-----
+    hoot info --config-options poi.polygon --option-names
+-----
+
+==== List all configuration option names and details containing "poi.polygon":
+
+-----
+    hoot info --config-options poi.polygon --option-details
+-----
+
+==== List all available cleaning operations:
+
+-----
+    hoot info --cleaning-operations
+-----
+
+==== List all criteria that identify conflatable features:
+
+-----
+    hoot info --conflatable-criteria
+-----
+
+==== List all operators configured to run after conflation:
+
+-----
+    hoot info --conflate-post-operations
+-----
+
+==== List all operators configured to run before conflation:
+
+-----
+    hoot info --conflate-pre-operations
+-----
+
+==== List all operators that can take an element criterion as input:
+
+-----
+    hoot info --criterion-consumers
+-----
+
+==== List all extractors used to score feature properties:
+
+-----
+    hoot info --feature-extractors
+-----
+
+==== List all input formats that support reading by geospatial bounds:
+
+-----
+    hoot info --formats --input-bounded
+-----
+
+==== List all input formats that support streamable reading:
+
+-----
+    hoot info --formats --input-streamable
+-----
+
+==== List all output formats that support streamable writing:
+
+-----
+    hoot info --formats --output-streamable
+-----
+
+==== List all input formats that Hootenanny uses OGR to read:
+
+-----
+    hoot info --formats --input --ogr
+-----
+
+==== List all output formats that Hootenanny uses OGR to write:
+
+-----
+    hoot info --formats --output --ogr
+-----
+
+==== List all criteria that can be used to identify a feature's geometry type:
+
+-----
+    hoot info --geometry-type-criteria
+-----
+
+==== List all language detectors:
+
+-----
+    hoot info --languages --detectors
+-----
+
+==== List all language translators:
+
+-----
+    hoot info --languages --translators
+-----
+
+==== List all detectable languages:
+
+-----
+    hoot info --languages --detectable
+-----
+
+==== List all translatable languages:
+
+-----
+    hoot info --languages --translatable
+-----
+
+==== List all entities that can match features:
+
+-----
+    hoot info --matchers
+-----
+
+==== List all entities that can create feature matchers:
+
+-----
+    hoot info --match-creators
+-----
+
+==== List all entities that can merge features:
+
+-----
+    hoot info --mergers
+-----
+
+==== List all entities that can create feature mergers:
+
+-----
+    hoot info --merger-creators
+-----
+
+==== List all entities that can operate on data:
+
+-----
+    hoot info --operators
+-----
+
+==== List all entities that can filter data (a subset of --operators):
+
+-----
+    hoot info --filters
+-----
+
+==== List all entities that can compare strings:
+
+-----
+    hoot info --string-comparators
+-----
+
+==== List all entities capable of subline matching:
+
+-----
+    hoot info --subline-matchers
+-----
+
+==== List all entities capable of subline string matching:
+
+-----
+    hoot info --subline-string-matchers
+-----
+
+==== List all entities capable of tag merging:
+
+-----
+    hoot info --tag-mergers
+-----
+
+==== List all entities capable of aggregating tag values:
+
+-----
+    hoot info --value-aggregators
+-----
+
+==== List all way joiners:
+
+-----
+    hoot info --way-joiners
+-----
+
+==== List all way snap criteria for the current conflate configuration:
+
+-----
+    hoot info --way-snap-critera
+-----
+
+==== List all way snap criteria for a specific set of conflate matchers:
+
+-----
+    hoot info -D match.creators="HighwayMatchCreator;ScriptMatchCreator,River.js" \
+      --way-snap-critera
+-----
+
+=== Schema Translation
+
+==== Apply a schema translation to a map:
+
+-----
+    hoot convert -D schema.translation.script=MyTranslation.js input.osm output.osm
+-----
+
+==== Convert an OSM API database to a file geodatabase and apply a schema translation:
+
+-----
+    hoot convert -D schema.translation.script=MyTranslation.js \
+      PG:"dbname='mydb' host='myhost' port='5432' user='myuser' password='mypass'" output.gdb
+-----
+
+==== Convert multiple shape files to an OSM file with schema translation:
+
+-----
+    hoot convert -D schema.translation.script=MyTranslation.js input1.shp input2.shp output.osm
+-----
+
+==== Convert roads, bridges, overpasses and tunnels from a file geodatabase into a single .osm file with schema translation:
+
+-----
+    hoot convert -D schema.translation.script=MyTranslation.js \
+      input.gdb;ROAD_L input.gdb;BRIDGE_OVERPASS_L input.gdb;TUNNEL_L output.osm
+-----
+
+==== Convert and translate a shape file that is stored inside of a zip file:
+
+-----
+    hoot convert -D schema.translation.script=MyTranslation.js /vsizip//gis-data/input.zip/tds/LAP030.shp output.osm
+-----
+
+==== Obtain a similarity score for two type tags based on the internal schema:
+
+-----
+    hoot type-similarity amenity=school landuse=residential
+-----
+
+==== Write the internal tag schema that Hootenanny uses to a CSV file:
+
+-----
+    hoot schema -D tag.printing.format=csv > schema.csv
+-----
+
+==== Write the internal tag schema graph relations that Hootenanny uses to an image file:
+
+-----
+    hoot schema schema.svg
+-----
+
+=== Statistics
+
+==== Count all features in a map:
+
+-----
+    hoot count input.osm
+-----
+
+==== Count all elements in a map:
+
+-----
+    hoot count input.osm --all-elements
+-----
+
+==== Count all features recursively across multiple files under a directory:
+
+-----
+    hoot count /my/dir --recursive "*"
+-----
+
+==== Count all features recursively across multiple OSM files under a directory:
+
+-----
+    hoot count /my/dir --recursive "*.osm"
+-----
+
+==== Count all elements within a bounding box:
+
+-----
+    hoot count -D in.bounds.criterion.bounds="-77.0551,38.8845,-77.0281,38.9031" -D in.bounds.criterion.strict=true \
+      input.osm --criteria InBoundsCriterion
+-----
+
+==== Count all the POIs in multiple maps:
+
+-----
+    hoot count input1.osm input2.osm --criteria PoiCriterion
+-----
+
+==== Count all elements that are not POIs:
+
+-----
+    hoot count -D element.criteria.negate=true "input1.osm;input2.osm" --criteria PoiCriterion \
+      --all-elements
+-----
+
+==== Count all elements that are either POIs or roads:
+
+-----
+    hoot count input.osm --criteria PoiCriterion --all-elements
+-----
+
+==== Count all POIs that have a phone number:
+
+-----
+    hoot count input.osm -D element.criteria.chain=true --criteria "PoiCriterion;HasPhoneNumberCriterion"
+-----
+
+==== Count all features which have a tag whose key contains the text "phone":
+
+-----
+    hoot count -D tag.key.contains.criterion.text="phone" input.osm --criteria TagKeyContainsCriterion
+-----
+
+==== Count all features which have a name:
+
+-----
+    hoot count input.osm --criteria HasNameCriterion
+-----
+
+==== Count all features which have the name, "Old Town Tavern":
+
+-----
+    hoot count -D name.criterion.names="Old Town Tavern" -D name.criterion.case.sensitive=false \
+      input.osm --criteria NameCriterion
+-----
+
+==== Count all features whose name contains "subway":
+
+-----
+    hoot count -D name.criterion.names="subway" -D name.criterion.case.sensitive=false \
+      input.osm --criteria NameCriterion
+-----
+
+==== Count all conflatable elements in a map:
+
+-----
+    # Generally, this should be equal to the total number of elements in a map since Hootenanny 
+    # be able to conflate any feature. In the rare circumstance its not, this can be used to
+    # track down which elements cannot be conflated.
+    hoot count input.osm --criteria ConflatableElementCriterion
+-----
+
+==== Count unique tags:
+
+-----
+    hoot stat input.osm UniqueTagCounter
+-----
+
+==== Count unique tag keys:
+
+-----
+    hoot stat input.osm UniqueTagKeyCounter
+-----
+
+==== Count unique tag keys recursively across multiple files under a directory:
+
+-----
+    hoot count /my/dir UniqueTagKeyCounter --recursive "*"
+-----
+
+==== Count unique tag keys recursively across multiple OSM files under a directory:
+
+-----
+    hoot count /my/dir UniqueTagKeyCounter --recursive "*.osm"
+-----
+
+==== Calculate the area of all features in a map:
+
+-----
+    hoot stat input.osm CalculateAreaVisitor
+-----
+
+==== Calculate the length of all ways in a map:
+
+-----
+    hoot stat input.osm LengthOfWaysVisitor
+-----
+
+==== Count the number of features containing a node by specifying its ID:
+
+-----
+    hoot count -D contains.node.criterion.id=-234 input.osm --criteria ContainsNodeCriterion
+-----
+
+==== Count the number of nodes within 25 meters of a coordinate:
+
+-----
+    hoot count -D distance.node.criterion.center=-77.3453,38.3456 \
+      -D distance.node.criterion.distance=25.0 input.osm --criteria DistanceNodeCriterion
+-----
+
+==== Count the number of elements with a version greater than or equal to one:
+
+-----
+    hoot count -D attribute.value.criterion.type=version \
+      -D attribute.value.criterion.comparison.type=NumericGreaterThanOrEqualTo \
+      -D attribute.value.criterion.comparison.value=1 input.osm --criteria AttributeValueCriterion
+-----
+
+==== Count the number of elements authored by a particular user:
+
+-----
+    hoot count -D attribute.value.criterion.type=user \
+      -D attribute.value.criterion.comparison.type=TextEqualTo \
+      -D attribute.value.criterion.comparison.value="username" input.osm \
+      --criteria AttributeValueCriterion
+-----
+
+==== Count the number of elements with valid phone number tags in a map:
+
+-----
+    hoot count input.osm --criteria HasPhoneNumberCriterion
+-----
+
+==== Count how many roads intersect two other roads given their IDs:
+
+-----
+    hoot count -D intersecting.way.criterion.source.way.ids="-76;-985" input.osm \
+      --criteria IntersectingWayCriterion
+-----
+
+==== Count the total number of valid address tags in a map:
+
+-----
+    hoot stat input.osm AddressCountVisitor
+-----
+
+==== Count the number of elements with valid address tags in a map:
+
+-----
+    hoot count input.osm --criteria HasAddressCriterion
+-----
+
+==== Calculate the average number of nodes for a set of buildings:
+
+-----
+    hoot stat -D nodes.per.way.visitor.element.criterion=BuildingCriterion input.osm \
+      NodesPerWayVisitor average
+-----
+
+==== Calculate the numerical average of all tags with a given key:
+
+-----
+    hoot stat -D tags.visitor.keys="accuracy" input.osm AverageNumericTagsVisitor
+-----
+
+==== Count the total number of valid phone number tags in a map:
+
+-----
+    hoot stat input.osm PhoneNumberCountVisitor
+-----
+
+==== Count the total number of postive element IDs in a map:
+
+-----
+    hoot count input.osm --criteria PositiveIdCriterion
+-----
+
+==== Display a set of statistics for a map:
+
+-----
+    hoot stats input.osm
+-----
+
+==== Display a set of statistics recursively across multiple maps under a directory:
+
+-----
+    hoot stats /my/dir --recursive "*"
+-----
+
+==== Display a set of statistics recursively across multiple OSM file maps under a directory:
+
+-----
+    hoot stats /my/dir --recursive "*.osm"
+-----
+
+=== Tag Info
+
+==== Display the distribution of highway tags for all elements in a map:
+
+-----
+    hoot tag-distribution input.osm --tagKeys highway --limit 3
+    
+    Total elements with specified tags: 8,707
+    401	(4.61%)	highway=residential
+    97	(1.11%)	highway=service
+    56	(<1%)	highway=secondary
+-----
+
+==== Display the distribution of highway tags recursively across multiple maps under a directory:
+
+-----
+    hoot tag-distribution /my/dir --tagKeys highway --limit 3 --recursive "*"
+-----
+
+==== Display the distribution of highway tags recursively across multiple OSM file maps under a directory:
+
+-----
+    hoot tag-distribution /my/dir --tagKeys highway --limit 3 --recursive "*.osm"
+-----
+
+==== Display the distribution of highway tags for only way roads in a map:
+
+-----
+    hoot tag-distribution input.osm --tagKeys highway --criteria HighwayCriterion --limit 3
+
+    Total elements with specified tags: 673
+    401	(59.6%)	highway=residential
+    97	(14.4%)	highway=service
+    56	(8.32%)	highway=secondary
+-----
+
+==== Display the distribution of highway tags for any feature having the tag:
+
+-----
+    # This adds non-way features with the "highway" tag. e.g. `highway=traffic_signals` and
+`highway=turning_circle` nodes
+    hoot tag-distribution input.osm --tagKeys highway --criteria HighwayCriterion --limit 3
+
+    Total elements with specified tags: 673
+    401	(59.6%)	highway=residential
+    97	(14.4%)	highway=service
+    56	(8.32%)	highway=secondary
+-----
+
+==== Display occurrence frequencies of tokenized feature names:
+
+-----
+    hoot tag-distribution input.osm --names --tokenize --limit 5
+
+    320	(6.81%)	name=nw
+    246	(5.24%)	name=st
+    80	(1.70%)	name=ave
+    45	(0.96%)	name=sw
+    18	(0.38%)	name=h
+-----
+
+==== Show a summary of conflation reviews by type and frequency:
+
+-----
+    hoot tag-distribution input.osm --tagKeys hoot:review:note --criteria ReviewRelationCriterion
+
+    Total tag count: 129
+    62	(48.1%)	hoot:review:note=unmatched buildings are overlapping
+    20	(15.5%)	hoot:review:note=very little building overlap building orientation not similar building edges not very close to each other
+    15	(11.6%)	hoot:review:note=very little building overlap similar building orientation building edges not very close to each other
+    14	(10.9%)	hoot:review:note=very little building overlap semisimilar building orientation building edges not very close to each other
+    12	(9.3%)	hoot:review:note=very little building overlap very similar building orientation building edges not very close to each other
+    3	  (2.33%)	hoot:review:note=small building overlap building orientation not similar building edges not very close to each other
+    1	  (<1%)	  hoot:review:note=small building overlap similar building orientation building edges not very close to each other
+    1	  (<1%)	  hoot:review:note=small building overlap semisimilar building orientation building edges not very close to each other
+    1	  (<1%)	 hoot:review:note=medium building overlap building orientation not similar building edges not very close to each other
+-----
+
+==== Display tag schema information for a map
+
+-----
+    hoot tag-info input.osm
+
+    .{
+    "ca-Transmission_Line-state-gov.shp":{
+    "ca-Transmission_Line-state-gov":{
+      "Circuit":[
+        "Double",
+        "Duble",
+        "Liberty Energy",
+        "Many",
+        "Quad",
+        "Single"
+        ],
+      "Comments":[
+        "Attached to 115kv poles",
+        "Caldwell-victor 220kv",
+        "Changed kv from 115 to 60kv",
+        "Distribution line",
+        ...
+        ],
+      "Legend":[
+        "IID_161kV",
+        "IID_230kV",
+        "IID_34.5_92kV",
+        "LADWP_115_138kV",
+        ...
+        ],
+        ...
+    }}
+-----
+
+==== Display tag information recursively across multiple maps under a directory:
+
+-----
+    hoot tag-info /my/dir --recursive "*"
+-----
+
+==== Display tag information recursively across multiple OSM file maps under a directory:
+
+-----
+    hoot tag-info /my/dir --recursive "*.osm"
+-----
+
+==== Display all unique values for a particular tag key in a map:
+
+-----
+    hoot tag-info input.osm --keys "key"
+-----
+
+==== Display all tag keys in a map as a delimited list string:
+
+-----
+    hoot tag-info --keys-only --delimited-text input.osm
+-----
+
+=== Tag Manipulation
+
+==== Add the tag `error:circular=5.0` to all elements:
+
+-----
+    hoot convert -D convert.ops=SetTagValueVisitor -D set.tag.value.visitor.keys=error:circular \
+      -D set.tag.value.visitor.values=5.0 input.osm output.osm
+-----
+
+==== Add the tag `error:circular=5.0` to all relations and their members: 
+
+-----
+    hoot convert -D convert.ops=RecursiveSetTagValueOp -D set.tag.value.visitor.keys=error:circular \
+      -D set.tag.value.visitor.values=5.0 -D set.tag.value.visitor.criterion=RelationCriterion \ 
+      input.osm output.osm
+-----
+
+==== Remove all "surface" and "smoothness" tags from ways:
+
+-----
+    hoot convert -D convert.ops="RemoveTagsVisitor" \
+      -D tag.filter.element.criterion="WayCriterion" \
+      -D tag.filter.keys="surface;smoothness" input.osm output.osm
+-----
+
+==== Suppress creation of `source:datetime` and `error:circular` tags in map data:
+
+-----
+    hoot convert -D writer.include.circular.error.tags=false -D reader.add.source.datetime=false \
+      input.osm output.osm
+-----
+
+==== Remove all tag keys starting with "source" from ways:
+
+-----
+    hoot convert -D convert.ops="RemoveTagsVisitor" \
+      -D tag.filter.element.criterion="WayCriterion" \
+      -D tag.filter.keys="source*" input.osm output.osm
+-----
+
+==== Remove all elements that have the tag `status=proposed`:
+
+-----
+    hoot convert -D convert.ops=RemoveElementsVisitor \
+      -D remove.elements.visitor.filter=TagCriterion -D tag.criterion.kvps="status=proposed"
+-----
+
+==== Remove all tags with keys "REF1" and "REF2" from elements containing the tag "power=line":
+
+-----
+    hoot convert -D convert.ops=RemoveTagsVisitor -D tag.filter.keys="REF1;REF2" \
+      -D tag.filter.element.criterion=TagCriterion \
+      -D tag.criterion.kvps="power=line" -D element.criteria.negate=true input.osm output.osm
+-----
+
+==== For all features with a "voltage" tag between 1 and 45k volts, set the tag `power=minor_line`:
+
+-----
+    hoot convert -D convert.ops=SetTagValueVisitor -D set.tag.value.visitor.keys=power \
+      -D set.tag.value.visitor.values=minor_line \
+      -D set.tag.value.visitor.element.criteria="TagValueNumericRangeCriterion" \
+      -D tag.value.numeric.range.criterion.keys=voltage \
+      -D tag.value.numeric.range.criterion.min=1 -D tag.value.numeric.range.criterion.max=45000 \
+      input.osm output.osm
+-----
+
+==== Normalize all the element address tags in a map:
+
+-----
+    hoot convert -D convert.ops="NormalizeAddressesVisitor" input.osm output.osm
+-----
+
+==== Normalize all the element phone number tags in a map:
+
+-----
+    hoot convert -D convert.ops="NormalizePhoneNumbersVisitor" input.osm output.osm
+-----
+
+==== Add admin boundary level location tags associated with element phone numbers:
+
+-----
+    hoot convert -D convert.ops="PhoneNumberLocateVisitor" input.osm output.osm
+-----
+
+==== Add missing attributes to corrupted elements:
+
+-----
+    hoot convert -D convert.ops="AddAttributesVisitor" \
+      -D add.attributes.visitor.kvps="changeset=1" input.osm output.osm
+-----
+
+=== Utilities
+
+==== Colorize the output of a command:
+
+-----
+    hoot convert --trace --color input.osm output.osm
+-----
+
+==== Create a shape that covers a set of features with a buffer:
+
+-----
+    hoot alpha-shape --buffer 10 input.osm output.osm
+-----
+
+==== Calculate a covering shape with a specified alpha value:
+
+-----
+    hoot alpha-shape --alpha 200 input.osm output.osm 
+-----
+
+==== Snap unconnected roads in one dataset back to neighboring roads in another dataset:
+
+-----
+    hoot convert -D convert.ops="UnconnectedWaySnapper" \
+      -D snap.unconnected.ways.snap.criteria=HighwayCriterion \
+      -D snap.unconnected.ways.snap.to.way.statuses=Input1 \
+      -D snap.unconnected.ways.snap.way.statuses=Input2 \
+      input1.osm input2.osm output.osm
+-----
+
+==== Snap unconnected secondary roads in one dataset back to any type of linear feature in another dataset:
+
+-----
+    hoot convert -D convert.ops="UnconnectedWaySnapper" \
+      -D snap.unconnected.ways.snap.way.criteria=HighwayCriterion \
+      -D snap.unconnected.ways.snap.to.way.criteria=LinearCriterion \
+      -D snap.unconnected.ways.snap.to.way.status=Input1 \
+      -D snap.unconnected.ways.snap.way.status=Input2 \
+      input1.osm input2.osm output.osm
+-----
+
+==== Snap unconnected roads in one dataset back to neighboring roads in another dataset using a stricter feature type matching requirement:
+
+-----
+    hoot convert -D convert.ops="UnconnectedWaySnapper" \
+      -D snap.unconnected.ways.minimum.type.match.score=0.8 \
+      -D snap.unconnected.ways.snap.criterion=HighwayCriterion \
+      -D snap.unconnected.ways.snap.to.way.status=Input1 \
+      -D snap.unconnected.ways.snap.way.status=Input2 \
+      input1.osm input2.osm output.osm
+-----
+
+==== Snap unconnected roads in one dataset back to neighboring roads in another dataset and mark them as needing review:
+
+-----
+    hoot convert -D convert.ops="UnconnectedWaySnapper" \
+      -D snap.unconnected.ways.snap.criterion=HighwayCriterion \
+      -D snap.unconnected.ways.snap.to.way.status=Input1 \
+      -D snap.unconnected.ways.snap.way.status=Input2 \
+      -D snap.unconnected.ways.review.snapped=true \
+      input1.osm input2.osm output.osm
+-----
+
+==== Mark unconnected roads as needing review in one dataset that could be snapped back to neighboring roads in another dataset:
+
+-----
+    hoot convert -D convert.ops="UnconnectedWaySnapper" \
+      -D snap.unconnected.ways.snap.way.criterion=HighwayCriterion \
+      -D snap.unconnected.ways.snap.to.way.status=Input1 \
+      -D snap.unconnected.ways.snap.way.status=Input2 \
+      -D snap.unconnected.ways.review.snapped=true \
+      -D snap.unconnected.ways.mark.only=true \
+      input1.osm input2.osm output.osm
+-----
+
+==== Find street intersection locations in a map by street name:
+
+-----
+    hoot convert -D convert.ops="FindStreetIntersectionsByName" \
+      -D name.criterion.names="streetName1;streetName2" -D name.criterion.case.sensitive=false \
+      -D name.criterion.partial.match=false input.osm output.osm
+-----
+
+==== Attempt to add missing type tags to POIs and buildings:
+
+-----
+    hoot convert -D convert.ops=ImplicitPoiPolygonTypeTagger input.osm output.osm
+-----
+
+==== Attempt to add missing type tags to POIs and buildings before conflating them:
+
+-----
+    hoot convert -D conflate.pre.ops=ImplicitPoiPolygonTypeTagger input1.osm input2.osm \
+      output.osm
+-----
+
+==== Tag features with a conflate matcher capable of matching them (useful in debugging):
+
+-----
+    hoot convert -D convert.ops="ConflatableCriteriaVisitor" input.osm output.osm
+-----
+
+==== Detect road intersections:
+
+-----
+    hoot convert -D convert.ops="FindHighwayIntersectionsOp" input.osm output.osm
+-----
+
+==== Detect railway intersections:
+
+-----
+    hoot convert -D convert.ops="FindRailwayIntersectionsOp" input.osm output.osm
+-----
+
+===== Detect and mark divided highways:
+
+-----
+    hoot convert -D convert.ops="DualHighwayMarker" input.osm output.osm
+-----
+
+===== Split a way into segments of a particular size:
+
+-----
+    hoot convert -D convert.ops="WaySplitterOp" -D way.splitter.max.length=100 input.osm output.osm
+-----
+
+==== Crop a map to an extent:
+
+-----
+    hoot crop input.osm output.osm "-77.0551,38.8845,-77.0281,38.9031"
+-----
+
+==== Crop a map while not splitting features that cross the bounds:
+
+-----
+    hoot crop -D crop.keep.entire.features.crossing.bounds=true input.osm output.osm "-77.0551,38.8845,-77.0281,38.9031"
+-----
+
+==== Crop a map and keep only features completely inside the bounds:
+
+-----
+    hoot crop -D crop.keep.only.features.inside.bounds=true input.osm output.osm "-77.0551,38.8845,-77.0281,38.9031"
+-----
+
+==== Crop a map in reverse by keeping only features outside of a bounds:
+
+-----
+    hoot crop -D crop.invert=true input.osm output.osm "-77.0551,38.8845,-77.0281,38.9031"
+-----
+
+==== Crop map data recursively across multiple files under a directory:
+
+-----
+    hoot crop /my/dir output.osm "-77.0551,38.8845,-77.0281,38.9031" --recursive "*"
+-----
+
+==== Crop map data recursively across multiple OSM files under a directory:
+
+-----
+    hoot crop /my/dir output.osm "-77.0551,38.8845,-77.0281,38.9031" --recursive "*.osm"
+-----
+
+==== Crop map data and write to separate output files:
+
+-----
+    hoot crop input1.osm input2.osm "-77.0551,38.8845,-77.0281,38.9031" --separate-output
+-----
+
+==== Crop out a random subset of data with a maximum node size:
+
+-----
+    hoot crop-random input.osm output.osm 5000
+-----
+
+==== Crop out a random subset of data with a maximum node size while seeing the random number generator:
+
+-----
+    hoot crop-random input1.osm output.osm 1000 0.001 3
+-----
+
+==== Cut a section out of a map:
+
+-----
+    hoot cut shape.osm input.osm output.osm
+-----
+
+==== Delete a map from the Hootenanny Web Services database:
+
+-----
+    hoot db-delete -D api.db.email=myemail@me.com hootapidb://user:password@localhost:5432/hoot/mapLayerName
+-----
+
+==== List maps in the Hootenanny Web Services database:
+
+-----
+    hoot db-list -D api.db.email=myemail@me.com hootapidb://user:password@localhost:5432/hoot
+-----
+
+==== Display the geospatial extent of a map:
+
+-----
+    hoot extent input.osm
+-----
+
+==== Display the geospatial extent of map data recursively across multiple files under a directory:
+
+-----
+    hoot extent /my/dir --recursive "*"
+-----
+
+==== isplay the geospatial extent of map data recursively across multiple OSM files under a directory:
+
+-----
+    hoot extent /my/dir --recursive "*.osm"
+-----
+
+==== Determine if a map is sorted to the OSM standard:
+
+-----
+    hoot is-sorted input.osm
+-----
+
+==== Make a perturbed copy of a map:
+
+-----
+    hoot perturb input.osm perturbed.osm
+-----
+
+==== Make a perturbed copy of a map with some adjusted perturbation parameters:
+
+-----
+    hoot perturb -D perty.search.distance=20 -D random.way.generalizer.probability=0.7 \
+      input.osm perturbed.osm
+-----
+
+==== Make a perturbed copy of a map, conflate the original map against the perturbed copy, and score how well the conflation performed:
+
+-----
+    hoot perturb input.osm /my/output/directory --score
+-----
+
+==== Run a series of random map perturbations and score how well all of them conflated against a single source map:
+
+-----
+    hoot perturb -D perty.test.num.runs=10 -D perty.test.num.simulations=5 \
+      -D perty.test.dynamic.variables=perty.systematic.error.x;perty.systematic.error.y \
+      -D perty.test.dynamic.variable.start.value=1.0 \
+      -D perty.test.dynamic.variable.increment=5.0 \
+      -D perty.test.expected.scores=0.9;0.95;0.93;0.952;0.91;0.95;0.9;0.95;0.95;0.95 \
+      -D perty.test.allowed.score.variance=0.05 reference-in.osm /my/output/directory --test
+-----
+
+==== Create a node density plot:
+
+-----
+    hoot plot-node-density input.osm output.png 100
+-----
+
+==== Sort a map to the OSM standard in memory:
+
+-----
+    hoot sort input.osm output.osm
+-----
+
+==== Sort data to the OSM standard that is too large to fit in memory:
+
+-----
+    hoot sort -D element.sorter.element.buffer.size=10000 input.osm output.osm
+-----
+
+==== Split a map into multiple maps using tiles from a file:
+
+-----
+    hoot split output.geojson input.osm output.osm
+-----
+
+==== Stitch two adjacent cropped maps into one combined map
+
+-----
+    hoot stitch input1.osm input2.osm output.osm
+-----
+
+==== Copy element IDs from one map to another where identical elements are found between them:
+
+-----
+    hoot sync-element-ids input1.osm input2.osm output.osm
+-----
+
+==== Generate a grid with regular shaped cells across an entire map:
+
+-----
+    hoot task-grid input1.osm input2.osm output.geojson --uniform
+-----
+
+==== Generate a grid with irregular shaped cells that will fit at most 1000 nodes each for an entire map:
+
+-----
+    hoot task-grid input1.osm input2.osm output.geojson --maxNodesPerCell 1000 --node-density
+-----
+
+==== Generate a grid with regular shaped cells across a subset of a map:
+
+-----
+    hoot task-grid "-71.4698,42.4866,-71.4657,42.4902" output.geojson --uniform
+-----
+
+==== Generate a grid with irregular shaped cells that will fit at most 1000 nodes each for a subset of a map:
+
+-----
+    hoot task-grid input1.osm input2.osm output.geojson \
+      --maxNodesPerCell 1000 --bounds "-71.4698,42.4866,-71.4657,42.4902" --node-density
+-----
+
+==== Generate a grid based on node density, specifying the maximum allowed node count per grid cell and a pixel size:
+
+--------------------------------------
+hoot task-grid test-files/MyInputFile1.osm test-files/MyInputFile2.osm MyOutputFile.geojson \
+   --maxNodesPerCell 1000 --pixelSize 0.001 --node-density
+--------------------------------------
+
+==== Calculate a grid based on node density, specifying the maximum allowed node count per cell, a pixel size, and allow for more than one calculation attempt:
+
+--------------------------------------
+hoot task-grid test-files/MyInputFile1.osm test-files/MyInputFile2.osm MyOutputFile.geojson \
+  --maxNodesPerCell 1000 --pixelSize 0.001 --maxAttempts 5 --pixelSizeAutoReductionFactor 10 --node-density
+--------------------------------------
+
+==== Select a random grid cell based on node density (works for --uniform as well):
+
+--------------------------------------
+hoot task-grid test-files/MyInputFile.osm MyOutputFile.geojson --random --node-density
+--------------------------------------
+
+==== Select a random grid cell based on node density specifying a particular seed for the random number generator (works for --uniform as well):
+
+--------------------------------------
+hoot task-grid test-files/MyInputFile.osm MyOutputFile.geojson --maxNodesPerCell 1000 \
+  --pixelSize 0.001 --random --randomSeed 2 --node-density
+--------------------------------------
+
+=== Validation
+
+==== Run validation on a map:
+
+-----
+    hoot validate input.osm
+-----
+
+==== Run validation on a map and mark failing features in an output file:
+
+-----
+    hoot validate input.osm --output output.osm
+-----
+
+==== Run validation on map data recursively across multiple files under a directory:
+
+-----
+    hoot validate /my/dir --recursive "*"
+-----
+
+==== Run validation on map data recursively across multiple OSM files under a directory:
+
+-----
+    hoot validate /my/dir --recursive "*.osm"
+-----
+
+==== Run validation on a map and mark failing features in separate output files:
+
+-----
+    hoot validate input1.osm input2.osm --separate-output
+-----
+
+==== List the available JOSM validators:
+
+-----
+    hoot validate --validators
+-----
+

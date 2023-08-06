@@ -1,0 +1,23 @@
+[[tag-compare]]
+== tag-compare
+
+=== Description
+
+The `tag-compare` command displays a comparison of tag values from two inputs.
+
+* `input1` -     Input 1; may be any supported input format (e.g. .osm file).
+* `input2` -     Input 2; may be any supported input format (e.g. .osm file).
+* `--no-table` - Prints the matrix as a list instead of a table.
+
+=== Usage
+
+--------------------------------------
+hoot tag-compare (input1 input2) [--no-table]
+--------------------------------------
+
+https://github.com/ngageoint/hootenanny/blob/master/docs/user/CommandLineExamples.asciidoc#compare-the-tags-in-two-maps[Examples]
+
+=== See Also
+
+* https://github.com/ngageoint/hootenanny/blob/master/docs/user/SupportedDataFormats.asciidoc#applying-changes-1[Supported Input Formats]
+

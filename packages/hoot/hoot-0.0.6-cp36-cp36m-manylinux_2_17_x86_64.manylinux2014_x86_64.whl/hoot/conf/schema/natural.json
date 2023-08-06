@@ -1,0 +1,181 @@
+[
+    {
+        "categories": ["poi"],
+        "dataType": "enumeration",
+        "geometries": ["area"],
+        "influence": 1,
+        "isA": "poi",
+        "name": "natural",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["node", "area"],
+        "isA": "natural",
+        "name": "natural=*",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["node", "area"],
+        "isA": "natural",
+        "name": "natural=beach",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["node", "area"],
+        "isA": "poi",
+        "name": "beach_landing_site=yes",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["area"],
+        "isA": "natural",
+        "name": "natural=desert",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["area"],
+        "isA": "natural",
+        "name": "natural=sand",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["linestring"],
+        "aliases":[
+        "natural=land_water_boundary"
+        ],
+        "isA": "natural",
+        "name": "natural=coastline",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["linestring"],
+        "isA": "natural",
+        "name": "natural=hedgerow",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["linestring"],
+        "isA": "natural",
+        "name": "natural=tree_row",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["node"],
+        "isA": "natural",
+        "name": "natural=tree",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["node", "linestring"],
+        "isA": "natural",
+        "name": "natural=cliff",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["area", "linestring"],
+        "isA": "natural",
+        "name": "natural=crevice",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["area", "linestring"],
+        "isA": "natural",
+        "name": "natural=crevasse",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["linestring"],
+        "isA": "natural",
+        "name": "natural=shear_wall",
+        "similarTo": [
+            { "name": "natural=cliff", "weight": 0.8 }
+         ],
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["linestring"],
+        "isA": "natural",
+        "name": "natural=ridge",
+        "similarTo": [
+            { "name": "natural=cliff", "weight": 0.6 }
+         ],
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["linestring"],
+        "isA": "natural",
+        "name": "natural=arete",
+        "similarTo": [
+            { "name": "natural=ridge", "weight": 0.7 }
+         ],
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["node","linestring"],
+        "isA": "natural",
+        "name": "natural=valley",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["node", "area"],
+        "isA": "natural",
+        "name": "natural=glacier",
+        "objectType": "tag"
+    },
+    {
+        "isA": "natural",
+        "name": "natural=grassland",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["node"],
+        "isA": "natural",
+        "name": "natural=hill",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["node"],
+        "isA": "natural",
+        "name": "natural=mountain",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["node"],
+        "isA": "natural",
+        "name": "natural=peak",
+        "objectType": "tag",
+        "similarTo": [
+            { "name": "natural=hill", "weight": 0.8 },
+            { "name": "natural=mountain", "weight": 0.8 }
+        ]
+    },
+    {
+        "geometries": ["node", "area"],
+        "isA": "natural",
+        "name": "natural=scrub",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["area"],
+        "categories": ["multiuse"],
+        "isA": "natural",
+        "name": "natural=water",
+        "objectType": "tag",
+        "similarTo": [
+            { "name": "emergency=fire_water_pond", "weight": 0.9 },
+            { "name": "water=lake", "weight": 0.9 },
+            { "name": "water=pond", "weight": 0.9 }
+        ]
+    },
+    {
+        "isA": "natural",
+        "name": "natural=wetland",
+        "objectType": "tag"
+    },
+    {
+        "categories": ["multiuse"],
+        "isA": "natural",
+        "name": "natural=wood",
+        "objectType": "tag"
+    }
+]

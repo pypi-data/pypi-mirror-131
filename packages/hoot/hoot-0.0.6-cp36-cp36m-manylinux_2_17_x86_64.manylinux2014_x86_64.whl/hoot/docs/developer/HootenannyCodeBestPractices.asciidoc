@@ -1,0 +1,103 @@
+
+=== Coding Best Practices
+
+==== General
+
+Some of these come directly from https://sonarcloud.io/dashboard?id=hoot[Sonar] recommendations.
+
+* Keep as much implementation out of header files as possible. The implementations of simple 
+getters/setters are ok in a header file.
+* Use forward declarations where possible to mimimize build dependencies.
+* Use default constructors and destructors where applicable.
+* Use `std::make_shared` to create shared pointers when possible.
+* If a variable being passed to a method should never be null, pass a reference instead of a 
+pointer.
+* When passing references to methods, pass them as const references when possible.
+* Make methods const when possible.
+* Keep classes focused on a single primary functionality.
+* Public class member variables are generally discouraged, with the exception of `const` or 
+`struct` member variables.
+* Initialize class member variables in the constructor inline when possible.
+* Favor constructors with signatures that force the client of a class to set it up properly vs many 
+getter methods.
+* Use interface inheritance with a focus on simple, skinny interface definitions.
+* Avoid "magic" strings. Tie strings whose values may change to a class member variable or 
+configuration option when possible.
+* Remove the corresponding includes from a class as you completely remove references to other 
+classes.
+* See the "General Test Writing Guidelines" section in the 
+https://github.com/ngageoint/hootenanny/blob/master/docs/developer/HootenannyTests.asciidoc[testing document] 
+for some test writing tips.
+
+==== Core Specific
+
+* If you're using a commonly used class from a 3rd party library and its already included in 
+`HootCoreStable.h`, then you don't need to add an include for it.
+* Keep as much logic out of classes inheriting `BaseCommand` as possible. Create a new class to hold
+logic needed to be executed by the command.
+* If a command you create is meant for more advanced developer facing usage or is experimental, you
+should have it return a type of "advanced" via its `getType` method. This will cause it to be shown
+in the list of advanced commands when command help is displayed.
+* Make use of configuration options via the `Configurable` interface to keep functionality 
+adapatable to a broad range of data inputs.
+* Avoid setting the configuration in a global manner with `conf().set(...)` when possible.
+* Make use of status logging:
+** Use the FATAL log level for any program occurrence deemed so catastrophic that the program must
+immediately end execution.
+** Use the ERROR log level for any non fatal errors encountered that likely will lead to erroneous 
+program behavior while processing program inputs.
+** Use the WARNING log level for any non fatal errors encountered that may lead to erroneous 
+program behavior while processing program inputs.
+** Use the STATUS log level for the most coarse level of progress related information user to an end 
+user (STATUS is the default). 
+** Use the INFO log level for slightly more granular information that STATUS that could be useful to 
+an end user.
+** Use the DEBUG log level for variable and status information outside of a loop that could be 
+useful to a developer.
+** User the TRACE log level for variable and status information inside a loop that could be useful 
+to a developer. 
+** Use progress logging at the correct level where potentially large amounts of data could be 
+processed.
+* Favor the visitor pattern via classes ineriting `ElementVisitor` for map data processing. Use 
+`OsmMapOperation` only when the data processor needs a copy of a complete map to performs its logic.
+* Use classes inheriting `ElementCriterion` to identify data based on its properties.
+* Use streaming I/O whereever possible to avoid loading large maps into memory all at once.
+* Use `OsmMapReaderFactory`, `OsmMapWriterFactory`, and `IoUtils` for I/O purposes when applicable.
+* Make use of the `ApiEntityInfo` interface to appropriately describe map operators (classes 
+inheriting `OsmMapOperation`, `ElementVisitor`, `ElementCriterion`, etc.).
+* Make use of the `OperationStatus` interface and the `Progress` class to appropriately report 
+progress for map operators (classes inheriting `OsmMapOperation`, `ElementVisitor`, 
+`ElementCriterion`, etc.).
+* Make use of the `FilteredByGeometryTypeCriteria` interface to properly describe the feature 
+geometry types a map operator (classes inheriting `OsmMapOperation`, `ElementVisitor`, 
+`ElementCriterion`, etc.) operates on.
+* Make use of object pools when objects are created in very large numbers (> 10^6) e.g. create 
+`Node` with `Node::newSp`. For element objects, this generally is done in reader classes.
+* Create new exception types by deriving them from `HootException` with the `HOOT_DEFINE_EXCEPTION` 
+macro.
+* Refrain from use of `using namespace std;` and the like to avoid potential namespace collisions.
+* Run `make docs` to test your asciidoc documentation changes. Specifically, ensure that your 
+section headers are at appropriate levels in the hierarchy and that newlines have been placed in 
+appropriate places for the table of contents to format properly. If you've made changes to the 
+schema, you'll also need to manually re-generate the schema documentation (see the "Core Schema" 
+section under the "Documentation" section in the Developer Guide). Make sure all generated 
+documentation files under source control have been committed as part of your changes.
+* See the "Hootenanny Specific Test Writing Guidelines" section in the 
+https://github.com/ngageoint/hootenanny/blob/master/docs/developer/HootenannyTests.asciidoc[testing document] 
+for some test writing tips.
+
+==== Cleaning Up Header Includes
+
+Maybe we work this into the build and/or find a better tool, but this is what has been tried so far:
+
+Use `cppclean`:
+-----
+sudo yum install python-pip
+sudo pip install --upgrade cppclean
+cd $HOOT_HOME
+cppclean .
+-----
+
+Some Hootenanny code causes it to crash, and it also doesn't pick up unnecessary includes in .cpp 
+files.
+

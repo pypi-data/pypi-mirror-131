@@ -1,0 +1,7 @@
+[
+    {
+        "isA": "poi",
+        "name": "industrial=*",
+        "objectType": "tag"
+    }
+]

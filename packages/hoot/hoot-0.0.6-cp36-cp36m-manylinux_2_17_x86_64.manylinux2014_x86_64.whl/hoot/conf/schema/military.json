@@ -1,0 +1,76 @@
+[
+    {
+        "isA": "poi",
+        "name": "military",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["linestring", "node"],
+        "isA": "military",
+        "name": "military=trench",
+        "objectType": "tag"
+    },
+    {
+        "description": "TODO: can't find this in the OSM schema",
+        "geometries": ["linestring"],
+        "isA": "military",
+        "name": "military=revetment",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["node","area"],
+        "isA": "military",
+        "name": "military=bunker",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["node","area"],
+        "isA": "military",
+        "name": "military=danger_area",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["node","area"],
+        "isA": "military",
+        "name": "military=range",
+        "objectType": "tag"
+    },
+    {
+        "geometries": ["node","area"],
+        "isA": "military",
+        "name": "military=anti_air_artillery",
+        "objectType": "tag"
+    },
+    {
+        "description": "Used for facilities and land used by the military, including the Navy, Army, Airforce and Marines. There's also landuse=military for tagging land areas owned/used by the military for whatever purpose.",
+        "isA": "military",
+        "mismatchScore": 0.4,
+        "name": "military=*",
+        "objectType": "tag",
+        "similarTo": {
+            "name": "landuse=military",
+            "weight": 0.1
+        }
+    },
+    {
+        "description": "FCODE: SU001 - An installation designed for military use. For example, used to perform military operations, initiate forward movements, and/or furnish supplies. Often protected by fortifications or natural advantages.",
+        "isA": "military",
+        "name": "military=installation",
+        "geometries": ["node", "area"],
+        "objectType": "tag",
+        "similarTo": {
+            "name": "landuse=installation",
+            "weight": 0.9
+        }
+    },
+    {
+        "description": "FCODE: SU004 - An area containing military quarters. Typically consisting of the residential sections of a military installation, where tactical training may be limited due to other activities that would endanger and disrupt personnel and their dependents.",
+        "isA": "military",
+        "name": "military=cantonment",
+        "objectType": "tag",
+        "similarTo": [
+            {"name": "landuse=installation", "weight": 0.9 },
+            {"name": "landuse=residential", "weight": 0.9 }
+        ]
+    }
+]
