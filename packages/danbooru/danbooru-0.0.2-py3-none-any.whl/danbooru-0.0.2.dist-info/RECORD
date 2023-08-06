@@ -1,0 +1,16 @@
+booru/__init__.py,sha256=lDUx8BHgWDOdhWSH0wXrB5qopYl8YIT7VB_ubHtrAuc,81
+booru/booru.py,sha256=duTftl4OxQVB2kTmvW5C1C-DhQr8b7QGfYovjfLyRi0,8552
+booru/exceptions.py,sha256=4P4Py43VspA4ivUib7hdJJmqWT7F0ub5ojS5seCsH_0,784
+booru/types/Danbooru_API.py,sha256=dXYTtqkR0Pk_ZyqLosKKQXTuLtvNRb54uEyt21p4exI,18890
+booru/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+danbooru/__init__.py,sha256=uKbBYs57ZmfWVn5J-H7xBa45ldWkdIsGZ66nc5rDV58,78
+danbooru/__vars__.py,sha256=RKOXEjIN8yIOXdpmQqd-Zvm6JKlB6XLGd_pRIy3uiKk,204
+danbooru/booru.py,sha256=ejuHiZNKhv2GFjJ8oFXob4krgWdNnqZ1EgNGsPMUhTk,8640
+danbooru/exceptions.py,sha256=4P4Py43VspA4ivUib7hdJJmqWT7F0ub5ojS5seCsH_0,784
+danbooru/types/Danbooru_API.py,sha256=IpN2PTkRdPZ2dBLZbV23TQeMg3QabGw8InAEvdk3JNU,18930
+danbooru/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+danbooru-0.0.2.dist-info/LICENSE,sha256=P5u3v1FKX_VxhyM1xI33x8akHqSVrNnyzS1cqCC1doM,1087
+danbooru-0.0.2.dist-info/METADATA,sha256=I-e_E92PObexlA9t5JLenhjD14feFymAJtOVApgDq2k,1937
+danbooru-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+danbooru-0.0.2.dist-info/top_level.txt,sha256=Cqy9QpdR83evi4jQbpBSMBmdxGweVrFIXZxf4Xr8610,9
+danbooru-0.0.2.dist-info/RECORD,,
