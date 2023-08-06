@@ -1,0 +1,10 @@
+hashcrack_jtr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hashcrack_jtr/config.py,sha256=TCgVBmuc8_FPZ49O82WUX-ZnCghNOxRg1NGIV322FoY,113
+hashcrack_jtr/john.py,sha256=sK_VVD4afC_Cb_wb5t7SllBsFBvDBcUasu6Ugw9dfEA,2937
+hashcrack_jtr/version.py,sha256=547sft9oSItprpPFn5bg6u_TyUN_al-Z7wHmVgEacnE,21
+hashcrack_jtr/static/john.tar.xz,sha256=NvQh6B2C8ZYM-8zS8PNWPSxgoDM2JoqCVqTKPbudV6E,32383096
+hashcrack_jtr-21.12.19.dist-info/METADATA,sha256=jRSgxbzocDwEc3qyAGHnkXW4bNuBvu2TH3OJrUu_agk,1304
+hashcrack_jtr-21.12.19.dist-info/WHEEL,sha256=WoE84lFhzpl5kFoOWeOKUr67l1o9c9Tie8ccxFQmzBU,98
+hashcrack_jtr-21.12.19.dist-info/entry_points.txt,sha256=Cff0yid2XlQ6beej1aQ4DkpPaP-3znonqxZ-JDfqPKs,302
+hashcrack_jtr-21.12.19.dist-info/top_level.txt,sha256=kUTkPqzz9PQAS3UKWh4VIWCI44EjQSM43a7ks4yIrXU,14
+hashcrack_jtr-21.12.19.dist-info/RECORD,,
