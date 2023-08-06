@@ -1,0 +1,9 @@
+README.md
+setup.py
+dicio/__init__.py
+dicio/dicio.py
+dicio/utils.py
+dicio_scrapper.egg-info/PKG-INFO
+dicio_scrapper.egg-info/SOURCES.txt
+dicio_scrapper.egg-info/dependency_links.txt
+dicio_scrapper.egg-info/top_level.txt
