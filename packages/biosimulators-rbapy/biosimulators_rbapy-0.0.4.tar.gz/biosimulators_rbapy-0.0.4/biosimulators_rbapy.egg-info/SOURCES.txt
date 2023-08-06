@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.optional.txt
+requirements.txt
+setup.cfg
+setup.py
+biosimulators_rbapy/__init__.py
+biosimulators_rbapy/__main__.py
+biosimulators_rbapy/_version.py
+biosimulators_rbapy/core.py
+biosimulators_rbapy.egg-info/PKG-INFO
+biosimulators_rbapy.egg-info/SOURCES.txt
+biosimulators_rbapy.egg-info/dependency_links.txt
+biosimulators_rbapy.egg-info/entry_points.txt
+biosimulators_rbapy.egg-info/requires.txt
+biosimulators_rbapy.egg-info/top_level.txt

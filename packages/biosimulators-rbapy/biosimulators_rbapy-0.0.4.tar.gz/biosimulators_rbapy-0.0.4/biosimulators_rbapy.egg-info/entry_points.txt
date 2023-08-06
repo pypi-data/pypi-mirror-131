@@ -1,0 +1,3 @@
+[console_scripts]
+biosimulators-rbapy = biosimulators_rbapy.__main__:main
+
