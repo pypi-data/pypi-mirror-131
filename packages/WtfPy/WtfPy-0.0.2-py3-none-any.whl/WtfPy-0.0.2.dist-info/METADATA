@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: WtfPy
+Version: 0.0.2
+Summary: A basic module to work with memory addresses and references.
+Home-page: https://github.com/Zyycyx/wtfpy
+Author: Zyycyx
+Author-email: peterschmidt5575@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sys
+
+# WtfPy
+
+
+### This module is created to:
+  - Track variables
+  - Search in variables
+  - Help unit testing
+  - Modify variables and log modifications
+  - Make the memory management easier
+  - Gather information about your memory usage (vhl)
+
+## Version 0.0.2
+### Functions
+```python
+	import wtf 
+
+	wtf.vhl # Variable handler class
+
+	wtf.vhl.CrtNewDB(variable, storedname) # Create new data block
+
+	wtf.vhl.GetAllDB() # Get all data blockS
+
+	wtf.vhl.SrcSingleDB(storedname) # Select single data block
+
+	wtf.vhl.DelSingleDB(storedname) # Delete single data block
+
+	# Displayname is always optional
+	wtf.RuntmVal(variable, displayname) # Get runtime data value
+	wtf.SetRuntmVal(variable, newvalue, displayname) # Set runtime data value
+	wtf.MemAddr(variable) # Get memory address of a variable
+	wtf.RefCheck(first_variable, second_variable) # Check if two variable are referencing to the same memory address
+	wtf.GetSize(variable) # Get size of a variable
+	wtf.GetMemoryUsage() # Get the memory usage of your program. Displaying in % and MB
+	wtf.EchoTurnOff() # Turn off comfirmation messages from VHL
+	wtf.DeRef(variable) # De-reference a variable
+	wtf.GetType(var) # Get type of variable
+```
+
+
+
+# Data blocks
+Data blocks are stored in a 2D array with their
+size, name(Set by user) and memory address.
+I implemented a standard data block just to check
+that it's working. You can remove it if you want.
+This data block is 'STD'.
+You can search inside this data block array, you
+can delete blocks and add blocks.
+
+
+
+
