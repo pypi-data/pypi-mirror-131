@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/Developing_Cockroach.egg-info/PKG-INFO
+src/Developing_Cockroach.egg-info/SOURCES.txt
+src/Developing_Cockroach.egg-info/dependency_links.txt
+src/Developing_Cockroach.egg-info/top_level.txt
+src/cockroach/__init__.py
+src/cockroach/developing_cockroach.py

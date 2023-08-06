@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: Developing-Cockroach
+Version: 0.2.2
+Summary: This is a simple package for outputting data to the terminal replacing the print function
+Home-page: https://github.com/farioso-fernando/developer
+Author: Farioso Fernando
+Author-email: farioso.f@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/farioso-fernando/developer/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is a simple package for producing colored logs.
+
+**Usage example:**
+
+* from developer import developer*
+* developer.log("Hello World!")*
+
+## License
+
+MIT License
+
+
