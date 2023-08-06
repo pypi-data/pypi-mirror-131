@@ -1,0 +1,10 @@
+aws_cdk/aws_healthlake/__init__.py,sha256=7vAaIZwZGo2PDZvcugQhZogXcvRzpA9Dm-FymJcEBWg,25028
+aws_cdk/aws_healthlake/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_healthlake/_jsii/__init__.py,sha256=8G1U8Oa93VVf3jKbHzIW6Ar_H0BbhZ_9CABrU47spU4,368
+aws_cdk/aws_healthlake/_jsii/aws-healthlake@1.136.0.jsii.tgz,sha256=-HoqMCWjeIlgtY47M6G3F4BjNgNfX-2dS0bGE3RSbrU,22729
+aws_cdk.aws_healthlake-1.136.0.dist-info/LICENSE,sha256=PPdRlpoLCV1CRrCV1eKpp3m0lNjchFAP4a9zfc8tRLo,11391
+aws_cdk.aws_healthlake-1.136.0.dist-info/METADATA,sha256=LsfSTBqRr0w7EKAGdLVQ3k08Vqga-YajNlmRImLwe8Y,2458
+aws_cdk.aws_healthlake-1.136.0.dist-info/NOTICE,sha256=xo56krus2e5ShfXqz_B7vuvGcMn_D0F7TjjpfTz8YMw,113
+aws_cdk.aws_healthlake-1.136.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aws_cdk.aws_healthlake-1.136.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_healthlake-1.136.0.dist-info/RECORD,,
