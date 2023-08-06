@@ -1,0 +1,4 @@
+pbr
+aprsd>=2.5.0
+sentry-sdk
+blinker
