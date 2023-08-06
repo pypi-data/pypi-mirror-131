@@ -1,0 +1,8 @@
+LICENSE.txt
+MANIFEST.in
+setup.py
+geography/__init__.py
+geography.egg-info/PKG-INFO
+geography.egg-info/SOURCES.txt
+geography.egg-info/dependency_links.txt
+geography.egg-info/top_level.txt
