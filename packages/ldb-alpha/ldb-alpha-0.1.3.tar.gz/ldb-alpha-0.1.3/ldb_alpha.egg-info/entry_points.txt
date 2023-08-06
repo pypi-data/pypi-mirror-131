@@ -1,0 +1,3 @@
+[console_scripts]
+ldb = ldb.main:main
+
