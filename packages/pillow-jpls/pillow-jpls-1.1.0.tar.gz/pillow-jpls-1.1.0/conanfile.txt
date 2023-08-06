@@ -1,0 +1,12 @@
+[requires]
+charls/2.2.0
+pybind11/2.8.1
+fmt/8.0.1
+eigen/3.4.0
+
+[generators]
+cmake
+cmake_find_package
+
+[options]
+charls:shared=False
