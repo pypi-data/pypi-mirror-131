@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+wideryolo/main.py
+wideryolo/setup.py
+wideryolo/wider_to_xml.py
+wideryolo/xml_to_yolo.py
+wideryolo.egg-info/PKG-INFO
+wideryolo.egg-info/SOURCES.txt
+wideryolo.egg-info/dependency_links.txt
+wideryolo.egg-info/requires.txt
+wideryolo.egg-info/top_level.txt
