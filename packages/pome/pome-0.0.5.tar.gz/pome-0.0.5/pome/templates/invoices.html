@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block main_title %}
+Invoices
+{% endblock %}
+{% block content %}
+
+<header class="w-full flex justify-end">
+  <a href="/invoices/new">
+    <div class="btn btn-success text-lg font-bold">New Invoice</div>
+  </a>
+</header>
+
+<div class="mt-10">
+  <table class="w-full text-lg text-left">
+    <thead>
+      <th>#</th>
+      <th>Date</th>
+      <th>Client</th>
+      <th>Tags</th>
+      <th>Status</th>
+      <th>Transactions</th>
+    </thead>
+
+    <tbody>
+
+      {% if not pending_invoices and not paid_invoices %}<tr>
+        <td colspan="4">No invoice found.</td>
+      </tr>
+      {% endif %}
+      {% for invoice_id, pending_invoice in pending_invoices %}
+      <tr>
+        <td><a href="/invoices/recorded/{{invoice_id}}" class="normal-link">{{pending_invoice.invoice_number}}</a></td>
+        <td> <span data-date="{{all_transactions[pending_invoice.transactions.bill].date}}"></span>
+        </td>
+        <td>{{pending_invoice.client}}</td>
+        <td>{% for tag in pending_invoice.tags %} {{tag}} {%endfor%}</td>
+        <td><span class="dot" style="background-color: orange; height: 14px; width: 14px;" title="Pending"></span></td>
+        <td><a href="/invoices/recorded/{{pending_invoice.transactions.bill}}" class="normal-link"
+            target="_blank">{{pending_invoice.transactions.bill}}</a>
+        </td>
+      </tr>
+      {% endfor %}
+
+      {% for invoice_id, paid_invoice in paid_invoices %}
+      <tr>
+        <td class="truncate" style="max-width: 150px;"><a href="/invoices/recorded/{{invoice_id}}"
+            class="normal-link truncate" title="{{paid_invoice.invoice_number}}">{{paid_invoice.invoice_number}}</a>
+        </td>
+        <td> <span data-date="{{all_transactions[paid_invoice.transactions.bill].date}}"></span>
+        </td>
+        <td>{{paid_invoice.client}}</td>
+        <td>{% for tag in paid_invoice.tags %} {{tag}} {%endfor%}</td>
+        <td><span class="dot" style="background-color: springgreen; height: 14px; width: 14px;" title="Pending"></span>
+        </td>
+        <td class="text-sm">
+          <a href="/transactions/recorded/{{paid_invoice.transactions.bill}}" class="normal-link"
+            target="_blank">{{paid_invoice.transactions.bill}}</a>,
+          <a href="/transactions/recorded/{{paid_invoice.transactions.payment}}" class="normal-link"
+            target="_blank">{{paid_invoice.transactions.payment}}</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+
+  </table>
+</div>
+
+<script lang="js">
+  mountDates();
+</script>
+
+{% endblock %}

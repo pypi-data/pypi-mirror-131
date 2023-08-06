@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block main_title %}
+Journal
+{% endblock %}
+
+{% block content_header %}
+<a href="/"><span class="normal-link">← Back to accounts</span></a>
+{% endblock %}
+
+{% block content %}
+
+<div id="tx-error" class="hidden mb-10 bg-red-500 rounded-sm text-white p-5">
+
+</div>
+
+<div class="mt-10">
+  {% if transactions %}
+  <table class="w-full">
+    <thead class="text-left text-lg">
+      <th># <span class="cursor-pointer"
+          title="Transactions are numbered following the date at which they were recorded in pome.">❓</span>
+      </th>
+      <th>Date</th>
+      <th>Amount ({{CURRENCY_SYMBOL[company.accounts_currency_code]}})</th>
+      <th>Narrative</th>
+
+    </thead>
+    <tbody id="tx-lines">
+
+      {% for tx_id, tx in transactions %}
+      <tr>
+        <td class="p-1 w-1/5"><a href="/transactions/recorded/{{tx.id}}" class="normal-link"
+            title="{{tx.date_recorded}}">Transaction
+            {{order_recorded(tx_id)}}</a>
+        </td>
+        <td class="p-1 w-1/5"><span data-date="{{tx.date}}"></span></span>
+        </td>
+        <td class="p-1 w-1/5">{{tx.total_amount(formatted=True)}}</td>
+        <td class="p-1 py-2 text-sm w-1/5">{{tx.narrative}}</td>
+
+
+      </tr>
+
+      {% endfor %}
+
+
+    </tbody>
+  </table>
+  {% else %}
+  <div>
+    No transaction found.
+  </div>
+  {% endif %}
+
+</div>
+<script lang="js">
+  mountDates();
+</script>
+{% endblock %}
