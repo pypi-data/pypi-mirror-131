@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/gwak.py
+src/gwak.egg-info/PKG-INFO
+src/gwak.egg-info/SOURCES.txt
+src/gwak.egg-info/dependency_links.txt
+src/gwak.egg-info/entry_points.txt
+src/gwak.egg-info/top_level.txt
+src/libgwak/__init__.py
+src/libgwak/manifest.py
+src/libgwak/zy.py
