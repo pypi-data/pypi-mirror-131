@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: fastash
+Version: 0.0.9
+Summary: Fast Averaged Shifted Histogram module.
+Home-page: https://gitlab.inria.fr/fmazy/fastash
+Author: François-Rémi Mazy
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.20.3)
+
+# FastASH
+Fast Averaged Shifted Histograms.
+
+Density estimation which approximate a triangular Kernel Density Estimation (KDE.
+Cython inside.
+
+
+## Getting Started
+
+Example usage:
+
+For a standard PDF
+~~~~~~~~~~~~~~~~~~
+
+    from scipy import stats
+    import numpy as np
+    from matplotlib import pyplot as plt
+    from fastash import ASH
+
+    n = 10**5
+    d = 3
+    mean = np.zeros(d)
+    cov = np.diag(np.ones(d))
+    X = stats.multivariate_normal.rvs(mean=mean, cov=cov, size=n)
+
+    ash = ASH(q=100)
+    ash.fit(X)
+
+    Y = np.zeros((300, d))
+    Y[:,0] = np.linspace(-4,4,300)
+    f = ash.predict(Y)
+
+    plt.plot(Y[:,0], stats.multivariate_normal.pdf(Y, mean=mean, cov=cov), label='exact')
+    plt.plot(Y[:,0], f, label='FastASH')
+    plt.legend()
+    plt.show()
+
+## help for packaging
+
+script files are provided and based on this tutorial :
+https://levelup.gitconnected.com/how-to-deploy-a-cython-package-to-pypi-8217a6581f09
+
+
+
