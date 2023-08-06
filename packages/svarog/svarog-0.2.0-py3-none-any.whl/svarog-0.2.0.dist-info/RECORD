@@ -1,0 +1,15 @@
+svarog/__init__.py,sha256=Aw9yICwt52IqgMV-Zw3dJdZEUtPv9UWmW2l7XKtVuvk,289
+svarog/checks.py,sha256=6We6y9Y8Nc7Fh2su1mLCvLu1HUadll95sVUxwbmAkNs,1895
+svarog/compat.py,sha256=w0SjNc2FriNPnl1EWGitqYhI8KSLIKoL7cYVYloUrtU,695
+svarog/dispatchers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+svarog/dispatchers/functional.py,sha256=fxPrjeWdnC9e3JPhma81xFpcCvyo9fE_BbXhilIOk1I,1032
+svarog/dispatchers/multi.py,sha256=WAPE4JmYzBPSAseE7MgD-ATe0WNMw8shEwIS4i-UiSU,1161
+svarog/forges.py,sha256=6Sd8fNdJ_RcGYLvOqxFPNNCsTfQsUTlDQtWQnuZQf5k,2845
+svarog/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+svarog/svarog.py,sha256=qCmoO0US1MFS7TDX21IfUdIwpnmtmZYN8yw3efAM6sA,3625
+svarog/tools.py,sha256=xwCjX6lBkJqShGi81o-il9-Ns2GaNFuuiDablpm4NlM,242
+svarog/types.py,sha256=MEP9wZULtm03qzySidc1Q4VIk9isjvAfIwAsPSbQrZA,294
+svarog-0.2.0.dist-info/LICENSE,sha256=nPWc48GEFb_QHwjGUwqadShnj_fAAdfjQbO5cbAin-Q,1077
+svarog-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+svarog-0.2.0.dist-info/METADATA,sha256=mehXCofxoKIS4kqDxMobsxDm9x0MfJdBhkY3jM0kyQk,4575
+svarog-0.2.0.dist-info/RECORD,,
