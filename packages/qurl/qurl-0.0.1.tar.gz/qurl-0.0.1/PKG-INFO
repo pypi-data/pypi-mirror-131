@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: qurl
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/nosarthur/qurl
+Author: Dong Zhou
+Author-email: zhou.dong@gmail.com
+License: MIT
+Description: # qurl
+        Python sibling of the Haskell ourl project
+        
+        https://github.com/nosarthur/ourl
+        
+Keywords: git,cui,command-line
+Platform: linux
+Platform: osx
+Platform: win32
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown

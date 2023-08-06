@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+qurl/__init__.py
+qurl/__main__.py
+qurl/util.py
+qurl.egg-info/PKG-INFO
+qurl.egg-info/SOURCES.txt
+qurl.egg-info/dependency_links.txt
+qurl.egg-info/entry_points.txt
+qurl.egg-info/top_level.txt

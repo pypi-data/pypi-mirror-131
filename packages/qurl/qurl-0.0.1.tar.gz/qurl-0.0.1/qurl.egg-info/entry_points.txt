@@ -1,0 +1,3 @@
+[console_scripts]
+qurl = qurl.__main__:main
+
