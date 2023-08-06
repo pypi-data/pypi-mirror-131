@@ -1,0 +1,18 @@
+{
+    "module": {
+        "_base": "linear",
+    },
+    "config": {
+        "input_size": "*@*",
+        "output_size": "*@*",
+        "pool": null,
+        "output_map": {},
+        "input_map": {},
+    },
+    "_link":{
+        "config.input_size": ["module.config.input_size"],
+        "config.output_size": ["module.config.output_size"],
+        "config.pool": ["module.config.pool"],
+    },
+    "_name": "linear",
+}
