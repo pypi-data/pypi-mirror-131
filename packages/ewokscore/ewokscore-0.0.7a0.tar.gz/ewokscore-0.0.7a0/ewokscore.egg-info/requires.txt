@@ -1,0 +1,17 @@
+numpy
+networkx
+silx
+
+[dev]
+pytest
+matplotlib
+black
+flake8
+
+[doc]
+sphinx
+sphinxcontrib-mermaid
+
+[test]
+pytest
+matplotlib
