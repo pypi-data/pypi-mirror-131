@@ -1,0 +1,10 @@
+instanceTuner/__init__.py,sha256=VOrJB6fZkBJwmV0WCZZC_XkDfyaGQHlNqjeGbT5PTY4,23
+instanceTuner/instanceTuner.py,sha256=8XIoJcu7X7KS9HsR816dLM31QBnusb24hqPIXkEd54k,13116
+instanceTuner/operator.py,sha256=l91phnUi0BkXPoMrL2wOTQ2dNJs-MTqmRfkoD7cgej8,17933
+instanceTuner/set.py,sha256=b4JMxa28L8fm-mfL83DGFne-USmiMU7kTTKSfctpfMk,12762
+instanceTuner/setInstance.py,sha256=HkRUC2TTLfbiY_9HWjV6RcF6gvXmHfHooeqbrlJhOUE,14114
+instanceTuner-1.6.2.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+instanceTuner-1.6.2.dist-info/METADATA,sha256=5IVmrujGTjGskaqeUCgejxFXz0t5AiyrE40gdJLEpMc,1613
+instanceTuner-1.6.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+instanceTuner-1.6.2.dist-info/top_level.txt,sha256=N75Eh_CRTr85GWXv0PrQ9vWNxLzFrXnNBr7XqHWlZ54,14
+instanceTuner-1.6.2.dist-info/RECORD,,
