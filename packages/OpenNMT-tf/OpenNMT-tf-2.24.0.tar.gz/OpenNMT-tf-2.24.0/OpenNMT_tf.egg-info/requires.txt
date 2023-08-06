@@ -1,0 +1,17 @@
+ctranslate2<3,>=2.9.0
+pyonmttok<2,>=1.29.0
+pyyaml<7,>=5.3
+rouge<2,>=1.0
+sacrebleu<2.1,>=1.5.0
+tensorflow-addons<0.16,>=0.14
+
+[tensorflow]
+tensorflow<2.8.0,>=2.4.0
+tensorflow-text<2.8.0,>=2.4.0
+
+[tests]
+black==21.7b0
+flake8==3.9.*
+isort<6,>=5.9
+parameterized==0.8.1
+pytest-cov
