@@ -1,0 +1,11 @@
+libgenesis/__init__.py,sha256=uQp01pRadRdqrUgqVeZUacVel8CNMVmDycRwJNXCcvo,206
+libgenesis/download.py,sha256=NzDDkV0ha_d2jnr-oaLeP4pNaCJebxPFFaXO7y6JKA8,5733
+libgenesis/search.py,sha256=_A_sxyJVcYn4A2yFd7OM301_rbHgOXVfp2YQZHy4BJo,14427
+libgenesis/utils.py,sha256=QhEv3WcVgmhnoKoL22D1QXDiDlxD6xowBjZw4ezCJkI,1017
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/libgen_test.py,sha256=k-Yu-F2MdLBen4cBqzd44kpc30HXC5gCkp6v2yYpRWk,1770
+libgenesis-0.1.8.dist-info/LICENSE,sha256=PQO-e9Td8WPE6VbgG-w9adsBbg7Xl7Bv6chSEkTAGCQ,1065
+libgenesis-0.1.8.dist-info/METADATA,sha256=HcrENrwdq57iyKQhL7Yz6kZL0lU-Jm4n0cq-AwkFs6s,6707
+libgenesis-0.1.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+libgenesis-0.1.8.dist-info/top_level.txt,sha256=QnahX8wONZ--qOK2zKu6-i74Qmoyctw1cZemD8m2Brs,17
+libgenesis-0.1.8.dist-info/RECORD,,
