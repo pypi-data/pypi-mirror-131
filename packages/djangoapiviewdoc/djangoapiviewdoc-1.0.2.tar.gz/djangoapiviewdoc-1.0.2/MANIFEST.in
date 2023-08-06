@@ -1,0 +1,6 @@
+include README.md
+recursive-include tests/ *
+recursive-include apiview_doc/static *.js *.css *.png *.ico *.eot *.svg *.ttf *.woff *.woff2
+recursive-include apiview_doc/templates *.html schema.js
+global-exclude __pycache__
+global-exclude *.py[co]
