@@ -1,0 +1,106 @@
+:root {
+  --body-color: #d8d4d0;
+  --body-bg-color: #18191a;
+}
+
+body {
+  color: var(--body-color);
+  background-color: var(--body-bg-color);
+  padding: 0;
+  font-family: monospace;
+}
+
+
+.collapse-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.collapse-item + .collapse-item {
+  margin-top: 0.5rem;
+}
+
+
+.collapse-button {
+  width: 100%;
+  text-align: left;
+  vertical-align: middle;
+  padding: 0.5rem 0.75rem;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #d8d4d0;
+  background-color: #222223;
+  border: 0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+}
+
+.collapse-button::before {
+  content: "+";
+  height: fit-content;
+  float: left;
+  margin-right: 0.75rem;
+  -webkit-text-stroke: 0.25px #8fd98f;
+  transform: scale(1.5) translate(0rem, -0.1rem);
+  transition: transform 0.2s ease-in-out, -webkit-text-stroke 0.2s ease-in-out;
+}
+
+.collapse-button:not(.collapsed)::before {
+  transform: rotate(45deg) scale(1.5) translate(0rem, -0.1rem);
+  -webkit-text-stroke: 0.25px #d9968f;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collapse-button {
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collapse-button::after {
+    transition: none;
+  }
+}
+
+.collapse-button:hover {
+  background-color: #303031;
+}
+
+.collapse-button:focus {
+  background-color: #383633;
+}
+
+
+.collapse-body {
+  padding: 0 0.75rem 0.75rem 0.75rem;
+  outline: 2px solid #222223;
+  outline-offset: -2px;
+}
+
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collapsing {
+    transition: none;
+  }
+}
+
+
+tr:hover {
+  background-color: inherit !important;
+}
+
+
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td .dash-cell-value.unfocused::selection {
+  background-color: highlight !important;
+  color: highlighttext !important;
+}

@@ -1,0 +1,3 @@
+[console_scripts]
+vuabl = vuabl.vuabl:run
+
