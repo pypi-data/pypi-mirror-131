@@ -1,0 +1,13 @@
+{
+	"ip": "tob44.bigdata.lycc.qihoo.net",
+	"port": "9000",
+	"user":"default",
+	"password":"",
+	"dbip": "10.228.212.78",
+	"dbport": "26257",
+	"dbuser": "root",
+	"dbpassword": "",
+	"dbtable": "data_platform_dev",
+	"sslMode": "disable",
+	"ch_max_query": "max_query_size=100000000"
+}
