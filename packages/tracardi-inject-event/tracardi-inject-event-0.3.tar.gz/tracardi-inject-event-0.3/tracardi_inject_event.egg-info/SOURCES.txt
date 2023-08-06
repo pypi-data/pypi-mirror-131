@@ -1,0 +1,16 @@
+.gitignore
+LICENSE.md
+MANIFEST.in
+README.md
+build.sh
+requirements.txt
+setup.py
+tracardi_inject_event/plugin.py
+tracardi_inject_event.egg-info/PKG-INFO
+tracardi_inject_event.egg-info/SOURCES.txt
+tracardi_inject_event.egg-info/dependency_links.txt
+tracardi_inject_event.egg-info/requires.txt
+tracardi_inject_event.egg-info/top_level.txt
+tracardi_inject_event/model/configuration.py
+tracardi_inject_event/model/__pycache__/configuration.cpython-38.pyc
+tracardi_inject_event/test/manual_test.py
