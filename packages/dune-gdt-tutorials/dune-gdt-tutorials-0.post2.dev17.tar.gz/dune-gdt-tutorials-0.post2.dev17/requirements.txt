@@ -1,0 +1,8 @@
+dune-gdt
+sphinx
+myst-nb
+python-slugify
+sphinxcontrib-bibtex
+sphinx-material
+matplotlib
+check_reqs

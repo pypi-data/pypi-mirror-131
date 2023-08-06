@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: dune-gdt-tutorials
+Version: 0.post2.dev17
+Summary:  
+Home-page: https://zivgitlab.uni-muenster.de/ag-ohlberger/dune-community/dune-gdt-tutorials/
+Author: dune-gdt developers
+Author-email: main.developers@pymor.org
+Maintainer: Rene Fritze
+Maintainer-email: rene.fritze@wwu.de
+License: LICENSE.txt
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# dune-gdt-tutorials
+
+

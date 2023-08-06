@@ -1,0 +1,4 @@
+dune-gdt~=2021.1
+dune-xt~=2021.1
+sphinx
+myst-nb
