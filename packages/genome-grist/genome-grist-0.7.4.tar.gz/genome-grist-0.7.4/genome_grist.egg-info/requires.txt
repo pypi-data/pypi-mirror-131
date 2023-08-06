@@ -1,0 +1,10 @@
+snakemake==6.6.1
+click<8,>=7
+lxml==4.6.4
+pandas<2,>1
+
+[test]
+pytest~=5.1.2
+pytest-cov
+pytest-dependency
+sourmash>=4.2.0<5
