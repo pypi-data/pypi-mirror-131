@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: ibge-api
+Version: 0.1.0
+Summary: Simple lib to get city informations from IBGE
+Home-page: https://ibge-api.readthedocs.io/
+Author: Pablo Bispo
+Author-email: pablofernando@live.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+Requires-Dist: unidecode
+
+# IBGE API
+Simple library to get City information from IBGE
+
+### Installation
+```
+pip install ibge-api
+```
+
+### Get started
+How to get data from a city with this lib:
+
+```Python
+from ibge_api import IbgeAPI
+
+# Instantiate a IbgeAPI object
+ibge = IbgeAPI('05513970')
+
+# Call the get_city_information method
+city_data = ibge.get_city_information()
+
+# Call the city_data property
+city_data = ibge.city_data
+```
+
