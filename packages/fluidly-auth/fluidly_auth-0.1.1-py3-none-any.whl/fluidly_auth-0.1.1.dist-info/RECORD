@@ -1,0 +1,12 @@
+fluidly_auth-0.1.1-py3.7-nspkg.pth,sha256=ISOTwBOp5SRC3otZQxAtetjR67KrKaf_3vgFZnRwKW4,544
+fluidly/auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fluidly/auth/jwt.py,sha256=tU50OrLPhl7oZAyiXnuxI8owh2Imj4gqJg3VaruqUQY,2395
+fluidly/auth/jwt_requests.py,sha256=Dr7rLmT7dpFSt1joK6tEgwjKzsKI9EcLrtD4Snoe-uo,390
+fluidly/auth/permissions.py,sha256=AFuLu38DIK7mYOPIPFMCqr7he9eTmhyHrbHZXv_Egms,2695
+fluidly/auth/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fluidly/auth/tests.py,sha256=wtds9WPst3sZp_kBJBbZj8_w-fkRuzNsZIfwBEK7fnY,1431
+fluidly_auth-0.1.1.dist-info/METADATA,sha256=dH0IdI4yUUHrdjmB9yq0jU_htvfqDnEpUiGkqnU91u0,396
+fluidly_auth-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fluidly_auth-0.1.1.dist-info/namespace_packages.txt,sha256=DWXtAoT7iFTzk8XaOhatro7UKlWS6Ggjc5M7xjp1KvM,8
+fluidly_auth-0.1.1.dist-info/top_level.txt,sha256=DWXtAoT7iFTzk8XaOhatro7UKlWS6Ggjc5M7xjp1KvM,8
+fluidly_auth-0.1.1.dist-info/RECORD,,
