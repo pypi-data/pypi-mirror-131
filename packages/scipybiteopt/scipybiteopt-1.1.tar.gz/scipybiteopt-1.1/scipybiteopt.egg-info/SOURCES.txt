@@ -1,0 +1,15 @@
+README.md
+setup.py
+scipybiteopt/__init__.py
+scipybiteopt/_scipywrapper.py
+scipybiteopt/biteaux.h
+scipybiteopt/biteopt.h
+scipybiteopt/biteopt_py_ext.cpp
+scipybiteopt/biteoptort.h
+scipybiteopt/nmsopt.h
+scipybiteopt/spheropt.h
+scipybiteopt.egg-info/PKG-INFO
+scipybiteopt.egg-info/SOURCES.txt
+scipybiteopt.egg-info/dependency_links.txt
+scipybiteopt.egg-info/requires.txt
+scipybiteopt.egg-info/top_level.txt
