@@ -1,0 +1,10 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+oop_stpprofile/Python_oop.py
+oop_stpprofile/__init__.py
+oop_stpprofile.egg-info/PKG-INFO
+oop_stpprofile.egg-info/SOURCES.txt
+oop_stpprofile.egg-info/dependency_links.txt
+oop_stpprofile.egg-info/top_level.txt
