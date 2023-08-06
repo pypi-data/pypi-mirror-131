@@ -1,0 +1,12 @@
+report_not_covered_lines/__init__.py,sha256=TC2X1BJw4vzeGvbx1Z8JHC9Rgfp6k5Izm6A_feeeMHk,122
+report_not_covered_lines/__main__.py,sha256=2RSCQ7d4lc6CwD-rlGn9UicPFg-P5du7ZD_yh-kuBEU,57
+report_not_covered_lines/report_not_covered_lines.py,sha256=1wOrg7TdhGkBwqY2Xq6yNXJaM3HmfGjIjphjaKZ__q8,1125
+review_style_gerrit/__init__.py,sha256=TC2X1BJw4vzeGvbx1Z8JHC9Rgfp6k5Izm6A_feeeMHk,122
+review_style_gerrit/__main__.py,sha256=2RSCQ7d4lc6CwD-rlGn9UicPFg-P5du7ZD_yh-kuBEU,57
+review_style_gerrit/review_style_gerrit.py,sha256=sNwNJhbrH1DNGkL4TSPh2BoRVoXN66vC339wuOsvSYQ,1276
+review_style_gerrit-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+review_style_gerrit-0.0.4.dist-info/METADATA,sha256=Ck6yF7a7beZRH4pzpEc0ZJ74NlmTJT9wutVt6gpsjFY,918
+review_style_gerrit-0.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+review_style_gerrit-0.0.4.dist-info/entry_points.txt,sha256=7dFXRRrdpLBDDzoki2Qne7xuwRwAhuQ38iirym0-4cg,66
+review_style_gerrit-0.0.4.dist-info/top_level.txt,sha256=Xa9CECTYfjquUFLcFr0bGXXDErd7SdnCSEyW-8RQIbo,20
+review_style_gerrit-0.0.4.dist-info/RECORD,,
