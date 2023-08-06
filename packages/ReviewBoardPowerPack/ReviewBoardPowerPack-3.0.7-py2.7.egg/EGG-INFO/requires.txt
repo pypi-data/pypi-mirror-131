@@ -1,0 +1,12 @@
+diff-match-patch>=20121119
+paramiko
+pdfminer.six==20191020
+python-ntlm3
+
+[:python_version == "2.7.*"]
+boto3<=1.7.999,>=1.4.7
+cryptography<=3.3.999,>=1.8.1
+
+[:python_version >= "3.6"]
+boto3>=1.4.7
+cryptography>=1.8.1
