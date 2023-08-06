@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "cologne_phonetics"
+version = "1.3.1"
+description = "Python implementation of the cologne-phonetics algorithm"
+authors = ["Janek Nouvertné"]
+license = "MIT"
+readme = "README.rst"
+classifiers = [
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^21.12-beta.0"
+mypy = "^0.920"
+
+
+[tool.mypy]
+strict = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
