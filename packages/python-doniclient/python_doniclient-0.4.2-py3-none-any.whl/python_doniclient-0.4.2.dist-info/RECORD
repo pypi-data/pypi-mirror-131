@@ -1,0 +1,12 @@
+doniclient/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+doniclient/osc/__init__.py,sha256=AXuaKdgI6rFXg3I4VaaGxeS49x6kby8VVTEExQPBGiA,585
+doniclient/osc/availability.py,sha256=Dy8lTr4qg3LqJgd8ZGYMuNikuFzO4iWZUt1-e5VjRYM,4365
+doniclient/osc/cli.py,sha256=StFb1-9vm4FMiipXx6ueLGlTvogebmoLYhPeIOeAWzQ,12716
+doniclient/osc/plugin.py,sha256=dGUQUfC-D2mRiWnEzxzQf6LkjzWH4nCe4vQQtnAuCYc,1917
+doniclient/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doniclient/tests/test_doniclient.py,sha256=-gWBKITFiLdKgZDDGmiztGieRTuDJbWWHhgVJr7_ZfE,3046
+doniclient/v1/client.py,sha256=whOXpGKi9_V8QJKoO_Fd1kOLCZD0bqmuZoMWQthxOSQ,1682
+python_doniclient-0.4.2.dist-info/entry_points.txt,sha256=oVimiqoLf63j1CTItiIR0-zvPSFcjzTi_tYp_rWzDZc,742
+python_doniclient-0.4.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+python_doniclient-0.4.2.dist-info/METADATA,sha256=9eHXFqZQ1YPGRMgEHLfAfLddyJEoe9SpTPUM6qDEOFA,1251
+python_doniclient-0.4.2.dist-info/RECORD,,
