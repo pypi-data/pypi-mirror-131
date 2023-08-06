@@ -1,0 +1,9 @@
+README.rst
+setup.cfg
+setup.py
+tro/__init__.py
+tro.egg-info/PKG-INFO
+tro.egg-info/SOURCES.txt
+tro.egg-info/dependency_links.txt
+tro.egg-info/not-zip-safe
+tro.egg-info/top_level.txt
