@@ -1,0 +1,23 @@
+name: CI Testing
+on: push
+
+jobs:
+  ci:
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.8, 3.9]
+        os: [ubuntu-20.04]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install pipenv into version ${{ matrix.python-version}}
+        run: pip install pipenv
+      - name: Run Tests
+        run: |
+          pipenv --python "${{ matrix.python-version }}"
+          pipenv install --dev
+          pipenv run pytest

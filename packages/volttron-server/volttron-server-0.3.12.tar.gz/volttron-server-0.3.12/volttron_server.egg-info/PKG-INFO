@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: volttron-server
+Version: 0.3.12
+Summary: Server component for VOLTTRON
+Home-page: UNKNOWN
+Author: The VOLTTRON Team
+Author-email: volttron@pnnl.gov
+License: Apache 2
+Project-URL: Bug Reports, https://github.com/VOLTTRON/volttron-server/issues
+Project-URL: Source, https://github.com/VOLTTRON/volttron-server/
+Keywords: volttron, iot platform, building automation, agent framework
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+License-File: AUTHORS
+
+Server component for VOLTTRON
+

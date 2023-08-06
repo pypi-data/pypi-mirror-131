@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "volttron-server"
+
+[dev-packages]
+pipenv-setup = "*"
+flake8 = ">=3.9.2"
+pytest = ">=6.2.4"
+pre-commit = ">=2.14.1"
+twine = "*"
+mock = "*"
+
+[requires]
+python_version = "3.8.10"
+
+[packages]
+importlib-metadata = "==4.8.2"
+volttron-client = ">=0.3.8"
+pbr = "*"
+wheel = "*"

@@ -1,0 +1,29 @@
+---
+name: Publish Python package
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+jobs:
+  release_job:
+    env:
+      # These are defined in the secrets on github at the Organizational level.
+      TWINE_USERNAME: ${{ secrets.PYPI_USER_NAME }}
+      TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+      # TWINE_PASSWORD: ${{ secrets.TEST_PYPI_TOKEN }}
+
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.8.10
+      - name: Install pipenv
+        run: pip install pipenv
+      - name: Create package
+        run: |
+          pipenv install
+          pipenv run pip install twine
+          rm dist/* -rf
+          pipenv run python setup.py bdist_wheel sdist
+          pipenv run twine upload --verbose -r pypi --non-interactive dist/*
