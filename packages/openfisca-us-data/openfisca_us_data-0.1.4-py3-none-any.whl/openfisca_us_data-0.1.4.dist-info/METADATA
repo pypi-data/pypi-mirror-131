@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: openfisca-us-data
+Version: 0.1.4
+Summary: A Python package to manage OpenFisca-US-compatible microdata
+Home-page: http://github.com/PolicyEngine/openfisca-us-data
+Author: Nikhil Woodruff
+Author-email: nikhil.woodruff@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: pathlib
+Requires-Dist: tqdm
+Requires-Dist: tables
+Requires-Dist: h5py
+Requires-Dist: synthimpute
+Requires-Dist: pytest
+Requires-Dist: pytest-dependency
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: autopep8 ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: openfisca-us ; extra == 'dev'
+Requires-Dist: pyyaml ; extra == 'dev'
+
+UNKNOWN
+
+
