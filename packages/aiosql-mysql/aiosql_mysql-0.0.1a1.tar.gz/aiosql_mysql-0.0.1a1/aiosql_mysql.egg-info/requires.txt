@@ -1,0 +1,6 @@
+
+[asyncmy]
+asyncmy
+
+[pymysql]
+pymysql[rsa]
