@@ -1,0 +1,5 @@
+from .scratchdir_dialogue import ScratchDirDialogue
+from .open_project_dialogue import OpenProjectDialogue
+from .new_file_dialogue import NewFileDialogue
+from .add_sound_dialogue import SoundDialogue
+from .add_picture_dialogue import AddPictureDialogue
