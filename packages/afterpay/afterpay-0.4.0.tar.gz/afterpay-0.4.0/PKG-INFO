@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: afterpay
+Version: 0.4.0
+Summary: Python library for interacting with Afterpay API
+Home-page: https://github.com/nyneava/afterpay-python
+Author: nyneava
+Author-email: nyneava@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# afterpay-python
+Python library for interacting with Afterpay API, based on the `braintree_python` project
+
+## Note
+This library may be functional but is still in development. Features still need to be tested
+and code refactored.
+
+## Dependencies
+* requests
+* certifi
+
+This project has only been tested with Python 3.9
+
