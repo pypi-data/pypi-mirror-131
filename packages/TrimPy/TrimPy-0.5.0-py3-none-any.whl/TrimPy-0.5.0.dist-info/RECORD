@@ -1,0 +1,13 @@
+TrimPy/__init__.py,sha256=aVqOCV7nAaxjtoIaD81MQ8mfy_lSKCsCRtpAVYfbxmg,835
+TrimPy/__main__.py,sha256=dVGhxQy1r_2WDlcv7cEdTsxbb_F3NZdCmKA2QOOin8k,7569
+TrimPy/enum/animation.py,sha256=iK3q2V3p_0OfOYWpqZbxZJBr-ONZ9iByjFrHkYqPm3g,939
+TrimPy/enum/mode.py,sha256=zisQCS9nWIIykv98-q82ueTXY7y0YweJ60O2h1dWJhQ,722
+TrimPy/enum/pattern.py,sha256=ydDwX-L-UslLukcvfA-aZqS3kZqW4T0cMjz_0IGGbLw,1080
+TrimPy/enum/trim.py,sha256=7GJFObI0-7auwdrhd4Zrw3gVNGYu8CGpSayt3dXZjZY,908
+TrimPy/messages/helpers.py,sha256=p8O9YOqHhBG99Ii2amtFvm0YV4wSpkpHXCDJGC-UMwo,860
+TrimPy/messages/message.py,sha256=jYmxWS4CxNyXdlQbsUYNtiwv5WMTF2FW5MavJvYbggc,5797
+TrimPy-0.5.0.dist-info/LICENSE.md,sha256=M7wm1EmMGDtwPRdg7kW4d00h1uAXjKOT3HFScYQMeiE,34916
+TrimPy-0.5.0.dist-info/METADATA,sha256=0miSSKHuxzsH8oBKfy4K4Oh1UbaxKrf-OosisUJMwL4,3714
+TrimPy-0.5.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+TrimPy-0.5.0.dist-info/top_level.txt,sha256=d7e6AVJ_u78acZ42NkZkDSvbtUu1lnoYhc2rkI-peJQ,7
+TrimPy-0.5.0.dist-info/RECORD,,
