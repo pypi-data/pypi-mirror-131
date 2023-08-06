@@ -1,0 +1,13 @@
+sfmanager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sfmanager/sfauth.py,sha256=o618dP5iIc4FypezHVR_tHLUM3P25_WdGCTwz4EW2ro,5872
+sfmanager/sfmanager.py,sha256=udAS3OKEJBie1sl_giIjTvkpM0gBP15gJyIugKlzXsQ,37333
+sfmanager/tests/test_sfauth.py,sha256=uiiAfGuQJq20m1JrRECEa_NQ2d5Qqkf0VdkXmvYsQ1s,4824
+sfmanager/tests/test_sfmanager.py,sha256=dA388KlHXI1QE8Su1PMuXB27w0vj6WpY7nrk-tCZQqo,16308
+python_sfmanager-0.8.5.dev1.dist-info/AUTHORS,sha256=CA0U0aoQeFvLey0h_s2LjdDiElW3Uk8uDM7aNFqQVLQ,547
+python_sfmanager-0.8.5.dev1.dist-info/LICENSE,sha256=CeipvOyAZxBGUsFoaFqwkx54aPnIKEtm9a5u2uXxEws,10142
+python_sfmanager-0.8.5.dev1.dist-info/METADATA,sha256=HLIteciJMRHtoSDzENRq0la-oEdQSJJq_m7_WfuPEJg,496
+python_sfmanager-0.8.5.dev1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+python_sfmanager-0.8.5.dev1.dist-info/entry_points.txt,sha256=y9e9zjhehMzZrULdDbZbzzlsEUgRNk5cAGhzcGnYUWI,56
+python_sfmanager-0.8.5.dev1.dist-info/pbr.json,sha256=KcrFafE3NK_c0RwCZJ42badfC9RBrnfGS19vC9288CU,47
+python_sfmanager-0.8.5.dev1.dist-info/top_level.txt,sha256=KXZenM2PcIBwDBfKLlQPDNuHjEafZ21kDmjZmbiaeWY,10
+python_sfmanager-0.8.5.dev1.dist-info/RECORD,,

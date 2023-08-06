@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: python-sfmanager
+Version: 0.8.5.dev1
+Summary: Python client for Software Factory REST API (managesf)
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: requests
+Requires-Dist: pycrypto
+Requires-Dist: urllib3
+Requires-Dist: PrettyTable
+Requires-Dist: pyyaml (<6.0.0)
+Requires-Dist: GitPython
+
+# sfmanager
+
+The python librairy for managesf software-factory project
+
+
+
