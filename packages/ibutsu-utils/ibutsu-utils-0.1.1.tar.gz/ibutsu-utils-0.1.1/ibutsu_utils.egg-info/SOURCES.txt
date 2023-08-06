@@ -1,0 +1,17 @@
+.gitignore
+.pre-commit-config.yaml
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+.github/workflows/python-publish.yml
+ibutsu_utils/__init__.py
+ibutsu_utils/upload.py
+ibutsu_utils/xmerge.py
+ibutsu_utils.egg-info/PKG-INFO
+ibutsu_utils.egg-info/SOURCES.txt
+ibutsu_utils.egg-info/dependency_links.txt
+ibutsu_utils.egg-info/entry_points.txt
+ibutsu_utils.egg-info/requires.txt
+ibutsu_utils.egg-info/top_level.txt
