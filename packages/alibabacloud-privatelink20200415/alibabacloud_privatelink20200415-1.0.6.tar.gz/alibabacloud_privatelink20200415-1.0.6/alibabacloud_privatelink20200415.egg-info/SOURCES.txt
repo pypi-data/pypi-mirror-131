@@ -1,0 +1,15 @@
+ChangeLog.md
+LICENSE
+MANIFEST.in
+README-CN.md
+README.md
+setup.cfg
+setup.py
+alibabacloud_privatelink20200415/__init__.py
+alibabacloud_privatelink20200415/client.py
+alibabacloud_privatelink20200415/models.py
+alibabacloud_privatelink20200415.egg-info/PKG-INFO
+alibabacloud_privatelink20200415.egg-info/SOURCES.txt
+alibabacloud_privatelink20200415.egg-info/dependency_links.txt
+alibabacloud_privatelink20200415.egg-info/requires.txt
+alibabacloud_privatelink20200415.egg-info/top_level.txt
