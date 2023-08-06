@@ -1,0 +1,3 @@
+[console_scripts]
+cf = b_aws_cf.cli.entry:main
+
