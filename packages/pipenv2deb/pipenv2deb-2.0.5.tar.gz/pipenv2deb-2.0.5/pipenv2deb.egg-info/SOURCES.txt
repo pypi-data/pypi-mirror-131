@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pipenv2deb/__init__.py
+pipenv2deb/__main__.py
+pipenv2deb.egg-info/PKG-INFO
+pipenv2deb.egg-info/SOURCES.txt
+pipenv2deb.egg-info/dependency_links.txt
+pipenv2deb.egg-info/top_level.txt
+scripts/pipenv2deb
