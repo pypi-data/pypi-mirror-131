@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ConnTwsFunctions-projectX-IbTws
+Version: 0.0.1
+Summary: A package with Tws functions
+Home-page: https://github.com/ProjectIbX/ConnTwsFunctions
+Author: ProjectX Authors
+Author-email: nikolay.gyuneliev@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ProjectIbX/ConnTwsFunctions/src
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ConnTwsFunctions
+A package which contains all IB tws methods needed
+
+
