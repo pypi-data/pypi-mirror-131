@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+fastlz.c
+setup.py
+fastlz/fastlz.c
+fastlz/fastlz.h
+fastlz5.egg-info/PKG-INFO
+fastlz5.egg-info/SOURCES.txt
+fastlz5.egg-info/dependency_links.txt
+fastlz5.egg-info/top_level.txt
