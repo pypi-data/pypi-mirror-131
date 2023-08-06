@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "async-jrpc"
+version = "0.1.2"
+description = "JSON RPC via HTTP client, backed with httpx."
+authors = ["yallxe <82591945+yallxe@users.noreply.github.com>"]
+packages = [
+    { include = "jrpc" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+httpx = "^0.21.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
