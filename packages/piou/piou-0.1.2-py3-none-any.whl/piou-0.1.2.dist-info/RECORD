@@ -1,0 +1,12 @@
+LICENSE,sha256=uUanH0X7SeZEPdsRTHegMSMTiIHMurt9H0jSwEwKE1Y,1081
+piou/__init__.py,sha256=5BmI156hkv-mau3bbpvhs5Xsanz9eUZh7KNLTtwg3MI,50
+piou/cli.py,sha256=Lq3dRHfKbhjF3Iyp-YZ3MrGwIK3z73CJ8JXJ1-lPyIQ,2344
+piou/command.py,sha256=ovVyYtYFiimf8QAcCU7t8v3ynRnNX-iei6nvdO-OEmU,1029
+piou/formatter/__init__.py,sha256=F6_L8UfZmvFPWO3RRoxe8SyO-UOLHJt_0to7JM1rT74,70
+piou/formatter/base.py,sha256=w7YxhHgsNNb9fXUVxE0hMa6A97xOZ8MTO-OBraDxHMY,371
+piou/formatter/rich_formatter.py,sha256=zxHA0ehkMJoiS6SGYdOp4WOxhrRn0Ocwvt_3dZtkBIs,1660
+piou/utils.py,sha256=1o6ORNAO83hXxIajM5FKHRkxVwy9rf4iOGkcP5ngWpM,2445
+piou-0.1.2.dist-info/LICENSE,sha256=uUanH0X7SeZEPdsRTHegMSMTiIHMurt9H0jSwEwKE1Y,1081
+piou-0.1.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+piou-0.1.2.dist-info/METADATA,sha256=K1yCoJe-YxcCC4nbDml1sw-RyK6bnpUlmW1zgB8LKqM,1671
+piou-0.1.2.dist-info/RECORD,,
