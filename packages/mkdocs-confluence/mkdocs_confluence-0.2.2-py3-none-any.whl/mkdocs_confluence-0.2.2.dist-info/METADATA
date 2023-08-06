@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mkdocs-confluence
+Version: 0.2.2
+Summary: MkDocs plugin for uploading markdown documentation to Confluence via Confluence REST API
+Home-page: https://github.com/olivernadj/mkdocs-confluence/
+Author: Oliver Nadj
+Author-email: mr.oliver.nadj@gmail.com
+License: MIT
+Keywords: mkdocs markdown confluence documentation rest python
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: mkdocs (>=1.1)
+Requires-Dist: jinja2
+
+UNKNOWN
+
