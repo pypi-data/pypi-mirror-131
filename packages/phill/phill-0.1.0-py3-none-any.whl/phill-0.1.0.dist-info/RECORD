@@ -1,0 +1,16 @@
+phill/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phill/PySide6/QtCore.py,sha256=Z2ziydAAHo-ej2CB9LiwHjsCuzAIVEJydq1FISr1ovg,5584
+phill/PySide6/QtGui.py,sha256=GCPSBxVEJwBRtBSzbA8wdx9jPdiFTp6Eb7IhxaMMFnw,2243
+phill/PySide6/QtWidgets.py,sha256=KmqonAJ8Y6wEz1w1ngw5cB8yo00jtXX2lfNSRt2rtNE,1623
+phill/PySide6/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phill/pytest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phill/pytest/PySide6/QtCore.py,sha256=tQ_6ilo_tCX5ALBDWbLpNQgwzD5h0TdSfCBTVC06SfQ,1401
+phill/pytest/PySide6/QtGui.py,sha256=r9nX6VXLvrpQ6IW6RdRN1aI4CJq0DC8E3kd41_wBbq0,415
+phill/pytest/PySide6/QtWidgets.py,sha256=tipOxkGmf97aLUehi3slb_njOqg4d8Dc2TEyoYPDvRI,405
+phill/pytest/PySide6/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phill-0.1.0.dist-info/LICENSE.txt,sha256=C9gnBRGPUOy2oQmLGej3PcWvIQkutQM41Tr1gl7k4GY,1070
+phill-0.1.0.dist-info/METADATA,sha256=s5L0bnCAsrUJmoDcSRFrwW7uf9IOPiubsrPaCJz-61c,856
+phill-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+phill-0.1.0.dist-info/entry_points.txt,sha256=wFfoY-EWfy7GzVh_98La17Y757fjD6RPC0-BI8m0-Kk,174
+phill-0.1.0.dist-info/top_level.txt,sha256=WGfvs6_fiVAKxLZH7-hp3l1JLomODWPQC2KqVXmVqHc,6
+phill-0.1.0.dist-info/RECORD,,
