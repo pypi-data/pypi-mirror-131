@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: mobrob
+Version: 0.3a0.dev0
+Summary: UNKNOWN
+Home-page: https://github.com/68-6f-6c-67-69/mobrob
+Author: 68-6f-6c-67-69
+Author-email: 68.6f.6c.67.69@gmail.com
+License: UNKNOWN
+Description: mobrob
+        
+        python module for mobile robotics with ros and ros2.
+        
+Platform: UNKNOWN
