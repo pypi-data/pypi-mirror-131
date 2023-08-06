@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tibor
+Version: 1.0
+Summary: The package combines multiple helper functions that might be useful for scraping data from publishers websites
+Home-page: https://github.com/tibor/python-helferfunktionen
+Author: Tibor Martini
+Author-email: hallo@tibor.net
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/tibor/python-helferfunktionen/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
