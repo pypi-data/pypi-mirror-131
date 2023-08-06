@@ -1,0 +1,19 @@
+name: mfa
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.8
+  - numpy
+  - librosa
+  - tqdm
+  - requests
+  - colorama
+  - pyyaml
+  - kaldi
+  - sox
+  - openfst
+  - baumwelch
+  - ngram
+  - pynini
+  - praatio
+  - biopython
