@@ -1,0 +1,8 @@
+attrs>=17.4.0
+biocommons.seqrepo>=0.6.5
+bioutils<1.0,>=0.4.0
+configparser>=3.3.0
+ipython
+parsley
+psycopg2
+six
