@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mobot-utils
+Version: 0.1.2
+Summary: Utilities for mobot.
+Home-page: https://github.com/mobotx/mobot_utils
+Author: Aditya Shriwastava
+Author-email: adityashriwastava7@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+UNKNOWN
+
