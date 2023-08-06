@@ -1,0 +1,14 @@
+aiohttp
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[test]
+pytest
+pytest-cov
+tox
+mypy
+setuptools_scm
+setuptools
+wheel
+types-requests
