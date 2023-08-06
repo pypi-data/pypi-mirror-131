@@ -1,0 +1,3 @@
+fcapsy
+plotly
+pandas
