@@ -1,0 +1,12 @@
+# standard django settings
+DATABASES:
+    default:
+        ENGINE: django.db.backends.sqlite3
+        NAME: /var/lib/django-ca/db.sqlite3
+DEBUG: False
+LOGIN_URL: /admin/login/
+MEDIA_ROOT: /usr/share/django-ca/media/
+STATIC_ROOT: /usr/share/django-ca/static/
+
+# custom settings
+CA_DIR: /var/lib/django-ca/certs

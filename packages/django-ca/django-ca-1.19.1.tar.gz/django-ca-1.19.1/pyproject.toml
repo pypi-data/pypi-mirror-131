@@ -1,0 +1,167 @@
+[build-system]
+# Minimum requirements for the build system to execute (PEP-518)
+requires = ["setuptools>=30.3.0", "wheel"]  # PEP 508 specifications.
+
+[django-ca.release]
+# https://devguide.python.org/#status-of-python-branches
+python = ["3.6.15", "3.7.12", "3.8.12", "3.9.9", "3.10.1"]
+
+# https://www.djangoproject.com/download/
+django = ["2.2.25", "3.1.14", "3.2.10", "4.0"]
+cryptography = ["3.3.2", "3.4.7", "35.0.0", "36.0.1"]
+acme = ["1.22.0"]
+idna = ["2.10", "3.0", "3.1", "3.2"]
+
+# https://alpinelinux.org/releases/
+alpine = ["3.12", "3.13", "3.14"]
+
+[tool.black]
+line-length = 110
+exclude = "migrations"
+
+[tool.coverage.report]
+exclude_lines = [
+    "^\\s*@(abc.)?abstractmethod",
+    "^\\s*@(typing.)?overload",
+    "^\\s*if (typing.)?TYPE_CHECKING:",
+    "pragma: no ?cover",
+]
+
+[tool.doc8]
+max_line_length = 110
+
+# NOTE: ideally, we would use ignore-path-errors to only ignore long lines, but doc8
+#       does not support directories for that.
+ignore_path = "docs/source/generated/"
+
+[tool.isort]
+line_length = 110
+skip = ["migrations", "stubs"]
+force_single_line = true
+known_crypto = [
+    "cryptography", "ocspbuilder", "ocspbuilder", "asn1crypto", "oscrypto",
+]
+known_django = "django"
+known_django_addon = "django_object_actions"
+known_test = ["freezegun", "selenium", "django_webtest", "pyvirtualdisplay", "requests_mock"]
+known_third_party = "OpenSSL"
+known_local_folder = "django_ca"
+sections = [
+    "FUTURE", "STDLIB", "THIRDPARTY", "CRYPTO", "DJANGO", "DJANGO_ADDON",
+    "TEST", "FIRSTPARTY", "LOCALFOLDER",
+]
+
+[tool.pylint.master]
+load-plugins = "pylint_django"
+
+# Allow both snake-case and UPPER_CASE for class constants/enums
+class-const-rgx = "(?:(?P<snake>[a-z_]+)|(?P<upper>[A-Z_]+))"
+
+# Allow dashes in module names (= top level scripts)
+module-rgx = "[a-z_][a-z_-]+"
+
+# Configure Django
+init-hook = "import os, sys; sys.path.insert(0, os.path.abspath('ca'))"
+django-settings-module = "ca.test_settings"
+
+[tool.pylint.basic]
+good-names = [
+    "ca",
+    "ex",
+    "pk",
+    "e",  # TODO: consistently use ex
+    "i",
+    "k",
+]
+
+[tool.pylint.design]
+# Maximum number of arguments for function / method (see R0913).
+max-args=10
+
+# Maximum number of branch for function / method body (see R0912).
+max-branches=20
+
+# Maximum number of parents for a class (see R0914).
+max-locals = 20
+
+# Maximum number of parents for a class (see R0901).
+max-parents = 15
+
+# Maximum number of public methods for a class (see R0904).
+max-public-methods = 25
+
+# Maximum number of return / yield for function / method body (see R0911).
+max-returns = 8
+
+# Maximum number of statements in function / method body (see R0915).
+max-statements = 60
+
+[tool.pylint.format]
+max-line-length = 110
+
+# TODO: could be reduced to 1500, only some test modulesare  over that
+max-module-lines = 3000
+
+[tool.pylint.messages_control]
+# https://pylint.readthedocs.io/en/latest/faq.html?highlight=flake8#i-am-using-another-popular-linter-alongside-pylint-which-messages-should-i-disable-to-avoid-duplicates
+disable = [
+    # devscripts have some larger overlapping parts
+    "duplicate-code",
+
+    # These are just annoying
+    "too-few-public-methods",
+    "no-self-use",
+    "fixme",
+
+    # covered by isort:
+    "wrong-import-order",
+
+    # covered by pyflakes:
+    "undefined-variable",  # also mypy
+    "unused-import",
+    "unused-variable",
+
+    # covered by pycodestyle:
+    "unneeded-not",
+    "line-too-long",
+    "unnecessary-semicolon",
+    "trailing-whitespace",
+    "missing-final-newline",
+    "bad-indentation",
+    "multiple-statements",
+    "bare-except",
+
+    # (seems to be) covered by mypy
+    "unsubscriptable-object",  # mypy: index
+    "arguments-differ",
+    "no-value-for-parameter",  # mypy: call-arg
+    "inconsistent-return-statements",
+    "assignment-from-no-return",
+    "import-error",  # mypy: import
+    "abstract-class-instantiated",  # mypy: abstract
+
+    # pylint==2.7.2 shows the error for cyclic imports in arbitrary locations, making them impossible to
+    # disable for specific cases. mypy requires cyclic imports for type annotiations, which are usually
+    # protected by TYPE_CHECKING - but pylint doesn't know that.
+    #   https://github.com/PyCQA/pylint/issues/850
+    #   https://github.com/PyCQA/pylint/issues/59
+    #   https://github.com/landscapeio/landscape-issues/issues/214
+    "cyclic-import",
+
+    # pylint==2.9.3 does not detect methods returning a sequence as such:
+    #   https://github.com/PyCQA/pylint/issues/4696
+    "unpacking-non-sequence",
+]
+
+[tool.pylint.similarities]
+# Ignore comments when computing similarities.
+ignore-comments = "yes"
+
+# Ignore docstrings when computing similarities.
+ignore-docstrings = "yes"
+
+# Ignore imports when computing similarities.
+ignore-imports = "yes"
+
+# Minimum lines number of a similarity.
+min-similarity-lines = 16

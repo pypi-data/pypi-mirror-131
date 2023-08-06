@@ -1,0 +1,58 @@
+name: Code quality
+on:
+  push:
+  pull_request:
+  pull_request_target:
+
+jobs:
+
+  run:
+    runs-on: ubuntu-latest
+
+    env:
+      DJANGO_CA_SECRET_KEY: dummy
+
+    steps:
+
+      - name: Acquire sources
+        uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+          architecture: x64
+
+      - name: Apply caching of dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ hashFiles('**/requirements-*.txt') }}
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install -r requirements/requirements-test.txt
+          pip install -r requirements/requirements-lint.txt
+
+          # Mitigate "Unable to import 'typing_extensions' (import-error)"
+          pip install typing-extensions
+
+      - name: Install program
+        run: python setup.py develop
+
+      - name: Run black, isort and flake8
+        run: python dev.py code-quality
+
+      # Will show outdate dependencies, etc
+      - name: Validate state
+        run: devscripts/validate-state.py
+
+      - name: Validate sdist/wheel
+        run: |
+            pip install -r requirements/requirements-dist.txt
+            python setup.py sdist bdist_wheel
+            twine check --strict dist/*
+
+      - name: Run pylint
+        run: pylint --verbose ca/django_ca/ docs/source/django_ca_sphinx/ devscripts/

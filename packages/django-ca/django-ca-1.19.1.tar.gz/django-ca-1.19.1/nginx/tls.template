@@ -1,0 +1,48 @@
+server {
+    listen       ${NGINX_PORT};
+    server_name  ${NGINX_HOST};
+
+    include /etc/nginx/conf.d/include.d/ca.conf;
+
+    # Ability to fulfill ACME challenges
+    location /.well-known/acme-challenge/ {
+        alias /usr/share/django-ca/acme/.well-known/acme-challenge/;
+    }
+
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+}
+
+server {
+    listen ${NGINX_PORT} default_server;
+    return 444;
+}
+
+server {
+    listen       ${NGINX_HTTPS_PORT} ssl http2;
+    server_name  ${NGINX_HOST};
+
+    ssl_certificate_key ${NGINX_PRIVATE_KEY};
+    ssl_certificate     ${NGINX_PUBLIC_KEY};
+    include /etc/nginx/conf.d/include.d/ssl.conf;
+    include /etc/nginx/conf.d/include.d/headers.conf;
+
+    include /etc/nginx/conf.d/include.d/admin.conf;
+    include /etc/nginx/conf.d/include.d/acme.conf;
+
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+
+}
+
+server {
+    listen ${NGINX_HTTPS_PORT} default_server;
+    ssl_certificate_key ${NGINX_PRIVATE_KEY};
+    ssl_certificate     ${NGINX_PUBLIC_KEY};
+    include /etc/nginx/conf.d/include.d/ssl.conf;
+    return 444;
+}

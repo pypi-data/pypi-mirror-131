@@ -1,0 +1,47 @@
+#!/bin/sh -e
+
+DJANGO_CA_SECRET_KEY=${DJANGO_CA_SECRET_KEY:-}
+DJANGO_CA_SECRET_KEY_FILE=${DJANGO_CA_SECRET_KEY_FILE:-/var/lib/django-ca/secret_key}
+
+if [ -z "${DJANGO_CA_SECRET_KEY}" ]; then
+    KEY_DIR=`dirname $DJANGO_CA_SECRET_KEY_FILE`
+    if [ ! -e "${KEY_DIR}" ]; then
+        mkdir -p ${KEY_DIR}
+        chmod go-rwx ${KEY_DIR}
+    fi
+
+    # Wait for uWSGI container to create secret key file
+    for i in $(seq 1 5); do
+        if [ -e "${DJANGO_CA_SECRET_KEY_FILE}" ]; then
+            break
+        fi
+        echo "Sleep for $i seconds to wait for secret key..."
+        sleep $i
+    done
+
+    # Create secret key file if uWSGI container still didn't create it
+    if [ ! -e "${DJANGO_CA_SECRET_KEY_FILE}" ]; then
+        echo "Create secret key at ${DJANGO_CA_SECRET_KEY_FILE}..."
+        python <<EOF
+import random, string
+ 
+key = ''.join(random.SystemRandom().choice(string.ascii_letters + string.digits) for _ in range(32))
+with open('${DJANGO_CA_SECRET_KEY_FILE}', 'w') as stream:
+    stream.write(key)
+EOF
+    fi
+    chmod go-rwx ${DJANGO_CA_SECRET_KEY_FILE}
+fi
+
+if [ -n "${WAIT_FOR_CONNECTIONS}" ]; then
+    for conn in ${WAIT_FOR_CONNECTIONS}; do
+        conn=${conn/:/ }
+        while ! nc -z $conn; do
+            echo "Wait for $conn..."
+            sleep 0.1 # wait for 1/10 of the second before check again
+        done
+    done
+fi
+
+set -x
+exec celery -A ca worker -B -s /var/lib/django-ca/celerybeat-schedule "$@"
