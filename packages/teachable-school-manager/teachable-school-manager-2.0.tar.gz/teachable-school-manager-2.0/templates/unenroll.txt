@@ -1,0 +1,10 @@
+Hey {{firstname}},
+
+This email is to notify that we have just revoked access to the {{course}} course for you.
+
+If you believe this is a mistake please get in touch by replying to this email.
+
+Thanks for having been with us and happy learning!
+--
+{{name_from}}
+

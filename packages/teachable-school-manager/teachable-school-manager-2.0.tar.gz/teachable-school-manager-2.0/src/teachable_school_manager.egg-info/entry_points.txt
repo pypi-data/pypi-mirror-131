@@ -1,0 +1,4 @@
+[console_scripts]
+teachable = teachable.scripts.teachable:main
+teachable_scheduler = teachable.scripts.scheduler:main
+
