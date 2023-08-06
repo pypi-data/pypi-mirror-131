@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: pdh
+Version: 0.2.3
+Summary: Pagerduty CLI for Humans
+Home-page: https://github.com/mbovo/pdh
+License: Apache-2.0
+Author: Manuel Bovo
+Author-email: manuel.bovo@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=5.4.1,<6.0.0)
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: colorama (>=0.4.4,<0.5.0)
+Requires-Dist: pdpyras (>=4.3.0,<5.0.0)
+Requires-Dist: rich (>=10.10.0,<11.0.0)
+Project-URL: Repository, https://github.com/mbovo/pdh
+Description-Content-Type: text/markdown
+
+# PDH - PagerDuty CLI for humans
+
+![Build Image](https://github.com/mbovo/pdh/actions/workflows/build-image.yml/badge.svg)
+
+See [docs](./docs)
+
+## Usage
+
+First of all you need to configure `pdh` to talk with PagerDuty APIs:
+
+```bash
+pdh config
+```
+
+Will ask you for 3 settings:
+
+- `apiky` is the API key from the user's profile page on pagerduty
+- `email` your pagerduty email
+- `uid` the userID of your account (you can read it from the link address when clicking on "My Profile")
+
+Settings are persisted to `~/.config/pdh.yaml`
+
+### Listing incidents assigned to self
+
+```bash
+pdh inc ls
+```
+
+### Auto ACK incoming incidents
+
+Watch for new incidents every 10s and automatically set them to Acknowledged
+
+```bash
+pdh inc ls --watch --new --ack --timeout 10
+```
+
+### List all HIGH priority incidents periodically
+
+List incidents asssigned to all users every 5s
+
+```bash
+pdh inc ls --high --everything --watch --timeout 5
+```
+
+### Resolve specific incidents
+
+```bash
+pdh inc resolve INCID0001 INCID0024 INCID0023
+```
+
+## Resolve all incidents related to `Backups`
+
+```bash
+pdh inc ls --resolve --regexp ".*Backup.*"
+```
+
+## Requirements
+
+- [Taskfile](https://taskfile.dev)
+- Python >=3.9
+- Docker
+
+## Contributing
+
+First of all you need to setup the dev environment, using Taskfile:
+
+```bash
+task setup
+```
+
+This will create a python virtualenv and install `pre-commit` and `poetry` in your system if you lack them.
+
