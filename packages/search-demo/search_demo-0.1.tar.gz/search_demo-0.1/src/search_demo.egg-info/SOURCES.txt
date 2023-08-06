@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/search_demo/__init__.py
+src/search_demo/demo.py
+src/search_demo/test.py
+src/search_demo.egg-info/PKG-INFO
+src/search_demo.egg-info/SOURCES.txt
+src/search_demo.egg-info/dependency_links.txt
+src/search_demo.egg-info/top_level.txt
