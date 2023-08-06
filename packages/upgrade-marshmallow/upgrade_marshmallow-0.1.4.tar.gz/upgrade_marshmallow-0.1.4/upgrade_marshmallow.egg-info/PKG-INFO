@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: upgrade-marshmallow
+Version: 0.1.4
+Summary: Upgrade marshmallow is a tool to batch modify call expression with "marshmallow.fields.Field".
+Home-page: https://github.com/featureoverload/upgrade-marshmallow
+Author: Feature Overload
+Author-email: featureoverload@gmail.com
+Maintainer: Feature Overload
+Maintainer-email: featureoverload@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+License-File: LICENSE
+
+UNKNOWN
+

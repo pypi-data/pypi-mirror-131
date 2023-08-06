@@ -1,0 +1,3 @@
+[console_scripts]
+ugma = upgrade_marshmallow.cli:main
+
