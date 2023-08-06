@@ -1,0 +1,14 @@
+odoo/addons/sale_timesheet_lock_invoiced/README.rst,sha256=6IO43y0sTHECIFGvoJ-247qXFXqqLvkKkLIlamuiKT4,2012
+odoo/addons/sale_timesheet_lock_invoiced/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/sale_timesheet_lock_invoiced/__manifest__.py,sha256=t7XpNMxvYyN3vuwky6WkE-pdhCUNyqpnAfatBlm1Xx0,497
+odoo/addons/sale_timesheet_lock_invoiced/i18n/fr.po,sha256=I4kKskcVeO6SMWSgpkJUD0jxdc8uPsz2bDyVLwhn2mo,1032
+odoo/addons/sale_timesheet_lock_invoiced/i18n/sale_timesheet_lock_invoiced.pot,sha256=hek5vG_lJXTo7OGzCDh2JxbvPfuisEuaTsLXEicWIiU,777
+odoo/addons/sale_timesheet_lock_invoiced/models/__init__.py,sha256=_udBryosx503GaE82lTOG6uL41aH-xFYT4kliq29PHo,36
+odoo/addons/sale_timesheet_lock_invoiced/models/account_analytic_line.py,sha256=JOg07w5t2yllq9vC0JsDJ0p2SFWofPXql-Mkk4fAayg,945
+odoo/addons/sale_timesheet_lock_invoiced/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/sale_timesheet_lock_invoiced/tests/__init__.py,sha256=m29mq2099nO54AuukzZrMifwuoR_JDiU75gh_ga1Cwg,48
+odoo/addons/sale_timesheet_lock_invoiced/tests/test_sale_timesheet_lock_invoiced.py,sha256=z7cHNZ6FNtguJWn08OHogiGwsJ6Xx2eiNCbv2gcouPs,2100
+odoo11_addon_sale_timesheet_lock_invoiced-11.0.1.0.1.dist-info/METADATA,sha256=mn3zkljSIWqn4HPFRtnGfZ__IFjS56h7X0KGrg_mI_k,2644
+odoo11_addon_sale_timesheet_lock_invoiced-11.0.1.0.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+odoo11_addon_sale_timesheet_lock_invoiced-11.0.1.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo11_addon_sale_timesheet_lock_invoiced-11.0.1.0.1.dist-info/RECORD,,
