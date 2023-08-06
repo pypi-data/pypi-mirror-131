@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: dg-util
+Version: 0.0.22
+Summary: commom tools
+License: MIT
+Author: DataGrid
+Requires-Python: >=3.7,<3.11
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pillow (>=8.4.0,<9.0.0)
+Requires-Dist: dlib (>=19.22.1,<20.0.0)
+Requires-Dist: filetype (>=1.0.7,<2.0.0)
+Requires-Dist: flask (>=1.1.2,<2.0.0)
+Requires-Dist: imutils (>=0.5.4,<0.6.0)
+Requires-Dist: numpy (>=1.21.4,<2.0.0)
+Requires-Dist: opencv-python (>=4.5.4,<5.0.0)
+Requires-Dist: pymatting (>=1.1.1,<2.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: scikit-image (>=0.17.2,<0.18.0)
+Requires-Dist: scipy (>=1.5.4,<2.0.0)
+Requires-Dist: torch (>=1.10.0,<2.0.0)
+Requires-Dist: torchaudio (>=0.10.0,<0.11.0)
+Requires-Dist: torchvision (>=0.11.1,<0.12.0)
+Requires-Dist: tqdm (>=4.62.3,<5.0.0)
+Requires-Dist: waitress (>=1.4.4,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Package dg_util 
+v 0.0.15
+
+Package dg_util consists of different interface of commonly used basic functions in development process to help reduce redoundancy and keep your codes clean. More features will be updated in future.
+* Install: 
+
+```bash
+pip install dg_util
+```
+
+* Uninstall: 
+
+```bash
+pip uninstall dg_util
+```
+
+## Features
+### Image Reprocessing
+Crop face images with landmark.
+1. crop_image
+2. crop_image_from_path
+
+### Face Parsing
+
+* Install: 
+
+```bash
+pip install dg_face_parsing
+```
+
+Genreate face parsing with BiSeNet。
+1. parsing_face
+2. parsing_faces
+
+# Rembg
+Remove background.
+* Requirements
+
+python 3.8 or newer
+
+torch and torchvision stable version (https://pytorch.org)
+
+* Install:
+
+```bash
+pip install rembg
+```
+
