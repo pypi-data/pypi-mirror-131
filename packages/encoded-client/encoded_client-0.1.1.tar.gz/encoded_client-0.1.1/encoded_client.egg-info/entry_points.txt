@@ -1,0 +1,3 @@
+[console_scripts]
+encode_submission = encoded_client.submission:main
+

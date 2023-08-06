@@ -1,0 +1,8 @@
+*~
+*.py[co]
+__pycache__/
+.coverage
+.tox/
+*.egg-info/
+docs/_build/
+encoded_client/_version.py

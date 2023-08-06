@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: encoded-client
+Version: 0.1.1
+Summary: interface to the ENCODE DCC portal
+Home-page: UNKNOWN
+Author: Diane Trout
+Author-email: diane@caltech.edu
+License: BSD-3
+Project-URL: Source, https://github.com/detrout/encoded_client
+Project-URL: Tracker, https://github.com/detrout/encoded_client
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst; charset=UTF-8
+Provides-Extra: test
+Provides-Extra: doc
+Provides-Extra: rdf
+Provides-Extra: submit
+License-File: LICENSE.txt
+
+|ci-test|
+
+Introduction
+============
+
+This project is intended to make working with the ENCODE 4 DCC's
+`portal`_ more like interacting with an object database.
+
+It's also uses jsonschema to validate objects before submission to the
+portal.
+
+Temporary copy of `encoded_client's documentation`_
+
+.. _`portal`: https://www.encodeproject.org
+.. _`encoded_client's documentation`: https://woldlab.caltech.edu/~diane/encoded_client/docs/_build/html/index.html 
+.. |ci-test| image:: https://github.com/detrout/encoded_client/actions/workflows/ci-test.yml/badge.svg
+
+
