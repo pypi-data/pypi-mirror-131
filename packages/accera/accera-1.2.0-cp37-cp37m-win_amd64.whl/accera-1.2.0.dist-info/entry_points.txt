@@ -1,0 +1,3 @@
+[console_scripts]
+accera.benchmark_hat = accera.tools.benchmark.benchmark_hat_package:main_command
+
