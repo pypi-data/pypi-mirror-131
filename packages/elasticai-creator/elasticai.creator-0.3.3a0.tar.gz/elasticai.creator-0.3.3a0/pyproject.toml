@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "elasticai.creator"
+version = "0.3.3-alpha.0"
+description = "Design, train and compile neural networks optimized specifically for FPGAs."
+readme = "README.md"
+repository = "https://github.com/es-ude/elastic-ai.creator"
+authors = ["Department Embedded Systems - University Duisburg Essen"]
+packages = [
+    { include = "elasticai/" }
+]
+
+[tool.poetry.dependencies]
+python = "~3.9"
+torch = "^1.9.1"
+
+[tool.poetry.dev-dependencies]
+python-language-server = "^0.36.2"
+brevitas = "^0.7.0"
+onnx = "^1.10.2"
+onnxoptimizer = "^0.2.6"
+coverage = "^6.2"
+flake8 = "*"
+tox = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+omit = ["elasticai/examples/*py"]
+source = ["elasticai"]
+command_line = "-m unittest discover ."
