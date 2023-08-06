@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: kasalkar-utils-lib
+Version: 2.0.0
+Summary: Python library for dashboard
+Home-page: https://github.com/kasalkar/kasalkar-utils
+Author: Pratik Kasalkar
+Author-email: pratikkasalkar@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+Requires-Dist: colorlog
+Requires-Dist: requests
+
+# kasalkar-utils
+
+Python library for dashboard
+
+
+
