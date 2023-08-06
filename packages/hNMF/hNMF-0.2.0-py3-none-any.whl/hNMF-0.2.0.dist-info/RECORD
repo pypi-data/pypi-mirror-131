@@ -1,0 +1,9 @@
+hnmf/__init__.py,sha256=W6Dot8VLh_hc1hm1cLrldhkcG13GndgN3MVPopYNhSQ,187
+hnmf/helpers.py,sha256=hvc_6nOkuDDUgBsGKShxLhLV4qcm8XSEI4x5mxI6YgY,23064
+hnmf/model.py,sha256=axbBU4qP462THos4eHywzxYvG9V_D-4jJOlWo1IDe7k,32414
+hnmf/progress_tree.py,sha256=_KpPGQMzQJm6E9rPimNu43LmKghVWW_kyP9mKKVzGkc,1410
+hnmf/signatures.py,sha256=CFg2fh7za8AvGY5-3sVw4U7Qs0X1uZi2syzjlHaHD6s,278
+hNMF-0.2.0.dist-info/METADATA,sha256=fPiESJENU2I_fbmfmenM6SYAqwwAFwkXgWvcHioNY2w,1873
+hNMF-0.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+hNMF-0.2.0.dist-info/top_level.txt,sha256=F3UirajICR23qa5xDrjy9Ozx6j3odbM2r3EUZIF2ItM,5
+hNMF-0.2.0.dist-info/RECORD,,
