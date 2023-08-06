@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+shell_proc/__init__.py
+shell_proc/__main__.py
+shell_proc/__meta__.py
+shell_proc/shell.py
+shell_proc.egg-info/PKG-INFO
+shell_proc.egg-info/SOURCES.txt
+shell_proc.egg-info/dependency_links.txt
+shell_proc.egg-info/top_level.txt
