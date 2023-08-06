@@ -1,0 +1,17 @@
+classic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+classic/http_auth/__init__.py,sha256=hFmjwU9eZaVgiP2-IiO8ate_7NUWuDeqv_vCjFut4ag,309
+classic/http_auth/authentication.py,sha256=MVMQZTk5AzZUAOpV11Vh2dfYjGrEkv6DfigpUrWX-c0,2762
+classic/http_auth/authorization.py,sha256=VWXWUJIqTtNt7REW-FQNmaE7D4pSjWwAjE3JuxUk4aY,559
+classic/http_auth/entities.py,sha256=eyiEvV3Q2Kiyak-iRh-eVp-p5SiRDoHDP2cP4Y4zkDs,1625
+classic/http_auth/errors.py,sha256=Nx8fVzMNKoFHA_meOFHutPhvfu9vUxT6ECjcZ2pYscE,433
+classic/http_auth/interfaces.py,sha256=C7olUhjjrBSYECSrkj-Ot7HzkY8Z3NixAa8j9Cr0QOM,436
+classic/http_auth/spec.py,sha256=PUyAKO7n5mKHv6fdOhrAb_2dNId1fobCMfYoJZBR90g,2795
+classic/http_auth/strategies/__init__.py,sha256=SrzMbwMVRFIgY5VmfTuPBDHCMBxvu1bSbeok8T-36pM,60
+classic/http_auth/strategies/base.py,sha256=TDkOeM-hz_Cpa0sU3PL5Dp9UzUAcTnRCmNWGv7laRco,711
+classic/http_auth/strategies/jwt_.py,sha256=lGa4KJskpYLISKtPHinBIwKiCYll5BuF_78z9-wzZ1Y,1964
+classic/http_auth/strategies/keycloak_.py,sha256=_4uLKftkuETG9OpP17cROrcrv1Ld6ZZRlbYcmAM2mtA,2569
+classic_http_auth-0.0.1.dist-info/LICENSE,sha256=Z1x-epUD4Dc70Tpy-vXDRsIYwpTXqZjo60vR1kBCcvA,1088
+classic_http_auth-0.0.1.dist-info/METADATA,sha256=yr6-wKsknhayxJ1AOxwpis8aeRmvp9qxVeV548v2XNY,3632
+classic_http_auth-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+classic_http_auth-0.0.1.dist-info/top_level.txt,sha256=NGd9e95FycaETli7Cs0MwFTtdjK6EYJ3tq_ErbSLNZg,8
+classic_http_auth-0.0.1.dist-info/RECORD,,
