@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/nbfigtulz/__init__.py
+src/nbfigtulz/config.py
+src/nbfigtulz/figtools.py
+src/nbfigtulz/thumbnail.py
+src/nbfigtulz.egg-info/PKG-INFO
+src/nbfigtulz.egg-info/SOURCES.txt
+src/nbfigtulz.egg-info/dependency_links.txt
+src/nbfigtulz.egg-info/requires.txt
+src/nbfigtulz.egg-info/top_level.txt
