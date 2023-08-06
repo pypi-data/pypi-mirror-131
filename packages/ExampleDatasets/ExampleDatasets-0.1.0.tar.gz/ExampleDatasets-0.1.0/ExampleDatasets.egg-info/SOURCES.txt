@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ExampleDatasets/ExampleDatasets.py
+ExampleDatasets/__init__.py
+ExampleDatasets.egg-info/PKG-INFO
+ExampleDatasets.egg-info/SOURCES.txt
+ExampleDatasets.egg-info/dependency_links.txt
+ExampleDatasets.egg-info/requires.txt
+ExampleDatasets.egg-info/top_level.txt
+ExampleDatasets/resources/dfRdatasets.csv.gz
