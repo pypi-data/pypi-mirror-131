@@ -1,0 +1,38 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "common_toolkit"
+authors = [{name = "Lonely_Mr_Zhang", email = "1371028681@qq.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+requires-python = ">=3.8.5"
+
+dependencies = [
+]
+
+[project.urls]
+Home = "https://github.com/Lonely-Mr-zhang/common_toolkit"
+
+[project.optional-dependencies]
+development = [
+]
+dev = [
+    "pre-commit == 2.16.0",
+    "flake8 == 3.9.2",
+    "pytest == 6.2.1",
+]
+penetration = [
+]
+
+[project.scripts]
+py = "common_toolkit.CLIs.development_cli.create_python_app:main"
+#flit = "flit:main"
+
+# iosrt配置
+[tool.isort]
+profile = "black"
+multi_line_output = 3
