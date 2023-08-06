@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: payload-dumper
+Version: 0.1.0
+Summary: 
+Author: Rasmus Moorats
+Author-email: xx@nns.ee
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: bsdiff4 (>=1.2.1,<2.0.0)
+Requires-Dist: enlighten (>=1.10.2,<2.0.0)
+Requires-Dist: protobuf (>=3.19.1,<4.0.0)
