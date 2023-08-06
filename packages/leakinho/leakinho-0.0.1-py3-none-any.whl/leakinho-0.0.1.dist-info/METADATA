@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: leakinho
+Version: 0.0.1
+Summary: 
+License: MIT
+Author: Thúlio Costa
+Author-email: thulio@thuliocosta.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
