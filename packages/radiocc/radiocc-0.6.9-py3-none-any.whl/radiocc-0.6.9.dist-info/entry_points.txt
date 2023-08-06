@@ -1,0 +1,3 @@
+[console_scripts]
+radiocc=radiocc.cli:main
+
