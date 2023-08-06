@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+SHORT_DESCRIPTION.txt
+VERSION.txt
+setup.py
+carpi_gpsreporter.egg-info/PKG-INFO
+carpi_gpsreporter.egg-info/SOURCES.txt
+carpi_gpsreporter.egg-info/dependency_links.txt
+carpi_gpsreporter.egg-info/not-zip-safe
+carpi_gpsreporter.egg-info/requires.txt
+carpi_gpsreporter.egg-info/top_level.txt
+gpsreporter/__init__.py
+gpsreporter/__main__.py
+gpsreporter/daemon.py
+gpsreporter/keys.py
