@@ -1,0 +1,3 @@
+[console_scripts]
+odoo_downloader3 = odoo_downloader.odoo_downloader:usage
+
