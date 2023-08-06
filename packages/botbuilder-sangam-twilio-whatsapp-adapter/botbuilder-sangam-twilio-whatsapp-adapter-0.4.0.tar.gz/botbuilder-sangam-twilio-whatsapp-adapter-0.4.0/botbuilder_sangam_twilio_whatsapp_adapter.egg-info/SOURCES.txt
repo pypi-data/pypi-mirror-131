@@ -1,0 +1,14 @@
+README.md
+setup.py
+botbuilder/sangam/twilio/whatsapp/adapter/__init__.py
+botbuilder/sangam/twilio/whatsapp/adapter/about.py
+botbuilder/sangam/twilio/whatsapp/adapter/twilio_activity.py
+botbuilder/sangam/twilio/whatsapp/adapter/twilio_adapter.py
+botbuilder/sangam/twilio/whatsapp/adapter/twilio_helper.py
+botbuilder/sangam/twilio/whatsapp/adapter/twilio_message.py
+botbuilder/sangam/twilio/whatsapp/adapter/twilio_whatsapp_adapter_settings.py
+botbuilder_sangam_twilio_whatsapp_adapter.egg-info/PKG-INFO
+botbuilder_sangam_twilio_whatsapp_adapter.egg-info/SOURCES.txt
+botbuilder_sangam_twilio_whatsapp_adapter.egg-info/dependency_links.txt
+botbuilder_sangam_twilio_whatsapp_adapter.egg-info/requires.txt
+botbuilder_sangam_twilio_whatsapp_adapter.egg-info/top_level.txt

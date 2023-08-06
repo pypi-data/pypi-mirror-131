@@ -1,0 +1,64 @@
+# Twilio WhatsApp Adapter (beta)
+
+The Twilio WhatsApp adapter for the Microsoft Bot Framework allows you to add an additional endpoint to your bot for use with Twilio WhatsApp. The goal of this adapter is to support WhatsApp via Twilio as seamlessly as possible. All supported features on WhatsApp are mapped to the default Bot Framework SDK.
+
+>To send messages with WhatsApp in production, you have to wait for WhatsApp to formally approve your account. But, that doesn't mean you have to wait to start building. [Twilio Sandbox for WhatsApp](https://www.twilio.com/console/messaging/whatsapp) lets you test your app in a developer environment.
+
+This adapter supports the limited capabilities of Twilio WhatsApp, including;
+
+* Send and receive text messages
+* Send and receive text messages with attachments (`image`, `audio`, `video`, `document`, `location`)
+* Send proactive notifications
+* Track message deliveries (`sent`, `delivered` and `read` receipts)
+
+## Status
+__Currently the Twilio WhatsApp channel is in beta.__
+>Products in Beta may occasionally fall short of speed or performance benchmarks, have gaps in functionality, and contain bugs.
+
+>APIs are stable and unlikely to change as the product moves from Beta to Generally Available (GA). We will do our best to minimize any changes and their impact on your applications. Products in Beta are not covered by Twilio's SLA's and are not recommended for production applications.
+
+## Installing
+
+    pip install botbuilder-sangam-twilio-whatsapp-adapter
+
+## Usage
+
+1. Use your existing Twilio account or create a new Twilio account.
+2. Go to the [Twilio Sandbox for WhatsApp](https://www.twilio.com/console/messaging/whatsapp) and follow the first steps.
+3. At the `Configure your Sandbox` step, add your endpoint URLs. Those URLs will be defined by the snippet below, by default the URL will be `[your-bot-url]/api/whatsapp/messages`.
+_The `status callback url` is optional and should only be used if you want to track deliveries of your messages._
+4. Go to your [Dashboard](https://www.twilio.com/console/sms/dashboard) and click on `Show API Credentials`.
+5. Implement the snippet below and add your Account SID, Auth Token, your phone number and the endpoint URL you configured in the sandbox.
+6. Give it a try! Your existing bot should be able to operate on the WhatsApp channel via Twilio.
+	<BR>
+ <BR>
+    
+    ```
+    from botbuilder.sangam.twilio.whatsapp.adapter.twilio_adapter import TwilioAdapter
+	from botbuilder.sangam.twilio.whatsapp.adapter.twilio_whatsapp_adapter_settings import TwilioWhatsAppAdapterSettings
+    
+    #Settings
+	twilio_settings = TwilioWhatsAppAdapterSettings(
+    account_sid="",
+    auth_token="",
+    endpoint_url="",
+    phone_number=""
+	)
+    
+    #Create a adapter
+    twilio_adapter = TwilioAdapter(twilio_settings)
+	
+	#Add adapter
+	APP.router.add_post("/api/whatsapp/messages",whatsapp)
+     
+    async def whatsapp(req: Request) -> Response:
+    try:
+        response = await twilio_adapter.process_activity(req,Response,BOT.on_turn)
+        if response:
+            return json_response(data=response.body, status=response.status)
+        return Response(status=201)
+    except Exception as exception:        
+        raise exception
+
+     
+    ``` 
