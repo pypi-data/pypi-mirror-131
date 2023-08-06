@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cxr-service-client
+Version: 0.0.1
+Summary: CX Runner Plugin
+Home-page: https://github.com/CiscoAandI/cxr_service_client
+Author: Ava Thorn
+Author-email: avthorn@cisco.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/CiscoAandI/cxr_service_client/issues
+Project-URL: Source, https://github.com/CiscoAandI/cxr_service_client/
+Keywords: cx,cx_runner,service,cisco
+Platform: UNKNOWN
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: flask (==2.0.2)
+Requires-Dist: werkzeug (==2.0.2)
+
+CX Runner Plugin
+
