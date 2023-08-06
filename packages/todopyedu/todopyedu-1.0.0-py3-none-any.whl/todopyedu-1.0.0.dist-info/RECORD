@@ -1,0 +1,13 @@
+todopyedu/__init__.py,sha256=zeDmWsiSfG9apGXP46FMwDxAyS6_xEHQj2LMLFJIt7M,794
+todopyedu/__main__.py,sha256=eYlgRNvd5fHOWi91V4a328UEs0TuiuDRrTTdA76tG7Q,130
+todopyedu/cli.py,sha256=ScBTsAFl_vFSb-LQ0jAXalHO8nUPhEmAKi8XOZ82760,21225
+todopyedu/config.py,sha256=-jVMDFePIIKOQ7KudA_5s8et4Q5ZVJU2ti4BtXwJ16U,1395
+todopyedu/database.py,sha256=2wQOo3nf2VAH9YgF1otv9uRE-eyStCiqQNPXv6U77Js,2587
+todopyedu/todopyedu.py,sha256=T8dV344mKWtZWZ38DNwbT-yQ_9Sbrji5zpWbRHbDvcg,9821
+todopyedu-1.0.0.dist-info/DESCRIPTION.rst,sha256=rAaPTmDbjlhM00Co0gUNVF621Hwb-eqcTK_UQVZzht4,17
+todopyedu-1.0.0.dist-info/METADATA,sha256=3Zf-Slx5Dm7onvRnFFISdW-_G_JzPDVpo6LUfS-BwfM,545
+todopyedu-1.0.0.dist-info/RECORD,,
+todopyedu-1.0.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+todopyedu-1.0.0.dist-info/entry_points.txt,sha256=FL_2MgkaXIwabg9N3lolQo5iGQuXkuGYlmF-h2D7Q7Q,55
+todopyedu-1.0.0.dist-info/metadata.json,sha256=6VNdCFWkhXXri0s1lajG9hj8nRuaysCP7jC-URcKSnk,869
+todopyedu-1.0.0.dist-info/top_level.txt,sha256=EquDCDzXeJaD1Je1gK1OXwTtvh8MhyErK13kYcf4ewY,10
