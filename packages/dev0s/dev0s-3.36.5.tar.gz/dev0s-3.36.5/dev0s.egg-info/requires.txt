@@ -1,0 +1,16 @@
+beautifulsoup4
+certifi
+chardet
+click
+django
+flask
+jinja2
+pathlib
+pexpect
+pillow
+pycryptodome
+requests
+selenium
+urllib3
+werkzeug
+wheel
