@@ -1,0 +1,3 @@
+[console_scripts]
+video-matting = rvm.__main__:cmd
+
