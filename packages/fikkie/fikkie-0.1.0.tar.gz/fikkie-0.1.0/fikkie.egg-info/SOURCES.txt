@@ -1,0 +1,16 @@
+LICENSE.md
+README.md
+setup.py
+fikkie/__init__.py
+fikkie/check.py
+fikkie/config.py
+fikkie/main.py
+fikkie/watchdog.py
+fikkie.egg-info/PKG-INFO
+fikkie.egg-info/SOURCES.txt
+fikkie.egg-info/dependency_links.txt
+fikkie.egg-info/requires.txt
+fikkie.egg-info/top_level.txt
+fikkie/notifiers/__init__.py
+fikkie/notifiers/telegram.py
+scripts/fikkie
