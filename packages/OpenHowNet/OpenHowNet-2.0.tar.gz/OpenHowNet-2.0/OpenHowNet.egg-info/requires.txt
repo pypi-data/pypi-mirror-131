@@ -1,0 +1,4 @@
+anytree
+setuptools
+tqdm
+requests

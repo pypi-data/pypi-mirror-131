@@ -1,0 +1,14 @@
+README.md
+setup.py
+OpenHowNet/BabelNetSynset.py
+OpenHowNet/Download.py
+OpenHowNet/HowNetDict.py
+OpenHowNet/Sememe.py
+OpenHowNet/Sense.py
+OpenHowNet/__init__.py
+OpenHowNet/version.py
+OpenHowNet.egg-info/PKG-INFO
+OpenHowNet.egg-info/SOURCES.txt
+OpenHowNet.egg-info/dependency_links.txt
+OpenHowNet.egg-info/requires.txt
+OpenHowNet.egg-info/top_level.txt
