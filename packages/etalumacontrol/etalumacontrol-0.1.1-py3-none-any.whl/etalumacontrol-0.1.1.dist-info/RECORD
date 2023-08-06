@@ -1,0 +1,15 @@
+etalumacontrol/__init__.py,sha256=y0cMPw43wm6hqv-B2GBbR1rBp4PpnIXj-gCTYzOx2g8,67
+etalumacontrol/definitions.py,sha256=tiXK_zfwFKs8VKjfdcYsa-BrDB6IRuxdfdGCMCaMJPc,396
+etalumacontrol/lumascope.py,sha256=zqhgoNDHjSav4QD3tBlV34GwDf3lMtR6culKqYQc2rM,7730
+etalumacontrol/stage.py,sha256=Glv_B5jF_G9XKpEGw4icrxAKCIEqgiYaVmNy0xPq-dI,6649
+etalumacontrol/CypressFX/__init__.py,sha256=8W6szaS56QJyzg1PVScvq3PWs2Xq4vTScNlCjJEErkY,4593
+etalumacontrol/resources/Lumascope600.hex,sha256=K183vmssDZ-7ZaYWOX3ibbdG4rDkH5BcTdaJv18UtJY,29124
+etalumacontrol/resources/lib/x64/LumaUSB.dll,sha256=w4iYv1Wu3McI7HmPerjhFY0a3yCvQ1vLPaPKnsxqVNI,151040
+etalumacontrol/resources/lib/x64/wsc64.dll,sha256=5a52V1m9y9Uv3sVc2J2CJdQS2l3oimU-Qe5Yyp6Y8Nw,79872
+etalumacontrol/resources/lib/x86/LumaUSB.dll,sha256=w4iYv1Wu3McI7HmPerjhFY0a3yCvQ1vLPaPKnsxqVNI,151040
+etalumacontrol/resources/lib/x86/wsc32.dll,sha256=EJbrxCVS2IJz3ZxWFA_Xdom_gzvVJz0z11O4R3j5G34,39936
+etalumacontrol-0.1.1.dist-info/LICENSE,sha256=zYqh-UOxU_kFtUqWfcPu73oa82EZJgThHzD1qHiSbko,1349
+etalumacontrol-0.1.1.dist-info/METADATA,sha256=TuUR3OvhuKTX4heXnidpfnzexpiLvxEyZO2MTNP9-S8,2830
+etalumacontrol-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+etalumacontrol-0.1.1.dist-info/top_level.txt,sha256=hJcCBy_9GALDZTnjhvYhEG78DR-1hZGUlXKoSzk6QLI,15
+etalumacontrol-0.1.1.dist-info/RECORD,,
