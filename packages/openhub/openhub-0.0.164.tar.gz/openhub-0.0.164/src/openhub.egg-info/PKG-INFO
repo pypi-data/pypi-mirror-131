@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: openhub
+Version: 0.0.164
+Summary: An open source iOT controller.
+Home-page: https://github.com/ganonp/GardenHub
+Author: Ganon Pierce
+Author-email: ganonp@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# OpenHub
+
+This project builds on [HAP-Python](https://github.com/ikalchev/HAP-python). It is meant to allow easy setup and management of many iOT hubs and devices using Raspberry Pi.
+
+Main features:
+
+* Customizable
+* Manage many iOT hubs from one location
+* Integrated with the home automation framework [Home Assistant](https://github.com/home-assistant/home-assistant).
+
+## Installation 
+
+
+```
+$ sudo apt-get install python3-pip
+$ sudo python3 pip -m install openhub
+$ sudo python3 pip -m OpenHub.install
+```
+
+
