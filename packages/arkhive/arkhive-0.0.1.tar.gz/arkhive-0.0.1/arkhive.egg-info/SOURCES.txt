@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+arkhive/__init__.py
+arkhive.egg-info/PKG-INFO
+arkhive.egg-info/SOURCES.txt
+arkhive.egg-info/dependency_links.txt
+arkhive.egg-info/not-zip-safe
+arkhive.egg-info/requires.txt
+arkhive.egg-info/top_level.txt
