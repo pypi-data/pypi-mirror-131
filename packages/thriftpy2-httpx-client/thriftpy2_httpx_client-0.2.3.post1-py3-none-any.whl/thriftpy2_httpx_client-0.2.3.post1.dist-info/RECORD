@@ -1,0 +1,13 @@
+thriftpy2_httpx_client/__init__.py,sha256=tA2IEztpXsmBA5gkMk1GUqqYIgpPuk-Lr0L5IjzN0Bg,331
+thriftpy2_httpx_client/_version.py,sha256=YUeHQMR3WJSD1ncuBm1sXC7SCxT8h1_hY9x0rbcXaCA,503
+thriftpy2_httpx_client/aio/__init__.py,sha256=u1aQh83oPo2Om1rH_AioUwfYfHFqO5z2D4qPw2KuJ48,118
+thriftpy2_httpx_client/aio/rpc.py,sha256=9lJu5tCV1tjGGQ-zEmiVx1q5gWkCSSY7pJTH86ol4CU,2351
+thriftpy2_httpx_client/aio/transport.py,sha256=_qnT2KgUBHzJVvdr-Db6M0q_EIo52jxVpC2gnmotPzM,3478
+thriftpy2_httpx_client/sync/__init__.py,sha256=lH-BHY86Vm7d4clkTeox5qntfHwkQCOEXMEDEC0EBwo,489
+thriftpy2_httpx_client/sync/rpc.py,sha256=qfG-ZZv13esWoFNkatk2eGvzr5zB6smPMtaxlfyROlM,2572
+thriftpy2_httpx_client/sync/transport.py,sha256=w8ucWpFOKe3JoBaxBG9Es4vwt4vQVYoE87BDQXjLlXI,3645
+thriftpy2_httpx_client-0.2.3.post1.dist-info/LICENSE,sha256=Au5_tZpe5Sgc_DKFaOwo7xiAjTyM5CTgb-KVS24zPok,1081
+thriftpy2_httpx_client-0.2.3.post1.dist-info/METADATA,sha256=2yNbqCa5Q2PK32T_xsDUBvrQuNAUp8wQSLsx-gM7Bek,2984
+thriftpy2_httpx_client-0.2.3.post1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+thriftpy2_httpx_client-0.2.3.post1.dist-info/top_level.txt,sha256=EQ0PBCjsIeHJawYNFIg7p2iten1sTTuzoiNA5f5mCyc,23
+thriftpy2_httpx_client-0.2.3.post1.dist-info/RECORD,,
