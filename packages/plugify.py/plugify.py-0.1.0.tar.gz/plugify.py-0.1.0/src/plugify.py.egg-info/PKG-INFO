@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: plugify.py
+Version: 0.1.0
+Summary: Pythonic API Wrapper For Plugify
+Home-page: https://github.com/RPSMain/plugify.py
+Author: RPS
+License: Apache-2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+plugify.py
+==========
+
+Pythonic API Wrapper For Plugify
+
+Support
++++++++
+This is currently only for the **Private** Plugify Release & API
+
+Installing
+==========
+
+.. code:: bash
+
+    pip install -U plugify.py
+
+
