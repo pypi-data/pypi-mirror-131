@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: assistant-robert
+Version: 0.0.3
+Summary: A simple Python library that provides search with different search engines and more.
+Home-page: https://github.com/manucabral/assistant-robert
+Author: Manuel Cabral
+Author-email: cabral.manuel@yandex.com
+License: MIT
+Description: # Assistant Robert
+        A simple Python library that provides search with different search engines and more.
+        
+        # Install
+        ```
+        pip install assistant-robert
+        ```
+        
+        # Usage
+        ```py
+        from robert import GoogleSearcher
+        
+        client = GoogleSearcher('en')
+        result = client.search('hello')
+        print(result)
+        ```
+Keywords: python,searcher,googlesearch,duckduckgosearch,html
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >= 3.9
+Description-Content-Type: text/markdown

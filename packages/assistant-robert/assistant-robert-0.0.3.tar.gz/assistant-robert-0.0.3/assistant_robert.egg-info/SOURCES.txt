@@ -1,0 +1,13 @@
+README.md
+setup.py
+assistant_robert.egg-info/PKG-INFO
+assistant_robert.egg-info/SOURCES.txt
+assistant_robert.egg-info/dependency_links.txt
+assistant_robert.egg-info/requires.txt
+assistant_robert.egg-info/top_level.txt
+robert/__init__.py
+robert/constants.py
+robert/ddgosearcher.py
+robert/exceptions.py
+robert/googlesearch.py
+robert/searcher.py
