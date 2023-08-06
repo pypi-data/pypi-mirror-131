@@ -1,0 +1,7 @@
+setup.py
+motivate/__init__.py
+motivate/me.py
+motivatememore.egg-info/PKG-INFO
+motivatememore.egg-info/SOURCES.txt
+motivatememore.egg-info/dependency_links.txt
+motivatememore.egg-info/top_level.txt
