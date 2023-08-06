@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dwsimopt
+Version: 0.0.2
+Summary: DWSIM automation with python for chemical process simulation optimization
+Home-page: http://https://github.com/lf-santos/pyDWSIMopt
+Author: Lucas F. Santos
+Author-email: lfs.francisco.95@gmal.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pythonnet
+Requires-Dist: pywin32
+Requires-Dist: numpy
+Requires-Dist: scikit-optimize
+Requires-Dist: scipy
+
+UNKNOWN
+
+
