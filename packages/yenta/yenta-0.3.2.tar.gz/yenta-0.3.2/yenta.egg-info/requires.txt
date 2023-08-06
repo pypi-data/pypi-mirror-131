@@ -1,0 +1,6 @@
+Click>=7.0
+networkx~=2.5
+colorama~=0.4.4
+pydot~=1.4.1
+rich~=9.11.0
+more_itertools~=8.7.0
