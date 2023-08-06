@@ -1,0 +1,17 @@
+dynamic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dynamic/__main__.py,sha256=RN44Wgw5sTFbm9bYmRN7s2iKBLX0qIk95EGrQ6382vo,2311
+dynamic/api_test.py,sha256=a0UzlKW-hJDC83hQ86lRugoWcL7D5g8kqkCy7j2xjTs,7246
+dynamic/error.py,sha256=vzxnC8ZUBNN2RdA8PnwajA-IbMbvUCRpAgxe8tp0Is4,1196
+dynamic/markdown.py,sha256=inRNFwgVwxlcOgO75_hSemwplaaS6zsaiOEE_UyyT4c,978
+dynamic/notion.py,sha256=Zkg0V1Rth8M6xCiN3LMPUzeckiY3LcOpSNUbotIsq00,2956
+dynamic/save.py,sha256=Kjeyfnl5k1BwkyDQwe8tdDdeNqjy1Iz26m5LXJ51q3c,1113
+dynamic/search.py,sha256=8d84VOLfdSEJ0TygEcTp1tn24VIh4NCw5yYUqAM34Ng,3900
+dynamic/settings.py,sha256=VgXw2hBNGaxulWuMBYXLMM-NG9O7oHhyvhSt7wfFn4s,490
+dynamic/update.py,sha256=gm43nkzh2tX57FL91QIcJq5s4gz4r7xbPzIHyNXXOM0,1429
+dynamic/utility.py,sha256=L3LvLw6cpn4lM6id--DNLBMzy-bP40rfu6O6V9fK3nw,17613
+dynamic_cli-1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dynamic_cli-1.1.dist-info/METADATA,sha256=cA-2d7lTUOG8gIxQ9ZfwUsverZMWCSFzsGfBJ5c9E5s,5879
+dynamic_cli-1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dynamic_cli-1.1.dist-info/entry_points.txt,sha256=GGW6s7UDGI04cNW3Jc_xsW3yHmZsTMi8OqGHeuxiOm0,51
+dynamic_cli-1.1.dist-info/top_level.txt,sha256=kaPViqwrkVXNSNM1P2MUJOSGi7HewDluqAOnDXSqKPg,8
+dynamic_cli-1.1.dist-info/RECORD,,
