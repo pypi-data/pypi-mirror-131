@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: bpw_pde
+Version: 0.0a0
+Summary: Eponymous extensions to the Python pandas package.
+Home-page: https://github.com/bpw1621/bpw-pde
+Author: Bryan Patrick Wood
+Author-email: bpw1621@gmail.com
+License: 'MIT'
+Download-URL: https://github.com/bpw1621/bpw-pde/archive/master.zip
+Project-URL: Source, https://github.com/bpw1621/bpw-pde
+Project-URL: Bug Tracker, https://github.com/bpw1621/bpw-pde/issues
+Keywords: 'pandas'
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+UNKNOWN
+
