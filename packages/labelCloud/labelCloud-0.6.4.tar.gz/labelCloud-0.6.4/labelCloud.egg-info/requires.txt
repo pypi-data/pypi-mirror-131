@@ -1,0 +1,8 @@
+numpy~=1.21.4
+open3d~=0.14.1
+PyOpenGL~=3.1.5
+PyQt5~=5.14.1
+
+[tests]
+pytest~=6.2.4
+pytest-qt~=4.0.2
