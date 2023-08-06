@@ -1,0 +1,19 @@
+astropy
+asdf>=2.8.0
+numpy
+asdf-coordinates-schemas
+asdf-transform-schemas
+packaging>=16.0
+
+[:python_version < "3.9"]
+importlib_resources>=3
+
+[docs]
+sphinx
+sphinx-astropy
+sphinx-automodapi
+sphinx-asdf
+
+[test]
+pytest-astropy
+coverage
