@@ -1,0 +1,6 @@
+lxml
+dateutils
+tinytag
+requests
+pycountry
+validators
