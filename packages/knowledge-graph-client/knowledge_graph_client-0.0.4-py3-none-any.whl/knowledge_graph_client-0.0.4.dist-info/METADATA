@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: knowledge-graph-client
+Version: 0.0.4
+Summary: A simple Python client to a GraphQL Knowledge Graph
+Home-page: https://pypi.org/project/knowledge-graph-client/
+Author: Bart Meyers
+Author-email: bart.meyers@flandersmake.be
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Overview
+
+This package is a very simple client for accessing a GraphQL knowledge graph as a HTTP GET request wrapper.
+
+# Usage
+
+Create a client:
+
+```
+from pykg import KGClient
+kg = KGClient(
+  host = 'localhost',
+  port = 6543,
+  user = 'user',
+  password = 'password',
+  domain = 'my_kg')
+```
+
+Perform a string based query:
+```
+kg.query("{ assets { name } }")
+```
+
+Perform a query, but suppress output:
+```
+result = kg.query("{ assets { name } }", pretty_print=False)
+print(len(result['assets']))
+```
+
