@@ -1,0 +1,17 @@
+shell_proc/__init__.py,sha256=nHIX-5hztg2jUL0YTVNYijFRB3dHhdaJY-9C8ltr1d4,184
+shell_proc/__main__.py,sha256=buIN0NlZlf7FuQiVlUwmogUmTg4t3Fz5u9D_v757nkI,777
+shell_proc/__meta__.py,sha256=ehQ9SECdOjNRrOkeCkhF1mkwc11XEGNyDkji8c_X5Yk,194
+shell_proc/shell.py,sha256=2z3ZNQzqGBiSLmvfACZhbQFEUQ-9DiBFh21V0_ZHemk,35478
+shell_proc/__pycache__/__init__.cpython-36.pyc,sha256=CZ-gsYIfP0tVOXUWEY8v12CLG_U5r996F8HGrYkyt0Y,406
+shell_proc/__pycache__/__init__.cpython-39.pyc,sha256=sAV-Ftif9GTNc871UgUNXHFCj6Ys9vEa5brI5rWGwic,399
+shell_proc/__pycache__/__main__.cpython-36.pyc,sha256=zGcUvgfpjqYZ4L9bepi35dcNSWAxdI0gfMj7-5n20Qg,893
+shell_proc/__pycache__/__main__.cpython-39.pyc,sha256=i-zJyK8K41WkTBRjdWrT8pUT2VwVP7m-iQ0PbP-Rfp8,909
+shell_proc/__pycache__/__meta__.cpython-36.pyc,sha256=XoV2xptVXPqTFKwTTFPwMys_Tda2cNBcVMMt76eJRy8,341
+shell_proc/__pycache__/__meta__.cpython-39.pyc,sha256=z6b8dG_yjYTpddph8CZwY3NXHrlxC8O-cFRHsEKD21o,334
+shell_proc/__pycache__/shell.cpython-36.pyc,sha256=IPzTa72w-G02HuIVOMv2lC0OIdWoE-w1W7AufZBc9x8,30790
+shell_proc/__pycache__/shell.cpython-39.pyc,sha256=xV0I4lx1lJCpFFeBpBeqAv8OVwQUZKTzfJ2kHTCcbU8,29747
+shell_proc-1.2.1.dist-info/LICENSE,sha256=mRHelfWKACgH_I8oF8chpzYSAV3WsDItwqxnexSTT_A,1090
+shell_proc-1.2.1.dist-info/METADATA,sha256=MyWccryU0UK4W3QOvm98jr5NZjr4AahZDfGdU8Ymx70,8319
+shell_proc-1.2.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+shell_proc-1.2.1.dist-info/top_level.txt,sha256=OiO0JKp6W-dSu3nWN6rk8IC-siXeEieKGiAFX6xmoFE,11
+shell_proc-1.2.1.dist-info/RECORD,,
