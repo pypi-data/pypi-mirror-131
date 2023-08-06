@@ -1,0 +1,3 @@
+[console_scripts]
+ongc = pyongc.scripts.ongc:cli
+
