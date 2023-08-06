@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: kontakt
+Version: 2.0.0
+Summary: Foundation for adding extensibility to Python packages.
+Home-page: https://bitbucket.org/sixty-north/kontakt
+Author: Sixty North AS
+Author-email: systems+kontakt@sixty-north.com
+License: MIT
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE
+Requires-Dist: asq
+Requires-Dist: stevedore
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: bump2version ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+=======
+kontakt
+=======
+
+Foundation for adding extensibility to Python packages.
+
+This provides an `Extension` base class and utilities for working with it. To create a new
+type of extension, you'll first create a subclass of `Extension`. Then for each type of
+your new extension, you'll inherit from your subclass. Finally, you'll register these
+types of extension with `setuptools` through *entry points* in your `setup.py`.
+
+See `kontakt.example` for a simple example.
+
