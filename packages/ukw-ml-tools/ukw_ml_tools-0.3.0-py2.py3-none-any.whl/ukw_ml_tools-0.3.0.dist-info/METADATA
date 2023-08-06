@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: ukw-ml-tools
+Version: 0.3.0
+Summary: Frequently used ML utilities.
+Home-page: https://github.com/Maddonix/ukw-ml-tools
+Author: Thomas J. Lux
+Author-email: tlux14@gmail.com
+License: MIT
+Project-URL: Documentation, https://ukw-ml-tools.readthedocs.io/
+Project-URL: Changelog, https://ukw-ml-tools.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/Maddonix/ukw-ml-tools/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Requires-Dist: pytorch-lightning
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: torchmetrics
+Requires-Dist: opencv-python
+Requires-Dist: albumentations
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+
+========
+Overview
+========
+
+
+
+Frequently used ML utilities.
+
+* Free software: MIT license
+
+Installation
+============
+
+::
+
+    pip install ukw-ml-tools
+
+You can also install the in-development version with::
+
+    pip install https://github.com/Maddonix/ukw-ml-tools/archive/master.zip
+
+
+Documentation
+=============
+
+
+https://ukw-ml-tools.readthedocs.io/
+
+
+Development
+===========
+
+To run all the tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+
+Changelog
+=========
+
+0.0.0 (2021-05-27)
+------------------
+
+* First release on PyPI.
+
+0.0.3 (2021-10-21)
+------------------
+
+* Major refactoring.
+
+
