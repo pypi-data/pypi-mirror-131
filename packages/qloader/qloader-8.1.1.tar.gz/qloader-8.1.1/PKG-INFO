@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: qloader
+Version: 8.1.1
+Summary: Gather results from some search engine
+Author: tasker
+Author-email: tasker@ialcloud.xyz
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: imagehash (>=4.1.0,<5.0.0)
+Requires-Dist: pillow (>=8.1.1,<9.0.0)
+Requires-Dist: requests (>=2.23.0,<3.0.0)
+Requires-Dist: selenium (>=3.141.0,<4.0.0)
