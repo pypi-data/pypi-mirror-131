@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+HSI_Dataset_API.egg-info/PKG-INFO
+HSI_Dataset_API.egg-info/SOURCES.txt
+HSI_Dataset_API.egg-info/dependency_links.txt
+HSI_Dataset_API.egg-info/top_level.txt
+hsi_dataset_api/DataCropper.py
+hsi_dataset_api/Dataset.py
+hsi_dataset_api/__init__.py
+hsi_dataset_api/utils/WrongDirectoryStructure.py
+hsi_dataset_api/utils/__init__.py
