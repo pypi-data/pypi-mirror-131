@@ -1,0 +1,11 @@
+meshlab_pickedpoints/__init__.py,sha256=TZtxUBQzuY9xuOCnYfmqm-lxXrDUUcTCXXZaIxVEXt0,140
+meshlab_pickedpoints/_core.py,sha256=iII084J4VwG1xDOxYD_kKalCuyTKTwzL5gX0hsIyiB4,3002
+meshlab_pickedpoints/cli.py,sha256=9j-gP7iI1nj1BiFsO0P2MyUCYl1hYZBKXdCkKXq4L-w,485
+meshlab_pickedpoints/package_version.py,sha256=EPmgXOdWKks5S__ZMH7Nu6xpAeVrZpfxaFy4pykuyeI,22
+meshlab_pickedpoints/testing_fixtures.py,sha256=cxyhKfeqaBEQ_vYNfue8jwp1RJOs2cjE3nCsvaLiC-4,725
+meshlab_pickedpoints/testing_helpers.py,sha256=-iP_erjqt3DsTR4DCnP-rwLALh2sNjY7s-LaqNsnYLc,718
+meshlab_pickedpoints-3.0.0.dist-info/LICENSE,sha256=JZ-O8mACyj_OqG2b-VTYwrVhTzf2hN9-mOKltYlwOs0,1381
+meshlab_pickedpoints-3.0.0.dist-info/METADATA,sha256=I1kZWiTKKqYSImzgbC0BqQZGr-SaMqOf_W4TEqjKt8A,3370
+meshlab_pickedpoints-3.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+meshlab_pickedpoints-3.0.0.dist-info/top_level.txt,sha256=fgmOZuE1R01loFOPpWXysC4el0DNSEhyTGmogilGUaI,21
+meshlab_pickedpoints-3.0.0.dist-info/RECORD,,
