@@ -1,0 +1,3 @@
+[console_scripts]
+biosimulators-cbmpy = biosimulators_cbmpy.__main__:main
+

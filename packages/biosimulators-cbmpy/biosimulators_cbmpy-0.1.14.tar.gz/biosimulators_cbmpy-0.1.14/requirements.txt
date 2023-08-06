@@ -1,0 +1,8 @@
+biosimulators_utils[logging] >= 0.1.122
+cbmpy <= 0.7.25
+glpk
+kisao
+lxml
+numpy
+python_libsbml
+sympy != 1.8, != 1.9 # CBMPy requires a microversion number
