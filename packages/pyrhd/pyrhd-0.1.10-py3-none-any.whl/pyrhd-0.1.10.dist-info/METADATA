@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pyrhd
+Version: 0.1.10
+Summary: Scraping Library for Personal Use
+Home-page: UNKNOWN
+Author: abhira0
+Author-email: abhira0@protonmail.com
+License: MIT
+Project-URL: URL Shortener, https://abhirao.in/sh/
+Project-URL: Author Website, https://abhirao.in
+Project-URL: GitHub, https://github.com/abhira0/pyrhd
+Keywords: python,scrape,scraping,scraper,downloader,python-scraper,harvester,harvest
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests
+Requires-Dist: bs4
+Requires-Dist: sty
+
+# pyrhd
+PYthon Request Harvest Download
+
+#### to be added in near future. Please come back again to read the manual
+
