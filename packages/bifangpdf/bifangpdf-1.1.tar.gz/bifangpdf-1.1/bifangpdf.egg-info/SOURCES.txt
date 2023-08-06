@@ -1,0 +1,10 @@
+License
+README.md
+setup.py
+bifangpdf/__init__.py
+bifangpdf/pdf2image.py
+bifangpdf/pdf2text.py
+bifangpdf.egg-info/PKG-INFO
+bifangpdf.egg-info/SOURCES.txt
+bifangpdf.egg-info/dependency_links.txt
+bifangpdf.egg-info/top_level.txt
