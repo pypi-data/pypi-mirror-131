@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/zoomlog/__init__.py
+src/zoomlog/main.py
+src/zoomlog_ZOOM_DEVELOPER.egg-info/PKG-INFO
+src/zoomlog_ZOOM_DEVELOPER.egg-info/SOURCES.txt
+src/zoomlog_ZOOM_DEVELOPER.egg-info/dependency_links.txt
+src/zoomlog_ZOOM_DEVELOPER.egg-info/top_level.txt
