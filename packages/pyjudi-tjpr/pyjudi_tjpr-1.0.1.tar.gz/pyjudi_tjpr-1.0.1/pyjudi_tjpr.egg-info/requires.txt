@@ -1,0 +1,3 @@
+beautifulsoup4<5,>=4.10.0
+onetimepass<2,>=1.0.1
+requests<3,>=2.26.0
