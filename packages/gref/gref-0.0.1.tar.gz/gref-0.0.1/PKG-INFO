@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gref
+Version: 0.0.1
+Summary: Search, scrape, and render citation graphs.
+Home-page: https://github.com/shanedrabing/gref
+Author: Shane Drabing
+Author-email: shane.drabing@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Gref
+
+Graphical reference tool.
+
+
