@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tendulkar_s3_aws
+Version: 0.0.1
+Summary: Python library for dashboard
+Home-page: https://github.com/tendulkar/tendulkar-utils
+Author: Shubham Tendulkar
+Author-email: shubhamtendulkar@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# tendulkar-utils
+
+Python library for dashboard
+
+
+
