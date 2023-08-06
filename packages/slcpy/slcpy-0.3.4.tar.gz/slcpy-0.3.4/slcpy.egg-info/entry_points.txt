@@ -1,0 +1,5 @@
+[console_scripts]
+slcpy_graph = slcpy.build_graph:main
+slcpy_semantic = slcpy.build_semantic:main
+slcpy_stitch = slcpy.stitch_images:main
+
