@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: viboon555
+Version: 0.0.1
+Summary: Viboon Profile
+Home-page: https://github.com/MyViboon/ViboonProfile
+Author: Viboon
+Author-email: bakpu11@gmail.com
+License: MIT
+Download-URL: https://github.com/MyViboon/ViboonProfile/archive/v0.0.1.zip
+Keywords: Profile,viboon
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE.txt
+
+(Viboon Profile) เป็นตัวอย่างการอัปโหลด package ไปยัง PyPi
+==========================================================
+
+PyPi: https://pypi.org/project/viboon555/
+
+สวัสดีครับ Package นี้เป็นแพ็คเก็จ ที่อธิยาย Profile ของนาย วิบูลย์
+ปานแก้ว สามารถนำไปใช้กับผู้อื่นได้
+
+วิธีติดตั้ง
+~~~~~~~~~~~
+
+เปิด CMD / Terminal
+
+.. code:: python
+
+   pip install viboon555
+
+วิธีใช้งานแพ็คเพจนี้
+~~~~~~~~~~~~~~~~~~~~
+
+-  เปิด IDLE ขึ้นมาแล้วพิมพ์…
+
+.. code:: python
+
+   my = Profile('Viboon')
+   my.company = 'GGG'
+   my.hobby = ['วาดภาพ','Reading','Sleep']
+   my.sport = ['ฟุตบอล','Boxing','Hose']
+   print(my.name)
+   my.show_email()
+   my.show_myart()
+   my.show_hobby()
+   my.show_sport()
+
+พัฒนาโดย: นาย วิบูลย์ ปานแก้ว FB: https://www.facebook.com/li.dxngpu
+
+
