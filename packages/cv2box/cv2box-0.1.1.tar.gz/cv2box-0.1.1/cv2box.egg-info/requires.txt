@@ -1,0 +1,7 @@
+numpy
+tqdm
+opencv_python
+Pillow
+matplotlib
+seaborn
+moviepy
