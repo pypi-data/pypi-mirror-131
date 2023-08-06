@@ -1,0 +1,16 @@
+CHANGELOG.md,sha256=maT9bT4cs5SH0LJ3QLDOgmm4mrQkiN1PnN__JTTrtjs,241
+LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+README.md,sha256=P6s8-wj37JyzFyke524d7imuv6gGBkNHtFkaZwTMas4,1386
+pypika/__init__.py,sha256=lR7Jt6NaKgNhPkkwP8gdRlG2nn8gKR23i-K4vp0CBYo,1091
+pypika/analytics.py,sha256=6VHdF1JWFsig81T7FXvzjklrf9ibcqZgDv7PNcti3YM,3273
+pypika/dialects.py,sha256=7avzVmF2lI-PhLMx5vCSl0ZdJATSQPD-rlaNlBuDbS4,15813
+pypika/enums.py,sha256=FSy8FVQ7l0ykY80jO9zEISNkSq7mHqyx4cXlbRLKg-Y,2771
+pypika/functions.py,sha256=H8crkpQoJusmnr9W1ujDu2N-g4Rq1PBehEKNpuIl4pw,9259
+pypika/pseudocolumns.py,sha256=kbOVVf6nPV7wng_ymayQJxuNkHF8MbYDkDS2hRHSol0,252
+pypika/queries.py,sha256=fT4fP0S8tq9hCV15twH6H6Yk6OKkaZ9ddI45F1rCRuc,70200
+pypika/terms.py,sha256=O00VwDcMu0pQiJndFoW8l12qLLbIZYpWg1-c7Jpsp7g,55903
+pypika/utils.py,sha256=oCXKz7DuNlS176aGJTX_Vzx1wbRkI29NP92-M535Dck,3703
+pypika_tortoise-0.1.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pypika_tortoise-0.1.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pypika_tortoise-0.1.2.dist-info/METADATA,sha256=Qk4R9Ds97pkmx-UJ-tNrarXYGYBwdYij_l07zeNZFEc,2213
+pypika_tortoise-0.1.2.dist-info/RECORD,,
