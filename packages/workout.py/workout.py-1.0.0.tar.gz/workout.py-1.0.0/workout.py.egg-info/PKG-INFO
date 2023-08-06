@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: workout.py
+Version: 1.0.0
+Summary: Workout buddy
+Home-page: https://www.devdungeon.com
+Author: DevDungeon
+Author-email: nanodano@devdungeon.com
+License: GPL-3.0
+Description: # workout.py
+        
+        ## Install
+        
+        ```bash
+        pip install workout.py
+        ```
+        
+        ## Running
+        
+        ```bash
+        python -m workout
+        # or
+        workout
+        ```
+        
+        ## Custom workout
+        
+        ```python
+        import workout
+        
+        workout.announce('Stretch')
+        workout.announce('Jumping jacks')
+        workout.announce('Shadow boxing')
+        ```
+        
+        ## Contact
+        
+        nanodano@devdungeon.com
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
