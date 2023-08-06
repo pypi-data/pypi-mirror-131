@@ -1,0 +1,68 @@
+[tool.poetry]
+name = "django-entries"
+version = "0.1.11"
+description = "Entries is a helper Django app with CRUD functions based on htmx."
+authors = ["Marcelino G. Veloso III <mars@veloso.one>"]
+readme = "README.md"
+repository = "https://github.com/justmars/django-entries"
+license = "MIT"
+packages = [
+    { include = "entries" }, # because django-entries differs from entries
+]
+
+[tool.poetry.dependencies]
+python = "^3.8" # mandatory
+Django = "^4.0"
+django-extensions = "^3.1.5" # model / field helpers
+django-crispy-forms = "^1.13.0" # server-side rendering
+markdownify = "^0.10.0" # html to md
+Markdown = "^3.3.6" # md to html
+types-Markdown = "^3.3.8"
+bleach = "^4.1.0" # cleaning input
+types-bleach = "^4.1.1"
+
+
+[tool.poetry.dev-dependencies]
+djhtml = "^1.4.10"
+pytest = "^6.2.5"
+pytest-django = "^4.5.1"
+pytest-cov = "^2.12.1"
+mypy = "^0.902"
+black = "^21.12b0"
+isort = "^5.10.1"
+pre-commit = "^2.16.0"
+
+[tool.pytest]
+DJANGO_SETTINGS_MODULE = "config.settings" # depends on project root
+minversion = "6.0"
+addopts = "--ds=config.settings"
+testpaths = ["tests"]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 79
+include_trailing_comma = 'True'
+
+[tool.black]
+line-length = 79
+include = '.pyi?$'
+exclude = '''
+/(
+    .git
+    | .hg
+    | .mypy_cache
+    | .tox
+    | .venv
+    | _build
+    | buck-out
+    | build
+    | dist
+)/
+'''
+
+
+
+[build-system]
+requires = ["poetry-core>=1.1.12"]
+build-backend = "poetry.core.masonry.api"
