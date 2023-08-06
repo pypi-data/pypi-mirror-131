@@ -1,0 +1,12 @@
+click
+PyYAML
+circlify
+f90nml
+
+[docs]
+myst-parser
+sphinx_rtd_theme
+
+[tests]
+pytest
+click
