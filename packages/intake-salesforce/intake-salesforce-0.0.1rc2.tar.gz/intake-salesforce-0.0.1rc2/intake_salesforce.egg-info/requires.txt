@@ -1,0 +1,3 @@
+intake[dataframe]
+pandas
+simple_salesforce
