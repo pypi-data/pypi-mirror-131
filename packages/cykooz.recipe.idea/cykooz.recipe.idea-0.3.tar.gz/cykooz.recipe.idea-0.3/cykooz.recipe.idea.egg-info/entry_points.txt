@@ -1,0 +1,6 @@
+[console_scripts]
+recipe_tests = cykooz.recipe.idea.runtests:runtests [test]
+
+[zc.buildout]
+default = cykooz.recipe.idea:Recipe
+

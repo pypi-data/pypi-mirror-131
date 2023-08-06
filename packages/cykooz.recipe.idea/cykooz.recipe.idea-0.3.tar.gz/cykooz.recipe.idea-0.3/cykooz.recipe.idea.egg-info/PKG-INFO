@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: cykooz.recipe.idea
+Version: 0.3
+Summary: zc.buildout recipe that creates a file with list of external libraries for PyCharm of IntelliJ IDEA.
+Home-page: https://github.com/Cykooz/cykooz-recipe-idea
+Author: Kirill Kuzminykh
+Author-email: cykooz@gmail.com
+License: UNKNOWN
+Description: cykooz.recipe.idea
+        ******************
+        
+        This recipe for buildout_ creates a ``.idea/libraries/Buildout_Eggs.xml`` file.
+        This file may be used by ``PyCharm`` (or ``IntelliJ IDEA``) as list of external
+        libraries and contains paths to all the specified eggs and their dependencies.
+        
+        Usage
+        =====
+        
+        This is a minimal ``buildout.cfg`` file which creates a xml-file with paths
+        to eggs::
+        
+            [buildout]
+            parts =
+                application
+                idea
+        
+            [application]
+            recipe = zc.recipe.egg:scripts
+            eggs =
+                my_application
+                ipython
+        
+            [idea]
+            recipe = cykooz.recipe.idea
+            eggs =
+                ${application:eggs}
+        
+        
+        Available options
+        =================
+        
+        eggs
+            The eggs that will be used to generate a file with paths. You don’t need to
+            include transitive dependencies. This is done automatically.
+        
+        idea_dir
+            Path to directory of ``PyCharm`` project. Default: ``${buildout:directory}/.idea``
+            The recipe won't create any files or directories if given directory is absent
+            or it not contains .iml file.
+        
+        include_develop
+            Set it as ``true`` if you need to add paths to develop packages.
+            Default: ``false``.
+        
+        include_eggs
+            Set it as ``false`` if you need to exclude paths to the specified eggs.
+            Default: ``true``.
+        
+        include_other
+            Set it as ``true`` if you need to add paths to other directories that
+            contains required packages or it dependencies but that was installed
+            not by ``zc.buildout``. For example path to ``site-packages`` directory
+            from used Python.
+            Default: ``false``.
+        
+        extra-paths
+            Extra paths to include in a generated xml file.
+        
+        
+        .. _buildout: http://pypi.python.org/pypi/zc.buildout
+        
+        
+        Changes
+        *******
+        
+        0.3 (2021-12-14)
+        ================
+        
+        - Added support of Python 3.6 and 3.7.
+        
+        0.2 (2021-12-08)
+        ================
+        
+        - First release.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Framework :: Buildout
+Classifier: Framework :: Buildout :: Recipe
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/x-rst
+Provides-Extra: test
