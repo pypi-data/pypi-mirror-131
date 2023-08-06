@@ -1,0 +1,10 @@
+tox_conda/__init__.py,sha256=H8O5V2zHPHZXwbCbz1hzd4xi8UPYUwREcVIc3Gp-rFI,72
+tox_conda/env_activator.py,sha256=MfpHCqHQiMvDzXwHnmc3UlG7vJyAkbPAk5YaEejbgeA,4133
+tox_conda/plugin.py,sha256=82IIe_WTm4Z74fQAB1Q12SugepSiqaGbNXjtadr6w2o,9560
+tox_conda/version.py,sha256=mjyM89-OoCZB2qzj3q-f6d_Hb18zDHiB-hwTMAMHXTw,142
+tox_conda-0.9.1.dist-info/LICENSE,sha256=2ymUJ7mI6VwwQWO_f1jFD8rwDTq2lyahTLc1X5eczn4,1085
+tox_conda-0.9.1.dist-info/METADATA,sha256=g884FYVIJcwxiGfNY4zNxZ45Aawq1uLEAW0dJH_MIUI,8865
+tox_conda-0.9.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+tox_conda-0.9.1.dist-info/entry_points.txt,sha256=x9uxehQ1KnY_ZQaEbpH80BvwcXYokhcMu-ht0IEjegA,32
+tox_conda-0.9.1.dist-info/top_level.txt,sha256=yVh8Nt5cV742VgMZx6zVF5qGYoz5-w5dvZGEBRTdIfM,10
+tox_conda-0.9.1.dist-info/RECORD,,
