@@ -1,0 +1,13 @@
+simpsom/__init__.py,sha256=vYl4eVncXgjoPa8CmzpICkwKXfy_e3r_59yTfRLj6l8,2701
+simpsom/_version.py,sha256=6EzROMyw6DhtTo-Yl1kc_B1jrJUww8nGrpKFD6By4PE,50
+simpsom/hexagons.py,sha256=10gZvWjtWrpEOzsO3a_zfr5wx2rep2jRre4rv1qptvU,2265
+simpsom/interface.py,sha256=txhbrIrrG7-UY7EeC8ox_d4QHcxgysOb9X_LemyhOvY,2225
+simpsom/network.py,sha256=Rnd7E2RS8u1jTwOdNpFuhQ3v-eoukR4iRp-RveoLmNQ,40230
+simpsom/cluster/__init__.py,sha256=vXsMrqiHcnI5a6U9xUrhChgYbCcztzIEpz7I-aYa_is,176
+simpsom/cluster/density_peak.py,sha256=s9lKHXfrGoQRO8YpEeCpz8_ch6jiDObUBFDa2x_OUnQ,20688
+simpsom/cluster/quality_threshold.py,sha256=SmKu7LQQ9FMvHQYBDDFnQxr9EzsVx9wGJA4i7xnbx8U,5542
+simpsom-2.0.1.dist-info/LICENSE.txt,sha256=vjhEexMRZcVhnpheK5DpNtzEh9eKAirjT-3IXsG86L0,1066
+simpsom-2.0.1.dist-info/METADATA,sha256=lFnu5bQfm98JgjFWLspuWAM3P7LWcNXMspEWX71B3xE,2350
+simpsom-2.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+simpsom-2.0.1.dist-info/top_level.txt,sha256=b6UsltGnT1g9U-htl7fN5EhEL3vXHuua3wVPQ5cZSOQ,8
+simpsom-2.0.1.dist-info/RECORD,,
