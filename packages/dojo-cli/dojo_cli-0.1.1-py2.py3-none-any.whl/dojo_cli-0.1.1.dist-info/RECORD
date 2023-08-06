@@ -1,0 +1,11 @@
+dojocli/__init__.py,sha256=6_CrL54lf3invb5rfQGP3BsB14YliI1PxVS1eKFnCcU,127
+dojocli/cli.py,sha256=4WBiuCAG_sqWQq4Ysv4Uk03NWLuPrraN3Ww7ew5PMgk,15654
+dojocli/docker_client.py,sha256=pU0VQaHW78vUMuf3LCjTY5IOZcHRIzx5X2kf66LPwMI,5677
+dojocli/dojo_client.py,sha256=Bt0gQjtNdF0bYYqVzZSQ_guKs5gOxXIBSsActQd_zTA,16315
+dojo_cli-0.1.1.dist-info/AUTHORS.md,sha256=26DbTKBE60nECOpU-6rVFJJSlzYGKtND-2ccjm-znvo,121
+dojo_cli-0.1.1.dist-info/LICENSE,sha256=vK4TKUl3nZKOlHeMO_F469jPuyVo-C7w12BJ4WHPqPc,1065
+dojo_cli-0.1.1.dist-info/METADATA,sha256=W5m9RQfcUvJbi_i1Y-2YWMjkybrjDIKk0vlD96nTtWk,12116
+dojo_cli-0.1.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+dojo_cli-0.1.1.dist-info/entry_points.txt,sha256=liAjDKqEEClQM2-lbg6xcnUoavaWsDeKsBcU97Hu0FI,42
+dojo_cli-0.1.1.dist-info/top_level.txt,sha256=zqeK4o1syNHeSdWDUQlNW76_5Na8kvasX2dHtM5w8EA,8
+dojo_cli-0.1.1.dist-info/RECORD,,
