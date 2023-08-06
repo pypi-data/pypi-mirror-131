@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: alquran-id
+Version: 0.0.1
+Summary: Al-Quran, Terjemahan Indonesia dan Tafsir Jalalayn
+Home-page: https://gitlab.com/nesstero/quran-id
+Author: nestero
+Author-email: nestero@mail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Al-Quran ID
+Al Quran, Terjemahan indonesia, dan Tafsir Jalalayn
+
+# Installasi
+```shell
+$ pip install alquran-id
+```
+
+# Menggunakan Al-Quran ID
+```python
+from alquran_id import AlQuran as Quran
+
+quran = Quran()
+ayat = quran.Ayat(1, 2)
+jml_ayat = ayat[1]
+text_ayat = ayat[0]
+terjemahan = quran.Terjemahan(1, 2)
+tafsir = quran.Tafsir(1, 2)
+print(f" Total ayat: {jml_ayat} \n Ayat: \n {text_ayat} \n Terjemahan: \n {terjemahan} \n Tafsir: \n {tafsir}")
+```
+Output
+```
+ Total ayat: 7
+ Ayat: 
+ ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ 
+ Terjemahan: 
+ Segala puji bagi Allah, Tuhan semesta alam. 
+ Tafsir: 
+ (Segala puji bagi Allah) Lafal ayat ini merupakan kalimat berita, dimaksud sebagai ungkapan pujian kepada Allah berikut pengertian yang terkandung di dalamnya, yaitu bahwa Allah Taala adalah yang memiliki semua pujian yang diungkapkan oleh semua hamba-Nya. Atau makna yang dimaksud ialah bahwa Allah Taala itu adalah Zat yang harus mereka puji. Lafal Allah merupakan nama bagi Zat yang berhak untuk disembah. (Tuhan semesta alam) artinya Allah adalah yang memiliki pujian semua makhluk-Nya, yaitu terdiri dari manusia, jin, malaikat, hewan-hewan melata dan lain-lainnya. Masing-masing mereka disebut alam. Oleh karenanya ada alam manusia, alam jin dan lain sebagainya. Lafal 'al-`aalamiin' merupakan bentuk jamak dari lafal '`aalam', yaitu dengan memakai huruf ya dan huruf nun untuk menekankan makhluk berakal/berilmu atas yang lainnya. Kata 'aalam berasal dari kata `alaamah (tanda) mengingat ia adalah tanda bagi adanya yang menciptakannya.
+```
+
+# Source
+Source file xml diambil dari [Tanzil](http://tanzil.net)
+
+
