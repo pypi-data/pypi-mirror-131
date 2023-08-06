@@ -1,0 +1,3 @@
+[console_scripts]
+helloworld-cli = pkgTest.helloworld:hellotest
+
