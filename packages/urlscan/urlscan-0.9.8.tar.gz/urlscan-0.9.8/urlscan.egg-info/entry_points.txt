@@ -1,0 +1,3 @@
+[console_scripts]
+urlscan = urlscan.__main__:main
+
