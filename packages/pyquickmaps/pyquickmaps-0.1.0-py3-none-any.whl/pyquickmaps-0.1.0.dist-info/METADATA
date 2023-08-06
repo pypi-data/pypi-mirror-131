@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyquickmaps
+Version: 0.1.0
+Summary: A slim python library to link (seafloor) maps and sampling data with prediction methods. Needs scipy, numpy, matplotlib, pykrige, osgeo, rasterio.
+Home-page: UNKNOWN
+Author: Timm Schoening
+Author-email: tschoening@geomar.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+
+Do you have 2D spatial data (aka maps) and sampling data from locations inside these maps? Do you maybe want to extrapolate sampling data (aka measurements) to the full extent of a map? Then you probably need a better toolkit than this but pyquickmaps might help you to achieve a quick'n'dirty result.
+
+
