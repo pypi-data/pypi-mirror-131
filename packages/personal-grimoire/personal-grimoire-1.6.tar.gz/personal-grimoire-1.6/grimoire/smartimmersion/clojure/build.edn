@@ -1,0 +1,5 @@
+{:main "colorpicker.core"
+ :foreign-libs [{:file "resources/libs/my.js"
+                 :provides ["my"]
+                 :module-type :commonjs}]
+ }

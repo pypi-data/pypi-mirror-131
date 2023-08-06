@@ -1,0 +1,25 @@
+name: grimoire
+
+dependencies:
+  - python=3.7
+  - pyyaml
+  - redis
+  - pip
+  - Deprecated
+  - joblib
+  - pandas
+  - scikit-learn
+  - python-Levenshtein
+  - gunicorn
+  - flask-cors
+  # installs pandoc
+  # - ipywidgets>=7.2
+
+  - pip:
+    - newrelic
+    - fire
+    - tinydb
+    - colored-traceback
+    - sentry-sdk
+    - redis
+    - mlflow

@@ -1,0 +1,6 @@
+-r requirements.txt
+pytest
+mock
+fakeredis
+mypy
+pytest-xdist

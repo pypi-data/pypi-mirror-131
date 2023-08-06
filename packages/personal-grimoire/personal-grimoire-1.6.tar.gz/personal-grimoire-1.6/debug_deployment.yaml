@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jean-debug-deployment
+  labels:
+    app: jean-debug
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jean-debug
+  template:
+    metadata:
+      labels:
+        app: jean-debug
+    spec:
+      containers:
+      - name: jean-debug
+        image: debian:latest
+        command: ['/bin/sh']
+        args: ['-c', 'touch /tmp/healthy; tail -f /tmp/healthy']
+        readinessProbe:
+          exec:
+            command:
+            - touch
+            - /tmp/healthy
+          initialDelaySeconds: 10
+          periodSeconds: 90
+        livenessProbe:
+          exec:
+            command:
+            - touch
+            - /tmp/healthy
+          initialDelaySeconds: 10
+          periodSeconds: 90

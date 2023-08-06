@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div id="app">
+    </div>
+    <script src="main.js" type="text/javascript"></script>
+
+<p>
+Many functions defined on few primary data structures (seq, map, vector, set).
+
+Write Java in Java, consume and extend Java from Clojure.
+</p>
+
+    <p>Learning a new language generally requires significant investment of thought and effort, and it is only fair that programmers expect each language they consider learning to justify that investment. Clojure was born out of creator Rich Hickey's desire to avoid many of the complications, both inherent and incidental, of managing state using traditional object-oriented techniques. Thanks to a thoughtful design based in rigorous programming language research, coupled with a fervent look toward practicality, Clojure has blossomed into an important programming language playing an undeniably important role in the current state of the art in language design. On one side of the equation, Clojure utilizes Software Transactional Memory (STM), agents, a clear distinction between identity and value types, arbitrary polymorphism, and functional programming to provide an environment conducive to making sense of state in general, and especially in the face of concurrency. On the other side, Clojure shares a close relationship with the Java Virtual Machine, thus allowing prospective developers to avoid the costs of maintaining yet another infrastructure while leveraging existing libraries.</p>
+
+    <p>In the grand timeline of programming language history, Clojure is an infant; but its colloquialisms (loosely translated as "best practices" or idioms) are rooted in 50 years of Lisp, as well as 15 years of Java history. (While drawing on the traditions of Lisp and Java, Clojure in many ways stands as a direct challenge to them for change.) Additionally, the enthusiastic community that has exploded since its introduction has cultivated its own set of unique idioms. The idioms of a language help to define succinct representations of more complicated expressions. Although we will certainly cover idiomatic Clojure code, we will also expand into deeper discussions of the "why" of the language itself.</p>
+
+    <p>In this article, we discuss the weaknesses in existing languages that Clojure was designed to address, how it provides strength in those areas, and many of the design decisions Clojure embodies. We also look at some of the ways existing languages have influenced Clojure.</p>
+
+
+    <p>Customers and stakeholders have substantial investments in, and are comfortable with the performance, security and stability of, industry-standard platforms like the JVM. While Java developers may envy the succinctness, flexibility and productivity of dynamic languages, they have concerns about running on customer-approved infrastructure, access to their existing code base and libraries, and performance. In addition, they face ongoing problems dealing with concurrency using native threads and locking. Clojure is an effort in pragmatic dynamic language design in this context. It endeavors to be a general-purpose language suitable in those areas where Java is suitable. It reflects the reality that, for the concurrent programming future, pervasive, unmoderated mutation simply has to go.
+      </p>
+
+<p>
+Clojure meets its goals by: embracing an industry-standard, open platform - the JVM; modernizing a venerable language - Lisp; fostering functional programming with immutable persistent data structures; and providing built-in concurrency support via software transactional memory and asynchronous agents. The result is robust, practical, and fast.
+</p>
+
+<p>
+Often emulated/pillaged, still not duplicated
+
+Lambda calculus yields an extremely small core
+
+Almost no syntax
+
+Core advantage still code-as-data and syntactic abstraction
+
+What about the standard Lisps (Common Lisp and Scheme)?
+
+Slow/no innovation post standardization
+
+Core data structures mutable, not extensible
+
+No concurrency in specs
+
+Good implementations already exist for JVM (ABCL, Kawa, SISC et al)
+
+Standard Lisps are their own platforms
+
+Clojure is a Lisp not constrained by backwards compatibility
+
+Extends the code-as-data paradigm to maps and vectors
+
+Defaults to immutability
+
+Core data structures are extensible abstractions
+
+Embraces a platform (JVM)
+</p>
+
+
+<p>
+VMs, not OSes, are the platforms of the future, providing:
+
+Type system
+
+Dynamic enforcement and safety
+
+Libraries
+
+Abstract away OSes
+
+Huge set of facilities
+
+Built-in and 3rd-party
+
+Memory and other resource management
+
+GC is platform, not language, facility
+
+Bytecode + JIT compilation
+
+Abstracts away hardware
+
+Language as platform vs. language + platform
+
+Old way - each language defines its own runtime
+
+GC, bytecode, type system, libraries etc
+
+New way (JVM, .Net)
+
+Common runtime independent of language
+
+Language built for platform vs language ported-to platform
+
+Many new languages still take 'Language as platform' approach
+
+When ported, have platform-on-platform issues
+
+Memory management, type-system, threading issues
+
+Library duplication
+
+If original language based on C, some extension libraries written in C don’t come over
+
+Platforms are dictated by clients
+
+'Must run on JVM' or .Net vs 'must run on Unix' or Windows
+
+JVM has established track record and trust level
+
+Now also open source
+
+Interop with other code required
+
+C linkage insufficient these days
+
+Java/JVM is language + platform
+
+Not the original story, but other languages for JVM always existed, now embraced by Sun
+
+Java can be tedious, insufficiently expressive
+
+Lack of first-class functions, no type inference, etc
+
+Ability to call/consume Java is critical
+
+Clojure is the language, JVM the platform
+</p>
+
+<p>
+Born of simulation, now used for everything, even when inappropriate
+
+Encouraged by Java/C# in all situations, due to their lack of (idiomatic) support for anything else
+
+Mutable stateful objects are the new spaghetti code
+
+Hard to understand, test, reason about
+
+Concurrency disaster
+
+Inheritance is not the only way to do polymorphism
+
+"It is better to have 100 functions operate on one data structure than to have 10 functions operate on 10 data structures." - Alan J. Perlis
+
+Clojure models its data structures as immutable objects represented by interfaces, and otherwise does not offer its own class system.
+
+</p>
+  </body>
+</html>

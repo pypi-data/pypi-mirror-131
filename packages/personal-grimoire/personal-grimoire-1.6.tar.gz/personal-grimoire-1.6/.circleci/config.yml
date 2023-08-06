@@ -1,0 +1,44 @@
+version: 2.1
+
+orbs:
+  python: circleci/python@0.2.1
+
+jobs:
+  test:
+    docker:
+      - image: python:3.8-buster
+    environment:
+      - CI_ENV: TRUE
+    steps:
+      - checkout
+      - python/load-cache
+      - python/install-deps
+      - run: ./install.sh
+      - python/save-cache
+      - run: ./cli.py cicd test all
+  build_and_deploy:
+    working_directory: /app
+    docker:
+      - image: python:3.8-buster
+    environment:
+      - CI_ENV: TRUE
+    steps:
+      - checkout
+      - run: ./install_build_deps.sh
+      - setup_remote_docker:
+          version: 19.03.13
+          #not available in plan
+          #docker_layer_caching: true
+      - python/load-cache
+      - python/install-deps
+      - run: ./install.sh
+      - python/save-cache
+      - run: ./cli.py cicd authenticate
+      - run: ./cli.py cicd build_and_deploy
+workflows:
+  main:
+    jobs:
+      - test
+      - build_and_deploy:
+          requires:
+            - test

@@ -1,0 +1,3 @@
+# the version of this library, increment it to not break compatibility changes
+version: 0.0.5
+databricks_directory_to_deploy_to: dbfs:/temp/jean/grimoire

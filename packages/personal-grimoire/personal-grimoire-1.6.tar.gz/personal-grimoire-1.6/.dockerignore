@@ -1,0 +1,7 @@
+*__pycache__*
+.git
+tags
+grimoire/smartimmersion/clojure/*
+*/.mypy_cache/*
+*/.cache/*
+*/__pycache__/*

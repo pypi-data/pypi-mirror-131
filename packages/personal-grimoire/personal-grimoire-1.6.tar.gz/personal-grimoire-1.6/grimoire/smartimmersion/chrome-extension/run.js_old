@@ -1,0 +1,85 @@
+
+
+function translateVisibleElements() {
+    not_translated = []
+    for (i=0; i < window.elements_not_translated.length; i++) {
+        e = window.elements_not_translated[i]
+        if (isElementVisible(e)) {
+            console.log("Tranlating sentence")
+            immerseElement(e)
+        } else {
+            not_translated.push(e)
+        }
+
+    }
+    window.elements_not_translated = not_translated
+}
+
+function immerseElement(e) {
+    function replaceContent(element) {
+        return function replaceContentReal(text) {
+            element.innerText = text;
+            element.style.backgroundColor = "#ECF3F4";
+        };
+    };
+
+    function wrapHandleResponse(element) {
+        return function (response) {
+            if (response.status === 500) {
+                element.style.backgroundColor = "yellow";
+                return element.innerText
+            }
+
+            return response.text()
+        };
+    };
+
+    fetch('http://localhost:5007/translate?q=' + e.innerText).then(wrapHandleResponse(e)).then(replaceContent(e))
+}
+
+function isElementVisible(el) {
+    var rect     = el.getBoundingClientRect(),
+        vWidth   = window.innerWidth || document.documentElement.clientWidth,
+        vHeight  = window.innerHeight || document.documentElement.clientHeight,
+        efp      = function (x, y) { return document.elementFromPoint(x, y) };
+
+    // Return false if it's not in the viewport
+    if (rect.right < 0 || rect.bottom < 0
+            || rect.left > vWidth || rect.top > vHeight)
+        return false;
+
+    // Return true if any of its four corners are visible
+    return (
+          el.contains(efp(rect.left,  rect.top))
+      ||  el.contains(efp(rect.right, rect.top))
+      ||  el.contains(efp(rect.right, rect.bottom))
+      ||  el.contains(efp(rect.left,  rect.bottom))
+    );
+}
+
+
+function getAllTranslatableElements() {
+    main = document.querySelector("body")
+    result = main.querySelectorAll("p")
+    console.log("In total: " + result.length  + " paragraphs to translate")
+    return result
+}
+
+window.onload = function()
+{
+    console.log("Immersing all elements!")
+    chrome.storage.sync.get('immersion_enabled', function(data) {
+        console.log("Immersion storage: ", data)
+
+        if (!data['immersion_enabled']) {
+            console.log("Immersion is not enabled")
+            return
+        }
+        console.log("Immersion enabled!")
+
+        window.elements_not_translated = getAllTranslatableElements()
+        window.onscroll = function () {
+            translateVisibleElements()
+        }
+    });
+}
