@@ -1,0 +1,3 @@
+[console_scripts]
+csv_converter=rodrigoGoncalves_Json2Csv_PucMinas.converter:converter
+
