@@ -1,0 +1,12 @@
+biosimulators_ginsim/__init__.py,sha256=fnZ3TiFS4AJs3HV63OVBj8eqT-OZNfcfAzjdHEPP1vs,460
+biosimulators_ginsim/__main__.py,sha256=EZTu9ie-X5TXbPq0U8r9SjPJN_zDjZa4aggrLiynv_M,634
+biosimulators_ginsim/_version.py,sha256=VkqKNhCu7_SPtm2SJjQ7vIeLd6wBQJZl_t1N5uPUZuc,22
+biosimulators_ginsim/core.py,sha256=PZM6k_ms0wxkly89hq0Rj6UdN13xpMmjQfjqMDz_tBo,12438
+biosimulators_ginsim/data_model.py,sha256=XpqhOV3zvGJykXpadLBfY1xnwdHZ5Qzjr-AFUd-jJ74,5248
+biosimulators_ginsim/utils.py,sha256=dpI40sIwx0c9Bnb_U9IDOAmEE_wKzmUmhjUHtWmPnsE,13521
+biosimulators_ginsim-0.0.9.dist-info/LICENSE,sha256=TXS9OfZfmF1dUckyYqUnvGbeWNrUcrD4aSzR0v4Kp8o,1110
+biosimulators_ginsim-0.0.9.dist-info/METADATA,sha256=H2oSWsGMUbyuwEpLdFsvEiDbVwpyXGLN8A57WP0K0KU,5392
+biosimulators_ginsim-0.0.9.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+biosimulators_ginsim-0.0.9.dist-info/entry_points.txt,sha256=5DJrIVuABCherDPCRq4RT8-cBVDtc2KklZQtMryFnDE,77
+biosimulators_ginsim-0.0.9.dist-info/top_level.txt,sha256=DLM5kga7TF3NOWDayqt1kAp9lEihXQKe160JugYmMGs,21
+biosimulators_ginsim-0.0.9.dist-info/RECORD,,
