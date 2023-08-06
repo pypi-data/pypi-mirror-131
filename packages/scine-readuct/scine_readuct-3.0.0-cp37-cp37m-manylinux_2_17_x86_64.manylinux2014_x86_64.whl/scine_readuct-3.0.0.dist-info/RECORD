@@ -1,0 +1,11 @@
+scine_readuct/__init__.py,sha256=_RR-YLO3u-ChGWFdmMrXHJzGUpCNMuWacBjOkUkMmGQ,887
+scine_readuct/libcore.so,sha256=lYdL0nR_EkPz27FpeZEzcWk6i_kjRf6BSrtZdm3cbqU,324696
+scine_readuct/libutilsos.so,sha256=WotIgFm91Im7_PwLtHzcE3kb6Gm6rjhp6N1yitEcKVc,11057312
+scine_readuct/scine_readuct.cpython-37m-x86_64-linux-gnu.so,sha256=Vafrqb7dlhMeYrO5u6A3QvhEXM4BOsLrzHw0SaYPSF8,1292328
+scine_readuct-3.0.0.dist-info/METADATA,sha256=HYK4vmZgTy886xHWyVdgq-PeVcTNx9NIJKZkQIej9Tk,3142
+scine_readuct-3.0.0.dist-info/WHEEL,sha256=Vqd_n_IKgR469FNqkIoqwEhrX3PSWel3O4QQXU4e5pU,150
+scine_readuct-3.0.0.dist-info/top_level.txt,sha256=yMwBvP_IlJd3wk5eQA91pi9YX6m4B_UAYwN-5PSDWuo,14
+scine_readuct-3.0.0.dist-info/RECORD,,
+scine_readuct.libs/libcore-95874bd2.so,sha256=A9HziVlki5vGnrIYvoIl1TBe-hloW38R9uSu4kBUgYM,394704
+scine_readuct.libs/libutilsos-84ee9310.so,sha256=oQV8CGvZ6S7vv6WYV6G5pSyXTQJbmKu_L4Fmw93KE9s,11503176
+scine_readuct.libs/libgomp-a34b3233.so.1.0.0,sha256=1GXGWfRf6XU3wOEAn66x6m5ApWQt3_3un8G3PAcyQh4,168192
