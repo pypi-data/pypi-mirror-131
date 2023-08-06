@@ -1,0 +1,9 @@
+setup.py
+rikai/contrib/yolov5/__init__.py
+rikai/contrib/yolov5/codegen.py
+rikai/contrib/yolov5/transforms.py
+rikai_yolov5.egg-info/PKG-INFO
+rikai_yolov5.egg-info/SOURCES.txt
+rikai_yolov5.egg-info/dependency_links.txt
+rikai_yolov5.egg-info/requires.txt
+rikai_yolov5.egg-info/top_level.txt
