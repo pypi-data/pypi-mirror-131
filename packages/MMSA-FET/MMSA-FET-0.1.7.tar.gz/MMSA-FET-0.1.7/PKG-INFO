@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: MMSA-FET
+Version: 0.1.7
+Summary: A Tool for extracting multimodal features from videos.
+Home-page: https://github.com/FlameSky-S/MMSA_FET
+Author: THUIAR
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/FlameSky-S/MMSA_FET/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# MMSA-FET
+
+
