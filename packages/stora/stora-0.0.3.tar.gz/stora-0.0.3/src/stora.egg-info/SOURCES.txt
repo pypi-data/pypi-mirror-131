@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/stora/__init__.py
+src/stora/reactive.py
+src/stora/storage.py
+src/stora.egg-info/PKG-INFO
+src/stora.egg-info/SOURCES.txt
+src/stora.egg-info/dependency_links.txt
+src/stora.egg-info/top_level.txt
