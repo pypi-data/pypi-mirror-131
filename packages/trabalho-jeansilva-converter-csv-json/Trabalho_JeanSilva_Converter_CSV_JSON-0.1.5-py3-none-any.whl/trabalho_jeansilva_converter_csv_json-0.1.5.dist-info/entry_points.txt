@@ -1,0 +1,4 @@
+[console_scripts]
+csv_converter=Trabalho_JeanSilva_Converter_CSV_JSON.converter:converter
+json_converter=Trabalho_JeanSilva_Converter_CSV_JSON.converter:converter2
+
