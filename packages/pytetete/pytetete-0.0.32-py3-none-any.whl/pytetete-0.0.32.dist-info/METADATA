@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pytetete
+Version: 0.0.32
+Summary: Python library for news discourse analysis
+Home-page: https://pysophia2.readthedocs.io/en/latest/
+Author: Team Sophia2
+Author-email: sophia2.uach@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: mariadb
+Requires-Dist: elasticsearch
+Requires-Dist: spacy
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+
+# pysophia2
+
+see the documentation: https://pysophia2.readthedocs.io/en/latest/
+
+
