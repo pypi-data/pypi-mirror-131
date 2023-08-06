@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mldrive
+Version: 1.1.1
+Summary: A Python wrapper for the MLdrive API. Functionality includes getting datasets, saving dataframes/models, loading dataframes/models, sending dataframes/models, recieving dataframes/models.
+Home-page: https://github.com/macdonac/mldrive
+Author: mldrive
+Author-email: support@mldrive.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+UNKNOWN
+
