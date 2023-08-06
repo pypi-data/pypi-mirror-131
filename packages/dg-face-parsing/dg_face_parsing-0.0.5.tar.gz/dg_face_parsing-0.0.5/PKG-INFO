@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: dg-face-parsing
+Version: 0.0.5
+Summary: Face parsing tools with BiSeNet
+License: MIT
+Author: DataGrid
+Requires-Python: >=3.7,<3.11
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pillow (>=8.4.0,<9.0.0)
+Requires-Dist: numpy (>=1.21.4,<2.0.0)
+Requires-Dist: opencv-python (>=4.5.4,<5.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: torch (>=1.10.0,<2.0.0)
+Requires-Dist: torchaudio (>=0.10.0,<0.11.0)
+Requires-Dist: torchvision (>=0.11.1,<0.12.0)
+Requires-Dist: tqdm (>=4.62.3,<5.0.0)
+Description-Content-Type: text/markdown
+
+
+### Face Parsing
+Genreate face parsing with BiSeNet。
+* Install
+
+```bash
+pip install dg_face_parsing
+```
+
+* Uninstall
+
+```bash
+pip uninstall dg_face_parsing
+```
+
+1. parsing_face
+2. parsing_faces
+
+### Usage
+1. face_parsing.parsing_face(input_path, output_path)
+*input_img- Image data()PIL.image.
+*output_path- File path of output image(string, Blank as default).Opional, if output_path is blank, result image returned as cv2.image. Else, result image saved in output path and True returned.
+*Return- Image data || Nones
+2. face_parsing.parsing_faces(input_folder, output_folder)
+*Return- None
+*input_folder- File path of input folder(string).
+*output_folder- File path of output folder(string).
