@@ -1,0 +1,3 @@
+[console_scripts]
+run_get_fps = pytpu.scripts.run_get_fps:main
+
