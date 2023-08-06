@@ -1,0 +1,12 @@
+lxml
+six
+
+[full]
+cython
+numpy
+pymongo
+numexpr
+tables>=3.3.0
+
+[full:python_version < "3.5"]
+simplejson
