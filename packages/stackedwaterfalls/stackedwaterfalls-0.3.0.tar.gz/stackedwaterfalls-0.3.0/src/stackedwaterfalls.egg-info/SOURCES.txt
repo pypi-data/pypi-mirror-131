@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/stackedwaterfalls/__init__.py
+src/stackedwaterfalls/stackedwaterfalls.py
+src/stackedwaterfalls.egg-info/PKG-INFO
+src/stackedwaterfalls.egg-info/SOURCES.txt
+src/stackedwaterfalls.egg-info/dependency_links.txt
+src/stackedwaterfalls.egg-info/top_level.txt
