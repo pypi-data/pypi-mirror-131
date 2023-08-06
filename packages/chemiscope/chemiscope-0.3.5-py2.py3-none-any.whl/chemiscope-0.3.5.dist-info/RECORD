@@ -1,0 +1,13 @@
+chemiscope/__init__.py,sha256=lW52NZTWc064VxCV_Glmw_MKL_STAAIJW1ARWAw7Or8,283
+chemiscope/adapters.py,sha256=UM6wDflYf6zePAmP6SRT4QXhdQkdNkYCNo43d5IaXQA,8317
+chemiscope/input.py,sha256=vsJqBT1RGp0tKNvqOCpUnJ6l2ZKUT6OrLgfF3MWiqwY,18216
+chemiscope/jupyter.py,sha256=aLTKkqM8UK_X7p1Qzm27vj_VH-9TwdR3Oa2HDZ0CH18,5632
+chemiscope/main.py,sha256=wgpd8XUewdiXmIvGTIqQ2g3hM86LCmREgwDibKLTS38,3484
+chemiscope-0.3.5.data/data/etc/jupyter/nbconfig/notebook.d/chemiscope-widget.json,sha256=VzjSeKmH62YelyFuhQgIjDpI9Jt8MtT_5-wJQkLgZ_k,71
+chemiscope-0.3.5.data/data/share/jupyter/nbextensions/chemiscope-widget/chemiscope-widget.min.js,sha256=co7hddT168RPV3XB_996ol-X9sCJvhM3_9vFXkTnPmI,2792233
+chemiscope-0.3.5.data/data/share/jupyter/nbextensions/chemiscope-widget/extension.js,sha256=iZ3ukOInMnGS-TnCMXmd0TwbLxbl6lsbzncEngNnA0w,465
+chemiscope-0.3.5.dist-info/METADATA,sha256=vXDBBifNt8qOYpPunyfHeRzNXz6vUJmbvjjBYvUsU8c,2133
+chemiscope-0.3.5.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+chemiscope-0.3.5.dist-info/entry_points.txt,sha256=PzIp-jcQbT0uaEYJi0OzXqm4XSfa-WsRO-Jgq8ElmAE,59
+chemiscope-0.3.5.dist-info/top_level.txt,sha256=ZxAeh6FYTs-ikmUnXsrgCInborj77PyTNDVp13JQ8xo,11
+chemiscope-0.3.5.dist-info/RECORD,,
