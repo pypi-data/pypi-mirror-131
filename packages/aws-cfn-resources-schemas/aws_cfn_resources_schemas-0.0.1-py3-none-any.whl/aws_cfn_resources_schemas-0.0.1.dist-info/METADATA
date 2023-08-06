@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: aws-cfn-resources-schemas
+Version: 0.0.1
+Summary: AWS CFN Resources JSON Schema definitions
+License: MPL-2.0
+Author: johnpreston
+Author-email: john@compose-x.io
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: importlib-resources (>=5.4.0,<6.0.0)
+Requires-Dist: jsonschema (>=4.3.1,<5.0.0)
+Description-Content-Type: text/x-rst
+
+=========================
+AWS CFN Resources Schemas
+=========================
+
+AWS CFN Resources JSON Schema definitions
+
+
+DISCLAIMER: Although this library is licensed under MLP-2.0, the JSON schemas are provided and owned by Amazon Web Services.
+Available to download from `AWS Official site - CloudFormation resource provider schemas`_
+
+
+Features
+--------
+
+* Contains the JSON Schema definition of AWS CloudFormation resources from public registry.
+* Easy resource-type to definition retrieval.
+
+
+.. _AWS Official site - CloudFormation resource provider schemas: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-type-schemas.html
+
