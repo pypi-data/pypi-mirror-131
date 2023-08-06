@@ -1,0 +1,11 @@
+aiohttp
+aiohttp-jinja2
+multidict
+jinja2
+colour
+automate-home
+automate-knx-plugin
+automate-lifx-plugin
+automate-sonos-plugin
+automate-home-assistant-plugin
+automate-graphite-feeder
