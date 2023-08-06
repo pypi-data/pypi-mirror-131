@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: datamallet
+Version: 0.4.2
+Summary: Helper tools for the data science workflow
+Home-page: UNKNOWN
+Author: Olabode Alamu
+Author-email: 
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas (>=1.1.5)
+Requires-Dist: scikit-learn (>=0.24.2)
+Requires-Dist: numpy (>=1.19.5)
+Requires-Dist: scipy (==1.5.4)
+Requires-Dist: plotly (>=5.3.1)
+
+# datamallet
+
+Datamallet is a collection of helpful functions and modules for the datascience workflow. 
+At the moment, it features the following:
+1) Automated data visualization.<br>
+2) Scikit-learn compatible transformers for data manipulation for tabular data 
+(data which can be found in a table either pure tabular/timeseries).
+
+<br>
+
+# Future roadmap
+<br>
+In the future, modules concerned with other parts of Machine learning 
+(e.g. Computer vision, NLP, recommendation engine etc) can be added.<br> 
+The idea is for this library to be the de-facto tool for expediting data science tasks
+
+<br>
+
+# Tests<br>
+from the main directory, you can run the tests by simply running the pytest command
+

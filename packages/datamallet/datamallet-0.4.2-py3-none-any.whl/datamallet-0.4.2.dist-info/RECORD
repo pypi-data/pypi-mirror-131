@@ -1,0 +1,15 @@
+datamallet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datamallet/tabular/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datamallet/tabular/feature.py,sha256=xWUoypNzgiTDYcGpKZZw6CypttFON2GrG8x_-eXNFr4,4346
+datamallet/tabular/preprocess.py,sha256=QqDW2Ay2B5q5mokvFSf31wI2HBvXI8KMcssjlinqau8,3067
+datamallet/tabular/timeseries.py,sha256=O8pT2pTmLpMbxbg1xLOlxG5VvfUAxpbL_KTErjMC9I4,1329
+datamallet/tabular/utils.py,sha256=OphyK_Qr9WMsfInqgT4PsNmPcRoUwsFLpRKZmrYymTI,9557
+datamallet/visualization/__init__.py,sha256=KzwKjytR_i3sYfxEbdIQXqrbqnwOqVOJySSNRUcaVHQ,30
+datamallet/visualization/autoplot.py,sha256=f7Zt7O_VQvsXX0niK3NeHizVYds4OwGxgOvU1-I-1bI,12208
+datamallet/visualization/plot.py,sha256=2mP7UDsS6CXF9kd8QJ1cmlwt2A55dxaWFQyJ_kAJ_E8,22479
+datamallet/visualization/utils.py,sha256=GuYzq3pmiOkihtrfDZ0c1sAMYZp1Ag9rMPLkepYpv2M,8005
+datamallet-0.4.2.dist-info/LICENSE,sha256=m9LrlvCat_f7d5zQqSKF0AIcW8fOPGrXCvetAE0ZWVA,1070
+datamallet-0.4.2.dist-info/METADATA,sha256=XO1rACtrexfkpi6lzaf1Y5SyPyvIYQJFUOYylEJ3bE8,1553
+datamallet-0.4.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+datamallet-0.4.2.dist-info/top_level.txt,sha256=4Te0ulBDP7RWKxIGlJoUmcx5TnOcPtYIN7qtewr_QxY,11
+datamallet-0.4.2.dist-info/RECORD,,
