@@ -1,0 +1,13 @@
+CHANGELOG.md,sha256=DhAAyY35w1w3KylRbSiEpQuzjzqKNGrFsF71gK7BR7c,521
+README.md,sha256=Xwyo4sGNxVUt7fdKQL0j9ASJFOgPpu1m9M3V9aaNKMc,1455
+sample_size/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sample_size/metrics.py,sha256=m6M7wPLdoheaLs93FgP6UMKedOD_6px-O0UDR4_xf0U,3204
+sample_size/sample_size_calculator.py,sha256=jN3MLQkzY0jhFesGyGlC-nLmV6R7KjpdHKlvtRLXjs8,3242
+sample_size/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sample_size/scripts/input_utils.py,sha256=3fJos6p-Lhwv68M6qMi_OokVuLKxpKY_qnCZ-XNsA-I,2945
+sample_size/scripts/sample_size_run.py,sha256=Y9AYMbQLXez_Q-wOSrtQ5JBR5GbF4bixq5P5918sgSE,1422
+sample_size-1.0.0.dist-info/entry_points.txt,sha256=cwL39IVhm_jtV-irqDCgurfUjpnHVqZJRwF1z3V7Hko,258
+sample_size-1.0.0.dist-info/LICENSE,sha256=3jWyYgSCJIz23fkKodLX7NAm3Cz52VQSygOHPHh3Io4,1098
+sample_size-1.0.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+sample_size-1.0.0.dist-info/METADATA,sha256=mxJlZDj4JX--IrOV49iZsRuw7LPPy0t2b0ZHdsZLyIM,2012
+sample_size-1.0.0.dist-info/RECORD,,
