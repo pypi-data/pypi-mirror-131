@@ -1,0 +1,13 @@
+image_uploader_widget/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_uploader_widget/admin.py,sha256=9PJO5sHOyvsT1jkajdJL_cP46lfAmnqfTgRB6z86yL4,549
+image_uploader_widget/widgets.py,sha256=1CV6GPPewbB6563PQ4DPRUbrPqb5nB0RQMAkylli7HE,1081
+image_uploader_widget/static/admin/js/image_uploader_inline.js,sha256=aDX_kSchCQjprh_JkdO5HZuIXShU2Ne1X9itaExO7Rw,9728
+image_uploader_widget/static/widgets/image_uploader_widget.css,sha256=HRo3lvQKic7RSRggKq7iYGTpPsNHnA0l0DMd3T502zQ,3207
+image_uploader_widget/static/widgets/image_uploader_widget.js,sha256=3OL5AprXfyUeZoAp-4n7g4jPx8BKCrQDxop1c4ScLa8,3377
+image_uploader_widget/templates/admin/edit_inline/image_uploader.html,sha256=0SP_jviJUbRhqu7PhcpcvI3jllfC9Zz5sc7mmWXjRVw,3011
+image_uploader_widget/templates/widgets/image_uploader_widget.html,sha256=LbkshhNmLwY649dq9Acja7UeCNQY3MPpkGHuQSgb4rQ,445
+django_image_uploader_widget-0.0.4.dist-info/LICENSE,sha256=RXjODmrEs_6HDfREUp9vZ-hyDDEZq9ls55Pf-R9VNeQ,1081
+django_image_uploader_widget-0.0.4.dist-info/METADATA,sha256=4kSNvDdCja8xhj2crgAuaflaHn83Fxpa0VAXBJqMKLg,4698
+django_image_uploader_widget-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_image_uploader_widget-0.0.4.dist-info/top_level.txt,sha256=pBtHlfC5dXT3zFfEmsuK5wNS8a22Xa44VJIgtCY64NU,22
+django_image_uploader_widget-0.0.4.dist-info/RECORD,,
