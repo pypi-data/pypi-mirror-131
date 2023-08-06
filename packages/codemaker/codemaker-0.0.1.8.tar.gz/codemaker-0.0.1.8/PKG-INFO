@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: codemaker
+Version: 0.0.1.8
+Summary: Utils to easily generate code, speed up your workflow.
+Home-page: https://gitee.com/peiiii/codemaker
+Author: Wang Pei
+Author-email: 1535376447@qq.com
+License: UNKNOWN
+Description: # codemaker
+        Utils to easily generate code, speed up your workflow.
+        # Usage
+        ```shell
+        # export template maker config file "maker.yaml"
+        codemaker maketmpl
+        # add your config into the maker file
+        # run following command to generate code , input is your template path
+        codemaker gencode input output
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
