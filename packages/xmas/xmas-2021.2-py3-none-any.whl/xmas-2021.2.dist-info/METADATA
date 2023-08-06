@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: xmas
+Version: 2021.2
+Summary: UNKNOWN
+License: UNKNOWN
+Author-email: Nasy <nasyxx+git@gmail.com>
+Requires-Python: >=3.7,<4.0
+Project-URL: homepage, https://github.com/nasyxx/xmas.py
