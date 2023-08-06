@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyjudi_tjpr/__init__.py
+pyjudi_tjpr/authenticator.py
+pyjudi_tjpr.egg-info/PKG-INFO
+pyjudi_tjpr.egg-info/SOURCES.txt
+pyjudi_tjpr.egg-info/dependency_links.txt
+pyjudi_tjpr.egg-info/requires.txt
+pyjudi_tjpr.egg-info/top_level.txt
