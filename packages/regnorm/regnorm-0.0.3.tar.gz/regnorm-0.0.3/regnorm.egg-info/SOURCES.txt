@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+regnorm/__init__.py
+regnorm.egg-info/PKG-INFO
+regnorm.egg-info/SOURCES.txt
+regnorm.egg-info/dependency_links.txt
+regnorm.egg-info/top_level.txt
