@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: fastash
+Version: 0.1.1
+Summary: Fast Averages Shifted Histogram
+Home-page: https://gitlab.inria.fr/fmazy/fastash
+Author: François-Rémi Mazy
+Author-email: francois-remi.mazy@inria.fr
+License: BSD 3-Clause License
+Keywords: averaged shifted histograms kde ash density estimation kernel
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Cython
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+License-File: LICENSE.txt
+
+# FastASH
+Fast Averaged Shifted Histograms.
+
+Density estimation which approximate a triangular Kernel Density Estimation (KDE.
+Cython inside.
+
+
+## Install
+
+If Cython is installed, the sources files in '.pyx' are used. Otherwise, the '.cpp' files are directly used.
+
+### From PyPi
+
+Simply use the Pypi command :
+
+```bash
+pip install fastash 
+```
+
+### From Source
+
+Simply use the install command :
+
+```bash
+make install
+```
+
+This command is usefull during the developpement work.
+
+## Build and deploy
+
+To build the package :
+```bash
+make build
+```
+
+To deploy (version number need to be incremented) :
+```bash
+make deploy
+```
+
+## Getting Started
+
+exemple usage in test/test_2d.py
+
+## help for packaging
+
+script files are based on the package https://github.com/cmcqueen/simplerandom .
+
+
