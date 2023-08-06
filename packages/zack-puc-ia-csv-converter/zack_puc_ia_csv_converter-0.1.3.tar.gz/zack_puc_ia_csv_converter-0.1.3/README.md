@@ -1,0 +1,40 @@
+# Arquivo Converter
+
+- CSV para conversor JSON.
+- JSON para conversor CSV.
+
+## Introdução
+
+### O que este projeto pode fazer
+
+- Leia um arquivo **csv** ou uma **pasta** com csv e converta-os em **JSON**.
+- Leia um arquivo **json** ou uma **pasta** com json e converta-os em **CSV**.
+
+Este projeto é um programa em execução no terminal, de preferência instalado com pipx:
+
+`` `bash
+pipx install zack-puc-ia-csv-converter
+`` `
+
+Para usar, basta digitar:
+
+`` `bash
+$ converter --help
+`` `
+
+### Isso listará todas as opções disponíveis.
+
+- Uso: conversor [OPÇÕES] {csv | json}
+
+  Converta um único arquivo ou lista de arquivos CSV para json ou json para converter json
+  arquivos para csv.
+
+Opcoes:
+-  -t, --type TEXT             Tipo de arquivo que será lido é convertido.
+-  -i, --input TEXT            Caminho onde os arquivos serão carregados para conversão.
+-  -o, --output TEXT           Caminho onde os arquivos convertidos serão salvos.
+-  -d, --delimiter [,|;|:|\t]  Separador usado para dividir os arquivos.
+-  -p, --prefix TEXT           Prefixo de TEXTO usado para preceder ao nome do convertido
+                              arquivo salvo no disco. O sufixo será um número
+                              começando de 1 a N.Caso nao seja passado nenhum prefixo será utilizado o file_.
+-  --help                      Mostra esta mensagem e sai.
