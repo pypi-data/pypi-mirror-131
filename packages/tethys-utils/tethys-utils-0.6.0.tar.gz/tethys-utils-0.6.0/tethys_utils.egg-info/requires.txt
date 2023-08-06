@@ -1,0 +1,7 @@
+tethys-data-models
+geojson
+requests
+tethysts>=0.2.16
+rasterio
+numexpr
+dask
