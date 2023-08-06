@@ -1,0 +1,14 @@
+numpy
+pandas
+tabulate
+fuzzywuzzy
+python-Levenshtein
+natsort
+seaborn
+astroquery
+pyastronomy
+astropy
+lightkurve
+transitfit
+rich
+tqdm
