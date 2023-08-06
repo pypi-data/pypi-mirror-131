@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+funds/__init__.py
+funds/util.py
+funds.egg-info/PKG-INFO
+funds.egg-info/SOURCES.txt
+funds.egg-info/dependency_links.txt
+funds.egg-info/not-zip-safe
+funds.egg-info/requires.txt
+funds.egg-info/top_level.txt
