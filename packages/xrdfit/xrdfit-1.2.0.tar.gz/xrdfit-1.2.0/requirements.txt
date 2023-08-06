@@ -1,0 +1,9 @@
+numpy
+matplotlib
+pandas
+dill
+tqdm
+lmfit
+notebook
+ipywidgets
+PyYAML

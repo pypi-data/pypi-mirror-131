@@ -1,0 +1,20 @@
+._.DS_Store
+._*
+.DS*
+__pycache__/
+.ipynb_checkpoints/
+*.fuse
+/.idea
+/venv
+/example_data/adc_041_7Nb
+/tutorial notebooks/working_copy.ipynb
+/tutorial notebooks/experiment.dump
+/tutorial notebooks/5 - Example workflow for Ti64 deformed at 950C.ipynb
+
+/docs/html
+/plots
+/xrdfit/test.py
+/xrdfit.egg-info
+/example_data/example_data_large/
+/build
+/dist

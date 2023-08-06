@@ -1,0 +1,45 @@
+.gitignore
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+LICENSE
+README.md
+readthedocs.yaml
+requirements.txt
+setup.py
+docs/README.md
+docs/index.html
+docs/source/conf.py
+docs/source/index.rst
+docs/source/modules.rst
+docs/source/xrdfit.rst
+example_data/adc_041_7Nb_NDload_700C_15mms_00001.dat
+example_data/adc_041_7Nb_NDload_700C_15mms_00002.dat
+example_data/adc_041_7Nb_NDload_700C_15mms_00003.dat
+example_data/adc_041_7Nb_NDload_700C_15mms_00004.dat
+example_data/adc_041_7Nb_NDload_700C_15mms_00005.dat
+example_data/adc_041_7Nb_NDload_700C_15mms_00006.dat
+example_data/adc_041_7Nb_NDload_700C_15mms_00007.dat
+example_data/adc_041_7Nb_NDload_700C_15mms_00008.dat
+example_data/adc_041_7Nb_NDload_700C_15mms_00009.dat
+example_data/adc_041_7Nb_NDload_700C_15mms_00010.dat
+example_data/instrument_data/065_ETMT_data.txt
+paper/figure1.eps
+paper/figure2.eps
+paper/paper.bib
+paper/paper.md
+tutorial notebooks/1 - Basic analysis workflow.ipynb
+tutorial notebooks/2 - Analysis of multiple cakes.ipynb
+tutorial notebooks/3 - Fitting peaks over time.ipynb
+tutorial notebooks/4 - Working with larger data sets.ipynb
+tutorial notebooks/images/averaging_areas.svg
+tutorial notebooks/images/cake_numbering.svg
+xrdfit/__init__.py
+xrdfit/plotting.py
+xrdfit/pv_fit.py
+xrdfit/spectrum_fitting.py
+xrdfit/test.py
+xrdfit.egg-info/PKG-INFO
+xrdfit.egg-info/SOURCES.txt
+xrdfit.egg-info/dependency_links.txt
+xrdfit.egg-info/requires.txt
+xrdfit.egg-info/top_level.txt
