@@ -1,0 +1,3 @@
+[console_scripts]
+gepaco = gepaco.__main__:main
+

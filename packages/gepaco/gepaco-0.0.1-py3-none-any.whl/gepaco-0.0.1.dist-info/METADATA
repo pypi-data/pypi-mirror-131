@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: gepaco
+Version: 0.0.1
+Summary: Generic Packet Communicator
+Home-page: https://github.com/Koren13n/GPC
+Author: Koren Minchev
+Author-email: korenminchev@gmail.com
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: uvicorn
+Requires-Dist: fastapi
+
+# GPC
+
