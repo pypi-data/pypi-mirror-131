@@ -1,0 +1,777 @@
+test_getter_repr:
+  -
+    getter: appcli.Key(appcli.Config)
+    expected: appcli.Key\(Config\)
+  -
+    getter: appcli.Key(appcli.Config, 'x')
+    expected: appcli.Key\(Config, 'x'\)
+  -
+    getter: appcli.Key(appcli.Config, cast=int)
+    expected: appcli.Key\(Config, cast=<class 'int'>\)
+  -
+    getter: appcli.Key(appcli.Config, toggle=True)
+    expected: appcli.Key\(Config, toggle=True\)
+  -
+    getter: appcli.Method(lambda self: 1)
+    expected: appcli.Method\(<function <lambda> at 0x.*>\)
+  -
+    getter: appcli.Func(lambda: 1)
+    expected: appcli.Func\(<function <lambda> at 0x.*>\)
+  -
+    getter: appcli.Value(1)
+    expected: appcli.Value\(1\)
+
+test_getter_cast_value:
+  -
+    id: value
+    getter: appcli.Value(None)
+    given: 1
+    expected: 1
+  -
+    id: value
+    getter: appcli.Value(None)
+    param: appcli.param(cast=int)
+    given: '1'
+    expected: 1
+  -
+    id: value-err
+    getter: appcli.Value(None)
+    param: appcli.param(cast=int)
+    given: 'a'
+    error:
+      type: appcli.ConfigError
+      message:
+        - can't cast 'a' using <class 'int'>
+        - invalid literal for int\(\) with base 10: 'a'
+
+  -
+    id: func
+    getter: appcli.Func(lambda: None)
+    given: 1
+    expected: 1
+  -
+    id: func
+    getter: appcli.Func(lambda: None)
+    param: appcli.param(cast=int)
+    given: '1'
+    expected: 1
+  -
+    id: func-err
+    getter: appcli.Func(lambda: None)
+    param: appcli.param(cast=int)
+    given: 'a'
+    error:
+      type: appcli.ConfigError
+      message:
+        - can't cast 'a' using <class 'int'>
+        - invalid literal for int\(\) with base 10: 'a'
+
+  -
+    id: method
+    getter: appcli.Method(lambda self: None)
+    given: 1
+    expected: 1
+  -
+    id: method
+    getter: appcli.Method(lambda self: None)
+    param: appcli.param(cast=int)
+    given: '1'
+    expected: 1
+  -
+    id: method-err
+    getter: appcli.Method(lambda self: None)
+    param: appcli.param(cast=int)
+    given: 'a'
+    error:
+      type: appcli.ConfigError
+      message:
+        - can't cast 'a' using <class 'int'>
+        - invalid literal for int\(\) with base 10: 'a'
+
+  -
+    id: key
+    getter: appcli.Key(appcli.Config)
+    given: 1
+    expected: 1
+  -
+    id: key
+    getter: appcli.Key(appcli.Config, cast=int)
+    given: '1'
+    expected: 1
+  -
+    id: key
+    getter: appcli.Key(appcli.Config)
+    param: appcli.param(cast=int)
+    given: '1'
+    expected: 1
+  -
+    id: key
+    getter: appcli.Key(appcli.Config, cast=int)
+    param: appcli.param(cast=str)
+    given: '1'
+    expected: 1
+  -
+    id: key-err
+    getter: appcli.Key(appcli.Config, cast=int)
+    given: 'a'
+    error:
+      type: appcli.ConfigError
+      message:
+        - can't cast 'a' using <class 'int'>
+        - invalid literal for int\(\) with base 10: 'a'
+  -
+    id: key-err
+    getter: appcli.Key(appcli.Config)
+    param: appcli.param(cast=int)
+    given: 'a'
+    error:
+      type: appcli.ConfigError
+      message:
+        - can't cast 'a' using <class 'int'>
+        - invalid literal for int\(\) with base 10: 'a'
+
+  -
+    id: compose
+    getter: appcli.Key(appcli.Config, cast=[int, lambda x: x+1])
+    given: '1'
+    expected: 2
+  -
+    id: compose-err
+    getter: appcli.Key(appcli.Config, cast=[int, lambda x: x])
+    given: 'a'
+    error:
+      type: appcli.ConfigError
+      message:
+        - can't cast 'a' using <class 'int'>
+        - invalid literal for int\(\) with base 10: 'a'
+  -
+    id: compose-err
+    getter: appcli.Key(appcli.Config, cast=[lambda x: x, int])
+    given: 'a'
+    error:
+      type: appcli.ConfigError
+      message:
+        - can't cast 'a' using <class 'int'>
+        - invalid literal for int\(\) with base 10: 'a'
+
+test_getter_iter_values:
+  -
+    id: value
+    getter: appcli.Value(1)
+    expected:
+      values: [1]
+      info:
+        - got hard-coded value: 1
+
+  -
+    id: func
+    getter: appcli.Func(lambda: 1)
+    expected:
+      values: [1]
+      info:
+        -
+          > called: <function <lambda> at .*>
+          > returned: 1
+  -
+    id: func-partial
+    getter: appcli.Func(lambda x: x + 1).partial(1)
+    expected:
+      values: [2]
+      info:
+        -
+          > called: <function <lambda> at .*>
+          > returned: 2
+  -
+    id: func-err
+    getter: appcli.Func(lambda: 1/0)
+    error:
+      type: ZeroDivisionError
+  -
+    id: func-err-skip
+    getter: appcli.Func(lambda: 1/0, skip=ZeroDivisionError)
+    expected:
+      values: []
+      info:
+        -
+          > called: <function <lambda> at .*>
+          > raised ZeroDivisionError: division by zero
+
+  -
+    id: method
+    obj:
+      > class DummyObj:
+      >     __config__ = []
+      >     x = 1
+      >
+    getter: appcli.Method(lambda self: self.x)
+    expected:
+      values: [1]
+      info:
+        -
+          > called: <function <lambda> at .*>
+          > returned: 1
+  -
+    id: method
+    obj:
+      > class DummyObj:
+      >     __config__ = []
+      >     x = 1
+      >
+      >     def helper(self):
+      >         return self.x + 1
+      >
+    getter: appcli.Method(DummyObj.helper)
+    expected:
+      values: [2]
+      info:
+        -
+          > called: <function DummyObj.helper at .*>
+          > returned: 2
+  -
+    id: method
+    obj:
+      > class DummyObj:
+      >     __config__ = []
+      >     x = 1
+      >
+    getter: appcli.Method(lambda self, y: self.x + y).partial(1)
+    expected:
+      values: [2]
+      info:
+        -
+          > called: <function <lambda> at .*>
+          > returned: 2
+  -
+    id: method-err
+    obj:
+      > class DummyObj:
+      >     __config__ = []
+      >
+    getter: appcli.Method(lambda self: 1/0)
+    error:
+      type: ZeroDivisionError
+  -
+    id: method-err-skip
+    obj:
+      > class DummyObj:
+      >     __config__ = []
+      >
+    getter: appcli.Method(lambda self: 1/0, skip=ZeroDivisionError)
+    expected:
+      values: []
+      info:
+        -
+          > called: <function <lambda> at .*>
+          > raised ZeroDivisionError: division by zero
+  -
+    id: method-err-attribute
+    obj:
+      > class DummyObj:
+      >     __config__ = []
+      >
+    getter: appcli.Method(lambda self: self.x)
+    expected:
+      values: []
+      info:
+        -
+          > called: <function <lambda> at .*>
+          > raised AttributeError: 'DummyObj' object has no attribute 'x'
+
+  -
+    id: key-implicit
+    obj:
+      > class DummyConfig(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'x': 1}, location='a')
+      >
+      > class DummyObj:
+      >     __config__ = [DummyConfig]
+      >     x = appcli.param()
+    getter:
+      > appcli.Key(DummyConfig)
+    expected:
+      values: [1]
+      info:
+        - queried DummyConfig\(\):
+        -
+          > a:
+          > found 'x': 1
+  -
+    id: key-explicit
+    obj:
+      > class DummyConfig(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'y': 1}, location='a')
+      >
+      > class DummyObj:
+      >     __config__ = [DummyConfig]
+    getter:
+      > appcli.Key(DummyConfig, 'y')
+    expected:
+      values: [1]
+      info:
+        - queried DummyConfig\(\):
+        -
+          > a:
+          > found 'y': 1
+  -
+    id: key-callable
+    obj:
+      > class DummyConfig(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'y': 1}, location='a')
+      >
+      > class DummyObj:
+      >     __config__ = [DummyConfig]
+      >
+      > from operator import itemgetter
+    # Avoid using `lambda` because it doesn't have a consistent string 
+    # representation.
+    getter:
+      > appcli.Key(DummyConfig, itemgetter('y'))
+    expected:
+      values: [1]
+      info:
+        - queried DummyConfig\(\):
+        -
+          > a:
+          > called: operator.itemgetter\('y'\)
+          > returned: 1
+  -
+    id: key-dotted
+    obj:
+      > class DummyConfig(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'x': {'y': 1}}, location='a')
+      >
+      > class DummyObj:
+      >     __config__ = [DummyConfig]
+    getter:
+      > appcli.Key(DummyConfig, 'x.y')
+    expected:
+      values: [1]
+      info:
+        - queried DummyConfig\(\):
+        -
+          > a:
+          > found 'x.y': 1
+  -
+    id: key-falsy
+    obj:
+      > class DummyConfig(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={None: 1}, location='a')
+      >
+      > class DummyObj:
+      >     __config__ = [DummyConfig]
+      >     x = appcli.param()
+    getter:
+      > appcli.Key(DummyConfig, None)
+    expected:
+      values: [1]
+      info:
+        - queried DummyConfig\(\):
+        -
+          > a:
+          > found None: 1
+  -
+    id: key-config-cls
+    obj:
+      > class DummyConfigA(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'x': 1}, location='a')
+      >
+      > class DummyConfigB(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'x': 2}, location='b')
+      >
+      > class DummyConfigC(appcli.Config):
+      >     pass
+      >
+      > class DummyObj:
+      >     __config__ = [DummyConfigA, DummyConfigB]
+    getter:
+      > appcli.Key(DummyConfigC, 'x')
+    expected:
+      values: []
+      info:
+        - no configs of class DummyConfigC
+  -
+    id: key-config-cls
+    obj:
+      > class DummyConfigA(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'x': 1}, location='a')
+      >
+      > class DummyConfigB(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'x': 2}, location='b')
+      >
+      > class DummyObj:
+      >     __config__ = [DummyConfigA, DummyConfigB]
+    getter:
+      > appcli.Key(DummyConfigA, 'x')
+    expected:
+      values: [1]
+      info:
+        - queried DummyConfigA\(\):
+        -
+          > a:
+          > found 'x': 1
+  -
+    id: key-config-cls
+    obj:
+      > class DummyConfigA(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'x': 1}, location='a')
+      >
+      > class DummyConfigB(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'x': 2}, location='b')
+      >
+      > class DummyObj:
+      >     __config__ = [DummyConfigA, DummyConfigB]
+    getter:
+      > appcli.Key(DummyConfigB, 'x')
+    expected:
+      values: [2]
+      info:
+        - queried DummyConfigB\(\):
+        -
+          > b:
+          > found 'x': 2
+  -
+    id: key-config-factory
+    obj:
+      > class DummyConfig(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'x': 1})
+      >
+      > class DummyObj:
+      >     __config__ = [lambda obj: DummyConfig(obj)]
+    getter:
+      > appcli.Key(DummyConfig, 'x')
+    expected:
+      values: [1]
+      info:
+        - queried DummyConfig\(\):
+        -
+          > found 'x': 1
+  -
+    id: key-config-setup
+    obj:
+      > class DummyConfig(appcli.Config):
+      >
+      >     def __init__(self, obj, **kwargs):
+      >         super().__init__(obj)
+      >         self.kwargs = kwargs
+      >
+      >     def load(self):
+      >         yield appcli.DictLayer(self.kwargs)
+      >
+      > class DummyObj:
+      >     __config__ = [DummyConfig.setup(x=1)]
+    getter:
+      > appcli.Key(DummyConfig, 'x')
+    expected:
+      values: [1]
+      info:
+        - queried DummyConfig\(\):
+        -
+          > found 'x': 1
+  -
+    id: key-multi-config
+    obj:
+      > class DummyConfigA(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'x': 1}, location='a')
+      >
+      > class DummyConfigB(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'x': 2}, location='b')
+      >
+      > class DummyObj:
+      >     __config__ = [DummyConfigA, DummyConfigB]
+    getter:
+      > appcli.Key(appcli.Config, 'x')
+    expected:
+      values: [1, 2]
+      info:
+        - queried DummyConfigA\(\):
+        -
+          > a:
+          > found 'x': 1
+        - queried DummyConfigB\(\):
+        -
+          > b:
+          > found 'x': 2
+  -
+    id: key-multi-layer
+    obj:
+      > class DummyConfig(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'x': 1}, location='a')
+      >         yield appcli.DictLayer(values={'x': 2}, location='b')
+      >
+      > class DummyObj:
+      >     __config__ = [DummyConfig]
+    getter:
+      > appcli.Key(DummyConfig, 'x')
+    expected:
+      values: [1, 2]
+      info:
+        - queried DummyConfig\(\):
+        -
+          > a:
+          > found 'x': 1
+        -
+          > b:
+          > found 'x': 2
+  -
+    id: key-deferred-layer-values
+    obj:
+      > class DummyConfig(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(
+      >                 values=lambda: obj.values,  # not yet defined
+      >                 location='a',
+      >         )
+      >
+      > class DummyObj:
+      >     __config__ = [DummyConfig]
+      >
+      > obj = DummyObj()
+      > obj.values = {'x': 1}
+    getter:
+      > appcli.Key(DummyConfig, 'x')
+    expected:
+      values: [1]
+      info:
+        - queried DummyConfig\(\):
+        -
+          > a:
+          > found 'x': 1
+  -
+    id: key-deferred-layer-loc
+    obj:
+      > class DummyConfig(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(
+      >                 values={'x': 1},
+      >                 location=lambda: obj.loc,  # not yet defined
+      >         )
+      >
+      > class DummyObj:
+      >     __config__ = [DummyConfig]
+      >
+      > obj = DummyObj()
+      > obj.loc = 'a'
+    getter:
+      > appcli.Key(DummyConfig, 'x')
+    expected:
+      values: [1]
+      info:
+        - queried DummyConfig\(\):
+        -
+          > a:
+          > found 'x': 1
+  -
+    id: key-autoload
+    obj:
+      > class DummyConfig(appcli.Config):
+      >     autoload = False
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'x': 1}, location='a')
+      >
+      > class DummyObj:
+      >     __config__ = [DummyConfig]
+    getter:
+      > appcli.Key(DummyConfig, 'x')
+    expected:
+      values: []
+      info:
+        - skipped DummyConfig\(\): not loaded
+      hints:
+        - did you mean to call `appcli.load\(\)`?
+  -
+    id: key-autoload
+    obj:
+      > class DummyConfig(appcli.Config):
+      >     autoload = False
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'x': 1}, location='a')
+      >
+      > class DummyObj:
+      >     __config__ = [DummyConfig]
+      >
+      > obj = DummyObj()
+      > appcli.load(obj)
+    getter:
+      > appcli.Key(DummyConfig, 'x')
+    expected:
+      values: [1]
+      info:
+        - queried DummyConfig\(\):
+        -
+          > a:
+          > found 'x': 1
+  -
+    id: key-missing
+    obj:
+      > class DummyConfig(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'x': 1}, location='a')
+      >
+      > class DummyObj:
+      >     __config__ = [DummyConfig]
+    getter:
+      > appcli.Key(DummyConfig, 'y')
+    expected:
+      values: []
+      info:
+        - queried DummyConfig\(\):
+        -
+          > a:
+          > did not find 'y' in {'x': 1}
+  -
+    id: key-missing
+    obj:
+      > class DummyConfig(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'x': 1}, location='a')
+      >         yield appcli.DictLayer(values={'x': 2}, location='b')
+      >
+      > class DummyObj:
+      >     __config__ = [DummyConfig]
+    getter:
+      > appcli.Key(DummyConfig, 'y')
+    expected:
+      values: []
+      info:
+        - queried DummyConfig\(\):
+        -
+          > a:
+          > did not find 'y' in {'x': 1}
+        -
+          > b:
+          > did not find 'y' in {'x': 2}
+  -
+    id: key-missing
+    obj:
+      > class DummyConfig(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'x': 1}, location='a')
+      >         yield appcli.DictLayer(values={'y': 2}, location='b')
+      >
+      > class DummyObj:
+      >     __config__ = [DummyConfig]
+    getter:
+      > appcli.Key(DummyConfig, 'y')
+    expected:
+      values: [2]
+      info:
+        - queried DummyConfig\(\):
+        -
+          > a:
+          > did not find 'y' in {'x': 1}
+        -
+          > b:
+          > found 'y': 2
+  -
+    id: key-missing
+    obj:
+      > class DummyConfigA(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'x': 1}, location='a')
+      >
+      > class DummyConfigB(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'x': 2}, location='b')
+      >
+      > class DummyObj:
+      >     __config__ = [DummyConfigA, DummyConfigB]
+    getter:
+      > appcli.Key(appcli.Config, 'y')
+    expected:
+      values: []
+      info:
+        -
+          > queried DummyConfigA\(\):
+        -
+          > a:
+          > did not find 'y' in {'x': 1}
+        -
+          > queried DummyConfigB\(\):
+        -
+          > b:
+          > did not find 'y' in {'x': 2}
+  -
+    id: key-missing
+    obj:
+      > class DummyConfigA(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'x': 1}, location='a')
+      >
+      > class DummyConfigB(appcli.Config):
+      >     def load(self):
+      >         yield appcli.DictLayer(values={'y': 2}, location='b')
+      >
+      > class DummyObj:
+      >     __config__ = [DummyConfigA, DummyConfigB]
+    getter:
+      > appcli.Key(appcli.Config, 'y')
+    expected:
+      values: [2]
+      info:
+        -
+          > queried DummyConfigA\(\):
+        -
+          > a:
+          > did not find 'y' in {'x': 1}
+        -
+          > queried DummyConfigB\(\):
+        -
+          > b:
+          > found 'y': 2
+
+test_getter_kwargs_err:
+  -
+    id: kwargs-err
+    getter: appcli.Value(1, toggle=True)
+    error:
+      type: appcli.ConfigError
+      message:
+        - unexpected keyword argument
+        - param\(\) allows the following kwargs:
+        - cast
+        - appcli.Value\(1, toggle=True\) has the following unexpected kwargs:
+        - toggle
+  -
+    id: kwargs-err
+    getter: appcli.Value(1, cats=int, toggle=True)
+    error:
+      type: appcli.ConfigError
+      message:
+        - unexpected keyword argument
+        - param\(\) allows the following kwargs:
+        - cast
+        - appcli.Value\(1, cats=<class 'int'>, toggle=True\) has the following
+        - cats
+        - toggle
+  -
+    id: kwargs-err
+    obj:
+      > class DummyObj:
+      >     __config__ = []
+      >     x = appcli.toggle_param()
+
+    getter: appcli.Value(1, cats=int, toggle=True)
+    error:
+      type: appcli.ConfigError
+      message:
+        - unexpected keyword argument
+        - param\(\) allows the following kwargs:
+        - cast
+        - toggle
+        - appcli.Value\(1, cats=<class 'int'>, toggle=True\) has the following
+        - cats
