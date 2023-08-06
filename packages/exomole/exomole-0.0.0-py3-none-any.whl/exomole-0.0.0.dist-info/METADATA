@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: exomole
+Version: 0.0.0
+Summary: A package for parsing and sanitization of Exomol Database data files
+Home-page: https://github.com/hanicinecm/exomole/
+Author: Martin Hanicinec
+Author-email: hanicinecm@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/hanicinecm/exomole/issues
+Keywords: exomol
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: pyvalem (>=2.3)
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+
+Meet ExoMole, a creature that feeds on data and meta-data files of the 
+[ExoMol database](https://www.exomol.com/) of molecular line lists.
+
