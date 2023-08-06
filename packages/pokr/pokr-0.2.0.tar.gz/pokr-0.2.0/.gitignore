@@ -1,0 +1,8 @@
+build
+*.egg-info
+.coverage
+.tox
+htmlcov
+target
+.direnv
+_version.py
