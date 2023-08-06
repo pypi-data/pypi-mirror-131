@@ -1,0 +1,9 @@
+run_dbcan-3.0.0.data/scripts/CGCFinder.py,sha256=oZu3EuxqFHoQwnZazA4sHRLtnkGdSV-bHWqRRjke8zA,5260
+run_dbcan-3.0.0.data/scripts/hmmscan-parser.py,sha256=045W4b0OamOY35TFzg2sPFWrSgG2APxp0OTcvMM_104,1812
+run_dbcan-3.0.0.data/scripts/run_dbcan.py,sha256=a1nH-lRyLaRTTp9D3_p181q9K5pSGFXvJooxxoJSj4g,27412
+run_dbcan-3.0.0.data/scripts/simplify_cgc.py,sha256=06Es8Ht9oTruXnIgekoHM-X6orr6jeAb2vyvSVFNecE,3244
+run_dbcan-3.0.0.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+run_dbcan-3.0.0.dist-info/METADATA,sha256=Ow8Z0ecgv97KxkguaAGiiyYU9C0HGN2fdll9l3oft6E,967
+run_dbcan-3.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+run_dbcan-3.0.0.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+run_dbcan-3.0.0.dist-info/RECORD,,
