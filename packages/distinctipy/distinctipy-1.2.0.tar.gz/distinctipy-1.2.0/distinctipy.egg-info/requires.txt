@@ -1,0 +1,11 @@
+cycler
+kiwisolver
+matplotlib
+numpy
+pandas
+pyparsing
+python-dateutil
+pytz
+six
+sphinx-rtd-theme
+nbsphinx
