@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/sparkgeo-awscdk-construct-lib/__init__.py
+src/sparkgeo-awscdk-construct-lib/py.typed
+src/sparkgeo-awscdk-construct-lib/_jsii/__init__.py
+src/sparkgeo-awscdk-construct-lib/_jsii/awscdk-constructs-library@0.0.4.jsii.tgz
+src/sparkgeo_awscdk_construct_lib.egg-info/PKG-INFO
+src/sparkgeo_awscdk_construct_lib.egg-info/SOURCES.txt
+src/sparkgeo_awscdk_construct_lib.egg-info/dependency_links.txt
+src/sparkgeo_awscdk_construct_lib.egg-info/requires.txt
+src/sparkgeo_awscdk_construct_lib.egg-info/top_level.txt
