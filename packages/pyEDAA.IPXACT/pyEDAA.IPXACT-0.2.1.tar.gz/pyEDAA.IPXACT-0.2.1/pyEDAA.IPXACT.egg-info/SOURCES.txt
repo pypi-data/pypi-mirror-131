@@ -1,0 +1,15 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+pyEDAA.IPXACT.egg-info/PKG-INFO
+pyEDAA.IPXACT.egg-info/SOURCES.txt
+pyEDAA.IPXACT.egg-info/dependency_links.txt
+pyEDAA.IPXACT.egg-info/requires.txt
+pyEDAA.IPXACT.egg-info/top_level.txt
+pyEDAA/IPXACT/Catalog.py
+pyEDAA/IPXACT/Component.py
+pyEDAA/IPXACT/Design.py
+pyEDAA/IPXACT/DesignConfiguration.py
+pyEDAA/IPXACT/GeneratorChain.py
+pyEDAA/IPXACT/__init__.py
