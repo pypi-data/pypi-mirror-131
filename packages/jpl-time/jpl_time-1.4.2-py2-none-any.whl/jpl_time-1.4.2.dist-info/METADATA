@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: jpl-time
+Version: 1.4.2
+Summary: Time and Duration classes which use SPICE to perform conversions and math.
+Home-page: UNKNOWN
+Author: Forrest Ridenhour
+Author-email: Forrest.Ridenhour@jpl.nasa.gov
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Requires-Dist: setuptools (==38.0.0)
+Requires-Dist: certifi (<=2020.04.05.1)
+Requires-Dist: pytz (<=2020.1)
+Requires-Dist: wheel (==0.34.2)
+Requires-Dist: numpy (==1.16.4)
+Requires-Dist: spiceypy (==2.3.2)
+
+UNKNOWN
+
+
