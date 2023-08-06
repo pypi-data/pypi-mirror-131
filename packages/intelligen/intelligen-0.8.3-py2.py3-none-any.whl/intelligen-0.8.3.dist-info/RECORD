@@ -1,0 +1,13 @@
+intelligen/AI.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+intelligen/__init__.py,sha256=EjSNAtq-6C1t8xgJpY_VdUE3gaLdLdAO_qar59N1w7o,167
+intelligen/intelligen.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+intelligen/interpolate.py,sha256=It15kiwPU5tk_Zp8h2Kl4gyfcO6LpJ2YM8HBpB8tS3E,1482
+intelligen/linregress.py,sha256=F4UXOt7tYr0WQocgH0lgiOVYWQ8gCM3ktT8LheC8hLQ,9835
+intelligen/numeric.py,sha256=t0r6W5jmIAFSqm2LsgW_upFTK659LdPKQMjDru6DpWQ,5112
+intelligen/stats.py,sha256=cqGdhUOdK08wbI83urnTsrCnTGchDUOLQkjyT5GKvXQ,5054
+intelligen-0.8.3.dist-info/LICENSE,sha256=CKq1mNRdr_uhyaxS31g6bpnbf_7FP-mtuG7F04aiX7g,1072
+intelligen-0.8.3.dist-info/METADATA,sha256=AT1zdFLvP0EA_tJ7jXAM9FX0OWN7G-CEYix3pdZwtEc,1361
+intelligen-0.8.3.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+intelligen-0.8.3.dist-info/dependency_links.txt,sha256=bUzfkk6Lb-LPgn9kfKdAFI4ui0xE6jFXjb6kbL1ANBc,17
+intelligen-0.8.3.dist-info/top_level.txt,sha256=CN4SJp4JKvseNlCwRUGJ-RGrrqSs09Ytao5J8qe4MUY,11
+intelligen-0.8.3.dist-info/RECORD,,
