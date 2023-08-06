@@ -1,0 +1,58 @@
+Representation of a socket with a mysql server.
+
+    The proper way to get an instance of this class is to call
+    connect().
+
+    Establish a connection to the MySQL database. Accepts several
+    arguments:
+
+    :param host: Host where the database server is located
+    :param user: Username to log in as
+    :param password: Password to use.
+    :param database: Database to use, None to not use a particular one.
+    :param port: MySQL port to use, default is usually OK. (default: 3306)
+    :param bind_address: When the client has multiple network interfaces, specify
+        the interface from which to connect to the host. Argument can be
+        a hostname or an IP address.
+    :param unix_socket: Optionally, you can use a unix socket rather than TCP/IP.
+    :param read_timeout: The timeout for reading from the connection in seconds (default: None - no timeout)
+    :param write_timeout: The timeout for writing to the connection in seconds (default: None - no timeout)
+    :param charset: Charset you want to use.
+    :param sql_mode: Default SQL_MODE to use.
+    :param read_default_file:
+        Specifies  my.cnf file to read these parameters from under the [client] section.
+    :param conv:
+        Conversion dictionary to use instead of the default one.
+        This is used to provide custom marshalling and unmarshaling of types.
+        See converters.
+    :param use_unicode:
+        Whether or not to default to unicode strings.
+        This option defaults to true for Py3k.
+    :param client_flag: Custom flags to send to MySQL. Find potential values in constants.CLIENT.
+    :param cursorclass: Custom cursor class to use.
+    :param init_command: Initial SQL statement to run when connection is established.
+    :param connect_timeout: Timeout before throwing an exception when connecting.
+        (default: 10, min: 1, max: 31536000)
+    :param ssl:
+        A dict of arguments similar to mysql_ssl_set()'s parameters.
+    :param read_default_group: Group to read from in the configuration file.
+    :param compress: Not supported
+    :param named_pipe: Not supported
+    :param autocommit: Autocommit mode. None means use server default. (default: False)
+    :param local_infile: Boolean to enable the use of LOAD DATA LOCAL command. (default: False)
+    :param max_allowed_packet: Max size of packet sent to server in bytes. (default: 16MB)
+        Only used to limit size of "LOAD LOCAL INFILE" data packet smaller than default (16KB).
+    :param defer_connect: Don't explicitly connect on contruction - wait for connect call.
+        (default: False)
+    :param auth_plugin_map: A dict of plugin names to a class that processes that plugin.
+        The class will take the Connection object as the argument to the constructor.
+        The class needs an authenticate method taking an authentication packet as
+        an argument.  For the dialog plugin, a prompt(echo, prompt) method can be used
+        (if no authenticate method) for returning a string from the user. (experimental)
+    :param server_public_key: SHA256 authenticaiton plugin public key value. (default: None)
+    :param db: Alias for database. (for compatibility to MySQLdb)
+    :param passwd: Alias for password. (for compatibility to MySQLdb)
+    :param binary_prefix: Add _binary prefix on bytes and bytearray. (default: False)
+
+    See `Connection <https://www.python.org/dev/peps/pep-0249/#connection-objects>`_ in the
+    specification.

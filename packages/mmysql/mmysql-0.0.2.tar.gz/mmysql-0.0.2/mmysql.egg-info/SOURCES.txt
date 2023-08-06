@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+mmysql/__init__.py
+mmysql/main.py
+mmysql.egg-info/PKG-INFO
+mmysql.egg-info/SOURCES.txt
+mmysql.egg-info/dependency_links.txt
+mmysql.egg-info/top_level.txt
