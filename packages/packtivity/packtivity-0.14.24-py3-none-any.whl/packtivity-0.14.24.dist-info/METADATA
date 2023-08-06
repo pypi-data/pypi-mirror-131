@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: packtivity
+Version: 0.14.24
+Summary: packtivity - general purpose schema + bindings for PROV activities
+Home-page: https://github.com/yadage/packtivity
+Author: Lukas Heinrich
+Author-email: lukas.heinrich@cern.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: requests[security]
+Requires-Dist: jsonschema
+Requires-Dist: jsonref
+Requires-Dist: pyyaml
+Requires-Dist: click
+Requires-Dist: glob2
+Requires-Dist: jsonpointer
+Requires-Dist: jsonpath-rw
+Requires-Dist: jq
+Requires-Dist: yadage-schemas
+Requires-Dist: mock
+Requires-Dist: checksumdir
+Provides-Extra: celery
+Requires-Dist: celery ; extra == 'celery'
+Requires-Dist: redis ; extra == 'celery'
+
+UNKNOWN
+
