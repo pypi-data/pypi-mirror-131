@@ -1,0 +1,16 @@
+compas_gmsh/__init__.py,sha256=ZRECZuKf7RZ2_Nd5K75BApVQwqZXUFuzrnCR5-pD0VU,1639
+compas_gmsh/options.py,sha256=Vtzc3L1pSkterl9zAuUzBVEqIOIXmk8hYlhr77jlL6Q,1008
+compas_gmsh/interop/__init__.py,sha256=krPnPAa1s-OTN41gsqPPA0D6IyPBfgilREq_DKX2EaQ,311
+compas_gmsh/models/__init__.py,sha256=GJO0PGrAa0Hse-PEQBD4eLK3nEQlhFSj6bXsOKL0e5w,528
+compas_gmsh/models/csg.py,sha256=TQ3AMoLUG_eYiqj8QRYE7gL0jJ7FJTQREHwqshQ4Eb0,4560
+compas_gmsh/models/mesh.py,sha256=SJh4_T8qU0XR7ut5QywYvb4bleotAmanyCtcPCs1Dfg,1235
+compas_gmsh/models/model.py,sha256=t29i-ceRwMWqDzy2IgN8FjUYE54g1hvBWCMY_u0EZNw,10936
+compas_gmsh/models/shape.py,sha256=Zl15PgDo_--izDL0uwvzCbq0HOx-tq4YkG5jRdaoV6s,5038
+compas_gmsh-0.3.0.dist-info/AUTHORS.md,sha256=c4VVACtvDEXH41YMLX3ujA5DbwwAGmtvvafJiWhL2DM,10
+compas_gmsh-0.3.0.dist-info/LICENSE.GPL,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+compas_gmsh-0.3.0.dist-info/LICENSE.MIT,sha256=tNf0F-3UgZANk-KPUGRtXiv8c8A7CXwtl6cSltBtenE,1071
+compas_gmsh-0.3.0.dist-info/METADATA,sha256=M0HBEQ1XwsuEtVMicaXckvU0481YFzhNOHUsChaAaHw,2046
+compas_gmsh-0.3.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+compas_gmsh-0.3.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+compas_gmsh-0.3.0.dist-info/top_level.txt,sha256=v32Si56npgsvroPbkO62wo_papWGCDAMoA-_br3UMCI,12
+compas_gmsh-0.3.0.dist-info/RECORD,,
