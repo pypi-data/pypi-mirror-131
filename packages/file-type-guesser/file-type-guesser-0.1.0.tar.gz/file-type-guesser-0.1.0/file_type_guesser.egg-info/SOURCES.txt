@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+file_type_guesser/__init__.py
+file_type_guesser/constants.py
+file_type_guesser/core.py
+file_type_guesser/signatures.py
+file_type_guesser/types.py
+file_type_guesser.egg-info/PKG-INFO
+file_type_guesser.egg-info/SOURCES.txt
+file_type_guesser.egg-info/dependency_links.txt
+file_type_guesser.egg-info/top_level.txt
