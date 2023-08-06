@@ -1,0 +1,23 @@
+% !Mode:: "TeX:UTF-8"
+% xelatex main.tex
+\documentclass[openany,twoside,fontset=none,UTF8]{ctexbook}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\input{setup/package.tex}  % 引入新包
+\graphicspath{{../figures/}}
+
+%===================================== Cover and TOC =====================================
+\begin{document}
+\input{setup/format}  %模板文件，定义格式
+\frontmatter
+\input{setup/cover}
+\input{setup/abstract}
+\input{setup/content}
+
+%======================================= Main Body =======================================
+\mainmatter
+\include{body/chapter_1}
+\include{body/chapter_2}
+\include{body/chapter_3}
+
+\end{document} 

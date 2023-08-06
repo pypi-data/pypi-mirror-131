@@ -1,0 +1,63 @@
+HRSG:
+  全称: Heat Recovery Steam Generator
+  翻译: 余热锅炉蒸汽发生器
+CSO: 燃料控制信号输出
+  子项: 控制
+    -
+    缩写: GVCSO
+    翻译: 转速调节控制指令
+    - 缩写: LDCSO
+      翻译: 功率调节控制指令
+    - 缩写: BPCSO
+      翻译: 叶片通道温度调节控制指令
+    - 缩写: EXCSO
+      翻译: 排汽温度调节控制指令
+    - 缩写: FLCSO
+      翻译: 燃料限制控制指令
+    - 缩写: IGVCSO
+      翻译: 进汽导叶调节控制指令
+    - 缩写: BYCSO
+      翻译: 燃烧室旁路阀调节控制指令
+BPREF: 温度控制指令，类似于BPCSO，两个参数的值几乎相同，可能一个是指令，一个是反馈
+BYREF: 燃烧室旁路阀控制指令
+LDREF: 负荷控制指令
+IGVREF: IGV开度指令
+
+ECO: 省煤器
+EVAP: 蒸发器
+FICQ: 流量测点
+FWHTR: Feed Water Heat Transfer
+GT FUEL GAS PILOT RATIO: 燃气轮机燃气引燃比，引燃用气占总燃气的比值
+HP ECO: 余热锅炉高压省煤器
+HP EVAP: 余热锅炉高压蒸发器
+HP SH: 余热锅炉高压过热器
+HPCV: 高压主蒸汽控制阀
+HPSV: 高压主蒸汽关断阀
+IPCV: 中压主蒸汽控制阀
+IPSV: 中压主蒸汽关断阀
+LPCV: 低压主蒸汽控制阀
+LPSV: 低压主蒸汽关断阀
+PIC: 压力测点
+P&ID:
+  全称: Piping and Instrumentation Diagram
+  翻译: 管道及仪表流程图
+SH: 过热器
+TIC: 温度测点
+
+Auxiliary Steam: 辅助蒸汽
+Closed Circuit Cooling Water System: 闭式冷却水系统
+Condensate Water System: 凝结水系统
+Continuous Blowdown: 连续排污系统
+DM water:
+  全称: Dematerialized water
+  翻译: 软化水,除盐水
+Drain Recovery System: 疏水回收系统
+Evaporator System: 蒸发器系统
+Feedwater miscellaneous Piping: 给水杂用管道
+Gland Steam Condenser: 轴封冷却器
+HP Desuper Heating Spray System: 过热减温器
+Intermittent Blowdown: 定期排污系统,间歇排污系统
+Sampling System: 取样系统
+Thermal Cycle Dosing System: 热循环加药系统
+Turbine Proper Drain Flash Tank: 汽轮机本体疏水扩容器
+Water Ring Vacuum Pump: 水环真空泵
