@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/regtag/__init__.py
+src/regtag/main.py
+src/regtag.egg-info/PKG-INFO
+src/regtag.egg-info/SOURCES.txt
+src/regtag.egg-info/dependency_links.txt
+src/regtag.egg-info/requires.txt
+src/regtag.egg-info/top_level.txt
+src/regtag/reg/vidict.txt
