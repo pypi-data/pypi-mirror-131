@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: fastproaudio
+Version: 0.0.2
+Summary: End-to-end audio with fastai
+Home-page: https://github.com/drscotthawley/fastproaudio/tree/master/
+Author: Scott. Hawley
+Author-email: scott.hawley@belmont.edu
+License: Apache Software License 2.0
+Keywords: audio neural networks
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: audioread
+Requires-Dist: fastai
+Requires-Dist: librosa
+Requires-Dist: packaging
+Requires-Dist: pip
+Requires-Dist: pyzenodo3
+Requires-Dist: soundfile
+Requires-Dist: torchaudio
+Provides-Extra: dev
+
+# fastproaudio
+> End-to-end audio with fastai.
+
+
+## Idea behind this repo
+
+`fastaudio` focuses on spectrograms. `fastai` use cases tend to focus on classification. We need to go beyond those. 
+
+## Install
+
+`python -m pip install fastproaudio`
+
+or for the latest version:
+
+`python -m pip install git+https://github.com/drscotthawley/fastproaudio.git`
+
+## How to use
+
+...Workin' on it! 
+
+## Contributing
+
+Fork this repo.  Then clone to your local machine... 
+
+TODO must come back and fill in more.  It will involve things like running the same commands associated with [Contributing to nbdev](https://nbdev.fast.ai/#Contributing):
+
+`pip install nbdev` 
+
+`nbdev_install_hooks`
+
+`nbdev_clean_nbs`
+
+`make git_update`  will commit and push your changes
+
+
