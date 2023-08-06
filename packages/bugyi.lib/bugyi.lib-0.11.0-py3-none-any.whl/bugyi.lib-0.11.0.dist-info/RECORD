@@ -1,0 +1,15 @@
+bugyi/lib/__init__.py,sha256=dQ401oC1VL5UNHaSYFRFmhGo93VaFiknD4V1mEfGZ3E,262
+bugyi/lib/core.py,sha256=nWpiQG4gsdgFgtXrbDVLEcKZUNgsQEIcgMjlXqFKVhc,298
+bugyi/lib/dates.py,sha256=CCJKA2KH0UgXiz3vwRrQlQOsjkNWFYfgjypox4f6_w4,2018
+bugyi/lib/errors.py,sha256=uyjofehdU1EqqE8YmLc1Rth2-yyp3Z_l14nzOlhrybM,6220
+bugyi/lib/io.py,sha256=OPF3zvbWQyvYcdTE-SJm7S7Jy0Aeow_5bWzqlCRsi2s,5018
+bugyi/lib/meta.py,sha256=Wp18mwxRqJkDsweH6ao1KpuhPh4t2uuLA2W9R524yMM,2078
+bugyi/lib/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bugyi/lib/secrets.py,sha256=zxalIenYY7hXmK1eLNJZQGWOnwnk_VyjmCOU-umQ4ak,1465
+bugyi/lib/shell.py,sha256=KywDG2ONQYOLxlGHjD3S9Nj4c2Sy6tRouYr0TJjFtQw,4425
+bugyi/lib/types.py,sha256=fhxh7nB3IKQpDw6cn0WmAKtsFS1H3nf0afcuRpMO5wg,1416
+bugyi/lib/xdg.py,sha256=0BHhzc8oZiyc6V7KYxfNKKkzL80XeM2GzBxw8ONg23s,2027
+bugyi.lib-0.11.0.dist-info/METADATA,sha256=7udS_j7DhnSOvFyNKRjcdG4_upHULJ1_zi-igHxTV1E,3871
+bugyi.lib-0.11.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+bugyi.lib-0.11.0.dist-info/top_level.txt,sha256=bJBIREIoDnqqcEPBtx4UXXYZOtDevDQeABtMVFMAe2s,6
+bugyi.lib-0.11.0.dist-info/RECORD,,
