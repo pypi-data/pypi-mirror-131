@@ -1,0 +1,5 @@
+kubernetes
+kopf
+pyyaml
+inflection
+python-box
