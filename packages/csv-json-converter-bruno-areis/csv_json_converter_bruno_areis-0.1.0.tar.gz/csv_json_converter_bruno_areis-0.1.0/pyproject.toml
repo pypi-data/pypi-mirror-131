@@ -1,0 +1,28 @@
+[tool.poetry]
+authors = ["Bruno Reis <brunoalvesbhx@gmail.com>"]
+description = "Convert csv to json or json to csv"
+name = "csv_json_converter_bruno_areis"
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+click = "^8.0.3"
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+mypy = "^0.920"
+pytest = "^5.2"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.poetry.scripts]
+csv_json_converter = 'csv_json_converter_bruno_areis.converter:converter'
+
+[tool.black]
+line-lenght = 99
+
+[tool.isort]
+profile = "black"
