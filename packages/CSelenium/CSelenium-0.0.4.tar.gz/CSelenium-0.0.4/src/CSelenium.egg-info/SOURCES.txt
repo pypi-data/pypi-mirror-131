@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/CSelenium.egg-info/PKG-INFO
+src/CSelenium.egg-info/SOURCES.txt
+src/CSelenium.egg-info/dependency_links.txt
+src/CSelenium.egg-info/requires.txt
+src/CSelenium.egg-info/top_level.txt
+src/Cselenium/CSelenium.py
+src/Cselenium/Language.py
+src/Cselenium/__init__.py
