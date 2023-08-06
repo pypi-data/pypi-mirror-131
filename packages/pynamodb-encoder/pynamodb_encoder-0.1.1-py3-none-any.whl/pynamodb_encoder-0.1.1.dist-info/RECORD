@@ -1,0 +1,9 @@
+LICENSE,sha256=4_SVfdBMnjzfMY6YNsUAuNLb0bPFWH7lfbZWraNh5II,1065
+pynamodb_encoder/decoder.py,sha256=8JzT2P3-_CqUUNKnYPH9tsGdTPrDLNb5YyoEggBwEsA,2546
+pynamodb_encoder/encoder.py,sha256=PUbfKXhS45XVU22yxAFErLNeZshjBcIZttwzY5NOLt4,2012
+pynamodb_encoder/primitive_attribute_decoder.py,sha256=mwqYhdm0VD18VhnncLpcx1ilC4SoPwcBvUiWb8CSPtk,852
+pynamodb_encoder/primitive_attribute_encoder.py,sha256=Ps55A5Yvm4BzoyDK7_KrTv1Ujz94Zmh38linvo-df6A,737
+pynamodb_encoder-0.1.1.dist-info/LICENSE,sha256=4_SVfdBMnjzfMY6YNsUAuNLb0bPFWH7lfbZWraNh5II,1065
+pynamodb_encoder-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pynamodb_encoder-0.1.1.dist-info/METADATA,sha256=Lxwb9NafyajqbQKeqSs2JTXF8KhJRW3nGRsqCdl-W3Y,3585
+pynamodb_encoder-0.1.1.dist-info/RECORD,,
