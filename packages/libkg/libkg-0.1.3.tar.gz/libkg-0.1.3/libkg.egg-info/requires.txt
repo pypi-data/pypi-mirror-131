@@ -1,0 +1,4 @@
+Click>=7.0
+py2neo==4.3.0
+kgdt==0.4.0
+pandas

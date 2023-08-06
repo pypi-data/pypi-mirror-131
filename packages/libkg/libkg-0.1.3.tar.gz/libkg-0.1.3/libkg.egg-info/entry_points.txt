@@ -1,0 +1,3 @@
+[console_scripts]
+libkg = libkg.cli:main
+
