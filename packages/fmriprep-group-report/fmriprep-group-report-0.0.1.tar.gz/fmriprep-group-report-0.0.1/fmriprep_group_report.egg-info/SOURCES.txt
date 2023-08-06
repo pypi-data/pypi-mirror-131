@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+fmriprep_group_report.egg-info/PKG-INFO
+fmriprep_group_report.egg-info/SOURCES.txt
+fmriprep_group_report.egg-info/dependency_links.txt
+fmriprep_group_report.egg-info/entry_points.txt
+fmriprep_group_report.egg-info/requires.txt
+fmriprep_group_report.egg-info/top_level.txt
+fmriprepgr/__init__.py
