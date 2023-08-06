@@ -1,0 +1,9 @@
+cemm/__init__.py,sha256=e2vsbDze5x6cLlXNPW8vpFtpOk-ZzueTHiHhwk4n-iA,304
+cemm/cemm.py,sha256=p0QQvX36CO73xSBldQL911yqL-NPn-311c4VjkuBrRw,5256
+cemm/exceptions.py,sha256=z15cHhsD7WbLxbfNTWBYIOxgZeFHVbtu_cnZ71wHRD0,168
+cemm/models.py,sha256=qA6YQz5e_Fax-UQo9TiYB_yhMx0WpvOQ56gp0ImL4Fk,5126
+cemm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cemm-0.2.0.dist-info/LICENSE,sha256=qa6l2J6Uaficrcz42LU81RQ1CIJck5A9hh07X98K1Nw,1072
+cemm-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+cemm-0.2.0.dist-info/METADATA,sha256=GIDKU5_h5gts9Q_yfbBtyE6gztbsoB0ZgC7KglYoHYQ,7832
+cemm-0.2.0.dist-info/RECORD,,
