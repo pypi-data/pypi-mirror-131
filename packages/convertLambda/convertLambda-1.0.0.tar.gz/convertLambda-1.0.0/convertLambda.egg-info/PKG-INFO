@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: convertLambda
+Version: 1.0.0
+Summary: convert lambda calculas to python code
+Home-page: https://github.com/Abuzz1/LambdaToPython
+Author: Ali Alshawabkeh
+Author-email: alialshawabkeh12@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Lambda To Python 
+Input λ-Calculas and output python code!
+
+# Example One
+
+ex. λx.2x = lambda x : 2x
+
+# Example Two
+f = λx.2x = <br> f = lambda x : 2x
+
+
