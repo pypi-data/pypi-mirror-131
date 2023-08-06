@@ -1,0 +1,8 @@
+corpuscula>=1.0.56
+matplotlib
+numpy
+pandas
+seaborn
+sklearn
+torch>=1.8.0
+transformers>=4.3.3
