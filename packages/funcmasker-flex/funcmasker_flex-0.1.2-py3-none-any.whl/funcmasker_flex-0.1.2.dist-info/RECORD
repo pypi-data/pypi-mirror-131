@@ -1,0 +1,16 @@
+funcmasker_flex/config/snakebids.yml,sha256=WkVCdSGUz-CJBJD98dZ0fTns7IOLLd9qhzUoqI3_ufg,5359
+funcmasker_flex/pipeline_description.json,sha256=VHbczec02io5BWrSI1HN2ehBgUahrbgse3IS_RIGXoU,423
+funcmasker_flex/resources/template.json,sha256=CXS_vaY9UnysQHkUldBsQHck9yvFcv2Ffv-1_W3kgl0,360
+funcmasker_flex/resources/test_subjects.txt,sha256=okq8i8i8XNC-tUiWVTH1OZtYngsWGuSdf-Q1CnstSCg,241
+funcmasker_flex/resources/train_subjects.txt,sha256=IGRXlCHZF8u0Q1ewXzkggOiINEhavIiWgsi6FE3VQXE,560
+funcmasker_flex/run.py,sha256=ljVRQIIl1X5K_wbBqrCF7tSseL_h95Wg937iAvFvM6U,417
+funcmasker_flex/workflow/Snakefile,sha256=Sp0DkjK-Zu6vFP3bRbyjT7gHLMjKxgzmxQKguaZ1IZE,2526
+funcmasker_flex/workflow/rules/common.smk,sha256=AwtrVDDnw8nawWmwWBotLn0z3_5EF0yxAZO0m2VOF-k,290
+funcmasker_flex/workflow/rules/evaluate.smk,sha256=hr5LGldoTloYcYysaozYYRumHqEjJK6i_XRbIyLm4O0,5028
+funcmasker_flex/workflow/rules/inference.smk,sha256=zMHTnWj-DmvB9a5SvkRR0rMGNkrTJ7kIxCVrBxNItRQ,5310
+funcmasker_flex/workflow/rules/training.smk,sha256=29QyevXxXAXbUwhQBLS8ldM7gwjdaWJOeCaIQPe0gi4,9264
+funcmasker_flex/workflow/scripts/create_json.py,sha256=PHJCyTWDBpGkBs5VkYPBBx50tNVdItAqd-SAE6cL_5w,418
+funcmasker_flex-0.1.2.dist-info/entry_points.txt,sha256=lUI3lTFhN3XZRI4CHfmKwklei87RxyBUlQ8QbFBCOXo,60
+funcmasker_flex-0.1.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+funcmasker_flex-0.1.2.dist-info/METADATA,sha256=CV_tK4UoUbgHEpkB_LdQVk_CVYp4cGnOzpPbWduQmBE,575
+funcmasker_flex-0.1.2.dist-info/RECORD,,
