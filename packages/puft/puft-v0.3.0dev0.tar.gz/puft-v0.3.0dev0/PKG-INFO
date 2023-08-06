@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: puft
+Version: v0.3.0dev0
+Summary: Upgraded layer over Flask.
+Home-page: https://github.com/ryzhovalex/puft
+Author: Alexander Ryzhov
+Author-email: thed4rkof@gmail.com
+License: MIT
+Download-URL: https://github.com/ryzhovalex/puft/archive/refs/tags/0.3.0dev0.tar.gz
+Description: UNKNOWN
+Keywords: flask+,web-framework,flask,flask-template
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
