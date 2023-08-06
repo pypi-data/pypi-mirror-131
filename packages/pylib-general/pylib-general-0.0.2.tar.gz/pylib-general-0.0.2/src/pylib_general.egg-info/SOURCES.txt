@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pylib_general/__init__.py
+src/pylib_general/properties.py
+src/pylib_general.egg-info/PKG-INFO
+src/pylib_general.egg-info/SOURCES.txt
+src/pylib_general.egg-info/dependency_links.txt
+src/pylib_general.egg-info/top_level.txt
