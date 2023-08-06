@@ -1,0 +1,3 @@
+[console_scripts]
+hello_world = devcloud_sagemaker.sm_client:print_hello_world
+
