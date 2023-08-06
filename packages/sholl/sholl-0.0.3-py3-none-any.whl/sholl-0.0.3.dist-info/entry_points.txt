@@ -1,0 +1,3 @@
+[console_scripts]
+sholl=sholl.sholl:main
+
