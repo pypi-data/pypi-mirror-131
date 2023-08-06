@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "fimage"
+version = "0.1.0"
+description = "A Python module to create and apply filters to images."
+authors = ["Jordan Jimenez", "Juan Benitez <juanbenitezdev@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/jordandjp/fimage"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+numpy = "^1.21.4"
+Pillow = "^8.4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+commitizen = "^2.20.0"
+pre-commit = "^2.16.0"
+black = "^21.12b0"
+flake8 = "^4.0.1"
+tox = "^3.24.4"
+mypy = {version = "^0.910", optional = true}
+pylint = {version = "^2.12.2", optional = true}
+pydocstyle = {version = "^6.1.1", optional = true}
+isort = "^5.10.1"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.0.1"
+tag_format = "$version"
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
