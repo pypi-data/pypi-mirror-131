@@ -1,0 +1,5 @@
+py_bip39_bindings-0.1.8.dist-info/METADATA,sha256=9mBaG_FUudu-516Mrw_mpW5SVfQF42KxHmxAOBkP3Eo,1997
+py_bip39_bindings-0.1.8.dist-info/WHEEL,sha256=1enunr0kWCBYB6i5d9-uyb0-k_g_2gyfwMaFXwP5ho8,105
+bip39/__init__.py,sha256=i9d1Hz1DuSptdLSOUA1OcpHtMpGJJVvHYq6ZpuQ6L_c,46
+bip39/bip39.cpython-310-darwin.so,sha256=EgFD2B404FOFQUe7XHH8b1vXswDwdcjwMmVOz95OqGg,404955
+py_bip39_bindings-0.1.8.dist-info/RECORD,,
