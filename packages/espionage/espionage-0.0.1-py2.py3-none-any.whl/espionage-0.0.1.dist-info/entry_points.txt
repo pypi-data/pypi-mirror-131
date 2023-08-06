@@ -1,0 +1,3 @@
+[console_scripts]
+espionage = espionage.main:main
+
