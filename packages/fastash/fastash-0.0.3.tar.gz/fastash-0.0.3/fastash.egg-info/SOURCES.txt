@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+fastash/__init__.py
+fastash/ash.py
+fastash/ashfunc.cpp
+fastash/density_estimator.py
+fastash/hyperplane.py
+fastash/whitening_transformer.py
+fastash.egg-info/PKG-INFO
+fastash.egg-info/SOURCES.txt
+fastash.egg-info/dependency_links.txt
+fastash.egg-info/requires.txt
+fastash.egg-info/top_level.txt
+fastash/bandwidth_selection/__init__.py
+fastash/bandwidth_selection/_scotts_rule.py
