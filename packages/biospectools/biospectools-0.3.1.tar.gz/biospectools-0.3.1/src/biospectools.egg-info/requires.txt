@@ -1,0 +1,21 @@
+numpy
+scipy
+scikit-learn
+numexpr
+
+[docs]
+sphinx>=4.3.0
+myst-parser>=0.16.0
+sphinx-rtd-theme
+
+[private]
+biospectools_private@ git+ssh://git@github.com/BioSpecNorway/biospectools-private.git
+
+[testing]
+pytest>=6.0
+pytest-cov>=2.0
+pandas
+openpyxl
+xlrd
+flake8>=3.9
+tox>=3.24

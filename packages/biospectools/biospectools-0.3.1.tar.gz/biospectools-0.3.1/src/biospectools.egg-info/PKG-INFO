@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: biospectools
+Version: 0.3.1
+Summary: Python tools for processing spectral data
+Home-page: https://github.com/BioSpecNorway/biospectools
+Author: BioSpecNorway Group
+License: UNKNOWN
+Project-URL: BiospecNorway Group, https://www.nmbu.no/en/faculty/realtek/research/groups/biospectroscopy
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: docs
+Provides-Extra: private
+Provides-Extra: testing
