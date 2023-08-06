@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/sqlalchemy_sqlite_session/__init__.py
+src/sqlalchemy_sqlite_session/adapters.py
+src/sqlalchemy_sqlite_session/sport.py
+src/sqlalchemy_sqlite_session/welfare.py
+src/sqlalchemy_sqlite_session.egg-info/PKG-INFO
+src/sqlalchemy_sqlite_session.egg-info/SOURCES.txt
+src/sqlalchemy_sqlite_session.egg-info/dependency_links.txt
+src/sqlalchemy_sqlite_session.egg-info/top_level.txt
+test/test.py
