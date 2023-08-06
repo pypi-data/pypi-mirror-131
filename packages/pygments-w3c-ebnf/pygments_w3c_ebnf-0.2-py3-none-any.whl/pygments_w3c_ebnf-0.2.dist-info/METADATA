@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pygments-w3c-ebnf
+Version: 0.2
+Summary: A pygments lexer for the Extended Backus-Naur Format used by the W3C
+Home-page: https://github.com/rkaminsk/W3CEbnfLexer
+Author: William Heinbockel, Roland Kaminski
+Author-email: UNKNOWN
+License: Apache 2.0
+Platform: UNKNOWN
+
+UNKNOWN
+
+
