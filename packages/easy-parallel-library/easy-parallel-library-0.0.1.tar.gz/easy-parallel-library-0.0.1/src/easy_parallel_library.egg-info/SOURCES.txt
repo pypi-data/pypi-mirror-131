@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/easy_parallel_library.egg-info/PKG-INFO
+src/easy_parallel_library.egg-info/SOURCES.txt
+src/easy_parallel_library.egg-info/dependency_links.txt
+src/easy_parallel_library.egg-info/top_level.txt
+src/example_package/__init__.py
+src/example_package/example.py
