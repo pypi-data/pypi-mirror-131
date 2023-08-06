@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+locr/__init__.py
+locr/constants.py
+locr/exceptions.py
+locr/handlers.py
+locr/locr.py
+locr.egg-info/PKG-INFO
+locr.egg-info/SOURCES.txt
+locr.egg-info/dependency_links.txt
+locr.egg-info/requires.txt
+locr.egg-info/top_level.txt
