@@ -1,0 +1,8 @@
+README.md
+setup.py
+betterjsondb/__init__.py
+betterjsondb/betterjsondb.py
+betterjsondb.egg-info/PKG-INFO
+betterjsondb.egg-info/SOURCES.txt
+betterjsondb.egg-info/dependency_links.txt
+betterjsondb.egg-info/top_level.txt
