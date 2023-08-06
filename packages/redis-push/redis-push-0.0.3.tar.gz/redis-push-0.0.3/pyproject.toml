@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "redis-push"
+version = "0.0.3"
+description = "push data into redis follow protocol."
+homepage = "https://github.com/agarichan/redis-push"
+repository = "https://github.com/agarichan/redis-push"
+authors = ["agarichan"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = {extras = ["dotenv"], version = "^1.8.2"}
+aioredis = "^2.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+ipykernel = "^6.6.0"
+black = "^21.12b0"
+flake8 = "^4.0.1"
+mypy = "^0.920"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+style = "pep440"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
