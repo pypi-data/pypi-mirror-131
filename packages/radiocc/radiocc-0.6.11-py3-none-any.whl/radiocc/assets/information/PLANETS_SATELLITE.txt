@@ -1,0 +1,162 @@
+      199         'MERCURY'
+      299         'VENUS'
+      399         'EARTH'
+      301         'MOON'
+      499         'MARS'
+      401         'PHOBOS'                MI
+      402         'DEIMOS'                MII
+      599         'JUPITER'
+      501         'IO'                    JI
+      502         'EUROPA'                JII
+      503         'GANYMEDE'              JIII
+      504         'CALLISTO'              JIV
+      505         'AMALTHEA'              JV
+      506         'HIMALIA'               JVI
+      507         'ELARA'                 JVII
+      508         'PASIPHAE'              JVIII
+      509         'SINOPE'                JIX
+      510         'LYSITHEA'              JX
+      511         'CARME'                 JXI
+      512         'ANANKE'                JXII
+      513         'LEDA'                  JXIII
+      514         'THEBE'                 JXIV
+      515         'ADRASTEA'              JXV
+      516         'METIS'                 JXVI
+      517         'CALLIRRHOE'            JXVII
+      518         'THEMISTO'              JXVIII
+      519         'MAGACLITE'             JXIX
+      520         'TAYGETE'               JXX
+      521         'CHALDENE'              JXXI
+      522         'HARPALYKE'             JXXII
+      523         'KALYKE'                JXXIII
+      524         'IOCASTE'               JXXIV
+      525         'ERINOME'               JXXV
+      526         'ISONOE'                JXXVI
+      527         'PRAXIDIKE'             JXXVII
+      528         'AUTONOE'               JXXVIII
+      529         'THYONE'                JXXIX
+      530         'HERMIPPE'              JXXX
+      531         'AITNE'                 JXXXI
+      532         'EURYDOME'              JXXXII
+      533         'EUANTHE'               JXXXIII
+      534         'EUPORIE'               JXXXIV
+      535         'ORTHOSIE'              JXXXV
+      536         'SPONDE'                JXXXVI
+      537         'KALE'                  JXXXVII
+      538         'PASITHEE'              JXXXVIII
+      539         'HEGEMONE'
+      540         'MNEME'
+      541         'AOEDE'
+      542         'THELXINOE'
+      543         'ARCHE'
+      544         'KALLICHORE'
+      545         'HELIKE'
+      546         'CARPO'
+      547         'EUKELADE'
+      548         'CYLLENE'
+      549         'KORE'
+      550         'HERSE'
+      553         'DIA'
+      699         'SATURN'
+      601         'MIMAS'                 SI
+      602         'ENCELADUS'             SII
+      603         'TETHYS'                SIII
+      604         'DIONE'                 SIV
+      605         'RHEA'                  SV
+      606         'TITAN'                 SVI
+      607         'HYPERION'              SVII
+      608         'IAPETUS'               SVIII
+      609         'PHOEBE'                SIX
+      610         'JANUS'                 SX
+      611         'EPIMETHEUS'            SXI
+      612         'HELENE'                SXII
+      613         'TELESTO'               SXIII
+      614         'CALYPSO'               SXIV
+      615         'ATLAS'                 SXV
+      616         'PROMETHEUS'            SXVI
+      617         'PANDORA'               SXVII
+      618         'PAN'                   SXVIII
+      619         'YMIR'                  SXIX
+      620         'PAALIAQ'               SXX
+      621         'TARVOS'                SXXI
+      622         'IJIRAQ'                SXXII
+      623         'SUTTUNGR'              SXXIII
+      624         'KIVIUQ'                SXXIV
+      625         'MUNDILFARI'            SXXV
+      626         'ALBIORIX'              SXXVI
+      627         'SKATHI'                SXXVII
+      628         'ERRIAPUS'              SXXVIII
+      629         'SIARNAQ'               SXXIX
+      630         'THRYMR'                SXXX
+      631         'NARVI'                 SXXXI
+      632         'METHONE'               SXXXII
+      633         'PALLENE'               SXXXIII
+      634         'POLYDEUCES'            SXXXIV
+      635         'DAPHNIS'
+      636         'AEGIR'
+      637         'BEBHIONN'
+      638         'BERGELMIR'
+      639         'BESTLA'
+      640         'FARBAUTI'
+      641         'FENRIR'
+      642         'FORNJOT'
+      643         'HATI'
+      644         'HYRROKKIN'
+      645         'KARI'
+      646         'LOGE'
+      647         'SKOLL'
+      648         'SURTUR'
+      649         'ANTHE'
+      650         'JARNSAXA'
+      651         'GREIP'
+      652         'TARQEQ'
+      653         'AEGAEON'
+
+      799         'URANUS'
+      701         'ARIEL'                 UI
+      702         'UMBRIEL'               UII
+      703         'TITANIA'               UIII
+      704         'OBERON'                UIV
+      705         'MIRANDA'               UV
+      706         'CORDELIA'              UVI
+      707         'OPHELIA'               UVII
+      708         'BIANCA'                UVIII
+      709         'CRESSIDA'              UIX
+      710         'DESDEMONA'             UX
+      711         'JULIET'                UXI
+      712         'PORTIA'                UXII
+      713         'ROSALIND'              UXIII
+      714         'BELINDA'               UXIV
+      715         'PUCK'                  UXV
+      716         'CALIBAN'               UXVI
+      717         'SYCORAX'               UXVII
+      718         'PROSPERO'              UXVIII
+      719         'SETEBOS'               UXIX
+      720         'STEPHANO'              UXX
+      721         'TRINCULO'              UXXI
+      722         'FRANCISCO'
+      723         'MARGARET'
+      724         'FERDINAND'
+      725         'PERDITA'
+      726         'MAB'
+      727         'CUPID'
+      899         'NEPTUNE'
+      801         'TRITON'                NI
+      802         'NEREID'                NII
+      803         'NAIAD'                 NIII
+      804         'THALASSA'              NIV
+      805         'DESPINA'               NV
+      806         'GALATEA'               NVI
+      807         'LARISSA'               NVII
+      808         'PROTEUS'               NVIII
+      809         'HALIMEDE'
+      810         'PSAMATHE'
+      811         'SAO'
+      812         'LAOMEDEIA'
+      813         'NESO'
+      999         'PLUTO'
+      901         'CHARON'
+      902         'NIX'
+      903         'HYDRA'
+      904         'KERBEROS'
+      905         'STYX'
