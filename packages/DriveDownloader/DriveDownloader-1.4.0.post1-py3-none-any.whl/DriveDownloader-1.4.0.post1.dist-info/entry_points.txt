@@ -1,0 +1,3 @@
+[console_scripts]
+ddl = DriveDownloader.downloader:simple_cli
+
