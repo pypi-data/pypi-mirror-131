@@ -1,0 +1,9 @@
+vdbfusion/__init__.py,sha256=bSg15pniQHpB70yryDBW8kyn6LC31farDttu3cPhTRs,63
+vdbfusion/pybind/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vdbfusion/pybind/vdb_volume.py,sha256=Ip_PMWEUgz3zd1UHhOeK_y4RQUsE8U9eGHWIMB__BH0,3582
+vdbfusion/pybind/vdbfusion_pybind.cpython-38-x86_64-linux-gnu.so,sha256=V1cx69oW7gEufWU_sb1keVzj5bF-UAnTcPSOYDvVYEo,2506184
+vdbfusion-0.1.3.dist-info/LICENSE.txt,sha256=kxpWUIhWtWUGhbpsTnI0EGlIAhYUPcvYD7fSgiCsVew,1140
+vdbfusion-0.1.3.dist-info/METADATA,sha256=cFQV8RSbyMXVI41Uqu9rQFVH65eac4SOv4ZEh_pbVRo,2324
+vdbfusion-0.1.3.dist-info/WHEEL,sha256=9GRYllk4rjjxyTkU2BuRiXn2Mj9zXGB0POHfEUz75c0,112
+vdbfusion-0.1.3.dist-info/top_level.txt,sha256=BKv6sGN8Em9wF5sFSYMwM6XhWVxRnwTfKy6dfLOuu2I,10
+vdbfusion-0.1.3.dist-info/RECORD,,
