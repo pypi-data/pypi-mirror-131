@@ -1,0 +1,16 @@
+numpy>=1.16.0
+pandas
+matplotlib
+scipy
+tqdm
+pymatgen>=2022.0.17
+statsmodels
+pubchempy
+MDAnalysis
+selenium
+typing-extensions
+
+[web]
+sphinx
+sphinx_rtd_theme
+sphinx-autodoc-typehints
