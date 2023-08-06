@@ -1,0 +1,17 @@
+CHANGES
+=======
+
+0.13.1
+------
+
+* remove default timeout, because some operation, eg install will take very long time
+* support socket\_timeout, default to 60s
+* add retry for install error
+* fix yaml format
+* wrap TimeoutError to AdbTimeout
+* Fix typing error of shell
+* add --parse <uri> support
+* device: adb\_output: redirect subprocess' stdin to devnull
+* utils: \_is\_valid\_exe: redirect subprocess' stdin to devnull
+* Update README.md
+* add get\_{serialno,devpath,state} wait\_for command
