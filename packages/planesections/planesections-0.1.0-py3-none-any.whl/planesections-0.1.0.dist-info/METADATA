@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: planesections
+Version: 0.1.0
+Summary: A light-weight beam analyzer built on OpenSeesPy.
+Home-page: https://github.com/cslotboom/planesections
+Author: Christian Slotboom
+Author-email: cslotboom@yahoo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: license.txt
+Requires-Dist: numpy
+Requires-Dist: openseespy
+
+planesections is a lightweight beam analyzer, built on top of OpenSeesPy.
+
