@@ -1,0 +1,3 @@
+[console_scripts]
+pdpy11 = pdpy11:main_cli
+
