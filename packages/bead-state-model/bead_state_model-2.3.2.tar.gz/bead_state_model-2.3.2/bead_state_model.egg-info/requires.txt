@@ -1,0 +1,6 @@
+numpy
+pandas
+toml>=0.10.2
+
+[test]
+actomyosin-analyser
