@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dajapy
+Version: 0.1.0
+Summary: 日本語のダジャレを判定するPythonパッケージ
+Home-page: https://github.com/fujitako03
+License: MIT
+Author: fujitako03
+Author-email: okome.osakana.oniku@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: SudachiDict-core (>=20210802.post1,<20210803)
+Requires-Dist: SudachiPy (>=0.6.2,<0.7.0)
+Project-URL: Documentation, https://github.com/fujitako03/dajapy
+Project-URL: Repository, https://github.com/fujitako03/dajapy
