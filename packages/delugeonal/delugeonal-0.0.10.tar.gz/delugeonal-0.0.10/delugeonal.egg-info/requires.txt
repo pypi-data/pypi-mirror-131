@@ -1,0 +1,7 @@
+fuzzywuzzy
+IMDbPy
+minorimpact
+parse-torrent-title
+pyyaml
+torrentool
+tvdb_v4_official
