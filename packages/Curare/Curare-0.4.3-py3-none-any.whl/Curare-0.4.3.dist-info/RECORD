@@ -1,0 +1,13 @@
+curare/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+curare/curare.py,sha256=-KhIf7uDhe9eWqdH-hYVZoDWumMmgbP5hDlpXnSitKk,37677
+curare/curare_wizard.py,sha256=NlIus7sPeNmhzHtONgAo3hmJQ5DupbcW1l9ACY987kQ,15027
+curare/metadata.py,sha256=43et7me4whIfST0-BWoV19iUQ7lFkwL_KVnJQEoF6O0,231
+curare/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+curare/lib/generate_report.py,sha256=-DHASIhoK3hDrI8rhNyBXspZI2luVbga8zZuqPGpcFo,5181
+curare/lib/parse_versions.py,sha256=2X6XQOJbWQzeLJkRjylPLfHskgk6iLA4tNBiieFG6vA,5512
+Curare-0.4.3.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+Curare-0.4.3.dist-info/METADATA,sha256=7TYH7nyGILJiGtPggcVrUlx75FU5oQ-ca2H5LMjH6IA,15923
+Curare-0.4.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+Curare-0.4.3.dist-info/entry_points.txt,sha256=AiQFUdky_uGpwfH79A0A-CYmA_gVgZ98K-IuLhi7eAI,89
+Curare-0.4.3.dist-info/top_level.txt,sha256=s5e-kMXGK_KQlxsRiaK1pyzYN6BgUb7IL5QUomH_etE,7
+Curare-0.4.3.dist-info/RECORD,,
