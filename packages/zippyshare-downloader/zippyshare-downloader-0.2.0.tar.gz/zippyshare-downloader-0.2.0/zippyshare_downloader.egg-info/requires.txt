@@ -1,0 +1,8 @@
+requests
+bs4
+download
+aiohttp
+
+[docs]
+sphinx
+furo
