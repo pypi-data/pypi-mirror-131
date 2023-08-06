@@ -1,0 +1,3 @@
+clipboard
+make_colors>=3.12
+pydebugger
