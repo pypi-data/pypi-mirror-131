@@ -1,0 +1,6 @@
+requests
+prettytable
+PySocks
+qrcode
+pyyaml
+colorama
