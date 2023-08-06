@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: argdcls
+Version: 0.3.2
+Summary: A simple tool to use dataclass as your config
+Home-page: https://github.com/sotetsuk/argdcls
+Author: Sotetsu KOYAMADA
+Author-email: koyamada-s@sys.i.kyoto-u.ac.jp
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/sotetsuk/argdcls
+Description-Content-Type: text/markdown
+
+[![ci](https://github.com/sotetsuk/argdcls/actions/workflows/ci.yml/badge.svg)](https://github.com/sotetsuk/argdcls/actions/workflows/ci.yml)
+[![python-version](https://img.shields.io/pypi/pyversions/argdcls)](https://pypi.org/project/argdcls)
+[![pypi](https://img.shields.io/pypi/v/argdcls)](https://pypi.org/project/argdcls)
+
+# Argdcls
+
+A simple tool to use dataclass as your config
+
+## Usage
+
+```py
+from dataclasses import dataclass
+
+import argdcls
+
+
+@dataclass
+class Config:
+    lr: float
+    adam: bool = False
+
+
+config = argdcls.load(Config)
+print(config)
+```
+
+```sh
+$ python3 main.py @lr=1.0
+Config(lr=1.0, adam=False)
+$ python3 main.py lr=1.0 adam=True +outdir=results
+Config(lr=1.0, adam=True, outdir='result')
+```
+
+|| `@param` | `param` | `+param` | `++param` |
+|:---|:---:|:---:|:---:|:---:|
+|w/o default value|OK|OK|Error|OK|
+|w/ default value|Error|OK|Error|OK|
+|not dfined|Error|Error|OK|OK|
+
+## License
+MIT
+
