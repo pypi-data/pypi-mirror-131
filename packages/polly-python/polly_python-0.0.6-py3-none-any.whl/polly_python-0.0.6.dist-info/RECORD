@@ -1,0 +1,12 @@
+polly/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polly/auth.py,sha256=g1fZx5dB-YTq2JcM5PuYoDn4gg8iH3jZ3qjTi7TOv0A,710
+polly/constants.py,sha256=1X0YrVuK1xP5pxxMbJ7lcam2hlAHVBxBGC7if2SXdEE,54
+polly/errors.py,sha256=Fz6nSvm1FOQfouNL7kZzudSzA9TLOS9d_GhNLyGa6dU,1404
+polly/omixatlas.py,sha256=BLsyIa_yO6fgHrQ3XaBoytsLC5ERWn33Ibx5XuYbslw,2437
+polly/session.py,sha256=w2N3KxOYKjt6NfBRPt9O7cWn5-xtdCzEAbhlngha1f8,666
+polly/workspaces.py,sha256=lGVnBR5YjLSoGGsuik8e7qgQnYJB09mdDAYgB5yFJDw,1262
+polly_python-0.0.6.dist-info/LICENSE.md,sha256=eKd1MmdO6Hxx0Ab5YS36xoXlfaEaXJSv0DNsE_LeQVs,9675
+polly_python-0.0.6.dist-info/METADATA,sha256=9PnCuKaECo7j-8XdXYJU04pys_YGclBkpEM2g2oSzIk,5471
+polly_python-0.0.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+polly_python-0.0.6.dist-info/top_level.txt,sha256=EkSkcwyJzOgYwtAj8vzBlpctLSCNJPlX8ncNfJrYSug,6
+polly_python-0.0.6.dist-info/RECORD,,
