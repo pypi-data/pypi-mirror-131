@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: simplecipher
+Version: 0.2.1
+Summary: A simple cipher
+Home-page: https://github.com/nightowlish/simplecipher
+Author: nightowlish
+Author-email: oanaolf@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SimpleCipher
+A simple cipher.
+
+## Install
+
+```
+python3 -m pip install simplecipher
+```
+
+## Usage
+
+```python
+from simplecipher import simplecipher as sc
+
+cipher = sc.SimpleCipher()
+
+message = 'Hello, World!'
+
+encrypted_message = cipher.encrypt(message)
+
+decrypted_message = cipher.decrypt(encrypted_message)
+```
+
