@@ -1,0 +1,39 @@
+name: workshop-demo # needs to match your package name
+display_name: workshop demo # will also be used on the hub soon
+
+contributions:
+  commands:
+  # ~~ Reader ~~
+  - id: workshop-demo.get_reader
+    python_name: workshop_demo._reader:napari_get_reader
+    title: tracking challenge reader
+
+  # ~~ Widgets ~~
+  - id: workshop-demo.get_segment_widget
+    python_name: workshop_demo._dock_widget:segment_by_threshold
+    title: open threshold widget
+  - id: workshop-demo.get_highlight_widget
+    python_name: workshop_demo._dock_widget:SegmentationDiffHighlight
+    title: open highlight widget
+
+  # ~~ Writer ~~
+  - id: workshop-demo.write_labels
+    python_name: workshop_demo._writer:labels_to_zip
+    title: save to zip
+
+  readers:
+  - command: workshop-demo.get_reader
+    accepts_directories: true
+    filename_patterns: []
+
+  widgets:
+  - command: workshop-demo.get_segment_widget
+    display_name: Segment by Thresholding # shown in plugin menu
+  - command: workshop-demo.get_highlight_widget 
+    display_name: Highlight Segmentation Differences
+
+  writers:
+  - command: workshop-demo.write_labels
+    layer_types: ["labels*"]
+    filename_extensions: [".zip"] 
+    display_name: label zipper # shown in file save dialog

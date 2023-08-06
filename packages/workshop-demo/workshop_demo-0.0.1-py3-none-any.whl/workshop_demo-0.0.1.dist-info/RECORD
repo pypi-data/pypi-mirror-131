@@ -1,0 +1,17 @@
+workshop_demo/__init__.py,sha256=JrcWWZiTXboGhGq-c1Zrfirc0-vt7_SDHv1QGahf0gc,401
+workshop_demo/_constants.py,sha256=5JPzuH9iL3oPPMvJYeCmEn2Pc4KHDUlTJ8R5DYCj5O4,213
+workshop_demo/_dock_widget.py,sha256=LuC3H8vOBjddylVT-Xt3R1_wHAtajwa-kxO5HDqQz7g,6338
+workshop_demo/_reader.py,sha256=DKN-WWFXVvKbr5AxWO3-SWh-4og8W8f8WUNPMhMFzPE,5326
+workshop_demo/_version.py,sha256=Tjb_poy6EuGRi7TlrksJa9Qpx1MXOCO3p3F6tJ8xa5o,142
+workshop_demo/_writer.py,sha256=kFZgfuJDzBFZijMmAKrfm5Qt9TOHzXA_j0vdtweP6sY,2607
+workshop_demo/napari.yaml,sha256=fWFGlxfR_JQ-qzVisFvov0i9LAZJ_wzptzLu_sSZyNc,1230
+workshop_demo/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+workshop_demo/_tests/test_dock_widget.py,sha256=yPh6Ulj6dcT1jDb4RNxCFB_VGHU0nSJhPbkvHfzPS40,1552
+workshop_demo/_tests/test_reader.py,sha256=2nFnR7uTuU5e_T-cmH8B-hldm6vxOQOYE1CtlgSNedw,3702
+workshop_demo/_tests/test_writer.py,sha256=PW8ypj0fqc86yv-KOW1s-G7BHZohchpuXbV54ZWZZU0,1141
+workshop_demo-0.0.1.dist-info/LICENSE,sha256=b-fxaC5o0KftntSYCHtiQ0YZMMKT4QVE6GshAc6RQvk,1489
+workshop_demo-0.0.1.dist-info/METADATA,sha256=yfqkNQIvIf7U4Y9AqtO9jZ2PzCO5ss7w81frU6a5GLs,7233
+workshop_demo-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+workshop_demo-0.0.1.dist-info/entry_points.txt,sha256=d52_58t8BouaCkupxcXf3L2QK4LtrncoCwRih0yWP3o,61
+workshop_demo-0.0.1.dist-info/top_level.txt,sha256=EWsdyKj-hJoGQ2xKQwy_JqZyIdm3_ONH-GXCQ6mz3AA,14
+workshop_demo-0.0.1.dist-info/RECORD,,
