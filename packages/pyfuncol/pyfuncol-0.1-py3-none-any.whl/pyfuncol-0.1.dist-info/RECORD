@@ -1,0 +1,11 @@
+pyfuncol/__init__.py,sha256=TuOrmj49neKYFnZe3OncTglUg4yPjHN8_T7_Eh-HLD0,85
+pyfuncol/dict.py,sha256=Sgm1XUw8H6Pl_FgmKR5_HjfDvxe1SHqq-Yph0lRVBH8,2074
+pyfuncol/list.py,sha256=VSml8ilqLV6gZHF3i81KMWY3meDGwY3E-7lVen1VSrE,2937
+pyfuncol/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyfuncol/tests/test_dict.py,sha256=2PyF9vgc49EquGyH2D9O8_cKMLh3T4fWA6GEeGx-IU8,769
+pyfuncol/tests/test_list.py,sha256=g2qCkRPZZ0bfmgCoStFWek235Y3Z_nL-3wP3MySJvK4,988
+pyfuncol-0.1.dist-info/LICENSE,sha256=oz4_F2x_mcsHD8D8XXAzTk1hAJ8iBrFQA3kZQaO9N9Y,1073
+pyfuncol-0.1.dist-info/METADATA,sha256=XWDekxjY723sNCbOuB0eKWmbKJV7r2BQLbcD1DYI2GM,2325
+pyfuncol-0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pyfuncol-0.1.dist-info/top_level.txt,sha256=cMJQzdA-k6KSwNOHR9W8Qk7hiCNvLrsMTGThRYv3C3k,9
+pyfuncol-0.1.dist-info/RECORD,,
