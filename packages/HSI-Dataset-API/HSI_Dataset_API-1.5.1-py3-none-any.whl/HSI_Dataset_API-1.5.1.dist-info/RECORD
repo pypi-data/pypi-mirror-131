@@ -1,0 +1,10 @@
+hsi_dataset_api/DataCropper.py,sha256=NEboT4KY2vUtEwrs3DRJPKPKlguADctU2ADegDr_4EM,8694
+hsi_dataset_api/Dataset.py,sha256=-KY7V2SZOSR7FmNUZjwwVfCPvHg01kBClIPNb466L20,4105
+hsi_dataset_api/__init__.py,sha256=RH9bKDgtShHGiKmVziKaOtOvohl49wp18cEzREIuf7s,109
+hsi_dataset_api/utils/WrongDirectoryStructure.py,sha256=Xp3CWzhJGKlZ05YwITjSl18F1uuZ_nTDuiMNLpGiEIQ,56
+hsi_dataset_api/utils/__init__.py,sha256=eAqaRcpS2EAWhTmaTUegGvuNB1BfPOyRrHx694itfA8,62
+HSI_Dataset_API-1.5.1.dist-info/LICENSE,sha256=GSAKapQH5ZIGWlpQTA7v5YrfECyaxaohUb1vJX-qepw,1090
+HSI_Dataset_API-1.5.1.dist-info/METADATA,sha256=GQBCheJORKmSZKu9__w_7nlptdJqwrc1uA_C5Nifd-A,3528
+HSI_Dataset_API-1.5.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+HSI_Dataset_API-1.5.1.dist-info/top_level.txt,sha256=dATgOAEDNDQDh9R1Q50DJAvi5q42Sc9edzxV5eBPmXg,16
+HSI_Dataset_API-1.5.1.dist-info/RECORD,,
