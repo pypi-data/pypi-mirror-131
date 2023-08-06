@@ -1,0 +1,15 @@
+pydicom_seg/__init__.py,sha256=ZZ_0uYj5heN1lksygaa_EoLCkmIPUp5PRz8fMqgKo0Y,267
+pydicom_seg/dicom_utils.py,sha256=qEcXL-ppP194KjjZRTsu5waIeLDgi_iajDjBE83KiXE,2691
+pydicom_seg/externals/dcmqi/LICENSE.txt,sha256=gOQ8OARCH_lWPdchK5aL74AD_USO0g5pngi8jO3J314,1474
+pydicom_seg/externals/dcmqi/doc/schemas/common-schema.json,sha256=xmPycJuqKLycKPw9IevDrYB_5kQTrTM9b3WA7-ZYrq4,1978
+pydicom_seg/externals/dcmqi/doc/schemas/seg-schema.json,sha256=g_h6zPaL9i62lsvZWszxPz4XSXtHHL76-bNSPcFLsPI,6461
+pydicom_seg/reader.py,sha256=N_eY5xhtzmumHJpSerwkJ1prUpNt3ND1ddv0bp7Fwso,12054
+pydicom_seg/reader_utils.py,sha256=Movou_pqXFUmuQdMm4yOIyAtZjzpoWzvubWvcbJA0D8,3267
+pydicom_seg/segmentation_dataset.py,sha256=G4oRQeoxduoK3BOKO9lFrz0Iqwn4U4erx2dVpz15eqs,16050
+pydicom_seg/template.py,sha256=gxVrG6RY5s9owjCYR4NOwxH6_9j7WL-1j-SATpyRs-8,7235
+pydicom_seg/writer.py,sha256=98My4f2x1Of5KMs42icqYVNZ6aSW1-x1g4JhdiZXs7Q,11617
+pydicom_seg/writer_utils.py,sha256=QlxY_3NjnsvrH04eMALLro8aq-4XX8ItYeeIZcztHqY,5182
+pydicom_seg-0.3.0.dist-info/LICENSE,sha256=PWOYxZ1CzoeWpfxwMziVYprj1PU2_jHrs5QjUEoJzCU,1073
+pydicom_seg-0.3.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+pydicom_seg-0.3.0.dist-info/METADATA,sha256=2KD2uxAjsETSVm1XgWAgMTxP0kBK3SBeb11WUmxGcRk,5235
+pydicom_seg-0.3.0.dist-info/RECORD,,
