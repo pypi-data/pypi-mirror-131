@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/objectionloltotxt/__init__.py
+src/objectionloltotxt/__main__.py
+src/objectionloltotxt/objectiontotxt.py
+src/objectionloltotxt.egg-info/PKG-INFO
+src/objectionloltotxt.egg-info/SOURCES.txt
+src/objectionloltotxt.egg-info/dependency_links.txt
+src/objectionloltotxt.egg-info/entry_points.txt
+src/objectionloltotxt.egg-info/top_level.txt
