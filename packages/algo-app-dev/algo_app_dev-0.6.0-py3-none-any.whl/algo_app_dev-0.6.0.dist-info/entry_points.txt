@@ -1,0 +1,4 @@
+[console_scripts]
+aad-make-node = algoappdev.scripts.make_node:main_args
+aad-run-node = algoappdev.scripts.run_node:main_args
+
