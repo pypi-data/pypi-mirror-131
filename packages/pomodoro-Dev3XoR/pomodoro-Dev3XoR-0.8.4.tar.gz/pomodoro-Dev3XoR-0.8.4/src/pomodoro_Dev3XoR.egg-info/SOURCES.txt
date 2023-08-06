@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/pomodoro/__init__.py
+src/pomodoro/__main__.py
+src/pomodoro/assets/alarm-default.mp3
+src/pomodoro/assets/icon.png
+src/pomodoro_Dev3XoR.egg-info/PKG-INFO
+src/pomodoro_Dev3XoR.egg-info/SOURCES.txt
+src/pomodoro_Dev3XoR.egg-info/dependency_links.txt
+src/pomodoro_Dev3XoR.egg-info/entry_points.txt
+src/pomodoro_Dev3XoR.egg-info/requires.txt
+src/pomodoro_Dev3XoR.egg-info/top_level.txt
+src/pomodoro_Dev3XoR.egg-info/zip-safe

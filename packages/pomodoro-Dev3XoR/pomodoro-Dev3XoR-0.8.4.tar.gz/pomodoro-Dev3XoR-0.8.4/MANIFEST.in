@@ -1,0 +1,3 @@
+graft src tests
+include src/pomodoro/assets/*
+global-exclude *.py[cod]
