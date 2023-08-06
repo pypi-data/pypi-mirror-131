@@ -1,0 +1,8 @@
+wait4localstack/VERSION,sha256=FyW_plJMUmXnwXHPBlaEF9OblH__ScJC8DhZR5yCM0s,6
+wait4localstack/__init__.py,sha256=rz9rqA0qrWC2RArZTILdPSIao7_Xu6YN3_j5aGy1B20,9942
+wait4localstack-0.2.4.dist-info/LICENSE,sha256=idLw0LbGZQsEW-_D5PWc3dkEa_psVSPFlmFAv92uZaI,1540
+wait4localstack-0.2.4.dist-info/METADATA,sha256=0JV3v0nC3ZnhZ6dazTfPBGsmqCwiIczpk0D8BPS5938,1932
+wait4localstack-0.2.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+wait4localstack-0.2.4.dist-info/entry_points.txt,sha256=ve6gTgnWBpRa5X48vhXm6p-gJb0_j1DnugqpeCnJbkI,58
+wait4localstack-0.2.4.dist-info/top_level.txt,sha256=UnYcZrvHHE9LXg7BJ1Cy6NlKb9dItH_iw05jobdGjc8,16
+wait4localstack-0.2.4.dist-info/RECORD,,
