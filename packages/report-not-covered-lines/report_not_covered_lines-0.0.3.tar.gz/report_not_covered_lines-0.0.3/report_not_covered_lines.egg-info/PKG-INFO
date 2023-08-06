@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: report-not-covered-lines
+Version: 0.0.3
+Summary: Convert the test-coverage-result (saved in `.converage` to gerrit comments) while only including not covered lines in the current diff.
+Home-page: https://github.com/tom-010/report_not_covered_lines
+Author: Thomas Deniffel
+Author-email: tdeniffel@gmail.com
+License: Apache2
+Description: report_not_covered_lines
+        ========================
+        
+        Convert the test-coverage-result (saved in `.converage` to gerrit comments) while only including not covered lines in the current diff.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
