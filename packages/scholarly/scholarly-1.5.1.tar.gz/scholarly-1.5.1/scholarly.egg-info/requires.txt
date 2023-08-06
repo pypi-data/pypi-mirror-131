@@ -1,0 +1,16 @@
+arrow
+beautifulsoup4
+bibtexparser
+deprecated
+requests[security]
+requests[socks]
+fake_useragent
+PySocks
+selenium
+python-dotenv
+free-proxy
+sphinx_rtd_theme
+typing_extensions
+
+[tor]
+stem
