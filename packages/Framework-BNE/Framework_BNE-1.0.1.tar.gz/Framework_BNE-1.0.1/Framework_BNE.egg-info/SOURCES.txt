@@ -1,0 +1,11 @@
+LICENSE.txt
+README.txt
+setup.cfg
+setup.py
+Extrator_bne/__init__.py
+Extrator_bne/descritor.py
+Extrator_bne/extrator.py
+Framework_BNE.egg-info/PKG-INFO
+Framework_BNE.egg-info/SOURCES.txt
+Framework_BNE.egg-info/dependency_links.txt
+Framework_BNE.egg-info/top_level.txt

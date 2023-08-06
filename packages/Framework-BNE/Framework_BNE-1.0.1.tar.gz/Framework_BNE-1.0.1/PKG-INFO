@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: Framework_BNE
+Version: 1.0.1
+Summary: O Framework tem como objetivo auxiliar os brasileiros que estão a procura de emprego a localizarem de maneira mais prática e concisa vagas que lhe interessem, além de apresentar as vagas com candidaturas livres disponíveis no site do BNE(Banco Nacional de Emprego)
+Home-page: https://github.com/edufurlani/BNE/tree/main
+Author: Beatriz Rodovalho, Eduardo Furlani, Gabriel Benga, Lucas Gregório, Thiago Melo
+Author-email: dudufurlani58@gmail.com
+License: MIT
+Keywords: BNE
+Platform: UNKNOWN
+License-File: LICENSE.txt
+
+**BNEFramework** 
+* O Framework tem como objetivo auxiliar os brasileiros que estÃ£o a procura de emprego a localizarem de maneira mais prÃ¡tica e concisa vagas que lhe interessem, alÃ©m de apresentar as vagas com candidaturas livres disponÃ­veis no site do BNE(Banco Nacional de Emprego)'
+
+**FunÃ§Ãµes do extrator**
+* def prox_pag(self, n_paginas=6): -Essa funÃ§Ã£o faz a passagem das pÃ¡ginas
+
+* def extrair_infos(self): -Essa funÃ§Ã£o extrai as informaÃ§Ãµes presentes em cada pÃ¡gina
+
+* def salvar_csv(self, nome ,sep =','): -Essa funÃ§Ã£o irÃ¡ criar um df com as informaÃ§Ãµes e salvÃ¡-las em um arquivo .csv
+
+**FunÃ§Ãµes do descritor**
+
+* def candidaturaLivre(self): -Essa funÃ§Ã£o, presente no descritor, separa apenas as candidaturas livres-IMPORTANTE: Em caso de nÃ£o existÃªncia de pedidos pela funÃ§Ã£o atributos o Framework retornarÃ¡ uma mensagem de aviso ao usuÃ¡rio
+
+* def candidaturaPaga(self): -Essa funÃ§Ã£o, presente no descritor, separa apenas as candidaturas pagas-IMPORTANTE: Em caso de nÃ£o existÃªncia de pedidos pela funÃ§Ã£o atributos o Framework retornarÃ¡ uma mensagem de aviso ao usuÃ¡rio
+
+* def homeOffice(self): -Essa funÃ§Ã£o, presente no descritor, separa apenas as vagas -IMPORTANTE: Em caso de nÃ£o existÃªncia de pedidos pela funÃ§Ã£o atributos o Framework retornarÃ¡ uma mensagem de aviso ao usuÃ¡rio
+
+* def presencial(self): -Essa funÃ§Ã£o, presente no descritor, separa apenas as vagas presenciais-IMPORTANTE: Em caso de nÃ£o existÃªncia de pedidos pela funÃ§Ã£o atributos o Framework retornarÃ¡ uma mensagem de aviso ao usuÃ¡rio
+
+* def combinar(self): -Essa funÃ§Ã£o, presente no descritor, separa apenas os salÃ¡rios Ã  combinar-IMPORTANTE: Em caso de nÃ£o existÃªncia de pedidos pela funÃ§Ã£o atributos o Framework retornarÃ¡ uma mensagem de aviso ao usuÃ¡rio
+
+
