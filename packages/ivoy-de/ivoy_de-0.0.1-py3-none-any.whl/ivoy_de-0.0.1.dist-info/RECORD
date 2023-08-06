@@ -1,0 +1,8 @@
+batch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+batch/batch_transformations.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+streaming/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+streaming/streaming_transformations.py,sha256=ylhX2gb3a6X385lWAOYy8Ksd_HkUVZmN_HKxkbemL88,985
+ivoy_de-0.0.1.dist-info/METADATA,sha256=w4oaGOJjHh2NXjZEF8siMJ_R7x4q3-9fVIMwBJglFIg,234
+ivoy_de-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ivoy_de-0.0.1.dist-info/top_level.txt,sha256=kTQIsaGeWHf8a3tZ_A_OB_FR6zcPm1-vDwlJiDuiiV8,16
+ivoy_de-0.0.1.dist-info/RECORD,,
