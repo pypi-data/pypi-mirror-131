@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/perceptron/__init__.py
+src/perceptron/perceptron.py
+src/perceptron_pypi_YashAmin_01.egg-info/PKG-INFO
+src/perceptron_pypi_YashAmin_01.egg-info/SOURCES.txt
+src/perceptron_pypi_YashAmin_01.egg-info/dependency_links.txt
+src/perceptron_pypi_YashAmin_01.egg-info/requires.txt
+src/perceptron_pypi_YashAmin_01.egg-info/top_level.txt
