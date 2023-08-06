@@ -1,0 +1,194 @@
+vectice-python
+==============
+
+Python library for Vectice project.
+
+Developer's Setup
+-----------------
+
+1. Installation
+~~~~~~~~~~~~~~~
+
+It is recommended to install this library in a `virtualenv`_ using pip.
+
+.. _`virtualenv`: https://virtualenv.pypa.io/en/latest/
+
+Supported Python Versions
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Python >= 3.6
+
+Mac/Linux
+^^^^^^^^^
+
+.. code-block:: console
+
+    pip install virtualenv
+    virtualenv venv
+    source venv/bin/activate
+    venv/bin/pip install -e .[dev]
+
+if using **Zsh**, add backslash (\\) to escape square brackets:
+
+.. code-block:: console
+
+    venv/bin/pip install -e .\[dev\]
+
+Windows
+^^^^^^^
+
+.. code-block:: console
+
+    pip install virtualenv
+    virtualenv venv
+    venv\Scripts\activate
+    venv\Scripts\pip.exe install -e .[dev]
+
+
+2. Start Backend Server
+~~~~~~~~~~~~~~~~~~~~~~~
+
+The backend server and database need to be running to receive requests from the Python library. See the `backend`_ repository for more details.
+
+.. _`backend`: https://github.com/vectice/backend
+
+Make sure there exist at least one workspace and one project.
+
+3. Prepare an ApiKey
+~~~~~~~~~~~~~~~~~~~~
+
+Go to the GraphQL Playground: http://localhost:4000/graphql
+
+Note that an authentication header is required to perform the following mutations.
+
+Generate an ApiKey
+^^^^^^^^^^^^^^^^^^^
+
+.. code-block::
+
+    mutation {
+      generateApiKey(workspaceId: 1, apiKey: {name: "Key1"}) {key}
+    }
+
+Be sure to save the key somewhere, for it will only show once.
+
+Deploy the ApiKey
+^^^^^^^^^^^^^^^^^
+
+.. code-block::
+
+    mutation {
+      updateApiKey(workspaceId: 1, apiKeyId: 1, apiKey: {status: DEPLOYED}) {name, status}
+    }
+
+4. Local Backend Setup
+~~~~~~~~~~~~~~~~~~~~~~
+
+To run a local instance of the backend. You can run the docker-compose-local.yml, you'll need to ensure
+that you have gcloud auth setup as describe `here`_ in the backend. The local_assets_setup.py can be run
+as a script once the docker-compose-local.yml is running. If you use windows and get stuck with getting
+gcloud to work, running `WSL`_ is a possible solution.
+
+.. _`here`: https://github.com/vectice/backend#setting-up-internal-vectice-docker-registry
+
+.. _`WSL`: https://docs.microsoft.com/en-us/windows/wsl/install
+
+For the docker-compose-local.yml to work you must change the PROJECT_ID with a GCP Project ID.
+To start the backend and its' required services:
+
+.. code-block::
+
+    docker-compose -f docker-compose-local.yml up
+
+To find the port for backend service:
+
+.. code-block::
+
+    docker container ls -f "name=backend"
+
+Before running the script to create the local assets. The GCP Service Account Key needs to be replaced with
+an actual Service Account Key, to create connections and datasets.
+
+.. code-block::
+
+    def create_dataset_connection(workspace_id):
+    value = json.dumps("This is a GCP Service Account Key")
+    # Replace the value line with
+    value = json.dumps("Real Service Account Key")
+
+To run the script, the following line must be changed with the backend port:
+
+.. code-block::
+
+    def setup_artifacts():
+        global backend_server_uri
+        # Change this line with the port
+        backend_server_uri = f"http://localhost:58191"
+
+
+5. Example Usage
+~~~~~~~~~~~~~~~~
+
+Now, try to run some code in a Python console:
+
+.. code-block:: console
+
+    python -i
+
+.. code-block:: python
+
+    from vectice import Vectice
+    vectice = Vectice(project_token="xcvbn")
+    vectice.list_jobs()
+
+6. Linting
+~~~~~~~~~~
+
+Two linters are used cooperatively in this project, namely `black`_ and `flake8`_. They will be run upon commits (pre-commit hooks) and pull requests (CI).
+
+Commands to run them:
+
+.. code-block:: console
+
+    black .
+    flake8
+
+It is recommended to run `black`_ first, then `flake8`_.
+
+.. _`black`: https://black.readthedocs.io/en/stable/
+.. _`flake8`: https://flake8.pycqa.org/en/latest/
+
+7. Testing
+~~~~~~~~~~
+
+To run the tests, you need to add a .env file with the following:
+
+.. code-block:: console
+
+    GCP_PROJECT_ID=GCP_PROJECT_ID
+
+Then the GCP Service Account Key in `tests/vectice/integration/conftest.py` needs to be replaced with
+an actual Service Account Key, to create connections and datasets.
+
+.. code-block::
+
+    def create_dataset_connection(workspace_id):
+    value = json.dumps("This is a GCP Service Account Key")
+    # Replace the value line with
+    value = json.dumps("Real Service Account Key")
+
+Once all the above is done, you can run the following line of code to run all the tests:
+
+.. code-block:: console
+
+    pytest tests
+
+8. Build
+~~~~~~~~
+
+A build step is included in CI. To locally build:
+
+.. code-block:: console
+
+    pip install build
+    python -m build
