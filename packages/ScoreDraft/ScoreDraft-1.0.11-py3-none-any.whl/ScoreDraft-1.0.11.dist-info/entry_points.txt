@@ -1,0 +1,3 @@
+[console_scripts]
+scoredraft = ScoreDraft:run_yaml
+
