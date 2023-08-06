@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+censuscoding/VERSION
+censuscoding/__init__.py
+censuscoding/__main__.py
+censuscoding.egg-info/PKG-INFO
+censuscoding.egg-info/SOURCES.txt
+censuscoding.egg-info/dependency_links.txt
+censuscoding.egg-info/entry_points.txt
+censuscoding.egg-info/requires.txt
+censuscoding.egg-info/top_level.txt
+censuscoding/data/blkgrp-zip-street-names.csv
+censuscoding/data/blkgrp-zip-street-nums.csv
+test/__init__.py
+test/test_blockgroup_assignment.py

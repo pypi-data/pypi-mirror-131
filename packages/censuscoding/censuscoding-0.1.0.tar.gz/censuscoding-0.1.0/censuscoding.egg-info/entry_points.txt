@@ -1,0 +1,3 @@
+[console_scripts]
+censuscoding = censuscoding.__main__:main
+
