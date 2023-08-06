@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: noggin-aaa
+Version: 1.5.0
+Summary: Noggin is a self-service portal for FreeIPA. The primary purpose of the portal is to allow users to sign up and manage their account information and group membership.
+Home-page: https://github.com/fedora-infra/noggin
+License: MIT
+Keywords: security
+Author: Fedora Infrastructure
+Author-email: admin@fedoraproject.org
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: deploy
+Requires-Dist: Flask-Mail (>=0.9.1,<0.10.0)
+Requires-Dist: backoff (>=1.10.0,<2.0.0)
+Requires-Dist: click (>=8.0,<9.0)
+Requires-Dist: cryptography (>=36.0.0,<37.0.0)
+Requires-Dist: fedora-messaging (>=2.0.1,<3.0.0)
+Requires-Dist: flask (>=2.0.2,<3.0.0)
+Requires-Dist: flask-babel (>=2.0.0,<3.0.0)
+Requires-Dist: flask-healthz (>=0.0.3,<0.0.4)
+Requires-Dist: flask-talisman (>=0.8.1,<0.9.0)
+Requires-Dist: flask-wtf (>=1.0.0,<2.0.0)
+Requires-Dist: gunicorn (>=20.0,<21.0); extra == "deploy"
+Requires-Dist: markupsafe (>=2.0.0,<3.0.0)
+Requires-Dist: noggin-messages (>=1.0.0,<2.0.0)
+Requires-Dist: pyjwt (>=2.3.0,<3.0.0)
+Requires-Dist: pyotp (>=2.6.0,<3.0.0)
+Requires-Dist: python-freeipa (>=1.0.6,<2.0.0)
+Requires-Dist: requests[security] (>=2.26.0,<3.0.0)
+Requires-Dist: translitcodec (==0.7.0)
+Requires-Dist: unidecode (>=1.2.0,<2.0.0)
+Requires-Dist: whitenoise (>=5.0.1,<6.0.0)
+Requires-Dist: wtforms[email] (>=3.0.0,<4.0.0)
+Project-URL: Repository, https://github.com/fedora-infra/noggin
+Description-Content-Type: text/markdown
+
+# Noggin
+
+*noggin* is a self-service portal for FreeIPA.
+The primary purpose of the portal is to allow users to sign up and manage their
+account information and group membership.
+
+The documentation is available online at https://noggin-aaa.readthedocs.io/
+
