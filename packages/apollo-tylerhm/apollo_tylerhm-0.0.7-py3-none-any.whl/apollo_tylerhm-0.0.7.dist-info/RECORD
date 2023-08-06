@@ -1,0 +1,14 @@
+apollo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apollo/__main__.py,sha256=mGkOEX7H7u4J5HLfo7rNLGksd2bfCXicyx_mYl92cso,31
+apollo/apollo.py,sha256=Iusi25O1jSftvxXHM7R6v1pvpL8F2C0M9utWQ3GOFEc,992
+apollo/arguments.py,sha256=K8Fvlkw7tcLQ7aK-dmu4j0AFHmuqmWZMk_MObWwo710,1503
+apollo/diff_checker.py,sha256=kLnWPziaOb8SvPtrjfLN0c1zuB_sKvNRkKQ__evVXt0,1228
+apollo/epsilon_checker.py,sha256=QJC6ICbAl3z7_BulHFdgXx0peJ97LS1BF98u_kbXQqs,1602
+apollo/token_checker.py,sha256=JpPc-duAiC5B8XwQoqzzkX4dzVeOude8D7X6G1FGoXI,1218
+apollo/verdict.py,sha256=_RzwuC9Qhwk7yfelJ2-33P9WLfV_vV39z74gISpisfw,797
+apollo_tylerhm-0.0.7.dist-info/LICENSE,sha256=C5kT0q4l1SHk1yOejzIg9_HriqBlEBbATxvXACYDcv4,1077
+apollo_tylerhm-0.0.7.dist-info/METADATA,sha256=dkpGJOaDMfhk8HvoJlDAkMuyDxoK_KaAquEmcIsIGJg,785
+apollo_tylerhm-0.0.7.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+apollo_tylerhm-0.0.7.dist-info/entry_points.txt,sha256=ba8YOsIONcURA9qFg-Goi_Cfs91x4KKL-SJ05pEbKko,47
+apollo_tylerhm-0.0.7.dist-info/top_level.txt,sha256=q2RhKSzMzXAtBa3SXLNN56X8drDyPzEjfVgLFiHHRKI,7
+apollo_tylerhm-0.0.7.dist-info/RECORD,,

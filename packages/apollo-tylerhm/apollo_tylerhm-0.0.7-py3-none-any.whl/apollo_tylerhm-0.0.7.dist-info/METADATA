@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: apollo-tylerhm
+Version: 0.0.7
+Summary: Apollo checker. The most feared of all the gods
+Home-page: https://github.com/TylerMathis/apollo
+Author: Tyler Hostler-Mathis
+Author-email: tylerhm.dev@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+
+# Apollo
+
+Checker complete with diff, token, and epsilon checking.
+
+# Installation
+
+`python3 -m pip install apollo-tylerhm --upgrade`
+
+# Usage
+
+usage: `apollo [-h] [-t | -e EPS] input user_output judge_output`
+
+positional arguments:
+  input              input file
+  user_output        user output file
+  judge_output       judge output file
+
+optional arguments:
+  -h, --help         show this help message and exit
+  -t, --tok          use token checker
+  -e EPS, --eps EPS  use epsilon checker
+
+
