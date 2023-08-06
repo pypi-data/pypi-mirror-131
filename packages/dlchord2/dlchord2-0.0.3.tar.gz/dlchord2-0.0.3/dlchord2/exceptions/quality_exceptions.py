@@ -1,0 +1,2 @@
+class QualityParseError(Exception):
+    pass
