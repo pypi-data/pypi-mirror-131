@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: automate-ws
+Version: 0.9.1
+Summary: A simple web server to interact with automate-home projects
+Home-page: https://github.com/majamassarini/automate-home
+Author: Maja Massarini
+Author-email: maja.massarini@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+License-File: COPYING
+Requires-Dist: aiohttp
+Requires-Dist: aiohttp-jinja2
+Requires-Dist: multidict
+Requires-Dist: jinja2
+Requires-Dist: colour
+Requires-Dist: automate-home
+Requires-Dist: automate-knx-plugin
+Requires-Dist: automate-lifx-plugin
+Requires-Dist: automate-sonos-plugin
+Requires-Dist: automate-home-assistant-plugin
+Requires-Dist: automate-graphite-feeder
+
+[![Build Status](https://travis-ci.com/majamassarini/automate-ws.svg?branch=main)](https://travis-ci.com/majamassarini/automate-ws)
+[![codecov](https://codecov.io/gh/majamassarini/automate-ws/branch/main/graph/badge.svg?token=tPHRNf4csz)](https://codecov.io/gh/majamassarini/automate-ws)
+
+## automate-home web server
+
+The simplest user interface I was able to develop for the [automate-home project](https://github.com/majamassarini/automate-home).
+
+
