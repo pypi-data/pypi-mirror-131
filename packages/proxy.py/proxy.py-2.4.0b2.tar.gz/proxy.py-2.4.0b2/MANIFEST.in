@@ -1,0 +1,5 @@
+exclude ProxyPy.png
+exclude Dashboard.png
+exclude shortlink.gif
+prune dashboard
+prune menubar
