@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "odin-bot-exchanges"
+version = "0.6.2"
+description = ""
+authors = ["adolfrodeno <amvillalobos@uc.cl>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+python-dotenv = "^0.19.1"
+binance-connector = "^1.6.0"
+odin-bot-entities = "^0.1.8"
+orionx-python-client = "^0.3.1"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
