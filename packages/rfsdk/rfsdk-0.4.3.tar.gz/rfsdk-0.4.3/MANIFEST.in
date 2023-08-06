@@ -1,0 +1,1 @@
+recursive-include rfsdk *.pyd *.json
