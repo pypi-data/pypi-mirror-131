@@ -1,0 +1,9 @@
+bgetlib/__init__.py,sha256=EP_N4rEhq24PGpGBZgfo2DKMaIesptQVjROCuWcHKzw,391
+bgetlib/_api.py,sha256=8uwcODx6sxfnPREUOeiY1hkkW636Q-C00GasbavRnBA,9313
+bgetlib/_codec.py,sha256=UWGnbklelKnxPXfQktJnj-gUO2MqmN3akU5nKKCBwCI,2929
+bgetlib/_utils.py,sha256=OrmrLuN1Gp16yg8mZkkxq7UbkruS3oOyVtm34hj9A3o,1170
+bgetlib-3.1.0.dist-info/LICENSE,sha256=tOqCNRfLDOKGPr0ID8qfxuDjZUua6Kylr2sxPz2Lf4w,1057
+bgetlib-3.1.0.dist-info/METADATA,sha256=e5HC4MTJgHpOf5dZLEy0TsaBiiy3bwgZujCHhK5cdMM,1867
+bgetlib-3.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bgetlib-3.1.0.dist-info/top_level.txt,sha256=nERLAIDyOTMaPdiyzp_WLsfknRCz4ghaNXJmRujUKRs,8
+bgetlib-3.1.0.dist-info/RECORD,,
