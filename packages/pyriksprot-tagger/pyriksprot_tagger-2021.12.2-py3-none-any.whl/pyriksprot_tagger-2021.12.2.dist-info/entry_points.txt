@@ -1,0 +1,3 @@
+[console_scripts]
+config_value=scripts.config_value:main
+

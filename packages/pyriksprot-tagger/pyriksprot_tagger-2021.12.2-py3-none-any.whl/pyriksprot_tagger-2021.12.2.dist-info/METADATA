@@ -1,0 +1,185 @@
+Metadata-Version: 2.1
+Name: pyriksprot-tagger
+Version: 2021.12.2
+Summary: Pipeline that tags pyriksprot Parla-Clarin XML files
+Home-page: https://westac.se
+License: Apache-2.0
+Author: Roger Mähler
+Author-email: roger.mahler@hotmail.com
+Requires-Python: ==3.8.5
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: cookiecutter (>=1.7.2,<2.0.0)
+Requires-Dist: dehyphen (>=0.3.4,<0.4.0)
+Requires-Dist: loguru (>=0.5.3,<0.6.0)
+Requires-Dist: pandas (>=1.2.3,<2.0.0)
+Requires-Dist: pygit2 (>=1.5.0,<2.0.0)
+Requires-Dist: pyriksprot (>=2021.9.8,<2022.0.0)
+Requires-Dist: snakefmt (>=0.3.1,<0.4.0)
+Requires-Dist: snakemake (>=6.0.5,<7.0.0)
+Requires-Dist: stanza (>=1.2.3,<2.0.0)
+Requires-Dist: transformers (>=4.3.3,<5.0.0)
+Project-URL: Repository, https://github.com/welfare-state-analytics/pyriksprot_tagger
+Description-Content-Type: text/markdown
+
+# Riksdagens Protokoll Part-Of-Speech Tagging (Parla-Clarin Workflow)
+
+This package implements Stanza part-of-speech annotation of `Riksdagens Protokoll` Parla-Clarin XML files.
+
+
+## Prerequisites
+
+- A bash-enabled environment (Linux or Git Bash on windows)
+- Git
+- Python 3.8.5^
+- GNU make (install i)
+
+# Parla-Clarin to penelope pipeline
+
+## How to install
+
+## How to configure
+
+## How to setup data
+
+### Riksdagens corpus
+
+Create a shallow clone (no history) of repository:
+
+```bash
+make init-repository
+```
+
+Sync shallow clone with changes on origin (Github):
+
+```bash
+make update-repositoryupdate_repository_timestamps
+```
+
+Update modified date of repository file. This is necessary since the pipeline uses last commit date of
+each XML-files to determine which files are outdated, whilst `git clone` sets current time.
+
+```bash
+$ make update-repository-timestamps
+or
+$ scripts/git_update_mtime.sh path-to-repository
+```
+
+## How to annotate speeches
+
+```bash
+make annotate
+or
+$ nohup poetry run snakemake -j4 --keep-going --keep-target-files &
+```
+
+Windows:
+
+```bash
+poetry shell
+bash
+nohup poetry run snakemake -j4 -j4 --keep-going --keep-target-files &
+```
+
+Run a specific year:
+
+```bash
+poetry shell
+bash
+nohup poetry run snakemake --config -j4 --keep-going --keep-target-files &
+```
+## Install
+
+(This workflow will be simplified)
+
+Verify current Python version (`pyenv` is recommended for easy switch between versions).
+
+Create a new Python virtual environment (sandbox):
+
+```bash
+cd /some/folder
+mkdir westac_parlaclarin_pipeline
+cd westac_parlaclarin_pipeline
+python -m venv .venv
+source .venv/bin/activate
+```
+
+Install the pipeline and run setup script.
+
+```bash
+pip install westac_parlaclarin_pipeline
+setup-pipeline
+```
+
+## Initialize local clone of Parla-CLARIN repository
+
+## Run PoS tagging
+
+Move to sandbox and activate virtual environment:
+
+```bash
+cd /some/folder/westac_parlaclarin_pipeline
+source .venv/bin/activate
+```
+
+Update repository:
+
+```bash
+make update-repository
+make update-repository-timestamps
+```
+
+Update all (changed) annotations:
+
+```bash
+make annotate
+```
+
+Update a single year (and set cpu count):
+
+```bash
+make annotate YEAR=1960 CPU_COUNT=1
+```
+
+## Configuration
+
+
+```yaml
+work_folders: !work_folders &work_folders
+  data_folder: /data/riksdagen_corpus_data
+
+parla_clarin: !parla_clarin &parla_clarin
+  repository_folder: /data/riksdagen_corpus_data/riksdagen-corpus
+  repository_url: https://github.com/welfare-state-analytics/riksdagen-corpus.git
+  repository_branch: main
+  folder: /data/riksdagen_corpus_data/riksdagen-corpus/corpus
+
+extract_speeches: !extract_speeches &extract_speeches
+  folder: /data/riksdagen_corpus_data/riksdagen-corpus-exports/speech_xml
+  template: speeches.cdata.xml
+  extension: xml
+
+word_frequency: !word_frequency &word_frequency
+  <<: *work_folders
+  filename: riksdagen-corpus-term-frequencies.pkl
+
+dehyphen: !dehyphen &dehyphen
+  <<: *work_folders
+  whitelist_filename: dehyphen_whitelist.txt.gz
+  whitelist_log_filename: dehyphen_whitelist_log.pkl
+  unresolved_filename: dehyphen_unresolved.txt.gz
+
+config: !config
+    work_folders: *work_folders
+    parla_clarin: *parla_clarin
+    extract_speeches: *extract_speeches
+    word_frequency: *word_frequency
+    dehyphen: *dehyphen
+    annotated_folder: /data/riksdagen_corpus_data/annotated
+```
+
