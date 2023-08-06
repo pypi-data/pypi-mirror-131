@@ -1,0 +1,15 @@
+
+[dev]
+yapf
+pylint
+pytest
+pytest-mock
+
+[doc]
+sphinx
+sphinx-paramlinks
+sphinx-autodoc-typehints
+
+[rtd]
+toml
+setuptools_scm[toml]
