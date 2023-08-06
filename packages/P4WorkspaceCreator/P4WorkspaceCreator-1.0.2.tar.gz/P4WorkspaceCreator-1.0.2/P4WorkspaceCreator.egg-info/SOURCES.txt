@@ -1,0 +1,16 @@
+LICENSE
+README.md
+README.rst
+pyproject.toml
+setup.cfg
+./P4WorkspaceCreator/WorkspaceCreator.py
+./P4WorkspaceCreator/__init__.py
+./P4WorkspaceCreator/__main__.py
+P4WorkspaceCreator/WorkspaceCreator.py
+P4WorkspaceCreator/__init__.py
+P4WorkspaceCreator/__main__.py
+P4WorkspaceCreator.egg-info/PKG-INFO
+P4WorkspaceCreator.egg-info/SOURCES.txt
+P4WorkspaceCreator.egg-info/dependency_links.txt
+P4WorkspaceCreator.egg-info/requires.txt
+P4WorkspaceCreator.egg-info/top_level.txt
