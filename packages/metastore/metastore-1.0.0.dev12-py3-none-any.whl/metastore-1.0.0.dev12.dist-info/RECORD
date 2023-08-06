@@ -1,0 +1,11 @@
+CHANGELOG.md,sha256=Nk2L6alXnZMUxU449qIwyattsWM10Bhk3kbAzw6fDOM,436
+LICENSE.md,sha256=EWSIVI6YBXRFOQtP9Pzp1CM45__Oiu5pW_ScoPNvSbY,1499
+README.md,sha256=5pEHQBeTtxqx-TcbMkM-OUv0zHLy09Zo34IglFQJ8AI,6896
+metastore/__init__.py,sha256=a6e3Y6hus1jKwvYuNhY1-GgqgjXSi-ArsL9NrdPsfx8,65
+metastore/package.py,sha256=7grtNAc061uS8dLvHwniG2SfRfNBx7PNKGidNyeJA2Q,699
+metastore/utils.py,sha256=JwbALENjG9eWfjOKdIy3wjq1DZpkDLVquK2VDiKzMS0,428
+metastore-1.0.0.dev12.dist-info/LICENSE.md,sha256=EWSIVI6YBXRFOQtP9Pzp1CM45__Oiu5pW_ScoPNvSbY,1499
+metastore-1.0.0.dev12.dist-info/METADATA,sha256=F0ZWo0bk-TEwtku0g_v8RLIzdp4O0zMQH4g0ugtSHwA,8346
+metastore-1.0.0.dev12.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+metastore-1.0.0.dev12.dist-info/top_level.txt,sha256=5ED75uhz3_7qUMikeKREO9KkLIwncQSkuO2YA4reoKA,10
+metastore-1.0.0.dev12.dist-info/RECORD,,
