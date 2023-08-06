@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: resource-monitor
+Version: 2.3.1
+Summary: A simple cross-platform system resource monitor.
+Home-page: https://resource-monitor.readthedocs.io
+Author: Geoffrey Lentner
+Author-email: glentner@purdue.edu
+License: Apache Software License 2.0
+Keywords: cross-platform system resource-monitor telemetry utility command-line-tool
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: System :: Monitoring
+License-File: LICENSE
+Requires-Dist: cmdkit (==1.5.5)
+Requires-Dist: logalpha (==2.0.2)
+Requires-Dist: psutil (>=5.7.2)
+
+Resource Monitor
+================
+
+A simple cross-platform system resource monitor.
+
+.. image:: https://img.shields.io/badge/license-Apache-blue.svg?style=flat
+    :target: https://www.apache.org/licenses/LICENSE-2.0
+    :alt: License
+
+.. image:: https://img.shields.io/pypi/v/resource-monitor.svg
+    :target: https://pypi.org/project/resource-monitor
+    :alt: Latest Release
+
+.. image:: https://img.shields.io/pypi/pyversions/resource-monitor.svg?logo=python&logoColor=white&style=flat
+    :target: https://pypi.org/project/resource-monitor
+    :alt: Python Versions
+
+.. image:: https://readthedocs.org/projects/resource-monitor/badge/?version=latest
+    :target: https://resource-monitor.readthedocs.io
+    :alt: Documentation
+
+.. image:: https://pepy.tech/badge/resource-monitor
+    :target: https://pepy.tech/badge/resource-monitor
+    :alt: Downloads
+
+
+Installation
+------------
+
+For basic installation use Pip, other methods outlined via the documentation.
+
+.. code-block:: bash
+
+    pip install resource-monitor
+
+
+Documentation
+-------------
+
+The command-line interface is self-documenting with ``--help``. For detailed usage,
+see the manual page ``man monitor``. Documentation is also available online at
+`resource-monitor.readthedocs.io <https://resource-monitor.readthedocs.io>`_
+
+
