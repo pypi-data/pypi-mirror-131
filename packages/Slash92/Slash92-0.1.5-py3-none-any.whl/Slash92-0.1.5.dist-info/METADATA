@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Slash92
+Version: 0.1.5
+Summary: ORM
+Home-page: UNKNOWN
+Author: Telegram: @M_O_D_E_R
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Requires-Dist: psycopg2
+
+UNKNOWN
+
+
