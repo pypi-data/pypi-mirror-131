@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+git_diff_lines/__init__.py
+git_diff_lines/git_diff_lines.py
+git_diff_lines/parser.py
+git_diff_lines.egg-info/PKG-INFO
+git_diff_lines.egg-info/SOURCES.txt
+git_diff_lines.egg-info/dependency_links.txt
+git_diff_lines.egg-info/top_level.txt
+test/test_parser.py
