@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: galeshapley
+Version: 0.0.1
+Summary: Gale Shapley Algorithm
+Home-page: https://gitlab.com/stamps-group/galeshapley
+Author: Gomes, J.M.
+License: MIT
+Platform: UNKNOWN
+
+# Implementação de uma biblioteca para o algorítmo Gale-Shapley
+
+
+## REFERÊNCIAS
+
+1. Gale, David, and Lloyd S. Shapley. "College admissions and the stability of marriage." The American Mathematical Monthly 69.1 (1962): 9-15.
+
