@@ -1,0 +1,22 @@
+[project]
+name = "gosu"
+requires-python = ">=3.8"
+version = "1.1.10"
+description = "the extensible taskrunner"
+dependencies = [ "plumbum", "typer", "click<8", "python-dotenv", "semver", "pytest", "pyupgrade", "isort", "black", "flake8", "mccabe", "flake8-comprehensions", "flake8-print", "flake8-cognitive-complexity", "pre_commit", "pytest-xdist", "pytest-sugar", "coverage", "django_coverage_plugin", "pyupgrade", "flit", "twine",]
+[[project.authors]]
+name = "Herbert Rusznak (tlb)"
+email = "herbert.rusznak@gmail.com"
+
+[build-system]
+requires = [ "flit_core >=3.2,<4",]
+build-backend = "flit_core.buildapi"
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Source = "https://gitlab.com/tuhls/gosu"
+
+[project.scripts]
+gosu = "gosu.main:app"

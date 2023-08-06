@@ -1,0 +1,28 @@
+image: python:3.9
+
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - pip install .
+    - gosu python venv
+    - gosu python lint
+    - gosu python test
+    - gosu python build
+
+  artifacts:
+    paths:
+      - dist
+    expire_in: 1 week
+
+deploy:
+  stage: deploy
+  script:
+    - pip install .
+    - TWINE_PASSWORD=${CI_JOB_TOKEN} TWINE_USERNAME=gitlab-ci-token python -m twine upload --repository-url ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi dist/*
+    - TWINE_PASSWORD=${PYPI_TOKEN} TWINE_USERNAME=__token__ python3 -m twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
+  only:
+    - tags

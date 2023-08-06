@@ -1,0 +1,7 @@
+- repo: local
+  hooks:
+    - id: gosu-precommit
+      name: gosu-precommit
+      entry: gosu python precommit
+      language: system
+      pass_filenames: false
