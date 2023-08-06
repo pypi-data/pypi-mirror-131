@@ -1,0 +1,11 @@
+xiangshi/__init__.py,sha256=UQlw9RgiYtHYJq37I1yp8zGPR1PzBT3uH2ULLUU98TQ,311
+xiangshi/development.py,sha256=JmuqljHTkMzRIWkA3fVfHGhfA0w3c-ndFiKULf8gE9o,6619
+xiangshi/func.py,sha256=Q9pNZkZUcdkbFaWo4OXRfto6PGBwkwdPYoRe-vuJJxU,4893
+xiangshi/kmeans.py,sha256=6LDXzjrQq-P30c0nzTeeDAnhOY1TmBxREv1Uq09pDVc,6189
+xiangshi/main.py,sha256=Svx6V5e0XKnTOYnChNj3m-19H5DVAroFApTxL-oU0ps,6902
+xiangshi/stoptext.py,sha256=k0rj-NEyJyKMoOk7qcLdX6L2qhqyGxXIsPDS21gwsdA,10057
+xiangshi-4.1.0.dist-info/LICENSE,sha256=j-ayq9aET0_DWw_LnuSVEiD4FJVmihI2T8g8SiewpI8,1086
+xiangshi-4.1.0.dist-info/METADATA,sha256=obdP6vRnLk0GNDdZfPAHreWdCSogfGwnVT11N1lHJQ0,7373
+xiangshi-4.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+xiangshi-4.1.0.dist-info/top_level.txt,sha256=-cyqkZYQJGROBPKHSae3F9g_MMVjfEUxoQUFFXapf7U,9
+xiangshi-4.1.0.dist-info/RECORD,,
