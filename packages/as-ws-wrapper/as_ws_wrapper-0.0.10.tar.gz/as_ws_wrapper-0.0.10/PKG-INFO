@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: as_ws_wrapper
+Version: 0.0.10
+Summary: Cliente não oficial do webservice Accesstage
+Home-page: https://github.com/imobanco/as-webservice-wrapper
+Author: Imobanco
+License: UNKNOWN
+Project-URL: Source, https://github.com/imobanco/as-webservice-wrapper
+Project-URL: Tracker, https://github.com/imobanco/as-webservice-wrapper/issues
+Description: # Accestage Webservice Wrapper
+        Serviço webservice SOAP oferecido pela Accesstage para 
+        realizar conectividade de troca de arquivos de transações
+        
+        
+        # Serviços oferecidos via SOAP
+        - lista de serviços
+        - envio de mensagem
+        - lista de mensagens
+        - recuperação de mensagem
+        - confirmação de retirada de mensagem
+        
+        ## Lista de serviços
+        Cada serviço disponível é um tipo de transação bancária possível de ser realizada.
+        
+        Cada serviço possui seu identificador mnemônico de tipo de transação.
+        
+        ## Envio de mensagem
+        Uma mensagem representa uma requisição de transação.
+        
+        Precisa ter o identificador mnemônico da transação a ser realizada e ter o arquivo com os dados da transação.
+        
+        
+        ## Lista de mensagens
+        Nessa lista só ficam as mensagens com sucesso?
+        
+        ## Recuperação de mensagem
+        É o 'retrieve' de uma mensagem específica. Contendo seu status e dados!
+        
+        
+        ## Confirmação de retirada de mensagem
+        Confirma que tal mensagem foi retirada (serve como ack de um pub/sub consumer?). 
+        
+        Remove da lista de mensagens essa mensagem com sucesso?
+        
+        
+        # Referências técnicas
+        - https://docs.python-zeep.org/en/master/
+        - https://medium.com/@bkaankuguoglu/how-to-send-soap-requests-in-python-using-zeep-9fd78adb5346
+        - https://medium.com/@ayushi21095/working-with-soap-based-web-service-using-python-8f532195bc6c
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: CGI Tools/Libraries
+Classifier: Topic :: Utilities
+Classifier: 
+Classifier: 
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

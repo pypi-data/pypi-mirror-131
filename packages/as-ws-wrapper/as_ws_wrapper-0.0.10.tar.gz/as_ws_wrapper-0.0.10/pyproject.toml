@@ -1,0 +1,61 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | venv
+    | env
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+
+[tool.poetry]
+name = "as_ws_wrapper"
+version = "0.0.0"
+description = ""
+authors = ["Imobanco"]
+readme = "README.md"
+packages = [{include = "**/*.py"}]
+
+# poetry config --list
+[virtualenvs]
+virtualenvs.create = true
+virtualenvs.in-project = true
+virtualenvs.path = "."
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pydantic = "^1.8.2"
+zeep = "^4.1.0"
+python-decouple = "^3.4"
+
+[tool.poetry.dev-dependencies]
+black = "^21.7b0"
+flake8 = "^3.9.2"
+isort = "^5.9.3"
+coverage = "^5.5"
+versioneer = "^0.20"
+wheel = "^0.37.0"
+twine = "^3.4.2"
+setuptools = "^57.4.0"
