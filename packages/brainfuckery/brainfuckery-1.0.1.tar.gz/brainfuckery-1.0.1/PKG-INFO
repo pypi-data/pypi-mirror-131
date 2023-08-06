@@ -1,0 +1,49 @@
+Metadata-Version: 1.0
+Name: brainfuckery
+Version: 1.0.1
+Summary: The simplest and easiest to use Brainfuck interpreter in Python.
+Home-page: UNKNOWN
+Author: Ben Tettmar
+Author-email: hello@benny.fun
+License: MIT
+Description: 
+        brainfuckery
+        ============
+        
+        The simplest and easiest to use Brainfuck interpreter in Python.
+        
+        Install
+        ~~~~~~~
+        
+        ::
+        
+           pip install brainfuckery
+        
+        Examples
+        ~~~~~~~~
+        
+        Converting text to brainfuck code.
+        
+        .. code:: python
+        
+           from brainfuckery import Brainfuckery
+        
+           textToConvert = input("text: ")
+           result = Brainfuckery().convert(textToConvert)
+        
+           print(result)
+        
+        Interpret brainfuck code/convert brainfuck to text
+        
+        .. code:: python
+        
+           from brainfuckery import Brainfuckery
+        
+           codeToInterpret = input("code: ")
+           result = Brainfuckery().interpret(codeToInterpret)
+        
+           print(result)
+        
+        
+Keywords: brainfuck,brainfuck interpreter,brainfuck.py,brainfuckery,brainfuck generator,brainfuck generator in python,text to brainfuck,text to brainfuck code,execute brainfuck code,convert text to brainfuck
+Platform: UNKNOWN
