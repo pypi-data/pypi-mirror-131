@@ -1,0 +1,8 @@
+LICENSE
+README.md
+scmap.py
+setup.py
+scmap.egg-info/PKG-INFO
+scmap.egg-info/SOURCES.txt
+scmap.egg-info/dependency_links.txt
+scmap.egg-info/top_level.txt
