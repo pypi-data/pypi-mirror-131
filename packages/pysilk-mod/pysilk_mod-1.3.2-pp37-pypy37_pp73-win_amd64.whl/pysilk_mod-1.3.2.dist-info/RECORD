@@ -1,0 +1,12 @@
+_pysilk.cp37-win_amd64.pyd,sha256=x5drYx0f6oaYWZm1LIB2ezZ9-EnYNfnjyzOC-tVH1DY,304640
+_pysilk.pypy37-pp73-win_amd64.pyd,sha256=7oF6hzs56K_SIJbrnXp96FZZz_aK2mubDXC0laoUVOw,301056
+pysilk/__init__.py,sha256=rfdtgC0wS32qso0CArBFfikacCbiL3OyA3huYdbx-E0,329
+pysilk/pysilk.py,sha256=qGJ61FfLAW_u3ADHQBcyNRmr84Cx4YuKhlqL6TP3jqI,2082
+pysilk/utils.py,sha256=Bd6RHrt3qTTYq0kczPS2rE2oAgkv_On884cU8Pr6NhE,539
+pysilk/wav.py,sha256=mLRPfQOZFYJvqVcmhidP-WDA6ZDJ0BBwF-n8I8BrhMc,810
+pysilk_mod-1.3.2.dist-info/LICENSE,sha256=aA2NL8qu8wAdpw3AG3CrVF58EvprgCkWYCZkWJQbfk8,6392
+pysilk_mod-1.3.2.dist-info/METADATA,sha256=UdscX4y7jCiVqV9hONLNDh-SnlNxL2C52ft5WzjBNR4,486
+pysilk_mod-1.3.2.dist-info/WHEEL,sha256=nR0TcaMNmgCE_ksOasCKu-pqTGxyfESd_1IWrwK31vk,107
+pysilk_mod-1.3.2.dist-info/top_level.txt,sha256=-J8orNDGKlLylJ0uhOt_eF2Qk__t_slJNf8CAfBo7aQ,15
+pysilk_mod-1.3.2.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+pysilk_mod-1.3.2.dist-info/RECORD,,
