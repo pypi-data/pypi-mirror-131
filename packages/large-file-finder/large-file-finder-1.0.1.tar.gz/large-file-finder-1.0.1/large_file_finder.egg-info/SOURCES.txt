@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.py
+app/__init__.py
+app/__main__.py
+app/constants.py
+app/helper.py
+app/scanner.py
+app/validator.py
+app/view.py
+large_file_finder.egg-info/PKG-INFO
+large_file_finder.egg-info/SOURCES.txt
+large_file_finder.egg-info/dependency_links.txt
+large_file_finder.egg-info/entry_points.txt
+large_file_finder.egg-info/requires.txt
+large_file_finder.egg-info/top_level.txt

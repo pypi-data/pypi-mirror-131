@@ -1,0 +1,3 @@
+[console_scripts]
+large-file-finder = app:initialize
+
