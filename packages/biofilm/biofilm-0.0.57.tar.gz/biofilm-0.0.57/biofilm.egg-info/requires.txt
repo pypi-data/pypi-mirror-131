@@ -1,0 +1,6 @@
+scikit-learn
+ubergauss
+lmz
+dirtyopts
+numpy
+structout
