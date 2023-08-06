@@ -1,0 +1,12 @@
+LICENSE,sha256=l6Vlby1kH91lhe4luz3xj-8SVK77-M4GhhhHGb6HMwk,1085
+pydelica/__init__.py,sha256=mRSUF1-k8TQcENkh5VC0KMZUyjBzI_9Ubv6m0oeHQVs,17120
+pydelica/compiler.py,sha256=_1hduD6kPt-yenpEnpCSW4WXF-h0zQelPAJTlSl5kU4,9120
+pydelica/exception.py,sha256=jnfl1Z42Q4FXpjEfWVbMVxh7Y9TWKQIAdCaQzWUhPkY,2815
+pydelica/logger.py,sha256=9_VeNqPwhL0dOwkGGB1mb7SNfr-ADqnvvYLRL-7pnHw,317
+pydelica/model.py,sha256=hY8PDlS-UHKaQ2jWqk65ZeN2LHr02TBUqOG_zpaNzhg,5708
+pydelica/options.py,sha256=UBY1iVwxDPfBw5WTB5R4AcTvIVJIxtQxInqmMaEBZAk,7513
+pydelica/solutions.py,sha256=p6gG6jqiwChhznaJ0x7y23btoxZpgjBQRw-oGkrtF1A,1587
+pydelica-0.1.16.dist-info/LICENSE,sha256=l6Vlby1kH91lhe4luz3xj-8SVK77-M4GhhhHGb6HMwk,1085
+pydelica-0.1.16.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pydelica-0.1.16.dist-info/METADATA,sha256=pcfi1XzVmivgg2ElLGoWmgn0bSnZiMakmUmDE-YTf0Y,7448
+pydelica-0.1.16.dist-info/RECORD,,
