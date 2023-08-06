@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/numgraph/__init__.py
+src/numgraph/distributions.py
+src/numgraph/temporal_distributions.py
+src/numgraph/utils.py
+src/numgraph.egg-info/PKG-INFO
+src/numgraph.egg-info/SOURCES.txt
+src/numgraph.egg-info/dependency_links.txt
+src/numgraph.egg-info/requires.txt
+src/numgraph.egg-info/top_level.txt
+test/test.py
