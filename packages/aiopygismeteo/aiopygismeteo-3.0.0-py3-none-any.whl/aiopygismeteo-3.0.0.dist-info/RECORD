@@ -1,0 +1,10 @@
+aiopygismeteo/__init__.py,sha256=-j4CMFHr3lVk3UInPKgxVlrvvPZIrfL7vKNrv7E96KE,207
+aiopygismeteo/_funcs.py,sha256=3FSw-oU410UurMcNDUOr_msjr3DylJgg_du9xo394Yk,2259
+aiopygismeteo/_http.py,sha256=yOZQbQi6hdbaPO1Vx_iDBDctyicRzLpx34mPPUukxwg,1120
+aiopygismeteo/exceptions.py,sha256=C_tD4bIlrIVmynT1ePr0xKMQ3DwP08Y0sTMO4IQMcXE,68
+aiopygismeteo/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiopygismeteo/search.py,sha256=ow9uhchUUo62YUajBa_GxD5IYHx-uGufRFusqo3zouo,820
+aiopygismeteo-3.0.0.dist-info/LICENSE,sha256=1x8a8JvB6Tm-oi0Knf_OySff8jjCZa2Uhw591k6oUDg,1065
+aiopygismeteo-3.0.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+aiopygismeteo-3.0.0.dist-info/METADATA,sha256=wBh-TEtWOf18D5FieIw4Z4MKH5AdIit957OZ7n1r4XE,2456
+aiopygismeteo-3.0.0.dist-info/RECORD,,
