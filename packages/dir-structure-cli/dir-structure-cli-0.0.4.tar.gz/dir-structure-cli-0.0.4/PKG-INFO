@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dir-structure-cli
+Version: 0.0.4
+Summary: Generate directory skeletons for some famous frameworks
+Home-page: https://github.com/gmyrianthous/example-publish-pypi
+Author: Abdulrahman Dawoud
+Author-email: abdulrahman.goldendawn@gmail.com
+License: MIT
+Description: # Directory-sturcture-cli
+        
+Keywords: example project
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
