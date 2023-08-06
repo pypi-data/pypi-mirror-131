@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+detention_data_dashboard/__init__.py
+detention_data_dashboard/data_download.py
+detention_data_dashboard/figure.py
+detention_data_dashboard.egg-info/PKG-INFO
+detention_data_dashboard.egg-info/SOURCES.txt
+detention_data_dashboard.egg-info/dependency_links.txt
+detention_data_dashboard.egg-info/requires.txt
+detention_data_dashboard.egg-info/top_level.txt
+detention_data_dashboard/tests/__init__.py
+detention_data_dashboard/tests/test_data_download.py
+detention_data_dashboard/tests/test_figure.py

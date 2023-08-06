@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: detention_data_dashboard
+Version: 0.0.1
+Summary: a dashboard of ICE enforcement data
+Home-page: https://github.com/detentiondatadashboard/detention_data_dashboard
+Author: Lucas Olson, Trung-Anh Nguyen, Maddie Gaumer
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+a dashboard that provides data on encounters, arrests, and removals by fiscal year between 2016-2019
+
