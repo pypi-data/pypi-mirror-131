@@ -1,0 +1,11 @@
+danbooru/__init__.py,sha256=uKbBYs57ZmfWVn5J-H7xBa45ldWkdIsGZ66nc5rDV58,78
+danbooru/__vars__.py,sha256=sRyhC3Ykqu6RfwcEAQ9ywH9M3ivaJNrXTcL2Q06KGHs,204
+danbooru/booru.py,sha256=vXouMdqc7l62c9SnEwdDN2U_tVu2rHixqebW1fVdByk,9228
+danbooru/exceptions.py,sha256=ZQCs0doAMSxVxG5Z646VytHPm9eZfbcqjdgAnopNaG4,993
+danbooru/types/Danbooru_API.py,sha256=tamcYO7B2OeSPi1j3_cSbyQBC8eILbozquzMZ9UPX78,19627
+danbooru/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+danbooru-0.0.4.dist-info/LICENSE,sha256=P5u3v1FKX_VxhyM1xI33x8akHqSVrNnyzS1cqCC1doM,1087
+danbooru-0.0.4.dist-info/METADATA,sha256=srb5S3nfLUCLJREJkVJlRfe6dyyBiWvx4xP0X8boB5Y,1942
+danbooru-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+danbooru-0.0.4.dist-info/top_level.txt,sha256=Cqy9QpdR83evi4jQbpBSMBmdxGweVrFIXZxf4Xr8610,9
+danbooru-0.0.4.dist-info/RECORD,,
