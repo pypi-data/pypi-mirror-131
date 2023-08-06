@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+setup.py
+shame/__init__.py
+shame.egg-info/PKG-INFO
+shame.egg-info/SOURCES.txt
+shame.egg-info/dependency_links.txt
+shame.egg-info/top_level.txt
