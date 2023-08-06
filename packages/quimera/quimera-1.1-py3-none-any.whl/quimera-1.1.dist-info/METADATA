@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: quimera
+Version: 1.1
+Summary: Pentesting Tool Kit
+Home-page: UNKNOWN
+Author: Mauricio Rossi (MRossiDEV)
+Author-email: <mrossiph@gmail.com>
+License: UNKNOWN
+Keywords: python,wifi,osint,hacking,network
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+Pentesting and OSINT Tool Kit for Ethical Hacking
+
+
