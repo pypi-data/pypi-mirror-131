@@ -1,0 +1,645 @@
+from __future__ import annotations
+
+import asyncio
+from collections import defaultdict
+from collections.abc import Awaitable, Callable, Iterator
+from contextlib import contextmanager
+from datetime import datetime
+from functools import partial
+import importlib.resources
+import os
+from pathlib import Path
+import typing
+from typing import Any, TypeVar
+
+import aiohttp
+import aiohttp.web
+from aiohttp_rpc import JsonRpcMethod
+from aiohttp_rpc import middlewares as rpc_middlewares
+from aiohttp_rpc.errors import InvalidParams as InvalidParamsError
+from aiohttp_rpc.errors import ServerError
+from aiohttp_rpc.server import WsJsonRpcServer
+import click
+from loguru import logger
+from pydantic import BaseModel, ValidationError
+import sqlalchemy as sa
+import toga
+from typing_extensions import Concatenate, Literal, ParamSpec, TypedDict
+from yarl import URL
+
+from instawow import __version__, db, matchers, models
+from instawow import results as R
+from instawow.cataloguer import CatalogueEntry
+from instawow.common import Flavour, Strategy
+from instawow.config import Config, GlobalConfig
+from instawow.manager import LocksType, Manager, TraceRequestCtx, init_web_client, is_outdated
+from instawow.resolvers import Defn
+from instawow.utils import run_in_thread as t
+from instawow.utils import uniq
+
+from . import frontend
+
+_T = TypeVar('_T')
+_P = ParamSpec('_P')
+
+
+LOCALHOST = '127.0.0.1'
+
+
+class _ConfigError(ServerError):
+    code = -32001
+    message = 'invalid configuration parameters'
+
+
+@contextmanager
+def _reraise_validation_error(
+    error_class: type[ServerError | InvalidParamsError] = ServerError,
+    values: dict[Any, Any] | None = None,
+) -> Iterator[None]:
+    try:
+        yield
+    except ValidationError as error:
+        errors = error.errors()
+        logger.info(f'received invalid request: {(values, errors)}')
+        raise error_class(data=errors) from error
+
+
+methods: list[tuple[str, type[BaseParams]]] = []
+
+
+def _register_method(method: str):
+    def inner(param_class: type[BaseParams]):
+        methods.append((method, param_class))
+        return param_class
+
+    return inner
+
+
+class BaseParams(BaseModel):
+    @classmethod
+    def bind(
+        cls, method: str, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None
+    ) -> JsonRpcMethod:
+        async def respond(**kwargs: Any) -> BaseModel:
+            with _reraise_validation_error(InvalidParamsError, kwargs):
+                params = cls.parse_obj(kwargs)
+            return await params.respond(managers, app_window)
+
+        return JsonRpcMethod(respond, name=method)
+
+    async def respond(
+        self, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None
+    ) -> Any:
+        raise NotImplementedError
+
+
+class _ProfileParamMixin(BaseModel):
+    profile: str
+
+
+class _DefnParamMixin(BaseModel):
+    defns: typing.List[Defn]
+
+
+@_register_method('config/write')
+class WriteConfigParams(_ProfileParamMixin, BaseParams):
+    addon_dir: Path
+    game_flavour: Flavour
+    infer_game_flavour: bool
+
+    async def respond(
+        self, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None
+    ) -> Config:
+        async with managers.locks[f"load profile '{self.profile}'"]:
+            with _reraise_validation_error(_ConfigError):
+                config = Config(
+                    global_config=await t(GlobalConfig.read)(),
+                    profile=self.profile,
+                    addon_dir=self.addon_dir,
+                    game_flavour=self.game_flavour,
+                )
+                if self.infer_game_flavour:
+                    values = {
+                        **config.dict(),
+                        'game_flavour': Config.infer_flavour(config.addon_dir),
+                    }
+                    config = Config(**values)
+
+                await t(config.write)()
+
+            # Unload the ``Manager`` instance corresponding to this profile for
+            # the config to be reloaded on the next request
+            managers.unload(config.profile)
+
+            return config
+
+
+@_register_method('config/read')
+class ReadConfigParams(_ProfileParamMixin, BaseParams):
+    @t
+    def respond(self, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None) -> Config:
+        with _reraise_validation_error(_ConfigError):
+            return Config.read(GlobalConfig.read(), self.profile)
+
+
+@_register_method('config/delete')
+class DeleteConfigParams(_ProfileParamMixin, BaseParams):
+    async def respond(
+        self, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None
+    ) -> None:
+        async def delete_profile(manager: Manager):
+            await t(manager.config.delete)()
+            managers.unload(self.profile)
+
+        await managers.run(self.profile, delete_profile)
+
+
+@_register_method('config/list')
+class ListProfilesParams(BaseParams):
+    @t
+    def respond(
+        self, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None
+    ) -> list[str]:
+        return GlobalConfig().list_profiles()
+
+
+class Source(TypedDict):
+    source: str
+    name: str
+    supported_strategies: list[Strategy]
+    supports_rollback: bool
+    changelog_format: str
+
+
+@_register_method('sources/list')
+class ListSourcesParams(_ProfileParamMixin, BaseParams):
+    async def respond(
+        self, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None
+    ) -> list[Source]:
+        manager = await managers.get_manager(self.profile)
+        return [
+            {
+                'source': r.source,
+                'name': r.name,
+                'supported_strategies': sorted(r.strategies, key=list(Strategy).index),
+                'supports_rollback': Strategy.version in r.strategies,
+                'changelog_format': r.changelog_format.value,
+            }
+            for r in manager.resolvers.values()
+        ]
+
+
+@_register_method('list')
+class ListInstalledParams(_ProfileParamMixin, BaseParams):
+    async def respond(
+        self, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None
+    ) -> list[models.Pkg]:
+        manager = await managers.get_manager(self.profile)
+        installed_pkgs = (
+            manager.database.execute(sa.select(db.pkg).order_by(sa.func.lower(db.pkg.c.name)))
+            .mappings()
+            .all()
+        )
+        return [models.Pkg.from_row_mapping(manager.database, p) for p in installed_pkgs]
+
+
+class SuccessResult(TypedDict):
+    status: Literal['success']
+    addon: models.Pkg
+
+
+class ErrorResult(TypedDict):
+    status: Literal['failure', 'error']
+    message: str
+
+
+@_register_method('search')
+class SearchParams(_ProfileParamMixin, BaseParams):
+    search_terms: str
+    limit: int
+    sources: typing.Set[str]
+    start_date: typing.Optional[datetime]
+
+    async def respond(
+        self, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None
+    ) -> list[CatalogueEntry]:
+        return await managers.run(
+            self.profile,
+            partial(
+                Manager.search,
+                search_terms=self.search_terms,
+                limit=self.limit,
+                sources=self.sources,
+                start_date=self.start_date,
+            ),
+        )
+
+
+@_register_method('resolve')
+class ResolveParams(_ProfileParamMixin, _DefnParamMixin, BaseParams):
+    async def _resolve(self, manager: Manager) -> dict[Defn, Any]:
+        def extract_source(defn: Defn):
+            if defn.source == '*':
+                pair = manager.pair_uri(defn.alias)
+                if pair:
+                    source, alias = pair
+                    defn = defn.with_(source=source, alias=alias)
+            return defn
+
+        return await manager.resolve(list(map(extract_source, self.defns)))
+
+    async def respond(
+        self, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None
+    ) -> list[SuccessResult | ErrorResult]:
+        results = await managers.run(self.profile, self._resolve)
+        return [
+            {'status': 'success', 'addon': r}
+            if models.is_pkg(r)
+            else {'status': r.status, 'message': r.message}
+            for r in results.values()
+        ]
+
+
+@_register_method('install')
+class InstallParams(_ProfileParamMixin, _DefnParamMixin, BaseParams):
+    replace: bool
+
+    async def respond(
+        self, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None
+    ) -> list[SuccessResult | ErrorResult]:
+        results = await managers.run(
+            self.profile, partial(Manager.install, defns=self.defns, replace=self.replace)
+        )
+        return [
+            {'status': r.status, 'addon': r.pkg}
+            if isinstance(r, R.PkgInstalled)
+            else {'status': r.status, 'message': r.message}
+            for r in results.values()
+        ]
+
+
+@_register_method('update')
+class UpdateParams(_ProfileParamMixin, _DefnParamMixin, BaseParams):
+    async def respond(
+        self, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None
+    ) -> list[SuccessResult | ErrorResult]:
+        results = await managers.run(
+            self.profile, partial(Manager.update, defns=self.defns, retain_defn_strategy=True)
+        )
+        return [
+            {'status': r.status, 'addon': r.new_pkg}
+            if isinstance(r, R.PkgUpdated)
+            else {'status': r.status, 'message': r.message}
+            for r in results.values()
+        ]
+
+
+@_register_method('remove')
+class RemoveParams(_ProfileParamMixin, _DefnParamMixin, BaseParams):
+    keep_folders: bool
+
+    async def respond(
+        self, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None
+    ) -> list[SuccessResult | ErrorResult]:
+        results = await managers.run(
+            self.profile, partial(Manager.remove, defns=self.defns, keep_folders=self.keep_folders)
+        )
+        return [
+            {'status': r.status, 'addon': r.old_pkg}
+            if isinstance(r, R.PkgRemoved)
+            else {'status': r.status, 'message': r.message}
+            for r in results.values()
+        ]
+
+
+@_register_method('pin')
+class PinParams(_ProfileParamMixin, _DefnParamMixin, BaseParams):
+    async def respond(
+        self, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None
+    ) -> list[SuccessResult | ErrorResult]:
+        results = await managers.run(self.profile, partial(Manager.pin, defns=self.defns))
+        return [
+            {'status': r.status, 'addon': r.pkg}
+            if isinstance(r, R.PkgInstalled)
+            else {'status': r.status, 'message': r.message}
+            for r in results.values()
+        ]
+
+
+@_register_method('get_changelog')
+class GetChangelogParams(_ProfileParamMixin, BaseParams):
+    changelog_url: str
+
+    async def respond(
+        self, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None
+    ) -> str:
+        return await managers.run(
+            self.profile, partial(Manager.get_changelog, uri=self.changelog_url)
+        )
+
+
+class AddonMatch(TypedDict):
+    folders: list[AddonMatch_AddonFolder]
+    matches: list[models.Pkg]
+
+
+class AddonMatch_AddonFolder(TypedDict):
+    name: str
+    version: str
+
+
+@_register_method('reconcile')
+class ReconcileParams(_ProfileParamMixin, BaseParams):
+    matcher: Literal['toc_source_ids', 'folder_name_subsets', 'addon_names_with_folder_names']
+
+    async def respond(
+        self, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None
+    ) -> list[AddonMatch]:
+        leftovers = await managers.run(self.profile, t(matchers.get_unreconciled_folder_set))
+        match_groups: matchers.FolderAndDefnPairs = await managers.run(
+            self.profile, partial(getattr(matchers, f'match_{self.matcher}'), leftovers=leftovers)
+        )
+        uniq_defns = uniq(d for _, b in match_groups for d in b)
+        resolve_results = await managers.run(
+            self.profile, partial(Manager.resolve, defns=uniq_defns)
+        )
+        matches = [
+            (a, m)
+            for a, s in match_groups
+            for m in ([r for d in s for r in (resolve_results[d],) if models.is_pkg(r)],)
+            if m
+        ]
+        return [
+            AddonMatch(folders=[{'name': f.name, 'version': f.version} for f in a], matches=m)
+            for a, m in matches
+        ] + [
+            AddonMatch(folders=[{'name': f.name, 'version': f.version}], matches=[])
+            for f in sorted(leftovers - frozenset(i for a, _ in matches for i in a))
+        ]
+
+
+class DownloadProgressReport(TypedDict):
+    defn: Defn
+    progress: float
+
+
+@_register_method('get_download_progress')
+class GetDownloadProgressParams(_ProfileParamMixin, BaseParams):
+    async def respond(
+        self, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None
+    ) -> list[DownloadProgressReport]:
+        return [
+            {'defn': Defn.from_pkg(p), 'progress': r}
+            for p, r in await managers.get_manager_download_progress(self.profile)
+        ]
+
+
+class GetVersionResult(TypedDict):
+    installed_version: str
+    new_version: str | None
+
+
+@_register_method('meta/get_version')
+class GetVersionParams(BaseParams):
+    async def respond(
+        self, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None
+    ) -> GetVersionResult:
+        outdated, new_version = await is_outdated()
+        return {
+            'installed_version': __version__,
+            'new_version': new_version if outdated else None,
+        }
+
+
+@_register_method('assist/open_url')
+class OpenUrlParams(BaseParams):
+    url: str
+
+    async def respond(
+        self, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None
+    ) -> None:
+        click.launch(self.url)
+
+
+@_register_method('assist/reveal_folder')
+class RevealFolderParams(BaseParams):
+    path_parts: typing.List[str]
+
+    async def respond(
+        self, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None
+    ) -> None:
+        click.launch(os.path.join(*self.path_parts), locate=True)
+
+
+class SelectFolderResult(TypedDict):
+    selection: str | None
+
+
+@_register_method('assist/select_folder')
+class SelectFolderParams(BaseParams):
+    initial_folder: typing.Optional[str]
+
+    async def respond(
+        self, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None
+    ) -> SelectFolderResult:
+        if not app_window:
+            raise RuntimeError('No app to bind to')
+        try:
+            (selection,) = app_window.select_folder_dialog('Select folder', self.initial_folder)
+        except ValueError:
+            selection = None
+        return {'selection': selection}
+
+
+class ConfirmDialogueResult(TypedDict):
+    ok: bool
+
+
+@_register_method('assist/confirm')
+class ConfirmDialogueParams(BaseParams):
+    title: str
+    message: str
+
+    async def respond(
+        self, managers: _ManagerWorkQueue, app_window: toga.MainWindow | None
+    ) -> ConfirmDialogueResult:
+        if not app_window:
+            raise RuntimeError('No app to bind to')
+        ok = app_window.confirm_dialog(self.title, self.message)
+        return {'ok': ok}
+
+
+def _init_json_rpc_web_client(
+    progress_reporters: set[tuple[Manager, models.Pkg, Callable[[], float]]],
+) -> aiohttp.ClientSession:
+    async def do_on_request_end(
+        client_session: aiohttp.ClientSession,
+        trace_config_ctx: Any,
+        params: aiohttp.TraceRequestEndParams,
+    ) -> None:
+        trace_request_ctx: TraceRequestCtx = trace_config_ctx.trace_request_ctx
+        if (
+            trace_request_ctx
+            and trace_request_ctx['report_progress'] == 'pkg_download'
+            and params.response.content_length
+            and aiohttp.hdrs.CONTENT_ENCODING not in params.response.headers
+        ):
+            content = params.response.content
+            content_length = params.response.content_length
+            entry = (
+                trace_request_ctx['manager'],
+                trace_request_ctx['pkg'],
+                lambda: content.total_bytes / content_length,
+            )
+            progress_reporters.add(entry)
+            content.on_eof(lambda: progress_reporters.remove(entry))
+
+    trace_config = aiohttp.TraceConfig()
+    trace_config.on_request_end.append(do_on_request_end)
+    trace_config.freeze()
+    return init_web_client(trace_configs=[trace_config])
+
+
+class _ManagerWorkQueue:
+    def __init__(self):
+        self._loop = asyncio.get_running_loop()
+
+        self._queue: asyncio.Queue[
+            tuple[asyncio.Future[Any], str, Callable[..., Awaitable[Any]]]
+        ] = asyncio.Queue()
+        self._managers: dict[str, tuple[Manager, Callable[[], None]]] = {}
+        self._progress_reporters: set[tuple[Manager, models.Pkg, Callable[[], float]]] = set()
+
+        self._web_client = _init_json_rpc_web_client(self._progress_reporters)
+        self.locks: LocksType = defaultdict(asyncio.Lock)
+
+    async def cleanup(self):
+        for _, close_db_conn in self._managers.values():
+            close_db_conn()
+        await self._web_client.close()
+
+    def unload(self, profile: str):
+        if profile in self._managers:
+            _, close_db_conn = self._managers.pop(profile)
+            close_db_conn()
+
+    async def _schedule_item(
+        self, future: asyncio.Future[Any], profile: str, coro_fn: Callable[..., Awaitable[Any]]
+    ):
+        try:
+            async with self.locks[f"load profile '{profile}'"]:
+                try:
+                    manager, _ = self._managers[profile]
+                except KeyError:
+                    with _reraise_validation_error(_ConfigError):
+                        global_config = await t(GlobalConfig.read)()
+                        config = await t(Config.read)(global_config, profile)
+
+                    self._managers[profile] = Manager.from_config(config)
+                    manager, _ = self._managers[profile]
+
+            result = await coro_fn(manager)
+        except BaseException as exc:
+            future.set_exception(exc)
+        else:
+            future.set_result(result)
+
+    async def listen(self):
+        Manager.contextualise(web_client=self._web_client, locks=self.locks)
+        while True:
+            item = await self._queue.get()
+            asyncio.create_task(self._schedule_item(*item))
+            self._queue.task_done()
+
+    async def run(
+        self, profile: str, coro_fn: Callable[Concatenate[Manager, _P], Awaitable[_T]]
+    ) -> _T:
+        future = self._loop.create_future()
+        self._queue.put_nowait((future, profile, coro_fn))
+        return await asyncio.wait_for(future, None)
+
+    async def get_manager(self, profile: str):
+        async def get_manager(manager: Manager):
+            return manager
+
+        return await self.run(profile, get_manager)
+
+    async def get_manager_download_progress(self, profile: str):
+        manager = await self.get_manager(profile)
+        return ((p, r()) for m, p, r in self._progress_reporters if m is manager)
+
+
+async def create_app(app_window: toga.MainWindow | None = None):
+    managers = _ManagerWorkQueue()
+
+    async def start_managers(app: aiohttp.web.Application):
+        managers_listen = asyncio.create_task(managers.listen())
+        yield
+        managers_listen.cancel()
+        await managers.cleanup()
+
+    async def get_index(request: aiohttp.web.Request):
+        return aiohttp.web.Response(
+            content_type='text/html',
+            text=importlib.resources.read_text(frontend, 'index.html'),
+        )
+
+    async def get_static_file(request: aiohttp.web.Request):
+        filename = request.path.lstrip('/')
+        if filename.startswith('svelte-bundle.js'):
+            content_type = 'application/javascript'
+        elif filename == 'svelte-bundle.css':
+            content_type = 'text/css'
+        else:
+            raise aiohttp.web.HTTPNotFound
+
+        return aiohttp.web.Response(
+            content_type=content_type,
+            text=importlib.resources.read_text(frontend, filename),
+        )
+
+    def _json_serialize(value: dict[str, Any]) -> str:
+        return BaseModel.construct(**value).json()
+
+    rpc_server = WsJsonRpcServer(
+        json_serialize=_json_serialize,
+        middlewares=rpc_middlewares.DEFAULT_MIDDLEWARES,
+    )
+    rpc_server.add_methods([m.bind(n, managers, app_window) for n, m in methods])
+
+    app = aiohttp.web.Application()
+    app.add_routes(
+        [
+            aiohttp.web.get('/', get_index),
+            aiohttp.web.get(
+                r'/svelte-bundle{extension:(?:\.css|\.js(?:\.map)?)}', get_static_file
+            ),
+            aiohttp.web.get('/api', rpc_server.handle_http_request),
+        ]
+    )
+    app.cleanup_ctx.append(start_managers)
+    app.freeze()
+    return app
+
+
+async def run_app(app: aiohttp.web.Application):
+    "Fire up the server."
+    app_runner = aiohttp.web.AppRunner(app)
+    await app_runner.setup()
+    assert app_runner.server  # Server is created during setup
+    # By omitting the port ``loop.create_server`` will find an available port
+    # to bind to - equivalent to creating a socket on port 0.
+    server = await asyncio.get_running_loop().create_server(app_runner.server, LOCALHOST)
+    host, port = server.sockets[0].getsockname()
+
+    async def serve():
+        try:
+            # ``server_forever`` cleans up after the server when it's interrupted
+            await server.serve_forever()
+        finally:
+            await app_runner.cleanup()
+
+    return (
+        URL.build(scheme='http', host=host, port=port),
+        serve,
+    )
