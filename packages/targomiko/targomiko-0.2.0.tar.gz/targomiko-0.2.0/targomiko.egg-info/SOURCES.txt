@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+targomiko/__init__.py
+targomiko/command.py
+targomiko/connection.py
+targomiko.egg-info/PKG-INFO
+targomiko.egg-info/SOURCES.txt
+targomiko.egg-info/dependency_links.txt
+targomiko.egg-info/requires.txt
+targomiko.egg-info/top_level.txt
