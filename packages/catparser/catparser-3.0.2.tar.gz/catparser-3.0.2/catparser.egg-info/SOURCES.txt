@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+catparser/AstPostProcessor.py
+catparser/AstValidator.py
+catparser/CatsLarkParser.py
+catparser/__init__.py
+catparser/__main__.py
+catparser/ast.py
+catparser.egg-info/PKG-INFO
+catparser.egg-info/SOURCES.txt
+catparser.egg-info/dependency_links.txt
+catparser.egg-info/top_level.txt
+catparser/grammar/catbuffer.lark
