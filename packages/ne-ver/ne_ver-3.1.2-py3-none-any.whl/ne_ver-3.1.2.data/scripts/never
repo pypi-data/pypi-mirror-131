@@ -1,0 +1,55 @@
+#!python
+from dotenv import load_dotenv
+from never import Configuration, RepositoryManager, ReleaseManager
+from never.lib import bump_level_from_str, version_tpl_to_str, VersionLevel
+
+import argparse
+
+if __name__ == "__main__":
+    load_dotenv()  # take environment variables from .env
+
+    # Parse arguments with argparse (https://docs.python.org/3/library/argparse.html)
+    parser = argparse.ArgumentParser(
+        description="Ne-ver again the manual hassle to release a next version",
+        epilog="Website: https://github.com/swesterveld/next"
+    )
+    parser.add_argument("bump_level", choices=[
+        level.name.lower() for level in VersionLevel
+    ])
+    parser.add_argument("--settings", action=argparse.BooleanOptionalAction, help="whether to use a settings-file for your configuration, or provide the settings manually")
+    # parser.add_argument("--version", action="version", version=f"{read_version('VERSION')}")  # TODO: fix this argument
+
+    file_config_group = parser.add_argument_group("required when using a settings-file for your configuration")
+    file_config_group.add_argument("-f", "--settings-file")
+    file_config_group.add_argument("-p", "--project")
+
+    # TODO: implement args for manual configuration
+    # manual_config_group = parser.add_argument_group("manual configuration")
+    # manual_config_group.add_argument("-r", "--repository-path")
+    # manual_config_group.add_argument("-s", "--staging-branch", default=DEFAULT_STAGING_BRANCH)
+    # manual_config_group.add_argument("-p", "--production-branch", default=DEFAULT_PRODUCTION_BRANCH)
+    # manual_config_group.add_argument("--version", action="version", version=f"{read_version()}")
+
+    args = parser.parse_args()
+
+    # bail out when --settings has been set without providing its required arguments --settings-file and --project
+    if args.settings and not (args.settings_file and args.project):
+        print(f"Exiting because both --settings-file and --project are required when using a settings-file for your configuration\n")
+        parser.print_help()
+        exit(1)
+
+    # bump version for project in configuration
+    config = Configuration.config_from_file(args.settings_file, args.project)
+    repository_manager = RepositoryManager(config)
+
+    bump_level = bump_level_from_str(args.bump_level)
+    release_manager = ReleaseManager(config, repository_manager, bump_level)
+
+    # release bumped version
+    new_version = release_manager.release(bump_level)
+
+    # checkout production-branch and merge staging-branch into it
+    # repository_manager.prepare_production()  # TODO: implement (optional) merge to production branch
+
+    # TODO: implement deploy
+    # print(f"Released version {version_tpl_to_str(new_version)}. Ready to deploy...")
