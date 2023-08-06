@@ -1,0 +1,3 @@
+[console_scripts]
+deepsparse.check_hardware = deepsparse.cpu:print_hardware_capability
+
