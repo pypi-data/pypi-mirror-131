@@ -1,0 +1,8 @@
+include LICENSE
+include README.rst
+include pyproject.toml
+include pyhacrf/log1p.h
+include pyhacrf/adjacent.pyx
+include pyhacrf/algorithms.pyx
+include pyhacrf/adjacent.c
+include pyhacrf/algorithms.c
