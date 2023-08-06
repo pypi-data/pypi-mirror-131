@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ShynaTime
+Version: 0.7
+Summary: Shyna Backend Functionality Package For Time manipulation
+Home-page: UNKNOWN
+Author: Shivam Sharma
+Author-email: shivamsharma1913@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Shyna Time Package
+ShynaTime Package for all time manipulation needed by Shyna
+
+
