@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+avpdf/__init__.py
+avpdf/pdf2image.py
+avpdf/pdf2text.py
+avpdf.egg-info/PKG-INFO
+avpdf.egg-info/SOURCES.txt
+avpdf.egg-info/dependency_links.txt
+avpdf.egg-info/top_level.txt
