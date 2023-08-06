@@ -1,0 +1,16 @@
+name: Xiaomi Mi Robot Vacuum (Roborock)
+impl: vacuum.Vacuum
+type: vacuum
+models:
+- model: rockrobo.vacuum.v1
+  name: Roborock gen1
+- model: roborock.vacuum.s5
+  name: Roborock S5
+- model: roborock.vacuum.s6
+  name: Roborock S6
+- model: roborock.vacuum.a15
+  name: Roborock S7
+- model: roborock.vacuum.a10
+  name: Roborock S6 maxv
+- model: roborock.vacuum.e2
+  name: Roborock E2
