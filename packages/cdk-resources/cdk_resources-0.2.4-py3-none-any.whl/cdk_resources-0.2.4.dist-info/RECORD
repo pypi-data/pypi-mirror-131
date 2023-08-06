@@ -1,0 +1,11 @@
+cdk_resources/__init__.py,sha256=DXH0kbqa_PQ9X5y2zuv6pzVMXR-rnY_hKqlu55AdpU8,68
+cdk_resources/__version__.py,sha256=YByw9hsxEEX5vxYuD0YFE3nfk2As-HO_h0vq0qZ2jdg,556
+cdk_resources/stacks.py,sha256=Hl0gv9QR984Vh1xKhnZrkOIeBuTpHAXTZCFlw1uUzNc,2506
+cdk_resources/utils.py,sha256=DNEnVaxXb8OwV2rygWO9XdQ_-ambDK7eSGWIGeZ_kKs,1683
+cdk_resources/resources/__init__.py,sha256=ERmmOxz_9mUkIuccNbzUa5Y6gVLLVDdyc4cCxbCCUbY,20
+cdk_resources/resources/base.py,sha256=Q2R8odfTLuRDc0R9WXNoZIhkQdQWLSP1iYISA87ixq4,5894
+cdk_resources-0.2.4.dist-info/LICENSE,sha256=fTstYtc19wMA8VjHFA7ufou91DpCpGU73LRM_ef5rSA,1068
+cdk_resources-0.2.4.dist-info/METADATA,sha256=t3HXo9PSNBGOCRpPf5dWf_c4Y3hsh6ax2kFmcPcQMsg,1453
+cdk_resources-0.2.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cdk_resources-0.2.4.dist-info/top_level.txt,sha256=-qI25bsbvG6PNzpQezB_rUa7X6ObYSmfXraO3X4fSzM,14
+cdk_resources-0.2.4.dist-info/RECORD,,
