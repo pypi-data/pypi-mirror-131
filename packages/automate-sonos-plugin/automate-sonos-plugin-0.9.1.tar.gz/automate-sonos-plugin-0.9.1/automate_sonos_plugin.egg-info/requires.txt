@@ -1,0 +1,2 @@
+automate-home
+soco>=0.17
