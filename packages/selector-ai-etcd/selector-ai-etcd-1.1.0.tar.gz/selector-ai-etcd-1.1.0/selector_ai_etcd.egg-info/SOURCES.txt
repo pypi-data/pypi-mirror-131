@@ -1,0 +1,11 @@
+LICENSE
+setup.py
+selector_ai_etcd/__init__.py
+selector_ai_etcd/__main__.py
+selector_ai_etcd/selector_ai_etcd.py
+selector_ai_etcd.egg-info/PKG-INFO
+selector_ai_etcd.egg-info/SOURCES.txt
+selector_ai_etcd.egg-info/dependency_links.txt
+selector_ai_etcd.egg-info/entry_points.txt
+selector_ai_etcd.egg-info/requires.txt
+selector_ai_etcd.egg-info/top_level.txt
