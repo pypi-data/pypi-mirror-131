@@ -1,0 +1,1057 @@
+---
+mandatory: True
+question: What is your full name?
+fields:
+  - Name: employee
+---
+mandatory: True
+question: What is your full name of your employer?
+fields:
+  - Name: employer
+---
+mandatory: True
+question: |
+  Probation Period
+yesno: probation
+---
+mandatory: True
+code: |
+  if probation:
+    prob_period
+    prob_period_p
+    probationy = '☑'
+    probationn = '☐'
+  else:
+    probationn = '☑'
+    probationy = '☐'
+    prob_period = '__________________'
+    prob_period_p = '_* day(s) / week(s) / month(s)_'
+---
+question: |
+  Period
+fields:
+  - Period: prob_period
+  - Select time period: prob_period_p
+    choices:
+      - day(s)
+      - week(s)
+      - month(s)
+  
+---
+mandatory: True
+question: |
+  Commencement of employment
+fields: 
+  - Effective from: com_start
+    datatype: date
+  - Commencement period: commencement
+    choices:
+      - Until either party terminates the contract
+      - Fixed term contract
+---
+question: |
+  For how long and until what date?
+fields:
+  - Period: com_period
+  - Select time period: com_period_p
+    choices:
+      - days(s)
+      - week(s)
+      - month(s)
+      - year(s)
+  - End date: com_enddate
+    datatype: date
+---
+mandatory: True
+code: |
+  if commencement == 'Fixed term contract':
+    com_period
+    com_period_p
+    com_enddate
+    comftc = '☑'
+    comuntil = '☐'
+  else:
+    comuntil = '☑'
+    comftc = '☐'
+    com_period = '___________'
+    com_period_p = '*day(s)/week(s)/month(s)/year(s)'
+    com_enddate = '___________________________'
+---
+mandatory: True
+question: |
+  Position and section employed
+fields:
+  - Position: pos
+  - Section: sec
+---
+mandatory: True
+question: |
+  Place of work
+fields:
+  - Address: address
+---
+mandatory: True
+question: |
+  Working hours
+field: WH
+choices:
+  - Fixed
+  - Shift work, hours per day basis
+  - Shift work, total hours basis
+  - Others (Please specify)
+---
+mandatory: True
+code: |
+  if WH == 'Fixed':
+    days_per_week_F
+    hours_per_day_F
+    start_hour_F
+    end_hour_F
+    WHF = '☑'
+    WHSWHPD = '☐'
+    WHSWTH = '☐'
+    WHOt = '☐'
+    hours_per_day_SH = '_________________ '
+    start_hour_SH = '________________'
+    end_hour_SH = '________________'
+    days_per_week_TH = '_______'
+    total_hours_TH = '_______'
+    other_wh = '____________________________________________________________________'
+  elif WH == 'Shift work, hours per day basis':
+    hours_per_day_SH
+    start_hour_SH
+    end_hour_SH
+    WHF = '☐'
+    WHSWHPD = '☑'
+    WHSWTH = '☐'
+    WHOt = '☐'
+    days_per_week_F = '_________________ '
+    hours_per_day_F = '________________'
+    start_hour_F = '________________'
+    end_hour_F = '________________'
+    days_per_week_TH = '_______'
+    total_hours_TH = '_______'
+    other_wh = '____________________________________________________________________'
+  elif WH == 'Shift work, total hours basis':
+    days_per_week_TH
+    total_hours_TH
+    WHF = '☐'
+    WHSWHPD = '☐'
+    WHSWTH = '☑'
+    WHOt = '☐'
+    days_per_week_F = '_________________ '
+    hours_per_day_F = '________________'
+    start_hour_F = '________________'
+    end_hour_F = '________________'
+    hours_per_day_SH = '_________________ '
+    start_hour_SH = '________________'
+    end_hour_SH = '________________'
+    other_wh = '____________________________________________________________________'
+  elif WH == 'Others (Please specify)':
+    others_wh
+    WHF = '☐'
+    WHSWHPD = '☐'
+    WHSWTH = '☐'
+    WHOt = '☑'
+    days_per_week_F = '_________________ '
+    hours_per_day_F = '________________'
+    start_hour_F = '________________'
+    end_hour_F = '________________'
+    hours_per_day_SH = '_________________ '
+    start_hour_SH = '________________'
+    end_hour_SH = '________________'
+    days_per_week_TH = '_______'
+    total_hours_TH = '_______'
+---
+question: |
+  Fixed working hours
+fields:
+  - Days per week: days_per_week_F
+  - Hours per day: hours_per_day_F
+  - Starting hour: start_hour_F
+  - Ending hour: end_hour_F
+---
+question: |
+  Shift work, hours per day basis
+fields:
+  - Hours per day: hours_per_day_SH
+  - Starting hour: start_hour_SH
+  - Ending hour: end_hour_SH
+---
+question: |
+  Shift work, total hours basis
+fields:
+  - Days per week: days_per_week_TH
+  - Total hours: total_hours_TH
+---
+question: |
+  Please specify other working hour arrangements
+fields:
+  - Details: others_wh
+---
+mandatory: True
+question: |
+  Meal Break
+field: meal_break
+choices:
+  - Fixed
+  - Not-fixed
+---
+mandatory: True
+code: |
+  if meal_break == 'Fixed':
+    Meal_break_start_hour
+    Meal_break_end_hour
+    Meal_break_pay_f
+    Meal_break_nf = '______________'
+    Meal_break_moh = '_*minutes/hour(s) per day_'
+    Meal_break_pay_nf = '_*with / without_ '
+    mbf = '☑'
+    mbnf = '☐'
+  elif meal_break == 'Not-fixed':
+    Meal_break_nf
+    Meal_break_moh
+    Meal_break_pay_nf
+    Meal_break_start_hour = '______________'
+    Meal_break_end_hour = '______________'
+    Meal_break_pay_f = '_*with / without_ ' 
+    mbnf = '☑'
+    mbf = '☐'
+---
+question: |
+  Fixed meal hours
+fields:
+  - Meal Break Start hour: Meal_break_start_hour
+  - Meal Break End hour: Meal_break_end_hour
+  - With/without pay: Meal_break_pay_f
+    choices:
+      - with
+      - without
+---
+question: |
+  Not-fixed meal hours
+fields:
+  - Meal Break: Meal_break_nf
+  - Select interval: Meal_break_moh
+    choices:
+      - minutes per day
+      - hour(s) per day
+  - With/without pay: Meal_break_pay_nf
+    choices:
+      - with
+      - without
+---
+mandatory: True
+question: |
+  Meal Break is/is not counted as working hours
+fields:
+  - is/is not counted as working hours: MBWH
+    choices:
+      - is
+      - is not
+---
+mandatory: True
+question: |
+  Rest days
+field: rest_day
+choices:
+  - Set day
+  - Rotation
+---
+mandatory: True
+code: |
+  if rest_day == 'Set day':
+    eday
+    rest_day_pay_sd
+    RD_D = '______________'
+    RD_WM = '*week / month'
+    rest_day_pay_r = '_*with / without_ '
+    edaybool = '☑'
+    RDbool = '☐'
+  elif rest_day == 'Rotation':
+    RD_D
+    RD_WM
+    rest_day_pay_r
+    eday = '_________________'
+    rest_day_pay_sd = '_*with / without_ '
+    RDbool = '☑'
+    edaybool = '☐'
+---
+question: |
+  On every...
+fields:
+  - Set day: eday
+  - With/without pay: rest_day_pay_sd
+    choices:
+      - with
+      - without
+---
+question: |
+  On rotation...
+fields:
+  - Days: RD_D
+  - Per: RD_WM
+    choices:
+      - week
+      - month
+  - With/without pay: rest_day_pay_r
+    choices:
+      - with
+      - without
+---
+mandatory: True
+question: |
+  Wage rate
+fields:
+  - Income: base_wage_rate
+    datatype: currency
+  - Per: bwr_period
+    choices:
+      - hour
+      - day
+      - week
+      - month
+  - 'Select all that apply' : wage_rate
+    datatype: checkboxes
+    choices: 
+      - Meal allowance
+      - Travelling allowance
+      - Attendance allowance
+      - Others
+    none of the above: False
+---
+mandatory: True
+code: |
+  if wage_rate['Meal allowance']:
+    meal_Aincome
+    meal_Aperiod
+    meal_Abool = '☑'
+  else:
+    meal_Aincome = '___________________'
+    meal_Aperiod = '*day / week / month'
+    meal_Abool = '☐'
+  if wage_rate['Travelling allowance']:
+    travel_Aincome
+    travel_Aperiod
+    travel_Abool = '☑'
+  else:
+    travel_Aincome = '___________________'
+    travel_Aperiod = '*day / week / month'
+    travel_Abool = '☐'
+  if wage_rate['Attendance allowance']:
+    attend_Adet
+    attend_Abool = '☑'
+  else:
+    attend_Adet = '__________________________________________________'
+    attend_Abool = '☐'
+  if wage_rate['Others']:
+    other_Adet
+    other_Abool = '☑'
+  else:
+    other_Adet = '__________________________________________________'
+    other_Abool = '☐'
+---
+question: |
+  Meal allowance
+fields:
+  - Allowance: meal_Aincome
+    datatype: currency
+  - Per: meal_Aperiod
+    choices:
+      - day
+      - week
+      - month
+---
+question: |
+  Travel allowance
+fields:
+  - Allowance: travel_Aincome
+    datatype: currency
+  - Per: travel_Aperiod
+    choices:
+      - day
+      - week
+      - month
+---
+question: |
+  Attendance allowance
+fields:
+  - Payment criteria: attend_Adet
+---
+question: |
+  Other allowance
+fields:
+  - Payment criteria: other_Adet
+---
+mandatory: True
+question: |
+  Wage payment
+field: wage_payment
+choices:
+  - Every month
+  - Twice monthly
+  - Once every day/week
+---
+mandatory: True
+code: |
+  if wage_payment == 'Every month':
+    wage_payment_date_M
+    wage_period_start_M
+    wage_period_end_M
+    wpem = '☑'
+    wptm = '☐'
+    wpom = '☐'
+    wage_payment_date = '______'
+    wage_payment_date_1 = '______'
+    wage_period_start = '______'
+    wage_period_end = '______'
+    wage_period_start_1 = '______'
+    wage_period_end_1 = '______' 
+    wage_dw = '_______________'
+    wage_dw_period = '*day(s) / week(s)'
+    wage_period_start_dw = '_______________'
+    wage_period_end_dw = '_______________'
+  elif wage_payment == 'Twice monthly':
+    wage_payment_date
+    wage_payment_date_1
+    wage_period_start
+    wage_period_end
+    wage_period_start_1
+    wage_period_end_1
+    wpem = '☐'
+    wptm = '☑'
+    wpom = '☐'
+    wage_payment_date_M = '____________________'
+    wage_period_start_M = '______'
+    wage_period_end_M = '______'
+    wage_dw = '_______________'
+    wage_dw_period = '*day(s) / week(s)'
+    wage_period_start_dw = '_______________'
+    wage_period_end_dw = '_______________'
+  elif wage_payment == 'Once every day/week':
+    wage_dw
+    wage_dw_period
+    wage_period_start_dw
+    wage_period_end_dw
+    wpem = '☐'
+    wptm = '☐'
+    wpom = '☑'
+    wage_payment_date_M = '____________________'
+    wage_period_start_M = '______'
+    wage_period_end_M = '______'
+    wage_payment_date = '______'
+    wage_payment_date_1 = '______'
+    wage_period_start = '______'
+    wage_period_end = '______'
+    wage_period_start_1 = '______'
+    wage_period_end_1 = '______'
+
+---
+question: |
+  Monthly payment
+fields:
+  - Payment date: wage_payment_date_M
+    datatype: date
+  - Wage period start __th day of month: wage_period_start_M
+    datatype: integer
+  - Wage period end __th day of month: wage_period_end_M
+    datatype: integer
+---
+question: |
+  Twice monthly payment
+fields:
+  - Payment date 1: wage_payment_date
+    datatype: date
+  - Payment date 2: wage_payment_date_1
+    datatype: date
+  - Wage period 1 start __th day of month: wage_period_start
+    datatype: integer
+  - Wage period 1 end __th day of month: wage_period_end
+    datatype: integer
+  - Wage period 2 start __th day of following month: wage_period_start_1
+    datatype: integer
+  - Wage period 2 end __th day of following month: wage_period_end_1
+    datatype: integer
+---
+question: |
+  Once every day/week
+fields: 
+  - Once for every: wage_dw
+  - Per: wage_dw_period
+    choices:
+      - day(s)
+      - week(s)
+  - Wage period start: wage_period_start_dw
+    datatype: date
+  - Wage period end: wage_period_end_dw
+    datatype: date
+---
+mandatory: True
+question: |
+  Holidays
+fields:
+  - Select all that apply: holidays
+    datatype: checkboxes
+    choices:
+      - statutory holidays as specified in the Employment Ordinance
+      - public holidays
+      - plus other holidays (please specify)
+    none of the above: False
+---
+mandatory: True
+code: |
+  if holidays['statutory holidays as specified in the Employment Ordinance']:
+    sthol = '☑'
+  else:
+    sthol = '☐'
+  if holidays['public holidays']:
+    phhol = '☑'
+  else:
+    phhol = '☐'
+  if holidays['plus other holidays (please specify)']:
+    o_holiday
+    ohol = '☑'
+  else:
+    ohol = '☐'
+    o_holiday = '______________________________________________'
+---
+question: |
+  Other holidays
+fields:
+  - Holidays: o_holiday
+---
+mandatory: True
+question: |
+  Paid Annual Leave
+fields:
+  - Select all that apply: Paid_annual_leave
+    datatype: checkboxes
+    choices:
+      - The Employee is entitled to paid annual leave according to the provisions of the Employment Ordinance (ranging from 7 to 14 days depending on the Employee’s length of service).
+      - The Employee is entitled to the following paid annual leave according to the rules of the Employer (please specify)
+    none of the above: False
+---
+mandatory: True
+code: |
+  if Paid_annual_leave['The Employee is entitled to paid annual leave according to the provisions of the Employment Ordinance (ranging from 7 to 14 days depending on the Employee’s length of service).']:
+    PAL_b = '☑'
+  else:
+    PAL_b = '☐'
+  if Paid_annual_leave['The Employee is entitled to the following paid annual leave according to the rules of the Employer (please specify)']:
+    PAL_det
+    PAL_det_b = '☑'
+  else:
+    PAL_det_b = '☐'
+    PAL_det = '____________________________________'
+---
+question: |
+  Paid annual leave according to the rules of the Employer
+fields:
+  Details: PAL_det
+  datatype: area
+---
+mandatory: True
+question: |
+  Maternity Benefits
+fields:
+  - Select all that apply: maternity_ben
+    datatype: checkboxes
+    choices:
+      - The Employee is entitled to maternity leave and maternity leave pay according to the provisions of the Employment Ordinance.
+      - The Employee is entitled to the following maternity leave and maternity leave pay according to the rules of the Employer (please specify)
+    none of the above: False
+---
+mandatory: True
+code: |
+  if maternity_ben['The Employee is entitled to maternity leave and maternity leave pay according to the provisions of the Employment Ordinance.']:
+    MATBEN_b = '☑'
+  else:
+    MATBEN_b = '☐'
+  if maternity_ben['The Employee is entitled to the following maternity leave and maternity leave pay according to the rules of the Employer (please specify)']:
+    MATBEN_det
+    MATBEN_det_b = '☑'
+  else:
+    MATBEN_det_b = '☐'
+    MATBEN_det = '____________________________________'
+---
+question: |
+  Maternity Benefits according to the rules of the Employer
+fields:
+  Details: MATBEN_det
+  datatype: area
+---
+mandatory: True
+question: |
+  Paternity Benefits
+fields:
+  - Select all that apply: paternity_ben
+    datatype: checkboxes
+    choices:
+      - The Employee is entitled to paternity leave and paternity leave pay according to the provisions of the Employment Ordinance.
+      - The Employee is entitled to the following paternity leave and paternity leave pay according to the rules of the Employer (please specify)
+    none of the above: False
+---
+mandatory: True
+code: |
+  if paternity_ben['The Employee is entitled to paternity leave and paternity leave pay according to the provisions of the Employment Ordinance.']:
+    PATBEN_b = '☑'
+  else:
+    PATBEN_b = '☐'
+  if paternity_ben['The Employee is entitled to the following paternity leave and paternity leave pay according to the rules of the Employer (please specify)']: 
+    PATBEN_det
+    PATBEN_det_b = '☑'
+  else:
+    PATBEN_det_b = '☐'
+    PATBEN_det = '____________________________________'
+---
+question: |
+  Paternity Benefits according to the rules of the Employer
+fields:
+  Details: PATBEN_det
+  datatype: area
+---
+mandatory: True
+question: |
+  Sickness Allowance
+fields:
+  Select all that apply: sickness_all
+  datatype: checkboxes
+  choices:
+    - The Employee is entitled to sickness allowance according to the provisions of the Employment Ordinance 
+    - The Employee is entitled to sickness allowance according to the rules of the Employer under the following circumstances
+    - Others
+  none of the above: false
+---
+question: |
+  Sickness allowance according to rules of the employer
+fields:
+  - If the number of sick days is __ or below: sickd_num
+  - An appropriate medical certificate in support of sick leave is/is not required: bool_medcert
+    choices:
+      - is
+      - is not
+---
+question: |
+  Others
+fields:
+  Details: sick_o
+  datatype: area
+---
+mandatory: True
+code: |
+  if sickness_all['The Employee is entitled to sickness allowance according to the provisions of the Employment Ordinance']:
+    sick1_b = '☑'
+  else:
+    sick1_b = '☐'
+  if sickness_all['The Employee is entitled to sickness allowance according to the rules of the Employer under the following circumstances']:
+    sickd_num
+    bool_medcert
+    sick2_b = '☑'
+  else:
+    sick2_b = '☐'
+    sickd_num = '______'
+    bool_medcert = '*is / is not' 
+  if sickness_all['Others']:
+    sick_o
+    sick3_b = '☑'
+  else:
+    sick3_b = '☐'
+    sick_o = '_______________________________________________________'
+---
+mandatory: True
+question: |
+  Termination of contract
+subquestion: |
+  A notice period of ___ day(s)/week(s)/month(s)
+fields: 
+  - number: notice_period
+  - 'Select time period': termcon_interval
+    choices:
+      - day(s)
+      - week(s)
+      - month(s)
+---
+mandatory: True
+question: |
+  End of year payment
+fields:
+  - An amount of: EOYpay
+    datatype: currency
+  - or equivalent to ___ months: EOYwageq
+  - of ____ wages: bnEOY
+    choices:
+      - basic
+      - normal
+  - upon completion of each: EOYcom
+    choices:
+      - calendar year
+      - specified period
+  - Payment is to be made within ____ days before commencement of the following calendar year: EOYpayday
+---
+mandatory: True
+code: |
+  if EOYcom == 'calendar year':
+    EOYcyb = '☑'
+  else:
+    EOYcyb = '☐'
+  if EOYcom == 'specified period':
+    EOYcomfrom
+    EOYcomto
+    EOYspb = '☑'
+  else:
+    EOYspb = '☐'
+    EOYcomfrom = '_______________'
+    EOYcomto = '_______________'
+---
+question: |
+  Please state the specified period
+fields:
+  - From: EOYcomfrom
+    datatype: date
+  - To: EOYcomto
+    datatype: date
+---
+mandatory: True
+question: |
+  Mandatory Provident Fund Scheme
+subquestion: |
+  The Employer and the Employee are to make contributions towards the Mandatory Provident Fund Scheme in accordance with the requirements specified in the Mandatory Provident Fund Schemes Ordinance.
+  
+  In addition to the mandatory contribution
+fields:
+  - Please select all that apply: MPF
+    datatype: checkboxes
+    choices:
+    - Employer provides monthly voluntary contribution to the Mandatory Provident Fund Scheme
+    - Employee provides monthly voluntary contribution to the Mandatory Provident Fund Scheme   
+    none of the above: False
+---
+mandatory: True
+code: |
+  if MPF['Employer provides monthly voluntary contribution to the Mandatory Provident Fund Scheme']:
+    MPFer_b = '☑'
+    MPFer
+  else:
+    MPFer_b = '☐'
+    MPFer = '________________'
+  if MPF['Employee provides monthly voluntary contribution to the Mandatory Provident Fund Scheme']:
+    MPFee
+    MPFee_b = '☑'
+  else:
+    MPFee_b = '☐'
+    MPFee = '________________'
+---
+question: |
+  Employer contribution to Mandatory Provident Fund Scheme
+fields:
+  - in the amount of: MPFer
+    datatype: currency
+---
+question: |
+  Employee contribution to Mandatory Provident Fund Scheme
+fields:
+  - in the amount of: MPFee
+    datatype: currency
+---
+mandatory: True
+question: |
+  Work arrangements in times of Tropical Cyclone Warning
+fields:
+  - Requirement: TCWreq
+    choices:
+      - The employee is required to work
+      - The employee is not required to work
+---
+question: |
+  The employee is required to work under Tropical Cyclone Warning
+subquestion: |
+  In addition to normal wages
+fields:
+  - The employee is entitled to a duty allowance of: TCWallow
+    choices:
+    - HKD
+    - '% of normal wages'
+  - ___ for each hour worked: TCWpayoption
+---
+question: |
+  In case staff on the next shift are unable to report for duty at workplaces when T8 or higher is in force, or due to practical difficulties and the Employer requests the Employee of the preceding shift to continue to work due to operational requirements
+subquestion: |
+  In addition to normal wages
+fields:
+  - The employee is entitled to a duty allowance of: TCWallowb
+    choices:
+    - HKD
+    - '% of normal wages'
+  - ___ for each hour of the extended service: TCWpayoptionb
+
+---
+question: |
+  Transport services
+fields:
+  - The employer ____ transport services to the Employee when T8 or higher is in force: boolTCWtrans
+    choices:
+    - provides
+    - does not provide
+  - The employee is entitled to a travelling allowance of: TCWallowc
+    datatype: currency
+---
+question: |
+  The employee is not required to work when T8 or higher is in force and wages will not be affected during the period
+
+subquestion: |
+  If the government has not made an "extreme conditions" announcement
+  
+fields:
+  - The employee is required to resume duty within ___ hours as far as practicable: TCWresume
+  - If the T8 is cancelled not less than ___ hours before the end of working hours: TCWresumenl
+---
+mandatory: True
+code: |
+  if TCWreq == 'The employee is required to work':
+    TCWallow
+    TCWpayoption
+    TCWallowb
+    TCWpayoptionb
+    boolTCWtrans
+    TCWallowc
+    TCWb1 = '☑'
+    TCWb2 = '☐'
+    TCWresume = '___________'
+    TCWresumenl = '___________'
+  elif TCWreq == 'The employee is not required to work':
+    TCWresume
+    TCWresumenl
+    TCWb1 = '☐'
+    TCWb2 = '☑'
+    TCWallow = '___________'
+    TCWpayoption = '___________'
+    TCWallowb = '___________'
+    TCWpayoptionb = '___________'
+    boolTCWtrans = '*provides / does not provide '
+    TCWallowc = '___________'
+---
+mandatory: True
+question: |
+  Work arrangements in times of "Extreme Conditions" after Super Typhoons
+fields:
+  - Requirement: STreq
+    choices:
+      - The employee is required to work
+      - The employee is not required to work
+---
+question: |
+  The employee is required to work under "extreme conditions"
+subquestion: |
+  In addition to normal wages
+fields:
+  - The employee is entitled to a duty allowance of: STallow
+    choices:
+    - HKD
+    - '% of normal wages'
+  - ___ for each hour worked: STpayoption
+---
+question: |
+  In case staff on the next shift are unable to report for duty at workplaces when "extreme conditions" exist, or due to practical difficulties and the Employer requests the Employee of the preceding shift to continue to work due to operational requirements
+subquestion: |
+  In addition to normal wages
+fields:
+  - The employee is entitled to a duty allowance of: STallowb
+    choices:
+    - HKD
+    - '% of normal wages'
+  - ___ for each hour of the extended service: STpayoptionb
+
+---
+question: |
+  Transport services
+fields:
+  - The employer ____ transport services to the Employee when "extreme conditions" exist: boolSTtrans
+    choices:
+    - provides
+    - does not provide
+  - The employee is entitled to a travelling allowance of: STallowc
+    datatype: currency
+---
+question: |
+  The employee is not required to work when when “extreme conditions” exist upon the “extreme conditions” announcement by the Government before T8 is replaced with T3, and wages will not be affected during the period
+
+subquestion: |
+  If the government has not made an "extreme conditions" announcement
+  
+fields:
+  - The employee is required to resume duty within ___ hours as far as practicable: STresume
+  - If the T8 is cancelled not less than ___ hours before the end of working hours: STresumenl
+---
+mandatory: True
+code: |
+  if STreq == 'The employee is required to work':
+    STallow
+    STpayoption
+    STallowb
+    STpayoptionb
+    boolSTtrans
+    STallowc
+    STb1 = '☑'
+    STb2 = '☐'
+    STresume = '___________'
+    STresumenl = '___________'
+  elif STreq == 'The employee is not required to work':
+    STresume
+    STresumenl
+    STb1 = '☐'
+    STb2 = '☑'
+    STallow = '___________'
+    STpayoption = '___________'
+    STallowb = '___________'
+    STpayoptionb = '___________'
+    boolSTtrans = '*provides / does not provide '
+    STallowc = '___________'
+---
+mandatory: True
+question: |
+  Work arrangements in times of Black rainstorm Warning Signal
+fields:
+  - Requirement: BRWreq
+    choices:
+      - The employee is required to work
+      - The employee is not required to work
+---
+question: |
+  The employee is required to work under Black Rainstorm Warning Signal
+subquestion: |
+  In addition to normal wages
+fields:
+  - The employee is entitled to a duty allowance of: BRWallow
+    choices:
+    - HKD
+    - '% of normal wages'
+  - ___ for each hour worked: BRWpayoption
+---
+question: |
+  In case staff on the next shift are unable to report for duty at workplaces when Black Rainstorm Warning Signal is in force, or due to practical difficulties and the Employer requests the Employee of the preceding shift to continue to work due to operational requirements
+subquestion: |
+  In addition to normal wages
+fields:
+  - The employee is entitled to a duty allowance of: BRWallowb
+    choices:
+    - HKD
+    - '% of normal wages'
+  - ___ for each hour of the extended service: BRWpayoptionb
+
+---
+question: |
+  Transport services
+fields:
+  - The employer ____ transport services to the Employee when Black Rainstorm Warning Signal is in force: boolBRWtrans
+    choices:
+    - provides
+    - does not provide
+  - The employee is entitled to a travelling allowance of: BRWallowc
+    datatype: currency
+---
+question: |
+  The employee is not required to work when Black Rainstorm Warning Signal is in force and wages will not be affected during the period
+
+subquestion: |
+  If the government has not made an Black Rainstorm Warning Signal announcement
+  
+fields:
+  - The employee is required to resume duty within ___ hours as far as practicable: BRWresume
+  - If the Black Rainstorm Warning Signal is cancelled not less than ___ hours before the end of working hours: BRWresumenl
+---
+mandatory: True
+code: |
+  if BRWreq == 'The employee is required to work':
+    BRWallow
+    BRWpayoption
+    BRWallowb
+    BRWpayoptionb
+    boolBRWtrans
+    BRWallowc
+    BRWb1 = '☑'
+    BRWb2 = '☐'
+    BRWresume = '___________'
+    BRWresumenl = '___________'
+  elif BRWreq == 'The employee is not required to work':
+    BRWresume
+    BRWresumenl
+    BRWb1 = '☐'
+    BRWb2 = '☑'
+    BRWallow = '___________'
+    BRWpayoption = '___________'
+    BRWallowb = '___________'
+    BRWpayoptionb = '___________'
+    boolBRWtrans = '*provides / does not provide'
+    BRWallowc = '___________'
+---
+mandatory: True
+question: |
+  Others
+subquestion: |
+  The Employee is entitled to all other rights, benefits or protection under the Employment Ordinance, the Minimum Wage Ordinance, the Employees’ Compensation Ordinance and any other relevant Ordinances.
+
+fields:
+  - (If applicable) Additional rules and regulations, rights, benefits or protection promulgated: handbook
+    choices: 
+    - The company handbook
+    - Others
+---
+question:
+  Please specify origin of Additional rules and regulations, rights, benefits or protection promulgated forming part of this contract
+fields:
+  - Article: otherother
+---
+mandatory: True
+code: |
+  if handbook == 'Others':
+    otherother
+  else:
+    otherother = 'The company handbook'
+---
+mandatory: True
+question: |
+  Employee signature
+signature: emee_sig
+under: |
+  ${ emee_name }
+---
+mandatory: True
+question: |
+  Employer signature
+signature: emer_sig
+under: |
+  ${ emer_name }
+---
+question: |
+  Employee 
+fields:
+  - Full name: emee_name
+  - HKID no.: emee_HKID
+  - Signing date: emee_date
+    datatype: date
+---
+question: |
+  Employer
+fields:
+  - Full name: emer_name
+  - Position held: emer_position
+  - Signing date: emer_date
+    datatype: date
+---
+question: This is your sample employment contract
+attachment:
+  name: EC
+  filename: EC
+  docx template file: ECsample.docx
+  field code:
+    - date: today()
+buttons:
+  - Exit: exit
+  
+mandatory: True
+---
+  
+  
+
+
+
