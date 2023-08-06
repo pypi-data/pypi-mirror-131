@@ -1,0 +1,7 @@
+requests
+pandas
+suds-community
+python-dateutil
+beautifulsoup4
+lxml
+pillow
