@@ -1,0 +1,11 @@
+fucc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fucc/inductive_step.py,sha256=wqsDbNZN058Kz5JiJTyg8dkeCY-FwwTz-rE4Kh6oJKM,2707
+fucc/metrics.py,sha256=HsASs6PuOVZFfRwMfEGxeY9MQW81-cHDRwoY6jli6AU,7106
+fucc/model_selection.py,sha256=LfjDAgPY04fGA5l75qDa201rPdegJySVA4yP4POMmik,3094
+fucc/pagerank.py,sha256=dDkSrTKyYLkg95elt20diHHuZhSQxKdj9KxzeB6ug5Y,13249
+fucc/utils.py,sha256=txShBQB2-yJtYp-TdKMzbMWxCoPaGfT3t9J2oKcuhF0,2389
+fucc-0.0.8.dist-info/LICENSE,sha256=cudiWb1V4VUq3huRgi6oplFu4cYhuKPkha5H_teznG4,1094
+fucc-0.0.8.dist-info/METADATA,sha256=uVSqKbYgOJ5G0IL0EjbvMUmw--8GB4VlAdls4U0uHEI,650
+fucc-0.0.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fucc-0.0.8.dist-info/top_level.txt,sha256=3Q8wES7OLIUbABlA5uB9F_LdiSzY1iJmmwj9dhHJMJ8,5
+fucc-0.0.8.dist-info/RECORD,,
