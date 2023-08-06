@@ -1,0 +1,41 @@
+[tool.black]
+line-length = 100
+skip-string-normalization = true
+
+[tool.poetry]
+name = "lintmon"
+version = "0.1.1"
+description = "Monitor project files in the background for lint issues and flag issues in your prompt"
+authors = ["David Park <david@greenparksoftware.co.uk>"]
+license = "Apache-2.0"
+repository = "https://github.com/daphtdazz/lintmon"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent"
+]
+
+packages = [
+    { include = "lintmon" }
+]
+
+[tool.poetry.scripts]
+lintmon-status = "lintmon:status"
+lintmon-start = "lintmon:start"
+lintmon-stop = "lintmon:stop"
+lintmon-run-all = "lintmon:run_all"
+lintmon-status-prompt = "lintmon:status_prompt"
+lintmond = "lintmon:lintmond"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+psutil = ">=5.8.0"
+PyYAML = ">=6.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = ">=4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
