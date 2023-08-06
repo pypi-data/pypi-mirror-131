@@ -1,0 +1,43 @@
+CREATE TABLE IF NOT EXISTS ingredient
+(
+    ingredient_id   INTEGER PRIMARY KEY,
+    ingredient_name VARCHAR
+        CONSTRAINT u_ingredient_name UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS recipe
+(
+    recipe_id         INTEGER PRIMARY KEY,
+    recipe_name       VARCHAR,
+    external_location VARCHAR,
+    notes             VARCHAR,
+    CONSTRAINT u_recipe_location UNIQUE (recipe_name, external_location)
+);
+
+CREATE TABLE IF NOT EXISTS recipe_ingredients
+(
+    relationship  INTEGER PRIMARY KEY,
+    recipe_id     INTEGER
+        CONSTRAINT fk_recipe_id
+            REFERENCES recipe (recipe_id)
+            ON DELETE CASCADE,
+    ingredient_id INTEGER
+        CONSTRAINT fk_ingredient_id
+            REFERENCES ingredient (ingredient_id)
+            ON DELETE CASCADE
+);
+
+INSERT INTO ingredient (ingredient_name)
+VALUES ('Celery'),
+       ('Cumin'),
+       ('Kale'),
+       ('Pepper (Black)'),
+       ('Pepper (Red)'),
+       ('Pepper (White)'),
+       ('Peppers (Green)'),
+       ('Peppers (Red)'),
+       ('Rice (Brown)'),
+       ('Rice (White)'),
+       ('Spinach'),
+       ('Tofu')
+ON CONFLICT DO NOTHING;
