@@ -1,0 +1,25 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "pybancodobrasil"
+author = "Guilherme Fabrin Franco"
+author-email = "guilherme.fabrin@gmail.com"
+home-page = "https://github.com/guifabrin/pybancodobrasil"
+classifiers = [
+    "Programming Language :: Python",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+description-file = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3"
+requests = ">=2.26.0"
+wget = ">=3.2"
+jsmin = ">=3.0.0"
+selenium = ">=4.1.0"
+
+[tool.poetry.dev-dependencies]
+setuptools = ">=59.5.0"
