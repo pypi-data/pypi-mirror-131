@@ -1,0 +1,3 @@
+[console_scripts]
+ptmchat = ptmchat_develop.ptmchat_entry:main
+
