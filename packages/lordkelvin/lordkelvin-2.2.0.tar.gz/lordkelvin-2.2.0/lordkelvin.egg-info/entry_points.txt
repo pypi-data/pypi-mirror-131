@@ -1,0 +1,3 @@
+[console_scripts]
+lordkelvin = lordkelvin.__main__:main
+
