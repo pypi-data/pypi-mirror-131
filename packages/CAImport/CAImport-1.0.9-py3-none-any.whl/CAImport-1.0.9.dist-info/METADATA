@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: CAImport
+Version: 1.0.9
+Summary: Coding Around simple tools for python
+Home-page: https://github.com/codingaround/CAImport.git
+Author: codingaround
+Author-email: codingaround90s@gmail.com
+License: GNU
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: grequests
+
+# CAImport
+Coding Around simple tools for python
+
+
