@@ -1,0 +1,12 @@
+{
+    "format": "v1",
+    "major": "0",
+    "minor": "7",
+    "patch": "119",
+    "pre_release": ["rel", "20211216"],
+    "build_info": ["c3709f5bbc"],
+    "version": "0.7.119-rel.20211216+c3709f5bbc",
+    "dockertag": "0.7.119-rel.20211216-c3709f5bbc",
+    "python": "0.7.119",
+    "commit_hash": "c3709f5bbcad98d701d8"
+}
