@@ -1,0 +1,12 @@
+examples/services.py,sha256=bI66mHCic260qB8lgaFEuCToVtKruL0l5WdIF4L7xFY,1979
+filter_test.md,sha256=G3CrQrOiW5XJITzCOlTLVWdVdgnYoKJ-kORUwzwbs2Y,511
+LICENSE,sha256=u_DUBbV3GuH-38c7taU8Biihk6NNU3mCK3y4oOAjec8,2908
+pypandoc/__init__.py,sha256=wV8HGZeFyGGoO4aLZl0lLmyPkl18M59zz0i3Ai9hmDs,25862
+pypandoc/pandoc_download.py,sha256=9qi6ApY7al3ftZb-7sMC9HBy4KG9v1svREWdpZqNodw,9097
+pypandoc/py3compat.py,sha256=5pCctRJoO7TsRM5-1lRgDLnq281ToTKm6dUBHhfZ31I,1916
+README.md,sha256=PXJsf5aJ7oFLiOIBnsKOHsVVWDKoVh-WZ4Z6A1xPgY0,12173
+tests.py,sha256=TzyemtB50i0j5b36jPHpCmLF4mB2kITjfnKbduNbpMU,18100
+pypandoc-1.7.1.dist-info/LICENSE,sha256=u_DUBbV3GuH-38c7taU8Biihk6NNU3mCK3y4oOAjec8,2908
+pypandoc-1.7.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pypandoc-1.7.1.dist-info/METADATA,sha256=o10Yr6qJA8zW49LOkD95xxoeM2NyuwlBy-8H8NMh1NI,13622
+pypandoc-1.7.1.dist-info/RECORD,,
