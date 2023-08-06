@@ -1,0 +1,10 @@
+shapeObject/MergeCommonShapes.py,sha256=VcclFXWDrazjNSgRPNNf7UIa4O6VILhtFfmvz7zUQEQ,2226
+shapeObject/ShapeObject.py,sha256=xAPTA5iKhoMn087ZgNzEaZ91DaAHO75yLyzodt0-B9E,11182
+shapeObject/__init__.py,sha256=iYWKDvmcVvIPtiyKnpCVGxYIQBRBLJx_iAz7ty-sLqI,216
+shapeObject/supports.py,sha256=XBwOG168xot36PaJLGAa8WWVWHCE-yQkKRhOgN3Rvfo,565
+shapeObject/write_shapefile.py,sha256=LedWAa_-lXu1OCEjj5Pzv60cLMUWLvbkpg1VUTnO1Fc,2229
+shapeObject-0.5.0.dist-info/LICENSE,sha256=m6Hmim3NNA-_y97X6yarvaf6IUerwLQFF3hlCXsc0KI,1090
+shapeObject-0.5.0.dist-info/METADATA,sha256=aRZdAcD8IkVcqh-_Zbfzm4gIzwkO2SUiJ0diU6JunEc,1384
+shapeObject-0.5.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+shapeObject-0.5.0.dist-info/top_level.txt,sha256=b1DV7iD2CyGNJ9ilmqFY5c-JTzkKYMazk1tBBMNAXIA,12
+shapeObject-0.5.0.dist-info/RECORD,,
