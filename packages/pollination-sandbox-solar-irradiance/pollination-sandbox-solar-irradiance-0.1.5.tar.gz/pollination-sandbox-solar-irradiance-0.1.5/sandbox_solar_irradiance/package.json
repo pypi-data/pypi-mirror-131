@@ -1,0 +1,262 @@
+{
+  "type": "RecipeInterface",
+  "annotations": {},
+  "api_version": "v1beta1",
+  "metadata": {
+    "type": "MetaData",
+    "annotations": {},
+    "name": "sandbox-solar-irradiance",
+    "tag": "0.1.1",
+    "app_version": null,
+    "keywords": [
+      "honeybee",
+      "radiance",
+      "ladybug-tools",
+      "daylight",
+      "sandbox-solar-irradiance"
+    ],
+    "maintainers": [
+      {
+        "type": "Maintainer",
+        "annotations": {},
+        "name": "mostapha",
+        "email": "mostapha@ladybug.tools"
+      },
+      {
+        "type": "Maintainer",
+        "annotations": {},
+        "name": "ladybug-tools",
+        "email": "info@ladybug.tools"
+      }
+    ],
+    "home": "https://github.com/pollination/sandbox-solar-irradiance",
+    "sources": [
+      "https://hub.docker.com/r/ladybugtools/honeybee-radiance"
+    ],
+    "icon": "https://raw.githubusercontent.com/ladybug-tools/artwork/master/icons_components/ladybug/png/incidentrad.png",
+    "deprecated": null,
+    "description": "A recipe to assess average solar irradiance beneath Sandbox Solar agrivoltaic panels.",
+    "license": {
+      "type": "License",
+      "annotations": {},
+      "name": "PolyForm Shield License 1.0.0",
+      "url": "https://polyformproject.org/wp-content/uploads/2020/06/PolyForm-Shield-1.0.0.txt"
+    }
+  },
+  "source": null,
+  "inputs": [
+    {
+      "type": "DAGFolderInput",
+      "annotations": {},
+      "name": "model-folder",
+      "description": "A folder containing the HBJSON models to be simulated.",
+      "default": null,
+      "alias": [],
+      "required": true,
+      "spec": null
+    },
+    {
+      "type": "DAGFileInput",
+      "annotations": {},
+      "name": "models",
+      "description": "A JSON array of the names for the HBJSON models to be simulated.",
+      "default": null,
+      "alias": [],
+      "required": true,
+      "spec": null,
+      "extensions": null
+    },
+    {
+      "type": "DAGNumberInput",
+      "annotations": {},
+      "name": "north",
+      "description": "A number for rotation from north.",
+      "default": 0.0,
+      "alias": [
+        {
+          "type": "DAGGenericInputAlias",
+          "annotations": {},
+          "name": "north",
+          "description": "A number between -360 and 360 for the counterclockwise difference between the North and the positive Y-axis in degrees. This can also be Vector for the direction to North. (Default: 0).",
+          "platform": [
+            "grasshopper"
+          ],
+          "handler": [
+            {
+              "type": "IOAliasHandler",
+              "annotations": {},
+              "language": "python",
+              "module": "pollination_handlers.inputs.north",
+              "function": "north_vector_to_angle",
+              "index": 0
+            }
+          ],
+          "default": "0",
+          "required": false,
+          "spec": null
+        }
+      ],
+      "required": false,
+      "spec": {
+        "type": "number",
+        "minimum": -360,
+        "maximum": 360
+      }
+    },
+    {
+      "type": "DAGStringInput",
+      "annotations": {},
+      "name": "radiance-parameters",
+      "description": "Radiance parameters for ray tracing.",
+      "default": "-ad 5000 -lw 2e-05",
+      "alias": [
+        {
+          "type": "DAGStringInputAlias",
+          "annotations": {},
+          "name": "radiance_par",
+          "description": "Text for the radiance parameters to be used for ray tracing. (Default: -ab 2 -ad 5000 -lw 2e-05).",
+          "platform": [
+            "grasshopper"
+          ],
+          "handler": [],
+          "default": "-ab 2 -ad 5000 -lw 2e-05",
+          "required": false,
+          "spec": null
+        }
+      ],
+      "required": false,
+      "spec": null
+    },
+    {
+      "type": "DAGIntegerInput",
+      "annotations": {},
+      "name": "tracking-increment",
+      "description": "An integer for the increment angle of each state in degrees.",
+      "default": 5,
+      "alias": [],
+      "required": false,
+      "spec": {
+        "type": "integer",
+        "maximum": 90,
+        "minimum": 1
+      }
+    },
+    {
+      "type": "DAGFileInput",
+      "annotations": {},
+      "name": "wea",
+      "description": "Wea file.",
+      "default": null,
+      "alias": [
+        {
+          "type": "DAGGenericInputAlias",
+          "annotations": {},
+          "name": "wea",
+          "description": "A Wea object produced from the Wea components that are under the Light Sources tab. This can also be the path to a .wea or a .epw file.",
+          "platform": [
+            "grasshopper"
+          ],
+          "handler": [
+            {
+              "type": "IOAliasHandler",
+              "annotations": {},
+              "language": "python",
+              "module": "pollination_handlers.inputs.wea",
+              "function": "wea_handler",
+              "index": 0
+            }
+          ],
+          "default": null,
+          "required": true,
+          "spec": null
+        }
+      ],
+      "required": true,
+      "spec": null,
+      "extensions": [
+        "wea"
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "type": "DAGFolderOutput",
+      "annotations": {},
+      "name": "average-irradiance",
+      "description": "The average irradiance in W/m2 for each sensor over the Wea time period.",
+      "from": {
+        "type": "FolderReference",
+        "annotations": {},
+        "path": "metrics/average_irradiance"
+      },
+      "alias": [
+        {
+          "type": "DAGGenericOutputAlias",
+          "annotations": {},
+          "name": "avg_irr",
+          "description": "The average irradiance in W/m2 for each sensor over the Wea time period.",
+          "platform": [
+            "grasshopper"
+          ],
+          "handler": [
+            {
+              "type": "IOAliasHandler",
+              "annotations": {},
+              "language": "python",
+              "module": "pollination_handlers.outputs.daylight",
+              "function": "read_pit_from_folder",
+              "index": 0
+            }
+          ]
+        }
+      ],
+      "required": true
+    },
+    {
+      "type": "DAGFolderOutput",
+      "annotations": {},
+      "name": "cumulative-radiation",
+      "description": "The cumulative radiation in kWh/m2 over the Wea time period.",
+      "from": {
+        "type": "FolderReference",
+        "annotations": {},
+        "path": "metrics/cumulative_radiation"
+      },
+      "alias": [
+        {
+          "type": "DAGGenericOutputAlias",
+          "annotations": {},
+          "name": "radiation",
+          "description": "The cumulative radiation in kWh/m2 over the Wea time period.",
+          "platform": [
+            "grasshopper"
+          ],
+          "handler": [
+            {
+              "type": "IOAliasHandler",
+              "annotations": {},
+              "language": "python",
+              "module": "pollination_handlers.outputs.daylight",
+              "function": "read_pit_from_folder",
+              "index": 0
+            }
+          ]
+        }
+      ],
+      "required": true
+    },
+    {
+      "type": "DAGFolderOutput",
+      "annotations": {},
+      "name": "results",
+      "description": "Folder with raw result files (.ill) that contain matrices of total irradiance.",
+      "from": {
+        "type": "FolderReference",
+        "annotations": {},
+        "path": "results"
+      },
+      "alias": [],
+      "required": true
+    }
+  ]
+}
