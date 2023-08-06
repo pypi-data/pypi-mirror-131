@@ -1,0 +1,83 @@
+#section-leadimage {
+    float: right;
+}
+
+#section-leadimage img {
+    height: 100px;
+    width: auto;
+}
+
+.section-htmlsection div.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25% !important;
+}
+
+.section-htmlsection div.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section .carousel-caption a {
+    display: block;
+    background-color: var(--bs-dark);
+    opacity: 0.8;
+    color: var(--bs-white);
+    text-decoration: none;
+    padding: 5px;
+}
+
+.section .carousel-caption p {
+    margin: 0px;
+}
+
+.background-image-fixed {
+    background-attachment: fixed;
+}
+
+table#form-widgets-cards thead {
+    display: none;
+}
+
+table#form-widgets-cards tr {
+    border: 2px solid #444;
+
+}
+
+table#form-widgets-cards td.datagridwidget-cell {
+    display: block;
+}
+
+table#form-widgets-cards td.datagridwidget-cell.cell-1 {
+    width: 75%;
+}
+
+table#form-widgets-cards td.datagridwidget-cell.cell-2 {
+    width: 75%;
+}
+
+table#form-widgets-cards td.datagridwidget-cell.cell-3 {
+    width: 100%;
+}
+
+table#form-widgets-cards td.datagridwidget-cell.cell-4 {
+    width: 50%;
+}
+
+table#form-widgets-cards td.datagridwidget-cell.cell-5 {
+    width: 50%;
+}
+
+table#form-widgets-cards td.datagridwidget-cell textarea {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+table#form-widgets-cards .select2-container {
+    margin-bottom: 0;
+    display: block;
+}
