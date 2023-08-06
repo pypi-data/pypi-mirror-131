@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: logistics
+Version: 0.0.1
+Summary: University North library.
+Home-page: http://github.com/dkundih/unin
+Author: David Kundih
+Author-email: kundihdavid@gmail.com
+Maintainer: David Kundih
+Maintainer-email: kundihdavid@gmail.com
+License: Apache Software License
+Download-URL: https://github.com/dkundih/unin/archive/refs/tags/v0.0.1.tar.gz
+Project-URL: Documentation, https://github.com/dkundih/unin/blob/master/README.md
+Project-URL: Source Code, https://github.com/dkundih/unin/tree/master/unin
+Description: **Logistics Python Package**
+        
+        TBD.
+        
+        CHANGELOG
+        ==========
+        
+        0.0.1 (22/09/2021)
+        - initial release.
+Keywords: data science,machine learning,data manipulation,artificial intelligence,AI,unin,duality,duality-py,duality.py
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Operating System :: Microsoft :: Windows :: Windows 7
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8.1
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Database
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Classifier: Topic :: Office/Business :: Financial :: Point-Of-Sale
+Classifier: Topic :: Office/Business :: Financial :: Spreadsheet
+Description-Content-Type: text/markdown
