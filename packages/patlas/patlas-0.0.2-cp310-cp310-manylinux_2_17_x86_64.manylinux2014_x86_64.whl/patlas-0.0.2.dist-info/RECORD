@@ -1,0 +1,9 @@
+patlas.cpython-310-x86_64-linux-gnu.so,sha256=TYt455DoncgZlNms1SEYCCgrJg-SfvZ2TC2VDBBjMB8,2775472
+patlas-0.0.2.dist-info/METADATA,sha256=KnC8dhG3kvMxhaCereIV8Eveyh4Q-SxWhTRVTFLn6O8,2196
+patlas-0.0.2.dist-info/WHEEL,sha256=6B0vZ-Dd34LpGZN_4Y_GbBSl1fSb7keGXRzuHUFcOBA,152
+patlas-0.0.2.dist-info/RECORD,,
+patlas-0.0.2.dist-info/LICENSE,sha256=0Y3W1E_EWuPBRF-mtw1IWkREOKJwcd39wYx52GbqEy0,1075
+patlas-0.0.2.dist-info/top_level.txt,sha256=h8TmeZ8fJaA8478mSDh8Pfon1FGF5PFwBuiR1SgNcrU,15
+patlas-0.0.2.dist-info/entry_points.txt,sha256=meQAnUbgECnMDutd_3EuMsAFwUN74Rvnm-JdIGdOY3k,46
+_patlas/util.py,sha256=fL3TC6McaeUp93cJCoAGBTb9LAN3NFoT-vAdG7o7sPE,1083
+_patlas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
