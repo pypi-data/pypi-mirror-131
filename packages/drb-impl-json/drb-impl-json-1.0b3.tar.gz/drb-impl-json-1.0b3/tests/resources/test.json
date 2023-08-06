@@ -1,0 +1,13 @@
+{
+  "species": "Dog",
+  "breed": "Labrador Retriever",
+  "age": 6,
+  "traits": {
+    "eyeColor": "brown",
+    "coatColor": "yellow",
+    "weight": {
+      "value": "50",
+      "unite": "Kg"
+    }
+  }
+}
