@@ -1,0 +1,10 @@
+verysimplemodule/__init__.py,sha256=0vod57BKTwjarPow2-PQAJQ9sjcXnZUqS-Qb1hw-RPo,50
+verysimplemodule/add.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verysimplemodule/subtract.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verysimplemodule/extras/__init__.py,sha256=l49juQDOHYBZfg4SQKzzV8W5JKMWco4Av2MaDy4FjkM,56
+verysimplemodule/extras/divide.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verysimplemodule/extras/multiply.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+niall1994firstpackage-0.0.1.dist-info/METADATA,sha256=TmuJSqqv1kh1d42eG83UcHCWSBmyIoshwC_Q_Roxev8,589
+niall1994firstpackage-0.0.1.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+niall1994firstpackage-0.0.1.dist-info/top_level.txt,sha256=O7jJdRhhd2YuNuu2k3zZJfWL4reFylFWj3ab29lrPU8,17
+niall1994firstpackage-0.0.1.dist-info/RECORD,,
