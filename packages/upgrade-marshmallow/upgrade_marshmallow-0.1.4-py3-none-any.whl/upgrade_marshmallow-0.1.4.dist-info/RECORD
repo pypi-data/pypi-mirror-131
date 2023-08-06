@@ -1,0 +1,13 @@
+upgrade_marshmallow/__init__.py,sha256=aBEbDvx4LMg8A1TJJR6dEHu8rQODVin528hLS_EDvuA,22
+upgrade_marshmallow/astpp.py,sha256=heu4CQWdYBkkT2y0TMw7uX9jQ74kXpaVLLVv2-0r1qI,3282
+upgrade_marshmallow/cli.py,sha256=swql6DQkvTH5D_OrFY_S3roWU4xjGavptf55F8-oRx0,736
+upgrade_marshmallow/peek.py,sha256=7M_LF9hW2zsYbQf3XEM4Fnrci4aYKV0rLkRQh7OZa0o,1010
+upgrade_marshmallow/testing.py,sha256=hwJqFDQiD32Vo5vdWMu_VPFeWUknjFav4hrIFfje8KU,496
+upgrade_marshmallow/upgrade.py,sha256=QrNrOTkJ_o1eCRbapLnJp7O4P8z5oTy_jGkbUtBQTmY,7435
+upgrade_marshmallow/utils.py,sha256=tQQca9bejVwxXu_qh3XGNlPl8oZWFRARbJDEeNxH3Uw,89
+upgrade_marshmallow-0.1.4.dist-info/LICENSE,sha256=eDwKEWq-EWm9ObVzrd09kliHGvyVf4E1RFPvJW9zWAE,1072
+upgrade_marshmallow-0.1.4.dist-info/METADATA,sha256=krgtqe5B4GV1XIIpw5TMlU6DNicrEOUKg6rxV4hw0C8,523
+upgrade_marshmallow-0.1.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+upgrade_marshmallow-0.1.4.dist-info/entry_points.txt,sha256=C2Y8KNBcpQAKpysw2Kum-YZPbGMLQAtlRG_goDObOaM,55
+upgrade_marshmallow-0.1.4.dist-info/top_level.txt,sha256=NIzeMmsp6sEg7tGbo4W0Ax6IfVae4oqvGBzAG76o3FU,20
+upgrade_marshmallow-0.1.4.dist-info/RECORD,,
