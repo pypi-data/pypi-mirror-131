@@ -1,0 +1,3 @@
+[console_scripts]
+csv_converter=my_csvtojson_converter.converter:converter
+
