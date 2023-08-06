@@ -1,0 +1,14 @@
+katsuyou/__init__.py,sha256=feOyC4PDFCQREpK3ZowCzf4_UNq2R0OXGMoFEo1jFm0,1156
+katsuyou/conjugate/__init__.py,sha256=rkTkL0RGatmWMxRf_PlLVh_y4tPUrFwevjGdXLOwOKo,5055
+katsuyou/conjugate/godan_verb.py,sha256=YGOK6-srgodzbMA1ydpcSLdYY2OHezaRtTDIrB5z2Zk,26170
+katsuyou/conjugate/i_adjective.py,sha256=nbBThvvw_IMrhIJhUzEMmW5dCdSv-2W-D35HWuKDSa8,9015
+katsuyou/conjugate/ichidan_verb.py,sha256=Bnf5ActvHKthwwIIgTwp08IXBL3dZQaBDr7O8-lLJ2g,23328
+katsuyou/conjugate/irregular.py,sha256=kReldRtS08Zg4sa7WqRGxqmg-s_muUll3jqQ7Sy1wXU,4175
+katsuyou/conjugate/util/__init__.py,sha256=KaU0cNn3ZfXy24LnArWHIzngZNsgPUjb791uyFf3xUA,1133
+katsuyou/conjugate/util/bundle.py,sha256=TsjIo8PfzAGKf87VXQtZRmHgbfKyr8KRZRy_cW8tId4,3283
+katsuyou/util/__init__.py,sha256=KaU0cNn3ZfXy24LnArWHIzngZNsgPUjb791uyFf3xUA,1133
+katsuyou/util/matcher.py,sha256=Dr0R5zS9Ln3CO-z4_V3lqZJrUIu3K576FvdIRLdNvkY,6838
+katsuyou-0.1.5b1.dist-info/METADATA,sha256=dFljdKcSvO4019GIfJN1-YQTR7LUNDZgImDSDjmHLb4,1075
+katsuyou-0.1.5b1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+katsuyou-0.1.5b1.dist-info/top_level.txt,sha256=8wYLQ6A7aaL399GNoIxtQlOlYKQVsRUVo0I71yPpiN0,9
+katsuyou-0.1.5b1.dist-info/RECORD,,
