@@ -1,0 +1,14 @@
+cuid
+grpcio<2.0,>=1.34.1
+grpcio-tools<2.0,>=1.34.1
+icecream
+numpy
+PyYAML
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov

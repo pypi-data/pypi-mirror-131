@@ -1,0 +1,153 @@
+//    Copyright 2021 Qruise project
+//
+//    Licensed under the Apache License, Version 2.0 (the "License");
+//    you may not use this file except in compliance with the License.
+//    You may obtain a copy of the License at
+//
+//        http://www.apache.org/licenses/LICENSE-2.0
+//
+//    Unless required by applicable law or agreed to in writing, software
+//    distributed under the License is distributed on an "AS IS" BASIS,
+//    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//    See the License for the specific language governing permissions and
+//    limitations under the License.
+
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "eu.qruise.qserve";
+option java_outer_classname = "QCalibrateProto";
+option objc_class_prefix = "QC";
+
+package qcalibrateremote._grpc;
+
+// The qcalibrate remote service definition.
+service QCalibrate {
+  // adds new experiment
+  rpc AddExperiment (AddExperimentRequest) returns (AddExperimentResult) {}
+
+  // get experiment details
+  rpc GetExperiment (GetExperimentRequest) returns (GetExperimentResult) {}
+
+  // get experiment details
+  rpc UpdateExperiment (UpdateExperimentRequest) returns (UpdateExperimentResult) {}
+
+  // runs optimization session
+  rpc Run (stream Request) returns (stream Response) {}
+}
+
+message AddExperimentRequest {
+    string name = 2;
+    string type = 3;
+    string description = 4;
+    string configuration = 5;
+}
+
+message AddExperimentResult {
+    string experiment_id = 1;
+}
+
+message GetExperimentRequest {
+    string experiment_id = 1;
+}
+
+message GetExperimentResult {
+    string name = 2;
+    string type = 3;
+    string description = 4;
+    string configuration = 5;
+}
+
+message UpdateExperimentRequest {
+    string experiment_id = 1;
+    string name = 2;
+    string type = 3;
+    string description = 4;
+    string configuration = 5;
+}
+
+message UpdateExperimentResult {
+    bool success = 1;
+}
+
+message Initialize {
+    string session_id = 1;
+    string experiment_id = 2;
+    string configuration = 3; // raw configuration, optional
+}
+
+message Initialized {
+    string experiment_id = 1;
+    string run_id = 2;
+    string typ = 3;
+    string module_name = 4;
+    string class_name = 5;
+    repeated Argument arguments = 6;
+    string configuration = 7; // raw configuration,
+    repeated ParameterMeta parameter_metas = 10;
+    repeated PulseMeta pulse_metas = 11;
+}
+
+message PulseMeta {
+    int32 index = 1;
+    string name = 2;
+    string configuration = 3;
+}
+
+message ParameterMeta {
+    int32 index = 1;
+    string name = 2;
+    string configuration = 3;
+}
+
+message Argument {
+    string name = 1;
+    oneof value {
+        int64 int64 = 10;
+        double double = 11;
+        string string = 12;
+        bool bool = 13;
+    };
+}
+
+message Start {
+}
+
+message End {
+    string typ = 1;
+    string error = 2;
+}
+
+message Pulse {
+    repeated double times = 1 [packed=true];
+    repeated double values = 2 [packed=true];
+}
+
+message Parameters {
+    int32 iteration = 1;
+    repeated double values = 2 [packed=true];    
+    repeated Pulse pulses = 3;
+}
+
+message Fom {
+    int32 iteration = 1;
+    double figure_of_merit = 2;
+    string data = 3;
+}
+
+message Request {
+    oneof message {
+        Initialize initialize = 1;
+        Start start = 2;
+        Fom fom = 3;
+        End end = 10;        
+    }
+}
+
+message Response {
+    oneof message {
+        Initialized initialized = 1;
+        Parameters parameters = 2;
+        End end = 10;
+    }
+}

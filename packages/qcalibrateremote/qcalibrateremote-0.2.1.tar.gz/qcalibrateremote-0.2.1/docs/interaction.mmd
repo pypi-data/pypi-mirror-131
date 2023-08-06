@@ -1,0 +1,28 @@
+sequenceDiagram
+    participant U as User
+    participant C as Client code
+    participant Q as Quantum System
+    participant W as Web UI
+    participant S as Optimization Service
+    U -->> C: Create evaluation code
+    U ->> W: Create experiment configuration
+    U ->> W: Get API Token
+    W -->> U: API Token and experiment_id
+    U ->> C: Paste API Token and experiment_id
+    U ->> +C: Run 
+    C ->> +S: Create run entity
+    S ->> C: Entity created (run_id)
+    C ->> S: Start optimization
+    S ->> S: Take initial parameters
+    loop until optimization end criteria reached or run is canceled
+        S ->> C: Parameters and Pulses
+        C ->>C: Create control sequence
+        C ->> +Q: Apply control
+        Q -->> -C: Measure
+        C ->> C: Evaluate Figure Of Merit
+        C ->> S: Figure Of Merit
+        S ->> W: Update UI
+        S ->> S: Select new set of parameters
+    end
+    S ->> -C: End optimization
+    C -->> -U: optimization results
