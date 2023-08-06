@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: arkhive
+Version: 0.0.1
+Summary: ArkHive keeps your data in version for your AI project
+Home-page: https://askanna.io
+Author: AskAnna ArkHive Team
+Author-email: devops@askanna.io
+License: Apache License 2.0
+Project-URL: Release notes, https://github.com/askanna-io/arkhive/blob/master/CHANGELOG.md
+Project-URL: Issue tracker, https://github.com/askanna-io/arkhive/issues
+Project-URL: Source code, https://github.com/askanna-io/arkhive
+Keywords: ai data versioning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gitdb (~=4.0.9)
+
+# arkhive
+ArkHive keeps your data in version for your AI project
+
+
+
+
