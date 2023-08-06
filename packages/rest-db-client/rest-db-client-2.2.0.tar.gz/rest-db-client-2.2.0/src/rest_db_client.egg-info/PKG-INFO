@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: rest-db-client
+Version: 2.2.0
+Summary: Client for RESTful databases
+Home-page: https://gitlab.com/librecube/lib/python-rest-db-client
+Author-email: info@librecube.org
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# REST DB Client
+
+A simple Python3 library for connecting to RESTful databases.
+
+## Installation
+
+Install via pip:
+
+```
+$ pip install rest-db-client
+```
+
+## Example
+
+```python
+from rest_db_client import RestDbClient
+client = RestDbClient(port=6501)
+
+domain = client['Galaxy']
+model = domain['SolarSystem']
+
+datasets = [
+  {
+    'planet': 'Jupiter',
+    'moons': 69
+  },
+  {
+    'planet': 'Mars'
+  },
+  {
+    'planet': 'Earth',
+    'moons': 1,
+    'inhabited': True
+  },
+]
+model.insert(datasets)
+```
+
+## Documentation
+
+The API documentation is in [docs/api.md](docs/api.md).
+
+## Contribute
+
+- Issue Tracker: https://gitlab.com/librecube/lib/python-rest-db-client/-/issues
+- Source Code: https://gitlab.com/librecube/lib/python-rest-db-client
+
+To learn more on how to successfully contribute please read the contributing
+information in the [LibreCube guidelines](https://gitlab.com/librecube/org/guidelines).
+
+## Support
+
+If you are having issues, please let us know. Reach us at
+[Matrix](https://app.element.io/#/room/#librecube.org:matrix.org)
+or via [Email](mailto:info@librecube.org).
+
+## License
+
+The project is licensed under the MIT license. See the [LICENSE](./LICENSE.txt) file for details.
+
+

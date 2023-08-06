@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+src/rest_db_client/__init__.py
+src/rest_db_client/core.py
+src/rest_db_client/utils.py
+src/rest_db_client.egg-info/PKG-INFO
+src/rest_db_client.egg-info/SOURCES.txt
+src/rest_db_client.egg-info/dependency_links.txt
+src/rest_db_client.egg-info/requires.txt
+src/rest_db_client.egg-info/top_level.txt
