@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: fitted
+Version: 0.1.2
+Summary: Machine learning tools
+Home-page: https://github.com/otosense/fitted
+Author: OtoSense
+License: apache-2.0
+Description: 
+        # fitted
+        Machine learning tools
+        
+        To install:	```pip install fitted```
+        
+        [Documentation here](https://otosense.github.io/fitted/)
+        
+        
+Keywords: Machine Learning,ML,Train-Test splits
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

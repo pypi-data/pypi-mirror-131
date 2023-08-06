@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fitted/__init__.py
+fitted/model_equivalence.py
+fitted/splitting.py
+fitted/util.py
+fitted.egg-info/PKG-INFO
+fitted.egg-info/SOURCES.txt
+fitted.egg-info/dependency_links.txt
+fitted.egg-info/not-zip-safe
+fitted.egg-info/requires.txt
+fitted.egg-info/top_level.txt
