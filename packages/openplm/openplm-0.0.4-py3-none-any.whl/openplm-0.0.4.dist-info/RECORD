@@ -1,0 +1,12 @@
+openplm/__init__.py,sha256=um9hGKPZlntf10-Co63FjvLVYwYovmMTjrgvkcd-KCo,106
+openplm/constant.py,sha256=E3vfLQ70ZAiWjn1o_HTqkybeheklkZXvhaSMxH0wUbQ,86
+openplm/apis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openplm/metrics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openplm/metrics/rouge.py,sha256=AzCe9utsd9xpQ4PT6WzH5RQrI3Rf0uoqP7lw2tBwAAY,15762
+openplm/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openplm/utils/__init__.py,sha256=LjMX178on8GFfU8RNo88rJY8XB5GsQXK2-EMB1s1QHs,37
+openplm-0.0.4.dist-info/LICENSE,sha256=qZ_dp0aMyYfXDvn-cood_fa806rcGu_MCxmf9a15qI0,1067
+openplm-0.0.4.dist-info/METADATA,sha256=Ax6NMO0QHdeQxD9oRQvwS0Y5rvDTB83rCQR7NHUsJMo,1179
+openplm-0.0.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+openplm-0.0.4.dist-info/top_level.txt,sha256=1tt0nCy4DcEpipQ_h28TyM0r9LWJdqlpmKnggk-O_j4,8
+openplm-0.0.4.dist-info/RECORD,,
