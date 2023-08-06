@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/deeply_nested/__init__.py
+src/deeply_nested/nested_object.py
+src/deeply_nested.egg-info/PKG-INFO
+src/deeply_nested.egg-info/SOURCES.txt
+src/deeply_nested.egg-info/dependency_links.txt
+src/deeply_nested.egg-info/top_level.txt
