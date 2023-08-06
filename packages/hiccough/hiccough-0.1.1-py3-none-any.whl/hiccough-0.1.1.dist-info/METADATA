@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: hiccough
+Version: 0.1.1
+Summary: A lightweight package for html generation
+Home-page: https://github.com/lkschubert8/hiccough
+Author: Luke Schubert
+Author-email: lkschubert8@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/lkschubert8/hiccough/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# hiccough
+Hiccough is a simple html templating tool heavily inspired by https://github.com/weavejester/hiccup. It allows for the generation of 
+html strings from nested lists of python like so
+```
+hiccough.html(["div.myclass", ["p", "Hello World!"]])
+=> '<div class="myclass"><p>Hello World!</p></div>'
+```
+
+
+## Nesting Shorthand
+Hiccough supports a nesting syntax via `>` for multiple nested tags
+with only classes and ids. 
+```
+html(["div.a>div.b>div.c", "It's divs all the way down!"])
+=>'<div class="a"><div class="b"><div class="c"></div>It's divs all the way down!</div></div>'
+```
+
+## CLI
+Hiccough currently support execution on the cli with the first argument being
+a string that evals to a python list matching what would get passed to `html/1`
+
