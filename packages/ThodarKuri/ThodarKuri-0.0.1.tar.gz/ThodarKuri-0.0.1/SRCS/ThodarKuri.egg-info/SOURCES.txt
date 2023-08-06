@@ -1,0 +1,56 @@
+FilledFile.PNG
+LICENSE.txt
+MANIFEST.in
+README.md
+TemplatesSpecification.PNG
+requirements.txt
+setup.py
+SRCS/ThodarKuri/Filler.py
+SRCS/ThodarKuri/Parser.py
+SRCS/ThodarKuri/__init__.py
+SRCS/ThodarKuri.egg-info/PKG-INFO
+SRCS/ThodarKuri.egg-info/SOURCES.txt
+SRCS/ThodarKuri.egg-info/dependency_links.txt
+SRCS/ThodarKuri.egg-info/requires.txt
+SRCS/ThodarKuri.egg-info/top_level.txt
+SRCS/ThodarKuri/Grammer/SyntaxParser.py
+SRCS/ThodarKuri/Grammer/__init__.py
+SRCS/ThodarKuri/Grammer/SyntaxParser.py
+SRCS/ThodarKuri/Grammer/__init__.py
+TESTS/conftest.py
+TESTS/test_Filler.py
+TESTS/test_Parser.py
+TESTS/Grammer/test_SyntaxParser.py
+TESTS/gen_files/Settings - SR1.json
+TESTS/gen_files/Settings - SR2.json
+TESTS/gen_files/Settings - SR3.json
+TESTS/gen_files/Settings - SR4.json
+TESTS/gen_files/Settings.json
+TESTS/html_plot/index.html
+TESTS/html_plot/template_bar.html
+TESTS/html_plot/template_index.html
+TESTS/html_plot/template_multiplots.html
+TESTS/html_plot/template_plot.html
+TESTS/html_plot - SR1/index.html
+TESTS/html_plot - SR1/template_bar.html
+TESTS/html_plot - SR1/template_index.html
+TESTS/html_plot - SR1/template_multiplots.html
+TESTS/html_plot - SR1/template_plot.html
+TESTS/html_plot - SR2/index.html
+TESTS/html_plot - SR2/template_bar.html
+TESTS/html_plot - SR2/template_index.html
+TESTS/html_plot - SR2/template_multiplots.html
+TESTS/html_plot - SR2/template_plot.html
+TESTS/html_plot - SR3/index.html
+TESTS/html_plot - SR3/template_bar.html
+TESTS/html_plot - SR3/template_index.html
+TESTS/html_plot - SR3/template_multiplots.html
+TESTS/html_plot - SR3/template_plot.html
+TESTS/html_plot - SR4/index.html
+TESTS/html_plot - SR4/template_bar.html
+TESTS/html_plot - SR4/template_index.html
+TESTS/html_plot - SR4/template_multiplots.html
+TESTS/html_plot - SR4/template_plot.html
+TESTS/ref_files/PlotDetails.json
+TESTS/ref_files/Reference_Settings.json
+TESTS/ref_files/index.html
