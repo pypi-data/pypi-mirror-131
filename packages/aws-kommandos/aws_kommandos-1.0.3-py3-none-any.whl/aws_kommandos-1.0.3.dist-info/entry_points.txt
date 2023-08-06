@@ -1,0 +1,3 @@
+[console_scripts]
+aws-kommandos = aws_kommandos.kommandos:main
+
