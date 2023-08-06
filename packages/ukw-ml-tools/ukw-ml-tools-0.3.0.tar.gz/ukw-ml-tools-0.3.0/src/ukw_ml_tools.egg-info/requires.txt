@@ -1,0 +1,10 @@
+pytorch_lightning
+torch
+torchvision
+torchmetrics
+opencv-python
+albumentations
+
+[dev]
+pytest
+tox

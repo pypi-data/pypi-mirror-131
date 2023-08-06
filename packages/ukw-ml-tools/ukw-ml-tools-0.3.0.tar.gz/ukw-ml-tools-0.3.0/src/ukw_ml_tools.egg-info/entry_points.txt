@@ -1,0 +1,3 @@
+[console_scripts]
+ukw-ml-tools = ukw_ml_tools.cli:main
+
