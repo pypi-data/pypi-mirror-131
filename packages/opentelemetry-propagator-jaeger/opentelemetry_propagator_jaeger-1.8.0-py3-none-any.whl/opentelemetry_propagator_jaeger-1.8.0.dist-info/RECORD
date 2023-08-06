@@ -1,0 +1,8 @@
+opentelemetry/propagators/jaeger/__init__.py,sha256=BVyBx4x7AfAw1DZ9uuTi3-831hcf4GF2vkJiRhlsjuo,5179
+opentelemetry/propagators/jaeger/version.py,sha256=22Eq8jUvSDnjdgrkQEkGGdEQrKYYYLWP1M52e1NC5ts,607
+opentelemetry_propagator_jaeger-1.8.0.dist-info/LICENSE,sha256=h8jwqxShIeVkc8vOo9ynxGYW16f4fVPxLhZKZs0H5U8,11350
+opentelemetry_propagator_jaeger-1.8.0.dist-info/METADATA,sha256=Qf2Hj6fnCSKM801BxjjIMC9WAl0EC-aLglsvplbti4I,1569
+opentelemetry_propagator_jaeger-1.8.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+opentelemetry_propagator_jaeger-1.8.0.dist-info/entry_points.txt,sha256=KkwY8ScwF4lbO-eYB18P4WrJ-vWyr-l1jsNLcBVqAJk,87
+opentelemetry_propagator_jaeger-1.8.0.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_propagator_jaeger-1.8.0.dist-info/RECORD,,
