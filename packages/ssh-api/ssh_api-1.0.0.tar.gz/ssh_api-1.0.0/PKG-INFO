@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ssh-api
+Version: 1.0.0
+Summary: ssh api for make a ssh client's or code.... Main platform is windows 10,11.
+Author: OwoNicoo
+Author-email: 86409467+DiscordBotML@users.noreply.github.com
+Requires-Python: >=3.9.7,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
