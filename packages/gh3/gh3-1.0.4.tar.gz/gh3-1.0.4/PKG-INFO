@@ -1,0 +1,144 @@
+Metadata-Version: 2.1
+Name: gh3
+Version: 1.0.4
+Summary: GH3 Python WSGI nano framework.
+Author-email: Ali Afshar <aafshar@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: werkzeug==2.0.2
+Requires-Dist: logbook==1.5.3
+Project-URL: Home, https://gitlab.com/afshar-oss/gh3
+
+
+# gh3 Python WSGI nanoframework
+
+```{Note}
+if you are not already there, read this doc with API links working
+in all their glory on the
+[website](https://gh3-website.web.app/README.html)
+```
+
+## First App
+
+```python
+import gh3
+
+def say_hello(ctx: gh3.Context):
+  """A view handler that returns some text."""
+  ctx.reply_text('hello, world')
+
+# Create the app, add a route, and start the debug server.
+app = gh3.App()
+app.add_route('/', say_hello)
+app.debug()
+```
+
+Here, we create an instance of [gh3.App](gh3.App) and we add a simple route to
+it, and start the debug server.
+
+You can immediately see some features of the request handler:
+
+* You modify the response in place from the [gh3.Context](gh3.Context).
+* It is simple to make a simple textual response, using
+  [reply_text](gh3.Context.reply_text) and there are analogs for
+  [reply_html](gh3.Context.reply_html) and
+  [reply_json](gh3.Context.reply_json). These `reply_` methods are shortcuts to
+  setting the response data, the response content-type, and the response status
+  code.
+
+## Testing
+
+We use Werkzeug's testing infrastructure, by calling
+[gh3.App.tester](gh3.App.tester) to get a [werkzeug test
+client](werkzeug.test.Client) and use it to make requests against your app. For
+many examples, check out the gh3 test suite.
+
+You can test the request context in your views, e.g.
+
+```python
+def text_view(ctx):
+  assert '/' == ctx.req.path
+  ctx.reply_text('ok')
+
+app = gh3.App()
+app.add_route('/', text_view)
+resp = app.tester().get('/')
+assert 200 == resp.status_code
+```
+
+We have made 2 assertions above:
+
+1. That the response is a 200
+2. That the request path at the view was `/`
+
+You can use the pattern above to test anything in the context.
+
+## Installation
+
+```bash
+virtualenv -p python3.9 env
+./env/bin/pip install gh3
+```
+
+## Route handler arguments
+
+Arguments from the route are available in
+[ctx.endpoint_args](gh3.Context.endpoint_args). They are not passed to the
+handler functions as all handler functions take only the request context as an
+argument.
+
+```python
+import gh3
+
+def say_hello(ctx: gh3.Context):
+  """A view handler that returns some text."""
+  user = ctx.endpoint_args['user']
+  ctx.reply_text(f'hello, {user}')
+
+# Create the app, add a route, and start the debug server.
+app = gh3.App()
+app.add_route('/<user>', say_hello)
+app.debug()
+```
+
+## Routes, targets, and endpoints
+
+As in the simple example above, there is a route `'/'` and a target, the
+`say_hello` function. What is not described there is that the endpoint is
+inferred from the function name, but can be set explicitly:
+
+```python
+app.add_route('/', say_hello, endpoint='home')
+```
+
+The endpoint is used for reverse lookup of URLs.
+
+## More complex routing
+
+The entire range of Werkzeug's routing is available by using
+[add_rule](gh3.App.add_rule) and [add_target](gh3.App.add_target).
+For example, to use Werkzeug's [Submount](werkzeug.routing.Submount) rule
+factory, you should create the rule and add the target handlers manually.
+
+```python
+rule = gh3.wz_routing.Submount(
+    Rule('/', endpoint='blog/index'),
+    Rule('/entry/<entry_slug>', endpoint='blog/show')
+)
+
+app.add_rule(rule)
+app.add_target('blog/index', my_blog_index_handler)
+app.add_target('blog/show', my_blog_show_handler)
+```
+
+## Why?
+
+I love Werkzeug, but I really don't love Flask (sorry, Armin). I swear I have
+used Flask a lot, in big production applications that serve billions of pages a
+year. There are patterns in Flask that have made it extremely hard for me to
+develop as part of a large (30+) engineering team, and these are the things
+intentionally left out of gh3. gh3 will never be as featured as Flask, and
+that's OK too. You'll forgive me these few 100 lines of well-tested code. And if
+you are still wondering why, please feel free to move on.
+

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "gh3"
+authors = [{name = "Ali Afshar", email = "aafshar@gmail.com"}]
+license = {file = "dev/LICENSE"}
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+dynamic = ["version", "description"]
+dependencies = ['werkzeug==2.0.2', 'logbook==1.5.3']
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.urls]
+Home = "https://gitlab.com/afshar-oss/gh3"
+
+[tool.flit.sdist]
+exclude = [
+  ".gitignore",
+  "Makefile",
+  "dev/*.txt",
+  "dev/docs",
+  "test_gh3.py",
+]
+
