@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+AlexBacicCalc/__init__.py
+AlexBasicCalc.egg-info/PKG-INFO
+AlexBasicCalc.egg-info/SOURCES.txt
+AlexBasicCalc.egg-info/dependency_links.txt
+AlexBasicCalc.egg-info/top_level.txt
+Alex_basic_calc.egg-info/SOURCES.txt
+Alex_basic_calc.egg-info/dependency_links.txt
+Alex_basic_calc.egg-info/top_level.txt
