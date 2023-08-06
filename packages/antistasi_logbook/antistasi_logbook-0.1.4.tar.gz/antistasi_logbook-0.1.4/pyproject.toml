@@ -1,0 +1,102 @@
+[build-system]
+build-backend = "flit_core.buildapi"
+requires = ["flit_core >=3.2,<4"]
+
+[project]
+name = "antistasi_logbook"
+authors = [{ name = "antistasi_tools" }]
+classifiers = ["License :: OSI Approved :: MIT License"]
+license = { file = "LICENSE" }
+readme = "README.md"
+dynamic = ['version', 'description']
+requires-python = ">=3.9"
+dependencies = [
+    "httpx>=0.20.0",
+    "webdav4>=0.9.3",
+    "peewee>=3.14.4",
+    "tzlocal>=4.1",
+    "yarl>=1.7.0",
+    "python-dateutil>=2.8.2",
+    "Pillow>=8.4.0",
+    "cryptography>=35.0.0",
+    "click>=8.0.3",
+    "attrs>=21.2.0",
+    "rich>=10.12.0",
+    "sortedcontainers>=2.4.0",
+    "marshmallow>=3.14.0",
+    "gidapptools>=0.1.10",
+    "PySide6>=6.2.2",
+    "pyqtgraph>=0.12.3",
+    "colorhash==1.0.4",
+    "qdarkstyle",
+    "pyparsing>=3.0.6",
+    "apsw-wheels"
+]
+
+[project.urls]
+Source = "https://github.com/Giddius/Antistasi_Logbook"
+
+[project.scripts]
+antistasi-logbook = "antistasi_logbook.__main__:cli"
+
+[project.optional-dependencies]
+
+[tool.flit.sdist]
+exclude = [
+    "misc",
+    "temp",
+    "docs",
+    "tools",
+    ".pydeps",
+    "tests",
+    ".gitattributes",
+    ".gitignore",
+    ".editorconfig",
+    "planning.todo",
+    "tasks.py",
+]
+
+[tool.autopep8]
+ignore = ["E402", "E501"]
+max_line_length = 250
+
+[tool.isort]
+balanced_wrapping = true
+ensure_newline_before_comments = true
+group_by_package = true
+import_heading_firstparty = "* Local Imports --------------------------------------------------------------------------------------->"
+import_heading_gid = "* Gid Imports ----------------------------------------------------------------------------------------->"
+import_heading_pyqt = "* PyQt5 Imports --------------------------------------------------------------------------------------->"
+import_heading_stdlib = "* Standard Library Imports ---------------------------------------------------------------------------->"
+import_heading_thirdparty = "* Third Party Imports --------------------------------------------------------------------------------->"
+known_gid = [
+    "gidtools",
+    "gidlogger",
+    "gidqtutils",
+    "gidviewmodels",
+    "gidapptools"
+]
+known_pyqt = ["PyQt5", "PySide6"]
+length_sort = true
+line_length = 200
+lines_after_imports = 1
+sections = [
+    "FUTURE",
+    "STDLIB",
+    "THIRDPARTY",
+    "PYQT",
+    "GID",
+    "FIRSTPARTY",
+    "LOCALFOLDER",
+]
+
+[tool.pytest.ini_options]
+addopts = "-rA -vv --durations=0 --capture=tee-sys --show-capture=all --color=auto --code-highlight=yes"
+
+[tool.autoflake]
+# additional_imports=None
+expand_star_imports = true
+remove_all_unused_imports = true
+remove_duplicate_keys = false
+remove_unused_variables = false
+ignore_init_module_imports = false
