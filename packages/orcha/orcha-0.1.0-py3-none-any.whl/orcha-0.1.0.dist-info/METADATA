@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: orcha
+Version: 0.1.0
+Summary: System handler and orchestrator of multiple environments
+Author: Javier Alonso
+Author-email: jalonso@teldat.com
+Requires-Python: >=3.9.0,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: psutil (>=5.8.0,<6.0.0)
+Requires-Dist: python-daemon (>=2.3.0,<3.0.0)
