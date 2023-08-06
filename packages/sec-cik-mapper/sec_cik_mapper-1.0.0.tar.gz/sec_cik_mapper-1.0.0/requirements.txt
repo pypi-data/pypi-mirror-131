@@ -1,0 +1,7 @@
+pandas
+pre-commit
+pytest
+pytest-cov
+requests
+sphinx
+sphinx-autodoc-typehints
