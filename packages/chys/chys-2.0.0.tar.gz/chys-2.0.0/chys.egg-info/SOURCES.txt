@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README
+setup.py
+chys.egg-info/PKG-INFO
+chys.egg-info/SOURCES.txt
+chys.egg-info/dependency_links.txt
+chys.egg-info/top_level.txt
+wargame/__init__.py
+wargame/abstractgameunit.py
+wargame/attackoftheors.py
+wargame/gameuniterror.py
+wargame/gameutils.py
+wargame/hut.py
+wargame/knight.py
+wargame/orcider.py
