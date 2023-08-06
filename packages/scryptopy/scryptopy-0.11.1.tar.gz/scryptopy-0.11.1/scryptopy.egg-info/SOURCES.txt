@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+scryptopy/__init__.py
+scryptopy/scrypto.py
+scryptopy.egg-info/PKG-INFO
+scryptopy.egg-info/SOURCES.txt
+scryptopy.egg-info/dependency_links.txt
+scryptopy.egg-info/entry_points.txt
+scryptopy.egg-info/not-zip-safe
+scryptopy.egg-info/requires.txt
+scryptopy.egg-info/top_level.txt
