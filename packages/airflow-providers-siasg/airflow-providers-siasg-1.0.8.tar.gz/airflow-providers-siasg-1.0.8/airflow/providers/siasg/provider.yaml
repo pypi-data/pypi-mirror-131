@@ -1,0 +1,38 @@
+---
+package-name: airflow-providers-siasg
+name: SIASG
+description: |
+    `SIASG <https://github.com/CarlosAdp/airflow-providers-siasg/>`__
+
+versions:
+  - 1.0.0
+  - 1.0.1
+  - 1.0.2
+  - 1.0.3
+  - 1.0.4
+  - 1.0.5
+  - 1.0.6
+  - 1.0.7
+  - 1.0.8
+
+additional-dependencies:
+  - apache-airflow>=2.1.0
+  - requests
+  - selenium-wire
+  - humanize
+  - pandas
+  - apache-airflow[mongo]
+  - openpyxl
+
+hooks:
+  - integration-name: DW-SIASG
+    python-modules:
+      - airflow.providers.siasg.dw.hooks.dw
+
+hook-class-names:  # deprecated - to be removed after providers add dependency on Airflow 2.2.0+
+  - airflow.providers.siasg.dw.hooks.dw.DWSIASGHook
+
+
+connection-types:
+  - hook-class-name: airflow.providers.siasg.dw.hooks.dw.DWSIASGHook
+    connection-type: dw_siasg

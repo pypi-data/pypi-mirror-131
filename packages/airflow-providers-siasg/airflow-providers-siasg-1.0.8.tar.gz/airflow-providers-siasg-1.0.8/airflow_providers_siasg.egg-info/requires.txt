@@ -1,0 +1,7 @@
+apache-airflow
+requests
+selenium-wire
+humanize
+pandas
+apache-airflow[mongo]
+openpyxl
