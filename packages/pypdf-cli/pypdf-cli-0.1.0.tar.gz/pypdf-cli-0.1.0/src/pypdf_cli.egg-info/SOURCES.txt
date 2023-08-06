@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/pypdfcli.py
+src/pypdf_cli.egg-info/PKG-INFO
+src/pypdf_cli.egg-info/SOURCES.txt
+src/pypdf_cli.egg-info/dependency_links.txt
+src/pypdf_cli.egg-info/entry_points.txt
+src/pypdf_cli.egg-info/requires.txt
+src/pypdf_cli.egg-info/top_level.txt
