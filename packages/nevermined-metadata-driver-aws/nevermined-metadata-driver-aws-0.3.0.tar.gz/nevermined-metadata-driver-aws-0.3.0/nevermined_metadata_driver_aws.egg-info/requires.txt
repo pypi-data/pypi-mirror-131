@@ -1,0 +1,14 @@
+coloredlogs>=15.0.1
+boto3>=1.18.15
+PyYAML>=5.4.1
+nevermined-metadata-driver-interface>=0.4.0
+
+[dev]
+bumpversion
+pkginfo
+twine
+watchdog
+pytest>=6.2.4
+
+[test]
+pytest>=6.2.4
