@@ -1,0 +1,6 @@
+setup_server.py
+mess_server_first.egg-info/PKG-INFO
+mess_server_first.egg-info/SOURCES.txt
+mess_server_first.egg-info/dependency_links.txt
+mess_server_first.egg-info/requires.txt
+mess_server_first.egg-info/top_level.txt
