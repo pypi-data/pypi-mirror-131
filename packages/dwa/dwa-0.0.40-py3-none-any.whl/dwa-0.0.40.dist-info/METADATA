@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: dwa
+Version: 0.0.40
+Summary: Dynamic Web Application (DWA) framework written with Tornado.
+Home-page: http://code.foxe6.kozow.com/dwa/
+Author: f̣ộx̣ệ6
+Author-email: foxe6@pm.me
+License: AGPL-3.0
+Project-URL: Sourcecode, http://code.foxe6.kozow.com/dwa.zip
+Project-URL: Documentation, http://code.foxe6.kozow.com/dwa/docs/
+Project-URL: Example, http://code.foxe6.kozow.com/dwa/test/
+Project-URL: Funding, https://paypal.me/foxe6
+Project-URL: Say Thanks!, https://saythanks.io/to/foxe6
+Keywords: tornado ajax wrapper framework
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: tornado (>=0.0.1)
+Requires-Dist: sqlq (>=0.0.1)
+Requires-Dist: omnitools (>=0.0.1)
+Requires-Dist: threadwrapper (>=0.0.1)
+Requires-Dist: unencryptedsocket (>=0.0.1)
+Requires-Dist: lxml (>=0.0.1)
+Requires-Dist: aescipher (>=0.0.1)
+Requires-Dist: requests (>=0.0.1)
+
+# Dynamic Web Application (DWA)
+
+<badges>[![pkg](https://img.shields.io/badge/pkg-dwa-808080.svg)](http://code.foxe6.kozow.com/dwa/)
+[![version](https://img.shields.io/pypi/v/dwa.svg)](https://pypi.org/project/dwa/)
+[![license](https://img.shields.io/pypi/l/dwa.svg)](https://pypi.org/project/dwa/)
+[![pyversions](https://img.shields.io/pypi/pyversions/dwa.svg)](https://pypi.org/project/dwa/)  
+[![powered](https://img.shields.io/badge/Say-Thanks-ddddff.svg)](https://saythanks.io/to/foxe6)
+[![donate](https://img.shields.io/badge/Donate-Paypal-0070ba.svg)](https://paypal.me/foxe6)
+[![made](https://img.shields.io/badge/Made%20with-PyCharm-red.svg)](https://www.jetbrains.com/pycharm/)
+</badges>
+
+<i>Dynamic Web Application (DWA) framework written with Tornado.</i>
+
+# Hierarchy
+
+![dwa](http://code.foxe6.kozow.com/dwa/dwa.svg)
+
+# Example
+See [/dwa/dwa/example/](http://code.foxe6.kozow.com/dwa/dwa/example/).
+
