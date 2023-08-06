@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pynvn
+Version: 0.4
+Summary: python for excel at pyan
+Home-page: UNKNOWN
+Author: Nguyen Van Nhuan
+Author-email: <nhuannv.vs@gmail.com>
+License: UNKNOWN
+Description: 
+        introduce about Nhuan
+         
+        
+Keywords: python,python excel,pyan,pyexcel
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
