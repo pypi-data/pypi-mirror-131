@@ -1,0 +1,13 @@
+# draco pkg-config.
+prefix=/tmp/pip-req-build-k_rhg88w/_skbuild/linux-i686-3.6/cmake-install
+exec_prefix=/tmp/pip-req-build-k_rhg88w/_skbuild/linux-i686-3.6/cmake-install/bin
+libdir=/tmp/pip-req-build-k_rhg88w/_skbuild/linux-i686-3.6/cmake-install/lib
+includedir=/tmp/pip-req-build-k_rhg88w/_skbuild/linux-i686-3.6/cmake-install/include
+
+Name: Draco
+Description: 3D Compression.
+Version: 1.3.5
+Requires:
+Conflicts:
+Libs: -L/tmp/pip-req-build-k_rhg88w/_skbuild/linux-i686-3.6/cmake-install/lib -ldraco
+Cflags: -I/tmp/pip-req-build-k_rhg88w/_skbuild/linux-i686-3.6/cmake-install/include -std=c++11
