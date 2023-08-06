@@ -1,0 +1,6 @@
+torch
+PIL
+torch
+torchvision
+matplotlib
+webbrowser
