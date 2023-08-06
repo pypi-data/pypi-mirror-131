@@ -1,0 +1,12 @@
+numpy
+scipy
+pandas
+requests
+tqdm
+plotly
+asyncio
+nest_asyncio
+requests_jwt
+websockets
+matplotlib
+kaleido
