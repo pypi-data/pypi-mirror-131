@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: cm-client
+Version: 45.0.4
+Summary: Cloudera Manager API
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: Cloudera Manager API client 45.0.4 for API version 45 introduced in Cloudera Manager 7.5.4
+Keywords: Swagger,Cloudera Manager API
+Platform: UNKNOWN
