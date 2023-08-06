@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: jotts
+Version: 0.5.3
+Summary: JoTTS is a German text-to-speech engine.
+Home-page: https://github.com/padmalcom/jotts
+Author: Jonas Freiknecht
+Author-email: j.freiknecht@googlemail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: appdirs (==1.4.4)
+Requires-Dist: audioread (==2.1.9)
+Requires-Dist: certifi (==2021.10.8)
+Requires-Dist: cffi (==1.15.0)
+Requires-Dist: charset-normalizer (==2.0.7)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: decorator (==5.1.0)
+Requires-Dist: Deprecated (==1.2.13)
+Requires-Dist: idna (==3.3)
+Requires-Dist: inflect (==5.3.0)
+Requires-Dist: joblib (==1.1.0)
+Requires-Dist: librosa (==0.8.1)
+Requires-Dist: llvmlite (==0.37.0)
+Requires-Dist: loguru (==0.5.3)
+Requires-Dist: numba (==0.54.1)
+Requires-Dist: numpy (==1.20.3)
+Requires-Dist: packaging (==21.3)
+Requires-Dist: pooch (==1.5.2)
+Requires-Dist: pycparser (==2.21)
+Requires-Dist: PyGithub (==1.55)
+Requires-Dist: PyJWT (==2.3.0)
+Requires-Dist: PyNaCl (==1.4.0)
+Requires-Dist: pyparsing (==3.0.6)
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: resampy (==0.2.2)
+Requires-Dist: scikit-learn (==1.0.1)
+Requires-Dist: scipy (==1.7.2)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: sounddevice (==0.4.3)
+Requires-Dist: SoundFile (==0.10.3.post1)
+Requires-Dist: threadpoolctl (==3.0.0)
+Requires-Dist: torch (==1.10.0)
+Requires-Dist: tqdm (==4.62.3)
+Requires-Dist: typing-extensions (==4.0.0)
+Requires-Dist: Unidecode (==1.3.2)
+Requires-Dist: urllib3 (==1.26.7)
+Requires-Dist: wrapt (==1.13.3)
+
+# jotts
+JoTTS is a German text-to-speech engine using tacotron and griffin-lim. The synthesizer model
+has been trained on my voice using Tacotron1. Due to real time usage I decided not to include a vocoder and use
+griffin-lim instead which results in a more robotic voice but is much faster.
+
+## API
+- First create an instance of JoTTS. The initializer takes force_model_download as an optional parameter
+in case that the last download of the synthesizer failed and the model cannot be applied.
+
+- Call speak with a *text* parameter that contains the text to speak out loud. The second parameter
+can be set to True, to wait until speaking is done.
+
+- Use *textToWav* to create a wav file instead of speaking the text. 
+
+## Example usage
+
+```python
+from jotts import JoTTS
+jotts = JoTTS()
+jotts.speak("Das Wetter heute ist fantastisch.", True)
+jotts.textToWav("Es war aber auch schon mal besser!")
+```
+
+## Todo
+- Add an option to change the default audio device to speak the text
+- Add a parameter to select other models but the default model
+- Add threading or multi processing to allow speaking without blocking
+- Add a vocoder instead of griffin-lim to improve audio output.
+
+## Training a model for your own voice
+Training a synthesizer model is easy - if you know how to do it. I created a course on udemy to show you how it is done.
+Don't buy the tutorial for the full price, there is a discout every month :-) 
+
+https://www.udemy.com/course/voice-cloning/
+
+If you neither have the backgroud or the resources or if you are just lazy or too rich, contact me for contract work.
+Cloning a voice normally needs ~15 Minutes of clean audio from the voice you want to clone.
+
+## Disclaimer
+I hope that my (and any other person's) voice will be used only for legal and ethical purposes. Please do not get into mischief with it.
+
