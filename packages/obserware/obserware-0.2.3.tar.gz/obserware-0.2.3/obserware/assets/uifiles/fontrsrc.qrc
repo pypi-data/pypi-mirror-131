@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="fontrsrc">
+    <file>../fonts/intr-bold.ttf</file>
+    <file>../fonts/intr-rlar.ttf</file>
+    <file>../fonts/mono-rlar.ttf</file>
+  </qresource>
+</RCC>

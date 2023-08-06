@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="ntwkwind">
+    <file>../images/dnpk.png</file>
+    <file>../images/uppk.png</file>
+    <file>../images/dnld.png</file>
+    <file>../images/upld.png</file>
+  </qresource>
+</RCC>

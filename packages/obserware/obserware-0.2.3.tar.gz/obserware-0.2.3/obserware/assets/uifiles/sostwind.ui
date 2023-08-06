@@ -1,0 +1,1361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>sostwind</class>
+ <widget class="QDialog" name="sostwind">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>265</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>480</width>
+    <height>265</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>480</width>
+    <height>265</height>
+   </size>
+  </property>
+  <property name="font">
+   <font/>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="sostwdgt">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>480</width>
+     <height>265</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>480</width>
+     <height>265</height>
+    </size>
+   </property>
+   <widget class="Line" name="sostlin3">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>30</y>
+      <width>470</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>470</width>
+      <height>3</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>470</width>
+      <height>3</height>
+     </size>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sostlabl">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>5</y>
+      <width>205</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>205</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>205</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 15pt &quot;JetBrains Mono&quot;;
+color: #008080;</string>
+    </property>
+    <property name="text">
+     <string>Storage Counters</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sostqant">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>5</y>
+      <width>205</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>205</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>205</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 15pt &quot;JetBrains Mono&quot;;
+color: #008080;</string>
+    </property>
+    <property name="text">
+     <string>0 unit(s)</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>35</y>
+      <width>470</width>
+      <height>225</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>470</width>
+      <height>225</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>470</width>
+      <height>225</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="soctwtlb">
+     <property name="geometry">
+      <rect>
+       <x>315</x>
+       <y>5</y>
+       <width>150</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;Inter&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Write</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="soctwtnm">
+     <property name="geometry">
+      <rect>
+       <x>315</x>
+       <y>20</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 15pt &quot;JetBrains Mono&quot;;
+color: #008080;</string>
+     </property>
+     <property name="text">
+      <string>000000000000</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="soctrdlb">
+     <property name="geometry">
+      <rect>
+       <x>155</x>
+       <y>5</y>
+       <width>150</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;Inter&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Read</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="soctrdnm">
+     <property name="geometry">
+      <rect>
+       <x>155</x>
+       <y>20</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 15pt &quot;JetBrains Mono&quot;;
+color: #008080;</string>
+     </property>
+     <property name="text">
+      <string>000000000000</string>
+     </property>
+    </widget>
+    <widget class="Line" name="sostln01">
+     <property name="geometry">
+      <rect>
+       <x>155</x>
+       <y>45</y>
+       <width>150</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="sostln02">
+     <property name="geometry">
+      <rect>
+       <x>315</x>
+       <y>45</y>
+       <width>150</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="sostln04">
+     <property name="geometry">
+      <rect>
+       <x>155</x>
+       <y>90</y>
+       <width>150</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sobsrdlb">
+     <property name="geometry">
+      <rect>
+       <x>155</x>
+       <y>50</y>
+       <width>150</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;Inter&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Read</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sobsrdnm">
+     <property name="geometry">
+      <rect>
+       <x>155</x>
+       <y>65</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 15pt &quot;JetBrains Mono&quot;;
+color: #008080;</string>
+     </property>
+     <property name="text">
+      <string>000000000000</string>
+     </property>
+    </widget>
+    <widget class="Line" name="sostln05">
+     <property name="geometry">
+      <rect>
+       <x>315</x>
+       <y>90</y>
+       <width>150</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sobswtlb">
+     <property name="geometry">
+      <rect>
+       <x>315</x>
+       <y>50</y>
+       <width>150</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;Inter&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Write</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sobswtnm">
+     <property name="geometry">
+      <rect>
+       <x>315</x>
+       <y>65</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 15pt &quot;JetBrains Mono&quot;;
+color: #008080;</string>
+     </property>
+     <property name="text">
+      <string>000000000000</string>
+     </property>
+    </widget>
+    <widget class="Line" name="sostln08">
+     <property name="geometry">
+      <rect>
+       <x>315</x>
+       <y>135</y>
+       <width>150</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="sostln11">
+     <property name="geometry">
+      <rect>
+       <x>315</x>
+       <y>180</y>
+       <width>150</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sotmwtnm">
+     <property name="geometry">
+      <rect>
+       <x>315</x>
+       <y>110</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 15pt &quot;JetBrains Mono&quot;;
+color: #008080;</string>
+     </property>
+     <property name="text">
+      <string>000000000000</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="somcrdnm">
+     <property name="geometry">
+      <rect>
+       <x>155</x>
+       <y>155</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 15pt &quot;JetBrains Mono&quot;;
+color: #008080;</string>
+     </property>
+     <property name="text">
+      <string>000000000000</string>
+     </property>
+    </widget>
+    <widget class="Line" name="sostln07">
+     <property name="geometry">
+      <rect>
+       <x>155</x>
+       <y>135</y>
+       <width>150</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="sostln10">
+     <property name="geometry">
+      <rect>
+       <x>155</x>
+       <y>180</y>
+       <width>150</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sotmrdlb">
+     <property name="geometry">
+      <rect>
+       <x>155</x>
+       <y>95</y>
+       <width>150</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;Inter&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Read</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sotmwtlb">
+     <property name="geometry">
+      <rect>
+       <x>315</x>
+       <y>95</y>
+       <width>150</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;Inter&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Write</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="somcwtlb">
+     <property name="geometry">
+      <rect>
+       <x>315</x>
+       <y>140</y>
+       <width>150</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;Inter&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Write</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sotmrdnm">
+     <property name="geometry">
+      <rect>
+       <x>155</x>
+       <y>110</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 15pt &quot;JetBrains Mono&quot;;
+color: #008080;</string>
+     </property>
+     <property name="text">
+      <string>000000000000</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="somcwtnm">
+     <property name="geometry">
+      <rect>
+       <x>315</x>
+       <y>155</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 15pt &quot;JetBrains Mono&quot;;
+color: #008080;</string>
+     </property>
+     <property name="text">
+      <string>000000000000</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="somcrdlb">
+     <property name="geometry">
+      <rect>
+       <x>155</x>
+       <y>140</y>
+       <width>150</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;Inter&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Read</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sostctlb">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>5</y>
+       <width>140</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>140</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>140</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 600 10pt &quot;Inter&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Count</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sostbslb">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>50</y>
+       <width>140</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>140</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>140</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 600 10pt &quot;Inter&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Bytes</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sosttmlb">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>95</y>
+       <width>140</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>140</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>140</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 600 10pt &quot;Inter&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Time</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sostmclb">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>140</y>
+       <width>140</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>140</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>140</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 600 10pt &quot;Inter&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Merged count</string>
+     </property>
+    </widget>
+    <widget class="Line" name="sostln00">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>45</y>
+       <width>140</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>140</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>140</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="sostln03">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>90</y>
+       <width>140</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>140</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>140</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="sostln06">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>135</y>
+       <width>140</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>140</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>140</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="sostln09">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>180</y>
+       <width>140</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>140</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>140</width>
+       <height>3</height>
+      </size>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sostbtlb">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>185</y>
+       <width>140</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>140</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>140</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 600 10pt &quot;Inter&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Busy time</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sobtsclb">
+     <property name="geometry">
+      <rect>
+       <x>155</x>
+       <y>185</y>
+       <width>140</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>140</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>140</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;Inter&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Seconds</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sostbtnm">
+     <property name="geometry">
+      <rect>
+       <x>155</x>
+       <y>200</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 15pt &quot;JetBrains Mono&quot;;
+color: #008080;</string>
+     </property>
+     <property name="text">
+      <string>000000000000</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
