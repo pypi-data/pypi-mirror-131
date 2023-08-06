@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: Ports.py
+Version: 0.2.5
+Summary: Modern Webserver
+Home-page: http://github.com/Ehnryu/ports
+Author: Ehnryu/Sakurai07
+Author-email: blzzardst0rm@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: webserver,ports
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
