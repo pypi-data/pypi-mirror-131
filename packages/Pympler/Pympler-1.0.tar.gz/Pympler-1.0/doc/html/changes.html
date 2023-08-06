@@ -1,0 +1,490 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Changelog &#8212; Pympler 0.9 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="next" title="Copyright" href="copyright.html" />
+    <link rel="prev" title="Glossary" href="glossary.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="copyright.html" title="Copyright"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="glossary.html" title="Glossary"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Pympler 0.9 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="detailed_toc.html" accesskey="U">Sitemap</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Changelog</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="tex2jax_ignore mathjax_ignore section" id="changelog">
+<h1>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h1>
+<p>All notable changes to this project will be documented in this file.</p>
+<p>The format is based on <a class="reference external" href="http://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>
+and this project adheres to <a class="reference external" href="http://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
+<div class="section" id="unreleased">
+<h2>UNRELEASED<a class="headerlink" href="#unreleased" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="added">
+<h3>Added<a class="headerlink" href="#added" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Python 3.10 support</p></li>
+<li><p>Added type annotations to various Pympler modules which are checked via Mypy</p></li>
+</ul>
+</div>
+<div class="section" id="changed">
+<h3>Changed<a class="headerlink" href="#changed" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Update bottle.py to 0.12.19</p></li>
+</ul>
+</div>
+<div class="section" id="removed">
+<h3>Removed<a class="headerlink" href="#removed" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Python 2.7 support</p></li>
+</ul>
+</div>
+<div class="section" id="fixed">
+<h3>Fixed<a class="headerlink" href="#fixed" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Fix summarizing objects at higher verbosity levels – By Colin Watson</p></li>
+<li><p>Fix tree widget import for Python 3.5 and higher – By Felix Jung (#77)</p></li>
+<li><p>Fix compatibility issues with numpy 1.19 and later – By Jean Brouwers (#121)</p></li>
+<li><p>Fix object filtering by size in muppy – By Kris Jurka</p></li>
+<li><p>Fix documentation typos – By Tim Gates</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>0.9 - 2020-10-14<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h3>Added<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Python 3.9 support – By tirkarthi (#105)</p></li>
+<li><p>Compatibility with Django 3.x – By Lance Moore (#108)</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h3>Removed<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Python 3.4 support</p></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h3>Fixed<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Include size of data when sizing Numpy slices – Rported by sinorga (#111),
+fixed by Jean Brouwers</p></li>
+<li><p>Fix KeyError when sizing dicts in certain scenarios – Reported by MrSanZhi
+(#114), fixed by Jean Brouwers</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>0.8 - 2019-11-12<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id6">
+<h3>Added<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Python 3.8 support</p></li>
+<li><p>Compatibility with Django Debug Toolbar 2.x – Reported by John Carter (#96)</p></li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h3>Removed<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Python 3.3 support</p></li>
+<li><p>Compatibility with Django Debug Toolbar 1.x</p></li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h3>Fixed<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Include dicts which aren’t tracked by garbage collector in summary diff –
+Reported by Dave Johansen (#97)</p></li>
+<li><p>Fix formatting of Python 3 class names in summary diff – Reported by laundmo
+(#98)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>0.7 - 2019-04-05<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id10">
+<h3>Added<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">asizeof</span></code> options <code class="docutils literal notranslate"><span class="pre">above</span></code> and <code class="docutils literal notranslate"><span class="pre">cutoff</span></code> to specify minimal size and the
+number of large objects to be printed</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">Asizer</span></code> class has a new property <code class="docutils literal notranslate"><span class="pre">ranked</span></code> returning the number of ranked
+objects.</p></li>
+<li><p>New <code class="docutils literal notranslate"><span class="pre">Asizer</span></code> method <code class="docutils literal notranslate"><span class="pre">exclude_objs</span></code> can be used to exclude objects from being
+sized, profiled and ranked.</p></li>
+</ul>
+</div>
+<div class="section" id="id11">
+<h3>Changed<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">asizeof</span></code> option <code class="docutils literal notranslate"><span class="pre">stats</span></code> has been enhanced to include the list of the 100
+largest objects, ranked by total size.</p></li>
+</ul>
+</div>
+<div class="section" id="id12">
+<h3>Fixed<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Fix TypeError raised in certain scenarios – Reported by James Hirschorn
+(#72), fixed by Jean Brouwers</p></li>
+<li><p>Fix TypeError when creating snapshots with classtracker in certain scenarios
+– Reported by rtadewald (#79), fixed by Jean Brouwers</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id13">
+<h2>0.6 - 2018-09-01<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id14">
+<h3>Added<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Python 3.7 support</p></li>
+</ul>
+</div>
+<div class="section" id="id15">
+<h3>Changed<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Update asizeof module to version 18.07.08. Includes more accurate sizing of
+objects with slots. – By Jean Brouwers</p></li>
+</ul>
+</div>
+<div class="section" id="id16">
+<h3>Removed<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Python 2.6 and 3.2 support</p></li>
+</ul>
+</div>
+<div class="section" id="id17">
+<h3>Fixed<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Fix KeyError when using Django memory panel in certain scenarios – Reported
+by Mark Davidoff (#55), fixed by Pedro Tacla Yamada</p></li>
+<li><p>Fix Debug Toolbar - Remove all jQuery variables from the global scope – By
+the5fire (#66)</p></li>
+<li><p>Fix process import error when empty lines found in /proc/self/status –
+Reported by dnlsng (#67)</p></li>
+<li><p>Return more accurate size of objects with slots – Reported by Ivo Anjo
+(#69), fixed by Jean Brouwers</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id18">
+<h2>0.5 - 2017-03-23<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id19">
+<h3>Added<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Add support for Python 3.5 and Python 3.6</p></li>
+</ul>
+</div>
+<div class="section" id="id20">
+<h3>Changed<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Improved runtime performance of summary differ – By Matt Perpick (#42)</p></li>
+<li><p>Include values when sizing named tuples – Reported by Paul Ellenbogen (#35),
+fixed by Chris Klaiber</p></li>
+<li><p>Update bottle.py to 0.12.13</p></li>
+</ul>
+</div>
+<div class="section" id="id21">
+<h3>Removed<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Drop Python 2.5 and Python 3.1 support</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id22">
+<h2>0.4.3 - 2016-03-31<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id23">
+<h3>Added<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Add Django 1.9 support for DDT panel – By Benjy (#30)</p></li>
+</ul>
+</div>
+<div class="section" id="id24">
+<h3>Fixed<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Handle untracked classes in tracker statistics – By gbtami (#33)</p></li>
+<li><p>Handle colons in process names gracefully – By Dariusz Suchojad (#26)</p></li>
+<li><p>Support types without <code class="docutils literal notranslate"><span class="pre">__flags__</span></code> attribute in muppy (#24)</p></li>
+<li><p>Fix documentation errors (#32, #28, #25) – By gbtami, Matt, Lawrence Hudson</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id25">
+<h2>0.4.2 - 2015-07-26<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id26">
+<h3>Fixed<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Include private variables within slots when sizing recursively – GitHub
+issue #20 report and fix by ddodt</p></li>
+<li><p>Fix NameError in memory panel – GitHub issue #21 reported by relekang</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id27">
+<h2>0.4.1 - 2015-04-15<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id28">
+<h3>Changed<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Replace Highcharts with Flot (#17)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id29">
+<h2>0.4 - 2015-02-03<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id30">
+<h3>Added<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Added memory panel for django-debug-toolbar</p></li>
+<li><p>Format tracker statistics without printing – GitHub issue #2 reported and
+implemented by Andrei Sosnin</p></li>
+<li><p>Added close method to ClassTracker</p></li>
+<li><p>Support for Python 3.4</p></li>
+</ul>
+</div>
+<div class="section" id="id31">
+<h3>Changed<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Track instance counts of tracked classes without snapshots</p></li>
+<li><p>Upgrade to Highcharts 3 and jQuery 1.10</p></li>
+</ul>
+</div>
+<div class="section" id="id32">
+<h3>Removed<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Dropped support for Python 2.4</p></li>
+</ul>
+</div>
+<div class="section" id="id33">
+<h3>Fixed<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Include size of closure variables – GitHub issue #8 reported and implemented
+by Craig Silverstein</p></li>
+<li><p>Fix tkinter import on Python 3 – GitHub issue #4 reported by pedru-de-huere</p></li>
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">StreamBrowser.print_tree</span></code> when called without arguments – GitHub issue
+#5 reported by pedru-de-huere</p></li>
+<li><p>Fix sizing of named tuples – GitHub issue #10 reported by ceridwen</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id34">
+<h2>0.3.1 - 2013-02-16<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Fix class tracker graph data formatting – Issue 48 reported by Berwyn Hoyt</p></li>
+<li><p>Improve web class tracker documentation – Issue 49 reported by Berwyn Hoyt</p></li>
+<li><p>Update links to GitHub and PyPi</p></li>
+</ul>
+</div>
+<div class="section" id="id35">
+<h2>0.3.0 - 2012-12-29<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Support for Python 3.3</p></li>
+</ul>
+</div>
+<div class="section" id="id36">
+<h2>0.2.2 - 2012-11-24<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Work around array sizing bug in Python 2.6-3.2 – Issue 46 reported by Matt</p></li>
+<li><p>Fix import when python is run with optimization <code class="docutils literal notranslate"><span class="pre">-OO</span></code> – Issue 47 reported by
+Kunal Parmar</p></li>
+</ul>
+</div>
+<div class="section" id="id37">
+<h2>0.2.1 - 2011-11-13<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Fix static file retrieval when installed via easy_install</p></li>
+<li><p>Show class tracker instantiation traces and referent trees in web interface</p></li>
+<li><p>New style for web interface</p></li>
+</ul>
+</div>
+<div class="section" id="id38">
+<h2>0.2<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h2>
+<p>The second release is one of several steps to better integrate the different
+sub-systems of Pympler. All modules now directly reside in the pympler namespace
+which simplifies the import of Pympler modules.  Pympler 0.2 introduces a web
+interface to facilitate memory profiling.  Pympler now fully supports Python
+3.x. This release also adds several modules replacing the <em>Heapmonitor</em> module
+with the new <em>class tracker</em> facility.</p>
+<ul class="simple">
+<li><p>Introduce web frontend</p></li>
+<li><p>Split Heapmonitor into several new modules</p></li>
+<li><p>New <code class="docutils literal notranslate"><span class="pre">process</span></code> module to obtain memory statistics of the Python process</p></li>
+<li><p>Improved garbage illustration which can directly render directed graphs using
+graphviz</p></li>
+</ul>
+</div>
+<div class="section" id="id39">
+<h2>0.1<a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h2>
+<p>This initial release is the first step to unify three separate Python memory
+profiling tools. We aim to create a place-to-go for Python developers who want
+to monitor and analyze the memory usage of their applications. It is just the
+first step towards a further integration. There is still lots of work that
+needs to be done and we stress that the API is subject to change. Any feedback
+you want to give us, wishes, bug reports, or feature requests please send them
+to <strong>pympler-dev&#64;googlegroups.com</strong>.</p>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Changelog</a><ul>
+<li><a class="reference internal" href="#unreleased">UNRELEASED</a><ul>
+<li><a class="reference internal" href="#added">Added</a></li>
+<li><a class="reference internal" href="#changed">Changed</a></li>
+<li><a class="reference internal" href="#removed">Removed</a></li>
+<li><a class="reference internal" href="#fixed">Fixed</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id1">0.9 - 2020-10-14</a><ul>
+<li><a class="reference internal" href="#id2">Added</a></li>
+<li><a class="reference internal" href="#id3">Removed</a></li>
+<li><a class="reference internal" href="#id4">Fixed</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id5">0.8 - 2019-11-12</a><ul>
+<li><a class="reference internal" href="#id6">Added</a></li>
+<li><a class="reference internal" href="#id7">Removed</a></li>
+<li><a class="reference internal" href="#id8">Fixed</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id9">0.7 - 2019-04-05</a><ul>
+<li><a class="reference internal" href="#id10">Added</a></li>
+<li><a class="reference internal" href="#id11">Changed</a></li>
+<li><a class="reference internal" href="#id12">Fixed</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id13">0.6 - 2018-09-01</a><ul>
+<li><a class="reference internal" href="#id14">Added</a></li>
+<li><a class="reference internal" href="#id15">Changed</a></li>
+<li><a class="reference internal" href="#id16">Removed</a></li>
+<li><a class="reference internal" href="#id17">Fixed</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id18">0.5 - 2017-03-23</a><ul>
+<li><a class="reference internal" href="#id19">Added</a></li>
+<li><a class="reference internal" href="#id20">Changed</a></li>
+<li><a class="reference internal" href="#id21">Removed</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id22">0.4.3 - 2016-03-31</a><ul>
+<li><a class="reference internal" href="#id23">Added</a></li>
+<li><a class="reference internal" href="#id24">Fixed</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id25">0.4.2 - 2015-07-26</a><ul>
+<li><a class="reference internal" href="#id26">Fixed</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id27">0.4.1 - 2015-04-15</a><ul>
+<li><a class="reference internal" href="#id28">Changed</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id29">0.4 - 2015-02-03</a><ul>
+<li><a class="reference internal" href="#id30">Added</a></li>
+<li><a class="reference internal" href="#id31">Changed</a></li>
+<li><a class="reference internal" href="#id32">Removed</a></li>
+<li><a class="reference internal" href="#id33">Fixed</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id34">0.3.1 - 2013-02-16</a></li>
+<li><a class="reference internal" href="#id35">0.3.0 - 2012-12-29</a></li>
+<li><a class="reference internal" href="#id36">0.2.2 - 2012-11-24</a></li>
+<li><a class="reference internal" href="#id37">0.2.1 - 2011-11-13</a></li>
+<li><a class="reference internal" href="#id38">0.2</a></li>
+<li><a class="reference internal" href="#id39">0.1</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="glossary.html"
+                        title="previous chapter">Glossary</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="copyright.html"
+                        title="next chapter">Copyright</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/changes.md.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="copyright.html" title="Copyright"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="glossary.html" title="Glossary"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Pympler 0.9 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="detailed_toc.html" >Sitemap</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Changelog</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; <a href="copyright.html">Copyright</a> .
+      Last updated on Oct 23, 2021.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+  </body>
+</html>

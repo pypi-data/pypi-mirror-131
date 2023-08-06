@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pympler.process &#8212; Pympler 0.9 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="pympler.refbrowser" href="refbrowser.html" />
+    <link rel="prev" title="pympler.muppy" href="muppy.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="refbrowser.html" title="pympler.refbrowser"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="muppy.html" title="pympler.muppy"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Pympler 0.9 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../detailed_toc.html" >Sitemap</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="library.html" accesskey="U">Library</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">pympler.process</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-pympler.process">
+<span id="pympler-process"></span><span id="process"></span><h1>pympler.process<a class="headerlink" href="#module-pympler.process" title="Permalink to this headline">¶</a></h1>
+<p>This module queries process memory allocation metrics from the operating
+system. It provides a platform independent layer to get the amount of virtual
+and physical memory allocated to the Python process.</p>
+<p>Different mechanisms are implemented: Either the process stat file is read
+(Linux), the <cite>ps</cite> command is executed (BSD/OSX/Solaris) or the resource module
+is queried (Unix fallback). On Windows try to use the win32 module if
+available. If all fails, return 0 for each attribute.</p>
+<p>Windows without the win32 module is not supported.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pympler.process</span> <span class="kn">import</span> <span class="n">ProcessMemoryInfo</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span> <span class="o">=</span> <span class="n">ProcessMemoryInfo</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Virtual size [Byte]: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">pmi</span><span class="o">.</span><span class="n">vsz</span><span class="p">))</span> 
+<span class="go">Virtual size [Byte]: ...</span>
+</pre></div>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pympler.process._ProcessMemoryInfo">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pympler.process.</span></span><span class="sig-name descname"><span class="pre">_ProcessMemoryInfo</span></span><a class="headerlink" href="#pympler.process._ProcessMemoryInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stores information about various process-level memory metrics. The
+virtual size is stored in attribute <cite>vsz</cite>, the physical memory allocated to
+the process in <cite>rss</cite>, and the number of (major) pagefaults in <cite>pagefaults</cite>.
+On Linux, <cite>data_segment</cite>, <cite>code_segment</cite>, <cite>shared_segment</cite> and
+<cite>stack_segment</cite> contain the number of Bytes allocated for the respective
+segments.  This is an abstract base class which needs to be overridden by
+operating system specific implementations. This is done when importing the
+module.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pympler.process._ProcessMemoryInfo.update">
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#pympler.process._ProcessMemoryInfo.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Refresh the information using platform instruments. Returns true if
+this operation yields useful values on the current platform.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pympler.process.is_available">
+<span class="sig-prename descclassname"><span class="pre">pympler.process.</span></span><span class="sig-name descname"><span class="pre">is_available</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#pympler.process.is_available" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convenience function to check if the current platform is supported by this
+module.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">pympler.process</a><ul>
+<li><a class="reference internal" href="#classes">Classes</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="muppy.html"
+                        title="previous chapter">pympler.muppy</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="refbrowser.html"
+                        title="next chapter">pympler.refbrowser</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/library/process.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="refbrowser.html" title="pympler.refbrowser"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="muppy.html" title="pympler.muppy"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Pympler 0.9 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../detailed_toc.html" >Sitemap</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="library.html" >Library</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">pympler.process</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; <a href="../copyright.html">Copyright</a> .
+      Last updated on Oct 23, 2021.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+  </body>
+</html>

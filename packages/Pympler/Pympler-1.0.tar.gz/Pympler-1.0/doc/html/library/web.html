@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pympler.web &#8212; Pympler 0.9 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="Pympler Tutorials" href="../tutorials/tutorials.html" />
+    <link rel="prev" title="pympler.tracker" href="tracker.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../tutorials/tutorials.html" title="Pympler Tutorials"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="tracker.html" title="pympler.tracker"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Pympler 0.9 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../detailed_toc.html" >Sitemap</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="library.html" accesskey="U">Library</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">pympler.web</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-pympler.web">
+<span id="pympler-web"></span><span id="web"></span><h1>pympler.web<a class="headerlink" href="#module-pympler.web" title="Permalink to this headline">¶</a></h1>
+<p>This module provides a web-based memory profiling interface. The Pympler web
+frontend exposes process information, tracker statistics, and garbage graphs.
+The web frontend uses <a class="reference external" href="http://bottlepy.org">Bottle</a>, a lightweight Python
+web framework. Bottle is packaged with Pympler.</p>
+<p>The web server can be invoked almost as easily as setting a breakpoint using
+<em>pdb</em>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pympler.web</span> <span class="kn">import</span> <span class="n">start_profiler</span>
+<span class="n">start_profiler</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Calling <code class="docutils literal notranslate"><span class="pre">start_profiler</span></code> suspends the current thread and executes the Pympler
+web server, exposing profiling data and various facilities of the Pympler
+library via a graphic interface.</p>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="pympler.web.start_profiler">
+<span class="sig-prename descclassname"><span class="pre">pympler.web.</span></span><span class="sig-name descname"><span class="pre">start_profiler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'localhost'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8090</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tracker</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pympler.web.start_profiler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start the web server to show profiling data. The function suspends the
+Python application (the current thread) until the web server is stopped.</p>
+<p>The only way to stop the server is to signal the running thread, e.g. press
+Ctrl+C in the console. If this isn’t feasible for your application use
+<cite>start_in_background</cite> instead.</p>
+<p>During the execution of the web server, profiling data is (lazily) cached
+to improve performance. For example, garbage graphs are rendered when the
+garbage profiling data is requested and are simply retransmitted upon later
+requests.</p>
+<p>The web server can display profiling data from previously taken snapshots
+when <cite>tracker</cite> or <cite>stats</cite> is specified. The former is useful for profiling
+a running application, the latter for off-line analysis. Requires existing
+snapshots taken with
+<a class="reference internal" href="classtracker.html#pympler.classtracker.ClassTracker.create_snapshot" title="pympler.classtracker.ClassTracker.create_snapshot"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create_snapshot()</span></code></a> or
+<a class="reference internal" href="classtracker.html#pympler.classtracker.ClassTracker.start_periodic_snapshots" title="pympler.classtracker.ClassTracker.start_periodic_snapshots"><code class="xref py py-meth docutils literal notranslate"><span class="pre">start_periodic_snapshots()</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>host</strong> – the host where the server shall run, default is localhost</p></li>
+<li><p><strong>port</strong> – server listens on the specified port, default is 8090 to allow
+coexistance with common web applications</p></li>
+<li><p><strong>tracker</strong> – <cite>ClassTracker</cite> instance, browse profiling data (on-line
+analysis)</p></li>
+<li><p><strong>stats</strong> – <cite>Stats</cite> instance, analyze <cite>ClassTracker</cite> profiling dumps
+(useful for off-line analysis)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pympler.web.start_in_background">
+<span class="sig-prename descclassname"><span class="pre">pympler.web.</span></span><span class="sig-name descname"><span class="pre">start_in_background</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pympler.web.start_in_background" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start the web server in the background. A new thread is created which
+serves the profiling interface without suspending the current application.</p>
+<p>For the documentation of the parameters see <cite>start_profiler</cite>.</p>
+<p>Returns the created thread object.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">pympler.web</a><ul>
+<li><a class="reference internal" href="#functions">Functions</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="tracker.html"
+                        title="previous chapter">pympler.tracker</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../tutorials/tutorials.html"
+                        title="next chapter">Pympler Tutorials</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/library/web.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../tutorials/tutorials.html" title="Pympler Tutorials"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="tracker.html" title="pympler.tracker"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Pympler 0.9 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../detailed_toc.html" >Sitemap</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="library.html" >Library</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">pympler.web</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; <a href="../copyright.html">Copyright</a> .
+      Last updated on Oct 23, 2021.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+  </body>
+</html>

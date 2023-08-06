@@ -1,0 +1,598 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sizing individual objects &#8212; Pympler 0.9 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="next" title="Tracking class instances" href="classtracker.html" />
+    <link rel="prev" title="Requirements" href="intro.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="classtracker.html" title="Tracking class instances"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="intro.html" title="Requirements"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Pympler 0.9 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="detailed_toc.html" accesskey="U">Sitemap</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Sizing individual objects</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="sizing-individual-objects">
+<span id="asizeof"></span><h1>Sizing individual objects<a class="headerlink" href="#sizing-individual-objects" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>This module exposes 9 functions and 2 classes to obtain lengths and
+sizes of Python objects (for Python 2.6 or later).</p>
+<p>Earlier versions of this module supported Python versions down to
+Python 2.2.  If you are using Python 2.5 or older, please consider
+downgrading Pympler to version 0.3.x.</p>
+<p><strong>Public Functions</strong> <a class="footnote-reference brackets" href="#unsafe" id="id1">1</a></p>
+<blockquote>
+<div><p>Function <strong>asizeof</strong> calculates the combined (approximate) size
+in bytes of one or several Python objects.</p>
+<p>Function <strong>asizesof</strong> returns a tuple containing the (approximate)
+size in bytes for each given Python object separately.</p>
+<p>Function <strong>asized</strong> returns for each object an instance of class
+<strong>Asized</strong> containing all the size information of the object and
+a tuple with the referents <a class="footnote-reference brackets" href="#refs" id="id2">2</a>.</p>
+<p>Functions <strong>basicsize</strong> and <strong>itemsize</strong> return the <em>basic-</em>
+respectively <em>itemsize</em> of the given object, both in bytes.  For
+objects as <code class="docutils literal notranslate"><span class="pre">array.array</span></code>, <code class="docutils literal notranslate"><span class="pre">numpy.array</span></code>, <code class="docutils literal notranslate"><span class="pre">numpy.matrix</span></code>,
+etc. where the item size varies depending on the instance-specific
+data type, function <strong>itemsize</strong> returns that item size.</p>
+<p>Function <strong>flatsize</strong> returns the <em>flat size</em> of a Python object
+in bytes defined as the <em>basic size</em> plus the <em>item size</em> times
+the <em>length</em> of the given object.</p>
+<p>Function <strong>leng</strong> returns the <em>length</em> of an object, like standard
+function <code class="docutils literal notranslate"><span class="pre">len</span></code> but extended for several types.  E.g. the <strong>leng</strong>
+of a multi-precision int (or long) is the number of <code class="docutils literal notranslate"><span class="pre">digits</span></code>
+<a class="footnote-reference brackets" href="#digit" id="id3">4</a>.  The length of most <em>mutable</em> sequence objects includes
+an estimate of the over-allocation and therefore, the <strong>leng</strong> value
+may differ from the standard <code class="docutils literal notranslate"><span class="pre">len</span></code> result.  For objects like
+<code class="docutils literal notranslate"><span class="pre">array.array</span></code>, <code class="docutils literal notranslate"><span class="pre">numpy.array</span></code>, <code class="docutils literal notranslate"><span class="pre">numpy.matrix</span></code>, etc. function
+<strong>leng</strong> returns the proper number of items.</p>
+<p>Function <strong>refs</strong> returns (a generator for) the referents <a class="footnote-reference brackets" href="#refs" id="id4">2</a>
+of the given object.</p>
+<p>Certain classes are known to be sub-classes of or to behave as
+<code class="docutils literal notranslate"><span class="pre">dict</span></code> objects.  Function <strong>adict</strong> can be used to register
+other class objects to be treated like <code class="docutils literal notranslate"><span class="pre">dict</span></code>.</p>
+</div></blockquote>
+<p><strong>Public Classes</strong> <a class="footnote-reference brackets" href="#unsafe" id="id5">1</a></p>
+<blockquote>
+<div><p>Class <strong>Asizer</strong> may be used to accumulate the results of several
+<strong>asizeof</strong> or <strong>asizesof</strong> calls.  After creating an <strong>Asizer</strong>
+instance, use methods <strong>asizeof</strong> and <strong>asizesof</strong> as needed to
+size any number of additional objects.</p>
+<p>Call methods <strong>exclude_refs</strong> and/or <strong>exclude_types</strong> to exclude
+references to respectively instances or types of certain objects.</p>
+<p>Use one of the <strong>print_…</strong> methods to report the statistics.</p>
+<p>An instance of class <strong>Asized</strong> is returned for each object sized
+by the <strong>asized</strong> function or method.</p>
+</div></blockquote>
+<p><strong>Duplicate Objects</strong></p>
+<blockquote>
+<div><p>Any duplicate, given objects are sized only once and the size
+is included in the accumulated total only once.  But functions
+<strong>asizesof</strong> and <strong>asized</strong> will return a size value respectively
+an <strong>Asized</strong> instance for each given object, including duplicates.</p>
+</div></blockquote>
+<p><strong>Definitions</strong> <a class="footnote-reference brackets" href="#arb" id="id6">3</a></p>
+<blockquote>
+<div><p>The <em>length</em> of an objects like <code class="docutils literal notranslate"><span class="pre">dict</span></code>, <code class="docutils literal notranslate"><span class="pre">list</span></code>, <code class="docutils literal notranslate"><span class="pre">set</span></code>,
+<code class="docutils literal notranslate"><span class="pre">str</span></code>, <code class="docutils literal notranslate"><span class="pre">tuple</span></code>, etc. is defined as the number of items held
+in or allocated by the object.  Held items are <em>references</em> to
+other objects, called the <em>referents</em>.</p>
+<p>The <em>size</em> of an object is defined as the sum of the <em>flat size</em>
+of the object plus the sizes of any referents <a class="footnote-reference brackets" href="#refs" id="id7">2</a>.  Referents
+are visited recursively up to the specified detail level.  However,
+the size of objects referenced multiple times is included only once
+in the total <em>size</em>.</p>
+<p>The <em>flat size</em> of an object is defined as the <em>basic size</em> of the
+object plus the <em>item size</em> times the number of allocated <em>items</em>,
+<em>references</em> to referents.  The <em>flat size</em> does include the size
+for the <em>references</em> to the referents, but not the size of the
+referents themselves.</p>
+<p>The <em>flat size</em> returned by function <em>flatsize</em> equals the result
+of function <em>asizeof</em> with options <em>code=True</em>, <em>ignored=False</em>,
+<em>limit=0</em> and option <em>align</em> set to the same value.</p>
+<p>The accurate <em>flat size</em> for an object is obtained from function
+<code class="docutils literal notranslate"><span class="pre">sys.getsizeof()</span></code> where available.  Otherwise, the <em>length</em> and
+<em>size</em> of sequence objects as <code class="docutils literal notranslate"><span class="pre">dicts</span></code>, <code class="docutils literal notranslate"><span class="pre">lists</span></code>, <code class="docutils literal notranslate"><span class="pre">sets</span></code>, etc.
+is based on an estimate for the number of allocated items.  As a
+result, the reported <em>length</em> and <em>size</em> may differ substantially
+from the actual <em>length</em> and <em>size</em>.</p>
+<p>The <em>basic</em> and <em>item size</em> are obtained from the <code class="docutils literal notranslate"><span class="pre">__basicsize__</span></code>
+respectively <code class="docutils literal notranslate"><span class="pre">__itemsize__</span></code> attributes of the (type of the)
+object.  Where necessary (e.g. sequence objects), a zero
+<code class="docutils literal notranslate"><span class="pre">__itemsize__</span></code> is replaced by the size of a corresponding C type.</p>
+<p>The overhead for Python’s garbage collector (GC) is included in
+the <em>basic size</em> of (GC managed) objects as well as the space
+needed for <code class="docutils literal notranslate"><span class="pre">refcounts</span></code> (used only in certain Python builds).</p>
+<p>Optionally, size values can be aligned to any power-of-2 multiple.</p>
+</div></blockquote>
+<p><strong>Size of (byte)code</strong></p>
+<blockquote>
+<div><p>The <em>(byte)code size</em> of objects like classes, functions, methods,
+modules, etc. can be included by setting option <em>code=True</em>.</p>
+<p>Iterators are handled like sequences: iterated object(s) are sized
+like <em>referents</em> <a class="footnote-reference brackets" href="#refs" id="id8">2</a>, but only up to the specified level or
+recursion <em>limit</em> (and only if function <code class="docutils literal notranslate"><span class="pre">gc.get_referents()</span></code>
+returns the referent object of iterators).</p>
+<p>Generators are sized as <em>(byte)code</em> only, but the generated
+objects are never sized.</p>
+</div></blockquote>
+<p><strong>Old- and New-style Classes</strong></p>
+<blockquote>
+<div><p>All old- and new-style <code class="docutils literal notranslate"><span class="pre">class</span></code>, instance and <code class="docutils literal notranslate"><span class="pre">type</span></code> objects are
+handled uniformly such that (a) instance objects are distinguished
+from class objects and (b) instances of different old-style classes
+can be dealt with separately.</p>
+<p>Class and type objects are represented as <code class="docutils literal notranslate"><span class="pre">&lt;class</span> <span class="pre">....*</span> <span class="pre">def&gt;</span></code>
+respectively <code class="docutils literal notranslate"><span class="pre">&lt;type</span> <span class="pre">...</span> <span class="pre">def&gt;</span></code> where the <code class="docutils literal notranslate"><span class="pre">*</span></code> indicates an old-style
+class and the <code class="docutils literal notranslate"><span class="pre">...</span> <span class="pre">def</span></code> suffix marks the <em>definition object</em>.
+Instances of  classes are shown as <code class="docutils literal notranslate"><span class="pre">&lt;class</span> <span class="pre">module.name*&gt;</span></code> without
+the <code class="docutils literal notranslate"><span class="pre">...</span> <span class="pre">def</span></code> suffix.  The <code class="docutils literal notranslate"><span class="pre">*</span></code> after the name indicates an
+instance of an old-style class.</p>
+</div></blockquote>
+<p><strong>Ignored Objects</strong></p>
+<blockquote>
+<div><p>To avoid excessive sizes, several object types are ignored <a class="footnote-reference brackets" href="#arb" id="id9">3</a>
+by default, e.g. built-in functions, built-in types and classes
+<a class="footnote-reference brackets" href="#bi" id="id10">5</a>, function globals and module referents.  However, any
+instances thereof and module objects will be sized when passed as
+given objects.  Ignored object types are included unless option
+<em>ignored</em> is set accordingly.</p>
+<p>In addition, many <code class="docutils literal notranslate"><span class="pre">__...__</span></code> attributes of callable objects are
+ignored <a class="footnote-reference brackets" href="#arb" id="id11">3</a>, except crucial ones, e.g. class attributes <code class="docutils literal notranslate"><span class="pre">__dict__</span></code>,
+<code class="docutils literal notranslate"><span class="pre">__doc__</span></code>, <code class="docutils literal notranslate"><span class="pre">__name__</span></code> and <code class="docutils literal notranslate"><span class="pre">__slots__</span></code>.  For more details, see
+the type-specific <code class="docutils literal notranslate"><span class="pre">_..._refs()</span></code> and <code class="docutils literal notranslate"><span class="pre">_len_...()</span></code> functions below.</p>
+</div></blockquote>
+<p class="rubric">Footnotes</p>
+<dl class="footnote brackets">
+<dt class="label" id="unsafe"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id5">2</a>)</span></dt>
+<dd><p>The functions and classes in this module are not thread-safe.</p>
+</dd>
+<dt class="label" id="refs"><span class="brackets">2</span><span class="fn-backref">(<a href="#id2">1</a>,<a href="#id4">2</a>,<a href="#id7">3</a>,<a href="#id8">4</a>)</span></dt>
+<dd><p>The <em>referents</em> of an object are the objects referenced <em>by</em>
+that object.  For example, the <em>referents</em> of a <code class="docutils literal notranslate"><span class="pre">list</span></code> are the
+objects held in the <code class="docutils literal notranslate"><span class="pre">list</span></code>, the <em>referents</em> of a <code class="docutils literal notranslate"><span class="pre">dict</span></code> are
+the key and value objects in the <code class="docutils literal notranslate"><span class="pre">dict</span></code>, etc.</p>
+</dd>
+<dt class="label" id="arb"><span class="brackets">3</span><span class="fn-backref">(<a href="#id6">1</a>,<a href="#id9">2</a>,<a href="#id11">3</a>)</span></dt>
+<dd><p>These definitions and other assumptions are rather arbitrary
+and may need corrections or adjustments.</p>
+</dd>
+<dt class="label" id="digit"><span class="brackets"><a class="fn-backref" href="#id3">4</a></span></dt>
+<dd><p>See Python source file <code class="docutils literal notranslate"><span class="pre">.../Include/longinterp.h</span></code> for the
+C <code class="docutils literal notranslate"><span class="pre">typedef</span></code> of <code class="docutils literal notranslate"><span class="pre">digit</span></code> used in multi-precision int (or long)
+objects.  The C <code class="docutils literal notranslate"><span class="pre">sizeof(digit)</span></code> in bytes can be obtained in
+Python from the int (or long) <code class="docutils literal notranslate"><span class="pre">__itemsize__</span></code> attribute.
+Function <strong>leng</strong> determines the number of <code class="docutils literal notranslate"><span class="pre">digits</span></code> of an int
+(or long) object.</p>
+</dd>
+<dt class="label" id="bi"><span class="brackets"><a class="fn-backref" href="#id10">5</a></span></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">Type``s</span> <span class="pre">and</span> <span class="pre">``class``es</span> <span class="pre">are</span> <span class="pre">considered</span> <span class="pre">built-in</span> <span class="pre">if</span> <span class="pre">the</span>
+<span class="pre">``__module__</span></code> of the type or class is listed in the private
+<code class="docutils literal notranslate"><span class="pre">_builtin_modules</span></code>.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="asizer">
+<h2>Asizer<a class="headerlink" href="#asizer" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pympler.asizeof.</span></span><span class="sig-name descname"><span class="pre">Asized</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Stores the results of an <strong>asized</strong> object in the following
+4 attributes:</p>
+<blockquote>
+<div><p><em>size</em> – total size of the object (including referents)</p>
+<p><em>flat</em> – flat size of the object (in bytes)</p>
+<p><em>name</em> – name or <code class="docutils literal notranslate"><span class="pre">repr</span></code> of the object</p>
+<p><em>refs</em> – tuple containing an <strong>Asized</strong> instance for each referent</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pympler.asizeof.</span></span><span class="sig-name descname"><span class="pre">Asizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">opts</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Sizer state and options to accumulate sizes.</p>
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">asized</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">objs</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">opts</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Size each object and return an <strong>Asized</strong> instance with
+size information and referents up to the given detail
+level (and with modified options, see method <strong>set</strong>).</p>
+<p>If only one object is given, the return value is the
+<strong>Asized</strong> instance for that object.  The <strong>Asized</strong> size
+of duplicate and ignored objects will be zero.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">asizeof</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">objs</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">opts</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Return the combined size of the given objects
+(with modified options, see method <strong>set</strong>).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">asizesof</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">objs</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">opts</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Return the individual sizes of the given objects
+(with modified options, see method  <strong>set</strong>).</p>
+<p>The size of duplicate and ignored objects will be zero.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">exclude_refs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">objs</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Exclude any references to the specified objects from sizing.</p>
+<p>While any references to the given objects are excluded, the
+objects will be sized if specified as positional arguments
+in subsequent calls to methods <strong>asizeof</strong> and <strong>asizesof</strong>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">exclude_types</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">objs</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Exclude the specified object instances and types from sizing.</p>
+<p>All instances and types of the given objects are excluded,
+even objects specified as positional arguments in subsequent
+calls to methods <strong>asizeof</strong> and <strong>asizesof</strong>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">print_profiles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">w</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cutoff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">print3options</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Print the profiles above <em>cutoff</em> percentage.</p>
+<p>The available options and defaults are:</p>
+<blockquote>
+<div><p><em>w=0</em>           – indentation for each line</p>
+<p><em>cutoff=0</em>      – minimum percentage printed</p>
+<p><em>print3options</em> – some keyword arguments, like Python 3+ print</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">print_stats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">objs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sized</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sizes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">print3options</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Prints the statistics.</p>
+<p>The available options and defaults are:</p>
+<blockquote>
+<div><p><em>w=0</em>           – indentation for each line</p>
+<p><em>objs=()</em>       – optional, list of objects</p>
+<p><em>opts={}</em>       – optional, dict of options used</p>
+<p><em>sized=()</em>      – optional, tuple of <strong>Asized</strong> instances returned</p>
+<p><em>sizes=()</em>      – optional, tuple of sizes returned</p>
+<p><em>stats=3</em>       – print stats, see function <strong>asizeof</strong></p>
+<p><em>print3options</em> – some keyword arguments, like Python 3+ print</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">print_summary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">w</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">objs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">print3options</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Print the summary statistics.</p>
+<p>The available options and defaults are:</p>
+<blockquote>
+<div><p><em>w=0</em>           – indentation for each line</p>
+<p><em>objs=()</em>       – optional, list of objects</p>
+<p><em>print3options</em> – some keyword arguments, like Python 3+ print</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">print_typedefs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">w</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">print3options</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Print the types and dict tables.</p>
+<p>The available options and defaults are:</p>
+<blockquote>
+<div><p><em>w=0</em>           – indentation for each line</p>
+<p><em>print3options</em> – some keyword arguments, like Python 3+ print</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">above</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1024</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">code</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cutoff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">derive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">detail</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignored</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">infer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stream</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">extra</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Reset sizing options, state, etc. to defaults.</p>
+<p>The available options and default values are:</p>
+<blockquote>
+<div><p><em>above=0</em>      – threshold for largest objects stats</p>
+<p><em>align=8</em>      – size alignment</p>
+<p><em>code=False</em>   – incl. (byte)code size</p>
+<p><em>cutoff=10</em>    – limit large objects or profiles stats</p>
+<p><em>derive=False</em> – derive from super type</p>
+<p><em>detail=0</em>     – <strong>Asized</strong> refs level</p>
+<p><em>frames=False</em> – ignore frame objects</p>
+<p><em>ignored=True</em> – ignore certain types</p>
+<p><em>infer=False</em>  – try to infer types</p>
+<p><em>limit=100</em>    – recursion limit</p>
+<p><em>stats=0</em>      – print statistics, see function <strong>asizeof</strong></p>
+<p><em>stream=None</em>  – output stream for printing</p>
+</div></blockquote>
+<p>See function <strong>asizeof</strong> for a description of the options.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">above</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">code</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cutoff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">detail</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Set some sizing options.  See also <strong>reset</strong>.</p>
+<p>The available options are:</p>
+<blockquote>
+<div><p><em>above</em>  – threshold for largest objects stats</p>
+<p><em>align</em>  – size alignment</p>
+<p><em>code</em>   – incl. (byte)code size</p>
+<p><em>cutoff</em> – limit large objects or profiles stats</p>
+<p><em>detail</em> – <strong>Asized</strong> refs level</p>
+<p><em>frames</em> – size or ignore frame objects</p>
+<p><em>limit</em>  – recursion limit</p>
+<p><em>stats</em>  – print statistics, see function <strong>asizeof</strong></p>
+</div></blockquote>
+<p>Any options not set remain unchanged from the previous setting.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="public-functions">
+<h2>Public Functions<a class="headerlink" href="#public-functions" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py">
+<span class="sig-prename descclassname"><span class="pre">pympler.asizeof.</span></span><span class="sig-name descname"><span class="pre">adict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">classes</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Install one or more classes to be handled as dict.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py">
+<span class="sig-prename descclassname"><span class="pre">pympler.asizeof.</span></span><span class="sig-name descname"><span class="pre">asized</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">objs</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">opts</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Return a tuple containing an <strong>Asized</strong> instance for each
+object passed as positional argument.</p>
+<p>The available options and defaults are:</p>
+<blockquote>
+<div><p><em>above=0</em>      – threshold for largest objects stats</p>
+<p><em>align=8</em>      – size alignment</p>
+<p><em>code=False</em>   – incl. (byte)code size</p>
+<p><em>cutoff=10</em>    – limit large objects or profiles stats</p>
+<p><em>derive=False</em> – derive from super type</p>
+<p><em>detail=0</em>     – Asized refs level</p>
+<p><em>frames=False</em> – ignore stack frame objects</p>
+<p><em>ignored=True</em> – ignore certain types</p>
+<p><em>infer=False</em>  – try to infer types</p>
+<p><em>limit=100</em>    – recursion limit</p>
+<p><em>stats=0</em>      – print statistics</p>
+</div></blockquote>
+<p>If only one object is given, the return value is the <strong>Asized</strong>
+instance for that object.  Otherwise, the length of the returned
+tuple matches the number of given objects.</p>
+<p>The <strong>Asized</strong> size of duplicate and ignored objects will be zero.</p>
+<p>Set <em>detail</em> to the desired referents level and <em>limit</em> to the
+maximum recursion depth.</p>
+<p>See function <strong>asizeof</strong> for descriptions of the other options.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py">
+<span class="sig-prename descclassname"><span class="pre">pympler.asizeof.</span></span><span class="sig-name descname"><span class="pre">asizeof</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">objs</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">opts</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Return the combined size (in bytes) of all objects passed
+as positional arguments.</p>
+<p>The available options and defaults are:</p>
+<blockquote>
+<div><p><em>above=0</em>      – threshold for largest objects stats</p>
+<p><em>align=8</em>      – size alignment</p>
+<p><em>clip=80</em>      – clip <code class="docutils literal notranslate"><span class="pre">repr()</span></code> strings</p>
+<p><em>code=False</em>   – incl. (byte)code size</p>
+<p><em>cutoff=10</em>    – limit large objects or profiles stats</p>
+<p><em>derive=False</em> – derive from super type</p>
+<p><em>frames=False</em> – ignore stack frame objects</p>
+<p><em>ignored=True</em> – ignore certain types</p>
+<p><em>infer=False</em>  – try to infer types</p>
+<p><em>limit=100</em>    – recursion limit</p>
+<p><em>stats=0</em>      – print statistics</p>
+</div></blockquote>
+<p>Set <em>align</em> to a power of 2 to align sizes.  Any value less
+than 2 avoids size alignment.</p>
+<p>If <em>all</em> is True and if no positional arguments are supplied.
+size all current gc objects, including module, global and stack
+frame objects.</p>
+<p>A positive <em>clip</em> value truncates all repr() strings to at
+most <em>clip</em> characters.</p>
+<p>The (byte)code size of callable objects like functions,
+methods, classes, etc. is included only if <em>code</em> is True.</p>
+<p>If <em>derive</em> is True, new types are handled like an existing
+(super) type provided there is one and only of those.</p>
+<p>By default certain base types like object, super, etc. are
+ignored.  Set <em>ignored</em> to False to include those.</p>
+<p>If <em>infer</em> is True, new types are inferred from attributes
+(only implemented for dict types on callable attributes
+as get, has_key, items, keys and values).</p>
+<p>Set <em>limit</em> to a positive value to accumulate the sizes of
+the referents of each object, recursively up to the limit.
+Using <em>limit=0</em> returns the sum of the flat sizes of the
+given objects.  High <em>limit</em> values may cause runtime errors
+and miss objects for sizing.</p>
+<p>A positive value for <em>stats</em> prints up to 9 statistics, (1)
+a summary of the number of objects sized and seen and a list
+of the largests objects with size over <em>above</em> bytes, (2) a
+simple profile of the sized objects by type and (3+) up to 6
+tables showing the static, dynamic, derived, ignored, inferred
+and dict types used, found respectively installed.
+The fractional part of the <em>stats</em> value (x 100) is the number
+of largest objects shown for (<em>stats*1.+) or the cutoff
+percentage for simple profiles for (*stats*=2.+).  For example,
+*stats=1.10</em> shows the summary and the 10 largest objects,
+also the default.</p>
+<p>See this module documentation for the definition of flat size.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py">
+<span class="sig-prename descclassname"><span class="pre">pympler.asizeof.</span></span><span class="sig-name descname"><span class="pre">asizesof</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">objs</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">opts</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Return a tuple containing the size (in bytes) of all objects
+passed as positional arguments.</p>
+<p>The available options and defaults are:</p>
+<blockquote>
+<div><p><em>above=1024</em>   – threshold for largest objects stats</p>
+<p><em>align=8</em>      – size alignment</p>
+<p><em>clip=80</em>      – clip <code class="docutils literal notranslate"><span class="pre">repr()</span></code> strings</p>
+<p><em>code=False</em>   – incl. (byte)code size</p>
+<p><em>cutoff=10</em>    – limit large objects or profiles stats</p>
+<p><em>derive=False</em> – derive from super type</p>
+<p><em>frames=False</em> – ignore stack frame objects</p>
+<p><em>ignored=True</em> – ignore certain types</p>
+<p><em>infer=False</em>  – try to infer types</p>
+<p><em>limit=100</em>    – recursion limit</p>
+<p><em>stats=0</em>      – print statistics</p>
+</div></blockquote>
+<p>See function <strong>asizeof</strong> for a description of the options.</p>
+<p>The length of the returned tuple equals the number of given
+objects.</p>
+<p>The size of duplicate and ignored objects will be zero.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py">
+<span class="sig-prename descclassname"><span class="pre">pympler.asizeof.</span></span><span class="sig-name descname"><span class="pre">basicsize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">opts</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Return the basic size of an object (in bytes).</p>
+<p>The available options and defaults are:</p>
+<blockquote>
+<div><p><em>derive=False</em> – derive type from super type</p>
+<p><em>infer=False</em>  – try to infer types</p>
+<p><em>save=False</em>   – save the object’s type definition if new</p>
+</div></blockquote>
+<p>See this module documentation for the definition of <em>basic size</em>.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py">
+<span class="sig-prename descclassname"><span class="pre">pympler.asizeof.</span></span><span class="sig-name descname"><span class="pre">flatsize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">opts</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Return the flat size of an object (in bytes), optionally aligned
+to the given power of 2.</p>
+<p>See function <strong>basicsize</strong> for a description of other available options.</p>
+<p>See this module documentation for the definition of <em>flat size</em>.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py">
+<span class="sig-prename descclassname"><span class="pre">pympler.asizeof.</span></span><span class="sig-name descname"><span class="pre">itemsize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">opts</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Return the item size of an object (in bytes).</p>
+<p>See function <strong>basicsize</strong> for a description of the available options.</p>
+<p>See this module documentation for the definition of <em>item size</em>.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py">
+<span class="sig-prename descclassname"><span class="pre">pympler.asizeof.</span></span><span class="sig-name descname"><span class="pre">leng</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">opts</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Return the length of an object (in items).</p>
+<p>See function <strong>basicsize</strong> for a description of the available options.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py">
+<span class="sig-prename descclassname"><span class="pre">pympler.asizeof.</span></span><span class="sig-name descname"><span class="pre">refs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">opts</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Return (a generator for) specific <em>referents</em> of an object.</p>
+<p>See function <strong>basicsize</strong> for a description of the available options.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Sizing individual objects</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#asizer">Asizer</a></li>
+<li><a class="reference internal" href="#public-functions">Public Functions</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="intro.html"
+                        title="previous chapter">Requirements</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="classtracker.html"
+                        title="next chapter">Tracking class instances</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/asizeof.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="classtracker.html" title="Tracking class instances"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="intro.html" title="Requirements"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Pympler 0.9 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="detailed_toc.html" >Sitemap</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Sizing individual objects</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; <a href="copyright.html">Copyright</a> .
+      Last updated on Oct 23, 2021.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+  </body>
+</html>

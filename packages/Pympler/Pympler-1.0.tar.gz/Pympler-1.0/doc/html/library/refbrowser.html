@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pympler.refbrowser &#8212; Pympler 0.9 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="pympler.refgraph" href="refgraph.html" />
+    <link rel="prev" title="pympler.process" href="process.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="refgraph.html" title="pympler.refgraph"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="process.html" title="pympler.process"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Pympler 0.9 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../detailed_toc.html" >Sitemap</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="library.html" accesskey="U">Library</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">pympler.refbrowser</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-pympler.refbrowser">
+<span id="pympler-refbrowser"></span><span id="refbrowser-module"></span><h1>pympler.refbrowser<a class="headerlink" href="#module-pympler.refbrowser" title="Permalink to this headline">¶</a></h1>
+<p>Tree-like exploration of object referrers.</p>
+<p>This module provides a base implementation for tree-like referrers browsing.
+The two non-interactive classes ConsoleBrowser and FileBrowser output a tree
+to the console or a file. One graphical user interface for referrers browsing
+is provided as well. Further types can be subclassed.</p>
+<p>All types share a similar initialisation. That is, you provide a root object
+and may specify further settings such as the initial depth of the tree or an
+output function.
+Afterwards you can print the tree which will be arranged based on your previous
+settings.</p>
+<p>The interactive browser is based on a TreeWidget implemented in IDLE. It is
+available only if you have Tcl/Tk installed. If you try to instantiate the
+interactive browser without having Tkinter installed, an ImportError will be
+raised.</p>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="py class">
+<dt class="sig sig-object py" id="pympler.refbrowser.RefBrowser">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pympler.refbrowser.</span></span><span class="sig-name descname"><span class="pre">RefBrowser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">rootobject</span></em>, <em class="sig-param"><span class="pre">maxdepth=3</span></em>, <em class="sig-param"><span class="pre">str_func=&lt;function</span> <span class="pre">_repr&gt;</span></em>, <em class="sig-param"><span class="pre">repeat=True</span></em>, <em class="sig-param"><span class="pre">stream=None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pympler.refbrowser.RefBrowser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class to other RefBrowser implementations.</p>
+<p>This base class provides means to extract a tree from a given root object
+and holds information on already known objects (to avoid repetition
+if requested).</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pympler.refbrowser.RefBrowser.get_tree">
+<span class="sig-name descname"><span class="pre">get_tree</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pympler.refbrowser.RefBrowser.get_tree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tree of referrers of the root object.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pympler.refbrowser.ConsoleBrowser">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pympler.refbrowser.</span></span><span class="sig-name descname"><span class="pre">ConsoleBrowser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pympler.refbrowser.ConsoleBrowser" title="Permalink to this definition">¶</a></dt>
+<dd><p>RefBrowser that prints to the console (stdout).</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pympler.refbrowser.ConsoleBrowser.print_tree">
+<span class="sig-name descname"><span class="pre">print_tree</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tree</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pympler.refbrowser.ConsoleBrowser.print_tree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print referrers tree to console.</p>
+<p>keyword arguments
+tree – if not None, the passed tree will be printed. Otherwise it is
+based on the rootobject.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="pympler.refbrowser.FileBrowser">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pympler.refbrowser.</span></span><span class="sig-name descname"><span class="pre">FileBrowser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">rootobject</span></em>, <em class="sig-param"><span class="pre">maxdepth=3</span></em>, <em class="sig-param"><span class="pre">str_func=&lt;function</span> <span class="pre">_repr&gt;</span></em>, <em class="sig-param"><span class="pre">repeat=True</span></em>, <em class="sig-param"><span class="pre">stream=None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pympler.refbrowser.FileBrowser" title="Permalink to this definition">¶</a></dt>
+<dd><p>RefBrowser implementation which prints the tree to a file.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pympler.refbrowser.FileBrowser.print_tree">
+<span class="sig-name descname"><span class="pre">print_tree</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tree</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pympler.refbrowser.FileBrowser.print_tree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print referrers tree to file (in text format).</p>
+<p>keyword arguments
+tree – if not None, the passed tree will be printed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pympler.refbrowser.InteractiveBrowser">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pympler.refbrowser.</span></span><span class="sig-name descname"><span class="pre">InteractiveBrowser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">rootobject</span></em>, <em class="sig-param"><span class="pre">maxdepth=3</span></em>, <em class="sig-param"><span class="pre">str_func=&lt;function</span> <span class="pre">gui_default_str_function&gt;</span></em>, <em class="sig-param"><span class="pre">repeat=True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pympler.refbrowser.InteractiveBrowser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Interactive referrers browser.</p>
+<p>The interactive browser is based on a TreeWidget implemented in IDLE. It is
+available only if you have Tcl/Tk installed. If you try to instantiate the
+interactive browser without having Tkinter installed, an ImportError will
+be raised.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pympler.refbrowser.InteractiveBrowser.main">
+<span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">standalone</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pympler.refbrowser.InteractiveBrowser.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create interactive browser window.</p>
+<p>keyword arguments
+standalone – Set to true, if the browser is not attached to other
+windows</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">pympler.refbrowser</a><ul>
+<li><a class="reference internal" href="#classes">Classes</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="process.html"
+                        title="previous chapter">pympler.process</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="refgraph.html"
+                        title="next chapter">pympler.refgraph</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/library/refbrowser.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="refgraph.html" title="pympler.refgraph"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="process.html" title="pympler.process"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Pympler 0.9 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../detailed_toc.html" >Sitemap</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="library.html" >Library</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">pympler.refbrowser</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; <a href="../copyright.html">Copyright</a> .
+      Last updated on Oct 23, 2021.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+  </body>
+</html>

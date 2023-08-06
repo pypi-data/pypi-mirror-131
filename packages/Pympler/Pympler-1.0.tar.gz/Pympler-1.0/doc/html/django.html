@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tracking memory in Django &#8212; Pympler 0.9 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="next" title="Library" href="library/library.html" />
+    <link rel="prev" title="Identifying memory leaks" href="muppy.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="library/library.html" title="Library"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="muppy.html" title="Identifying memory leaks"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Pympler 0.9 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="detailed_toc.html" accesskey="U">Sitemap</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Tracking memory in Django</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="tracking-memory-in-django">
+<span id="django"></span><h1>Tracking memory in Django<a class="headerlink" href="#tracking-memory-in-django" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Pympler includes a memory profile panel for Django that integrates with the
+<a class="reference external" href="https://github.com/jazzband/django-debug-toolbar">Django Debug Toolbar</a>. It
+shows process memory information and model instances for the current request.</p>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Pympler adds a memory panel as a third party addon – it’s not included in the
+Django Debug Toolbar. It can be added by overriding the <cite>DEBUG_TOOLBAR_PANELS</cite>
+setting in the Django project settings:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">DEBUG_TOOLBAR_PANELS</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s1">&#39;debug_toolbar.panels.timer.TimerDebugPanel&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;pympler.panels.MemoryPanel&#39;</span><span class="p">,</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<p>Pympler also needs to be added to the <cite>INSTALLED_APPS</cite> in the Django settings:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="n">INSTALLED_APPS</span> <span class="o">+</span> <span class="p">(</span><span class="s1">&#39;debug_toolbar&#39;</span><span class="p">,</span> <span class="s1">&#39;pympler&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="known-issues">
+<h2>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h2>
+<p>Pympler doesn’t correctly handle tracking calls from concurrent threads. In
+order to get accurate instance counts and sizes, it’s recommended to only use
+single-threaded web servers for memory profiling, e.g.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">django</span><span class="o">-</span><span class="n">admin</span> <span class="n">runserver</span> <span class="o">--</span><span class="n">nothreading</span>
+</pre></div>
+</div>
+<span class="target" id="module-pympler.panels"></span><p>Expose a memory-profiling panel to the Django Debug toolbar.</p>
+<p>Shows process memory information (virtual size, resident set size) and model
+instances for the current request.</p>
+<p>Requires Django and Django Debug toolbar:</p>
+<p><a class="reference external" href="https://github.com/jazzband/django-debug-toolbar">https://github.com/jazzband/django-debug-toolbar</a></p>
+<p>Pympler adds a memory panel as a third party addon (not included in the
+django-debug-toolbar). It can be added by overriding the <cite>DEBUG_TOOLBAR_PANELS</cite>
+setting in the Django project settings:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">DEBUG_TOOLBAR_PANELS</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s1">&#39;debug_toolbar.panels.timer.TimerDebugPanel&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;pympler.panels.MemoryPanel&#39;</span><span class="p">,</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<p>Pympler also needs to be added to the <cite>INSTALLED_APPS</cite> in the Django settings:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="n">INSTALLED_APPS</span> <span class="o">+</span> <span class="p">(</span><span class="s1">&#39;debug_toolbar&#39;</span><span class="p">,</span> <span class="s1">&#39;pympler&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Tracking memory in Django</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#known-issues">Known issues</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="muppy.html"
+                        title="previous chapter">Identifying memory leaks</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="library/library.html"
+                        title="next chapter">Library</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/django.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="library/library.html" title="Library"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="muppy.html" title="Identifying memory leaks"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Pympler 0.9 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="detailed_toc.html" >Sitemap</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Tracking memory in Django</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; <a href="copyright.html">Copyright</a> .
+      Last updated on Oct 23, 2021.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+  </body>
+</html>

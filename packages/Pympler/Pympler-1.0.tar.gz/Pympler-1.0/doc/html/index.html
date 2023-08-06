@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction &#8212; Pympler 0.9 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="copyright" title="Copyright" href="copyright.html" />
+    <link rel="next" title="Sitemap" href="detailed_toc.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="detailed_toc.html" title="Sitemap"
+             accesskey="N">next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Pympler 0.9 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Introduction</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>Pympler is a development tool to measure, monitor and analyze the
+memory behavior of Python objects in a running Python application.</p>
+<p>By pympling a Python application, detailed insight in the size and
+the lifetime of Python objects can be obtained.  Undesirable or
+unexpected runtime behavior like memory bloat and other “pymples”
+can easily be identified.</p>
+<p>Pympler integrates three previously separate modules into a single,
+comprehensive profiling tool.  The <a class="reference internal" href="asizeof.html#asizeof"><span class="std std-ref">asizeof</span></a> module
+provides basic size information for one or several Python objects,
+module <a class="reference internal" href="muppy.html#muppy"><span class="std std-ref">muppy</span></a> is used for on-line monitoring of a Python
+application and module <a class="reference internal" href="classtracker.html#classtracker"><span class="std std-ref">Class Tracker</span></a> provides
+off-line analysis of the lifetime of selected Python objects.</p>
+<p>A web profiling frontend exposes process statistics, garbage
+visualisation and class tracker statistics.</p>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<p>Pympler is written entirely in Python, with no dependencies to external
+libraries. It integrates <a class="reference external" href="http://bottlepy.org">Bottle</a> and
+<a class="reference external" href="http://www.flotcharts.org">Flot</a>. Pympler has been tested with
+Python 3.5, 3.6, 3.7, 3.8, 3.9 and 3.10.</p>
+<p>Pympler is platform independent and has been tested on various Linux
+distributions (32bit and 64bit), Windows 7 and MacOS X.</p>
+</div>
+<div class="section" id="download">
+<h2>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h2>
+<p>If you have <em>pip</em> installed, the easiest way to get Pympler is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">pympler</span>
+</pre></div>
+</div>
+<p>Alternately, download Pympler releases from the <a class="reference external" href="https://pypi.org/projects/Pympler">Python Package Index</a> or <a class="reference external" href="https://github.com/pympler/pympler">check out the latest development
+revision</a> with git. Please see the README
+file for installation instructions.</p>
+</div>
+<div class="section" id="target-audience">
+<h2>Target Audience<a class="headerlink" href="#target-audience" title="Permalink to this headline">¶</a></h2>
+<p>Every Python developer interested in analyzing the memory consumption
+of their Python program should find a suitable, readily usable
+facility in Pympler.</p>
+</div>
+<div class="section" id="usage-examples">
+<h2>Usage Examples<a class="headerlink" href="#usage-examples" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">pympler.asizeof</span></code> can be used to investigate how much memory certain Python
+objects consume. In contrast to <code class="docutils literal notranslate"><span class="pre">sys.getsizeof</span></code>, <code class="docutils literal notranslate"><span class="pre">asizeof</span></code> sizes objects
+recursively. You can use one of the <a class="reference internal" href="asizeof.html#asizeof"><span class="std std-ref">asizeof</span></a> functions to get
+the size of these objects and all associated referents:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pympler</span> <span class="kn">import</span> <span class="n">asizeof</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="s1">&#39;text&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">asizeof</span><span class="o">.</span><span class="n">asizeof</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+<span class="go">176</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">asizeof</span><span class="o">.</span><span class="n">asized</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">format</span><span class="p">())</span>
+<span class="go">[1, 2, (3, 4), &#39;text&#39;] size=176 flat=48</span>
+<span class="go">    (3, 4) size=64 flat=32</span>
+<span class="go">    &#39;text&#39; size=32 flat=32</span>
+<span class="go">    1 size=16 flat=16</span>
+<span class="go">    2 size=16 flat=16</span>
+</pre></div>
+</div>
+<p>Memory leaks can be detected by using <a class="reference internal" href="muppy.html#muppy"><span class="std std-ref">muppy</span></a>. While the garbage
+collector debug output can report circular references this does not easily
+reveal where the leaks come from. Muppy can identify if objects are leaked out
+of a scope between two reference points:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pympler</span> <span class="kn">import</span> <span class="n">tracker</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tr</span> <span class="o">=</span> <span class="n">tracker</span><span class="o">.</span><span class="n">SummaryTracker</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">function_without_side_effects</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tr</span><span class="o">.</span><span class="n">print_diff</span><span class="p">()</span>
+<span class="go">  types |   # objects |   total size</span>
+<span class="go">======= | =========== | ============</span>
+<span class="go">   dict |           1 |    280     B</span>
+<span class="go">   list |           1 |    192     B</span>
+</pre></div>
+</div>
+<p>Tracking the lifetime of objects of certain classes can be achieved with the
+<a class="reference internal" href="classtracker.html#classtracker"><span class="std std-ref">Class Tracker</span></a>. This gives insight into instantiation
+patterns and helps to understand how specific objects contribute to the memory
+footprint over time:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pympler</span> <span class="kn">import</span> <span class="n">classtracker</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tr</span> <span class="o">=</span> <span class="n">classtracker</span><span class="o">.</span><span class="n">ClassTracker</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tr</span><span class="o">.</span><span class="n">track_class</span><span class="p">(</span><span class="n">Document</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tr</span><span class="o">.</span><span class="n">create_snapshot</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">create_documents</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tr</span><span class="o">.</span><span class="n">create_snapshot</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tr</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">print_summary</span><span class="p">()</span>
+<span class="go">              active      1.42 MB      average   pct</span>
+<span class="go">   Document     1000    195.38 KB    200     B   13%</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="history">
+<h2>History<a class="headerlink" href="#history" title="Permalink to this headline">¶</a></h2>
+<p>Pympler was founded in August 2008 by Jean Brouwers, Ludwig Haehne,
+and Robert Schuppenies with the goal of providing a complete and
+stand-alone memory profiling solution for Python.</p>
+</div>
+</div>
+<div class="section" id="quick-links">
+<h1>Quick Links<a class="headerlink" href="#quick-links" title="Permalink to this headline">¶</a></h1>
+<p><strong>Download pympler</strong>: <a class="reference external" href="https://pypi.org/projects/Pympler">https://pypi.org/projects/Pympler</a></p>
+<p><strong>File a bug report</strong>: <a class="reference external" href="https://github.com/pympler/pympler/issues">https://github.com/pympler/pympler/issues</a></p>
+<p><strong>Check out repository</strong>: <a class="reference external" href="https://github.com/pympler/pympler">https://github.com/pympler/pympler</a></p>
+</div>
+<div class="section" id="table-of-content">
+<h1>Table of Content<a class="headerlink" href="#table-of-content" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="asizeof.html#asizeof"><span class="std std-ref">Sizing individual objects</span></a> - A description of the <cite>asizeof</cite> module.</p></li>
+<li><p><a class="reference internal" href="classtracker.html#classtracker"><span class="std std-ref">Tracking class instances</span></a> - A description of the <cite>ClassTracker</cite> facility.</p></li>
+<li><p><a class="reference internal" href="muppy.html#muppy"><span class="std std-ref">Identifying memory leaks</span></a> - A description of the <cite>muppy</cite> modules.</p></li>
+<li><p><a class="reference internal" href="django.html#django"><span class="std std-ref">Tracking memory in Django</span></a> - How to use the Django debug toolbar memory panel.</p></li>
+<li><p><a class="reference internal" href="library/library.html#pympler-library"><span class="std std-ref">Library</span></a> - The library reference guide.</p></li>
+<li><p><a class="reference internal" href="tutorials/tutorials.html#tutorials"><span class="std std-ref">Pympler Tutorials</span></a> - Pympler tutorials and usage examples.</p></li>
+<li><p><a class="reference internal" href="related.html#related-work"><span class="std std-ref">Related Work</span></a> - Other projects which deal which memory profiling in
+Python are mentioned in the this section.</p></li>
+<li><p><a class="reference internal" href="glossary.html#glossary"><span class="std std-ref">Glossary</span></a> - A few basic terms used throughout the documentation.</p></li>
+<li><p><a class="reference internal" href="changes.html"><span class="doc">Changes in Pympler</span></a></p></li>
+<li><p><a class="reference internal" href="copyright.html#copyright"><span class="std std-ref">Copyright</span></a> - Last but not least ..</p></li>
+</ul>
+<p>Also available are</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="detailed_toc.html">Sitemap</a></li>
+</ul>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Introduction</a><ul>
+<li><a class="reference internal" href="#requirements">Requirements</a></li>
+<li><a class="reference internal" href="#download">Download</a></li>
+<li><a class="reference internal" href="#target-audience">Target Audience</a></li>
+<li><a class="reference internal" href="#usage-examples">Usage Examples</a></li>
+<li><a class="reference internal" href="#history">History</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#quick-links">Quick Links</a></li>
+<li><a class="reference internal" href="#table-of-content">Table of Content</a></li>
+</ul>
+
+  <h4>Next topic</h4>
+  <p class="topless"><a href="detailed_toc.html"
+                        title="next chapter">Sitemap</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="detailed_toc.html" title="Sitemap"
+             >next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Pympler 0.9 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Introduction</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; <a href="copyright.html">Copyright</a> .
+      Last updated on Oct 23, 2021.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+  </body>
+</html>
