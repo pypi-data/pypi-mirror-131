@@ -1,0 +1,14 @@
+tinda/__init__.py,sha256=bstBMATBVC4auGdqaxmRaXvZNBt_d-o1fjSDZbQDBmE,170
+tinda/audioVideoClient.py,sha256=Svp-V8u0bSLNPHBPOkbXQwzvisenbAXAN5-R4-0ckwY,12814
+tinda/bot.py,sha256=cK1RTq1xjE_ici1PNX4J8SkYIffn4QCBXk2MPaVP3hI,10547
+tinda/functions.py,sha256=jEL_172FkSJEKeft1vJL_i4OubNWHQVRgZzgu4Mh7yo,42774
+tinda/sock.py,sha256=yDgEfHvlridn9yvFF12-evTiiNWqoeS2FbZa7Qv5lec,13247
+tinda/terClient.py,sha256=QJfFOhYXLJkslDK-T8btX5gW5YgfgoNHCPWE-ybR2F8,1860
+tinda/terServer.py,sha256=4iyaGYThQIactVjHeAFTfZWGGzFlJ6ui5lmoauNKasg,3685
+tinda/test.py,sha256=mC4gdXW1THj0zZYgLh-26BGvjHAqS9-7K9Ve_TzR8p8,1531
+tinda/zzz.py,sha256=8uRGUb01wLi6MGfgXK_JX_9eVDG5GVrD5e0eNw1WQpY,3632
+tinda-0.0.23.dist-info/LICENSE.txt,sha256=_cKOhZd4NqIALWAEKMhr2nH-8V4IINAOTieO2FMVn6k,1066
+tinda-0.0.23.dist-info/METADATA,sha256=nspuunVK829MapHD4Gz6tNAUXrZZQ7IcXIQ0MG9pAmk,1502
+tinda-0.0.23.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tinda-0.0.23.dist-info/top_level.txt,sha256=Cjj1Ts49FvLCCwtNVazrRTmp2_v_CtGG771TJnfXrCA,6
+tinda-0.0.23.dist-info/RECORD,,
