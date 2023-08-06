@@ -1,0 +1,4 @@
+[console_scripts]
+test-main = test_package.__main__:main
+tpm = test_package.__main__:main
+
