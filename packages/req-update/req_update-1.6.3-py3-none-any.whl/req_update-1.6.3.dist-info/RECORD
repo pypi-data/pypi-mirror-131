@@ -1,0 +1,17 @@
+req_update/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+req_update/node.py,sha256=F97kU9MNv_S6Q0je_dLq1LTpZqALj5ZvNyW-T5kGrlM,1268
+req_update/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+req_update/python.py,sha256=eZOAIpOSx-gPCPrLqfeZcFMaOwADZ4BpuwNFfp-7z2o,5909
+req_update/req_update.py,sha256=oF69tZ0QGbG2Te0QU0AN40Ptbfx0vZ8quYkQCreif4s,3063
+req_update/util.py,sha256=edvNTwqfLrncpHNvWdOK-qNpIpO_fx20cW4CoJfmeuU,4916
+req_update/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+req_update/tests/test_node.py,sha256=fHd4ZZ7z9_muDjspUhqJbKzg5LndnKTNf5Ztw-X4T8w,3193
+req_update/tests/test_python.py,sha256=ed0KfTS5Nnn9ouSp0962uEwfLm1RYlDY4o58CdOunVk,12122
+req_update/tests/test_req_update.py,sha256=w1jhjz1_Gq9HmST9ha-P-CtKT0gID68K90G_xVD8_ZU,9909
+req_update/tests/test_util.py,sha256=irUqZ7ShiwTx07lej4AG6naefSA06SxGfKIWEbvHOWY,9913
+req_update-1.6.3.dist-info/LICENSE,sha256=dmBJezKBqVg2AbhDv6I22MFTx19m3h7zFDfMAUzfJvw,1068
+req_update-1.6.3.dist-info/METADATA,sha256=DnAcQNqEfOm8L5x12Xom4upCUAS9Z-LtMgb_ECV72dA,2967
+req_update-1.6.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+req_update-1.6.3.dist-info/entry_points.txt,sha256=8b8YD61kuzq3Vw5LbAGVWdH9ePfewShExtm5BJJzErg,59
+req_update-1.6.3.dist-info/top_level.txt,sha256=JRSxVihfBjwuowt49yB6CR8F1YaTNM1ZcRKLGXIdVXM,11
+req_update-1.6.3.dist-info/RECORD,,
