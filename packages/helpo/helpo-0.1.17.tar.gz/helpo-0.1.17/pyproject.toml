@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "helpo"
+version = "0.1.17"
+description = "zg helper cli scripts"
+license = "Proprietary"
+authors = ["Ahmed Kamel <ahmedk@zadgroup.net>"]
+readme = "README.md"
+
+
+[tool.poetry.scripts]
+helpo = "helpo.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = "^0.4.0"
+zxpy = "^1.2.2"
+slumber = "^0.7.1"
+cloudflare = "^2.8.15"
+loguru = "^0.5.3"
+namecom = "^0.5.0"
+atlassian-python-api = "^3.10.0"
+requests = "^2.25.1"
+hvac = "^0.11.2"
+jsonmerge = "^1.8.0"
+minio = "^7.0.3"
+packaging = "^21.3"
+tenacity = "^8.0.1"
+tldextract = "^3.1.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
