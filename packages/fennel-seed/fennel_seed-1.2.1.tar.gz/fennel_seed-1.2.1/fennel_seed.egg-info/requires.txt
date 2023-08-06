@@ -1,0 +1,13 @@
+PyYAML
+numpy
+scipy
+pandas
+
+[interactive]
+nbstripout
+matplotlib
+jupyter
+tqdm
+
+[jax]
+jax[cpu]
