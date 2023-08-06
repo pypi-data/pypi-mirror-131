@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+AqDsKit/__init__.py
+AqDsKit/testing.py
+AqDsKit.egg-info/PKG-INFO
+AqDsKit.egg-info/SOURCES.txt
+AqDsKit.egg-info/dependency_links.txt
+AqDsKit.egg-info/top_level.txt
