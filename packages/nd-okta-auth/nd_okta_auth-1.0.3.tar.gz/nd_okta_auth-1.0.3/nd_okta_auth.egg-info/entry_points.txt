@@ -1,0 +1,3 @@
+[console_scripts]
+nd_okta_auth = nd_okta_auth.main:entry_point
+
