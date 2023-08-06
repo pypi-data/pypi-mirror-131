@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/finite_state_machines/FSM.py
+src/finite_state_machines/MVWFSM.py
+src/finite_state_machines/WFSM.py
+src/finite_state_machines/__init__.py
+src/finite_state_machines/combinatorial_fsm.py
+src/finite_state_machines.egg-info/PKG-INFO
+src/finite_state_machines.egg-info/SOURCES.txt
+src/finite_state_machines.egg-info/dependency_links.txt
+src/finite_state_machines.egg-info/top_level.txt
+src/finite_state_machines/algorithms/__init__.py
+src/finite_state_machines/algorithms/fsm_for_words_avoiding.py
