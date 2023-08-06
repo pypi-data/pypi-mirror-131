@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: uecp
+Version: 0.2.0
+Summary: UECP encoder & decoder
+License: MIT
+Keywords: UECP,RDS,Radio,FM
+Author: Christian Kohlstedde
+Author-email: christian@kohlsted.de
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Natural Language :: German
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: crc (>=1.1.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# python UECP implementation
+
+This library aims to support UECP version 6.02. It will start with basic commands required to support our needs.
+
