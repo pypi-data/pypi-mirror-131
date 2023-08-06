@@ -1,0 +1,12 @@
+LICENSE
+README.md
+mc_status_webhook.py
+pyproject.toml
+setup.cfg
+setup.py
+mc_status_webhook.egg-info/PKG-INFO
+mc_status_webhook.egg-info/SOURCES.txt
+mc_status_webhook.egg-info/dependency_links.txt
+mc_status_webhook.egg-info/entry_points.txt
+mc_status_webhook.egg-info/requires.txt
+mc_status_webhook.egg-info/top_level.txt
