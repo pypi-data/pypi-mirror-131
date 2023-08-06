@@ -1,0 +1,7 @@
+numpy>=1.18
+
+[gdspy]
+gdspy>=1.6
+
+[matplotlib]
+matplotlib>=3.2
