@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+./CODE_OF_CONDUCT.md
+./LICENSE
+./requirements.txt
+./gfft/__init__.py
+./gfft/__main__.py
+./gfft/gfft.py
+gfft.egg-info/PKG-INFO
+gfft.egg-info/SOURCES.txt
+gfft.egg-info/dependency_links.txt
+gfft.egg-info/entry_points.txt
+gfft.egg-info/top_level.txt

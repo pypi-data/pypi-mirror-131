@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: gfft
+Version: 0.0.4
+Summary: Initial python project VA & MS
+Home-page: https://github.com/vaalessi/gfft
+Author: Vince Alessi
+Author-email: valessi@umich.edu
+License: BSD 3-Clause
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Framework :: IPython
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# gfft
+
