@@ -1,0 +1,11 @@
+LICENSE.md
+README.rst
+setup.py
+src/__init__.py
+src/api.py
+src/json_fixture.py
+testit_api_client_test.egg-info/PKG-INFO
+testit_api_client_test.egg-info/SOURCES.txt
+testit_api_client_test.egg-info/dependency_links.txt
+testit_api_client_test.egg-info/requires.txt
+testit_api_client_test.egg-info/top_level.txt
