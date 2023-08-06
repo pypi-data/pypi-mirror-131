@@ -1,0 +1,10 @@
+README.md
+setup.py
+teletiffinfo/__init__.py
+teletiffinfo/tiff.py
+teletiffinfo/util.py
+teletiffinfo.egg-info/PKG-INFO
+teletiffinfo.egg-info/SOURCES.txt
+teletiffinfo.egg-info/dependency_links.txt
+teletiffinfo.egg-info/requires.txt
+teletiffinfo.egg-info/top_level.txt
