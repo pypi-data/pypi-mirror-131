@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+test.py
+ezdatabase/__init__.py
+ezdatabase.egg-info/PKG-INFO
+ezdatabase.egg-info/SOURCES.txt
+ezdatabase.egg-info/dependency_links.txt
+ezdatabase.egg-info/top_level.txt

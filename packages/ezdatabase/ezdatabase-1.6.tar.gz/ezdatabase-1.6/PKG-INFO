@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: ezdatabase
+Version: 1.6
+Summary: A simple database wrapper for Python 3
+Home-page: UNKNOWN
+Author: JJTV
+License: MIT
+Keywords: database wrapper,ezdatabase,easydatabase,easy database,repl.it database,sql alternative,sqlite
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# ezdatabase
+## Making Databases easier
+
+EzDatabase is a simple Database Wrapper for Python! Inspired by Repl.it Database!
+It can be used like a Python List
+
+## Features
+
+- Works with a Key / Value System
+- Can store strings, numbers, booleans, bytes
+
+## Code Examples
+
+- Initialize Database
+#
+#
+```python
+from ezdatabase import db
+
+database = db("MyDatabase.db")
+# Returns None
+```
+
+- Set / Update Value of a Key
+#
+#
+```python
+# Arguments: key_name, key_value
+database["User1"] = {"age": 10, "name": "John"}
+database["21398"] = "10,30 EUR"
+database["online"] = True
+# Returns True on Success
+```
+
+- Read the Value of a Key
+#
+#
+```python
+value = database["User1"]
+# Returns the Value of a Key
+```
+- Delete a Key
+#
+#
+```python
+del database["User1"]
+# Returns True on Successful removal of the Key
+```
+#
+#
+- Iterate through the Keys of the Database
+```python
+for x in database:
+    print(x)
+```
+
+
+
+Change Log
+==========
+
+1.6 (02/12/2021)
+-------------------
+- Usage Updated
+- Made Database Iterable
+- Documentation Updated
+

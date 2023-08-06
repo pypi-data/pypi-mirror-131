@@ -1,0 +1,8 @@
+Change Log
+==========
+
+1.6 (02/12/2021)
+-------------------
+- Usage Updated
+- Made Database Iterable
+- Documentation Updated
