@@ -1,0 +1,23 @@
+
+
+Examples using ``sportsbet.datasets.FDSoccerDataLoader.extract_train_data``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example illustrates the usage of Football-Data dataloader.">
+
+.. only:: html
+
+ .. figure:: /auto_examples/images/thumb/sphx_glr_extract_soccer_fd_data_thumb.png
+     :alt: Extracting data from Football-Data
+
+     :ref:`sphx_glr_auto_examples_extract_soccer_fd_data.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_auto_examples_extract_soccer_fd_data.py`
