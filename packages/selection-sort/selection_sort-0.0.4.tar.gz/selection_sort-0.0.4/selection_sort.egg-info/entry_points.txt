@@ -1,0 +1,3 @@
+[console_scripts]
+selection_sort=selection_sort:mainselection_sort.py = selection_sort:main
+

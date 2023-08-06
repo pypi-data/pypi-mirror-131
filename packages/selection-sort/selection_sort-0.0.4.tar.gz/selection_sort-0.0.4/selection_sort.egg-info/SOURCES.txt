@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+selection_sort/__init__.py
+selection_sort/__main__.py
+selection_sort/selection_sort.py
+selection_sort.egg-info/PKG-INFO
+selection_sort.egg-info/SOURCES.txt
+selection_sort.egg-info/dependency_links.txt
+selection_sort.egg-info/entry_points.txt
+selection_sort.egg-info/requires.txt
+selection_sort.egg-info/top_level.txt
