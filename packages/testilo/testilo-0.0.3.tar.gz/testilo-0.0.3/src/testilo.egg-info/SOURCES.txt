@@ -1,0 +1,6 @@
+setup.py
+src/print_ilo.py
+src/testilo.egg-info/PKG-INFO
+src/testilo.egg-info/SOURCES.txt
+src/testilo.egg-info/dependency_links.txt
+src/testilo.egg-info/top_level.txt
