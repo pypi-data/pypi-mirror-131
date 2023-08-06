@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: vialib3
+Version: 1.0.0
+Summary: minimal VSMF support for Python 3
+Home-page: https://github.com/jeffsenn/vialib
+Author: Jeff Senn
+Author-email: jeffsenn@gmail.com
+License: UNKNOWN
+Description: #MAYA VSMF
+        
+        The MAYA vsmf library converted to Python 3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+MAYA/__init__.py
+MAYA/VIA/__init__.py
+MAYA/VIA/uform.py
+MAYA/VIA/uuid.py
+MAYA/VIA/vsmf.py
+MAYA/utils/__init__.py
+MAYA/utils/crypto.py
+MAYA/utils/date.py
+vialib3.egg-info/PKG-INFO
+vialib3.egg-info/SOURCES.txt
+vialib3.egg-info/dependency_links.txt
+vialib3.egg-info/top_level.txt
