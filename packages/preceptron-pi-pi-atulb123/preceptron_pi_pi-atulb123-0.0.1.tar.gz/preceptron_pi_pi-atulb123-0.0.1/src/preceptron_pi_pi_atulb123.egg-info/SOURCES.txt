@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/perceptron_py_pi/__init__.py
+src/perceptron_py_pi/perceptron.py
+src/preceptron_pi_pi_atulb123.egg-info/PKG-INFO
+src/preceptron_pi_pi_atulb123.egg-info/SOURCES.txt
+src/preceptron_pi_pi_atulb123.egg-info/dependency_links.txt
+src/preceptron_pi_pi_atulb123.egg-info/requires.txt
+src/preceptron_pi_pi_atulb123.egg-info/top_level.txt

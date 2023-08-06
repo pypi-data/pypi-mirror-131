@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: preceptron_pi_pi-atulb123
+Version: 0.0.1
+Summary: implementation of perceptron
+Home-page: https://github.com/atulb123/preceptron_pi_pi
+Author: atulb123
+Author-email: atulmysuru@example.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/atulb123/preceptron_pi_pi/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# preceptron_pi_pi
+```https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python#publishing-to-package-registries```
+
