@@ -1,0 +1,9 @@
+setup.py
+df_ops/__init__.py
+df_ops/df_ops.py
+df_ops/duplicates.py
+df_ops/sdf.py
+naclo.egg-info/PKG-INFO
+naclo.egg-info/SOURCES.txt
+naclo.egg-info/dependency_links.txt
+naclo.egg-info/top_level.txt
