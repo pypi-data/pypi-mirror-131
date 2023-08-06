@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pysj
+Version: 0.1a0
+Summary: Pysj makes Python development more comfortable. This package contains utils, classes and helper
+Author: Sondre S. Ødegård
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development
+Requires-Dist: numpy
+Project-URL: documentation, https://github.com/sondreod/pysj
+Project-URL: source, https://github.com/sondreod/pysj
+
+# Pysj
+
+This package contains utils, classes and helper
+functions I find myself reimplementing in several projects. As of now all functions are importable from the top level module.
+
+The name is a commonly used shortened version of the Norwegian word "pysjamas" (in english: pajamas/pyjamas).
+Coding in your pysjamas/pajamas/pyjamas is comfortable. This package is an attempt to make Python development a bit more comfortable.
+
+This is an ongoing project and so far just a few functions are implemented, as well as a project structure, tests and packaging.
+
+
+### Installation
+```bash
+pip install pysj
+```
+### Usage
+```python
+from pysj import sha256, ExtendedJSONEncoder
+
+# Simple hashing
+print(sha256("test"))
+
+# JSON Encoder converting datetime to ISO format
+json.dumps(
+    {
+        "timestamp": datetime.datetime.fromisoformat("2021-12-01T04:50:00.123456")
+    },
+    cls=ExtendedJSONEncoder,
+)
+```
+
