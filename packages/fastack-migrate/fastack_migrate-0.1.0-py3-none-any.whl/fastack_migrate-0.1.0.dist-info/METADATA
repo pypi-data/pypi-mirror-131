@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fastack-migrate
+Version: 0.1.0
+Summary: WIP
+License: MIT
+Author: aprilahijriyan
+Author-email: 37798612+aprilahijriyan@users.noreply.github.com
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: alembic (>=1.7.5,<2.0.0)
+Requires-Dist: fastack (>=1.0.1,<2.0.0)
