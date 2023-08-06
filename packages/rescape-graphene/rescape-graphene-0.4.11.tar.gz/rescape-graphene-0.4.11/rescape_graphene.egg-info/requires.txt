@@ -1,0 +1,13 @@
+pyramda
+graphene
+graphene-django
+inflection
+deepmerge
+djangorestframework
+djangorestframework-jwt
+psycopg2-binary
+django-graphql-jwt
+utils
+simplejson
+jsonfield
+rescape-python-helpers
