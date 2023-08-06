@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+dir_struct_cli/__inti__.py
+dir_struct_cli/handlers.py
+dir_struct_cli/main.py
+dir_structure_cli.egg-info/PKG-INFO
+dir_structure_cli.egg-info/SOURCES.txt
+dir_structure_cli.egg-info/dependency_links.txt
+dir_structure_cli.egg-info/entry_points.txt
+dir_structure_cli.egg-info/requires.txt
+dir_structure_cli.egg-info/top_level.txt
