@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+model_unpickler/__init__.py
+model_unpickler/gen_whitelist.py
+model_unpickler/pk_whitelist.json
+model_unpickler/safe_pickler.py
+model_unpickler.egg-info/PKG-INFO
+model_unpickler.egg-info/SOURCES.txt
+model_unpickler.egg-info/dependency_links.txt
+model_unpickler.egg-info/requires.txt
+model_unpickler.egg-info/top_level.txt
