@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: slivka-irv
+Version: 1.1.0
+Summary: IRV Algorithm and Wildcat Connection Parser
+Home-page: https://github.com/nathanllww/slivka-irv
+Author: Nathan White, Andreas Bugler
+Author-email: nathanwhite2022@u.northwestern.edu, andreas@u.northwestern.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+

@@ -1,0 +1,3 @@
+[console_scripts]
+irv = irv:main_func
+

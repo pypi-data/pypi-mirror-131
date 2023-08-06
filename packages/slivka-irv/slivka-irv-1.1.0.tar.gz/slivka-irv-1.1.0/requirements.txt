@@ -1,0 +1,9 @@
+pandas
+numpy
+argbind
+
+# testing
+pytest
+
+# linting
+flake8
