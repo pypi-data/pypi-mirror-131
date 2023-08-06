@@ -1,0 +1,8 @@
+audit_flask/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+audit_flask/mongodb.py,sha256=BO8fNEcDHe_JgFOf_4mSUSjdW5LgIgmsC0_EWLGrzZk,1320
+audit_flask/postgres.py,sha256=sjcgDQiEeP9ThVMtA8yDczvAUinceiXxoWswiXeIcg4,1537
+audit_flask/utils.py,sha256=QPihBLeR_6HhfWvxf1ej32yT8pzPbfdAoBQtJaoOpSQ,820
+audit_flask-0.21.dist-info/METADATA,sha256=TQg5ihFJuNIIF8xpQB9gBbq743uB0ZI5RVJunBR8Ycs,428
+audit_flask-0.21.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+audit_flask-0.21.dist-info/top_level.txt,sha256=Ztbn2OZPFzaHO2nKnEyxdN4VbzNbD5nG3UdBgmRXIp4,12
+audit_flask-0.21.dist-info/RECORD,,
