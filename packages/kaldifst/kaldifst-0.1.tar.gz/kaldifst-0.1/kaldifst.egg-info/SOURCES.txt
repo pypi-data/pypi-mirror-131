@@ -1,0 +1,8 @@
+README.md
+setup.py
+kaldifst.egg-info/PKG-INFO
+kaldifst.egg-info/SOURCES.txt
+kaldifst.egg-info/dependency_links.txt
+kaldifst.egg-info/not-zip-safe
+kaldifst.egg-info/top_level.txt
+kaldifst/python/kaldifst/__init__.py

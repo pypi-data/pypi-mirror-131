@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: kaldifst
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://github.com/csukuangfj/kaldifst
+Author: Fangjun Kuang
+Author-email: csukuangfj@gmail.com
+License: Apache licensed, as found in the LICENSE file
+Description: ## Introduction
+        
+        Python wrapper for [OpenFst][openfst] and its extensions from  [Kaldi][kaldi].
+        
+        Still working in progress.
+        
+        **Note**: It does not depend on Kaldi. You don't need to install
+        Kaldi to use this repo.
+        
+        [openfst]: https://www.openfst.org/
+        [kaldi]: https://github.com/kaldi-asr/kaldi
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
