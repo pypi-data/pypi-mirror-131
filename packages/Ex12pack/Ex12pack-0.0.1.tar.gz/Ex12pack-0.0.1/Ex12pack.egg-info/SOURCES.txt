@@ -1,0 +1,9 @@
+setup.py
+Ex's/Ex10.py
+Ex's/Ex12.py
+Ex's/Ex8.py
+Ex's/__init__.py
+Ex12pack.egg-info/PKG-INFO
+Ex12pack.egg-info/SOURCES.txt
+Ex12pack.egg-info/dependency_links.txt
+Ex12pack.egg-info/top_level.txt
