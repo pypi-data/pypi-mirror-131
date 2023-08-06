@@ -1,0 +1,16 @@
+faebryk/__init__.py,sha256=7ket_6h-H3o_c7Sw6xSAmutp4Nt9RA5ycl0aZZYey4c,165
+faebryk/library.py,sha256=izlJDzD3BAOK7UnqFAcxkcjG5wD232pl762w0yc1sf4,3855
+faebryk/version.py,sha256=tGcc2DaIdr1-yGo5G46Y2Rihlmsu8mu98VwOfXAmwWw,107
+faebryk/exporters/__init__.py,sha256=ZcCevQep3QBFv1c6UPiSnrb9W0n7VVis1LcjLTIqZTU,107
+faebryk/exporters/netlist/__init__.py,sha256=xZCx7zzrjC8xmkAMmBq2b7xNYPMudhtI9DnkxeTCGKU,136
+faebryk/exporters/netlist/netlist.py,sha256=HXMxfhKTpVo3FiRaAO23RdrJhcXYZ2XR_ZJpP6LJcoc,3457
+faebryk/exporters/netlist/kicad/__init__.py,sha256=B6pPG03ECwlyBSqRPUQAqvjayHtlBSbcJ2A9oE1wP-s,171
+faebryk/exporters/netlist/kicad/netlist_kicad.py,sha256=-M0H5lnQ3vd6ZOOHpyHehcem0j-ocqpxy-YhCUz_l-U,8406
+faebryk/exporters/netlist/kicad/sexp.py,sha256=_bsj0kKQ3QYE-VgmivSRn9FxX4dMX4g0Qqlml16e8yE,1680
+faebryk/libs/__init__.py,sha256=VDz4UkPCpCb6anIquLUBRng6xpCiJaeXQfxcNOMoopU,24
+faebryk/libs/util.py,sha256=kHhunPJmkoJcd_0k8KY0yGhKczk8tAHYJ1Ht9IwQyhM,610
+faebryk-0.0.1.dist-info/LICENSE,sha256=MlorNN7ZyTkidYEZNO2a22OfygKEwbeFdOOvgMsoShU,1064
+faebryk-0.0.1.dist-info/METADATA,sha256=-Vx1SoAUyR8ZElwPr3ClqIX_01e44ATwM1Uhgi0_Qvk,1551
+faebryk-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+faebryk-0.0.1.dist-info/top_level.txt,sha256=emMqdfK8a9Meul3HOLtF7EfthKn-SVRkgJDxLq7gxUE,8
+faebryk-0.0.1.dist-info/RECORD,,
