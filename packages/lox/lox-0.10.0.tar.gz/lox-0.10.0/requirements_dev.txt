@@ -1,0 +1,15 @@
+Sphinx
+autoflake
+autopep8
+bumpversion
+coverage
+flake8
+pytest-benchmark
+pytest-mock
+pytest-runner
+pytest
+tox
+twine
+tqdm
+watchdog
+wheel
