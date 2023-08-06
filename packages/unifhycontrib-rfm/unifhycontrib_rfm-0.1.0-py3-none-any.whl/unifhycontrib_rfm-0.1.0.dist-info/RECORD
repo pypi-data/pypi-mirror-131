@@ -1,0 +1,9 @@
+unifhycontrib_rfm-0.1.0-py3.8-nspkg.pth,sha256=vp9kt0-BRL7cwYQx7_Dg4qk1aGWZW0PMf6F5Qjko9eA,574
+unifhycontrib/rfm/__init__.py,sha256=mOtSqDfZQ_4QkvT2viDEQmpM32cbMdEKOZv3DrHuZYk,42
+unifhycontrib/rfm/openwater.py,sha256=wQWPnqQQcH1veOovYTUzEINqSdG4Uq4VkPtuZqOrLp4,9159
+unifhycontrib/rfm/version.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+unifhycontrib_rfm-0.1.0.dist-info/METADATA,sha256=9Mek62A4fy-VNMDVbbPU6B3Pu0d1Uh0wyeNKclR_l_k,1782
+unifhycontrib_rfm-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+unifhycontrib_rfm-0.1.0.dist-info/namespace_packages.txt,sha256=wZbZYRIH7myrvsMQZALzb41Arwf528TFNzQLK5nRcI8,14
+unifhycontrib_rfm-0.1.0.dist-info/top_level.txt,sha256=wZbZYRIH7myrvsMQZALzb41Arwf528TFNzQLK5nRcI8,14
+unifhycontrib_rfm-0.1.0.dist-info/RECORD,,
