@@ -1,0 +1,3 @@
+sinetstream>=1.1.0
+opencv-python
+numpy<1.22.0
