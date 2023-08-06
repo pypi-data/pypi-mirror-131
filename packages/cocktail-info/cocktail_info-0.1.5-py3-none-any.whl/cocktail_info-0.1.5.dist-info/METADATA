@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: cocktail-info
+Version: 0.1.5
+Summary: Get the information of cocktails.
+Home-page: https://github.com/Kenyaokun/cocktail_info
+License: MIT
+Author: Kun Yao
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: ipython (==7.29.0)
+Requires-Dist: pandas (==1.3.4)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Project-URL: Documentation, https://cocktail_info.readthedocs.io
+Project-URL: Repository, https://github.com/Kenyaokun/cocktail_info
+Description-Content-Type: text/markdown
+
+# cocktail_info
+
+Get the information of cocktails.
+
+## Installation
+
+```bash
+$ pip install cocktail_info
+```
+
+## Usage
+
+```bash
+from cocktail_info import cocktail_info
+```
+
+### Get the id of the cocktail
+
+```bash
+cocktail_info.get_id('gin')
+```
+
+### Get the information of the cocktails
+
+```bash
+cocktail_info.get_cocktail('gin')
+```
+
+### Get the information of the exact cocktail you want to know
+
+```bash
+cocktail_info.get_one('gin')
+```
+
+### Get the ingredients of the cocktails
+
+```bash
+cocktail_info.get_ingredient('gin')
+```
+
+### Get the pictures of the cocktails
+
+```bash
+cocktail_info.get_pics('gin')
+```
+
+### Get the introduction of the cocktail
+
+```bash
+cocktail_info.description('gin')
+```
+
+### Tell whether one ingredient is in the cocktail
+
+```bash
+cocktail_info.is_in('gin')
+```
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`cocktail_info` was created by Kun Yao. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`cocktail_info` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
