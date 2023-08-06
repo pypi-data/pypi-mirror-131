@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: knnor
+Version: 0.0.3
+Summary: Generic python library to perform augmentation of data
+Home-page: UNKNOWN
+Author: Ashhadul Islam, Sameer Brahim Belhaouari, Atiq Ur Rahman, Halima Bensmail
+Author-email: ashhadulislam@gmail.com, samir.brahim@gmail.com, atrehman2@hbku.edu.qa, hbensmail@hbku.edu.qa
+License: MIT
+Description: A generic package to help data scientists balance their dataset by increasing the datapoints for an imbalanced class.
+Keywords: Binary Classification,Data Augmentation,Imabalnced Data
+Platform: UNKNOWN
