@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: voiceio
+Version: 0.1.2
+Summary: Voice Interfacing Module Adding Extra Features to Pycord
+Home-page: https://github.com/pycord/voiceio
+Author: Vincent
+License: BSD 3-Clause
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# VoiceIO
+Voice package for Pycord adding extra features.
+
+[![Pycord](https://discordapp.com/api/guilds/881207955029110855/embed.png?style=banner2)](https://discord.gg/pycord)
+
+# Example
+Down bellow is an example of what you can currently do.
+
+```py
+import voiceio
+
+process = voiceio.Process()
+
+@process.download(url="https://www.youtube.com/watch?v=dP15zlyra3c") # Downloads the given link. 
+# Full List of supported WebSites: https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md
+async def y():
+    pass
+```
+
+

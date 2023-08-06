@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+voiceio/__init__.py
+voiceio/core.py
+voiceio.egg-info/PKG-INFO
+voiceio.egg-info/SOURCES.txt
+voiceio.egg-info/dependency_links.txt
+voiceio.egg-info/requires.txt
+voiceio.egg-info/top_level.txt
