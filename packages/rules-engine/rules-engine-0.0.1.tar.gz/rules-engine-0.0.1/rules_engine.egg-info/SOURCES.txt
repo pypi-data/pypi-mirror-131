@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.cfg
+rules_engine.egg-info/PKG-INFO
+rules_engine.egg-info/SOURCES.txt
+rules_engine.egg-info/dependency_links.txt
+rules_engine.egg-info/top_level.txt

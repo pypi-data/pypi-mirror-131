@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: rules-engine
+Version: 0.0.1
+Summary: Rules engine
+Home-page: https://github.com/fyndiq/rules-engine
+Author: Fyndiq AB
+Author-email: support@fyndiq.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/fyndiq/rules-engine/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# rules-engine
+
+
