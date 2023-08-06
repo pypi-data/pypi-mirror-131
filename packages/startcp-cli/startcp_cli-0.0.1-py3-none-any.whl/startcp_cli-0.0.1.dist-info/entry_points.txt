@@ -1,0 +1,3 @@
+[console_scripts]
+startcp = startcp.__main__:main
+
