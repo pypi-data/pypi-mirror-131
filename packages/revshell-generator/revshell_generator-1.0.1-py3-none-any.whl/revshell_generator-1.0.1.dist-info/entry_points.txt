@@ -1,0 +1,3 @@
+[console_scripts]
+revshell-generator = reverseshellgenerator.generator:main
+
