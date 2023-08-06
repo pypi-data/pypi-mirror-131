@@ -1,0 +1,17 @@
+blackblox/__init__.py,sha256=CLpAkcNJwxD7qLYj82GWD39djOC2ezR3nrNK3SiXqN8,35
+blackblox/about.py,sha256=tPjnZAemdl4jY8D7zQHr1GwJcsQf4GvHkaOFZY6XHAA,651
+blackblox/bb_log.py,sha256=lreIi8x1xrXCGQncn7MTp7OOfboK1RN1IBGRyL90xGE,1524
+blackblox/calculators.py,sha256=q38d0_zrFUQhm_dp_7zGdlf2yte2jLiMaywgYEYnxVs,21731
+blackblox/dataconfig.py,sha256=zEPpKCXBbWtRUjOPfN6vm4mGcBCEYgXN3Axm2ZWH9WU,443
+blackblox/dataconfig_defaults.py,sha256=mymfjuGQafNGW0gYpULz2Tp4xeVWmacH4q_y_NGQnyo,8003
+blackblox/dataconfig_format.py,sha256=19rc_jsjpfJFrd2nG4i52D6ilH5_o9JWrquFZDCnBuc,8348
+blackblox/factory.py,sha256=nL51LeMsnXOaPUQQPqXuirf3CXCLAOPgn5ANDN2CE58,69852
+blackblox/frames_default.py,sha256=YTs8iNhmZSdB4uu2kL3ZLEe_z_L8QJ1NuZOSXI2fJoU,3798
+blackblox/industry.py,sha256=mLtBFUxJTlKSoz7noOGKq97gzysoZ-a3xir-i3m3jnc,27294
+blackblox/io_functions.py,sha256=v1rzDrk9fgxA-0D31-SGuZZ7wq7LZUYWwLcuG0ZetWQ,24245
+blackblox/processchain.py,sha256=0DyIo2lBxRVUwcEVdrwnxo6cQ9Vi0bd_EMSOQZIaF-4,21563
+blackblox/unitprocess.py,sha256=4T4z0tW_yOCRZ4g6YTTvYvmmwA40oZLVVvLf6NZX1z8,41435
+blackblox-0.2.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+blackblox-0.2.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+blackblox-0.2.1.dist-info/METADATA,sha256=OEWSSRfgCT1V4HdYWSIk22oBQP334lI6pX27U0oyTBw,18046
+blackblox-0.2.1.dist-info/RECORD,,
