@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/PySQIF.egg-info/PKG-INFO
+src/PySQIF.egg-info/SOURCES.txt
+src/PySQIF.egg-info/dependency_links.txt
+src/PySQIF.egg-info/top_level.txt
