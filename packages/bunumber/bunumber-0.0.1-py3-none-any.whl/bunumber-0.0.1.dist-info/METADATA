@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: bunumber
+Version: 0.0.1
+Summary: number by digit and letter
+License: MIT
+Author: ahamidp
+Author-email: ahamidp@gmail.com
+Requires-Python: >=3.7.2,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+﻿a simple number module
