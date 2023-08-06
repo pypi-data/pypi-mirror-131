@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: carpi-gpsreporter
+Version: 0.1.2.dev211221002238
+Summary: Python-written daemon reporting Redis bus delivered GPS data to external sources
+Home-page: https://gitlab.com/car-pi/CarPi-GPSReporter
+Author: rGunti
+Author-email: raphael@rgunti.ch
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+# CarPi-GPSDaemon
+Python-written daemon reporting Redis bus delivered GPS data to external sources
+
+
