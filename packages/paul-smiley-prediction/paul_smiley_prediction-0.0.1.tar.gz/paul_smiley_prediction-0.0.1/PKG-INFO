@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: paul_smiley_prediction
+Version: 0.0.1
+Summary: Smiley face predictior
+Home-page: UNKNOWN
+Author: Paul Fentress
+Author-email: fentresspaul@berkeley.edu
+License: MIT
+Description: This is a library which contains a pre-trained model to predict
+        hand-drawn smiley faces (Happy, Sad).
+        
+        You can use this library with Streamlit for example,
+        to collect hand-drawn smiley faces and predict them.
+        
+        
+        Change Log
+        ==========
+        
+        0.0.1 (21/19/2021)
+        ------------------
+        - First Release 
+        
+Keywords: Smiley Face
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
