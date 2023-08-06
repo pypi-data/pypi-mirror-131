@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: bobcatpy
+Version: 1.0.0
+Summary: Control and monitor your Bobcat miner
+Home-page: https://github.com/ardevd/bobcatpy
+Author: ardevd
+Author-email: 5gk633atf@relay.firefox.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 5 - Production/Stable
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# bobcatpy
+
+A Python library to interact with the Bobcat Helium miner diagnostics API.
+
+BobcatPy provides an alternative way to interact with the Bobcat diagnoser interface and includes some additional functionality for easy troubleshooting and maintenance.
+
+## Usage
+
+```python
+import bobcatpy
+
+# Define your Bobcat instance. Replace with your actual hotspot IP
+b = Bobcat("192.168.1.150")
+
+# Get statuses
+b.temps()
+b.sync_status()
+b.miner_status()
+
+# Reboot the hotspot
+b.reboot()
+
+# Fastsync the hotspot
+b.fastsync()
+
+# Resync the hotspot
+b.resync()
+
+# Reset the hotspot
+b.reset()
+
+# Run diagnostics
+b.diagnose()
+```
+
+
+
+

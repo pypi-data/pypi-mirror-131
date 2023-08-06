@@ -1,0 +1,8 @@
+LICENSE
+README.md
+bobcatpy.py
+setup.py
+bobcatpy.egg-info/PKG-INFO
+bobcatpy.egg-info/SOURCES.txt
+bobcatpy.egg-info/dependency_links.txt
+bobcatpy.egg-info/top_level.txt
