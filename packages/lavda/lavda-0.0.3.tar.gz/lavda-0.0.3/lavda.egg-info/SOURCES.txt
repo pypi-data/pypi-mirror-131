@@ -1,0 +1,8 @@
+setup.py
+lavda/__init__.py
+lavda.egg-info/PKG-INFO
+lavda.egg-info/SOURCES.txt
+lavda.egg-info/dependency_links.txt
+lavda.egg-info/requires.txt
+lavda.egg-info/top_level.txt
+lavda.egg-info/zip-safe
