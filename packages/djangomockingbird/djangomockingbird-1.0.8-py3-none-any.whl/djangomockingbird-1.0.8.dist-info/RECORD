@@ -1,0 +1,11 @@
+djangomockingbird/__init__.py,sha256=Repnv8qQNRy8P9fALeYsLnvvZFny1cgjeyn9zglA8oI,50
+djangomockingbird/decorator.py,sha256=RHNY3ccwVRctcLtx5QcgllXAoaHsv25oV_TFKuH2yQE,926
+djangomockingbird/decorator_utils.py,sha256=lq1KARThKwZlMTVVqkPr93JSTjkpIVkTJEyT0CfOqjI,310
+djangomockingbird/make_mocks.py,sha256=hgHtGNkWJYMlqRw8dZbgBfqReC2gknXrb08C3eF4l5c,2657
+djangomockingbird/queryset.py,sha256=IJLGmBP-DqghRBWWXfvbRHzFhckr6k7I327iQm-O5h4,6302
+djangomockingbird/queryset_utils.py,sha256=Lw4mFKZ4oaagVcTs_R1RCH4zm_DlxgYCX7BAXGGA1Tw,1200
+djangomockingbird/utils.py,sha256=cQLw2F8kRX_JEpYSyUIJK8CYFS_8BacoKjJFGbVj65M,2165
+djangomockingbird-1.0.8.dist-info/LICENSE,sha256=fJxQ1fKlrV_nHQwlS6Jekj5tun6nKCpoGj93lN2T-1M,1070
+djangomockingbird-1.0.8.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+djangomockingbird-1.0.8.dist-info/METADATA,sha256=uF9yzJTDUNWXAY3aE6y_wO4mB270OOBwdjZwQPZO0k8,4218
+djangomockingbird-1.0.8.dist-info/RECORD,,
