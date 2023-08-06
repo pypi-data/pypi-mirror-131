@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: fastlz5
+Version: 0.0.1
+Summary: Python wrapper for FastLZ, a lightning-fast lossless compression library.
+Home-page: https://github.com/zackees/python-fastlz5
+Author: Zach Vorhies
+Author-email: UNKNOWN
+License: BSD License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Archiving :: Compression
+Classifier: Topic :: Utilities
