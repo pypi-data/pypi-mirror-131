@@ -1,0 +1,88 @@
+#!python
+
+# Import dependencies
+import shutil
+import argparse
+
+# Import internal dependencies
+from pyluks import __version__
+from pyluks.luksctl_api import __path__ as luksctl_api_path_list
+from pyluks.luksctl_api import __prefix__ as environment_prefix
+from pyluks.luksctl_api.luksctl_run import master, wn, LOGFILE
+
+
+################################################################################
+# VARIABLES
+
+luksctl_api_path = luksctl_api_path_list[0]
+
+
+
+################################################################################
+# COMMAND LINE OPTIONS
+
+def cli_options():
+    parser = argparse.ArgumentParser(description='LUKS storage management script API')
+    parser.add_argument('-V', '--version', action='store_true', dest='version', default=False, help='Print luksctl_api version')
+    subparsers = parser.add_subparsers(help='Type of node')
+
+    master_parser = subparsers.add_parser('master')
+    master_parser.add_argument('--infrastructure-config', choices=['single_vm','cluster'], dest='infrastructure_config', help='Infrastructure configuration')
+    master_parser.add_argument('--virtualization-type', default=None, dest='virtualization_type', help='Virtualization type')
+    master_parser.add_argument('--node-list', nargs='*', dest='node_list', default=None, help='Worker nodes IPs')
+    master_parser.add_argument('--ssl', action='store_true', dest='ssl', default=False, help='Use ssl self signed certificate')
+    master_parser.add_argument('--user', dest='user', default='luksctl_api', help='luksctl-api service user')
+    master_parser.set_defaults(setup_function=master_setup)
+
+    wn_parser = subparsers.add_parser('wn')
+    wn_parser.add_argument('--nfs-mountpoint-list', nargs='*', dest='nfs_mountpoint_list', help='NFS mountpoint list')
+    wn_parser.add_argument('--user', dest='user', default='luksctl_api', help='luksctl-api service user')
+    wn_parser.set_defaults(setup_function=wn_setup)
+
+    return parser.parse_args()
+
+
+
+################################################################################
+# FUNCTIONS
+
+def master_setup(options):
+    
+    master_node = master(infrastructure_config=options.infrastructure_config,
+                         virtualization_type=options.virtualization_type,
+                         node_list=options.node_list)
+
+    master_node.write_api_config()
+
+    master_node.write_systemd_unit_file(working_directory=luksctl_api_path,
+                                        environment_prefix=environment_prefix,
+                                        ssl=options.ssl, user=options.user,
+                                        group=options.user)
+    
+    shutil.chown(path=LOGFILE, user=options.user, group=options.user)
+
+
+def wn_setup(options):
+
+    wn_node = wn(nfs_mountpoint_list=options.nfs_mountpoint_list)
+
+    wn_node.write_api_config()
+
+    wn_node.write_systemd_unit_file(working_directory=luksctl_api_path,
+                                    environment_prefix=environment_prefix,
+                                    user=options.user, group=options.user)
+
+    shutil.chown(path=LOGFILE, user=options.user, group=options.user)
+
+
+
+################################################################################
+# MAIN
+
+if __name__ == "__main__":
+    options = cli_options()
+
+    if options.version:
+        print('fastluks package: ' + __version__)
+    else:
+        options.setup_function(options)
