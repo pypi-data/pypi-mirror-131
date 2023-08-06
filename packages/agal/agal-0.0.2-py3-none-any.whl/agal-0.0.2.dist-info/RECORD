@@ -1,0 +1,12 @@
+agal/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+agal/cli.py,sha256=a838Tj4eKr5zdj1t2pKVADddJeMdo6oJ3OAEqxUSwy8,528
+agal/constant.py,sha256=e51kB5WXNHDjTouHc0lspxWr5ZVtuw5kU0vXSfIhXwc,71
+agal/hamlet.json,sha256=1ZrkbXj9jeZ8lV9CJxKw3evXGXHhchSVJ6Cysn0QxGY,50330
+agal/message_crypt.py,sha256=zZjzFp6o-5ljbk6r8IKqajNh3135orYs5kj88oaruCI,933
+agal/sender.py,sha256=qtSB_mdsoXIK0lnObWDpLXD3kIpJFCyO517IOFcw-yE,598
+agal/server.py,sha256=wIFlWKumrgKd6uFwRZVlsqBkMuxXiMk6rnbDSoSbuj4,4373
+agal/tail.py,sha256=0SlEhlfnZMRXLR2DfwebPNxenlWzjjnLd0vw2rqiEiU,1770
+agal-0.0.2.dist-info/entry_points.txt,sha256=ZIn6iGJ7ShPN4X-ZPs-xZaIOvfpqmrYN_574SFa2H00,71
+agal-0.0.2.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+agal-0.0.2.dist-info/METADATA,sha256=KogL4cJ9Az32RPg-K1WhD3Q9KAafGIhEEBIAdVt9O7A,443
+agal-0.0.2.dist-info/RECORD,,
