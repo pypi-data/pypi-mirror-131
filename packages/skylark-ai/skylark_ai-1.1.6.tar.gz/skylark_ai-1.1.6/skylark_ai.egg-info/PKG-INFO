@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: skylark-ai
+Version: 1.1.6
+Summary: Websocket SDK for Skylark APIs
+Home-page: https://github.com/skylarklabsAI/python-sdk
+Author: skylarklabs
+Author-email: admin@skylarklabs.ai
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+
+UNKNOWN
+
