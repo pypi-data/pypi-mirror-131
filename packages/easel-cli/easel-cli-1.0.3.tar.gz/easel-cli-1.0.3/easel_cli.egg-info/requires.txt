@@ -1,0 +1,6 @@
+markdown
+pygments
+pyyaml
+requests
+tinydb
+tqdm
