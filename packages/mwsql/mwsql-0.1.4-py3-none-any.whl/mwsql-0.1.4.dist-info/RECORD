@@ -1,0 +1,10 @@
+mwsql/__init__.py,sha256=-Mwo_LDho6dE_h6y_GsIh8jRfQ1kbgyE14b6vFq6Mq8,556
+mwsql/about.py,sha256=hytENNQVJT2IdcomZD3RjgM7RLXAlSki7YA_jw_LZQc,672
+mwsql/dump.py,sha256=kZkXUqKRlpW9bKnjWWIEA0gNMWlwJ0mKJSTXNl_xQ3Y,7889
+mwsql/parser.py,sha256=E-r_F0K1D7NuKIvFhbULQl0YQGWMnYAjmisil08VStQ,7885
+mwsql/utils.py,sha256=-tC7m_TD_HRog5Pj1cO27fx8zZgOVh8fQXk1Zq19d4k,4407
+mwsql-0.1.4.dist-info/LICENSE,sha256=EQTt_vGYlqlGLTYGTWr7EohecHa-0i0MfFmWHINOaEw,1084
+mwsql-0.1.4.dist-info/METADATA,sha256=SwA1XsDEb0OctwUJkcXBgd42G2sTOUtD0xJx3n1W3-o,5130
+mwsql-0.1.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mwsql-0.1.4.dist-info/top_level.txt,sha256=eBqhErquiQfGUu3yK2c_IcGxegTAxjHHfToWmnJ8Ho8,6
+mwsql-0.1.4.dist-info/RECORD,,
