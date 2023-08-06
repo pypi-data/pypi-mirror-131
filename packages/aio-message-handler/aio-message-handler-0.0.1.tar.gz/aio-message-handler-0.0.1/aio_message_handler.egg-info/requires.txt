@@ -1,0 +1,16 @@
+aio-pika<10,>=6.8.0
+
+[develop]
+aiomisc~=10.1.6
+async_generator
+coverage!=4.3
+coveralls
+nox
+pylava
+pytest
+pytest-cov
+shortuuid
+sphinx
+sphinx-autobuild
+timeout-decorator
+tox>=2.4
