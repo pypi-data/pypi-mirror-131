@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+setup.py
+brest/__init__.py
+brest.egg-info/PKG-INFO
+brest.egg-info/SOURCES.txt
+brest.egg-info/dependency_links.txt
+brest.egg-info/top_level.txt
