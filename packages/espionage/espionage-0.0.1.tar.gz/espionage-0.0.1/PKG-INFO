@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: espionage
+Version: 0.0.1
+Summary: Espionage is open source intelligence gathering tool. This tool collect information related to domain. 
+Home-page: https://github.com/iAbdullahMughal/espionage
+Author: Muhammad Abdullah
+Author-email: iamabdullahmughal@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/iAbdullahMughal/espionage/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# espionage
+information gathering, reconnaissance and osint
+
+
