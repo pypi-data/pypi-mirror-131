@@ -1,0 +1,12 @@
+Bootstrap-Flask~=1.8.0
+Flask-Dropzone~=1.6.0
+Flask
+Flask-HTTPAuth
+Flask-Login
+Flask-SQLAlchemy
+Flask-WTF
+WTForms~=3.0.0
+SQLAlchemy-Utils
+requests
+pydevd
+pyDispatcher
