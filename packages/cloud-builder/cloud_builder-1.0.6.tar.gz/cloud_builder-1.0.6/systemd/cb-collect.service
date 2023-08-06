@@ -1,0 +1,13 @@
+[Unit]
+Description=CB Project Collect Service
+After=syslog.target
+Requires=network-online.target
+
+[Service]
+EnvironmentFile=-/etc/cloud_builder
+Type=simple
+Restart=on-failure
+ExecStart=/usr/bin/cb-collect --project "${CB_PROJECT}" --branch "${CB_BRANCH}" --update-interval "${CB_COLLECT_UPDATE_INTERVAL}"
+
+[Install]
+WantedBy=multi-user.target
