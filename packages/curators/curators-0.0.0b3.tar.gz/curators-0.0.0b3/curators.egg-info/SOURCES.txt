@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+curators/__init__.py
+curators.egg-info/PKG-INFO
+curators.egg-info/SOURCES.txt
+curators.egg-info/dependency_links.txt
+curators.egg-info/requires.txt
+curators.egg-info/top_level.txt
