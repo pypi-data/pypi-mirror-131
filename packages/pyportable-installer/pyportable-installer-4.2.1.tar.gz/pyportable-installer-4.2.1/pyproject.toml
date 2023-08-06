@@ -1,0 +1,29 @@
+# Follow the guide of 'docs/devnote/pypi-publish-guide.md'.
+
+[tool.poetry]
+name = "pyportable-installer"
+version = "4.2.1"
+description = "Build and distribute portable Python application by all-in-one configuration file."
+authors = ["Likianta <likianta@foxmail.com>"]
+license = "MIT"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/"
+default = true
+
+[tool.poetry.dependencies]
+python = "^3.8"
+# cython = ""
+embed-python-manager = ""
+fire = ""
+lk-logger = ""
+lk-utils = ">=2.1.2"
+# pyarmor = ""
+pyportable-crypto = ">=1.0.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"
