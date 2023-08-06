@@ -1,0 +1,3 @@
+psutil
+biopython
+numpy==1.17
