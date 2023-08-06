@@ -1,0 +1,49 @@
+.demo{
+    font-family: sans-serif;
+    border: 1px solid greenyellow;
+    border-radius: 2px;
+    padding: 20px 30px;
+    margin-top: 1em;
+    margin-bottom: 40px;
+    user-select: none;
+    overflow-x: auto;
+    font-size: 18px;
+}
+
+.setbg{
+    background: aliceblue;
+    font-size: 22px;
+    color: green;
+    line-height: 1.2cm;
+}
+
+input{
+    color: crimson;
+    width: 2cm;
+    height: auto;
+    font-size: 19px;
+}
+
+/*class为name的所有label*/
+label.name{
+    color: blue;
+    width: 5cm;
+    display: inline-block;
+    text-align: right;
+    /*style: "height:50px;width:100px"*/
+}
+
+label.unit{
+    color: blue;
+    width: 1cm;
+    display: inline-block;
+    text-align: left;
+    margin-left: 8px;
+}
+
+label.check{
+    color: blue;
+    width: 2cm;
+    display: inline-block;
+    text-align: right;
+}

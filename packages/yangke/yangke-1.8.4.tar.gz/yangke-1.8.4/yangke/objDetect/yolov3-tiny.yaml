@@ -1,0 +1,50 @@
+# 尝试以yaml格式定义神经网络模型
+# yaml文件难以表达网络结构的层级关系，因为yaml配置项没有顺序
+
+net:
+  batch: 64
+  subdivisions: 16
+  width: 608
+  height: 608
+  channels: 3
+  momentum: 0.9
+  decay: 0.0005
+  angle: 0
+  saturation: 1.5
+  exposure: 1.5
+  hue: 0.1
+
+  learning_rate: 0.001
+  burn_in: 1000
+  max_batches: 200000
+  policy: steps
+  steps: "180000, 190000"
+  scales: "0.1,0.1"
+
+layer_1:
+  covolutional:
+    batch_normalize: 1
+    filters: 16
+    size: 3
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_2:
+  maxpool:
+    size: 2
+    stride: 2
+
+layer_3:
+  convolutional:
+    batch_normalize: 1
+    filters: 32
+    size: 3
+    stride: 1
+    pad: 1
+    activation: leaky
+
+layer_4:
+  maxpool:
+
+layer_5:

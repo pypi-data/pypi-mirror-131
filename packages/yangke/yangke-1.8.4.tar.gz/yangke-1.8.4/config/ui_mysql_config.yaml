@@ -1,0 +1,26 @@
+size:
+  width:
+    - 80  # <label>的宽度
+    - 340  # <textField>的宽度
+    - 10  # <unit>的宽度
+
+mysql:
+  inputArea:
+    - # 第一个设置项
+      label: "host"
+      value: "localhost"
+    - # 第二个设置项
+      label: "port"
+      value: 3306
+    - # 第三个设置项
+      label: "user"
+      value: "root"
+    - # 第三个设置项
+      label: "passwd"
+      value: "111111"
+  buttons:
+    - # 第一个按钮
+      text: "测试连接"
+      on_click: "btn_clicked"  # 按钮点击触发的事件
+    - text: "应用"
+      on_click: "btn_clicked"  # 按钮点击触发的事件

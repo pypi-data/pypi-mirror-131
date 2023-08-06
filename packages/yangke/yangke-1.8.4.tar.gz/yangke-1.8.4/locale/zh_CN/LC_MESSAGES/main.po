@@ -1,0 +1,64 @@
+# Chinese (Simplified, China) translations for yangke.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the yangke project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: yangke 1.6.4\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-03-05 14:28+0800\n"
+"PO-Revision-Date: 2021-03-05 14:42+0800\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_Hans_CN\n"
+"Language-Team: zh_Hans_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.1\n"
+
+#: yangke/common/qt.py:32
+msgid "Ready"
+msgstr "就绪"
+
+#: yangke/common/qt.py:44 yangke/common/qt.py:53
+msgid "Exit"
+msgstr "退出"
+
+#: yangke/common/qt.py:46
+msgid "Exit application"
+msgstr "退出应用程序"
+
+#: yangke/common/qt.py:50
+msgid "File"
+msgstr "translate:file"
+
+#: yangke/common/qt.py:57
+msgid "yk demo"
+msgstr "yk示例程序"
+
+#: yangke/common/qt.py:77
+msgid "close event triggered"
+msgstr "触发关闭事件"
+
+#: yangke/common/qt.py:86
+msgid "host"
+msgstr "主机"
+
+#: yangke/common/qt.py:87
+msgid "username"
+msgstr "用户名"
+
+#: yangke/common/qt.py:88
+msgid "password"
+msgstr "密码"
+
+#: yangke/common/qt.py:89
+msgid "测试连接"
+msgstr ""
+
+#: yangke/common/qt.py:90
+msgid "Ok"
+msgstr ""
+

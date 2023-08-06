@@ -1,0 +1,77 @@
+args:
+  description: "args of app1"
+  kv:
+    - short: n
+      long: name
+      default: get
+      description: "the name of image"
+    - short: t
+      long: tag
+      default: latest
+      description: "the tag of image"
+  k:
+    - short: d
+      long: debug
+      default: True
+      description: "run in debug mode"
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://yangke:111111@127.0.0.1:8762/eureka/
+  instance:
+    prefer-ip-address: true # 将自己的ip注册到Eureka Server，不配置则注册的是hostname
+
+mysql:
+  # 当mysql服务不可用时，尝试启动本地mysql服务
+  service:  # 默认 service，以本地服务模式启动mysql，如果是对接远程mysql服务，随便使用哪种模式都可以连接；windows系统启动服
+    # 务需要管理员权限，因此当服务没有启动时，会弹出管理员身份运行提示窗口，需要手动确认；docker镜像模式启动无需管理员身份，可以
+    # 避免该问题；
+    host: localhost
+    serviceName: mysql  # 默认 mysql
+    port: 3306
+    user: root
+    passwd: "111111"
+    db: face
+    charset: 'utf8mb4'
+#  docker:
+#    image: mysql
+#    containerName: some-mysql
+#    host: localhost
+#    port: 3306
+#    volume: None
+#    user: root
+#    passwd: 111111
+#    adminer: True
+
+face:
+  draw:  #  视频绘制设置
+    font:  # 识别的人脸标注使用的字体配置
+      color: "255,255,255"  # 字体颜色
+      size: 20  # 字体大小
+      # ttc: D:/ProgramData/lib4python/yangke/simsun.ttc  # 字体文件
+    line:  # 图像绘制的线型配置
+      color: "255,255,255"  # 线条颜色
+      thickness: 1  # 线条宽度
+  detectFolder: "D:/ProgramData/lib4python/image/detect"  # 进行识别的图片所在的路径，如果图片的路径是相对的，则会在该路径下查找图片，如果不指定，则需要指定图片的绝对路径
+  saveFolder: D:/ProgramData/lib4python/image/save  # 生成图片的保存路径，不设置则保存在项目根目录下的image文件夹中
+
+  model: # 以下为dlib的模型，具体可以参考dlib.net
+    directory: "D:\\ProgramData\\lib4python\\model"  # 神经网络模型所在的文件夹，这里注意文件路径分隔符需要转义
+    shapePredictor: shape_predictor_68_face_landmarks.dat  # 人脸五官位置识别模型，这里都是默认文件名，可以不设置
+    cnnFaceDetection: mmod_human_face_detector.dat # cnn人脸位置探测模型
+    faceRecognization: dlib_face_recognition_resnet_model_v1.dat # 人脸特征识别模型
+
+logging:
+  level: 10  # 0-notset 10-debug  20-info  30-warning  40-error  50-critical
+  levelColor: default  # 日志打印的颜色，支持cmd和bash，不支持powershell
+  #  formatColor: default
+  format: "%(asctime)s - %(levelname)s - %(filename)s - %(funcName)s - %(lineno)d - %(message)s"
+  dateFormat: "%Y/%m/%d %H:%M:%S"
+
+aiTrain:  # 神经网络训练配置
+  train:  # 训练数据集配置
+    imageFolder: D:\Users\pycharm\face\data\train2017
+    labelFolder: D:\Users\pycharm\face\data\coco2017labels\coco\labels\train2017
+  test:
+    imageFolder: D:\Users\pycharm\face\data\test2017

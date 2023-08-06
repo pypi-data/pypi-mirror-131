@@ -1,0 +1,5 @@
+include yangke/spider/*.py
+include yangke/spider/*/*.py
+include yangke/spider/*/*.cfg
+include yangke/spider/*/*/*.py
+include yangke/spider/*/*/spiders/*.py
