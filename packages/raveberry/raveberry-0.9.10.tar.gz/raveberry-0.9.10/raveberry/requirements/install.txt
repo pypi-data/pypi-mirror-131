@@ -1,0 +1,3 @@
+ansible==5.*
+# newer pyyaml versions don't have wheels on piwheels
+pyyaml>=5.4
