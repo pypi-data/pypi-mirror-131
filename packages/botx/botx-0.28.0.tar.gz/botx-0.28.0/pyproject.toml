@@ -1,0 +1,86 @@
+[tool.poetry]
+name = "botx"
+version = "0.28.0"
+description = "A little python framework for building bots for eXpress"
+license = "MIT"
+authors = [
+    "Sidnev Nikolay <nsidnev@ccsteam.ru>",
+    "Maxim Gorbachev <mgorbachev@ccsteam.ru>",
+    "Alexander Samoylenko <alexandr.samojlenko@ccsteam.ru>"
+]
+readme = "README.md"
+documentation = "https://expressapp.github.io/pybotx"
+repository = "https://github.com/ExpressApp/pybotx"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+base64io = "^1.0.3"
+httpx = "^0.19.0"
+loguru = "^0.5.0"
+pydantic = "^1.0.0"
+typing-extensions = { version = "^3.7.4", python = "<3.8" }
+
+# for testing by users
+aiofiles = { version = "^0.7.0", optional = true }
+molten = { version = "^1.0.1", optional = true }
+python-multipart = { version = "^0.0.5", optional = true }
+
+[tool.poetry.dev-dependencies]
+# tasks
+nox = "^2021.0.0"
+# formatters
+black = "^20.8b1"
+isort = "^5.9"
+autoflake = "^1.4"
+add-trailing-comma = "^2.0.1"
+# linters
+mypy = "^0.812"
+wemake-python-styleguide = "^0.15"
+flake8-pytest-style = "^1.1.1"
+# tests
+pytest = "^6.0.0"
+pytest-asyncio = "^0.15.0"
+pytest-cov = "^2.8.1"
+pytest-clarity = "^0.3.0-alpha.0"
+coverage-conditional-plugin = "^0.4.0"
+starlette = "^0.16.0"
+# docs
+mkdocs = "^1.1"
+mkdocs-material = "^7.0.0"
+markdown-include = "^0.6.0"
+mkdocstrings = "^0.15.0"
+livereload = "^2.6.3"
+
+[tool.poetry.extras]
+tests = ["aiofiles", "molten", "python-multipart"]
+
+[tool.black]
+target_version = ['py37', 'py38']
+include = '\.pyi?$'
+exclude = '''
+/(\.git/
+  |\.eggs
+  |\.hg
+  |__pycache__
+  |\.cache
+  |\.ipynb_checkpoints
+  |\.mypy_cache
+  |\.pytest_cache
+  |\.tox
+  |\.venv
+  |node_modules
+  |_build
+  |buck-out
+  |build
+  |dist
+  |media
+  |infrastructure
+  |templates
+  |locale
+)/
+'''
+
+[build-system]
+requires = ["poetry>=0.1.0"]
+build-backend = "poetry.masonry.api"
