@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/noseiquela_orm/__init__.py
+src/noseiquela_orm/client.py
+src/noseiquela_orm/entity.py
+src/noseiquela_orm/key.py
+src/noseiquela_orm/properties.py
+src/noseiquela_orm/query.py
+src/noseiquela_orm.egg-info/PKG-INFO
+src/noseiquela_orm.egg-info/SOURCES.txt
+src/noseiquela_orm.egg-info/dependency_links.txt
+src/noseiquela_orm.egg-info/requires.txt
+src/noseiquela_orm.egg-info/top_level.txt
+src/noseiquela_orm/utils/__init__.py
+src/noseiquela_orm/utils/case_style.py
