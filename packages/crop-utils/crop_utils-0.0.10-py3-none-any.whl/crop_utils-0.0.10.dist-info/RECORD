@@ -1,0 +1,10 @@
+crop_utils/__init__.py,sha256=26UWatnbm6ZIwQMuu9NNzQ0IW1ACO4Oe9caModuTpWM,4
+crop_utils/html_slot_config.py,sha256=DFkuiknX2MY5SfpmFLyGBLiFfl6ajVdBRQ5uh5liW6E,1997
+crop_utils/image.py,sha256=Pm7vv2JdObIieReZoVG11_1XQfW8PCI3C9fG_7wKlAE,55047
+crop_utils/img_crop.py,sha256=FCB-RyhgP_JNT7cp97en8UkluYhVwwWjQMMsfY91U70,29030
+crop_utils/olg_crop.py,sha256=0O3GO9GH0WOSjGPG_S78s8B6ilRW-YjmbHiipHwuBsQ,41524
+crop_utils-0.0.10.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+crop_utils-0.0.10.dist-info/METADATA,sha256=G41TnmOa8Xdi9sOTVNw4EoVr2zHOUrDaa3jsa8NaSvA,1356
+crop_utils-0.0.10.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+crop_utils-0.0.10.dist-info/top_level.txt,sha256=y_GVtHYVypoSxaew80DfPOaGAk3l7PhxKuJ6r6lTISA,11
+crop_utils-0.0.10.dist-info/RECORD,,
