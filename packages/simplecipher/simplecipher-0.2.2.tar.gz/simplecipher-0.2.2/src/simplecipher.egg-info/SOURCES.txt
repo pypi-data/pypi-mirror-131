@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/simplecipher/__init__.py
+src/simplecipher/simplecipher.py
+src/simplecipher.egg-info/PKG-INFO
+src/simplecipher.egg-info/SOURCES.txt
+src/simplecipher.egg-info/dependency_links.txt
+src/simplecipher.egg-info/top_level.txt
