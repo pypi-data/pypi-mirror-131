@@ -1,0 +1,8 @@
+numpy
+dataclasses-json
+requests
+
+[dev]
+pylint
+pytest
+pytest-cov
