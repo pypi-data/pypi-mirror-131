@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: materialsgenome
+Version: 0.0.1
+Summary: Metapackage for Materials Genome Foundation projects
+Home-page: https://materialsgenomefoundation.org
+Author: Materials Genome Foundation
+Author-email: info@materialsgenomefoundation.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# MaterialsGenome
+
+Metapackage for Materials Genome Foundation projects
+
+## Installing
+
+`pip install materialsgenome`
+
+
+
+

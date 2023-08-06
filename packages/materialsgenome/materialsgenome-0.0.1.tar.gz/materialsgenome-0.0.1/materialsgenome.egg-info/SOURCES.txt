@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+materialsgenome.egg-info/PKG-INFO
+materialsgenome.egg-info/SOURCES.txt
+materialsgenome.egg-info/dependency_links.txt
+materialsgenome.egg-info/requires.txt
+materialsgenome.egg-info/top_level.txt
