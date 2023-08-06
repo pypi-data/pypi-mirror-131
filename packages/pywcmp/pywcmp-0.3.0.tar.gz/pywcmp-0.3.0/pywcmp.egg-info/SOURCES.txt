@@ -1,0 +1,16 @@
+LICENSE.md
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pywcmp/__init__.py
+pywcmp/ats.py
+pywcmp/dictionary.txt
+pywcmp/kpi.py
+pywcmp/util.py
+pywcmp.egg-info/PKG-INFO
+pywcmp.egg-info/SOURCES.txt
+pywcmp.egg-info/dependency_links.txt
+pywcmp.egg-info/entry_points.txt
+pywcmp.egg-info/requires.txt
+pywcmp.egg-info/top_level.txt
