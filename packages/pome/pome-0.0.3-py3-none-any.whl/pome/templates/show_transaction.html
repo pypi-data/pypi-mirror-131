@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% block main_title %}
+Transaction {{order_recorded}}
+{% endblock %}
+
+{% block content_header %}
+<a href="/journal"><span class="normal-link">← Back to journal</span></a>
+{% endblock %}
+
+{% block content %}
+
+<div id="tx-error" class="hidden mb-10 bg-red-500 rounded-sm text-white p-5">
+
+</div>
+
+<div class=" w-full flex">
+  <div class="w-4/12">
+    <label for="tx-date" class="text-xl font-bold block mb-1">Date</label>
+    <span id="formatted-date" data-date="{{ transaction.date }}">
+    </span>
+  </div>
+</div>
+
+<div class="mt-10">
+  <table class="w-full">
+    <thead class="text-left text-lg">
+      <th>Account Dr.</th>
+      <th>Account Cr.</th>
+      <th>Amount ({{CURRENCY_SYMBOL[company.accounts_currency_code]}})</th>
+    </thead>
+    <tbody id="tx-lines">
+
+      {% for line in transaction.lines %}
+      <tr>
+
+        <td class="pb-3">
+          <a href="/accounts/{{line.account_dr_code}}" class="normal-link">
+            {{accounts_chart.account_codes[line.account_dr_code].pretty_name()}}</a>
+        </td>
+
+        <td class="pb-3">
+          <a href="/accounts/{{line.account_cr_code}}" class="normal-link">
+            {{accounts_chart.account_codes[line.account_cr_code].pretty_name()}}
+          </a>
+        </td>
+
+        <td class="pb-3">
+          {{line.amount.amount(True)}}
+        </td>
+      </tr>
+
+      {% endfor %}
+
+    </tbody>
+  </table>
+
+</div>
+<div class="mt-8 text-xl font-bold">
+  Total Amount: {{transaction.total_amount(True)}}
+</div>
+
+<div class="mt-8">
+  <label for="tx-narrative" class="text-xl font-bold block mb-1">Narrative</label>
+  {% if transaction.narrative %}
+  <p>{{transaction.narrative}}</p>
+  {% else %}
+  <p>No narrative.</p>
+  {% endif %}
+</div>
+<div class="mt-8">
+  <label for="tx-comments" class="text-xl font-bold block mb-1 ">Comments</label>
+  {% if transaction.comments %}
+  <p>{{transaction.comments}}</p>
+  {% else %}
+  <p>No comments.</p>
+  {% endif %}
+</div>
+
+
+<div class="mt-8 w-full flex flex-col items-start">
+  <div class="w-full" id="tx-attachments">
+    <div class="text-xl font-bold block mb-1">Attachments</div>
+    {% if transaction.attachments %}
+    {% for file in transaction.attachments %}
+    <div>
+      - <a href="/{{file.filepath}}" class="normal-link" target="_blank">{{file.filename}}</a>
+    </div>
+
+    {% endfor %}
+    {%else%}
+    <p>No attachments.</p>
+    {%endif%}
+
+  </div>
+
+</div>
+
+<div class="mt-5 text-xs ">
+  Transaction ID: {{transaction.id}} <br />
+  Record date: <span data-date-ISO8601="{{transaction.date_recorded}}"></span> <br />
+  <span class="cursor-pointer" onclick="copyToClip('{{transaction.get_tx_path(True)}}')">Path on disk (clik to copy):
+    {{transaction.get_tx_path(True)}}</span>
+</div>
+<script lang="js">
+  mountDates();
+</script>
+
+{% endblock %}
