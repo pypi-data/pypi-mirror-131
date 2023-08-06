@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: timeseria
+Version: 0.1.4
+Summary: A time series processing library
+Home-page: https://github.com/sarusso/timeseria
+Author: Stefano Alberto Russo
+Author-email: stefano.russo@gmail.com
+License: Apache License 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: arima
+Provides-Extra: prophet
+Provides-Extra: tensorflow
+Provides-Extra: tensorflow-aarch64
+Provides-Extra: tensorflow-gpu
+Provides-Extra: tensorflow-macos
