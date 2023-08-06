@@ -1,0 +1,15 @@
+stef/Dockerfile,sha256=McgEg4tOYltChkMw29a_u7Ye2obJSWXFDY7Rbw5qRQI,399
+stef/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stef/base.py,sha256=ngBMPACSR7kArDX_x8n_VVrLZC-wj9EefVUTl3l-Ch4,6419
+stef/bashrunner.py,sha256=KpkA91COk9y4zKxEGnf1eof-SRoAs3DuurvznwlFy0A,1582
+stef/dockerrunner.py,sha256=bZ8IixLc0PT4_TFlNt5zsrlfJBoXnIx7Sn0oqg3qwXs,2467
+stef/logger.py,sha256=k9NxQLAVnc5N0ouN3NDiRNIABzj1iHRlv7TKwvwHJ9k,1115
+stef/runner.py,sha256=Ue1wuBqYj_YCxW3cYztvyTtVFdHov5upDy6gZF_WzB4,3910
+stef/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stef/scripts/runtests.py,sha256=Se6vSo3hpwf-kmnL8mk1xwyWHMGY9IGbQ44IenCBQ4o,1949
+stef-1.0.6.dist-info/LICENSE,sha256=q5DRKmCDlvmKJBWL1EJsRZBkpNu7tQ2qTxVHhM_d3ZQ,1067
+stef-1.0.6.dist-info/METADATA,sha256=t_NJLvzhMha08lCpND7X-l7YGxA5PWYRVLArPXqwHZA,747
+stef-1.0.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+stef-1.0.6.dist-info/entry_points.txt,sha256=SVj3v_A-O2NJ0XEPJ9POy96b7mHjSSs3QsYNyGfvUGs,62
+stef-1.0.6.dist-info/top_level.txt,sha256=e6Oy3GrSzWvuC8v3GD0wmFUJMZpm09esKwDFz4_3f8A,5
+stef-1.0.6.dist-info/RECORD,,
