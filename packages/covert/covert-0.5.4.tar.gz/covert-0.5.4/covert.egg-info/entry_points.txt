@@ -1,0 +1,6 @@
+[console_scripts]
+covert = covert.__main__:main
+
+[gui_scripts]
+qcovert = covert.gui.__main__:main [gui]
+

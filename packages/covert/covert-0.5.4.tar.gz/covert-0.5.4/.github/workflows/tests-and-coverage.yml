@@ -1,0 +1,55 @@
+name: Tests and Coverage check
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - '!*' # Do not execute on tags
+    paths:
+      - '**.py'
+  pull_request:
+    paths:
+      - '**.py'
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        platform: [ubuntu-latest]
+        python-version: [3.9]
+      fail-fast: false
+
+    name: python-${{ matrix.python-version }}/${{ matrix.platform }}
+    runs-on: ${{ matrix.platform }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-python@v1
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies 🔨
+        run: |
+          python -m pip install --upgrade pip
+          pip install tox
+
+      - name: Run tests 👩‍💻
+        run: |
+          tox -qe py39,benchmark
+
+      - name: Coverage report 👀
+        run: |
+          tox -qe coverage
+
+      - name: Upload to Codecov
+        uses: codecov/codecov-action@v2
+        with:
+          fail_ci_if_error: true
+
+      - name: Security scan 🛡️
+        run: |
+          tox -qe security
+
+      - name: Type checking ✅
+        run: |
+          tox -qe type-checking
