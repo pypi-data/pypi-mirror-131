@@ -1,0 +1,12 @@
+irspdf/__init__.py,sha256=d4sPWRno_haDrrOyoYh25ZLbibtG0k2TCBSqNWf2jnU,90
+irspdf/build.py,sha256=WoUBVDUXCjQwp-SewCEsplOMyaoXu5iiFXkXTc-zUac,395
+irspdf/build_collection.py,sha256=PLEWClezrjVNSEKiqpO-uPIWm53UNUrsZ5pWkbvtoHs,438
+irspdf/collection.py,sha256=KlYjCzbLe62egaf3Pu_B1XvUzWOAZOnenSQC57mYnyk,6679
+irspdf/ir_collection.py,sha256=bv_tZX2abDODdRoMArJKTSECuITTPa28-UKbxO3lM0c,7078
+irspdf/query.py,sha256=t_oagl7LRTnpJXdxf5CEx9d2X_E_mT95_-2P33mkYOE,467
+irspdf/query_collection.py,sha256=b7vSavSGEeFQRwUGz7cUNIBh2NfthZ6SGT2j39z5vS0,496
+irspdf/update.py,sha256=Zp3fcqcJI5OPlVhFWJzgFwUGAj99cuPgr0ZBDGO2z_s,502
+irspdf-0.2.6.dist-info/METADATA,sha256=w_d0jIcsF2FWa6poFwMlt2NhBCrazaaUqcDBCwudVEM,387
+irspdf-0.2.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+irspdf-0.2.6.dist-info/top_level.txt,sha256=O2z7TjJGPA25vB48MrZUixG_x-WHrP_da01W9s8V23g,7
+irspdf-0.2.6.dist-info/RECORD,,
