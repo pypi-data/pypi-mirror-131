@@ -1,0 +1,9 @@
+GitPython
+autopep8
+bandit
+click
+mypy
+pydocstyle
+pylint
+pytest
+twine
