@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: odoo-downloader
+Version: 0.15
+Summary: Command line for download odoo installer or source
+Home-page: https://github.com/cumulus13/odoo_downloader
+Author: Hadi Cahyadi LD
+Author-email: cumulus13@gmail.com
+Maintainer: cumulus13 Team
+Maintainer-email: cumulus13@gmail.com
+License: MIT License
+Project-URL: Documentation, https://github.com/cumulus13/odoo_downloader
+Project-URL: Code, https://github.com/cumulus13/odoo_downloader
+Keywords: odoo downloader
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=2.7
+Requires-Dist: bitmath
+Requires-Dist: bs4
+Requires-Dist: clipboard
+Requires-Dist: configset
+Requires-Dist: lxml
+Requires-Dist: make-colors
+Requires-Dist: pheader
+Requires-Dist: pydebugger
+Requires-Dist: pywget
+Requires-Dist: requests
+Requires-Dist: unidecode
+
+UNKNOWN
+
+
