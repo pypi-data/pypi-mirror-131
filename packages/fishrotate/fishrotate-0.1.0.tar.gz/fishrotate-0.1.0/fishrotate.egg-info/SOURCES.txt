@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+fishrotate/RoateAnimation.py
+fishrotate/__init__.py
+fishrotate/fishrotate.py
+fishrotate.egg-info/PKG-INFO
+fishrotate.egg-info/SOURCES.txt
+fishrotate.egg-info/dependency_links.txt
+fishrotate.egg-info/entry_points.txt
+fishrotate.egg-info/requires.txt
+fishrotate.egg-info/top_level.txt
+fishrotate.egg-info/zip-safe
+resource/fishrotate
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

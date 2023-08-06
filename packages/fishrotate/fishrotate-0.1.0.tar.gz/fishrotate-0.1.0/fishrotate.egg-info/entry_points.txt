@@ -1,0 +1,3 @@
+[console_scripts]
+fishrotate = fishrotate.fishrotate:main
+
