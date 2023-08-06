@@ -1,0 +1,4 @@
+[console_scripts]
+read_dayEnd = yflib.functions:read_dayEnd
+read_indicator = yflib.functions:read_indicator
+
