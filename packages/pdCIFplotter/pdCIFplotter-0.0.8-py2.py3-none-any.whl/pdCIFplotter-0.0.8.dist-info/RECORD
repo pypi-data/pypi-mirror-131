@@ -1,0 +1,13 @@
+pdCIFplotter/__init__.py,sha256=tHJR0jICXfvJsvXkppHe3zlbN4GC_dtxakKQAN3W5g0,96
+pdCIFplotter/__main__.py,sha256=2Up7XHx9V9yiua6-WhiSYUFL5af4nH5wF33LO6w6pDI,403
+pdCIFplotter/gui.py,sha256=fURczKZU0OAo8FnKgB_bs4ovc2LAMiqmUw1fAcXo9Ug,64536
+pdCIFplotter/icon.png,sha256=o2ZX7Zqj8NjQC8JMCbs6s4GkFHjun4grw4U1n41-eTs,6556
+pdCIFplotter/parse_cif.py,sha256=VyTGKZ0XtQScPOA5ipYPb11CgoPCx-sVImU3blfFcGs,35475
+pdCIFplotter/plot_cif.py,sha256=DTAFJM8AeloaKYOMnRoYMZKU7stELOMOoJTKV6-eG7A,37629
+pdCIFplotter-0.0.8.dist-info/AUTHORS.rst,sha256=a5yQ6URNDaV3t6mTKfRZUOIGfXlT-OSxeD30irG2BPE,71
+pdCIFplotter-0.0.8.dist-info/LICENSE,sha256=ldpuyyhupKqMjayDYUmuY43nV__fpLPQ9OcW7rCzL7Q,11512
+pdCIFplotter-0.0.8.dist-info/METADATA,sha256=STi2aZ8F9I75spDgeaCTT6aeuUZffihFWBB57UXof7A,6496
+pdCIFplotter-0.0.8.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+pdCIFplotter-0.0.8.dist-info/entry_points.txt,sha256=0nnO-Ov3TUP0iA_MlIwyiA8jaRo_vKmvIbt8BrY0iuw,55
+pdCIFplotter-0.0.8.dist-info/top_level.txt,sha256=euV_PuqDqOF7qujRiRzQe__u2tZ3tYFa3o-HCR9H_O8,54
+pdCIFplotter-0.0.8.dist-info/RECORD,,
