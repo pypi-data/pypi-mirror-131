@@ -1,0 +1,16 @@
+MANIFEST.in
+pyproject.toml
+setup.py
+fluidly/__init__.py
+fluidly/auth/__init__.py
+fluidly/auth/jwt.py
+fluidly/auth/jwt_requests.py
+fluidly/auth/permissions.py
+fluidly/auth/py.typed
+fluidly/auth/tests.py
+fluidly_auth.egg-info/PKG-INFO
+fluidly_auth.egg-info/SOURCES.txt
+fluidly_auth.egg-info/dependency_links.txt
+fluidly_auth.egg-info/namespace_packages.txt
+fluidly_auth.egg-info/requires.txt
+fluidly_auth.egg-info/top_level.txt
