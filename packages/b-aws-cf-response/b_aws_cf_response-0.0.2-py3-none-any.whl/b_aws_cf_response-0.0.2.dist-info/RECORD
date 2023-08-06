@@ -1,0 +1,9 @@
+b_aws_cf_response/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+b_aws_cf_response/cfresponse.py,sha256=khu9aWrjTFTJXclhMRrNm21Jp5PNtYHqZNT223iOexY,3142
+b_aws_cf_response_tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+b_aws_cf_response_tests/unit/test_aws_cf_response.py,sha256=Xd1X_3GKC91D1lDbfbSTGs-gLSUP5oeiQw3pcMO7bME,2442
+b_aws_cf_response-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+b_aws_cf_response-0.0.2.dist-info/METADATA,sha256=TC8uLQxT4WRImLzLxsMdN5VsOMq4YImIyEtTFTyy8Pg,3201
+b_aws_cf_response-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+b_aws_cf_response-0.0.2.dist-info/top_level.txt,sha256=MCW0QqbLMvTjycP0Jikpu8Jf79US0KUdloFARo9_5Tc,42
+b_aws_cf_response-0.0.2.dist-info/RECORD,,
