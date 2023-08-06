@@ -1,0 +1,4 @@
+Pillow
+ws4py
+protobuf
+asyncio
