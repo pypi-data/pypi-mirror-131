@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: nucliadb_protos
+Version: 0.0.3
+Summary: protos for nucliadb
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+
+NucliaDB Protobuf definition
+----------------------------
+
+
+
+CHANGELOG
+=========
+
+0.0.3 (2021-12-16)
+------------------
+
+- Add icon on file extracted data
+  [bloodabre]
+
+
+0.0.2 (2021-12-02)
+------------------
+
+- Add PYI files for typing
+
+
+0.0.1 (2021-12-01)
+------------------
+
+- Initial Version
+
+...
+
+You are seeing a truncated changelog.
+
+You can read the `changelog file <https://github.com/nuclia/nucliadb/blob/master/nucliadb_protos/python/CHANGELOG.rst>`_
+for a complete list.
+
+
+
