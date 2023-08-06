@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+memo_ms/__init__.py
+memo_ms/__version__.py
+memo_ms/classes.py
+memo_ms/import_data.py
+memo_ms/visualization.py
+memo_ms.egg-info/PKG-INFO
+memo_ms.egg-info/SOURCES.txt
+memo_ms.egg-info/dependency_links.txt
+memo_ms.egg-info/not-zip-safe
+memo_ms.egg-info/requires.txt
+memo_ms.egg-info/top_level.txt
