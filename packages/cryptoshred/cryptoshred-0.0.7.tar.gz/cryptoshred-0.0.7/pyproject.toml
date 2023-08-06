@@ -1,0 +1,106 @@
+[tool.poetry]
+name = "cryptoshred"
+version = "0.0.7"
+description = "Cryptoshredding for events and more"
+authors = ["Eduard Thamm <eduard.thamm@thammit.at>"]
+license = "Apache-2.0"
+readme = "README.md"
+documentation = "https://cryptoshred.readthedocs.io/en/stable/"
+repository = "https://gitlab.com/edthamm/cryptoshred"
+keywords = ["event-sourcing"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Database",
+    "Topic :: Software Development :: Libraries",
+    "Typing :: Typed"
+]
+
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+sphinx-autodoc-typehints = {version = "^1.12.0", optional = true}
+sphinx-rtd-theme = {version = "^0.5.2", optional = true}
+sphinx-click = {version = "^3.0.1", optional = true}
+Sphinx = {version = "<4", optional = true}
+typer = "^0.3.2"
+rich = "^10.4.0"
+pydantic = "^1.8.2"
+boto3 = "^1.17.105"
+cryptography = "^3.4.7"
+python-dotenv = "^0.19.0"
+
+[tool.poetry.extras]
+docs = ["sphinx","sphinx-click","sphinx-rtd-theme","sphinx-autodoc-typehints"]
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+black = "^21.6b0"
+flake8 = "^3.9.2"
+flake8-bugbear = "^21.4.3"
+mypy = "^0.910"
+rstcheck = "^3.3.1"
+sphinx-autobuild = "^2021.3.14"
+pytest-cov = "^2.12.1"
+pytest-randomly = "^3.8.0"
+pre-commit = "^2.13.0"
+pytest-mock = "^3.6.1"
+flake8-annotations = "^2.6.2"
+safety = "^1.10.3"
+flake8-docstrings = "^1.6.0"
+nox = "^2021.6.12"
+sphinx-autodoc-typehints = "^1.12.0"
+sphinx-rtd-theme = "^0.5.2"
+sphinx-click = "^3.0.1"
+sphinx = "<4"
+moto = "^2.0.10"
+boto3-stubs = "^1.17.105"
+pytest-asyncio = "^0.16.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+cryptoshred = 'cryptoshred.app.ui.cli:app'
+
+[tool.coverage.run]
+omit = ["*__init__.py"]
+
+[tool.pytest.ini_options]
+addopts = "-rsxX -l --tb=short --strict-markers --cov-report term --cov=cryptoshred --cov-fail-under=85 --cov-branch"
+xfail_strict = true
+testpaths = [
+    "tests",
+]
+filterwarnings = "ignore:.*the imp module is deprecated.*:DeprecationWarning"
+markers = [
+  "integration: marks tests that use mock and are therefore slower.",
+  "usecase: marks tests that represent business logic.",
+  "containers: marks tests that will spin up test containers."
+]
+
+[tool.black]
+exclude = '''
+
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | \.nox
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+  | .cache
+  | .venv
+)
+'''
