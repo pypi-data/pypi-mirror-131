@@ -1,0 +1,13 @@
+noseiquela_orm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+noseiquela_orm/client.py,sha256=y9zQ2q782zeHBgUFvASJjyEa65qvjYXHsI5qr-mb5KE,2485
+noseiquela_orm/entity.py,sha256=dq2339nQvFTkGeIJLcywRX2MHLoER8DksK_B0AnpTno,7574
+noseiquela_orm/key.py,sha256=EecNMJi8Q31Abjbv_z_4E-BIfODvhPhVeaKuRvUkLF4,1855
+noseiquela_orm/properties.py,sha256=K1wkeL6N_pYwI6AD6-ksiHDPgvjeZnVGeb59EKcUtjU,7262
+noseiquela_orm/query.py,sha256=PqGqY_7LyJ0WozEiaUhEJx5q9XgW8wOJ1rLGlp28WUk,4081
+noseiquela_orm/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+noseiquela_orm/utils/case_style.py,sha256=kasF2gy5fUBH-_XuFNkNMlBFY2Nw0rejieIspl9HUP0,2264
+noseiquela_orm-0.0.7.dev2.dist-info/LICENSE,sha256=UAveTVy7b6iwMx2aek9nOiUa_-iszs62mxTwYvMXP-w,1522
+noseiquela_orm-0.0.7.dev2.dist-info/METADATA,sha256=hIDTrgUbU28g9G1Kgd65Sj0KOpH1cIGWTTVA0GSvDzU,4602
+noseiquela_orm-0.0.7.dev2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+noseiquela_orm-0.0.7.dev2.dist-info/top_level.txt,sha256=_uLzsHnhEbRi2GeCPzGQlBN09z1YWn0DD8PXUheAJhk,15
+noseiquela_orm-0.0.7.dev2.dist-info/RECORD,,
