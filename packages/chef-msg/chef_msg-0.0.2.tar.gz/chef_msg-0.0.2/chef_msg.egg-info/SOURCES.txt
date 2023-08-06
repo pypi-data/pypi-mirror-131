@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+chef_msg/__init__.py
+chef_msg/mommy.py
+chef_msg.egg-info/PKG-INFO
+chef_msg.egg-info/SOURCES.txt
+chef_msg.egg-info/dependency_links.txt
+chef_msg.egg-info/top_level.txt
