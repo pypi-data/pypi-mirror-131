@@ -1,0 +1,16 @@
+LICENSE,sha256=rUDKFlodtfqcXQIoVURj22jVVXV3o3FJeqTKOIo3X88,1048
+django_hub_sdk/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+django_hub_sdk/admin.py,sha256=SE0U7hJtiefJ49m2GPuThAZpWAH6VwtHfztocSN3ApY,519
+django_hub_sdk/apps.py,sha256=mWqcRTQ0AiOZqQIZ_iSRPb12QSbaOajy7EGAISMlqhY,437
+django_hub_sdk/authentication.py,sha256=-1Za8ESBk53weWLcWio2_xfg-MguEg1RQv2bJpR4g7s,4736
+django_hub_sdk/migrations/0001_initial.py,sha256=ADvfo6tGMcUzlgmBeGiFyoBsiJYVgn41G9RdqCulnWw,2710
+django_hub_sdk/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_hub_sdk/models.py,sha256=3oVLAuPvaJYNsDnmDTshbUddCK72go3Ghvm7bLnTjDE,2289
+django_hub_sdk/settings.py,sha256=TMM2LK3icZMgKN58-uo7M-wu5P15xHAVAOGalgkG7Jo,944
+django_hub_sdk/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_hub_sdk/urls.py,sha256=9LpKC_R7AX4v5GXasB_nu1E5BAIBMgOjoFndKrWgS7w,476
+django_hub_sdk/views.py,sha256=eqO9CROSHLcZTJZMZa6-koKKIMSFGlgaTqpiAixCvi4,5661
+django_hub_sdk-0.1.8.dist-info/LICENSE,sha256=rUDKFlodtfqcXQIoVURj22jVVXV3o3FJeqTKOIo3X88,1048
+django_hub_sdk-0.1.8.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+django_hub_sdk-0.1.8.dist-info/METADATA,sha256=EQ0GbuCH-YzAAqwEgND7N0mt7VG8yamnfT6gT75L_JA,4450
+django_hub_sdk-0.1.8.dist-info/RECORD,,
