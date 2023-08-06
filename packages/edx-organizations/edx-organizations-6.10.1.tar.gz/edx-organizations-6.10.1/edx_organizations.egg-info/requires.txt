@@ -1,0 +1,7 @@
+djangorestframework
+edx-drf-extensions
+django
+Pillow
+edx-opaque-keys>=0.1.2
+django-simple-history
+django-model-utils
