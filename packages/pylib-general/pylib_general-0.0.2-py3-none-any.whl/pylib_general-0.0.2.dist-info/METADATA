@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: pylib-general
+Version: 0.0.2
+Summary: general python features that don't come with it.
+Home-page: https://github.com/chronosirius/PyLib
+Author: A human
+Author-email: author@example.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/chronosirius/PyLib/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyLib - General
+
+This is a package that will be updated whenever I get an idea that I like and write it.
+
+So far, I have:
+- Properties
+
+
+## Properties
+
+This can be used like:
+
+`from pylib_general import properties`
+
+This loads the Property class, which can be used like:
+
+`varname = properties.Property()`
+
+The property class's functions are:
+
+- `varname.add(name, val)`
+
+`name` being the name of the new value (cannot contain spaces), and `val` being the value.
+
+- `varname.remove(name)`
+`name` being the name of the value to remove
+
+- `varname.get(name)`
+returns the value of `name`
+
+The difference between Property and other sets is that you can get a property in a much easier way:
+
+`varname.attr`
+
+Obviously, you can also get a value through `varname.get(name)` but you could also do `varname.name`
+
+Ex:
+
+```
+varname = Property().add("somenamenotcontainingnumbersorspaces", "12233090")
+print(varname.somenamenotcontainingnumbersorspaces)
+```
+prints `12233090`
+
+
