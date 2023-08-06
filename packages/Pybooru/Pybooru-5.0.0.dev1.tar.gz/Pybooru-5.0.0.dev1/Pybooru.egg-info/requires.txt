@@ -1,0 +1,9 @@
+requests>=2.26
+
+[all]
+Sphinx
+sphinx-rtd-theme
+
+[docs]
+Sphinx
+sphinx-rtd-theme
