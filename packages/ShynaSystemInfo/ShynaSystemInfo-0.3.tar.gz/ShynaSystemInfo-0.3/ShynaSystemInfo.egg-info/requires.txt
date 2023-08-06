@@ -1,0 +1,6 @@
+psutil
+setuptools
+wheel
+urllib3
+tabulate
+GPUtil

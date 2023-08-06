@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ShynaSystemInfo.egg-info/PKG-INFO
+ShynaSystemInfo.egg-info/SOURCES.txt
+ShynaSystemInfo.egg-info/dependency_links.txt
+ShynaSystemInfo.egg-info/requires.txt
+ShynaSystemInfo.egg-info/top_level.txt
+Shynasysinfo/Shsysinfo.py
+Shynasysinfo/__init__.py

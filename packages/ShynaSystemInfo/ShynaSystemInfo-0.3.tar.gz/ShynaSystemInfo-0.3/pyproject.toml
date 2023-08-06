@@ -1,0 +1,11 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+    'datefinder',
+    'datetime',
+    'urllib3',
+    'tabulate',
+    'GPUtil'
+]
+build-backend = "setuptools.build_meta"

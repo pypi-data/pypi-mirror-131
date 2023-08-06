@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: ShynaSystemInfo
+Version: 0.3
+Summary: Shyna Backend Functionality Package to fetch System information
+Home-page: UNKNOWN
+Author: Shivam Sharma
+Author-email: shivamsharma1913@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Shyna System Information Package
+
+Shyna system info package to fetch all system information
+
+****Suggested: NOT TO USE****
+
+This will be a small package for the shyna back-end process package. This will help to understand which OS and which system architect we are using. The package is still underdevelopment and new features will be added as Shyna's needs increases.
+
+Following dependencies:
+
+* psutil
+* setuptools
+* wheel
+* urllib3
+* tabulate
+* GPUtil
+
+```
+from Shynasysinfo import Shsysinfo
+
+cpu_info = Shsysinfo.CPUInfo()
+print(cpu_info.get_cpu_details()) # Returns a dictionary
+
+online_status = Shsysinfo.CheckOnline() 
+print(online_status.test_connection()) # Returns True or False
+
+disk_info = Shsysinfo.DiskInfo() 
+print(disk_info.get_disk_info()) # Returns a dictionary
+
+mem_info = Shsysinfo.MemoryInfo() 
+print(mem_info.get_memory_info()) # Returns a dictionary
+```
+
+
