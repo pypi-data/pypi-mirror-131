@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="org.silastandard" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>ConfigurationServicer</Identifier>
+    <DisplayName>Configuration Servicer</DisplayName>
+    <Description>
+		Set and retrieve the control parameter values for the configuration of the Reglo ICC pump.
+        By Valeryia Sidarava, Institute of Biochemical Engineering, Technical University of Munich, 31.07.2019,
+        Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 15.04.2020.
+    </Description>
+    <Command>
+        <Identifier>SetTubingDiameter</Identifier>
+        <DisplayName>Set Tubing Inside Diameter Value</DisplayName>
+        <Description>
+        Set the inside diameter of the tubing in mm.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Channel</Identifier>
+            <DisplayName>Channel</DisplayName>
+            <Description>
+                Gets the channel, on which the command will be executed
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>TubingDiameter</Identifier>
+            <DisplayName>Tubing Diameter</DisplayName>
+            <Description>
+                The inside diameter of the tubing in mm. (must be one of following list:
+                [0.13,0.19,0.25,0.38,0.44,0.51,0.57,0.64,0.76,0.89,0.95,1.02,1.09,1.14,1.22,1.3,1.42,1.52,1.65,1.75,1.85,2.06,2.29,2.54,2.79,3.17])
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints></Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>TubingDiameterSet</Identifier>
+            <DisplayName>Tubing Diameter Set</DisplayName>
+            <Description>Tubing Diameter succeeded to Set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>TubingDiameterInvalidInput</Identifier>
+        </DefinedExecutionErrors>
+	</Command>
+    <Command>
+        <Identifier>ResetToDefault</Identifier>
+        <DisplayName>Reset To Default</DisplayName>
+        <Description>
+        Resets all user configurable data to default values.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Reset</Identifier>
+            <DisplayName>Reset</DisplayName>
+            <Description>
+              Resets all user configurable data to default values.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                      <Basic>String</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>ResetStatus</Identifier>
+            <DisplayName>Reset Status</DisplayName>
+            <Description>Reset of pump succeeded.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>GetTubingDiameter</Identifier>
+        <DisplayName>Get Tubing Diameter</DisplayName>
+        <Description>Get the inside diameter of the tubing in mm.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>CurrentTubingDiameter</Identifier>
+            <DisplayName>Current Tubing Diameter</DisplayName>
+            <Description>
+                The inside diameter of the tubing in mm.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentTubingDiameter</Identifier>
+            <DisplayName>Current Tubing Diameter</DisplayName>
+            <Description>Current the inside diameter of the tubing in mm.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetBacksteps</Identifier>
+        <DisplayName>Set Backsteps setting</DisplayName>
+        <Description>
+        Set the current backsteps setting using Discrete Type 2.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Channel</Identifier>
+            <DisplayName>Channel</DisplayName>
+            <Description>
+                Gets the channel, on which the command will be executed
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>BackstepsSetting</Identifier>
+            <DisplayName>Backsteps Setting</DisplayName>
+            <Description>
+                Set the current backsteps setting using Discrete Type 2.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>String</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>BackstepsSettingSet</Identifier>
+            <DisplayName>Backsteps Setting Set</DisplayName>
+            <Description>Backsteps Setting succeeded to Set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+          <Identifier>SetBackstepsInvalidInput</Identifier>
+        </DefinedExecutionErrors>
+	  </Command>
+    <Command>
+        <Identifier>GetBacksteps</Identifier>
+        <DisplayName>Get Backsteps setting</DisplayName>
+        <Description>
+        Get the current backsteps setting.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>BackstepsSetting</Identifier>
+            <DisplayName>Backsteps Setting</DisplayName>
+            <Description>
+                Get the current backsteps setting.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>String</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentBackstepsSetting</Identifier>
+            <DisplayName>Current Backsteps Setting</DisplayName>
+            <Description>Current Backsteps Setting.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+	  </Command>
+    <DefinedExecutionError>
+        <Identifier>TubingDiameterInvalidInput</Identifier>
+        <DisplayName>Invalid user input error</DisplayName>
+        <Description>The input value for tubing diameter the number must be real.</Description>
+    </DefinedExecutionError>
+    <DefinedExecutionError>
+        <Identifier>SetBackstepsInvalidInput</Identifier>
+        <DisplayName>Invalid user input error</DisplayName>
+        <Description>The input value for backsteps setting must be using Discrete Type 2 format.</Description>
+    </DefinedExecutionError>
+</Feature>

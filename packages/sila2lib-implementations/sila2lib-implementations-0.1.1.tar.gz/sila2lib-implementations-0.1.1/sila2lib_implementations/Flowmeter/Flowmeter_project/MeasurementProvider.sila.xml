@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="biovt.mw.tum.de" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>MeasurementProvider</Identifier>
+    <DisplayName>Measurement Provider</DisplayName>
+    <Description>
+		Used to acquire general status of the current flow of the flowmeter.
+        By Lukas Bromig and Jose de Jesus Pina, Institute of Biochemical Engineering, Technical University of Munich, 02.12.2020
+    </Description>
+    <!-- Temperature -->
+    <Command>
+        <Identifier>GetTemperature</Identifier>
+        <DisplayName>GetTemperature</DisplayName>
+        <Description>Absolute temperature in  degree Celsius</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentTemperature</Identifier>
+            <DisplayName>Current temperature</DisplayName>
+            <Description>Absolute temperature in degree Celsius</Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>500</MaximalInclusive>
+                        <MinimalExclusive>-250</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Pressure -->
+    <Command>
+        <Identifier>GetPressure</Identifier>
+        <DisplayName>Get pressure</DisplayName>
+        <Description>Absolute pressure in millibar</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentPressure</Identifier>
+            <DisplayName>Current pressure</DisplayName>
+            <Description>Current absolute pressure in millibar</Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>3.40282E+38</MaximalInclusive>
+                        <MinimalExclusive>-3.40282E+38</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Time -->
+    <Command>
+        <Identifier>GetTime</Identifier>
+        <DisplayName>Get time</DisplayName>
+        <Description></Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>RealTime</Identifier>
+            <DisplayName>Real Time</DisplayName>
+            <Description>Real time in milliseconds</Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>3.40282E+38</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Calibrated volume -->
+    <Command>
+        <Identifier>GetCalibratedVolume</Identifier>
+        <DisplayName>Get calibrated volume</DisplayName>
+        <Description>Calibrated volume</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentCalibratedVolume</Identifier>
+            <DisplayName>Current calibrated volume</DisplayName>
+            <Description>Current calibrated volume</Description>
+             <DataType>
+                 <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>3.40282E+38</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+             </DataType>
+        </Response>
+    </Command>
+    <!-- Sensor number FPP (Full packaged product!? -->
+    <Command>
+        <Identifier>GetSensorNumber</Identifier>
+        <DisplayName>Get sensor number</DisplayName>
+        <Description>Pointer to sensor number in calibration tube FPP</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentSensorNumber</Identifier>
+            <DisplayName>Current sensor number</DisplayName>
+            <Description>Pointer to sensor number in calibration tube FPP</Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>3.40282E+38</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Normal volume flow -->
+    <Command>
+        <Identifier>GetNormalVolumeFlow</Identifier>
+        <DisplayName>Get normal volume flow</DisplayName>
+        <Description>Volume flow referenced to normal conditions (0 Celsius degree;  1013.25HPa=1atm) in liters/min </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentNormalVolumeFlow</Identifier>
+            <DisplayName>Current normal volume flow</DisplayName>
+            <Description>
+                Volume flow referenced to normal conditions (0 Celsius degree;  1013.25HPa=1atm) in liters/min
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>3.40282E+38</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Volume flow -->
+    <Command>
+        <Identifier>GetVolumeFlow</Identifier>
+        <DisplayName>Get volume flow</DisplayName>
+        <Description>Volume flow at actual conditions in liters per min </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentVolumeFlow</Identifier>
+            <DisplayName>Current volume flow</DisplayName>
+            <Description>
+                VVolume flow at actual conditions in liters permin
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>3.40282E+38</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Delta P -->
+    <Command>
+        <Identifier>GetDeltaPressure</Identifier>
+        <DisplayName>Get delta pressure</DisplayName>
+        <Description>Relative pressure between atmosphere and sensor in millibar</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentDeltaPressure</Identifier>
+            <DisplayName>Current delta pressure</DisplayName>
+            <Description>
+                Relative pressure between atmosphere and sensor in millibar
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+                    <!--<Constrained>
+                        <DataType>
+                            <Basic>Real</Basic>
+                        </DataType>
+                        <Constraints>
+                            <MaximalInclusive>3.40282E+38</MaximalInclusive>
+                            <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                    </Constrained>
+                </DataType>-->
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Mass flow -->
+    <Command>
+        <Identifier>GetMassFlow</Identifier>
+        <DisplayName>Get mass flow</DisplayName>
+        <Description>real mass flow in Kg pro min</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentMassFlow</Identifier>
+            <DisplayName>Current mass flow</DisplayName>
+            <Description>
+                Real mass flow in Kg pro min
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                        <DataType>
+                            <Basic>Real</Basic>
+                        </DataType>
+                        <Constraints>
+                            <MaximalInclusive>3.40282E+38</MaximalInclusive>
+                            <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                    </Constrained>
+                </DataType>-->
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Mass -->
+    <Command>
+        <Identifier>GetMass</Identifier>
+        <DisplayName>Get mass</DisplayName>
+        <Description>Net mass in g</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentMass</Identifier>
+            <DisplayName>Current mass</DisplayName>
+            <Description>Net Mass in g</Description>
+            <DataType>
+                <Basic>Real</Basic>
+                 <!--<Constrained>
+                        <DataType>
+                            <Basic>Real</Basic>
+                        </DataType>
+                        <Constraints>
+                            <MaximalInclusive>3.40282E+38</MaximalInclusive>
+                            <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                    </Constrained>
+                </DataType>-->
+            </DataType>
+        </Response>
+    </Command>
+</Feature>

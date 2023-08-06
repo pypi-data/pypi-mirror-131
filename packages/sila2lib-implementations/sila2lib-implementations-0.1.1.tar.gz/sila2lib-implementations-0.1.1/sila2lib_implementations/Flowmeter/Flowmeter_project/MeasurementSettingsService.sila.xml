@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="biovt.mw.tum.de" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>MeasurementSettingsService</Identifier>
+    <DisplayName>Measurement Settings Service</DisplayName>
+
+    <Description>
+		Used to acquire and modify general status and parameters of the flowmeter.
+        By Lukas Bromig and Jose de Jesus Pina, Institute of Biochemical Engineering, Technical University of Munich, 02.12.2020
+    </Description>
+    <!-- Piston operation mode: Range select (of the piston) should be proved in order to know if it is necessary -->
+    <Command>
+        <Identifier>GetPistonOperationMode</Identifier>
+        <DisplayName>Get piston operation mode</DisplayName>
+        <Description>Piston prover operation mode and its status information</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentPistonOperationMode</Identifier>
+            <DisplayName>Current piston operation mode</DisplayName>
+            <Description>Current piston prover operation mode and its status information</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetPistonOperationMode</Identifier>
+        <DisplayName>Set piston operation mode</DisplayName>
+        <Description>Set the new piston prover operation mode</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetPistonOperationMode</Identifier>
+            <DisplayName>Set piston operation mode</DisplayName>
+            <Description>
+                The the new piston prover operation mode
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set piston operation mode</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which the Set piston operation mode applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- time out-->
+    <Command>
+        <Identifier>GetTimeOut</Identifier>
+        <DisplayName>Get time out</DisplayName>
+        <Description>Maximum admitted duration time for specific procedure (in 0,1seconds; 100 milliseconds) </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentTimeOut</Identifier>
+            <DisplayName>Current time out</DisplayName>
+            <Description>
+                Current maximum admitted duration time for specific procedure (in 0,1seconds; 100 milliseconds)
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>30000</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetTimeOut</Identifier>
+        <DisplayName>Set time out</DisplayName>
+        <Description>
+            Set the new maximum admitted duration time for specific procedure (in 0,1seconds; 100 milliseconds)
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetTimeOut</Identifier>
+            <DisplayName>Set time out</DisplayName>
+            <Description>
+                The the new admitted duration time for specific procedure in 0,1seconds; 100milliseconds.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>30000</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set time out</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which the set time out applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Frequency -->
+    <Command>
+        <Identifier>GetFrequency</Identifier>
+        <DisplayName>Get frequency</DisplayName>
+        <Description>Piston frequency in Hz </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentFrequency</Identifier>
+            <DisplayName>Current frequency</DisplayName>
+            <Description>
+                Current piston frequency in Hz
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>100000</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetFrequency</Identifier>
+        <DisplayName>Set frequency</DisplayName>
+        <Description>Set the new piston frequency in Hz</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetFrequency</Identifier>
+            <DisplayName>set frequency</DisplayName>
+            <Description>
+                New piston frequency to be set in Hz
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>100000</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set frequency</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which the set frequency applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Actual Density -->
+    <Command>
+        <Identifier>GetDensityActual</Identifier>
+        <DisplayName>Get density actual</DisplayName>
+        <Description> reference density of selected fluid in Kg pro m3 </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentDensity</Identifier>
+            <DisplayName>Current density actual</DisplayName>
+            <Description>Reference density of selected fluid in Kgm pro m3</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetDensityActual</Identifier>
+        <DisplayName>Set densityActual</DisplayName>
+        <Description>Set the new reference density of the selected fluid in Kg prom3</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetDensityActual</Identifier>
+            <DisplayName>set densityActual</DisplayName>
+            <Description>
+                New density of selected fluid in Kg/m3
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set density actual</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which the set density actual applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Pressure inlet -->
+    <Command>
+        <Identifier>GetPressureInlet</Identifier>
+        <DisplayName>Get pressure inlet</DisplayName>
+        <Description>
+            Pressure inlet (upstream) of fluid in bar, for the first fluid-Nr. only in millibar
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentPressureInlet</Identifier>
+            <DisplayName>Current pressure inlet</DisplayName>
+            <Description>
+                Pressure inlet (upstream) of fluid in bar, for the first fluid-Nr. only in millibar
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>100000</MaximalInclusive>
+                        <MinimalExclusive>-100000</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetPressureInlet</Identifier>
+        <DisplayName>Set pressure inlet</DisplayName>
+        <Description>Set the new pressure inlet (upstream) of fluid in bar (first fluid only) </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetPressureInlet</Identifier>
+            <DisplayName>set pressure inlet</DisplayName>
+            <Description>
+                New pressure inlet in millibar
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>100000</MaximalInclusive>
+                        <MinimalExclusive>-100000</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set pressure inlet</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which the set pressure inlet applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- pressure outlet -->
+    <Command>
+        <Identifier>GetPressureOutlet</Identifier>
+        <DisplayName>Get pressure outlet</DisplayName>
+        <Description>
+            Pressure outlet (downstream) of fluid in bar, for the first fluid-Nr. only. in millibar
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentPressureOutlet</Identifier>
+            <DisplayName>Current pressure outlet</DisplayName>
+            <Description>
+                Pressure outlet (downstream) of fluid in bar, for the first fluid-Nr. only. in millibar
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>100000</MaximalInclusive>
+                        <MinimalExclusive>-100000</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetPressureOutlet</Identifier>
+        <DisplayName>Set pressure outlet</DisplayName>
+        <Description>
+            Set the new pressure outlet (downstream) of fluid in bar (first fluid only) in millibar
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetPressureOutlet</Identifier>
+            <DisplayName>set pressure outlet</DisplayName>
+            <Description>
+                New pressure outlet (downstream) of fluid in bar (first fluid only) in millibar
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>100000</MaximalInclusive>
+                        <MinimalExclusive>-100000</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>
+                Command status: Request response of command set pressure outlet in millibar
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which the set pressure outlet applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Fluid temperature -->
+    <Command>
+        <Identifier>GetFluidTemperature</Identifier>
+        <DisplayName>Get fluid temperature</DisplayName>
+        <Description>temperature of fluid through instrument (for first fluid only) in degree Celsius</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentFluidTemperature</Identifier>
+            <DisplayName>Current fluid temperature</DisplayName>
+            <Description>Fluid temperature through instrument (for first fluid only) in  degree Celsius</Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>3.40282E+38</MaximalInclusive>
+                        <MinimalExclusive>-273.15</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetFluidTemperature</Identifier>
+        <DisplayName>Set fluid temperature</DisplayName>
+        <Description>
+            Set the new temperature of fluid through instrument (for first fluid only) in Celsius degree
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetFluidTemperature</Identifier>
+            <DisplayName>Set fluid temperature</DisplayName>
+            <Description>
+                 Set the new temperature of fluid through instrument (for first fluid only) in grades Celsius degree
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>3.40282E+38</MaximalInclusive>
+                        <MinimalExclusive>-273.15</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set fluid temperature</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which the set fluid temperature applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Thermal conductivity -->
+    <Command>
+        <Identifier>GetThermalConductivity</Identifier>
+        <DisplayName>Get thermal conductivity</DisplayName>
+        <Description>
+            Thermal conductivity at sensor conditions at Watt/(m*K). Value is equal or bigger than 0
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentThermalConductivity</Identifier>
+            <DisplayName>Current thermal conductivity</DisplayName>
+            <Description>
+                Thermal conductivity at sensor conditions at Watt/(m*K). Value is equal or bigger than 0</Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>3.40282E+38</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetThermalConductivity</Identifier>
+        <DisplayName>SetThermalConductivity</DisplayName>
+        <Description>Set the new thermal conductivity in sensor conditions in Watt/(m*K)</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetThermalConductivity</Identifier>
+            <DisplayName>set thermal conductivity</DisplayName>
+            <Description>
+                Set the new thermal conductivity in sensor conditions in Watt/(m*K)
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>3.40282E+38</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set thermal conductivity</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which the set thermal conductivity applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Standard flow -->
+    <Command>
+        <Identifier>GetStandardMassFlow</Identifier>
+        <DisplayName>Get standard mass flow</DisplayName>
+        <Description>
+            Standard mass flow in l/min air (20°C, 1atm, 1.01325bar) or g/h H2O equivalent. Value bigger than 0
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentStandardMassFlow</Identifier>
+            <DisplayName>Current standard mass flow</DisplayName>
+            <Description>
+                Standard mass flow in l/min air (20°C, 1atm, 1.01325bar) or g/h H2O equivalent. Value bigger than 0
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>3.40282E+38</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetStandardMassFlow</Identifier>
+        <DisplayName>Set standard mass flow</DisplayName>
+        <Description>
+            Set the new standard mass flow in l/min air (20°C, 1atm, 1.01325bar) or g/h H2O equivalent. Value bigger than 0
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetStandardFlow</Identifier>
+            <DisplayName>set standard flow</DisplayName>
+            <Description>
+                Set the new standard mass flow in l/min air (20°C, 1atm, 1.01325bar) or g/h H2O equivalent. Value bigger than 0
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>3.40282E+38</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set standard flow</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which the set standard flow
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Orifice diameter -->
+    <Command>
+        <Identifier>GetOrificeDiameter</Identifier>
+        <DisplayName>Get orifice diameter</DisplayName>
+        <Description>Orifice diameter in mm</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentOrificeDiameter</Identifier>
+            <DisplayName>Current orifice diameter</DisplayName>
+            <Description>Orifice diameter in mm</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetOrificeDiameter</Identifier>
+        <DisplayName>Set orifice diameter</DisplayName>
+        <Description>Set new orifice diameter in mm</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetOrificeDiameter</Identifier>
+            <DisplayName>Set new orifice diameter</DisplayName>
+            <Description>
+                New orifice diameter to be set
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set orifice diameter</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which the set orifice diameter applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Barometer pressure -->
+	<Command>
+        <Identifier>GetBarometerPressure</Identifier>
+        <DisplayName>Get barometer pressure</DisplayName>
+        <Description> barometer atmospheric pressure in millibar</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentBarometerPressure</Identifier>
+            <DisplayName>Current barometer pressure</DisplayName>
+            <Description>Barometer atmospheric pressure in mbar</Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>1200</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>SetBarometerPressure</Identifier>
+        <DisplayName>Set barometer pressure</DisplayName>
+        <Description>set current barometer atmospheric pressure in millibar</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetBarometerPressure</Identifier>
+            <DisplayName>Set barometer pressure</DisplayName>
+            <Description>Set current barometer atmospheric pressure in millibar</Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>1200</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set barometer pressure</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which the set barometer pressure applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Number of vanes for use in rotor -->
+    <Command>
+        <Identifier>GetNumberVanes</Identifier>
+        <DisplayName>Get number vanes</DisplayName>
+        <Description>Current number of vanes used in rotor</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentNumberVanes</Identifier>
+            <DisplayName>Current Number vanes</DisplayName>
+            <Description>Current number of vanes used in rotor</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetNumberVanes</Identifier>
+        <DisplayName>Set number vanes</DisplayName>
+        <Description>Set number of vanes used in rotor</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetNumberVanes</Identifier>
+            <DisplayName>Set number of vanes used in rotor</DisplayName>
+            <Description>
+                number of vanes used in rotor
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set number vanes</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which the set number vanes
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+</Feature>

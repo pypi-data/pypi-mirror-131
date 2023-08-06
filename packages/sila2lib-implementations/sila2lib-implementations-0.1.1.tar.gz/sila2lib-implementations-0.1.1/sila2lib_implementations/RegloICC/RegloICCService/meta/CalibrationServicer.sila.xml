@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="org.silastandard" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>CalibrationServicer</Identifier>
+    <DisplayName>Calibration Servicer</DisplayName>
+    <Description>
+		Set and retrieve the control parameter values for calibration of the Reglo ICC pump.
+        By Valeryia Sidarava, Institute of Biochemical Engineering, Technical University of Munich, 31.07.2019,
+        Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 15.04.2020.
+    </Description>
+    <Command>
+        <Identifier>StartCalibration</Identifier>
+        <DisplayName>Start Calibration on a Channel</DisplayName>
+        <Description>
+        Starts calibration on a channel.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Calibrate</Identifier>
+            <DisplayName>Calibrate</DisplayName>
+            <Description>
+                Starts calibration on a channel.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>String</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>StartCalibrationStatus</Identifier>
+            <DisplayName>Start Calibration Status</DisplayName>
+            <Description>Calibration succeeded to start.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>CancelCalibration</Identifier>
+        <DisplayName>Cancel Calibration on a Channel</DisplayName>
+        <Description>
+        Cancels calibration on a channel.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Calibrate</Identifier>
+            <DisplayName>Calibrate</DisplayName>
+            <Description>
+                Cancels calibration on a channel.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>String</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CancelCalibrationStatus</Identifier>
+            <DisplayName>Cancel Calibration Status</DisplayName>
+            <Description>Calibration succeeded to cancel.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetTargetVolume</Identifier>
+        <DisplayName>Set Target Volume Value</DisplayName>
+        <Description>
+        Set target volume to pump for calibrating in mL.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Channel</Identifier>
+            <DisplayName>Channel</DisplayName>
+            <Description>
+                Gets the channel, on which the command will be executed
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>TargetVolume</Identifier>
+            <DisplayName>Target Volume</DisplayName>
+            <Description>
+              Set target volume to pump for calibrating in mL.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>TargetVolumeSet</Identifier>
+            <DisplayName>Target Volume Set</DisplayName>
+            <Description>Target Volume succeeded to Set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+	</Command>
+    <Command>
+        <Identifier>SetActualVolume</Identifier>
+        <DisplayName>Set Actual Volume Value</DisplayName>
+        <Description>
+        Set the actual volume measured during calibration in mL.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Channel</Identifier>
+            <DisplayName>Channel</DisplayName>
+            <Description>
+                Gets the channel, on which the command will be executed
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>ActualVolume</Identifier>
+            <DisplayName>Actual Volume</DisplayName>
+            <Description>
+                The actual volume measured during calibration in mL.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>ActualVolumeSet</Identifier>
+            <DisplayName>Actual Volume Set</DisplayName>
+            <Description>Actual Volume succeeded to Set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>ActualVolumeInvalidInput</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+	<Command>
+        <Identifier>GetTargetVolume</Identifier>
+        <DisplayName>Get Target Volume</DisplayName>
+        <Description>Get target volume to pump for calibrating in mL.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>TargetVolume</Identifier>
+            <DisplayName>Target Volume</DisplayName>
+            <Description>
+              Get target volume of pump for calibrating in mL.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentTargetVolume</Identifier>
+            <DisplayName>Current Target Volume</DisplayName>
+            <Description>Current target volume to pump for calibrating in mL.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetDirectionCalibration</Identifier>
+        <DisplayName>Set Direction Flow for Calibration</DisplayName>
+        <Description>
+        Set direction flow for calibration J or K using DIRECTION format.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Channel</Identifier>
+            <DisplayName>Channel</DisplayName>
+            <Description>
+                Gets the channel, on which the command will be executed
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>Direction</Identifier>
+            <DisplayName>Direction</DisplayName>
+            <Description>
+            Set direction flow for calibration J or K using DIRECTION format.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>String</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SetDirectionCalibrationSet</Identifier>
+            <DisplayName>Set Direction for Calibration Set</DisplayName>
+            <Description>Direction flow for Calibration succeeded to Set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+  </Command>
+  <Command>
+      <Identifier>GetDirectionCalibration</Identifier>
+      <DisplayName>Get Direction Flow for Calibration</DisplayName>
+      <Description>
+      Get direction flow for calibration (J or K).
+      </Description>
+      <Observable>No</Observable>
+      <Parameter>
+          <Identifier>Direction</Identifier>
+          <DisplayName>Direction</DisplayName>
+          <Description>
+          Get direction flow for calibration (J or K).
+          </Description>
+          <DataType>
+              <Constrained>
+                  <DataType>
+                      <Basic>String</Basic>
+                  </DataType>
+                  <Constraints>
+                  </Constraints>
+              </Constrained>
+          </DataType>
+      </Parameter>
+      <Response>
+          <Identifier>CurrentDirectionCalibration</Identifier>
+          <DisplayName>Current Direction for Calibration</DisplayName>
+          <Description>Current Direction flow for Calibration.</Description>
+          <DataType>
+              <Basic>String</Basic>
+          </DataType>
+      </Response>
+</Command>
+<Command>
+    <Identifier>SetCalibrationTime</Identifier>
+    <DisplayName>Set Calibration Time</DisplayName>
+    <Description>
+    Set the current calibration time using Time Type 2 format.
+    </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>Channel</Identifier>
+        <DisplayName>Channel</DisplayName>
+        <Description>
+            Gets the channel, on which the command will be executed
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+                <Constraints>
+                </Constraints>
+            </Constrained>
+        </DataType>
+    </Parameter>
+    <Parameter>
+        <Identifier>Time</Identifier>
+        <DisplayName>Time</DisplayName>
+        <Description>
+        Set the current calibration time using Time Type 2 format.
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+                <Constraints>
+                </Constraints>
+            </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+        <Identifier>SetCalibrationTimeSet</Identifier>
+        <DisplayName>Set Calibration Time Set</DisplayName>
+        <Description>Calibration Time succeeded to Set.</Description>
+        <DataType>
+            <Basic>String</Basic>
+        </DataType>
+    </Response>
+</Command>
+<Command>
+    <Identifier>GetCalibrationTime</Identifier>
+    <DisplayName>Get Calibration Time</DisplayName>
+    <Description>
+    Get the current calibration time.
+    </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>Time</Identifier>
+        <DisplayName>Time</DisplayName>
+        <Description>
+        Get the current calibration time.
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+                <Constraints>
+                </Constraints>
+            </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+        <Identifier>CurrentCalibrationTime</Identifier>
+        <DisplayName>Current Calibration Time</DisplayName>
+        <Description>Current Calibration Time.</Description>
+        <DataType>
+            <Basic>Integer</Basic>
+        </DataType>
+    </Response>
+</Command>
+<Command>
+    <Identifier>GetRunTimeCalibration</Identifier>
+    <DisplayName>Get Run Time since last Calibration</DisplayName>
+    <Description>
+    Get channel run time since last calibration.
+    </Description>
+    <Observable>No</Observable>
+    <Parameter>
+        <Identifier>Time</Identifier>
+        <DisplayName>Time</DisplayName>
+        <Description>
+        Get channel run time since last calibration.
+        </Description>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+                <Constraints>
+                </Constraints>
+            </Constrained>
+        </DataType>
+    </Parameter>
+    <Response>
+        <Identifier>CurrentRunTimeCalibration</Identifier>
+        <DisplayName>Current Run Time since Calibration</DisplayName>
+        <Description>Channel run time since last calibration..</Description>
+        <DataType>
+            <Basic>Integer</Basic>
+        </DataType>
+    </Response>
+</Command>
+<DefinedExecutionError>
+    <Identifier>ActualVolumeInvalidInput</Identifier>
+    <DisplayName>Actual Volume Invalid Input</DisplayName>
+    <Description>The input volume is invalid</Description>
+</DefinedExecutionError>
+</Feature>

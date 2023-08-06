@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="org.silastandard" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>ReactorServicer</Identifier>
+    <DisplayName>Reactor Servicer</DisplayName>
+    <Description>
+        Control a DASGIP reactor module. Enables read and write operations for various parameters, including reactor sensor, controller, and alarm. 
+        By Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 20.05.2019
+    </Description>
+    <Command>
+        <Identifier>GetVInitial</Identifier>
+        <DisplayName>Get VInitial</DisplayName>
+        <Description>Get initial liquid volume value. Initial liquid volume (initial working volume).</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentVInitial</Identifier>
+            <DisplayName>Current VInitial</DisplayName>
+            <Description>Current initial liquid volume value. Initial liquid volume (initial working volume).</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetVInitial</Identifier>
+        <DisplayName>Set VInitial</DisplayName>
+        <Description>
+        Set the reactor initial liquid volume value. Initial liquid volume (initial working volume).
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>VInitial</Identifier>
+            <DisplayName>Volume Initial</DisplayName>
+            <Description>
+                The reactor initial liquid volume value. Initial liquid volume (initial working volume).
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>VInitialSet</Identifier>
+            <DisplayName>VInitial Set</DisplayName>
+            <Description>The set initial liquid volume value. Initial liquid volume (initial working volume).</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>ParameterInvalidRange</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>GetVLiquid</Identifier>
+        <DisplayName>Get VLiquid</DisplayName>
+        <Description>Get actual liquid volume value. Actual liquid volume (working volume).</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentVLiquid</Identifier>
+            <DisplayName>Current VLiquid</DisplayName>
+            <Description>Current actual liquid volume value. Actual liquid volume (working volume).</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetVLiquid</Identifier>
+        <DisplayName>Set VLiquid</DisplayName>
+        <Description>
+        Set the reactor actual liquid volume value. Actual liquid volume (working volume).
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>VLiquid</Identifier>
+            <DisplayName>Volume Liquid</DisplayName>
+            <Description>
+                The reactor actual liquid volume value. Actual liquid volume (working volume).
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>VLiquidSet</Identifier>
+            <DisplayName>VLiquid Set</DisplayName>
+            <Description>The set actual liquid volume value. Actual liquid volume (working volume).</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>ParameterInvalidRange</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>GetVMax</Identifier>
+        <DisplayName>Get VMax</DisplayName>
+        <Description>Get max liquid volume value. Max allowed liquid volume.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentVMax</Identifier>
+            <DisplayName>Current VMax</DisplayName>
+            <Description>Current max liquid volume value. Max allowed liquid volume.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetVMax</Identifier>
+        <DisplayName>Set VMax</DisplayName>
+        <Description>
+        Set the reactor max liquid volume value. Max allowed liquid volume.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>VMax</Identifier>
+            <DisplayName>Volume Max</DisplayName>
+            <Description>
+                The reactor max liquid volume value. Max allowed liquid volume.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>VMaxSet</Identifier>
+            <DisplayName>VMax Set</DisplayName>
+            <Description>The set max liquid volume value. Max allowed liquid volume.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>ParameterInvalidRange</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>GetVMin</Identifier>
+        <DisplayName>Get VMin</DisplayName>
+        <Description>Get min liquid volume value. Min allowed liquid volume.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentVMin</Identifier>
+            <DisplayName>Current VMin</DisplayName>
+            <Description>Current min liquid volume value. Min allowed liquid volume.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetVMin</Identifier>
+        <DisplayName>Set VMin</DisplayName>
+        <Description>
+        Set the reactor min liquid volume value. Min allowed liquid volume.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>VMin</Identifier>
+            <DisplayName>Volume Min</DisplayName>
+            <Description>
+                The reactor min liquid volume value. Min allowed liquid volume.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>VMinSet</Identifier>
+            <DisplayName>VMin Set</DisplayName>
+            <Description>The set min liquid volume value. Min allowed liquid volume.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>ParameterInvalidRange</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>GetVTotal</Identifier>
+        <DisplayName>Get VTotal</DisplayName>
+        <Description>Get total liquid volume value. Total vessel volume.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentVTotal</Identifier>
+            <DisplayName>Current VTotal</DisplayName>
+            <Description>Current total liquid volume value. Total vessel volume.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetVTotal</Identifier>
+        <DisplayName>Set VTotal</DisplayName>
+        <Description>
+        Set the reactor total liquid volume value. Total vessel volume.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID</DisplayName>
+            <Description>
+                The UnitID of the addressed reactor
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>VTotal</Identifier>
+            <DisplayName>Volume Total</DisplayName>
+            <Description>
+                The reactor total liquid volume value. Total vessel volume.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>VTotalSet</Identifier>
+            <DisplayName>VTotal Set</DisplayName>
+            <Description>The set total liquid volume value. Total vessel volume.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>ParameterInvalidRange</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <DefinedExecutionError>
+        <Identifier>ParameterInvalidRange</Identifier>
+        <DisplayName>Parameter Invalid Range</DisplayName>
+        <Description>Invalid range of the input parameter</Description>
+    </DefinedExecutionError>
+</Feature>

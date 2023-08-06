@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="org.silastandard" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_base/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>BalanceService</Identifier>
+    <DisplayName>Balance Service</DisplayName>
+    <Description>
+        This feature enables several modes of weight measuring and allows taring and zeroing of the balance.
+        By Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 07.04.2021
+    </Description>
+    <Command>
+        <Identifier>Zero</Identifier>
+        <DisplayName>Zero</DisplayName>
+        <Description>Set a new zero; all weight values (including tare weight) will be measured relative to this zero. After zeroing has taken place, the following values applky: tare weight = 0; net weight = (=gross weight) = 0.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>Success</Identifier>
+            <DisplayName>Success</DisplayName>
+            <Description>Zero setting successfully performed. Gross, net and tare = 0.</Description>
+            <DataType>
+                <Basic>Boolean</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>OverloadError</Identifier>
+            <Identifier>UnderloadError</Identifier>
+            <Identifier>InternalError</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>ZeroImmediate</Identifier>
+        <DisplayName>Zero Immediate</DisplayName>
+        <Description>Set a new zero immediately, regardless of balance stability. All weight values (including tare weight) will be measured relative to this zero. After zeroing has taken place, the following values applky: tare weight = 0; net weight = (=gross weight) = 0.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>Success</Identifier>
+            <DisplayName>Success</DisplayName>
+            <Description>Zero setting successfully performed. Gross, net and tare = 0.</Description>
+            <DataType>
+                <Basic>Boolean</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IsStable</Identifier>
+            <DisplayName>Is Stable</DisplayName>
+            <Description>Zero setting successfully performed under stable/non-stable conditions (True/False).</Description>
+            <DataType>
+                <Basic>Boolean</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>OverloadError</Identifier>
+            <Identifier>UnderloadError</Identifier>
+            <Identifier>InternalError</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>Tare</Identifier>
+        <DisplayName>Tare</DisplayName>
+        <Description>Tare the balance. The next stable weight value will be saved in the tare memory.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>TareValue</Identifier>
+            <DisplayName>Tare Value</DisplayName>
+            <Description>The tare value if taring has been successfully performed. The tare weight value returned corresponds to the weight change on the balance in the unit actually set under display unit since the last zero setting.</Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <Unit>
+                            <Label>g</Label>
+                            <Factor>1</Factor>
+                            <Offset>0</Offset>
+                            <UnitComponent>
+                                <SIUnit>Kilogram</SIUnit>
+                                <Exponent>-3</Exponent>
+                            </UnitComponent>
+                        </Unit>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>OverloadError</Identifier>
+            <Identifier>UnderloadError</Identifier>
+            <Identifier>InternalError</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>WeightValueOnChange</Identifier>
+        <DisplayName>Weight Value on Change</DisplayName>
+        <Description>Request the current stable weight value in display unit followed by weight values after predefined minimum weight changes until the command is stopped, i.e. sends the current stable weight value followed by every load change of predefined amount of g.</Description>
+        <Observable>Yes</Observable>
+        <Parameter>
+            <Identifier>WeightChange</Identifier>
+            <DisplayName>WeightChange</DisplayName>
+            <Description>Predefined minimum weight change in g. If no value is entered, the weight change must be at least 12.5% of the last stable weight value. </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <Unit>
+                            <Label>g</Label>
+                            <Factor>1</Factor>
+                            <Offset>0</Offset>
+                            <UnitComponent>
+                                <SIUnit>Kilogram</SIUnit>
+                                <Exponent>-3</Exponent>
+                            </UnitComponent>
+                        </Unit>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>WeightValue</Identifier>
+            <DisplayName>Weight Value</DisplayName>
+            <Description>The returned weight value. Either stable weight value on first or next change, or dynamic weight value in g.</Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <Unit>
+                            <Label>g</Label>
+                            <Factor>1</Factor>
+                            <Offset>0</Offset>
+                            <UnitComponent>
+                                <SIUnit>Kilogram</SIUnit>
+                                <Exponent>-3</Exponent>
+                            </UnitComponent>
+                        </Unit>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IsStable</Identifier>
+            <DisplayName>Is Stable</DisplayName>
+            <Description>The returned value is stable/non-stable (True/False).</Description>
+            <DataType>
+                <Basic>Boolean</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>OverloadError</Identifier>
+            <Identifier>UnderloadError</Identifier>
+            <Identifier>InternalError</Identifier>
+            <Identifier>LogicalError</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>PresetTareWeight</Identifier>
+        <DisplayName>PresetTareWeight</DisplayName>
+        <Description>Preset a known tare weight value in g.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>TarePresetValue</Identifier>
+            <DisplayName>Tare Preset Value</DisplayName>
+            <Description>The preset value to be set for tare in g.</Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <Unit>
+                            <Label>g</Label>
+                            <Factor>1</Factor>
+                            <Offset>0</Offset>
+                            <UnitComponent>
+                                <SIUnit>Kilogram</SIUnit>
+                                <Exponent>-3</Exponent>
+                            </UnitComponent>
+                        </Unit>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>TareWeightValue</Identifier>
+            <DisplayName>Tare Weight Value</DisplayName>
+            <Description>Get the current tare weight value in g.</Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <Unit>
+                            <Label>g</Label>
+                            <Factor>1</Factor>
+                            <Offset>0</Offset>
+                            <UnitComponent>
+                                <SIUnit>Kilogram</SIUnit>
+                                <Exponent>-3</Exponent>
+                            </UnitComponent>
+                        </Unit>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>InternalError</Identifier>
+            <Identifier>LogicalError</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>ClearTareValue</Identifier>
+        <DisplayName>Clear Tare Value</DisplayName>
+        <Description>Clear tare weight value from memory.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>TareWeightValue</Identifier>
+            <DisplayName>Tare Weight Value</DisplayName>
+            <Description>The reset tare weight value in g. Is always 0.</Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <Unit>
+                            <Label>g</Label>
+                            <Factor>1</Factor>
+                            <Offset>0</Offset>
+                            <UnitComponent>
+                                <SIUnit>Kilogram</SIUnit>
+                                <Exponent>-3</Exponent>
+                            </UnitComponent>
+                        </Unit>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>InternalError</Identifier>
+            <Identifier>LogicalError</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>TareImmediately</Identifier>
+        <DisplayName>Tare Immediately</DisplayName>
+        <Description>Tare the balance immediately and independently of balance stability.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>TareWeightValue</Identifier>
+            <DisplayName>Tare Weight Value</DisplayName>
+            <Description>Taring performed successfully with the stable or non-stable taring weight value  in g. The new tare value corresponds to the weight change on the balance since the last zero setting.</Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <Unit>
+                            <Label>g</Label>
+                            <Factor>1</Factor>
+                            <Offset>0</Offset>
+                            <UnitComponent>
+                                <SIUnit>Kilogram</SIUnit>
+                                <Exponent>-3</Exponent>
+                            </UnitComponent>
+                        </Unit>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IsStable</Identifier>
+            <DisplayName>Is Stable</DisplayName>
+            <Description>The tare was performed under stable/non-stable weight conditions (True/False).</Description>
+            <DataType>
+                <Basic>Boolean</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>OverloadError</Identifier>
+            <Identifier>UnderloadError</Identifier>
+            <Identifier>InternalError</Identifier>
+            <Identifier>LogicalError</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Property>
+        <Identifier>StableWeightValue</Identifier>
+        <DisplayName>Stable Weight Value</DisplayName>
+        <Description>Get the current stable weight value in g.</Description>
+        <Observable>No</Observable>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Real</Basic>
+                </DataType>
+                <Constraints>
+                    <Unit>
+                        <Label>g</Label>
+                        <Factor>1</Factor>
+                        <Offset>0</Offset>
+                        <UnitComponent>
+                            <SIUnit>Kilogram</SIUnit>
+                            <Exponent>-3</Exponent>
+                        </UnitComponent>
+                    </Unit>
+                </Constraints>
+            </Constrained>
+        </DataType>
+        <DefinedExecutionErrors>
+            <Identifier>OverloadError</Identifier>
+            <Identifier>UnderloadError</Identifier>
+            <Identifier>InternalError</Identifier>
+        </DefinedExecutionErrors>
+    </Property>
+    <Property>
+        <Identifier>ImmediateWeightValue</Identifier>
+        <DisplayName>ImmediateWeightValue</DisplayName>
+        <Description>Get the immediate (potentially unstable) weight value</Description>
+        <Observable>No</Observable>
+        <DataType>
+            <DataTypeIdentifier>StableWeightResponse</DataTypeIdentifier>
+        </DataType>
+        <DefinedExecutionErrors>
+            <Identifier>OverloadError</Identifier>
+            <Identifier>UnderloadError</Identifier>
+            <Identifier>InternalError</Identifier>
+        </DefinedExecutionErrors>
+    </Property>
+    <Property>
+        <Identifier>CurrentWeightValue</Identifier>
+        <DisplayName>Current Weight Value</DisplayName>
+        <Description>Subscribe to the current weight value</Description>
+        <Observable>Yes</Observable>
+        <DataType>
+            <DataTypeIdentifier>StableWeightResponse</DataTypeIdentifier>
+        </DataType>
+        <DefinedExecutionErrors>
+            <Identifier>InternalError</Identifier>
+            <Identifier>OverloadError</Identifier>
+            <Identifier>UnderloadError</Identifier>
+        </DefinedExecutionErrors>
+    </Property>
+    <Property>
+        <Identifier>TareWeightValue</Identifier>
+        <DisplayName>Tare Weight Value</DisplayName>
+        <Description>Get the current tare weight value in g.</Description>
+        <Observable>No</Observable>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Real</Basic>
+                </DataType>
+                <Constraints>
+                    <Unit>
+                        <Label>g</Label>
+                        <Factor>1</Factor>
+                        <Offset>0</Offset>
+                        <UnitComponent>
+                            <SIUnit>Kilogram</SIUnit>
+                            <Exponent>-3</Exponent>
+                        </UnitComponent>
+                    </Unit>
+                </Constraints>
+            </Constrained>
+        </DataType>
+        <DefinedExecutionErrors>
+            <Identifier>OverloadError</Identifier>
+            <Identifier>UnderloadError</Identifier>
+            <Identifier>InternalError</Identifier>
+        </DefinedExecutionErrors>
+    </Property>
+    <DataTypeDefinition>
+        <Identifier>StableWeightResponse</Identifier>
+        <DisplayName>Stable Weight Response</DisplayName>
+        <Description>A Response containing the measured weight and whether the value was measured under stable circumstances.</Description>
+        <DataType>
+            <Structure>
+                <Element>
+                    <Identifier>WeightValue</Identifier>
+                    <DisplayName>Weight Value</DisplayName>
+                    <Description>The immediate weight value</Description>
+                    <DataType>
+                        <Constrained>
+                            <DataType>
+                                <Basic>Real</Basic>
+                            </DataType>
+                            <Constraints>
+                                <Unit>
+                                    <Label>g</Label>
+                                    <Factor>1</Factor>
+                                    <Offset>0</Offset>
+                                    <UnitComponent>
+                                        <SIUnit>Kilogram</SIUnit>
+                                        <Exponent>-3</Exponent>
+                                    </UnitComponent>
+                                </Unit>
+                            </Constraints>
+                        </Constrained>
+                    </DataType>
+                </Element>
+                <Element>
+                    <Identifier>IsStable</Identifier>
+                    <DisplayName>Is Stable</DisplayName>
+                    <Description>Weight value is stable (True/False).</Description>
+                    <DataType>
+                        <Basic>Boolean</Basic>
+                    </DataType>
+                </Element>
+            </Structure>
+        </DataType>
+    </DataTypeDefinition>
+    <DefinedExecutionError>
+        <Identifier>OverloadError</Identifier>
+        <DisplayName>Overload Error</DisplayName>
+        <Description>Weigh module or balance is in overload range (weighing range exceeded).</Description>
+    </DefinedExecutionError>
+    <DefinedExecutionError>
+        <Identifier>UnderloadError</Identifier>
+        <DisplayName>Underload Error</DisplayName>
+        <Description>Weighing module or balance is in underload range (e.g. weighing pane is not in place).</Description>
+    </DefinedExecutionError>
+    <DefinedExecutionError>
+        <Identifier>InternalError</Identifier>
+        <DisplayName>Internal Error</DisplayName>
+        <Description>Internal error. Balance not ready yet.</Description>
+    </DefinedExecutionError>
+    <DefinedExecutionError>
+        <Identifier>LogicalError</Identifier>
+        <DisplayName>Logical Error</DisplayName>
+        <Description>Logical error. Balance not ready yet.</Description>
+    </DefinedExecutionError>
+</Feature>

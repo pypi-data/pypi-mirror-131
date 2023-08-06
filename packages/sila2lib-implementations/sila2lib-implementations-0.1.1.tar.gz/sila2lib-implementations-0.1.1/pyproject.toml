@@ -1,0 +1,72 @@
+[tool.poetry]
+name = "sila2lib-implementations"
+version = "0.1.1"
+description = "A package of SiLA drivers for various devices at TUM-BVT"
+license = "GPL-3.0-only"  # "GPL-3.0-or-later"? passt das?
+authors = ["Lukas Bromig <lukas.bromig@tum.de>"]
+# maintainers = [name <email>]  # optional & shall be distinct to authors
+readme = 'README.md'
+repository = "https://gitlab.com/lukas.bromig/sila2lib_implementations"
+homepage = "https://www.epe.ed.tum.de/en/biovt/home/"  # "https://sila-standard.com/"
+documentation = "https://gitlab.com/lukas.bromig/sila2lib_implementations"  # later add link to the documentation
+keywords = ['sila2', 'laboratory', 'automation', 'device integration', 'hardware']  # A list of keywords (max: 5) Optional
+classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+]
+packages = [
+    {include = "sila2lib_implementations"},
+    {include = "tests"}
+]
+# include = ["CHANGELOG.md"]
+
+# after deleting a dependency run the following command to remove all subdependencies:
+# poetry install --remove-untracked
+[tool.poetry.dependencies]
+python = "^3.7.0"
+sila2lib = "==0.2.5"
+pyserial = "==3.5"
+python-dotenv = "==0.19.1"
+pydantic = "==1.8.2"
+setuptools = "==59.1.0"
+wheel = "==0.36.0"
+pytest = "==6.2.5"
+# Both require cryptography that is causing many dependency conflicts on Raspberry Pi
+# only required for DasGip and only for logging -> are they needed at all?
+# asyncua = "==0.9.92"
+# opcua = "==0.98.13"
+
+# Installation without the development dependencies:
+# poetry install --no-dev
+[tool.poetry.dev-dependencies]
+pytest-cov = "==3.0.0"
+commitizen = "==2.20.0"
+black = "^21.9b0"
+flake8 = "^4.0.1"
+pylint = "^2.11.1"
+tox = "^3.24.4"
+tox-poetry-installer = {extras = ["poetry"], version = "^0.8.1"}
+pre-commit = "^2.15.0"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "2.0.0"
+tag_format = "$version"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+# use with older poetry versions (<1.1.11) + setuptools in dependencies:
+# requires = ["setuptools", "poetry_core>=1.0"]
+# build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+# minversion = "6.0"
+# addopts = "-ra -q"
+testpaths = [
+    "tests",  # You should have a "tests" directory
+]
+
+# read the docs if extras shall be included like Niklas did for tests/dev
+# [tool.poetry.extras]

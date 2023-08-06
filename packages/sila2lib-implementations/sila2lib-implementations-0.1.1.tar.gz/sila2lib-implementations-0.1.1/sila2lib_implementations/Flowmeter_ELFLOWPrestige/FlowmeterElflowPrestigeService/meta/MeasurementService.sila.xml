@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="biovt.mw.tum.de" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>MeasurementService</Identifier>
+    <DisplayName>Measurement Service</DisplayName>
+    <Description>
+		Allows full control of the available fluid features of the flowmeter.
+        By Lukas Bromig and Jose de Jesus Pina, Institute of Biochemical Engineering, Technical University of Munich, 02.12.2020
+    </Description>
+    <!-- measured value-->
+    <Command>
+        <Identifier>GetMeasuredValue</Identifier>
+        <DisplayName>Get measured value</DisplayName>
+        <Description>It shows the measured value in the capacity unit for which the instrument is set.
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentMeasuredValue</Identifier>
+            <DisplayName>Current measured value</DisplayName>
+            <Description>
+                Current measured value in the capacity unit for which the instrument is set.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>3.4E+38</MaximalInclusive>
+                        <MinimalExclusive>-3.4E+38</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Setpoint value-->
+    <Command>
+        <Identifier>GetSetpointValue</Identifier>
+        <DisplayName>Get setpoint value</DisplayName>
+        <Description>
+            It shows the current setpoint value in the capacity unit for which the instrument is set.
+            Range in Percentage. From 0.0 to 100.0 percent
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>GetSetpointValue</Identifier>
+            <DisplayName>Get setpoint value</DisplayName>
+            <Description>
+            Current setpoint value in the capacity unit for which the instrument is set.
+            Range in Percentage. From 0.0 to 100.0 percent.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>3.4E+38</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetSetpointValue</Identifier>
+        <DisplayName>Set setpoint value</DisplayName>
+        <Description>
+              It sets the new setpoint value in the capacity unit for which the instrument is set.
+                Range in Percentage. From 0.0 to 100.0 percent
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetSetpointValue</Identifier>
+            <DisplayName>Set Setpoint value</DisplayName>
+            <Description>
+            It sets the new setpoint value in the capacity unit for which the instrument is set.
+                Range in Percentage. From 0.0 to 100.0 percent
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>100</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command alarm limit maximum</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>Index pointing to the first byte in the send message for which the alarm limit maximum status applies</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+     <!-- Fluid Number -->
+    <Command>
+        <Identifier>GetFluidNumber</Identifier>
+        <DisplayName>Get fluid number</DisplayName>
+        <Description>Current fluid ID-Nr.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentFluidNumber</Identifier>
+            <DisplayName>Current fluid number</DisplayName>
+            <Description>Current fluid ID-Nr. Preset of Fluid number is delimited up to 8 fluids.</Description>
+        <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>7</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetFluidNumber</Identifier>
+        <DisplayName>Set Fluid Number</DisplayName>
+        <Description>Set a number of the fluid to work with</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetFluidNumber</Identifier>
+            <DisplayName>Set fluid number</DisplayName>
+            <Description>
+                The number of the fluid to work with
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>7</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set fluid number</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which set fluid number applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!--Fluid Name -->
+    <Command>
+        <Identifier>GetFluidName</Identifier>
+        <DisplayName>Get fluid name</DisplayName>
+        <Description>The name of the current fluid</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentFluidName</Identifier>
+            <DisplayName>Current fluid name</DisplayName>
+            <Description>Current fluid name</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+</Feature>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="biovt.mw.tum.de" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>CalibrationService</Identifier>
+    <DisplayName>Calibration Service</DisplayName>
+    <Description>
+		Delivers full information of the calibration system and allows complete overwriting of it.
+        By Lukas Bromig and Jose de Jesus Pina, Institute of Biochemical Engineering, Technical University of Munich, 02.12.2020
+    </Description>
+    <!-- Calibration certificate -->
+    <Command>
+        <Identifier>GetCalibrationCertificate</Identifier>
+        <DisplayName>Get calibration certificate</DisplayName>
+        <Description>Number of calibration certificate (last basic calibration)</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>LastCalibrationCertificate</Identifier>
+            <DisplayName>Last calibration certificate</DisplayName>
+            <Description>Number of calibration certificate (last basic calibration)</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetCalibrationCertificate</Identifier>
+        <DisplayName>Set calibration certificate</DisplayName>
+        <Description>Set new calibration certificate</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetCalibrationCertificate</Identifier>
+            <DisplayName>Set new calibration certificate</DisplayName>
+            <Description>
+              Set new certificate of the last basic calibration
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set calibration service</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which the set calibration service status applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Calibration date -->
+    <Command>
+        <Identifier>GetCalibrationDate</Identifier>
+        <DisplayName>Get Calibration date</DisplayName>
+        <Description>Date of last (basic) calibration</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>LastCalibrationDate</Identifier>
+            <DisplayName>Last calibration date</DisplayName>
+            <Description>Date of last (basic) calibration</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetCalibrationDate</Identifier>
+        <DisplayName>Set calibration date</DisplayName>
+        <Description>Set new calibration date</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetCalibrationDate</Identifier>
+            <DisplayName>Set calibration date</DisplayName>
+            <Description>
+              New date of the last basic calibration
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set calibration date</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which the set calibration date status applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Service number -->
+    <Command>
+        <Identifier>GetServiceNumber</Identifier>
+        <DisplayName>Get Service number</DisplayName>
+        <Description>Service number for repair/re-building/re-calibration</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>LastServiceNumber</Identifier>
+            <DisplayName>Last service number</DisplayName>
+            <Description>
+                Last service number for repair/re-building/re-calibration
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetServiceNumber</Identifier>
+        <DisplayName>Set service number</DisplayName>
+        <Description>Set new service number for repair/re-building/re-calibration</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set service number</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which the set service number status applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Service date -->
+    <Command>
+        <Identifier>GetServiceDate</Identifier>
+        <DisplayName>Get service date</DisplayName>
+        <Description>Date of last maintenance service</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>LastServiceDate</Identifier>
+            <DisplayName>Last service date</DisplayName>
+            <Description>Date of last service</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetServiceDate</Identifier>
+        <DisplayName>Set service date</DisplayName>
+        <Description>Set new date of last maintenance service</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetServiceDate</Identifier>
+            <DisplayName>Set service date</DisplayName>
+            <Description>
+                Set new date of last maintenance service
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set service date</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which the set service date status applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Sensor calibration temperature -->
+	<Command>
+        <Identifier>GetSensorCalibrationTemperature</Identifier>
+        <DisplayName>Get Sensor calibration temperature</DisplayName>
+        <Description>Sensor temperature from the last calibration in degree Celsius</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentSensorCalibrationTemperature</Identifier>
+            <DisplayName>Current sensor calibration temperature in degree Celsius </DisplayName>
+            <Description>Sensor temperature from the last calibration in </Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>3.40282E+38</MaximalInclusive>
+                        <MinimalExclusive>-3.40282E+38</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>SetSensorCalibrationTemperature</Identifier>
+        <DisplayName>Set sensor calibration temperature</DisplayName>
+        <Description>Set sensor calibration temperature in degree Celsius</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetSensorCalibrationTemperature</Identifier>
+            <DisplayName>Set sensor calibration temperature</DisplayName>
+            <Description>Set new sensor calibration temperature in degree Celsuis</Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>3.40282E+38</MaximalInclusive>
+                        <MinimalExclusive>-3.40282E+38</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>
+                Command status: Request response of command set sensor calibration temperature
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>3.40282E+38</MaximalInclusive>
+                        <MinimalExclusive>-3.40282E+38</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which the set sensor calibration temperature status applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+</Feature>

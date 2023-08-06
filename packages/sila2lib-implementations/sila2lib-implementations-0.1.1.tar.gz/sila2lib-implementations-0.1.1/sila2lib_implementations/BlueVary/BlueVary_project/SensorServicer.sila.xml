@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="0.2" FeatureVersion="1.0" Originator="biovt.mw.tum.de" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>SensorServicer</Identifier>
+    <DisplayName>Sensor Servicer</DisplayName>
+    <Description>
+		Read out the off-gas analytics sensor data for gas1 and gas2.Gas concentrations [vol.-%], pressure [mbar], humidity [%], temperature[C] and absolute humidity [vol.-%] are provided. 
+        By Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 20.05.2019
+    </Description>
+    <Command>
+        <Identifier>GetResults</Identifier>
+        <DisplayName>Get Sensor Results</DisplayName>
+        <Description>
+        Get the current gas concentrations for CO2 and O2 in [vol.-%] and the pressure readings in [mbar]. 
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CO2</Identifier>
+            <DisplayName>Current CO2 Concentration</DisplayName>
+            <Description>Get the current CO2 concentration</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>O2</Identifier>
+            <DisplayName>Current O2 Concentration</DisplayName>
+            <Description>Get the current O2 concentration</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>Pressure</Identifier>
+            <DisplayName>Current Air Pressure</DisplayName>
+            <Description>Get the current air pressure reading</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+		<DefinedExecutionErrors>
+            <Identifier>SensorInHeatUpPhase</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+	<Command>
+        <Identifier>GetHumidity</Identifier>
+        <DisplayName>Get Humidity Results</DisplayName>
+        <Description>
+        Get the current humidity [%], temperature [C] and absolute humidity [vol.-%]. 
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>Humidity</Identifier>
+            <DisplayName>Current Humidity</DisplayName>
+            <Description>Get the current humidity in [%]</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>Temperature</Identifier>
+            <DisplayName>Current Temperature</DisplayName>
+            <Description>Get the current temperature in [C]</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>AbsoluteHumidity</Identifier>
+            <DisplayName>Current Absolute Humidity</DisplayName>
+            <Description>Get the current absolute humidity in [vol.-%]</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <DefinedExecutionError>
+        <Identifier>SensorInHeatUpPhase</Identifier>
+        <DisplayName>Sensors In Heat Up Phase. No Sensor Data Available.</DisplayName>
+        <Description>The sensors are still in the heat up phase. No valid readings yet.</Description>
+    </DefinedExecutionError>
+</Feature>
+

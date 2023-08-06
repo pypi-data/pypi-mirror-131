@@ -1,0 +1,26 @@
+{
+  "service_name" : "LAUDA_ThermostatService",
+  "service_description": "This is a LAUDA L250 Thermostat Service",
+  "authors"      : "Lukas Bromig",
+  "creation_date" : "20190522",
+  "version" : "1.0",
+  "vendor_url" : "",
+  "SiLA_standard_feature_list" : ["SiLAService", "SimulationController"],
+  "SiLA_feature_list" : ["DeviceServicer","ControlParameterServicer", "TemperatureControlServicer"], 
+  "communication_port" : "50001",
+  "IP_address" : "127.0.0.1",
+  "hostname" : "localhost"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

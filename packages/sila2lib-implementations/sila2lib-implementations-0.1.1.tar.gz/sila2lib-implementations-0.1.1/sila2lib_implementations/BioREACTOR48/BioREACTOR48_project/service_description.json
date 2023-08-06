@@ -1,0 +1,26 @@
+{
+  "service_name" : "BioREACTOR48Service",
+  "service_description": "This is a BioREACTOR48 Service",
+  "authors"      : "Lukas Bromig",
+  "creation_date" : "20200213",
+  "version" : "1.0",
+  "vendor_url" : "",
+  "SiLA_standard_feature_list" : ["SiLAService", "SimulationController"],
+  "SiLA_feature_list" : ["DeviceServicer","MotorServicer"],
+  "communication_port" : "50001",
+  "IP_address" : "127.0.0.1",
+  "hostname" : "localhost"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

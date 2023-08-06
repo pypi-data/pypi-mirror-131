@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="biovt.mw.tum.de" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>FluidDefinitionService</Identifier>
+    <DisplayName>Fluid Definition Service</DisplayName>
+    <Description>
+		Allows full set of the fluid properties as well as the current information of the working fluid.
+        By Lukas Bromig and Jose de Jesus Pina, Institute of Biochemical Engineering, Technical University of Munich, 02.12.2020
+    </Description>
+    <!-- Fuidset properties -->
+    <Command>
+        <Identifier>GetFluidSetProperties</Identifier>
+        <DisplayName>Get Fluidset properties</DisplayName>
+        <Description>The current fluidset properties for the calculations performed by the program</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentFluidsetProperties</Identifier>
+            <DisplayName>Current fluidset properties</DisplayName>
+            <Description>The current fluidset properties for the calculations performed by the program</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetFluidsetProperties</Identifier>
+        <DisplayName>Set fluid properties</DisplayName>
+        <Description>The fluidset properties to work with</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetFluidProperties</Identifier>
+            <DisplayName>Set Fluid set properties</DisplayName>
+            <Description>
+                The fluidset properties to work with
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set fluid properties</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which the Set fluid properties applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!-- Fluid Number -->
+    <Command>
+        <Identifier>GetFluidNumber</Identifier>
+        <DisplayName>Get fluid number</DisplayName>
+        <Description>Current fluid ID-Nr.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentFuidNumber</Identifier>
+            <DisplayName>Current fluid number</DisplayName>
+            <Description>Current fluid ID-Nr</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetFluidNumber</Identifier>
+        <DisplayName>Set Fluid Number</DisplayName>
+        <Description>Set a number of the fluid to work with</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetFluidNumber</Identifier>
+            <DisplayName>Set fluid number</DisplayName>
+            <Description>
+                The number of the fluid to work with
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set fluid number</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which set fluid number applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!--Fluid Name -->
+    <Command>
+        <Identifier>GetFluidName</Identifier>
+        <DisplayName>Get fluid name</DisplayName>
+        <Description>The name of the current fluid</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentFluidName</Identifier>
+            <DisplayName>Current fluid name</DisplayName>
+            <Description>Current fluid name</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetFluidName</Identifier>
+        <DisplayName>Set Fluid Name</DisplayName>
+        <Description>Set the name of the fluid to work with</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetFluidName</Identifier>
+            <DisplayName>Set fluid name</DisplayName>
+            <Description>
+                The name of the fluid to work with
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set fluid name</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which fluid name applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!--Heat Capacity -->
+    <Command>
+        <Identifier>GetHeatCapacity</Identifier>
+        <DisplayName>Get heat capacity</DisplayName>
+        <Description>The heat capacity of the fluid in Joule per K </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentHeatCapacity</Identifier>
+            <DisplayName>Current heat capacity</DisplayName>
+            <Description>Current heat capacity</Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--<Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>3.40282E+38</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetHeatCapacity</Identifier>
+        <DisplayName>Set heat capacity</DisplayName>
+        <Description>Set the heat capacity of the fluid in Joule Per Kelvin</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetHeatCapacity</Identifier>
+            <DisplayName>Set heat capacity</DisplayName>
+            <Description>
+                Set the heat capacity of the fluid in Joule per Kelvin.
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set heat capacity</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which set heat capacity applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <!--Viscosity units -->
+    <Command>
+        <Identifier>GetViscosity</Identifier>
+        <DisplayName>Get viscosity</DisplayName>
+        <Description>Viscosity of the fluid in cP</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentViscosity</Identifier>
+            <DisplayName>Current viscosity</DisplayName>
+            <Description>Current viscosity in cP</Description>
+            <DataType>
+                <Basic>Real</Basic>
+               <!-- <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>3.40282E+38</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetViscosity</Identifier>
+        <DisplayName>Set viscosity</DisplayName>
+        <Description>Set the viscosity of the fluid in cP</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>SetViscosity</Identifier>
+            <DisplayName>Set viscosity</DisplayName>
+            <Description>
+               Set the viscosity of the fluid in cP
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+                <!--
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive>3.40282E+38</MaximalInclusive>
+                        <MinimalExclusive>0</MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>-->
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>Command status: Request response of command set viscosity</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>IndexPointing</Identifier>
+            <DisplayName>Index pointing</DisplayName>
+            <Description>
+                Index pointing to the first byte in the send message for which set viscosity applies
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+</Feature>

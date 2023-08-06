@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="0.2" FeatureVersion="1.0" Originator="org.silastandard" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_base/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>DeviceServicer</Identifier>
+    <DisplayName>Device Servicer</DisplayName>
+    <Description>
+        General device settings of the BlueVary Off-Gas analysis device can be retrieved within this feature. 
+        By Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 15.04.2020
+    </Description>
+    <Property>
+        <Identifier>CurrentStatus</Identifier>
+        <DisplayName>Current Status</DisplayName>
+        <Description>Get the current status of the device from the internal state machine of the SiLA server.</Description>
+        <Observable>Yes</Observable>
+        <DataType>
+            <Basic>String</Basic>
+        </DataType>
+    </Property>
+    <Command>
+        <Identifier>GetLog</Identifier>
+        <DisplayName>Get Log</DisplayName>
+        <Description>Get the current status of the device from the state machine of the SiLA server.</Description>
+        <Observable>Yes</Observable>
+        <Response>
+            <Identifier>CurrentLogLevel</Identifier>
+            <DisplayName>Current Log Level</DisplayName>
+            <Description>The current log level of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentLogTimestamp</Identifier>
+            <DisplayName>Current Log Timestamp</DisplayName>
+            <Description>The current log timestamp of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>Timestamp</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentLogMessage</Identifier>
+            <DisplayName>Current Log Level</DisplayName>
+            <Description>The current log level of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetSensorID</Identifier>
+        <DisplayName>Get Sensor IDs</DisplayName>
+        <Description>
+        Get the sensor IDs of the gas1, gas2, pressure and humidity sensor. 
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>UnitID</Identifier>
+            <DisplayName>UnitID of Sensor</DisplayName>
+            <Description>The unit ID of the sensor.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CO2ID</Identifier>
+            <DisplayName>CO2 Sensor ID</DisplayName>
+            <Description>The sensor ID of the CO2 sensor.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>O2ID</Identifier>
+            <DisplayName>O2 Sensor ID</DisplayName>
+            <Description>The sensor ID of the O2 sensor.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>		
+        <Response>
+            <Identifier>HUMID</Identifier>
+            <DisplayName>Humidity Sensor ID</DisplayName>
+            <Description>The sensor ID of the humidity sensor.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>		
+        <Response>
+            <Identifier>PRESID</Identifier>
+            <DisplayName>Pressure Sensor ID</DisplayName>
+            <Description>The sensor ID of the pressure sensor.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+	</Command>	
+	<Command>
+        <Identifier>GetSensorInfo</Identifier>
+        <DisplayName>Get Sensor Info</DisplayName>
+        <Description>Get all relevant sensor information of the device.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>SensorInfo</Identifier>
+            <DisplayName>Sensor Information</DisplayName>
+            <Description>Outputs a detailled string with sensor information.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>	
+	</Command>	
+</Feature>
+

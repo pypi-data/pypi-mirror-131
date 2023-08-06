@@ -1,0 +1,263 @@
+
+
+Creation date: 20.10.2020, 12:50  
+Last modification: 11.11.2021, 12:52  
+Authors: Lukas Bromig, Nikolas von den Eichen, Felix Moorhoff  
+Contributors: Valeryia Sidarava, Jose Jesus de Pina Torres
+
+![sila-python](tests/sila-python-logo.png)
+
+Sila2lib_implementations
+=====================================================
+
+[![Pipeline Status](https://gitlab.com/lukas.bromig/sila2lib_implementations/badges/pipenv_to_poetry/pipeline.svg)](https://gitlab.com/lukas.bromig/sila2lib_implementations/commits/master)
+[![coverage report](https://gitlab.com/lukas.bromig/sila2lib_implementations/badges/pipenv_to_poetry/coverage.svg)](https://gitlab.com/lukas.bromig/sila2lib_implementations/-/commits/main)
+[![python](https://img.shields.io/pypi/pyversions/hypercorn.svg)](https://pypi.org/project/sila2lib-implementations/)
+
+
+This repository contains [SiLA2](https://sila-standard.com) drivers for a variety of devices that are being used at the [Institute of Biochemical Engineering](https://www.mw.tum.de/en/biovt/home/) at TUM.
+
+
+The following devices are supported:
+- **2mag, BioREACTOR48 (48x Parallel Bioreactor System)**  
+- **BlueSens, BlueVary (Offgas-analytics)**  
+- **Eppendorf, DASGIP (4x Parallel Bioeactor System)**
+- **LAUDA, LOOP 250**
+- **LAUDA, LOOP 500**
+- **PreSens sensor bars**
+- **Reglo, RegloICC (Peristaltic Pump)**
+- **Reglo, RegloDC (Peristaltic Pump)**
+- **Bronkhorst, El-Flow Prestige (Flowmeter)**
+- **Mettler-Toledo, MT Viper SW (Laboratory Balance)**
+
+SiLA version of drivers may vary. In case of incompatibilities, please reach out to:   
+*lukas.bromig@tum.de* 
+
+## Content
+
+| **Device**      | **Description**             | **SiLA Python branch(*)** | **State** | **Last update (main)** |
+|-----------------|----------------------|------------------------|-----------|-----------------------------|
+| BioREACTOR48    | mL-Bioreactor system | master (v.1.0)         | in use    |          20.08.2021         |
+| BlueVary        | off-gas analytic     | codegenerator-0.3      | in use    |          23.07.2021         |
+| DASGIP          | L-Bioreactor system  | master (v.1.0)         | in use    |          26.04.2021         |
+| ELFLOW Prestige | flowmeter            | codegenerator-0.3      | testing   |          30.08.2021         |
+| Lauda Loop250   | thermostat           | master (v.1.0)         | not used  |          25.10.2020         |
+| Lauda Loop500   | thermostat           | master (v.1.0)         | not used  |          25.10.2020         |
+| MT Viper SW     | laboratory balance   | codegenerator-0.3      | in use    |          14.04.2021         |
+| Presens         | pH/DO-sensor bars    | codegenerator-0.3      | in use    |          20.08.2021         |
+| RegloDC         | peristaltic pump     | codegenerator-0.3      | in use    |          14.04.2021         |
+| RegloICC        | peristaltic pump     | master (v.1.0)         | in use    |          12.03.2021         |
+
+(*) SiLA Python branches:
+As of 11.11.2021, SiLA 2 Python versions "master (v.1.0)" and "codegenerator-0.3" are deprecated. Backwards 
+compatibility is intended. If you encounter any issues, please reach out! All forthcoming development and driver updates 
+will use the latest SiLA 2 Python reference implementation.   
+
+## Project structure - generically
+```
+└── sila2lib_implementations
+    ├── sila2lib_implementations
+    │   ├── Device
+    │   │   └── Device_project
+    │   │   │   └── DeviceServicer.sila.xml
+    │   │   │   └── service_description.json
+    │   │   │   └── SiLAFramework.proto
+    │   │   └── DeviceService
+    │   │   │   └── DeviceServicer
+    │   │   │   │   └── DeviceServicer_servicer.py
+    │   │   │   │   └── DeviceServicer_real.py
+    │   │   │   │   └── DeviceServicer_simulation.py
+    │   │   │   │   └── DeviceServicer_default_arguments.py
+    │   │   │   │   └── __init__.py
+    │   │   │   └── DeviceService_client.py
+    │   │   │   └── DeviceService_server.py    
+    │   │   │   └── __init__.py    
+    │   │   └── __init__.py
+    │   └── __init__.py
+    ├── tests
+    │   ├── Device
+    │   │   └── test_device.py  
+    ├── README.md
+    ├── LICENSE
+    ├── pyproject.toml
+    └── setup.py
+```
+
+```sila2lib_implementations```: Projects root  
+```sila2lib_implementations```: All Device implementations  
+```Device```: A device that is implemented  
+```Device_project```: Source code directory of the device implementation  
+```DeviceServicer.sila.xml```: Feature implementation for the Device device  
+```service_description.json```: Keine Ahnung?  
+```SiLAFramework.proto```: Keine Ahnung?  
+```DeviceService```: Code generated directory for the device  
+```DeviceServicer```: Contains the Device implementations for different modi (like simulation or real mode)
+as well as a servicer that starts either the simulation- or real mode. ```DeviceServicer_default_arguments``` contains
+the default responses for the simulation mode.  
+```DeviceService_client.py```: Sila server implementation specific for the device    
+```DeviceService_client.py```: Sila client implementation specific for the device    
+```tests```: Unit tests for the devices
+
+
+The folder ```sila2lib_implementations``` contains the listed devices. Each device itself consists of a ```Device_project``` folder
+where the devices were defined originally (in the file format ```.xml```). These .xml-files are written according to the 
+SiLA2 schema available at [sila_base](https://gitlab.com/SiLA2/sila_base) and are called FDL-files (**F**eature **D**efinition **L**anguage). 
+Based on these files, the sila2lib-codegenerator (Deprecated, In archived branch of [sila_python](https://gitlab.com/SiLA2/sila_python))
+generated all services in the separate directory ```DeviceService```. Within the ```DeviceService``` directory, server and clients have been
+generated. Depending on the device's function there can be additional features, named Service, Provider, or Controller. 
+To learn more about the nomenclature of SiLA2 read the [documentation](https://sila2.gitlab.io/sila_base/) which 
+contains links to the specification parts A and B. These features account for the main functionality
+of the device (e.g. providing of sensor data, control of actors). Each feature contains an implementation for a simulation- or real mode, as well as some
+default return arguments to enable a meaningful simulation run. The gRPC folders within the ```DeviceService``` folder can be ignored, usually.  
+Unit tests for (almost) all devices can be found in the ```test``` folder (for details see 'Developer note')
+
+### Installation requirements  
+Requires Python3, (pip, git and poetry)  
+Further requirements include:  
+- InfluxDB, csv, persistent, opcua, pyserial, cryptography    
+These packages can be installed via PyPI
+
+## Installation   
+The repository is setup in a way that it can be installed conveniently as python package.
+In case of any failures make sure to accomplish the [Installation requirements](#installation-requirements) and read the 
+troubleshooting section. There are two possible ways for an installation:  
+
+### Python Package Index (PyPI) (recommended)   
+Stable releases are available at the [Python Package Index (PyPI)](https://pypi.org/project/sila2lib-implementations/).
+Use the package installer for python (pip) for installation:
+``` {.sourceCode .console} 
+$ pip install sila2lib_implementations
+```
+
+### Gitlab (for developers):  
+The [projects Gitlab repository](https://gitlab.com/lukas.bromig/sila2lib_implementations) further offers accessibility
+to a specific branch that might be unstable, however.  
+Navigate into a directory where you would like to build the sila2lib-implementations. Clone the repository (or desired branches)
+and change (cd sila2lib_implementations) into it. Install the package management tool poetry (pip install poetry)
+to be able to install the sila2lib-implementations repository (poetry install). With ```poetry shell``` you can start the
+venv where poetry installed your software in. Use ```deactivate``` to exit the venv again. Alternatively, pip 
+or different methods listed [here](https://packaging.python.org/en/latest/tutorials/installing-packages/) can be used for
+installation. They are not recommended, however.  
+Finally, have a look at [Quickstart - first steps  ](#quickstart---first-steps) to verify if installation was entirely successful and to get comfortable with sila2lib-implementations :)
+
+
+``` {.sourceCode .console} 
+$ git clone -b pipenv_to_poetry https://gitlab.com/lukas.bromig/sila2lib_implementations
+$ cd sila2lib_implementations
+# with poetry (recommended)
+$ pip install poetry
+$ poetry install
+# with pip
+$ pip install --editable .[dev]  # [dev] installs the development packages, defined in setup.py 
+```
+  
+## Quickstart - first steps  
+See if installation was successful: Try to start your first sila server and run some unit test. In simulation mode, of course ;)  
+It is assumed that you are located in the ```sila2lib_implementations``` root directory. Refer to section [Project structure - generically](#project-structure---generically)
+to get comfortable with the projects structure. Additionally you need to be within in your virtual environment in case you
+installed all the packages there (```source bin/activate```).
+``` {.sourceCode .console} 
+$ # start your first server (use str c to shut it down again to be able to issue new commands):
+$ python -m sila2lib_implementations/LAUDA/LAUDA_ThermostatService/LAUDA_ThermostatService_server.py 
+$ verify if a device is reacting properly to some simulation tests
+$ poetry run python -m pytest tests
+```
+For further usage like editing existing devices or implementing new ones please continue reading the Developer sections.
+
+## Developer note  
+Any contribution is highly appreciated, not only on a coding base. If you are having issues of any kind please do not 
+hesitate to [open an issue](https://gitlab.com/lukas.bromig/sila2lib_implementations/issues).
+After installation have a look at the Quickstart paragraph for some first steps to get comfortable within the project.
+Projects structure technically: gRPC, Protobuffer, .xml codegenerator, (encryption) -> i don't have the knowledge to write all this
+
+## Development environment
+[black](https://black.readthedocs.io/): Code formatter  
+[isort](https://pycqa.github.io/isort/): Import sorting  
+[flake8](https://flake8.pycqa.org/): Checks various code problems  
+[pytest](https://docs.pytest.org/): Testing suite  
+[pytest-cov](https://github.com/pytest-dev/pytest-cov): Measures pytests code coverage 
+
+Before commiting please make sure to run the checks to push nice code. You can run the script [`run-formatting`](https://gitlab.com/lukas.bromig/sila2lib_implementations/-/blob/master/run-formatting)
+to apply some auto formatting (that you can define by yourself in the file, too btw.).
+To verify that your code is executable without issues run some tests to see where conflicts or bugs might arise. Run the [`run-checks`](https://gitlab.com/lukas.bromig/sila2lib_implementations/-/blob/master/run-checks)
+to execute all tests or only execute specific ones you are working on.
+
+Do we want to use tox instead?
+Do we want to run checks in the pipeline or has the user to make it?
+
+## Testing environment  
+The default execution of the pytest command is regulated in the ```tests/pytest.ini``` file, where some markers
+are defined for default executions or safe executions i.a..  
+**How do I run simulation tests?**  
+Tests in simulation mode are executed by default. See the [Quickstart - first steps](#quickstart---first-steps) section to get comfortable.  
+**How do I run "real" tests?**  
+Real tests itself are divided into tests that can be executed safely or not. Tests that can be executed safely are those that
+do not require a special device set up like cooling- or moving units. By this it is tried to assure no device breakdown in case
+crucial steps have been forgotten to use a device safely.
+-> set tags etc....  
+**Which tests are run in the GitLAb CI/CD pipeline and when?**   
+Whenever we want...  
+The pipeline routines are defined in the ```.gitlab-ci.yml``` file and can be changed there.
+
+
+## Implementation of new devices
+Please refer to the [Sila_python](https://gitlab.gwdg.de/niklas.mertsch/sila2-redo/-/tree/master) project for implementation
+of new devices. In case of extension or changes of existing devices keep in mind to also include the changes in the respective
+.xml files.
+
+## Documentation  
+The documentation of sila_python can be found here: [Documentation](https://sila2.gitlab.io/sila_python)
+The official SiLA-Standard specifications can be found at [https://sila-standard.org](https://sila-standard.org).
+If you still can't find an answer, please [open an issue](https://gitlab.com/lukas.bromig/sila2lib_implementations/issues).
+
+WIP: The documentation of this repository is also hosted on readthedocs.io
+
+License  
+=======   
+This code is licensed under the [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
+
+### Troubleshooting for Debian based installations (e.g. on Raspberry Pis)
+Distro might be shipped using very old and outdated software. Problems might disappear already by updating your system. Also
+check the [Installation requirements](#installation-requirements) once again.
+On top, this troubleshooting section works best if the latest software is used anyways. It is assumed that all commands listed
+here are executed in a linux terminal. Update your software: ```sudo apt update && sudo apt upgrade```
+
+Install issues:
+- pip failure to find ```poetry``` version ```1.2.0a2```
+  - pip might be outdated. Update it via: ```pip install --upgrade pip```
+  - python2 pip might be used preferably by your (old, outdated) OS. Use and update pip3 for installation ```pip3 install -U pip && pip install poetry==1.2.0a2```
+- ```poetry command not found```
+  - logout and login again (```source ~/.bashrc``` not sufficient unfortunately)
+- command ```bdist_wheel``` not found. Probably ```wheel``` is not installed. Install it via:
+  - ```pip install --upgrade wheel setuptools```
+
+(Sub-)Dependency issues:
+- Build issues: Make sure to fulfill the dependencies. To ensure this type: ```pip install --upgrade pip setuptools==59.1.0 wheel==0.36.0```
+- install issues for the package ```cryptography```
+  - cryptography requires a (not too old) rust compiler (rustc). Make sure to have the rustc installed and additional dependencies by typing:
+```sudo apt-get install libssl-dev libffi-dev build-essential python3-dev cargo``` 
+- install issues for the package ```psycopg2-binary```
+  - Note: Only applies for the LHS_scheduler: psycopg2-binary requires: ``` libpq-dev```  on Debian (Ubuntu, Mint) or 
+  ```libpq-devel``` on Centos/Fedora/Cygwin/Babun. Install them for Debians by typing: ```sudo apt-get install libpq-dev``` 
+- install issues for the package ```lxml```
+  - lxml requires 2 additional development packages. Install them by typing: ```sudo apt-get install libxml2-dev libxslt1-dev``` 
+
+On a Raspberry Pi OS Bullseye (python 3.9.2) you can issue this one line command to fulfill all dependencies in case the installation
+fails:```sudo apt-get install libssl-dev libffi-dev libxml2-dev libxslt1-dev libpq-dev```
+
+On a Raspberry Pi OS Buster (python 3.7.3) you can issue this one line command to fulfill all dependencies in case the installation
+fails:```sudo apt-get install libssl-dev libffi-dev libxml2-dev libxslt1-dev libpq-dev```
+
+
+### Troubleshooting during usage (points to installation issues finally)
+- GLIBC_2.33 not found (BTW. this fix did not work for me :/)
+  - This issue is serious since GLIBC can not be changed easily. 'Upgrading very core libraries like libc can be challenging. 
+  It's better to find a newer distribution if you can.'. Try to reinstall an older version of grpcio (1.23.0) without binary (--no-binary)  
+```pip install -U --force-reinstall grpcio==1.23.0 --no-binary=grpcio=1.23.0```  
+```pip install -U --force-reinstall grpcio-tools --no-binary=grpcio-tools```
+- ImportError: undefined symbol: __atomic_exchange_8
+  - Please report the troubleshooting
+- Problems that might arise with newer python version
+  - On a Raspbian OS it was not possible for us to change the python version to enable all installs (the version was changed 
+  however that did not enable the install, unfortunately)

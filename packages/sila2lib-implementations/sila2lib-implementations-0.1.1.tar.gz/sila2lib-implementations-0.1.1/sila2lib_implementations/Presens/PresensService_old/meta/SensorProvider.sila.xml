@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="biovt.mw.tum.de" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>SensorProvider</Identifier>
+    <DisplayName>SensorProvider</DisplayName>
+    <Description>
+		Measurement data of the Presense Multichannel Sensor Reader (MCR) can be accessed with this feature.
+        By Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 14.02.2020
+    </Description>
+	<Command>
+        <Identifier>GetSingleO2</Identifier>
+        <DisplayName>Get Single O2</DisplayName>
+        <Description>Get the oxygen measurement of a specified channel.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Channel</Identifier>
+            <DisplayName>Channel</DisplayName>
+            <Description>
+                The channel to be addressed.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentChannelNumber</Identifier>
+            <DisplayName>Current Channel Number</DisplayName>
+            <Description>The current addressed channel number</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentSensorType</Identifier>
+            <DisplayName>CurrentSensor Type</DisplayName>
+            <Description>The current sensor type number</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentAmplitude</Identifier>
+            <DisplayName>CurrentAmplitude</DisplayName>
+            <Description>The current signal amplitude</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentPhase</Identifier>
+            <DisplayName>Current Phase</DisplayName>
+            <Description>The current signal phase value</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentTemperature</Identifier>
+            <DisplayName>Current Temperature</DisplayName>
+            <Description>The current temperature value</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentO2</Identifier>
+            <DisplayName>Current O2</DisplayName>
+            <Description>The oxygen reading of the specified channel.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentErrorCode</Identifier>
+            <DisplayName>Current Error Code</DisplayName>
+            <Description>The current error code of the respective channel. ER0 = No error.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetSinglePH</Identifier>
+        <DisplayName>Get Single PH</DisplayName>
+        <Description>Get the PH measurement of a specified channel.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Channel</Identifier>
+            <DisplayName>Channel</DisplayName>
+            <Description>
+                The channel to be addressed.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentChannelNumber</Identifier>
+            <DisplayName>Current Channel Number</DisplayName>
+            <Description>The current addressed channel number</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentSensorType</Identifier>
+            <DisplayName>CurrentSensor Type</DisplayName>
+            <Description>The current sensor type number</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentAmplitude</Identifier>
+            <DisplayName>CurrentAmplitude</DisplayName>
+            <Description>The current signal amplitude</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentPhase</Identifier>
+            <DisplayName>Current Phase</DisplayName>
+            <Description>The current signal phase value</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentTemperature</Identifier>
+            <DisplayName>Current Temperature</DisplayName>
+            <Description>The current temperature value</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentPH</Identifier>
+            <DisplayName>Current PH</DisplayName>
+            <Description>The pH reading of the specified channel.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentErrorCode</Identifier>
+            <DisplayName>Current Error Code</DisplayName>
+            <Description>The current error code of the respective channel. ER0 = No error.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetAllO2</Identifier>
+        <DisplayName>Get All O2</DisplayName>
+        <Description>Get oxygen measurements of all connected channels.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentSensorType</Identifier>
+            <DisplayName>Current Sensor Type</DisplayName>
+            <Description>The current sensor type numbers of all channels.</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>String</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentAmplitude</Identifier>
+            <DisplayName>CurrentAmplitude</DisplayName>
+            <Description>The current signal amplitudes of all channel.</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>Integer</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentPhase</Identifier>
+            <DisplayName>Current Phase</DisplayName>
+            <Description>The current signal phase values of all channels</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentTemperature</Identifier>
+            <DisplayName>Current Temperature</DisplayName>
+            <Description>The current temperature values of all channels.</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentO2</Identifier>
+            <DisplayName>Current O2</DisplayName>
+            <Description>The oxygen readings of all channels.</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentErrorCode</Identifier>
+            <DisplayName>Current Error Code</DisplayName>
+            <Description>The current error codes of all channels. ER0 = No error.</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>String</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetAllPH</Identifier>
+        <DisplayName>Get All PH</DisplayName>
+        <Description>Get pH measurements of all connected channels.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentSensorType</Identifier>
+            <DisplayName>Current Sensor Type</DisplayName>
+            <Description>The current sensor type numbers of all channels.</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>String</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentAmplitude</Identifier>
+            <DisplayName>CurrentAmplitude</DisplayName>
+            <Description>The current signal amplitudes of all channel.</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>Integer</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentPhase</Identifier>
+            <DisplayName>Current Phase</DisplayName>
+            <Description>The current signal phase values of all channels</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentTemperature</Identifier>
+            <DisplayName>Current Temperature</DisplayName>
+            <Description>The current temperature values of all channels.</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentPH</Identifier>
+            <DisplayName>Current PH</DisplayName>
+            <Description>The pH readings of all channels.</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>Real</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentErrorCode</Identifier>
+            <DisplayName>Current Error Code</DisplayName>
+            <Description>The current error codes of all channels. ER0 = No error.</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>String</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+    </Command>
+    <Property>
+        <Identifier>TotalChannels</Identifier>
+        <DisplayName>Total Channels</DisplayName>
+        <Description>Total number of channels. Default = 48.</Description>
+        <Observable>No</Observable>
+        <DataType>
+            <Basic>Integer</Basic>
+        </DataType>
+    </Property>
+    <Property>
+        <Identifier>TotalBars</Identifier>
+        <DisplayName>TotalBars</DisplayName>
+        <Description>Total number of measurement bars. Default = 6.</Description>
+        <Observable>No</Observable>
+        <DataType>
+            <Basic>Integer</Basic>
+        </DataType>
+    </Property>
+    <Property>
+        <Identifier>BarSensors</Identifier>
+        <DisplayName>Bar Sensors</DisplayName>
+        <Description>Number of sensors per bar. Default = 8.</Description>
+        <Observable>No</Observable>
+        <DataType>
+            <Basic>Integer</Basic>
+        </DataType>
+    </Property>
+</Feature>
+

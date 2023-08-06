@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="org.silastandard" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_base/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>DeviceInformationProvider</Identifier>
+    <DisplayName>Device Information Provider</DisplayName>
+    <Description>
+        General device information regarding firmware and hardware can be retrieved and changed within this feature.
+        By Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 07.04.2021
+    </Description>
+    <Command>
+        <Identifier>Reset</Identifier>
+        <DisplayName>Reset</DisplayName>
+        <Description>Get the current status of the device from the state machine of the SiLA server.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Confirmation</Identifier>
+            <DisplayName>Confirmation</DisplayName>
+            <Description>Confirm the reset command with Y.</Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>String</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalLength>1</MaximalLength>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentLogLevel</Identifier>
+            <DisplayName>Current Log Level</DisplayName>
+            <Description>The current log level of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>InternalError</Identifier>
+            <Identifier>LogicalError</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Property>
+        <Identifier>ImplementedCommands</Identifier>
+        <DisplayName>Implemented Commands</DisplayName>
+        <Description>Lists all commands implemented in the present software version. All commands (MT-SICS) ordered according to level in alphabetical order.</Description>
+        <Observable>No</Observable>
+        <DataType>
+            <List>
+                <DataType>
+                    <Basic>String</Basic>
+                </DataType>
+            </List>
+        </DataType>
+        <DefinedExecutionErrors>
+            <Identifier>InternalError</Identifier>
+        </DefinedExecutionErrors>
+    </Property>
+    <Property>
+        <Identifier>DeviceType</Identifier>
+        <DisplayName>Device Type</DisplayName>
+        <Description>Query device type.</Description>
+        <Observable>No</Observable>
+        <DataType>
+            <Basic>String</Basic>
+        </DataType>
+        <DefinedExecutionErrors>
+            <Identifier>InternalError</Identifier>
+        </DefinedExecutionErrors>
+    </Property>
+    <Property>
+        <Identifier>WeighingCapacity</Identifier>
+        <DisplayName>Weighing Capacity</DisplayName>
+        <Description>Query weighing capacity. The maximum allowed balance capacity in g.</Description>
+        <Observable>No</Observable>
+        <DataType>
+            <Constrained>
+                <DataType>
+                    <Basic>Real</Basic>
+                </DataType>
+                <Constraints>
+                    <Unit>
+                        <Label>g</Label>
+                        <Factor>1</Factor>
+                        <Offset>0</Offset>
+                        <UnitComponent>
+                            <SIUnit>Kilogram</SIUnit>
+                            <Exponent>-3</Exponent>
+                        </UnitComponent>
+                    </Unit>
+                </Constraints>
+            </Constrained>
+        </DataType>
+        <DefinedExecutionErrors>
+            <Identifier>InternalError</Identifier>
+        </DefinedExecutionErrors>
+    </Property>
+    <Property>
+        <Identifier>FirmwareVersion</Identifier>
+        <DisplayName>Firmware Version</DisplayName>
+        <Description>Provides the software version number</Description>
+        <Observable>No</Observable>
+        <DataType>
+            <Basic>String</Basic>
+        </DataType>
+        <DefinedExecutionErrors>
+            <Identifier>InternalError</Identifier>
+        </DefinedExecutionErrors>
+    </Property>
+    <Property>
+        <Identifier>TypeDefinitionNumber</Identifier>
+        <DisplayName>Type Definition Number</DisplayName>
+        <Description>Provides the type definition number</Description>
+        <Observable>No</Observable>
+        <DataType>
+            <Basic>String</Basic>
+        </DataType>
+        <DefinedExecutionErrors>
+            <Identifier>InternalError</Identifier>
+        </DefinedExecutionErrors>
+    </Property>
+    <Property>
+        <Identifier>SerialNumber</Identifier>
+        <DisplayName>Serial Number</DisplayName>
+        <Description>Query the serial number of the balance terminal. The serial number agrees with that on the model plate and is different for every MT balance. If no terminal is present, the SN of the bridge is issued instead.</Description>
+        <Observable>No</Observable>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        <DefinedExecutionErrors>
+            <Identifier>InternalError</Identifier>
+        </DefinedExecutionErrors>
+    </Property>
+    <DefinedExecutionError>
+        <Identifier>InternalError</Identifier>
+        <DisplayName>Internal Error</DisplayName>
+        <Description>Internal error. The balance is not ready yet!</Description>
+    </DefinedExecutionError>
+    <DefinedExecutionError>
+        <Identifier>LogicalError</Identifier>
+        <DisplayName>Logical Error</DisplayName>
+        <Description>Logical error. The parameter is not allowed!</Description>
+    </DefinedExecutionError>
+</Feature>

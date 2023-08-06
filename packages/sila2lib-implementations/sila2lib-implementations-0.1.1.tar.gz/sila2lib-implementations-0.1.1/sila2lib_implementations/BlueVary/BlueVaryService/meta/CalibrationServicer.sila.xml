@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="0.2" FeatureVersion="1.0" Originator="biovt.mw.tum.de" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>CalibrationServicer</Identifier>
+    <DisplayName>Calibration Servicer</DisplayName>
+    <Description>
+		Used to initiate device 1-pt calibration of the off-gas sensors.
+        By Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 20.05.2019
+    </Description>
+	<Command>
+        <Identifier>StartCalibration</Identifier>
+        <DisplayName>Start Calibration</DisplayName>
+        <Description>Start the 1-pt calibration of the sensors</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CalibrationStatus</Identifier>
+            <DisplayName>Calibration Status</DisplayName>
+            <Description>Calibration command recieved. Calibration status response.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+	</Command>
+</Feature>
+

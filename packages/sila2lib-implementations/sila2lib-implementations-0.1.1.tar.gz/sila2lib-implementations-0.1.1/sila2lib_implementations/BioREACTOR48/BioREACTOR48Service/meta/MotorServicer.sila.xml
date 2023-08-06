@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="biovt.mw.tum.de" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>MotorServicer</Identifier>
+    <DisplayName>Motor Servicer</DisplayName>
+    <Description>
+		Allows full control of the stirrer speed and power. Starts and stops the stirrer of the bioREACTOR48.
+        By Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 12.02.2020
+    </Description>
+	<Command>
+        <Identifier>StartStirrer</Identifier>
+        <DisplayName>Start Stirrer</DisplayName>
+        <Description>Start the magnetic stirrer.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentStatus</Identifier>
+            <DisplayName>Current Status</DisplayName>
+            <Description>The current start status response.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>StopStirrer</Identifier>
+        <DisplayName>Stop Stirrer</DisplayName>
+        <Description>Stop the magnetic stirrer.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentStatus</Identifier>
+            <DisplayName>Current Status</DisplayName>
+            <Description>The current stop status response.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetRPM</Identifier>
+        <DisplayName>Set RPM</DisplayName>
+        <Description>Set the stirrer rpm.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>RPM</Identifier>
+            <DisplayName>RPM</DisplayName>
+            <Description>
+                The stirrer rpm to be set.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentStatus</Identifier>
+            <DisplayName>Current Status</DisplayName>
+            <Description>The current status of the rpm set operation.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetRPM</Identifier>
+        <DisplayName>Get RPM</DisplayName>
+        <Description>Get the current rpm of the stirrer.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentRPM</Identifier>
+            <DisplayName>Current rpm</DisplayName>
+            <Description>The current rpm of the stirrer.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetPower</Identifier>
+        <DisplayName>Set Power</DisplayName>
+        <Description>Set the stirrer power in %.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Power</Identifier>
+            <DisplayName>Power</DisplayName>
+            <Description>
+                The power input to the stirrer motor in %.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                        <MaximalInclusive></MaximalInclusive>
+                        <MinimalExclusive></MinimalExclusive>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentStatus</Identifier>
+            <DisplayName>CurrentStatus</DisplayName>
+            <Description>The current status of the power set operation</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetPower</Identifier>
+        <DisplayName>Get Power</DisplayName>
+        <Description>Get the current power input of the stirrer in %.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CurrentPower</Identifier>
+            <DisplayName>Current Power</DisplayName>
+            <Description>The current power input in %.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+    </Command>
+</Feature>
+

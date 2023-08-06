@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="org.silastandard" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_base/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>DisplayController</Identifier>
+    <DisplayName>Display Controller</DisplayName>
+    <Description>
+        THis feature contains functions to control the balances display.
+        By Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 20.05.2019
+    </Description>
+    <Command>
+        <Identifier>WriteToDisplay</Identifier>
+        <DisplayName>Write to Display</DisplayName>
+        <Description>Write text to the balance display.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Text</Identifier>
+            <DisplayName>Text</DisplayName>
+            <Description>The text to be displayed. An empty string will clear the balance display. If the maximum number of characters is exceeded, the text disappears on the right side.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Successful</Identifier>
+            <DisplayName>Successful</DisplayName>
+            <Description>The command has been executed successfully.</Description>
+            <DataType>
+                <Basic>Boolean</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>InternalError</Identifier>
+            <Identifier>LogicalError</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>ShowWeight</Identifier>
+        <DisplayName>Show Weight</DisplayName>
+        <Description>Resets the display after using the WriteToDisplay command. The device display will show the current weight value and unit.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>Successful</Identifier>
+            <DisplayName>Successful</DisplayName>
+            <Description>The command has been executed successfully.</Description>
+            <DataType>
+                <Basic>Boolean</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>InternalError</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <DefinedExecutionError>
+        <Identifier>OverloadError</Identifier>
+        <DisplayName>Overload Error</DisplayName>
+        <Description>Weigh module or balance is in overload range (weighing range exceeded).</Description>
+    </DefinedExecutionError>
+    <DefinedExecutionError>
+        <Identifier>UnderloadError</Identifier>
+        <DisplayName>Underload Error</DisplayName>
+        <Description>Weighing module or balance is in underload range (e.g. weighing pane is not in place).</Description>
+    </DefinedExecutionError>
+    <DefinedExecutionError>
+        <Identifier>InternalError</Identifier>
+        <DisplayName>Internal Error</DisplayName>
+        <Description>Internal error. Balance not ready yet.</Description>
+    </DefinedExecutionError>
+    <DefinedExecutionError>
+        <Identifier>LogicalError</Identifier>
+        <DisplayName>Logical Error</DisplayName>
+        <Description>Logical error. Balance not ready yet.</Description>
+    </DefinedExecutionError>
+</Feature>

@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="org.silastandard" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>ParameterControlServicer</Identifier>
+    <DisplayName>Parameter Control Servicer</DisplayName>
+    <Description>
+		Set and retrieve information regarding the parameter settings of the Reglo ICC pump.
+        By Valeryia Sidarava, Institute of Biochemical Engineering, Technical University of Munich, 31.07.2019,
+        Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 15.04.2020.
+    </Description>
+	<Command>
+        <Identifier>SetFlowRate</Identifier>
+        <DisplayName>Set Flow Rate value </DisplayName>
+        <Description>Set the desired flow rate of the pump, mL/min</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Channel</Identifier>
+            <DisplayName>Channel</DisplayName>
+            <Description>
+                Gets the channel, on which the command will be executed
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>SetFlowRate</Identifier>
+            <DisplayName>Set FlowRate</DisplayName>
+            <Description>
+                Set the desired RPM flow rate in volume/time mode, mL/min
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints></Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SetFlowRateSet</Identifier>
+            <DisplayName>Set Flow Rate Set</DisplayName>
+            <Description>Set Flow Rate succeeded to Set.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>SetFlowRateInvalidRange</Identifier>
+            <Identifier>InputSyntaxError</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+	<Command>
+        <Identifier>SetRPMMode</Identifier>
+        <DisplayName>Set RPM Mode</DisplayName>
+        <Description>
+        Set the current channel/pump mode to RPM mode.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>PumpMode</Identifier>
+            <DisplayName>Pump Mode</DisplayName>
+            <Description>
+                Current channel or pump mode: L=RPM / M=Flow Rate / O=Volume (at Rate) / G=Volume (over Time) / Q=Volume+Pause / N=Time / P=Time+Pause
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>String</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>PumpModeSet</Identifier>
+            <DisplayName>Pump Mode Set</DisplayName>
+            <Description>Pump mode succeeded to Set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>InputSyntaxError</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+          <Identifier>SetFlowRateMode</Identifier>
+          <DisplayName>Set Flow Rate Mode</DisplayName>
+          <Description>
+          Set the current channel/pump mode to Flow Rate mode.
+          </Description>
+          <Observable>No</Observable>
+          <Parameter>
+              <Identifier>PumpMode</Identifier>
+              <DisplayName>Pump Mode</DisplayName>
+              <Description>
+                  Current channel or pump mode: L=RPM / M=Flow Rate / O=Volume (at Rate) / G=Volume (over Time) / Q=Volume+Pause / N=Time / P=Time+Pause
+              </Description>
+              <DataType>
+                  <Constrained>
+                      <DataType>
+                          <Basic>String</Basic>
+                      </DataType>
+                      <Constraints>
+                      </Constraints>
+                  </Constrained>
+              </DataType>
+          </Parameter>
+          <Response>
+              <Identifier>PumpModeSet</Identifier>
+              <DisplayName>Pump Mode Set</DisplayName>
+              <Description>Pump mode succeeded to Set.</Description>
+              <DataType>
+                  <Basic>String</Basic>
+              </DataType>
+          </Response>
+          <DefinedExecutionErrors>
+              <Identifier>InputSyntaxError</Identifier>
+          </DefinedExecutionErrors>
+    </Command>
+    <Command>
+          <Identifier>SetVolumeRateMode</Identifier>
+          <DisplayName>Set Volume Rate Mode</DisplayName>
+          <Description>
+          Set the current channel/pump mode to Volume (at Rate) mode.
+          </Description>
+          <Observable>No</Observable>
+          <Parameter>
+              <Identifier>PumpMode</Identifier>
+              <DisplayName>Pump Mode</DisplayName>
+              <Description>
+                  Current channel or pump mode: L=RPM / M=Flow Rate / O=Volume (at Rate) / G=Volume (over Time) / Q=Volume+Pause / N=Time / P=Time+Pause
+              </Description>
+              <DataType>
+                  <Constrained>
+                      <DataType>
+                          <Basic>String</Basic>
+                      </DataType>
+                      <Constraints>
+                      </Constraints>
+                  </Constrained>
+              </DataType>
+          </Parameter>
+          <Response>
+              <Identifier>PumpModeSet</Identifier>
+              <DisplayName>Pump Mode Set</DisplayName>
+              <Description>Pump mode succeeded to Set.</Description>
+              <DataType>
+                  <Basic>String</Basic>
+              </DataType>
+          </Response>
+          <DefinedExecutionErrors>
+              <Identifier>InputSyntaxError</Identifier>
+          </DefinedExecutionErrors>
+    </Command>
+    <Command>
+          <Identifier>SetVolumeTimeMode</Identifier>
+          <DisplayName>Set Volume Time Mode</DisplayName>
+          <Description>
+          Set the current channel/pump mode to Volume (over Time) mode.
+          </Description>
+        <Observable>No</Observable>
+          <Parameter>
+              <Identifier>PumpMode</Identifier>
+              <DisplayName>Pump Mode</DisplayName>
+              <Description>
+                Current channel or pump mode: L=RPM / M=Flow Rate / O=Volume (at Rate) / G=Volume (over Time) / Q=Volume+Pause / N=Time / P=Time+Pause
+              </Description>
+              <DataType>
+                  <Constrained>
+                      <DataType>
+                          <Basic>String</Basic>
+                      </DataType>
+                      <Constraints>
+                      </Constraints>
+                  </Constrained>
+              </DataType>
+          </Parameter>
+          <Response>
+              <Identifier>PumpModeSet</Identifier>
+              <DisplayName>Pump Mode Set</DisplayName>
+              <Description>Pump mode succeeded to Set.</Description>
+              <DataType>
+                  <Basic>String</Basic>
+              </DataType>
+          </Response>
+          <DefinedExecutionErrors>
+              <Identifier>InputSyntaxError</Identifier>
+          </DefinedExecutionErrors>
+    </Command>
+    <Command>
+         <Identifier>SetVolumePauseMode</Identifier>
+         <DisplayName>Set Volume Pause Mode</DisplayName>
+         <Description>
+         Set the current channel/pump mode to Volume+Pause mode.
+         </Description>
+        <Observable>No</Observable>
+         <Parameter>
+             <Identifier>PumpMode</Identifier>
+             <DisplayName>Pump Mode</DisplayName>
+             <Description>
+               Current channel or pump mode: L=RPM / M=Flow Rate / O=Volume (at Rate) / G=Volume (over Time) / Q=Volume+Pause / N=Time / P=Time+Pause
+              </Description>
+             <DataType>
+                 <Constrained>
+                     <DataType>
+                         <Basic>String</Basic>
+                     </DataType>
+                     <Constraints>
+                     </Constraints>
+                 </Constrained>
+             </DataType>
+          </Parameter>
+         <Response>
+             <Identifier>PumpModeSet</Identifier>
+             <DisplayName>Pump Mode Set</DisplayName>
+             <Description>Pump mode succeeded to Set.</Description>
+             <DataType>
+                 <Basic>String</Basic>
+              </DataType>
+         </Response>
+         <DefinedExecutionErrors>
+             <Identifier>InputSyntaxError</Identifier>
+         </DefinedExecutionErrors>
+    </Command>
+    <Command>
+          <Identifier>SetTimeMode</Identifier>
+          <DisplayName>Set Time Mode</DisplayName>
+          <Description>
+          Set the current channel/pump mode to Time mode.
+          </Description>
+        <Observable>No</Observable>
+          <Parameter>
+              <Identifier>PumpMode</Identifier>
+              <DisplayName>Pump Mode</DisplayName>
+              <Description>
+                Current channel or pump mode: L=RPM / M=Flow Rate / O=Volume (at Rate) / G=Volume (over Time) / Q=Volume+Pause / N=Time / P=Time+Pause
+              </Description>
+              <DataType>
+                  <Constrained>
+                      <DataType>
+                          <Basic>String</Basic>
+                      </DataType>
+                      <Constraints>
+                      </Constraints>
+                  </Constrained>
+              </DataType>
+          </Parameter>
+          <Response>
+              <Identifier>PumpModeSet</Identifier>
+              <DisplayName>Pump Mode Set</DisplayName>
+              <Description>Pump mode succeeded to Set.</Description>
+              <DataType>
+                  <Basic>String</Basic>
+              </DataType>
+          </Response>
+          <DefinedExecutionErrors>
+              <Identifier>InputSyntaxError</Identifier>
+          </DefinedExecutionErrors>
+     </Command>
+     <Command>
+           <Identifier>SetTimePauseMode</Identifier>
+           <DisplayName>Set Time Pause Mode</DisplayName>
+           <Description>
+           Set the current channel/pump mode to Time+Pause mode.
+           </Description>
+         <Observable>No</Observable>
+           <Parameter>
+               <Identifier>PumpMode</Identifier>
+               <DisplayName>Pump Mode</DisplayName>
+               <Description>
+                 Current channel or pump mode: L=RPM / M=Flow Rate / O=Volume (at Rate) / G=Volume (over Time) / Q=Volume+Pause / N=Time / P=Time+Pause
+               </Description>
+               <DataType>
+                   <Basic>String</Basic>
+               </DataType>
+           </Parameter>
+           <Response>
+               <Identifier>PumpModeSet</Identifier>
+               <DisplayName>Pump Mode Set</DisplayName>
+               <Description>Pump mode succeeded to Set.</Description>
+               <DataType>
+                   <Basic>String</Basic>
+               </DataType>
+           </Response>
+           <DefinedExecutionErrors>
+               <Identifier>InputSyntaxError</Identifier>
+           </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>SetVolume</Identifier>
+        <DisplayName>Set Volume</DisplayName>
+        <Description>
+        Set the current setting for volume in mL. Volume Type 2.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Channel</Identifier>
+            <DisplayName>Channel</DisplayName>
+            <Description>
+                Gets the channel, on which the command will be executed
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Parameter>
+            <Identifier>Volume</Identifier>
+            <DisplayName>Volume</DisplayName>
+            <Description>
+                Set the current setting for volume in mL. Volume Type 2.
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Real</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>VolumeSet</Identifier>
+            <DisplayName>Volume Set</DisplayName>
+            <Description>Volume succeeded to Set</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>InputSyntaxError</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+	<Command>
+        <Identifier>GetFlowRate</Identifier>
+        <DisplayName>Get Flow Rate</DisplayName>
+        <Description>Get current flow rate (mL/min).</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Channel</Identifier>
+            <DisplayName>Channel</DisplayName>
+            <Description>
+                Gets the channel, on which the command will be executed
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentFlowRate</Identifier>
+            <DisplayName>Current Flow Rate</DisplayName>
+            <Description>Current flow rate of the channel.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>GetMode</Identifier>
+        <DisplayName>Get Mode</DisplayName>
+        <Description>Get the current channel or pump mode</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Channel</Identifier>
+            <DisplayName>Channel</DisplayName>
+            <Description>
+                Gets the channel, on which the command will be executed
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints></Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentPumpMode</Identifier>
+            <DisplayName>Current Pump Mode</DisplayName>
+            <Description>Current channel or pump mode is retrieved.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>GetVolume</Identifier>
+        <DisplayName>Get Volume</DisplayName>
+        <Description>Get the current setting for volume in mL/min.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Channel</Identifier>
+            <DisplayName>Channel</DisplayName>
+            <Description>
+                Gets the channel, on which the command will be executed
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints></Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentVolume</Identifier>
+            <DisplayName>Current Volume</DisplayName>
+            <Description>Current setting for volume in mL/min.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>GetMaximumFlowRate</Identifier>
+        <DisplayName>Get Maximum Flow Rate</DisplayName>
+        <Description>Get maximum flow rate achievable with current settings, mL/min.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Channel</Identifier>
+            <DisplayName>Channel</DisplayName>
+            <Description>
+                Gets the channel, on which the command will be executed
+            </Description>
+            <DataType>
+                <Constrained>
+                    <DataType>
+                        <Basic>Integer</Basic>
+                    </DataType>
+                    <Constraints>
+                    </Constraints>
+                </Constrained>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>MaximumFlowRate</Identifier>
+            <DisplayName>Maximum Flow Rate</DisplayName>
+            <Description>Maximum Flow Rate achievable with current settings, mL/min.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+          <Identifier>GetMaximumFlowRateWithCalibration</Identifier>
+          <DisplayName>Get Maximum Flow Rate using Calibration</DisplayName>
+          <Description>Get maximum flow rate achievable with current settings using calibration, mL/min.</Description>
+          <Observable>No</Observable>
+          <Parameter>
+              <Identifier>Channel</Identifier>
+              <DisplayName>Channel</DisplayName>
+              <Description>
+                  Gets the channel, on which the command will be executed
+              </Description>
+              <DataType>
+                  <Constrained>
+                      <DataType>
+                          <Basic>Integer</Basic>
+                      </DataType>
+                      <Constraints>
+                      </Constraints>
+                  </Constrained>
+              </DataType>
+          </Parameter>
+          <Response>
+              <Identifier>MaximumFlowRateWithCalibration</Identifier>
+              <DisplayName>Maximum Flow Rate using Calibration</DisplayName>
+              <Description>Maximum Flow Rate achievable with current settings using calibration, mL/min.</Description>
+              <DataType>
+                  <Basic>Real</Basic>
+              </DataType>
+          </Response>
+    </Command>
+    <Command>
+          <Identifier>GetSpeedSettingRPM</Identifier>
+          <DisplayName>Get Speed Setting in RPM</DisplayName>
+          <Description>Get the current speed setting in RPM.</Description>
+          <Observable>No</Observable>
+          <Parameter>
+              <Identifier>Channel</Identifier>
+              <DisplayName>Channel</DisplayName>
+              <Description>
+                  Gets the channel, on which the command will be executed
+              </Description>
+              <DataType>
+                  <Constrained>
+                      <DataType>
+                          <Basic>Integer</Basic>
+                      </DataType>
+                      <Constraints>
+                      </Constraints>
+                  </Constrained>
+              </DataType>
+          </Parameter>
+          <Response>
+              <Identifier>CurrentSpeedSetting</Identifier>
+              <DisplayName>Current Speed Setting</DisplayName>
+              <Description>The current speed setting in RPM.</Description>
+              <DataType>
+                  <Basic>Real</Basic>
+              </DataType>
+          </Response>
+    </Command>
+    <Command>
+            <Identifier>SetSpeedSettingRPM</Identifier>
+            <DisplayName>Set Speed Setting in RPM</DisplayName>
+            <Description>Set speed setting in RPM (RPM Mode flow rate setting (0.01 RPM) Discrete Type 3).</Description>
+            <Observable>No</Observable>
+            <Parameter>
+                <Identifier>Channel</Identifier>
+                <DisplayName>Channel</DisplayName>
+                <Description>
+                    Gets the channel, on which the command will be executed
+                </Description>
+                <DataType>
+                    <Constrained>
+                        <DataType>
+                            <Basic>Integer</Basic>
+                        </DataType>
+                        <Constraints>
+                        </Constraints>
+                    </Constrained>
+                </DataType>
+            </Parameter>
+            <Parameter>
+                <Identifier>Speed</Identifier>
+                <DisplayName>Speed</DisplayName>
+                <Description>
+                    Speed setting in RPM (RPM Mode flow rate setting (0.01 RPM) Discrete Type 3)
+                </Description>
+                <DataType>
+                    <Constrained>
+                        <DataType>
+                            <Basic>Real</Basic>
+                        </DataType>
+                        <Constraints>
+                        </Constraints>
+                    </Constrained>
+                </DataType>
+            </Parameter>
+            <Response>
+                <Identifier>CurrentSpeedSetting</Identifier>
+                <DisplayName>Current Speed Setting</DisplayName>
+                <Description>RPM Mode flow rate setting.</Description>
+                <DataType>
+                    <Basic>String</Basic>
+                </DataType>
+            </Response>
+    </Command>
+    <Command>
+            <Identifier>SetCurrentRunTime</Identifier>
+            <DisplayName>Set Current Run Time</DisplayName>
+            <Description>Set current pump run time using Time Type 2 format (0 to 999h or 0 to 3596400s).</Description>
+            <Observable>No</Observable>
+            <Parameter>
+                <Identifier>Channel</Identifier>
+                <DisplayName>Channel</DisplayName>
+                <Description>
+                    Gets the channel, on which the command will be executed
+                </Description>
+                <DataType>
+                    <Constrained>
+                        <DataType>
+                            <Basic>Integer</Basic>
+                        </DataType>
+                        <Constraints>
+                        </Constraints>
+                    </Constrained>
+                </DataType>
+            </Parameter>
+            <Parameter>
+                <Identifier>RunTime</Identifier>
+                <DisplayName>Run Time</DisplayName>
+                <Description>
+                    Set current pump run time using Time Type 2 format (0 to 999h or 0 to 3596400s).
+                </Description>
+                <DataType>
+                    <Constrained>
+                        <DataType>
+                            <Basic>Real</Basic>
+                        </DataType>
+                        <Constraints>
+                        </Constraints>
+                    </Constrained>
+                </DataType>
+            </Parameter>
+            <Response>
+                <Identifier>SetCurrentRunTimeSet</Identifier>
+                <DisplayName>Set Current Run Time</DisplayName>
+                <Description>Current Run Time succeeded to set.</Description>
+                <DataType>
+                    <Basic>String</Basic>
+                </DataType>
+            </Response>
+    </Command>
+    <Command>
+            <Identifier>GetCurrentRunTime</Identifier>
+            <DisplayName>Get Current Run Time</DisplayName>
+            <Description>Get current pump run time using Time Type 2 format.</Description>
+            <Observable>No</Observable>
+            <Parameter>
+                <Identifier>Channel</Identifier>
+                <DisplayName>Channel</DisplayName>
+                <Description>
+                    Gets the channel, on which the command will be executed
+                </Description>
+                <DataType>
+                    <Constrained>
+                        <DataType>
+                            <Basic>Integer</Basic>
+                        </DataType>
+                        <Constraints>
+                        </Constraints>
+                    </Constrained>
+                </DataType>
+            </Parameter>
+            <Response>
+                <Identifier>GetCurrentRunTime</Identifier>
+                <DisplayName>Get Current Run Time</DisplayName>
+                <Description>Current Run Time of the pump.</Description>
+                <DataType>
+                    <Constrained>
+                        <DataType>
+                           <Basic>Integer</Basic>
+                        </DataType>
+                        <Constraints>
+                            <MaximalInclusive>35964000</MaximalInclusive>
+                            <MinimalExclusive>0</MinimalExclusive>
+                        </Constraints>
+                    </Constrained>
+                </DataType>
+            </Response>
+    </Command>
+    <Command>
+            <Identifier>SetPumpingPauseTime</Identifier>
+            <DisplayName>Set Pumping Pause Time</DisplayName>
+            <Description>Set pumping pause time using Time Type 2 format (0 to 999h or 0 to 3596400s).</Description>
+            <Observable>No</Observable>
+            <Parameter>
+                <Identifier>Channel</Identifier>
+                <DisplayName>Channel</DisplayName>
+                <Description>
+                    Gets the channel, on which the command will be executed
+                </Description>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+            </Parameter>
+            <Parameter>
+                <Identifier>PumpingPauseTime</Identifier>
+                <DisplayName>Pumping Pause Time</DisplayName>
+                <Description>
+                    Set pumping pause time using Time Type 2 format (0 to 999h or 0 to 3596400s).
+                </Description>
+                <DataType>
+                    <Constrained>
+                        <DataType>
+                            <Basic>Real</Basic>
+                        </DataType>
+                        <Constraints>
+                            <MaximalInclusive>35964000</MaximalInclusive>
+                            <MinimalExclusive>0</MinimalExclusive>
+                        </Constraints>
+                    </Constrained>
+                </DataType>
+            </Parameter>
+            <Response>
+                <Identifier>SetPumpingPauseTimeSet</Identifier>
+                <DisplayName>Set Pumping Pause Time Time</DisplayName>
+                <Description>Pumping pause time succeeded to set.</Description>
+                <DataType>
+                    <Basic>String</Basic>
+                </DataType>
+            </Response>
+    </Command>
+    <Command>
+            <Identifier>GetPumpingPauseTime</Identifier>
+            <DisplayName>Get Pumping Pause Time</DisplayName>
+            <Description>Get pumping pause time.</Description>
+            <Observable>No</Observable>
+            <Parameter>
+                <Identifier>Channel</Identifier>
+                <DisplayName>Channel</DisplayName>
+                <Description>
+                    Channel
+                </Description>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+            </Parameter>
+            <Response>
+                <Identifier>CurrentPumpingPauseTime</Identifier>
+                <DisplayName>Current Pumping Pause Time</DisplayName>
+                <Description>Current Pumping Pause Time.</Description>
+                <DataType>
+                    <Basic>Real</Basic>
+                </DataType>
+            </Response>
+    </Command>
+    <Command>
+            <Identifier>GetCycleCount</Identifier>
+            <DisplayName>Get Cycle Count</DisplayName>
+            <Description>Get pump cycle count.</Description>
+            <Observable>No</Observable>
+            <Parameter>
+                <Identifier>Channel</Identifier>
+                <DisplayName>Channel</DisplayName>
+                <Description>
+                    Channel
+                </Description>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+            </Parameter>
+            <Response>
+                <Identifier>CurrentCycleCount</Identifier>
+                <DisplayName>Current Cycle Count</DisplayName>
+                <Description>Current Cycle Count.</Description>
+                <DataType>
+                    <Basic>Real</Basic>
+                </DataType>
+            </Response>
+    </Command>
+    <Command>
+            <Identifier>SetCycleCount</Identifier>
+            <DisplayName>Set Cycle Count</DisplayName>
+            <Description>Set pump cycle count (Discrete Type 2).</Description>
+            <Observable>No</Observable>
+            <Parameter>
+                <Identifier>Channel</Identifier>
+                <DisplayName>Channel</DisplayName>
+                <Description>
+                    Gets the channel, on which the command will be executed
+                </Description>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+            </Parameter>
+            <Parameter>
+                <Identifier>CycleCount</Identifier>
+                <DisplayName>Cycle Count</DisplayName>
+                <Description>
+                    Set pump cycle count
+                </Description>
+                <DataType>
+                    <Basic>Real</Basic>
+                </DataType>
+            </Parameter>
+            <Response>
+                <Identifier>SetCycleCountSet</Identifier>
+                <DisplayName>Set Cycle Count</DisplayName>
+                <Description>Cycle Count succeeded to set.</Description>
+                <DataType>
+                    <Basic>String</Basic>
+                </DataType>
+            </Response>
+    </Command>
+    <Command>
+            <Identifier>GetDispenseTimeMlMin</Identifier>
+            <DisplayName>Get Dispense Time at mL/min</DisplayName>
+            <Description>Get time to dispense at a given volume at a given mL/min flow rate.</Description>
+            <Observable>No</Observable>
+            <Parameter>
+                <Identifier>Channel</Identifier>
+                <DisplayName>Channel</DisplayName>
+                <Description>
+                    Gets the channel, on which the command will be executed
+                </Description>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+            </Parameter>
+            <Parameter>
+                <Identifier>Volume</Identifier>
+                <DisplayName>Volume</DisplayName>
+                <Description>
+                    Gets the volume, which must be dispensed
+                </Description>
+                <DataType>
+                    <Basic>Real</Basic>
+                </DataType>
+            </Parameter>
+            <Parameter>
+                <Identifier>FlowRate</Identifier>
+                <DisplayName>FlowRate</DisplayName>
+                <Description>
+                    Gets the flow rate, with which the volume must be dispensed
+                </Description>
+                <DataType>
+                    <Basic>Real</Basic>
+                </DataType>
+            </Parameter>
+            <Response>
+                <Identifier>CurrentDispenseTime</Identifier>
+                <DisplayName>CurrentDispenseTime</DisplayName>
+                <Description>CurrentDispenseTime at a given volume at a given mL/min flow rate.</Description>
+                <DataType>
+                    <Basic>Real</Basic>
+                </DataType>
+            </Response>
+    </Command>
+    <Command>
+            <Identifier>GetDispenseTimeRPM</Identifier>
+            <DisplayName>Get Dispense Time at RPM</DisplayName>
+            <Description>Get time to dispense at a given volume at a given RPM.</Description>
+            <Observable>No</Observable>
+            <Parameter>
+                <Identifier>Channel</Identifier>
+                <DisplayName>Channel</DisplayName>
+                <Description>
+                    Channel
+                </Description>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+            </Parameter>
+            <Parameter>
+                <Identifier>Volume</Identifier>
+                <DisplayName>Volume</DisplayName>
+                <Description>
+                    Gets the volume, which must be dispensed
+                </Description>
+                <DataType>
+                    <Basic>Real</Basic>
+                </DataType>
+            </Parameter>
+            <Parameter>
+                <Identifier>FlowRate</Identifier>
+                <DisplayName>FlowRate</DisplayName>
+                <Description>
+                    Gets the flow rate, with which the volume must be dispensed
+                </Description>
+                <DataType>
+                    <Basic>Real</Basic>
+                </DataType>
+            </Parameter>
+            <Response>
+                <Identifier>CurrentDispenseTime</Identifier>
+                <DisplayName>CurrentDispenseTime</DisplayName>
+                <Description>CurrentDispenseTime at a given volume at a given RPM.</Description>
+                <DataType>
+                    <Basic>Real</Basic>
+                </DataType>
+            </Response>
+    </Command>
+    <Command>
+            <Identifier>GetFlowRateAtModes</Identifier>
+            <DisplayName>Get Flow Rate when mode is not RPM or Flow Rate</DisplayName>
+            <Description>Get flow rate from RPM (S) or flow rate (f) when mode is not RPM or Flow Rate.: 0=RPM, 1=Flow Rate</Description>
+            <Observable>No</Observable>
+            <Parameter>
+                <Identifier>Channel</Identifier>
+                <DisplayName>Channel</DisplayName>
+                <Description>
+                    Channel
+                </Description>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+            </Parameter>
+            <Response>
+                <Identifier>CurrentFlowRate</Identifier>
+                <DisplayName>Current Flow Rate</DisplayName>
+                <Description>CurrentDispenseTime at a given volume at a given RPM. : 0=RPM, 1=Flow Rate</Description>
+                <DataType>
+                    <Basic>Boolean</Basic>
+                </DataType>
+            </Response>
+    </Command>
+    <Command>
+            <Identifier>SetFlowRateAtModes</Identifier>
+            <DisplayName>Set Flow Rate when mode is not RPM or Flow Rate</DisplayName>
+            <Description>Set RPM flow rate not in RPM or Flow Rate mode. (Discrete Type 3)</Description>
+            <Observable>No</Observable>
+            <Parameter>
+                <Identifier>Channel</Identifier>
+                <DisplayName>Channel</DisplayName>
+                <Description>
+                    Gets the channel, on which the command will be executed
+                </Description>
+                <DataType>
+                    <Basic>Integer</Basic>
+                </DataType>
+            </Parameter>
+            <Parameter>
+                <Identifier>FlowRate</Identifier>
+                <DisplayName>Flow Rate</DisplayName>
+                <Description>
+                    Set RPM flow rate not in RPM or Flow Rate mode.
+                </Description>
+                <DataType>
+                    <Basic>Real</Basic>
+                </DataType>
+            </Parameter>
+            <Response>
+                <Identifier>SetFlowRateSet</Identifier>
+                <DisplayName>Set Flow Rate</DisplayName>
+                <Description>RPM flow rate not in RPM or Flow Rate mode succeeded to set</Description>
+                <DataType>
+                    <Basic>String</Basic>
+                </DataType>
+            </Response>
+    </Command>
+    <DefinedExecutionError>
+        <Identifier>SetFlowRateInvalidRange</Identifier>
+        <DisplayName>Set Flow Rate Invalid Range Error</DisplayName>
+        <Description>Input out of accepted range</Description>
+    </DefinedExecutionError>
+    <DefinedExecutionError>
+        <Identifier>InputSyntaxError</Identifier>
+        <DisplayName>Input Syntax Error</DisplayName>
+        <Description>Input not accepted. Wrong format.</Description>
+    </DefinedExecutionError>
+</Feature>

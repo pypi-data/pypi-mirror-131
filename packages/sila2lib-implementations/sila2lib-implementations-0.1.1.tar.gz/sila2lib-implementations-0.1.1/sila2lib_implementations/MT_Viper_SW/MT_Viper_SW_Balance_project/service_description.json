@@ -1,0 +1,14 @@
+{
+  "service_name" : "MT_Viper_SW_Balance_Service",
+  "service_description": "This is a Mettler Toledo Viper SW balance service",
+  "service_type": "Balance",
+  "authors"      : "Lukas Bromig",
+  "creation_date" : "20210407",
+  "version" : "1.0",
+  "vendor_url" : "",
+  "SiLA_standard_feature_list" : ["SiLAService", "SimulationController"],
+  "SiLA_feature_list" : ["BalanceService", "DeviceInformationProvider", "DisplayController"],
+  "communication_port" : "50001",
+  "IP_address" : "127.0.0.1",
+  "hostname" : "localhost"
+}

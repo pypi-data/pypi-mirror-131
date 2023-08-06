@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="biovt.mw.tum.de" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>DeviceServicer</Identifier>
+    <DisplayName>Device Servicer</DisplayName>
+    <Description>
+		Used to acquire general device status and individual stirrer position status of the bioREACTOR48.
+        By Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 12.02.2020
+    </Description>
+    <Property>
+        <Identifier>CurrentStatus</Identifier>
+        <DisplayName>Current Status</DisplayName>
+        <Description>Get the current status of the device from the internal state machine of the SiLA server.</Description>
+        <Observable>Yes</Observable>
+        <DataType>
+            <Basic>String</Basic>
+        </DataType>
+    </Property>
+    <Command>
+        <Identifier>GetLog</Identifier>
+        <DisplayName>Get Log</DisplayName>
+        <Description>Get the current status of the device from the state machine of the SiLA server.</Description>
+        <Observable>Yes</Observable>
+        <Response>
+            <Identifier>CurrentLogLevel</Identifier>
+            <DisplayName>Current Log Level</DisplayName>
+            <Description>The current log level of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentLogTimestamp</Identifier>
+            <DisplayName>Current Log Timestamp</DisplayName>
+            <Description>The current log timestamp of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>Timestamp</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>CurrentLogMessage</Identifier>
+            <DisplayName>Current Log Level</DisplayName>
+            <Description>The current log level of the latest logs , retrieved from the SiLA server log file.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>GetDeviceStatus</Identifier>
+        <DisplayName>Get Device Status</DisplayName>
+        <Description>Get the current status of the device, software version, control mode, bar number and unit address.</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>Status</Identifier>
+            <DisplayName>Status</DisplayName>
+            <Description>The overall device status. ER or OK.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>Version</Identifier>
+            <DisplayName>Software Version</DisplayName>
+            <Description>Software version number</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>Mode</Identifier>
+            <DisplayName>Mode</DisplayName>
+            <Description>Operation mode. REM (remote) or MAN (manual) or OFF (offline).</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>BarConnection</Identifier>
+            <DisplayName>Bar Connection</DisplayName>
+            <Description>Bar number connected or not connected. (1 = connected, 0 = not connected)</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <Response>
+            <Identifier>Address</Identifier>
+            <DisplayName>Address</DisplayName>
+            <Description>UnitAddress</Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Response>
+	</Command>
+    <Property>
+        <Identifier>BarNumber</Identifier>
+        <DisplayName>Bar Number</DisplayName>
+        <Description>Number of stirrer bars available. Default = 6.</Description>
+        <Observable>No</Observable>
+        <DataType>
+            <Basic>Integer</Basic>
+        </DataType>
+    </Property>
+    <Property>
+        <Identifier>BarReactors</Identifier>
+        <DisplayName>BarReactorsr</DisplayName>
+        <Description>Number of reactors per bar. Default = 8.</Description>
+        <Observable>No</Observable>
+        <DataType>
+            <Basic>Integer</Basic>
+        </DataType>
+    </Property>
+    <Property>
+        <Identifier>TotalReactors</Identifier>
+        <DisplayName>Total Reactors</DisplayName>
+        <Description>Number of total reactors. Default = 6*8 = 48.</Description>
+        <Observable>No</Observable>
+        <DataType>
+            <Basic>Integer</Basic>
+        </DataType>
+    </Property>
+    <Command>
+        <Identifier>GetReactorStatus</Identifier>
+        <DisplayName>Get Reactor Status</DisplayName>
+        <Description>Get the current status of all 48 reactors. Check if stirrer is still running. 1 = stirring, 0 = not stirring</Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>ReactorStatus</Identifier>
+            <DisplayName>Reactor Status</DisplayName>
+            <Description>Get the current status of all 48 reactors. Check if stirrer is still running. 1 = stirring, 0 = not stirring</Description>
+            <DataType>
+                <List>
+					<DataType>
+						<Basic>Boolean</Basic>
+					</DataType>
+				</List>
+            </DataType>
+        </Response>
+    </Command>
+</Feature>
+

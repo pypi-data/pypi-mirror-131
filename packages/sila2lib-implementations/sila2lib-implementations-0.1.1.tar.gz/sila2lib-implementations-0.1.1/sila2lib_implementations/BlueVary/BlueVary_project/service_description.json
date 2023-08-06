@@ -1,0 +1,26 @@
+{
+  "service_name" : "BlueVaryService",
+  "service_description": "This is a BlueVary Off-Gas Analytics Service",
+  "authors"      : "Lukas Bromig",
+  "creation_date" : "20191112",
+  "version" : "1.0",
+  "vendor_url" : "",
+  "SiLA_standard_feature_list" : ["SiLAService", "SimulationController"],
+  "SiLA_feature_list" : ["DeviceServicer","SensorServicer", "CalibrationServicer"], 
+  "communication_port" : "50001",
+  "IP_address" : "127.0.0.1",
+  "hostname" : "localhost"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

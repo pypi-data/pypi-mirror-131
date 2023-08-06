@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="org.silastandard" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>DriveControlServicer</Identifier>
+    <DisplayName>Drive Control Servicer</DisplayName>
+    <Description>
+		Set and retrieve information regarding the pump drive.
+        By Valeryia Sidarava, Institute of Biochemical Engineering, Technical University of Munich, 31.07.2019,
+        Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 15.04.2020.
+    </Description>
+    <Command>
+        <Identifier>StartPump</Identifier>
+        <DisplayName>Start Pump</DisplayName>
+        <Description>
+          Starts the pump out of stand-by mode.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Start</Identifier>
+            <DisplayName>Start</DisplayName>
+            <Description>
+              Real number 1-4 that defines channel to start
+            </Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>StartStatus</Identifier>
+            <DisplayName>Start Status</DisplayName>
+            <Description>Start of pump succeeded.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>StartInvalidInput</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>Stop</Identifier>
+        <DisplayName>Stop</DisplayName>
+        <Description>
+            Stops the pump.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Stop</Identifier>
+            <DisplayName>Stop</DisplayName>
+            <Description>
+                Real number 1-4 (1-8) that defines channel (pump) to stop
+            </Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>StopStatus</Identifier>
+            <DisplayName>Stop Status</DisplayName>
+            <Description>Shut-down of pump succeeded.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+          <Identifier>StopInvalidInput</Identifier>
+        </DefinedExecutionErrors>
+    </Command>
+    <Command>
+        <Identifier>GetPumpDirection</Identifier>
+        <DisplayName>Get Pump Direction</DisplayName>
+        <Description>Get pump direction. </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Channel</Identifier>
+            <DisplayName>Channel</DisplayName>
+            <Description>
+                Gets the channel, on which the command will be executed
+            </Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>PumpDirection</Identifier>
+            <DisplayName>Pump Direction</DisplayName>
+            <Description>Pump direction query. J = clockwise/ K = counter-clockwise. </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+  </Command>
+	<Command>
+        <Identifier>SetDirectionClockwise</Identifier>
+        <DisplayName>Set Direction to clockwise</DisplayName>
+        <Description>Set the rotation direction of the pump to clockwise</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Channel</Identifier>
+            <DisplayName>Channel</DisplayName>
+            <Description>
+                Gets the channel, on which the command will be executed
+            </Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SetDirectionSet</Identifier>
+            <DisplayName>Set Direction Set</DisplayName>
+            <Description>Set Direction succeeded to Set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>SetDirectionSyntax</Identifier>
+        </DefinedExecutionErrors>
+  </Command>
+  <Command>
+        <Identifier>SetDirectionCounterClockwise</Identifier>
+        <DisplayName>Set Direction to counter-clockwise</DisplayName>
+        <Description>Set the rotation direction of the pump to counter-clockwise</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Channel</Identifier>
+            <DisplayName>Channel</DisplayName>
+            <Description>
+                Gets the channel, on which the command will be executed
+            </Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SetDirectionSet</Identifier>
+            <DisplayName>Set Direction Set</DisplayName>
+            <Description>Set Direction succeeded to Set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+        <DefinedExecutionErrors>
+            <Identifier>SetDirectionSyntax</Identifier>
+        </DefinedExecutionErrors>
+  </Command>
+  <Command>
+        <Identifier>GetCauseResponse</Identifier>
+        <DisplayName>Get Cause Response</DisplayName>
+        <Description>Get cause of "-" cannot run response = Parameter 1 :
+                      C=Cycle count of 0 / R=Max flow rate exceeded or flow rate is set to 0 / V=Max volume exceeded;
+                      Limiting value that was exceeded = Parameter 2:
+                    C=Value is undefined / R=Max flow (mL/min) / V=Max volume (mL)   .</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Channel</Identifier>
+            <DisplayName>Channel</DisplayName>
+            <Description>
+                Channel
+            </Description>
+            <DataType>
+                <Basic>Integer</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>Cause</Identifier>
+            <DisplayName>Cause</DisplayName>
+            <Description>Cause displayed.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+  </Command>
+  <DefinedExecutionError>
+      <Identifier>StartInvalidInput</Identifier>
+      <DisplayName>Invalid user input error</DisplayName>
+      <Description>Wrong input, must be 1-4 for channels or 1-8 for pumps </Description>
+  </DefinedExecutionError>
+  <DefinedExecutionError>
+      <Identifier>StopInvalidInput</Identifier>
+      <DisplayName>Invalid user input error</DisplayName>
+      <Description>Wrong input, must be 1-4 for channels or 1-8 for pumps</Description>
+  </DefinedExecutionError>
+  <DefinedExecutionError>
+      <Identifier>SetDirectionSyntax</Identifier>
+      <DisplayName>Invalid user input error</DisplayName>
+      <Description>Wrong syntax for set direction input</Description>
+  </DefinedExecutionError>
+</Feature>

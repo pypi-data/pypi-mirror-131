@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature SiLA2Version="1.0" FeatureVersion="1.0" Originator="org.silastandard" Category="examples"
+         xmlns="http://www.sila-standard.org"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sila-standard.org https://gitlab.com/SiLA2/sila_features/raw/master/schema/FeatureDefinition.xsd">
+    <Identifier>CalibrationServicer</Identifier>
+    <DisplayName>Calibration Servicer</DisplayName>
+    <Description>
+		Set and retrieve the control parameter values for calibration of the Reglo DC (digital control) pump.
+        Lukas Bromig, Institute of Biochemical Engineering, Technical University of Munich, 15.03.2021.
+    </Description>
+    <Command>
+        <Identifier>StartCalibrationTime</Identifier>
+        <DisplayName>Start Calibration Time</DisplayName>
+        <Description>
+        Start calibration using the time defined by "Calibration Time".
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CalibrationResult</Identifier>
+            <DisplayName>Calibration Result</DisplayName>
+            <Description>Calibration result</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>StartCalibrationVolume</Identifier>
+        <DisplayName>Start Calibration Volume</DisplayName>
+        <Description>
+        Start calibration using the volume defined by "Calibration Volume".
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CalibrationResult</Identifier>
+            <DisplayName>Calibration Result</DisplayName>
+            <Description>Calibration result</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetDefaultFlowRate</Identifier>
+        <DisplayName>Get Default Flow Rate</DisplayName>
+        <Description>
+        Get the default flow rate [mL/min] of the programmed pump-head and tubing at max. speed (160/100 rpm).
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>DefaultFlowRate</Identifier>
+            <DisplayName>Default Flow Rate</DisplayName>
+            <Description>Current default flow rate of the pump-head and tubing in mL/min.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetDefaultFlowRate</Identifier>
+        <DisplayName>Get Default Flow Rate</DisplayName>
+        <Description>
+        Get the default flow rate [mL/min] of the programmed pump-head and tubing at max. speed (160/100 rpm).
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>DefaultFlowRate</Identifier>
+            <DisplayName>Default Flow Rate</DisplayName>
+            <Description>Current default flow rate of the pump-head and tubing in mL/min.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetCalibratedFlowRate</Identifier>
+        <DisplayName>Get Calibrated Flow Rate</DisplayName>
+        <Description>
+        Get the calibrated flow rate in mL/min (at max. speed = 160/100 rpm).
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CalibratedFlowRate</Identifier>
+            <DisplayName>Calibrated Flow Rate</DisplayName>
+            <Description>The calibrated flow rate in mL/min (at max speed = 160/100 rpm).</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetCalibratedFlowRate</Identifier>
+        <DisplayName>Set Calibrated Flow Rate</DisplayName>
+        <Description>
+        Set the calibrated flow rate in mL/min (at max. speed = 160/100 rpm). The position of the decimal point depends on the programmed pump head and tubing.
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>CalibratedFlowRate</Identifier>
+            <DisplayName>Calibrated Flow Rate</DisplayName>
+            <Description>The new calibrated flow rate in mL/min (at max speed = 160/100 rpm).</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetCalibrationTargetVolume</Identifier>
+        <DisplayName>Set Target Volume Value</DisplayName>
+        <Description>
+        Set target volume to pump for calibrating in mL.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>TargetVolume</Identifier>
+            <DisplayName>Target Volume</DisplayName>
+            <Description>
+              Set target volume to pump for calibrating in mL.
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>TargetVolumeSet</Identifier>
+            <DisplayName>Target Volume Set</DisplayName>
+            <Description>Target Volume succeeded to Set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+	</Command>
+    <Command>
+        <Identifier>SetCalibrationTargetTime</Identifier>
+        <DisplayName>Set Target Time Value</DisplayName>
+        <Description>
+        Set target time to pump for calibrating in s.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>TargetTime</Identifier>
+            <DisplayName>Target Time</DisplayName>
+            <Description>
+              Set target time to pump for calibrating in s.
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>TargetTimeSet</Identifier>
+            <DisplayName>Target Time Set</DisplayName>
+            <Description>Target time successfully set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+	</Command>
+    <Command>
+        <Identifier>SetActualVolume</Identifier>
+        <DisplayName>Set Actual Volume Value</DisplayName>
+        <Description>
+        Set the actual volume measured during calibration in mL.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>ActualVolume</Identifier>
+            <DisplayName>Actual Volume</DisplayName>
+            <Description>
+                The actual volume measured during calibration in mL.
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>ActualVolumeSet</Identifier>
+            <DisplayName>Actual Volume Set</DisplayName>
+            <Description>Actual Volume succeeded to Set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+	<Command>
+        <Identifier>GetTargetVolume</Identifier>
+        <DisplayName>Get Target Volume</DisplayName>
+        <Description>Get target volume to pump for calibrating in mL.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>TargetVolume</Identifier>
+            <DisplayName>Target Volume</DisplayName>
+            <Description>
+              Get target volume of pump for calibrating in mL.
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentTargetVolume</Identifier>
+            <DisplayName>Current Target Volume</DisplayName>
+            <Description>Current target volume to pump for calibrating in mL.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetActualTime</Identifier>
+        <DisplayName>Set Actual Time Value</DisplayName>
+        <Description>
+        Set the actual time measured during calibration in s.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>ActualTime</Identifier>
+            <DisplayName>Actual Time</DisplayName>
+            <Description>
+                The actual time measured during calibration in s.
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>ActualTimeSet</Identifier>
+            <DisplayName>Actual Time Set</DisplayName>
+            <Description>Actual time successfully set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>GetTargetTime</Identifier>
+        <DisplayName>Get Target Time</DisplayName>
+        <Description>Get target time to pump for calibrating in s.</Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>TargetTime</Identifier>
+            <DisplayName>Target Time</DisplayName>
+            <Description>
+              Get target time of pump for calibrating in s.
+            </Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>CurrentTargetTime</Identifier>
+            <DisplayName>Current Target Time</DisplayName>
+            <Description>Current target time to pump for calibrating in s.</Description>
+            <DataType>
+                <Basic>Real</Basic>
+            </DataType>
+        </Response>
+    </Command>
+    <Command>
+        <Identifier>SetDirectionCalibration</Identifier>
+        <DisplayName>Set Direction Flow for Calibration</DisplayName>
+        <Description>
+        Set direction flow for calibration J or K using DIRECTION format.
+        </Description>
+        <Observable>No</Observable>
+        <Parameter>
+            <Identifier>Direction</Identifier>
+            <DisplayName>Direction</DisplayName>
+            <Description>
+            Set direction flow for calibration J or K using DIRECTION format.
+            </Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Parameter>
+        <Response>
+            <Identifier>SetDirectionCalibrationSet</Identifier>
+            <DisplayName>Set Direction for Calibration Set</DisplayName>
+            <Description>Direction flow for Calibration succeeded to Set.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+  </Command>
+  <Command>
+      <Identifier>GetDirectionCalibration</Identifier>
+      <DisplayName>Get Direction Flow for Calibration</DisplayName>
+      <Description>
+      Get direction flow for calibration (J or K).
+      </Description>
+      <Observable>No</Observable>
+      <Parameter>
+          <Identifier>Direction</Identifier>
+          <DisplayName>Direction</DisplayName>
+          <Description>
+          Get direction flow for calibration (J or K).
+          </Description>
+          <DataType>
+              <Basic>String</Basic>
+          </DataType>
+      </Parameter>
+      <Response>
+          <Identifier>CurrentDirectionCalibration</Identifier>
+          <DisplayName>Current Direction for Calibration</DisplayName>
+          <Description>Current Direction flow for Calibration.</Description>
+          <DataType>
+              <Basic>String</Basic>
+          </DataType>
+      </Response>
+    </Command>
+    <Command>
+        <Identifier>GetLastCalibrationTime</Identifier>
+        <DisplayName>Get Last Calibration Time</DisplayName>
+        <Description>
+        Get the time of the last calibration.
+        </Description>
+        <Observable>No</Observable>
+        <Response>
+            <Identifier>LastCalibrationTime</Identifier>
+            <DisplayName>Last Calibration Time</DisplayName>
+            <Description>Last Calibration Time.</Description>
+            <DataType>
+                <Basic>String</Basic>
+            </DataType>
+        </Response>
+    </Command>
+</Feature>
