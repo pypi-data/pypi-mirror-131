@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: stresst
+Version: 0.0.1
+Summary: Stress test your Python solutions!
+Home-page: https://ryanchou.dev
+Author: Ryan Chou
+Author-email: 
+License: MIT
+Keywords: competitive-programming python problems testing
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Test your Python solution on a lot of test cases quickly!
+
+
