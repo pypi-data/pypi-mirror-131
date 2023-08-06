@@ -1,0 +1,16 @@
+djlds/__about__.py,sha256=Gt8pqUVMPtyToGzIZrqzXFmS5g5EgJoj8AINHZwroaU,656
+djlds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djlds/admin.py,sha256=Yc9nE1AVxVM8GP85SUgLcY51qBK4FO2GLgdxX-o7a2A,10752
+djlds/import_export.py,sha256=dVenSEpk3jKEd-X5xuz09EHH9YnPm1_9nV39ImVkPYs,16773
+djlds/model.py,sha256=QSz0MTaxLhckG563rjdfcf6kOpeSFlW0Ae80rlJTPOE,21278
+djlds/user.py,sha256=eDQlMh4HxCczMT4pq4UIRXmX7naPxiFWlzGCeltK2hM,1357
+djlds/util.py,sha256=tK52WhPXfVE479k_hSJOXjBD9oekS9h_qXhE2dJk87k,2859
+djlds/xlsx_util.py,sha256=m_kyEuwY8d9PjhRUZkOMAXyCJlo8U-ZWlhKwT_zbnsc,1240
+djlds/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djlds/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djlds/management/commands/admin_generator.py,sha256=dQ5Y6DFnTWRRnm9DHDgQpB4mm4o1frWJcL7lSOcWDYU,13971
+djlds-0.0.25.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+djlds-0.0.25.dist-info/METADATA,sha256=m3ivVkxz7sQUt7Obeo-LuM9a4Jz4jrFjvq3N86e8RLE,1309
+djlds-0.0.25.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+djlds-0.0.25.dist-info/top_level.txt,sha256=BBkw7FCgqfEV_YHubXkVmzgfyCpNnqhvpTmwUVPNpsU,6
+djlds-0.0.25.dist-info/RECORD,,
