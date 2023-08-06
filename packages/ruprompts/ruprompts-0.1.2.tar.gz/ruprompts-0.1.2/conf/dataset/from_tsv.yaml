@@ -1,0 +1,5 @@
+defaults:
+  - from_local
+
+path: csv
+delimiter: "\t"
