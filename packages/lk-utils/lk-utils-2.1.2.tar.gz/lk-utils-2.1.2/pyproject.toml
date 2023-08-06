@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "lk-utils"
+version = "2.1.2"
+description = "LK Utils is made for data processing."
+authors = ["Likianta <likianta@foxmail.com>"]
+license = "MIT"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/"
+default = true
+
+[tool.poetry.dependencies]
+python = "^3.8"
+lk-logger = ""
+xlrd = "1.2"
+xlsxwriter = ""
+
+[tool.poetry.dev-dependencies]
+# bs4 = "*"
+# csv = "*"
+# lxml = "^4.5"
+# pypinyin = "*"
+# pyyaml = "*"
+# requests = "*"
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"
