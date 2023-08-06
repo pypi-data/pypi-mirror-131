@@ -1,0 +1,3 @@
+prettytable
+cryptography
+psutil>=5.8.0
