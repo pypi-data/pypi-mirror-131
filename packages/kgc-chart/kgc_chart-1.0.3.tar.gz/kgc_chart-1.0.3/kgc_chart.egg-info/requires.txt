@@ -1,0 +1,4 @@
+math
+pycairo
+pillow
+matplotlib
