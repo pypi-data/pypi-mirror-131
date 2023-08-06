@@ -1,0 +1,1261 @@
+CHANGES
+=======
+
+* #161: WIP support for GPG, backup, download, restore. Missing tests coverage
+* #161: Add initial support for GPG
+* #161: Use struct
+* #161: Add configurable timeout
+* #161: Fix Intelij settings
+* #161: Fix package name
+* #161: PoC - Backup Repository upload/download (backup/restore) client in Golang
+* Bahub: Enable compression in MySQL and PostgreSQL adapters by default
+* Bahub: #157 Added missing slack notifications + documentation
+* Possibly fix "Syntax Error: TypeError: Cannot read property 'parseComponent' of undefined"
+* Bump dependencies to remove security issues - second try
+* Revert "Bump dependencies to remove security issues"
+* Bump dependencies to remove security issues
+* [Server] Fix \`metric parse error: expected timestamp at 1:281\` in InfluxDB endpoint
+* [Bahub] Fix issue with invalid log file (two log files cannot be in same place), add docs
+* Bahub: Create socket directory for jobber root user, as jobber no longer runs as limited user
+
+v4.0.0rc1
+---------
+
+* Bahub: Resolve issue with not working entrypoint
+* Bahub: Resolve \`400 The description failed to render in the default format of reStructuredText.\`
+* [Bahub] Build before publish
+* [Bahub] Fix \`The workflow is not valid. Job integration\_test depends on unknown job release\_dev\_dockers. Job release\_dockers depends on job integration\_test which creates a cycle in the dependency graph.\`
+* [Bahub] Fix access rights for Jobber
+* [Bahub] Add publication to PyPI
+* [Server] #109: Fix InfluxDB Line syntax - correct test
+* [Server] #109: Fix InfluxDB Line syntax
+* [Server] Fix permissions in docker
+* [Server] Fix InfluxDB timestamp generation on Alpine Linux (Busy Box)
+* [Server] Fix permissions in docker
+* [Server] #109: Add more tests coverage - API tests for the metrics endpoint authorization
+* [Server] #109: Add tests coverage for the logic part of the formatting
+* [Server] #109: Added InfluxDB formatted metrics
+* #153: Fix - \`app.CRITICAL: PDOException: SQLSTATE[42883]: Undefined function: 7 ERROR:  operator does not exist: character varying = integer LINE 1: DELETE FROM file\_tags WHERE file\_id = $1                                             ^ HINT:  No operator matches the given name and argument types. You might need to add explicit type casts\`
+* integration-env: Fix - Postgres files were not deleted as "\*" were evaluated in shell BEFORE sudo
+* Improve environment clean up
+* Improve logging
+* #135: Add FAQ, Deploying
+* #153: Reuse existing temporary file when this is possible
+* #153: Implement a workaround for uploading big files - optionally using reverse proxy temporary file buffering
+* #135: Add first steps for docker method, add concepts section
+* Increase field size, to be able to upload big files
+* #135: Create first steps
+* Clear docs
+* Clear docs
+* #138: Improve docs
+* #138: Refactor naming
+* Bump RKD globally
+* #138: E2E tests for PostgreSQL database backup
+* Bahub: Bump RKD
+* Bahub: #138 docs
+* Bahub: #138 implemented correct procedure for PostgreSQL restore - database needs to be shutdown before
+* Frontend: Fix not showing permissions
+* Frontend: Fix not showing permissions
+* Server: Parallelize unit tests stage
+* Server: #151 Now all filesize units B/KB/MB/GB are calculated on backend due to previous inconsistencies
+* Server: Attempt to resolve \`Error: Cannot read property 'time' of undefined\`
+* Server: Run database migrations for unit/functional tests in PhpUnit
+* Server: Make "test" a default env in --dev mode for integration-env
+* Server: Add unit tests results as annotations
+* Server: Try to fix \`LogicException: You cannot create the client used in functional tests if the "framework.test" config is not set to true.\`
+* Server: Unification of response syntax, misc fixes..
+* Server: Improve authentication failure messages
+* Server: #152 - unification of responses - responses are with "\_" (snake case), requests are camelCase
+* Server: Do not ignore unit tests results on CI
+* Server: #152 - unify pagination
+* Server: #152 - unify all\_permissions, creation\_date
+* Server: #149 - add filesize attribute, already in proper unit from backend
+* #141: Added additional permission that is now required to be able to generate JWTs
+* Server: #143 - Syntax fixes
+* Server: #143 - Make errors correctly displayed to the user, cover with unit tests
+* Server: Refactor
+* Server: Adjust limits
+* api-tests: Fix local running of tests
+* Server: Repair unit tests
+* #147: Unit tests coverage
+* #147: Fixes to tests
+* #147: Implemented \`There should be a proper message, when an account is expired, not "account not found"\`, covered with a E2E test
+* Server: Docker, NGINX - make proxy limits configurable
+* Server: #147 - now it is possible to have no expiration time for accounts. The expiration date is also configured via frontend
+* Server: Docker - change write timeout
+* Server: Set write timeout
+* Bahub: Do not verify TLS certs in CURL DEBUG MODE (RKD\_CURL\_DEBUG=true)
+* Server: Improve message
+* Server: Increase logging, inform administrator about the not supported chunked transfers
+* Bahub: Improve logging of file upload
+* CI: Switch to other tests reporter, as this one does not support results from Codeception \`Error: Cannot read property 'time' of undefined\`
+* CI: Fix \`Error: No test report files were found\`
+* CI: Fix \`Error: No test report files were found\`
+* Server: Fix JWT permissions
+* Server: Fix notice
+* Server: docker image - Fix permissions for JWT
+* CI - keep application logs
+* Server: Fix - \`app.CRITICAL: ErrorException: Warning: fopen(/home/backuprepository/var/tmp/backuprepository6071b1376b36c4.97392924)\`
+* Update README
+* Server: Docker container - make container respect base image NGINX parameters, fix permission issues
+* Server: Fix debug container, must start container as root
+* Server: Fix - \`cp: can't create '/etc/nginx/nginx.conf.bak': Permission denied\`. The original entrypoint requires root permissions
+* Server: Fix issue - NGINX and PHP-FPM configuration files were not rendered due to not executed entrypoint. Fixed with this commit + https://github.com/riotkit-org/docker-php-app/commit/7b25bcf6487323b708399e03fe5c36eadea2ba77
+* Server: Fix issue - NGINX and PHP-FPM configuration files were not rendered due to not executed entrypoint. Fixed with this commit + https://github.com/riotkit-org/docker-php-app/commit/7b25bcf6487323b708399e03fe5c36eadea2ba77
+* Server: Show also NGINX logs as stdout output
+* CI: Decrease timeout
+* CI: Fix tasks order
+* CI: Increase timeout
+* CI: Debug
+* CI: Wait for application to be started
+* E2E: Bump deps and require PHP 8.0
+* API Tests: Bump deps, require PHP 8.0
+* API-Tests: Add generated actions file
+* API-Tests: CodeCeption migration from v3 to v4
+* Server (PHP 8.0): Resolve \`str\_replace(): Argument #2 ($replace) must be of type array|string, int given\`
+* Parametrize PHP\_BIN
+* [https://github.com/riotkit-org/backup-repository/issues/145] Migrate from external fonts to packages
+* Server: Fix to support PHP 8.0 - union types
+* Server: Set a memory limit, as we need to guarantee the requirements
+* Server: Bump dependencies for PHP 8.0 support
+* Server: Guzzle has better memory management, when http.version is 1.0
+* Server: Bump dependencies
+* Fix: PHP Notice:  tempnam(): file created in the system's temporary directory in /home/backuprepository/vendor/symfony/dependency-injection/Loader/XmlFileLoader.php on line 665      PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home/backuprepository/vendor/symfony/dependency-injection/Loader/XmlFileLoader.php:673
+* CI: Switch to PHP 8.0 on CI
+* API Tests: Attempt to bump to CodeCeption v4
+* Server: Attempt to resolve \`Attempted to load class "Psr17Factory" from namespace "Nyholm\Psr7\Factory"\`
+* Server: Attempt to migrate to PHP 8.0
+* CI: Correct path to API tests XML file
+* [CI] Add results archiving as annotations
+* [server] Set tmp and upload dir in PHP to /home/backuprepository/var/tmp from /tmp, because /tmp/ is in ram memory - can cause overflow of ram memory when uploading large files
+* Make sure the temporary directory will not be at /tmp
+* Clean up - remove encoding, as it is not used anymore
+* Set temporary directory to in project, because /tmp in docker is in memory - and this causes to overflow the ram memory
+* Fixed tests after changing limits in environment variables
+* Fix: Not connecting to Min.io during tests
+* Configure server version, so the Doctrine will not raise errors during cache:clear and other CLI tasks
+* Attempt to run DB on pipeline
+* Enable database during pipeline execution
+* Fix: \`\`\` >> Executing :create:keys /tmp/tmpf68qs3mp: line 123: JWT\_PASSPHRASE: unbound variable \`\`\`
+* #144: Refactor - Flysystem bundle change to support Google Cloud Storage, improved configuration of filesystems making it more flexible, added Google Cloud Storage support at all
+* [integration-env] Possibility to recreate the server only
+* Frontend: Fix support for local docker environment when in development mode (npm run dev) - now the backend url points to the development server started by \`symfony serve\`
+* Refactor: Remove unsupported functionality
+* Refactor - delete unsupported anymore functionalities
+* Fix: /bin/sh: /healthcheck.sh: Permission denied
+* #142: Resolve issue with integer limitations in PostgreSQL
+* #139: Fix publication in pipelines - remove refs/tags/ suffix from git ref coming from github
+* Do not support the production deployment officially - every organization has different requirements basing on usage and scale
+* #139: Resolve \`\_\_main\_\_.ConfigurationError: Could not run curl-config: [Errno 2] No such file or directory: 'curl-config'\`
+* #139: Login to quay
+* #139: Add extra waiting - maybe it will resolve the issue on CI;
+* #139: Unify RKD tasks - :release:docker
+* #139: [integration-env] Add --no-server option
+* #139: [E2E] Skip tests marked with @docker tag on CI - fix
+* #139: [E2E] Skip tests marked with @docker tag on CI
+* #139: Update docs
+* #139: Dump logs also from browser container
+* #139: Improvements to docs
+* #139: [E2E] bump dependencies
+* #139: Make sure the containers are restored
+* #139: Attempt to fix \`Notice: Trying to access array offset on value of type null in vendor/dmore/chrome-mink-driver/src/DevToolsConnection.php line 93\`
+* #139: Fix \`Artifact path is not valid: /data/screenshots/17:46:26-EDgLcQ==.png. Contains character: ":". Invalid characters include: ",:,<,>,|,\*,?.\`
+* #139: Fix \`E: Failed to fetch http://azure.archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/libpython2.7-dev\_2.7.18-1~20.04\_amd64.deb  404  Not Found [IP: 52.252.75.106 80]\`
+* #139: Fixed permissions checking in healthcheck server command
+* #139: Additional coverage - health check endpoint
+* #139: Fix :test task condition
+* #139: Fixes
+* #139: Refactor RKD tasks, introduce test tasks unification
+* #139: Improve error message - \`Storage consistency failure - file not found on disk: {{ filename }}\`
+* #139: \`features/BackupAndRestore.feature:27\` - fix incorrect rollback, rotation handling
+* #139: [integration-env] Add option to run environment in development mode (with server's "src" directory bind-mounted) - \`rkd :run --dev\`
+* #139: Capture screenshots from E2E tests
+* #139: E2E: Resolve \`Failed asserting that 1 matches expected 0.\` in \`features/BackupAndRestore.feature:47\`
+* #139: E2E: Resolve \`features/AdministrationAccountCreation.feature:19\` - \`Failed asserting that '4c2404d7-7021-4a43-b15d-86eb2e65a535' contains "User already exists (code: 40001)".\`
+* #139: integration-env - pass APP\_ENV via environment for customization and debugging
+* #139: E2E - add a parameter to be able to filter out the tests
+* #139: \`Return value of App\Domain\Backup\Entity\StoredVersion::getId() must be of the type string, null returned\`
+* #139: Correct path to logs
+* #139: Correct path to logs
+* #139: Store logs
+* #139: CI/Tests - Redirect stderr to stdout, so the tests can capture the stderr
+* #139: Refactor
+* #139: Remove the slack notification
+* #139: Add environment rebuild before E2E tests
+* #139: Add Matrix notification
+* #139: Add logs
+* #139: Do not print progress bar on CI
+* #139: Set a valid image name - we locally build under latest-dev tag
+* #139: Fix \`Error: ;1m  [Error] Class 'Ramsey\Uuid\Uuid' not found\`
+* #139: Print the logs, use PHP 7.4 instead of PHP 8.0
+* #139: Fix task names
+* #139: Fix typo
+* #139: Debug
+* #139: Fix \`The workflow is not valid. Job release\_dev\_dockers depends on unknown job test\_each\_new\_commit. Job integration\_test depends on job release\_dev\_dockers which creates a cycle in the dependency graph.\`
+* #139: Add debug
+* #139: Added gzip compression for docker images
+* #139: Fix \`"docker load" accepts no arguments. See 'docker load --help'.\`
+* #139: Fix a typo in docker image name
+* #139: Add missing copy artifacts steps
+* #139: Add API and E2E tests stages
+* #139: Added docker releasing
+* #139: Move docs building
+* #139: Fix \`JWT\_PASSPHRASE: unbound variable\`
+* #139: Debug
+* #139: Debug
+* #139: Try to fix \`JWT\_SECRET\_KEY not defined or the file does not exist (value=/home/runner/work/backup-repository/backup-repository/server/config/jwt/private.pem)\`
+* #139: Try to fix \`JWT\_SECRET\_KEY not defined or the file does not exist (value=/home/runner/work/backup-repository/backup-repository/server/config/jwt/private.pem)\`
+* #139: Try to fix \`JWT\_SECRET\_KEY not defined or the file does not exist (value=/home/runner/work/backup-repository/backup-repository/server/config/jwt/private.pem)\`
+* #139: Fix typo
+* #139: Build docs and dist
+* #139: Fix \`The requested PHP extension ext-pgsql \* is missing from your system. Install or enable PHP's pgsql extension.\`
+* #139: Fix \`The requested PHP extension ext-pgsql \* is missing from your system. Install or enable PHP's pgsql extension.\`
+* #139: Fix \`chown: config/jwt: No such file or directory\` and a typo
+* #139: Add next stages
+* #139: Correct invalid path to pip packages list, remove redundant stage
+* #139: Normalize task names
+* #139: Add docker build for bahub
+* #139: Extract docker build task
+* #139: Temporarily skip server unit tests to be able to verify next steps of pipeline
+* #139: Run composer install for
+* #139: CI fixes
+* #139: CI fixes
+* #139: CI fixes
+* #139: CI fixes
+* #139: CI fixes
+* #139: WIP pipeline
+* API tests / Server: Extract API tests into a separate module
+* Server: Improve error message
+* Server: Clean up unused env variables
+* Server: Clean up unused files
+* Server: Add base url
+* Bahub: Fixed permissions issue and backend database reload issue
+* Bahub: running as root to have permissions to files - write to restore, read to make a backup
+* Bahub: Fixed missing curl
+* Project: Refactor build scripts as much as it is possible using RKD 2.3 (RKD 2.4 will bring better tools for this type of usage)
+* E2E: Corrected Bahub support, now works in docker
+* Bahub: Added missing GNUPG package
+* Bahub: Fix not starting jobber
+* Update CI related tasks
+* Update releasing tasks
+* E2E: Update docs
+* E2E: Prepare tests to be possible to be executed on host that connects to Selenium container and tests an APPLICATION IN CONTAINER
+* Server: Prepare a working entrypoint in docker - for production and test/dev. The JWT's are generated by openssl. Proper order of things in the docker entrypoint
+* E2E: Show about:blank instead of chrome animation. The chrome animation is taking 300% CPU
+* Build scripts for production build
+* Clean up unused files
+* Frontend: Corrections to setup a production build
+* Server: Production-ready docker image
+* Server: Frontend on "/" is now displayed
+* Server: Error logging in production mode
+* Server: Consistent behavior of .env loading
+* Server: Naming refactor from Roles to Permissions
+* Server: Naming refactor from Roles to Permissions
+* Server: Naming refactor from Roles to Permissions
+* Server: Adjust test to changed functionality - the access token should be deactivated instead of user account
+* Server: Naming refactor
+* Server: Fix up a logic issue - do not deactivate a whole user account on "upload.only\_once\_successful" selected, instead deactivate the user access
+* Server: Enable support for VarDumper server in "test" mode
+* Server: Fix up non existing services
+* Server: Fix up deprecations in PostgresRestoreDB
+* Server: Correct tests, refactor, fix feature about one time access tokens - not one time users
+* CI: Correct Bahub build
+* CI: Correct Bahub build
+* CI: Add quay.io login
+* CI: Do not tag when not necessary
+* Server: Add dockers building pipeline after tests
+* Server: Resolve issue
+* Server: Upgraded dependencies
+* Server: Docker building
+* Frontend: Cleaning up unused things
+* Server: Working Docker image, clean up
+* Bahub: Initial Docker image with Jobber included for scheduled backups
+* Bahub: Apply RKD good practices - do not import on CI application that is to be build
+* Bahub: Python package, docs
+* E2E: Update docs
+* E2E: Update docs
+* E2E: Preparation for running on CI - a ready, working container with browser
+* E2E: Preparation for running on CI
+* E2E: Added a real case scenario
+* E2E: Added support for WAIT\_BEFORE\_FAILURE switch
+* [Frontend] Add markers for easier finding in E2E tests
+* Fix fatal error due to mistake - reverse placed values
+* E2E: Cover a scenario - backup versions are not removed from server after successful restore
+* E2E: Cover second backup strategy - alert\_when\_too\_many\_versions
+* E2E: Cover basic backups rotation strategy
+* E2E: Add a basic case for backup & restore
+* E2E: Make bahub commands use xterm for verbosity
+* E2E: Make AuthorizationAccessManagement tests initially working
+* E2E: Update README
+* E2E: Tagged suites
+* E2E: Initial tests for Bahub
+* Bahub: Connected implementation of environment variables passing
+* Bahub: Clean up, prepare for E2E tests
+* Bahub: Increase coverage
+* Bahub: Increase coverage
+* Update README
+* Bahub: Additional coverage
+* Bahub: Additional coverage
+* Bahub: Additional coverage
+* Bahub: Cover importing module with tests
+* Bahub: Encryption tests coverage
+* Bahub: Additional coverage
+* Bahub: Correct test to check proper method, not its usage
+* Bahub: Cover with unit tests - StreamableBuffer
+* Bahub: Add first unit tests coverage
+* Bahub: Refactor naming
+* Bahub: Refactor - simplify - replace functionality of copy\_to\_raw\_stream() with prevalidation in read()
+* Bahub: Remove v2.x from repository
+* Bahub: Added :help:info task
+* Bahub: Added \`:help:transport:example\` task
+* Bahub: Added stream prevalidation
+* Bahub: Clean ups in tasks naming and unused code
+* Bahub: Temporary Docker Transport (bahub.transports.temporarydocker) for doing offline backups
+* Bahub: Support for PostgreSQL dumps/restores
+* Bahub: Transports are now supporting JSON Schema validation
+* Bahub: Docker transport support
+* Bahub: Self-documenting tasks
+* Bahub: Implement passwords and other credentials stripping from logs
+* Bahub: Added capture() to the TransportInterface for output capturing
+* Bahub: Working MySQL adapter
+* Bahub: A working backup & restore
+* Bahub: Initial filesystem adapter
+* Bahub: WIP - fully implemented Encryption model
+* Bahub: WIP - Listing of cryptographic keys, working upload and encryption tasks, configurable GNUPGHOME
+* Frontend: Fix initial value showing after naming refactoring
+* Bahub: Almost working MySQL adapter without restore yet
+* Bahub: Backup streaming with encryption pipe
+* Bahub: Notification implementation, connected secrets erasing
+* Bahub: Working upload task
+* Bahub: Initial shell client structure, WIP
+* Backend: Typing fixes after refactoring to strict types
+* Backend: Clean up in roles
+* Backend: Resolve issue
+* E2E: Initial access token tests
+* E2E: Initial access token tests
+* E2E: Stabilize tests
+* E2E: Coverage for user deletion
+* E2E: Coverage for roles editing case
+* E2E: Better coverage of users creation and editing
+* E2E: Better coverage of users creation
+* E2E: Added database backup & restore
+* E2E: Add basic users adding test
+* https://github.com/vuejs/vue/issues/7058
+* E2E: Added waiting for backend, clearing the user session between scenarios
+* Frontend: Added a loader connected to Axios that triggers when there is any pending backend call
+* E2E: Clean up
+* E2E: Validation coverage of auth:create-admin-account server command
+* E2E: Footer assertion
+* Backend: Fix user creation shell commands E2E: Implement first tests
+* Server: Fixed - limiting o roles in generated JWT now works, the user object now is having roles set from JWT token
+* Add logging in using JWT
+* Metrics dashboard
+* Remove unused code - waiting for other File Repository instance will no longer be supported
+* Deleting user profiles and backup collections
+* Adjust which roles are per-collection only
+* Add description field to the AccessTokenAuditEntry
+* Updated description
+* Added note about releasing
+* Clean up
+* Create E2E directory, add info about tests
+* Frontend: Clean up, commited missing part
+* Frontend: Access token generation
+* Set a proper sort order that includes expiraton time - by calculating expiration time > now AND active == true
+* Added permissions modal
+* Timezone support
+* Session revoking
+* Pagination responses unification, implemented Authorization view in frontend (without modals on buttons yet)
+* Update README.md
+* Frontend: Implement user editing
+* Implemented full error handling that includes also validation format handling
+* Split roles on scoped/usable and all available roles
+* Do not duplicate roles
+* Make collection search include also filename field
+* PUT endpoint for editing users account
+* Drop unused styles
+* #125 Refactor - rename ROLE\_ to PERMISSION\_
+* Improve user search by adding more fields
+* Add docs, clean up
+* Update Code Of Conduct
+* Backend: Implement PUT /api/stable/auth/user/{userId}
+* Update docs
+* Update docs
+* Refactor endpoints to be more REST-like
+* Add SWAGGER docs for endpoint - DELETE /api/stable/auth/token
+* Implement token revoking endpoint - DELETE /api/stable/auth/token
+* Remove functionality that was censoring UUIDv4 tokens (it was useful when a UUIDv4 token was used to log-in into the Backup Repository - now when we have JWT we can get rid of this)
+* WIP: Frontend
+* WIP: Frontend
+* WIP: Frontend
+* WIP: Frontend
+* WIP: Frontend
+* WIP: Frontend - PermissionsList
+* WIP: Frontend - PermissionsList
+* WIP: Frontend - PermissionsList
+* WIP: Frontend - PermissionsList - display scoped roles and allow for modification
+* WIP: Frontend - /api/stable/auth/roles is now able to display scoped roles @todo: Backend - cover with tests
+* WIP: Frontend - bugfix to show only scoped roles, not user global roles + add user e-mail field @todo: Backend - cover with tests
+* WIP: Frontend - initial Auth domain model
+* WIP: Frontend
+* WIP: Frontend - BackupCollectionDetails
+* WIP: Frontend - BackupCollectionDetails view changes
+* WIP: Frontend - add read-only view BackupCollectionDetails
+* WIP: Frontend - BackupCollections list
+* WIP: Frontend
+* Github Actions: Syntax fix
+* Github Actions: Syntax fix
+* Improve release workflow
+* WIP Dockerfile
+* Set quay.io address
+* Add a security policy
+* Github Workflow: Releasing
+* Github Workflow: Try with RKD 2.2.0
+* Github Workflow: Debug
+* Github Workflow: Debug
+* Github Workflow: Debug
+* Github Workflow: Keep also logs
+* Github Workflow: Archive results as annotations
+* Github Workflow: Debug
+* Github Workflow: Debug
+* Github Workflow: Add unit tests and HTML reports
+* Github Workflow: Archive codeception results
+* Github Workflow: Archive codeception results
+* Github Workflow: Debug
+* Github Workflow: Debug
+* Github Workflow: Debug
+* Github Workflow: Debug
+* Github Workflow: Debug
+* Github Workflow: Prepare CI environment
+* Github Workflow: Fix syntax error
+* Github Workflow: Fix syntax error
+* Github Workflow: Add globally working directory
+* Github Workflow: Correctly setup cache
+* Github Workflow: Add symfony tool, add composer cache
+* Github Workflow: Setup a proper version of PHP
+* Github Workflow: Retry
+* Github Workflow: Retry
+* Github Workflow: Correct syntax
+* Add github workflow
+* #117: Standardize responses while working on SWAGGER docs
+* #117: Refactor SWAGGER endpoint into YAML + JINJA2 for simplicity and easier maintenance
+* #117: WIP - Refactoring of SWAGGER support from NelmioApiDoc annotations into manual SWAGGER yaml/json format for easier maintainability
+* #117: Refactoring of SWAGGER support from NelmioApiDoc annotations into manual SWAGGER yaml/json format for easier maintainability
+* Add symfony serve to :dev command
+* #118: Implement feature - roles per collection - correct issues: administrator role not considered as administrator
+* #118: Implement feature - roles per collection - resolve issues: Incorrect form context passing
+* #118: Implement feature - roles per collection
+* WIP: Roles per collection - implement test to check if roles can be updated
+* WIP: Roles per collection - working implementation without a feature to restrict assigned roles to roles that context (logged user) user have
+* WIP: Roles per collection
+* #115 and #114: Moving from Symfony Forms to Symfony Serializer - clean up, remove dependencies
+* #115 and #114: Moving from Symfony Forms to Symfony Serializer - DetailsForm, VersionDeleteForm, VersionListingForm, ViewFileForm
+* #115 and #114: Moving from Symfony Forms to Symfony Serializer - FetchVersionForm
+* #115 and #114: Moving from Symfony Forms to Symfony Serializer - BackupSubmitForm
+* #115 and #114: Moving from Symfony Forms to Symfony Serializer - CollectionTokenListingForm, TokenAttachForm, TokenDeleteForm
+* #115 and #114: Moving from Symfony Forms to Symfony Serializer - UploadForm
+* #115 and #114: Moving from Symfony Forms to Symfony Serializer - UploadByPostFormType
+* #115 and #114: Moving from Symfony Forms to Symfony Serializer - DeleteFileForm
+* #115 and #114: Moving from Symfony Forms to Symfony Serializer - FilesListingForm
+* #115 and #114: WIP - Refactor exceptions, part 2 - resolve not aggregated validation errors
+* #115 and #114: WIP - Refactor exceptions, part 2 - fix compilation issue
+* #115 and #114: WIP - Refactor exceptions, part 2
+* #115 and #114: WIP - change JMS Serializer to Symfony Serializer (it is more native), refactoring Symfony Forms into Symfony Serializer + ValueObjects for validation
+* #115 and #114: Catch HTTP errors and display them as JSON on PROD
+* #115 and #114: Add todo
+* #115 and #114: Improved error handling by moving error capturing to the ErrorFormattingSubscriber
+* #115 and #114: Add a todo
+* #115 and #114: WIP, standardized exceptions partially - at least AuthenticationException, moving to JMS from Symfony Forms - Authentication Domain already have creation endpoint using JMS
+* Clean up of unused libraries, add JMS Serializer library
+* Automation
+* Bump dependencies
+* #113: Token -> Users migration - part 2: - Resolve rest of API tests - Removed "public" and "password" attributes from StoredFile as we will keep only protected backup files served by backup viewing controller - Disabled possibility to overwrite files, as we no longer need this feature for backups purpose
+* #113: Token -> Users migration - part 2: Token restrictions support (UserAgent, IP Address, Expiration date)
+* #113: Token -> Users migration - part 2: Adding JWT support
+* Clean up in repository, add files to git ignore, remove minimumui files
+* #113: Token -> Users migration - fix Backup domain tests
+* #113: Token -> Users migration - entity - Backup domain renaming Token to User
+* #113: Token -> Users migration - entity and database tables+columns renaming - fix \`Return value of App\Infrastructure\Authentication\Token\TokenTransport::getUser() must be an instance of App\Domain\Authentication\Entity\User, null returned\`
+* #113: Token -> Users migration - entity and database tables+columns renaming
+* #113: Token -> Users migration - partial naming refactor
+* #113: Token -> Users migration - partial naming refactor
+* #113: Token -> Users migration - partial naming refactor
+* #113: Token -> Users migration - partial naming refactor
+* #113: Token -> Users migration - responses modification
+* #113: Token -> Users migration - tests - naming refactor
+* #113: Token -> Users migration - tests
+* #113: Token -> Users migration - routes
+* #113: Additional tests coverage for validation
+* #113: Drop UTF-8 validation as data comes from JSON that does not support non-UTF-8 encoding anyway so it would not be even decoded
+* #113: Preparation for the Tokens -> Users transition, \`Add password and e-mail\`, move most of the validation to value objects from services
+* Clean up, update README.md
+* Update unit tests after removed object storage functionalities, make unit tests work with PostgreSQL
+* Update API tests after removed object storage functionalities
+* Clean up, stabilize tests
+* Switch local port to development server port
+* Clean up: Mime types and Secure Copy
+* Enalbe db restore endpoints also in dev
+* Clean up - SQLite3 and MySQL support removal
+* Remove unused roles related to mime types
+* Restore storage endpoints
+* Set new release name
+* Clean up
+* Clean up
+* Update todo
+* Support only PostgreSQL - remove support for MySQL and SQLite3
+* Update README.md
+* Update README.md
+* Update README.md
+* Drop HTTP caching and uploading file via url
+* Transforming from File Repository to Backup Repository: Bahub more secure encryption support (WIP)
+* Transforming from File Repository to Backup Repository: First part
+* KropotCLI: Attempt to fix \`The description failed to render in the default format of reStructuredText.\`
+* KropotCLI: Deploy to PyPI from Travis-CI
+* KropotCLI: Correct entrypoint
+* Docs: Refactor and add missing parts
+* Server: Correct response code to 200
+* Server: Update docs
+* Server: Fix a HTTP 500 - so it becomes HTTP 404 when trying to delete already deleted token
+* Server: Docs about encryption - WIP
+* Server: SecureCopy - encrypt also the digest salt in the token
+* KropotCLI: Fix building of Docker image
+* Server: Imports clean up
+* Server: Resolve problem with unit test on fresh database
+* Server: Fix not working migration outside of Docker container
+* Server: Implement strong encryption with PBKDF2, multiple rounds, salt, IV
+* KropotCLI: CI fix
+* KropotCLI: Initialized tests structure
+* KropotCLI: Added extra logging
+* KropotCLI: Added status string for debugging
+* Server: SecureCopy is now showing a properly sorted list [IMPORTANT]
+* KropotCLI: Revert pagination
+* KropotCLI: Remove debug
+* KropotCLI: Added IV storing
+* KropotCLI: Added requirements
+* KropotCLI: Added requirements
+* KropotCLI: Added pagination support, skip existing, HTTP timeout support
+* KropotCLI: Retry failed events, update event statuses, recognize multiple instances of KropotCLI working together
+* KropotCLI: Parametrize Makefile
+* Server + KropotCLI: Send timezone as string, not as PHP object
+* Add validation
+* Correct unreleased migration to correctly populate timezone field
+* Update README
+* Server: Glue publish stages to not wait so long for slow travis
+* Server: Fix codeception support
+* Server: Attempt to resolve \`\`\` SQLSTATE[HY000]: General error: 1 Cannot add a NOT NULL column with default    value NULL    \`\`\`\`
+* Server: Attempt to resolve \`\`\` SQLSTATE[HY000]: General error: 1 Cannot add a NOT NULL column with default    value NULL    \`\`\`\`
+* Server: Bugfix - searching by full token id in token searching endpoint was not working, increased tests coverage in API tests
+* Server: Refactor
+* Server: Support for MariaDB 10.2+ (worked only on 10.4+). Added more precised requirements for the databases - MySQL/MariaDB and PostgreSQL
+* Server: SecureCopy - encrypt with token passphrase
+* Server: Full backup domain files deduplication. Removed legacy "contentIdent" feature which was making each backup version unique. Now the storage domain takes control over the deduplication process fully, so the backup domain do not care at all. Added support for MySQL
+* Server: Tests for deduplication in backups domain
+* Server: By default allowing to upload files with any bad characters in filename, those would be stripped out. Previously a validation error was thrown. Now the validation error could be still thrown, when passed ?stripInvalidCharacters=true to the query string
+* Server: Corrected a mistake in DQL query
+* Server: Improved and simplified deduplication of files. Now it is really transparent to the user
+* Server: Support for Redis cache and Memcached cache
+* Server: Applied UUIDv4 masking to not break the security
+* Docs: Update docs
+* Docs: Updated docs for anti hotlink feature
+* Docs: At least documentation for successful cases
+* Updated docs
+* Server: Remove tests for deleted endpoint
+* Docs: Described all endpoints
+* Docs: Added RiotKit theme to swagger docs
+* Docs: Documented listing endpoint, cleaned up docs
+* Server: WIP - hide sensitive information such as token id, when user has applied an restriction on token that tells to hide token ids
+* Server: WIP - collection allowed tokens listing endpoint (without API tests, unit tests, swagger docs, and docs)
+* Server: Correct test. We do not want to use 202 HTTP code, only 200 and 201
+* Server: Partial docs for the backup domain
+* Server: Full support for SQLite3 is back
+* Server: Fix support for MariaDB in tests (restore was not performed correctly)
+* Server: (BC BREAK) improved /version endpoint by adding database type
+* Server: Covered with API tests SecureCopy endpoint about getting metadata. Fixed 500 error in case, when hashed file id is invalid - should return 404 with explanation - now does
+* Server: Fixed a problem - not possible to run a single Cest in CodeCeption using CODECEPT\_ARGS eg. CODECEPT\_ARGS="functional SecureCopyCest"
+* Server: Fixed way how the database is restored in tests. It is now fully working
+* Added release name :-)
+* KropotCLI: Correct typo
+* Server: Add metadata encryption functionaity to the SecureCopy, so now it is really a secure mechanism
+* KropotCLI: Correct typo
+* Naming refactor in Makefiles
+* Kropot-CLI: Attempt to build the Docker image on CI
+* Server: Temporarily suspend SQLite3 support on CI until it will not be resolved
+* Docs: Added info about kropot-cli
+* Docs: Corrected formatting
+* Server: Corrected first-steps docs page
+* Server: Correct roles test
+* Server: API tests coverage for the roles endpoint
+* Server: Validation coverage of tokens search endpoint
+* Server: API tests coverage for search endpoint
+* Server: Complete SWAGGER docs for the Authentication domain
+* Server: Resolved an issue with 500 returned insted of 403 in health check endpoint
+* Server: Clean up
+* Server: Documented tokens listing and roles listing endpoints. Fixed by the way an issue when swagger in GUI was not appending the token, so the responses were always 403
+* Server: Removed "WAIT\_FOR\_HOST" from Docker image, as we now have a shell command that does this bettter and is used already
+* Server: Auth domain - Add support for env variable FILE\_REPOSITORY\_TOKEN, update the docs
+* Server: Update docs in Authentication domain
+* Server: Authentication - add "expired" and "expires" field to the response
+* Server: Deduplicate roles list in Token
+* Server: Added missing validation and part of response in token/roles search/listing
+* Server: Correct tests
+* Server: [BC break] Standardize internally response codes. We no longer respond with HTTP 202, only HTTP 201 as we do not implement asynchronous processing
+* Server: [BC break] refactor of responses in Authentication domain, use PRETTY\_PRINT in all JSON endpoints
+* Server: BC in v3.0.0 - removed ClearExpiredTokens endpoint, it should be used only from shell
+* KropotCLI: Correct task on CI
+* KropotCLI: Add to travis-ci
+* KropotCLI: Correct build scripts
+* CI: Attempt to fix \`WARNING: Error loading config file: /home/travis/.docker/config.json: stat /home/travis/.docker/config.json: permission denied\`
+* Server: WIP - endpoint for listing tokens (required to build a frontend)
+* Server: Updated docs with SecureCopy fields in Authentication
+* Server: Correct 500 -> 403 error when no token found
+* Docs: Updated docs about tokens
+* Docs: Add docs about shell access in recently added technical commands
+* CI: Attempt to fix:
+* Server: Compatibility with MariaDB, PostgreSQL and SQLite3
+* Server: Compatibility with MariaDB
+* Server: On startup wait for database to be up and running before migrating the application
+* Docs: Restored previous theme as new does not work on readthedocs.io
+* Server: Health check should show not only health of the application, but also status of the webserver and PHP-FPM
+* CI: Attempt to run tests on Travis
+* CI: Attempt to run tests on Travis
+* CI: Attempt to run tests on Travis
+* CI: Attempt to run tests on Travis
+* CI: Added more logging to the server in case it would not get up
+* CI: Added more logging to the server in case it would not get up
+* Docs: Improved layout - now is full-width
+* CI: debug
+* CI: debug
+* CI: debug
+* CI: debug
+* CI: debug
+* CI: Clean up and attempt to run on Travis
+* KropotCLI: Project rename
+* WIP: Docs
+* CI: Attempt to run CI on Travis CI
+* CI: Test
+* CI: Make the build to be green
+* CI: Wait for app to be up
+* CI: Wait for app to be up
+* CI: Wait for app to be up
+* CI: Wait for app to be up
+* CI: Wait for app to be up
+* CI: Wait for app to be up
+* CI: Wait for app to be up
+* CI: Wait for app to be up
+* CI: Wait for app to be up
+* CI: Run env before tests for Bahub
+* Updates to the docs: How to setup the application
+* CI: Improvement of Travis CI config
+* CI: Improvement of Travis CI config
+* CI: Improvement of Travis CI config
+* CI: Improvement of Travis CI config
+* CI: Improvement of Travis CI config - join two bahub steps
+* CI: Improvement of Travis CI config
+* CI: Add sleep - debug
+* Bahub: Fix up Makefile commands
+* Bahub: Initial support for native Redis KV storage backup
+* Bahub: Refactor, extract common parts in docker support
+* Server: Partial Service coverage - FileReadService
+* Server: VO coverage - EncryptionAlgorithm
+* CI: Clean up
+* Env: Fix up Makefile unexpected behavior when too much verbosity is set by default
+* Bahub: Fix up Makefile unexpected behavior when too much verbosity is set by default
+* Fix up Makefile unexpected behavior when too much verbosity is set by default
+* Clean up
+* Bahub: Do not leak sensitive information in any channel - consider service passwords
+* Bahub: Do not leak sensitive information in Slack notifications
+* Attempt to run build on Travis CI
+* Switch to PHP 7.4 on Travis CI
+* Testing appveyor
+* Testing appveyor
+* LCM: Added build information to the docker container
+* Bahub: Refactor most of the tests from Bash to Python's unittest using universal docker environment (make up VARIANT="test postgres bahub-test")
+* Bahub: Removed not necessary dependency "simplejson", migrating to new package structure for easier launching
+* LCM: Migrated to PBR
+* LCM: Added OCI labels
+* Environment: Moved environment to the project root directory
+* Server: Resolve deprecations
+* Server: Resolve deprecations related to createClient()
+* Server: Resolved all unit tests
+* Server: Deprecations fix - '4x: Return value of "App\Command\Authentication\GenerateTokenCommand::execute()" should always be of the type int since Symfony 4.4, NULL returned.'
+* Bahub: Resolve issue with PostgreSQL restore. The bahub container was connecting to a remote host using psycopg2 library, but this operation should actually execute in another container
+* Server: Resolved an issue detected by API tests - the token was provided, but the session was anonymous
+* Server: PHP 7.4 specific code improvements
+* Server: Bug fixes based on tests execution, clean up
+* Server: Test database support fixed
+* LCM: Corrected permissions in Dockerfile
+* LCM: Initial Dockerfile
+* LCM: Updated .gitignore
+* LCM: Added more automation to the Makefile
+* LCM: More docs
+* Fixed setuptools scripts
+* Bahub: Found a bug - added todo to resolve before releasing next stable
+* LittleCopyMachine: A new File Repository client, only for simple mirroring of the data
+* SecureCopy: Separation of the event list stream by types, for easier pagination of the data
+* Repliaction: Add support for Doctrine's replication (slaves configuration)
+* Repication: Do not do request forwarding, just the database forwarding
+* Repication: Primary server verification
+* Updated version in API doc
+* [WIP] Distinct: SecureCopy and Replication modules
+* WIP: Working replication for Files
+* WIP: Working replication for Files
+* #107: Added file metadata - "submitdata" dumping support
+* Corrected SQLite support in tests
+* #107: Added endpoint for fetching file contents by replication clients. The endpoint supports zero-knowledge replication
+* Added \`storage:file:read\` command
+* Correct PHP 7.4 migration
+* #107: The tokens are now possible to generate with replication settings
+* Added version information
+* Added version information
+* Migration to PHP 7.4
+* #104: Cover listing with API tests, fix problems eg. malformed SQL, added permissions to the listing endpoint
+* Fixed PostgreSQL database backup & restore
+* Updated PHP version to 7.4
+* Increase application startup speed by not warming up test and dev environments if not necessary
+* Removed unused and undocumented token encryption feature
+* #104: Moved parameter from path to query, as the Date Time format will be escaped
+* #104: Added id to the returned metadata, swagger docs and error handling
+* #104: Flush on each processed chunk if that's possible
+* #104: Changed separator to ';;;'
+* #104: Added a legend in the header
+* #104: Naming refactor
+* #104: WIP beginning of the replication endpoint at /replication/list/{?since}
+* CI: Changed order of stages and added a MariaDB stage
+
+v2.1.0.rc4
+----------
+
+* CI: Trying to run the build
+* CI: Trying to run the build
+* CI: Trying to run the build
+* Bahub client: [#98] Corrected test mock
+* CI: Fixed build
+* Bahub client: [#98] Added gnutls-dev to Dockerfile, as it is required to build pycurl
+* Bahub client: [#98] Added missing requirements
+* Bahub client: [#98] Turn off debug ;-)
+* Bahub client: [#98] Backups command - Interrupt the HTTP request, when UNIX process was interrupted
+* Bahub client: [#98] Corrected early failure check to make sure that case when the process is still running will not throw the exception
+* Bahub client: [#98] Check for early failures
+* Bahub client: [#99] Kill the process on restore whenever its possible
+* Bahub client: [#99] Catch HTTP errors and cancel background process
+
+v2.1.0.rc3
+----------
+
+* CI: Fixed build
+* CI: Test
+* CI: Test
+* CI: Fixed \`ln: failed to create symbolic link '/usr/bin/lsb-release': Permission denied\`
+* Server: Fixed a stupid error
+* Travis: Trying to fix the build
+* Travis: Trying to fix the build
+* Server: Updated the getting started guide in docs
+* Server: Updated the getting started guide in docs
+* Travis: Fixing the build
+* Travis: Fixed build
+* Server: Updated docs
+* Server: Updated docs
+* Server: Updated docs about the shell access
+* Server: Updated docs about the shell access
+* Bahub client: Improved doc header
+* Bahub client: Updated configuration reference
+* Bahub client: Updated docs image
+* Bahub client: Updated guide on starting with docker installation, added a tutorial environment
+* Server: Implemented a feature to assign a custom id, when creating a collection + added a variable "POST\_INSTALL\_CMD" in Docker container, so it allows to execute shell commands on container startup to pre-create tokens and collections
+* Documentation
+* Bahub client: Remove docker-s3-api-client environment, too many environments
+* Bahub client: Critical fix - overwritten docker DNS servers
+* Bahub client: Attempt to run the CI
+* Bahub client: Attempt to fix travis build
+* Bahub client: Switched to Alpine 3.10, moved part of mysqldump arguments to the \`dump\_cmd\` parameter, increased verbosity in tests
+* Bahub client: Corrected Dockerfile, so now it will build
+* Bahub client: Now the unit tests are running. It seems that after refactor everything is working
+* Bahub client: Added missing dependency - psycopg2
+* Server: Restore SQLite3 by default and FS\_ADAPTER=local
+* Environment: Added "postgres\_base" example
+* Bahub client: Get rid of sudo from code, PostgreSQL base backup method, "CONFIG\_DIR" special variable available in YAML, support for recovery method "on\_failed\_restore"
+* Environment: Added MariaDB as database option, also added support for testing bahub locally on the connected environment
+* Bahub: Refactor - shorten and simplify the handlers code, add more exceptions handling and better process control
+* Bahub: Correct usage of timeouts when spawning processes
+* Bahub: Correct restore in PostgreSQL dump/import - now the correct database is choosen, when doing a backup of a single database
+* Server: Fixes related to PostgreSQL support, when DATABASE\_URL is set but empty then Doctrine was showing "role www-data does not exist" which was wrong
+* Bahub: Partial PostgreSQL support
+* Bahub: Added helpful tasks to Makefile
+* Bahub: Pipenv - added wrapper for developers
+* Bahub: Introducing pipenv
+* Bahub: Refactor naming and make a public interface
+* Bahub: CI - Added correct tag recognition
+* Bahub: Added SERVER\_DOCKER\_TAG to specify the server version (docker image tag)
+* Server: Tests - correct configuration for SQLite3
+* Server: Tests - correct env variable to correct one
+* Server: Tests - correct env variable to correct one
+* Server: Add DATABASE\_PATH to the configuration and set default DATABASE\_PORT per supported driver
+* Server: CI - add the database file
+* Server: Corrected SQLite3 driver settings in unit tests
+* Server: Corrected SQLite3 driver detection in unit tests
+* Server: (BC!!!) Now DATABASE\_PORT is mandatory to pass as environment variable
+* Server: (BC!!!) Migrate from database connection using a connection string to the multiple variables used separately. It works with UNIX sockets for PostgreSQL natively, without doing workarounds
+* Server: Use password and user as supplied by DBAL
+* Server: Use password for PostgreSQL as supplied by DBAL
+* Environment: Parametrized the environment and updated docs
+* Server: Fixes to the error handling in health check endpoint and in Flysystem adapter
+* Server: Fix up invisible command "auth:generate-admin-token" in "test" environment
+* CI: Allow to fail for the nightly tests
+* Server: Upgrade dependencies
+* CI: Disable deprecations helper
+* CI: Migrate the database for functional tests in PHPUnit
+* CI: Fix \`copy(./var/data.db): failed to open stream: No such file or directory\`
+* Feature: Predictable user tokens. Allows to create an auth-token with manually entered UUIDv4. This opens a possibility to create an admin account on docker container startup
+* env: Correct mistake
+* env: Make the environment more generic - for production/test/dev
+* Updated formatting in docs
+* Fixed missing includes in docs
+* Docs footer update
+* Updated docs
+
+v2.1.0.rc2
+----------
+
+* Fixed invalid value instead of date string, detected by functional test on PostgreSQL
+* Tests: Support for testing application on PostgreSQL
+* Makefile: Corrected arguments passing - those should be allowed to contain spaces
+* Resolve: \` Path for output is not writable. Please, set appropriate access mode for output path: /var/www/html/tests/Functional/\_output/\`
+* Resolve: \`chown: cannot access '/var/www/html/var': No such file or directory\`
+* Restored .dockerignore and .env.test at correct places
+* Docker: Add permissions normalization on entrypoint
+* CI: Correct permissions
+* CI: Debugging CI
+* CI: Testz
+* CI: Corrected tests. Created new infrastructure for testing locally and on CI - using docker-compose. There are now a few variants of infrastructure - using s3, postgres, with persistence etc
+* Healthcheck: Correct typing problem (on PostgreSQL it seems that fetchColumn() returns an integer instead of string)
+* Tests/CI: Delete external dependencies from tests, and use internally a docker container that serves static files
+* CI: Correct push to quay and tag recognition
+* Corrected usage after names refactor
+* Updated readmes
+* Structure refactor: Added "push\_container" make task
+* Structure refactor: Trying to set up the CI
+* Project structure refactor + moving from quay.io CI to Travis CI
+* Tests: Refactor usages of internal methods
+* CI: Corrected tests on Travis. Those tests were not working due to bug in docker-compose (compose was adding suffixes to container names which caused bash scripts not working)
+* CI: Clean up containers between test cases
+* - Bahub: Fixed incorrect imports - Clean up: Removed gitver, we didnt use it at all
+* File Repository: Corrected error
+
+v2.1.0.rc1
+----------
+
+* Client - Bahub: Mainly naming refactor
+* PostgreSQL support, clean up in "nginx features", updated documentation
+* Refactor imports
+* Bump docker image on \`master\` branch
+* Simplifications to the NGINX configuration
+* Simplified the build, the bcmath was moved to base container
+* Added dependency for the MySQL check util from RiotKit's CI Utils
+* Corrected Bahub integration tests
+* Fixes to env support
+* Fixed deployment, improved Docker image size
+* Added --no-dev to composer at Dockerfile to reduce image size
+* Fixed travis build - migrations does not need to be executed in unit tests, they are executed in API tests
+* Clean up and fixes to the Docker container
+* Improved configuration reference
+* Added missing variable \`BACKUP\_MAX\_VERSIONS\` that was not shown in the documentation and .env.dist file
+* Docs: Corrected paths in "first steps"
+* CI: Refactored Makefile, downgraded PHPUnit for compatibility with Codeception
+* CI: Added "skip\_existing: true" to deploy to PIP
+* CI: Corrected notifications
+* Added build notifications, switched base images in Dockerfile
+* Client: Removed pixz as it is not supported by used Alpine
+* Client: Added pigz and pixz for parallel archive creation
+* Server: Updated dependencies, integrated Sentry.io to the application - deleted special Docker container
+* Server: Bump version to rebuild from newest docker's php-app base image. Fixed health check endpoint on sentry
+* Server: Hotfix - anti hotlink controller does not work because of invalid configuration
+* Server: For for
+* Server: Fixed missing ".infrastructure" directory on docker build
+* Server: Fixed a typo
+* Server: Clean up of the docker container
+* Server: Improved size of the docker image, added more accurate health check to the docker image, removed npm from target container
+* Server: Resolved problem with composer dependencies
+* Server: Adjusted configuration settings to the recent version of base docker container, set memory\_limit to 256 megabytes
+* Server: Added info about the authorization to the docs
+* Server: Excluded Minimum.UI endpoints from API docs
+* Server: Added access control for "/version" endpoint, added api docs
+* Server: "/version" endpoint
+* Server: Added endpoint "/version"
+* Server + Bahub: Added post-commit hook
+* Server + Bahub: Automated releasing
+* Server: Clean up - deleted postman tests
+* Server: Introducing strict versioning with GITVER
+* Server: Went back to Symfony 4.2 from 4.3 due to incompatibilites of few bundles, added initial support for API documentation in NelmioApiDocBundle
+* Server: Switched base image to image hosted on quay.io
+* Server: Adjusted error logging
+* Server: Updated docs, added fixes
+* Server: Added a feature to optionally allow to restrict usage of token for given User-Agent headers and/or IP addresses. This is a gateway to fully assigned tokens for anonymous users using the application
+* Server: Added support for replication READ-ONLY mode, it's now an environment variable "READ\_ONLY". Accepts true/false values
+* Server: Disabled Symfony deprecation helper in API tests, so they will now be green. We do not care about deprecations in Codeception API testing framework, we care about deprecations in our code only
+* Server: Resolved problems with not up-to-date unit tests
+* Server: Resolved problem with PhpUnit version
+* Server: Upgraded dependencies to try to resolve the issue on Travis with PHP 7.3 build
+* Server: Corrected tests running all together
+* Bahub: Corrected logging, now the Docker container is logging to a single file and showing normally the logs
+* Server: Added feature - new role "upload.only\_once\_successful" that allows to restrict token to MAXIMUM ONE SUCCESSFUL UPLOAD
+* Server: Moved more variables to Dockerfile, so now also the tests on travis should start working
+* Server: Covered with API tests the alerting strategy in collection upload
+* Server: Resolved a typing problem in backups collection uploading, when a weird failure happens
+* Server: Covered collection strategy "delete\_oldest\_when\_adding\_new"
+* Server: Versioning functionality is now more generic, and should not be only considered as "backup" but generally as a versioning storage (including backup usage)
+* Server: Added additional test case for collections listing test
+* Server: cURL exceptions - added one more case to handle
+* Server: Added API tests coverage for listing and searching collections
+* Server: Added new setting "HTTP\_TIMEOUT" to set timeout on HTTP download, when uploading by URL
+* Server: Handling of cURL errors when downloading a remote URL. Now the error is now shown as 500, but as a 400 with details
+* Server: Attempt to connect to travis ci + increased coverage
+* Server: Travis - fix to try to run codeception api tests
+* Server: Clean up in tests
+* Server: Covered collections adding, editing, deleting
+* Server: Covered collections adding, editing, deleting
+* Server: Bugfix - added missing role about editing allowed collections
+* Server: Increased coverage
+* Server: Added coverage for registry listing, added possibility to backup & restore the database during tests
+* Server: Postman support will be completely deleted
+* Server: Fixed a high-risk security issue, the local adapter was storing files inside src directory. Symfony cache was indexing this directory while bootstraping (ex. on container restart in production mode, in dev and test modes on each request)
+* Server: Covered file registry upload and delete with API tests in codeception
+* Server: Increased API tests coverage
+* Server: Proper response instead of 500 in case, when fileUrl does not exist in upload-by-url
+* Server: Covered authentication module with Codeception API tests
+* Server: Fixed multiple files upload at once. All files were getting the same file name. On frontend not sending filename as query string parameter, but in multipart files. On backend added support to take the filename (if not specified in query string) from multipart - for compatibility with various uploaders
+* Server: Added initial codeception setup
+* Server: Now the "token" and "x-auth-token" headers are properly handled
+* Server: Added proper error handling for value objects
+* Server: Corrected health checks
+* Server: Split filesystem adapters into READ and WRITE for better handling of clusters and performant infrastructures
+* Docs: Added listing to index
+* Added docs for listing
+* Docs: Added info how to provision the token
+* Create LICENSE
+* The Bahub container now does not generate spam
+* Added docker/releases/versioning section
+* Added info about quay images
+* Made a clean up of infrastructural files and added feature toggle to the NGINX, so new features can be toggled on/off
+* AntiHotlink feature: Resolved a notice about array to string conversion ($\_SERVER['argv'] or $\_SERVER['argc'] was an array)
+* AntiHotlink feature: The value is now unescaped, it makes life so much easier when a unnecessary quotes are applied (eg. in docker container configuration)
+
+v2.0.6
+------
+
+* Added link to the general guide
+* Increased coverage by covering the UploadSecurityContext
+* Security: Files without a password cannot be overwritten if not an administrator
+* Fixed type error in snapshot command
+* Not raising an exception in the notifier, just printing it into the stdout - notification error cannot cancel a backup from creation
+* Added APP\_DOMAIN variable in case when "Host" header could be incorrect because of eg. complex and invalid networking configuration
+* Fixed developer toolbar displaying
+* Minimum.ui: Polish/Polski translation
+* Minimum.ui: Added tags, visibility, password fields
+* Simplification
+* Added VIDEO uploading role, the security validation error is now more verbose
+* Upgraded libraries to newest versions
+
+v2.0.5
+------
+
+* Covered ViewFileHandler partially
+* Exported values marked as todo in the container to the .env variables
+* Preparation for unit testing
+* Fixed magic properties, we use only explicit properties
+* Improving performance of the IoC container by excluding non-service classes
+* Excluded Controllers and Migrations from coverage
+* Added mockery for testing complex classes like Handlers
+* Covered aggregate with tests
+* Fixed HTTP Bytes range support. So now the application serves partial content on-demand when streaming media files, eg. video files
+* The \`make run\_dev\` now runs an official docker image rather than the Symfony's built-in webserver. The reason was that the Symfony's built-in webserver does not support range requests and streaming so good as the NGINX does
+* Added missing netcat package, required by recent feature of waiting for database to start
+* Added waiting for host to be up (eg. database) on server start
+* Adjusted unit tests to changes on purpose
+* Added definition name to the notifications and error messages
+* Added docs to the monitoring features
+* Resolved: \`TypeError: \_\_init\_\_() missing 1 required positional argument: 'notifier'\`
+* Clean up
+* Improved exception handling, added notifier integration to notify about the exceptions also
+* Initial implementation of notifier
+* Added support for error handlers with initial support for sentry.io
+* Fixed not working templating in the URL, extended the syntax and covered with tests
+* Increased tests coverage for value objects: PositiveNumber
+* Increasing tests coverage
+
+v2.0.4
+------
+
+* Fixed deploy conditions
+* Update .travis.yml
+
+v2.0.3
+------
+
+* Added deploy credentials
+* Fixes to the build
+* Fixes to the build
+* Changed requirements for the Python version to 3.6 from 3.7, as it is built and works on 3.6
+* Bahub release job
+* Fixed before\_deploy
+* Travis: Added nightly pipeline
+* Travis: Fixed Bahub functional build
+* Travis: Clean up
+* Travis: Removed Python 3.8 tests as Python 3.8 cannot be launched on travis at now
+* Travis: Clean up
+* Travis: Split into multiple jobs
+* Travis: debug
+* Fixed "kill\_test\_containers" task
+* Travis: build stabilization
+* Covered Checksum valueobject with tests
+* Travis: build stabilization
+* Set /bin/bash as default shell for all executed commands (because /bin/sh does not support same options as bash eg. pipefail)
+* Travis: build stabilization
+* Added snapshot functionality
+* Added coverage badge
+* Added coverage for Python part
+* Added codecov.io integration
+* Added coverage logging
+* Bahub: Added DNS configuration
+* Trying to repair travis build
+* Added openssl to the travis build
+* Added support for Sentry tool - see sentry.io, it's a tool to catch exceptions on production
+* Covered additional case - when encryption configuration is returning bad exit code
+* Covered generally backup handlers. The tests are detecting if the failures are properly detected eg. when command pipeline fails
+* Cleaned up unit tests warnings by closing the stream with f.close() even when in YAML parser there is an exception
+* General improvements for error detection on the pipelining process
+* [https://github.com/riotkit-org/file-repository/issues/60] Partially resolved the issue by added upload validation (in \_validate\_running\_command())
+* [https://github.com/riotkit-org/file-repository/issues/59] Token is now also hidden in logs
+* [https://github.com/riotkit-org/file-repository/issues/59] Added PasswordsProtectedFilter that is cutting of sensitive data from logs
+* [https://github.com/riotkit-org/file-repository/issues/56] Fixed error handling in docker adapters
+* Fixed logs path
+* Updated PHP and JS dependencies
+* Updated docs
+* Travis: Debug
+* Travis: Attempt to speed up the build
+* Travis debug
+* Travis debug
+* Travis debug
+* Travis debug
+* Travis debug
+* Update .travis.yml
+* Update .travis.yml
+* Update .travis.yml
+* Update Makefile
+* Update .travis.yml
+* Update .travis.yml
+* Update .travis.yml
+* Update .travis.yml
+* Added a feature to disable cronjobs on development environment - to not override production backups
+* Switched to SafeLoader for the YAML parsing
+* Added explicite usage of CLoader, so it will no longer show deprecation warning
+* Added explicite usage of CLoader, so it will no longer show deprecation warning
+* Travis debug
+* Update .travis.yml
+* Update .travis.yml
+* Fixes to run the travis build
+* Adjustments to travis build
+* Added info about the testing
+* Fixing travis build for Python unit tests
+* Travis-ci compatibility fix - "whereis" is not accessible, but "which" should be
+* Fixed an accidential typo that was causing infinite loop (until max execution time reached) and corrected api tests, so they test what was expected to test (there was a configuration change in the .env.dist that needed to be included in the test)
+* Covered definition factory
+* Added badges
+* Probably fixed the travis build
+* Covered additional entity by unit tests
+* Added first unit tests
+* Implemented additional integration tests for "recovery from disaster" feature
+* Initial support for "recovery from disaster" feature
+* Fixed not launching crontab
+* For security reasons limited Accept-Range requests to take only 1 range at a time
+* Disabled request buffering for upload endpoints, in most cases an external gateway has also the output buffering which doubles the work and slows down application alot
+* Fixed problem with max\_execution\_time being not returned as int
+* Selectively increased max execution time for upload endpoints
+* Updated docs, dev mode is no longer recommended
+* Added SQLite3 example
+* Updated documentation by adding a lot of examples and references, simplified introduction steps
+* Added bahub deploy to PyPI
+* Increased limit on nginx, so the bigger backups will be uploaded
+* Improved error handling in case the user does not provide any valid source of upload (uploads 0 bytes)
+* Corrected error handling
+* OpenSSL - removed "-pbkdf2" parameter from default command, as this switch is not always supported, updated docs about openssl
+* Resolved a problem with too small column size that cannot handle size in gigabytes - second resolution, because Doctrine didn't execute second query to change second column from migration
+* Resolved a problem with too small column size that cannot handle size in gigabytes
+* Travis will build now the image from scratch to have a recent version
+* Deleted aliases tests - its notp possible to make them working because of the hash generation difference in time
+* Travis debug
+* Travis debug
+* Travis debug
+* Travis debug
+* Travis debug
+* Added prod.log displaying at the end of PHP travis build
+* Attempting to set up travis build
+* Made first tests for the Bahub CLI client
+* Started adding tests
+* Added a command to create a collection, updated docs
+* - Added restore working in all types of backup source - Configuration now accepts also environment variable
+* Added initial support for setuptools
+* Clean up
+* Fixed issue when the guest session was more important than admin technical session
+* Initially added bahub to docs
+* Bahub restore and list commands
+* WIP: Bahub - a shell API client specialized in backups of local files, command outputs and docker containers
+* Fixed default environment variables values. The quotes are not good, because they are actually passed..
+* Fixed caching after adding range bytes
+* Added support for bytes range
+* Added initially support for catching upload errors that are coming from PHP upload mechanism
+* Improved implementation of access rights
+* Increased upload\_max\_filesize
+* Unified permissions implementation on dev and prod environments
+* Now the 'security.administrator' role is granting all permissions automatically
+* Fix: Application is now not forking into background
+* Fixed container names
+* - Added a prod entrypoint that will now deploy the update of the application before starting it. The deploy includes eg. migrations, cache clearing etc
+* - Support for Minio through S3 interface (awss3v3) - Refactored filesystem adapters configuration (ConfigParser), is now more elastic and gives possibility to configure more deep options (arrays in arrays of n depth are supported) - More clear S3 interface configuration with a ready-to-go example in .env.dist
+* Added a command to generate admin tokens from shell
+* Added MySQL example in .env.dist
+* Fixed travis build
+* Added required libzip
+* Added phpunit shortcut
+* Added required "zip" extension to the docker container
+* Added unit tests support and first unit test
+* Hotlink support: Fixed configuration reading problem, environment variable values were normalized to lower case which destroyed the ANTI\_HOTLINK\_SECRET\_METHOD value
+* Removed debug from API Tests
+* Travis debugging: SQLite3 will be the default database
+* Added link to the documentation, and improved the description about why the project was created
+* Changed file descriptions and set the license
+* Readthedocs: Fixing 'ascii' codec can't decode byte 0xc5 in position 11: ordinal not in range(128)
+* Readthedocs: Added sphinx-glpi-theme to the requirements.txt
+* Fixed the order of loading doctrine mappings
+* @debug
+* Travis: Composer debugging
+* Added travis integration
+* ANTI\_HOTLINK\_SECRET\_METHOD now has a better default that should be realistic to setup for most of the users
+* Added more documentation about aliasing and hotlink protection
+* Fixed invalid boolean casting
+* - Anti hotlink mechanism - Filename mapping mechanism
+* - MinimumUI: Added video player endpoint /minimum.ui/watch/video/{fileId} - Storage domain: Added partial support for BYTES RANGE - Storage domain: Deduplication is now not possible to turn off, it can be prefixed with "contentIdent" which is added to the checksum (only works internally when using DomainBus between domains eg. from Backup domain) - Migrations: Fixed incorrectly created constraints - Better recognition of invalid multipart uploads (will return a 500 if the POST MAX SIZE of PHP settings is reached and the file is submitted as body stream) - Partial CI environment based on Docker
+* Clean up + minimum ui documentation
+* - MinimumUI - first working version with files and images uploading - Switched Bower to NPM - API now does not return 301 HTTP codes when file already exists, now it returns 202 - Upgraded MinimumUI code to ES6 standard - Upload endpoint now returns also requested filename
+* WIP: MinimumUI - improvements to the images cropper
+* WIP: MinimumUI - uploading images and files, support for base64 encoded uploads (easier for implementation of frontends in web browser), roles - enforcing no password and tags from token
+* Better error handling in authentication domain, added a few postman tests, updated documentation
+* Improvements to documentation, token deletion, expiration date for tokens
+* Added documentation and improved permissions (added missing roles)
+* Deleted first version
+* Added endpoint for easier fetching of collection version eg. /repository/collection/some-collection/backup/latest     /repository/collection/some-collection/backup/first     /repository/collection/some-collection/backup/v1     /repository/collection/some-collection/backup/SOME-UUID-HERE
+* Cancelled Webhooks support for now. Need to focus on finalization of basic functionality
+* Added endpoints for listing and deleting versions
+* Added endpoint for uploading files to the collection
+* Added endpoint for revoking access to collections
+* Added endpoint for attaching tokens to collections
+* Added listing endpoint
+* Updated documentation
+* Added delete and fetch endpoints
+* Added collection creation endpoint
+* Domain logic validation for the creation endpoint
+* Collections creation endpoint
+* Updated dependencies versions
+* Domain models for Backup Domain
+* Access rights for listing
+* Listing endpoint
+* Roles list and response standarization
+* HTTP cache support
+* Deletion endpoint
+* - Improvements to the authentication and 403 error handling - Added additional roles in authentication domain - Added some postman api tests coverage
+* Tags support, test http provider in test and dev mode (supports file:// protocol for testing), several fixes
+* Initial commit
+* Sync dev front-controller with prod (allow images to be fetched...)
+* Fixed tests to fit current path of images
+* Added Heroku deploy button
+* Updated configuration documentation and added environmental variables to Heroku configuration file
+* Clean up of images
+* Fixed JSON support
+* Fixed bower install execution when its not installed globally
+* Updated documentation, naming
+* Added more detail licensing information
+* Added integration with Heroku
+* Updated logo
+* Loop config keys
+* Add comment for phinx configuration
+* Update gitignore
+* Remove .idea folder (PhpStorm/IntelliJ from JetBrains)
+* Configure automatically Phinx with \*.custom.php files
+* Enhance mime-type detection
+* [#10] Added support for database tables prefixing
+* Fix things about test env
+* Strict type
+* Remove dependency to val/doctrine-table-prefix-service-provider and use last version of doctrine receipt
+* Updated travis badge
+* Remove use statement and use full package name
+* Allow table to be prefixed (using val/doctrine-table-prefix-service-provider)
+* Make dev configuration customizable
+* Make database configurable
+* Fix: don't force weburl parameter in config/dev.php
+* Fixed support for SSL
+* Added tests and fixes existing tests
+* Implemented HTTP cache (ETag, Last modified), refactored the code a little bit - extracted code into service
+* Added search query paramater to the find action
+* Added order by to the search action
+* Improved callbacks, token handling, updated dependencies
+* Support for uploading regular files using temporary tokens, configurable aspect ratio for image upload
+* Added support for png files, upgraded version of cropperjs to 1.0
+* Exposing also the url of files
+* Fixed: Case when there were no results if offset and limit was higher
+* Added pagination information to the FindAction
+* Switched response to be snake case, upgraded libraries, updated README.md
+* Now handling also escaped variable |url|
+* Now handling also escaped variable |url|
+* Clean up
+* Added .idea to the .gitignore
+
+v1.1
+----
+
+* [https://github.com/Wolnosciowiec/image-repository/issues/1][https://github.com/Wolnosciowiec/image-repository/issues/3] Implemented tags support
+* Security fix: Escaping upload/download paths
+* Added bower to the package.json for Heroku
+* Added missing directory, updated dependencies
+* Connected travis-ci
+* Added automatic tests
+* - Generating temporary access tokens - Uploading images from HTML form with possibility to crop the image
+* Formatting fix
+* Fixed db problem
+* Added instructions how to install on a remote FTP server
+* Added instructions how to install on a remote FTP server
+* Added vendor to phploy deployment
+* Moved databases to the "data" directory, moved Phinx config to PHP format, added web deployment using "wolnosciowiec/wolnosciowiec-web-deploy"
+* Updated dependencies
+* Changed deployment method to phploy, which seems to be working very well
+* Whitelisted docker host address
+* Now the database is per environment - Phinx is now also building both environment databases
+* Now the database is per environment
+* Fixed last commit
+* Now the application should return only full links, not only relative paths
+* Added versioning
+* Fixed deployment script
+* Update README.md
+* Added API key to the URL for Heroku test app
+* Added Heroku badge
+* Added Heroku badge
+* Fixed heroku integration
+* Fixed heroku integration
+* Updated composer lock
+* Added heroku integration
+* Added heroku integration
+* Added heroku integration
+* Fixed
+* Exists and delete methods
+* Added travis-ci badge to the README.md
+* Added initial travis file to just test the deployment, phpunit tests will be implemented soon
+* Added Registry feature. From technical side: Added database and migrations support
+* Updated deployment script, now it has a possibility to remember passwords
+* Added examples
+* Added uploading with HTTP protocol support
+* Updated deployment scripts
+* Update README.md
+* Deployment script
+* Deployment script
+* Deployment script
+* Deployment script
+* htaccess for Apache, a few new controllers :)
+* First commit
+* initial commit
