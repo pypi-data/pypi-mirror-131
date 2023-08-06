@@ -1,0 +1,14 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+trilobot/__init__.py
+trilobot/controller_mappings.py
+trilobot/simple_controller.py
+trilobot.egg-info/PKG-INFO
+trilobot.egg-info/SOURCES.txt
+trilobot.egg-info/dependency_links.txt
+trilobot.egg-info/requires.txt
+trilobot.egg-info/top_level.txt
