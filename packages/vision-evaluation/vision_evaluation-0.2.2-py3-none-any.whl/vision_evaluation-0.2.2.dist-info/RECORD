@@ -1,0 +1,11 @@
+vision_evaluation/__init__.py,sha256=mfj0iDBdN4AM5CXoR7lUsa42rhnOj0JG_Z5QfNe3SXY,1287
+vision_evaluation/coco_evalcap_utils.py,sha256=XWRh8mHt6xSzwSbmHA-PFUpJL1ey3VTlZ7jWr7T0dCE,3947
+vision_evaluation/coco_wrapper.py,sha256=HXZrtPB2z-1RO6iO45a3AQhFwLgcPemBo5r_XYgvjug,1905
+vision_evaluation/evaluators.py,sha256=bUxqE7qdI3NWi_3RqjEFKxb6Nd1DNeBGhtan3A9ywZo,30952
+vision_evaluation/prediction_filters.py,sha256=uz9EJQKR2-WuIUagF8_U2YH8X-KPcbJ8318VZQL9Glk,2603
+vision_evaluation/resource_tight_evaluators.py,sha256=GBfL27c_3J6hXHVRs1rqChyR8guWLwV0FCKUutq4iWY,3494
+vision_evaluation-0.2.2.dist-info/LICENSE,sha256=o4i_MuPC9rAsMCKMCJaJPIKqZ4oAuWYUqEjjWMbaOhI,1087
+vision_evaluation-0.2.2.dist-info/METADATA,sha256=OWH7WZ75666BWr9M6aJZxqmxhvuCGA1UW_fMWfMASyU,3568
+vision_evaluation-0.2.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+vision_evaluation-0.2.2.dist-info/top_level.txt,sha256=kUzoZ-gPUxz-bRaSToa0-usTI9N1RAYJ89IGEhuqNLA,18
+vision_evaluation-0.2.2.dist-info/RECORD,,
