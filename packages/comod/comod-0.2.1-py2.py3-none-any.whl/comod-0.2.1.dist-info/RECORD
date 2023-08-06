@@ -1,0 +1,11 @@
+comod/__init__.py,sha256=ZLhZH4vj0o1Bw7cIY2xhKdCQmZVE8y6snqjFrVE4-qQ,247
+comod/base.py,sha256=-mGc6bJzKZ5QlsvfShLBCJUjdQdq0C0yUvWT_8IAa2w,35925
+comod/common.py,sha256=J1srwOJZjifXh-LT55NfpCWMmpALp8o71J0YAcf4Wwc,623
+comod/community.py,sha256=JsxDzkG8BX62E8lFBzwCdliAA68K1GT3gVEe6aeNdTQ,5089
+comod/data.py,sha256=Tip6mVf5T1UvSP4goZhdT0pl_7JI-boWvpW9OtE_ANI,2803
+comod/models.py,sha256=ksbYPg1xNPLWXfkEAKV-Z903Brx9TuWpdc-f3LCDJOQ,766
+comod-0.2.1.dist-info/LICENSE.txt,sha256=aJYajmgdSIxAYl9a6_i1yMWqqE3iWnF6EkdlE9BFpK4,1061
+comod-0.2.1.dist-info/METADATA,sha256=qTW4UdRwlJ-uovHX0-2lHrpW1vBiahH-fXw2ISsdMRA,3793
+comod-0.2.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+comod-0.2.1.dist-info/top_level.txt,sha256=Ej9AZfRDrIo5S4Mdsma_mQMjRZQdb3DDKi-JV7_9x64,6
+comod-0.2.1.dist-info/RECORD,,
