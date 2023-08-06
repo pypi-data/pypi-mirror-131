@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: mclauncher
+Version: 0.1.5
+Summary: A minecraft launcher made in python.
+Home-page: https://github.com/BobDotCom/mclauncher
+Author: BobDotCom
+Author-email: bobdotcomgt@gmail.com
+License: MIT
+Download-URL: https://github.com/BobDotCom/mclauncher/releases
+Project-URL: Documentation, https://mclauncher.readthedocs.io/en/latest/index.html
+Project-URL: Source, https://github.com/BobDotCom/mclauncher
+Project-URL: Tracker, https://github.com/BobDotCom/mclauncher/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+==========
+mclauncher
+==========
+A fully fledged launcher for Minecraft. Made in python, and supports almost all features of the official launcher. Not
+tested on Windows.
+
+Note
+----
+The ``mclauncher`` project name is currently not working. You can install mclauncher with pip, but you will have to use
+the name ``pymclauncher`` until the project name is fixed. The command to run the launcher remains ``mclauncher``.
+
+.. code-block:: bash
+
+    pip install pymclauncher
+
+    mclauncher -h
+
+
+DISCLAIMER
+----------
+`This is not a cracked client/launcher!`
+
+You will be required to authenticate with Microsoft to use this program. If you have not migrated your Mojang account to
+Microsoft, you will be required to do so before using this program. If you would like to see the source code for the
+backend authentication, you can find it `here <https://replit.com/@ScienceandTecha/mclauncher-backend>`_.
+
+This being said, this program may not check to see if you have a valid account. It may be possible to launch a cracked
+client using this program, but it is not recommended (It's against the terms of Minecraft to do so!). Hacked clients and
+modded clients are fine.
+
+
+Usage
+-----
+
+Install
+~~~~~~~
+Install ``mclauncher`` using your favorite flavor of the pip package manager.
+
+.. code-block:: bash
+
+    pip install mclauncher
+
+
+Running
+~~~~~~~
+Use the help command to see a list of available commands. Pip should have added the ``mclauncher`` package to
+PATH, so you should be able to simply run ``mclauncher`` in your terminal.
+
+.. code-block:: bash
+
+    mclauncher -h
+
+If that doesn't work, a consistent fallback is to run ``mclauncher`` using your favorite flavor of the python command.
+
+.. code-block:: bash
+
+    python -m mclauncher -h
+
