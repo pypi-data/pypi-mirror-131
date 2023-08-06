@@ -1,0 +1,7 @@
+APScheduler
+selenium
+requests
+tweepy
+webdriver-manager
+lxml
+bs4
