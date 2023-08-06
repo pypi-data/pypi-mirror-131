@@ -1,0 +1,11 @@
+tap_cea_googlesheet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_cea_googlesheet/client.py,sha256=CDkjk5rZCk1qQAvqUpIVY3fidZ_jDG2bI56i4K-O5Ys,7028
+tap_cea_googlesheet/schemas/schema_metadata.json,sha256=Q22v5yOODr5YvgxZNZ0R9UDcxahQ2Bv_UQo86AbdC_s,663
+tap_cea_googlesheet/streams.py,sha256=WzqI3yUx_oek19xji_xZX9RWaU_KPSTEAWHOlzmcuXc,3779
+tap_cea_googlesheet/tap.py,sha256=0JGQlxMgu1hd9sftHxY5M7iuynREuuLoypXJ72OdLvU,2675
+tap_cea_googlesheet/tests/__init__.py,sha256=AUk-h3QG-E_nO9_Vpyoo4j07P68LSfywRT0Cc7Dqh-M,42
+tap_cea_googlesheet/tests/test_core.py,sha256=5MEeFSlvSuYercTKBtuX84v7KxY8-d8E1MPLdY2loWU,667
+tap_cea_googlesheet-0.0.3.dist-info/entry_points.txt,sha256=uMSlK2iOVG4XdyBMIW7pDtuxKg-tWa39i_T76vqrcuI,82
+tap_cea_googlesheet-0.0.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+tap_cea_googlesheet-0.0.3.dist-info/METADATA,sha256=pVbr8QYCCZlHxglBgTsawOhjh-r1miwE4Re1IDvTv_A,821
+tap_cea_googlesheet-0.0.3.dist-info/RECORD,,

@@ -1,0 +1,28 @@
+{
+    "type": "object",
+    "properties": {
+      "spreadsheetId": {
+        "type": ["null", "string"]
+      },
+      "spreadsheetUrl": {
+        "type": ["null", "string"]
+      },
+      "sheet":{
+          "type": "object",
+          "properties": {
+                "sheetId": {
+                    "type": ["null", "integer"]
+                },
+                "title": {
+                    "type": ["null", "string"]
+                },
+                "index": {
+                    "type": ["null", "integer"]
+                },
+                "sheetType": {
+                    "type": ["null", "string"]
+                }
+            }
+       }
+    }
+}
