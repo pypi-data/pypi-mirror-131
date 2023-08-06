@@ -1,0 +1,21 @@
+ipython
+matplotlib
+jupyter
+nbconvert
+nbformat
+nbsphinx
+numpydoc
+pytest>=6.0
+pytest-xdist
+pytest-cov
+seaborn
+sphinx
+sphinx-material
+sphinxcontrib-spelling
+sphinx_autodoc_typehints
+xarray>=0.13
+wheel
+mypy>=0.910
+black==21.7b0
+isort>=5.9
+pygments>=2.7.4 # not directly required, pinned by Snyk to avoid a vulnerability
