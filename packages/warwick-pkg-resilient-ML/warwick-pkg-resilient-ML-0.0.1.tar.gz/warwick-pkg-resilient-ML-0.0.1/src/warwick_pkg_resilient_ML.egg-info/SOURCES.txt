@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/warwick_pkg_resilient_ML.egg-info/PKG-INFO
+src/warwick_pkg_resilient_ML.egg-info/SOURCES.txt
+src/warwick_pkg_resilient_ML.egg-info/dependency_links.txt
+src/warwick_pkg_resilient_ML.egg-info/top_level.txt
