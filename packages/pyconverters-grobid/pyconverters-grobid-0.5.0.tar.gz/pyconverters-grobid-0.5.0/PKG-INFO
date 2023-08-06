@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: pyconverters-grobid
+Version: 0.5.0
+Summary: Speech recognition converter based on DeepTranscript
+Home-page: https://github.com/oterrier/pyconverters_grobid/
+Author: Olivier Terrier
+Author-email: olivier.terrier@kairntech.com
