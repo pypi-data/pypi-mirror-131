@@ -1,0 +1,6 @@
+biosimulators_utils[sbml,logging] >= 0.1.128
+kisao
+lxml
+numpy
+pysces[sbml,parscan] >= 1.0.0
+# pysces[sbml,cvode,parscan] >= 1.0.0
