@@ -1,0 +1,6 @@
+from text_alignment_tool.text_loaders.text_loader import TextLoader
+from text_alignment_tool.text_loaders.alto_xml_loader import AltoXMLTextLoader
+from text_alignment_tool.text_loaders.string_text_loader import StringTextLoader
+from text_alignment_tool.text_loaders.newline_separated_text_loader import (
+    NewlineSeparatedTextLoader,
+)

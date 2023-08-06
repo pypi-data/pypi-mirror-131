@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "text_alignment_tool"
+version = "0.2.13"
+description = "A tool for performing complex text alignment processes."
+authors = ["Bronson Brown-deVost <bronsonbdevost@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.7.1,<3.10"
+numpy = "^1.21.4"
+edlib = "^1.3.9"
+swalign = "^0.3.6"
+bidict = "^0.21.4"
+lxml = "^4.7.1"
+dotmap = "^1.3.26"
+pandas = "^1.3.5"
+cursive-re = "^0.0.4"
+fuzzywuzzy = "^0.18.0"
+minineedle = "^3.0.0"
+terminaltables = "^3.1.10"
+python-Levenshtein = "^0.12.2"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^21.12b0", allow-prereleases = true}
+ipykernel = "^6.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
