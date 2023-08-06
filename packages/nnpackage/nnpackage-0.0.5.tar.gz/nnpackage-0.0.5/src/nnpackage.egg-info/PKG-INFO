@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: nnpackage
+Version: 0.0.5
+Summary: NNPackage - Deep Neural Networks for Atomistic Systems (based on SchNetPack)
+Home-page: https://github.com/AlexanderDKazakov/schnetpack/
+Author: Alexander D. Kazakov
+License: MIT
+Description: 
+                NNPackage is a reduced version of SchNetPack for internal needs.
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Provides-Extra: test
