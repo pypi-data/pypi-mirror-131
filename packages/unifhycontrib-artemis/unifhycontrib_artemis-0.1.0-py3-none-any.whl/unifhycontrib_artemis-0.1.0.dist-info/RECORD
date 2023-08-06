@@ -1,0 +1,10 @@
+unifhycontrib_artemis-0.1.0-py3.8-nspkg.pth,sha256=vp9kt0-BRL7cwYQx7_Dg4qk1aGWZW0PMf6F5Qjko9eA,574
+unifhycontrib/artemis/__init__.py,sha256=l4qjF6jdiJpcH10p1RvwcjMAV1eQ5jtNRvgVoAMEr4c,92
+unifhycontrib/artemis/subsurface.py,sha256=lkECwD34q5U-4C9-HsAsz9eM_TlafJR5_3ttxLxXokE,7463
+unifhycontrib/artemis/surfacelayer.py,sha256=JRZBDMJBYnhxU4x7_4H5JLYztyTVjQeiDyX8kV4obxc,13405
+unifhycontrib/artemis/version.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+unifhycontrib_artemis-0.1.0.dist-info/METADATA,sha256=TFIaAzJ2rEVQwrCNeBU55BHU6EvnkNIgrUKu-zLlUnE,3498
+unifhycontrib_artemis-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+unifhycontrib_artemis-0.1.0.dist-info/namespace_packages.txt,sha256=wZbZYRIH7myrvsMQZALzb41Arwf528TFNzQLK5nRcI8,14
+unifhycontrib_artemis-0.1.0.dist-info/top_level.txt,sha256=wZbZYRIH7myrvsMQZALzb41Arwf528TFNzQLK5nRcI8,14
+unifhycontrib_artemis-0.1.0.dist-info/RECORD,,
