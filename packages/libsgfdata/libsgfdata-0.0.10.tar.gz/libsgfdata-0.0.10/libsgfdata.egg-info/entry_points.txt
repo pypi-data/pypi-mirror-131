@@ -1,0 +1,13 @@
+[console_scripts]
+sgfdata = libsgfdata.cmd:main
+
+[libsgfdata.dumpers]
+sgf = libsgfdata.dumper:dump
+
+[libsgfdata.parsers]
+sgf = libsgfdata.parser:parse
+
+[libsgfdata.transforms]
+normalize = libsgfdata.cmd_normalize:cmd_normalize
+sample_dtm = libsgfdata.cmd_dtm:sample_dtm
+

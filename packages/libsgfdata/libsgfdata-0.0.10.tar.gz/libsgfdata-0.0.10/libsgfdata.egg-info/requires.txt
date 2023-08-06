@@ -1,0 +1,12 @@
+numpy
+pandas
+python-slugify
+python-dateutil
+cchardet
+
+[cmd]
+click
+
+[dtm]
+pyproj
+rasterio
