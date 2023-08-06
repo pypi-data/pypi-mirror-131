@@ -1,0 +1,9 @@
+beautifulsoup4
+lxml
+django
+numpy
+pandas
+IPython
+requests
+psycopg2
+pyspark
