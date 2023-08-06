@@ -1,0 +1,3 @@
+[console_scripts]
+supaconify = supaconify.cli:cli
+

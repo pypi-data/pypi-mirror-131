@@ -1,0 +1,10 @@
+supaconify/__init__.py,sha256=jMVE6eKegndV9O0lmGwPddirpw8Rn7Pdlqw5tyj2c4w,73
+supaconify/_version.py,sha256=mU3Stc1uXEDdI8AztXBo8m6iYi4E-6JLoF0M_GQguvg,497
+supaconify/cli.py,sha256=jPn532vilt7PUt735nVzNBhxKfNwnGhLU76dODoezR4,177
+supaconify/client.py,sha256=MOI4CfSVT12qXikWpQ0AjiDTKfv_PHJuaBLkT-Fi1NA,514
+supaconify/message.py,sha256=MIGml9Hhr2bITxOqjJwh39VjFjgA3Zi16uP5Luuqrk4,531
+supaconify-0.0.1.dist-info/METADATA,sha256=hZpDpZdMFmgB3VkMsBQMEwklh1cpdWDxu3CCvVUQ0Pc,212
+supaconify-0.0.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+supaconify-0.0.1.dist-info/entry_points.txt,sha256=Or1mCSRhXxzzvuXdtvQlTnXqMVBuzAoGy_fgDF3jNb8,51
+supaconify-0.0.1.dist-info/top_level.txt,sha256=P6041J1O9vBqZUFXcAGtcWG0dY8p9ANEARtkWPhkAlg,11
+supaconify-0.0.1.dist-info/RECORD,,
