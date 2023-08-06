@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pysimpleconfig
+Version: 0.1.5
+Summary: Simplified configuration file handler for any format
+Home-page: https://github.com/Kiln707/simpleconfig
+Author: Steven Swanson
+Author-email: Steven@SwanOhana.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: extendable-json
+Requires-Dist: blinker
+
+# SimpleConfig
+
+
+
