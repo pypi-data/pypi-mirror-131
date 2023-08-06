@@ -1,0 +1,61 @@
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://yangke:111111@192.168.1.6:8672/eureka/
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+face:
+  detectFolder: D:/ProgramData/lib4python/image/detect
+  model:
+    cnnFaceDetection: mmod_human_face_detector.dat
+    directory: D:\ProgramData\lib4python\model
+    faceRecognization: dlib_face_recognition_resnet_model_v1.dat
+    shapePredictor: shape_predictor_68_face_landmarks.dat
+  saveFolder: D:/ProgramData/lib4python/image/save
+logger:
+  dateFormat: 'YYYY/MM/DD HH:mm:ss'
+  format: '{time} - {level} - {module}:{function}:{line} - {message}'
+  level: 10
+mainframe:
+  geometry: (100,60,1400, 800)
+mysql:
+  charset: utf8mb4
+  db: stocks
+  host: rm-bp1bjlvw6u3pmo742bo.mysql.rds.aliyuncs.com
+  passwd: YangKe08
+  port: '3306'
+  user: yangke007
+nlp:
+  ltp:
+    model:
+      cwsModel: cws.model
+      directory: D:/ProgramData/ltp_data_v3.4.0
+      nerModel: ner.model
+      parserModel: parser.model
+      pisrlModel: pisrl.model
+      posModel: pos.model
+server:
+  port: 5000
+spring:
+  application:
+    name: face-recognition-engine
+
+args:
+  description: "args of app1"
+  kv:
+    - short: n
+      long: name
+      default: get
+      description: "the name of image"
+    - short: t
+      long: tag
+      default: latest
+      description: "the tag of image"
+  k:
+    - short: d
+      long: debug
+      default: True
+      description: "run in debug mode"

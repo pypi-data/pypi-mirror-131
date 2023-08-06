@@ -1,0 +1,28 @@
+menu:
+  - # 第一个菜单ribbon
+    name: "文件"
+    items:
+      - action_name: "设置数据文件"
+        short_cut: "Ctrl+Q"
+        connect: "self.set_data_file"
+      - action_name: "单工况计算"
+        connect: "self.single_calculate"
+  - # 种群图类型
+    name: "设置"
+    items:
+      - action_name: "计算设置(#2负荷)"
+        connect: "self.set_calculate"
+      - action_name: "计算设置(全厂负荷)"
+        connect: "self.set_calculate2"
+      - action_name: "遗传算法设置"
+        connect: "self.set_algorithm"
+      - action_name: "图像显示设置"
+        connect: "self.set_display"
+      - action_name: "字体设置"
+        connect: "self.set_font"
+      - action_name: "数据格式设置"
+        connect: "self.set_digits"
+  - name: "帮助"
+    items:
+      - action_name: "关于"
+      - action_name: "帮助"

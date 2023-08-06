@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>华能杨柳青调峰报价</title>
+    <link rel="stylesheet" href="demo.css"/>
+</head>
+
+<body>
+<div id="app" class="demo">
+    <!--     tabs在vue实例的data域中定义-->
+    <!--  button的class属性有两个，第二个是个动态的  -->
+    <!--  点击按钮时，将按钮的第二个动态class属性设置为tabs中的一个  -->
+    <button v-for="tab in tabs"
+            :key="tab"
+            :class="['tab-button', {active: currentTab===tab}]"
+            @click="currentTab=tab">{{tab}}
+    </button>
+
+    <!--  is属性由currentTabComponent返回的，不理解 -->
+    <component :is="currentTabComponent" class="tab"></component>
+
+    <h1 align="center">{{header}}</h1>
+    <button @click="calculate">计算</button>
+    <div class="setbg" v-if="是否供热[0]">
+        <label class="name">供热计划温度：</label><input v-model.number="供热计划温度"><label class="unit">℃</label><br>
+        <label class="name">三期回水流量：</label><input v-model.number="三期回水流量"><label class="unit">t/h</label>
+        <label class="name">四期回水流量：</label><input v-model.number="四期回水流量"><label class="unit">t/h</label><br>
+        <label class="name"> #5回水流量：</label><input v-model.number="回水流量[1]"><label class="unit">t/h</label>
+        <label class="name"> #7回水流量：</label><input v-model.number="回水流量[3]"><label class="unit">t/h</label><br>
+
+    </div>
+    <div>
+        <table align="center">
+            <tr>
+                <th>项目</th>
+                <th>单位</th>
+                <th>全厂</th>
+                <th>#5</th>
+                <th>#6</th>
+                <th>#7</th>
+                <th>#8</th>
+            </tr>
+            <tr>
+                <th>是否供热</th>
+                <th>/</th>
+                <th v-for="(item,index) in 是否供热">
+                    <!--:checked用于设置复选框的状态，:key用于唯一的标识v-for的每一项输入框。-->
+                    <input type="checkbox" :key="index" v-model="是否供热[index]" @change="change(0,index)">
+                </th>
+            </tr>
+            <tr>
+                <th>是否切缸</th>
+                <th>/</th>
+                <th v-for="(item,index) in 是否切缸">
+                    <input type="checkbox" :key="index" v-model="是否切缸[index]" @change="change(1,index)">
+                </th>
+            </tr>
+            <tr v-if="是否供热[0]">
+                <th>供热流量</th>
+                <th>t/h</th>
+                <th v-for="(item,i) in 回水流量">
+                    <label>{{item}}</label>
+                </th>
+            </tr>
+            <tr v-if="是否供热[0]">
+                <th>供水温度</th>
+                <th>℃</th>
+                <th v-for="(item,i) in 供水温度">
+                    <label>{{item}}</label>
+                </th>
+            </tr>
+            <tr v-if="是否供热[0]">
+                <th>回水温度</th>
+                <th>℃</th>
+                <th v-for="(item,i) in 回水温度">
+                    <label>{{item}}</label>
+                </th>
+            </tr>
+            <tr v-if="是否供热[0]">
+                <th>日供热量</th>
+                <th>GJ</th>
+                <th v-for="(item,i) in 日供热量">
+                    <label>{{item}}</label>
+                </th>
+            </tr>
+            <tr v-if="是否供热[0]">
+                <th>供热负荷</th>
+                <th>MW</th>
+                <th v-for="(item,i) in 供热负荷">
+                    <label>{{item}}</label>
+                </th>
+            </tr>
+            <tr v-if="是否供热[0]">
+                <th>供热当量电负荷</th>
+                <th>MW</th>
+                <th v-for="(item,i) in 供热当量电负荷">
+                    <label>{{item}}</label>
+                </th>
+            </tr>
+            <tr>
+                <th>上限电负荷</th>
+                <th>MW</th>
+                <th v-for="(item,i) in 上限电负荷">
+                    <label>{{item}}</label>
+                </th>
+            </tr>
+            <tr>
+                <th>下限电负荷</th>
+                <th>MW</th>
+                <th v-for="(item,i) in 上限电负荷">
+                    <label>{{item}}</label>
+                </th>
+            </tr>
+        </table>
+        <input v-model="是否供热">
+    </div>
+</div>
+<script src="vue@3.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

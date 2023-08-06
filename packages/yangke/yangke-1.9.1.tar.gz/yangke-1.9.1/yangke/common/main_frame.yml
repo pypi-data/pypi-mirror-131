@@ -1,0 +1,15 @@
+menu:
+  文件:
+    设置数据文件:
+      shortcut: "Alt+S"
+main_panel:
+  split_panel:
+    orientation: horizontal
+    no_1: no_1_panel
+    no_2: no_2_panel
+
+no_1_panel:
+  vbox:
+    no_1: "YKItem('1号机中压供汽量：', self.data_file, label_width=300)"
+    no_2: "YKItem('1号机中压供汽量：', self.data_file, label_width=300)"
+    no_3: "YKItem('1号机中压供汽量：', self.data_file, label_width=300)"
