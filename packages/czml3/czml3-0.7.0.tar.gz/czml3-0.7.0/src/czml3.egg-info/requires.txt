@@ -1,0 +1,10 @@
+attrs>=19.2
+python-dateutil<3,>=2.7
+w3lib
+
+[dev]
+astropy
+pytest
+pytest-cov
+pytest-mypy
+types-python-dateutil
