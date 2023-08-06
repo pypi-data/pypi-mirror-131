@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: asyncio-chainable
+Version: 0.1.0
+Summary: Making asyncio coroutines chainable
+Home-page: https://github.com/sihrc/asyncio-chainable
+License: MIT
+Keywords: asyncio
+Author: Chris Lee
+Author-email: sihrc.c.lee@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pytest-asyncio (>=0.16.0,<0.17.0)
+Requires-Dist: pytest[test] (>=6.2.4,<7.0.0)
+Requires-Dist: setuptools (>=57.4.0,<58.0.0)
+Project-URL: Repository, https://github.com/sihrc/asyncio-chainable
+Description-Content-Type: text/markdown
+
+# asyncio-chainable
+
+Making asyncio coroutines chainable
+
+Built on: Python3 and Docker (alpine) and Poetry (Package Manager)<br>
+Maintained by: Chris Lee [sihrc.c.lee@gmail.com]
+
+## Example Usage
+```python3
+import pytest
+
+from asyncio_chainable import async_chainable, async_chainable_class
+
+
+@pytest.mark.asyncio
+async def test_simple_chain():
+    class Number:
+        def __init__(self, num: int = 0):
+            self.num = num
+
+        @async_chainable
+        async def add(self, num: int):
+            self.num += num
+            return self
+
+        @async_chainable
+        async def subtract(self, num: int):
+            self.num -= num
+            return self
+
+    assert (await Number().add(5).subtract(2)).num == 3
+
+
+@pytest.mark.asyncio
+async def test_class_chain():
+    @async_chainable_class
+    class Number:
+        def __init__(self, num: int = 0):
+            self.num = num
+
+        async def add(self, num: int):
+            self.num += num
+            return self
+
+        async def subtract(self, num: int):
+            self.num -= num
+            return self
+
+    assert (await Number().add(5).subtract(2)).num == 3
+```
+
+## Contributing: Getting Started
+
+### Docker
+
+- Additional Python3 dependencies can be added to requirements.txt<br>
+- Tests are located in ./tests <br>
+- To run the docker container with the basic requirements, dependencies, and the package installed:
+  ```bash
+  $ touch .env
+  $ docker-compose up
+  ```
+
+### Poetry
+
+```
+$ poetry install
+```
+
