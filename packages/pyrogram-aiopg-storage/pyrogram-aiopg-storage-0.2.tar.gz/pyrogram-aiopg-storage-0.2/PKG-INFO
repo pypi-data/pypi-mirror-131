@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pyrogram-aiopg-storage
+Version: 0.2
+Summary: aiopg storage for pyrogram
+Home-page: https://github.com/parikls/pyrogram-aiopg-storage
+Author: Dmytro Smyk
+Author-email: porovozls@gmail.com
+License: UNKNOWN
+Description: Pyrogram aiopg storage
+        ======================
+        
+        Motivation
+        ----------
+        
+        I need to work with multiple telegram session and keep all of them in a single PostgreSQL database.
+        I use aiopg with SQLAlchemy hence I've written a wrapper for this stack.
+        Maybe someone also requires such
+        
+        Usage
+        -----
+        
+        ```python
+        
+        import aiopg.sa
+        from pyrogram import Client
+        from pyrogram_aiopg_storage import PostgreSQLStorage
+        
+        db_pool = await aiopg.sa.create_engine(...)
+        session = PostgreSQLStorage(db_pool=db_pool, user_id=..., phone=...)
+        pyrogram = Client(session_name=session)
+        await pyrogram.connect()
+        
+        ```
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown

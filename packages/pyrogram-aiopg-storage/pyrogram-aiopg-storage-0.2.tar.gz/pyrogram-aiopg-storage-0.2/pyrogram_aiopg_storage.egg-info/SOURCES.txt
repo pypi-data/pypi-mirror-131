@@ -1,0 +1,7 @@
+README.md
+setup.py
+pyrogram_aiopg_storage/__init__.py
+pyrogram_aiopg_storage.egg-info/PKG-INFO
+pyrogram_aiopg_storage.egg-info/SOURCES.txt
+pyrogram_aiopg_storage.egg-info/dependency_links.txt
+pyrogram_aiopg_storage.egg-info/top_level.txt
