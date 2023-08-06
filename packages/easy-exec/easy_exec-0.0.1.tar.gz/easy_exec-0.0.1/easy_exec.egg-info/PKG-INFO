@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: easy-exec
+Version: 0.0.1
+Summary: A simple `exec` method to run system commands and geht `stdout`, `stderr` and `has_error`
+Home-page: https://github.com/tom-010/easy_exec
+Author: Thomas Deniffel
+Author-email: tdeniffel@gmail.com
+License: Apache2
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+easy_exec
+=========
+
+A simple `exec` method to run system commands and 
+geht `stdout`, `stderr` and `has_error`
+

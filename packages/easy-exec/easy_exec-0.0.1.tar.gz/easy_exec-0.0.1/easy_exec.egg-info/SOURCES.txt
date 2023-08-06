@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+easy_exec/__init__.py
+easy_exec/easy_exec.py
+easy_exec.egg-info/PKG-INFO
+easy_exec.egg-info/SOURCES.txt
+easy_exec.egg-info/dependency_links.txt
+easy_exec.egg-info/top_level.txt
+test/test_exec.py
