@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "listdiff"
+version = "1.0.0"
+description = "Diff 2 python lists using a given key"
+authors = ["Rehan Khwaja <rehan@khwaja.name>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/rkhwaja/pylistdiff"
+classifiers = [
+	"License :: OSI Approved :: MIT License",
+	"Development Status :: 5 - Production/Stable",
+	"Intended Audience :: Developers",
+	"Programming Language :: Python :: 3.6",
+	"Programming Language :: Python :: 3.7",
+	"Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+pylint = ">=2.5.3"
+pytest-cov = "^2.9.0"
+pylint-quotes = "*"
+
+[tool.pylint.master]
+load-plugins = "pylint_quotes"
+
+[tool.pylint.format]
+indent-string = "\t"
+max-line-length = 200
+string-quote = "single"
+
+[tool.pylint.messages_control]
+disable = [
+	"bad-continuation",
+	"invalid-name",
+	"missing-docstring"
+]
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
