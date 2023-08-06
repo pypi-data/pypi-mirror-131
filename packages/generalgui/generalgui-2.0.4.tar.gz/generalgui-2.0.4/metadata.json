@@ -1,0 +1,19 @@
+{
+    "enabled": true,
+    "private": false,
+    "name": "generalgui",
+    "version": "2.0.4",
+    "description": "Extends and simplifies tkinter functionality with built-in QoL improvements.",
+    "install_requires": [
+        "generalvector",
+        "generallibrary",
+        "generalfile",
+        "pandas",
+        "numpy"
+    ],
+    "extras_require": {},
+    "topics": [
+        "gui"
+    ],
+    "manifest": []
+}
