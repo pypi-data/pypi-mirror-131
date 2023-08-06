@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+MeuPrimeiroPacoteLibpythonpro/__init__.py
+MeuPrimeiroPacoteLibpythonpro/github_api.py
+MeuPrimeiroPacoteLibpythonpro.egg-info/PKG-INFO
+MeuPrimeiroPacoteLibpythonpro.egg-info/SOURCES.txt
+MeuPrimeiroPacoteLibpythonpro.egg-info/dependency_links.txt
+MeuPrimeiroPacoteLibpythonpro.egg-info/not-zip-safe
+MeuPrimeiroPacoteLibpythonpro.egg-info/requires.txt
+MeuPrimeiroPacoteLibpythonpro.egg-info/top_level.txt
