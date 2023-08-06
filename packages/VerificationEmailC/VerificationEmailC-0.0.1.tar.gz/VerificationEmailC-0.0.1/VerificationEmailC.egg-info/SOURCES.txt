@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+VerificationEmailC/__init__.py
+VerificationEmailC/verificationemail.py
+VerificationEmailC.egg-info/PKG-INFO
+VerificationEmailC.egg-info/SOURCES.txt
+VerificationEmailC.egg-info/dependency_links.txt
+VerificationEmailC.egg-info/requires.txt
+VerificationEmailC.egg-info/top_level.txt
