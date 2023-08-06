@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: dinesh_search
+Version: 0.0.1
+Summary: Simple trimmer and space remover
+Home-page: UNKNOWN
+Author: Satya Venkata Dinesh Kumar Vetcha
+Author-email: satyadinesh118@gmail.com
+License: MIT
+Keywords: Trim strip
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+This is python library which helps for the people in search function.
+It Capitalize the first letter of the search name
+Sometimes people gives spaces at the initial and in between the letters it removes the space between them.
+
+Log Record
+==========
+
+0.0.1 (15/12/2021)
+-------------------
+- First Release
+

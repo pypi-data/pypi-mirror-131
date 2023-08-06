@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+dinesh_search.egg-info/PKG-INFO
+dinesh_search.egg-info/SOURCES.txt
+dinesh_search.egg-info/dependency_links.txt
+dinesh_search.egg-info/top_level.txt
+dp/__init__.py
