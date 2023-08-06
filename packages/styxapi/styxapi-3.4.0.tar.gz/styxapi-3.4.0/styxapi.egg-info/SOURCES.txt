@@ -1,0 +1,16 @@
+setup.py
+styx/__init__.py
+styx/generation.py
+styx/flask/__init__.py
+styx/types/__init__.py
+styx/types/base.py
+styx/types/json_schema.py
+styx/types/json_serialize.py
+styx/types/query_arguments.py
+styx/types/typescript.py
+styx/types/validation.py
+styxapi.egg-info/PKG-INFO
+styxapi.egg-info/SOURCES.txt
+styxapi.egg-info/dependency_links.txt
+styxapi.egg-info/requires.txt
+styxapi.egg-info/top_level.txt
