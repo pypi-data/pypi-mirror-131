@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/ezconn/__init__.py
+src/ezconn.egg-info/PKG-INFO
+src/ezconn.egg-info/SOURCES.txt
+src/ezconn.egg-info/dependency_links.txt
+src/ezconn.egg-info/requires.txt
+src/ezconn.egg-info/top_level.txt
