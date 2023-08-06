@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: LatexTemplater
+Version: 0.4.15
+Summary: A package to allow python templating in latex files
+Home-page: https://github.com/NathanRoseCE/LatexTemplater
+Author: Nathan Rose
+Author-email: mail.nathanrose@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# LatexTemplater
+
+This is a project to provide Python support in Latex using JINJA
+
+This project is still in very early beta.
+
+
