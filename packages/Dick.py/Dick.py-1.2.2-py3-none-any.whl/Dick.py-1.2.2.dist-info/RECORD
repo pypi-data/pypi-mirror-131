@@ -1,0 +1,17 @@
+amino/__init__.py,sha256=VJcqlwyLIo2Cj3wLbjrOOXlp7WwYbeA83zDpOksbc9w,624
+amino/acm.py,sha256=SE-SgVF7_DOT7wRJ_FcfUQ90U_MIIW7SaV6tbjwoVEI,12951
+amino/client.py,sha256=gZa21SnblxAkBcOIlTLdtPYhtK0eQsowbN6_GJBwwyc,91617
+amino/socket.py,sha256=Yy7WOIJmBKj8LLnzm2nptx1Or6BMFnXYJcr8u_cK9xk,13856
+amino/sub_client.py,sha256=-ulr5gfn8eGLSZlXGwdx47GionnuwE_U4d2HaMVdf08,112549
+amino/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+amino/lib/util/__init__.py,sha256=HTIcF_Rziq8IuoZqsEJTh40Tg51ka2_m_RzvawaNEmk,116
+amino/lib/util/device.py,sha256=cnc9-7CPUboSWfbmqFMY-_ftf7glKOpYSV7of3KWJnk,1069
+amino/lib/util/exceptions.py,sha256=Mib5wDHJCna2k8S-AJoPVZSZikXs6M6k_22aSNy3028,29451
+amino/lib/util/headers.py,sha256=mbv73Zt1PXDbNWryPkDu14pqieSonK5P1bMMx1to_WE,1178
+amino/lib/util/helpers.py,sha256=UAKysenYOHU2Hilh7LqZmNTp5HIeLb2RyRPN9uS8D30,1018
+amino/lib/util/objects.py,sha256=UWJiWVH8KAoum5PSP5fT-E_Yq3FOku1Sh6kv_CnxQPs,172880
+amino/lib/util/voice_header.py,sha256=h6v-D_ba5X4PxOp4D2G7Fq2BdLy1eR12PdFN4DRRi5I,527
+Dick.py-1.2.2.dist-info/METADATA,sha256=Fr5NgOqrJbpRZRanTIJiGqFElCQqEsWNUvv6NZaZWtQ,2410
+Dick.py-1.2.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+Dick.py-1.2.2.dist-info/top_level.txt,sha256=6FIluJEO561Ehg9mtYTnFQ9u_yUGK32T3wW4p4pxyQI,6
+Dick.py-1.2.2.dist-info/RECORD,,
