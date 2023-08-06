@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: tinda
+Version: 0.0.22
+Summary: BUGGY ALPHA STATE
+Home-page: UNKNOWN
+Author: (Hank Singh)
+Author-email: <hanksingh07@gmail.com>
+License: UNKNOWN
+Keywords: python
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+# tinda
+#### Buggy Sub-Alpha stage, Please Check back later, thankyou.
+ 
+## Modern wrapper for basic things. 
+
+### Installation:
+
+```
+pip install tinda
+
+```
+
+## Usage:
+
+```
+from tinda import XXX   
+
+
+assistant = XXX()
+
+assistant.say('string of whatever')
+
+assistant.image(query) #google image search of the query string
+
+# the same works for Google, Github, Stackoverflow, Youtube, etc.
+assistant.google(query)
+assistant.stackoverflow(query) 
+
+assitant.getIp() # returns private and public ip
+
+assiatnt.getLocation() # returns location data
+
+assistant.time() 
+assistant.date()
+
+assistant.speedtest() #returns internet speed test results
+
+
+# full list comming soon.
+
+
+```
+
+
+Developed by:
+Harpreet Singh © 2021
+
+
