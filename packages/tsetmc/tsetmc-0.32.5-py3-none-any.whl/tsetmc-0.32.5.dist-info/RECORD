@@ -1,0 +1,9 @@
+tsetmc/__init__.py,sha256=qDy-QbL1ZchdiN4dxeN5EvbLRPL5uoxPDdMXMN_vYLc,3003
+tsetmc/instruments.py,sha256=s9uYkOdNwRrDm4TnK6T8RPTBIBHljcVi0Cm5aNMwOrQ,20136
+tsetmc/market_watch.py,sha256=J5CHaTFw2NGj0rYy3EvcwEr4sqz4Z748SdkKXiuBxXg,7817
+tsetmc/database/ids.json,sha256=9j1LAd0YaJQ6zRDQ0BGla2xGTwViKm2Tm4RptXl7La0,275202
+tsetmc-0.32.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tsetmc-0.32.5.dist-info/METADATA,sha256=2XentsMfHqNUMcRgu2vuAPrqSG6HtF5TBLFLWkNyT1g,15681
+tsetmc-0.32.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+tsetmc-0.32.5.dist-info/top_level.txt,sha256=eGvJyDlzkONKexTNAdwZykW0lxyaaNw-FiBpt8yHww4,7
+tsetmc-0.32.5.dist-info/RECORD,,
