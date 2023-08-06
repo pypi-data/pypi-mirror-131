@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: b2d
+Version: 0.4.4
+Summary: A test project using pybind11
+Home-page: https://github.com/pybind/python_example
+Author: Thorsten Beier
+Author-email: derthorstenbeier@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: test
+License-File: LICENCE.txt
+
+UNKNOWN
+
