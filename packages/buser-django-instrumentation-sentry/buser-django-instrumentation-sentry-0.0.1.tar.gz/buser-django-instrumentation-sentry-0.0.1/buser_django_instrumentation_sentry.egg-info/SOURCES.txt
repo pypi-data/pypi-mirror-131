@@ -1,0 +1,11 @@
+README.md
+setup.py
+buser_django_instrumentation_sentry/__init__.py
+buser_django_instrumentation_sentry/middleware.py
+buser_django_instrumentation_sentry/redis_dedup_integration.py
+buser_django_instrumentation_sentry/sanitize.py
+buser_django_instrumentation_sentry.egg-info/PKG-INFO
+buser_django_instrumentation_sentry.egg-info/SOURCES.txt
+buser_django_instrumentation_sentry.egg-info/dependency_links.txt
+buser_django_instrumentation_sentry.egg-info/requires.txt
+buser_django_instrumentation_sentry.egg-info/top_level.txt

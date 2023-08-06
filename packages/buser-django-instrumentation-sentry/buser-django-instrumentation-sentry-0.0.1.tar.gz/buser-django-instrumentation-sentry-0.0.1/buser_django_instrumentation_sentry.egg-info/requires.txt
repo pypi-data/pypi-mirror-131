@@ -1,0 +1,6 @@
+django<4
+raven<7
+sentry_sdk<2
+
+[redis_dedup]
+redis<5
