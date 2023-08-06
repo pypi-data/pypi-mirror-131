@@ -1,0 +1,15 @@
+judoka/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+judoka/cli.py,sha256=c5uLwpA4hILdbu8LoRH-QKDkXy7cbyc1Sqn2XO_BjrU,122
+judoka/command.py,sha256=fdHxjq4jjwYoXimOIz-9xnUeZlWT3mtBfzZfgk5Drtw,2382
+judoka/completion.py,sha256=THmMOLu-IRl7TYIzjUhdEJ8nL9A0rYP_ksZ9VvFJxeo,1988
+judoka/config.py,sha256=a2_g99ec9ci3qY0wtU-9lAHYQSsfkcCyRgWzJuui2bE,819
+judoka/completions/__init__.py,sha256=vZLlojZJ8zYGvswdxOn9tNCFKOCelPMSOEtVwA4-1Gw,155
+judoka/completions/judo.bash,sha256=-nRKTEIT_peDRAaDlb12ckYltmnx_VZjvGOswN_intI,658
+judoka/completions/judo.fish,sha256=zlJfyqFgrQVPHf7trv1mPyB7x40d1d9pMPMcICbm7U4,660
+judoka/completions/judo.zsh,sha256=Jrx0GUiFBNYKVFq_BaqeUwvMGDiBuUCKm7e1Dzljj64,953
+judoka-0.3.6.dist-info/LICENSE,sha256=BV4gTV_yEceZZEfPd5sYeMA1Gh2wjjAvpx9oZqb2egs,1074
+judoka-0.3.6.dist-info/METADATA,sha256=rHErL0KtuKMJ7UhLqDWL6M-Ra7v1BV-NOOJ0rCaAVLg,2490
+judoka-0.3.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+judoka-0.3.6.dist-info/entry_points.txt,sha256=5Jyey9ciTM1MjsbFFIX13BiWtBJuaYdOaDJKNUVLn08,86
+judoka-0.3.6.dist-info/top_level.txt,sha256=DuIbwLNKlyPr4JLKGKSv4EBXWDAGhcopwxSmZk8h3nA,7
+judoka-0.3.6.dist-info/RECORD,,

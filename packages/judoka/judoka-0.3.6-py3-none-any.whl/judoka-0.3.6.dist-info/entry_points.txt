@@ -1,0 +1,4 @@
+[console_scripts]
+judo = judoka.cli:hub
+judo-completions = judoka.completion:install
+
