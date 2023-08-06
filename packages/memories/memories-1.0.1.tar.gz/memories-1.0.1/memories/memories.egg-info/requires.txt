@@ -1,0 +1,7 @@
+requests
+piexif
+opencv-python
+Pillow
+
+[test]
+imagehash
