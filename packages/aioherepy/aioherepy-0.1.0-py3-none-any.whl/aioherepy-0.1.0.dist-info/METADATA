@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: aioherepy
+Version: 0.1.0
+Summary: Asynchronous Python library that provides a simple interface to the HERE APIs.
+Home-page: https://github.com/abdullahselek/aioherepy
+License: MIT
+Author: Abdullah Selek
+Author-email: abdullahselek@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.7.4,<4.0.0)
+Project-URL: Repository, https://github.com/abdullahselek/aioherepy
+Description-Content-Type: text/markdown
+
+# aioherepy
+Asynchronous Python library that provides a simple interface to the HERE APIs.
+
