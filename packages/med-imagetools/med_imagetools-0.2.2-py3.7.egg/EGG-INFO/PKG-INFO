@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: med-imagetools
+Version: 0.2.2
+Summary: Transparent and reproducible image processing pipelines in Python.
+Home-page: https://github.com/bhklab/med-imagetools
+Author: Michal Kazmierski, Sejin Kim, Vishwesh Ramanathan, Benjamin Haibe-Kains
+Author-email: benjamin.haibe.kains@utoronto.ca
+License: UNKNOWN
+Description: # med-imagetools: transparent and reproducible medical image processing pipelines in Python
+        From messy TCIA folders to deep learning ready Nrrd/NiFTIs in one line. 
+        
+        ## Installation
+        ```
+        pip install med-imagetools
+        ```
+        
+        ### (recommended) Create new conda virtual environment
+        ```
+        conda create -n mit
+        conda activate mit
+        pip install med-imagetools
+        ```
+        
+        ### (optional) Install in development mode
+        
+        ```
+        conda create -n mit
+        conda activate mit
+        pip install -e git+https://github.com/bhklab/med-imagetools.git
+        ```
+        This will install the package in editable mode, so that the installed package will update when the code is changed.
+        
+        ## Demo
+        ```
+        Under Construction
+        ```
+        
+        ### AutoPipeline CLI
+        
+        ### Pipeline custom processing
+        
+        ### From Training a model with Dataset 
+        
+        ## Upcoming Features
+        * TorchIO Support
+        * More demos/example scripts
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 2 - Pre-Alpha
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: debug
