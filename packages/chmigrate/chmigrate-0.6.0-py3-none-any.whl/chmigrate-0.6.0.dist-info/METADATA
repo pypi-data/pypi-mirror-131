@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: chmigrate
+Version: 0.6.0
+Summary: Utilites make ClickHouse migration
+License: BSD-4-Clause
+Keywords: ClickHouse,ch,migrate,migration
+Author: Vadim Statishin
+Author-email: statishin@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: Jinja2 (>=3.0.2,<4.0.0)
+Requires-Dist: asynch (>=0.1.9)
+Requires-Dist: python-dotenv (>=0.19.1,<0.20.0)
+Description-Content-Type: text/markdown
+
+CHMigrate is utils make and manage ClickHouse migrations
+
+### Make migration
+```shell
+chmigrate make <name>
+```
+
+### Up migrations
+```shell
+chmigrate up [step]
+```
+
+### Down migrations
+```shell
+chmigrate down [step]
+```
+
+### Show migrations
+```shell
+chmigrate show
+```
+
+### Force marks as success last dirty migration
+```shell
+chmigrate force
+```
+
+### Force reset last dirty migration
+```shell
+chmigrate reset
+```
+
+
+
+

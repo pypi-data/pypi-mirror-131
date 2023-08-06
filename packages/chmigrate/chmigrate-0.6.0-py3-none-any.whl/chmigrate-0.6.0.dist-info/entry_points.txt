@@ -1,0 +1,3 @@
+[console_scripts]
+chmigrate=clickhouse_migrate.runner:run
+
