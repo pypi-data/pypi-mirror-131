@@ -1,0 +1,10 @@
+generalbrowser/__init__.py,sha256=Wz23DkOQCFUlyHUX0E-rDqzlcdDorxaqz_j3451CM40,97
+generalbrowser/client.py,sha256=GX43u2ZBjvUCJX21QtNdi10uiSA0M1BPN9D2v-1CHsE,2865
+generalbrowser/server.py,sha256=aWl9BcPeQ9eSTgm64LK8gbvvGRruyr2_x1AEaRLky98,2299
+generalbrowser/shared.py,sha256=4ZOORJUFETJxJuC4pIIVuKtpHrf8eVcaT7ZIq2vTKh4,650
+generalbrowser/test/test_generalbrowser.py,sha256=2hUmuwcXhMPQkK-OfFGUIbP9JMaqUtk1HJhNyxBuVhs,87
+generalbrowser-0.0.8.dist-info/LICENSE,sha256=r8DD6o9Op9aAtk2L25QO5lsOa4leIbgeHgeIkaLhFDM,1078
+generalbrowser-0.0.8.dist-info/METADATA,sha256=0uYDu1snPZ_9zZ2KMXu-JLSCXPA5GPJLvWhQBUQU2Lw,12739
+generalbrowser-0.0.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+generalbrowser-0.0.8.dist-info/top_level.txt,sha256=RFFLebDg0oaEJn-mkpNRVqsgBef7a1BcJpMJrOV1ZnY,15
+generalbrowser-0.0.8.dist-info/RECORD,,
