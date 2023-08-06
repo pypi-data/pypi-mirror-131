@@ -1,0 +1,3 @@
+[console_scripts]
+awflow = awflow.bin.cli.base:main
+
