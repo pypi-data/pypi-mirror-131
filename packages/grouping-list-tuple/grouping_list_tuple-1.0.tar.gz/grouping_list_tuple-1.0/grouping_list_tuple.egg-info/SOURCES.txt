@@ -1,0 +1,11 @@
+LICENCE.txt
+setup.cfg
+setup.py
+grouping_list_tuple/__init__.py
+grouping_list_tuple/group.py
+grouping_list_tuple/main.py
+grouping_list_tuple/random_list.py
+grouping_list_tuple.egg-info/PKG-INFO
+grouping_list_tuple.egg-info/SOURCES.txt
+grouping_list_tuple.egg-info/dependency_links.txt
+grouping_list_tuple.egg-info/top_level.txt

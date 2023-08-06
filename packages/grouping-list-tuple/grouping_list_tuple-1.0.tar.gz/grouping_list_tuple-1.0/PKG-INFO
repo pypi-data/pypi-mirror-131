@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: grouping_list_tuple
+Version: 1.0
+Summary: Package for grouping array objects in list by some key
+Home-page: UNKNOWN
+Author: Alex Grishin
+Author-email: alexgodlife80@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+A function that implements grouping of objects by some key. For example, the string 'AAAABBBCAAB' is given. 
+The result of the program should be:[('A', ['A', 'A', 'A', 'A']), ('B', ['B', 'B'¸'B']), ('C', ['C']), ('A', ['A', 'A']), ('B', ['B'])].
+It is also possible to use the function to determine the key for grouping. For example, for a list of tuples: [('foo', 1), ('bar', 1), ('foobar', 2), ('baz', 3)],
+when using the second element of the tuple as the key, the result should be [(1, [('foo', 1), ('bar', 1)]), (2, [('foobar', 2)]), (3, [('baz', 3)])].
+

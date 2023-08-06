@@ -1,0 +1,5 @@
+__title__ = 'grouping_list_tuple'
+__version__ = '1.0'
+__author__ = 'Alex Grishin'
+__email__ = 'alexgodlife80@gmail.com'
+__copyright__ = f'Copyright (c) 2021, {__author__}'
