@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: wideryolo
+Version: 0.0.3
+Summary: Wider-Yolo Kütüphanesi ile Yüz Tespit Uygulamanı Yap
+Home-page: https://github.com/kadirnar/
+Author: Kadir Nar
+Author-email: kadir.nar@hotmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<div align="center">
+<h1>
+  WIDER-YOLO : Yuz Tespit Uygulamasi Yap
+</h1>
+
+<h4>
+<img height="500" src="https://raw.githubusercontent.com/kadirnar/wider-yolo/main/doc/images/yolov5n_sahi.png"/>
+</h4> 
+  
+</div>
+
+ ## Wider-Yolo Kutuphanesinin Kullanimi
+ 
+#### 1. Wider Face Veri Setini Indir
+
+- [Train Dataset](https://drive.google.com/u/0/uc?export=download&confirm=e3va&id=15hGDLhsx8bLgLcIRD5DhYt5iBxnjNF1M)
+- [Val Dataset](https://drive.google.com/u/0/uc?export=download&confirm=FKYL&id=1GUCogbp16PMGa39thoMMeWxp7Rp5oM8Q)
+- [Test Dataset](https://drive.google.com/u/0/uc?export=download&confirm=lfFX&id=1HIfDbVEWKmsYKJZm4lchTBDLW5N7dY5T)
+
+
+Not: Indirilen veri setini ismini degistirmeden wider_data klasorun icine atÄ±n.
+
+#### 2. Dosya DÃ¼zeni:
+```
+datasets/ 
+      wider_face_split/  
+          - wider_face_train_bbx_gt.txt
+          - wider_face_val_bbx_gt.txt
+         
+      WIDER_train/
+         - images
+
+      WIDER_train_annotations 
+
+      WIDER_val
+         - images
+
+      WIDER_val_annotations
+```      
+
+Not: WIDER_train_annotations ve WIDER_val_annotations klasorleri olusturmaniza gerek yoktur.
+
+#### 3. Wider Veri Setini Voc Xml FormatÄ±na Cevir
+```
+python ./wider_to_xml.py -ap ./wider_data/wider_face_split/wider_face_train_bbx_gt.txt -tp ./wider_data/WIDER_train_annotations/ -ip ./wider_data/WIDER_train/images/
+python ./wider_to_xml.py -ap ./wider_data/wider_face_split/wider_face_val_bbx_gt.txt -tp ./wider_data/WIDER_val_annotations/ -ip ./wider_data/WIDER_val/images/
+```
+#### 4. Voc Xml Veri Setini Yolo FormatÄ±na Cevir
+```
+python ./xml_to_yolo --path ./wider_data/WIDER_train_annotations/
+python ./xml_to_yolo --path ./wider_data/WIDER_val_annotations/
+```
+#### 5. Yolo Modelini Egit
+```
+!yolov5 train --data data.yaml --weights 'yolov5n.pt' --batch-size 16 --epochs 100 --imgs 512
+```
+#### 6. Yolo Modelini Test Et
+
+Tek resim test etmek icin:
+```
+!yolov5 detect --weights wider-yolo.pth --source  file.jpg  
+```
+Tum resim dosyasini test etmek icin
+```
+!yolov5 detect --weights wider-yolo.pth --source  path/*.jpg 
+```
+Not: Yeterli Gpu kaynaÄŸÄ±na sahip olamadÄ±ÄŸÄ±m icin wider seti icin dusuk parametre degerleri verdim. Parametre Degerleri: 
+```
+batch-size: 256, epochs: 5, imgs 320
+```
+<img height="500" src="https://raw.githubusercontent.com/kadirnar/wider-yolo/main/doc/images/yolov5sn.jpg"/>
+ 
+ 
+ #### 6. Yolov5 + Sahi Algoritmasini Test Et
+```
+from sahi.model import Yolov5DetectionModel
+from sahi.utils.cv import read_image
+from sahi.predict import get_prediction, get_sliced_prediction, predict
+from IPython.display import Image
+
+detection_model = Yolov5DetectionModel(
+   model_path="last.pt",
+   confidence_threshold=0.3,
+   device="cpu",
+)
+
+result = get_sliced_prediction(
+    "test_data/2.jpg",
+    detection_model,
+    slice_height = 256,
+    slice_width = 256,
+    overlap_height_ratio = 0.8,
+    overlap_width_ratio = 0.8
+)
+result.export_visuals(export_dir="demo_data/")
+Image("demo_data/prediction_visual.png")
+```
+<img height="500" src="https://raw.githubusercontent.com/kadirnar/wider-yolo/main/doc/images/yolov5n_sahi.png"/>
+
+Sahi Algoritmasi ile ilgili Ornek Proje:
+- [yolov5-pytorch-sahi](https://github.com/kadirnar/yolov5-pytorch-sahi)
+
+
+Referanslar:
+- [Fatih Cagatay Akyon](https://github.com/fcakyon)
+- [Alexis Kofman](https://github.com/akofman/wider-face-pascal-voc-annotations)<br/>
+- [yolov5-pip](https://github.com/fcakyon/yolov5-pip)
+- [Sahi](https://github.com/obss/sahi)<br/>
+
