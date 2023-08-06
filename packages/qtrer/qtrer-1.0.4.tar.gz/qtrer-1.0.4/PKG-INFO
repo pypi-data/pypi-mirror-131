@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: qtrer
+Version: 1.0.4
+Summary: 对Qt翻译文件进行翻译的小工具
+Home-page: https://github.com/xyz1001/PythonToolkit/tree/master/toolkit/QTranslatorHelper
+Author: xyz1001
+Author-email: zgzf1001@gmail.com
+License: MIT
+Keywords: python Qt translate
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+
+根据翻译文档和OPENCC(简体和繁体转换)对Qt翻译文件进行翻译的小工具
+

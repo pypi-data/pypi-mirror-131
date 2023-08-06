@@ -1,0 +1,4 @@
+excel_parser
+opencc_translator
+qt_ts
+qtrer

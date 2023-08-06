@@ -1,0 +1,12 @@
+excel_parser.py
+opencc_translator.py
+qt_ts.py
+qtrer.py
+setup.py
+qtrer.egg-info/PKG-INFO
+qtrer.egg-info/SOURCES.txt
+qtrer.egg-info/dependency_links.txt
+qtrer.egg-info/entry_points.txt
+qtrer.egg-info/not-zip-safe
+qtrer.egg-info/requires.txt
+qtrer.egg-info/top_level.txt

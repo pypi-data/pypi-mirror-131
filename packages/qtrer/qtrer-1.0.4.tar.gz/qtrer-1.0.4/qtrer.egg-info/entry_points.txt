@@ -1,0 +1,3 @@
+[console_scripts]
+qtrer = qtrer:main
+
