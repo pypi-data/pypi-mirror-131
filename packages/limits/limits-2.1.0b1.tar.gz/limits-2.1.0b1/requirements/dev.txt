@@ -1,0 +1,8 @@
+-r test.txt
+-r docs.txt
+black
+flake8
+keyring
+mypy
+twine
+wheel
