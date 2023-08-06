@@ -1,0 +1,8 @@
+pipenv2deb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pipenv2deb/__main__.py,sha256=4JqpyCs2iL5BcOOiFG8KdjkMFxoAjl81FI992mTOVYY,24535
+pipenv2deb-2.0.7.data/scripts/pipenv2deb,sha256=J6VHrX8x06BcfTAe9Cxi-ZqAsS4obSmsB5k0jcohkBw,37
+pipenv2deb-2.0.7.dist-info/LICENSE,sha256=81O31ggVXL6QLvDXxzXxepLCvngVos5xAy9b6t0v05g,1067
+pipenv2deb-2.0.7.dist-info/METADATA,sha256=i882iqb113Sd5wQXB1sWjwoGyyWDhd8g2Qj4ixwAC1k,5876
+pipenv2deb-2.0.7.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pipenv2deb-2.0.7.dist-info/top_level.txt,sha256=_1YB99ZJsNio0gvlbseDR0Iapdhd7ODu7I3_xs1StDA,11
+pipenv2deb-2.0.7.dist-info/RECORD,,
