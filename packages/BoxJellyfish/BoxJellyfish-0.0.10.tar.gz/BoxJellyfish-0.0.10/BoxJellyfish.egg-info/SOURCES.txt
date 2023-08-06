@@ -1,0 +1,14 @@
+README.md
+setup.py
+BoxJellyfish.egg-info/PKG-INFO
+BoxJellyfish.egg-info/SOURCES.txt
+BoxJellyfish.egg-info/dependency_links.txt
+BoxJellyfish.egg-info/not-zip-safe
+BoxJellyfish.egg-info/requires.txt
+BoxJellyfish.egg-info/top_level.txt
+bjf/BJFModel.py
+bjf/Build.py
+bjf/__init__.py
+bjf/data.csv
+bjf/utils.py
+bjf/web.py
