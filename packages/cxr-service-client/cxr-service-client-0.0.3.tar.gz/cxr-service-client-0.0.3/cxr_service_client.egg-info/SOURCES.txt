@@ -1,0 +1,8 @@
+README.md
+setup.py
+cxr_service_client/__init__.py
+cxr_service_client.egg-info/PKG-INFO
+cxr_service_client.egg-info/SOURCES.txt
+cxr_service_client.egg-info/dependency_links.txt
+cxr_service_client.egg-info/requires.txt
+cxr_service_client.egg-info/top_level.txt
