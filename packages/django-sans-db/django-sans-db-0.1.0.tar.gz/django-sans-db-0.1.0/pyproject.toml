@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "django-sans-db"
+version = "0.1.0"
+description = "Tools to limit database access in parts of your Django codebase "
+authors = ["Charlie Denton <charlie@meshy.co.uk>"]
+license = "MIT"
+packages = [
+    { include = "sans_db" }
+]
+repository = "https://github.com/meshy/django-sans-db"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Framework :: Django",
+    "Framework :: Django :: 2.0",
+    "Framework :: Django :: 2.1",
+    "Framework :: Django :: 2.2",
+    "Framework :: Django :: 3.0",
+    "Framework :: Django :: 3.1",
+    "Framework :: Django :: 3.2",
+    "Framework :: Django :: 4.0",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Database",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Source = "https://github.com/meshy/django-sans-db"
+
+[tool.poetry.dependencies]
+python = ">=3.6.1,<3.11"
+
+[tool.poetry.dev-dependencies]
+tox = "^3.18.0"
+pre-commit = "^2.6.0"
+django-stubs = "^1.5.0"
+tox-poetry-dev-dependencies = "^0.0.9"
+
+[tool.isort]
+lines_after_imports = 2
+profile = "black"
+src_paths = ["sans_db", "test"]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
