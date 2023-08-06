@@ -1,0 +1,13 @@
+attachtags/__init__.py,sha256=5wSDyRRGMp8t3NH-9gYywVVFHOwprRCpQiEw2rpDmQU,124
+attachtags/argtomap.py,sha256=vXiyN05IyyAVLjHR5wqOn6l4S8pDsZ8-n1-o0i-FFwI,3755
+attachtags/attachtags.py,sha256=yPA5TsUWy1psZdXlwus17VWE40eFSr7-nkdVP-MwuNw,1537
+attachtags/cli.py,sha256=ZS0cDFBWCW1KAwvfEuB2OD4eMThuoahrHzqpb7y_98Q,219
+attachtags/parserbuilder.py,sha256=m6CnBv1Pe9TYliDuIImHegxYSwYVRj-nIsNX6-05uls,6757
+attachtags/tagmaps.py,sha256=010aGb3d5LfdRhD9lmT7ky_wX0YZeoxKvlJpHhRu27M,2110
+attachtags-0.1.0.dist-info/AUTHORS.rst,sha256=M_iFWXG2E2GSDrgr5b1wUTZcPYWBgHyJVGHDATcoyYs,165
+attachtags-0.1.0.dist-info/LICENSE,sha256=e2mM_KDSu-3x41_L47W4eBuVEM3Plkm6tmSjbN3uF48,1090
+attachtags-0.1.0.dist-info/METADATA,sha256=vvzyD7BxRtBQyNY2HdlIQl4fMMrmRXE-yUuhrHDUUgc,1653
+attachtags-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+attachtags-0.1.0.dist-info/entry_points.txt,sha256=VUlKwGvYYGBYaqUJJK7el_mvHq1Z2t1PH2X4zHLSeP4,52
+attachtags-0.1.0.dist-info/top_level.txt,sha256=qPQDCouTzPM5_t9e1LfrQ5qcogt0ptUds5K_V6SIvzI,11
+attachtags-0.1.0.dist-info/RECORD,,

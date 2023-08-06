@@ -1,0 +1,3 @@
+[console_scripts]
+attachtags = attachtags.cli:main
+
