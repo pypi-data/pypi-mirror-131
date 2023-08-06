@@ -1,0 +1,4 @@
+[console_scripts]
+dcm2petbids=pypet2bids.dicom_convert:cli
+pypet2bids=pypet2bids.cli:main
+
