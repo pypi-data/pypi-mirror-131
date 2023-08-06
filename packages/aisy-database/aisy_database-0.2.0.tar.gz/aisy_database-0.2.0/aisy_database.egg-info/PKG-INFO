@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: aisy-database
+Version: 0.2.0
+Summary: Database Package for AISY Framework
+Home-page: https://aisylab.github.io/AISY_docs/
+Author: Guilherme Perin
+Author-email: guilhermeperin7@gmail.com
+License: UNKNOWN
+Keywords: side-channel analysis deep learning profiled attacks
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Database package to support AISY Framework 
+pip install aisy-sca
+pip install aisy-database
+If you use our framework, please consider citing:
+    @misc{AISY_Framework,      author = {Guilherme Perin and Lichao Wu and Stjepan Picek},      title  = {{AISY - Deep Learning-based Framework for Side-Channel Analysis}},      howpublished = {AISyLab repository},      note   = {{\url{https://github.com/AISyLab/AISY_Framework}}},      year   = {2021}   }
+

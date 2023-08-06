@@ -1,0 +1,14 @@
+LICENSE
+pyproject.toml
+setup.py
+aisy_database/__init__.py
+aisy_database/db_delete.py
+aisy_database/db_save.py
+aisy_database/db_select.py
+aisy_database/db_tables.py
+aisy_database/db_update.py
+aisy_database.egg-info/PKG-INFO
+aisy_database.egg-info/SOURCES.txt
+aisy_database.egg-info/dependency_links.txt
+aisy_database.egg-info/top_level.txt
+tests/__init__.py
