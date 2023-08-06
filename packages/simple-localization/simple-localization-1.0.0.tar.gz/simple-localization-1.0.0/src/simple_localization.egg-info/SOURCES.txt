@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/simple_localization/__init__.py
+src/simple_localization/localization.py
+src/simple_localization.egg-info/PKG-INFO
+src/simple_localization.egg-info/SOURCES.txt
+src/simple_localization.egg-info/dependency_links.txt
+src/simple_localization.egg-info/top_level.txt
