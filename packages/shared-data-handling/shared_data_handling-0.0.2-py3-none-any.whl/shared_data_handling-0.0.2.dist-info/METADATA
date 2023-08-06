@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: shared-data-handling
+Version: 0.0.2
+Summary: lib to facilitate file handling and data extraction from log files
+Home-page: https://code.roche.com/rothf9/SharedDataHandling
+Author: Fabian Roth
+Author-email: fabian.roth.fr1@roche.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://code.roche.com/rothf9/SharedDataHandling/-/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# Shared data handling
+This lib simplifies the python code in other projects.
+
+## Installation
+````
+pip3 install shared-data-handling
+````
+
+## Usage
+tbd
+
+## Publish
+Run python -m build
+--> Packages will be stored under dist
+
+
+
+## ToDos
+[ ] [setup a gitlab pipeline](https://docs.gitlab.com/ee/user/packages/pypi_repository/)
+
+
+## Version History
+### Current Version
+### 0.01
+- Initial Version
+
+
