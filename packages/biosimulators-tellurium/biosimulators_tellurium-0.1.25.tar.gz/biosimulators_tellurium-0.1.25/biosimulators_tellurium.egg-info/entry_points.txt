@@ -1,0 +1,3 @@
+[console_scripts]
+biosimulators-tellurium = biosimulators_tellurium.__main__:main
+
