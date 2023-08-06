@@ -1,0 +1,15 @@
+tbd/__about__.py,sha256=jLCkj5Llx4fHl9xPqDNIsHtqySG_8QNwpFNZTXeYYck,401
+tbd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tbd/evaluate.py,sha256=OGq46Uq7JPDS8BBSv2JiF2569bO3sle9GVIp_iWgF2U,455
+tbd/model.py,sha256=_gu5h0pznGTOpkpUPzTYCzhAJWP_kHSsw1ruNY3q6Jw,5528
+tbd/predict.py,sha256=Ni_iWu9j2kCtRPABvmsqJEpsdJLzUP0OcCV22RAaDIw,2961
+tbd/preprocessing.py,sha256=l7n39uye6DuEi3W82cy0jw00TfcaKCgsYbv3f6PEtco,3262
+tbd/utils.py,sha256=JM6Rx8YAFPUhVYvvOoX3txPl7cwZttMxsglrwqb7WJ4,4942
+tbd/pretrained_model/saved_model.pb,sha256=6E5lBOOIk3wSlCzf0cwSVVWFRzoo2ARcwpKBUxkjIlI,168418
+tbd/pretrained_model/variables/variables.data-00000-of-00001,sha256=B8cCx4V72vY-IvUziYSSxUVAUCjKDBPWSjJ1ZXPKjGo,24637
+tbd/pretrained_model/variables/variables.index,sha256=qeitJ-7AdVEbVPllhgY4dXc6IDldA6N2O7HGBUEVR0o,2787
+TauBD-1.0.dist-info/LICENSE,sha256=0TikVobwjiIif55g8yyjSf2pcpFH43spF87wxNqfDGU,1056
+TauBD-1.0.dist-info/METADATA,sha256=OLcgWEvlbBJUeMWmDSFNoYofBvqGeY6z6Yr81q4ZjNE,509
+TauBD-1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+TauBD-1.0.dist-info/top_level.txt,sha256=Azp0CEujM6oeD2CLed9lGnqGSZRpB8rteGbBhKQBFhg,4
+TauBD-1.0.dist-info/RECORD,,
