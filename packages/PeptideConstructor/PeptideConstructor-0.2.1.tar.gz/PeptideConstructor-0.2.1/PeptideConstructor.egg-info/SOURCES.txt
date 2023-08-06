@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+PeptideConstructor/Geometry.py
+PeptideConstructor/PCcli.py
+PeptideConstructor/PeptideBuilder.py
+PeptideConstructor/__init__.py
+PeptideConstructor.egg-info/PKG-INFO
+PeptideConstructor.egg-info/SOURCES.txt
+PeptideConstructor.egg-info/dependency_links.txt
+PeptideConstructor.egg-info/entry_points.txt
+PeptideConstructor.egg-info/requires.txt
+PeptideConstructor.egg-info/top_level.txt
