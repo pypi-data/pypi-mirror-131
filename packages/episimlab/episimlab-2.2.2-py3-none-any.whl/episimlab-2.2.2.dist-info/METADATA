@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: episimlab
+Version: 2.2.2
+Summary: Framework for modular development of compartmental epidemic models
+License: BSD-3-Clause
+Author: Ethan Ho
+Author-email: eho@tacc.utexas.edu
+Requires-Python: >=3.7,<4
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: dask[distributed] (>=2021.4.0,<2022)
+Requires-Dist: graphviz (>=0.17,<1)
+Requires-Dist: matplotlib (>=3.4.3,<4)
+Requires-Dist: networkx (>=2.6.3,<3)
+Requires-Dist: xarray (>=0.19.0)
+Requires-Dist: xarray-simlab (>=0.5.0,<1)
