@@ -1,0 +1,119 @@
+\documentclass[modern]{aastex63}
+
+\input{dfmstyle}
+\input{dfmsymbols}
+
+\shorttitle{The \tess\ Atlas}
+\shortauthors{the authors}
+
+\begin{document}
+
+\title{The \tess\ Atlas}
+
+
+
+\author{Author list TBD}
+% \input{authors}
+
+
+\begin{abstract}
+
+This is the \tess\ Atlas.
+\tess\ discovered N exoplanet candidates in N years of data.
+We provide revised transit parameters and accompanying posterior distributions for all the \tess\ objects of interest.
+
+\end{abstract}
+
+% \keywords{editorials, notices ---
+% miscellaneous --- catalogs --- surveys}
+
+\section{Introduction} \label{sec:intro}
+
+In this work we present the uniform modeling of all TESS object of interest (TOIs) utilizing Bayesian framework that provides robust estimates of the uncertainities for all of the planet parameters.
+
+Section~\ref{sec:prob-model} describes our transit lightcurve model and the Bayesian framework we use to estimate parameters of exoplanet systems from the observed data.
+
+\section{Probabilistic Model} \label{sec:prob-model}
+
+\subsection{Transit lightcurve model}
+We assume that exoplanets are on circular, non-interacting Keplerian orbits around their host star.
+Additonally, we approximate the host star's stellar limb darkening profile using \citet{Kipping:2013}'s quadratic limb darkening law.
+Finally, we compute the exoplanet's resultant quadratic limb-darkened transit lightcurve using an analytical model implemented in \starry.
+The stellar variables in this model are parameterised by
+the baseline relative flux of the light curve $f0$,
+the mean stellar density $\rho_\star$,
+and two parameters describing the quadratic limb-darkening profile of the
+star $u_1, u_2$.
+Each of the $n$ exoplanets in the system are parameterised by the planets'
+orbital period $P_{n}$,
+transit duration $T_{n}$,
+phase or epoch $t0_n$,
+impact parameter $b_n$,
+and the radius of the planet $r_n$ in units of the stellar radius $R_\star$.
+
+We use \exoplanet\, \lightkurve
+
+
+In the case when there are multiple transits present in the data, we use a second reference time $tmax$ instead of $P$
+
+
+
+\subsection{Bayesian Framework}
+
+
+Likelihood, GP, Priors, \celerite
+
+
+Table with priors
+
+%
+%
+%GPs are stochastic models consisting of a mean function
+%$\mu_\vec{\theta}(\vec{x})$ and a covariance, autocorrelation, or ``kernel''
+%function $K$ parameterized by
+%$\vec{\theta}$ and $\vec{\alpha}$ respectively.
+%Under this model, the log-likelihood function $\mathcal{L}
+%(\vec{\theta},\,\vec{\alpha})$ with a dataset
+%
+%\begin{align}\eqlabel{gp-likelihood}
+%\ln \mathcal{L} (\vec{\theta},\,\vec{\alpha})
+%&= -\frac{1}{2} r(\vec{\theta})^{T}\, K(\vec{\alpha})^{-1}\, r(\vec{\theta}) \nonumber \\
+%   -\frac{1}{2} \log \det K(\vec{\alpha})
+%
+%\end{align}
+
+
+
+
+
+\section{Results}
+
+\section{Discussion}
+
+\section{Data Availibility}
+
+
+
+\acknowledgments
+
+I would like to thank.
+
+
+
+This work made use of the \tess\ catalog on ExoFOP
+
+\vspace{5mm}
+\facilities{\tess, \gaia, \kepler, etc.}
+
+\software{astropy \citep{Astropy-Collaboration:2013,Astropy-Collaboration:2018}}
+
+\appendix
+
+\section{An Appendix}
+
+Words.
+
+\bibliography{atlas}{}
+\bibliographystyle{aasjournal}
+
+\end{document}
