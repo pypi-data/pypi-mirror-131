@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: django-cked
+Version: 2.0.2
+Summary: CKEditor and elFinder integration for Django Framework.
+Home-page: https://github.com/DOOMer/django-cked
+License: BSD
+Keywords: django,ckeditor,elfinder,wysiwyg,upload
+Author: Artem Galichkin
+Author-email: doomer3d@gmail.com
+Maintainer: Artem Galichkin
+Maintainer-email: doomer3d@gmail.com
+Requires-Python: >=3.6
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: BSD License
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: django (>=2.2)
+Project-URL: Bug Tracker, https://github.com/DOOMer/django-cked/issues
+Project-URL: Documentation, https://django-cked.readthedocs.io/
+Project-URL: Repository, https://github.com/DOOMer/django-cked
+Description-Content-Type: text/x-rst
+
+Django CKEd
+===========
+
+**CKEditor and elFinder integration for Django Framework.**
+
+Provides a ``RichTextField`` and ``CKEditorWidget`` with upload and browse support.
+
+.. figure:: docs/_static/img/ckeditor.jpg
+      :align: center
+      :alt: CKEditor widget
+
+      CKEditor widget
+
+.. figure:: docs/_static/img/elfinder.jpg
+      :align: center
+      :alt: elFinder widget
+
+      elFinder widget
+
+**django-cked** works with Django 2.2+ and Python 3.6+
+
+Installation and configuration
+------------------------------
+
+See `setup part`_ in documentation.
+
+.. _setup part: https://django-cked.readthedocs.io/en/latest/setup.html
+
+Usage
+-----
+
+See `usage part`_ in documentation.
+
+.. _usage part: https://django-cked.readthedocs.io/en/latest/usage.html
+
+Authors
+-------
+
+See `authors link`_ in documentation.
+
+.. _authors link: AUTHORS.rst
+
+
+License
+-------
+
+Licensed under BSD license. See `license link`_ in documentation.
+
+.. _license link: LICENSE.rst
+
+
+
