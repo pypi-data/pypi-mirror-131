@@ -1,0 +1,42 @@
+.gitignore
+LICENSE
+README.md
+readme.rst
+setup.py
+.github/workflows/pypi.yml
+docs/Makefile
+docs/conf.py
+docs/deployment.rst
+docs/index.rst
+docs/make.bat
+docs/prerequisites.rst
+docs/api/dataset.rst
+docs/api/datasource.rst
+docs/api/report.rst
+docs/api/token.rst
+docs/api/tools.rst
+docs/api/workspace.rst
+src/pbi/__init__.py
+src/pbi/deploy.py
+src/pbi/token.py
+src/pbi/tools.py
+src/pbi/api/__init__.py
+src/pbi/api/capacity.py
+src/pbi/api/dataset.py
+src/pbi/api/datasource.py
+src/pbi/api/report.py
+src/pbi/api/tenant.py
+src/pbi/api/workspace.py
+src/pbi_tools.egg-info/PKG-INFO
+src/pbi_tools.egg-info/SOURCES.txt
+src/pbi_tools.egg-info/dependency_links.txt
+src/pbi_tools.egg-info/requires.txt
+src/pbi_tools.egg-info/top_level.txt
+tests/test_basic.py
+tests/fixtures/Deployment Aid.pbix
+tests/fixtures/Deployment Root/Model 1/Model.pbix
+tests/fixtures/Deployment Root/Model 1/Report 1.pbix
+tests/fixtures/Deployment Root/Model 1/Report 2.pbix
+tests/fixtures/Deployment Root/Model 2/Model.pbix
+tests/fixtures/Deployment Root/Model 2/Report 1.pbix
+tests/fixtures/Deployment Root/Model 2/Report 2.pbix

@@ -1,0 +1,60 @@
+name: Bump Git tag (if on main), then publish Python distributions to PyPI Test and PyPI (if on main)
+
+on:
+  push:
+    branches:
+      - main
+      - release/*
+      - dev/*
+
+jobs:
+  build-n-publish:
+    name: Build and publish Python distributions to PyPI and TestPyPI
+    runs-on: ubuntu-18.04
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Bump version and push tag
+        if: github.ref == 'refs/heads/main'
+        uses: anothrNick/github-tag-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Fetch all history for all tags and branches
+        run: git fetch --prune --unshallow
+      
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.9
+
+      - name: Install pypa/build
+        run: >-
+          python -m
+          pip install
+          build
+          --user
+
+      - name: Build a binary wheel and a source tarball
+        run: >-
+          python -m
+          build
+          --sdist
+          --wheel
+          --outdir dist/
+          .
+          
+      - name: Publish distribution to PyPI Test
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          skip_existing: true
+          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+          repository_url: https://test.pypi.org/legacy/
+
+      - name: Publish distribution to PyPI
+        if: github.ref == 'refs/heads/main'
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          skip_existing: true
+          password: ${{ secrets.PYPI_API_TOKEN }}
