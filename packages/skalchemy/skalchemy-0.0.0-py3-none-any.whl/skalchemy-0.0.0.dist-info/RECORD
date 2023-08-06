@@ -1,0 +1,9 @@
+skalchemy/__init__.py,sha256=mT6LyFer79bxdqnyitfQ1isj1NY1UIpq-D6IW6CO6Hw,108
+skalchemy/__main__.py,sha256=qC9VZy-PD3jIW5LKAVRus56uOPQVWjZp4EvVlnBRdPU,137
+skalchemy/mla.py,sha256=OfV3SzJrhxlcf6_PGx2T7Ge7QL5p1aLnp9NPqMB3hoc,750
+skalchemy/modules/module.py,sha256=GIJ-wx3DqxOwwbr2cXji2K_OHoSIf1N8jXxLo6XdtEs,755
+skalchemy-0.0.0.dist-info/METADATA,sha256=B6XcFL2ZZVoH9_tcZxRda10qNP0TC8LTSl5xq1YAWME,711
+skalchemy-0.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+skalchemy-0.0.0.dist-info/entry_points.txt,sha256=NnuXnHnaVCUUeB3ZzjaE-wyV-qpYM6WSlcjX94Tz0S4,44
+skalchemy-0.0.0.dist-info/top_level.txt,sha256=7eziSoD0vq91eU-gN52zcUsudUt6y9z3CdP9hpwWrks,10
+skalchemy-0.0.0.dist-info/RECORD,,
