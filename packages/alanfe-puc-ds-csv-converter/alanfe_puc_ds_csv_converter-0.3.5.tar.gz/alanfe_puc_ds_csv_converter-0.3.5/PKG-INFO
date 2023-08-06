@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: alanfe-puc-ds-csv-converter
+Version: 0.3.5
+Summary: A simple module to make easy conversions between two type of files: `csv` and `json`.
+Author: Alan Federich
+Author-email: alan.federich@icloud.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Description-Content-Type: text/markdown
+
+It is a simple module to make easy conversions between two type of files: **csv** and **json**.
+<br>
+It has been created for a postgraduate assignment that had as objective to validate our knowledge about the use of basic structures of Python and the process of creating and publishing a Python module.
+
+
+## Usage and Examples
+To use this module is necessary to install it and use the convert script of this module:
+```
+pip install alanfe-puc-ds-csv-converter
+python3 -m alanfe-puc-ds-csv-converter convert
+```
+You will need to set some arguments of this script like **output path** (using -o or --ouput) and **input path**(using -i or --input). After that automatically it will parse all files in this path and will save them in the output path.  
+```
+python3 -m alanfe-puc-ds-csv-converter convert -i /input/ -o /output/
+# OR
+python3 -m alanfe-puc-ds-csv-converter convert -i /input/teste.csv -o /output/
+```
+It will detect if the files are csv files or json files and will convert them to another format. In the case of csv files, they will be converted to json. In the case of json files, they will be converted to csv.
+<br>
+A good property of this module is the parallel processing. You can set **--parallel** or **-p** as true and the library's processing will happen in parallel
+```
+python3 -m alanfe-puc-ds-csv-converter convert -i /input/teste.csv -o /output/ --parallel true
+```
+<br>
+To more information about this module execution we cant use the help command:
+```
+python3 -m alanfe-puc-ds-csv-converter convert --help
+```
+
+
+
