@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: compas_gmsh
+Version: 0.3.0
+Summary: COMPAS friendly binding for GMSH
+Home-page: https://github.com/BlockResearchGroup/compas_gmsh
+Author: tom van mele
+Author-email: van.mele@arch.ethz.ch
+License: MIT license
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.GPL
+License-File: LICENSE.MIT
+License-File: AUTHORS.md
+
+# COMPAS GMSH
+
+![build](https://github.com/compas-dev/compas_gmsh/workflows/build/badge.svg)
+[![GitHub - License](https://img.shields.io/github/license/compas-dev/compas_gmsh.svg)](https://github.com/compas-dev/compas_gmsh)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/compas_gmsh.svg)](https://pypi.python.org/project/compas_gmsh)
+[![PyPI - Latest Release](https://img.shields.io/pypi/v/compas_gmsh.svg)](https://pypi.python.org/project/compas_gmsh)
+
+COMPAS friendly interface for Gmsh.
+
+## Installation
+
+```bash
+conda create -n gmsh -c conda-forge compas compas_view2 --yes
+conda activate gmsh
+pip install compas_gmsh
+```
+
+## Getting Started
+
+Have a look at some of the first [examples in the documentation](https://compas.dev/compas_gmsh/latest/examples.html).
+
+## License
+
+`compas_gmsh` provides a COMPAS friendly interface to `Gmsh`.
+`Gmsh` is released under GPL-2.0-or-later.
+
+
