@@ -1,0 +1,11 @@
+torch
+tqdm
+pyyaml
+numpy
+matplotlib
+scikit-image
+scikit-learn
+opencv-python
+timm
+xmltodict
+tensorboard
