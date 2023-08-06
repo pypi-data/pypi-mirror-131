@@ -1,0 +1,11 @@
+pyform/Controls.py,sha256=1pguayfRs59voETdIqqNXHPHtkMhRcqK-PNelhTOFkM,18916
+pyform/Demos.py,sha256=n4d8DE9mW8rSj5BqhxqrSgoasVO0SGlPHREXBhmbRPo,20760
+pyform/Form.py,sha256=_bu7p7RnqXRef4JrFSIl2XxWoMcKuVoT5VaqJTXzw6s,14582
+pyform/__init__.py,sha256=eg1XmkQPwAPM3OmZArBQZ4hhO81xLKMI061mOUdk70A,36
+pyform/util/FlowSizer.py,sha256=JBoRK1AUU65xKki6R8A4fWjnFaDpCLMOQTrg8uctSG0,6786
+pyform/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ghostdev.pyform-1.0.4.dist-info/LICENSE,sha256=QWXxiDGtyMvc0OZYR-NAwuRVvWy8cNs-yFz9KJNZC7w,1068
+ghostdev.pyform-1.0.4.dist-info/METADATA,sha256=VuhSbM0jhEjjauwELSYNzSxLrZWqpCyp3qaXjVoHz_4,162
+ghostdev.pyform-1.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ghostdev.pyform-1.0.4.dist-info/top_level.txt,sha256=G_w-IrmBvEOkZxhX9Az6Bw19Y6YD7Wgy-GXrd8qr348,7
+ghostdev.pyform-1.0.4.dist-info/RECORD,,
