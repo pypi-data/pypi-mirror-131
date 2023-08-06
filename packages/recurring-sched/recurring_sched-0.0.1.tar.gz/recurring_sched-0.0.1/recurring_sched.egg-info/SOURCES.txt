@@ -1,0 +1,7 @@
+MANIFEST.in
+recurring_sched.py
+setup.py
+recurring_sched.egg-info/PKG-INFO
+recurring_sched.egg-info/SOURCES.txt
+recurring_sched.egg-info/dependency_links.txt
+recurring_sched.egg-info/top_level.txt

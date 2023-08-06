@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: recurring_sched
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: MIT
+Keywords: schedule,scheduler,scheduling,jobs,job scheduling,periodic
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+
+UNKNOWN
+
