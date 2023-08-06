@@ -1,0 +1,8 @@
+README.rst
+setup.py
+xlwang_package/__init__.py
+xlwang_package/main.py
+xlwang_package.egg-info/PKG-INFO
+xlwang_package.egg-info/SOURCES.txt
+xlwang_package.egg-info/dependency_links.txt
+xlwang_package.egg-info/top_level.txt
