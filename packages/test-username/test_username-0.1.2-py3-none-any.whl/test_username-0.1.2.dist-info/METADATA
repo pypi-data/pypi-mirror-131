@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: test-username
+Version: 0.1.2
+Summary: test package
+Home-page: https://github.com/Mishuni/Pip_Package_Practice.git
+Author: test1234
+Author-email: test1234@email.re.kr
+License: MIT
+Keywords: test sample
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Pip_Package_Practice
+pip package deployment sample
+
+## deployed pacakge url
+https://pypi.org/project/test-username/0.1.0/
+
+## posted
+https://mishuni.tistory.com/127 
+
