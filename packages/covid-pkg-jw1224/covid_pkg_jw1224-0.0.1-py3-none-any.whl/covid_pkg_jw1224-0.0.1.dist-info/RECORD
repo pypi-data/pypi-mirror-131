@@ -1,0 +1,9 @@
+covid-pkg-jw1224/__init__.py,sha256=BsX9XST0dGuQMGL8h6mTOQVqwPXWGyMhvo8RxuhPquY,119
+covid-pkg-jw1224/covid_data_handler.py,sha256=QPwXz-BBnf27I0nyycwlU6fDcYfWfvp74WGfbWiTJLw,2452
+covid-pkg-jw1224/covid_news_handling.py,sha256=lvaml0L6n1lzS9cNRu81iOqOjz5cz4m3Gh_P_R-7U7w,1632
+covid-pkg-jw1224/main.py,sha256=TRH3oNEnUzb9rkHAgM-v8z0FhoJNe42dEt5FOrfalYs,5685
+covid-pkg-jw1224/time_calculation.py,sha256=HFk8eRd28xOW-lb2lEVZy7U9kgan5rEu5W5aiHh5ccs,886
+covid_pkg_jw1224-0.0.1.dist-info/METADATA,sha256=59qd4nAe5hRTH3B6eDf22lxP0laJISqmgCWcxE1cZfs,473
+covid_pkg_jw1224-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+covid_pkg_jw1224-0.0.1.dist-info/top_level.txt,sha256=RKnmOTQx3E3bskciAyWC4x9ez1RWC63hIhyaNbocUQ4,17
+covid_pkg_jw1224-0.0.1.dist-info/RECORD,,
