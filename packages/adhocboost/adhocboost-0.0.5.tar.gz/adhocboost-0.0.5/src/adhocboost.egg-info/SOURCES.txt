@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/adhocboost/AdHocBoost.py
+src/adhocboost/__init__.py
+src/adhocboost.egg-info/PKG-INFO
+src/adhocboost.egg-info/SOURCES.txt
+src/adhocboost.egg-info/dependency_links.txt
+src/adhocboost.egg-info/top_level.txt
