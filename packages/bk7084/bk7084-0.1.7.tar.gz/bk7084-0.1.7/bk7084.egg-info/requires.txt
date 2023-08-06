@@ -1,0 +1,6 @@
+numpy
+pyopengl
+glfw
+pypng
+imgui[glfw]
+Pillow
