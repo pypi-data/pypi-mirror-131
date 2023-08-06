@@ -1,0 +1,15 @@
+pyobs_sbig/__init__.py,sha256=KOxifiVuQr_NKGBD-Stzm3msEk5Oti8kI1mrpHO90zg,295
+pyobs_sbig/sbig6303e.py,sha256=M-HP7kRNVK5gcs19MeGv2YmKSRQhs2Z1kAuMU5T787w,1591
+pyobs_sbig/sbigbasecamera.py,sha256=HwfnMIn6ZZhX1FBbKFuajYQ96wmTownMsLmk_5NIYpA,6990
+pyobs_sbig/sbigcamera.py,sha256=NuduAchAgOk-SArTNpPATQQvb0c-bohee_4IXO1nmTQ,3155
+pyobs_sbig/sbigdriver.py,sha256=3YBhsP6VlHh7tw_M4lrHBDhdxjgM16ydqwDpu6027dk,3766
+pyobs_sbig/sbigfiltercamera.py,sha256=aKbyRCtkyS7KmmaknC6d-2_H6IfK6nKYl5ehu5yK-C4,6186
+pyobs_sbig/sbigtracker.py,sha256=ExINzRW1JexqrtjeqqvP4kuVncoNzcC5McuWRTiKPk0,594
+pyobs_sbig/sbigudrv.cpp,sha256=vMkiP1R1p12vfuggSp__6s4M4FG2-fZxldWPxwpvRMU,843706
+pyobs_sbig/sbigudrv.cpython-38-x86_64-linux-gnu.so,sha256=SS8u5Sz_85Bj1dQKrjBFe3DtGOlk3QM9xJFsrIY6N3M,3189776
+pyobs_sbig/sbigudrv.cpython-39-x86_64-linux-gnu.so,sha256=Z0_WFt_AdQDfk9OgyGlHxWMJMg9VJCQ7etwzwwk3C_4,2307000
+pyobs_sbig/sbigudrv.pxd,sha256=qE9ZyCLvoE07MsUEIu4A5VJvwJ4U-armSzm-sB09DwQ,9399
+pyobs_sbig/sbigudrv.pyx,sha256=Gas_bZxAAR9CHQk9nRTosdOL5HhNE4JmOD4wXKLmdi0,11098
+pyobs_sbig-0.15.0a4.dist-info/WHEEL,sha256=zwHwUUtOmFVE1ozaa23NP-uIxLKxoQvYqSTuL4cCBTU,103
+pyobs_sbig-0.15.0a4.dist-info/METADATA,sha256=-0fJu3TUFPaLFFAZrKtTUVY5wzWKymJ1kSLC30UT-pw,574
+pyobs_sbig-0.15.0a4.dist-info/RECORD,,
