@@ -1,0 +1,192 @@
+Metadata-Version: 2.1
+Name: pdf-rules
+Version: 1.2.0
+Summary: Turn PDFs into CSVs by defining rules
+Home-page: https://gitlab.com/sean-c/pdf_rules
+Author: Sean Clouston
+Author-email: sean.clouston@tutanota.com
+License: GPL
+Description: # pdf_rules
+        
+        This library is used to extract information from PDFs and output a CSV.
+        
+        The library was designed to automate the extraction of data from invoices and other such documents; which hold data in hierarchical structures. The user must first define this structure with `add_level` and `add_field` functions, the library is designed to allow maximum user control.
+        
+        ## Installation
+        
+        ### From the PyPI
+        
+        	python -m pip install pdf_rules
+        
+        ### From Source
+        
+        	git clone https://gitlab.com/sean-c/pdf_rules
+        	cd pdf_rules
+        	python setup.py install
+        
+        ### Dependencies
+        
+        The module `pdftotext` is currently used to read the pdf files into a txt format before applying the rules, but this is currently not installed by default on Windows.  On Windows, you will have to find another way to convert the pdfs into txt and then pass the txt into the `PDF` class.
+        
+        ## Tutorial
+        
+        For the purpose of this example, please refer to `tests/test_pdf.pdf` (or `tests/test_txt.txt` if you couldn't install `pdftotext`), the example assumes the working directory to be the locaton of this document.
+        
+        ### The Basics (no levels)
+        
+        Before we extract data, we need to create an instance of the `pdf_rules.PDF` class, passing `tests/test_pdf.pdf` as an argument.
+        
+        	import pdf_rules
+        
+        	pdf = pdf_rules.PDF('tests/test_pdf.pdf')
+        
+        	print(pdf)
+        
+        This creates the object `pdf` and reads the file `tests/test_pdf.pdf` into it as a list of strings, you can use `tests/test_txt.txt` instead by passing it in place of the pdf version.  The `print` function will print the file as held by the `pdf` object (with line numbers). Next, data can be found with the `add_field` method:
+        
+        	pdf.add_field(
+        		'Account',
+        		lambda rd, i, l: 'Account' in l,
+        		lambda rd, i, l: l[-7:])
+        
+        Where 'Account' is the field heading and the two `lambda` functions are the 'trigger' and the 'rule'. The trigger and rule have to follow the format `lambda rd, i, l: <expression>`, where `rd` is the whole document, `i` is the line number, and `l` is the line. Failiure to pass `rd`, `i`, and `l` in that order will result in an exception.
+        
+        The library reads the document and stops when the 'trigger' returns `True`, the data is then extracted by the 'rule' function. The data is kept in `pdf.hierarchy`. To create a csv:
+        
+        	csv = pdf_rules.CSV(pdf)
+        	print(csv)
+        	csv.write()
+        
+        This should output:
+        
+        	['Account']
+        	['ABC1234']
+        
+        and the same output should be written to `tests/test_pdf_pdfrules.csv`.
+        
+        ### Creating Levels
+        
+        In order to extract the invoice data, we must create 'levels', these levels allow the extraction of recurring similar data, like the addresses in the example pdf.
+        
+        	pdf.add_level(
+                        lambda rd, i, l: 'Charges' in l,
+                        lambda rd, i, l: l == '.')
+        	pdf.add_field(
+                        'Address',
+                        lambda rd, i, l: 'Charges' in l,
+                        lambda rd, i, l: l.split(' - ')[1],
+        
+                        # IMPORTANT: always remember to pass the appropriate level!
+                        level=1)
+        
+        Here, an extra level is added, which starts on every line containing 'Charges', and ends on every line containing just the '.' character. The tables each contain some unique data, which we can collect by creating another field 'Addrssses'.
+        
+        > Note that all `pdf` objects have a level 0, covering the whole document, so the `add_field` function needs the level stated if it is not intended for level 0
+        
+        The output should be:
+        
+        	['Account', 'Address']
+        	['ABC1234', '1234 Fake Street, London W15 6GH']
+        	['ABC1234', '5678 Fake Ave., Glasgow G3 6HJ'
+        
+        > Note that 'Address' items found in level 1 inherited the 'Account' from level 0
+        
+        ### PDF.show
+        
+        You can use `pdf.show()` to display a view of the pdf with the rows highlighted according to the levels picked up by all the `add_levels` calls.  This can help with troubleshooting and fine-tuning the `add_levels` trigger arguments.
+        
+        `PDF.show` currently relies on curses, so it will only work from a terminal.
+        
+        ### Levels Within Levels
+        
+        The `add_level` function can act within levels, where all data found in sub-levels will inherit data from higher ones.
+        
+        Adding another level, we can extract more data:
+        
+        	import re
+        
+        	pdf.add_level(
+                        lambda rd, i, l: re.search(r'[A-Z]{2}/\d{4}/[A-Z]', l),
+                        lambda rd, i, l: False)
+        	pdf.add_field(
+                        'ID',
+                        lambda rd, i, l: re.search(r'[A-Z]{2}/\d{4}/[A-Z]', l),
+                        lambda rd, i, l: l.strip(),
+                        level=2)
+        
+        > Notice that the 'trigger' for level 2 is set to `False`, this will cut off the table just before the start of the next one.
+        
+        Our output so far:
+        
+        	['Account', 'Address', 'ID']
+        	['ABC1234', '1234 Fake Street, London W15 6GH', 'IG/1234/H']
+        	['ABC1234', '1234 Fake Street, London W15 6GH', 'ID/5678/I']
+        	['ABC1234', '1234 Fake Street, London W15 6GH', 'RD/9012/P']
+        	['ABC1234', '1234 Fake Street, London W15 6GH', 'IN/5724/O']
+        	['ABC1234', '5678 Fake Ave., Glasgow G3 6HJ', 'DH/0471/U']
+        	['ABC1234', '5678 Fake Ave., Glasgow G3 6HJ', 'JF/8364/N']
+        	['ABC1234', '5678 Fake Ave., Glasgow G3 6HJ', 'HD/1684/Q']
+        
+        
+        Adding yet another level to find each line with charges, we will use trigger on every line with a date in, the line 'Invoice Date 01/10/2020' will not csuse a trigger as it is not in level 2.
+        
+        	pdf.add_level(
+                        lambda rd, i, l: re.search(r'\d{2}/\d{2}/\d{4}', l),
+                        lambda rd, i, l: False)
+        	pdf.add_field(
+                        'Cost',
+                        lambda rd, i, l: True,
+                        lambda rd, i, l: pdf_rules.listify(l)[-1],
+                        level=3)
+        
+        > Note the use of `pdf_rules.listify`, this is a helper function to crudely convery the line into a list, delimited by two+ spaces.
+        > Also note the 'trigger' for 'Cost' is set to `True`, this means it will trigger on every line, use with caution.
+        
+        We now have:
+        
+        	['Account', 'Address', 'ID', 'Cost']
+        	['ABC1234', '1234 Fake Street, London W15 6GH', 'IG/1234/H', '£100.00']
+        	['ABC1234', '1234 Fake Street, London W15 6GH', 'IG/1234/H', '-$23.00']
+        	['ABC1234', '1234 Fake Street, London W15 6GH', 'IG/1234/H', '£50.00']
+        	['ABC1234', '1234 Fake Street, London W15 6GH', 'ID/5678/I', '£52.00']
+        	['ABC1234', '1234 Fake Street, London W15 6GH', 'RD/9012/P', '£48.00']
+        	['ABC1234', '1234 Fake Street, London W15 6GH', 'IN/5724/O', '-£324.00']
+        	['ABC1234', '5678 Fake Ave., Glasgow G3 6HJ', 'DH/0471/U', '£64.00']
+        	['ABC1234', '5678 Fake Ave., Glasgow G3 6HJ', 'JF/8364/N', '£83.00']
+        	['ABC1234', '5678 Fake Ave., Glasgow G3 6HJ', 'HD/1684/Q', '£45.00']
+        
+        From here we could keep adding rules in order to catch all the data, just as we did with the cost field. 
+        
+        ### Helpful Things
+        
+        There are some very useful features that I won't go into here, but you can see `tutorial.py` for examples of how to use them.
+        
+        #### Fallbacks
+        
+        An optional argument of the `PDF.add_field` function is the `fallback`.  This is `None` by default but if you pass `fallback='1234'`, then pdf_rules will use '1234' for that field whenever the trigger doesn't trigger, or the rule returns `None` or throws an exception.
+        
+        #### Get last Entry
+        
+        You can get the last entry found by pdf_rules for a given field with `pdf.last_entry('field')`
+        
+        
+        ## To Do
+        
+        1. Highlight matches in `PDF.show`
+        2. Offer alternatives to curses for `PDF.show`, maybe use `pillow` to create an image and show in popup.
+        0. More tests
+        
+        
+        
+Keywords: automation,business,pdf,processing
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Utilities
+Classifier: Intended Audience :: End Users/Desktop
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

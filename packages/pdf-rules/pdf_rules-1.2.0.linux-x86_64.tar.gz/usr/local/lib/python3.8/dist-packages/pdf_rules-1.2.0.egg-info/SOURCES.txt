@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+pdf_rules/__init__.py
+pdf_rules/cmd.py
+pdf_rules/pdf_rules.py
+pdf_rules.egg-info/PKG-INFO
+pdf_rules.egg-info/SOURCES.txt
+pdf_rules.egg-info/dependency_links.txt
+pdf_rules.egg-info/entry_points.txt
+pdf_rules.egg-info/requires.txt
+pdf_rules.egg-info/top_level.txt
