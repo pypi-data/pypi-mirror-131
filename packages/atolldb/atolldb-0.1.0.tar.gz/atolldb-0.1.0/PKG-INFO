@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: atolldb
+Version: 0.1.0
+Summary: Atoll is a project that aim to gather heterogeneous sources of genomic island (GI) sequences and return them in an unified interface.
+License: MIT
+Author: A.Bioteau, N. Cellier
+Requires-Python: >=3.7,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: attrs (>=21.2.0,<22.0.0)
+Requires-Dist: beautifulsoup4 (>=4.10.0,<5.0.0)
+Requires-Dist: biopython (>=1.79,<2.0)
+Requires-Dist: cachetools (>=4.2.4,<5.0.0)
+Requires-Dist: fuzzywuzzy (>=0.18.0,<0.19.0)
+Requires-Dist: loguru (>=0.5.3,<0.6.0)
+Requires-Dist: lxml (>=4.7.1,<5.0.0)
+Requires-Dist: more-itertools (>=8.12.0,<9.0.0)
+Requires-Dist: numpy (>=1.21.5,<2.0.0)
+Requires-Dist: path (>=16.2.0,<17.0.0)
+Requires-Dist: peewee (>=3.14.8,<4.0.0)
+Requires-Dist: plumbum (>=1.7.1,<2.0.0)
+Requires-Dist: python-slugify (>=5.0.2,<6.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: retrying (>=1.3.3,<2.0.0)
+Requires-Dist: tables (>=3.6.1,<4.0.0)
+Requires-Dist: tqdm (>=4.62.3,<5.0.0)
+Requires-Dist: uplink (>=0.9.4,<0.10.0)
+Requires-Dist: watchdog (>=2.1.6,<3.0.0)
