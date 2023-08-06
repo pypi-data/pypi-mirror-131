@@ -1,0 +1,10 @@
+calculations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+calculations/addition.py,sha256=NPegAJsRaCbICPKtNosqEcTYYwF65vaMNUB2V9Zcaxc,61
+calculations/division.py,sha256=Jxm8bSn9LvWcaO1l7BpUBETzE-CQS-daWVdBlhYsMHY,61
+calculations/multiply.py,sha256=y5uEs1OX1Auofh5D4PMbBB9uMUS3E-JskEsEnY5OYes,61
+calculations/subtraction.py,sha256=OHugLmv24cw2wwpVEOEW3wJJtx33ruLu_-OzBNm9P78,64
+example_pkg_Irene-0.0.1.dist-info/LICENSE,sha256=fmdFsMhc5dEPXUiPGZvux63Y575bYX4BbDpeAxsMTyY,170
+example_pkg_Irene-0.0.1.dist-info/METADATA,sha256=3wv_NstuAcUe5c-03aeyX_NXoYvfAOzYURy1kdIFkqw,640
+example_pkg_Irene-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+example_pkg_Irene-0.0.1.dist-info/top_level.txt,sha256=PnQkYcWYSmv_2wu19-690xfDb-z7WFNk1HFpP2kOj7s,13
+example_pkg_Irene-0.0.1.dist-info/RECORD,,
