@@ -1,0 +1,11 @@
+LICENSE.txt
+setup.cfg
+setup.py
+bin_search_stud.egg-info/PKG-INFO
+bin_search_stud.egg-info/SOURCES.txt
+bin_search_stud.egg-info/dependency_links.txt
+bin_search_stud.egg-info/top_level.txt
+package/__init__.py
+package/__main__.py
+package/binary_search_algorithm.py
+package/input_verification.py
