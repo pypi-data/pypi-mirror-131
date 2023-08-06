@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: streamlit-profiler
+Version: 0.1.0
+Summary: Runtime profiler for Streamlit, powered by pyinstrument
+License: MIT
+Author: Johannes Rieke
+Author-email: johannes.rieke@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pyinstrument (>=4.1.1,<5.0.0)
+Requires-Dist: streamlit (>=1.3.0,<2.0.0)
