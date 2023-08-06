@@ -1,0 +1,15 @@
+preserves/__init__.py,sha256=ubKqM3xkOUGerdAzymiqCA59l1fq9kQfWbdxGoJQYWM,418
+preserves/binary.py,sha256=MnX7axPA3jQ1Awm47BMdcNv7jsGH2ScguWg3EiOeEX4,6967
+preserves/compat.py,sha256=jddHG5KMpNF7OTdUS2Fj60TIAuC6U9I11bRybKRbIQg,214
+preserves/error.py,sha256=1a018tblp3gw9qyEh-33Kl6YaDmt_LAlm9FcbUEwW-U,109
+preserves/fold.py,sha256=1LARJ5wAZQ7rxLMaspohuQgYK8EGp8Sop2bYo7_xaMw,613
+preserves/path.py,sha256=zAb2daQ6UbaS1Ej595eUqAvVFxVaVvKroLavYVn-9tY,11779
+preserves/schema.prb,sha256=tx3ag8Ld9GD38yjp2caqN3iEY5AejH_OAjRntgdpCmM,2936
+preserves/schema.py,sha256=S7Z_CGOX13b5FFH3SL3QORNqT2rMInnbfyiPI6zCaxk,14345
+preserves/test_preserves.py,sha256=X7VEp9mqgo2Rc-_8IDbrUdqbVEqzqxYNt35MUJDxAfM,13489
+preserves/text.py,sha256=h65-tuEaH2QFILhUHw6ZcRfIqNUfyp5k8tDrQ4kW6WQ,13238
+preserves/values.py,sha256=4Dn95Yc3gBQTlbIbk9Myn_gmcIfuf9Nvwny37_g4S6g,9299
+preserves-0.7.3.dist-info/METADATA,sha256=CmdS_yk-9C9NlMrlTs_NC5Ob_wywZxiuVfCtD3dHFeQ,578
+preserves-0.7.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+preserves-0.7.3.dist-info/top_level.txt,sha256=xgFjfvm2n7THVOaqXYIGVBxLxFMtzoMH2R34ZLbZVzs,10
+preserves-0.7.3.dist-info/RECORD,,
