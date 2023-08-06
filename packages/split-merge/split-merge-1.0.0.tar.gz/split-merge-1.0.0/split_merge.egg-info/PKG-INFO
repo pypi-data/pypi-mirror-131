@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: split-merge
+Version: 1.0.0
+Summary: 文件拆分 & 合并
+Home-page: UNKNOWN
+Author: Shawn
+Author-email: shx15979391664@163.com
+License: MIT Licence
+Description: 文件拆分 & 合并
+Keywords: pip,split,merge
+Platform: any

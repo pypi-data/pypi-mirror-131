@@ -1,0 +1,7 @@
+setup.py
+split-merge-dir/__init__.py
+split-merge-dir/split-merge.py
+split_merge.egg-info/PKG-INFO
+split_merge.egg-info/SOURCES.txt
+split_merge.egg-info/dependency_links.txt
+split_merge.egg-info/top_level.txt
