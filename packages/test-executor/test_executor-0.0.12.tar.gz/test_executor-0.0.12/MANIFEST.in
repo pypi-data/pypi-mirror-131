@@ -1,0 +1,2 @@
+recursive-include test_executor *.md *.ini *.py
+recursive-exclude test_executor tests/*
