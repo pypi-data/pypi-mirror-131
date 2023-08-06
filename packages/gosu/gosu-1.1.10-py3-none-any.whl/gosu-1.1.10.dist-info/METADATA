@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: gosu
+Version: 1.1.10
+Summary: the extensible taskrunner
+Author-email: "Herbert Rusznak (tlb)" <herbert.rusznak@gmail.com>
+Requires-Python: >=3.8
+Requires-Dist: plumbum
+Requires-Dist: typer
+Requires-Dist: click<8
+Requires-Dist: python-dotenv
+Requires-Dist: semver
+Requires-Dist: pytest
+Requires-Dist: pyupgrade
+Requires-Dist: isort
+Requires-Dist: black
+Requires-Dist: flake8
+Requires-Dist: mccabe
+Requires-Dist: flake8-comprehensions
+Requires-Dist: flake8-print
+Requires-Dist: flake8-cognitive-complexity
+Requires-Dist: pre_commit
+Requires-Dist: pytest-xdist
+Requires-Dist: pytest-sugar
+Requires-Dist: coverage
+Requires-Dist: django_coverage_plugin
+Requires-Dist: pyupgrade
+Requires-Dist: flit
+Requires-Dist: twine
+Project-URL: Source, https://gitlab.com/tuhls/gosu

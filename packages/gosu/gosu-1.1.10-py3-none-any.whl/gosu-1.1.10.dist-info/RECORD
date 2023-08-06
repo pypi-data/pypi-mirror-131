@@ -1,0 +1,14 @@
+gosu/.coveragerc_django,sha256=MGH_gELb8zfjQ9_EGnitD29IFPZfPa0uKmUGEqkjuwc,351
+gosu/.coveragerc_python,sha256=DXb9rGp6m024x0FzwhAZ4Jjxoi0pvzsi20uH3trLJ_s,283
+gosu/.flake8,sha256=yrbs0zh7pFN_isSS6ZGCTXsUANtnQXePFLza3y2LdVE,347
+gosu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gosu/main.py,sha256=hdSZpQysOVaRZmKxbZHp4W7_-S6iQd1aQX_vgHt3Raw,665
+gosu/cmds/__init__.py,sha256=LiRcTBpzsKXZwZXK_8qKqFLSJv5Rku3qcWYEGL6V79I,41
+gosu/cmds/ci.py,sha256=Cjce7HWG5edsHYNg-gt-yDLdW99GEdp7mUOjMzXCEuo,2363
+gosu/cmds/django.py,sha256=tluu9OnN6E6LGf2__csu4uCWAtMtuRxqwN6Yhep7pfA,1369
+gosu/cmds/python.py,sha256=lq5DUPZYG3EiPXi_xEbx1_RLYjvi_RdCgJTaLp05Meg,3471
+gosu-1.1.10.dist-info/entry_points.txt,sha256=GrQfjfV6tQHpiQc3T3xA2JPjcg3KqMW-Z8ME7Cx5DxE,38
+gosu-1.1.10.dist-info/LICENSE,sha256=Gb_pkfGgsahGoGR3xjSzvFU-rsD-n8mbVu8nDq0hd5U,1098
+gosu-1.1.10.dist-info/WHEEL,sha256=LVOPL_YDMEiGvRLgDK1hLkfhFCnTcxcAYZJtpNFses0,81
+gosu-1.1.10.dist-info/METADATA,sha256=Ttc0Gk287PwYQyQvAMQJ8MyzOCQTWLC2KgazRj5NXZA,793
+gosu-1.1.10.dist-info/RECORD,,
