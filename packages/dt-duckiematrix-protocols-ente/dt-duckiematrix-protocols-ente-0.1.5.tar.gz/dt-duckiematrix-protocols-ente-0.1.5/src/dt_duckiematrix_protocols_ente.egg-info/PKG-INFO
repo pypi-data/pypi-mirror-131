@@ -1,0 +1,17 @@
+Metadata-Version: 1.0
+Name: dt-duckiematrix-protocols-ente
+Version: 0.1.5
+Summary: UNKNOWN
+Home-page: http://github.com/duckietown/lib-dt-duckiematrix-protocols
+Author: Andrea F. Daniele
+Author-email: afdaniele@duckietown.com
+License: UNKNOWN
+Description: 
+        dt-duckiematrix-protocols: Protocol messages used to communicate with the duckiematrix engine.
+        ==============================================================================================
+        
+        
+        Protocol messages used to communicate with the duckiematrix engine.
+        
+        
+Platform: UNKNOWN
