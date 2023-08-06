@@ -1,0 +1,7 @@
+irods_fsspec/__init__.py,sha256=3xsqBgia5_PiuM3esYew8a8rL0erab2X1pIvK3gn8A0,9309
+irods_fsspec/test_irods_fsspec.py,sha256=A2rbNz_iokVcEq7LFF8lizZ1AA7Lk7nk45xTFfMB0eM,6415
+irods_fsspec-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+irods_fsspec-0.0.1.dist-info/METADATA,sha256=V39jzKk4sI7cuT2nvDtOi9eTHnYeMpRRtZV0XWB7QvQ,2363
+irods_fsspec-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+irods_fsspec-0.0.1.dist-info/top_level.txt,sha256=GSTXtZ2OWrKphEE92nZu6KHFQksNpmuGFHHDA8J0LUw,13
+irods_fsspec-0.0.1.dist-info/RECORD,,
