@@ -1,0 +1,10 @@
+puristaa>=2021.10.24
+
+[dev]
+black
+coverage
+flake8
+mypy
+pytest
+pytest-cov
+pytest-flake8
