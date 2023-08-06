@@ -1,0 +1,13 @@
+pygopus/__init__.py,sha256=S1ma2HJBvA1QZ7aYrUTi_YgqoJYKIzib2ImMMnaO7fI,26
+pygopus/_sercv.py,sha256=Y-1GEyaOX7bvo-4UVWKjJZtCTzVMFMaa84pvq4c29HY,2738
+pygopus/complete_helper.py,sha256=tcRWOnm_P0rpysGbDM4mCg2sgsW4Olk9QQu2BEXEMHI,170
+pygopus/core.py,sha256=1J1L8q9Q2fnrTvQFZA31rc21f5UY3jw6IE8F0WpJIt4,6154
+pygopus/service.py,sha256=OopLMz694fxq3SrKlULdEITPO_yyt6tCF-2QssLV86s,2146
+pygopus/bin/tpl.xlsx,sha256=KcBPrT0yjoiuqiHNOwPdIy42PmBuMnrexgaSAuDIv8c,8439
+pygopus/bin/Darwin/pygobin,sha256=5EaobJMN4do-0soHJn9yP8BW0GtXyZBrhYc3VN6Lb5A,10355808
+pygopus/bin/Linux/pygobin,sha256=EfBeGtEl692zIbV4ynxaEXepDlg9AjTLy-EvY9IAgvk,10493189
+pygopus/bin/Windows/pygobin.exe,sha256=i4TOLyLj7VnjLsqJ2gSHXtqIqqhvgqSyPWSs-KORwf4,10548224
+pygopus-0.0.0.4.dist-info/METADATA,sha256=8-Tij1ApGifvtusbcHG27KIk4ji9YZWbXmuEIp8wdac,595
+pygopus-0.0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pygopus-0.0.0.4.dist-info/top_level.txt,sha256=KnjhvU_lYjbWI_nU-DyNi294YbCMp6GZgfV9VTTU8JA,8
+pygopus-0.0.0.4.dist-info/RECORD,,
