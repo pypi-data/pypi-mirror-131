@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fishrotate
+Version: 0.1.0
+Summary: 基于ROS2旋转可视化工具
+Home-page: UNKNOWN
+Maintainer: fishros
+Maintainer-email: fishros@foxmail.com
+License: OSI Approved :: BSD License
+Platform: UNKNOWN
+Requires-Dist: setuptools
+Requires-Dist: transforms3d
+
+UNKNOWN
+
+
