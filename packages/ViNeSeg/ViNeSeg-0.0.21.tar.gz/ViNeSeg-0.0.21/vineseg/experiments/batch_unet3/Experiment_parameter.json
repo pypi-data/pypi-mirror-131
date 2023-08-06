@@ -1,0 +1,67 @@
+{
+  "path loading model": null,
+  "paths training image folder": [
+    "/home/webern/idsair_public/data/mean_images_ina/train/img",
+    "/home/webern/idsair_public/data/mean_images_julian/train/img",
+    "/home/webern/idsair_public/data/frame_images_ina/train/img"
+  ],
+  "paths training masks folder": [
+    "/home/webern/idsair_public/data/mean_images_ina/train/mask",
+    "/home/webern/idsair_public/data/mean_images_julian/train/mask",
+    "/home/webern/idsair_public/data/frame_images_ina/train/mask"
+  ],
+  "paths val image folder": [
+    "/home/webern/idsair_public/data/mean_images_ina/val/img",
+    "/home/webern/idsair_public/data/mean_images_julian/val/img",
+    "/home/webern/idsair_public/data/frame_images_ina/val/img"
+  ],
+  "paths val masks folder": [
+    "/home/webern/idsair_public/data/mean_images_ina/val/mask",
+    "/home/webern/idsair_public/data/mean_images_julian/val/mask",
+    "/home/webern/idsair_public/data/frame_images_ina/val/mask"
+  ],
+  "validation intervall": 10,
+  "ROI training": 128,
+  "ROI validation": 64,
+  "augementation probability": 0.5,
+  "preprocessing steps": [
+    "ScaleIntensity"
+  ],
+   "augmentation steps": [
+    "SpatialCrop",
+    "Rotate",
+    "Flip",
+    "Zoom",
+    "ElasticDeformation",
+    "AffineTransformation"
+  ],
+  "postprocessing": [
+    {
+      "Activation": "Sigmoid"
+    },
+    {
+      "Threshold": 0.9
+    }
+  ],
+  "model type": "U-Net big",
+  "number input channel": 2,
+  "channel types input": [
+    "clahe",
+    "nl_means"
+  ],
+  "number output channel": 1,
+  "channel types output": [
+    "identity"
+  ],
+  "optimizer": "Adam",
+  "loss function": "Dice loss",
+  "metrics": [
+    "Dice Metric"
+  ],
+  "epochs": 200,
+  "batch size": 4,
+  "learning rate": 0.01,
+  "weight decay": 1e-05,
+  "path save model": "/home/webern/idsair_public/experiments/pretraining_transformer_again42/",
+  "logging training results": "/home/webern/idsair_public/experiments/result.csv"
+}
