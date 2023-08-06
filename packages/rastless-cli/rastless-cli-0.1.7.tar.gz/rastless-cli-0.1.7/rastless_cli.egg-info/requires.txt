@@ -1,0 +1,6 @@
+boto3
+botocore
+numpy
+click
+rasterio
+rio-cogeo
