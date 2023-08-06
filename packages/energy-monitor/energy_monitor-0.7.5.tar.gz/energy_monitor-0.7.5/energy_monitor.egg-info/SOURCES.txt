@@ -1,0 +1,13 @@
+setup.py
+energy_monitor/__init__.py
+energy_monitor/cpu_percent.py
+energy_monitor/dash_app.py
+energy_monitor/powergadget_wrapper.py
+energy_monitor/train_mnist.py
+energy_monitor/utils.py
+energy_monitor.egg-info/PKG-INFO
+energy_monitor.egg-info/SOURCES.txt
+energy_monitor.egg-info/dependency_links.txt
+energy_monitor.egg-info/requires.txt
+energy_monitor.egg-info/top_level.txt
+scripts/display-energy

@@ -1,0 +1,7 @@
+numpy
+tqdm
+pandas
+dash
+plotly
+psutil
+dash-bootstrap-components
