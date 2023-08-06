@@ -1,0 +1,73 @@
+\documentclass{article}
+
+\usepackage{amsmath} % For writing mathematics (align, split environments etc.)
+\usepackage{mathtools}
+% \usepackage{amsthm} % For the proof environment
+\usepackage{amsfonts} 
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{soul}
+\usepackage{indentfirst}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{cancel}
+
+\usetikzlibrary{calc, automata, chains, arrows.meta, math}
+\setcounter{MaxMatrixCols}{20}
+
+\usepackage{biblatex}
+\addbibresource{bibliography.bib}
+
+
+\title{A game theoretic model of the behavioural gaming that takes place at the EMS - ED interface}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\input{Abstract/main.tex}
+\newpage
+\tableofcontents
+\newpage
+
+% Introduction of the project
+\input{Introduction/main.tex}
+
+% Game Theoretic Component
+\input{Game_theory_component/main.tex}
+
+
+\newpage
+% Quick representation of the steps of methodology
+\input{Methodology/Quick/main.tex}
+
+\newpage
+% Proper methodology
+\input{Methodology/Proper/main.tex}
+
+% Markov Chains
+\input{MarkovChain/markov_chain_model/main.tex}
+\newpage
+\input{MarkovChain/closed_form_state_probs/main.tex}
+\newpage
+\input{MarkovChain/expressions_from_pi/main.tex}
+
+\newpage
+% Heatmap comparisons
+\input{Comparisons/Example_model/main.tex}
+
+
+\newpage
+\input{Miscellaneous/Useful_tikz/main.tex}
+
+
+% Formulas used
+\newpage
+\input{Miscellaneous/Formulas/main.tex}
+
+\newpage
+\printbibliography[title={References}]
+
+\end{document}
