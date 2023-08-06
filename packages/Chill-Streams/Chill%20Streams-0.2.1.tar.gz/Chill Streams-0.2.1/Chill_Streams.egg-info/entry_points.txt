@@ -1,0 +1,4 @@
+[console_scripts]
+sltool = chill_streams.cli:sl_main
+vlc-radio = chill_streams.cli:main
+
