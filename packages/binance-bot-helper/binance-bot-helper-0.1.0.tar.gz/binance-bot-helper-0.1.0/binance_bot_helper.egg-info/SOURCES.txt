@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+binance_bot_helper/__init__.py
+binance_bot_helper/main.py
+binance_bot_helper.egg-info/PKG-INFO
+binance_bot_helper.egg-info/SOURCES.txt
+binance_bot_helper.egg-info/dependency_links.txt
+binance_bot_helper.egg-info/requires.txt
+binance_bot_helper.egg-info/top_level.txt
