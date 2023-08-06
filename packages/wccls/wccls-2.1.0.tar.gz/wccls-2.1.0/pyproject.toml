@@ -1,0 +1,52 @@
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "wccls"
+version = "2.1.0"
+description = "Scraper for the WCCLS account page"
+authors = ["Rehan Khwaja <rehan@khwaja.name>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/rkhwaja/wccls"
+classifiers = [
+	"License :: OSI Approved :: MIT License",
+	"Development Status :: 5 - Production/Stable",
+	"Intended Audience :: Developers",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10"
+	]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+beautifulsoup4 = ">=4.9.3"
+requests = ">=2.25.1"
+urllib3 = [
+	{ version = ">=1.26", python = ">=3.10,<4" }
+]
+
+[tool.poetry.dev-dependencies]
+pytest = ">=3.9"
+pylint = ">=2.6.2"
+pylint-quotes = ">=0.2.1"
+pytest-cov = ">=2.10.1"
+pytest-vcr = ">=1.0.2"
+
+[tool.pylint.master]
+load-plugins = "pylint_quotes"
+
+[tool.pylint.format]
+indent-string = "\t"
+string-quote = "single-avoid-escape"
+triple-quote = "single"
+
+[tool.pylint.messages_control]
+disable = [
+	"fixme",
+	"invalid-name",
+	"line-too-long",
+	"missing-docstring",
+	"too-few-public-methods",
+	"too-many-arguments"
+]
