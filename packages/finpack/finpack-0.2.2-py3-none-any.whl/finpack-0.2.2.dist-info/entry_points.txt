@@ -1,0 +1,3 @@
+[console_scripts]
+finpack=finpack.core.cli:main
+
