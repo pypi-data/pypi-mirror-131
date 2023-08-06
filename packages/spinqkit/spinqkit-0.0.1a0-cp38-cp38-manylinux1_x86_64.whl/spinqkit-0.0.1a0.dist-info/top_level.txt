@@ -1,0 +1,3 @@
+qiskit
+spinq_backends
+spinqkit
