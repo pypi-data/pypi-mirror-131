@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: scine-utilities
+Version: 4.0.0
+Summary: Utilities used in all SCINE modules
+Home-page: https://www.scine.ethz.ch
+Author: ETH Zurich, Laboratory of Physical Chemistry, Reiher Group
+Author-email: scine@phys.chem.ethz.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: C++
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+SCINE - Utilities Python Bindings
+=================================
+
+Introduction
+------------
+
+This repository contains functionality which is used in most SCINE modules.
+It is vital for the correct functioning of all SCINE modules, but it does not
+directly provide any functionality for end users.
+
+
+Installation and Usage
+----------------------
+
+We currently offer only a ``manylinux2014`` build for Linux platforms. This may
+be expanded in the future. If you are on a different platform, you can build 
+the Python bindings from source (https://github.com/qcscine/utilities/).
+
+
+Support and Contact
+-------------------
+
+In case you should encounter problems or bugs, please write a short message
+to scine@phys.chem.ethz.ch.
+
+
