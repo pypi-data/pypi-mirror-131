@@ -1,0 +1,13 @@
+sheets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sheets/__main__.py,sha256=gc99KrC1JUBB_wczw7zxjEqr5c0xi_SCn0CwkCrzcfk,1073
+sheets/bot.py,sha256=kxvAla-2BzGBvXlia4Z1ZjJnu8rxHyqaj9JH66YTOg4,3980
+sheets/core.py,sha256=vkHpZ5W6ARNA4Z0kstF-ccBycd7q6tiAqy16AAqfPjg,7770
+sheets/ident.py,sha256=49NxLpmj-I8OZKqlElLTMfKLq-vBwjPg4y_9DURpCAM,904
+sheets/prepare.py,sha256=YNuypwhQ4NGVcokSZaGVzKNyqm9n_V6lXXVat-pTfwA,5388
+sheets/stockpile.py,sha256=9NDPddOUuNMUGSBmt0YvrNtOAdxaCDCND_lHi9MRnWE,3251
+sheets/utools.py,sha256=-dBsIRB_KnbPC-3TuuI6WpAi_iE9sEqORC9UgKD2N8g,7794
+foxhole_sheets-3.0.0.dist-info/LICENSE,sha256=LzRiKdTNsexS0jExuLqy9UL23qU8lQc0Glf0VC-oot0,1087
+foxhole_sheets-3.0.0.dist-info/METADATA,sha256=ZYz3DgPxTjFFlYEN3JRGjw5DngtyEarczyFDaApUaAs,2291
+foxhole_sheets-3.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+foxhole_sheets-3.0.0.dist-info/top_level.txt,sha256=q3XqJ1IYcdD7oqdHg-g-a5-q0KO4kQh3Iss0dNpJOyI,7
+foxhole_sheets-3.0.0.dist-info/RECORD,,
