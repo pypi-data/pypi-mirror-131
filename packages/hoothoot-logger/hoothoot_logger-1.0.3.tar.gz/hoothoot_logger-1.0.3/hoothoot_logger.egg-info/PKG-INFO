@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: hoothoot-logger
+Version: 1.0.3
+Summary: Lib to connect with hoothoot
+Home-page: https://gitlab.com/victorhdcoelho/hoothoot-logger
+Author: Victor Coelho
+Author-email: victorhdcoelho@gmail.com
+License: UNKNOWN
+Description: # hoothoot-logger
+        
+        Lib de apoio a hoothoot-logger
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
