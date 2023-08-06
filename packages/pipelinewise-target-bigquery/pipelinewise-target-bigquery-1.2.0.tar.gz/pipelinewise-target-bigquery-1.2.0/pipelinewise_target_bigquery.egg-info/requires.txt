@@ -1,0 +1,10 @@
+pipelinewise-singer-python==1.*
+google-cloud-bigquery==2.20.0
+joblib==1.1.0
+inflection==0.3.1
+fastavro==0.22.8
+
+[test]
+pytest==6.2.5
+pylint==2.12.2
+pytest-cov==3.0.0
