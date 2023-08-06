@@ -1,0 +1,3 @@
+jinja2
+fire
+freehub>=0.1.2.7
