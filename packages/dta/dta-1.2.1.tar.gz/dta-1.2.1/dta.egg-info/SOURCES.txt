@@ -1,0 +1,7 @@
+README.md
+dta.py
+setup.py
+dta.egg-info/PKG-INFO
+dta.egg-info/SOURCES.txt
+dta.egg-info/dependency_links.txt
+dta.egg-info/top_level.txt
