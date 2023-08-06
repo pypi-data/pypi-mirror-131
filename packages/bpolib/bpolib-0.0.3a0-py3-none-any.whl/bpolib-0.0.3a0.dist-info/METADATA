@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bpolib
+Version: 0.0.3a0
+Summary: -- alpha release --
+Home-page: UNKNOWN
+Author: Kreusada
+Author-email: kreusadaprojects@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bs4
+Requires-Dist: python-dateutil
+Requires-Dist: requests
+
+-- alpha release --
+
