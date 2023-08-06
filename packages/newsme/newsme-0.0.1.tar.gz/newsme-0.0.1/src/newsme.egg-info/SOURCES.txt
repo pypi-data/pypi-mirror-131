@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/newsme/NewsReader.py
+src/newsme/__init__.py
+src/newsme/get_news.py
+src/newsme/html_creator.py
+src/newsme.egg-info/PKG-INFO
+src/newsme.egg-info/SOURCES.txt
+src/newsme.egg-info/dependency_links.txt
+src/newsme.egg-info/requires.txt
+src/newsme.egg-info/top_level.txt
+test/test_get_news.py
+test/test_html_creator.py
