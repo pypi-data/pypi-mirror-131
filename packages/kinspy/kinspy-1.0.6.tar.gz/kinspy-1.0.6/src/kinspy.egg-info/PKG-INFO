@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: kinspy
+Version: 1.0.6
+Summary: A small example package
+Home-page: UNKNOWN
+Author: Yunxiao Zhang
+Author-email: yunxiao9277@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Name: kinspy
+# Describes: provide convenient functions and constants
+# Version: v1.0.6
+# Date: 2021-12-16
+# Author: Yunxiao Zhang
+# E-mail: yunxiao9277@gmail.com
+
