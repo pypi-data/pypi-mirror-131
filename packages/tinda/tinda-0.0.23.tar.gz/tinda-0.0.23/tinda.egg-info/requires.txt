@@ -1,0 +1,12 @@
+numpy
+argparse
+wave
+pyautogui
+twine
+pyttsx3
+pyaudio
+speedtest-cli
+pynput
+datetime
+bs4
+SpeechRecognition
