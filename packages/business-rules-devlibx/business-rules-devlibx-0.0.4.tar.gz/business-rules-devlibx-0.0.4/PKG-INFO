@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: business-rules-devlibx
+Version: 0.0.4
+Summary: Python DSL for setting up business intelligence rules that can be configured without code
+Home-page: https://github.com/devlibx/business-rules
+Author: devlibx
+Author-email: devlibxgithub@gmail.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
