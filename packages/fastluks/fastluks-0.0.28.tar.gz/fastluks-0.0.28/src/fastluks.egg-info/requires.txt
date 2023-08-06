@@ -1,0 +1,4 @@
+zc.lockfile==2.0
+hvac==0.11.2
+distro==1.3.0
+flask==2.0.0
