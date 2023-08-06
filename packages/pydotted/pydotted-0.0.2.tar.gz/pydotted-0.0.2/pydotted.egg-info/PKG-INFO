@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pydotted
+Version: 0.0.2
+Summary: pydotted
+Home-page: UNKNOWN
+Author: Alex Redden
+Author-email: alexander.h.redden@gmail.com
+License: UNKNOWN
+Keywords: python,dict,dot,dotdict,dot notation,pydotted
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+License-File: LICENSE
+
+pydotted is a very simple low code python module that allows for dot notation access / updating of a dictionary instance, including nested dictionaries.
+
