@@ -1,0 +1,11 @@
+fastclasses_json/__init__.py,sha256=YrnFTh1Cf-u4ELPVbnihsXAiRh-o_Z8HORNgBY2cJbI,102
+fastclasses_json/api.py,sha256=iF---24m-k9mEeD2eoK4dqQ-xNA7lB9g4wna3I9Vw4A,1533
+fastclasses_json/core.py,sha256=7k9G2cDgpZzL43XK5iQ4A5urCE9w9zpaMJMu_ULPdYw,15655
+fastclasses_json/mypy_plugin.py,sha256=gu0Pj7fVRmO9m5EfFbSMcGiVUjVNy6BqiTqe6DEgyB8,4716
+fastclasses_json/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastclasses_json/utils.py,sha256=LZWms_MkYktqadEHlL8Llk823qdFcMRH0BDoKNGoSKk,142
+fastclasses_json-0.4.0.dist-info/LICENSE.txt,sha256=Lf3IKOotscgyzFp-Y9nlCJBX8CAoj-fq-L7e4P6eKBg,1071
+fastclasses_json-0.4.0.dist-info/METADATA,sha256=VLwvXjszc1SVfI8yO5NbSCDxesk0hX6H_Cy8G9iSUTQ,7900
+fastclasses_json-0.4.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fastclasses_json-0.4.0.dist-info/top_level.txt,sha256=sBAZ7gnRxSHytUsbwqBlqdGqVo_lj6GXGwIvNrRGvmc,17
+fastclasses_json-0.4.0.dist-info/RECORD,,
