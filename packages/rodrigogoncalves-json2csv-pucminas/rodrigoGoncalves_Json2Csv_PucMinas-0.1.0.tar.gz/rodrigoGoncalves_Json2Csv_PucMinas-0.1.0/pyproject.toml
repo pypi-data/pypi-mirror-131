@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "rodrigoGoncalves_Json2Csv_PucMinas"
+version = "0.1.0"
+description = "Converter Csv2Json for learning purposes"
+authors = ["Rodrigo Pereira Gonçalves <rodrigo.goncalves@engenharia.ufjf.br>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.3.4"
+click = "^8.0.3"
+
+[tool.poetry.dev-dependencies] #Tudo o que está aqui não vai pro deploy
+flake8 = "^4.0.1" #Ver erros no programa
+pytest = "^6.2.5"
+mypy = "^0.910" #Mostra erros em identenção de função
+black = "^21.12b0" #Identador automático
+pandas-stubs = "^1.2.0"
+ipython = "^7.30.1"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+csv_converter = 'rodrigoGoncalves_Json2Csv_PucMinas.converter:converter'
+
+[tool.black]
+line-length = 99
+
+[tool.isort]
+profile = "black"
