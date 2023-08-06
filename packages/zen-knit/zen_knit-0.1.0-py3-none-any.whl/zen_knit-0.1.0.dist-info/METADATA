@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: zen-knit
+Version: 0.1.0
+Summary: Zen-Knit is a formal (PDF), informal (HTML) report generator for data analyst and data scientist who wants to use python. Inspired from Pweave. 
+Home-page: https://github.com/Zen-Reportz/zen_knit
+License: MIT
+Author: Zen
+Author-email: zenreportz@protonmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Markdown (>=3.3.6,<4.0.0)
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: ipykernel (>=6.6.0,<7.0.0)
+Requires-Dist: ipython (>=7.30.1,<8.0.0)
+Requires-Dist: jupyter-client (>=7.1.0,<8.0.0)
+Requires-Dist: nbconvert (>=6.3.0,<7.0.0)
+Requires-Dist: nbformat (>=5.1.3,<6.0.0)
+Requires-Dist: pandas (>=1.3.4,<2.0.0)
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: tabulate (>=0.8.9,<0.9.0)
+Project-URL: Repository, https://github.com/Zen-Reportz/zen_knit
+Description-Content-Type: text/x-rst
+
+About Zen-Knit:
+---------------
+
+Zen-Knit is a formal (PDF), informal (HTML) report generator for data analyst and data scientist who wants to use python. Inspired from Pweave. 
+Zen-Knit is good for creating reports, tutorials with embedded python
+
+Features:
+---------
+
+* Python 3.6+ compatibility
+* Support for IPython magics and rich output.
+* **Execute python code** in the chunks and **capture** input and output to a report.
+* **Use hidden code chunks,** i.e. code is executed, but not printed in the output file.
+* Capture matplotlib graphics.
+* Evaluate inline code in documentation chunks marked using ```{ }`` 
+* Publish reports from Python scripts. Similar to R markdown.
+
+Install
+-----------------------
+
+From PyPi::
+
+  pip install --upgrade zen_knit
+
+or download the source and run::
+
+  python setup.py install
+
+
+
+License information
+-------------------
+
+See the file "LICENSE" for information on the history of this
+software, terms & conditions for usage, and a DISCLAIMER OF ALL
+WARRANTIES.
