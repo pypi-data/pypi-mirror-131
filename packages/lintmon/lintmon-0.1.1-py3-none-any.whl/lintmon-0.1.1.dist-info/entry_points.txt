@@ -1,0 +1,8 @@
+[console_scripts]
+lintmon-run-all=lintmon:run_all
+lintmon-start=lintmon:start
+lintmon-status=lintmon:status
+lintmon-status-prompt=lintmon:status_prompt
+lintmon-stop=lintmon:stop
+lintmond=lintmon:lintmond
+
