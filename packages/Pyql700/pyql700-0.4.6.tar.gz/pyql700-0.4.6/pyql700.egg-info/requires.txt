@@ -1,0 +1,5 @@
+ansicolors
+numpy
+qrcode
+termcolor
+textwrap
