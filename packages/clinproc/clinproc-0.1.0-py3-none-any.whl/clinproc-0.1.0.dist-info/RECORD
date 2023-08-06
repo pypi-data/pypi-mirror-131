@@ -1,0 +1,6 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/clinproc_tests.py,sha256=KhxFqhMQe25HTPshqsxVzXJ8AnEVFgQDaW-dpbWzazU,6325
+clinproc-0.1.0.dist-info/METADATA,sha256=ucu_DRaP0p02CT-BeD6UaNBL9BrzqMLIrC_7LRKNr9s,4059
+clinproc-0.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+clinproc-0.1.0.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+clinproc-0.1.0.dist-info/RECORD,,
