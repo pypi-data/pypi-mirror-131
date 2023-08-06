@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ezconn
+Version: 0.0.5
+Summary: Easy python DB-API 2.0 connector for most popular analytical DB
+Home-page: https://github.com/analytikaplus/ezconn
+Author: ANALYTIKA PLUS
+Author-email: support@analytikaplus.ru
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/analytikaplus/ezconn/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: JayDeBeApi
+
+# ezconn
+Easy python DB-API 2.0 connector for most popular analytical DB
+
+
