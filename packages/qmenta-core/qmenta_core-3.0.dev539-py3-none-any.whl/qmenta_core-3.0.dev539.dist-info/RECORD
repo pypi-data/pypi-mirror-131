@@ -1,0 +1,14 @@
+qmenta/__init__.py,sha256=GtRobyYjQ_EJvtPNnbOsfa_lacXME6s5UngCQzy7wpU,70
+qmenta/core/.gitignore,sha256=T_6cEPGYAfQ6-gdGwpLCLe1SpRnTl4vwi4qfVM1QsYI,8
+qmenta/core/__init__.py,sha256=X10IDYLaancSvsrJ1gRgY1u3uR3f1JveOPiCglfnYLs,325
+qmenta/core/auth.py,sha256=5I4WqYn-yxAgs9xJnz_Gb5oUGgBDXVZ31MrAVwkRfWA,5695
+qmenta/core/errors.py,sha256=T0TyqDCoH_L_bwdNjAa9KutrCJ17yMDOo3YeSVchoJU,1334
+qmenta/core/platform.py,sha256=MdenmOK44loEud5y0gUn07D117quupjKa-j8stXbRtU,4933
+qmenta/core/upload/__init__.py,sha256=kleKeT8d6hVfMkcCCPlP72jvi62ci8Ojk3RjqDrAaYo,187
+qmenta/core/upload/multi.py,sha256=puDAzQ-IMz2tkiRCcj028WX2ZosffsXJ0SOipel1H5s,4738
+qmenta/core/upload/prepare.py,sha256=GyirCPj_eF9Z10kwljVfmPI5qDKHONKZVPsRvNFPukY,8170
+qmenta/core/upload/single.py,sha256=-p2XBiZ8pKRJKtGsh46IKG4XQhkhHfsr2nMGgSWulQE,20078
+qmenta/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qmenta_core-3.0.dev539.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+qmenta_core-3.0.dev539.dist-info/METADATA,sha256=zeUFxLxW629WB0zfOfONbEyWi8kQ39WZo1Mr5kL7gj8,774
+qmenta_core-3.0.dev539.dist-info/RECORD,,
