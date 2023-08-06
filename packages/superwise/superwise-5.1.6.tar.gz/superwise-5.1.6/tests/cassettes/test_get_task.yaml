@@ -1,0 +1,144 @@
+interactions:
+- request:
+    body: '{"clientId": "11726250-7f87-4395-b925-e040713cca4d", "secret": "e560ac7c-4585-4115-9478-79ded7c4e519"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '102'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.0
+    method: POST
+    uri: https://superwise-dev.frontegg.com/identity/resources/auth/v1/api-token
+  response:
+    body:
+      string: '{"expires":"Mon, 20 Dec 2021 13:00:53 GMT","expiresIn":86400,"accessToken":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjQ3ZDdmMDg2In0.eyJzdWIiOiIxMTcyNjI1MC03Zjg3LTQzOTUtYjkyNS1lMDQwNzEzY2NhNGQiLCJlbWFpbCI6InN3X29yeWFuZG5hQHN1cGVyd2lzZS5haSIsInVzZXJNZXRhZGF0YSI6e30sInRlbmFudElkIjoib3J5YW5kbmEiLCJyb2xlcyI6WyJWaWV3ZXIiXSwicGVybWlzc2lvbnMiOlsiZmUuc2VjdXJlLndyaXRlLnVzZXJBcGlUb2tlbnMiLCJmZS5zZWN1cmUuZGVsZXRlLnVzZXJBcGlUb2tlbnMiLCJmZS5zZWN1cmUucmVhZC51c2VyQXBpVG9rZW5zIl0sIm1ldGFkYXRhIjp7fSwiY3JlYXRlZEJ5VXNlcklkIjoiYWU1NDE4OTgtNDJlNy00OTI0LTk3YTMtYzIxMmZlYWI3MzhiIiwidHlwZSI6InVzZXJBcGlUb2tlbiIsInVzZXJJZCI6ImFlNTQxODk4LTQyZTctNDkyNC05N2EzLWMyMTJmZWFiNzM4YiIsImlhdCI6MTYzOTkxODg1MywiZXhwIjoxNjQwMDA1MjUzLCJpc3MiOiJmcm9udGVnZyJ9.T_f11SM0hHklO0YO8-0arp_kNvdeAEAh0d0plUSk54Eq2DKPeAVe-UsOWT7xw-qRXR_MBOrMtQ3_rUoVlVJDQsJ10odk5-3mvyNew89P7OW8zORAqOuTWNg6ByT00_y54UL9yPEuwnyLga8AlRsk-m8DPBxiWII8Z9yJCgad8D_H7jku2AVH5hEmAklT9c5vHlw7mpf8fya29SajtKw26e-0eZn0Qr5E8d0kIs8R_awOL42DKyShsypJzJElUs_eFy9NbDC5xdZFoonsewmpxCbRx6Vk40FRDhpj6piSap7kXN_5H3Ih8DqDuIJnwWk6HF4QbEuQo6n7BqRd_GKTZg","refreshToken":"d6f8a433-a192-4494-a0d6-227132e76f0d"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1127'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 19 Dec 2021 13:00:53 GMT
+      Set-Cookie:
+      - visid_incap_2473133=p7y0simjReGgLMikx6MDqAUtv2EAAAAAQUIPAAAAAAC+45QA5r366smBFZo72s/Q;
+        expires=Mon, 19 Dec 2022 08:27:34 GMT; HttpOnly; path=/; Domain=.frontegg.com
+      - nlbi_2473133=JeIkFuR3QDf82dlyRTaqUgAAAADSG6eEGBrzbuEd0Fulz5pg; path=/; Domain=.frontegg.com
+      - incap_ses_623_2473133=+uIvTAwh0S3E4qrIsFelCAUtv2EAAAAAAVSZyOjqlU3bImHaV4RH/A==;
+        path=/; Domain=.frontegg.com
+      X-CDN:
+      - Imperva
+      X-Iinfo:
+      - 8-109592771-109592777 NNNN CT(89 94 0) RT(1639918852567 147) q(0 0 1 -1) r(2
+        3) U5
+      X-Request-ID:
+      - 0f3eeb70b6912cf7ca1b6cfd06274b74
+      content-security-policy:
+      - 'default-src ''self'';base-uri ''self'';block-all-mixed-content;font-src ''self''
+        https: data:;frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      etag:
+      - W/"467-IZO2srPnfR45i/UuQaTnrD/+i4s"
+      expect-ct:
+      - max-age=0
+      frontegg-trace-id:
+      - 8ca9b861-00b0-4620-a4e5-f6613af53204
+      referrer-policy:
+      - no-referrer
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-dns-prefetch-control:
+      - 'off'
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-xss-protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjQ3ZDdmMDg2In0.eyJzdWIiOiIxMTcyNjI1MC03Zjg3LTQzOTUtYjkyNS1lMDQwNzEzY2NhNGQiLCJlbWFpbCI6InN3X29yeWFuZG5hQHN1cGVyd2lzZS5haSIsInVzZXJNZXRhZGF0YSI6e30sInRlbmFudElkIjoib3J5YW5kbmEiLCJyb2xlcyI6WyJWaWV3ZXIiXSwicGVybWlzc2lvbnMiOlsiZmUuc2VjdXJlLndyaXRlLnVzZXJBcGlUb2tlbnMiLCJmZS5zZWN1cmUuZGVsZXRlLnVzZXJBcGlUb2tlbnMiLCJmZS5zZWN1cmUucmVhZC51c2VyQXBpVG9rZW5zIl0sIm1ldGFkYXRhIjp7fSwiY3JlYXRlZEJ5VXNlcklkIjoiYWU1NDE4OTgtNDJlNy00OTI0LTk3YTMtYzIxMmZlYWI3MzhiIiwidHlwZSI6InVzZXJBcGlUb2tlbiIsInVzZXJJZCI6ImFlNTQxODk4LTQyZTctNDkyNC05N2EzLWMyMTJmZWFiNzM4YiIsImlhdCI6MTYzOTkxODg1MywiZXhwIjoxNjQwMDA1MjUzLCJpc3MiOiJmcm9udGVnZyJ9.T_f11SM0hHklO0YO8-0arp_kNvdeAEAh0d0plUSk54Eq2DKPeAVe-UsOWT7xw-qRXR_MBOrMtQ3_rUoVlVJDQsJ10odk5-3mvyNew89P7OW8zORAqOuTWNg6ByT00_y54UL9yPEuwnyLga8AlRsk-m8DPBxiWII8Z9yJCgad8D_H7jku2AVH5hEmAklT9c5vHlw7mpf8fya29SajtKw26e-0eZn0Qr5E8d0kIs8R_awOL42DKyShsypJzJElUs_eFy9NbDC5xdZFoonsewmpxCbRx6Vk40FRDhpj6piSap7kXN_5H3Ih8DqDuIJnwWk6HF4QbEuQo6n7BqRd_GKTZg
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.0
+    method: GET
+    uri: https://dev.superwise.ai/oryandna/admin/v1/settings/service-account
+  response:
+    body:
+      string: '{"service_account":{"type":"service_account","project_id":"development112539df","private_key_id":"e8254a7c4a05e7e0691f42f50b78025a8c564913","private_key":"-----BEGIN
+        PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCURcAfwE7YvUeS\nFjBnhxqnyzfmQljLIwQ8fPJTfhGrurQNM4ozP+l21RAOmA1szW8wNTkbcivgDr0K\nKBeF0fuJQ+O+P1X1t5wrhucgRPV9VLw9/N9OZ8sDQ9BjjqP/yWJ1kUF52iOwOC7n\nOWnlxpduLvjhGdX2ccfS8kb6DncxtNq2WTrcHok+aDPj9ssNVvLbLzybuVdABPWA\nuMB2yY2X/NR6MpT7GwTIcRQNt97peNKgE4GMPD/LHzwMSKiHHebGtMPg1cstsCIJ\nxpJ+QP5rOLVkUjzyryJBFGobKzfM4AyaLRJJBpdH7h79CNQgN58KjO2EUYZK8MzL\n3A4Y4GvZAgMBAAECggEAFhWrj68jr1nGCsbeT9VKTZrRySyxsBQXofDUYUZCWItX\nHS5Dk+2dlxMWMK5KNZ4FxS7wQhvH2DgpxRUCp+6GYkQn7GLfqVk/XCZcT6ylyhSw\ncyUyl6mTDfnwVJve5o726N8JWx54OVus9MjS8qQZUxKRBGpGOc5pvoxSsRUtgMwe\nq6KEYC2mPW3AL/ihX3HJEnx4GVGZnwrEBhj7lizNEKinsDNVd4NnEkpQfxc/jbtX\nvSvsc7ZdT0HG9wb1AR6Gzo+UzJe/YgcVXk9Tn2leGFk2hO19lC1pWUIdI0PCeidc\n+ojrNziCIp4nGoBd+rO0CzhufrchRHARdCmPp1DHDwKBgQDQDWQzPmnJ7EmjUICR\n4LhPukV+/ewHHGYhsFl/oRfYKOCyIgxm9Z1z83mK+X8TmpQQdzV4FykHwOyRRTDu\nj4ssBKHk+y0kJqtA1Si6e0EMhEWevFl4UduXcZPW+wR8DkqrTpfLJrfmlMXP9U1a\nN/OJ7ISXFyPkvjo45C5s2qmy5wKBgQC2cXw/f1YWsFxjZZXKL6UCc3hCxMtIOnqY\nXUgJ9CvO6cK8SqstilAWqydFfD0hdZrog5cRS5Cg6Y7bYO7x6smVARVW7TKIleV2\n3TBXUSpCcrJyN/0btJ0cThf2yRyT6QVBJT6BGg24a4B8b4HfWHrfyjC7eCnXiHSz\nw02Y0+/TPwKBgQCEsbXRtSH1xn2k6uhFokULnKtMdpk+Y8+D9xzt+QnjNRcypeKx\nHEBDPuurRrvU/gcnhVCV+neR2WtIsA+oZ+cEuSOkjsrYvs0E+a8TWR9A43Af8NND\nmTnsGmWHfOv8T4UyQ1svF8+9AfA0VajzPLJYqoBaeUjMUMODm408oi4PywKBgF5i\nrcXn6bDJQrLFjk3QgkyXUmMwjn5qipwivi8wHC3qr61b790ajj58A1AmazXRMvgR\ng+kVr9gfnKGQL24Gao1kxxZ2lkslSVZKLkUuH2/LCNigcJiRwyoumKU6/EblKau/\nSevef7SmIQ2/XnAexUrbvoRuMS9pT/7kDlP/aTZfAoGBAKJntD36p9hXaUBKFeSq\npFB2Ye4evZPrvyN6VYaEiPHGU+PIzJT8ujcL84LQqzkzT5JDNE57DnWvf+yrfuxl\nHY3WabXErS/+yNKvO698dRsfrJfC2vROGmr0sAOTdO03y6F6SW5RhCVuZgoDx8W4\nk9i5Cbpji/Fz6x3/628xOU6L\n-----END
+        PRIVATE KEY-----\n","client_email":"oryandna-managed-sa@development112539df.iam.gserviceaccount.com","client_id":"116506979409208646295","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_x509_cert_url":"https://www.googleapis.com/robot/v1/metadata/x509/oryandna-managed-sa%40development112539df.iam.gserviceaccount.com"}}'
+    headers:
+      content-length:
+      - '2328'
+      content-type:
+      - application/json
+      date:
+      - Sun, 19 Dec 2021 13:00:49 GMT
+      server:
+      - istio-envoy
+      x-envoy-upstream-service-time:
+      - '3'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjQ3ZDdmMDg2In0.eyJzdWIiOiIxMTcyNjI1MC03Zjg3LTQzOTUtYjkyNS1lMDQwNzEzY2NhNGQiLCJlbWFpbCI6InN3X29yeWFuZG5hQHN1cGVyd2lzZS5haSIsInVzZXJNZXRhZGF0YSI6e30sInRlbmFudElkIjoib3J5YW5kbmEiLCJyb2xlcyI6WyJWaWV3ZXIiXSwicGVybWlzc2lvbnMiOlsiZmUuc2VjdXJlLndyaXRlLnVzZXJBcGlUb2tlbnMiLCJmZS5zZWN1cmUuZGVsZXRlLnVzZXJBcGlUb2tlbnMiLCJmZS5zZWN1cmUucmVhZC51c2VyQXBpVG9rZW5zIl0sIm1ldGFkYXRhIjp7fSwiY3JlYXRlZEJ5VXNlcklkIjoiYWU1NDE4OTgtNDJlNy00OTI0LTk3YTMtYzIxMmZlYWI3MzhiIiwidHlwZSI6InVzZXJBcGlUb2tlbiIsInVzZXJJZCI6ImFlNTQxODk4LTQyZTctNDkyNC05N2EzLWMyMTJmZWFiNzM4YiIsImlhdCI6MTYzOTkxODg1MywiZXhwIjoxNjQwMDA1MjUzLCJpc3MiOiJmcm9udGVnZyJ9.T_f11SM0hHklO0YO8-0arp_kNvdeAEAh0d0plUSk54Eq2DKPeAVe-UsOWT7xw-qRXR_MBOrMtQ3_rUoVlVJDQsJ10odk5-3mvyNew89P7OW8zORAqOuTWNg6ByT00_y54UL9yPEuwnyLga8AlRsk-m8DPBxiWII8Z9yJCgad8D_H7jku2AVH5hEmAklT9c5vHlw7mpf8fya29SajtKw26e-0eZn0Qr5E8d0kIs8R_awOL42DKyShsypJzJElUs_eFy9NbDC5xdZFoonsewmpxCbRx6Vk40FRDhpj6piSap7kXN_5H3Ih8DqDuIJnwWk6HF4QbEuQo6n7BqRd_GKTZg
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.0
+    method: GET
+    uri: https://dev.superwise.ai/oryandna/admin/v1/tasks/46
+  response:
+    body:
+      string: '{"active_version_id":null,"active_version_ts":null,"id":46,"monitor_delay":0,"external_id":"46","is_archived":false,"name":"this
+        is test name","description":"description","created_at":"2021-12-19T13:00:52.873955","time_units":["D","W"]}'
+    headers:
+      content-length:
+      - '236'
+      content-type:
+      - application/json
+      date:
+      - Sun, 19 Dec 2021 13:00:34 GMT
+      server:
+      - istio-envoy
+      x-envoy-upstream-service-time:
+      - '7'
+    status:
+      code: 200
+      message: OK
+version: 1
