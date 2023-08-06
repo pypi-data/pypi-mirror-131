@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "keylog"
+version = "1.0.0"
+description = "KeyLog -> if you press a any button on your keyboard, this key was starting auto-save to file...."
+authors = ["FlameNicoo <86409467+DiscordBotML@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9.7"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
