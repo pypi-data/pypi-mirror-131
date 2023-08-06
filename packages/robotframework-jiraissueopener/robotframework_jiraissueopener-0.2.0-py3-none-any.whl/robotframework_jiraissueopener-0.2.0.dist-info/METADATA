@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: robotframework-jiraissueopener
+Version: 0.2.0
+Summary: An automatic Jira issue opener for Robotframework
+Home-page: https://github.com/andreagubellini/robotframework-jiraissueopener
+Author: Andrea Gubellini
+Author-email: agubellini@yahoo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: robotframework (>=3.0)
+Requires-Dist: requests (>=2.20.0)
+
+UNKNOWN
+
