@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: meeep-example
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/maya-soni-lark/python_packaging
+Author: Example Author
+Author-email: author@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8.12
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
