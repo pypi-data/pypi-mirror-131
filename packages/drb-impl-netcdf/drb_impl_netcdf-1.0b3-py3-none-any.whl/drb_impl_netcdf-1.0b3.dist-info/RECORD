@@ -1,0 +1,16 @@
+drb_impl_netcdf/__init__.py,sha256=Qs0pAiY7_qAMaieoN53Ua3VUJHaiIn9a5r1aJcFH2_M,801
+drb_impl_netcdf/_version.py,sha256=T-776z8YKbPpY0xzFakFkN4b9JT_htpSg-fVmw9JMVE,497
+drb_impl_netcdf/drb_impl_signature.py,sha256=AnqjK2ns1fDf5NYDdfnr-cBxrXOvuhGfc9QeUAZ1lio,883
+drb_impl_netcdf/execptions.py,sha256=yQvBpGRpHoc28ENex-9QuV9g-CFe2PuU2QYypnupiMA,185
+drb_impl_netcdf/netcdf_common.py,sha256=c_CgHJA6JswE_Z5OLuhTn15AS_jZylH1gRfyEiTjkYo,2050
+drb_impl_netcdf/netcdf_dimension_node.py,sha256=Gu0WGGK7eNXZKB8glB96vx3k-M1o23wOsu-8z637lPk,1739
+drb_impl_netcdf/netcdf_group_node.py,sha256=dKYeZ7PkxA0lQcl8aB8JkThA7lnWCgYwljTkin33saA,3295
+drb_impl_netcdf/netcdf_list_node.py,sha256=O9T3H0eT5XPF-A7XCCfLpcVlAbsklQ5Y9x8xpLGLzg8,1657
+drb_impl_netcdf/netcdf_node_factory.py,sha256=Y4W0N8Gw0EtkmJB9fmJ3lLX9zPVCWS9sjXvEiwbxQ24,3052
+drb_impl_netcdf/netcdf_variable_node.py,sha256=YbYDYLgl34qS9_FegTGopW42rxL1pIZ8EPaVFfeKdFk,4050
+drb_impl_netcdf-1.0b3.data/data/requirements.txt,sha256=G9Rfa_yYWFmQC6e6ldqZ55-Y2Vnx-ChLI7rvCIQms0k,78
+drb_impl_netcdf-1.0b3.dist-info/METADATA,sha256=TVL9m9zsEAz1N9mgwbmrL7JM57w03XIDW1cgsMSNZCE,2187
+drb_impl_netcdf-1.0b3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+drb_impl_netcdf-1.0b3.dist-info/entry_points.txt,sha256=Im1RLkn4slEew8fWHyzwj-BVXQ2WN6CuXk2ql_NAuko,56
+drb_impl_netcdf-1.0b3.dist-info/top_level.txt,sha256=mI_9HavUjwR_EMy0_IcWVwgP7pQubVhAjgRCB2uGQc8,16
+drb_impl_netcdf-1.0b3.dist-info/RECORD,,
