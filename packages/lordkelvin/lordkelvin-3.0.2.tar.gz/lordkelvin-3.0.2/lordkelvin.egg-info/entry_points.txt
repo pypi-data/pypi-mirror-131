@@ -1,0 +1,3 @@
+[console_scripts]
+lk = lk:main
+
