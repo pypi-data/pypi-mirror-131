@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyPrimeV2
+Version: 0.1
+Summary: A tool for obtaining the first n prime numbers
+Home-page: UNKNOWN
+Author: Kevin Martínez
+Author-email: kmartinez2397@gmail.com
+License: GNU GPLv3
+Keywords: pyPrimeV prime numbers
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+
+This project provides a simple n_prime(n) function implemented with Python. 
+The function takes an integer argument 'n' and returns an array with the prime numbers between 1 and n (including n).
+GNU General Public License v3 (GPLv3)
+
+
