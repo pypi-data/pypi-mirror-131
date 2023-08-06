@@ -1,0 +1,14 @@
+newsoverview/__init__.py,sha256=ulKhu-CPqFHZwEJm3z78dt6q6bJFabiNN2PyWO9BPhA,335
+newsoverview/covid_news.py,sha256=yhC3hV6Efql2XHF1pvykkMvYEPr1fuKLSit82gwLuUI,8058
+newsoverview/en_world_news.py,sha256=hdYfeZ1VQI--x9Mb7vflUFo6yHcNVPEjSRzjK2MSkiI,6966
+newsoverview/hospital_news.py,sha256=bJK0eSFk5AMbYWUMiO5kZEe2UIPMEOWFKRTFn8VZi0o,4701
+newsoverview/protests.py,sha256=vkBBRfwK6IVA32CFHkYnPfS1t7tnO5FnTX5a5d6IxV8,3941
+newsoverview/simple_search.py,sha256=dnJHe0CUR1jQG3WTahF_Ts1tCPVTXrOQ5SDcvR_jIuU,1739
+newsoverview/terror_monitor.py,sha256=7mdDFYZYpXNRL5PRFopLI_RIu4Y2GiQhnsV2HXrrNbc,2185
+newsoverview/tr_world_news.py,sha256=orHXKrufZjj7U6qKYr0OHNzep1hWU_N9Hqpn4JOWRP8,18393
+newsoverview/travel.py,sha256=47sLeWMF2DBxtd1OYr2v91F1SVr4Y6q-Z37FvOAeJco,13481
+newsoverview-0.1.2.dist-info/LICENSE,sha256=5O2bDeids1HXXawS_1kj5OOVFLHzrWEdK8wahrBCtUI,1085
+newsoverview-0.1.2.dist-info/METADATA,sha256=fHBPEGywesc0sXIce_sZgoZaMqi4QlgVH7sUoLqO3Xo,12436
+newsoverview-0.1.2.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+newsoverview-0.1.2.dist-info/top_level.txt,sha256=q9eZPD9tByXRlEz7YLPfoH_Rl9k9PQTUFAEEwukxXgo,13
+newsoverview-0.1.2.dist-info/RECORD,,
