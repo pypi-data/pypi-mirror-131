@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: dral
+Version: 0.1.2
+Summary: D-RAL - Device Register Access Layer
+Home-page: https://github.com/gembcior/d-ral
+Author: Gembcior
+Author-email: gembcior@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: svd2py
+Requires-Dist: rich
+
+## D-RAL - Device Register Access Layer
+
+### Introduction
+
+### Project structure
+```
+📦d-ral
+ ┣━📂devices            ─ contains device descriptions files
+ ┣━📂src                ─ contains generator source files
+ ┗━📂templates          ─ contains templates files for generator
+```
+
+
