@@ -1,0 +1,149 @@
+Metadata-Version: 2.1
+Name: curators
+Version: 0.0.0b2
+Summary: Models for decision optimization and automation
+Home-page: https://github.com/BellwethrInc/curators
+Author: Allen Grimm, Matt Moody, Jordan Roth
+License: UNKNOWN
+Keywords: sample,setuptools,development
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: <4,>=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# Curators
+
+![Coverage](docs/images/coverage.svg) [![Documentation Status](https://readthedocs.org/projects/curators/badge/?version=latest)](https://curators.readthedocs.io/en/latest/?badge=latest)
+
+A package for action selection and optimization.
+
+
+Action types currently supported are context-naive, contextual, and sequential.
+
+* Context-naive actions, which we'll call simply "naive" assumes the expected
+  return is simply a function of the action itself.  This is commonly referred
+  to as a multi-armed bandit.
+* Contextual actions enable use of observable variables to further improve the
+  accuracy of the expected return of actions.  For now, we enabled
+  integration of clustering algorithms with a traditional bandit.  Longer
+  term, this will grow into more broad support for contextual bandits.
+* Sequential algorithms extend the previous optimizations of single actions
+  into the optimization of multiple ordered actions.
+
+
+To facilitate maintaining the mathematical purity of classic models while
+maintaining practical interfaces for real world actions, objects are 
+categorized into three object types: models, agents, and applications.
+
+* Model - distinct and mathematically pure units of learning.
+* Agent - integration of identically shaped models into a single interface.
+* Application - tooling around connecting an agent to some real-world medium.
+
+
+Installation
+--------------------------------------------------------
+
+# Pip
+`pip install curators`
+
+
+# Package Build and Install
+We use Python's `setuptools` to handle installation.
+You can build the wheel and install it elsewhere manually using:
+
+```shell
+# from within this repo's root:
+python setup.py bdist_wheel
+
+# from within your other project that you're installing this wheel into:
+pip install curators-0.0.1-py3-none-any.whl
+```
+
+Or you can install it directly from Github usisng the library name
+`git+ssh://git@github.com/BellwethrInc/curators.git` as you would
+install any other library through either a `pip install [x]` or including it
+directly in your `requirements.txt` file.
+
+Or if you prefer using `https` rather than ssh to connect to github, 
+`git+https://github.com/BellwethrInc/curators.git` works as well.
+
+
+After we get proper releases set up, you'll be able to do 
+`git+ssh://git@github.com/BellwethrInc/curators.git@v0.0.0#egg=curators` 
+to specify a release as well.
+
+Coming soon: 
+* proper versioning
+
+
+# As a Developer
+
+Within this repo's root, create a virtualenv (or your conda equivalent) and
+install the dependencies.
+
+```shell
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+
+Testing
+--------------------------------------------------------
+
+Within a developer's environment, run all tests simply with
+
+```shell
+    python -m unittest
+```
+
+## Coverage
+
+To see testing coverage, run
+
+```shell
+    coverage run -m unittest discover  # to generate coverage data
+    coverage report  # to render the coverage data to console
+    coverage-badge -o docs/images/coverage.svg  # update the coverage badge
+```
+
+Docs
+--------------------------------------------------------
+To build docs
+
+* within your venv
+* pip install -r requirements.txt
+* `cd docs`
+* `make html`
+
+Or if you're within pycharm:
+* be sure your current environment also has the docs requirements installed
+  * `pip install -r docs/requirements.txt`
+* Create and configure a new "Spinx Task" configuration:
+    * Be sure `html` is the command selected
+    * select `docs/source` as the source directory
+    * select `docs/build` directory.
+      * Make this directory yourself or let sphinx make it for you.
+      * this path is within `.gitignore` so don't worry about stepping on toes within your build dir.
+* rerun docs build as needed
+* `docs/build/index.html` is the file you want to open in your browswer
+
+
+Notebooks
+--------------------------------------------------------
+
+When running the notebooks, you need to either be working within a virtualenv with 
+curators installed or have the root of this repo within your environment's PATH 
+or PYTHONPATH.  For example,
+
+    PYTHONPATH="${PYTHONPATH}:path/to/this/repos/root" jupyter notebook
+
+will leave the rest of your environments unaffected while giving python access to this repo directly.
+
+
