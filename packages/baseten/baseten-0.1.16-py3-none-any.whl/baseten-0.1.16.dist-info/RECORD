@@ -1,0 +1,13 @@
+baseten/__init__.py,sha256=qwnrEN-diM0C4TUVkMc55FqzQ8-EOkAvKMqeDc-D664,2846
+baseten/baseten_deployed_model.py,sha256=5BhtkHCSNAntp896ElVuk9NsMzVb-DCiAWfFsrMnI24,8092
+baseten/cli.py,sha256=FTxAM0WFgN_tQ06Pv5tIojK3iBABV2Ca7d1fz15iQXQ,1679
+baseten/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+baseten/common/api.py,sha256=nT6gMKgVIGfvB1Qt9FaWKPI5NIAtDr9vTMFF06o7QYo,12564
+baseten/common/core.py,sha256=6HpwVuZl9JZIACV3g4cDyN5pnn0fxzQ2e4JTYcFjWEU,2119
+baseten/common/model_deployer.py,sha256=CUmWklLgNnkFgCaN-6vuLr-F7eNmm2E6ummuFtgxn7U,39193
+baseten/common/settings.py,sha256=9ETqSQaMrGNKg4lZ-F4OZrSJQqhYQe9SKD3GUQjw9SQ,1609
+baseten/common/util.py,sha256=IriIqfrkUVEKV88Z-E4cZxH6nO-5N2bOJBqsB7lYE4E,3998
+baseten-0.1.16.dist-info/entry_points.txt,sha256=niaR5zz8Zm6uSmroSOOFEb2kXfQpqq7RAg-8K43r3lk,49
+baseten-0.1.16.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+baseten-0.1.16.dist-info/METADATA,sha256=gYEBFjrz757cyS10j6jSJLNlJ7y14Up9hKJE01YmlRI,773
+baseten-0.1.16.dist-info/RECORD,,
