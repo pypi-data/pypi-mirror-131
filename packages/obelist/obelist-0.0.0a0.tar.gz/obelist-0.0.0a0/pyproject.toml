@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "obelist"
+version = "0.0.0-a0"
+description = "A CLI tool for generating GitHub workflow annotations"
+authors = ["norosa <23469+norosa@users.noreply.github.com>"]
+repository = "https://github.com/nomiro/obelist"
+readme = "README.md"
+keywords = [
+  "linting",
+  "continuous-integration",
+  "annotations",
+  "tests",
+  "github-actions",
+  "problem-matcher"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Information Technology",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Build Tools",
+  "Topic :: Software Development :: Quality Assurance",
+  "Topic :: Software Development :: Testing",
+  "Topic :: Utilities"
+]
+packages = [
+  { include = "obelist", "from" = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pastel = "^0.2.1"
+click = "^8.0.3"
+sh = "^1.14.2"
+inflection = "^0.5.1"
+wrapt = "^1.13.3"
+charset-normalizer = "^2.0.7"
+lxml = "^4.6.4"
+pyjq = "^2.5.2"
+PyYAML = "^6.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.9b0"
+ipython = "^7.28.0"
+icecream = "^2.1.1"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.black]
+line-length = 79
+
+[tool.poetry.scripts]
+obelist = "obelist.cli.cmds:main"
