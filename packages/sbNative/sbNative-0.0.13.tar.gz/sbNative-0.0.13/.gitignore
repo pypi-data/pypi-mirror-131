@@ -1,0 +1,11 @@
+.idea/*
+.idea
+
+LICENSE
+pyproject.toml
+setup.cfg
+
+__pycache__/*
+__pycache__
+
+test/*
