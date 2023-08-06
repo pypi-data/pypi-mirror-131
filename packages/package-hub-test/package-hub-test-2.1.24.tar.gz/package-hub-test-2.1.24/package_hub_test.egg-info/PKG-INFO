@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: package-hub-test
+Version: 2.1.24
+Summary: demo
+Home-page: UNKNOWN
+Author: activeloop.ai
+Author-email: support@activeloop.ai
+License: UNKNOWN
+Project-URL: Documentation, https://demo.ai/
+Project-URL: Source, https://github.com/gkr-bot/Hub
+Description: Test
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
