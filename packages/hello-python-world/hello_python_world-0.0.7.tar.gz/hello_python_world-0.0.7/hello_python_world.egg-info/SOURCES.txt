@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+hello_python_world/__init__.py
+hello_python_world/hello_python_world.py
+hello_python_world.egg-info/PKG-INFO
+hello_python_world.egg-info/SOURCES.txt
+hello_python_world.egg-info/dependency_links.txt
+hello_python_world.egg-info/top_level.txt
