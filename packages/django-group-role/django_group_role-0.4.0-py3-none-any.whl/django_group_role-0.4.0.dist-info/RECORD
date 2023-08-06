@@ -1,0 +1,14 @@
+django_group_role/__init__.py,sha256=RZ2vtkvO8IdcuMyMyexJFeMGt_zvqc-cyOGf2Z8480w,100
+django_group_role/apps.py,sha256=AeLH-MSHr0CHP5s6eH23va8aW-VRJ2CGCDP-pvZsMn4,164
+django_group_role/exceptions.py,sha256=NWnvfdmnGjLGQsxBo4zjtXhpA_2cAO0oMJxwtfPXjZ4,151
+django_group_role/roles.py,sha256=HL12MZIpGqsmcaWeR5YOJ18xl1wsBp97Q-CKXdroyWY,5660
+django_group_role/test.py,sha256=PJ9xg2UX65JAqIrz2y_G3TliQAKQGQYvgCSwEoWzM3c,1014
+django_group_role/utils.py,sha256=pStl-DoeVACi2O0g4SLXlP651Glkli292H29oXRRRls,1594
+django_group_role/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_group_role/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_group_role/management/commands/populate_roles.py,sha256=g1ZlLkcCH9hCWL-nH_dW3XetGb4KO4zQ5usaRDTMrpI,2514
+django_group_role-0.4.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+django_group_role-0.4.0.dist-info/METADATA,sha256=vMGW4USYIz6U9cemnmTD7Vmelqf3gai72OshGiutixU,4765
+django_group_role-0.4.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_group_role-0.4.0.dist-info/top_level.txt,sha256=r7QFyvKQKAuZOho8vK2dyqmV5W3l00Xet5qdScEuzJ0,18
+django_group_role-0.4.0.dist-info/RECORD,,
