@@ -1,0 +1,10 @@
+crawlio/__init__.py,sha256=pHkwCGJif3TBK0dMnoq8w_5rhfj62LHpySg8SI52XGw,115
+crawlio/classes.py,sha256=Pcrv-CSd_1WQroXWSYu5K30v53Cbgs33Eyxi2vg7PXg,422
+crawlio/crawlio.py,sha256=kkWjLI60IKhfdmQfsUlq265Oxd5XJDGxOXzXeTjFIjc,4038
+crawlio/web/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crawlio/web/app.py,sha256=V2opDfwwMqHCmNMn84siNm56-WFY540A7fFfiazHj9k,819
+crawlio-2.0.0.dist-info/COPYING,sha256=N0P3pKtRMvfb64jmgJdlerg3TnS0a2QC776AzPsbZIg,35128
+crawlio-2.0.0.dist-info/METADATA,sha256=M4ct_vsNh2YquZ0EGzHDjUk-FVfTWh3pbANQzuAylu0,2427
+crawlio-2.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+crawlio-2.0.0.dist-info/top_level.txt,sha256=MbUKwQX6h1a-KplQGAZ5LlDNqK7Ki5aCO6sqEF3qoRU,8
+crawlio-2.0.0.dist-info/RECORD,,
