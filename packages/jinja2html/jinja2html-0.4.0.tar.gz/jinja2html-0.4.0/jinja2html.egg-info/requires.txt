@@ -1,0 +1,6 @@
+beautifulsoup4
+Jinja2
+lxml
+rich
+watchgod
+websockets
