@@ -1,0 +1,8 @@
+gerrit_review_robot/__init__.py,sha256=iQoCoAeTF47p1ifFWozwW7ACa2cgmkAnviTVoe94_n0,69
+gerrit_review_robot/gerrit.py,sha256=SHqXoAl4qg_7w7uvpyG_hdVAp0R-EtUIMIScp7BrwvQ,3119
+gerrit_review_robot/gerrit_review_robot.py,sha256=YjEGohlQFiko4CRcoLE0b-KSa7L2SCc2wbNfncVveYU,3688
+gerrit_review_robot-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gerrit_review_robot-0.0.4.dist-info/METADATA,sha256=oQMfW0jp7Ge5qR7vik59modwTmomk9Bqq5JwzIvXi-8,1843
+gerrit_review_robot-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+gerrit_review_robot-0.0.4.dist-info/top_level.txt,sha256=k1fqil9H1fDL8_CZbX_L0xvnbzJK1dil6pEIo17NsrE,20
+gerrit_review_robot-0.0.4.dist-info/RECORD,,
