@@ -1,0 +1,14 @@
+markdown_svgbob/__init__.py,sha256=qzc-z0TWQYPxN2r7UoerXzI0gWzmjmkGGZaNI9dLdx4,949
+markdown_svgbob/__main__.py,sha256=h4wK1hvqddXqPom91GEsqfl2g3Om_JPDIusbSxEyTEA,2279
+markdown_svgbob/extension.py,sha256=YbD-DKK8YjPPd7z4lBKfynhl_Qqelgl5qL1WdCJ1zec,8661
+markdown_svgbob/wrapper.py,sha256=7bbzlh1pmiU49OzkCKqBQD0piXsp3nHGPbpN-c_rvP0,7681
+markdown_svgbob/bin/svgbob_0.5.5_x86_64-Darwin,sha256=EGlYuUdgOjOojYZ3WuyPypHC4ZAnx6AH3w5qOPXoWg8,1835464
+markdown_svgbob/bin/svgbob_0.5.5_x86_64-Linux,sha256=MnZpohC7KJrDAxV2XN7Qi0I5UygfZzbYxSvaUVtkt08,5091936
+markdown_svgbob/bin/svgbob_0.5.5_x86_64-Windows.exe,sha256=r_Q8Adt--3OX-oHDApnCv9L4qs-4ic29wdUn1jCIpyE,1392128
+markdown_svgbob-202112.1022.dist-info/LICENSE,sha256=BqHu3zcj5MVlYg3IA6BJGlXvEWqd8CIYfRjGyaPNJTw,1097
+markdown_svgbob-202112.1022.dist-info/METADATA,sha256=7pZDqdHa8LT4sUWVyjUY3KN-jHJkhWl7ELotBmZT06k,7006
+markdown_svgbob-202112.1022.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+markdown_svgbob-202112.1022.dist-info/entry_points.txt,sha256=x89Sk2EQl61HX6vISeHLm_TZfRrlv93k04YwhCREDcY,83
+markdown_svgbob-202112.1022.dist-info/top_level.txt,sha256=LarEGpgPDuC8o00U-uuTqF82Hcr0AXY131wNV1SvMYA,16
+markdown_svgbob-202112.1022.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+markdown_svgbob-202112.1022.dist-info/RECORD,,
