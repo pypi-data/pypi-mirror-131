@@ -1,0 +1,3 @@
+[console_scripts]
+libmonty = libmonty.__main__:main
+
