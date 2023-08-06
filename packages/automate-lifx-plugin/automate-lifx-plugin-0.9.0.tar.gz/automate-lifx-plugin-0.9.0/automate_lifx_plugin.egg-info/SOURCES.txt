@@ -1,0 +1,15 @@
+README.md
+setup.py
+automate_lifx_plugin.egg-info/PKG-INFO
+automate_lifx_plugin.egg-info/SOURCES.txt
+automate_lifx_plugin.egg-info/dependency_links.txt
+automate_lifx_plugin.egg-info/requires.txt
+automate_lifx_plugin.egg-info/top_level.txt
+lifx_plugin/__init__.py
+lifx_plugin/client.py
+lifx_plugin/command.py
+lifx_plugin/gateway.py
+lifx_plugin/message.py
+lifx_plugin/trigger.py
+lifx_plugin/tests/__init__.py
+lifx_plugin/tests/test_doctests.py
