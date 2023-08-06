@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: animated-parse-tree
+Version: 0.0.6
+Summary: A simple parse tree utility package, with animated evaluations and configurable tree displays
+Home-page: https://github.com/ethanolx/Animated-Parse-Tree-py
+Author: ethanolx
+Author-email: imotekhx@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ethanolx/Animated-Parse-Tree-py/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+# Animated Parse Tree
+
+|               |                   |
+|---------------|-------------------|
+|   Author      |   Ethan Tan       |
+|   Date        |   11/12/2021      |
+|   Language    |   Python (py)     |
+
+## Description
+
+This package is meant to provide a high-level API for programmers to visualise parse trees. The eventual goal is to animate the tokenization (extracting symbols from a string), lexing (formatting the tokens), parsing (building the parse tree) and evaluation (reducing the parse tree).
+
+## Setup
+
+It is extremely easy to integrate this package in your existing projects.
+
+In the command line, run:
+
+```console
+pip install animated_parse_tree
+```
+
+## Sample Usage
+
+Then in your Python source file / Jupyter Notebook, insert:
+
+```python
+from animated_parse_tree import ParseTree
+
+# Instantiate Parse Tree Object
+t = ParseTree()
+
+# Read a Mathematical String Expression (separated by singular whitespace characters)
+t.read('1 + 2 * 3')
+
+# Retrieve the Result
+print('<<< Equation >>>')
+print(t.expression, '=', t.evaluate(), end='\n\n')
+
+# Display the Parse Tree
+print('<<< Parse Tree >>>')
+print(str(t))
+```
+
+The output in the terminal will look something like this:
+
+```console
+<<< Equation >>>
+1 + 2 * 3 = 7.0
+
+<<< Parse Tree >>>
+   +
+ ↙     ↘
+1.0    *
+     ↙   ↘
+    2.0 3.0
+```
+
+## Declaring Custom Operands/Operators
+
+Refer to `bundles.py`
+
+## See Also
+
