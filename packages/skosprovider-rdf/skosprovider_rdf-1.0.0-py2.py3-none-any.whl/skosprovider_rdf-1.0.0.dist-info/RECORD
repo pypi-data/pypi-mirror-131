@@ -1,0 +1,12 @@
+skosprovider_rdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skosprovider_rdf/providers.py,sha256=b1Ces3RJKY0kGuH6PjXHj9F1--_C7O4WEcyL4SquwrY,12270
+skosprovider_rdf/utils.py,sha256=_leHD4gUjLc-hLUXtpao0oW0yj4jrM53qJKqprQ-P3E,10046
+tests/__init__.py,sha256=MTiVxfHQ4h85YA8b3k8kCCypzwACfC1paHrBuKun-2w,66
+tests/conftest.py,sha256=Z8UjI8XqpBNmBl8_sio4xMlO2hXcWr4vXQvNm9ZQQJc,2122
+tests/test_providers.py,sha256=W3RKdAD9cnPrPfap6pnmyXmHYz-tEjpx9ltAhaY-1Jc,12143
+tests/test_utils.py,sha256=VKUQXL3yiDg8Mq9jTd-viZP_M2CjThwa8fleliqvgy0,12395
+skosprovider_rdf-1.0.0.dist-info/LICENSE,sha256=END-fX0FmmzQX1TBY2Su9KvKQazPaFPP8Wsu4qxt85c,1089
+skosprovider_rdf-1.0.0.dist-info/METADATA,sha256=-JTbSI09Lgxdcxja8O2fIf769NdZfK0PzLOyzJYjs24,5120
+skosprovider_rdf-1.0.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+skosprovider_rdf-1.0.0.dist-info/top_level.txt,sha256=BenP3Hpf1j9BF6TS-vaQOAESv2i9e82-at9IdcVZ8-o,23
+skosprovider_rdf-1.0.0.dist-info/RECORD,,
