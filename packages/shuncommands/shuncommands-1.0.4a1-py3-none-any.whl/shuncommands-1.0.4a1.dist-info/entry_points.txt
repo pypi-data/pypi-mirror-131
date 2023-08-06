@@ -1,0 +1,4 @@
+[console_scripts]
+pdftool=shuncommands.pdftool:ctx
+rmtmp=shuncommands.rmtmp:ctx
+
