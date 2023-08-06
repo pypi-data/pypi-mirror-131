@@ -1,0 +1,275 @@
+Metadata-Version: 2.1
+Name: work-time-log
+Version: 0.98.1
+Summary: Manual time tracking via a CLI that works similarly to git.
+Author: Valentin
+Author-email: noemail@example.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# Work time log
+
+`work` allows manual time tracking via a CLI that works similarly to `git`:
+
+1. Text files are used for storage. This makes it easy to track the log with `git`.
+2. The `work status` is global, meaning any terminal can be used to check or update it.
+3. Hashes are used to verify that the log was not modified by another tool.
+
+# Release history
+
+## 0.98 (WIP)
+
+This is a work-in-progress release. Currently released version: `0.98.1` (2021-12-18)
+
+### New `edit` and `remove` selection interface
+
+- A new selection interface to improve readability (inspired by `fish`'s `history` tool).
+- Now allows selection of multiple indices at once.
+- By entering nothing, the selection can be immediately cancelled.
+
+For example:
+
+```bash
+$ work add 10 14 -c supre
+$ work add 15 17:5 -m "ji"
+$ work edit
+Edit mode – today
+
+[0] 10:00 – 14:00 (supre) ""
+[1] 15:00 – 17:05 () "ji"
+
+Enter nothing to cancel, or
+Enter one or more indices [0..1] separated by a space, or
+Enter "all" to edit all entries.
+
+Which entries? > 
+```
+
+### New flags for `hours` calculation
+
+- New flag `--start` to override the assumed start time.
+- New flag `--pause` to include planned breaks in the calculation.
+- Assumptions for the calculations are only printed once if multiple modes are selected.
+- Flag `--balance` removed – the balance is now always printed.
+
+For example (assume it is 14:17):
+
+```bash
+$ work start 12
+Started work at 12:00 today
+
+$ work hours --until 17
+0 m on record, 2 h 17 m active run | Balance: 5 h 43 m remaining (8 h to work today)
+> You will have worked 5 h at target time 17:00.
+
+$ work cancel
+Run cancelled
+
+$ work hours --until 17
+0 m on record, 0 m active run | Balance: 8 h remaining (8 h to work today)
+
+Assuming you start now (14:15):
+> You will have worked 2 h 45 m at target time 17:00.
+
+$ work add 10 12
+Added a record from 10:00 to 12:00 today
+
+$ work hours --until 17 --target 6 --start 14 --pause 0:30
+2 h on record, 0 m active run | Balance: 6 h remaining (8 h to work today)
+
+Assuming you start at 14:00 and take 30 m of breaks:
+> You will have worked 4 h 30 m at target time 17:00.
+> Work until 18:30 for a 6:00 hour day.
+```
+
+### Changes
+
+- Corrupted files will now be detected more robustly while parsing. Specifically this covers the case that a file is formatted validly, but the contents violate assumed invariants.
+
+### Fixes
+
+- `recess`: If a vacation was added over multiple years, the days were added to both years.
+- `hours`: If a day started with overtime, an exception was raised.
+
+
+## 0.97: Force actions and edit better
+
+Final release version: `0.97.4` (released 2021-08-17)
+
+### Force `start`, `resume`, `add`
+
+A new `--force` flag allows intentionally overriding some warnings:
+
+- `start --force`: Start even if a run is already active.
+- `resume --force`: Resume even if a new run was already started (undo `switch`).
+- `add --force`: Insert entries forcefully.
+  - If an entry is *subsumed*, remove and replace it.
+  - If an entry is *overlapped*, shorten it to make space.
+  - If an entry *contains* the forced entry, split it up and shorten the splits to make space in-between.
+
+For example:
+
+```
+$ work ls
+Fri, 28.05.: 1 records
+10:00 – 18:00 | 8 h  (original)
+              = 8 h
+
+$ work add 14 15 -c split --force
+Existing record split up: 10:00 – 18:00 (original) ""
+  ➜  10:00 – 14:00  &  15:00 – 18:00
+Added a record from 14:00 to 15:00 today
+
+$ work ls
+Fri, 28.05.: 3 records
+10:00 – 14:00 | 4 h  (original)
+14:00 – 15:00 | 1 h  (split)
+15:00 – 18:00 | 3 h  (original)
+              = 8 h
+```
+
+### New `edit` handling
+
+- When editing `"all"`, edits are only applied after all entries were iterated to allow cancelling any time and prevent some merge conflicts.
+- Category and message can now be removed when editing an entry by entering `"-"` as their new value.
+- Entering nothing and just pressing Enter now accepts a change, as is suggested by `[Y/n]` in the message.
+
+### `list` output improvements
+
+- `--include-active` now counts active run in total
+- `--only-time` now merges touching entries for output
+- `--with-breaks`:
+    + now shows breaks in separate lines
+    + now omits 0 minute breaks from the output.
+
+### Changes
+
+- `switch` now only allows one positional argument. To add a break before restarting, use the optional argument `--start H:M`.
+- The `--week` selector now allows an optional argument for the week number. If none is given, the current week is assumed.
+- `hours --target` now expects a string formatted as "H:M" instead of a float.
+- Entries with empty category and message are now printed as `<start> – <end> () ""`.
+- `recess`: Clearer error message when removing nonexistent day
+- completions: Global flags no longer suggested after sub-commands
+- packaging: Test modules now omitted from package
+
+### Known bugs
+
+- When editing `"all"` and changing an entry so that it would be merged with its *next* neighbor, an exception occurs.
+
+
+## 0.96: Expected hour management
+
+Final release version: `0.96.3`
+
+### Expected hour management
+
+- New module `recess`
+  - Configure holidays, vacations, and days with reduced expected hours.
+  - The expected hours for the week and day will update accordingly.
+
+For example:
+
+```shell
+$ work recess --add-vacation 1.2. 3.2.
+$ work recess --add-reduced-day 4.2. 2.0
+$ work recess --list
+Vacation:
+  01.02.2021
+  02.02.2021
+  03.02.2021
+Reduced hour days:
+  04.02.2021 (2.0 hours)
+```
+
+- Expected hours per weekday can now be configured in the RC file.
+
+For example:
+
+```json
+{
+  "expected_hours": {
+    "Monday":    8.0,
+    "Tuesday":   8.0,
+    "Wednesday": 4.0,
+    "Thursday":  8.0,
+    "Friday":    8.0,
+    "Saturday":  2.0,
+    "Sunday":    0.0
+  }
+}
+```
+
+Check your configuration with `work config --see "expected hours"`.
+
+### Calculation of presumed work time with `hours`
+
+- `--until` now handles differently depending on if a run is active.
+- Fixes hour calculation for runs starting in the future (`--target` and `--workday`).
+- Fixes presumed start time in `--until` if no run is active.
+
+### Changes
+
+- Output messages for `switch` are now more abstract and intuitive.
+-  `work config --expected` now prints the default configuration that is used by `work config --create`.
+- **Breaking**
+    + Old configuration files are now invalid, due to added (see above) and removed (see below) keys. Create a valid configuration file with `work config --create`.
+    + Autopause functionality removed, including the configuration option
+
+
+## 0.95: export and CLI convenience
+
+- New mode `export` that enables exporting entries of any date or date range as CSV.
+- `start` now understands the keyword `again`, enabling easy back-to-back entries after a run was stopped.
+- Time parsing now understands military time, e.g. `1400` = 14:00.
+- If a corrupted record file is detected on disk, its path is now printed out.
+
+### Fixes
+
+- Handles Ctrl-C more cleanly.
+- Fixes bug where entering nothing in `rehash` lead to a rehash.
+- Fixes bug where `list --include-active` would crash if an active run starts in the future.
+
+
+## 0.94: New verification algorithm
+
+- Verification algorithm changed: Replaced MD5 hash with a much faster Adler-32 checksum.
+  - As the hash was only meant to protect against accidental edits, priorities were shifted to increase the speed.
+  - Relative speed improvement: About 20–50 % faster, more with growing size.
+  - Absolute improvement: About 1 ms for large sets of records (5 years * 200 days * 10 records).
+- Empty folders for years and months in the records directory will be removed now.
+- This version removes the migration code introduced in v0.93. Make sure to migrate your records before updating.
+
+With this update, your info file needs to be updated once. Please run `work rehash` to do that.
+
+
+## 0.93: Performance improvements
+
+- Alias "pause" for `switch`
+- Internal structural changes that make listing a huge number of days quicker.
+- Start-up checks slimmed down to reduce start-up time.
+- Adds verification functionality for traversed record directories; if an unexpected file name or type is encountered, an error is raised.
+
+Due to a bug in previous versions, not all entries were migrated from protocol v2 to protocol v3. It is recommended to run `work ls --period 1.1.1900 31.12.2100` once (this traverses all entries in the protocol). This will fix any leftover entries automatically.
+
+
+## 0.92: switch
+
+New `switch` function
+- The `pause` function was deprecated in favor of the new `switch` function.
+- The old functionality "stop at time A, restart at time B" has been preserved.
+- New: only one time argument can be passed.
+  - This enables a "switch in place" functionality.
+  - When a new task is started, this command suffices to save the completed work and immediately start a new task.
+
+
+## 0.9: Category and message
+
+Final release version: `0.91`
+
+- Entries can now have an optional category and message.
+- Both can be added when stopping a run or adding an entry.
+- When listing entries, these fields can be displayed.
+
