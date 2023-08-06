@@ -1,0 +1,9 @@
+pyoocass/Database.py,sha256=eLLC_dyS1ChBkg2fZoh8n2X64WEehLAH7SnJMNT1Idw,7377
+pyoocass/Keyspace.py,sha256=uXyy7KcRVZbtJ4LVAoc8XAi4ANNdzKrJtCJsh7YFgYU,252
+pyoocass/Table.py,sha256=72vjMTxW4YxhaoFptxdJPMJ3YsLy0HaGyfX0tFm6cvg,404
+pyoocass/__init__.py,sha256=ORtRLM3LkilvT4--GIDDhf0JrDgVBLb7m5I5gYyaaUo,87
+pyoocass-0.0.5.dist-info/LICENSE,sha256=TiEbafS_cR4Lj3z6cyHyn2bwhdHcwvqHgrh2cm2pGr4,1070
+pyoocass-0.0.5.dist-info/METADATA,sha256=OqxKvM1fnWgVV4B2XkGbT_5kmlJ2qJxtaf90bBVSl8g,4255
+pyoocass-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pyoocass-0.0.5.dist-info/top_level.txt,sha256=mzDwc8p2-U4da4mhcnAsnvsBFRO1_eCGnO_hGabjySU,9
+pyoocass-0.0.5.dist-info/RECORD,,
