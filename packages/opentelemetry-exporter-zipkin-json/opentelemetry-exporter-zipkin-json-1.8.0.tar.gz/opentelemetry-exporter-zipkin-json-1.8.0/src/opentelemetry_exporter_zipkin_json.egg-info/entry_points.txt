@@ -1,0 +1,3 @@
+[opentelemetry_traces_exporter]
+zipkin_json = opentelemetry.exporter.zipkin.json:ZipkinExporter
+
