@@ -1,0 +1,5 @@
+biosimulators_utils[sbml,logging] >= 0.1.118
+# libsbmlsim
+lxml
+kisao
+pandas

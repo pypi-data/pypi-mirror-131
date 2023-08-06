@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+requirements.optional.txt
+requirements.txt
+setup.cfg
+setup.py
+biosimulators_libsbmlsim/__init__.py
+biosimulators_libsbmlsim/__main__.py
+biosimulators_libsbmlsim/_version.py
+biosimulators_libsbmlsim/core.py
+biosimulators_libsbmlsim/data_model.py
+biosimulators_libsbmlsim.egg-info/PKG-INFO
+biosimulators_libsbmlsim.egg-info/SOURCES.txt
+biosimulators_libsbmlsim.egg-info/dependency_links.txt
+biosimulators_libsbmlsim.egg-info/entry_points.txt
+biosimulators_libsbmlsim.egg-info/requires.txt
+biosimulators_libsbmlsim.egg-info/top_level.txt

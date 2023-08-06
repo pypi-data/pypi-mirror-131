@@ -1,0 +1,3 @@
+[console_scripts]
+biosimulators-libsbmlsim = biosimulators_libsbmlsim.__main__:main
+

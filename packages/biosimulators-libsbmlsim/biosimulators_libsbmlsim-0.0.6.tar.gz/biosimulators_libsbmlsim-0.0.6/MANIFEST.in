@@ -1,0 +1,6 @@
+# license
+../LICENSE.txt
+
+# requirements
+include requirements.txt
+include requirements.optional.txt
