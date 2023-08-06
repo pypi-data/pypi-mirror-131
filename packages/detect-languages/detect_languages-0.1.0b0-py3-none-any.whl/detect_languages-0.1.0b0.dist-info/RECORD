@@ -1,0 +1,10 @@
+detect_languages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+detect_languages/cli.py,sha256=bE-vzCzLLaeSVgeNwSfOrDgV5HfpvMC76UEprop7Vgc,3035
+detect_languages/detect.py,sha256=kv9TLbSpIUwsuXfTkX4f06u6QX2B87GeijKXKu_mfI8,7022
+detect_languages/languages.py,sha256=RHmeHDpn6JzOdExiuYuhbA6sZP9dXKnOyN54DsfLMaY,38222
+detect_languages-0.1.0b0.dist-info/LICENSE,sha256=SJc_OMGqGBloFFRzlmiQkEjbfJnv66vOdHs8I11NU_4,1094
+detect_languages-0.1.0b0.dist-info/METADATA,sha256=M1bBdAzieDEtg9Z8KnzaNYsbQLfnBcflQRKmVFTXxdo,8185
+detect_languages-0.1.0b0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+detect_languages-0.1.0b0.dist-info/entry_points.txt,sha256=n97jdE49b_3etUtRkY-qtJzb2zplPnAwfscf_97Kcqw,63
+detect_languages-0.1.0b0.dist-info/top_level.txt,sha256=ie6BatB-mFnuIlwrD__rIdKNezsFBaWoVul7AvNSoBk,17
+detect_languages-0.1.0b0.dist-info/RECORD,,
