@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: tenff
+Version: 0.1
+Summary: A certain typing contest site spin-off in CLI
+Home-page: https://github.com/rr-/10ff
+License: WTFPL
+Author: Marcin Kurczewski
+Author-email: rr-@sakuya.pl
+Requires-Python: >=3.9
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/rr-/10ff
+Description-Content-Type: text/markdown
+
+10ff
+----
+
+A certain typing contest site spin-off in CLI, without all the advertisements,
+tracking and 10 megabytes of AJAX crap.
+
+#### Example
+
+![](https://raw.githubusercontent.com/rr-/10ff/blob/example.gif)
+
+#### Installation
+
+```
+git clone https://github.com/rr-/10ff
+cd 10ff
+pip install --user .
+10ff
+```
+
+#### Running without installation
+
+```
+git clone https://github.com/rr-/10ff
+cd 10ff
+python3 -m tenff
+```
+

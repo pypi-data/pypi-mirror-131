@@ -1,0 +1,3 @@
+[console_scripts]
+10ff=tenff.__main__:main
+
