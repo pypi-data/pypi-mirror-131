@@ -1,0 +1,10 @@
+click
+cython
+docarray
+lmdb
+loguru
+numpy
+scipy
+
+[testing]
+pytest
