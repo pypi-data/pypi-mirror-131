@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+kapa/__init__.py
+kapa/kapa.py
+kapa/kindictgene.csv
+kapa/kindictpro.csv
+kapa/unigenedict.csv
+kapa.egg-info/PKG-INFO
+kapa.egg-info/SOURCES.txt
+kapa.egg-info/dependency_links.txt
+kapa.egg-info/requires.txt
+kapa.egg-info/top_level.txt

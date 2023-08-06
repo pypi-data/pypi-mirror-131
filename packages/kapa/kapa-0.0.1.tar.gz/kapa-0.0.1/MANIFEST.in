@@ -1,0 +1,6 @@
+#include README.rst
+
+# Include the data files
+include   kapa/kindictgene.csv
+include   kapa/kindictpro.csv
+include   kapa/unigenedict.csv
