@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: requezts
+Version: 0.0.2
+Summary: HTTP client over encrypted P2P sockets using ZeroTier
+Home-page: https://gitlab.com/bostonwalker/requezts
+Author: Boston Walker
+Author-email: boston@bostonwalker.ca
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/bostonwalker/requezts/-/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP :: Session
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+# requezts
+
+HTTP client over encrypted P2P sockets using [ZeroTier](https://www.zerotier.com/)
+
+**requezts** is built on Kenneth Reitz's [requests](https://github.com/psf/requests) library, and mirrors its simple and powerful interface:
+
+    import requezts
+
+    with requezts.Session(net_id=0x0123456789abcdef) as session:
+        response = session.get("http://10.144.174.53:8000/index.html")
+
+Using **requezts'** ``Session`` object as a context manager, you can easily establish connectivity to a ZeroTier network, while also receiving all the benefits of the underlying ``requests.session.Session`` (cookie persistence, connection pooling, and configuration).
+
+Installation
+------------------------------------
+
+    pip install requezts
+
+Documentation
+------------------------------------
+
+See documentation on [ReadTheDocs](https://requezts.readthedocs.io/en/latest/).
+
+Contributions
+------------------------------------
+
+This project is open-source and contributions are welcome. The **requezts** library is hosted on [GitLab](https://gitlab.com/bostonwalker/requezts).
+
+

@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+./requezts/__init__.py
+./requezts/_adapters.py
+./requezts/_connection.py
+./requezts/_connectionpool.py
+./requezts/_poolmanager.py
+./requezts/_socket.py
+./requezts/session.py
+requezts.egg-info/PKG-INFO
+requezts.egg-info/SOURCES.txt
+requezts.egg-info/dependency_links.txt
+requezts.egg-info/requires.txt
+requezts.egg-info/top_level.txt
