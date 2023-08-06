@@ -1,0 +1,40 @@
+query ExternalPlugins {
+  externalPlugins {
+    pluginName
+    name
+    description
+    paramsSchema
+    credentialsSchema
+    tableParamsSchema
+    iconUrl
+    supportsSync
+    supportsMount
+    supportsLoad
+  }
+}
+query CSVURLs {
+  csvUploadDownloadUrls {
+    upload
+    download
+  }
+}
+query JobLogs($namespace: String!, $repository: String!, $taskId: String!) {
+  jobLogs(namespace: $namespace, repository: $repository, taskId: $taskId) {
+    url
+  }
+}
+query RepositoryIngestionJobStatus($namespace: String, $repository: String) {
+  repositoryIngestionJobStatus(
+    first: 1
+    namespace: $namespace
+    repository: $repository
+  ) {
+    nodes {
+      taskId
+      started
+      finished
+      isManual
+      status
+    }
+  }
+}
