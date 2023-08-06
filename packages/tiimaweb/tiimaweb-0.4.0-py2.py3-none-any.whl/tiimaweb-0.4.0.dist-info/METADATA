@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: tiimaweb
+Version: 0.4.0
+Summary: Tiima Web Controller
+Home-page: https://github.com/suutari/tiimaweb
+License: MIT
+Author: Tuomas Suutari
+Author-email: tuomas@nepnep.net
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: mechanicalsoup (>=0.12.0,<0.13.0)
+Requires-Dist: pytz (>=2016.0)
+Requires-Dist: typing; python_version < "3.5"
+Project-URL: Repository, https://github.com/suutari/tiimaweb
+Description-Content-Type: text/x-rst
+
+TiimaWeb - Tiima Web Controller
+===============================
+
+This library can be used to control the Tiima web UI through a simple
+Python API.  It uses MechanicalSoup for mimicing browser actions.
+
+|PyPI|
+
+.. |PyPI| image::
+   https://img.shields.io/pypi/v/tiimaweb.svg
+   :target: https://pypi.org/project/tiimaweb/
+
+
+Installing
+----------
+
+TiimaWeb is in PyPI and can be installed simply by::
+
+  pip install tiimaweb
+
+or if you use Poetry::
+
+  poetry add tiimaweb
+
+
+Usage
+-----
+
+The library can be used from Python code like this:
+
+.. code:: python
+
+  from datetime import date, datetime
+
+  import tiimaweb
+
+  client = tiimaweb.Client()
+
+  with client.login('username', 'password', 'company') as tiima:
+      # Get all time blocks of 2020-02-29
+      time_blocks = tiima.get_time_blocks_of_date(date(2020, 2, 29))
+
+      # Print and delete all those time blocks
+      for time_block in time_blocks:
+          print(time_block)
+          tiima.delete_time_block(time_block)
+
+      # Add new time block
+      tiima.add_time_block(
+          start=datetime(2020, 3, 1, 8, 30),
+          end=datetime(2020, 3, 1, 11, 45))
+
