@@ -1,0 +1,2 @@
+recursive-include jpeglib/cjpeglib/* *.h *.hpp
+include jpeglib/cjpeg/*.h
