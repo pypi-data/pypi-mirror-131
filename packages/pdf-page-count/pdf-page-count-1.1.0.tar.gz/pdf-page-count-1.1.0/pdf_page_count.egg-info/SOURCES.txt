@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+pdf-page-counter/__init__.py
+pdf-page-counter/pdfpagenumber.py
+pdf-page-counter/pdfpagenumbertest.py
+pdf_page_count.egg-info/PKG-INFO
+pdf_page_count.egg-info/SOURCES.txt
+pdf_page_count.egg-info/dependency_links.txt
+pdf_page_count.egg-info/top_level.txt
