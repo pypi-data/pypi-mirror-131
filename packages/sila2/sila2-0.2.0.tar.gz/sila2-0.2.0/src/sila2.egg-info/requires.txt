@@ -1,0 +1,21 @@
+black
+grpcio
+grpcio-tools
+isort
+jinja2
+lxml
+jsonschema
+xmlschema
+zeroconf
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[dev]
+pytest
+pytest-cov
+flake8
+
+[tests]
+pytest
+pytest-cov
