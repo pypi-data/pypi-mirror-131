@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: py_owm_base
+Version: 1.0.0
+Summary: A basic package.
+Home-page: https://github.com/GhazaryanYura/open-weather-maps
+Author: Yura Ghazaryan
+Author-email: ghazaryanyura98@gmail.com
+License: MIT
+Keywords: python
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE.txt
+
+This package send requests, return json file. And working with him.
+

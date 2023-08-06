@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+openweathermaps/__init__.py
+openweathermaps/test.py
+openweathermaps/OpenWeatherMapBase/__init__.py
+openweathermaps/OpenWeatherMapBase/open_weather_map_base.py
+py_owm_base.egg-info/PKG-INFO
+py_owm_base.egg-info/SOURCES.txt
+py_owm_base.egg-info/dependency_links.txt
+py_owm_base.egg-info/top_level.txt
