@@ -1,0 +1,11 @@
+BoxJellyfish-0.0.10.data/data/bjf/static/data.csv,sha256=od4qnVON3FHBckWJjHYUU-vxUNQXMMXv17AbQDCzonM,20
+bjf/BJFModel.py,sha256=5BP8cl9L_gmakQBuBOrInCr1RlZtnWY-xOEnL-KN-dc,1380
+bjf/Build.py,sha256=KHjk9RLLWwY4S_tPtCL7TB9s9F6dWXJSyHe1g7Hds3w,852
+bjf/__init__.py,sha256=PLtt-LcZa7vNE-ppHq4lu3_OanvikXnhRrGS9K-GR4g,203
+bjf/data.csv,sha256=od4qnVON3FHBckWJjHYUU-vxUNQXMMXv17AbQDCzonM,20
+bjf/utils.py,sha256=-IQBhshQ5q_r8_FRjENMc6pb8e4QvtRZN-fzooQ26YA,1004
+bjf/web.py,sha256=3_yDwXLtSVNBaaoymBxp9dTe-zSJByho1Uw8oyEvvmg,1274
+BoxJellyfish-0.0.10.dist-info/METADATA,sha256=SWtsy0SBo_4g1bEqTffp8ecZhw4kp9iunY2i5vLRDos,275
+BoxJellyfish-0.0.10.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+BoxJellyfish-0.0.10.dist-info/top_level.txt,sha256=xffUKs2aqrfbaznLvr8xlByo1h73Dq67_NFomVO-OqY,4
+BoxJellyfish-0.0.10.dist-info/RECORD,,

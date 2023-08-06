@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: BoxJellyfish
+Version: 0.0.10
+Summary: Automated deployment platform
+Home-page: http://www.baidu.com
+Author: LongGengYong
+Author-email: yonglonggeng@163.com
+License: MIT License
+Keywords: deploy,egg,ai
+Platform: linux
+Requires-Dist: six
+
+UNKNOWN
+
+
