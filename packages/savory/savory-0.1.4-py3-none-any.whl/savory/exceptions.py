@@ -1,0 +1,2 @@
+class SavoryException(Exception):
+    pass

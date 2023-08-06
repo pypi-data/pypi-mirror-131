@@ -1,0 +1,31 @@
+#!python
+import click
+from savory.savory import Savory
+from savory.exceptions import SavoryException
+
+
+@click.command()
+@click.option("-f", "--file", default="savory.yml", help="repository file")
+@click.option("-r", "--repo", help="repository file repo")
+@click.option("-t", "--tag", default="master", help="repository file tag")
+@click.option("-d", "--destination", default="/tmp", help="repository file destination")
+def main(**args):
+    try:
+        if args['repo']:
+            _savory = Savory()
+            _savory.repository_destination = args["destination"]
+            _savory.repository_type = "config"
+            _savory.repo_update(repository="savory", config={"repo": args["repo"], "tag": args["tag"]})
+            _savory.repository_file = f"{_savory.repository_destination}/savory/{args['file']}"
+            _savory.load_repository_file()
+        else:
+            _savory = Savory(repository_file=args["file"])
+
+        _savory.update()
+    except SavoryException as err:
+        print(f"ERROR: {str(err)}")
+        exit(1)
+
+
+if __name__ == "__main__":
+    main()
