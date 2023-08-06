@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+ghget/__init__.py
+ghget/gh.py
+ghget/main.py
+ghget.egg-info/PKG-INFO
+ghget.egg-info/SOURCES.txt
+ghget.egg-info/dependency_links.txt
+ghget.egg-info/entry_points.txt
+ghget.egg-info/requires.txt
+ghget.egg-info/top_level.txt
