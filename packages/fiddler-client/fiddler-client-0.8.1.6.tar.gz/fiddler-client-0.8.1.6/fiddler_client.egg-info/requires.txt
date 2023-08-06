@@ -1,0 +1,13 @@
+Werkzeug
+boto3
+botocore
+deepdiff
+fastavro
+importlib-resources
+packaging
+pandas
+pyyaml
+requests-toolbelt
+requests<=2.25.1
+twine
+wheel
