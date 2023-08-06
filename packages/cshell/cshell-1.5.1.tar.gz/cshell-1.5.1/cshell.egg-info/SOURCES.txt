@@ -1,0 +1,9 @@
+README.md
+cshell.py
+setup.py
+cshell.egg-info/PKG-INFO
+cshell.egg-info/SOURCES.txt
+cshell.egg-info/dependency_links.txt
+cshell.egg-info/entry_points.txt
+cshell.egg-info/requires.txt
+cshell.egg-info/top_level.txt
