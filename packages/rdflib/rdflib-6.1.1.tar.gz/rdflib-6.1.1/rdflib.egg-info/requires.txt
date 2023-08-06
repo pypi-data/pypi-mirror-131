@@ -1,0 +1,21 @@
+isodate
+pyparsing
+setuptools
+
+[:python_version < "3.8.0"]
+importlib-metadata
+
+[docs]
+sphinx<5
+sphinxcontrib-apidoc
+
+[html]
+html5lib
+
+[tests]
+berkeleydb
+html5lib
+networkx
+pytest
+pytest-cov
+pytest-subtests
