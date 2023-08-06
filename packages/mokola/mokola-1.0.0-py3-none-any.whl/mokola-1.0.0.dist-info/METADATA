@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: mokola
+Version: 1.0.0
+Summary: stock market, mutual funds, commodities and general investments
+Home-page: https://github.com/makkasbed/mokola
+Author: Adu Bediako Asare
+Author-email: adu.asare@logiclabent.com
+License: UNKNOWN
+Keywords: python,mokola,stocks,africa,ghana,nigeria,mutual funds,investments,commodities,pension funds
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: bs4
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: requests
+
+Mokola is a python package that enables users to get data on stock market accross West Africa
+
+
