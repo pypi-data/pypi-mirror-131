@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hetu
+Version: 0.0.1
+Summary: XuelangCloud AI platform
+Home-page: UNKNOWN
+Author: xuelang AI
+Author-email: wunsch0106@gmail.com
+License: UNKNOWN
+Description: # Hetu AI Platform
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
