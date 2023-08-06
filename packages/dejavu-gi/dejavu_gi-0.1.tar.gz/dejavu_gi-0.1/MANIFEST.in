@@ -1,0 +1,2 @@
+global-include *.cpp
+global-include *.h
