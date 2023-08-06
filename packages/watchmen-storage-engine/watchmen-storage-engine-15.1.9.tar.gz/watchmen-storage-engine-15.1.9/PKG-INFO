@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: watchmen-storage-engine
+Version: 15.1.9
+Summary: 
+Author: luke0623
+Author-email: luke0623@outlook.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: SQLAlchemy (>=1.4.27,<2.0.0)
+Requires-Dist: arrow (>=1.1.0,<2.0.0)
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Requires-Dist: watchmen-boot (>=15.1.11,<16.0.0)
