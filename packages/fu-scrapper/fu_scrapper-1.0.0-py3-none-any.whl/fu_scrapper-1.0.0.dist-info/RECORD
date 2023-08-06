@@ -1,0 +1,13 @@
+nba/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nba/games.py,sha256=2eO25PbJ1PeW3zdwO9s1okhvp9Qz8OR-VnUNXj1tIJU,8513
+nba/players.py,sha256=0PlIAvuSaa-2GMufOUnR9E-t266WgNmSeFrkbehPmIM,3987
+nba/teams.py,sha256=9niJANl0bBRFnQ5Ux426-I4txhWC__tMgxyGfk4BLiA,6176
+tools/Scrapper.py,sha256=-BhKPZRV-Smw5nRsW2IaQSuQYMzwilFgDniHmJVAH1U,1839
+tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tools/preformator.py,sha256=0tJtA3FqPHq4o6SIfBx1qn_AHDzmUR3X2vKbHh_53R4,2382
+tools/tools.py,sha256=1IQI6DXb2fe8quleGLLdVajvg90HCGE0dH20tY-khyw,1769
+fu_scrapper-1.0.0.dist-info/LICENSE,sha256=b97naewu9WVSg19fjo3iUxIUIyuFLaIY8uPa-QNPaVA,1062
+fu_scrapper-1.0.0.dist-info/METADATA,sha256=L5pgO8ZUdt5-aYfVHnx3M8KQDvBXaWUIJnXciDYvsfc,3531
+fu_scrapper-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fu_scrapper-1.0.0.dist-info/top_level.txt,sha256=RjWUqiEoOls1UZxUdtJHZs88urNK7tOaM0aWmpuvGws,10
+fu_scrapper-1.0.0.dist-info/RECORD,,
