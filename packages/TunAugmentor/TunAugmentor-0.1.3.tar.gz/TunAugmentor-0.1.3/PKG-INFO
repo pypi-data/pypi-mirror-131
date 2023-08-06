@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: TunAugmentor
+Version: 0.1.3
+Summary: Python library for image data augmentation
+Home-page: https://github.com/ahmedbelgacem/TunAugmentor
+Author: Ahmed Belgacem, Firas Meddeb
+Author-email: ahmedbelgaacem@gmail.com
+License: MIT
+Download-URL: https://github.com/ahmedbelgacem/TunAugmentor/archive/refs/tags/0.1.2.tar.gz
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+
+UNKNOWN
+

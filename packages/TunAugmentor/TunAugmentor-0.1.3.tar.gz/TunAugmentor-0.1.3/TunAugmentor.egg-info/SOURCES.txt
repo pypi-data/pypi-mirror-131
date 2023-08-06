@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+TunAugmentor/__init__.py
+TunAugmentor/pipeline.py
+TunAugmentor/transformations.py
+TunAugmentor/utils.py
+TunAugmentor.egg-info/PKG-INFO
+TunAugmentor.egg-info/SOURCES.txt
+TunAugmentor.egg-info/dependency_links.txt
+TunAugmentor.egg-info/requires.txt
+TunAugmentor.egg-info/top_level.txt
