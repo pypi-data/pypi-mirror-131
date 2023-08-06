@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: esetinspect
+Version: 0.1.1
+Summary: 
+Author: Donny Maasland
+Author-email: donny@unauthorizedaccess.nl
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: attrs (>=21.2.0,<22.0.0)
+Requires-Dist: httpx (>=0.21.1,<0.22.0)
+Requires-Dist: pyhumps (>=3.0.2,<4.0.0)
