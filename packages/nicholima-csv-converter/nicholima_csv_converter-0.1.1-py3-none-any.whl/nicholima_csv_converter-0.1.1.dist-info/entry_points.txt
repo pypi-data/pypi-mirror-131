@@ -1,0 +1,3 @@
+[console_scripts]
+csv_converter=nicholima_csv_converter.converter:converter
+

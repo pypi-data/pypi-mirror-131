@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: nicholima-csv-converter
+Version: 0.1.1
+Summary: Converter csv to json.
+Author: Nicholas Lima
+Author-email: nicho.lima@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Description-Content-Type: text/markdown
+
+CSV to JSON converter.
+
+
+
+## Introduction
+
+Teaching how to deploy a lib on Pypi at PUC using Poetry
+
+
+
+
+
+### What this project can do
+
+Read a **csv** file or a **folder** with csv's and convert them to **JSON**
+This project is a program running on terminal, preferably install with pipx:
+
+
+
+
+
+```
+pipx install nicholima-csv-converter
+```
+To use, just type in:
+
+```bash
+csv_converter --help
+```
+
+Or:
+
+```bash
+json_converter --help
+```
