@@ -1,0 +1,4 @@
+[console_scripts]
+csv_converter=saezo_csv_converter.converter:converterTocsv
+json_converter=saezo_csv_converter.converter:converter2
+

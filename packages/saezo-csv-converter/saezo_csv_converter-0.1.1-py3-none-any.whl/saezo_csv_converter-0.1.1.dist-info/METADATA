@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: saezo-csv-converter
+Version: 0.1.1
+Summary: Trabalho de Python - PUC - Turma DS
+Author: ozeas santos
+Author-email: ozeassantos@saezo.com.br
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: ipython (>=7.30.1,<8.0.0)
+Description-Content-Type: text/markdown
+
+
