@@ -1,0 +1,10 @@
+LICENSE.txt
+README.rst
+setup.py
+Texture_Atlas/__init__.py
+Texture_Atlas/texture_atlas.py
+Texture_Atlas.egg-info/PKG-INFO
+Texture_Atlas.egg-info/SOURCES.txt
+Texture_Atlas.egg-info/dependency_links.txt
+Texture_Atlas.egg-info/requires.txt
+Texture_Atlas.egg-info/top_level.txt
