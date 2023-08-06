@@ -1,0 +1,16 @@
+matrix_viewer/__init__.py,sha256=cFrfBlA0Hc5_bCS98tVPCmWcUlhUiVYlo-3j39wxXV8,510
+matrix_viewer/_custom_notebook.py,sha256=AnFVUH6Ee_HrtqWMU-S3xOAr_HDjZ_s2wGFX2HX5ELU,3792
+matrix_viewer/_manager.py,sha256=rmxI9en-t4ij7eEMTWi1HmMgkBH1N6bAJj1T1QELKrM,2218
+matrix_viewer/_tab.py,sha256=sCmYTEs-OoO8Oe7LBp8CIvBnOlx90DkeGq3SnLEAWjk,1493
+matrix_viewer/_tab_numpy.py,sha256=P6RmQ01JwFZug6EUVCiqlXsRp89bUIY58Jp0Q0THGpg,10916
+matrix_viewer/_tab_struct.py,sha256=m6fn4MmNlyYnxNhfhSPHmFwYURZYFt_JMJ5Ukdan9i4,5989
+matrix_viewer/_tab_table.py,sha256=kzpKqDBSN57uX5hOmefkNN2qsWObet9A8h3xKDI-260,18007
+matrix_viewer/_tab_text.py,sha256=zEH_lKQcyGIiMDC6ZNKYCrNcYPC6m9IBIEE84x1C95U,1901
+matrix_viewer/_utils.py,sha256=5V2SZyp2jttJN8lr8F8WxcgeZ7-L14QsuhE1QcDCqXw,343
+matrix_viewer/_window.py,sha256=uuEny2JFctIVD577B6FmXuwyAcUyAllNeZMMcPeADN0,7219
+matrix_viewer-0.2.0.dist-info/LICENSE,sha256=Z9KH85r7QlX2CF3t5Av9YF0qYoTIfQBzgo2Zg8URyb4,1077
+matrix_viewer-0.2.0.dist-info/METADATA,sha256=nYXsyAFuB_1Oms4ZffXHwwpATiP4h1rjFVuWq7uVhyw,2219
+matrix_viewer-0.2.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+matrix_viewer-0.2.0.dist-info/entry_points.txt,sha256=HUysTJirZbhb7PbLnsuaKrdDjm7zwKfYjv1pOu2mbOQ,58
+matrix_viewer-0.2.0.dist-info/top_level.txt,sha256=9zwhE27C_1xusf3AXTiv26qfmNRpFc-3XYXrFio2Q7Q,14
+matrix_viewer-0.2.0.dist-info/RECORD,,
