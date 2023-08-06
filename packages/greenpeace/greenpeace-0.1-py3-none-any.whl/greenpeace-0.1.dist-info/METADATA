@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: greenpeace
+Version: 0.1
+Summary: Python environment clean up.
+Home-page: https://github.com/fdieulle/greenpeace
+Author: Fabien Dieulle
+Author-email: fabiendieulle@hotmail.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: yarg
+
+# greenpeace
+
+![build](https://github.com/fdieulle/greenpeace/actions/workflows/build.yml/badge.svg)
+[![codecov](https://codecov.io/gh/fdieulle/greenpeace/branch/main/graph/badge.svg?token=7AAFH9JUHG)](https://codecov.io/gh/fdieulle/greenpeace)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+Python environment clean up
+
+
