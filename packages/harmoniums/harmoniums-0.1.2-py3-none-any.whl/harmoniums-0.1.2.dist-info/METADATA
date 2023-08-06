@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: harmoniums
+Version: 0.1.2
+Summary: Harmoniums -- a.k.a. restricted Boltzmann machines -- with binary latent states for survival analysis.
+Home-page: https://gitlab.com/hylkedonker/harmonium-models
+Author: Hylke C. Donker
+Author-email: h.c.donker@umcg.nl
+License: Apache License 2.0
+Download-URL: https://gitlab.com/hylkedonker/harmonium-models/-/archive/0.1.2/harmonium-models-0.1.2.tar.gz
+Keywords: survival analysis,machine learning,harmonium,restricted Boltzmann machine
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE.txt
+Requires-Dist: lifelines (>=0.25)
+Requires-Dist: pandas (>=1.1)
+Requires-Dist: numpy (>=1.20)
+Requires-Dist: scikit-learn (>=0.24)
+Requires-Dist: numba (>=0.52)
+Requires-Dist: scikit-survival
+Requires-Dist: numba-scipy
+
+UNKNOWN
+
