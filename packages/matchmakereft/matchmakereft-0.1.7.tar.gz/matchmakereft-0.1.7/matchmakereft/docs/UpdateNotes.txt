@@ -1,0 +1,73 @@
+
+0.3.5.1:
+24/07/2019 JSantiago. Modified functions.py to write a warning message in WCoutput.txt
+                      if the matching is not successful (kinematic check not passed).
+
+23/07/2019 JSantiago. Added check_WI to MatchMaker.py to check Ward Identities.
+                      Several changes were included to add this functionality.
+		      setup.py modified to add the directories models/.../WI/...
+17/07/2019 ACarmona. Check that Feynrules.m is indeed installed.
+					 Some of the triple """ explanations changed.
+						
+29/06/2019 JSantiago. Added SMreplacements.dat to core.
+                      Modified matcher.m to to the following things:
+		        - Include the 1 loop corrections to SM parameters in the EoM for the redundancies
+		        - Use WCxf style notation for the Wilson coefficients in Warsaw basis.
+		        - Added function PrettyShow[x] to matcher.m to show the WC in Warsaw basis in nice (not-text) format
+21/06/2019 ACarmona. Solved problem with "-" and input
+18/06/2019 ACarmona. raw_input and input compatibility
+12/06/2019 ACarmona. Added tab autocompletion for feynrules-path
+12/06/2019 ACarmona. Added timeout in input about how to compute replacegaugedata
+12/06/2019 ACarmona. Fixed the problem with useSusyno.m 
+05/06/2019 ACarmona. Now replacegaugedata can be copied from core
+05/06/2019 ACarmona. Some changes in functions.py to allow for non _MM names in folders
+28/05/2019 ACarmona. Copied the fr files of the BFM SM to core
+28/05/2019 ACarmona. Modification of create_MM_model.wl so now it loads the fr files of the SM from core
+28/05/2019 ACarmona. Modification of create_MM_model.wl so we can create models not in the current directory
+28/05/2019 ACarmona. Modification of create_MM_model.wl so that now it replace the actual path of ferynrules
+24/05/2019 ACarmona. Solved DEVNULL problem when working with python2.7 in functions.py
+22/05/2019 JSantiago. Fixed a problem with repeated entries of the form alpha(f1,f2)=f(f1,f2), alpha(f2,f1)=f(f2,f1) from complex conjugation.
+15/05/2019 JSantiago. Merged with new version after hints from Thomas Hahn
+
+0.3.4.25:
+08/05/2019 ACarmona. Added the python package future as a requirement 
+08/05/2019 ACarmona. Updated UseSusyno.m to include the complex conjugate of a coupling
+08/05/2019 ACarmona. Synchronized the development/UseSusyno.m with the one in core
+29/03/2019 ACarmona. Fixed FR2MM.m to avoid Transpose error. 
+29/03/2019 ACarmona. Eliminiated the extra spaces created in gaugetensorcoeffs.dat via FR2MM.m 
+29/03/2019 ACarmona. Commented out GetGaugeData in matcher.m
+29/03/2019 ACarmona. Changed matchmakerpath to REPLACEPATH in matcher.m
+29/03/2019 ACarmona. Changed matcher.m and matcher.nb in development accordingly.
+29/03/2019 ACarmona. Changed UseSusyno.m to include invariants.
+29/03/2019 ACarmona. Added a quadruplet in UnbrokenSM_BFM_Particle_Content.fr
+12/03/2019 JSantiago. matcher.m cleaned up.
+12/03/2019 JSantiago/ACarmona. Modified matcher.m to allow for parallelization.
+04/03/2019 JSantiago. Added skeleton_parallel.frm to core. Changed
+libs/generate_form.py to use it instead of the original skeleton.frm 
+27/02/2019 JSantiago. FR2MM.m modified to write files
+particleirreps.dat and gaugetensorcoeffs.dat inside
+model/QGRAF/model_data 
+26/02/2019 JSantiago. Canonical Normalization now fully
+implemented. TotalMatcher returns a list of dimension 3x2, including
+the redundant but canonically normalized WC in the second position.
+22/02/2019 JSantiago. Implemented the function CanonicallyNormalize in
+matcher.m to apply canonical normalization in the redundant WC. Also
+added canonicalnormalization.dat with all the relevant
+renormalizations to matchmaker/core
+12/02/2019 JSantiago. Eliminated the 'samb(x)' in the form skeleton
+11/02/2019 JSantiago. Fixed a typo in useSusyno.m (needs matcher.m)
+08/02/2019 JSantiago. Split matcher.m into matcher.m (that now checks if replacegaugedata is present and does not need susyno) and useSusyno.m (which uses susyno to re-create the file replacegaugedata)
+08/02/2019 JSantiago. Changed MatchMaker.py to add the function clean_model
+
+0.3.4.24: JSantiago. run_qgraf.py modified to write the tree-level two point functions only for EFT models
+0.3.4.23: JSantiago. There was a problem with including only SM particles at tree level in UV models. This is fixed now and therefore we go back to define alphaSxx as before (if no correction they are automatically 0 because SM processes are not computed).
+0.3.4.22: JSantiago. There were still problems with L4SM, should be fixed now
+0.3.4.21: JSantiago. Fixed some problem with the installation of the new L2SM and L4SM
+0.3.4.20: JSantiago. L2SM and L4SM are not addition to the SM so that the corresponding alphaSxx are zero in the absence of corrections
+0.3.4.19: JSantiago. matcher.m adds SimpleShow. Also TotalMatcher now returns
+                     a the following list {{tree redundant,1loop redundant},
+		                           {tree warsaw, 1loop warsaw}}
+0.3.4.18: JSantiago. download_models checks if directory already present 
+0.3.4.17: JSantiago. Fixed some bugs with the installation.
+0.3.4.16: JSantiago. Expanded manual
+0.3.4.15: JSantiago. Add docs to distribution (manual.pdf and UpdateNotes.txt)
