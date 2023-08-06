@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+Slash/__init__.py
+Slash/types_.py
+Slash/Core/core.py
+Slash/Core/exceptions_.py
+Slash/Core/operations_.py
+Slash92.egg-info/PKG-INFO
+Slash92.egg-info/SOURCES.txt
+Slash92.egg-info/dependency_links.txt
+Slash92.egg-info/requires.txt
+Slash92.egg-info/top_level.txt
+Slash/Core/core.py
+Slash/Core/exceptions_.py
+Slash/Core/operations_.py
