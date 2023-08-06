@@ -1,0 +1,31 @@
+[project]
+name = "xmas"
+version = "2021.2"
+description = ""
+dependencies = []
+requires-python = ">=3.7,<4.0"
+[[project.authors]]
+name = "Nasy"
+email = "nasyxx+git@gmail.com"
+
+[build-system]
+requires = [ "pdm-pep517",]
+build-backend = "pdm.pep517.api"
+
+[project.license]
+text = "GPL-3+"
+
+[project.urls]
+homepage = "https://github.com/nasyxx/xmas.py"
+
+[project.scripts]
+xmas = "xmas:main"
+
+[tool.black]
+line-length = 79
+
+[tool.pdm]
+includes = [ "README.md",]
+
+[tool.pdm.dev-dependencies]
+dev = []
