@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+fastash/ashfunc.cpp
+fastash.egg-info/PKG-INFO
+fastash.egg-info/SOURCES.txt
+fastash.egg-info/dependency_links.txt
+fastash.egg-info/requires.txt
+fastash.egg-info/top_level.txt

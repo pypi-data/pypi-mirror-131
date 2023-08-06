@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: fastash
+Version: 0.0.1
+Summary: Fast Averaged Shifted Histogram module.
+Home-page: https://github.com/francoisremi/fash
+Author: François-Rémi Mazy
+License: UNKNOWN
+Description: # FastASH
+        Fast Averaged Shifted Histograms
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
