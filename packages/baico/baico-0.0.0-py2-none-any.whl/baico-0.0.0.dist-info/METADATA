@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: baico
+Version: 0.0.0
+Summary: Best-Arm Identification based Combinatorial Optimization Algorithms.
+Home-page: https://gitlab.com/tmaehara/baico
+Author: tmaehara
+Author-email: tmaehara@acm.org
+License: MIT
+Keywords: baico combinatorial-optimization
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 1 - Planning
+Description-Content-Type: text/markdown
+
+# baico
+
+Best Arm Identification-based Combinatorial Optimization Algorithms 
+
+
+
