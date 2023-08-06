@@ -1,0 +1,13 @@
+wargame/__init__.py,sha256=e_EbwyXNPUc-qy9jlNOfxxWKlREF12FD4G4g54nO7v0,113
+wargame/abstractgameunit.py,sha256=eli7TsoVNZC6tVfHIBwDJTpPnSVwZA50e8RgJwB7BZY,1289
+wargame/attackoftheors.py,sha256=uocmmasear1oaF2uo7N-_z4zvDOzigwpyhHvMOtyzME,5356
+wargame/gameuniterror.py,sha256=5vw0pAmP5qC4xuXrFh--cJzieBN_qhsO4XOuI-68PCs,1066
+wargame/gameutils.py,sha256=ooks-ocDN0nem68Go71Gu8oipGybkX7KXi6uRYvZ190,144
+wargame/hut.py,sha256=HnqkRRc9GSop0TCp4Xeyria6tEYIGDl7W6-MxWv5bN4,187
+wargame/knight.py,sha256=38mYEY8fwYqpxeJuASF1JfXggHVjIdZuFL2O0jvNOQg,1573
+wargame/orcider.py,sha256=ICVlV_WpT8QjP59HGs0roVbaHsX-bV6vdd8WAMXfSA4,320
+chys_private-2.0.1.dist-info/LICENSE.txt,sha256=6KxB2L953SfVwO_HUYTCocHcEeXExsZ_DH8M569nI7s,1089
+chys_private-2.0.1.dist-info/METADATA,sha256=rasrP9EoLAG9wQUxpZs0DTeDYgcxlInfOGalBCCFa1w,637
+chys_private-2.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+chys_private-2.0.1.dist-info/top_level.txt,sha256=bcFcc0EIP-5wI8CBsQjN_wzTIfEF0Ek9GfxAot_uvWQ,8
+chys_private-2.0.1.dist-info/RECORD,,
