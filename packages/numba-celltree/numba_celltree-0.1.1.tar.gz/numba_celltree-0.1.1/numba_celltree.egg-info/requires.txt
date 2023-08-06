@@ -1,0 +1,13 @@
+numba>=0.50
+numpy
+
+[all]
+matplotlib
+meshzoo
+
+[docs]
+matplotlib
+meshzoo
+pydata-sphinx-theme
+sphinx
+sphinx-gallery
