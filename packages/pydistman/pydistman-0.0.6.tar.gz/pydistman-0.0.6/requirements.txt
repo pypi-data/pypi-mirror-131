@@ -1,0 +1,7 @@
+attrs>=21.2
+cookiecutter
+coverage
+pytest-cov
+pytest>=4.6
+requests
+twine
