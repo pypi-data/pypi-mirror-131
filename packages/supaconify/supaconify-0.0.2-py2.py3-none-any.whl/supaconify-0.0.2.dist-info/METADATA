@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: supaconify
+Version: 0.0.2
+Summary: Send notification from supercomputer
+Home-page: https://github.com/flat35hd99/supaconify
+Author: flat35hd99
+License: UNKNOWN
+Platform: any
+Requires-Dist: click
+Requires-Dist: slack-sdk
+
+UNKNOWN
+
