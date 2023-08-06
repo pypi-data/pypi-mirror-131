@@ -1,0 +1,12 @@
+.gitignore
+Benchmark.ipynb
+LICENSE
+README.md
+setup.py
+irods_fsspec/__init__.py
+irods_fsspec/test_irods_fsspec.py
+irods_fsspec.egg-info/PKG-INFO
+irods_fsspec.egg-info/SOURCES.txt
+irods_fsspec.egg-info/dependency_links.txt
+irods_fsspec.egg-info/requires.txt
+irods_fsspec.egg-info/top_level.txt
