@@ -1,0 +1,44 @@
+CHANGELOG
+=========
+
+0.0.7 (2021-12-17)
+------------------
+
+- Link image field
+
+
+0.0.6 (2021-12-16)
+------------------
+
+- Nothing changed yet.
+
+
+0.0.5 (2021-12-16)
+------------------
+
+- Page and image positions
+  [bloodbare]
+
+0.0.4 (2021-12-16)
+------------------
+
+- Add cell rows on spreadsheet
+  [bloodbare]
+
+0.0.3 (2021-12-16)
+------------------
+
+- Add icon on file extracted data
+  [bloodabre]
+
+
+0.0.2 (2021-12-02)
+------------------
+
+- Add PYI files for typing
+
+
+0.0.1 (2021-12-01)
+------------------
+
+- Initial Version
