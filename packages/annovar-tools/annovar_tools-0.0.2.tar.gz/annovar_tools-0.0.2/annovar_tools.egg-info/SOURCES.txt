@@ -1,0 +1,11 @@
+README.md
+annovar_tools.py
+setup.py
+annovar_tools.egg-info/PKG-INFO
+annovar_tools.egg-info/SOURCES.txt
+annovar_tools.egg-info/dependency_links.txt
+annovar_tools.egg-info/requires.txt
+annovar_tools.egg-info/top_level.txt
+process_annovar/__init__.py
+process_annovar/split.py
+process_annovar/vcf.py
