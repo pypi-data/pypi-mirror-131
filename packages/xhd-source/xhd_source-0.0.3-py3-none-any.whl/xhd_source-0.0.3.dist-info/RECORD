@@ -1,0 +1,11 @@
+xhd_source/__init__.py,sha256=VIBBGotjgiK4Ue0WatHyFS6Rzh8alovdoyfc2t2FRiQ,339
+xhd_source/basic_nn.py,sha256=WHb3m35NNNomtm_rB8ku90G6cNWp4khUEpaMz46lHyY,2318
+xhd_source/dataset.py,sha256=mWzeQps_aT_pNk2Osb_wmq8GiCC16tTgbxVTq2VvSd8,1347
+xhd_source/helper_func.py,sha256=HYOrnRWHfMkxd1xPvlhDm1bY2LfaROyd2lUvNlZKwUs,977
+xhd_source/plot.py,sha256=vqDk_YIAghWAnoj9abjp5e7IDYxnGABmNRPIHFhH65U,1395
+xhd_source/recorder.py,sha256=_vcPX0yXwpbyNepKJWGdvoDtbCFaMHuiTZ2L0SCHgeM,2516
+xhd_source-0.0.3.dist-info/LICENSE,sha256=OihxXm68Pt8sSw2Qj4DDKlH1TZ4vs5NS8yGP4EbdBF8,1086
+xhd_source-0.0.3.dist-info/METADATA,sha256=q7dxY9ppYc4_KnruAQC4uw_i4U9pkzjSuHgQCipHbrI,585
+xhd_source-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+xhd_source-0.0.3.dist-info/top_level.txt,sha256=vh51yb1e0lmA7zfWLy45LInd0Z5xEdkXFb722TEFbS0,11
+xhd_source-0.0.3.dist-info/RECORD,,
