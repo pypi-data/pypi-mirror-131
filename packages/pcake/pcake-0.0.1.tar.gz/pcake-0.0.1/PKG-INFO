@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pcake
+Version: 0.0.1
+Summary: Compare numeric properties from SPARQL endpoints
+Home-page: https://github.com/oeg-upm/pcake
+Author: Ahmad Alobaid
+Author-email: aalobaid@fi.upm.es
+License: Apache2
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Property Cake
+An online application to show the distribution of a given class/property pairs of a SPARQL endpoint
+
+![Alt text](property_distribution.png?raw=true "Property Distribution")
+
+
+
