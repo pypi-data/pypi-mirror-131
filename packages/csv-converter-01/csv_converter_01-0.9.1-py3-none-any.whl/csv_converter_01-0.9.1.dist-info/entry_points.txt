@@ -1,0 +1,3 @@
+[console_scripts]
+csv_converter=csv_converter_01.converter:converter
+
