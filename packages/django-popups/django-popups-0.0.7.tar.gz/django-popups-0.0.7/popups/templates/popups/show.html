@@ -1,0 +1,228 @@
+{% load static %}
+
+<link href="{% static 'popups/css/style.css' %}" rel="stylesheet">
+<script src="{% static 'popups/js/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'popups/js/jquery.cookie.js' %}"></script>
+
+<style>
+  {% for npopup in noti_popups.all %}
+    {% if npopup.activate %}
+    #npopup_{{ npopup.pk }} .modal-dialog .modal-body {
+    background-size: cover;
+    background-image: url({% static 'popups/img/'|add:npopup.background|add:'.jpg' %});
+    {% if npopup.text_color == 'BL' %}
+      color: #082744;
+    {% elif npopup.text_color == 'WH' %}
+      color: #ffffff;
+    {% elif npopup.text_color == 'GR' %}
+      color: #444444;
+    {% endif %}
+    }
+    {% endif %}
+  {% endfor %}
+  {% for epopup in event_popups.all %}
+    {% if epopup.activate %}
+    #epopup_{{ epopup.pk }} .modal-dialog .modal-body {
+    background-size: cover;
+    background-image: url({% static 'popups/img/'|add:epopup.background|add:'.jpg' %});
+    {% if epopup.text_color == 'BL' %}
+      color: #082744;
+    {% elif epopup.text_color == 'WH' %}
+      color: #ffffff;
+    {% elif epopup.text_color == 'GR' %}
+      color: #444444;
+    {% endif %}
+    }
+    {% endif %}
+  {% endfor %}
+</style>
+
+<!-- Show modal if it doesn't set cacher-modal in the cookie -->
+<script>
+  {% for npopup in noti_popups.all %}
+    {% if npopup.activate %}
+    jQuery(document).ready(function($) {
+      if ($.cookie("ncacher-modal_{{ npopup.pk }}")) {
+        $("#npopup_{{ npopup.pk }}").remove();
+      } else {
+        $("#npopup_{{ npopup.pk }}").modal("show");
+      }
+
+      $("#npopup_suppress_{{ npopup.pk }}").click(function() {
+        if ($(this).is(":checked")) {
+            $("#npopup_{{ npopup.pk }}").modal("hide");
+            $.cookie("ncacher-modal_{{ npopup.pk }}", true);
+        } else {
+          $.cookie("ncacher-modal_{{ npopup.pk }}", false);
+        }
+      })
+    });
+    {% endif %}
+  {% endfor %}
+  {% for epopup in event_popups.all %}
+    {% if epopup.activate %}
+    jQuery(document).ready(function($) {
+      if ($.cookie("ecacher-modal_{{ epopup.pk }}")) {
+        $("#epopup_{{ epopup.pk }}").remove();
+      } else {
+        $("#epopup_{{ epopup.pk }}").modal("show");
+      }
+
+      $("#epopup_suppress_{{ epopup.pk }}").click(function() {
+        if ($(this).is(":checked")) {
+            $("#epopup_{{ epopup.pk }}").modal("hide");
+            $.cookie("ecacher-modal_{{ epopup.pk }}", true);
+        } else {
+          $.cookie("ecacher-modal_{{ epopup.pk }}", false);
+        }
+      })
+    });
+    {% endif %}
+  {% endfor %}
+  {% for ipopup in image_popups.all %}
+    {% if ipopup.activate %}
+    jQuery(document).ready(function($) {
+      if ($.cookie("icacher-modal_{{ ipopup.pk }}")) {
+        $("#ipopup_{{ ipopup.pk }}").remove();
+      } else {
+        $("#ipopup_{{ ipopup.pk }}").modal("show");
+      }
+
+      $("#ipopup_suppress_{{ ipopup.pk }}").click(function() {
+        if ($(this).is(":checked")) {
+            $("#ipopup_{{ ipopup.pk }}").modal("hide");
+            $.cookie("icacher-modal_{{ ipopup.pk }}", true);
+        } else {
+          $.cookie("icacher-modal_{{ ipopup.pk }}", false);
+        }
+      })
+    });
+    {% endif %}
+  {% endfor %}
+</script>
+
+<!-- Noti Popup Modal -->
+{% for npopup in noti_popups.all %}
+  {% if npopup.activate %}
+  <div class="modal fade" id="npopup_{{ npopup.pk }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+       aria-labelledby="nstaticBackdropLabel_{{ npopup.pk }}" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="nstaticBackdropLabel_{{ npopup.pk }}">{{ npopup.title }}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <h4 class="text-center">{{ npopup.subtitle }}</h4>
+            {% autoescape off %}
+            <p class="text-center">{{ npopup.description }}</p>
+            {% endautoescape %}
+          </div>
+        </div>
+        {% if npopup.url %}
+        <div class="modal-footer justify-content-between">
+        {% else %}
+        <div class="modal-footer justify-content-start">
+        {% endif %}
+          <div class="popup-check">
+              <input type="checkbox" id="npopup_suppress_{{ npopup.pk }}" />
+              <label for="npopup_suppress_{{ npopup.pk }}" data-id="checkbox_text">
+                  다시보지않기
+              </label>
+          </div>
+          {% if npopup.url %}
+          <a href="{{ npopup.url }}" target="_blank">자세히보기</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+{% endfor %}
+
+<!-- Event Popup Modal -->
+{% for epopup in event_popups.all %}
+  {% if epopup.activate %}
+  <div class="modal fade" id="epopup_{{ epopup.pk }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+       aria-labelledby="estaticBackdropLabel_{{ epopup.pk }}" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="estaticBackdropLabel_{{ epopup.pk }}">{{ epopup.title }}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <h4 class="text-center">{{ epopup.subtitle }}</h4>
+            {% autoescape off %}
+            <p class="text-center">{{ epopup.description }}</p>
+            {% endautoescape %}
+          </div>
+        </div>
+        {% if epopup.url %}
+        <div class="modal-footer justify-content-between">
+        {% else %}
+        <div class="modal-footer justify-content-start">
+        {% endif %}
+          <div class="popup-check">
+            <input type="checkbox" id="epopup_suppress_{{ epopup.pk }}" />
+            <label for="epopup_suppress_{{ epopup.pk }}" data-id="checkbox_text">
+                다시보지않기
+            </label>
+          </div>
+          {% if epopup.url %}
+          <a href="{{ epopup.url }}" target="_blank">자세히보기</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+{% endfor %}
+
+<!-- Image Popup Modal -->
+<style>
+  .modal .modal-dialog .modal-body {
+  margin: 0px;
+  padding: 0px;
+  }
+</style>
+{% for ipopup in image_popups.all %}
+  {% if ipopup.activate %}
+  <div class="modal fade" id="ipopup_{{ ipopup.pk }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+       aria-labelledby="istaticBackdropLabel_{{ ipopup.pk }}" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="istaticBackdropLabel_{{ ipopup.pk }}">{{ ipopup.title }}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        {% if ipopup.url %}
+        <div class="modal-body">
+          <a href="{{ ipopup.url }}" class="btn-get-started scrollto" target="_blank">
+            <img src="{{ ipopup.image.url }}" class="img-fluid" alt="Popup image">
+          </a>
+        </div>
+        <div class="modal-footer justify-content-between">
+        {% else %}
+        <div class="modal-body">
+          <img src="{{ ipopup.image.url }}" class="img-fluid" alt="Popup image">
+        </div>
+        <div class="modal-footer justify-content-start">
+        {% endif %}
+          <div class="popup-check">
+            <input type="checkbox" id="ipopup_suppress_{{ ipopup.pk }}" />
+            <label for="ipopup_suppress_{{ ipopup.pk }}" data-id="checkbox_text">
+                다시보지않기
+            </label>
+          </div>
+          {% if ipopup.url %}
+          <a href="{{ ipopup.url }}" target="_blank">자세히보기</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+{% endfor %}
