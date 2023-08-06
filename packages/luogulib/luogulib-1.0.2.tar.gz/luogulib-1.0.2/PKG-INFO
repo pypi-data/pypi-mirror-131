@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: luogulib
+Version: 1.0.2
+Summary: A python module for using Luogu API.
+Home-page: https://gitee.com/cyoi-group/luogu-lib
+Author: Qin Yuzhen
+Author-email: 15166054530@163.com
+License: UNKNOWN
+Description: # LuoguLib
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
