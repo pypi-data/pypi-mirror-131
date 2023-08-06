@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pomodoro_Dev3XoR.egg-info/PKG-INFO
+pomodoro_Dev3XoR.egg-info/SOURCES.txt
+pomodoro_Dev3XoR.egg-info/dependency_links.txt
+pomodoro_Dev3XoR.egg-info/entry_points.txt
+pomodoro_Dev3XoR.egg-info/requires.txt
+pomodoro_Dev3XoR.egg-info/top_level.txt
+pomodoro_Dev3XoR.egg-info/zip-safe
