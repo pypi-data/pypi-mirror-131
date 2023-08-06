@@ -1,0 +1,12 @@
+rvm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rvm/__main__.py,sha256=4DLb5Z80pfdRBYTu4oz0dmjp6X9AO0O0BFiaZFC4vV4,116
+rvm/merge.py,sha256=daDB8NukBpyJQvLs1dpHtPq19FZurTIdn8Y74Heiumc,435
+rvm/rvm.py,sha256=2qAo6bZOuRZepsiELCFCyE6FmcprIFAJkmt91BguKcs,5637
+rvm/rvm_mobilenetv3_fp32.onnx,sha256=iNRTEpcRj1lb8v1g9vVmrsLlWTk4AtH0NsOA8Mu9KCg,14975696
+rvm/rvm_mobilenetv3_int8.onnx,sha256=zcLkpCdqf8383f_sS1YJdksvanO8om0gg-_lQlXGxgw,3929450
+video_matting-0.0.2.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+video_matting-0.0.2.dist-info/METADATA,sha256=OZiqIPaIXInYYXuxq6ITWL7QuXaDuxh2MNeCcgCO9Bs,434
+video_matting-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+video_matting-0.0.2.dist-info/entry_points.txt,sha256=bsUMMOKj__9rqpSQLPeCB3XOonElh4b5CU0KCBpJahU,52
+video_matting-0.0.2.dist-info/top_level.txt,sha256=0w_h-XdPUVYOwSZWy79YdbObHgImMKshvydZxxZLBG4,4
+video_matting-0.0.2.dist-info/RECORD,,
