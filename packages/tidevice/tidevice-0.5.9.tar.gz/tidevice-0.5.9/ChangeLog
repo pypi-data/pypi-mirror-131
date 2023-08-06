@@ -1,0 +1,20 @@
+CHANGES
+=======
+
+0.5.9
+-----
+
+* hotfix for py37
+* support iOS 15.2
+* format code
+* add windows install step
+* change dot to ,
+* update wda bundleId pattern
+* update wda bundleId pattern
+* change bundle pattern
+* Update README.md
+* add DataType.GPU
+* update README: fix xctest command env variable error
+* fix for windows
+* fix README.md 新版本需要传入性能数据类型
+* fix network and usb both exists bug
