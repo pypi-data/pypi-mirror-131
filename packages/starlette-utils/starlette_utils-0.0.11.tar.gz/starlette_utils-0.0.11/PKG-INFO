@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: starlette_utils
+Version: 0.0.11
+Summary: starlette Tools.
+Home-page: https://gitee.com/hubertshelley/starlette_utils
+Author: Hubert Shelley
+Author-email: hubertshelley@163.com
+License: Apache Software License
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# Starlette_utils
+
+starlette工具包
+
+![avatar](https://cdn.smart7.tech/static/img/Perfect7.png)
+
+## 项目依赖
+
+|  包名   | 版本  |
+|  ----  | ----  |
+| [marshmallow] |  ≥ 3.13.0 |
+| [starlette] |  ≥ 0.16.0 |
+| [starlette-apispec] |  ≥ 1.0.4 |
+| [smart7-orm] | 1.0.2 |
+| [pyjwt] | ≥ 2.1.0 |
+
+## 更新日志
+
+> 0.0.11
+> > 1. Json返回格式补充
+
+<details>
+<summary><mark>更多</mark></summary>
+
+> 0.0.10
+> > 1. 序列化器异常调整
+> > 2. 视图过滤器异常待处理
+> 
+> 0.0.9
+> > 1. 异常修复
+> 
+> 0.0.8
+> > 1. 自身逻辑删除数据异常修复
+> 
+> 0.0.6
+> > 1. 修复put/patch更新接口出现的异常
+> 
+> 0.0.5
+> > 1. 序列化器序列化调整为异步
+> 
+> 0.0.4
+> > 1. 新增token刷新功能
+> 
+> 0.0.3
+> > 1. 修复update视图不能正常修改数据
+> > 2. 新增schema动态配置
+>
+> 0.0.2
+> > 新增jwt工具用于生成token
+</details>
+
+[marshmallow]: https://marshmallow.readthedocs.io/
+
+[starlette]: https://www.starlette.io
+
+[starlette-apispec]: https://apispec.readthedocs.io/en/stable/
+
+[smart7-orm]: https://gitee.com/hubertshelley/smart7-orm
+
+[pyjwt]: https://pyjwt.readthedocs.io/en/latest/
+
+
