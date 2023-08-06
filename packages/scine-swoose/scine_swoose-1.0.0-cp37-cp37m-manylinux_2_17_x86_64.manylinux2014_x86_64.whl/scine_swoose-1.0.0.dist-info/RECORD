@@ -1,0 +1,13 @@
+scine_swoose/__init__.py,sha256=VKX0fnwsVKtN6f-T8SLwiLW7Mwd4Eu9HvKprEa165IM,205
+scine_swoose/libcore.so,sha256=lYdL0nR_EkPz27FpeZEzcWk6i_kjRf6BSrtZdm3cbqU,324696
+scine_swoose/libutilsos.a,sha256=rzRw-K2W553jAwXpXkFPnQssEuUxRuIoIpSRSY6P9ZA,15292122
+scine_swoose/scine_swoose.so,sha256=1iKrN_WNGPpUfbMXv11LXjHwgbAbB9YVeNOC65xQgYo,11160888
+scine_swoose/swoose.module.so,sha256=-szlDdWp-2bTEyQ5CkNWQK_JUEhltzLvwDr8mtkb8qw,14377608
+scine_swoose-1.0.0.dist-info/METADATA,sha256=nh5Yqfk5CcHTIFQixDB6mNn_GA8dBzT9jXa4Pp7p66Q,3039
+scine_swoose-1.0.0.dist-info/WHEEL,sha256=Vqd_n_IKgR469FNqkIoqwEhrX3PSWel3O4QQXU4e5pU,150
+scine_swoose-1.0.0.dist-info/top_level.txt,sha256=L2Yd4W-m7If891CjnYDodP7PO9xuN2XKr8wXDrCvTZQ,13
+scine_swoose-1.0.0.dist-info/RECORD,,
+scine_swoose.libs/libcore-95874bd2.so,sha256=eXbpBz_RjfPifAIj6Am0AC3jnsbMlTqrjpNv0rjKqwE,394704
+scine_swoose.libs/libgomp-a34b3233.so.1.0.0,sha256=1GXGWfRf6XU3wOEAn66x6m5ApWQt3_3un8G3PAcyQh4,168192
+scine_swoose.libs/libmolassembler-b8389a7a.so,sha256=vfBM3l1QO_ZjCuqef1WC2515nSknu6K0br45MODr2j0,14962440
+scine_swoose.libs/swoose-fff0e300.module.so,sha256=ydF7TXt9Z2aSF29ymV9nALyF2SUVD7gdrQ5O_vr_8co,14913576
