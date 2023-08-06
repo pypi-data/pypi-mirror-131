@@ -1,0 +1,12 @@
+PyGObject>=3.36
+aiohttp>=3.6
+dtool-create>=0.23.4
+dtool-info>=0.16.2
+dtool-lookup-api>=0.5
+dtoolcore>=3.17
+gbulb>=0.6
+jwt
+numpy
+pyyaml>=5.3
+ruamel.yaml
+scipy>=1.5
