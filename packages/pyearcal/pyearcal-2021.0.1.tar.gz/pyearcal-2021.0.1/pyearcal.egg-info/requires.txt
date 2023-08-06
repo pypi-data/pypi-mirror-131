@@ -1,0 +1,13 @@
+reportlab
+pillow
+python-dateutil
+click
+fonttools
+
+[flickr]
+beautifulsoup4
+requests
+
+[full]
+beautifulsoup4
+requests
