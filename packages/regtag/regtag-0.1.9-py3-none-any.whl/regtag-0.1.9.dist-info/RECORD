@@ -1,0 +1,15 @@
+regtag/__init__.py,sha256=wbnR6Absc1wK7bYuTdEOkPqPT4bRTECtA7DDH19p12Q,25
+regtag/clean_text.py,sha256=KILdBApTpfCNxcPmFqOtzgUAhts8wloPr0fy9htv5pY,2088
+regtag/main.py,sha256=4cd49rgDMkCQAZwxfMPGBLqxVYmVSm4Fs-Im8uCZo-k,6138
+regtag/reabb.py,sha256=JhUjRozRkFcmJWRj5-b5KWY-mEl9R-Y6p0g8M9SVAew,33911
+regtag/redate.py,sha256=osoJXQbaRvHP1vec3wcb6em6naISFdWLJ7HHNVNvd-0,381
+regtag/reid.py,sha256=Qr23ICE0Cqvhl65wFadgEbc-Smbx8Y_uBCyuLExCa7s,341
+regtag/renumbers.py,sha256=_3IIrGnnzXAwmJH9W_PzukIZ9aZsGWNOrJvPb0ZhO8Y,194
+regtag/renumberscales.py,sha256=TRrNHP5Ha9Qa3XaV1JQmipA9VZwsaZqFN-Gew0ynHvw,371
+regtag/reoov.py,sha256=8t9X4RR0sN7Rhz90NqIFFqfguE9TqgBhst6QG2PzUTE,1249
+regtag/vidict.txt,sha256=hZwNJhmQn6uA_73xHA4X2KUheJLa1j71a3mBVc4OaGE,441713
+regtag-0.1.9.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+regtag-0.1.9.dist-info/METADATA,sha256=6GyU2dhzXHTUFhfv-0R_BDtnEnDTLm_3P9YR9iB8SNQ,582
+regtag-0.1.9.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+regtag-0.1.9.dist-info/top_level.txt,sha256=p_xCN4KxubhXa0cWjSbQtpg0LtdvJ-_PIV74dk2M1aI,7
+regtag-0.1.9.dist-info/RECORD,,
