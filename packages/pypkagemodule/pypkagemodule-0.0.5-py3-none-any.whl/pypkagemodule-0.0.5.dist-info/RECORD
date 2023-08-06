@@ -1,0 +1,11 @@
+pypkgmodule/__init__.py,sha256=E5UPGObVl5L7sA-exKn5KGezVxgjXMi9pgLnEPAf1Pg,21
+pypkgmodule/add.py,sha256=mYDH07-gng32eWaUfofSuTt3LDSKqjMe22eW2DpcktM,48
+pypkgmodule/manage.py,sha256=4mOMWUyMn1d7SmHB45XNsdItZ5Vz6n_767g7dqjTjco,47
+pypkgmodule/subtract.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypkgmodule/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypkgmodule/src/devide.py,sha256=iDvax35SOm0hNyEs-fo7q8e-oGNuBngCsAk6vf21FW4,58
+pypkgmodule/src/multiply.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypkagemodule-0.0.5.dist-info/METADATA,sha256=KKBk-eghaPyXGZx8Vcb3zOX437NAGN-k1tAMiUibG-8,1066
+pypkagemodule-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pypkagemodule-0.0.5.dist-info/top_level.txt,sha256=OV-mt6P97wh2zoigMU_joWk4zXK5BKYsx7KF37lpLag,12
+pypkagemodule-0.0.5.dist-info/RECORD,,
