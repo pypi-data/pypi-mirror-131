@@ -1,0 +1,3 @@
+[console_scripts]
+retention = retention:cli_main
+

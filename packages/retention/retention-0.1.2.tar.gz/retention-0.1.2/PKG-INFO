@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: retention
+Version: 0.1.2
+Summary: Out-of-box python tool and framework for quantitative trading and study
+Home-page: https://github.com/floatinghotpot/retention
+Author: Liming Xie
+Author-email: liming.xie@gmail.com
+License: GPLv3+
+Download-URL: https://github.com/floatinghotpot/retention/tarball/0.1.2
+Keywords: retention,dau
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+
+## Retention
+
+Retention is a simple tool to calculate and plot app retention related data
+
+## Installation
+
+Please make sure your Python is v3.7 or above, as it's required by Matplotlib 3.4 for plottting.
+
+```bash
+python3 --version
+python3 -m pip install retention
+```
+
+Or, clone from GitHub:
+```bash
+git clone https://github.com/floatinghotpot/retention.git
+cd retention
+python3 -m pip install -e .
+```
+
+## How to Use
+```bash
+retention sample1.csv
+```
+
+![Draw stock](https://github.com/floatinghotpot/retention/raw/main/docs/sample.png)
+
+
