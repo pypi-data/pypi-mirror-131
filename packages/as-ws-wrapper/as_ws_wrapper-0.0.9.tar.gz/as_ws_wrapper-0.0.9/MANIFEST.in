@@ -1,0 +1,2 @@
+include versioneer.py
+include as_ws_wrapper/_version.py
