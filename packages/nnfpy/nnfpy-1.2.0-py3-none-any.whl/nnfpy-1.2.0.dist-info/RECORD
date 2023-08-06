@@ -1,0 +1,13 @@
+nnfpy/__init__.py,sha256=MOsJ9xglEYuXqzhqo2OnA0QzL13tHmN0oSY4RJVwU_0,1369
+nnfpy/costs.py,sha256=QvtEFMJZnoA4GjyqcYH850PSrSrSItXbE710vrR9G9A,1943
+nnfpy/learningrate.py,sha256=oGRLJNxCNdnU4eaOiWUhKtlzNCt1-WfjumyalH1pxLY,2200
+nnfpy/layers/__init__.py,sha256=RUpZ9kny8C6hwX2Ia6q7tEJXNYopyIU0pDoE-sItF04,4
+nnfpy/layers/fullyconnected/__init__.py,sha256=2h4woBA-mtp4lxTbrbsJ7Tp2WwBkqJ0GgjT1M0Jto9Q,15569
+nnfpy/layers/speciallayers/__init__.py,sha256=MVW0Nxq2Eq9IbyfLqwJ933c1uZoUY3wmnbWClLSZ430,4304
+nnfpy/network/__init__.py,sha256=RUpZ9kny8C6hwX2Ia6q7tEJXNYopyIU0pDoE-sItF04,4
+nnfpy/network/onednet.py,sha256=CJV_y1RAGOOZPDveoCtntcZeQ2CcsQjO60ydK9MsEtU,20009
+nnfpy-1.2.0.dist-info/LICENSE.txt,sha256=EgCTxCA96PDVl3qHf9FJMEc8_v8k2KULz6dX81gsJSE,1090
+nnfpy-1.2.0.dist-info/METADATA,sha256=wvq_Jh2SDwCNtw5KJeoM1EodRi4n58RD9ucd4bFtLoo,1862
+nnfpy-1.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+nnfpy-1.2.0.dist-info/top_level.txt,sha256=YBDDRB8aGTHplLMahabOdA9iNDwlYXyV6buoCLwsNCI,6
+nnfpy-1.2.0.dist-info/RECORD,,
