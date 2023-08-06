@@ -1,0 +1,3 @@
+include requirements.txt
+exclude venv
+exclude test_env
