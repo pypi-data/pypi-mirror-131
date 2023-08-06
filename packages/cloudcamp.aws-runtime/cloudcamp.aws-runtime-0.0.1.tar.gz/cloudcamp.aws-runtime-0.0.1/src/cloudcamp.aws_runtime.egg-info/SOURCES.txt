@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/cloudcamp.aws_runtime.egg-info/PKG-INFO
+src/cloudcamp.aws_runtime.egg-info/SOURCES.txt
+src/cloudcamp.aws_runtime.egg-info/dependency_links.txt
+src/cloudcamp.aws_runtime.egg-info/requires.txt
+src/cloudcamp.aws_runtime.egg-info/top_level.txt
+src/cloudcamp/aws_runtime/__init__.py
+src/cloudcamp/aws_runtime/py.typed
+src/cloudcamp/aws_runtime/_jsii/__init__.py
+src/cloudcamp/aws_runtime/_jsii/aws-runtime@0.0.1.jsii.tgz
