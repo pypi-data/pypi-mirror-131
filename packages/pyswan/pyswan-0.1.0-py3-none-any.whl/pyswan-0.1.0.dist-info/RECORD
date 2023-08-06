@@ -1,0 +1,10 @@
+pyswan/__init__.py,sha256=VeE3jCHy-AeRVj2bHxbEaQXCrC_NzU5RbQM8_ikWW6c,110
+pyswan/_version.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+pyswan/api.py,sha256=WfNXKLggJkGg5ZaoxIPZ5U_gwANXqb3F_UtPhmJMSGk,118
+pyswan/constants.py,sha256=xFDlklWszEXkEUcOU7J8biu-gAbL6DP1osdc-qJvrsE,1057
+pyswan/numeral.py,sha256=xHlbRfIha5QsopVl80KX7v6w1nBGfbBcMVzdXEeQvHk,6719
+pyswan-0.1.0.dist-info/LICENSE,sha256=QNbhJV1xUfXwQaUUcl08lP-owYgeWgwptr6pPwPi47s,11341
+pyswan-0.1.0.dist-info/METADATA,sha256=W_adLuuzDZhzSNKGYE7niP7oMHOgcImGEk-sTiWE1iM,2068
+pyswan-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyswan-0.1.0.dist-info/top_level.txt,sha256=bvw_1vUf0gCl9rc2h_6KHThwZtSkU2qQi5LWzLiwwSk,7
+pyswan-0.1.0.dist-info/RECORD,,
