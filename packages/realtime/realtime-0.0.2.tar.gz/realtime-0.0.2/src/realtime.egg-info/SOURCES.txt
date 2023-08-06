@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+src/realtime/__init__.py
+src/realtime/exceptions.py
+src/realtime/message.py
+src/realtime/parse_utils.py
+src/realtime/subscribe.py
+src/realtime.egg-info/PKG-INFO
+src/realtime.egg-info/SOURCES.txt
+src/realtime.egg-info/dependency_links.txt
+src/realtime.egg-info/requires.txt
+src/realtime.egg-info/top_level.txt
