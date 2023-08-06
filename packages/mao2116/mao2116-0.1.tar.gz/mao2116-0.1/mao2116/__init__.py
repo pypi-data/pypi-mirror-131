@@ -1,0 +1,1 @@
+from .mao2116 import fuck
