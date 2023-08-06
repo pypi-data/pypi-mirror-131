@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+mobrob/__init__.py
+mobrob/kinematics.py
+mobrob/plots.py
+mobrob/utils.py
+mobrob.egg-info/PKG-INFO
+mobrob.egg-info/SOURCES.txt
+mobrob.egg-info/dependency_links.txt
+mobrob.egg-info/top_level.txt
+mobrob/preprocessing/__init__.py
+mobrob/preprocessing/dataframe.py
+mobrob/preprocessing/rosbag2.py
+mobrob/preprocessing/setup.py
