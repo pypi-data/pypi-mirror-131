@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mdorado
+Version: 0.2.1
+Summary: Collection of scripts to analyse molecular dynamics simulations.
+Home-page: UNKNOWN
+Author: Jan Neumann
+License: GPL-3.0
+Platform: UNKNOWN
+Requires-Python: >=3
+License-File: LICENSE
+Requires-Dist: numpy (>=1.20.0)
+Requires-Dist: scipy (>=1.4.0)
+Requires-Dist: MDAnalysis (>=1.1.1)
+
+UNKNOWN
+
