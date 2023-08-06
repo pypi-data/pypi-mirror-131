@@ -1,0 +1,6 @@
+yt-dlp>=2021.12.1
+PyChromecast==9.2.0
+zeroconf==0.31.0
+Click>=7.1.2
+ifaddr>=0.1.7
+requests>=2.23.0
