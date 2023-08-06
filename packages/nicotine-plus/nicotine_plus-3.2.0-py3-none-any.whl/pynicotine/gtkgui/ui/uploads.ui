@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkBox" id="Main">
+    <property name="visible">0</property>
+    <property name="orientation">vertical</property>
+    <property name="hexpand">1</property>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">1</property>
+        <child>
+          <object class="GtkScrolledWindow">
+            <property name="visible">1</property>
+            <property name="vexpand">1</property>
+            <child>
+              <object class="GtkTreeView" id="Transfers">
+                <property name="visible">1</property>
+                <property name="hexpand">1</property>
+                <property name="has-tooltip">1</property>
+                <property name="enable-tree-lines">1</property>
+                <property name="rubber-banding">1</property>
+                <property name="search-column">0</property>
+                <signal name="query-tooltip" handler="on_tooltip"/>
+                <signal name="row-activated" handler="on_row_activated"/>
+                <child internal-child="selection">
+                  <object class="GtkTreeSelection">
+                    <property name="mode">multiple</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <style>
+          <class name="border-bottom"/>
+        </style>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="TransferButtons">
+        <property name="visible">1</property>
+        <property name="margin-start">6</property>
+        <property name="margin-end">6</property>
+        <property name="margin-top">6</property>
+        <property name="margin-bottom">6</property>
+        <property name="spacing">6</property>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">1</property>
+            <property name="spacing">6</property>
+            <child>
+              <object class="GtkButton">
+                <property name="visible">1</property>
+                <signal name="clicked" handler="on_abort_transfer"/>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">1</property>
+                    <property name="spacing">6</property>
+                    <child>
+                      <object class="GtkImage">
+                        <property name="visible">1</property>
+                        <property name="icon-name">system-shutdown-symbolic</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">1</property>
+                        <property name="label" translatable="yes">Abort</property>
+                        <property name="use-underline">1</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <style>
+                  <class name="flat"/>
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="visible">1</property>
+                <signal name="clicked" handler="on_abort_user"/>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">1</property>
+                    <property name="spacing">6</property>
+                    <child>
+                      <object class="GtkImage">
+                        <property name="visible">1</property>
+                        <property name="icon-name">system-shutdown-symbolic</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">1</property>
+                        <property name="label" translatable="yes">Abort User(s)</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <style>
+                  <class name="flat"/>
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="visible">1</property>
+                <signal name="clicked" handler="on_ban"/>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">1</property>
+                    <property name="spacing">6</property>
+                    <child>
+                      <object class="GtkImage">
+                        <property name="visible">1</property>
+                        <property name="icon-name">action-unavailable-symbolic</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">1</property>
+                        <property name="label" translatable="yes">Ban User(s)</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <style>
+                  <class name="flat"/>
+                </style>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">1</property>
+            <property name="spacing">6</property>
+            <property name="halign">end</property>
+            <property name="hexpand">1</property>
+            <child>
+              <object class="GtkButton">
+                <property name="visible">1</property>
+                <property name="tooltip-text">Clear every upload that has either finished transferring, or been cancelled by the remote user.</property>
+                <signal name="clicked" handler="on_clear_finished_aborted"/>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">1</property>
+                    <property name="spacing">6</property>
+                    <child>
+                      <object class="GtkImage">
+                        <property name="visible">1</property>
+                        <property name="icon-name">edit-clear-symbolic</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">1</property>
+                        <property name="label" translatable="yes">Clear Finished</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <style>
+                  <class name="flat"/>
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuButton" id="ClearTransfers">
+                <property name="visible">1</property>
+                <property name="direction">up</property>
+                <property name="tooltip-text">Clear every upload marked with a specific status.</property>
+                <style>
+                  <class name="flat"/>
+                </style>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkBox" id="ClearTransfersLabel">
+    <property name="visible">1</property>
+    <property name="spacing">6</property>
+    <child>
+      <object class="GtkLabel">
+        <property name="visible">1</property>
+        <property name="label" translatable="yes">Clear Uploa_ds…</property>
+        <property name="use-underline">1</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkImage">
+        <property name="visible">1</property>
+        <property name="icon-name">pan-up-symbolic</property>
+      </object>
+    </child>
+  </object>
+</interface>
