@@ -1,0 +1,7 @@
+rikai/contrib/yolov5/__init__.py,sha256=3YKb5KUyOcc3WluaJbFYkG5OoXyh2UCWodrE2mo1wvs,593
+rikai/contrib/yolov5/codegen.py,sha256=FajYAw7exo6nD50gER3axzGsXsGsSBExNhtYgIULgkc,2834
+rikai/contrib/yolov5/transforms.py,sha256=4BXcVCRXz15NG9UN8R-HZAhshauRFGV5uOZ78ZfBcxc,4887
+rikai_yolov5-0.0.1.dist-info/METADATA,sha256=cv_dKxsl0kDWYh2NZVe1f0yDq5bNkp9NmFwYoef3i_Y,491
+rikai_yolov5-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+rikai_yolov5-0.0.1.dist-info/top_level.txt,sha256=IoZwM4JVUNZ6htw81c8mJ_yKiyknbiuR0GWWguXwZxY,6
+rikai_yolov5-0.0.1.dist-info/RECORD,,
