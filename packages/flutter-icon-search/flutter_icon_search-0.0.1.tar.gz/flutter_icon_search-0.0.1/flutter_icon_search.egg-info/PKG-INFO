@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: flutter-icon-search
+Version: 0.0.1
+Summary: Material Icon filter for HitsApp 
+Home-page: UNKNOWN
+Author: Sumith SreeKumar
+Author-email: sumithkumar710@gmail.com
+License: MIT
+Keywords: Flutter Icon Search
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+Material Icon filter for HitsApp which filter different material icons for students and teacher.
+The user can get random icons under the selected category
+
+Log Record
+==========
+
+0.0.1 (15/12/2021)
+-------------------
+- First Release
+

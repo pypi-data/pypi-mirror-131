@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+flutter_icon_filter/__init__.py
+flutter_icon_search.egg-info/PKG-INFO
+flutter_icon_search.egg-info/SOURCES.txt
+flutter_icon_search.egg-info/dependency_links.txt
+flutter_icon_search.egg-info/top_level.txt
