@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+devcloud_sagemaker/__init__.py
+devcloud_sagemaker/sm_client.py
+devcloud_sagemaker/train.py
+devcloud_sagemaker.egg-info/PKG-INFO
+devcloud_sagemaker.egg-info/SOURCES.txt
+devcloud_sagemaker.egg-info/dependency_links.txt
+devcloud_sagemaker.egg-info/entry_points.txt
+devcloud_sagemaker.egg-info/requires.txt
+devcloud_sagemaker.egg-info/top_level.txt
