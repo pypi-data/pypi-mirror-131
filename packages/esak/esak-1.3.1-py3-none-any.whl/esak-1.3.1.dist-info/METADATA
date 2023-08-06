@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: esak
+Version: 1.3.1
+Summary: Python wrapper for the Marvel API.
+License: MIT
+Author: Brian Pepple
+Author-email: bdpepple@gmail.com
+Maintainer: Brian Pepple
+Maintainer-email: bdpepple@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Provides-Extra: docs
+Requires-Dist: marshmallow (>=3.13.0,<4.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: sphinx-rtd-theme (>=0.5.2,<0.6.0); extra == "docs"
+Project-URL: Bug Tracker, https://github.com/bpepple/esak/issues
+Project-URL: Homepage, https://github.com/bpepple/esak
+Description-Content-Type: text/x-rst
+
+esak - Python wrapper for Marvel API
+===========================================
+
+
+.. image:: https://img.shields.io/pypi/v/esak.svg?logo=PyPI&label=Version&style=flat-square   :alt: PyPI
+    :target: https://pypi.org/project/esak
+
+.. image:: https://img.shields.io/pypi/pyversions/esak.svg?logo=Python&label=Python-Versions&style=flat-square
+    :target: https://pypi.org/project/esak
+
+.. image:: https://img.shields.io/github/license/bpepple/esak
+    :target: https://opensource.org/licenses/GPL-3.0
+
+.. image:: https://codecov.io/gh/bpepple/esak/branch/master/graph/badge.svg?token=L1EGNX24I2
+    :target: https://codecov.io/gh/bpepple/esak
+
+.. image:: https://img.shields.io/badge/Code%20Style-Black-000000.svg?style=flat-square
+    :target: https://github.com/psf/black
+
+- `Code on Github <https://github.com/bpepple/esak>`_
+- `Published on PyPi <https://pypi.python.org/pypi/esak>`_
+- `Marvel API documentation <https://developer.marvel.com/docs>`_
+
+This project is a fork of `marvelous <https://github.com/rkuykendall/marvelous>`_ with the goal of supporting the full Marvel API.
+
+**To install:**
+
+.. code-block:: bash
+
+    $ pip3 install --user esak
+ 
+**Example Usage:**
+
+.. code-block:: python
+
+    import esak
+
+    # Your own config file to keep your private key local and secret
+    from config import public_key, private_key
+
+    # Authenticate with Marvel, with keys I got from http://developer.marvel.com/
+    m = esak.api(public_key, private_key)
+
+    # Get all comics from this week, sorted alphabetically by title
+    pulls = sorted(m.comics_list({
+        'format': "comic",
+        'formatType': "comic",
+        'noVariants': True,
+        'dateDescriptor': "thisWeek",
+        'limit': 100}),
+        key=lambda comic: comic.title)
+
+    for comic in pulls:
+        # Write a line to the file with the name of the issue, and the
+        # id of the series
+        print(f'{comic.title} (series #{comic.series.id})')
+
+Documentation
+-------------
+- `Read the project documentation <https://esak.readthedocs.io/en/stable/>`_
+
+Bugs/Requests
+-------------
+  
+Please use the `GitHub issue tracker <https://github.com/bpepple/esak/issues>`_ to submit bugs or request features.
+
+Contributing
+------------
+
+- When running a new test for the first time, set the environment variables
+  ``PUBLIC_KEY`` and ``PRIVATE_KEY`` to any Marel API keys. The result will be
+  stored in the `tests/testing_mock.sqlite` database without your keys.
+
+
