@@ -1,0 +1,12 @@
+pyslabs/__init__.py,sha256=5NtAsi7u_lHSgS2oEArFqQOE-C8zy-Du_WovjKnz_xY,69
+pyslabs/__main__.py,sha256=wNFjn8F5XQg5pB6WP9wt5f5fxFqEiRxoRaPNCNMfggo,400
+pyslabs/command.py,sha256=gSJva4RAWUXvFBKXHzp8zp64-H1c7lO8ALyatr2t24I,951
+pyslabs/info.py,sha256=ggUu2NgpidNF5WfPzfcZzH73Ik7e0b6Y_zKOlXg1z98,298
+pyslabs/main.py,sha256=kzYgfgh5uFMwm02XQSkHZoQ5CTN3qIoEDmT3Qb-Bb7s,11043
+pyslabs/wrap.py,sha256=q_-8FP-FCRusBuEvF6e4cvZrbeITMRbnjIYt4-YczYY,4226
+pyslabs-0.1.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyslabs-0.1.2.dist-info/METADATA,sha256=29in2g0bJ5Kdwc1UdJnGRnWNk-BJBlsHfZ_J1lZaT2U,911
+pyslabs-0.1.2.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+pyslabs-0.1.2.dist-info/entry_points.txt,sha256=COZzIAbI78kkC9Que5-Mtt9ZsWKtHsLKYsncS22ocH4,49
+pyslabs-0.1.2.dist-info/top_level.txt,sha256=RTEAEcfDaGtBhP0-VxBnWDu5h4zMHp4-3l6-eGHBMNA,8
+pyslabs-0.1.2.dist-info/RECORD,,
