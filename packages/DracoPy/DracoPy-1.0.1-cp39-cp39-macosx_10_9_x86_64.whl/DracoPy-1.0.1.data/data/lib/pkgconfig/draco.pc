@@ -1,0 +1,13 @@
+# draco pkg-config.
+prefix=/private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/pip-req-build-hkxfnkr0/_skbuild/macosx-10.9-x86_64-3.9/cmake-install
+exec_prefix=/private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/pip-req-build-hkxfnkr0/_skbuild/macosx-10.9-x86_64-3.9/cmake-install/bin
+libdir=/private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/pip-req-build-hkxfnkr0/_skbuild/macosx-10.9-x86_64-3.9/cmake-install/lib
+includedir=/private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/pip-req-build-hkxfnkr0/_skbuild/macosx-10.9-x86_64-3.9/cmake-install/include
+
+Name: Draco
+Description: 3D Compression.
+Version: 1.3.5
+Requires:
+Conflicts:
+Libs: -L/private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/pip-req-build-hkxfnkr0/_skbuild/macosx-10.9-x86_64-3.9/cmake-install/lib -ldraco
+Cflags: -I/private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/pip-req-build-hkxfnkr0/_skbuild/macosx-10.9-x86_64-3.9/cmake-install/include -std=c++11
