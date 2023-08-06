@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: django-fb-phoneauth
+Version: 0.1.1
+Summary: Google Firebase authentication for django applications.
+License: MIT
+Author: prajeeshag
+Author-email: prajeeshag@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (>=3.1,<4.0)
+Requires-Dist: django-phonenumber-field (>5.0.0)
+Requires-Dist: firebase-admin (>=5.1.0,<6.0.0)
+Requires-Dist: phonenumbers (>=8.12.38,<9.0.0)
