@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+simple_twitter/__init__.py
+simple_twitter/exceptions.py
+simple_twitter/tweets_search_stream.py
+simple_twitter.egg-info/PKG-INFO
+simple_twitter.egg-info/SOURCES.txt
+simple_twitter.egg-info/dependency_links.txt
+simple_twitter.egg-info/requires.txt
+simple_twitter.egg-info/top_level.txt
