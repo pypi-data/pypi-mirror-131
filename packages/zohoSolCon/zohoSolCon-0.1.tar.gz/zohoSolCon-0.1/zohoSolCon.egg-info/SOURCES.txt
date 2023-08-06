@@ -1,0 +1,6 @@
+README.md
+setup.py
+zohoSolCon.egg-info/PKG-INFO
+zohoSolCon.egg-info/SOURCES.txt
+zohoSolCon.egg-info/dependency_links.txt
+zohoSolCon.egg-info/top_level.txt
