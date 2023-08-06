@@ -1,0 +1,16 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+versioneer.py
+distromax/__init__.py
+distromax/_version.py
+distromax/analytical.py
+distromax/fit.py
+distromax.egg-info/PKG-INFO
+distromax.egg-info/SOURCES.txt
+distromax.egg-info/dependency_links.txt
+distromax.egg-info/requires.txt
+distromax.egg-info/top_level.txt
