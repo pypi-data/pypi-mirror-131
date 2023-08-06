@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: helios-opentelemetry-sdk
+Version: 0.1.5
+Summary: Helios OpenTelemetry SDK
+Home-page: https://github.com/heliosphere-io/python-sdk
+Author: Helios
+Author-email: support@gethelios.dev
+License: UNKNOWN
+Description: # Helios OpenTelemetry SDK
+        
+        This page describes the Helios OpenTelemetry SDK implementation.
+        
+        ## Requirements
+        Unless otherwise noted, all published artifacts support Python 3.6 or higher.
+Keywords: helios,heliosphere,microservices,tracing,distributed-tracing,debugging,testing
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: Pytest
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
