@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/Soundboard/Decomposition.py
+src/Soundboard/Soundboard.py
+src/Soundboard/__init__.py
+src/Soundboard.egg-info/PKG-INFO
+src/Soundboard.egg-info/SOURCES.txt
+src/Soundboard.egg-info/dependency_links.txt
+src/Soundboard.egg-info/top_level.txt
