@@ -1,0 +1,7 @@
+Authlib==0.15.4
+aiohttp==3.7.4.post0
+azure-identity==1.6.0
+azure-keyvault-certificates==4.2.1
+azure-keyvault==4.1.0
+fastapi==0.68.1
+msal==1.12.0
