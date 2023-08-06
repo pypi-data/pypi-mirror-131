@@ -1,0 +1,10 @@
+bases
+typing-extensions
+typing-validation
+pyskein
+
+[dev]
+mypy
+pylint
+pytest
+pytest-cov
