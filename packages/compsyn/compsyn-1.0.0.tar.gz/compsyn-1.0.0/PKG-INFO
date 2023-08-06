@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: compsyn
+Version: 1.0.0
+Summary: python package to explore the color of language
+Author: comp-syn
+Author-email: group@comp-syn.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: IPython (==7.13.0)
+Requires-Dist: beautifulsoup4 (>=4.9.0,<5.0.0)
+Requires-Dist: black (>=19.10b0,<20.0)
+Requires-Dist: boto3 (>=1.14.4,<2.0.0)
+Requires-Dist: google-api-core (>=1.14.3,<2.0.0)
+Requires-Dist: google-auth (>=1.6.3,<2.0.0)
+Requires-Dist: google-cloud (>=0.34.0,<0.35.0)
+Requires-Dist: google-cloud-vision (>=0.39.0,<0.40.0)
+Requires-Dist: googleapis-common-protos (>=1.6.0,<2.0.0)
+Requires-Dist: grpcio (>=1.28.1,<2.0.0)
+Requires-Dist: ipykernel (>=5.2.0,<6.0.0)
+Requires-Dist: kymatio (>=0.2.0,<0.3.0)
+Requires-Dist: matplotlib (>=3.2.1,<4.0.0)
+Requires-Dist: memory_profiler (>=0.57.0,<0.58.0)
+Requires-Dist: nltk (>=3.4.5,<4.0.0)
+Requires-Dist: notebook (>=6.0.3,<7.0.0)
+Requires-Dist: numba (>=0.48.0,<0.49.0)
+Requires-Dist: numpy (>=1.19.5,<2.0.0)
+Requires-Dist: pandas (>=1.0.3,<2.0.0)
+Requires-Dist: pillow (>=8.1.1,<9.0.0)
+Requires-Dist: pytest (>=6.2.2,<7.0.0)
+Requires-Dist: pytest-cov (>=2.11.1,<3.0.0)
+Requires-Dist: pytest-depends (>=1.0.1,<2.0.0)
+Requires-Dist: qloader (>=8.1.2,<9.0.0)
+Requires-Dist: requests (>=2.23.0,<3.0.0)
+Requires-Dist: scikit-image (>=0.16.2,<0.17.0)
+Requires-Dist: scikit-learn (>=0.22.2,<0.23.0)
+Requires-Dist: seaborn (>=0.10.0,<0.11.0)
+Requires-Dist: textblob (>=0.15.3,<0.16.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
