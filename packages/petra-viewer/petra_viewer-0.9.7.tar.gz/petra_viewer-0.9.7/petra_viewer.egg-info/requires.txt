@@ -1,0 +1,11 @@
+hdf5plugin
+attrs
+pyqtgraph
+psutil
+xrayutilities
+numpy
+scipy
+h5py
+PyOpenGL
+silx
+python-dateutil
