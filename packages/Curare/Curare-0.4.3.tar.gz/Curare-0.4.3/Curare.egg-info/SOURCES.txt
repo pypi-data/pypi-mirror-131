@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+Curare.egg-info/PKG-INFO
+Curare.egg-info/SOURCES.txt
+Curare.egg-info/dependency_links.txt
+Curare.egg-info/entry_points.txt
+Curare.egg-info/not-zip-safe
+Curare.egg-info/requires.txt
+Curare.egg-info/top_level.txt
+curare/__init__.py
+curare/curare.py
+curare/curare_wizard.py
+curare/metadata.py
+curare/lib/__init__.py
+curare/lib/generate_report.py
+curare/lib/parse_versions.py

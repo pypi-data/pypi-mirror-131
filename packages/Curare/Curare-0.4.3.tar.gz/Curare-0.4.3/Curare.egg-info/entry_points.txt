@@ -1,0 +1,4 @@
+[console_scripts]
+curare = curare.curare:main
+curare_wizard = curare.curare_wizard:main
+
