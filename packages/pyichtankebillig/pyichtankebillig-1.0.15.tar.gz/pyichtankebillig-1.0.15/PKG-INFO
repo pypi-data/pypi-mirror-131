@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyichtankebillig
+Version: 1.0.15
+Summary: Library JSON ich tanke billig
+Home-page: https://github.com/Ludy87/pyichtankebillig
+Author: Ludy87
+Author-email: android@astra-g.org
+License: MIT
+Description: # pyichtankebillig
+         
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
