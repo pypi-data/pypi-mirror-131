@@ -1,0 +1,13 @@
+AUTHORS.rst
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+lambda_httpx/__init__.py
+lambda_httpx/lambda_httpx.py
+lambda_httpx.egg-info/PKG-INFO
+lambda_httpx.egg-info/SOURCES.txt
+lambda_httpx.egg-info/dependency_links.txt
+lambda_httpx.egg-info/not-zip-safe
+lambda_httpx.egg-info/requires.txt
+lambda_httpx.egg-info/top_level.txt
