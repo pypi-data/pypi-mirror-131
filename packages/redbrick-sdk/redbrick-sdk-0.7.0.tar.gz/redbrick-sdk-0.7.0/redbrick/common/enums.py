@@ -1,0 +1,37 @@
+"""Enumerations for use across SDK."""
+
+from enum import Enum
+
+
+class LabelType(Enum):
+    """Allowable types for labeling projects."""
+
+    IMAGE_CLASSIFY = "IMAGE_CLASSIFY"
+    IMAGE_DETECTION = "IMAGE_BBOX"
+    IMAGE_KEYPOINT = "IMAGE_POINT"
+    IMAGE_POLYLINE = "IMAGE_POLYLINE"
+    IMAGE_POLYGON = "IMAGE_POLYGON"
+    IMAGE_ELLIPSE = "IMAGE_ELLIPSE"
+    IMAGE_SEGMENTATION = "IMAGE_SEGMENTATION"
+    IMAGE_ALLTYPES = "IMAGE_MULTI"
+    VIDEOFRAMES_DETECTION = "VIDEO_BBOX"
+    VIDEOFRAMES_CLASSIFY = "VIDEO_CLASSIFY"
+    VIDEOFRAMES_POLYGON = "VIDEO_POLYGON"
+    VIDEO_MULTI = "VIDEO_MULTI"
+
+
+class StorageMethod:
+    """Special case storage method Ids."""
+
+    PUBLIC = "11111111-1111-1111-1111-111111111111"
+    REDBRICK = "22222222-2222-2222-2222-222222222222"
+
+
+class TaskStates(Enum):
+    """Potential states of task status."""
+
+    UNASSIGNED = "UNASSIGNED"
+    ASSIGNED = "ASSIGNED"
+    IN_PROGRESS = "IN_PROGRESS"
+    COMPLETED = "COMPLETED"
+    PROBLEM = "PROBLEM"
