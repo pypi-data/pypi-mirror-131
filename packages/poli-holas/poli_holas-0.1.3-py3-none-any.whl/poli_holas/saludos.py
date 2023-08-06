@@ -1,0 +1,66 @@
+saludo = {
+'Africano':	'Hallo',
+'Albano':	'Përshëndetje',
+'Alemán':	'Hallo',
+'Árabe':	'مرحبا',
+'Azerbajan':'Salam',
+'Basco':	'Kaixo',
+'Beloruso':	'Добры дзень',
+'Bengali':	'হ্যালো',
+'Búlgaro':	'Здравейте',
+'Catalán':	'Hola',
+'Checo':	'Ahoj',
+'Chino':	'你好',
+'Coreano':	'안녕하세요.',
+'Croata':	'Bok',
+'Danés':	'Hej',
+'Eslovaco':	'Ahoj',
+'Esloveno':	'Pozdravljeni',
+'Esperanto':'Saluton',
+'Estoniano':'Tere',
+'Filipino':	'Hello',
+'Finés':	'Hei',
+'Francés':	'Salut',
+'Gallego':	'Ola',
+'Griego':	'Γεια σας',
+'Haitiano':	'Alo',
+'Hebreo':	'שלום',
+'Hindi':	'नमस्ते',
+'Holandés':	'Hallo',
+'Hungaro':	'Helló',
+'Indonesio':'Halo',
+'Inglés':	'Hello',
+'Irlandés':	'Dia duit',
+'Italiano':	'Ciao',
+'Japonés':	'もしもし',
+'Latín':	'Salve',
+'Latviano':	'Sveiki',
+'Lituano':	'Sveiki',
+'Macedonio':'Здраво',
+'Malayo':	'Hello',
+'Maltés':	'Hello',
+'Noruego':	'Hallo',
+'Pérsa':	'سلام',
+'Polaco':	'Halo',
+'Portugués':'Olá',
+'Rumano':	'Alo',
+'Ruso':	    'Здравствуйте',
+'Serbio':	'Здраво',
+'Sueco':	'Hallå',
+'Swahili':	'Habari',
+'Tailandés':'สวัสดี',
+'Turco':	'Merhaba',
+'Ucraniano':'Здрастуйте',
+'Urdu':	    'ہیلو',
+'Vietnamés':'Xin chào',
+}
+
+
+import random
+def azar():
+    hola = random.choice(list(saludo))
+    idioma = saludo[hola]
+    return {str(idioma):str(hola)}
+
+def todos():
+    return saludo

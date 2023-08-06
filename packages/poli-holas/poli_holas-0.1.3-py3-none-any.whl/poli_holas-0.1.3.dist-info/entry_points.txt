@@ -1,0 +1,3 @@
+[console_scripts]
+poli-holas=poli_holas.__main__:app
+
