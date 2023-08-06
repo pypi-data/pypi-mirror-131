@@ -1,0 +1,6 @@
+silx
+matplotlib
+scipy
+pyFAI
+nexusformat
+openpyxl
