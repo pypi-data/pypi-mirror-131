@@ -1,0 +1,4 @@
+opentelemetry-api==1.8.0
+opentelemetry-semantic-conventions==0.27b0
+
+[test]
