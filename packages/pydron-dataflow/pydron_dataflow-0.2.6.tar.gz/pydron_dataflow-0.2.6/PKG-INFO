@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pydron_dataflow
+Version: 0.2.6
+Summary: Dataflow framework to define and traverse directional graphs.
+Home-page: https://github.com/i4Ds/pydron-dataflow
+Author: Ivo Nussbaumer
+Author-email: ivo.nussbaumer@fhnw.ch
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+
+pydron-dataflow
+===============
+Dataflow framework to define and traverse directional graphs
+
+stripped-down version of https://github.com/smurn/pydron
+
+
