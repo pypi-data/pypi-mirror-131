@@ -1,0 +1,7 @@
+py-algorand-sdk>=1.8
+pyteal>=0.9
+setuptools>=40
+
+[dev]
+pytest
+pytest-xdist
