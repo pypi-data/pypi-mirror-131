@@ -1,0 +1,11 @@
+baico/__init__.py,sha256=yMwWUiu2IyKzoi_m74e4e43DN675SXodDvcQypE0Gjc,192
+baico/base.py,sha256=7GGGGSzA6n4tos13Y3Tb99QVjVOhRCnUura1ZzoVpvE,680
+baico/best_arm_identification.py,sha256=J7BkNXasP-f6cKax5urKK7BXySnG_3rs-rRUmaHmfFI,3611
+baico/greedy.py,sha256=DcNx9z03sEmu6A0cogn7RMgxYVCYdI86-oy9RkaYmOk,525
+baico/incremental_beam_search.py,sha256=RlNKCBs21GxedQKsEV5aRG-I9UqwFP-ZLaBwP9SD7QI,2371
+baico/stochastic_greedy.py,sha256=MRpgVJ2TBHWh1zhK-pDVcNNVxI7gJzgnHtYf-u-suPI,1369
+baico-0.0.1.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+baico-0.0.1.dist-info/METADATA,sha256=0jEXMfJkloWBHVRl56Jc0L3UVk3AbSgLhttDBUlH8Aw,1026
+baico-0.0.1.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+baico-0.0.1.dist-info/top_level.txt,sha256=Ff-AiI7v-6LaFbObQANH4zKtZr61wy4Xk69hd40RGUY,6
+baico-0.0.1.dist-info/RECORD,,
