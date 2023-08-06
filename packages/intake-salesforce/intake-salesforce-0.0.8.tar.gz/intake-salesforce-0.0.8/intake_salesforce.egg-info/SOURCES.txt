@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+intake_salesforce/__init__.py
+intake_salesforce/_version.py
+intake_salesforce/core.py
+intake_salesforce/versioneer.py
+intake_salesforce.egg-info/PKG-INFO
+intake_salesforce.egg-info/SOURCES.txt
+intake_salesforce.egg-info/dependency_links.txt
+intake_salesforce.egg-info/entry_points.txt
+intake_salesforce.egg-info/requires.txt
+intake_salesforce.egg-info/top_level.txt
+tests/__init__.py
