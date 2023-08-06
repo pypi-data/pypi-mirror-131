@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pyaswasm/__init__.py
+src/pyaswasm.egg-info/PKG-INFO
+src/pyaswasm.egg-info/SOURCES.txt
+src/pyaswasm.egg-info/dependency_links.txt
+src/pyaswasm.egg-info/requires.txt
+src/pyaswasm.egg-info/top_level.txt
