@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "alanfe_puc_ds_csv_converter"
+version = "0.3.3"
+description = "A simple module to make easy conversions between two type of files: `csv` and `json`."
+authors = ["Alan Federich <alan.federich@icloud.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.0.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^21.12b0"
+flake8 = "^4.0.1"
+mypy = "^0.920"
+ipython = "^7.30.1"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+csv_converter = 'alanfe_puc_ds_csv_converter.converter:converter'
+
+[tool.black]
+line-length = 99
+
+[tool.isort]
+profile="black"
