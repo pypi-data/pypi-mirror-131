@@ -1,0 +1,11 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ansipants/__init__.py
+ansipants/__main__.py
+ansipants.egg-info/PKG-INFO
+ansipants.egg-info/SOURCES.txt
+ansipants.egg-info/dependency_links.txt
+ansipants.egg-info/top_level.txt
