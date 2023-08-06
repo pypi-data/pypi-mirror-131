@@ -1,0 +1,13 @@
+log_proxy/__init__.py,sha256=Fl1XuFA0xTLMjcgPnj_aMYqxM3vUgYPBlY0ny406_u8,235
+log_proxy/__main__.py,sha256=xweHSGxqd0npfl6Joatd2Yq2GAReLWRMcT7PtHz9iU4,10442
+log_proxy/base.py,sha256=76IR3zbvMv_BS_3GR0Mw7JgzVg33cahqCAjpkvN5SOI,256
+log_proxy/handlers.py,sha256=aoeeRZ1NsfUgTHzlq7F9XDIYSYRTMzwIg-tA8TwGd8w,6871
+log_proxy/server.py,sha256=U4cW9N_K_BZOs29Up7aq9O1En-75WGts5ix6o6rtRRs,2600
+log_proxy/utils.py,sha256=eOaKpFTiiomSRez93FwKR5OmlJlhA7dVWemUuz0tsWw,6187
+log_proxy/watcher.py,sha256=G5UXToSFY_8ARz_COozGe0I714V4faooOsgIk35eu4I,2846
+log_proxy-1.3.dist-info/LICENSE,sha256=t04jWqQBDfxKn46s9pY4n_qC9MQllbcHaSGAc8VPLOo,1085
+log_proxy-1.3.dist-info/METADATA,sha256=AxOu16B_m7as8h2SmiJFaTJ-56pMEDTltcuQL4gMV4I,2126
+log_proxy-1.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+log_proxy-1.3.dist-info/entry_points.txt,sha256=2gSiEjp7XtlKdIjbaKKm4sveJ71E7EiFsPzSjErYG7A,55
+log_proxy-1.3.dist-info/top_level.txt,sha256=UNG6PFtP5eTN1DLSwbftdbq31wTHKkRqs5A04xH7xNI,10
+log_proxy-1.3.dist-info/RECORD,,
