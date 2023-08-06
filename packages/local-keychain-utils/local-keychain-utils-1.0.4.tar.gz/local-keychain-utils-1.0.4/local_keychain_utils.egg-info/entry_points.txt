@@ -1,0 +1,5 @@
+[console_scripts]
+local-keychain-clear = local_keychain_utils.local_keychain_clear:main
+local-keychain-get = local_keychain_utils.local_keychain_get:main
+local-keychain-store = local_keychain_utils.local_keychain_store:main
+
