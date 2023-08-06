@@ -1,0 +1,9 @@
+pyfiri/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyfiri/_firi.py,sha256=jbXlKW2ja3KUDu9Tm1MOIC_4U2SnaDnxN-3bgsjNSrM,470
+pyfiri/firi.py,sha256=cSMNrB_Yk9kgsCzRx6mN7fyw_VLYdtRVfOinPNB7uD8,5263
+pyfiri/_ext/_data/firi2018ed2.nc,sha256=ipnb1CGMGhkPcmx63Ixz2QZsW6qYdMLuzEcEDfudJls,1776256
+pyfiri-0.0.1b11.dist-info/LICENSE.txt,sha256=fzWxVp-24rjs3LhogA_80ewQWOB3Xf6FhJSJlSv4nJo,632
+pyfiri-0.0.1b11.dist-info/METADATA,sha256=j17ee8zMDACysADPYsfc7QZ5zyYlBAeQNmgYjkTZXOc,2228
+pyfiri-0.0.1b11.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pyfiri-0.0.1b11.dist-info/top_level.txt,sha256=T0fToXgD36SjYVOlVdpQxfsGQzoYJhNXffpKrmRqn78,7
+pyfiri-0.0.1b11.dist-info/RECORD,,
