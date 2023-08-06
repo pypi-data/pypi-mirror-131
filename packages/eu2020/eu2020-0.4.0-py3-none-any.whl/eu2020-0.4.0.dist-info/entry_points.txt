@@ -1,0 +1,3 @@
+[console_scripts]
+eu2020 = eu2020.app:main
+
