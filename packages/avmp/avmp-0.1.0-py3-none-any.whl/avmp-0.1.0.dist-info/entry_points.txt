@@ -1,0 +1,3 @@
+[console_scripts]
+avmp=avmp.core.cli:main
+
