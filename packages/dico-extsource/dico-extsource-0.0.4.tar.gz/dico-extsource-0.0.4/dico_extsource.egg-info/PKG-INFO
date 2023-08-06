@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: dico-extsource
+Version: 0.0.4
+Summary: Enhanced Audio Source for dico.
+Home-page: https://github.com/eunwoo1104/dico-extsource
+Author: eunwoo1104
+Author-email: sions04@naver.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dico-extsource
+Fork of [discord-extsource](https://github.com/kijk2869/discord-extsource).  
+Supports dico `voice` branch.
+
+## Requirements
+- dico (voice branch)
+
