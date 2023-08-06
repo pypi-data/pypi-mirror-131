@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: vidsnap
+Version: 0.1.0
+Summary: Vidsnap is a fast multithreaded tool to split videos into images.
+Home-page: https://github.com/jarviscodes/vidsnap
+Author: Jarvis Codes
+Author-email: jarvis@jayradz.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: colorama
+Requires-Dist: opencv-python
+
+## Vidsnap
+
+![Version 0.1.0](https://img.shields.io/badge/Version-0.1.0-blue)
+![MIT License](https://img.shields.io/badge/License-MIT-success)
+
+Vidsnap is a small python utility to extract stills from video's using opencv.
+It focuses on using as little IO's as possible and `ThreadPoolExecutor` to be able to parse large folders relatively quickly.
+
+As it's based on opencv, it will support every video format supported by `cv2.VideoCapture`.
+
+
+### Installing
+#### From Source 
+```
+git clone https://github.com/jarviscodes/vidsnap
+cd vidsnap
+pip3 install -r requirements.txt
+```
+
+#### From PyPi
+```
+pip3 install vidsnap
+``` 
+
+### Usage
+
+```
+python -m vidsnap --help
+Usage: vidsnap.py [OPTIONS]
+
+Options:
+  -i, --input_path TEXT   Directory where the videos are located
+  -o, --output_path TEXT  Directory where the snapshots will be stored
+  -e, --extension TEXT    Extension for the videos to process. (e.g. MP4)
+  -w, --workers INTEGER   Amount of threadworkers to spawn
+  -s, --seconds INTEGER   Amount of seconds between every snap per video.
+  --help                  Show this message and exit.
+```
+
+
