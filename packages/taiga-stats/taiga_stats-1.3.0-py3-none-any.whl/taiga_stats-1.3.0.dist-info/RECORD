@@ -1,0 +1,15 @@
+CHANGELOG.md,sha256=e8NmOei0k4uojX8ctqlpKMkpDWtmkwiOuxbXCugVIWk,1927
+LICENSE,sha256=e2Q97NLvygwCv3i8iZxLeENdz4AYt3-82e-TNrx6pcA,1537
+README.md,sha256=SNBLMOUmOC-kJr1np25mTthKvQJGObjQvi6_ecrSVsE,9342
+taiga_stats/__init__.py,sha256=muaj861Mskl-wg9iEwAlg2GPxA-g1fWH0JL8tN9WEIM,131
+taiga_stats/__main__.py,sha256=2cTgjOHTJteD-0tqKTfyiknGo33ay9lWFyLo7XN1iaM,3168
+taiga_stats/commands.py,sha256=r1ETpYNvDerdXkrlpR3M5nn1nD2ZiY4pFMjTFcuCCuk,18397
+taiga_stats/config.py,sha256=C1tlNxs3ra9vDBDszZ-wzT_mIhWIptjSYvlg_lfYaDY,1980
+taiga_stats/constants.py,sha256=A7C1N-DMoXNzWvhHGBRfa_iD6ELb0DsHCbMmhSC56uY,315
+taiga_stats/helpers.py,sha256=O9WYsPxDo-1AuU2GwUpgmRFwcRxqTo78QXP5vKbv11o,3935
+taiga_stats/parse_args.py,sha256=MHgBY800Bpds0gw8LtUk0lV-O8Jl3BfzYtiL0Herl8Y,5190
+taiga_stats-1.3.0.dist-info/entry_points.txt,sha256=9cnhgjaRu2FOxE_OVnNbfhsiPhDXnq7pQgvhMPLolfI,57
+taiga_stats-1.3.0.dist-info/LICENSE,sha256=e2Q97NLvygwCv3i8iZxLeENdz4AYt3-82e-TNrx6pcA,1537
+taiga_stats-1.3.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+taiga_stats-1.3.0.dist-info/METADATA,sha256=wF1qouBQHhRVJ-S_DkcYGLIxwn7P-AbJYEmNoTpCndo,10249
+taiga_stats-1.3.0.dist-info/RECORD,,
