@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/homepage2vec/__init__.py
+src/homepage2vec/data_collection.py
+src/homepage2vec/model.py
+src/homepage2vec/model_loader.py
+src/homepage2vec/textual_extractor.py
+src/homepage2vec/visual_extractor.py
+src/homepage2vec.egg-info/PKG-INFO
+src/homepage2vec.egg-info/SOURCES.txt
+src/homepage2vec.egg-info/dependency_links.txt
+src/homepage2vec.egg-info/top_level.txt
