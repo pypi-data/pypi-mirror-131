@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: damilu-sigma
+Version: 0.0.1
+Summary: A web tip of Django
+Home-page: https://github.com
+Author: Hopetree
+Author-email: zlwork2014@163.com
+License: UNKNOWN
+Keywords: damilu
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Demo Damilu
+
+This is a simple example package. You can use
+
+[Github-flavored Markdown](https://guides.github.com)
+
+to write your content.
+
