@@ -1,0 +1,7 @@
+{
+  "#": "Use this file for temporary testing of configuration option changes. Make permanent changes ",
+  "#": "in conf/ConfigOptions.asciidoc",
+  "#" : "end",
+  "#" : "this avoids an unexpected segfault during conflation. Weird.",
+  "unify.enable.optimal.constrained.matches": "false"
+}

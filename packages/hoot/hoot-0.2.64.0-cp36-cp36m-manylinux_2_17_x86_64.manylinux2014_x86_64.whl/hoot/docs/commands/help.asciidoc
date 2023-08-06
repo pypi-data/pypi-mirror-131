@@ -1,0 +1,18 @@
+[[help]]
+== help
+
+=== Description
+
+The `help` command prints help for commands.
+
+* `command`   - Optionally specify a command
+* `--verbose` - Prints detailed help for all commands
+
+=== Usage
+
+--------------------------------------
+hoot help [command] [--verbose]
+--------------------------------------
+
+https://github.com/ngageoint/hootenanny/blob/master/docs/user/CommandLineExamples.asciidoc#help[Examples]
+

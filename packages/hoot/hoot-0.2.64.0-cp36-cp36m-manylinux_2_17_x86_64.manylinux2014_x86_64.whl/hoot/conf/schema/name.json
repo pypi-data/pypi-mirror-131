@@ -1,0 +1,66 @@
+[
+    {
+        "categories": [ "name" ],
+        "dataType": "text",
+        "influence": 2,
+        "name": "abstract_name",
+        "objectType": "tag"
+    },
+    {
+        "isA": "abstract_name",
+        "name": "alt_name",
+        "objectType": "tag"
+    },
+    {
+        "isA": "abstract_name",
+        "name": "int_name",
+        "objectType": "tag"
+    },
+    {
+        "isA": "abstract_name",
+        "name": "loc_name",
+        "objectType": "tag"
+    },
+    {
+        "isA": "abstract_name",
+        "name": "name",
+        "objectType": "tag"
+    },
+    {
+        "isA": "abstract_name",
+        "name": "nat_name",
+        "objectType": "tag"
+    },
+    {
+        "isA": "abstract_name",
+        "name": "official_name",
+        "objectType": "tag"
+    },
+    {
+        "isA": "abstract_name",
+        "name": "old_name",
+        "objectType": "tag"
+    },
+    {
+        "isA": "abstract_name",
+        "name": "former_name",
+        "objectType": "tag"
+    },
+    {
+        "categories": [ "pseudoname" ],
+        "dataType": "text",
+        "influence": 1,
+        "name": "pseudo_name",
+        "objectType": "tag"
+    },
+    {
+        "isA": "abstract_name",
+        "name": "reg_name",
+        "objectType": "tag"
+    },
+    {
+        "isA": "abstract_name",
+        "name": "regex?name:.*",
+        "objectType": "tag"
+    }
+]

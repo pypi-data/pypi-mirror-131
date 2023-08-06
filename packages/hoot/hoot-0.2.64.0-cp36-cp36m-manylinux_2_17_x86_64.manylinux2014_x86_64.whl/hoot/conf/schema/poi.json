@@ -1,0 +1,15 @@
+[
+    {
+        "categories": [ "poi" ],
+        "dataType": "enumeration",
+        "geometries": [ "node" ],
+        "influence": 1,
+        "name": "poi",
+        "objectType": "tag"
+    },
+    {
+        "isA": "poi",
+        "name": "poi=yes",
+        "objectType": "tag"
+    }
+]

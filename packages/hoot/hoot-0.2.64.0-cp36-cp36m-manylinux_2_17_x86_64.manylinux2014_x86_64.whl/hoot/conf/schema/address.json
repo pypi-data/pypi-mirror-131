@@ -1,0 +1,9 @@
+[
+    {
+        "dataType": "text",
+        "influence": 2,
+        "mismatchScore": 0.25,
+        "name": "abstract_address",
+        "objectType": "tag"
+    }
+]

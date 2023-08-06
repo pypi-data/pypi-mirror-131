@@ -1,0 +1,101 @@
+[
+    {
+        "dataType": "enumeration",
+        "geometries": [ "node", "area" ],
+        "influence": 1,
+        "isA": "poi",
+        "name": "tourism",
+        "objectType": "tag"
+    },
+    {
+        "#": "Give this a low level similarity to all historic, leisure & amenity tags. The very low similarity score should prevent it from being used inappropriately.",
+        "isA": "tourism",
+        "name": "tourism=*",
+        "objectType": "tag",
+        "similarTo": [
+            { "name": "leisure", "weight": 0.1 },
+            { "name": "historic", "weight": 0.1 },
+            { "name": "amenity", "weight": 0.1 }
+        ]
+    },
+    {
+        "isA": "tourism",
+        "name": "tourism=artwork",
+        "objectType": "tag",
+        "similarTo": { "name": "historic=monument", "weight": 0.6 }
+    },
+    {
+        "isA": "tourism",
+        "name": "tourism=guest_house",
+        "objectType": "tag",
+        "similarTo": { "name": "tourism=hotel", "weight": 0.8 }
+    },
+    {
+        "categories": [ "multiuse" ],
+        "isA": "tourism",
+        "name": "tourism=hotel",
+        "objectType": "tag"
+    },
+    {
+        "categories": [ "multiuse" ],
+        "isA": "tourism",
+        "name": "tourism=camp_site",
+        "objectType": "tag"
+    },
+    {
+        "categories": [ "multiuse" ],
+        "isA": "tourism",
+        "name": "tourism=zoo",
+        "objectType": "tag"
+    },
+    {
+        "categories": [
+            "use",
+            "poi",
+            "multiuse"
+        ],
+        "isA": "tourism",
+        "geometries": [ "node", "area", "linestring" ],
+        "name": "tourism=attraction",
+        "objectType": "tag",
+        "similarTo": [
+            { "name": "tourism=zoo", "weight": 0.8 },
+            { "name": "tourism=theme_park", "weight": 0.8 },
+            { "name": "leisure=garden", "weight": 0.5 },
+            { "name": "amenity=auditorium", "weight": 0.2 },
+            { "name": "tourism=museum", "weight": 0.8 }
+        ]
+    },
+    {
+        "isA": "tourism",
+        "name": "tourism=theme_park",
+        "objectType": "tag"
+    },
+    {
+        "isA": "tourism",
+        "name": "tourism=picnic_site",
+        "objectType": "tag"
+    },
+    {
+        "aliases": [ "amenity=museum" ],
+         "categories": [
+            "building",
+            "multiuse"
+        ],
+        "isA": "tourism",
+        "name": "tourism=museum",
+        "objectType": "tag",
+        "similarTo": [
+            { "name": "amenity=arts_centre", "weight": 0.8 }
+        ]
+    },
+    {
+        "categories": [
+            "use",
+            "poi"
+        ],
+        "isA": "tourism",
+        "name": "tourism=picnic_area",
+        "objectType": "tag"
+    }
+]

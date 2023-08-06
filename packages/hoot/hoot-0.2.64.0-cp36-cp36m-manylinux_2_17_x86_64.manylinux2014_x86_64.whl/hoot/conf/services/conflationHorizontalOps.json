@@ -1,0 +1,120 @@
+{
+	"id": "horizontal_conflation_options",
+	"elem_type": "group",
+	"description": "Cookie Cutter and Horizontal conflation options.",
+	"name": "Cookie Cutter & Horizontal Options",
+	"members": [
+    
+      {
+        "id": "reference_override_conflate_match_highway_classifier",
+        "elem_type": "string",
+        "description": "The highway match classifier to use. This should only be used for testing and debugging.",
+        "name": "Conflate Match Highway Classifier",
+        "defaultvalue": "HighwayRfClassifier",
+        "hoot_key": "conflate.match.highway.classifier",
+		"required":"true"
+      },
+      {
+        "id": "road_match_creator",
+        "elem_type": "string",
+        "description": "List of MatchCreators to use during conflation. This can modify what features will be conflated (e.g. buildings, roads, etc.).",
+        "name": "Match Creator",
+        "defaultvalue": "HighwayMatchCreator",
+        "hoot_key": "match.creators",
+				"required":"true",
+	"override":{
+						"defaultvalue": "HighwayMatchCreator"
+					}
+      },
+      {
+        "id": "road_merger_creator",
+        "elem_type": "string",
+        "description": "List of MergerCreators to use during conflation. This can modify what features will be conflated (e.g. buildings, roads, etc.).",
+        "name": "Merger Creator",
+        "defaultvalue": "HighwayMergerCreator",
+        "hoot_key": "merger.creators",
+				"required":"true",
+	"override":{
+						"defaultvalue": "HighwayMergerCreator"
+					}
+      },
+      {
+        "id": "building_match_creator",
+        "elem_type": "string",
+        "description": "List of MatchCreators to use during conflation. This can modify what features will be conflated (e.g. buildings, roads, etc.).",
+        "name": "Match Creator",
+        "defaultvalue": "BuildingMatchCreator",
+        "hoot_key": "match.creators",
+	"override":{
+						"defaultvalue": "BuildingMatchCreator"
+					}
+      },
+      {
+        "id": "building_merger_creator",
+        "elem_type": "string",
+        "description": "List of MergerCreators to use during conflation. This can modify what features will be conflated (e.g. buildings, roads, etc.).",
+        "name": "Merger Creator",
+        "defaultvalue": "BuildingMergerCreator",
+        "hoot_key": "merger.creators",
+	"override":{
+						"defaultvalue": "BuildingMergerCreator"
+					}
+      },
+      {
+        "id": "horizontal_override_writer_include_debug",
+        "elem_type": "bool",
+        "description": " Writer Include Debug",
+        "name": "Writer Include Debug",
+        "defaultvalue": "false",
+        "hoot_key": "writer.include.debug.tags",
+		"required":"true"
+      },
+
+	  {
+        "id": "reference_override_small_way_merger_threshold",
+        "minvalue": "0",
+        "elem_type": "double",
+        "description": "If highways are smaller than threshold and the tags matched then they will be merged together into a single way.",
+        "maxvalue": "",
+        "name": "Small Way Merger Threshold",
+        "defaultvalue": "15",
+        "hoot_key": "small.highway.merger.threshold"
+      },
+			{
+				"id":"horizontal_conflate_pre_ops",
+				"elem_type":"string",
+				"description":"Conflate pre ops",
+				"name":"Conflate Pre Ops",
+				"defaultvalue":"CookieCutterOp",
+				"hoot_key":"conflate.pre.ops",
+				"required":"true"
+			},
+			{
+				"id":"horizontal_cookie_cutter_alpha",
+				"elem_type":"double",
+				"description":"Cookie Cutter Alpha",
+				"name":"Cookie Cutter Alpha",
+				"defaultvalue":"2500",
+				"hoot_key":"cookie.cutter.alpha",
+				"required":"true"
+			},
+			{
+				"id":"horizontal_cookie_cutter_alpha_shape_buffer",
+				"elem_type":"double",
+				"description":"Cookie Cutter Alpha Shape Buffer",
+				"name":"Cookie Cutter Alpha Shape Buffer",
+				"defaultvalue":"0",
+				"hoot_key":"cookie.cutter.alpha.shape.buffer",
+			},
+			{
+				"id":"horizontal_cookie_cutter_output_crop",
+				"elem_type":"bool",
+				"description":"Cookie Cutter Output Crop",
+				"name":"Cookie Cutter Output Crop",
+				"defaultvalue":"false",
+				"hoot_key":"cookie.cutter.output.crop",
+				"required":"true"
+			}
+	]
+
+}

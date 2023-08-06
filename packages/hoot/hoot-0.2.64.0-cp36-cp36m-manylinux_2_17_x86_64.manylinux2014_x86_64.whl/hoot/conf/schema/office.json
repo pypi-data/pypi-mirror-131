@@ -1,0 +1,8 @@
+[
+    {
+        "isA": "poi",
+        "name": "office=*",
+        "objectType": "tag",
+        "similarTo": { "name": "amenity", "weight": 0.1 }
+    }
+]

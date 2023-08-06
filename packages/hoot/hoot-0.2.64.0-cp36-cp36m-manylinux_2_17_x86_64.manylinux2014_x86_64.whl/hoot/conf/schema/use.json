@@ -1,0 +1,23 @@
+[
+    {
+        "categories": [
+            "use",
+            "combination"
+        ],
+        "dataType": "enumeration",
+        "geometries": [ "node", "linestring", "area" ],
+        "influence": 1,
+        "name": "use",
+        "objectType": "tag"
+    },
+    {
+        "isA": "use",
+        "name": "use=*",
+        "objectType": "tag"
+    },
+    {
+        "isA": "use",
+        "name": "use=healthcare",
+        "objectType": "tag"
+    }
+]

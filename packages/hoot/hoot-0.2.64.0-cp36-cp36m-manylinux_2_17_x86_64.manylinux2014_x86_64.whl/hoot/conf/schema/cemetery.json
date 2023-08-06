@@ -1,0 +1,17 @@
+[
+    {
+        "dataType": "enumeration",
+        "isA": "poi",
+        "name": "cemetery",
+        "objectType": "tag",
+        "geometries": [ "node", "area" ],
+        "influence": 1,
+        "mismatchScore": 0.1,
+        "objectType": "tag"
+    },
+    {   
+        "isA": "cemetery",
+        "name": "cemetery=*",
+        "objectType": "tag"
+    }
+]

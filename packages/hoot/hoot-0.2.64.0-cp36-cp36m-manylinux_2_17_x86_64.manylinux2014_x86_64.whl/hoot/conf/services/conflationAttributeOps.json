@@ -1,0 +1,254 @@
+{
+    "id": "attribute_conflation_options",
+    "elem_type": "group",
+    "description": "Attribute conflation options.",
+    "name": "Attribute Conflation Options",
+    "required":"true",
+    "members": [
+      {
+        "id": "attribute_override_hoot_road_opt_engine",
+        "elem_type": "list",
+        "description": "A list of road engines",
+        "name": "Engines",
+        "defaultvalue": "Unify",
+        "hoot_key": "hoot.road.opt.engine"
+      },
+      {
+        "id": "attribute_aggressive_highway_joining",
+        "elem_type": "bool",
+        "description": "If true, allows Attribute Conflation to more aggressively rejoin ways with names and specific highway attribution into those with less specific highway attribution and no names.  Enabling this option may result in some false positive road joining.",
+        "name": "Aggressively Join Unmerged Roads",
+        "defaultvalue": "false",
+        "hoot_key": "attribute.conflation.aggressive.highway.joining"
+      },
+      {
+        "id": "attribute_allow_ref_geometry_bridge_changes",
+        "elem_type": "bool",
+        "description": "If true, allows Attribute Conflation to modify the geometry of a reference road layer to accomodate bridge features.  If false, any bridge features represented in the secondary dataset, but not in the reference dataset will be lost.",
+        "name": "Allow Reference Geometry Changes For Bridges",
+        "defaultvalue": "true",
+        "hoot_key": "attribute.conflation.allow.ref.geometry.changes.for.bridges"
+      },
+      {
+        "id": "attribute_allow_reviews_by_score",
+        "elem_type": "bool",
+        "description": "If true, all reviews outside of the score range established by the configuration options review.score.criterion.max/min.threshold will be removed.",
+        "name": "Allow Reviews By Score",
+        "defaultvalue": "false",
+        "hoot_key": "attribute.conflation.allow.reviews.by.score"
+      },
+      {
+        "id": "building_force_contained_match",
+        "elem_type": "bool",
+        "description": "If true, a building pair has been flagged for review, and one member of the pair is contained completely inside the other, the pair will be matched instead.",
+        "name": "Always atch When One Building Is Completely Contained Inside Another",
+        "defaultvalue": "true",
+        "hoot_key": "building.force.contained.match"
+      },
+      {
+        "id": "building_keep_more_complex_geometry_when_auto_merging",
+        "elem_type": "bool",
+        "description": "Keep building ref geom",
+        "name": "Keep building ref geom",
+        "defaultvalue": "false",
+        "hoot_key": "building.keep.more.complex.geometry.when.auto.merging"
+      },
+      {
+        "id":"building_match_threshold",
+        "elem_type":"double",
+        "description":"The threshold at which a match is called a match for buildings. The higher the value, the more strict the matching becomes.",
+        "defaultvalue":"0.6",
+        "minvalue":"0.01",
+        "maxvalue":"1.0",
+        "hoot_key":"building.match.threshold"
+      },
+      {
+        "id": "building_merge_many_to_many_matches",
+        "elem_type": "bool",
+        "description": "If false, many to many building matches will result in a review. If true, they will all be merged together when matched.",
+        "name": "Automatically Merge Many To Many Matches",
+        "defaultvalue": "true",
+        "hoot_key": "building.merge.many.to.many.matches"
+      },
+      {
+        "id":"attribute_override_conflate_post_ops",
+        "elem_type":"string",
+        "description":"Remove review relations and unmatched features in secondary dataset.",
+        "name":"Conflate Post Ops",
+        "hoot_key":"conflate.post.ops",
+        "defaultvalue":"RemoveElementsVisitor;RemoveUnknown2Visitor"
+      },
+      {
+        "id": "conflate_mark_merger_created_multilinestring_relations",
+        "elem_type": "bool",
+        "description": "Marks any multilinestring relations created as a result of merging during conflation with a custom tag.",
+        "name": "Mark Conflated Multilinestring Relations",
+        "defaultvalue": "true",
+        "hoot_key": "conflate.mark.merge.created.multilinestring.relations"
+      },
+      {
+        "id": "corner_splitter_rounded_split",
+        "elem_type": "bool",
+        "description": "Rounded corners in one dataset can cause non-rounded corners in the secondary dataset to not conflate",
+        "name": "Corner Splitter Rounded Split",
+        "defaultvalue": "true",
+        "hoot_key": "highway.corner.splitter.rounded.split"
+      },
+      {
+        "id": "hootapi_db_writer_preserve_version_on_insert",
+        "elem_type": "bool",
+        "description": "If true, versions for elements are retained on new writes to the Hootenanny API database.",
+        "name": "Preserve Version on insert",
+        "defaultvalue": "true",
+        "hoot_key": "hootapi.db.writer.preserve.version.on.insert"
+      },
+      {
+        "id": "duplicate_name_preserve_original_name",
+        "elem_type": "bool",
+        "description": "If true, the Duplicate Name Remover will always preserve the original name tag.  Otherwise, it will treat name and alternate name tags equally.",
+        "name": "Preserve Original Name During Duplicate Name Removal",
+        "defaultvalue": "true",
+        "hoot_key": "duplicate.name.preserve.original.name"
+      },
+      {
+        "id": "geometry_linear_merger_default",
+        "elem_type": "string",
+        "description": "The merger to use when merging features with linear geometries during conflation.",
+        "name": "Default Linear Geometry Merger",
+        "defaultvalue": "LinearTagOnlyMerger",
+        "hoot_key": "geometry.linear.merger.default"
+      },
+      {
+        "id": "poi_polygon_allow_cross_conflation_merging",
+        "elem_type": "bool",
+        "description": "If false, when a match found by Building Conflation involves the same feature in a match found by POI to Polygon Conflation, a review will be generated. If true, then that situation will result in a merge between all features involved in the Building and POI to Polygon conflation matches.",
+        "name": "Allow Merges When Conflicts Between Building and POI to Polygon Conflation Occur",
+        "defaultvalue": "true",
+        "hoot_key": "poi.polygon.allow.cross.conflation.merging"
+      },
+      {
+        "id": "poi_polygon_auto_merge_many_poi_to_one_poly_matches",
+        "elem_type": "bool",
+        "description": "If false, when a match found by Building Conflation involves the same feature in a match found by POI to Polygon Conflation, a review will be generated. If true, then that situation will result in a merge between all features involved in the Building and POI to Polygon conflation matches.",
+        "name": "Automatically Merge Many to One POI to Polygon Conflation Matches",
+        "defaultvalue": "true",
+        "hoot_key": "poi.polygon.auto.merge.many.poi.to.one.poly.matches"
+      },
+      {
+        "id": "poi_polygon_tag_merger",
+        "elem_type": "string",
+        "description": "The tag merger used by POI/Polygon conflation.",
+        "name": "POI/Polygon tag merger",
+        "defaultvalue": "OverwriteTag1Merger",
+        "hoot_key": "poi.polygon.tag.merger"
+      },
+      {
+        "id": "conflate_use_data_source_ids_1",
+        "elem_type": "bool",
+        "description": "Determines whether the reader used by the conflate command to read the first input dataset will use the element ID's specified by the input datasets (true) or use internal ID management for the inputs (false).",
+        "name": "Use Ref IDs During Conflation",
+        "defaultvalue": "false",
+        "hoot_key": "conflate.use.data.source.ids.1"
+      },
+      {
+        "id": "conflate_use_data_source_ids_2",
+        "elem_type": "bool",
+        "description": "Determines whether the reader used by the conflate command to read the second input dataset will use the element ID's specified by the input datasets (true) or use internal ID management for the inputs (false).",
+        "name": "Use Secondary IDs During Conflation",
+        "defaultvalue": "true",
+        "hoot_key": "conflate.use.data.source.ids.2"
+      },
+      {
+        "id": "remove_elements_visitor_chain.element_criteria",
+        "elem_type": "bool",
+        "description": "If set to true and multiple criterion are specified in remove.elements.visitor.element.criteria, elements will be removed only if they satisfy all of the criteria.  If set to false, then only one of the specified criteria must be met in order to remove an element.",
+        "name": "Chain Together Criteria When Removing Elements",
+        "defaultvalue": "false",
+        "hoot_key": "remove.elements.visitor.chain.element.criteria"
+      },
+      {
+        "id": "attribute_override_visitor_criteria",
+        "elem_type": "string",
+        "description": "The criteria for the RemoveElementsVisitor above",
+        "name": "Remove Elements Visitor Criteria",
+        "defaultvalue": "TagKeyCriterion;ReviewRelationCriterion",
+        "hoot_key": "remove.elements.visitor.element.criteria"
+      },
+      {
+        "id": "attribute_override_remove_elements_visitor_recursive",
+        "elem_type": "bool",
+        "description": "Remove elements recusively",
+        "name": "Remove elements recusively",
+        "defaultvalue": "false",
+        "hoot_key": "remove.elements.visitor.recursive",
+      },
+      {
+        "id": "review_score_invert_thresholding",
+        "elem_type": "bool",
+        "description": "If true, reviews outside of the score range specified by review.score.criterion.min/max.threshold will pass the filter.",
+        "name": "Invert Review Score Thresholding",
+        "defaultvalue": "true",
+        "hoot_key": "review.score.criterion.invert.thresholding"
+      },
+      {
+        "id":"review_score_max_threshold",
+        "elem_type":"double",
+        "description":"The score threshold above which reviews will not pass the filter.  A value of 1.0 signifies no maximum score threshold.  This currently works with Attribute Conflation only and can be enabled with attribute.conflation.allow.reviews.by.score.",
+        "name":"Review Score Maximum Threshold",
+        "defaultvalue":"0.99",
+        "minvalue":"0.0",
+        "maxvalue":"1.0",
+        "hoot_key":"review.score.criterion.max.threshold"
+      },
+      {
+        "id":"review_score_min_threshold",
+        "elem_type":"double",
+        "description":"The score threshold above which reviews will not pass the filter.  A value of 1.0 signifies no maximum score threshold.  This currently works with Attribute Conflation only and can be enabled with attribute.conflation.allow.reviews.by.score.",
+        "name":"Review Score Minimum Threshold",
+        "defaultvalue":"0.35",
+        "minvalue":"0.0",
+        "maxvalue":"1.0",
+        "hoot_key":"review.score.criterion.min.threshold"
+      },
+      {
+        "id": "tag_key_criterion_keys",
+        "elem_type": "string",
+        "description": "Tag keys that TagKeyCriterion uses to filter elements.",
+        "name": "Tag Key Criterion Keys",
+        "defaultvalue": "hoot:multilinestring",
+        "hoot_key": "tag.key.criterion.keys"
+      },
+      {
+        "id": "tag_merger_default",
+        "elem_type": "string",
+        "description": "The tag merging strategy to use",
+        "name": "Tag Merger",
+        "defaultvalue": "OverwriteTag1Merger",
+        "hoot_key": "tag.merger.default"
+      },
+      {
+        "id": "tag_merger_overwrite_exclude",
+        "elem_type": "string",
+        "description": "A list of tag keys not to be overwritten on target features during tag merging when using OverwriteTagMerger or ReplaceTagMerger.",
+        "name": "Tag Merger Overwrite Exclude",
+        "defaultvalue": "source;source:imagery;source:imagery:datetime;source:imagery:id;source:imagery:sensor",
+        "hoot_key": "tag.merger.overwrite.exclude"
+      },
+      {
+        "id": "way_joiner",
+        "elem_type": "string",
+        "description": "The way joiner to use to rejoin ways split during cleaning and conflation matching",
+        "name": "WayJoiner",
+        "defaultvalue": "WayJoinerAdvanced",
+        "hoot_key": "way.joiner"
+      },
+      {
+        "id": "writer_include_circular_error_tags",
+        "elem_type": "bool",
+        "description": "When true, writers will include circular error information. Not honored by all writers.",
+        "name": "Export Circular Error Tags",
+        "defaultvalue": "false",
+        "hoot_key": "writer.include.circular.error.tags"
+      }
+    ]
+}

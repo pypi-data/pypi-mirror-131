@@ -1,0 +1,8 @@
+[
+    {
+        "dataType": "text",
+        "geometries": ["node","linestring","area"],                                                                      
+        "name": "capacity",
+        "objectType": "tag"
+    }
+]

@@ -1,0 +1,203 @@
+{
+    "General": {
+        "members": {
+            "add.review.tags.to.features": "Add review tags to individual features",
+            "circular.error.default.value": "Default accuracy (CE) for data without accuracy tags",
+            "circular.error.tag.keys": "Tag keys that contain accuracy (CE) data",
+            "duplicate.way.remover.strict.tag.matching": "Duplicate Way Removal strict tag matching",
+            "review.score.criterion.max.threshold": "Maximum review score; 0.0 to 1.0",
+            "review.score.criterion.min.threshold": "Minimum review score; 0.0 to 1.0",
+            "highway.corner.splitter.rounded.split": "Round corners when splitting roads",
+            "tag.merger.default": "The default way of merging tags",
+            "tag.merger.overwrite.exclude": "Tag keys to skip when overwriting",
+            "selective.overwrite.tag.merger.keys": "Tag keys to selectively transfer",
+            "conflate.use.data.source.ids.1": "Preserve element ids from the Reference layer during conflation",
+            "conflate.use.data.source.ids.2": "Preserve element ids from the Secondary layer during conflation"
+        }
+    },
+    "Areas": {
+        "matcher": "ScriptMatchCreator,Area.js",
+        "merger": "ScriptMergerCreator",
+        "members": {
+            "area.overlap.review.threshold": "Overlap review threshold; 0.0 to 1.0",
+            "search.radius.area": "Search radius (m); -1 for default",
+            "area.type.threshold": "Type match threshold; 0.0 to 1.0"
+        }
+    },
+    "Attribute": {
+        "members": {
+            "attribute.conflation.aggressive.highway.joining": "Aggressively join roads",
+            "attribute.conflation.allow.reviews.by.score": "Allow reviews by score",
+            "attribute.conflation.ref.tag.overwrite.exclude": "Reference feature tags not to be overwritten",
+            "attribute.conflation.suppress.building.tag.on.multipoly.relation.constituents": "Suppress building tags on multi-polygon relation building members"
+        }
+    },
+    "Buildings": {
+        "matcher": "BuildingMatchCreator",
+        "merger": "BuildingMergerCreator",
+        "members": {
+            "building.merge.many.to.many.matches": "Always merge many to many matches",
+            "building.changed.review": "Create reviews when a building has changed",
+            "building.date.format": "Date format",
+            "building.date.tag.key": "Date tag key",
+            "building.force.contained.match": "Force matches when one building contains another",
+            "building.changed.review.iou.threshold": "Intersection over Union review threshold; 0.0 to 1.0",
+            "building.keep.more.complex.geometry.when.auto.merging": "Keep more complex geometry when merging",
+            "building.match.threshold": "Score threshold for matching; 0.0 to 1.0",
+            "search.radius.building": "Search radius (m); -1 for default",
+            "building.review.if.secondary.newer": "Review if secondary feature is newer",
+            "building.review.matches.other.than.one.to.one": "Review matches that are not one to one"
+        }
+    },
+    "Differential": {
+        "matcher": "",
+        "merger": "",
+        "members": {
+            "differential.remove.linear.partial.matches.as.whole": "Remove features involved in linear partial matches completely (Unifying Algorithm only)",
+            "differential.remove.river.partial.matches.as.whole": "Remove rivers involved in river partial matches completely (Unifying Algorithm only)",
+            "differential.remove.unconflatable.data": "Remove unconflatable data in the secondary layer from the output",
+            "differential.snap.unconnected.features": "Snap unconnected secondary linear features to reference linear features",
+            "snap.unconnected.ways.snap.criteria": "Linear feature types to snap",
+            "snap.unconnected.ways.snap.tolerance": "Maximum distance (m) over which to allow snapping linear features to other linear features without snapping to a node",
+            "snap.unconnected.ways.use.existing.way.nodes": "Reuse existing linear feature nodes when snapping unconnected linear features",
+            "snap.unconnected.ways.existing.way.node.tolerance": "Maximum distance (m) to allow snapping linear features to linear feature nodes",
+            "differential.sec.way.removal.criteria": "Unsnapped secondary way feature types to remove from the output",
+            "differential.sec.way.removal.length.threshold": "Maximum size (m) an unsnapped secondary way can have and be removed",
+            "differential.treat.reviews.as.matches": "Treat reviews as matches and remove from the output"
+        }
+    },
+    "GenericLines": {
+        "matcher": "ScriptMatchCreator,Line.js",
+        "merger": "ScriptMergerCreator",
+        "members": {
+            "search.radius.generic.line": "Search radius (m); -1 for default",
+            "generic.line.type.threshold": "Type match threshold; 0.0 to 1.0"
+        }
+    },
+    "GenericPoints": {
+        "matcher": "ScriptMatchCreator,Point.js",
+        "merger": "ScriptMergerCreator",
+        "members": {
+            "search.radius.generic.point": "Search radius (m); -1 for default",
+            "generic.point.type.threshold": "Type match threshold; 0.0 to 1.0"
+        }
+    },
+    "GenericPointPolygon": {
+        "matcher": "ScriptMatchCreator,PointPolygon.js",
+        "merger": "ScriptMergerCreator",
+        "members": {
+            "search.radius.generic.point.polygon": "Search radius (m); -1 for default",
+            "generic.point.polygon.type.threshold": "Type match threshold; 0.0 to 1.0"
+        }
+    },
+    "GenericPolygons": {
+        "matcher": "ScriptMatchCreator,Polygon.js",
+        "merger": "ScriptMergerCreator",
+        "members": {
+            "search.radius.generic.polygon": "Search radius (m); -1 for default",
+            "generic.polygon.type.threshold": "Type match threshold; 0.0 to 1.0"
+        }
+    },
+    "Pois": {
+        "matcher": "ScriptMatchCreator,Poi.js",
+        "merger": "ScriptMergerCreator",
+        "members": {
+            "poi.ignore.type.if.name.present": "Ignore type if name present",
+            "search.radius.poi": "Search radius (m); -1 for default",
+            "poi.search.radii": "The search radii distance (m) configuration for POI to POI Conflation"
+        }
+    },
+    "PoiPolygon": {
+        "matcher": "PoiPolygonMatchCreator",
+        "merger": "PoiPolygonMergerCreator",
+        "members": {
+	    "poi.polygon.additional.search.distance": "Additional search radius (m)",
+            "poi.polygon.allow.cross.conflation.merging": "Allow merging of Building and POI to Polygon matches",
+            "poi.polygon.max.size.per.cache": "Cache size",
+      	    "poi.polygon.disable.intradataset.conflation.1": "Disable intra-dataset conflation within the first input dataset",
+            "poi.polygon.disable.intradataset.conflation.2": "Disable intra-dataset conflation within the second input dataset",
+            "poi.polygon.disable.same.source.conflation": "Disable same source conflation",
+            "poi.polygon.keep.closest.matches.only": "Keep the closest match only",
+            "poi.polygon.match.distance.threshold" : "Match distance threshold (m)",
+            "poi.polygon.match.evidence.threshold": "Match evidence threshold; 1 to 4",
+            "poi.polygon.disable.same.source.conflation.match.tag.key.prefix.only": "Match key prefix only if same source conflation disabled",
+            "poi.polygon.match.takes.precedence.over.poi.to.poi.review": "Match takes precedence over POI review",
+            "poi.polygon.auto.merge.many.poi.to.one.poly.matches": "Merge many to one matches",
+            "poi.polygon.name.score.threshold": "Name score threshold; 0.0 to 1.0",
+            "poi.polygon.promote.points.with.addresses.to.pois": "Promote points with addresses to POIs",
+            "poi.polygon.review.evidence.threshold": "Review evidence threshold; 0 to 3",
+            "poi.polygon.review.multiuse.buildings": "Review POI matches with multi-use buildings",
+            "poi.polygon.source.tag.key": "Source key used when disabling same source conflation",
+            "poi.polygon.review.if.matched.types": "Tags used to flag reviews",
+            "poi.polygon.type.score.threshold": "Type score threshold; 0.0 to 1.0"
+        }
+    },
+    "Powerlines": {
+        "matcher": "ScriptMatchCreator,PowerLine.js",
+        "merger": "ScriptMergerCreator",
+        "members": {
+            "power.line.match.threshold": "Match threshold; 0.0 to 1.0",
+            "search.radius.power.line": "Search radius (m); -1 for default"
+        }
+    },
+    "Railways": {
+        "matcher": "ScriptMatchCreator,Railway.js",
+        "merger": "ScriptMergerCreator",
+        "members": {
+            "railway.one.to.many.match": "Enable one to many matching from secondary to reference features",
+            "railway.one.to.many.identifying.keys": "Tag keys allowing for a one to many feature tag transfer from secondary to reference",
+            "railway.one.to.many.transfer.keys": "Keys of tags to transfer in a one to many feature tag transfer from secondary to reference",
+            "railway.one.to.many.transfer.all.tags": "Transfer all tags from secondary to reference features (overrides transfer keys list)",
+            "railways.crossing.marker.ignore.types": "Types to ignore when detecting crossing railways",
+            "railways.crossing.marker.mark.intra.dataset.crossings": "Mark crossing railways within the same input dataset",
+            "search.radius.railway": "Search radius (m); -1 for default",
+            "railway.type.threshold": "Type match threshold; 0.0 to 1.0"
+        }
+    },
+    "Relations": {
+        "matcher": "ScriptMatchCreator,Relation.js",
+        "merger": "ScriptMergerCreator",
+        "members": {
+            "relation.name.threshold": "Name match threshold; 0.0 to 1.0",
+            "search.radius.relation": "Search radius (m); -1 for default",
+            "relation.type.threshold": "Type match threshold; 0.0 to 1.0"
+        }
+    },
+    "Rivers": {
+        "matcher": "ScriptMatchCreator,River.js",
+        "merger": "ScriptMergerCreator",
+        "members": {
+            "river.name.threshold": "Name match threshold; 0.0 to 1.0",
+            "river.maximal.subline.auto.optimize": "Automatically optimize runtime performance",
+            "search.radius.river": "Search radius (m); -1 for default",
+            "river.type.threshold": "Type match threshold; 0.0 to 1.0"
+        }
+    },
+    "Roads": {
+        "matcher": "HighwayMatchCreator",
+        "merger": "HighwayMergerCreator",
+        "members": {
+            "highway.median.to.dual.highway.match": "Enable custom secondary road median to reference divided road feature matching",
+            "highway.median.identifying.tags": "Tag keys allowing for a tag transfer from secondary road medians to reference divided roads",
+            "highway.median.to.dual.highway.transfer.keys": "Keys of tags to transfer from secondary road medians to reference divided roads",
+            "highway.match.threshold": "Match threshold; 0.0 to 1.0",
+            "search.radius.highway": "Search radius (m); -1 for default"
+        }
+    },
+    "RoadsNetwork": {
+        "matcher": "NetworkMatchCreator",
+        "merger": "NetworkMergerCreator",
+        "members": {
+            "network.match.threshold": "Match threshold; 0.0 to 1.0",
+            "search.radius.highway": "Search radius (m); -1 for default"
+        }
+    },
+    "RubberSheeting": {
+        "members": {
+            "rubber.sheet.max.allowed.ways": "Maximum number of ways allowed",
+            "rubber.sheet.minimum.ties": "Minimum number of tie points required.",
+	          "rubber.sheet.log.missing.requirements.as.warning": "Log a warning if enough tie points are not found.",
+	          "conflate.unifying.rubber.sheet.roads": "Rubbersheet roads with Unifying Algorithm"
+        }
+    }
+}

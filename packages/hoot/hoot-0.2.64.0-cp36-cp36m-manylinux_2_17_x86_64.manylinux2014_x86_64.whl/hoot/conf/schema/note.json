@@ -1,0 +1,13 @@
+[
+    {
+        "dataType": "text",
+        "influence": 0,
+        "name": "note",
+        "objectType": "tag"
+    },
+    {
+        "isA": "note",
+        "name": "regex?note:.*",
+        "objectType": "tag"
+    }
+]

@@ -1,0 +1,297 @@
+[
+    {
+        "categories": [ "building" ],
+        "dataType": "enumeration",
+        "geometries": [ "node", "area", "relation" ],
+        "influence": 1,
+        "name": "building",
+        "objectType": "tag"
+    },
+    {
+        "dataType": "text",
+        "geometries": [ "node", "area", "relation" ],
+        "name": "building:colour",
+        "objectType": "tag"
+    },
+    {
+        "dataType": "int",
+        "geometries": [ "area" ],
+        "name": "building:levels",
+        "objectType": "tag"
+    },
+    {
+        "dataType": "int",
+        "geometries": [ "area" ],
+        "name": "building:min_level",
+        "objectType": "tag"
+    },
+    {
+        "dataType": "text",
+        "description": "This tag is deprecated. The old usage is defined here: http://wiki.openstreetmap.org/w/index.php?title=Proposed_features/Building_attributes&oldid=719036",
+        "geometries": [ "area" ],
+        "name": "building:shape",
+        "objectType": "tag"
+    },
+    {
+        "associatedWith": [
+            "height",
+            "min_height",
+            "building:levels",
+            "building:min_level",
+            "roof:orientation",
+            "roof:height",
+            "roof:angle",
+            "roof:levels",
+            "roof:colour",
+            "building:material",
+            "roof:material",
+            "building:shape",
+            "building:roof:shape"
+        ],
+        "geometries": [ "area", "relation" ],
+        "name": "building:part=yes",
+        "objectType": "tag"
+    },
+    {
+        "categories": [ "combination" ],
+        "dataType": "enumeration",
+        "geometries": [ "area", "relation" ],
+        "influence": 0.3,
+        "name": "building:roof:shape",
+        "objectType": "tag"
+    },
+    {
+        "isA": "building:roof:shape",
+        "name": "building:roof:shape=flat",
+        "objectType": "tag"
+    },
+    {
+        "isA": "building:roof:shape",
+        "name": "building:roof:shape=gabled",
+        "objectType": "tag",
+        "similarTo": { "name": "building:roof:shape=flat", "weight": 0.5 }
+    },
+    {
+        "categories": [ "combination" ],
+        "dataType": "enumeration",
+        "geometries": [ "area", "relation" ],
+        "influence": 1,
+        "name": "building:material",
+        "objectType": "tag"
+    },
+    {
+        "isA": "building=yes",
+        "mismatchScore": 0.5,
+        "name": "building=*",
+        "objectType": "tag"
+    },
+    {
+        "isA": "abstract_building_place_of_worship",
+        "name": "building=abbey",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=christian", "weight": 1 }
+    },
+    {
+        "isA": "abstract_building_place_of_worship",
+        "name": "building=basilica",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=christian", "weight": 0.9 }
+    },
+    {
+        "isA": "abstract_building_place_of_worship",
+        "name": "building=cathedral",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=christian", "weight": 0.9 }
+    },
+    {
+        "isA": "abstract_building_place_of_worship",
+        "name": "building=chapel",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=christian", "weight": 0.9 }
+    },
+    {
+        "isA": "abstract_building_place_of_worship",
+        "name": "building=church",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=christian", "weight": 0.7 }
+    },
+    {
+        "categories": [ "poi" ],
+        "isA": "building",
+        "name": "building=fort",
+        "objectType": "tag"
+    },
+    {
+        "isA": "building",
+        "name": "building=house",
+        "objectType": "tag"
+    },
+    {
+        "isA": "building",
+        "name": "building=museum",
+        "objectType": "tag",
+        "similarTo": { "name": "tourism=museum", "weight": 0.8 }
+    },
+    {
+        "categories": [ "multiuse" ],
+        "isA": "building",
+        "name": "building=apartments",
+        "objectType": "tag"
+    },
+    {
+        "categories": [ "poi" ],
+        "isA": "building",
+        "name": "building=garage",
+        "objectType": "tag"
+    },
+    {
+        "categories": [ "poi" ],
+        "isA": "building",
+        "name": "building=guardhouse",
+        "objectType": "tag",
+        "similarTo": { "name": "barrier=toll_booth", "weight": 0.7 }
+    },
+    {
+        "categories": [ "poi" ],
+        "isA": "building",
+        "name": "building=hospital",
+        "objectType": "tag",
+        "similarTo": { "name": "amenity=hospital", "weight": 0.8 }
+    },
+    {
+        "categories": [ "poi" ],
+        "isA": "building",
+        "name": "building=hotel",
+        "objectType": "tag",
+        "similarTo": [
+            { "name": "tourism=hotel", "weight": 0.9 },
+            { "name": "amenity=hotel", "weight": 0.9 }
+        ]
+    },
+    {
+        "categories": [ "poi" ],
+        "aliases": [ "amenity=mosque" ],
+        "isA": "abstract_building_place_of_worship",
+        "name": "building=mosque",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=muslim", "weight": 0.9 }
+    },
+    {
+        "aliases": [
+            "building=false",
+            "building=0",
+            "building=off"
+        ],
+        "isA": "building",
+        "name": "building=no",
+        "objectType": "tag",
+        "similarTo": { "name": "building=yes", "weight": 0.1 }
+    },
+    {
+        "isA": "abstract_building_place_of_worship",
+        "name": "building=pagoda",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=buddhist", "weight": 0.9 }
+    },
+    {
+        "categories": [ "poi" ],
+        "isA": "building",
+        "name": "building=school",
+        "objectType": "tag"
+    },
+    {
+        "categories": [ "poi" ],
+        "isA": "building",
+        "name": "building=university",
+        "objectType": "tag"
+    },
+    {
+        "categories": [ "poi" ],
+        "isA": "building",
+        "name": "building=shrine",
+        "objectType": "tag",
+        "similarTo": { "name": "historic=memorial", "weight": 0.7 }
+    },
+    {
+        "isA": "abstract_building_place_of_worship",
+        "name": "building=stupa",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=buddhist", "weight": 0.9 }
+    },
+    {
+        "isA": "abstract_building_place_of_worship",
+        "name": "building=synagogue",
+        "objectType": "tag",
+        "similarTo": { "name": "religion=jewish", "weight": 0.9 }
+    },
+    {
+        "categories": [ "multiuse" ],
+        "isA": "building",
+        "name": "building=station",
+        "objectType": "tag"
+    },
+    {
+        "categories": [ "poi", "multiuse" ],
+        "isA": "building",
+        "name": "building=train_station",
+        "objectType": "tag",
+        "similarTo": [
+            { "name": "building=transportation", "weight": [ 0.9, 0.3 ] },
+            { "name": "public_transport=station", "weight": [ 0.8, 0.3 ] },
+            { "name": "railway=station", "weight": 0.9 },
+            { "name": "transport=station", "weight": [ 0.8, 0.3 ] }
+        ]
+    },
+    {
+        "categories": [ "poi" ],
+        "isA": "building",
+        "name": "building=transportation",
+        "objectType": "tag"
+    },
+    {
+        "aliases": [
+            "building=true",
+            "building=1",
+            "building=on"
+        ],
+        "isA": "building",
+        "name": "building=yes",
+        "objectType": "tag",
+        "similarTo": { "name": "building=no", "weight": 0.1 }
+    },
+    {
+        "categories": [ "poi", "multiuse" ],
+        "isA": "building",
+        "name": "building=civic",
+        "objectType": "tag"
+    },
+    {
+        "categories": [ "multiuse" ],
+        "isA": "building",
+        "name": "building=office",
+        "objectType": "tag"
+    },
+    {
+        "categories": [ "multiuse" ],
+        "isA": "building",
+        "name": "building=public",
+        "objectType": "tag"
+    },
+    {
+        "categories": [ "poi", "use" ],
+        "isA": "building",
+        "name": "building=greenhouse",
+        "objectType": "tag"
+    },
+    {
+        "categories": [ "poi", "use" ],
+        "isA": "building",
+        "name": "building=arboretum",
+        "objectType": "tag"
+    },
+    {
+        "isA": "building",
+        "name": "building=terrace",
+        "objectType": "tag"
+    }
+]
