@@ -1,0 +1,9 @@
+opentelemetry/instrumentation/httpx/__init__.py,sha256=F94-ebKBFTkQnHjTpadJB_mV0Qt_2lge8rGztpgiSt8,18917
+opentelemetry/instrumentation/httpx/package.py,sha256=g7jNJv_tWB6d4Pj-bJoKYHMBr2qNzk4T2QfsoQfOczY,632
+opentelemetry/instrumentation/httpx/version.py,sha256=iJT8rGXtD6zEboukDWHCCTP1d5xKYJ4w6ax4vjINVz4,608
+opentelemetry_instrumentation_httpx-0.27b0.dist-info/LICENSE,sha256=h8jwqxShIeVkc8vOo9ynxGYW16f4fVPxLhZKZs0H5U8,11350
+opentelemetry_instrumentation_httpx-0.27b0.dist-info/METADATA,sha256=Mgwd0Va9nT7fqQXFRMzvrtSq76dQ_j54zh5FDO_N2-g,6192
+opentelemetry_instrumentation_httpx-0.27b0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+opentelemetry_instrumentation_httpx-0.27b0.dist-info/entry_points.txt,sha256=fA8-KCXTgHw07O-tE47c97lJzLBbxo6NZSXycaTN6w8,98
+opentelemetry_instrumentation_httpx-0.27b0.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_instrumentation_httpx-0.27b0.dist-info/RECORD,,
