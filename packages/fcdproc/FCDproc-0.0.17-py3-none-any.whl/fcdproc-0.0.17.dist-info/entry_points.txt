@@ -1,0 +1,3 @@
+[console_scripts]
+FCD_Pipeline=FCDproc.cli:Create_FCD_Pipeline
+

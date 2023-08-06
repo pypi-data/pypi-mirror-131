@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: fcdproc
+Version: 0.0.17
+Summary: Detect FCD Lesions in MRI negative Epilepsy Patients
+License: GNU General Public License v3.0
+Author: InatiLab
+Requires-Python: >=3.8,<3.9
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: GitPython (>=3.1.24,<4.0.0)
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: dotcli (==0.1.3)
+Requires-Dist: etelemetry (>=0.2.2,<0.3.0)
+Requires-Dist: filelock (>=3.3.1,<4.0.0)
+Requires-Dist: fmriprep (>=20.2.5,<21.0.0)
+Requires-Dist: globus-cli (>=3.1.2,<4.0.0)
+Requires-Dist: importlib-metadata (>=4.8.2,<5.0.0)
+Requires-Dist: jem (>=0.3.12,<0.4.0)
+Requires-Dist: jupyter (>=1.0.0,<2.0.0)
+Requires-Dist: matplotlib (==3.3.4)
+Requires-Dist: networks (>=0.3.7,<0.4.0)
+Requires-Dist: nibabel (>=3.2.1,<4.0.0)
+Requires-Dist: nipy (>=0.5.0,<0.6.0)
+Requires-Dist: nipype (>=1.6.1,<2.0.0)
+Requires-Dist: nitransforms (>=20.0.0rc3,<20.1.0)
+Requires-Dist: niworkflows (>=1.3,<2.0)
+Requires-Dist: numpy (>=1.21.2,<2.0.0)
+Requires-Dist: packaging (>=20.4,<21.0)
+Requires-Dist: pandas (>=1.1.5,<2.0.0); python_full_version >= "3.7.1" and python_full_version < "4.0.0"
+Requires-Dist: prov (>=2.0.0,<3.0.0)
+Requires-Dist: psutil (>=5.8.0,<6.0.0)
+Requires-Dist: pybids (>=0.13.2,<0.14.0)
+Requires-Dist: pydot (>=1.4.2,<2.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: rdflib (>=6.0.2,<7.0.0)
+Requires-Dist: reports (>=0.4.1,<0.5.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: scikit-image (>=0.17.2,<0.18.0)
+Requires-Dist: scipy (>=1.7.1,<2.0.0)
+Requires-Dist: sdcflows (>=1.3,<2.0)
+Requires-Dist: simplejson (>=3.17.5,<4.0.0)
+Requires-Dist: six (>=1.16.0,<2.0.0)
+Requires-Dist: smriprep (>=0.7.2,<0.8.0)
+Requires-Dist: tedana (>=0.0.9a1,<0.1.0)
+Requires-Dist: templateflow (>=0.7.1,<0.8.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: tomlkit (==0.7.0)
+Requires-Dist: traits (>=6.3.1,<7.0.0)
+Description-Content-Type: text/markdown
+
+# FCDproc
+
+detect FCD lesions in MRI negative epilepsy patients
+
+## Installation
+
+```bash
+$ pip install FCDproc
+```
+
+## Usage
+
+- FCDproc can be used to detect Focal Cortical Dysplasia (FCD) in patients who are know to have epilespy but the MRI scan comes out clear. you can use this package as follows:
+
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`FCDproc` was created by InatiLab. It is licensed under the terms of the GNU General Public License v3.0 license.
+
+## Credits
+
+`FCDproc` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
