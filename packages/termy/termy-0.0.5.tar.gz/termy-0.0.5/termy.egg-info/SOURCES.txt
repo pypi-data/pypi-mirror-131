@@ -1,0 +1,11 @@
+README.md
+setup.py
+termy/__init__.py
+termy/__main__.py
+termy/constants.py
+termy.egg-info/PKG-INFO
+termy.egg-info/SOURCES.txt
+termy.egg-info/dependency_links.txt
+termy.egg-info/entry_points.txt
+termy.egg-info/requires.txt
+termy.egg-info/top_level.txt
