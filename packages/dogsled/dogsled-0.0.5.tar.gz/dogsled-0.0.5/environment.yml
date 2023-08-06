@@ -1,0 +1,24 @@
+# conda test environment with QuPath (sdvillal) & vips
+#
+
+name: dogsled
+
+channels:
+  - sdvillal
+  - conda-forge
+
+dependencies:
+  - python=3.9
+  - pip
+  - qupath
+  - numpy==1.21.4
+  - scipy==1.7.3
+  - psutil==5.8.0
+  - pyvips==2.1.16
+  - dynaconf==3.1.7
+  - numba
+  - pytest>=6
+  - pytest-cov==3.0.0
+  - pip:
+    - paquo
+    - "-e ."
