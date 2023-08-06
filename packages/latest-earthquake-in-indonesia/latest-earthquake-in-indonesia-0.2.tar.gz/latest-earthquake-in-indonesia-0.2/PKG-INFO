@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: latest-earthquake-in-indonesia
+Version: 0.2
+Summary: This package about the last earthquake from BMKG Indonesia
+Home-page: https://github.com/kuli-coding/last-indonesia-earthquake
+Author: Rijaluddin
+Author-email: ortonrko90900@gmail.com
+License: UNKNOWN
+Project-URL: Github, https://github.com/kuli-coding/last-indonesia-earthquake
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# last-indonesia-earthquake
+This package about the last earthquake from BMKG Indonesia
+## HOW IT WORK 
+This package will scrape from [BMKG](https://www.bmkg.go.id) to get latest quake happened in indonesia 
+This package will use BeautifulSoup4 and Requests to then generate output in the form of Json which is ready to be used in web or mobile applications
+
