@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+CSelenium.egg-info/PKG-INFO
+CSelenium.egg-info/SOURCES.txt
+CSelenium.egg-info/dependency_links.txt
+CSelenium.egg-info/requires.txt
+CSelenium.egg-info/top_level.txt
