@@ -1,0 +1,3 @@
+dbnd==0.56.4
+dbnd-airflow==0.56.4
+dbnd-airflow-monitor==0.56.4
