@@ -1,0 +1,5 @@
+[console_scripts]
+chamar=Trabalho_JeanSilva_Converter_CSV_JSON.converter:chamada
+csv_converter=Trabalho_JeanSilva_Converter_CSV_JSON.converter:converterCSV
+json_converter=Trabalho_JeanSilva_Converter_CSV_JSON.converter:converterJSON
+
