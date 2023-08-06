@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "rialtic-data-dev-py"
+version = "1.1.15"
+description = "Data SDK for development purposes at Rialtic."
+
+authors = ["Rialtic <engines.data@rialtic.io>"]
+
+readme = "README.md"
+homepage = "https://rialtic.io"
+repository = "https://github.com/rialtic-community/rialtic-data-dev-py"
+keywords = ["Rialtic", "insight", "engine", "sdk", "data"]
+license = "Apache-2.0"
+
+classifiers = [
+    "Programming Language :: Python :: 3.7",
+    "Operating System :: OS Independent",
+]
+packages = [
+    { include = "dataUtils" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.26"
+insight-engine-schema-python = "==0.*"
+"fhir.resources" = "^6.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
