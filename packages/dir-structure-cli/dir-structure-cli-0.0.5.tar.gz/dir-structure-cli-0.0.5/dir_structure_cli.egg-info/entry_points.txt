@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        dir-structure-cli=dir_struct_cli.main:main
+    
