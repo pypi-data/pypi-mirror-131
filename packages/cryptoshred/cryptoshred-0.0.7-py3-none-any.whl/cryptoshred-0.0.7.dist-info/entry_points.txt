@@ -1,0 +1,3 @@
+[console_scripts]
+cryptoshred=cryptoshred.app.ui.cli:app
+

@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: cryptoshred
+Version: 0.0.7
+Summary: Cryptoshredding for events and more
+Home-page: https://gitlab.com/edthamm/cryptoshred
+License: Apache-2.0
+Keywords: event-sourcing
+Author: Eduard Thamm
+Author-email: eduard.thamm@thammit.at
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Provides-Extra: docs
+Requires-Dist: Sphinx (<4); extra == "docs"
+Requires-Dist: boto3 (>=1.17.105,<2.0.0)
+Requires-Dist: cryptography (>=3.4.7,<4.0.0)
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Requires-Dist: python-dotenv (>=0.19.0,<0.20.0)
+Requires-Dist: rich (>=10.4.0,<11.0.0)
+Requires-Dist: sphinx-autodoc-typehints (>=1.12.0,<2.0.0); extra == "docs"
+Requires-Dist: sphinx-click (>=3.0.1,<4.0.0); extra == "docs"
+Requires-Dist: sphinx-rtd-theme (>=0.5.2,<0.6.0); extra == "docs"
+Requires-Dist: typer (>=0.3.2,<0.4.0)
+Project-URL: Documentation, https://cryptoshred.readthedocs.io/en/stable/
+Project-URL: Repository, https://gitlab.com/edthamm/cryptoshred
+Description-Content-Type: text/markdown
+
+# Cryptoshred
+
+Welcome to cryptoshred. You can find more extensive documentation over at [readthedocs](https://cryptoshred.readthedocs.io/en/latest/).
+
+This project arose manly out of the necessity to work with events that contain cryptoshredded information.
+It is an implementation of cryptoshredding that is compatible with [this Java implementation](https://github.com/prisma-capacity/cryptoshred). It can either be used independently or together with [pyfactcast](https://pypi.org/project/pyfactcast/).
+
+Contributions are welcome. Just get in touch.
+
+## Quickstart
+
+Simply `pip install cryptoshred` and get going. The cli is available as `cryptoshred` and
+you can run `cryptoshred --help` to get up to speed on what you can do.
+
+## Development
+
+This project uses `poetry` for dependency management and `pre-commit` for local checks.
+
