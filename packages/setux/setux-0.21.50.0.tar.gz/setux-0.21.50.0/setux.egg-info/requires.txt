@@ -1,0 +1,7 @@
+setux_core>=0.21.50.0
+setux_distros>=0.21.43.0
+setux_logger>=0.21.50.0
+setux_managers>=0.21.50.0
+setux_mappings>=0.21.43.0
+setux_modules>=0.21.50.0
+setux_targets>=0.21.50.0
