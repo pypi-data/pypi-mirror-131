@@ -1,0 +1,13 @@
+CMakeLists.txt
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pypopsift.egg-info/PKG-INFO
+pypopsift.egg-info/SOURCES.txt
+pypopsift.egg-info/dependency_links.txt
+pypopsift.egg-info/not-zip-safe
+pypopsift.egg-info/top_level.txt
+src/main.cpp
+src/popsift.cpp
+src/popsift.h
