@@ -1,0 +1,13 @@
+yamlns/__init__.py,sha256=47Je9Ws2Mi966I7gNW7QK73snLn56EqCnUPK6jIUoIs,8708
+yamlns/dateutils.py,sha256=GVBHhrMwEEdYL-1DvecBhGlWQDd8QArdQS8SBfzeOXI,4913
+yamlns/dateutils_test.py,sha256=E8VaeQ3p-IzJav-Mza-aL93J5lrSuqkeUfyjkKHAXOY,6758
+yamlns/namespace_test.py,sha256=cBPvkUqIoCX53K7F3cHUqq3EbUsFNaj5e_ihtFk7nfQ,11898
+yamlns/nstemplate.py,sha256=792Kmr4Hh7KGoQZE2knMSVJVxlsNlDFYKZiQFJYn-JY,2060
+yamlns/nstemplate_test.py,sha256=Z3AmtIw0kUkXJ-aEMMT4uM8mo5WRZ-JwnP_HbYvOhgg,3546
+yamlns/testutils.py,sha256=cjM0DpSoeWLzenSsOfnFxbd4uv4U1AKcvsgSouaqDIg,1053
+yamlns/testutils_test.py,sha256=gkj5ZQG7YK66VkkolyguaQZJQh477zcHACO1GTVlrJM,3217
+yamlns-0.9.2.data/scripts/nstemplate.py,sha256=Autqw2qQugkK_vxAmS1v2zjbn88Evd5jXsTo6JGAruw,2050
+yamlns-0.9.2.dist-info/METADATA,sha256=7c6-GIo4ug22BO_SK6EAiFaXXz9w-b74AHiBZP0ctC4,4469
+yamlns-0.9.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+yamlns-0.9.2.dist-info/top_level.txt,sha256=5GH7q_YVMZMz7I7b5OR6kGWfKGv51g0NoR3plqXgN1Y,7
+yamlns-0.9.2.dist-info/RECORD,,
