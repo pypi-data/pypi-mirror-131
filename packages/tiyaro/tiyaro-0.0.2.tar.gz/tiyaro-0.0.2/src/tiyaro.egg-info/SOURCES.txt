@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/tiyaro/__init__.py
+src/tiyaro/onboard.py
+src/tiyaro.egg-info/PKG-INFO
+src/tiyaro.egg-info/SOURCES.txt
+src/tiyaro.egg-info/dependency_links.txt
+src/tiyaro.egg-info/top_level.txt
