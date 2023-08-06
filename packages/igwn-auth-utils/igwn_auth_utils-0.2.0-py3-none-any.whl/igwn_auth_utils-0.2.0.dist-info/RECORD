@@ -1,0 +1,16 @@
+igwn_auth_utils/__init__.py,sha256=BJh8t_Ce6YnaFlJ2yCR63_zQVomNp-5U-yY_NfPCvSA,614
+igwn_auth_utils/_version.py,sha256=g0RU_Fiae76hPEUjU6lGnapa9IZoqGcB4oFcTnsoMbM,142
+igwn_auth_utils/error.py,sha256=U8qopXtNQO_eQuowpDDT7IrdHV6BMAXndzOq-u9yYC4,284
+igwn_auth_utils/requests.py,sha256=CFDmyd34dneUNQs9qjiUAqNgCSq6t2mHeLCTduKa4js,10700
+igwn_auth_utils/scitokens.py,sha256=UNm43-dZgTbT9fbUCDlk2UbYREdo1F4ezDWlqOqMaww,6427
+igwn_auth_utils/x509.py,sha256=2vBnqX-k8C1HSBSBBwiYhabTM9j6UafBLHLZ7i8UmPc,5924
+igwn_auth_utils/tests/__init__.py,sha256=0ncER8oZsWZG78o7mahJhbAE8es-Rc_2V6rLKAFQoQU,217
+igwn_auth_utils/tests/conftest.py,sha256=F8ZmPmT77i9SqpTzu7zmSkpTF5sUzL0jCi8bN0KS2Bo,1149
+igwn_auth_utils/tests/test_requests.py,sha256=2ANWf3sL2rgElqjdwyXtYSQwYoS1k2SavqDebwf017Q,5982
+igwn_auth_utils/tests/test_scitokens.py,sha256=5liJLzLWDltVafpU6EV_vuZBsCEMKvRBAEqyqlmGHmM,7494
+igwn_auth_utils/tests/test_x509.py,sha256=E3-xadh2G_-qKNosX7-awEGm-SZZTCJcPYR72lGUZUU,5504
+igwn_auth_utils-0.2.0.dist-info/LICENSE,sha256=cB1E69Uayi_rZb4kNPYXVRlyzq2FUHip0k1-uCR-7dk,1526
+igwn_auth_utils-0.2.0.dist-info/METADATA,sha256=btR7PP693esHbxg3kpL5nwSjk8wfafJfxiz31P65TrQ,4199
+igwn_auth_utils-0.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+igwn_auth_utils-0.2.0.dist-info/top_level.txt,sha256=XWy5lNI4BfTKazHyShFGExzfmRvb4r8lZ4IpKGPyha4,16
+igwn_auth_utils-0.2.0.dist-info/RECORD,,
