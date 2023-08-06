@@ -1,0 +1,5 @@
+disnake
+requests
+asyncio
+colorama
+betterjsondb
