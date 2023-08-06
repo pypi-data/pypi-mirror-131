@@ -1,0 +1,4 @@
+[console_scripts]
+aggexif=aggexif.main:main
+sqlite=aggexif.sqlite_cache:main
+

@@ -1,0 +1,16 @@
+aggexif/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+aggexif/aggregator.py,sha256=G4IKczrrBnmkeq9WLI9gaNnfHZqByvd03x0dyAqcMKc,1493
+aggexif/exif_parser.py,sha256=OvMAZRB8i94uE5ieBOLZW25h5HDsaH8AE668xm2jirs,611
+aggexif/filter_cond.py,sha256=sSqceRoiXp8euVEzqFb4zqE5LPTwjypToBsCliX-Ak4,1419
+aggexif/group.py,sha256=zFCmwJmGojgwDtfeSRS5oCEsR6j3tb8-i7Ca9n41bAY,429
+aggexif/hdf5_exif_cache.py,sha256=L30P8Xy0hb2Mu8LKV3INUYPWkr-nIAEMxzX8apw5JZQ,980
+aggexif/hdf5_string_cache.py,sha256=Dd8TuG5B_k-MiXKMNjR03xvyqDuWudT3iSCif-zKru4,756
+aggexif/main.py,sha256=Ta4gw_l24RFg08tYTneA9jYtEyNTvE-pvx_jWKN3r90,2399
+aggexif/printer.py,sha256=PCo-UZ8uE3iTSONC74EQmRrvUsmhmhk9rzvPy7Haurs,1180
+aggexif/sqlite_cache.py,sha256=u1vXcopPnKhaiYaEPJEGCUh-EeaBv0HwwOnfpf4127g,2139
+aggexif/termgraph.py,sha256=vt_n2-StZsJNv8T2pmvp_yRuKcF10C-XpfdsW5i5EfE,584
+aggexif-0.3.0.dist-info/entry_points.txt,sha256=VbNOiBPvknI5mL3Y9_sin6GfK35QDQ1cIZhxhJpJ2FI,78
+aggexif-0.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+aggexif-0.3.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+aggexif-0.3.0.dist-info/METADATA,sha256=kXdpyTI2oAmg51lqNWyf16MI7gFgeXOLx_6f0M1M1Io,3323
+aggexif-0.3.0.dist-info/RECORD,,
