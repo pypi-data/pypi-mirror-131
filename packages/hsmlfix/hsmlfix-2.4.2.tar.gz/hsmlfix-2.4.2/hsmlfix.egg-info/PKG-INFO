@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: hsmlfix
+Version: 2.4.2
+Summary: HSML: An environment independent client to interact with the Hopsworks Model Registry
+Home-page: https://github.com/logicalclocks/machine-learning-api
+Author: Logical Clocks AB
+Author-email: robin@logicalclocks.com
+License: Apache License 2.0
+Download-URL: https://github.com/logicalclocks/machine-learning-api/releases/tag/2.4.2
+Keywords: Hopsworks,ML,Models,Machine Learning Models,Model Registry,TensorFlow,PyTorch,Machine Learning,MLOps,DataOps
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: docs
+License-File: LICENSE
+
+HSML Test
+
