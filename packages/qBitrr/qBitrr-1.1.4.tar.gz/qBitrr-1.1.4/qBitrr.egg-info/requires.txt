@@ -1,0 +1,8 @@
+Logbook==1.5.3
+colorama==0.4.4
+ffmpeg-python==0.2.0
+pathos==0.2.8
+peewee==3.14.7
+pyarr==2.0.6
+qbittorrent-api==2021.8.23
+requests==2.26.0
