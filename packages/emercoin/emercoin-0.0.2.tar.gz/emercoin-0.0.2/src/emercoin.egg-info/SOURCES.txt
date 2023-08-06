@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/bitcoinrpc/__init__.py
+src/bitcoinrpc/authproxy.py
+src/emercoin/__init__.py
+src/emercoin/models.py
+src/emercoin.egg-info/PKG-INFO
+src/emercoin.egg-info/SOURCES.txt
+src/emercoin.egg-info/dependency_links.txt
+src/emercoin.egg-info/top_level.txt
