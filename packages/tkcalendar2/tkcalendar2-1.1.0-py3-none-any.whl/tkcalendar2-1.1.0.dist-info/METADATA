@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: tkcalendar2
+Version: 1.1.0
+Summary: show a calendar in your tkinter application
+Home-page: UNKNOWN
+Author: Smart-Space
+Author-email: smart-space@qq.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pythonnet
+
+# tkcalendar2
+
+基于WinForms.MonthCalendar的tkinter富文本显示组件。
+
+> 目前仅提供基础显示功能。更多功能请调用`self.ca`实现。
+
+---
+
+# Dependence
+
+tkrichtext uses this package:
+
+- pythonnet(clr)
+
+---
+
+# Usage(TkCalendar Class)
+
+Demo:
+
+```python
+from tkinter import Tk
+from tkcalendar2 import TkCalendar
+
+a=Tk()
+a.geometry('600x600+5+5')
+
+ca=TkCalendar(a,500,500)
+ca.pack(fill='both',expand='True')
+ca.date_selected(print)
+ca.date_changed(print)
+ca.max_selection_count(20)
+
+a.mainloop()
+```
+
+date_selected(func)::日期被选择时回调的函数。
+
+> func(this,start_day,end_day)
+
+date_changed(func)::日历被单击选中时回调的函数。
+
+> func(this,day)
+
+max_selection_count(days)::最大选择天数。
+
+
