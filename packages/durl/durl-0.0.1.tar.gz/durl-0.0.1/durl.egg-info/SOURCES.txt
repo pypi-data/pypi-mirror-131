@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+durl/__init__.py
+durl/__main__.py
+durl/util.py
+durl.egg-info/PKG-INFO
+durl.egg-info/SOURCES.txt
+durl.egg-info/dependency_links.txt
+durl.egg-info/entry_points.txt
+durl.egg-info/top_level.txt

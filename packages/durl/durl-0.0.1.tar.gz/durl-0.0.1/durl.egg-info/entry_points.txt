@@ -1,0 +1,3 @@
+[console_scripts]
+durl = durl.__main__:main
+
