@@ -1,0 +1,8 @@
+README.md
+lark_dynamic.py
+setup.py
+lark_dynamic.egg-info/PKG-INFO
+lark_dynamic.egg-info/SOURCES.txt
+lark_dynamic.egg-info/dependency_links.txt
+lark_dynamic.egg-info/requires.txt
+lark_dynamic.egg-info/top_level.txt
