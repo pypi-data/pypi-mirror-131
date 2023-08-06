@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        nasawildfires=nasa_wildfires.cli:cmd
+    
