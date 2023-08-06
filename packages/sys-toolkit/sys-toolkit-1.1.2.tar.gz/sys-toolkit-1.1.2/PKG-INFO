@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sys-toolkit
+Version: 1.1.2
+Summary: Classes for operating system utilities
+Home-page: https://github.com/hile/sys-toolkit
+Author: Ilkka Tuohela
+Author-email: hile@iki.fi
+License: PSF
+Keywords: python operating system utility classes
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System
+Requires-Python: >3.6.0
+
+UNKNOWN
+
