@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+galeshapley/__init__.py
+galeshapley/algorithm.py
+galeshapley.egg-info/PKG-INFO
+galeshapley.egg-info/SOURCES.txt
+galeshapley.egg-info/dependency_links.txt
+galeshapley.egg-info/top_level.txt
+tests/__init__.py
+tests/test_gale_shapley.py
+tests/test_multi_gale_shapley.py
