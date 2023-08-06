@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+brickhillapi/__init__.py
+brickhillapi.egg-info/PKG-INFO
+brickhillapi.egg-info/SOURCES.txt
+brickhillapi.egg-info/dependency_links.txt
+brickhillapi.egg-info/top_level.txt

@@ -1,0 +1,25 @@
+<p align="center" width="100%">
+    <img src="https://media.discordapp.net/attachments/521031779818143744/921826581360558080/brickhillapi.png?width=1202&height=500" alt="ro.py" height="200em" />
+    <br />
+</p>
+
+# Overview
+Brick Hill API is an easy way to access the Brick Hill API. 
+
+# Installation
+To install brickhillapi from PyPI, you can install with pip:
+```
+pip install brickhillapi
+```
+# Documentation
+Here is a list of functions and their purpose.
+- `userId(username)` - Get the ID of a user with their username.
+- `name(id)` - Get the username of a user with their ID.
+- `lastOnline(id)` - Get the last time a user was online.
+- `created(id)` - Get the date an account was created.
+- `description(id)` - Get the description of a user.
+- `awards(id)` - Get the awards a user has.
+- `updatedItem(id)` - Get the last updated item.
+- `newestItem(id)` - Get the newest item.
+- `unreleasedItems(min_id, max_id)` - Check for unreleased items with an ID between the minimum and maximum.
+- `avatar(id)` - Get the avatar of a user.
