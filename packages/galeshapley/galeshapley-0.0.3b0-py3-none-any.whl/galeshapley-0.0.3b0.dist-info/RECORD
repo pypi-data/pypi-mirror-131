@@ -1,0 +1,9 @@
+galeshapley/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+galeshapley/algorithm.py,sha256=aRmO7UJnb-3AsM6-QVig97B1EDXiWoe-F1Y8quaHIY0,844
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_gale_shapley.py,sha256=3TSCE63R_XFVEcCTUDnUtd1eY4hf1I_lvKUXHqKeqEE,2212
+galeshapley-0.0.3b0.dist-info/LICENSE.txt,sha256=EKXaDMecjp6DutgWj7Z-WjzV0johgEr8hbNjFH3igRU,1050
+galeshapley-0.0.3b0.dist-info/METADATA,sha256=z65FsdHf_4xHvY0E7kyzoVig6_tn5qq_4sytb0EK9QY,1634
+galeshapley-0.0.3b0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+galeshapley-0.0.3b0.dist-info/top_level.txt,sha256=lDzSnoahsDP_2BPTjbF2aZoHc524DbnQDvrf19SkyBE,18
+galeshapley-0.0.3b0.dist-info/RECORD,,
