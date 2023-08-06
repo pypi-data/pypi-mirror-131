@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+ncicpps3/__init__.py
+ncicpps3/s3_demo.py
+ncicpps3.egg-info/PKG-INFO
+ncicpps3.egg-info/SOURCES.txt
+ncicpps3.egg-info/dependency_links.txt
+ncicpps3.egg-info/top_level.txt
