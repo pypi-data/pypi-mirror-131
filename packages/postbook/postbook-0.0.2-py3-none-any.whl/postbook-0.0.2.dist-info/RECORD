@@ -1,0 +1,15 @@
+postbook/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+postbook/get_list_of_files.py,sha256=DnIs0Sihedz3VOJDZqulgBJKujOHEfnkLg6ifOkcaQE,169
+postbook/main.py,sha256=GJahhb_ItcIfl7Uy5TFAvpLKxehj_YhackI9k8AwpFU,2753
+postbook/post.py,sha256=zcfK2TLNvLy5RCO98szE2YRRotCdCRkvt1PKXyXlUr0,298
+postbook/send_files.py,sha256=OFnPfceeycXjOLf6C2tEpwotnSNHqt4RVCHXAbsolwg,533
+postbook/setting_the_host.py,sha256=T8uH6v-DCX8IySRGQL5ng3y6yspVqTh5xk_DiJ5sUhM,1774
+postbook/update_index.py,sha256=x1rInrHOmaAXmd1sOn1DlZAx7KhLY6GTN5bpHGE6MC4,1681
+postbook/write_html.py,sha256=lSBdRD2Xyr86iy7qi05ZUyTJFLUlna6MG7krfSSMciI,658
+postbook/templates/index.jinja,sha256=Kpu1psFMS-ZDFI9QhfwYkNSmgx9LxDAOGvt9KyhdZok,627
+postbook-0.0.2.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+postbook-0.0.2.dist-info/METADATA,sha256=jTLCfjmCo91paoQ8tYNz2hM6VhU3vU-5Vp875phq-rM,703
+postbook-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+postbook-0.0.2.dist-info/entry_points.txt,sha256=sH6BhXquHSj_NniXAl6oJ_4L0NMD0vqMW8c7bcTCXBo,49
+postbook-0.0.2.dist-info/top_level.txt,sha256=CV7Qvdoz2dbbM8xwinPZKAZajcUDQW7cq94HdaNZPZk,9
+postbook-0.0.2.dist-info/RECORD,,
