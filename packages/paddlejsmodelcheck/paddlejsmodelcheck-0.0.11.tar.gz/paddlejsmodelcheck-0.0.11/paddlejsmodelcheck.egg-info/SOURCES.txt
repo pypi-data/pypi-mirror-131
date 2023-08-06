@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+check/check.py
+check/ops.txt
+paddlejsmodelcheck.egg-info/PKG-INFO
+paddlejsmodelcheck.egg-info/SOURCES.txt
+paddlejsmodelcheck.egg-info/dependency_links.txt
+paddlejsmodelcheck.egg-info/entry_points.txt
+paddlejsmodelcheck.egg-info/requires.txt
+paddlejsmodelcheck.egg-info/top_level.txt
