@@ -1,0 +1,10 @@
+classic-app-layer~=0.0.1
+backports.cached-property~=1.0.1
+
+[dev]
+pytest~=6.2.2
+pytest-cov~=2.11.1
+twine~=3.3.0
+build~=0.2.1
+isort~=5.8.0
+yapf~=0.31.0
