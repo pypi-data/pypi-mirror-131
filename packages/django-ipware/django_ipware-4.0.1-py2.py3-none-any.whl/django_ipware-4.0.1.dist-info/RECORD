@@ -1,0 +1,11 @@
+ipware/__init__.py,sha256=NAH_9VF8P_Ebp_BQwj7F6gZG2l6O3EcCSsdv_soptA4,87
+ipware/__version__.py,sha256=3jiOnO2rASOc6rfmdpm2hfCW2y6Yo0jgfR-O_i5KpQ4,319
+ipware/apps.py,sha256=da-fsSAzNu9h0sKYnA1OWezW3bHNIesTIhC9J6UmZW8,250
+ipware/defaults.py,sha256=szpxdOdZKvjYoTGZaLyAiYVkf1zvx4RfOpHZUkR0-ao,3637
+ipware/ip.py,sha256=73tePpuDwWOP3prwOmKBOneWetxtH7gUFcYzDmACZx0,2065
+ipware/utils.py,sha256=iW5HXg1pLKvFETtAbXr9x0KEhK7LymkKkYekYxyvy_k,3009
+django_ipware-4.0.1.dist-info/LICENSE,sha256=MLpNxpqfTc4TLdcDk3x6k7Vz4lJGBNLV-SxQZlFMDU8,1103
+django_ipware-4.0.1.dist-info/METADATA,sha256=P0jVTH6niUrK6pHG6VLEOoBekxUvGrrWJHdhRGRpchQ,10062
+django_ipware-4.0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+django_ipware-4.0.1.dist-info/top_level.txt,sha256=b14WbqBzwJvbNcvi10o0hCgEZxc89c5RmfVOtUnx2AY,7
+django_ipware-4.0.1.dist-info/RECORD,,
