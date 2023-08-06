@@ -1,0 +1,1 @@
+from graphite_feeder.conf.logging import default_logging_configuration
