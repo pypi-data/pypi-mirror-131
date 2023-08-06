@@ -1,0 +1,329 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "definitions": {
+    "master_schema": {
+      "type": "object",
+      "description": "Indications for the master",
+      "properties": {
+        "algorithm-name": {
+          "description": "The enhancement algorithm to use over the original\nimage.\n\nAdmisible values are:\n\n- `edsr-x4`: Increase resolution of the image 4 times\n.  Use this value of the enumeration if you want to produce\n  up-scaled versions of images starting from a lower resolution\n  image which is the best you have available.\n- `identity`: Do not change the image, use the original value.\n  This is the algorithm to use if you are starting from a\n  high-resolution image and want to shrink it down to some\n  manegeable size.\n- `deblur`: Use deep neural network for removing artifact from\n  source image\n",
+          "enum": [
+            "edsr-x4",
+            "edsr-x4-conditional",
+            "identity"
+          ],
+          "type": "string"
+        },
+        "algorithm-config": {
+          "type": "object"
+        }
+      }
+    },
+      "encoder_schema": {
+        "type": "object",
+        "description": "Indications for the Shifter",
+        "properties": {
+          "algorithm-name": {
+            "type": "string",
+            "enum": [
+              "default",
+              "alg-preserve-quality-01"
+            ]
+          },
+          "quality-measure": {
+            "type": "string",
+            "enum": [
+              "default",
+              "ssim",
+              "fsim-c",
+              "asymmetric-fsym-c",
+              "perceptual-sc",
+              "teal-ssim",
+              "teal-weighted-ssim",
+              "teal-weighted-ssim-mse",
+              "pearl-ssim",
+              "pearl-weighted-ssim",
+              "pearl-weighted-ssim-mse",
+              "pearl-ssim-flex"
+            ]
+          },
+          "qual-threshold": {
+            "type": "number",
+            "minimum": 0.25,
+            "maximum": 1.0
+          },
+          "max_overhead": {
+            "type": "number",
+            "minimum": 0.1,
+            "maximum": 512,
+            "default": 0.99,
+            "description": "Produces a `deny` status response if the resulting image is\nbigger than the original image times the value of this parameter.\n"
+          }
+        }
+      },
+      "shifter_schema": {
+        "properties": {
+          "steps": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$schema": "http://json-schema.org/draft-07/schema#",
+                  "type": "object",
+                  "required": [
+                    "mh-padding-to"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "mh-padding-to": {
+                      "type": "object",
+                      "description": "pad image with a color",
+                      "additionalProperties": false,
+                      "required": [
+                        "width",
+                        "height"
+                      ],
+                      "properties": {
+                        "width": {
+                          "type": "integer",
+                          "minimum": 1,
+                          "maximum": 3192,
+                          "description": "Target width, in pixels"
+                        },
+                        "height": {
+                          "type": "integer",
+                          "minimum": 1,
+                          "maximum": 3192,
+                          "description": "Target height, in pixels"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "$schema": "http://json-schema.org/draft-07/schema#",
+                  "type": "object",
+                  "properties": {
+                    "scale-to": {
+                      "oneOf": [
+                        {
+                          "type": "object",
+                          "description": "scale to width op. Scaling is proportional",
+                          "minProperties": 1,
+                          "additionalProperties": false,
+                          "properties": {
+                            "width": {
+                              "type": "integer",
+                              "minimum": 1,
+                              "maximum": 3192,
+                              "description": "New width, in pixels"
+                            },
+                            "height": {
+                              "type": "integer",
+                              "minimum": 1,
+                              "maximum": 3192,
+                              "description": "New height, in pixels"
+                            }
+                          }
+                        },
+                        {
+                          "type": "object",
+                          "required": [
+                            "max-width",
+                            "max-height"
+                          ],
+                          "additionalProperties": false,
+                          "description": "Scale to the biggest size so that `max-width` and `max-height` are respected\n",
+                          "properties": {
+                            "crop": {
+                              "type": "boolean",
+                              "description": "crop image instead of scaling it"
+                            },
+                            "max-width": {
+                              "type": "integer",
+                              "minimum": 1,
+                              "maximum": 3192,
+                              "description": "Max width, in pixels"
+                            },
+                            "max-height": {
+                              "type": "integer",
+                              "minimum": 1,
+                              "maximum": 3192,
+                              "description": "Max height, in pixels"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "$schema": "http://json-schema.org/draft-07/schema#",
+                  "type": "object",
+                  "properties": {
+                    "focal-point-crop": {
+                      "type": "object",
+                      "properties": {
+                        "focal-point": {
+                          "type": "object",
+                          "properties": {
+                            "x": {
+                              "oneOf": [
+                                {
+                                  "type": "string",
+                                  "pattern": "[0-9]+(\\.[0-9]+)?\\s*%"
+                                },
+                                {
+                                  "type": "string",
+                                  "pattern": "([0-9]+)\\s*px"
+                                }
+                              ]
+                            },
+                            "y": {
+                              "oneOf": [
+                                {
+                                  "type": "string",
+                                  "pattern": "[0-9]+(\\.[0-9]+)?\\s*%"
+                                },
+                                {
+                                  "type": "string",
+                                  "pattern": "([0-9]+)\\s*px"
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "x",
+                            "y"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "focus-detection-algorithm": {
+                          "description":"Algorithm to auto-detect the focal point on an image. It uses the skimage.feature.corner_peaks method: https://scikit-image.org/docs/dev/api/skimage.feature.html#skimage.feature.corner_peaks of scikit to detect the featured points on the image. It basically finds peaks in corner measure response image. Our algorithm then calculates the median from those featured coordinates and returns them.",
+                          "enum": [
+                            "generic_features_01"
+                          ],
+                          "type": "string"
+                      },
+                      "crop-rims": {
+                        "type": "object",
+                        "anyOf": [
+                          {
+                            "properties": {
+                              "inner-left": {
+                                "type": "string",
+                                "pattern": "([0-9]+(\\.[0-9]+)?)\\s*(%)?\\s*(of|times)+\\s*(total-width|total-height|distance-to-focus)+$"
+                              },
+                              "inner-top": {
+                                "type": "string",
+                                "pattern": "([0-9]+(\\.[0-9]+)?)\\s*(%)?\\s*(of|times)+\\s*(total-width|total-height|distance-to-focus)+$"
+                              },
+                              "inner-right": {
+                                "type": "string",
+                                "pattern": "([0-9]+(\\.[0-9]+)?)\\s*(%)?\\s*(of|times)+\\s*(total-width|total-height|distance-to-focus)+$"
+                              },
+                              "inner-bottom": {
+                                "type": "string",
+                                "pattern": "([0-9]+(\\.[0-9]+)?)\\s*(%)?\\s*(of|times)+\\s*(total-width|total-height|distance-to-focus)+$"
+                              },
+                              "outer-left": {
+                                "type": "string",
+                                "pattern": "([0-9]+(\\.[0-9]+)?)\\s*(%)?\\s*(of|times)+\\s*(total-width|total-height|distance-to-focus)+$"
+                              },
+                              "outer-top": {
+                                "type": "string",
+                                "pattern": "([0-9]+(\\.[0-9]+)?)\\s*(%)?\\s*(of|times)+\\s*(total-width|total-height|distance-to-focus)+$"
+                              },
+                              "outer-right": {
+                                "type": "string",
+                                "pattern": "([0-9]+(\\.[0-9]+)?)\\s*(%)?\\s*(of|times)+\\s*(total-width|total-height|distance-to-focus)+$"
+                              },
+                              "outer-bottom": {
+                                "type": "string",
+                                "pattern": "([0-9]+(\\.[0-9]+)?)\\s*(%)?\\s*(of|times)+\\s*(total-width|total-height|distance-to-focus)+$"
+                              },
+                              "additionalProperties": false
+                            }
+                          }
+                        ]
+                      },
+                      "total-width": {
+                        "oneOf": [
+                          {
+                            "type": "string",
+                            "pattern": "[0-9]+(\\.[0-9]+)?\\s*%"
+                          },
+                          {
+                            "type": "string",
+                            "pattern": "([0-9]+)\\s*px"
+                          },
+                          {
+                            "type": "number",
+                            "pattern": "^([0-9]+(?:\\.[0-9]+)?)$"
+                          }
+                        ]
+                      },
+                      "total-height": {
+                        "oneOf": [
+                          {
+                            "type": "string",
+                            "pattern": "([0-9]+(?:\\.[0-9]+)?)\\s*%"
+                          },
+                          {
+                            "type": "string",
+                            "pattern": "([0-9]+)\\s*px"
+                          },
+                          {
+                            "type": "number",
+                            "pattern": "^([0-9]+(?:\\.[0-9]+)?)$"
+                          }
+                        ]
+                      },
+                      "distance-to-focus": {
+                        "oneOf": [
+                          {
+                            "type": "string",
+                            "pattern": "([0-9]+(?:\\.[0-9]+)?)\\s*%"
+                          },
+                          {
+                            "type": "string",
+                            "pattern": "([0-9]+)\\s*px"
+                          },
+                          {
+                            "type": "string",
+                            "pattern": "^([0-9]+(?:\\.[0-9]+)?)$"
+                          }
+                        ]
+                        },
+                        "additionalProperties": false
+                      },
+                      "additionalProperties": false
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            }
+          }
+        }
+      }
+  },
+  "anyOf": [
+    {"required": ["master"]},
+    {"required": ["shifter"]},
+    {"required": ["encoder"]}
+  ],
+  "properties": {
+    "master": {
+      "$ref": "#/definitions/master_schema"
+    },
+    "encoder": {
+      "$ref": "#/definitions/encoder_schema"
+    },
+    "shifter": {
+      "$ref": "#/definitions/shifter_schema"
+    }
+  },
+  "additionalProperties": false
+}
