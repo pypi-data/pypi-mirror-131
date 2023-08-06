@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: energy-monitor
+Version: 0.7.5
+Summary: CPU energy monitoring and displaying'
+Home-page: UNKNOWN
+Author: Matt Clifford
+Author-email: matt.clifford@bristol.ac.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: pandas
+Requires-Dist: dash
+Requires-Dist: plotly
+Requires-Dist: psutil
+Requires-Dist: dash-bootstrap-components
+
+UNKNOWN
+
