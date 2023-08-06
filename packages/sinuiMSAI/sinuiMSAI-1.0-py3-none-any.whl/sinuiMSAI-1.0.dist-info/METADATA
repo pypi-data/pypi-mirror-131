@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sinuiMSAI
+Version: 1.0
+Summary: sinui middle school AIspeaker tool
+Home-page: UNKNOWN
+Author: SilverPage
+Author-email: SilverPage80@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: typing
+Requires-Dist: pywin32
+Requires-Dist: pyaudio
+Requires-Dist: keyboard
+Requires-Dist: clipboard
+Requires-Dist: speechrecognition
+Requires-Dist: googletrans
+Requires-Dist: playsound
+Requires-Dist: pipwin
+
+UNKNOWN
+
