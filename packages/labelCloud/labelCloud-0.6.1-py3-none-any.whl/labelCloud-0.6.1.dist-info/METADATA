@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: labelCloud
+Version: 0.6.1
+Summary: A lightweight tool for labeling 3D bounding boxes in point clouds.
+Home-page: https://github.com/ch-sa/labelCloud
+Author: Christoph Sager
+Author-email: christoph.sager@gmail.com
+License: GNU Geneal Public License v3.0
+Keywords: labelCloud
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+License-File: LICENSE
+Requires-Dist: numpy (~=1.21.2)
+Requires-Dist: open3d (~=0.13.0)
+Requires-Dist: PyOpenGL (~=3.1.5)
+Requires-Dist: PyQt5 (~=5.15.4)
+Provides-Extra: tests
+Requires-Dist: pytest (~=6.2.4) ; extra == 'tests'
+Requires-Dist: pytest-qt (~=4.0.2) ; extra == 'tests'
+
+Please check https://github.com/ch-sa/labelCloud for more information.
+
