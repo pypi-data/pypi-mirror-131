@@ -1,0 +1,6 @@
+sodasql/dialects/athena_dialect.py,sha256=0moOMrlHnw4j-qbkL5_eUall2JYvWfD5Q7jNlktqzHI,7144
+sodasql/scan/aws_credentials.py,sha256=7CuiCaSEU5NTvX_wfCHiGvJjxWURIYfPXNX7wtvvSkM,3122
+soda_sql_athena-2.1.1.dist-info/METADATA,sha256=tqFMSZl0UFd0XxkZZcTx6qpLRsiO2k9MQIahI22uyaw,218
+soda_sql_athena-2.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+soda_sql_athena-2.1.1.dist-info/top_level.txt,sha256=iWRgaTzdfqDF5qGyrChKrnJh7tIweOrFM4J4_Lun_Xc,8
+soda_sql_athena-2.1.1.dist-info/RECORD,,
