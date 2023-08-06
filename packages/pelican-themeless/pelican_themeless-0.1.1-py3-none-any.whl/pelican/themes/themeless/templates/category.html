@@ -1,0 +1,5 @@
+{% set article_list = articles_page.object_list %}
+{% set title = category.name %}
+{% set current_page = articles_page %}
+{% set paginator = articles_paginator %}
+{% extends "include/article_list_page.html" %}

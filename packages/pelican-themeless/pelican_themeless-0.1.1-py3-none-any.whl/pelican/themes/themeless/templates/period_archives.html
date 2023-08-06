@@ -1,0 +1,10 @@
+{% set article_list = dates %}
+{% if period|length == 1 %}
+  {% set title = "Archives (Year " ~ period[0] ~ ")"  %}
+{% elif period|length == 2 %}
+  {% set title = "Archives (" ~ period[0] ~ " " ~ period[1] ~ ")" %}
+{% else %}
+  {% set title = "Archives (" ~ period[0] ~ " " ~ period[1]
+                                          ~ " " ~ period[2] ~ ")" %}
+{% endif %}
+{% extends "include/article_list_page.html" %}

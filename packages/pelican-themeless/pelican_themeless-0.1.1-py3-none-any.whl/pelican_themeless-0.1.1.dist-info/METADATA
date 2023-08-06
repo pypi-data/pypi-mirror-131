@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pelican-themeless
+Version: 0.1.1
+Summary: A theme that leaves theming to the browser
+Home-page: https://github.com/BoniLindsley/pelican-themeless
+Author: Boni Lindsley
+Author-email: boni@lindsley.xyz
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pelican (>=4.7.1)
+Provides-Extra: dev
+Requires-Dist: black (>=21.9b0) ; extra == 'dev'
+Requires-Dist: mypy (>=0.910) ; extra == 'dev'
+Requires-Dist: pytest (>=6.2.5) ; extra == 'dev'
+Requires-Dist: tox (>=3.24.4) ; extra == 'dev'
+
+# Pelican Themeless
+
+A theme that leaves theming to the browser
+
+

@@ -1,0 +1,20 @@
+{# Requires variable `article` to be defined. #}
+<article>
+  <header><h1><a href="{{ SITEURL }}/{{ article.url }}">
+    {{ article.title }}
+  </a></h1></header>
+  {{ article.summary }}
+  {% if article.date or article.authors %}
+    <footer>
+      {% if article.locale_date %}
+        <time>Created: {{ article.locale_date }}.</time>
+      {% endif %}
+      {% if article.locale_modified %}
+        <time>Modified: {{ article.locale_modified }}.</time>
+      {% endif %}
+      {% for author in article.authors %}
+        <a href="{{ SITEURL }}/{{ author.url }}">{{ author.name }}</a>
+      {% endfor %}
+    </footer>
+  {% endif %}
+</article>

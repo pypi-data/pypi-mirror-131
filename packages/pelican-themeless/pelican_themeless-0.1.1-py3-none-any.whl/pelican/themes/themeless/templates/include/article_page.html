@@ -1,0 +1,7 @@
+{# Requires variable `article` to be defined. #}
+{% set title = article.title %}
+{% extends "include/base.html" %}
+
+{% block body %}
+  {% include "include/article.html" %}
+{% endblock %}

@@ -1,0 +1,42 @@
+{# Requires variables `current_page` and `paginator` to be defined. #}
+{% if current_page.has_other_pages() %}
+  <nav>
+    {% macro page_item(number) %}
+      <li><a href="{{ SITEURL }}/{{ paginator.page(number).url }}">
+          {{ number }}
+      </a></li>
+    {% endmacro %}
+    Go to page
+    <ul>
+      {% if current_page.has_previous() %}
+        {% set previous_page_number
+               = current_page.previous_page_number() %}
+        {% if previous_page_number == 1 %}
+          {{ page_item(1) }}
+        {% elif previous_page_number == 2 %}
+          {{ page_item(1) }}
+          {{ page_item(2) }}
+        {% else %}
+          {{ page_item(1) }}
+          <li>…</li>
+          {{ page_item(previous_page_number) }}
+        {% endif %}
+      {% endif %}
+      <li>{{ current_page.number }}</li>
+      {% if current_page.has_next() %}
+        {% set last_page_number = paginator.num_pages %}
+        {% set next_page_number = current_page.next_page_number() %}
+        {% if next_page_number == last_page_number %}
+          {{ page_item(next_page_number) }}
+        {% elif next_page_number + 1 == last_page_number %}
+          {{ page_item(next_page_number) }}
+          {{ page_item(next_page_number + 1) }}
+        {% else %}
+          {{ page_item(next_page_number) }}
+          <li>…</li>
+          {{ page_item(last_page_number) }}
+        {% endif %}
+      {% endif %}
+    <ul>
+  </nav>
+{% endif %}
