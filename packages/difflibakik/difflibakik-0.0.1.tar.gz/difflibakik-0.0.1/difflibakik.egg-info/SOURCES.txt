@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+difflibakik.egg-info/PKG-INFO
+difflibakik.egg-info/SOURCES.txt
+difflibakik.egg-info/dependency_links.txt
+difflibakik.egg-info/top_level.txt

@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: difflibakik
+Version: 0.0.1
+Summary: A library for the subject "Differential Equations"
+Home-page: UNKNOWN
+Author: Akerke Zhumabekova
+Author-email: ak_zhumabekova@kbtu.kz
+License: MIT
+Keywords: differential equations
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+This is a library for the subject 'Differential Equations'
+
+----------------------------------------------------------
+
+Short documentation:
+
+function - function, which we want to solve
+h - step
+x0, y0 - initial condition
+
+----------------------------------------------------------
+
+a,b - range
+n - number of iterations
+
+----------------------------------------------------------
+
+- euler(function,h,x0,y0)
+
+- improved_euler(function,h,x0,y0)
+
+- runge_kutta2(function,h,x0,y0)
+
+- runge_kutta3(function,h,x0,y0)
+
+- runge_kutta4(function,h,x0,y0)
+
+- simpson_rule(function,a,b,n,rng=[],result=0)
+
+- trapezoidal_rule(function,a,b,n,rng=[],result=0)
+
+Change Log
+==========
+
+0.0.1 (17/12/2021)
+------------------
+- First Release
+
