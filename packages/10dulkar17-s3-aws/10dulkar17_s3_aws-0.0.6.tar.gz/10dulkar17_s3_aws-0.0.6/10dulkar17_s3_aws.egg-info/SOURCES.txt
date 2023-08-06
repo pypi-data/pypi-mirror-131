@@ -1,0 +1,9 @@
+README.md
+setup.py
+10dulkar17_s3_aws/__init__.py
+10dulkar17_s3_aws.egg-info/PKG-INFO
+10dulkar17_s3_aws.egg-info/SOURCES.txt
+10dulkar17_s3_aws.egg-info/dependency_links.txt
+10dulkar17_s3_aws.egg-info/requires.txt
+10dulkar17_s3_aws.egg-info/top_level.txt
+10dulkar17_s3_aws/sdk/wallpaper_s3_client.py
