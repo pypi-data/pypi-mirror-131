@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+fiddup/__init__.py
+fiddup/__main__.py
+fiddup/constants.py
+fiddup/fiddup.py
+fiddup/result.py
+fiddup/views.py
+fiddup.egg-info/PKG-INFO
+fiddup.egg-info/SOURCES.txt
+fiddup.egg-info/dependency_links.txt
+fiddup.egg-info/entry_points.txt
+fiddup.egg-info/requires.txt
+fiddup.egg-info/top_level.txt
