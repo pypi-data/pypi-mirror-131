@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+setup.cfg
+setup.py
+gdb_call_lambda/__init__.py
+gdb_call_lambda/py.typed
+gdb_call_lambda.egg-info/PKG-INFO
+gdb_call_lambda.egg-info/SOURCES.txt
+gdb_call_lambda.egg-info/dependency_links.txt
+gdb_call_lambda.egg-info/top_level.txt
+gdb_call_lambda.egg-info/zip-safe
+test/a.cpp
+test/test.py
+test/test.sh
