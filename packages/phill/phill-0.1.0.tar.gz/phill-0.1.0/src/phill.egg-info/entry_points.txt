@@ -1,0 +1,5 @@
+[pytest11]
+pyside6 = phill.pytest.PySide6.QtCore [pyside6]
+pyside6_qtgui = phill.pytest.PySide6.QtGui [pyside6]
+pyside6_qtwidgets = phill.pytest.PySide6.QtWidgets [pyside6]
+

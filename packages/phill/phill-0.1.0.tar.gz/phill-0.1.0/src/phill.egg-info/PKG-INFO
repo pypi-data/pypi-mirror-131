@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: phill
+Version: 0.1.0
+Summary: Fills missing functionalities in dependencies
+Home-page: UNKNOWN
+Author: Boni Lindsley
+Author-email: boni@lindsley.xyz
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: PySide6
+License-File: LICENSE.txt
+
+# phill
+
+Fills missing functionalities in dependencies
+
+
