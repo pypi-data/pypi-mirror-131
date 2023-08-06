@@ -1,0 +1,17 @@
+aiosql_mysql/__init__.py,sha256=cKV4p7uX2eB_3mvLTekQ6bVptmyzIhaQGd-uUioJP0Q,117
+aiosql_mysql/utilities.py,sha256=75mujBIcTPE4NIhVT8b26295Rgn2EbXgsbjZ9goNFFc,407
+aiosql_mysql/adapters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiosql_mysql/adapters/asyncmy.py,sha256=qmwjCQeDkZZg-B3fTYn8IRLDz2zzvaDBIQn7nQfTsIY,2637
+aiosql_mysql/adapters/pymysql.py,sha256=kBKg-TCU1jKUj-ns2fOAsfvLrBERa0YDo0lM7DYnHkU,2369
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/asyncmy_fixture.py,sha256=3QjmksGmMq3NzKT4GxOywuEfIMrGUpBfJJOaczORCQ4,935
+tests/docker_fixture.py,sha256=lQbqHtWjQUrsAzHYvwMlMS9C_2t4pWFp4bZST1NAHnQ,1222
+tests/pymysql_fixture.py,sha256=D_Er-R7yG_Ls9UNcJfjV5sAeTatmMC-SpwrEkp59rYA,920
+tests/test_asyncmy.py,sha256=I13ZGQTzQg_caegNcvzV3dNL_AalT1CkjhEL-zZ0SDI,246
+tests/test_pymysql.py,sha256=F13zSFSFlVpgAMClmKW_VLbBUwgxMqFTe7hzLO08R7U,1705
+tests/test_utilities.py,sha256=LLGzIzMpcE9XU7Fo3S4Arq0ynx1jms-F1iIHugaYr3w,216
+aiosql_mysql-0.0.1a1.dist-info/LICENSE,sha256=gTwXHRgv2X7JYVJzyAeHgw2C0nqBr9jBlN9JSH44Gp8,1093
+aiosql_mysql-0.0.1a1.dist-info/METADATA,sha256=veyNNrmexZiwxr3uYpes74Dp5rd3C-T0M5Prkixm5Ig,8619
+aiosql_mysql-0.0.1a1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aiosql_mysql-0.0.1a1.dist-info/top_level.txt,sha256=rnWUe65WlBQCP7dTR7n1JAe1SE5uYqJ5qvpcl0Bp4TA,19
+aiosql_mysql-0.0.1a1.dist-info/RECORD,,
