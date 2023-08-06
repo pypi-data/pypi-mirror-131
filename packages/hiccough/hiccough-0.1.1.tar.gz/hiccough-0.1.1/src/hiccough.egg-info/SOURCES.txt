@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/hiccough/__init__.py
+src/hiccough/conftest.py
+src/hiccough.egg-info/PKG-INFO
+src/hiccough.egg-info/SOURCES.txt
+src/hiccough.egg-info/dependency_links.txt
+src/hiccough.egg-info/entry_points.txt
+src/hiccough.egg-info/top_level.txt
+test/test_main.py
