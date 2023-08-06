@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: trabalho-jeansilva-converter-csv-json
+Version: 0.1.5
+Summary: Função de converter arquivo csv para json, e json para csv.
+Author: Jean Silva
+Author-email: JeanSilvadSantos@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: bpython (>=0.22.1,<0.23.0)
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: path (>=16.2.0,<17.0.0)
