@@ -1,0 +1,8 @@
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+h5py
+scikit-learn
+scikit-image
