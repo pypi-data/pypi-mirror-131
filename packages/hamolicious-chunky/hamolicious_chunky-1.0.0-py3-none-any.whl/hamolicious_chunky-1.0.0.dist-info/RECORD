@@ -1,0 +1,9 @@
+chunky/__init__.py,sha256=_xaOo83HvUuaawU5tb9VnpTjIOYO4CJeDoJ-6YXgMpI,91
+chunky/chunk.py,sha256=5zB_r63h7gpHeHc9Vi7GBF0ORdxcY83VnP1l0wg8e7k,180
+chunky/errors.py,sha256=J1B4HQIKS7CTxeWCOstyuULjh6bNwRDDHBLmkw1a5BY,45
+chunky/world.py,sha256=nTHhTiCGvfoQa0tfc0D_DERFdMN7198-kOUtzhwP7hs,2076
+hamolicious_chunky-1.0.0.dist-info/LICENCE,sha256=YkhBAIYGxKexkJ-fj_95QcfPJM9c0XOg-IpV5PfwwlU,485
+hamolicious_chunky-1.0.0.dist-info/METADATA,sha256=DyjDGz-1_-ine8dVmbgnFu7A1a9-vEfqt4B7ThuUkZM,906
+hamolicious_chunky-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+hamolicious_chunky-1.0.0.dist-info/top_level.txt,sha256=ldhEQXm0KOzFrkTlVSELj-yKULwyHdCskYc93dJdooM,7
+hamolicious_chunky-1.0.0.dist-info/RECORD,,

@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: hamolicious-chunky
+Version: 1.0.0
+Summary: A chunking system for game development
+Home-page: https://github.com/hamolicious/Chunky
+Author: Hamolicous
+Author-email: hamolicious@protonmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/hamolicious/Chunky/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+![is_maintained](https://camo.githubusercontent.com/6e4da91cb02711349e6b9d0aba6a767362818c1d17891a02f06fded4415f6172/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d61696e7461696e65642533462d7965732d677265656e2e737667)
+![pypi_version](https://img.shields.io/badge/pypi-v1.0.0-%233775A9)
+
+# Chunky
+A chunking system for game development
+
