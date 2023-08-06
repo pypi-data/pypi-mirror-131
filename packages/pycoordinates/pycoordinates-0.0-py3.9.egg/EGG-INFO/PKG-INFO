@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pycoordinates
+Version: 0.0
+Summary: Create and manipulate coordinates in vector bases
+Home-page: UNKNOWN
+Author: pycoordinates contributors
+Author-email: gpulkin@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+License-File: AUTHORS.md
+
+pycoordinates
+=============
+
+A tiny implementation of typical coordinate transformations used in physics, materials science,
+and quantum chemistry.
+
