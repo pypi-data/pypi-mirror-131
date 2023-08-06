@@ -1,0 +1,10 @@
+aws_cdk/aws_sam/__init__.py,sha256=9X1zvwvw6THJ1CsRi5OgJ_hqWE7khwndPS4Ad1HJYQg,514303
+aws_cdk/aws_sam/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_sam/_jsii/__init__.py,sha256=xKOReHS0SDNO_B9-16GSyYvGgsZu5sKdIJnWafL-Ttw,365
+aws_cdk/aws_sam/_jsii/aws-sam@1.136.0.jsii.tgz,sha256=N9UrC9Uvk7Qxvomt2bTW8h6xaee2BWkzyXp39VhsjpI,159200
+aws_cdk.aws_sam-1.136.0.dist-info/LICENSE,sha256=PPdRlpoLCV1CRrCV1eKpp3m0lNjchFAP4a9zfc8tRLo,11391
+aws_cdk.aws_sam-1.136.0.dist-info/METADATA,sha256=ZdMecesXyNatjYwZMnzh2jUV9Yy5Zrj2RvJT2COUE88,2542
+aws_cdk.aws_sam-1.136.0.dist-info/NOTICE,sha256=xo56krus2e5ShfXqz_B7vuvGcMn_D0F7TjjpfTz8YMw,113
+aws_cdk.aws_sam-1.136.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aws_cdk.aws_sam-1.136.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_sam-1.136.0.dist-info/RECORD,,
