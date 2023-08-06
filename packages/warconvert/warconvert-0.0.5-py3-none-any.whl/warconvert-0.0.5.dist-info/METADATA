@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: warconvert
+Version: 0.0.5
+Summary: A tool for converting BurpSuite xml file to har file or warc file.
+Home-page: https://github.com/gditsec/warconvert
+Author: gditsec
+Author-email: zhuangshq@gditsec.org.cn
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/gditsec/warconvert/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
