@@ -1,0 +1,16 @@
+wa_cli/__init__.py,sha256=SjS8ncbAdwbY3_n2iU52wP-jOyWvKlSeiBAgg3VJSww,1152
+wa_cli/_version.py,sha256=Tjb_poy6EuGRi7TlrksJa9Qpx1MXOCO3p3F6tJ8xa5o,142
+wa_cli/script.py,sha256=-1PLWB-hZdJeVsVcSz3b2HcN5jT8FRVk77lKd1i4YEA,4469
+wa_cli/wa.py,sha256=jcdf1BSaa8GIdmyv2uGGw8NK1-t_lVcbrD5v8CsYDCw,2604
+wa_cli/scripts/__init__.py,sha256=SjS8ncbAdwbY3_n2iU52wP-jOyWvKlSeiBAgg3VJSww,1152
+wa_cli/scripts/licenseheaders.py,sha256=Thq8vFz8OXke5NFRquRvRJV7F1Sf3t9kuVcAVY2aAkM,45406
+wa_cli/utils/__init__.py,sha256=SjS8ncbAdwbY3_n2iU52wP-jOyWvKlSeiBAgg3VJSww,1152
+wa_cli/utils/dependencies.py,sha256=sOH3GNsaXpEVqqrl76eFrc5YhWn8uWAQwhpHkx-7RI8,2190
+wa_cli/utils/files.py,sha256=lonMG3ID3k7I4HzwIaktm1h2MI8a-pN414Ib2SVAoU4,2546
+wa_cli/utils/logger.py,sha256=2DmW03eaM21uX-uEzlYzxhKTdGnWR2w4nflQxFQBPhw,2633
+wa_cli-0.0.1.dist-info/LICENSE,sha256=rIQd85KNpJ6MkDNZ6syZzbmEB79D1Va4WTSjXvAS2N8,1077
+wa_cli-0.0.1.dist-info/METADATA,sha256=pzvaJUkSbMgV0CG-YuiRISRsLL3cabmVdmh_tPRuOMw,1653
+wa_cli-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+wa_cli-0.0.1.dist-info/entry_points.txt,sha256=-TiPsqgrYMVigYvGQwjhlj_-6BGmKEwUJyoE6yKM7J0,39
+wa_cli-0.0.1.dist-info/top_level.txt,sha256=cfIvwIx7UTgMeRAy_IoEuT2eYQfKOFS5TrQ54vEiYm4,7
+wa_cli-0.0.1.dist-info/RECORD,,
