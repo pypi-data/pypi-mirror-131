@@ -1,0 +1,10 @@
+#!python -u
+# Copyright 2020, Ryan P. Kelly.
+
+import sys
+
+from locald.cli import App
+
+
+app = App()
+sys.exit(app.run())
