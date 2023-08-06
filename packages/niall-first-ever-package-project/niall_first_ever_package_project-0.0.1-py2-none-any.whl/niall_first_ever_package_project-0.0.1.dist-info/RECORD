@@ -1,0 +1,10 @@
+niall_first_ever_package_project/__init__.py,sha256=0vod57BKTwjarPow2-PQAJQ9sjcXnZUqS-Qb1hw-RPo,50
+niall_first_ever_package_project/add.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+niall_first_ever_package_project/subtract.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+niall_first_ever_package_project/extras/__init__.py,sha256=l49juQDOHYBZfg4SQKzzV8W5JKMWco4Av2MaDy4FjkM,56
+niall_first_ever_package_project/extras/divide.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+niall_first_ever_package_project/extras/multiply.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+niall_first_ever_package_project-0.0.1.dist-info/METADATA,sha256=4oNcK4l3c5PtDJ53QNDCn8xCZDEJUBJG4O9W41zcipE,600
+niall_first_ever_package_project-0.0.1.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+niall_first_ever_package_project-0.0.1.dist-info/top_level.txt,sha256=tgK2_qdtNU5PpT3Nh32cYy4iqPAQPUGo1KIqGnm-0_Q,33
+niall_first_ever_package_project-0.0.1.dist-info/RECORD,,
