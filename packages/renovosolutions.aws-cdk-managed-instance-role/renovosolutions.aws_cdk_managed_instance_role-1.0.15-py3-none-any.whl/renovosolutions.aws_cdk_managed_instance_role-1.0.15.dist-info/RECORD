@@ -1,0 +1,9 @@
+managed_instance_role/__init__.py,sha256=fwVpWxsMxoZ5Hvf8ziplQ0EzJPK-Pbq-7VDd-O86Wbk,6183
+managed_instance_role/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+managed_instance_role/_jsii/__init__.py,sha256=MVEpjlianFxFY2a3hyC4tKnj5XQtafPrWpL9M6i5ZEI,465
+managed_instance_role/_jsii/cdk-library-managed-instance-role@1.0.15.jsii.tgz,sha256=9DGK9SizZZMYaDSEp6jQJ6bI6Y_ggusfQEOzwLG7rm4,11077
+renovosolutions.aws_cdk_managed_instance_role-1.0.15.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+renovosolutions.aws_cdk_managed_instance_role-1.0.15.dist-info/METADATA,sha256=PfYKCZ-vuABpBUOI1dK4Y0rDx6JgpDeQmsI7jULZY4A,2838
+renovosolutions.aws_cdk_managed_instance_role-1.0.15.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+renovosolutions.aws_cdk_managed_instance_role-1.0.15.dist-info/top_level.txt,sha256=ylaAgT48Fz0YK-lhMR2rEuovutczEju-LgwDWT4uPwY,22
+renovosolutions.aws_cdk_managed_instance_role-1.0.15.dist-info/RECORD,,
