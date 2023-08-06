@@ -1,0 +1,3 @@
+[console_scripts]
+testit_test = testit_allure_adaptor_test.__main__:console_main
+
