@@ -1,0 +1,2 @@
+class ScaleNotFoundError(Exception):
+    pass

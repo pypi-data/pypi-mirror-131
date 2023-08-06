@@ -1,0 +1,2 @@
+class AccidentalsParseError(Exception):
+    pass

@@ -1,0 +1,2 @@
+class NoteParseError(Exception):
+    pass

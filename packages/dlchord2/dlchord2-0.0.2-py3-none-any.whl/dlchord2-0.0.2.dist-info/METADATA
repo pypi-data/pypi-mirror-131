@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dlchord2
+Version: 0.0.2
+Summary: chord library
+Home-page: https://github.com/anime-song/DLChord2
+Author: anime-song
+Author-email: UNKNOWN
+License: MIT
+Keywords: music chord
+Platform: UNKNOWN
+Requires-Dist: numpy
+
+UNKNOWN
+
+
