@@ -1,0 +1,10 @@
+covemda/__init__.py,sha256=yCyaYRzI_diEwhbSrTXMtY52L2W8vAKfhpHqMQ74Mzs,243
+covemda/baseline_estimator.py,sha256=mEJMal63WcKTr7CDo6KzVqw7iQxpi8sd4cMlhSrAArk,23200
+covemda/data_structure.py,sha256=1Ll6D26KEJUc3ktR1xkN1Rb0Wb293ks2-Mg5UrG6Y2Q,22444
+covemda/integration.py,sha256=6WJ8Dl_d-n0vpfJNgKXTPoOXhxrz3Fm2oTXYQLLMctM,35609
+covemda/regressor.py,sha256=yzqcbBknIIQIoRY1beoSAQtBDmMRLCNXPNTpBvELnUc,11088
+covemda/visualizer.py,sha256=vvepNrbqBiMiXCtRDWSg0_vj1osnZ3YzxLw5j_Pz98E,19070
+CoVEMDA-1.0.dist-info/METADATA,sha256=UWYO9ycahpDhngyWDHr0NcV5aZnOu0keNqfe-jAh2tk,3353
+CoVEMDA-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+CoVEMDA-1.0.dist-info/top_level.txt,sha256=fNgf2OUsYUViC04jNeQYIZDFw3A9whjU7OZUucniYhw,8
+CoVEMDA-1.0.dist-info/RECORD,,
