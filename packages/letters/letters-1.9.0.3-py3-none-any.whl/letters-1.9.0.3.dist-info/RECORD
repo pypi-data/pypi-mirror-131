@@ -1,0 +1,13 @@
+letters/__init__.py,sha256=-9F3jBkvl8P5znx1-d7oQUPHYeLswvZrbR9B3lM0GYE,173
+letters/ascii.py,sha256=ut1a041Ja5ii_bI8owpK4_EbFp2FXX_HgGPltz6wwEI,836
+letters/asciiart.py,sha256=hpIyc8BR8_27lXo1HdlYAxzVEEclY4lkzWDfrUDKR78,7275
+letters/center.py,sha256=ZIwIFgwaGdgvE-lyGd2TS6D13y4B-HiUpYGNDde1BEk,3102
+letters/colors.py,sha256=z6vYg3d1KAMvzgYBonu1TooX1xfXVC5vVnyFmdbduZo,3510
+letters/fade.py,sha256=h6GsENPmWF76y_tZhHrtLb2Oylk-ciSGljKEuWm1pIM,5723
+letters/style.py,sha256=sO2GQevJcvqXn1kUu9QrOCJsz7L9Oc2WNctXazt3DJI,619
+letters/system.py,sha256=XE-nNeGp6d-IYxx0jwK1Sc2ubIZh1myNzEAmHFOPSvM,679
+letters-1.9.0.3.dist-info/LICENSE,sha256=IOxBKnCtTeYTn4MXgpbBEMpQIKDczpi0qCDSC8Ctotw,1081
+letters-1.9.0.3.dist-info/METADATA,sha256=Q8x5yEKRE1Zd02z1jahYfhj_IpIhbwYn4stqPk7DYNs,6643
+letters-1.9.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+letters-1.9.0.3.dist-info/top_level.txt,sha256=wmE67aXDRCRpf4tmhRFBP-RVu-P3LVo8tChDGr-Iymo,8
+letters-1.9.0.3.dist-info/RECORD,,
