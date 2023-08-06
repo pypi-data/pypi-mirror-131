@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: monoplt
+Version: 0.1.0
+Summary: Monochromatic colorscheme for matplotlib with opinionated sensible default
+Home-page: https://github.com/ariaghora/monoplt
+Author: Aria Ghora Prabono
+Author-email: hello@ghora.net
+License: MIT license
+Download-URL: https://github.com/ariaghora/monoplt/tarball/master
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown; charset=UTF-8
+
+Monochromatic colorscheme for matplotlib with opinionated sensible default.
+
+Heavily adopted from [Olsgaard's post](http://olsgaard.dk/monochrome-black-white-plots-in-matplotlib.html)
+
