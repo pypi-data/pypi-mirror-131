@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: snakefusion
+Version: 0.1.6
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: numpy
+Summary: Read and use many word embedding formats
+Home-Page: https://github.com/danieldk/snakefusion
+Author: Daniël de Kok <me@danieldk.eu>
+Author-email: Daniël de Kok <me@danieldk.eu>
+License: MIT OR Apache-2.0
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/danieldk/snakefusion.git
+
+# 🐍 snakefusion
+
+[![Documentation Status](https://readthedocs.org/projects/snakefusion/badge/?version=latest)](https://snakefusion.readthedocs.io/en/latest/?badge=latest)
+[![pypi Version](https://img.shields.io/pypi/v/snakefusion.svg?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/project/snakefusion/)
+
+## Introduction
+
+`snakefusion` is a Python package for reading, writing, and using finalfusion,
+fastText, floret, GloVe, and word2vec embeddings.  This package is a thin
+wrapper around the Rust [finalfusion](https://docs.rs/finalfusion/) crate.
+
+`snakefusion` supports the same types of embeddings as `finalfusion`:
+
+* Vocabulary:
+  * No subwords
+  * Subwords
+* Embedding matrix:
+  * Array
+  * Memory-mapped
+  * Quantized
+* Format:
+  * fastText
+  * finalfusion
+  * floret
+  * GloVe
+  * word2vec
+
+## Building from source
+
+Building `snakefusion` from source requires a Rust toolchain that is installed
+through [rustup](https://rustup.rs) and `setuptools-rust`:
+
+~~~shell
+$ pip install --upgrade setuptools-rust
+~~~
+
+You can then build and install `snakefusion` in your environment:
+
+~~~shell
+$ pip install .
+~~~
+
+## Documentation
+
+Read the [snakefusion documentation](https://snakefusion.readthedocs.io/) for a
+quickstart and API reference.
+
+You use [finalfrontier](https://finalfusion.github.io/finalfrontier) to train
+new embeddings, or download some [pretrained
+embeddings](https://finalfusion.github.io/pretrained).
+
