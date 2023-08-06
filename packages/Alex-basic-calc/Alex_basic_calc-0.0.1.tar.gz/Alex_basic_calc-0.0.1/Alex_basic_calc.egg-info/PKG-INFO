@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Alex-basic-calc
+Version: 0.0.1
+Summary: A very basic calculator
+Home-page: UNKNOWN
+Author: Alexander Savostianov
+Author-email: s.aleks-02@mail.ru
+License: MIT
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is simple calculator witch add, subtract, divide and multiply
+
+Change Log
+==========
+
+0.0.1 (15/12/2021)
+------------------
+- First release
+
