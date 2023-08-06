@@ -1,0 +1,10 @@
+brille-0.5.7.dist-info/RECORD,,
+brille-0.5.7.dist-info/WHEEL,sha256=OERMYppr9MrFNH42dDDDfOcxOhh5Bh5GM82gXZaphW4,111
+brille-0.5.7.dist-info/COPYING,sha256=AkJuNEXtUzRN1jfNwT4m5Zd9A1RuI4dP-8bq1-8IoTA,33896
+brille-0.5.7.dist-info/top_level.txt,sha256=-M8-VE2QuPFYuMLLsbCSZmfK6W9HEWn1tj58duE86b4,7
+brille-0.5.7.dist-info/METADATA,sha256=xnuTT1N6JDPYgKpF8dCV3_pGr2YUM_vWaPQMBsPm2mE,3226
+brille/plotting.py,sha256=2g13X3FxQ0tBG7KWjwR59dHJ5z2730jhNeimh1qJAME,21384
+brille/__init__.py,sha256=oeF-3ylMciST7AuEdJQakTNc8urQ9F36YD-nd4YfTrE,1734
+brille/utils.py,sha256=9hi4ctDmENXrl0YehvfkkwBcEByOVXMDxtrTKWmuGxE,13265
+brille/_brille.cpython-36m-darwin.so,sha256=9M2oJWSBLiFp8iC-Ie41Bxju7eNvCAXajGmo_ciIwl0,3145312
+brille/.dylibs/libomp.dylib,sha256=J3xVwKNNeRp1ssoWmF1Nms056nwcO1DPsuFKuyR42ag,662464
