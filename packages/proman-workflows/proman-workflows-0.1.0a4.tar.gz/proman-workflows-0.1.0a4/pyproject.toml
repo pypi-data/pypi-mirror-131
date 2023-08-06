@@ -1,0 +1,211 @@
+[tool.poetry]
+name = "proman-workflows"
+version = "0.1.0a4"
+description = "Task-runner to automate projects."
+authors = ["Jesse P. Johnson <jpj6652@gmail.com>"]
+license = "MPL-2.0"
+readme = "README.md"
+homepage = "https://github.com/python-protools/proman-workflows"
+# documentation = "https://python-protools.github.io/proman-workflows"
+keywords = ["package management"]
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+include = ["proman.workflows/_vendor/gitignore", "proman.workflows/templates"]
+packages = [
+    {include = "proman_workflows", from = "src"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.6.2"
+jinja2 = "^2.11.2"
+invoke = "^1.5.0"
+compendium = "^0.1.1-alpha.0"
+python-gnupg = "^0.4.7"
+proman-common = "^0.1.1-alpha.1"
+editables = "^0.2"
+stevedore = "^3.4.0"
+briefcase = "^0.3.5"
+pygit2 = "^1.6.1"
+PyInputPlus = "^0.2.12"
+keyring = "^23.2.1"
+SecretStorage = {version = "^3.3.1", platform = "linux"}
+
+[tool.poetry.dev-dependencies]
+black = "^21.7b0"
+docstr-coverage = "^1.2.0"
+flake8 = "^3.8.3"
+pytest = "^5.2"
+pytest-cov = "^2.10.0"
+isort = "^5.9.2"
+bandit = "^1.6.2"
+safety = "^1.9.0"
+mkdocs = "^1.2.2"
+mkdocs-material = "^7.2.0"
+mkdocstrings = "^0.15.2"
+pyfakefs = "^4.5.0"
+types-Jinja2 = "^2.11.2"
+tox = "^3.24.0"
+python-gilt = "^1.2.3"
+twine = "^3.5.0"
+mypy = "^0.910"
+proman-versioning = {version = "^0.1.1-alpha.3", allow-prereleases = true}
+pydocstyle = {extras = ["toml"], version = "^6.1.1"}
+
+[tool.poetry.extras]
+all = [
+  "black",
+  "flake8",
+  "pytest",
+  "isort",
+  "bandit",
+  "safety",
+  "pyfakefs",
+  "tox",
+  "twine",
+  "mypy",
+]
+
+[tool.poetry.plugins."proman.workflows.pki"]
+gpg = "proman_workflows.pki.gpg:namespace"
+tls = "proman_workflows.pki.tls:namespace"
+
+[tool.poetry.plugins."proman.workflows.vcs"]
+git = "proman_workflows.git:namespace"
+
+[tool.poetry.plugins."proman.workflows.package"]
+flit = "proman_workflows.package.flit:namespace"
+poetry = "proman_workflows.package.poetry:namespace"
+setuptools = "proman_workflows.package.setuptools:namespace"
+twine = "proman_workflows.package.twine:namespace"
+
+[tool.poetry.plugins."proman.workflows.executable"]
+briefcase = "proman_workflows.executable.briefcase:namespace"
+# pyinstaller = "proman_workflows.executable.pyinstaller:namespace"
+
+[tool.poetry.plugins."proman.workflows.formatter"]
+autopep8 = "proman_workflows.formatter.autopep8:namespace"
+black = "proman_workflows.formatter.black:namespace"
+isort = "proman_workflows.formatter.isort:namespace"
+
+[tool.poetry.plugins."proman.workflows.sca"]
+flake8 = "proman_workflows.sca.flake8:namespace"
+mypy = "proman_workflows.sca.mypy:namespace"
+bandit = "proman_workflows.sca.security.bandit:namespace"
+safety = "proman_workflows.sca.security.safety:namespace"
+
+[tool.poetry.plugins."proman.workflows.qa"]
+pytest = "proman_workflows.qa.pytest:namespace"
+behave = "proman_workflows.qa.behave:namespace"
+
+[tool.poetry.plugins."proman.workflows.system"]
+test-infra = "proman_workflows.system.test_infra:namespace"
+
+# [tool.poetry.plugins."proman.workflows.coverage"]
+# pytest = "proman_workflows.qa.pytest:namespace"
+
+[tool.poetry.plugins."proman.workflows.container.compose"]
+docker_compose = "proman_workflows.container.docker:namespace"
+podman_compose = "proman_workflows.container.podman:namespace"
+
+[tool.poetry.plugins."proman.workflows.docs"]
+mkdocs = "proman_workflows.docs.mkdocs:namespace"
+
+# mock cli namespace
+[tool.poetry.plugins."proman.workflows.mock"]
+original = "mock_workflow.mock.original:namespace"
+update = "mock_workflow.mock.update:namespace"
+
+[tool.poetry.scripts]
+workflow-tools = "proman_workflows:workflow_tools.run"
+workflow-setup = "proman_workflows.setup:setup.run"
+workflow = "proman_workflows:workflow.run"
+# mock command
+# check = "proman_workflows.check:workflow.run"
+
+# TODO: deprecate flit
+# [tool.flit.metadata]
+# module = "proman.workflows"
+# author = "Jesse P. Johnson"
+# author-email = "jpj6652@gmail.com"
+# home-page = "https://github.com/python-protools/proman-workflows"
+# requires = ["compendium", "invoke", "keyring", "jinja2", "proman-common", "stevedore"]
+# classifiers = ["License :: OSI Approved :: Apache Software License"]
+#
+# [tool.flit.entrypoints."proman.precommit.validate"]
+# conventional_commits = "workflows:precommit"
+#
+# [tool.flit.scripts]
+# project = "workflows:project.run"
+# workflow = "workflows:workflow.run"
+
+# [tool.proman.workflows.drivers.unit_tests]
+# name = "sort-headers"
+# driver_name = "isort"
+# driver_namespace = "proman.workflows.formatter"
+#
+# [tool.proman.workflows.drivers.docs]
+# name = "sort-headers"
+# driver_name = "isort"
+# driver_namespace = "proman.workflows.formatter"
+
+[[tool.proman.workflows.plugins]]
+name = "sort-headers"
+driver_name = "isort"
+driver_namespace = "proman.workflows.formatter"
+
+# [[tool.proman.workflows.plugins]]
+# name = "vcs"
+# driver_name = "git"
+# driver_namespace = "proman.workflows.vcs"
+
+[[tool.proman.versioning.files]]
+filepath = "pyproject.toml"
+pattern = "version = \"${version}\""
+
+[[tool.proman.versioning.files]]
+filepath = "src/proman_workflows/__init__.py"
+pattern = "__version__ = '${version}'"
+
+[[tool.proman.versioning.files]]
+filepath = "tests/test_version.py"
+pattern = "__version__ == '${version}'"
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.black]
+ling-length = 79
+include = '\.pyi?$'
+exclude = '''
+
+(
+  /(
+    | \.git
+    | \.mypy_cache
+    | \.pytest_cache
+    | \.vagrant
+    | _build
+    | dist
+  )
+)
+'''
+
+[tool.pytest.ini_options]
+filterwarnings = [
+  "ignore::DeprecationWarning:invoke.*:",
+  "ignore::DeprecationWarning:_yaml.*:",
+]
+
+[tool.mypy]
+warn_redundant_casts = true
+warn_unused_ignores = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+# requires = ["flit_core>=2,<4"]
+# build-backend = "flit_core.buildapi"
+# requires = ['setuptools>=40.8.0', 'wheel']
+# build-backend = 'setuptools.build_meta'
