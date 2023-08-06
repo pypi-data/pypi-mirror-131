@@ -1,0 +1,8 @@
+setup.py
+py_web_server_flask_Orinnass.egg-info/PKG-INFO
+py_web_server_flask_Orinnass.egg-info/SOURCES.txt
+py_web_server_flask_Orinnass.egg-info/dependency_links.txt
+py_web_server_flask_Orinnass.egg-info/requires.txt
+py_web_server_flask_Orinnass.egg-info/top_level.txt
+web_server/__init__.py
+web_server/merge_template.json
