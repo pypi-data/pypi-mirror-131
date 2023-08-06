@@ -1,0 +1,6 @@
+gsw_xarray/__init__.py,sha256=qm1ZXUk7-xRBxVAAyLiuMvKriOGUd1ndnWC1eArlTHk,3333
+gsw_xarray/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gsw_xarray/tests/test_gsw_xarray.py,sha256=KvdM5AmSJ-BwBLXhPC1hFBN7S_aSSMWEHghBAVFn070,91
+gsw_xarray-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+gsw_xarray-0.1.0.dist-info/METADATA,sha256=nvKUPPpSn7mHjwXcuvdB4KI_CN19VUzg491kQFpoL7w,370
+gsw_xarray-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gsw-xarray
+Version: 0.1.0
+Summary: 
+Author: Andrew Barna
+Author-email: abarna@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: gsw (>=3.4.0,<4.0.0)
+Requires-Dist: xarray (>=0.20.2,<0.21.0)
