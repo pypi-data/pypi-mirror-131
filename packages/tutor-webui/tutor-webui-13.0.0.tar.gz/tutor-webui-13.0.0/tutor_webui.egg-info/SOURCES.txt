@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+setup.py
+tutor_webui.egg-info/PKG-INFO
+tutor_webui.egg-info/SOURCES.txt
+tutor_webui.egg-info/dependency_links.txt
+tutor_webui.egg-info/entry_points.txt
+tutor_webui.egg-info/requires.txt
+tutor_webui.egg-info/top_level.txt
+tutorwebui/__about__.py
+tutorwebui/__init__.py
+tutorwebui/cli.py
+tutorwebui/plugin.py
+tutorwebui/patches/.gitignore
+tutorwebui/templates/webui/apps/.gitignore
+tutorwebui/templates/webui/build/.gitignore
+tutorwebui/templates/webui/hooks/.gitignore
