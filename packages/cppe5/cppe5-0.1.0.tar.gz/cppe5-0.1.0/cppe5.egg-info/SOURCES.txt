@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cppe5/__init__.py
+cppe5/download.py
+cppe5/download_tfrecords.py
+cppe5/tensorflow.py
+cppe5/torch.py
+cppe5/version.py
+cppe5.egg-info/PKG-INFO
+cppe5.egg-info/SOURCES.txt
+cppe5.egg-info/dependency_links.txt
+cppe5.egg-info/requires.txt
+cppe5.egg-info/top_level.txt

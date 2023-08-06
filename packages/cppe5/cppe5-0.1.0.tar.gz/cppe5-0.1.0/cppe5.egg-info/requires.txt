@@ -1,0 +1,7 @@
+gdown~=4.2.0
+pycocotools~=2.0.3
+
+[dev]
+check-manifest
+twine
+black
