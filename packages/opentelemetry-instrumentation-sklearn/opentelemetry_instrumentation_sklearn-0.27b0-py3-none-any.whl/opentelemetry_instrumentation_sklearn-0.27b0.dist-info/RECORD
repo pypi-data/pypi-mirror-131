@@ -1,0 +1,9 @@
+opentelemetry/instrumentation/sklearn/__init__.py,sha256=e5QXXJfk2ZlhVeKokLD9KO9sJuOVeyk7ggnjD1sdWIs,28907
+opentelemetry/instrumentation/sklearn/package.py,sha256=zr0_E2lPUHeB31b4jhIidvUykyvf0InX6QNkJM29F_o,631
+opentelemetry/instrumentation/sklearn/version.py,sha256=DYml1k5DE6abeZ4u93HexdYubRf9m3k1cm2ID6xXsQQ,610
+opentelemetry_instrumentation_sklearn-0.27b0.dist-info/LICENSE,sha256=h8jwqxShIeVkc8vOo9ynxGYW16f4fVPxLhZKZs0H5U8,11350
+opentelemetry_instrumentation_sklearn-0.27b0.dist-info/METADATA,sha256=BNuI4nCYk0FMdW-c1IRKRFlSxQsaulxuHoRXVmLKrwo,2101
+opentelemetry_instrumentation_sklearn-0.27b0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+opentelemetry_instrumentation_sklearn-0.27b0.dist-info/entry_points.txt,sha256=wGsGMjzoPa9iF0fA1Ho7c-XaTCumQdDWU7ieEjshCIE,98
+opentelemetry_instrumentation_sklearn-0.27b0.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_instrumentation_sklearn-0.27b0.dist-info/RECORD,,
