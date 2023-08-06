@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: yfoption
+Version: 0.0.1
+Summary: The package fetch option data from yahoo finance.
+Home-page: https://github.com/socbase/yfoption
+Author: Socbase
+Author-email: socbase.me@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/socbase/yfoption.git/issues
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# Information
+This package to only fetch option data from yahoo finance
+## Installation
+```bash
+pip install yfoption
+
+```
+## Get options as straddle
+* Get options of ticker as straddle
+```bash
+import yfoption as yf
+
+opt = yf.Option("AAPL")
+opt.option_straddle('2021-12-23')
+```
+## Get options
+* Get options of ticker
+```bash
+import yfoption as yf
+
+opt = yf.Option("AAPL")
+opt.options
+```
+
+## Get strikes
+* Get strikes of ticker
+```bash
+import yfoption as yf
+
+opt = yf.Option("AAPL")
+opt.strikes
+```
+
+
