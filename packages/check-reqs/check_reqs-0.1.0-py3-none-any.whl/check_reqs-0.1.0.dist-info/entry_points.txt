@@ -1,0 +1,3 @@
+[console_scripts]
+check_reqs=check_reqs.__main__:app
+
