@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: universalasync
+Version: 0.1.0.0
+Summary: A library to help automate the creation of universal python libraries
+Home-page: https://github.com/bitcartcc/universalasync
+Author: MrNaif2018
+Author-email: chuff184@gmail.com
+License: MIT
+Keywords: async,await,bitcartcc,universal,sync,asyncio,asynctosync,synctoasync
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# universalasync
+
+A library to help automate the creation of universal python libraries
+
+## Installation
+
+`pip install universalasync`
+
+## Copyright and License
+
+Copyright (C) 2021 MrNaif2018
+
+Universal async-sync wrapper initially based on [this implementation](https://github.com/pyrogram/pyrogram/blob/master/pyrogram/sync.py)
+
+Licensed under the [MIT license](LICENSE)
+
+
