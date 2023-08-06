@@ -1,0 +1,3 @@
+[console_scripts]
+meshpro = meshpro._cli:main
+
