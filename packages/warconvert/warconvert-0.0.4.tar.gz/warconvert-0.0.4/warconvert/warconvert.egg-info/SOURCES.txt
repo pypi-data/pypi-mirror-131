@@ -1,0 +1,7 @@
+LICENSE
+pyproject.toml
+setup.cfg
+warconvert/warconvert.egg-info/PKG-INFO
+warconvert/warconvert.egg-info/SOURCES.txt
+warconvert/warconvert.egg-info/dependency_links.txt
+warconvert/warconvert.egg-info/top_level.txt
