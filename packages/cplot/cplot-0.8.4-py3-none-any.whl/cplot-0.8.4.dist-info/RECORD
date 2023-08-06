@@ -1,0 +1,11 @@
+cplot/__init__.py,sha256=wGfaU5kydGnXkfJGPGsx8FHFji5bMPbxFKjwMGJb_JA,635
+cplot/_colors.py,sha256=C7T2UPZcMn27E48mEojWGJU8u7UBHefpesUVB8evmic,6608
+cplot/_main.py,sha256=6BnHNFeMlIrRKaOZGFl9SWlNLiOyt3GwAHRLimG5zgg,13403
+cplot/_tri.py,sha256=6015jO59p-nnf4M1QDRMtEOwGVxABbALrVvotFh4wyE,2161
+cplot/benchmark.py,sha256=uxWmDx5rNexYfSCKbFqJ72RKsmDK-IzVF9_G5haqpXg,2593
+cplot/create.py,sha256=WZdhXc7kFbhVEpaxx9xn0mfmmK71mSf-ufpdzhEZpR4,1887
+cplot-0.8.4.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+cplot-0.8.4.dist-info/METADATA,sha256=ESD-XR3V3_h8wkiLZ9z20_1slX7VGtT6Gj_Ps0Xql-c,7416
+cplot-0.8.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cplot-0.8.4.dist-info/top_level.txt,sha256=Vkb6H7cP4pBTTjR-16CCU7_vTo9QS4yMN17qOzY0wXY,6
+cplot-0.8.4.dist-info/RECORD,,
