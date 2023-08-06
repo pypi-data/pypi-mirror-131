@@ -1,0 +1,1 @@
+from gerrit_review_robot.helpers.condense import condense
