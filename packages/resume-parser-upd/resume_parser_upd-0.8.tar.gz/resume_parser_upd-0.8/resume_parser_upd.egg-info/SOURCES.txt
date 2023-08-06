@@ -1,0 +1,11 @@
+README.md
+setup.py
+resume_parser_upd/__init__.py
+resume_parser_upd/constants.py
+resume_parser_upd/resumeparse.py
+resume_parser_upd.egg-info/PKG-INFO
+resume_parser_upd.egg-info/SOURCES.txt
+resume_parser_upd.egg-info/dependency_links.txt
+resume_parser_upd.egg-info/not-zip-safe
+resume_parser_upd.egg-info/requires.txt
+resume_parser_upd.egg-info/top_level.txt

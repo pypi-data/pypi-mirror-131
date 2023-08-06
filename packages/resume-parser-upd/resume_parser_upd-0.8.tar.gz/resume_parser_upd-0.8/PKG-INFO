@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: resume_parser_upd
+Version: 0.8
+Summary: A resume parser used for extracting information from resumes
+Home-page: https://github.com/kbrajwani/resume_parser
+Author: DavlatyorSulaymon
+Author-email: d.s.olimjanov@gmail.com
+License: MIT
+Description: nope
+Keywords: resume,parser,cv
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

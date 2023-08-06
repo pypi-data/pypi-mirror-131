@@ -1,0 +1,1 @@
+Its a bit reworked resume_parser package by  Kumar Rajwani and Brian Njoroge
