@@ -1,0 +1,14 @@
+poctools/__init__.py,sha256=foR0c24sJJ2MYHlKtgqdJxF1R8fgFIe36PrQLSWQMWs,46
+poctools/base.py,sha256=wD0SUdvQaxwR_tNQ-MpnA67YEZcuxG5SEHRfYfzJlYo,1911
+poctools/encrypt/__init__.py,sha256=XUylqsRhH_QtWALbTXchrB1xSSbGlKtXEhTp6DpcemU,22
+poctools/encrypt/hash.py,sha256=FR3GB4092w75lPAigqmtpJ7r4I8dpgkshu-MoHtfagg,107
+poctools/ocr/__init__.py,sha256=SJUzIy5SzN2m_R5pysj5dUGmnnisYnqkNcLNN7jAZxg,36
+poctools/ocr/config.py,sha256=CdpqMtRExrClhsOnRkE47KSMA883N1mtVuKFxymex3w,180
+poctools/ocr/ocr.py,sha256=fxoApstOoN-4R-Jj8-9jmseY0gnA1pB0stbZBLbXZ30,840
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.py,sha256=idU2pRTLRcKYVJOrRXT30EREzgzTUVKYMWrCbdlvadk,2548
+tests/tianmai_weakcipher.py,sha256=Saf8vcTJO5EsxRTlX6mtM-NDTVnkqAUs1Y1hdC3o8C8,1531
+poctools-0.0.4.dist-info/METADATA,sha256=l-87IwBSJUffdmj0mtLDK_5AIN8qyVsFbB7a1jQOntE,1872
+poctools-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+poctools-0.0.4.dist-info/top_level.txt,sha256=PucbVZ230Qy2nQ_Im-hUkFWRFVEp69tXE8dpQxts0-A,15
+poctools-0.0.4.dist-info/RECORD,,
