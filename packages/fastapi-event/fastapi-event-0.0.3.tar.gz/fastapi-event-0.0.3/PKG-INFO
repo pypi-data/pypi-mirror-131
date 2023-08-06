@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: fastapi-event
+Version: 0.0.3
+Summary: Event dispatcher for FastAPI
+Home-page: https://github.com/teamhide/fastapi-event
+Author: Hide
+Author-email: padocon@naver.com
+License: UNKNOWN
+Description: # fastapi-event
+        [![license]](/LICENSE)
+        [![pypi]](https://pypi.org/project/fastapi-event/)
+        [![pyversions]](http://pypi.python.org/pypi/fastapi-event)
+        ![badge](https://action-badges.now.sh/teamhide/fastapi-event)
+        [![Downloads](https://pepy.tech/badge/fastapi-event)](https://pepy.tech/project/fastapi-event)
+        
+        ---
+        
+        fastapi-event is event dispatcher for FastAPI framework.
+        
+        ## Installation
+        
+        ```python
+        pip3 install fastapi-event
+        ```
+        
+        ## Usage
+        
+        ### Make Event
+        
+        ```python
+        from fastapi_event import BaseEvent
+        
+        
+        class TestEvent(BaseEvent):
+            async def run(self, parameter=None):
+                ...
+        ```
+        
+        You have to inherit `BaseEvent` and override `run()` method.
+        
+        ### Parameter(optional)
+        
+        ```python
+        from pydantic import BaseModel
+        
+        
+        class TestEventParameter(BaseModel):
+            id: str
+            pw: str
+        ```
+        
+        In case of need parameter, you have to inherit `BaseModel` and set fields.
+        
+        ### Middleware
+        
+        ```python
+        from fastapi import FastAPI
+        from fastapi_event import EventHandlerMiddleware
+        
+        app = FastAPI()
+        app.add_middleware(EventHandlerMiddleware)
+        ```
+        
+        ### EventListener
+        
+        ```python
+        from fastapi_event import EventListener
+        
+        
+        @EventListener()
+        async def test():
+            ...
+        ```
+        
+        Set `@EventListener()` decorator on the function that emits the event.
+        
+        ### Store event
+        
+        ```python
+        from fastapi_event import EventListener, event_handler
+        
+        
+        @EventListener()
+        async def test():
+            await event_handler.store(
+                event=TestEvent,
+                parameter=TestParameter(id="hide", pw="hide"),  # Optional
+            )
+        ```
+        
+        Store your event to handler via `store()` method. (parameter is optional)
+        
+        An event will be emitted after the function has finished executing.
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
