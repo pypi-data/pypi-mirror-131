@@ -1,0 +1,17 @@
+accera/accc.py,sha256=B5Zip4Ea80JPMwHRBkYJ-4s-Nq44c6Mux3dzCvCjg9o,49336
+accera/accc_config.py,sha256=Yy73tvW8rtFqH9jw36h4AP6VFHI5B-qHk2E9eplmVEY,1550
+accera/build_config.py,sha256=6wboYd2LnLB6cn38LFzDBhxg6unYwd0--xT-V-8D4jU,1540
+accera/onnx_emitter.py,sha256=arfLEm7IBW7K5BQQAIECRzRnRMPORA0hl-4-rC2ToME,11709
+accera/parameters.py,sha256=npA3-DS4aSm-DfoWgT6NxTNk852Yxm65xNVJ3wAKG-c,4465
+accera/utilities.py,sha256=17x7aLsttBckvOXGxIPB5x8PfrJ87c1jDJhN94eydw4,5410
+accera/bin/CMakeLists.txt.emitted_library.in,sha256=TYT5HYwIbM8QGteeEaxT5jO3Zu7iKvK2M-YNrhZfkxA,1318
+accera/bin/CMakeLists.txt.generator.in,sha256=FfUJaurfGepdcIIDpmJUpZy6Vm7xJVXuQzZyJtyy6ho,4322
+accera/bin/CMakeLists.txt.main.in,sha256=GeN3zukmfTN1kVa4wdaRXyJaCOWPEIGY5P30mh1Kjzg,5619
+accera/bin/acc-opt,sha256=3WEa2Mlx6qFtoMNj74e4yzK_I1q_sQuEHEl8TUreY58,152633000
+accera/compilers/__init__.py,sha256=Kg-c1787gsTmB3wfoobeP4T74o6TCKmjm19vEPI-OLc,388
+accera/compilers/_version.py,sha256=5GblYyMbk8JySosj59Rvi2uzLqfP-DAs77ikwTafXT4,21
+accera_compilers-1.2.0.dist-info/LICENSE,sha256=ws_MuBL-SCEBqPBFl9_FqZkaaydIJmxHrJG2parhU4M,1141
+accera_compilers-1.2.0.dist-info/METADATA,sha256=wPHwJj4olxn94rZhVNwZTOcIAYJpqcGEIy8TFlkjYC4,2545
+accera_compilers-1.2.0.dist-info/WHEEL,sha256=Y6DCQ3Bm4-5AV1R_L7I4hUecRLaEZjYai5fltRB5z5g,110
+accera_compilers-1.2.0.dist-info/top_level.txt,sha256=wAgqaT9xQVdA55vI2c6FWAwuWFCD1Z4KsEF1ZzrZbOg,13
+accera_compilers-1.2.0.dist-info/RECORD,,
