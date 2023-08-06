@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+./tiny_storage/__init__.py
+./tiny_storage/core.py
+./tiny_storage/internals.py
+tiny_storage_unstable.egg-info/PKG-INFO
+tiny_storage_unstable.egg-info/SOURCES.txt
+tiny_storage_unstable.egg-info/dependency_links.txt
+tiny_storage_unstable.egg-info/top_level.txt
