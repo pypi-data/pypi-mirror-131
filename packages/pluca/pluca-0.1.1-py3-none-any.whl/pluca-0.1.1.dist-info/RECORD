@@ -1,0 +1,10 @@
+pluca/__init__.py,sha256=otKb8bUGHsIb2kGDevtlJy3vAdnM7u4UZQPgSAduA74,3315
+pluca/file.py,sha256=ppqaqXbUF0RWKXB2SL0D9avqVEcHB1rFpLi_pHzzuUc,4128
+pluca/memory.py,sha256=t8IhsKKUjUS1txRo8mY5KUZpKS0JtOjdCRbN9yRulqc,2062
+pluca/null.py,sha256=oBQc5CqfF8X_WtW5h3FhyA-piE06gMPR9WeLyMBPP_o,507
+pluca/test.py,sha256=6uewif2Jt3qlq38M0WjF7WzgYd8L_1SATdp0l4cgZLc,3799
+pluca-0.1.1.dist-info/LICENSE.txt,sha256=r83CgKK1ppQbewG7AdqPtz_GTR4Sg1ghGCiK0QBZ75E,1064
+pluca-0.1.1.dist-info/METADATA,sha256=naTQGWkLz53tDm178nVrzaUGeOBV5vTrc2LMYO2ffdA,3283
+pluca-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pluca-0.1.1.dist-info/top_level.txt,sha256=d9-bd_uv368JVibzPtJTeAmUDXSqszgGA0N3sT8bd8s,6
+pluca-0.1.1.dist-info/RECORD,,
