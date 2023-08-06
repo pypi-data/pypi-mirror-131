@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: sensorpad
+Version: 0.0.6
+Summary: No-dependencies Python client for Sensorpad.
+Home-page: https://github.com/sensorpad/sensorpad-python
+Author: Alexander Zaitsev
+Author-email: alex@sensorpad.io
+License: MIT
+Description: UNKNOWN
+Keywords: sensorpad,monitoring
+Platform: UNKNOWN
