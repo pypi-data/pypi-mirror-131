@@ -1,0 +1,17 @@
+qemu/qmp/__init__.py,sha256=u9k7w0PLPXfjIF3MizGSbF9htSCWSgVbFtRaW7fTOs4,1538
+qemu/qmp/aqmp_tui.py,sha256=EOYLS9JPn8p3qQoVkrA1KBuZXO0PrqbzqANJcTjocdY,22158
+qemu/qmp/error.py,sha256=tCa_0PXVfGfj0-U88WzYnIpSVoo2kCnvyEZWh0hMp0A,1701
+qemu/qmp/events.py,sha256=ztOo_BbzLJZC3_X0EV4BhY5ibNt0CjnGVWAWEmTTiVk,22653
+qemu/qmp/legacy.py,sha256=RzTDtX7b1YtMSwd3VvkD3sDj9MvHCvOlpn36Rc6_jDk,9939
+qemu/qmp/message.py,sha256=HxYZ5XguixBi1G6xXrKI5NQLekxzdPuOLxeWpz9Qhxw,6355
+qemu/qmp/models.py,sha256=-01fuOYnLleUDDMUEOtBtKRNlXmT5S7Ccohb_GN923I,4442
+qemu/qmp/protocol.py,sha256=PpJttxxJjVKkwYTriHGUcc974XM0-U81sOYVojuW4us,32291
+qemu/qmp/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qemu/qmp/qmp_client.py,sha256=fpo5N6RKsd0_ysOXkuygj2uyboQ2JmhJ2hUgU4MNL2Y,22571
+qemu/qmp/qmp_shell.py,sha256=s9bm9fsO7wyY44O458UajLFCs3F6HwLZvWVoHlHEva0,17262
+qemu/qmp/util.py,sha256=bGGMTbN8RA39i6IJQ7b-vCCqnlJ8Xl49tT3q2DLLcEs,6185
+qemu.qmp-0.0.0a0.dist-info/METADATA,sha256=HG9LRyiSGw-q37fw-SEkReAigw_sFeHFwNhAhrFDjEE,6255
+qemu.qmp-0.0.0a0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+qemu.qmp-0.0.0a0.dist-info/entry_points.txt,sha256=ypERFwhYIdOeWTToLgigfFN2lk89dgRkoVQ9oW_kDc0,95
+qemu.qmp-0.0.0a0.dist-info/top_level.txt,sha256=hsouN_2iW0aVe6nxdYUocnpNZ5L7gY7VX1g4cm2q4-4,5
+qemu.qmp-0.0.0a0.dist-info/RECORD,,
