@@ -1,0 +1,15 @@
+MANIFEST.in
+requirements.txt
+setup.py
+hmin/__init__.py
+hmin/_plot.py
+hmin/_predict.py
+hmin/cli.py
+hmin/utils.py
+hmin.egg-info/PKG-INFO
+hmin.egg-info/SOURCES.txt
+hmin.egg-info/dependency_links.txt
+hmin.egg-info/entry_points.txt
+hmin.egg-info/not-zip-safe
+hmin.egg-info/requires.txt
+hmin.egg-info/top_level.txt
