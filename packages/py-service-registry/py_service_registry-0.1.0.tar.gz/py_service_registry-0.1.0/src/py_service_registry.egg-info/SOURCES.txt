@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/py_service_registry/__init__.py
+src/py_service_registry/_version.py
+src/py_service_registry/services.py
+src/py_service_registry.egg-info/PKG-INFO
+src/py_service_registry.egg-info/SOURCES.txt
+src/py_service_registry.egg-info/dependency_links.txt
+src/py_service_registry.egg-info/requires.txt
+src/py_service_registry.egg-info/top_level.txt
