@@ -1,0 +1,12 @@
+README.md
+setup.py
+codemaker/__init__.py
+codemaker/makecode.py
+codemaker.egg-info/PKG-INFO
+codemaker.egg-info/SOURCES.txt
+codemaker.egg-info/dependency_links.txt
+codemaker.egg-info/entry_points.txt
+codemaker.egg-info/requires.txt
+codemaker.egg-info/top_level.txt
+codemaker/clitools/__init__.py
+codemaker/clitools/cli.py
