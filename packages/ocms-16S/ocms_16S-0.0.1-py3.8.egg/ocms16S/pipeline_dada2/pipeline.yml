@@ -1,0 +1,74 @@
+#############################################################################
+#############################################################################
+#############################################################################
+# Configuration file for OCMS_16S dada2.
+#
+# The parameters and options that are passed to the wrappers around dada2
+# functions are the same as those in the dada2 package. For a full list of
+# the parameters and verbatim explanation of them (from dada2 package)
+# you can use the help functions
+#
+# e.g. ocms_16s dada2 help --filterAndTrim
+#      ocms_16s dada2 help --sampleInference
+#      ocms_16s dada2 help --assignTaxonomy
+#
+#############################################################################
+#############################################################################
+#############################################################################
+
+# Edit parameters
+
+# specify whether data are paired or single end. The
+# pipeline will pick up whether this is true but being
+# explicit here is helpful
+paired:
+
+# dada2 parameters
+trim:
+
+    # parameters used for trimming reads. If the data are
+    # paired-end then you need to specify 2 values for
+    # maxee, truncLen and trimLeft. These parameters must be specified.
+    maxn: 0
+    maxee: 2,2
+    truncq: 2
+    trunclen: 250,160
+    trimleft: 0,0
+
+sample_inference:
+
+    memory: 10G
+
+    # parameters for sample inference. This includes
+    # error learning, de-replication, merging (if paired) and
+    # sample inference.
+
+    # number of reads to use (per sample) to estimate error
+    # model
+    nbases: 10000000
+
+    # additional options
+    options: ''
+
+taxonomy:
+
+    memory: 10G
+
+    # assigning taxonomy
+    taxonomy_file: RefSeq-RDP16S_v2_May2018.fa.gz
+
+    # This is the file that is used for the addSpecies function in
+    # dada2 for exact matching and species assignment. It must therefore
+    # be derived from the same database used as taxonomy_file above
+    species_file: RefSeq_species_assignment_v132.fa.gz
+
+report:
+    # whether to run diagnostics report. This is only necessary if after the
+    # main report is built you want to get into more regarding the specifics of
+    # how dada2 processed sequences. Specify as 1 if you wish to run it
+    diagnostics:
+
+database:
+    # name of the output database. This is a database that is built to
+    # be compatible with the OCMSExplorer.
+    name: output_db
