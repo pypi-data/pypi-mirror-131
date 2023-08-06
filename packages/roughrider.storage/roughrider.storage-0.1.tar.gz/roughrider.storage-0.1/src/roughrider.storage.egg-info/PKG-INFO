@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: roughrider.storage
+Version: 0.1
+Summary: File storage utility implementation
+Home-page: http://gitweb.dolmen-project.org
+Author: Souheil CHELFOUH
+Author-email: trollfot@gmail.com
+License: ZPL
+Download-URL: http://pypi.python.org/pypi/roughrider.storage
+Description: roughrider.storage
+        ******************
+        
+        Abstractions to store binary content
+        
+        CHANGES
+        =======
+        
+        0.1 (2021-12-17)
+        ----------------
+        
+          * First public release.
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Zope Public License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: test
