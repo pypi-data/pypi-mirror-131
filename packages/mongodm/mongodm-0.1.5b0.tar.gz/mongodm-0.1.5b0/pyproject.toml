@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "mongodm"
+version = "0.1.5b"
+description = "Simple ODM for MongoDB"
+authors = ["Deni <azureswastika@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/azureswastika/mongodm"
+repository = "https://github.com/azureswastika/mongodm"
+keywords = ["odm", "mongo", "mongodb"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Database",
+    "Typing :: Typed"
+]
+include = ["LICENSE",]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pymongo = "^3.12.0"
+pydantic = "^1.8.2"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.2"
+black = "^21.7b0"
+pytest = "^6.2.4"
+coverage = "^5.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+issues = "https://github.com/azureswastika/mongodm/issues"
