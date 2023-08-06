@@ -1,0 +1,13 @@
+test_project
+test_project.optional_counter
+# split
+# split
+Test project
+============
+
+.. code:: python
+
+   import test_project
+   test_project.optional_counter().attr
+
+.. automodule:: test_project
