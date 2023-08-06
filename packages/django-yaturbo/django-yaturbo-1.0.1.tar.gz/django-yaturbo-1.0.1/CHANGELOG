@@ -1,0 +1,38 @@
+django-yaturbo changelog
+========================
+
+
+v1.0.1 [2021-12-18]
+-------------------
+* Django 4.0 compatibility improved.
+
+
+v1.0.0 [2020-05-29]
+-------------------
+! Dropped support for Django<2.0.
+! Dropped support for Python 2 and 3.5.
+
+
+v0.3.0 [2019-10-24]
+-------------------
+! Dropped QA for Django 1.7.
+! Dropped QA for Python 2.
+! Dropped QA for Python 3.4.
++ 'sanitize_turbo' now supports more HTML tags, including 'video' and 'iframe'.
+
+
+v0.2.1
+------
+* 'bleach' is now required only if sanitization is enabled (see #1).
+
+
+v0.2.0
+------
++ Introduced turbo contents sanitizing tools.
++ Now can define turbo item 'source' and 'topic'.
++ YandexTurboFeed is now importable from package root.
+
+
+v0.1.0
+------
++ Basic functionality.
