@@ -1,0 +1,11 @@
+pywcmp/__init__.py,sha256=RHWFbMAgTf31ArKkIemHRQE9D_yhCjWDTx1tNeDiAUM,2236
+pywcmp/ats.py,sha256=Hlzqlob-wkLGDSI3TWRvQyPJvqtraOlxgThSpRrgBHk,17633
+pywcmp/dictionary.txt,sha256=Tv8VS1FtoHZFZWYwkR9WOXvuV5nXh069gQHHba5S1BM,91
+pywcmp/kpi.py,sha256=FRjwLJfU0be1wkEmtd3xiTuF54TPHeWcY32BWvIYJ60,44557
+pywcmp/util.py,sha256=Y3TsGUl8GO2ftSf1N890BJh8hdfCkoFDZZF7dvXEpxs,11771
+pywcmp-0.3.0.dist-info/LICENSE.md,sha256=TnLAPElXMLpUgF4rDpjaCbaikbDu63ZOElYCf8cJpQM,1079
+pywcmp-0.3.0.dist-info/METADATA,sha256=hNiXZeD4EKJCIhVT9f18xw2V_MpD9FgxmGfmhpNCCCA,5090
+pywcmp-0.3.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+pywcmp-0.3.0.dist-info/entry_points.txt,sha256=5w9R5Vh6GzdLXblX9pVNgugKBzAo3Tb5nrd0pFYBse4,39
+pywcmp-0.3.0.dist-info/top_level.txt,sha256=bZCVmpeBkP7gdnwkHnRkNXIX8x32UG6zc3_BeIKhrb4,7
+pywcmp-0.3.0.dist-info/RECORD,,
