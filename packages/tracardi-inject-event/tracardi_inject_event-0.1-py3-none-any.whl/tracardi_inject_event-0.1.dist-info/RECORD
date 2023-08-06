@@ -1,0 +1,9 @@
+tracardi_inject_event/plugin.py,sha256=twOH1-xqaShzlc9PlEbot4VcD_MtgQ4a5eer8rKP5DM,2023
+tracardi_inject_event/model/configuration.py,sha256=VePL_I0LZjjhgphS19fUEy4-uDeJxslFzf7cFZwLkZw,83
+tracardi_inject_event/model/__pycache__/configuration.cpython-38.pyc,sha256=eqZ01ek6q0pj77hO6QgMN38Ho96rqboJi1NsYZhi_90,431
+tracardi_inject_event/test/manual_test.py,sha256=FERFbFbg-Togk8bMfmdz80toOZErMcf3dhVbW_zsdFM,775
+tracardi_inject_event-0.1.dist-info/LICENSE.md,sha256=zb4oZFMSjcWGxtkkv44KCWq6Rzbe877lv_UdTwG2ZAw,1071
+tracardi_inject_event-0.1.dist-info/METADATA,sha256=jHcZSOkQfX2e-QF7gglqi17VhGdagzd1zUrZ0hY9xx0,621
+tracardi_inject_event-0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+tracardi_inject_event-0.1.dist-info/top_level.txt,sha256=e5tsJ5P38zXBIv71fHanQ6SpEBlycEn58-uhoWXX_o8,22
+tracardi_inject_event-0.1.dist-info/RECORD,,
