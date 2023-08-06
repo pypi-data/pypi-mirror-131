@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+covid-dashboard-jis206/__init__.py
+covid-dashboard-jis206/covid_data_handler.py
+covid-dashboard-jis206/covid_news_handling.py
+covid-dashboard-jis206/main.py
+covid-dashboard-jis206/time_handler.py
+covid_dashboard_jis206.egg-info/PKG-INFO
+covid_dashboard_jis206.egg-info/SOURCES.txt
+covid_dashboard_jis206.egg-info/dependency_links.txt
+covid_dashboard_jis206.egg-info/top_level.txt
