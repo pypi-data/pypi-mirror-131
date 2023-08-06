@@ -1,0 +1,3 @@
+[console_scripts]
+biosimulators-masspy = biosimulators_masspy.__main__:main
+
