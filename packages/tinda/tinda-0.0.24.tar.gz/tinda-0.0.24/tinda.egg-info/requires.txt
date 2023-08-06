@@ -1,0 +1,15 @@
+numpy
+argparse
+wave
+pyautogui
+mediapipe
+tqdm
+opencv-python
+twine
+pyttsx3
+pyaudio
+speedtest-cli
+pynput
+datetime
+bs4
+SpeechRecognition
