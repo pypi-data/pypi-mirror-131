@@ -1,0 +1,16 @@
+ARG FROM_IMAGE=mattf/spark-jupyter:alpha-3.1.2-hadoop3.2-accelerator21.06.0
+
+FROM ${FROM_IMAGE}
+
+RUN env
+RUN echo ${NVM_VER}
+RUN echo ${FROM_IMAGE}
+
+# note that as of RN node 17.X doesn't yet work with the jupyter lab buid. so, pinning to 16
+
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash &&  \. "$HOME/.nvm/nvm.sh" && nvm install 16.3.0 && jupyter lab build --dev-build=False --minimize=False --name='spark:3.1.2'
+# apparently, we need this to build jupyter lab below
+# change name of the jupyter window
+
+# ENV PATH /usr/bin/versions/node/v16.6.1/bin/:$PATH
+ENV PATH /usr/bin/versions/node/v16.3.0/bin/:$PATH

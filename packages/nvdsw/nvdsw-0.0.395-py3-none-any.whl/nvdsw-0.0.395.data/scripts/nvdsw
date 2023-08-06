@@ -1,0 +1,8 @@
+#!python
+# -*- coding: utf-8 -*-
+import sys
+import pathlib
+from nvdsw.main import main_with_path
+
+if __name__ == "__main__":
+    sys.exit(main_with_path(str(pathlib.Path(__file__).parent.absolute())))

@@ -1,0 +1,14 @@
+FROM nvcr.io/nvidia/nemo:1.3.0
+
+ENTRYPOINT
+# EXPOSE 8888/tcp
+
+# apparently, we need this to build jupyter lab below
+# change name of the jupyter window
+# SHELL ["/bin/bash", "--login", "-c", "jupyter lab build --dev-build=False --minimize=False --name='nemo:1.1.0'"]
+RUN source /usr/local/nvm/nvm.sh && jupyter lab build --dev-build=False --minimize=False --name='nemo:1.3.0'
+
+# make the mounted data directory show up in the home jupyter lab dir
+# VOLUME ["/data"]
+# RUN ln -s /data ./data
+# CMD jupyter lab --allow-root --ip=0.0.0.0 --no-browser --NotebookApp.token=''

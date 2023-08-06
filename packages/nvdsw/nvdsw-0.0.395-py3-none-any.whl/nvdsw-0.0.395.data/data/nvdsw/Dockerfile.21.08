@@ -1,0 +1,16 @@
+FROM nvcr.io/nvidia/pytorch:21.08-py3
+
+ENTRYPOINT
+# EXPOSE 8888/tcp
+
+# apparently, we need this to build jupyter lab below
+# change name of the jupyter window
+# SHELL ["/bin/bash", "--login", "-c", "jupyter lab build --dev-build=False --minimize=False --name='pytorch:21.07'"]
+# SHELL ["/bin/bash", "--login", "-c", "jupyter lab build", "--dev-build=False", "--minimize=False", "--name='pytorch:21.07'"]
+
+RUN source /usr/local/nvm/nvm.sh && jupyter lab build --dev-build=False --minimize=False --name='pytorch:21.08'
+
+# make the mounted data directory show up in the home jupyter lab dir
+# VOLUME ["/data"]
+# RUN ln -s /data ./data
+# CMD jupyter lab --allow-root --ip=0.0.0.0 --no-browser --NotebookApp.token=''

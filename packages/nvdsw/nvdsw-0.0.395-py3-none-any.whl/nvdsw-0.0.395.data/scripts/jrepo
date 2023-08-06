@@ -1,0 +1,216 @@
+#!python
+
+# example use: jrepo
+# https://github.com/NVIDIA/DeepLearningExamples/blob/master/PyTorch/Detection/SSD/examples/inference.ipynb
+
+# from json import encoder
+import sys
+import urllib.request
+import urllib.parse
+import http.client
+import time
+import pathlib
+import logging
+import subprocess
+import threading
+import os
+import traceback
+
+# for logging purposes
+MY_NAME = "jrepo"
+# how many times do we try before giving up on our Jupyter?
+MAX_JUPYTER_URL_TRIES = 200
+# how long to sleep between retries (in seconds)
+JUPYTER_URL_DELAY_BETWEEN_TRIES = 1
+# min content length, in bytes, that indicates that Jupyter has come up
+MIN_HTML_CONTENT_LEN = 100
+
+SCRIPT_DIR = str(pathlib.Path(__file__).parent.absolute())
+
+log = logging.getLogger(MY_NAME)
+LOG_FORMAT = "%(asctime)s-%(threadName)s-%(name)s-%(levelname)s-%(message)s"
+
+logFormatter = logging.Formatter(LOG_FORMAT)
+consoleHandler = logging.StreamHandler(sys.stdout)
+consoleHandler.setFormatter(logFormatter)
+log.addHandler(consoleHandler)
+log.setLevel(logging.INFO)
+
+
+def get_free_port():
+    # courtesy repo2docker
+    import socket
+
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.bind(("", 0))
+    port = s.getsockname()[1]
+    s.close()
+    return port
+
+
+# return true if we were able to pull something out of this URL
+# and false otherwise
+def try_repo_url(url):
+    try:
+        with urllib.request.urlopen(url) as response:
+            html = response.read()
+            clen = len(html)
+            if clen == 0:
+                log.error("read zero bytes from: %s", url)
+                return False
+    except Exception:
+        log.error("connection refused: %s", url)
+        exc_type, exc_value, exc_tb = sys.exc_info()
+        log.error(traceback.format_exception(exc_type, exc_value, exc_tb))
+        return False
+    log.debug("read + " + str(clen) + " bytes from " + url)
+    return True
+
+
+def launch_browser(burl, max_tries, try_delay, min_clen):
+    ntries = 0
+    clen = 0
+    success = False
+
+    while clen == 0:
+        log.debug("browser thread attempt " + str(ntries))
+        try:
+            with urllib.request.urlopen(burl) as response:
+                html = response.read()
+                clen = len(html)
+                if clen > min_clen:
+                    success = True
+                    break
+        except Exception:
+            log.debug("connection refused: " + burl)
+
+        ntries = ntries + 1
+        if ntries > max_tries:
+            return False
+        time.sleep(try_delay)
+
+    if success:
+        log.debug("launching browser")
+        cmd = ["/usr/bin/x-www-browser", browser_url]
+        subprocess.Popen(cmd)
+        return True
+    else:
+        log.error("giving up on the browser launch")
+        return False
+
+
+if __name__ == "__main__":
+
+    if len(sys.argv) < 2:
+        print("use: jrepo.py <git repo URL>")
+        sys.exit(1)
+
+    purl = sys.argv[1]
+
+    if not try_repo_url(purl):
+        log.error("unable to proceed")
+        sys.exit(1)
+
+    parsed = urllib.parse.urlparse(purl)
+
+    ppath = parsed.path.split("/")
+    git_user = ppath[1]
+    repo = ppath[2]
+    blobtree = ppath[3]
+    branch = ppath[4]
+    filepath = "/".join(ppath[5:])
+
+    if not all([git_user, repo, blobtree, branch, filepath]):
+        log.error("not a notebook url: " + parsed)
+        sys.exit(1)
+
+    base_url = git_user + "/" + repo + "/" + blobtree + "/" + branch
+
+    found_dir = None
+    rel_fname = None
+    for i in range(len(ppath) - 1, 4, -1):
+        conn = http.client.HTTPSConnection(parsed.netloc)
+        d = "/".join(ppath[5:i])
+        rf = "/".join(ppath[i:])
+        if i > 5:
+            dir = "/" + base_url + "/" + d
+        else:
+            dir = "/" + base_url
+
+        u = dir + "/" + "Dockerfile"
+        log.debug("checking for Dockerfile: " + u)
+        conn.request("HEAD", u)
+        try:
+            r1 = conn.getresponse()
+            if r1.status == 200:
+                log.debug("Found: " + u + " rel_fname: " + rf)
+                found_dir = d
+                rel_fname = rf
+                break
+        except Exception:
+            log.error("unable to connect to: " + parsed.netloc)
+            exc_type, exc_value, exc_tb = sys.exc_info()
+            log.error(traceback.format_exception(exc_type, exc_value, exc_tb))
+            sys.exit(1)
+        finally:
+            conn.close()
+
+    RANDOM_PORT = str(get_free_port())
+
+    if found_dir is not None:
+
+        browser_url = "http://127.0.0.1:" + RANDOM_PORT + "/lab/tree/" + rel_fname
+        # launch the thread that's trying to connect to the container and
+        # launch the browser
+        browser_launch_thread = threading.Thread(
+            target=launch_browser,
+            args=[
+                browser_url,
+                MAX_JUPYTER_URL_TRIES,
+                JUPYTER_URL_DELAY_BETWEEN_TRIES,
+                MIN_HTML_CONTENT_LEN,
+            ],
+        )
+        browser_launch_thread.daemon = True
+        browser_launch_thread.start()
+
+        # jupyter-repo2docker --ref 9ced85dd9a84859d0767369e58f33912a214a3cf
+        # --subdir blah https://github.com/norvig/pytudes
+        jstr = (
+            SCRIPT_DIR
+            + "/jupyter-repo2docker --ref "
+            + branch
+            + " -p "
+            + RANDOM_PORT
+            + ":"
+            + RANDOM_PORT
+        )
+        if d != "":
+            jstr = jstr + " --subdir " + d
+        jstr = (
+            jstr
+            + " "
+            + parsed.scheme
+            + "://"
+            + parsed.netloc
+            + "/"
+            + git_user
+            + "/"
+            + repo
+            + " "
+            + "jupyter lab --ip=0.0.0.0 --allow-root"
+        )
+        jstr = (
+            jstr
+            + " --port "
+            + RANDOM_PORT
+            + " --NotebookApp.token=''"
+            + " --NotebookApp.custom_display_url=http://127.0.0.1:"
+            + RANDOM_PORT
+            + " --no-browser"
+        )
+
+        os.system(jstr)
+    else:
+        log.error("Could not find a docker file, unable to launch!")
+        sys.exit(1)

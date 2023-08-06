@@ -1,0 +1,15 @@
+FROM nvcr.io/nvidia/rapidsai/rapidsai:21.08-cuda11.2-runtime-ubuntu20.04
+
+# ENTRYPOINT
+# ENV JUPYTER_FG true
+# EXPOSE 8888/tcp
+
+# apparently, we need this to build jupyter lab below
+# change name of the jupyter window
+# SHELL ["/bin/bash", "--login", "-c", "jupyter lab build --dev-build=False --minimize=False --name='rapids:21.08'"]
+RUN source /conda/bin/activate rapids && jupyter lab build --dev-build=False --minimize=False --name='rapids:21.08'
+
+# make the mounted data directory show up in the home jupyter lab dir
+# VOLUME ["/data"]
+# RUN ln -s /data ./data
+# CMD /bin/bash

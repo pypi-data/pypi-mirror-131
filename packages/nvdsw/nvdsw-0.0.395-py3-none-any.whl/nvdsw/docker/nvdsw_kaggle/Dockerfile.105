@@ -1,0 +1,15 @@
+FROM gcr.io/kaggle-gpu-images/python:v105
+
+# ENTRYPOINT
+
+# change name of the jupyter window
+RUN jupyter lab build --dev-build=False --minimize=False --name='kaggle:105'
+
+# make the mounted data directory show up in the home jupyter lab dir
+# RUN ln -s /data /home/jupyter/data
+# RUN touch /home/jupyter/dima
+
+# the kaggle container mounts to /home/jupyter
+# so we are not mounting to /data
+# VOLUME ["/home/jupyter"]
+# CMD jupyter lab --allow-root --ip=0.0.0.0 --no-browser --NotebookApp.token=''

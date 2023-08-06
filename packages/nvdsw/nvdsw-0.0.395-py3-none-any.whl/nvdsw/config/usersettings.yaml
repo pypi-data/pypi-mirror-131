@@ -1,0 +1,166 @@
+---
+General:
+  icon: 
+    name: 'preferences-desktop'
+    type: built-in
+
+  items:
+    # turns off all notifications
+    - name: Disable all notifications
+      key: NOTIFY_DISABLE
+      value: False
+      type: Switch
+    
+#   NOTIFY_DISABLE: False
+#   NOTIFY_DISABLE_TYPE: Switch
+
+
+Containers:
+  icon: 
+    name: 'images/container.svg'
+    type: file
+
+  items:
+    # relative paths assume $HOME/relpath
+    # absolute paths work as expected, e.g. /data
+    - name: Local folder to mount inside containers
+      key: DOCKER_SOURCE_MOUNT
+      value: data
+      type: FolderChooserButton
+    - name: Max number of concurrent image pulls (requires restart)
+      key: IMAGE_PULL_THREAD_POOL_SIZE
+      value: 2
+      min: 1
+      max: 10
+      step: 1
+      type: SpinButton
+    - name: Automatically pull latest container images
+      key: AUTOPULL_LATEST_IMAGES
+      value: True
+      type: Switch
+#  DOCKER_SOURCE_MOUNT: data
+#  DOCKER_SOURCE_MOUNT_TYPE: FolderChooserButton
+
+
+News:
+  icon: 
+    name: 'application-rss+xml'
+    type: built-in
+  items:
+    # there could be more than one here eventually 
+    # at the moment, only the first URL in the list will work
+    - name: RSS News Feeds
+      key: RSS_FEED_URLS
+      value:
+        - https://forums.developer.nvidia.com/c/ai-data-science/data-science-of-the-day/323.rss
+        - https://forums.developer.nvidia.com/c/ai-data-science/86.rss
+      type: TextView
+
+#  RSS_FEED_URLS: 
+#    - https://forums.developer.nvidia.com/c/ai-data-science/data-science-of-the-day/323.rss
+#  RSS_FEED_URLS_TYPE: Multiline_url
+
+    # how many items to display in feed
+    - name: News items to display
+      key: MAX_DISPLAY_ITEMS
+      value: 7
+      min: 1
+      max: 10
+      step: 1
+      type: SpinButton
+#  MAX_DISPLAY_ITEMS: 7
+#  MAX_DISPLAY_ITEMS_TYPE: SpinButton
+
+    # how many characters to show in title
+    - name: Characters to display in title
+      key: MAX_ITEM_TITLE_LEN
+      value: 35
+      min: 5
+      max: 50
+      step: 1
+      type: SpinButton
+#  MAX_ITEM_TITLE_LEN: 35
+#  MAX_ITEM_TITLE_LEN_TYPE: SpinButton
+
+    # how many items should be retained in the notifivatio area
+    - name: Max items in notification area
+      key: MAX_ITEM_NOTIFICATIONS
+      value: 3
+      min: 1
+      max: 10
+      step: 1
+      type: SpinButton
+#   MAX_ITEM_NOTIFICATIONS: 3
+#   MAX_ITEM_NOTIFICATIONS_TYPE: SpinButton
+
+  # how often do i poll the feed[s] in seconds
+    - name: How often to get news
+      key: FEED_UPDATE_INTERVAL
+      type: ComboBoxText
+      value: 3600
+      options: 
+        - name: 'Hourly'
+          value: 3600   
+        - name: 'Every two hours'
+          value: 7200        
+        - name: 'Daily'
+          value: 86400
+        - name: 'Never'
+          value: -1        
+            
+#   FEED_UPDATE_INTERVAL: 3600
+#   FEED_UPDATE_INTERVAL_TYPE: SpinButton
+
+    # how long the notifications show on screen, in seconds
+    - name: Notification visibility (seconds)
+      key: NOTIFICATION_VISIBILITY_TIMEOUT
+      type: SpinButton
+      value: 5
+      min: 1
+      max: 10
+      step: 1
+      
+#   NOTIFICATION_VISIBILITY_TIMEOUT_MS: 5000
+#   NOTIFICATION_VISIBILITY_TIMEOUT_MS_TYPE: SpinButton
+
+Updates:
+  icon: 
+    name: 'system-software-update'
+    type: built-in
+  items:
+    # how often should we check for our new version (sec)?
+    - name: How often to check for updates
+      key: VERSION_CHECK_INTERVAL
+      type: ComboBoxText
+      value: 86400
+      options: 
+        - name: 'Daily'
+          value: 86400
+        - name: 'Every two days'
+          value: 172800
+        - name: 'Weekly'
+          value: 604800   
+        - name: 'Every two weeks'
+          value: 1209600
+        - name: 'Never'
+          value: -1
+
+
+Experimental:
+  icon: 
+    name: 'applications-science'
+    type: built-in
+
+  items:
+    # enables NVAIE in the launcher
+    - name: Toggle NVIDIA AI Enterprise Integration (requires restart)
+      key: NVAIE_ENABLED
+      value: False
+      type: Switch   
+    - name: Toggle new launcher experience (requires restart)
+      key: LAUNCHER_ENABLED
+      value: True
+      type: Switch    
+      
+#    VERSION_CHECK_INTERVAL: 86400
+#   VERSION_CHECK_INTERVAL_TYPE: SpinButton

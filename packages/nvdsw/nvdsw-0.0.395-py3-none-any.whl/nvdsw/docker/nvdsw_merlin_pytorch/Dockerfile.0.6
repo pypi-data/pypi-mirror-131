@@ -1,0 +1,15 @@
+FROM nvcr.io/nvidia/merlin/merlin-pytorch-training:0.6
+
+ENTRYPOINT
+# EXPOSE 8888/tcp
+
+# apparently, we need this to build jupyter lab below
+# change name of the jupyter window
+# SHELL ["/bin/bash", "--login", "-c", "jupyter lab build --dev-build=False --minimize=False --name='merlin_pytorch:0.5.3'"]
+
+RUN source /usr/local/nvm/nvm.sh && jupyter lab build --dev-build=False --minimize=False --name='merlin_pytorch:0.6'
+
+# make the mounted data directory show up in the home jupyter lab dir
+# VOLUME ["/data"]
+# RUN ln -s /data ./data
+# CMD jupyter lab --allow-root --ip=0.0.0.0 --no-browser --NotebookApp.token=''
