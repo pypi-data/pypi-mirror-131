@@ -1,0 +1,14 @@
+ic/__init__.py,sha256=xocNrsUlD6M-jz8xRGOfP_KfR1vhnkUxqqqNzr6kl7k,265
+ic/agent.py,sha256=yLK-OuthzJZuzr-aWgwJEaw-uxeV9flDLS7Gem45_kE,4723
+ic/candid.py,sha256=X8uA55szwjyheIUo09H3iLD0H0vvzKiFHbRzDENPZrU,36347
+ic/canister.py,sha256=HoiMAJ6MRUXMZELPj0eJ4FFUUYqhfp2loJ--MWE1Rok,165
+ic/certificate.py,sha256=ezrm3pTGl-iQBuMpV8cN7_JOEyU-GJALJ3WL8449UPQ,3245
+ic/client.py,sha256=310jiaXLYng2gi0GZzQLQXB61bh0D5HWDwjrXFU9hfA,1113
+ic/constants.py,sha256=sQ4ad_c5xlWCpKy8cmmt6fPET-Lb8ziI-uEkIFr2mpU,653
+ic/identity.py,sha256=STTsQLdS186WVtq2u0ykvwaIhgtNEFUv5p7_oxsFVkg,3217
+ic/principal.py,sha256=AvFLqfPzFYeJeeNgp1lPloJ-15do7WJ0hOS5ZKoRQsY,2265
+ic/utils.py,sha256=n-nDyZoNpT4_MrsRPvP0q6x1gtGpYykghm4TdtL6u0E,1272
+ic_py-0.0.5.dist-info/METADATA,sha256=g-BqzZEgkU62xhu_gzCahSKPCx-LjATGJ_U4hRU3HVI,3264
+ic_py-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ic_py-0.0.5.dist-info/top_level.txt,sha256=J08fCO2IqQ2IZql-SeMHSSpeMNk-ctBBV4VrfipjopU,3
+ic_py-0.0.5.dist-info/RECORD,,
