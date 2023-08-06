@@ -1,0 +1,8 @@
+annovar_tools-0.0.1.data/scripts/annovar_tools.py,sha256=SO42LpgzWIzmPTr_3T9rMeYrUMGFGkHkKI9n-IBUGYM,1462
+process_annovar/__init__.py,sha256=g4tLs07exqA7IcbkFDYWA0YcPfxxv37wtGn8jtYzOX4,73
+process_annovar/split.py,sha256=59_E7LEfQ2ta2LD2TeY1jRgu89sddJPlK7OXV22Q2Xo,4560
+process_annovar/vcf.py,sha256=cBd76Ekcn5fqlA3SeeYHRKEg8gCa_xR8lS7BhG-2Flg,2356
+annovar_tools-0.0.1.dist-info/METADATA,sha256=5TEiLbjahIyTpw4E8wb2NScbBfPIKuU03WdyLhMfyh4,1911
+annovar_tools-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+annovar_tools-0.0.1.dist-info/top_level.txt,sha256=NYkV5bZ6Uj8qGnBBu6lGZl0Xfhkf-WQWHfm8y68UvWU,16
+annovar_tools-0.0.1.dist-info/RECORD,,
