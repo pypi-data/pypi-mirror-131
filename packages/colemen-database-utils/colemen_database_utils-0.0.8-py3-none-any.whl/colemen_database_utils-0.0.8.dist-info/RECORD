@@ -1,0 +1,9 @@
+colemen_database.py,sha256=tEgrJQSA713ThelyGJagwiQpMYmEE4ALk_2l3BOKOg0,20705
+utils/generation.py,sha256=d75RVBItZtJgHlXa-VI_e5NNiytBMDiVYhbLY4FxahQ,16389
+utils/object_utils.py,sha256=0GOScHN4vV_9Y6hdLp3v785F-cNufVEm0BnVa9QV2vM,4909
+utils/sql_utils.py,sha256=kGjZh4UB_G7tRE-KhQ54fowl1f5qZpDzPxdSEDLCr-k,281
+utils/table_utils.py,sha256=mJIUgOj3PulB9VCRWtO2E-avp3u0y5FSmfWBMLyE0vA,14033
+colemen_database_utils-0.0.8.dist-info/METADATA,sha256=lJSmbniTEsHAsZu_ZI2sDJ7bAt5SEvfuX8oX5G-p7ck,665
+colemen_database_utils-0.0.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+colemen_database_utils-0.0.8.dist-info/top_level.txt,sha256=Bk7e1iV9hV3xnA34pUOFfH7V1lBeohM8RlaCJCyuSIM,23
+colemen_database_utils-0.0.8.dist-info/RECORD,,
