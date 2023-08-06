@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: imread-from-url
+Version: 0.1.3
+Summary: Read the image from the specified URL and enable it to be handled by OpenCV
+Home-page: https://github.com/Kazuhito00/imread_from_url
+Author: Kazuhito Takahashi
+Author-email: UNKNOWN
+License: Apache License, Version 2.0
+Description: UNKNOWN
+Platform: UNKNOWN

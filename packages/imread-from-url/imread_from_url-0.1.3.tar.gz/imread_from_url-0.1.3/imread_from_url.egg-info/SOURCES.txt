@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+sample.py
+setup.py
+imread_from_url/__init__.py
+imread_from_url/imread_from_url.py
+imread_from_url.egg-info/PKG-INFO
+imread_from_url.egg-info/SOURCES.txt
+imread_from_url.egg-info/dependency_links.txt
+imread_from_url.egg-info/requires.txt
+imread_from_url.egg-info/top_level.txt
