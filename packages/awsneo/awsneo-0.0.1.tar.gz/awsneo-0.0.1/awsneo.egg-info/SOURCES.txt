@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+awsneo/DBConnector.py
+awsneo/extras.py
+awsneo/utils.py
+awsneo.egg-info/PKG-INFO
+awsneo.egg-info/SOURCES.txt
+awsneo.egg-info/dependency_links.txt
+awsneo.egg-info/top_level.txt
