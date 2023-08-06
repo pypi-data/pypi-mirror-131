@@ -1,0 +1,11 @@
+napari_time_slicer/__init__.py,sha256=EKgd9Dcz0zXVbZW7pyZTg1I_VG2pd_hrO6mct3q1GCc,3836
+napari_time_slicer/_function.py,sha256=I-pPUWO-GYKT_6pKmUdDqnor9hhmF7COMPyr3pXNT3s,807
+napari_time_slicer/_workflow.py,sha256=cZuA_yw4Qk5-KvA0FoD5I9MAuZcCOY4w_FwiPA7f1bI,14121
+napari_time_slicer/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_time_slicer/_tests/test_function.py,sha256=lhngswJnu_j8OGvwTvNC2ugf1nINrSTFy8_u9gNJ3Rc,120
+napari_time_slicer-0.3.3.dist-info/LICENSE,sha256=VR_4ORo4GKX88KYwE7Ux-ykhQgtTh9-FLm-jwq5R5_A,1489
+napari_time_slicer-0.3.3.dist-info/METADATA,sha256=0VB2ogHUMW-r8L4-hiEi7EIukxGEEFO-d-QjknN8Zzo,6807
+napari_time_slicer-0.3.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+napari_time_slicer-0.3.3.dist-info/entry_points.txt,sha256=GM0Wd-8wYLHuzxTSjFA2pinwrwXrYsTfC9LzPHyZcVo,57
+napari_time_slicer-0.3.3.dist-info/top_level.txt,sha256=0I6XfYbu5rcRJTYP7Oop5pPaU2AIjHFuarRAsCxPf_A,19
+napari_time_slicer-0.3.3.dist-info/RECORD,,
