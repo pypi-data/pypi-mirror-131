@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+maglezprimo.egg-info/PKG-INFO
+maglezprimo.egg-info/SOURCES.txt
+maglezprimo.egg-info/dependency_links.txt
+maglezprimo.egg-info/top_level.txt
+primo/__init__.py
