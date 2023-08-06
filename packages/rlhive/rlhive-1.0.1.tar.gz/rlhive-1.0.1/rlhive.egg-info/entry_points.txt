@@ -1,0 +1,4 @@
+[console_scripts]
+hive_multi_agent_loop = hive.runners.multi_agent_loop:main
+hive_single_agent_loop = hive.runners.single_agent_loop:main
+
