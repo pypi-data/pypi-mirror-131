@@ -1,0 +1,3 @@
+[console_scripts]
+biosimulators-cobrapy = biosimulators_cobrapy.__main__:main
+
