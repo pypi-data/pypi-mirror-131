@@ -1,0 +1,11 @@
+dummynet/__init__.py,sha256=ICCmNlme3BIpNnRbK0fTWL3szjrxk35DDWZaNsaCw58,195
+dummynet/docker_shell.py,sha256=A-n13-MoMCdpmWCz87HFyXbKiPVs6NkOPOvHaTthXwE,2838
+dummynet/dummy_net.py,sha256=FcEbyBc9pYVgQbzG6BqN1JN3BFotSLZcyipT-MOidyY,6739
+dummynet/dummy_net_factory.py,sha256=XN7tk87uELtSMPhEz46YbnxBRV6Elqa2HjyWBvvpCSQ,569
+dummynet/host_shell.py,sha256=ySMrHjuPr71TQ6_7invQyZCGdX7D4M8qvfHWiSfTG2E,2118
+dummynet/namespace_shell.py,sha256=RizMt0j_P0p9JBrX66xfuTsVYOLYXq71gLOnUH2qG3I,807
+dummynet-1.0.0.dist-info/LICENSE.rst,sha256=lnhVy333OpPgt8lKvpJs9jdfAOTpzAhlk0Z2e4V2BDs,1505
+dummynet-1.0.0.dist-info/METADATA,sha256=denti82gIgu4Krhyj4XVTJTWhTXFUBSHqVkGEkcaQB8,4844
+dummynet-1.0.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+dummynet-1.0.0.dist-info/top_level.txt,sha256=beQt5cynnx7cpYC2J9i11U2IBQdl-bVPaINnhozkRoM,9
+dummynet-1.0.0.dist-info/RECORD,,
