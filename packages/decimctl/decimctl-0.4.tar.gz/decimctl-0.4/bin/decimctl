@@ -1,0 +1,118 @@
+#!/usr/bin/env python3
+
+import argparse
+import decimctl
+import os
+import sys
+import enum
+import struct
+
+def list_devices(args):
+    devices = decimctl.list_devices()
+    if not devices:
+        print("No devices found")
+        sys.exit(1)
+    for manufacturer, desc, serial in devices:
+        print("Model: %s Serial: %s" % (desc, serial))
+
+def _create_device(args):
+    return decimctl.Device(log_raw_data=args.log_raw_data, serial=args.serial)
+
+def registers(args):
+    d = _create_device(args)
+    print(d.raw_registers)
+
+def status(args):
+    d = _create_device(args)
+    print("Model: %s Serial: %s" % (d.desc, d.serial))
+    if d.custom_name:
+        print("Custom name: %s" % (d.custom_name))
+    print("Device type: %s" % (d.device_type))
+    reg = d.registers
+    print("Firmware version: %d.%d" % (reg.version_major, reg.version_minor))
+    if hasattr(reg, "Input1Status"):
+        print("Input 1 status: %s" % reg.Input1Status)
+    if hasattr(reg, "Input2Status"):
+        print("Input 2 status: %s" % reg.Input2Status)
+    if hasattr(reg, "Input3Status"):
+        print("Input 3 status: %s" % reg.Input3Status)
+    print(reg)
+
+def set_register(args):
+    d = _create_device(args)
+    d.fpga_write_bytes(args.register, args.value)
+
+def set(args):
+    d = _create_device(args)
+    r = d.registers
+    old = getattr(r, args.name)
+    if args.value is None:
+        field = getattr(type(r), args.name)
+        print("Current value: %s" % old)
+        print("Possible values:")
+        if isinstance(old, enum.Enum):
+            for v in list(type(old)):
+                print(v)
+        elif field.size >> 16 == 1:
+            print("0")
+            print("1")
+        elif isinstance(old, bytes):
+            print("String")
+        else:
+            print("Integer")
+        return
+    if isinstance(old, bytes):
+        value = os.fsencode(args.value)
+    else:
+        try:
+            value = int(args.value, 0)
+        except ValueError:
+            old = getattr(r, args.name)
+            if isinstance(old, enum.Enum):
+                value = type(old)[args.value]
+            else:
+                raise ValueError('unable to parse value as an integer')
+    setattr(d.registers, args.name, value)
+
+def auto_int(x):
+    return int(x, 0)
+def int_byte(x):
+    # TODO: Support multiple bytes
+    return struct.pack('>B', int(x, 0))
+
+def main():
+    device_parser = argparse.ArgumentParser(add_help=False)
+    device_parser.add_argument('--serial', help='serial number of device to control')
+    
+    parser = argparse.ArgumentParser(prog='decimctl')
+    parser.add_argument('--log_raw_data', action='store_true', help='log raw data to a file in the current directory')
+
+    subparsers = parser.add_subparsers(dest='command', metavar='command')
+
+    parser_list = subparsers.add_parser('list', help='list devices')
+    parser_list.set_defaults(func=list_devices)
+
+    parser_registers = subparsers.add_parser('registers', parents=[device_parser], help='print raw register values')
+    parser_registers.set_defaults(func=registers)
+
+    parser_set_register = subparsers.add_parser('set_register', parents=[device_parser], help='set raw register value')
+    parser_set_register.add_argument('register', type=auto_int, help='register number to set')
+    parser_set_register.add_argument('value', type=int_byte, help='value to set (123 or 0x1a)')
+    parser_set_register.set_defaults(func=set_register)
+
+    parser_status = subparsers.add_parser('status', parents=[device_parser], help='show processed device status')
+    parser_status.set_defaults(func=status)
+
+    parser_set = subparsers.add_parser('set', parents=[device_parser], help='set a parameter')
+    parser_set.add_argument('name', help='parameter name')
+    parser_set.add_argument('value', nargs='?', help='parameter value (integer or string if supported)')
+    parser_set.set_defaults(func=set)
+
+    args = parser.parse_args()
+    if 'func' not in args:
+        parser.print_help()
+        sys.exit(1)
+    args.func(args)
+
+if __name__ == '__main__':
+    main()
