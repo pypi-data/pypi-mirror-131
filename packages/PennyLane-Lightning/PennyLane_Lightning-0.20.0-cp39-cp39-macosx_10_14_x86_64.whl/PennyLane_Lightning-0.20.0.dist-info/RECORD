@@ -1,0 +1,13 @@
+PennyLane_Lightning-0.20.0.dist-info/RECORD,,
+PennyLane_Lightning-0.20.0.dist-info/LICENSE,sha256=_zKpiTfJGLmlVz4pw88ztD4wTe2QkkUNBGSaac54sjM,11720
+PennyLane_Lightning-0.20.0.dist-info/WHEEL,sha256=7vkJ3ZnexegyTUl8grQkOVww_TVBMjxMIgcotcWEQj4,110
+PennyLane_Lightning-0.20.0.dist-info/entry_points.txt,sha256=fgLGNe_9Av6nl9eJ7WXdQeS63causCrFsO1beybxjbA,74
+PennyLane_Lightning-0.20.0.dist-info/top_level.txt,sha256=sdUchIJor0s-xafJZ1sShHq2FjnKFhl494-_wT-GRIg,40
+PennyLane_Lightning-0.20.0.dist-info/METADATA,sha256=qe4Q4--GIVLAt-9lxGT4t9HPNMrFjE6ZD1OL0AF5wuQ,7998
+pennylane_lightning/lightning_qubit_ops.cpython-39-darwin.so,sha256=R0oiwvh76-GXt0fE2vCE8tEVfZCeLonh7rciohRzqUA,503736
+pennylane_lightning/_version.py,sha256=f6RvQuY9Nvz_TkSORQBBF3smRGy0No5sl3xx4szXfxk,693
+pennylane_lightning/_serialize.py,sha256=GKxVrkXe0lARxXvAFPgXWrx1Tc9jn4EIz616P4nwg0Q,5201
+pennylane_lightning/__init__.py,sha256=lHYIbmGzrOztEdzj1EV23O02jpaPvCIog1t5Mmz-6eg,716
+pennylane_lightning/lightning_qubit.py,sha256=FAduwafwSpN7kJQ3s_ag939mV60OAp8Jv672uCC2Ubg,19208
+pennylane_lightning/.dylibs/libomp.dylib,sha256=txg8M8zC1KhaQTv00u_4IfSIq2kBcT8aSC_vNM_cHsI,639184
+pennylane_lightning/src/CMakeLists.txt,sha256=4KJtz5FxSwavjF_Qs9Xyy-mVDd921199jhGpy7bMi7c,499
