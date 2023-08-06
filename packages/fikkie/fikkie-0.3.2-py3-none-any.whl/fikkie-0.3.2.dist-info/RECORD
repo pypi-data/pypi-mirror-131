@@ -1,0 +1,15 @@
+fikkie/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fikkie/check.py,sha256=kNncPc1ojxlOIq8v3FwKkL2KUjmPciuPkLG4XCtXekM,3759
+fikkie/commands.py,sha256=R_JVXD_VukHGMWiItFCPNesf1LldrEZzmxfNjvLVYoU,4485
+fikkie/config.py,sha256=VAwB80sB24LqWKdnB85PcwW4LYMJAVdYreh481f1EPM,962
+fikkie/main.py,sha256=wpXoV3Mcaee3jIsXILL_O10E23I3olRu0dmB38SG2jA,1138
+fikkie/watchdog.py,sha256=HR6G3bSxWxhJgZ0EetOPMhC7HJ980osc_tUAZA3lEC4,1787
+fikkie/notifiers/__init__.py,sha256=_fdzq5SwU8cs4XNwTn-bZuXZQgdlxnKz6_4pRGyFtss,470
+fikkie/notifiers/email.py,sha256=c-C0M1-cKwIM2zD-5izE0lDXJ-S4emjxtuAXFjNlWEQ,994
+fikkie/notifiers/telegram.py,sha256=WL0BTxTBp_VWKssH-Ep6j9aCYeWRdAqORFXJiYHaNws,657
+fikkie-0.3.2.data/scripts/fikkie,sha256=r5ImygYFfQJd0yZMnYObfUaHv45BRq-2KqfJuPGWEnU,1854
+fikkie-0.3.2.dist-info/LICENSE.md,sha256=2yTH8wRGwfjuc0V4XlL6LTrMZpSyE6h9oEodAbBMg5k,1056
+fikkie-0.3.2.dist-info/METADATA,sha256=e9GzUeXGfKIa1xkSWN2saNfRFg0KAb7Ryegpm151ecA,2303
+fikkie-0.3.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fikkie-0.3.2.dist-info/top_level.txt,sha256=nBgDRzq-zq6FBm8C66grBTJFrfKeQ8vICIyYhK_BTMc,7
+fikkie-0.3.2.dist-info/RECORD,,
