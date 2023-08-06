@@ -1,0 +1,11 @@
+gdtw/__init__.py,sha256=d6XuHDFAEWRNeWNhnIDb0vDidTf2Wg7TqGOo7KZHRhU,72
+gdtw/gdtw.py,sha256=VhmOd2cHqSiNPTmj500UtqFLPeatJ6DrUW0PT5xMLjg,13522
+gdtw/gdtwcpp.cpython-37m-darwin.so,sha256=RW7RM9u6_LwOXiG0FPGc4NO4RgK-cmv7LB0_U3s1H2c,39496
+gdtw/signal.py,sha256=zWUCmTK6aBuZpo__0D--XK-n8-7tXgKvW1pg-E7GiIw,6240
+gdtw/utils.py,sha256=Xg2ycofYtGlrbL8DlqYeHeO6blTZ27_w9LbNmembIp8,2092
+gdtw/warp.py,sha256=naSW-HsVKruWTJPwrfg6lPC2i4GSFlJIa4ISmX2AS3E,242
+gdtw-1.0.2.dist-info/LICENSE,sha256=U8RAKr6DEkJN9Nd4HHtKYM0lH3gTmEXKjhd_0u_gss8,568
+gdtw-1.0.2.dist-info/METADATA,sha256=w7MhymE7_JnCk8vKTeXLV7hp2JnlLFJDif2IYHOZpkM,1053
+gdtw-1.0.2.dist-info/WHEEL,sha256=KUcuKd4NS6mCD7Qx4sT343lTcoCvKQec801MGpvmkDM,110
+gdtw-1.0.2.dist-info/top_level.txt,sha256=QPGo8qf65sOuTyiducDb4GqI0rqiy-HiLU4BsRJgyaE,18
+gdtw-1.0.2.dist-info/RECORD,,
