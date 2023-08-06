@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: automate-lifx-plugin
+Version: 0.9.1
+Summary: A Lifx plugin for automate-home
+Home-page: https://github.com/majamassarini/automate-home
+Author: Maja Massarini
+Author-email: maja.massarini@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Communications
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# automate-lifx-plugin
+[![Build Status](https://app.travis-ci.com/majamassarini/automate-lifx-plugin.svg?branch=main)](https://app.travis-ci.com/majamassarini/automate-lifx-plugin)
+[![codecov](https://codecov.io/gh/majamassarini/automate-lifx-plugin/branch/main/graph/badge.svg?token=hGxVY2MzWP)](https://codecov.io/gh/majamassarini/automate-lifx-plugin)
+[![Documentation Status](https://readthedocs.org/projects/automate-lifx-plugin/badge/?version=latest)](https://automate-lifx-plugin.readthedocs.io/en/latest/?badge=latest)
+
+The **Lifx** plugin for the [automate-home project](https://github.com/majamassarini/automate-home).
+
+## Yaml examples of usage
+
+Trigger and commands for a [indoor hue light model](https://automate-home.readthedocs.io/en/latest/appliances.html#light-indoor-hue-appliance).
+```yaml
+- !Performer
+  name: "lifx state"
+  for appliance: "an indoor hue light"
+  commands: []
+  triggers:
+    - !lifx_plugin.trigger.State
+      addresses: [["172.31.10.245", 56700]]
+      events: []
+
+
+- !Performer
+  name: "set color command"
+  for appliance: "an indoor hue light"
+  commands:
+    - !lifx_plugin.command.SetColor { addresses: [ [ "172.31.10.245", 56700 ] ] }
+  triggers: [ ]
+
+
+- !Performer
+  name: "start show command"
+  for appliance: "an indoor hue light"
+  commands:
+    - !lifx_plugin.command.SetWaveform { addresses: [ [ "172.31.10.245", 56700 ] ] }
+  triggers: [ ]
+
+
+- !Performer
+  name: "adjust lifx brightness through a knx dimming button"
+  for appliance: "an indoor hue light"
+  commands:
+    - !lifx_plugin.command.SetColor {addresses: [["172.31.10.245", 56700]]}
+  triggers:
+    - !knx_plugin.trigger.dpt_control_dimming.BrightnessStep {addresses: [0x0C07]}
+```
+
+## Documentation
+
+* [automate-home protocol commands/triggers chapter](https://automate-home.readthedocs.io/en/latest/performer.html)
+* [automate-lifx-plugin documentation](https://automate-lifx-plugin.readthedocs.io/en/latest/?badge=latest)
+
+## Contributing
+
+Pull requests are welcome!
+
+## License
+
+The automate-lifx-plugin is licensed under MIT.
+
