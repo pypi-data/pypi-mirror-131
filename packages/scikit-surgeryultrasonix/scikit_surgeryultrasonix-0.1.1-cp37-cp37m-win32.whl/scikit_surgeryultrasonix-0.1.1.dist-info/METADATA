@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: scikit-surgeryultrasonix
+Version: 0.1.1
+Summary: A template project, to enable people to build nicely structured C++ projects.
+Home-page: UNKNOWN
+Author: Matt Clarkson
+Author-email: m.clarkson@ucl.ac.uk
+License: BSD-3 license
+Keywords: C++ cmake catch project template
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C++
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: six (>=1.10)
+Requires-Dist: numpy (>=1.11)
+
+# scikit-surgeryultrasonix
+
+Python bindings for Ultrasonix machine.
+
+Only works on Windows with 32-bit version of Python.
+
+Tested with Python 3.7.
+
+## Prerequisites
+
+You must have the Ulterius SDK on your local machine, and add the `bin` folder to your system path.
+
+If sdk is in `C:\Ulterius\sdk_612\bin`
+
+In Windows CMD
+`set PATH=%PATH%;C:\Ulterius\sdk_612\bin`
+
+In Git Bash
+`export PATH=$PATH:/c/Ulterius/sdk_612/bin`
+
+## Example Usage
+```
+import sksurgeryultrasonix
+import numpy as np
+import cv2
+
+ip = "128.16.0.3" # This is the IP address of the Ultrasonix
+
+U = sksurgeryultrasonix.Ultrasonix.CreateInstance()
+U.connect_to_host(ip)
+
+while True:
+
+    frame = U.get_frame() # Returns numpy array
+    frame = frame.reshape(480,640)
+    cv2.imshow('x',x)
+    cv2.waitKey(1)
+```
+
