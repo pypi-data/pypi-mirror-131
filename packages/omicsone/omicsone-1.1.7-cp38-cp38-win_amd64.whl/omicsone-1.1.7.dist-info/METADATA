@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: omicsone
+Version: 1.1.7
+Summary: OmicsOne: phenotype association analysis
+Home-page: UNKNOWN
+Author: Yingwei Hu, Minghui Ao
+Author-email: yhu39@jhmi.edu
+License: Apache 2.0
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: dash (==2.0.0)
+Requires-Dist: dash-core-components (==2.0.0)
+Requires-Dist: dash-html-components (==2.0.0)
+Requires-Dist: jupyter-dash (==0.4.0)
+Requires-Dist: scikit-learn (==0.24.2)
+Requires-Dist: scikit-plot (==0.3.7)
+Requires-Dist: scipy (==1.7.1)
+Requires-Dist: numpy (==1.21.4)
+Requires-Dist: seaborn (>=0.11.1)
+Requires-Dist: gseapy (==0.10.5)
+Requires-Dist: tqdm
+Requires-Dist: statsmodels (>=0.13.0)
+Requires-Dist: openpyxl
+
+UNKNOWN
+
