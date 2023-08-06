@@ -1,0 +1,8 @@
+bokeh
+panel
+pandas
+numpy
+icevision[all]==0.11.0
+fastprogress
+scikit-learn
+joblib
