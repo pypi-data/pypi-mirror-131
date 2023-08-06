@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pypopsift.egg-info/PKG-INFO
+pypopsift.egg-info/SOURCES.txt
+pypopsift.egg-info/dependency_links.txt
+pypopsift.egg-info/not-zip-safe
+pypopsift.egg-info/top_level.txt
