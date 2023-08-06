@@ -1,0 +1,26 @@
+record
+******
+
+
+Description
+===========
+
+A record represents an entry in a dataset that needs labeling.
+
+
+Available Commands
+==================
+
+* create
+
+* create-record-create-object-storage-source-details
+
+* delete
+
+* get
+
+* get-record-content
+
+* get-record-preview-content
+
+* update
