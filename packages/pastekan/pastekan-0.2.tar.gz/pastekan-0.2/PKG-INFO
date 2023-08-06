@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: pastekan
+Version: 0.2
+Summary: CLI client for Haste server (hastebin.com) written in Python.
+Home-page: https://github.com/SekaiKode/pastekan-cli
+Author: Jakub Jirutka
+Author-email: jakub@jirutka.cz
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities
