@@ -1,0 +1,15 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=4F3QktYoI0m-4hccMbced6hxWua5meU7bMKt6_z8Ph8,107
+tests/test_basic.py,sha256=bw0UCwW7ey6m1tpittbj_9HfcG6eK8LZgq--HGCztZI,268
+tests/test_usage.py,sha256=LSrQBiYi022ArNl9w0QeIFCovWuVRGxeaaRU7X-5LYg,2998
+tests/test_utils.py,sha256=FSZCA61K_tsESUzn_xBSd1EqUB_rXBJXZBy489kM1Z4,934
+tests/utils.py,sha256=A9VG5uyxM6vq8gfpfLgh6Z5AJvmAUPkOw-iprI02nHE,296
+universalasync/__init__.py,sha256=Sb1NyfeuuTzz4hSyQiGMXNUbfV_mjFeahdX0tbyx8cU,665
+universalasync/utils.py,sha256=To4hCF2bi_qz_Dv2euSathg0LUrQGUDMarg1g8OW7zE,891
+universalasync/version.py,sha256=huN8y_q0skcMWnqfUpuAS33sUaM6cewXnwLwnVaey7s,20
+universalasync/wrapper.py,sha256=LXoNzGvrJaFTVmqf1HxBsfTYLSMe11hnDgQAs6wH1o8,3191
+universalasync-0.1.0.0.dist-info/LICENSE,sha256=S8qjIUDh2NLk3YleaBLagNvYoVRGYOhxiNE9FuagCvA,1067
+universalasync-0.1.0.0.dist-info/METADATA,sha256=ztuKQiXkpVKi684hMSp_hGcKd7HVW59J1s2mvLZcV0k,1267
+universalasync-0.1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+universalasync-0.1.0.0.dist-info/top_level.txt,sha256=62_MO3Zjx6fATwVIwhwNOICglM3HFThTjPCpyX-AZBA,21
+universalasync-0.1.0.0.dist-info/RECORD,,
