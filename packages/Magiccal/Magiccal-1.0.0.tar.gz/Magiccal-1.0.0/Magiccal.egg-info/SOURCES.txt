@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+Magiccal.egg-info/PKG-INFO
+Magiccal.egg-info/SOURCES.txt
+Magiccal.egg-info/dependency_links.txt
+Magiccal.egg-info/top_level.txt
+magiccal/__init__.py
+magiccal/magiccal.py
