@@ -1,0 +1,9 @@
+easyrepr/__init__.py,sha256=T8r09EWpMIeFFL64Oz2wWAtVISdQxmpQItCUhBPowoE,56
+easyrepr/decorator.py,sha256=u-0XYtHJi7SfyCTNGKGoy-KjyAFow6HaY_BaRsHGJWY,1233
+easyrepr/descriptor.py,sha256=51nVCbqjxIsA774jl4erYWyqymciIYz5uWpraK6A8VY,7037
+easyrepr/reflection.py,sha256=exGylEIlMrm5snaSTUTQ9OeR3xRuV78lPxroscThGoo,2350
+easyrepr/style.py,sha256=Afv9EE3bV9i9NYYj4QIC9YGPek5g-7TVOuKmDKAX8eI,2118
+easyrepr-0.4.0.dist-info/LICENSE.rst,sha256=Z_Cz8bsCN49ZO--pLFrTvX-n7tjYHdYdXk0OMUm6_Uw,1109
+easyrepr-0.4.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+easyrepr-0.4.0.dist-info/METADATA,sha256=MHzD4zLGSP2KEomSD7Uw8NaqD5eoCl038NXBEiPgKiE,3043
+easyrepr-0.4.0.dist-info/RECORD,,
