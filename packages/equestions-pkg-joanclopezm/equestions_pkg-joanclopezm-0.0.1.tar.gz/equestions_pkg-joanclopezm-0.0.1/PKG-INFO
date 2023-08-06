@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: equestions_pkg-joanclopezm
+Version: 0.0.1
+Summary: Depression test to calculate depression
+Home-page: https://github.com/x20232535/depress_test
+Author: joan lopez
+Author-email: joanclopezm@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+         ___        ______     ____ _                 _  ___  
+        / \ \      / / ___|   / ___| | ___  _   _  __| |/ _ \ 
+       / _ \ \ /\ / /\___ \  | |   | |/ _ \| | | |/ _` | (_) |
+      / ___ \ V  V /  ___) | | |___| | (_) | |_| | (_| |\__, |
+     /_/   \_\_/\_/  |____/   \____|_|\___/ \__,_|\__,_|  /_/ 
+ ----------------------------------------------------------------- 
+
+
+
+

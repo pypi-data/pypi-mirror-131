@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+equestions_pkg_joanclopezm.egg-info/PKG-INFO
+equestions_pkg_joanclopezm.egg-info/SOURCES.txt
+equestions_pkg_joanclopezm.egg-info/dependency_links.txt
+equestions_pkg_joanclopezm.egg-info/top_level.txt
+questions_pkg/__init__.py
+questions_pkg/questions.py
