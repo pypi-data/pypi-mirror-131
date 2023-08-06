@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+setup.py
+russian/__init__.py
+russian.egg-info/PKG-INFO
+russian.egg-info/SOURCES.txt
+russian.egg-info/dependency_links.txt
+russian.egg-info/top_level.txt
