@@ -1,0 +1,15 @@
+rempy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rempy/main.py,sha256=IGG4H7lIF8dLkDwOA5Gyri7HmxXVkPSWZGlb-ByRnzU,6522
+rempy/runtime/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rempy/runtime/remote_cli.py,sha256=UCyTPKb2fZGzGE7dtLeEwfGy0A4zYOd0gXW8kIJvqi8,3311
+rempy/sync/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rempy/sync/manager.py,sha256=_gGRbA945LHGVY-W9pPNwduXH_Ol3lb4GnGrrzz1hak,2195
+rempy/sync/patcher.py,sha256=-dRu6bEjgQINeShRkz2gxm_zmvjBwjl_1f5B-9KeQbY,6381
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/hello.py,sha256=rWNGvgzA9MbfsWGRCAQQPqpqP3MUvwZ9WTQkbbYACPk,286
+rempy-2.0.0.dist-info/LICENSE,sha256=WoF6NjcudqHQvgMKoO2JRl4AVvXR3OP_RDnXPqZKb-E,1088
+rempy-2.0.0.dist-info/METADATA,sha256=QYJDWqYQWWd1qbRMi7h7TM1c-5Xk5lkfIFOGIpmBooE,5513
+rempy-2.0.0.dist-info/WHEEL,sha256=oh0NKYrTcu1i1-wgrI1cnhkjYIi8WJ-8qd9Jrr5_y4E,110
+rempy-2.0.0.dist-info/entry_points.txt,sha256=NQvGhpvs-v-Ke31nRTXfrMENhvp0LZEyQSUvU1OEowo,43
+rempy-2.0.0.dist-info/top_level.txt,sha256=n4wH-xlZAHSwaFjvr52IJQZYHA6ftjxZ8grqh7w_VFQ,12
+rempy-2.0.0.dist-info/RECORD,,
