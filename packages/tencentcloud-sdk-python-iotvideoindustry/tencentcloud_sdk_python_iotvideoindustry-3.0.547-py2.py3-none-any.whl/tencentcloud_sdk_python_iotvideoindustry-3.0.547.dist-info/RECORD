@@ -1,0 +1,10 @@
+tencentcloud/__init__.py,sha256=Ic-JNpvxmA1iqrMZD3eCdsN4xQ8-mCeRkXvRfKWHBNI,630
+tencentcloud/iotvideoindustry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/iotvideoindustry/v20201201/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/iotvideoindustry/v20201201/errorcodes.py,sha256=-gAi03GzomTfwu2ab5KzuLE8tvtJ-yNojv7U0aG7Y14,7345
+tencentcloud/iotvideoindustry/v20201201/iotvideoindustry_client.py,sha256=yxcnJ4bIIkAx8k7ZGRotZeT-lkpcKwJ0vWDf0e8Izak,79007
+tencentcloud/iotvideoindustry/v20201201/models.py,sha256=b_o1_d5CA8rPTEP3DNQQxiL2290dJJBW1lyP6-QDQ8o,146195
+tencentcloud_sdk_python_iotvideoindustry-3.0.547.dist-info/METADATA,sha256=4TCoOhwRx0_W-tGC8X3N4ShMpztLyfSjCa3UJKXiVLE,1497
+tencentcloud_sdk_python_iotvideoindustry-3.0.547.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+tencentcloud_sdk_python_iotvideoindustry-3.0.547.dist-info/top_level.txt,sha256=g-8OyzoqI6O6LiS85zkeNzhB-osEnRIPZMdyRd_0eL0,13
+tencentcloud_sdk_python_iotvideoindustry-3.0.547.dist-info/RECORD,,
