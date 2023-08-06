@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "ts-transform"
+version = "0.2.2"
+description = "Timeseries transforms"
+authors = ["Adam Hendel"]
+
+[tool.poetry.dependencies]
+python = ">=3.6.2,<4.0"
+
+pandas = "^1.0.0"
+scikit-learn = "^0.24.2"
+
+[tool.poetry.dev-dependencies]
+autoflake = "^1.4"
+black = "^21.9b0"
+codecov = "^2.1.12"
+coverage = "^6.0"
+debugpy = "^1.5.0"
+flake8 = "^3.9.2"
+isort = "^5.9.3"
+mypy = "^0.910"
+pylint = "^2.11.1"
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.coverage]
+report.show_missing = true
+report.fail_under = 80
+
+[tool.black]
+line-length = 79
+target-version = ['py39']
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "INFO"
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
