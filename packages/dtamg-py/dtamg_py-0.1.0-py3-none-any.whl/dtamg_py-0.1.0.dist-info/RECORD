@@ -1,0 +1,16 @@
+dtamg_py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dtamg_py/build_datapackage.py,sha256=M8MlpzKadnveoeUCt50vmLhRaA-2IRfomMGrAVKVHSg,256
+dtamg_py/build_datapackages.py,sha256=VVQcCG0UJiCRIvmAJBs5RrSpreq6h8-0CSLCED56fig,287
+dtamg_py/build_documentation_folder.py,sha256=8J4jViSjSVVY8CLYDFkAl6bb1TAPE887NXqOmB-uY_s,278
+dtamg_py/cli.py,sha256=Oiq5skDyv8SnWLayHw_LnVHVqZKFuzrCKcBMXJZEHqU,827
+dtamg_py/create.py,sha256=FepraVwUkiIwsn7sywt58eEPYdK2xwCrrgvQJHspBqA,227
+dtamg_py/full_extract.py,sha256=c1njyAhgd6VsIoqUTPJ-DjIE5ZJ-YNYHpCgZS9ekl60,262
+dtamg_py/update.py,sha256=56bsOUQ3GIV88EnxQEaIobg3TYA-CSCdPw1FcyjxYGo,231
+dtamg_py/utils.py,sha256=iTRjFucvmH8wKL8y_CQrVc0ihkDOczY4VCnc28T-pq4,7410
+dtamg_py/validate.py,sha256=179Pn7xXmnL8WbQvRGNtWac0DxWX540EqXyHpKYSJrw,350
+dtamg_py-0.1.0.dist-info/LICENCE.txt,sha256=rQSGBVpbuqMgc_gtGaPdTxUQM5iApqmn0qtjn-4PhWo,1095
+dtamg_py-0.1.0.dist-info/METADATA,sha256=OaSp0mhCMLcxeioZOAaar00rjubIyb1ZTK1oiqXj5V0,2807
+dtamg_py-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dtamg_py-0.1.0.dist-info/entry_points.txt,sha256=tCLw-x8jCsQ0poBUzk9J_nql9HHStmfAtVpiWc1lAxs,67
+dtamg_py-0.1.0.dist-info/top_level.txt,sha256=zbyUBHeglYoh9BUWT_KqllG2Du4X5Q561_c7SkBFNQw,9
+dtamg_py-0.1.0.dist-info/RECORD,,

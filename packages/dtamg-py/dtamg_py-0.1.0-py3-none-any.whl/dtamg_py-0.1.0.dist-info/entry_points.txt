@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        dtamg-py=dtamg_py.cli:cli
+      
