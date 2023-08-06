@@ -1,0 +1,10 @@
+tencentcloud/__init__.py,sha256=ecFHuSZWX4Qn221WsQwXyYzi5L6cyOHd5DokiO5hI5g,630
+tencentcloud/cam/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/cam/v20190116/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/cam/v20190116/cam_client.py,sha256=Ufx1P1bVZ3Fv5d8nt220v9yWEJWxWuimUq0aaO5lN78,82341
+tencentcloud/cam/v20190116/errorcodes.py,sha256=xdggU3PR3roezGxn4FsgfRBNGN-nyZZuWeCz6Y2wBok,9956
+tencentcloud/cam/v20190116/models.py,sha256=aj9FokYCzbEpRUbynbMd5JjqOh74b-W55yXxtEcEnPM,149051
+tencentcloud_sdk_python_cam-3.0.551.dist-info/METADATA,sha256=2_RYq1yGIP32aFndSAgVniY5hGmZPYitG-a2z_VkUxc,1432
+tencentcloud_sdk_python_cam-3.0.551.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+tencentcloud_sdk_python_cam-3.0.551.dist-info/top_level.txt,sha256=g-8OyzoqI6O6LiS85zkeNzhB-osEnRIPZMdyRd_0eL0,13
+tencentcloud_sdk_python_cam-3.0.551.dist-info/RECORD,,
