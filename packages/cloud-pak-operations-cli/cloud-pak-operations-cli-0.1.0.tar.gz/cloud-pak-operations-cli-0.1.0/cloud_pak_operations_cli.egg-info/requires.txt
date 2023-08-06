@@ -1,0 +1,15 @@
+asyncssh
+click
+click-option-group
+colorama
+halo
+jmespath
+jsonschema
+kubernetes>=12
+netifaces
+pyyaml
+requests
+semver
+tabulate
+tqdm
+urllib3

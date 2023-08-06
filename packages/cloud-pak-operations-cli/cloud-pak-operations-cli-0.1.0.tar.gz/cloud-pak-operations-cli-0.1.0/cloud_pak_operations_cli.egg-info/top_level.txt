@@ -1,0 +1,3 @@
+cpo
+scripts
+tests
