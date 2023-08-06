@@ -1,0 +1,10 @@
+danio/__init__.py,sha256=Nh4AbEzlWx8kb4E_2Ia1_3mc3DDFcTwUenKEuEA2L7Q,802
+danio/database.py,sha256=UX-hQfonhaKfHOw6njEWha29s5lj2qh8lKs9gG31B70,82
+danio/exception.py,sha256=sjjpnClVR9-ldUwfn3l0lR1uv5y5oFbWuIpxChy3T8g,90
+danio/manage.py,sha256=ZBy6Xwt6GpkH4gzwEugHVG0NAnQ32IVEvp4ehJhwp6g,1496
+danio/model.py,sha256=dh5EIb0gwrKCX2ksfhE-tszZSkYIRlWa0lYxIf3fyMA,39155
+danio/utils.py,sha256=QGoLiPPpUNjxGIck6AeTUI-YlD8QQvPoNUvyw9BEFxE,1651
+danio-0.4.2.4.dist-info/LICENSE,sha256=ZBg5favWXJiiX7H2kLI9zuQR8vTVseh_Sj8skWpQwkM,1516
+danio-0.4.2.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+danio-0.4.2.4.dist-info/METADATA,sha256=M5wsWhr7CAbOAr0TV_MfvSZ4WUh36YSUyiKN8HzWrvQ,449
+danio-0.4.2.4.dist-info/RECORD,,
