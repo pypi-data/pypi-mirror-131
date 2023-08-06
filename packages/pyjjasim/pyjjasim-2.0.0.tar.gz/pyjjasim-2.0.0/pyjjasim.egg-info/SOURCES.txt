@@ -1,0 +1,15 @@
+setup.py
+pyjjasim/__init__.py
+pyjjasim/array_visualize.py
+pyjjasim/compute.py
+pyjjasim/embedded_graph.py
+pyjjasim/josephson_junction_array.py
+pyjjasim/static_example1_single_vortex.py
+pyjjasim/static_problem.py
+pyjjasim/time_evolution.py
+pyjjasim/variable_row_array.py
+pyjjasim.egg-info/PKG-INFO
+pyjjasim.egg-info/SOURCES.txt
+pyjjasim.egg-info/dependency_links.txt
+pyjjasim.egg-info/requires.txt
+pyjjasim.egg-info/top_level.txt

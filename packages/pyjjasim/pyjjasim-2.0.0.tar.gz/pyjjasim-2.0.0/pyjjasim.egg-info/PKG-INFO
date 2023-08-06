@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyjjasim
+Version: 2.0.0
+Summary: Circuit simulators for josephson junctions and passive components
+Home-page: UNKNOWN
+Author: Martijn Lankhorst
+Author-email: <m.lankhorst89@gmail.com>
+License: UNKNOWN
+Keywords: python,josephson_junction_array,circuit,simulation
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+...
+
