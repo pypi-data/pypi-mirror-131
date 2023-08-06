@@ -1,0 +1,83 @@
+{% block css %}
+	<link rel="stylesheet" type="text/css" href="{% static 'socialprofile/css/plugins/sweetalert2.min.css' %}">
+{% endblock %}
+
+<a class="btn btn-success" id="my-button" title="{% trans 'Login' %}"><i class="si-ui_user-3 login-icon"></i>{% trans 'Login' %}</a>
+
+{% block js %}
+
+	<script src="{% url 'javascript-catalog' %}"></script>
+
+	<script src="{% static 'socialprofile/js/plugins/sweetalert2.min.js' %}"></script>
+	<script src="{% static 'socialprofile/js/plugins/htmx.min.js' %}"></script>
+
+	<script>
+
+	let button = document.querySelector('#my-button');
+	let content = document.querySelector('#my-content');
+
+	button.addEventListener('click', () => {
+		Swal.fire({
+			title: "Login con il tuo account",
+			html: content,
+			didOpen: () => {
+				const content = Swal.getHtmlContainer()
+				const $ = content.querySelector.bind(content)
+
+				const google = $('#google')
+				const twitter = $('#twitter')
+
+				Swal.showLoading()
+
+				google.addEventListener('click', () => {
+				  Swal.stopTimer()
+				})
+
+				twitter.addEventListener('click', () => {
+				  Swal.resumeTimer()
+				})
+		  }
+		});
+	})
+<!--	$('#login').on('click',function(e){-->
+<!--		Swal.fire({-->
+<!--		  title: 'Login!',-->
+<!--		  html:-->
+<!--			'I will close in <strong></strong> seconds.<br/><br/>' +-->
+<!--			'<button id="increase" class="btn btn-warning">' +-->
+<!--			  'I need 5 more seconds!' +-->
+<!--			'</button><br/><br/>' +-->
+<!--			'<button id="stop" class="btn btn-danger">' +-->
+<!--			  'Please stop the timer!!' +-->
+<!--			'</button><br/><br/>' +-->
+<!--			'<button id="resume" class="btn btn-success" disabled>' +-->
+<!--			  'Phew... you can restart now!' +-->
+<!--			'</button><br/><br/>' +-->
+<!--			'<button id="toggle" class="btn btn-primary">' +-->
+<!--			  'Toggle' +-->
+<!--			'</button>',-->
+<!--		  didOpen: () => {-->
+<!--			const content = Swal.getHtmlContainer()-->
+<!--			const $ = content.querySelector.bind(content)-->
+
+<!--			const google = $('#google')-->
+<!--			const twitter = $('#twitter')-->
+
+<!--			Swal.showLoading()-->
+
+<!--			google.addEventListener('click', () => {-->
+<!--			  Swal.stopTimer()-->
+<!--			})-->
+
+<!--			twitter.addEventListener('click', () => {-->
+<!--			  Swal.resumeTimer()-->
+<!--			})-->
+
+<!--		  },-->
+<!--		})-->
+<!--    });-->
+
+	</script>
+
+
+{% endblock %}
