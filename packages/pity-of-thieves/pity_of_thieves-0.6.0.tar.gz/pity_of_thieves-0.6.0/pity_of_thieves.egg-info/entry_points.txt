@@ -1,0 +1,3 @@
+[console_scripts]
+pot-web = pot.server:run
+
