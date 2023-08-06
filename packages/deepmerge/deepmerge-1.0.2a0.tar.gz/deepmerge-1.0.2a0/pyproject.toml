@@ -1,0 +1,7 @@
+[build-system]
+# include 44 to allow for python2 support.
+requires = ["setuptools>=44", "wheel", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "deepmerge/_version.py"
