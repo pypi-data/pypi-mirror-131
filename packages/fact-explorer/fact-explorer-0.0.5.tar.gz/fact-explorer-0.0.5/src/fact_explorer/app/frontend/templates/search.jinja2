@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block style %}
+<style>
+  li.htmx-swapping {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<h1 class="title"> Search for Events </h1>
+
+<div hx-ext="client-side-list-enabled-nunjucks">
+
+  <div class="box">
+    <form id="form" hx-get="/api/search" hx-target="#results" hx-params="*" nunjucks-template="json-response">
+    <div class="field">
+      <label class="label">Header Query</label>
+      <input id="hq" name="hq" class="input" type="text" value ="{}" title="The JSON that should be present in the header. Partial matching is supported. Object nesting is not.">
+      <label class="label">Payload Query</label>
+      <input id="pq" name="pq" class="input" type="text" value="{}" title="The JSON that should be present in the payload. Partial matching is supported. Object nesting is not. Search is done on encrypted data.">
+      <label class="label">Number of Results to Skip</label>
+      <input id="skip" name="skip" class="input" type="text" value="0" title="How many results to skip. Useful when searching for older things.">
+      <label class="label">Max Results to Return</label>
+      <input id="limit" name="limit" class="input" type="text" value="20" title="How many results to deliver. Defaults to 20. More results take longer.">
+      <div class="control">
+        <label class="checkbox">
+          <input type="checkbox" name="decrypt" class="checkbox" value="true" title="Whether or not result decryption should be tried.">
+          Decrypt Result
+        </label>
+      </div>
+
+      <button type="submit" class="button is-primary">
+        Search
+        <figure class="image is-16x16">
+          <img class="htmx-indicator" src="/static/bars.svg">
+        </figure>
+      </button>
+    </div>
+    </form>
+  </div>
+</div>
+
+{% include 'fragments/code_display.jinja2' %}
+
+{% endblock %}
+
+{% block javascript %}
+<script>
+
+  htmx.on("htmx:configRequest", function(event) {
+    let o = Object.fromEntries(Object.entries(event.detail.parameters).filter(([_, v]) => v != ""));
+    console.log(o)
+    event.detail.parameters = o;
+  });
+</script>
+{% endblock %}
