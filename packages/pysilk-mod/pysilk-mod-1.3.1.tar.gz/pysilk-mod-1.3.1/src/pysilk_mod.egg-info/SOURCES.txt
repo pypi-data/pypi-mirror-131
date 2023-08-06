@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pysilk/__init__.py
+src/pysilk/pysilk.py
+src/pysilk/utils.py
+src/pysilk/wav.py
+src/pysilk_mod.egg-info/PKG-INFO
+src/pysilk_mod.egg-info/SOURCES.txt
+src/pysilk_mod.egg-info/dependency_links.txt
+src/pysilk_mod.egg-info/requires.txt
+src/pysilk_mod.egg-info/top_level.txt
+src/pysilk_mod.egg-info/zip-safe
+src/silk/_pysilk.cpp
+src/silk/codec.cpp
