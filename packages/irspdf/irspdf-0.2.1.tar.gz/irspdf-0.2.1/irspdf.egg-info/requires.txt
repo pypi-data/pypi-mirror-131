@@ -1,0 +1,3 @@
+numpy
+pdfplumber
+stop_words
