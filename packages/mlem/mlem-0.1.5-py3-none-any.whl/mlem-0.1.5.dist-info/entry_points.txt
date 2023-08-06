@@ -1,0 +1,26 @@
+[console_scripts]
+mlem = mlem.cli:cli
+
+[mlem.contrib]
+artifact.dvc = mlem.contrib.dvc:DVCArtifact
+dataset_reader.numpy = mlem.contrib.numpy:NumpyArrayReader
+dataset_reader.pandas = mlem.contrib.pandas:PandasReader
+dataset_type.dataframe = mlem.contrib.pandas:DataFrameType
+dataset_type.lightgbm = mlem.contrib.lightgbm:LightGBMDatasetType
+dataset_type.ndarray = mlem.contrib.numpy:NumpyNdarrayType
+dataset_type.number = mlem.contrib.numpy:NumpyNumberType
+dataset_type.xgboost_dmatrix = mlem.contrib.xgboost:DMatrixDatasetType
+dataset_writer.numpy = mlem.contrib.numpy:NumpyArrayWriter
+dataset_writer.pandas = mlem.contrib.pandas:PandasWriter
+model_io.catboost_io = mlem.contrib.catboost:CatBoostModelIO
+model_io.lightgbm_io = mlem.contrib.lightgbm:LightGBMModelIO
+model_io.pickle = mlem.contrib.callable:PickleModelIO
+model_io.xgboost_io = mlem.contrib.xgboost:XGBoostModelIO
+model_type.callable = mlem.contrib.callable:CallableModelType
+model_type.catboost = mlem.contrib.catboost:CatBoostModel
+model_type.lightgbm = mlem.contrib.lightgbm:LightGBMModel
+model_type.sklearn = mlem.contrib.sklearn:SklearnModel
+model_type.xgboost = mlem.contrib.xgboost:XGBoostModel
+server.fastapi = mlem.contrib.fastapi:FastAPIServer
+storage.dvc = mlem.contrib.dvc:DVCStorage
+
