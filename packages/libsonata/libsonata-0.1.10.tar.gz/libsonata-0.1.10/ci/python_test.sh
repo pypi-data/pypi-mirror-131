@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+set -euxo pipefail
+
+VENV=$(pwd)/build/venv-python-test/
+
+if [[ ! -d "$VENV" ]]; then
+    python3 -mvenv "$VENV"
+fi
+
+BIN=$VENV/bin/
+
+set +u  # ignore missing variables in activation script
+source $BIN/activate
+set -u
+
+$BIN/pip -v install --upgrade pip setuptools wheel
+$BIN/pip -v install --force .
+
+pushd python/tests
+$BIN/python -m unittest -v 
+popd
+
+# run tests through setup.py; also builds documentation
+$BIN/python setup.py test
