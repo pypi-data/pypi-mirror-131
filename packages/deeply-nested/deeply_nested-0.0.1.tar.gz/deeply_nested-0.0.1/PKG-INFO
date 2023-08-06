@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: deeply_nested
+Version: 0.0.1
+Summary: Module to work with deeply nested object. dict or list of dict with multiple level of nesting
+Home-page: https://github.com/datapsyche/deeply-nested
+Author: datapsyche
+Author-email: jithinjkumar@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/datapsyche/deeply-nested/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DeeplyNested
+
+The aim of the library is to make working with Deeply nested json structures more fun.
+
+[TODO] Sample code which works
+
+
+

@@ -1,0 +1,1 @@
+from deeply_nested.nested_object import NestedObject
