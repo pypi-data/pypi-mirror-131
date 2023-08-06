@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: ports.py
+Version: 0.3.0
+Summary: Modern webserver
+Home-page: http://github.com/Ehnryu/ports
+Author: Ehnryu/Sakurai07
+Author-email: blzzardst0rm@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: webserver,flask,ports
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
