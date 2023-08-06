@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pygun
+Version: 0.0.1a0
+Summary: Gun
+Author: n2k3
+Author-email: n2k3@pm.me
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
