@@ -1,0 +1,8 @@
+README.md
+setup.py
+shounak_lib.egg-info/PKG-INFO
+shounak_lib.egg-info/SOURCES.txt
+shounak_lib.egg-info/dependency_links.txt
+shounak_lib.egg-info/requires.txt
+shounak_lib.egg-info/top_level.txt
+shounak_lib/sdk/sb_s3_uploader.py
