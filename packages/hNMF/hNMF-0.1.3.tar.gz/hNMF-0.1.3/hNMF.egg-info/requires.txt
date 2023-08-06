@@ -1,0 +1,5 @@
+networkx>=2.3
+tqdm
+scikit-learn>=1.0.1
+numpy
+scipy
