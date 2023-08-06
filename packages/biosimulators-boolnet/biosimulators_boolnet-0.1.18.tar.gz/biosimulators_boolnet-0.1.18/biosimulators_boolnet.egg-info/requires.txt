@@ -1,0 +1,17 @@
+biosimulators_utils[logging,sbml]>=0.1.122
+kisao
+lxml
+numpy
+rpy2
+
+[all]
+biosimulators_utils[containers]
+python_dateutil
+pyyaml
+
+[docs]
+
+[tests]
+biosimulators_utils[containers]
+python_dateutil
+pyyaml
