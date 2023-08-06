@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "rate"
+version = "0.1.6"
+description = "A simple CLI tool to rate matches in a file."
+readme = "readme.md"
+keywords = ["rate", "match", "rating", "elo", "glicko", "trueskill"]
+authors = ["blankalmasry <blankhussien@gmail.com>"]
+license = "GPL-3.0"
+exclude = ["examples"]
+
+[tool.poetry.dependencies]
+# python 3.5 or higher
+python = "^3.5"
+tqdm = "^4.32"
+elote = "^0.1.0"
+glicko2 = "2.0.0"
+PyInquirer = "1.0.3"
+trueskill = "^0.4.5"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+rate = "rate.main:main"
