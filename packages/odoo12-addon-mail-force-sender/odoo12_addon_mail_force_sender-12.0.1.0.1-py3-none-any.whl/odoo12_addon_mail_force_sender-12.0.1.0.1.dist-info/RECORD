@@ -1,0 +1,8 @@
+odoo/addons/mail_force_sender/__init__.py,sha256=oFIb68eC0nWa-dwh8qDgTeH40eEzU7BbDr0pXlixLf0,34
+odoo/addons/mail_force_sender/__manifest__.py,sha256=am82n1utWbyfhbjM2UVAbtl_1TTN1Cqp5mQW7RswDaA,593
+odoo/addons/mail_force_sender/hooks.py,sha256=UXy97AniatWbRkyf6p6hf8F7hI246Ohx4K8fO1Q4bo8,5030
+odoo/addons/mail_force_sender/data/ir_config_parameter.xml,sha256=A5WmdUCbjgC0Z_gcAWyBfrKho4J_7fzrEoyxLkxiNIg,291
+odoo12_addon_mail_force_sender-12.0.1.0.1.dist-info/METADATA,sha256=2En54470k63IymoPTyo9khTQjCivSbt_MMBG-X8650M,476
+odoo12_addon_mail_force_sender-12.0.1.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+odoo12_addon_mail_force_sender-12.0.1.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_mail_force_sender-12.0.1.0.1.dist-info/RECORD,,
