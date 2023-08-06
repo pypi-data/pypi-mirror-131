@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: sherpa-streamlit
+Version: 0.2.16
+Summary: Kairntech Sherpa building blocks for Streamlit apps
+Home-page: https://github.com/oterrier/sherpa_streamlit/
+Author: Olivier Terrier
+Author-email: oterrier@gmail.com
