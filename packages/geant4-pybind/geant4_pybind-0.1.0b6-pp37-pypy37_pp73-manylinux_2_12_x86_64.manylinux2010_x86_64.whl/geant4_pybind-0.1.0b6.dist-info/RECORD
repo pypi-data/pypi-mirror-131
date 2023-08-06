@@ -1,0 +1,10 @@
+geant4_pybind.pyi,sha256=dUJbUniYbjow0Mj5fJcKrLZWKVmDnJd5U1uQe7duuiY,652844
+geant4_pybind.pypy37-pp73-x86_64-linux-gnu.so,sha256=ee20aCv3-JIJxiz9XcLJ1OFfLAyXbB28BNqKk9yi3xk,68543968
+geant4_pybind.libs/libXmu-a82196de.so.6.2.0,sha256=YrqYAJSxG41I7rqnuUCn4i764uq3aCgoKmaJ2dUvl0I,119600
+geant4_pybind.libs/libXt-7348abeb.so.6.0.0,sha256=XehrUdiCOAWHpHn-WiSzNgmHGRwrEtNizCBrkbBXOMc,428960
+geant4_pybind-0.1.0b6.dist-info/METADATA,sha256=ZdGJMwGH_Vwfijf1YaEoJwmiMo6itjLGwoEQqTnlXrM,4009
+geant4_pybind-0.1.0b6.dist-info/WHEEL,sha256=gf3hoWdWu5FXvrouuic-7iRI4J2iJYR3Bgg_jZXjNEw,162
+geant4_pybind-0.1.0b6.dist-info/RECORD,,
+geant4_pybind-0.1.0b6.dist-info/LICENSE,sha256=fhLl30uuEsshWBuhV87SDhmGoFCN0Q0Oikq5pM-U6Fw,1211
+geant4_pybind-0.1.0b6.dist-info/LICENSE-3RD-PARTY,sha256=1PEPMiHm45afwIIIo4tYK1b1bgHqwIRlFJvcVIjqMaY,32344
+geant4_pybind-0.1.0b6.dist-info/top_level.txt,sha256=JR7U8uv71O-EKO2p_d15_AkkhQiUw6IpL93PBm7YiPA,14
