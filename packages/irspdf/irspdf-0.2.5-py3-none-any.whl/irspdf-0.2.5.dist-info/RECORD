@@ -1,0 +1,11 @@
+irspdf/__init__.py,sha256=d4sPWRno_haDrrOyoYh25ZLbibtG0k2TCBSqNWf2jnU,90
+irspdf/build.py,sha256=wVQyZj0e3ZF2A29WFFB28l4_Uia07TQi144hF0eRPcY,434
+irspdf/build_collection.py,sha256=PLEWClezrjVNSEKiqpO-uPIWm53UNUrsZ5pWkbvtoHs,438
+irspdf/collection.py,sha256=KlYjCzbLe62egaf3Pu_B1XvUzWOAZOnenSQC57mYnyk,6679
+irspdf/ir_collection.py,sha256=c25nDaGkg_xgBM7YMMdDOHfPPB1iSVV7sQxEfh2GGNk,5803
+irspdf/query.py,sha256=wChrjhYwX7wmzLaLpkSP_kyBpHrD7FD6ZPN5j50V3jo,485
+irspdf/query_collection.py,sha256=b7vSavSGEeFQRwUGz7cUNIBh2NfthZ6SGT2j39z5vS0,496
+irspdf-0.2.5.dist-info/METADATA,sha256=afOVfHCz_mcBnnqWC0lfKEYqgWgyhHqY_IzDyitAVWU,388
+irspdf-0.2.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+irspdf-0.2.5.dist-info/top_level.txt,sha256=O2z7TjJGPA25vB48MrZUixG_x-WHrP_da01W9s8V23g,7
+irspdf-0.2.5.dist-info/RECORD,,
