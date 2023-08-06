@@ -1,0 +1,16 @@
+dogsled/__init__.py,sha256=u-SQF4S6iwuXcgTaRHl932TkJrN9H2eF4gji6EQ1PZk,201
+dogsled/__main__.py,sha256=urFCIFk5399hI6omZFID4SzIObfVqI_jd0ETrsnacBs,181
+dogsled/config.py,sha256=on-ASIEoUSD2yWUXQbi4hMrkkTW73ESKyMgvjQCi5nw,1428
+dogsled/defaults.py,sha256=VnrPtVgE9_hRJzheP0VKqSgIo25qoqhPMVt4f8eL3kE,2260
+dogsled/errors.py,sha256=6b9jUOPwYozjT04NN7choasBGlsVb38qT6RiXptycSg,875
+dogsled/libvips_downloader.py,sha256=n4OSUWXvo65JXSocAggacfiIYa0fifhF6Qd_75gR-28,3262
+dogsled/normaliser.py,sha256=_WSbyLTK7F0agfwOHZI_dJhy-4GRqkxG03WyfgzqvJ0,34033
+dogsled/paths.py,sha256=GCNDVgj4xUxnJ5sSUOUMtBnD8xvkDUZPgvfbAGM15Sw,1926
+dogsled/resources.py,sha256=VfuAt8L1FmV9c1mfObqGW9nC8Ytmwrtjn2L027CjGE0,2606
+dogsled/slides.py,sha256=6tc69habgvp2pUh2KB-5EyUdTzpV-xK3KC6bZHxNeBg,1871
+dogsled/user_input.py,sha256=lVbFwWaZitoIeizgcn8Tw4busjQtOvLri4r39_4RPjg,12528
+dogsled-0.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dogsled-0.0.3.dist-info/METADATA,sha256=Eb4olmEZ6GCPCl_PNgTf4tero_9IsrLUoc96c0gzM6c,4420
+dogsled-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dogsled-0.0.3.dist-info/top_level.txt,sha256=8Kw8qUMdr5y152a4CKWDJM5aH8MVFsv0ZV8ojuvPqjE,8
+dogsled-0.0.3.dist-info/RECORD,,
