@@ -1,0 +1,3 @@
+[console_scripts]
+sample = ArgParser:main
+
