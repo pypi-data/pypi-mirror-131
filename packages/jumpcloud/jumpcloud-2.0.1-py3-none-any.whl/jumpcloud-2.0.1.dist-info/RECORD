@@ -1,0 +1,10 @@
+jumpcloud/__init__.py,sha256=E-z9YxPWE2fjPhwbq9UpDwVW2_MlzlYRp57CnbvN7wc,143
+jumpcloud/__main__.py,sha256=Za8AANOG4uKk7Pxg34eUkMWt2b8f-KHgz4S2Kq6SCCM,143
+jumpcloud/jumpcloud.py,sha256=kcA4gLfwLLLjaB5gDo8vO6_7tJrvh9o33LPsNGoRl6E,54291
+jumpcloud/reports/reports.py,sha256=kGw-KWrr5AzWGOB2KyxQA8rxWLgdIvpt9qliJDFfIw4,16446
+jumpcloud-2.0.1.dist-info/LICENSE,sha256=BVSdABT_9E_n6RL15Is2ukFgmOeyVD59yAswECmCGtQ,1073
+jumpcloud-2.0.1.dist-info/METADATA,sha256=_slWcftaU3me02qUUcvleWwWauJCUzLTtGk8BI2yLdQ,800
+jumpcloud-2.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+jumpcloud-2.0.1.dist-info/entry_points.txt,sha256=U4HDVar-cUHM5iHQ1OXICNTqjFfR1B-ElUJ43WFQ1bE,56
+jumpcloud-2.0.1.dist-info/top_level.txt,sha256=9ycj5oYOKtHDwXuO8Cibms_dMF00D2i6-cEOJm_-XX4,10
+jumpcloud-2.0.1.dist-info/RECORD,,
