@@ -1,0 +1,3 @@
+[console_scripts]
+invoke_nextflow = epi2melabs_wfpage.invoke:main
+
