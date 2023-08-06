@@ -1,0 +1,10 @@
+advent_of_code.abi3.so,sha256=OhD9u1YbnFHhvY9Y0T-spx2rdublYZu7N99Uu9DABfM,1613952
+advent_of_code-2019.12.423.dist-info/METADATA,sha256=DCIX24b2C4ZAeJuAd8u9xryFfaINF4Az2nege3Hg81A,1035
+advent_of_code-2019.12.423.dist-info/LICENSE.txt,sha256=-50SkClA7kD8MEV48M-UA9stSupa27oZZ3GqyW-TfuQ,1079
+advent_of_code-2019.12.423.dist-info/WHEEL,sha256=CRD7EPiHrb7T9FDEfH3P4LQProlU9vsrgXXpjhNOJTc,148
+advent_of_code-2019.12.423.dist-info/RECORD,,
+advent_of_code-2019.12.423.dist-info/top_level.txt,sha256=w2nvpV3FnocneLP6eFA3CKT4z0FpUy3LX_PRxvB6S5s,34
+advent_of_code-2019.12.423.dist-info/entry_points.txt,sha256=7Ha_q68ySK2J6MEx4E_1lEZxWkGt4JD0dU9jZgDqQhA,68
+advent_of_code/__init__.pyi,sha256=kD1iZZSH3tLb2hGMFgD6cULyIhXFubXIfaK_f9HGaCQ,66
+advent_of_code/py.typed,sha256=iqF11hoXikZ_CzGF8AcTbesCq5MRs8Bhue-OtVZg-tQ,26
+advent_of_code_cli/main.py,sha256=2QnRonR1ROG50cAEeCOVDRwqQq_gHAQm-B2681jGCFk,430
