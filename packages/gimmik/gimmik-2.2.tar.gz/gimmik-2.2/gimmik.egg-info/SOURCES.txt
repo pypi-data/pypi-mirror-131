@@ -1,0 +1,15 @@
+README.rst
+setup.py
+gimmik/__init__.py
+gimmik/_version.py
+gimmik.egg-info/PKG-INFO
+gimmik.egg-info/SOURCES.txt
+gimmik.egg-info/dependency_links.txt
+gimmik.egg-info/requires.txt
+gimmik.egg-info/top_level.txt
+gimmik/kernels/c-omp.mako
+gimmik/kernels/c.mako
+gimmik/kernels/cuda.mako
+gimmik/kernels/hip.mako
+gimmik/kernels/ispc.mako
+gimmik/kernels/opencl.mako
