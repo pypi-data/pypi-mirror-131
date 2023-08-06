@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/coeur/__init__.py
+src/coeur/service.py
+src/coeur.egg-info/PKG-INFO
+src/coeur.egg-info/SOURCES.txt
+src/coeur.egg-info/dependency_links.txt
+src/coeur.egg-info/not-zip-safe
+src/coeur.egg-info/top_level.txt
