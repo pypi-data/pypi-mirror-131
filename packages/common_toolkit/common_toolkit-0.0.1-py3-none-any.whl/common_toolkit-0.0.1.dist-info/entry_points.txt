@@ -1,0 +1,3 @@
+[console_scripts]
+py=common_toolkit.CLIs.development_cli.create_python_app:main
+
