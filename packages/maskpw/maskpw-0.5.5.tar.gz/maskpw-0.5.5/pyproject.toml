@@ -1,0 +1,16 @@
+[project]
+name = "maskpw"
+readme = {file = "README.md", content-type = "text/markdown"}
+authors = [{name = "harmony5", email = "jeancgo1@protonmail.com"}]
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+requires-python = "~=3.4"
+
+[project.urls]
+Home = "https://github.com/harmony5/maskpw"
+Source = "https://github.com/harmony5/maskpw"
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
