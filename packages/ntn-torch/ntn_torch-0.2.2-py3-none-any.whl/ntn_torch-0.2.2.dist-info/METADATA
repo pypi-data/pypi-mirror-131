@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ntn-torch
+Version: 0.2.2
+Summary: ntn_torch is a library to build n-tuple neural network models using the framework of pytorch
+Author: Rafael F. Katopodis
+Author-email: rafaelkatopodis@gmail.com
+Requires-Python: >=3.6,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy (>=1.21.4,<2.0.0)
+Requires-Dist: stable-baselines3[extra] (>=1.3.0,<2.0.0)
+Requires-Dist: torch (>=1.10.0,<2.0.0)
