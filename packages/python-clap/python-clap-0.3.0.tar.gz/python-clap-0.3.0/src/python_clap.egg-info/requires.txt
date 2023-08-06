@@ -1,0 +1,6 @@
+bugyi.lib>=0.4.0
+pylogutils>=0.1.4
+pydantic
+
+[:python_version < "3.8"]
+importlib-metadata
