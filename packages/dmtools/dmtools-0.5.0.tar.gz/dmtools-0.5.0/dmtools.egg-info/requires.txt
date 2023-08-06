@@ -1,0 +1,11 @@
+numpy>=1.19
+imageio>=2.9
+imageio-ffmpeg>=0.4.5
+scipy>=1.6
+typing>=3.7
+
+[dev]
+pytest>=5
+mock>=3
+coverage>=4.5
+tox>=3
