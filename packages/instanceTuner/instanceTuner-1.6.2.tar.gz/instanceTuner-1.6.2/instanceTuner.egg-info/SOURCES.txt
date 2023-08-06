@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+instanceTuner/__init__.py
+instanceTuner/operator.py
+instanceTuner/set.py
+instanceTuner.egg-info/PKG-INFO
+instanceTuner.egg-info/SOURCES.txt
+instanceTuner.egg-info/dependency_links.txt
+instanceTuner.egg-info/requires.txt
+instanceTuner.egg-info/top_level.txt
+tests/01-test_InstanceOperator.py
+tests/02-test_Object_and_ClassOperator.py
+tests/03-test_MapInstances.py
+tests/04-test_ArgsCheck.py
+tests/05-test_overload.py
