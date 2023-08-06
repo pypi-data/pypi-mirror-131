@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/chararray/__init__.py
+src/chararray.egg-info/PKG-INFO
+src/chararray.egg-info/SOURCES.txt
+src/chararray.egg-info/dependency_links.txt
+src/chararray.egg-info/requires.txt
+src/chararray.egg-info/top_level.txt

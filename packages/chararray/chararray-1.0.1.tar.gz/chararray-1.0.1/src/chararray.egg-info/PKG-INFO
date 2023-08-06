@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: chararray
+Version: 1.0.1
+Summary: A standard mutable character array implementation for Python.
+Home-page: https://github.com/tusharsadhwani/chararray
+Author: Tushar Sadhwani
+Author-email: tushar.sadhwani000@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# chararray
+
+A standard mutable character array implementation for Python.
+
+```pycon
+>>> from chararray import chararray
+>>> chars = chararray("abc")
+>>> chars
+chararray('abc')
+>>> chars + 'def'
+chararray('abcdef')
+>>> chars
+chararray('abc')
+>>> chars += 'def'
+>>> chars
+chararray('abcdef')
+>>> chars[:3]
+chararray('abc')
+>>> chars[3:]
+chararray('def')
+>>> chars[3:] = 'ghi'
+>>> chars
+chararray('abcghi')
+>>> chars[0] = 'A'
+>>> chars
+chararray('Abcghi')
+```
+
+## Installing
+
+Get it via pip:
+
+```console
+pip install chararray
+```
+
+## Testing
+
+Run `pytest`
+
+## Type Checking
+
+Run `mypy .`
+
+
