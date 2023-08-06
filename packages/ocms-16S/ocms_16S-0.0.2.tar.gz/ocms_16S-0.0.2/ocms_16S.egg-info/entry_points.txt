@@ -1,0 +1,3 @@
+[console_scripts]
+ocms_16s = ocms16S.ocms_16s:main
+

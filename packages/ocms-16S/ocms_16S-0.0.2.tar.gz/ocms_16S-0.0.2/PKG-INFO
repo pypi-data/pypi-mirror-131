@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: ocms_16S
+Version: 0.0.2
+Summary: OCMS_16S : Oxford Centre for Microbiome Studies pipelines for 16S amplicon sequencing analysis
+Home-page: https://github.com/OxfordCMS/OCMS_16S
+Author: Nicholas Ilott, Sandi Yen, Jethro Johnson
+License: MIT
+Download-URL: https://github.com/OxfordCMS/OCMS_16S/archive/refs/tags/v0.0.2.tar.gz
+Description: UNKNOWN
+Keywords: microbiome,metagenomics,genomics
+Platform: any
+Requires-Python: >=3.6.0

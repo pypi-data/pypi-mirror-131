@@ -1,0 +1,20 @@
+---
+title: "dada2 processing report"
+header-includes:
+- \usepackage{placeins}
+- \usepackage{float}
+- \floatplacement{figure}{H}
+
+output:
+  html_document:
+    df_print: paged
+urlcolor: blue
+---
+
+\newpage
+
+```{r child = 'pipeline_dada2.Rmd'}
+```
+
+
+
