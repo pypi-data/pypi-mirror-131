@@ -1,0 +1,3 @@
+[console_scripts]
+gengir=gengir.cli:run_cli
+
