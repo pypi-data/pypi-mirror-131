@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+cmcpdf2/__init__.py
+cmcpdf2/pdf2image.py
+cmcpdf2/pdf2text.py
+cmcpdf2.egg-info/PKG-INFO
+cmcpdf2.egg-info/SOURCES.txt
+cmcpdf2.egg-info/dependency_links.txt
+cmcpdf2.egg-info/top_level.txt
