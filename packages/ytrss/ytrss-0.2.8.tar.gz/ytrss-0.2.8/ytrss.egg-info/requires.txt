@@ -1,0 +1,17 @@
+astroid~=2.5
+youtube_dl~=2021.6.6
+
+[documentation]
+Sphinx==4.3.1
+sphinx-epytext==0.0.4
+
+[style]
+pylint==2.5.3
+pep8==1.7.1
+pycodestyle==2.8.0
+
+[typing]
+mypy==0.910
+
+[unittests]
+pytest
