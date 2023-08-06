@@ -1,0 +1,33 @@
+Metadata-Version: 1.0
+Name: mobrob
+Version: 0.3dev
+Summary: UNKNOWN
+Home-page: https://github.com/68-6f-6c-67-69/mobrob
+Author: 68-6f-6c-67-69
+Author-email: 68.6f.6c.67.69@gmail.com
+License: UNKNOWN
+Description: # mobrob
+        
+        ### install from files
+        
+        ```console
+        pip install -e .
+        ```
+        
+        ### install via pip
+        package the library
+        ```console
+        python setup.py sdist
+        ```
+        
+        upload .tar.gz file under `dist/` to pypi
+        ```console
+        twine upload dist/{packaged file}.tar.gz
+        ```
+        
+        install
+        ```console
+        pip install mobrob
+        ```
+        
+Platform: UNKNOWN
