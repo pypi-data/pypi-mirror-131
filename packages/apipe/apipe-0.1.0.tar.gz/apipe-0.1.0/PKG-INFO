@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: apipe
+Version: 0.1.0
+Summary: Data pipelines with lazy computation and caching
+Home-page: https://github.com/mysterious-ben/dpipe
+License: Apache License, Version 2.0
+Keywords: python,pipeline,dask,data
+Author: Mysterious Ben
+Author-email: datascience@tuta.io
+Requires-Python: >=3.7.1,<3.11
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: cloudpickle (>=2.0.0,<3.0.0)
+Requires-Dist: dask[delayed] (>=2021.12.0,<2022.0.0)
+Requires-Dist: loguru (>=0.5.3,<0.6.0)
+Requires-Dist: numpy (>=1.21.4,<2.0.0)
+Requires-Dist: pandas (>=1.3.5,<2.0.0)
+Requires-Dist: pyarrow (>=6.0.1,<7.0.0)
+Requires-Dist: xxhash (>=2.0.2,<3.0.0)
+Project-URL: Repository, https://github.com/mysterious-ben/dpipe
+Description-Content-Type: text/markdown
+
+# dpipe
+
+Data pipelines feat. lazy computation and caching
+
+## Installation
+
+```shell
+pip install dpipe
+```
+
+## Example
+
+```python
+import dpipe
+import pandas as pd
+import numpy as np
+from loguru import logger
+
+# --- Define data transformations via step functions (similar to dask.delayed)
+
+@dpipe.delayed_cached()  # lazy computation + caching on disk
+def load_1():
+    df = pd.DataFrame({'a': [1., 2.], 'b': [0.1, np.nan]})
+    logger.info('Loaded {} records'.format(len(df)))
+    return df
+
+@dpipe.delayed_cached()  # lazy computation + caching on disk
+def load_2(timestamp):
+    df = pd.DataFrame({'a': [0.9, 3.], 'b': [0.001, 1.]})
+    logger.info('Loaded {} records'.format(len(df)))
+    return df
+
+@dpipe.delayed_cached()  # lazy computation + caching on disk
+def compute(x, y, eps):
+    assert x.shape == y.shape
+    diff = ((x - y).abs() / (y.abs()+eps)).mean().mean()
+    logger.info('Difference is computed')
+    return diff
+
+# --- Define pipeline dependencies
+ts = pd.Timestamp(2019, 1, 1)
+eps = 0.01
+s1 = load_1()
+s2 = load_2(ts)
+diff = compute(s1, s2, eps)
+
+# --- Trigger pipeline execution
+print('diff: {:.3f}'.format(dpipe.delayed_compute((diff, ))[0]))
+```
+
