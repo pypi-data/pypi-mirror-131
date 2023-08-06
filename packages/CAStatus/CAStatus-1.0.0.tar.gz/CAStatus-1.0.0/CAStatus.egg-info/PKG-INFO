@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: CAStatus
+Version: 1.0.0
+Summary: status.json and log.txt for your programs
+Home-page: https://github.com/codingaround/CAStatus.git
+Author: codingaround
+Author-email: codingaround90s@gmail.com
+License: GNU
+Description: # CAStatus
+        status.json and log.txt for your programs 
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
