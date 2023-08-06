@@ -1,0 +1,8 @@
+README.md
+setup.py
+csv_utilities/__init__.py
+csv_utilities/csv.py
+csv_utilities.egg-info/PKG-INFO
+csv_utilities.egg-info/SOURCES.txt
+csv_utilities.egg-info/dependency_links.txt
+csv_utilities.egg-info/top_level.txt
