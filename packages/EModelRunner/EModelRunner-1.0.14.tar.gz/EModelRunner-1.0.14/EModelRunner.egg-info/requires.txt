@@ -1,0 +1,11 @@
+numpy
+bluepyopt
+neurom
+h5py
+matplotlib
+schema
+Pebble>=4.3.10
+
+[docs]
+sphinx
+sphinx-bluebrain-theme
