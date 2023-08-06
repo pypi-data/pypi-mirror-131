@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sholl
+Version: 0.0.5
+Summary: Generate or Updates Hombrew formulas for your python projects
+License: MIT
+Author: jeremynac
+Author-email: jeremynac@hotmail.fr
+Requires-Python: >=3.1,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
