@@ -1,0 +1,25 @@
+Hi team
+
+Here's what's happening today:
+- 1830-1930: Do your thing
+- 1930-2100: Work together on practicals
+- 1930-2000: Demo hosted by Ivan: Web scraping on EC2. Difficulty: Intermediate
+- 2100-2130: Smash that quiz
+- 2100-2130: Demo hosted by Harry: How to use VIM. Difficulty: Intermediate
+
+Here's the rooms:
+- Room 2
+	- Hesham Haikal
+	- Taj Patel
+	- Divya Munshi
+- Room 3
+	- Ellie Brakoniecki
+	- Eddie Evans
+	- Siraj Choudhury
+- Room 4
+	- Faiz Meghjee
+	- Dilan Lodhia
+	- Bolade Fadipe
+- Room 5
+	- Daniel Lund
+	- Ovidiu Popa

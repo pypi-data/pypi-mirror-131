@@ -1,0 +1,22 @@
+Hi squad
+
+Here's what we should all be doing today:
+- 1830-1930: Do your thing
+- 1930-2100: Work together on practicals
+- 1930-2000: Demo hosted by Ivan: Web scraping on EC2. Difficulty: Intermediate
+- 2100-2130: Smash that quiz
+- 2100-2130: Demo hosted by Harry: How to use VIM. Difficulty: Intermediate
+
+Here's the groups:
+- Room 6
+	- Milan Sajiv
+	- Bilal Armiyawo
+	- Olumide Fatokun
+- Room 7
+	- Alex Henderson
+	- Yuya Ra
+	- Easha Tu Razia
+- Room 8
+	- Ana-Maria Dicu
+	- Marianna Karavangeli
+	- Harry Smith

@@ -1,0 +1,49 @@
+What's up team?
+
+Here's the plan for today:
+- 1830-1930: Do your thing
+- 1930-2100: Work together on practicals
+- 1930-2000: Demo hosted by Ivan: Web scraping on EC2. Difficulty: Intermediate
+- 2100-2130: Smash that quiz
+- 2100-2130: Demo hosted by Harry: How to use VIM. Difficulty: Intermediate
+
+Here are the groups for today:
+- Room 10
+	- nasir yousuf. Lesson: The Python Environment
+	- Sidhu Munasinghe. Lesson: Dictionaries Tuples and Operators
+	- kelechi Daniels. Lesson: Loops
+- Room 11
+	- Kehinde  Omobomi. Lesson: Functions
+	- Sagal Abdulaahi. Lesson: Functions
+	- Nicholas Hawthorne. Lesson: Functions
+- Room 12
+	- Misha Siddiqui. Lesson: Object Oriented Programming
+	- Alasdair Kelly. Lesson: Object Oriented Programming
+	- Daniel Goronwy. Lesson: Object Oriented Programming
+- Room 13
+	- Mileti Chakarov. Lesson: Object Oriented Programming
+	- Edward Cliffe. Lesson: Object Oriented Programming
+	- Peter Sandwith. Lesson: Object Oriented Programming
+- Room 14
+	- Adam Wise. Lesson: Object Oriented Programming
+	- Yiqin Liu. Lesson: Advanced Python
+	- Yamin Miah. Lesson: Advanced Python
+- Room 15
+	- Gemma Baldock. Lesson: Advanced Python
+	- Rexhino Rexhepi. Lesson: Error Handling
+	- Ceridwen Reed. Lesson: Error Handling
+- Room 16
+	- Amy Winder. Lesson: Debugging
+	- Ewen Garrod. Lesson: Data and File Formats
+	- Laura Lewis. Lesson: Data and File Formats
+- Room 17
+	- Jonny Holmes. Lesson: Data and File Formats
+	- Martin Sheard. Lesson: Intro to Pandas
+	- Abdullah Safdar. Lesson: Intro to Pandas
+- Room 18
+	- Patrick Govus. Lesson: Intro to Pandas
+	- Dax Levey. Lesson: Intro to Pandas
+	- Kaiomurz Motawara. Lesson: APIs and requests
+- Room 19
+	- Michael Huo. Lesson: Web Scraping
+	- Ossama El Sanharawi. Lesson: Big O Notation

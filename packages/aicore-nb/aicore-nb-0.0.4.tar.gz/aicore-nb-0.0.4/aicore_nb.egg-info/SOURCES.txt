@@ -1,0 +1,30 @@
+.gitignore
+RDSQueryHelper.py
+README.md
+create_groups.py
+setup.py
+aicore_nb/__init__.py
+aicore_nb/__main__.py
+aicore_nb/gui.py
+aicore_nb/questions_utils.py
+aicore_nb.egg-info/PKG-INFO
+aicore_nb.egg-info/SOURCES.txt
+aicore_nb.egg-info/dependency_links.txt
+aicore_nb.egg-info/requires.txt
+aicore_nb.egg-info/top_level.txt
+info_for_team/December 2021.txt
+info_for_team/Eta.txt
+info_for_team/November 21.txt
+info_for_team/October 21.txt
+info_for_team/September 21.txt
+info_for_team/Theta.txt
+info_for_team/Zeta.txt
+messages_to_send_to_groups/Data Engineering.txt
+messages_to_send_to_groups/Data Science.txt
+messages_to_send_to_groups/December 2021.txt
+messages_to_send_to_groups/Eta.txt
+messages_to_send_to_groups/November 21.txt
+messages_to_send_to_groups/October 21.txt
+messages_to_send_to_groups/September 21.txt
+messages_to_send_to_groups/Theta.txt
+messages_to_send_to_groups/Zeta.txt

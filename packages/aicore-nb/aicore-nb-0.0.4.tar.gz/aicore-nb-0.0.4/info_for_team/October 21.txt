@@ -1,0 +1,26 @@
+What's up team?
+
+Here's what we should all be doing today:
+- 1830-1930: Do your thing
+- 1930-2100: Work together on practicals
+- 1930-2000: Demo hosted by Ivan: Web scraping on EC2. Difficulty: Intermediate
+- 2100-2130: Smash that quiz
+- 2100-2130: Demo hosted by Harry: How to use VIM. Difficulty: Intermediate
+
+Here's where we recommend you to be:
+- Room 27
+	- Ahsan Muzafar. Lesson: Web Scraping
+	- Darrel Anderson. Lesson: SQL Basics
+	- Luqman Awoniyi. Lesson: CRUD
+- Room 28
+	- Dan Bouchard. Lesson: CRUD
+	- Joseph Solomon. Lesson: Joins
+	- James Overend. Lesson: Joins
+- Room 29
+	- Euan Wrigglesworth. Lesson: Joins
+	- Dhaval Kakadiya. Lesson: Joins
+	- Regina Aiken. Lesson: Joins
+- Room 30
+	- Arman Hameed. Lesson: Joins
+	- Mateusz Baran. Lesson: Aggregations
+	- Quratulaen Ikram. Lesson: Aggregations

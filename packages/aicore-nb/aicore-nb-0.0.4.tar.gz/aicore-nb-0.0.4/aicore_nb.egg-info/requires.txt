@@ -1,0 +1,4 @@
+nbformat
+PyYaml
+PyQt5
+requests

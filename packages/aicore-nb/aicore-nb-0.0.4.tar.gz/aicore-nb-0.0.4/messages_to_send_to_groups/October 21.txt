@@ -1,0 +1,26 @@
+Hi all
+
+Here's the agenda for today:
+- 1830-1930: Do your thing
+- 1930-2100: Work together on practicals
+- 1930-2000: Demo hosted by Ivan: Web scraping on EC2. Difficulty: Intermediate
+- 2100-2130: Smash that quiz
+- 2100-2130: Demo hosted by Harry: How to use VIM. Difficulty: Intermediate
+
+Here's the groups for today:
+- Room 27
+	- Ahsan Muzafar
+	- Darrel Anderson
+	- Luqman Awoniyi
+- Room 28
+	- Dan Bouchard
+	- Joseph Solomon
+	- James Overend
+- Room 29
+	- Euan Wrigglesworth
+	- Dhaval Kakadiya
+	- Regina Aiken
+- Room 30
+	- Arman Hameed
+	- Mateusz Baran
+	- Quratulaen Ikram

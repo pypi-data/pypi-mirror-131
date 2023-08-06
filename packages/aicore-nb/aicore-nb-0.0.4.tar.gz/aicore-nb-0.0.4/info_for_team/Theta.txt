@@ -1,0 +1,26 @@
+Hello squad
+
+Here's what we should all be doing today:
+- 1830-1930: Do your thing
+- 1930-2100: Work together on practicals
+- 1930-2000: Demo hosted by Ivan: Web scraping on EC2. Difficulty: Intermediate
+- 2100-2130: Smash that quiz
+- 2100-2130: Demo hosted by Harry: How to use VIM. Difficulty: Intermediate
+
+Here's the groups for today:
+- Room 23
+	- Zakee Ahktar. Lesson: Docstring and Typing
+	- Nishaal Ajmera. Lesson: Intro to Docker
+	- Adaobi Nwafor. Lesson: Intro to Docker
+- Room 24
+	- Pascal Li Poo Kim. Lesson: GitHub Actions
+	- Luke Gardiner. Lesson: GitHub Actions
+	- James Moody. Lesson: GitHub Actions
+- Room 25
+	- Carys Williams. Lesson: GitHub Actions
+	- Imran Raza. Lesson: GitHub Actions
+	- Daniel Zakaiem. Lesson: GitHub Actions
+- Room 26
+	- Miruna Nitu. Lesson: GitHub Actions
+	- Omar Tahmas. Lesson: GitHub Actions
+	- Wayne Rose. Lesson: GitHub Actions

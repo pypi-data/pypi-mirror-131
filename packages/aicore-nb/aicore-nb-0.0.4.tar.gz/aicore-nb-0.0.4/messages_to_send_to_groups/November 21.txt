@@ -1,0 +1,49 @@
+Hello everyone
+
+Here's the agenda for today:
+- 1830-1930: Do your thing
+- 1930-2100: Work together on practicals
+- 1930-2000: Demo hosted by Ivan: Web scraping on EC2. Difficulty: Intermediate
+- 2100-2130: Smash that quiz
+- 2100-2130: Demo hosted by Harry: How to use VIM. Difficulty: Intermediate
+
+Here's the groups for today:
+- Room 10
+	- nasir yousuf
+	- Sidhu Munasinghe
+	- kelechi Daniels
+- Room 11
+	- Kehinde  Omobomi
+	- Sagal Abdulaahi
+	- Nicholas Hawthorne
+- Room 12
+	- Misha Siddiqui
+	- Alasdair Kelly
+	- Daniel Goronwy
+- Room 13
+	- Mileti Chakarov
+	- Edward Cliffe
+	- Peter Sandwith
+- Room 14
+	- Adam Wise
+	- Yiqin Liu
+	- Yamin Miah
+- Room 15
+	- Gemma Baldock
+	- Rexhino Rexhepi
+	- Ceridwen Reed
+- Room 16
+	- Amy Winder
+	- Ewen Garrod
+	- Laura Lewis
+- Room 17
+	- Jonny Holmes
+	- Martin Sheard
+	- Abdullah Safdar
+- Room 18
+	- Patrick Govus
+	- Dax Levey
+	- Kaiomurz Motawara
+- Room 19
+	- Michael Huo
+	- Ossama El Sanharawi

@@ -1,0 +1,25 @@
+Hi all
+
+Here's the schedule for today:
+- 1830-1930: Do your thing
+- 1930-2100: Work together on practicals
+- 1930-2000: Demo hosted by Ivan: Web scraping on EC2. Difficulty: Intermediate
+- 2100-2130: Smash that quiz
+- 2100-2130: Demo hosted by Harry: How to use VIM. Difficulty: Intermediate
+
+Here are the groups for today:
+- Room 2
+	- Hesham Haikal. Lesson: EC2 Instances
+	- Taj Patel. Lesson: Intro to Docker
+	- Divya Munshi. Lesson: Docker
+- Room 3
+	- Ellie Brakoniecki. Lesson: Intro to Prometheus
+	- Eddie Evans. Lesson: Intro to Prometheus
+	- Siraj Choudhury. Lesson: Intro to Prometheus
+- Room 4
+	- Faiz Meghjee. Lesson: Prometheus
+	- Dilan Lodhia. Lesson: Grafana
+	- Bolade Fadipe. Lesson: GitHub Actions
+- Room 5
+	- Daniel Lund. Lesson: GitHub Actions
+	- Ovidiu Popa. Lesson: GitHub Actions

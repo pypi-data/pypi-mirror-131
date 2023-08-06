@@ -1,0 +1,22 @@
+What's up team?
+
+Here's what we're doing today:
+- 1830-1930: Do your thing
+- 1930-2100: Work together on practicals
+- 1930-2000: Demo hosted by Ivan: Web scraping on EC2. Difficulty: Intermediate
+- 2100-2130: Smash that quiz
+- 2100-2130: Demo hosted by Harry: How to use VIM. Difficulty: Intermediate
+
+Here's where we recommend you to be:
+- Room 6
+	- Milan Sajiv. Lesson: Web Scraping
+	- Bilal Armiyawo. Lesson: Dynamic Programming
+	- Olumide Fatokun. Lesson: Joins
+- Room 7
+	- Alex Henderson. Lesson: Aggregations
+	- Yuya Ra. Lesson: Aggregations
+	- Easha Tu Razia. Lesson: Aggregations
+- Room 8
+	- Ana-Maria Dicu. Lesson: GitHub Actions
+	- Marianna Karavangeli. Lesson: GitHub Actions
+	- Harry Smith. Lesson: GitHub Actions

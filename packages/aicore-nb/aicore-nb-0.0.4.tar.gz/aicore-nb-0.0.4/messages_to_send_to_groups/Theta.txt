@@ -1,0 +1,26 @@
+Hi team
+
+Here's the schedule for today:
+- 1830-1930: Do your thing
+- 1930-2100: Work together on practicals
+- 1930-2000: Demo hosted by Ivan: Web scraping on EC2. Difficulty: Intermediate
+- 2100-2130: Smash that quiz
+- 2100-2130: Demo hosted by Harry: How to use VIM. Difficulty: Intermediate
+
+Here's the rooms:
+- Room 23
+	- Zakee Ahktar
+	- Nishaal Ajmera
+	- Adaobi Nwafor
+- Room 24
+	- Pascal Li Poo Kim
+	- Luke Gardiner
+	- James Moody
+- Room 25
+	- Carys Williams
+	- Imran Raza
+	- Daniel Zakaiem
+- Room 26
+	- Miruna Nitu
+	- Omar Tahmas
+	- Wayne Rose
