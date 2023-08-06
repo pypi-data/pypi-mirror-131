@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+periodicgw/__init__.py
+periodicgw/periodicgw_utils.py
+periodicgw.egg-info/PKG-INFO
+periodicgw.egg-info/SOURCES.txt
+periodicgw.egg-info/dependency_links.txt
+periodicgw.egg-info/requires.txt
+periodicgw.egg-info/top_level.txt
