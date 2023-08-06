@@ -1,0 +1,12 @@
+easy_tenants/__init__.py,sha256=ScBsgWuJGAymd4XVbt_P43ck16vipDMJGXKRS3fO5bY,355
+easy_tenants/apps.py,sha256=uUM5beC2G5hNNVz6G669Yv_j7wUK5KfD0Q6d5GJDYao,708
+easy_tenants/checks.py,sha256=8pHCo6isjy3je30np-LRGfCv4xPfPQXc2WiNHQYjMGU,1164
+easy_tenants/conf.py,sha256=B74sulGh9PMFL_HfUGpyGDTkG90jc_sm3QGmzdNQicg,251
+easy_tenants/exceptions.py,sha256=PrCTyerPb6K2KpMPT7KPXR6yfxROG2AjhWfH4uLKAg0,39
+easy_tenants/models.py,sha256=iI4mbhAcX-dUbmEJHeTkNbkvlTo_YVSRWPacnChn6HA,1549
+easy_tenants/storage.py,sha256=MgANdKAQP5U3MhN9_on5SHgs0czgzSxPofmyAL1n2x0,1383
+easy_tenants/utils.py,sha256=ro1lhvVwE9bZQw5QVvxpGGisxUdgskIJgtxprBs7F0s,1086
+django_easy_tenants-0.6.1.dist-info/LICENSE,sha256=llkWLJbVVU9KM9gOKXStPKupiKeIRva8mH7Ezygodlw,1072
+django_easy_tenants-0.6.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+django_easy_tenants-0.6.1.dist-info/METADATA,sha256=jvYpI7uvKmcxxsZh8m7-1SOF9okEJ9huOFPbLul6t3E,5831
+django_easy_tenants-0.6.1.dist-info/RECORD,,
