@@ -1,0 +1,14 @@
+DB/__init__.py,sha256=ulL3A6u72vKlNRaRlVnkzzcvi_2Mj9Y-SRVET6ZtMMo,1555
+Test/__init__.py,sha256=fbtDHSs0YBXW71onqZWCJMRRRZtt_XWCz-E6BvcTM_c,119
+UNDL/__init__.py,sha256=DdvipIW6OvKnZLDlyCMhngqSL6AvrJtkQ_m6wVgwyT0,67
+UNDL/Interpreter/__init__.py,sha256=UhrGA7UdetAj7eiMFW_HMuVLPouNaS2hoaQBbWCTsr8,1900
+UNKnownDB/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+UNKnownDB/DB/__init__.py,sha256=hTf0ILIOimy7AMAzz5VcszRDET903_6W9ziAHCz119w,1540
+UNKnownDB/Test/__init__.py,sha256=nQ-mQu2UQO_AzOEBiWqVBzOm9NFeVyDb7ve5OegSB5U,154
+UNKnownDB/UNDL/__init__.py,sha256=DdvipIW6OvKnZLDlyCMhngqSL6AvrJtkQ_m6wVgwyT0,67
+UNKnownDB/UNDL/Interpreter/__init__.py,sha256=UhrGA7UdetAj7eiMFW_HMuVLPouNaS2hoaQBbWCTsr8,1900
+UNKnownDB-1.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+UNKnownDB-1.4.dist-info/METADATA,sha256=p_EIva9Kdl3cUByJIy19-kKNznNrZreAVRwQGvecvlc,220
+UNKnownDB-1.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+UNKnownDB-1.4.dist-info/top_level.txt,sha256=MLLCDwwX12H4hvsG3y70ayWt4TxIDzYIqRstocbyOKI,10
+UNKnownDB-1.4.dist-info/RECORD,,
