@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "lb-nightly-scheduler"
+version = "0.2.0"
+description = "Scheduler implementation for LHCb Nightly and Continuous Integration Build System"
+authors = [
+    "Marco Clemencic <marco.clemencic@cern.ch>",
+    "Maciej Szymanski <maciej.szymanski@cern.ch>",
+    "LHCb Core Software <lhcb-core-soft@cern.ch>"
+]
+license = "GPL-3.0-only"
+homepage = "https://gitlab.cern.ch/lhcb-core/nightly-builds/lb-nightly-scheduler"
+repository = "https://gitlab.cern.ch/lhcb-core/nightly-builds/lb-nightly-scheduler.git"
+packages = [
+    { include = "lb" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+luigi = "^3.0.3"
+GitPython = "^3.1.18"
+lb-nightly-rpc = "^0.1"
+lb-nightly-configuration = "^0.1.4"
+lb-nightly-utils = "^0.2.0"
+lb-nightly-db = "^0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+pytest-cov = "^2.12.1"
+black = {version = "^21.7b0", allow-prereleases = true}
+python-semantic-release = "^7.19.2"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.semantic_release]
+version_variable = [
+    "lb/nightly/scheduler/__init__.py:__version__"
+]
+version_toml = [
+    "pyproject.toml:tool.poetry.version"
+]
+tag_format = "{version}"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
