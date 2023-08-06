@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "canopy-platform"
+version = "0.0.5"
+description = "A decentralized social platform."
+authors = ["Angelo Gladding <self@angelogladding.com>"]
+license = "AGPL-3.0-or-later"
+packages = [{include = "canopy"}]
+
+[tool.poetry.dependencies]
+python = "^3.9,<3.10"
+understory = "^0"
+understory-indieauth-server = "^0.0.4"
+understory-indieauth-client = "^0.0.4"
+understory-micropub-server = "^0.0.5"
+understory-text-editor = "^0.0.5"
+understory-microsub-server = "^0.0.2"
+understory-text-reader = "^0.0.2"
+understory-webmention-endpoint = "^0.0.3"
+understory-websub-endpoint = "^0.0.3"
+understory-tracker = "^0.0.2"
+micropub = "^0.0.5"
+
+[tool.poetry.dev-dependencies]
+black = "^21.9b0"
+isort = "^5.9.3"
+flake8 = "^3.9.2"
+flake8-docstrings = "^1.6.0"
+pep8-naming = "^0.12.1"
+radon = "^5.1.0"
+ipython = "^7.28.0"
+microformats = {path = "../microformats-python"}
+indieauth = {path = "../indieauth-python"}
+micropub = {path = "../micropub-python"}
+microsub = {path = "../microsub-python"}
+webmention = {path = "../webmention-python"}
+websub-temporary = {path = "../websub-python"}
+understory = {path = "../understory"}
+understory-indieauth-server = {path = "../understory-indieauth-server"}
+understory-indieauth-client = {path = "../understory-indieauth-client"}
+understory-micropub-server = {path = "../understory-micropub-server"}
+understory-text-editor = {path = "../understory-text-editor"}
+understory-microsub-server = {path = "../understory-microsub-server"}
+understory-text-reader = {path = "../understory-text-reader"}
+understory-webmention-endpoint = {path = "../understory-webmention-endpoint"}
+understory-websub-endpoint = {path = "../understory-websub-endpoint"}
+understory-tracker = {path = "../understory-tracker"}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
