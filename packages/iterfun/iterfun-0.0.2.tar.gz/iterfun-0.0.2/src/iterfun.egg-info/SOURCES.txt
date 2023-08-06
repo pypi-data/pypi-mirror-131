@@ -1,0 +1,13 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+requirements/dev.txt
+requirements/release.txt
+src/iterfun/__init__.py
+src/iterfun/iterfun.py
+src/iterfun.egg-info/PKG-INFO
+src/iterfun.egg-info/SOURCES.txt
+src/iterfun.egg-info/dependency_links.txt
+src/iterfun.egg-info/top_level.txt
