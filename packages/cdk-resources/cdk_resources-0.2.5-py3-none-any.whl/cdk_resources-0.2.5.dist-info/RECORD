@@ -1,0 +1,11 @@
+cdk_resources/__init__.py,sha256=DXH0kbqa_PQ9X5y2zuv6pzVMXR-rnY_hKqlu55AdpU8,68
+cdk_resources/__version__.py,sha256=La0BC0dQDLPqmkQZfoKm_1AE7MhtXKVRkDxrnaLeWv8,556
+cdk_resources/stacks.py,sha256=BIwLdIAuUg9srguyvbf1-x9iCVLhHuCu6viAGS4Ad6U,2530
+cdk_resources/utils.py,sha256=vZVQOxr16CCQHGZ0_2dQKHyeOYbslipUoR2WaW8hoNQ,1916
+cdk_resources/resources/__init__.py,sha256=ERmmOxz_9mUkIuccNbzUa5Y6gVLLVDdyc4cCxbCCUbY,20
+cdk_resources/resources/base.py,sha256=Q2R8odfTLuRDc0R9WXNoZIhkQdQWLSP1iYISA87ixq4,5894
+cdk_resources-0.2.5.dist-info/LICENSE,sha256=fTstYtc19wMA8VjHFA7ufou91DpCpGU73LRM_ef5rSA,1068
+cdk_resources-0.2.5.dist-info/METADATA,sha256=xAWgAvmXLCxqFJO-yQOwXoVOlS1WiJsGYglgnSF9caM,1453
+cdk_resources-0.2.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cdk_resources-0.2.5.dist-info/top_level.txt,sha256=-qI25bsbvG6PNzpQezB_rUa7X6ObYSmfXraO3X4fSzM,14
+cdk_resources-0.2.5.dist-info/RECORD,,
