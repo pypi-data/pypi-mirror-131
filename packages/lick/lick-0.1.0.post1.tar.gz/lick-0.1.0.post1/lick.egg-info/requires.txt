@@ -1,0 +1,9 @@
+cblind
+licplot>=1.0.5
+matplotlib
+numpy
+scikit-image>=0.18.1
+scipy
+
+[dev]
+pytest>=6.1
