@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: mavis_core
+Version: 0.5.2
+Summary: Mavis Platform
+Home-page: https://github.com/thetoby9944/mavis_core
+Author: thetoby9944
+Author-email: thetoby@web.de
+License: BSD 2-clause
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: Free for non-commercial use
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
