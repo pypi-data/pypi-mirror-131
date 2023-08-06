@@ -1,0 +1,12 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_chars.py,sha256=8r9kfapAWhtySIlWyuu4xJs-4KfKVZqoOBQOoiqcPdg,8912
+tests/test_client.py,sha256=D2IsWCvcUU1DuGAmI740PW29EEzXNAxyt6oJuHj4gQI,331
+vesta/__init__.py,sha256=kYEx8Z2pE6biPIhTlUFhH8zRGH3eJsW_TkXRYqpBCnk,295
+vesta/chars.py,sha256=xeFdI-t0eFFrdSWJYGaMIPwjn13IoPhET7vuT3bxMCg,8340
+vesta/client.py,sha256=GLuRrI-ql1_fz1u-lF2KStC1zfDeVcyVCbO1mUSgGmI,3430
+vesta-0.7.0.dist-info/LICENSE,sha256=SWIBBSMYY5bRxAMuFms_18cG6iLMxnaba6s8YYo6I5s,1074
+vesta-0.7.0.dist-info/METADATA,sha256=svP38EbE52Bnl9FQ04_AWqUAomvS3x8NWGQFLvASkqI,6218
+vesta-0.7.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+vesta-0.7.0.dist-info/top_level.txt,sha256=tRMe44U3bKTR1fMpGt_fKKQewOzK06N65PF_uN7g_Ms,12
+vesta-0.7.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+vesta-0.7.0.dist-info/RECORD,,
