@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "dg_util"
+version = "0.0.22"
+description = "commom tools"
+authors = ["DataGrid"]
+license = "MIT"
+readme = "README.md"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+]
+packages = [ 
+    # { include = "dg_util", from = "src/dg_util" },
+    { include = "image_preprocessing", from = "src/dg_util" },
+    { include = "face_parsing", from = "src/dg_util" },
+    { include = "rembg", from = "src/dg_util" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.11"
+requests = "^2.26.0"
+tqdm = "^4.62.3"
+numpy = "^1.21.4"
+Pillow = "^8.4.0"
+opencv-python = "^4.5.4"
+dlib = "^19.22.1"
+imutils = "^0.5.4"
+torch = "^1.10.0"
+torchaudio = "^0.10.0"
+torchvision = "^0.11.1"
+flask = "^1.1.2"
+scikit-image = "^0.17.2"
+waitress ="^1.4.4"
+scipy = "^1.5.4"
+pymatting = "^1.1.1"
+filetype = "^1.0.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
