@@ -1,0 +1,12 @@
+ocs_academic_hub/__init__.py,sha256=7bGmQvhBwlZafOr35nbOloTMt5fyBk1ixLdr-_NCKSw,98
+ocs_academic_hub/datahub.py,sha256=8-06gx4t6G3_X5BhtwJCVbPlg2UIkyFVc51ihSPyZ2M,21464
+ocs_academic_hub/hub_datasets.json,sha256=dcERwx_2hsatkBu43c8iqlKaKSBCX7-DaZZ2Bbvc9QA,796740
+ocs_academic_hub/learning.py,sha256=ygphc5DzH7p_TlvFSOWs8aBuQwY5Fd_ABFE36Lva2m0,3962
+ocs_academic_hub/ocs_academic_hub.py,sha256=NUPTutXvgS5wNHooWFnK4WYmWQ6ZV0ujFudvyGNpnCY,22887
+ocs_academic_hub/queries.py,sha256=570_xPeVT7az7Tk9XlCIiifvG8YFtGJrPJdyw1YEE_A,1678
+ocs_academic_hub/util.py,sha256=OMFLiu50lHvvF2snIYZPVhKl-rVOU38IgEwGfKNjSZ8,2364
+ocs_academic_hub-0.99.20.dist-info/LICENSE,sha256=psuoW8kuDP96RQsdhzwOqi6fyWv0ct8CR6Jr7He_P_k,10173
+ocs_academic_hub-0.99.20.dist-info/METADATA,sha256=nqlJug3V2SXGftmFUEhDxFT7sJCY-pdEUS7eBltxyng,984
+ocs_academic_hub-0.99.20.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ocs_academic_hub-0.99.20.dist-info/top_level.txt,sha256=6QGQu6CCLNocOBIRYw82lda4ts_u8NZdji24qG_jEW8,17
+ocs_academic_hub-0.99.20.dist-info/RECORD,,
