@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: glyphsets
+Version: 0.1.0
+Summary: A python API for evaluating coverage of glyph sets in font projects.
+Home-page: https://github.com/googlefonts/glyphsets/
+Author: Dave Crossland, Eli Heuer, Felipe Sanches, Lasse Fister, Marc Foley, Roderick Sheeter
+Author-email: dave@lab6.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Fonts
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools
+Requires-Dist: FontTools[ufo]
+
+If you are a font developer or typeface designer, see the subdirectory `encodings/GF Glyph Sets` which provides glyph set definition "standards" that are typically useful sets to draw.
+
+On the other hand, the nam files on the `encodings` directory are probably more useful for expert web developers. Those files explain how the Unicode Range subsets are defined, typically per script (writing system), in the Google Fonts css API.
+
+
