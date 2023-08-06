@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: termy
+Version: 0.0.3
+Summary: A lightweight terminal assistant to give a natural language interface to your terminal commands
+Home-page: UNKNOWN
+Author: Dingu Sagar, Bhanu Rekha, Divya Priya
+Author-email: <dingusagar@gmail.com>
+License: UNKNOWN
+Keywords: python,termy,terminal assistant,terminast,terminal alias,command automation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: rapidfuzz (==1.9.1)
+Requires-Dist: google-api-python-client (==2.33.0)
+Requires-Dist: google-auth-httplib2 (==0.1.0)
+Requires-Dist: google-auth-oauthlib (==0.4.6)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: tqdm (==4.62.3)
+
+
+Termy : Your Terminal Assistant
+=========
+A lightweight terminal assistant to give a natural language interface to your terminal commands
+
+
+How to install
+============
+Thanks to pip! its as simple as :
+
+```
+pip install --upgrade pip
+pip install termy
+```
+
+
+Install Directly from Source
+=============
+Clone this repository. Open the folder and execute the following commands. 
+```
+pip install --upgrade pip
+pip install -e .
+```
+
+How to Use
+=============
+
+
+
