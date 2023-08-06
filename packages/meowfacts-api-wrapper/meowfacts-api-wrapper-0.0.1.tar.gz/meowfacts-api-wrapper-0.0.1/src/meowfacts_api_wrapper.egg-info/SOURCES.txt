@@ -1,0 +1,8 @@
+pyproject.toml
+setup.cfg
+src/meowfacts-wrapper/__init__.py
+src/meowfacts-wrapper/catsfacts.py
+src/meowfacts_api_wrapper.egg-info/PKG-INFO
+src/meowfacts_api_wrapper.egg-info/SOURCES.txt
+src/meowfacts_api_wrapper.egg-info/dependency_links.txt
+src/meowfacts_api_wrapper.egg-info/top_level.txt
