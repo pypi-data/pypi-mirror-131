@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "AICAPI2021_YW3760"
+version = "0.1.1"
+description = "This is a python package of an API CLIENT to retrieve the data of collections in the Atr Institute of Chicago. The outputs inlude: An table include related information about the searched artworks. An table include related information about the searched tours. An image of an artwork, searched by title and artist. An table include related information about the searched products."
+authors = ["YW3760"]
+license = "MIT"
+readme = "README.md"
+documentation = 'https://qmsspkg.readthedocs.io'
+homepage = "https://github.com/tbrambor/qmsspkg"
+repository = "https://github.com/tbrambor/qmsspkg"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.3.5"
+
+[tool.poetry.dev-dependencies]
+myst-nb = "^0.13.1"
+sphinx-autoapi = "^1.8.4"
+sphinx-rtd-theme = "^1.0.0"
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
