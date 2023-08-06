@@ -1,0 +1,7 @@
+pandas
+
+[cli]
+click
+IPython
+matplotlib
+seaborn
