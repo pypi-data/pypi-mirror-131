@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "svcmangle"
+version = "0.1.7"
+description = "Query and control Windows services."
+authors = ["dustin <dustin.wyatt@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/dmwyatt/svcmangle"
+repository = "https://github.com/dmwyatt/svcmangle"
+keywords = ["windows", "service", "control"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Systems Administration",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pywin32 = "302"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+ipdb = "^0.13.9"
+
+[tool.poetry.scripts]
+svcm = 'svcmangle.cli:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
