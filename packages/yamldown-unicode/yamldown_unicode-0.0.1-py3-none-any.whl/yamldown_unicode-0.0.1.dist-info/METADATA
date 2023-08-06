@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: yamldown-unicode
+Version: 0.0.1
+Summary: Python library for loading and dumping "yamldown" (markdown with embedded yaml) files.
+Home-page: https://github.com/vvasuki/yamldown
+Author: Sanskrit programmers
+Author-email: sanskrit-programmers@googlegroups.com
+License: MIT
+Keywords: yaml markdown
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: mypy
+Requires-Dist: nose2
+Requires-Dist: pyyaml
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+UNKNOWN
+
+
