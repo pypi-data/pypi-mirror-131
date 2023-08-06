@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements_cli.txt
+setup.cfg
+setup.py
+meshlab_pickedpoints/__init__.py
+meshlab_pickedpoints/_core.py
+meshlab_pickedpoints/cli.py
+meshlab_pickedpoints/package_version.py
+meshlab_pickedpoints/testing_fixtures.py
+meshlab_pickedpoints/testing_helpers.py
+meshlab_pickedpoints.egg-info/PKG-INFO
+meshlab_pickedpoints.egg-info/SOURCES.txt
+meshlab_pickedpoints.egg-info/dependency_links.txt
+meshlab_pickedpoints.egg-info/requires.txt
+meshlab_pickedpoints.egg-info/top_level.txt
