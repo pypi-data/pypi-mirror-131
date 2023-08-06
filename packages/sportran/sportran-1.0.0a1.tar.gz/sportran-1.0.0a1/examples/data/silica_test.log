@@ -1,0 +1,40 @@
+Command:
+ /u/r/rbertoss/.virtualenvs/aiida/bin/thermocepstrum-analysis Silica.dat --VOLUME 3130.431110818 --TEMPERATURE 1065.705630 -t 1.0 -k flux1 -u metal -r --FSTAR 28.0 -w 0.5 -o silica_test
+
+ Input file (table):      Silica.dat Units:      metal Time step:      1.0 fs# Solid Silica - BKS potential, melted and quenched
+# 216 atoms, T~1000K, dens~2.295g/cm^3
+# NVE, dt = 1.0 fs, 50 ns, output_step = 1.0 fs
+# Temperature = 1065.705630 K, Volume = 3130.431110818 A^3
+# LAMMPS metal units
+c_flux1[1] c_flux1[2] c_flux1[3] #####################################  all_ckeys = [('flux1', array([0, 1, 2]))] #####################################Data length = 100001  ckey = [('flux1', array([0, 1, 2]))]    step =    100000 - 100.00% completed  ( 100000 ) steps read.DONE.  Elapsed time: 0.508185863494873secondsTEMPERATURE (input): 1065.70563VOLUME (input): 3130.431110818 Time step (input):  1.0 fs  currents shape is (1, 100000, 3)snippet:[[[  91.472925  630.61992   199.16002 ]
+  [  71.403952  666.80601   274.30247 ]
+  [  47.754737  678.10914   305.95706 ]
+  ...
+  [ 466.489    -360.14259   -47.286976]
+  [ 414.3014   -378.42595   166.42152 ]
+  [ 331.99113  -400.35311   378.13009 ]]]Using single component code. Number of currents = 1 Number of components = 3 KAPPA_SCALE = 5.2294777619736176e-06 Nyquist_f   = 500.0  THzUsing single component code.-----------------------------------------------------
+  RESAMPLE TIME SERIES
+-----------------------------------------------------
+ Original Nyquist freq  f_Ny =     500.00000 THz
+ Resampling freq          f* =      27.77778 THz
+ Sampling time         TSKIP =            18 steps
+                             =        18.000 fs
+ Original  n. of frequencies =         50001
+ Resampled n. of frequencies =          2778
+ PSD      @cutoff  (pre-filter&sample) ~ 3173093.88767
+                  (post-filter&sample) ~ 2635454.95726
+ log(PSD) @cutoff  (pre-filter&sample) ~     14.79703
+                  (post-filter&sample) ~     14.62837
+ min(PSD)          (pre-filter&sample) =      0.97609
+ min(PSD)         (post-filter&sample) =  62691.79433
+ % of original PSD Power f<f* (pre-filter&sample)  = 77.029 %
+-----------------------------------------------------
+-----------------------------------------------------
+  CEPSTRAL ANALYSIS
+-----------------------------------------------------
+  AIC_Kmin  = 37  (P* = 38, corr_factor = 1.000000)
+  L_0*   =          13.395456 +/-   0.103277
+  S_0*   =      950203.538450 +/- 98134.481881
+-----------------------------------------------------
+  kappa* =           2.484534 +/-   0.256596  W/m/K
+-----------------------------------------------------
