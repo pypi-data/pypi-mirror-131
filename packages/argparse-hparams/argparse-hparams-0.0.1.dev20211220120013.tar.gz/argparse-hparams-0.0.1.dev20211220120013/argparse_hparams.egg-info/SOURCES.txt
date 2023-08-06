@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+argparse_hparams/__init__.py
+argparse_hparams/parsing.py
+argparse_hparams/utils.py
+argparse_hparams/version.py
+argparse_hparams.egg-info/PKG-INFO
+argparse_hparams.egg-info/SOURCES.txt
+argparse_hparams.egg-info/dependency_links.txt
+argparse_hparams.egg-info/requires.txt
+argparse_hparams.egg-info/top_level.txt
