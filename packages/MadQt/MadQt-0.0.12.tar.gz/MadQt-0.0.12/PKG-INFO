@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: MadQt
+Version: 0.0.12
+Summary: Tutorials and Tools for PyQt and PySide
+Home-page: https://github.com/MadPonyInteractive/MadQt
+Author: Fabio Goncalves
+Author-email: fabiogoncalves@live.co.uk
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Natural Language :: English
+Classifier: Topic :: Desktop Environment
+Classifier: Topic :: Software Development :: Widget Sets
+Classifier: Topic :: Education
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# MadQt
+Tutorials and Tools for PyQt and PySide
+
+## Dependencies
+
+Python      >= 3.9
+
+PySide6     >= 6.0.0
+
+Pillow      >= 8.3.0
+
+pyinstaller >= 4.7
+
+# Getting Started
+
+```python
+pip install MadQt
+```
+
+Visit our [YouTube channel](https://www.youtube.com/c/MadPonyInteractive)
+
+Follow along with our main course on [YouTube](https://youtube.com/playlist?list=PLuvCsqbtUSFAEmez6Tuyi2KitVcS4fLWX)
+
+
+Support this project:
+
+<a href="https://www.buymeacoffee.com/MadPonyInt" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
+
