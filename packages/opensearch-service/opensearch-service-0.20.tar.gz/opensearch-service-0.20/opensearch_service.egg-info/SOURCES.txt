@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+README.rst
+setup.py
+opensearch_service/__init__.py
+opensearch_service/opensearch_service.py
+opensearch_service.egg-info/PKG-INFO
+opensearch_service.egg-info/SOURCES.txt
+opensearch_service.egg-info/dependency_links.txt
+opensearch_service.egg-info/not-zip-safe
+opensearch_service.egg-info/requires.txt
+opensearch_service.egg-info/top_level.txt
