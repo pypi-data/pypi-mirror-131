@@ -1,0 +1,8 @@
+files.txt
+.idea
+*.pyc
+build
+dist
+microserver.egg-info
+microserver/tests/settings/*
+

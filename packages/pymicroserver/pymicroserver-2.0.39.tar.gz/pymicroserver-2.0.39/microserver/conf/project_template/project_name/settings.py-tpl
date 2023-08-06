@@ -1,0 +1,85 @@
+import os
+
+# 项目根目录
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# 服务器调试模式, 值为False时不自动重启服务器
+DEBUG = False
+
+# 登录认证
+AUTH = False
+
+# 变更自动重启
+AUTORELOAD = False
+
+# cookie secret key
+COOKIE_SECRET = '{cookie_secret}'
+
+# 是否开启csrf攻击防范
+XSRF_COOKIES = False
+
+# 允许访问的HOST配置
+ALLOWED_HOSTS = []
+
+# 模块配置
+MODULES = []
+
+# 缓存
+CACHES = {}
+
+# 命令配置
+COMMANDS = []
+
+# 数据库配置
+DATABASES = {}
+
+# 静态文件目录
+STATIC = ""
+
+# 模板文件目录
+TEMPLATE = ""
+
+# 算法模型目录
+DATA = ""
+
+# 每页大小
+PAGE_SIZE = 10
+
+# 分页展示数量
+PAGE_SHOW = 10
+
+# 接口文档配置
+SWAGGER = dict(
+    SWAGGER_UI_ADDRESS = "", # swagger ui 访问地址
+    SWAGGER_URL = "/swagger",                           # 项目swagger接口文档访问路径
+    SWAGGER_INDEX_URL = "/swagger/index.yml",           # 项目swagger接口文档首页访问地址
+    SWAGGER_INDEX_FILENAME = "index.yml",               # 项目swagger接口文档首页文件名
+    SWAGGER_PROJECT_NAME = "法条检索微服务接口",                   # 接口文档项目名称
+    SWAGGER_BASE_URL = "http://ip:port",         # 项目swagger接口文档访问地址
+    SWAGGER_MODULES = [
+        "handlers",
+    ],
+)
+
+# 用户密码认证
+import time
+USERAUTH = {
+    "slat": "aegis",
+    "expires_days": None, # None表示关闭浏览器就退出登录
+    "login_expires": int(time.time()) + 60*60*2, # 登录过期时间，以秒为单位
+    "csrf_expires": time.time() + 60*60*2, # csrf token 过期时间，以秒为单位
+}
+
+# 微信第三方认证
+WXAUTH = {
+    'WX_ACCESS_TOKEN_URL': 'https://api.weixin.qq.com/sns/oauth2/access_token',     # 微信获取access_token接口url
+    'WX_REFRESH_TOKEN_URL': 'https://api.weixin.qq.com/sns/oauth2/refresh_token',   # 微信刷新access_token接口url
+    'WX_CHECK_TOKEN_URL': 'https://api.weixin.qq.com/sns/auth',     # 验证access_token是否过期url
+    'WX_USERINFO_URL': 'https://api.weixin.qq.com/sns/userinfo',    # 获取微信用户信息接口url
+    'APPS': {
+        'APPID': {     # AppId
+            'secret': 'SECRET',   # AppSecret
+            'grant_type': 'authorization_code',     # 认证类型
+        },
+    }
+}

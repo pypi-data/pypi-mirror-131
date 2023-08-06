@@ -1,0 +1,30 @@
+from tornado import gen
+
+from microserver.core.handlers import handlers
+from microserver.utils import decorator
+
+
+class {ModuleName}Handler(handlers.BaseHandler):
+
+    @decorator.handler_except
+    def prepare(self):
+        """在请求方法 get、post等执行前调用，进行通用的参数初始化，支持协程"""
+        super({ModuleName}Handler, self).prepare()
+
+    @decorator.future_except
+    @gen.coroutine
+    def get(self, *args, **kwargs):
+        """IO操作"""
+        result = self.init_response_data()
+        self.finish(result)
+
+    @decorator.threadpoll_executor
+    def post(self, *args, **kwargs):
+        """耗时操作"""
+        result = self.init_response_data()
+        return result
+
+
+handlers = [
+    (r"/{module_name}", {ModuleName}Handler),
+]
