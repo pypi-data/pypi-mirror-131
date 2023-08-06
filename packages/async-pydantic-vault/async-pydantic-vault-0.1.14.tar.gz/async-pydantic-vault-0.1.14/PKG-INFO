@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: async-pydantic-vault
+Version: 0.1.14
+Summary: A simple extension to Pydantic BaseSettings that can retrieve secrets from Hashicorp Vault using Async
+Home-page: https://github.com/AdolfoVillalobos/async-pydantic-vault
+Keywords: pydantic,vault,asyncio
+Author: Adolfo Villalobos
+Author-email: amvillalobos@uc.cl
+Requires-Python: >=3.8,<4.0
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: async-hvac (==0.6.1)
+Requires-Dist: nest-asyncio (>=1.5.1,<2.0.0)
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Requires-Dist: python-dotenv (>=0.19.1,<0.20.0)
+Project-URL: Repository, https://github.com/AdolfoVillalobos/async-pydantic-vault
+Description-Content-Type: text/x-rst
+
+# Async Pydantic Vault
