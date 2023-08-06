@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hbst-python
+Version: 0.1.0
+Summary: Python bindings for hbst library for visual place recognition
+Home-page: UNKNOWN
+Author: Jonas Schuepfer
+Author-email: jonasschuepfer@gmail.com
+License: BSD
+Project-URL: Source Code, https://github.com/osanj/hbst-python
+Platform: Linux
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: numpy
+
+Python bindings for the original implementation of the hamming distance embedding binarysearch tree for feature-based visual place recognition implementation,see https://gitlab.com/srrg-software/srrg_hbst
+
