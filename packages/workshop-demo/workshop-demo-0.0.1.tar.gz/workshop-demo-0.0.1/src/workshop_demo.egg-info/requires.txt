@@ -1,0 +1,8 @@
+dask[array]
+napari-plugin-engine>=0.1.4
+numpy
+tifffile
+imagecodecs
+scikit-image
+napari
+npe2

@@ -1,0 +1,3 @@
+[napari.manifest]
+workshop-demo = workshop_demo:napari.yaml
+
