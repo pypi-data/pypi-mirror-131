@@ -1,0 +1,3 @@
+[console_scripts]
+csv_converter=zack_puc_ia_csv_converter.converter:converter
+
