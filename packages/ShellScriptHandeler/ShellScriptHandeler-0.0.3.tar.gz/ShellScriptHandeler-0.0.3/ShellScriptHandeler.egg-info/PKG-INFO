@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ShellScriptHandeler
+Version: 0.0.3
+Summary: Opens and runs Shellscripts
+Home-page: UNKNOWN
+Author: Teer2008
+Author-email: <henryzimmermann4@gmail.com>
+License: UNKNOWN
+Description: Allows you to Run and get the Output of Shellscripts
+Keywords: python,shellscript,sh,.sh,run sh,open
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
