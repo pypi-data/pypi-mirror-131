@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: django-openid-connect
+Version: 1.1.0rc3
+Summary: Django library providing OpenID Connect auth backend
+Author: Miroslav Bauer
+Author-email: bauer@cesnet.cz
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: django-rest-framework-social-oauth2 (==1.1.0)
+Requires-Dist: urnparse (==0.2.0)

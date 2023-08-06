@@ -1,0 +1,10 @@
+django_openid_connect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_openid_connect/backends.py,sha256=ZuPTjVj1Q27H2DcmeWWxHq3VmX3bCiQ14kT89t3mELM,2504
+django_openid_connect/pipeline.py,sha256=rY5DY4ZJUJH17uESbB8jORMszJJgpySKYt6OR8r5YUo,2489
+django_openid_connect/settings.py,sha256=9TuRvJUYXXDarCj1VbW_xcw_sqZe0DxMjZCjppGeSAw,3502
+django_openid_connect/urls.py,sha256=IdpRjxTvGg44t_fUyYbb98g4JCSO4mPzh3ZdmnjGKX8,792
+django_openid_connect/wsgi.py,sha256=qg-uAC0bBOHGmgDr1TTTXYttJdGZS-DltPe96BGuMQE,420
+django_openid_connect-1.1.0rc3.dist-info/LICENSE,sha256=8zo53sL3kUytQLoGap38scE1DW-6caVBba5Y0l0W1Ps,1063
+django_openid_connect-1.1.0rc3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+django_openid_connect-1.1.0rc3.dist-info/METADATA,sha256=TmWTbu0S3YJipH4OjGV8DW52FN2l-GthqrFHyvVm-TU,605
+django_openid_connect-1.1.0rc3.dist-info/RECORD,,
