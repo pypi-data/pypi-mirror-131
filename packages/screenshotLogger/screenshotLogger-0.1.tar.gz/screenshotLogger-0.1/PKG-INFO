@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: screenshotLogger
+Version: 0.1
+Summary: Screenshot Logger
+Home-page: https://github.com/teddyoweh/Screenshot-Logger
+Author: Teddy Oweh
+Author-email: teddyoweh@gmail.com
+License: MIT
+Download-URL: https://github.com/teddyoweh/Screenshot-Logger/archive/refs/tags/ScreenshotLogger.tar.gz
+Description: UNKNOWN
+Keywords: screenshot,keylogger,logging,screenshotlogger
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
