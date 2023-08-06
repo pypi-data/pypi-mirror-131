@@ -1,0 +1,8 @@
+{
+  "test_parsers/test_attributes.py::TestClassAttributes": true,
+  "test_parsers/test_attributes.py::TestInstanceAttributes": true,
+  "test_parsers/test_attributes.py::TestMarshmallowFields": true,
+  "test_parsers/test_attributes.py::TestModuleAttributes": true,
+  "test_parsers/test_attributes.py::TestParsing": true,
+  "test_parsers/test_attributes.py::TestPydanticFields": true
+}
