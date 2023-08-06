@@ -1,0 +1,10 @@
+napari-plugin-engine>=0.1.4
+numpy
+dask
+qtpy
+aicsimageio[all]
+bioformats_jar
+SimpleITK
+h5py
+opencv-python
+lxml
