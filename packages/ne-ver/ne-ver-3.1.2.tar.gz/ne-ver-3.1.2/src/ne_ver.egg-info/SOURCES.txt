@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+bin/never
+src/ne_ver.egg-info/PKG-INFO
+src/ne_ver.egg-info/SOURCES.txt
+src/ne_ver.egg-info/dependency_links.txt
+src/ne_ver.egg-info/requires.txt
+src/ne_ver.egg-info/top_level.txt
+src/never/__init__.py
+src/never/lib.py
+src/never/next.py
