@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: chys-private
+Version: 2.0.1
+Summary: my private game
+Home-page: http://localhost:8071/simple
+Author: luoquan
+Author-email: 178517202@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE.txt
+
+Test package .
+==================
+
+Introduction
+-------------
+This is a command line test pkg. ignore.
+
+Documentation
+--------------
+Documentation can be found at...
+
+Example Usage
+--------------
+Here is an example to import the modules from this package.
+
+.. code:: python
+
+    from something import Foo
+    f = Foo()
+
+Contributing
+------------
+To contribute...
+
+LICENSE
+-------
+See LICENSE.txt file.
+
+
+
+
+
