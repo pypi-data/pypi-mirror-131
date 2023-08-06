@@ -1,0 +1,6 @@
+PIL
+ansicolors
+numpy
+qrcode
+termcolor
+textwrap
