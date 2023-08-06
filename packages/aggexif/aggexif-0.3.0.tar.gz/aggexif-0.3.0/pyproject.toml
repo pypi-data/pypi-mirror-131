@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "aggexif"
+version = "0.3.0"
+readme = "README.md"
+license = "Apache-2.0"
+description = "Aggregate Image's EXIF Tool"
+authors = ["ponkotuy <web@ponkotuy.com>"]
+homepage = "https://github.com/ponkotuy/python-exif"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+aggexif = "aggexif.main:main"
+sqlite = "aggexif.sqlite_cache:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
