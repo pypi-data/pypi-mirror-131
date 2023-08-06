@@ -1,0 +1,72 @@
+from typing import Union
+
+from django.conf import settings
+from django.contrib.auth import get_user_model
+from google.cloud import secretmanager, secretmanager_v1
+from rest_framework_simplejwt.tokens import RefreshToken
+
+from expressmoney import adapters
+from expressmoney.adapters import Request
+
+User = get_user_model()
+client = secretmanager.SecretManagerServiceClient()
+access_secret_version = secretmanager_v1.types.service.AccessSecretVersionRequest()
+
+
+class DjangoTasks(adapters.Tasks):
+
+    def __init__(self, user: Union[int, User], queue: str = 'attempts-1', location: str = 'europe-west1',
+                 in_seconds: int = None, project: str = settings.PROJECT):
+        if not isinstance(user, User):
+            user = User.objects.get(pk=user)
+        access_token = RefreshToken.for_user(user).access_token
+        super().__init__(access_token, queue, location, project, in_seconds)
+
+
+class DjangoPubSub(adapters.PubSub):
+
+    def __init__(self, topic_id: str, user: Union[None, int, User] = None, project: str = settings.PROJECT):
+        if user:
+            if not isinstance(user, User):
+                user = User.objects.get(pk=user)
+            access_token = RefreshToken.for_user(user).access_token
+        else:
+            access_token = None
+        super().__init__(topic_id, access_token, project)
+
+
+class DjangoStorage(adapters.Storage):
+    def __init__(self):
+        bucket_name = f'{settings.PROJECT}.appspot.com'
+        super().__init__(bucket_name)
+
+
+class DjangoRequest(Request):
+
+    def __init__(self,
+                 service: str = None,
+                 path: str = '/',
+                 user: Union[int, User] = None,
+                 project: str = settings.PROJECT):
+        user = user if isinstance(user, User) else User.objects.get(pk=user)
+        access_token = RefreshToken.for_user(user).access_token if user else None
+        super().__init__(service, path, access_token, project)
+
+    def _get_authorization(self) -> dict:
+        from google.auth.transport.requests import Request
+        from google.oauth2 import id_token
+        authorization = super()._get_authorization()
+        open_id_connect_token = id_token.fetch_id_token(Request(), self._aud)
+        iap_token = {'Authorization': f'Bearer {open_id_connect_token}'}
+        authorization.update(iap_token)
+        return authorization
+
+    @property
+    def _aud(self):
+        secrets = {
+            'expressmoney': 'projects/1086735462412/secrets/IAP_CLIENT_ID/versions/1',
+            'expressmoney-dev': 'projects/13337168308/secrets/IAP_CLIENT_ID/versions/1',
+            'loans-russia': 'projects/70455559151/secrets/IAP_CLIENT_ID/versions/1',
+        }
+        access_secret_version.name = secrets.get(self.__project, None)
+        return client.access_secret_version(request=access_secret_version).payload.data.decode("utf-8")
