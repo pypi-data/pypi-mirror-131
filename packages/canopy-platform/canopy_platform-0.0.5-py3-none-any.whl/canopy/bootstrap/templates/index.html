@@ -1,0 +1,119 @@
+$def with (config, domains)
+<!doctype html>
+<html>
+<head>
+<title>Plant a tree in the canopy</title>
+<style>
+body {
+    background-color: #3c341f;
+    color: #ccc;
+    margin: 2em auto;
+    max-width: 35em; }
+</style>
+</head>
+<body>
+<h1>Plant a tree in the canopy..</h1>
+
+$if "host" not in config:
+    <form id=host>
+    <fieldset><legend>Host</legend>
+    <h3>Cloud</h3>
+    <p>A cloud host is an organization that will manage a machine in the cloud for you typically for a monthly fee.</p>
+    <ul>
+    <li><label><input type=radio name=provider value=digitalocean.com> DigitalOcean <a href=//digitalocean.com>digitalocean.com</a></label></li>
+    <li><label><input type=radio name=provider value=linode.com> Linode <a href=//linode.com>linode.com</a></label></li>
+    </ul>
+    <label>Token: <label class=bounding><input type=text name=token></label></label>
+    <div class=buttons><button>Save</button></div>
+    <!--h3>Manual</h3>
+    <label>IP Address: <label class=bounding><input type=text name=host_ip></label></label><br>
+    <label>SSH Key:<br>
+    <label class=bounding><textarea name=host_key></textarea></label>
+    </label-->
+    </fieldset>
+    </form>
+
+$if "registrar" not in config:
+    <form id=registrar>
+    <fieldset><legend>Address</legend>
+    <h3>Domain Name</h3>
+    <p>A domain name registrar is an organization that will register domain names for you typically for an annual fee.</p>
+    <ul>
+    <li><label><input type=radio name=provider value=dynadot.com> Dynadot <a href=//dynadot.com>dynadot.com</a></label></li>
+    <li><label><input type=radio name=provider value=name.com> Name <a href=//name.com>name.com</a></label></li>
+    </ul>
+    <label>Token: <label class=bounding><input type=text name=token></label></label>
+    <div class=buttons><button>Save</button></div>
+    </fieldset>
+
+$if "host" in config and "registrar" in config:
+    <form id=plant>
+    <p>Host: $config["host"]["provider"]</p>
+    <p>Domain name: <label class=bounding><select name=domain>
+    $for domain, expiration in domains:
+        <option value=$domain>$domain</option>
+    </select></label></p>
+    <label>Your name: <label class=bounding><input type=text name=name></label></label><br>
+    <div class=buttons>
+        <button>Plant</button>
+    </div>
+    </form>
+
+<script>
+host_form = document.querySelector("form#host")
+if (host_form !== null) {
+  host_form.onsubmit = function(event) {
+    event.preventDefault()
+    const form = new FormData(host_form)
+    fetch('/host', {method: 'POST', body: form})
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data);
+        if (data.status === "success") {
+          host_form.parentNode.removeChild(host_form)
+          // host_form.parentNode.innerHTML = '<p>IP Address: $${ip_address}</p>'
+        }
+      })
+      .catch(error => console.error(error))
+    return false
+  }
+}
+registrar_form = document.querySelector("form#registrar")
+if (registrar_form !== null) {
+  registrar_form.onsubmit = function(event) {
+    event.preventDefault()
+    const form = new FormData(registrar_form)
+    fetch('/registrar', {method: 'POST', body: form})
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data);
+        if (data.status === "success") {
+          registrar_form.parentNode.removeChild(registrar_form)
+          // registrar_form.parentNode.innerHTML = '<p>IP Address: $${ip_address}</p>'
+        }
+      })
+      .catch(error => console.error(error))
+    return false
+  }
+}
+plant_form = document.querySelector("form#plant")
+if (plant_form !== null) {
+  plant_form.onsubmit = function(event) {
+    event.preventDefault()
+    const form = new FormData(plant_form)
+    fetch('/', {method: 'POST', body: form})
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        if (data.status === "success") {
+          plant_form.parentNode.removeChild(plant_form)
+          document.location = "https://" + form.get('domain')
+        }
+      })
+      .catch(error => console.error(error))
+    return false
+  }
+}
+</script>
+</body>
+</html>

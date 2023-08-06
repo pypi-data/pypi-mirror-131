@@ -1,0 +1,11 @@
+canopy/__init__.py,sha256=OTB_obkzvXq_dmnLoUHL6IBVLf2HsiGos4X-P8CSnrk,1648
+canopy/bootstrap/__init__.py,sha256=8k2NZKOdC_LS3NQE0728bWF6lhinZX7AhOcDSEYaGqk,6544
+canopy/bootstrap/templates/index.html,sha256=3Be-gpw-xD7Ia6tj9qJigX_JEdGYNovS0-vVnfGhKfw,4123
+canopy/static/screen.css,sha256=aXiKn-PsqCDwe7zCxU_KHBlEO7EfXCKvFqgBbmLc-MQ,2714
+canopy/templates/__init__.py,sha256=9YYoS8DSAFadCW-m5bdKF1O0UKvtdMpxatrESSuF0eA,48
+canopy/templates/sign_in.html,sha256=-8-IzKHu2JVUG8jsKRjI8_CIGOcFNTpqSKiu3Nyaafc,507
+canopy/templates/template.html,sha256=ux31l244HBBIts2Axbgtr3a79a1_0d8H9zHR4m4Ak6c,4379
+canopy_platform-0.0.5.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+canopy_platform-0.0.5.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+canopy_platform-0.0.5.dist-info/METADATA,sha256=KkyUTB9DKeuxzR5QyaURMrivsk8s-2fVn9RjKGct4Bw,1009
+canopy_platform-0.0.5.dist-info/RECORD,,
