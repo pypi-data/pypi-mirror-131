@@ -1,0 +1,6 @@
+setup.py
+src/fsutil.py
+src/fsutil.egg-info/PKG-INFO
+src/fsutil.egg-info/SOURCES.txt
+src/fsutil.egg-info/dependency_links.txt
+src/fsutil.egg-info/top_level.txt
