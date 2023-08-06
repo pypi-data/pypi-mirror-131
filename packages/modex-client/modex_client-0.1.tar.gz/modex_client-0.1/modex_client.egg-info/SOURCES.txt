@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+modex_client.egg-info/PKG-INFO
+modex_client.egg-info/SOURCES.txt
+modex_client.egg-info/dependency_links.txt
+modex_client.egg-info/requires.txt
+modex_client.egg-info/top_level.txt
