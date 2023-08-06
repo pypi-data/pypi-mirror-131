@@ -1,0 +1,4 @@
+requests<3,>=2.25
+
+[:python_version < "3.7"]
+dataclasses<1,>=0.8
