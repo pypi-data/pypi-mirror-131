@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Secr/__init__.py
+src/Secr/logs.py
+src/Secr/secrmath.py
+src/SecrLib.egg-info/PKG-INFO
+src/SecrLib.egg-info/SOURCES.txt
+src/SecrLib.egg-info/dependency_links.txt
+src/SecrLib.egg-info/top_level.txt
