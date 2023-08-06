@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: latex2sympy2
+Version: 1.6.8
+Summary: Convert latex to sympy with ANTLR and support Matrix, Linear Algebra and CAS functions.
+Home-page: https://github.com/OrangeX4/latex2sympy
+Author: OrangeX4
+Author-email: 318483724@qq.com
+License: MIT
+Requires-Dist: sympy (>=1.4)
+Requires-Dist: antlr4-python3-runtime (==4.7.2)
+
+latex2sympy2: https://github.com/OrangeX4/latex2sympy
+
+
