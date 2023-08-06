@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: lunespy
+Version: 1.40.0
+Summary: Library for communication with nodes in mainnet or testnet of the lunes-blockchain network
+License: Apache-2.0
+Keywords: cryptocurrency,lunes,blockchain
+Author: Lunes Platform
+Author-email: development@lunes.io
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: base58 (>=2.1.0,<3.0.0)
+Requires-Dist: python-axolotl-curve25519 (>=0.4.1.post2,<0.5.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Project-URL: Documentation, https://github.com/lunes-platform/lunespy/blob/main/docs/TUTORIAL.md
+Description-Content-Type: text/markdown
+
+# LunesPy
+
+**The [old version](https://github.com/lunes-platform/lunespy/blob/main/deprecated) is being discontinued, but it can still be used at your own and risk.**
+
+Library for communication with nodes in mainnet or testnet of the lunes-blockchain network
+Allows the automation of **sending assets**, **issue end reissue tokens**, **lease** and **create new wallet**.
+
+
+## [What's new?](https://github.com/lunes-platform/lunespy/blob/main/CHANGELOG.md)
+
+
+## [How to use LunesPy?](https://github.com/lunes-platform/lunespy/blob/main/docs/TUTORIAL.md)
+
+
+## [Want to contribute to LunesPy?](https://github.com/lunes-platform/lunespy/blob/main/CONTRIBUTING.md)
+
+
+## Contributors
+
+Thanks to the following people who have contributed to this project:
+
+* [olivmath](https://github.com/olivmath)
+* [marcoslkz](https://github.com/marcoslkz)
+* [VanJustin](https://github.com/VanJustin)
+* [xonfps](https://github.com/xonfps)
+
+## Contact
+
+If you want to contact me you can reach me at <development@lunes.io>.
+
+## License
+
+[Apache License Version 2.0](https://github.com/lunes-platform/lunespy/blob/main/LICENSE).
+
