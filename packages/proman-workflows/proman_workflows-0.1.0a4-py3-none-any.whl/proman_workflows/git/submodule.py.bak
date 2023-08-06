@@ -1,0 +1,134 @@
+# -*- coding: utf-8 -*-
+# copyright: (c) 2020 by Jesse Johnson.
+# license: MPL-2.0, see LICENSE for more details.
+"""Control Git submodules."""
+
+import os
+from typing import TYPE_CHECKING, List, Optional
+
+from invoke import Collection, task
+from pygit2 import Keypair, RemoteCallbacks, Repository
+
+from .. import filesystem
+from . import config
+
+if TYPE_CHECKING:
+    from invoke import Context
+    from pygit2 import Submodule
+
+# TODO: refactor
+# post_commit = """#!/bin/bash
+# exec git submodule update
+# """
+# def setup() -> None:
+#     """Do setup for post checkout hooks."""
+#     path = os.path.join(os.getcwd(), '.git', 'hooks', 'post-checkout')
+#     with open(path, 'w') as f:
+#         f.write(post_commit)
+
+
+@task
+def repo(ctx):  # type: (Context) -> Repository
+    """Set git as SCM."""
+    # ctx.repo = {Repository(ctx.repo_dir)}
+    # print(ctx.repo)
+    return Repository(ctx.repo_dir)
+
+
+@task(name='list', pre=[repo])
+def index(ctx):  # type: (Context) -> List[Submodule]
+    """List submodules with project."""
+    submodules = repo(ctx).listall_submodules()
+    print(submodules)
+    return submodules
+
+
+@task
+def info(ctx, name):  # type: (Context, str) -> None
+    """View project info."""
+    sm = repo(ctx).submodule(name)
+    print(sm.children())
+
+
+@task
+def remove(ctx, name):  # type: (Context, str) -> None
+    """Remove submodule from repository."""
+    data = config.load(ctx)
+    if 'submodule' in data['sections']:
+        # remove configuration
+        submodule = data['sections']['submodule'].pop(name)
+        if data['sections'] != {}:
+            config.dump(
+                ctx,
+                data,
+                template_name='gitconfig',
+                dest=os.path.join(ctx.repo_dir, 'config'),
+                update=update,
+            )
+    else:
+        raise Exception('no submodules found within project')
+
+    gitmodules_path = os.path.join(ctx.project_dir, '.gitmodules')
+    if os.path.exists(gitmodules_path):
+        data = config.load(ctx, gitmodules_path)
+        if 'submodule' in data['sections']:
+            # remove configuration
+            submodule = data['sections']['submodule'].pop(name)
+            if data['sections'] != {}:
+                config.dump(
+                    ctx,
+                    data,
+                    template_name='gitconfig',
+                    dest=gitmodules_path,
+                    update=update,
+                )
+            else:
+                filesystem.rm(ctx, gitmodules_path)
+
+            # remove submodule directory from git repo
+            filesystem.rm(
+                ctx, os.path.join(ctx.repo_dir, 'modules', submodule['path'])
+            )
+
+            # remove submodule from project
+            filesystem.rm(
+                ctx, os.path.join(ctx.project_dir, submodule['path'])
+            )
+        else:
+            raise Exception(f"'{name}' submodule does not exist")
+    else:
+        raise Exception(f"no gitmodule found at path {gitmodules_path}")
+
+
+@task
+def add(ctx, url, path, link=True):  # type: (Context, str, str, bool) -> None
+    """Add submodule to project."""
+    # TODO: populate dynamically
+    try:
+        keypair = Keypair(
+            username='git',
+            pubkey='id_rsa.pub',
+            privkey='id_rsa',
+            passphrase='',
+        )
+        callbacks = RemoteCallbacks(credentials=keypair)
+        # XXX: not actually working
+        repo(ctx).add_submodule(
+            url=url, path=path, link=link, callbacks=callbacks
+        )
+        # repo(ctx).index.commit(f'Added {module} submodule')
+    except Exception as err:
+        print(f"{err}: unable to retrieve submodule")
+
+
+@task
+def update(ctx, name=None):  # type: (Context, Optional[str]) -> None
+    """Update submodule within project."""
+    if name:
+        sm = repo(ctx).submodule(name)
+        sm.update(recursive=True, init=True)
+    else:
+        repo(ctx).submodule_update(recursive=False)
+
+
+submodule_tasks = Collection(add, index, info, remove, update)
