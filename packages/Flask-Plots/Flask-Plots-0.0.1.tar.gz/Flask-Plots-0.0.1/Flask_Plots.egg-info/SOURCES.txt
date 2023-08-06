@@ -1,0 +1,13 @@
+CHANGELOG.rst
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Flask_Plots.egg-info/PKG-INFO
+Flask_Plots.egg-info/SOURCES.txt
+Flask_Plots.egg-info/dependency_links.txt
+Flask_Plots.egg-info/requires.txt
+Flask_Plots.egg-info/top_level.txt
+flask_plots/__init__.py
+flask_plots/core.py
+flask_plots/templates/plots/utils.html
