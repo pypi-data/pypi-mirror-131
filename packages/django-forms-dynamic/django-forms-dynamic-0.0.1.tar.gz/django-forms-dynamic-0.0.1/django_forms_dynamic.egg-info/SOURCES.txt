@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+django_forms_dynamic.egg-info/PKG-INFO
+django_forms_dynamic.egg-info/SOURCES.txt
+django_forms_dynamic.egg-info/dependency_links.txt
+django_forms_dynamic.egg-info/top_level.txt
+dynamic_forms/__init__.py
