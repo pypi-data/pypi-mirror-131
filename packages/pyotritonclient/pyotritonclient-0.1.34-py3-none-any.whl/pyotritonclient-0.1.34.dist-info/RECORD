@@ -1,0 +1,12 @@
+pyotritonclient/VERSION,sha256=7SGC_yW3Yyckp6dUJAz9Kl6GbfmyZj9ju3DMRgikxkI,27
+pyotritonclient/__init__.py,sha256=WmhQOitSrTdV3j_-jK6rqeab3Mrlkr-cXWO4VCtTnx8,9245
+pyotritonclient/http.py,sha256=N24FIxuEK7mz4d-N0NCI5vDCOeJsbVhQaZeW_ZW7c7o,59318
+pyotritonclient/httpclient.py,sha256=sRBr3gTzEsYieqUIBzyTIZNhFnYjgs-pJfYZEMOkp_s,2196
+pyotritonclient/pyohttpclient.py,sha256=DxOCWQh1AX19L-_OIeC0zaNuDn0OuTVxwbUpAyfYRXs,2603
+pyotritonclient/utils.py,sha256=BFzBEuaz-58xGq3pk9Rz6rDEzjLJbF4qAzDvQtP8bT8,8090
+pyotritonclient-0.1.34.data/data/LICENSE.txt,sha256=NMqy92YzgvtkIas9IW34i27ARqi_sCunXDu-t-EqxL8,1533
+pyotritonclient-0.1.34.dist-info/LICENSE.txt,sha256=NMqy92YzgvtkIas9IW34i27ARqi_sCunXDu-t-EqxL8,1533
+pyotritonclient-0.1.34.dist-info/METADATA,sha256=FZo7n8gDtUkD-tdSLzcD_kztkTKDtJnNKciaxJ0Ikt0,6281
+pyotritonclient-0.1.34.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pyotritonclient-0.1.34.dist-info/top_level.txt,sha256=Axe-xkU0Ef8eihQhOvc4AjMTYHF2U44YwYrlRkyFVlk,16
+pyotritonclient-0.1.34.dist-info/RECORD,,
