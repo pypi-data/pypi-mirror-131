@@ -1,0 +1,20 @@
+# These are the requirements needed for basic server functionality.
+cachey
+cachetools
+dask
+fastapi
+jmespath
+jsonschema
+msgpack
+orjson
+psutil
+prometheus_client
+pydantic
+python-dateutil
+python-jose[cryptography]
+python-multipart
+pyyaml
+toolz
+typer
+uvicorn
+watchgod
