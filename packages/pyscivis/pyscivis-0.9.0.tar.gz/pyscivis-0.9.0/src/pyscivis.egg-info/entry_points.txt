@@ -1,0 +1,3 @@
+[console_scripts]
+pyscivis = pyscivis.__main__:main
+
