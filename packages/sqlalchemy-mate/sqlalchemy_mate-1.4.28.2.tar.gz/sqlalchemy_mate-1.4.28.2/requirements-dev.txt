@@ -1,0 +1,7 @@
+pathlib_mate    # autopep8 your code
+wheel           # python wheel
+twine           # make distribution archive
+
+psycopg2-binary
+pandas
+boto3
