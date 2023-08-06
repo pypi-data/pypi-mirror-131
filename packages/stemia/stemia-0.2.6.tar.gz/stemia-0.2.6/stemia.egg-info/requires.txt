@@ -1,0 +1,12 @@
+click
+numpy
+mrcfile
+scikit_image
+scipy
+eulerangles
+starfile
+magicgui
+IPython
+plotly
+pandas
+pyqt5
