@@ -1,0 +1,8 @@
+setup.py
+f_matrices/__init__.py
+f_matrices/matrices.py
+f_matrices.egg-info/PKG-INFO
+f_matrices.egg-info/SOURCES.txt
+f_matrices.egg-info/dependency_links.txt
+f_matrices.egg-info/not-zip-safe
+f_matrices.egg-info/top_level.txt
