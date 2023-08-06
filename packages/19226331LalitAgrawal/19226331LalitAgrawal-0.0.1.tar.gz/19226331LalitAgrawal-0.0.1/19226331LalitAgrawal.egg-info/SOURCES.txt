@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+19226331LalitAgrawal.egg-info/PKG-INFO
+19226331LalitAgrawal.egg-info/SOURCES.txt
+19226331LalitAgrawal.egg-info/dependency_links.txt
+19226331LalitAgrawal.egg-info/top_level.txt
+addcart_properties_pkg/__init__.py
+addcart_properties_pkg/addcart.py
