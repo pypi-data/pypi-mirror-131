@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: securedb
+Version: 0.0.1
+Summary: securedb is a fast and lightweight Python framework to easily interact with JSON-based encrypted databases.
+Home-page: https://github.com/filipporomani/securedb
+Author: Filippo Romani
+Author-email: filipporomani@duck.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# securedb
+
+## securedb is a Python framework that lets you work with encrypted JSON databases.
+Features: 
+- newkey() to generate an encryption key
+- write(key, value) to write a determinated value into the database
+- clear() to nuke the database
+- get(key) to get a determinated key from the database
+- write_many(dict) to write an undefined amount of keys to the database.
+- delete_many(list) to delete an undefined amount of keys from the database
+
+
+
