@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+pretalx_youtube.egg-info/PKG-INFO
+pretalx_youtube.egg-info/SOURCES.txt
+pretalx_youtube.egg-info/dependency_links.txt
+pretalx_youtube.egg-info/entry_points.txt
+pretalx_youtube.egg-info/top_level.txt
+pretalx_youtube/static/pretalx_youtube/.gitkeep
+pretalx_youtube/templates/pretalx_youtube/.gitkeep
+pretalx_youtube/templates/pretalx_youtube/settings.html
