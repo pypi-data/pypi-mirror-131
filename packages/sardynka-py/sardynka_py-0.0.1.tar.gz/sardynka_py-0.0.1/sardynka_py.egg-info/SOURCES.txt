@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+sardynka_py/__init__.py
+sardynka_py/hello.py
+sardynka_py.egg-info/PKG-INFO
+sardynka_py.egg-info/SOURCES.txt
+sardynka_py.egg-info/dependency_links.txt
+sardynka_py.egg-info/requires.txt
+sardynka_py.egg-info/top_level.txt
