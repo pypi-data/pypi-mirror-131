@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: git-workspace
+Version: 2.2.0
+Summary: Git 'extension' for managing multirepo workspaces
+Home-page: https://gitlab.com/blissfulreboot/python/git-workspace
+Author: Aki Mäkinen
+Author-email: nenshou.sora@gmail.com
+License: MIT
+Keywords: Git,Workspace
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
+
+UNKNOWN
+
