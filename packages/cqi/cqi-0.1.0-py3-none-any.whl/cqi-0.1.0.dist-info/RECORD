@@ -1,0 +1,17 @@
+cqi/__init__.py,sha256=rPAkY7393ZjxJLrVgn1eKlnkZgwyY_hIyBe7h7tpEVg,157
+cqi/client.py,sha256=kR7KZ4LNOb44YiblWAL7mP8Z8T7XBJ0xz7mVJ_XI7Wk,1583
+cqi/errors.py,sha256=j8703qKUyK_dGQKisXfaY0dZknYu9FOEK_PWlBpws1I,5926
+cqi/version.py,sha256=FZPhOa8B_iWQpmNxUzt9S37_nj2DQJKkSvkBonc2ZBY,91
+cqi/api/__init__.py,sha256=BiXMFMoFV_JnfVjY0tADBBs3E7B8D0ZIgzihIlKQueQ,45
+cqi/api/client.py,sha256=vxdDPyyrpmruHGvwUfnt2LMBfT8MPw9EVhUcCN1K5zk,22416
+cqi/api/specification.py,sha256=_njFnlsUjOY_h5EEExg2eI8nB9pttuiPcCSdCLx5S7M,12641
+cqi/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cqi/models/attributes.py,sha256=EH9Jk_NHrupS28iZxdYecKwvlMhvxrX7cRNRv8S9WR0,4424
+cqi/models/corpora.py,sha256=T190SXdrv0c3LGCuXtpxJj8O3FW2GH-Gt8yQlY9Wunk,2180
+cqi/models/ressource.py,sha256=Y-q49D0XY59T_5zkIs_LrDKD5vb047jM5OlEphpA9Aw,2088
+cqi/models/subcorpora.py,sha256=SZ3Ml0pQoeFOJas3cpPHD6_oTj6ycFvJaERlLId0qAs,2527
+cqi-0.1.0.dist-info/LICENSE,sha256=rlKksUpF92euP-s8mQ5Wq9Z061rxReaNH6i9C4HdBAE,1072
+cqi-0.1.0.dist-info/METADATA,sha256=cTAESGibBDklE0UzW4FKCGNZiuauyUba91FGrpVZj40,1484
+cqi-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cqi-0.1.0.dist-info/top_level.txt,sha256=A2b75ktiS15C6l9pTeQVTF-Gcex0iMZmtnlNJcURnww,4
+cqi-0.1.0.dist-info/RECORD,,
