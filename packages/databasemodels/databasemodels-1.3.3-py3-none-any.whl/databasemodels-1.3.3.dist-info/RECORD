@@ -1,0 +1,13 @@
+databasemodels/__init__.py,sha256=inwTw-tHydU2qfLHaVnTAS768F_DrNAtKhOq6YcfZ-g,318
+databasemodels/columns.py,sha256=iwwWfvIWqvwDeRY7MP5FF811GWr8Gw3tva8LBsvUD9Q,2851
+databasemodels/connection.py,sha256=JBvWOXRADKDYT_DxzPjj2rOSMImy6nFlFsopIjMpsdQ,2369
+databasemodels/datatypes.py,sha256=i-QuoDZLT0nPxaKXvXmfSQXeld-9lGNj8DVGcbtyPZU,14547
+databasemodels/exceptions.py,sha256=21joArKBYab3S7CiY6L6-EvMp6RW_9DXZ-AmCp-WdsI,549
+databasemodels/helper.py,sha256=9LFNscFsXbpa-lNv3mDwZWly2jE742GpfkgvVJmSE0U,2047
+databasemodels/protocols.py,sha256=F146HGz0Cv_3akQnrjRrTvH8p8gd9O53Y55jzOAe3xA,7241
+databasemodels/version.py,sha256=AmEyKQ0qaPwWJTmXPsDXN4QqwVrQThVAwAHahhzpJBY,757
+databasemodels/wrapper.py,sha256=C8NX8KCG-8rHN5dhEcpxapZ_H2u63XmvJ0WuXgLADwI,14429
+databasemodels-1.3.3.dist-info/METADATA,sha256=0WQwjkKGJ3dlw8v4ROV4v4abz5vbrmJkmVau-zuZ2IM,1721
+databasemodels-1.3.3.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+databasemodels-1.3.3.dist-info/top_level.txt,sha256=EvzfGHUF-MWg_2IHStGGKaMeKnqjWuwQ50ysuVQg83s,15
+databasemodels-1.3.3.dist-info/RECORD,,
