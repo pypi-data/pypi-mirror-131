@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: covid-pkg-jw1224
+Version: 0.0.1
+Summary: A package for displaying a Covid-19 dashboard.
+Home-page: UNKNOWN
+Author: Jake Wakefield
+Author-email: jw1224@exeter.ac.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+This package takes data from both a Covid-19 and News API in order to display onto a webpage that can be continually updated.
+

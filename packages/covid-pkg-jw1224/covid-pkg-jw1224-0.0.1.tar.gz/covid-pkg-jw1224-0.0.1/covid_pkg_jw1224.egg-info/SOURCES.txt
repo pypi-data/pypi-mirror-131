@@ -1,0 +1,10 @@
+setup.py
+covid-pkg-jw1224/__init__.py
+covid-pkg-jw1224/covid_data_handler.py
+covid-pkg-jw1224/covid_news_handling.py
+covid-pkg-jw1224/main.py
+covid-pkg-jw1224/time_calculation.py
+covid_pkg_jw1224.egg-info/PKG-INFO
+covid_pkg_jw1224.egg-info/SOURCES.txt
+covid_pkg_jw1224.egg-info/dependency_links.txt
+covid_pkg_jw1224.egg-info/top_level.txt
