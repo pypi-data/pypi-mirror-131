@@ -1,0 +1,4 @@
+[console_scripts]
+tbmail = thunderbird.mail:main
+tbmailwebserver = thunderbird.webserver:main
+
