@@ -1,0 +1,7 @@
+numpy>=1.18
+scipy>=1.4.0
+parse
+matplotlib
+
+[gpu]
+cupy
