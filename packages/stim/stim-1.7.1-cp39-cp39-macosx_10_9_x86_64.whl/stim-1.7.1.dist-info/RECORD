@@ -1,0 +1,11 @@
+stim/__init__.py,sha256=11j5e4xMRLvCPJF6QEMbxFD0vZdgGyJaozZNaeIWafw,868
+stim/_stim_march_avx2.cpython-39-darwin.so,sha256=HfwzOVUePQF5I3c59_mnVsyIs6iOmVa7wmpAvm24Bpk,1919640
+stim/_stim_march_polyfill.cpython-39-darwin.so,sha256=OYHebJDZ6gdZvEkOxJJ2TNq_WUj-KeLlqVSSBcn0XCU,1936208
+stim/_stim_march_sse2.cpython-39-darwin.so,sha256=7mDSBvRjBp8DG0HRl9DFa8Q30YmCVH9E7wKSy8ctFSw,1936200
+stim-1.7.1.data/data/README.md,sha256=qITm7I9S_CK9r32v57jRmEmPZVya_bUNgwHQ7beDi8c,3846
+stim-1.7.1.data/data/pyproject.toml,sha256=dcHlbCgpdThGZB19BD3EJ38cN7HjvaKM0qnMrOijV2Q,102
+stim-1.7.1.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+stim-1.7.1.dist-info/METADATA,sha256=KhS3biKB3QWh_6PIP0HhjVfyWSnffRjZTjr3AKAaPOs,4199
+stim-1.7.1.dist-info/WHEEL,sha256=JIE30nfOWUuazI4Vcfiuv_cYm-SkZCh6YOqQQjhm90A,109
+stim-1.7.1.dist-info/top_level.txt,sha256=_h6lQZBgzVLumwrXyf13DY71YT6dUkd4SY-ZRjcljFQ,5
+stim-1.7.1.dist-info/RECORD,,
