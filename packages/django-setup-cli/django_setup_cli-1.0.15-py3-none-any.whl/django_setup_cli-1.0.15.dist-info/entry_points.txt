@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        django-cli=django_cli.cli:cli
+    
