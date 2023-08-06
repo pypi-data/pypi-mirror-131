@@ -1,0 +1,7 @@
+matplotlib
+matplotx
+numpy
+rich
+
+[:python_version < "3.8"]
+typing_extensions

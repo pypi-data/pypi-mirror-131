@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/perfplot/__init__.py
+src/perfplot/_exceptions.py
+src/perfplot/_main.py
+src/perfplot.egg-info/PKG-INFO
+src/perfplot.egg-info/SOURCES.txt
+src/perfplot.egg-info/dependency_links.txt
+src/perfplot.egg-info/requires.txt
+src/perfplot.egg-info/top_level.txt
