@@ -1,0 +1,109 @@
+#!/usr/bin/env python3
+
+from fire import Fire
+#from pyql700 import stripes,multextimg
+from Pyql700 import sticker,multextimg,pwned
+
+from Pyql700.version import __version__
+
+import subprocess as sp
+
+
+def launch(MODE="help",**kwargs):
+    """
+    parameters :  txt -f ahoj
+    """
+    if MODE=="help":print("h... available modes: help ...")
+
+    print("D... MODE=",MODE," params=", kwargs)
+    #=========================== TXT FILE IN 62
+    if MODE=="txt":
+        OUTNAME="pil2.png"
+        #============================RM==========="
+        CMD="rm "+OUTNAME
+        try:
+            res=sp.check_output( CMD.split() ).decode("utf8")
+        except:
+            print("!... NOT DELETED "+OUTNAME)
+
+        #==========================OPEN TEXT========
+        with open( kwargs['f'] ) as f:
+            txt=f.readlines()
+        txt="".join(txt)
+        print(" ... txt ok:",txt)
+        #stripes.print_file( 62 , kwargs['f'] )
+        multextimg.create_image_multiline(707,40, txt,limit=45)
+        if 'p' in kwargs:
+            print("D... -p True.. printing")
+            stripes.image(62, 'pil2.png') #function for print
+        else:
+            print("D... no printing , no -p")
+
+
+    if MODE=="    ":print("ok")
+    return
+
+
+
+
+def txtfile( S62, fname, p=False, qr=False, image=None, qd=False, cover=0.7):
+    """
+    Create image from a textfile with some lines (uses sticker.mult)
+    """
+    with open(fname) as f:
+        res=f.readlines()
+    res="".join(res)
+    print(res)
+    sticker.txt( S62, res ,p, qr, image, qd, cover )
+
+
+
+def test_launch():
+    assert launch('A',p=1)==1
+
+def print_pass(*filenames, sha_path="./", p=False):
+    """
+    goes through pwned and passes to sticker.mult: to prepare print
+    """
+    print( filenames , len(filenames) )
+    if len(filenames) != 1:
+        res=[]
+        for i in filenames:
+            print("D... Print_pass: PAGE===================================", i)
+            res.append( print_pass(i,sha_path = sha_path, p = p) )
+        return
+    filename=filenames[0]
+    print("D... on track (print_pass):", filename)
+    newtext = pwned.subst_pass(filename, sha_path=sha_path, printit=True)
+    print("D... return: ",newtext)
+    if newtext=="":
+        print("!... ")
+        quit()
+    sticker.mult( newtext ,p )
+
+
+if __name__=="__main__":
+    print("D... pyql700 script; version:",__version__)
+
+    print("_"*70)
+    print("EXAMPLES:")
+    print("_"*70)
+    print('D... ./bin_pyql700 img 62  s2cz.jpg -p')
+    print('D... ./bin_pyql700 txt 62  "NPI CAS" -p')
+    print("D... ./bin_pyql700 txt 62  'line1 enter line2' -p --qr")
+    print('D... ./bin_pyql700 txtfile 62 README.md')
+    print("""D... /bin_pyql700 txt 62 'this is a testing
+i can print multiline
+with an image on right' -i s2cz.jpg --cover 0.4 """)
+    print("""D... /bin_pyql700 txtfile 62 0pc1.txt -i s2cz.jpg --cover 0.4 """)
+    print("_"*70)
+
+    #Fire( launch )
+    Fire( {"img":sticker.img,
+           #"qr":multextimg.qr,
+           "txt":sticker.txt,
+           "txtfile":txtfile
+          # "pwned":pwned.subst_pass,
+          # "ppass":print_pass
+    })
+    #print("_"*50,"\n","HELP:")
