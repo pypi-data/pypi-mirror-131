@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+musicians_choice_lib.egg-info/PKG-INFO
+musicians_choice_lib.egg-info/SOURCES.txt
+musicians_choice_lib.egg-info/dependency_links.txt
+musicians_choice_lib.egg-info/top_level.txt
