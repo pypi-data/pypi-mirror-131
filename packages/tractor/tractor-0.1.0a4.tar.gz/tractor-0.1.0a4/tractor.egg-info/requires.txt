@@ -1,0 +1,14 @@
+trio>0.8
+async_generator
+trio_typing
+tricycle
+trio_typing
+colorlog
+wrapt
+pdbpp
+msgpack
+
+[msgspec]
+
+[msgspec:python_version >= "3.9"]
+msgspec>=0.3.2'
