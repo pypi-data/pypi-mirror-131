@@ -1,0 +1,3 @@
+[console_scripts]
+joris2kblecli = joris2k_ble.joris2kblecli:cli
+
