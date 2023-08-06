@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+MSTeamsdataretrieval/TeamsDataRetrival.py
+MSTeamsdataretrieval/__init__.py
+MSTeamsdataretrieval_neeti_sharma1.egg-info/PKG-INFO
+MSTeamsdataretrieval_neeti_sharma1.egg-info/SOURCES.txt
+MSTeamsdataretrieval_neeti_sharma1.egg-info/dependency_links.txt
+MSTeamsdataretrieval_neeti_sharma1.egg-info/top_level.txt
+tests/__init__.py
+tests/test_Teamsdataretrieval.py
