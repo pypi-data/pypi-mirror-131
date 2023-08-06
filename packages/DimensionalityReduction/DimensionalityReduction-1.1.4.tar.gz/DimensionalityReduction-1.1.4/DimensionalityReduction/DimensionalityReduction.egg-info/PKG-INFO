@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: DimensionalityReduction
+Version: 1.1.4
+Summary: Dimensionality reduction automatically
+Home-page: https://github.com/HindyDS/DimensionalityReduction
+Author: Hindy Yuen
+Author-email: hindy888@hotmail.com
+License: MIT
+Keywords: Dimensionality Reduction
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+DimensionalityReduction aims to help the users to perfrom a chained dimensionality reduction techniques on a dataset automatically. 
+
+This package is inspired by: 
+PyData DC 2016 | A Practical Guide to Dimensionality Reduction 
+Vishal Patel
+October 8, 2016
+
+Quick Start:
+	!pip install DimensionalityReduction
+	
+	from DimensionalityReduction import DimensionalityReduction
+	
+	dr = DimensionalityReduction()
+	
+	dr.fit(<<dataset>>, <<target_name>>)
+	
+	dr.plot()
+    
+
+
