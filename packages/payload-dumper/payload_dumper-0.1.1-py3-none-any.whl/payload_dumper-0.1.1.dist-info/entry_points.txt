@@ -1,0 +1,3 @@
+[console_scripts]
+payload_dumper=payload_dumper:dumper.main
+
