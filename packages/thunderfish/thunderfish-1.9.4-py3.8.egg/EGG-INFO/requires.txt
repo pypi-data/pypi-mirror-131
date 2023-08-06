@@ -1,0 +1,5 @@
+audioio
+matplotlib
+numpy
+scipy
+sklearn
