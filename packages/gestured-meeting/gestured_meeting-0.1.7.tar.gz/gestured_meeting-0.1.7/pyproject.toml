@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "gestured_meeting"
+version = "0.1.7"
+description = "Online meeting with gesture."
+authors = ["ygkn <2000ygkn0713@gmail.com>"]
+license = "MIT"
+readme="README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+PyAutoGUI = "^0.9.53"
+bleak = "^0.12.1"
+pystray = "^0.17.3"
+Pillow = "^8.3.2"
+PyGObject = {version= "^3.42.0", markers = "platform_system == 'Linux'"}
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.910"
+flake8 = "^3.9.2"
+black = "^21.9b0"
+isort = "^5.9.3"
+
+[tool.poetry.scripts]
+gestured-meeting = "gestured_meeting:cli"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.black]
+line-length = 79
+include = 'src/\.pyi?$'
+
+[flake8]
+ignore = "E203, E266, E501, W503, F403, F401"
+max-line-length = 79
+max-complexity = 18
+select = "B,C,E,F,W,T4,B9"
