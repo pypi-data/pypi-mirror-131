@@ -1,0 +1,17 @@
+OpenFisca-UK==0.7.12
+OpenFisca-US==0.1.5
+OpenFisca-Tools>=0.1.7
+plotly
+flask
+flask_cors
+kaleido
+google-cloud-storage>=1.42.0
+gunicorn
+OpenFisca-Core
+microdf_python
+numpy
+pandas
+tables
+wheel
+rdbl
+pytest
