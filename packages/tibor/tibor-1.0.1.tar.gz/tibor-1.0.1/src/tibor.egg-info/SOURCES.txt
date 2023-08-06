@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/tibor/__init__.py
+src/tibor/scraping_helpers.py
+src/tibor.egg-info/PKG-INFO
+src/tibor.egg-info/SOURCES.txt
+src/tibor.egg-info/dependency_links.txt
+src/tibor.egg-info/top_level.txt
