@@ -1,0 +1,13 @@
+fikkie/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fikkie/check.py,sha256=OVxL75A5XdbBE8jOg3muITq5vzA51BZJQFHQRrrgvCU,1939
+fikkie/config.py,sha256=N6pFjPmeD_o6NAj0ko3fJO0WG9W-yP7m6QghbrZtOxc,2297
+fikkie/main.py,sha256=YUxZr97sQ8nROSMeRIKAV9_ikTbm58bHRvKGNd2xtJU,993
+fikkie/watchdog.py,sha256=CB9a-Blb5uIBSVAlUOtZvv9-Q8j0rEoeCb6jw1jbsQA,1533
+fikkie/notifiers/__init__.py,sha256=nUibdqW9u2n4-lUnMc71nuhoYIsjvvSmsD6zWPhNrxE,422
+fikkie/notifiers/telegram.py,sha256=izB6yaJ3ENBjGzNx1TeKdxFNT1mslAWuI6LjLxTA7s8,416
+fikkie-0.1.0.data/scripts/fikkie,sha256=ThsEy4-_AcOzbwe_B9MKBPpFlBRvRAFm2sGNnWwnryQ,658
+fikkie-0.1.0.dist-info/LICENSE.md,sha256=2yTH8wRGwfjuc0V4XlL6LTrMZpSyE6h9oEodAbBMg5k,1056
+fikkie-0.1.0.dist-info/METADATA,sha256=0Uq-EsNjRrNEboCeAtd0pszgkX1Dz64dw_FPXD_hIXQ,1896
+fikkie-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fikkie-0.1.0.dist-info/top_level.txt,sha256=nBgDRzq-zq6FBm8C66grBTJFrfKeQ8vICIyYhK_BTMc,7
+fikkie-0.1.0.dist-info/RECORD,,
