@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: Sentwits
+Version: 0.0.3
+Summary: Real-time sentiment Stocktwits analysis tool
+Home-page: https://github.com/brandonbondig/sentwits
+Author: Brandon Bondig
+Author-email: brandon@bondig.dk
+License: MIT
+Keywords: stocks analysis finance market shares stocktwits sentiment real-time
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+License-File: LICENSE.txt
+
+UNKNOWN
+
