@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+hoothoot_logger/__init__.py
+hoothoot_logger/logger.py
+hoothoot_logger.egg-info/PKG-INFO
+hoothoot_logger.egg-info/SOURCES.txt
+hoothoot_logger.egg-info/dependency_links.txt
+hoothoot_logger.egg-info/not-zip-safe
+hoothoot_logger.egg-info/requires.txt
+hoothoot_logger.egg-info/top_level.txt
