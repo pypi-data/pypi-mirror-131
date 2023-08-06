@@ -1,0 +1,11 @@
+pyagxrobots/UGVConfigMsg.py,sha256=V1U4SThyoAsDWQbNBuCSVgaZ8sI3_A42lTZMyIEMchM,9767
+pyagxrobots/__init__.py,sha256=SXHBLCPlVdEO9jFX8Yit7qL7ngi7ej2nk2I5uGJGSDs,344
+pyagxrobots/agxbase.py,sha256=-MqkKWAJVvsCgkKsZXkQeaBW2ByggI_3Z2qgVZlPyQg,6031
+pyagxrobots/agxrobots.py,sha256=w2SYHKj6C59GItIqooM-nySdmcI-rrWR44WbTC79es8,27113
+pyagxrobots/pysdkugv.py,sha256=z3Frcuaaj_gQEst5BUgvXQAqj2AIVRp5YL_7zhgUAU0,9460
+pyagxrobots/test.py,sha256=EgBcV264IrmbhHtqdHnjNsGStjqARIVOQ9nJ9kFBcDQ,375
+pyagxrobots-0.8.4.dist-info/LICENSE.txt,sha256=EoMvz60uxCf3ZD89O9Mtx-wz_PVGED_y9q0R2uuuBFQ,1065
+pyagxrobots-0.8.4.dist-info/METADATA,sha256=NCvi2AfidM39undjq-d9LSA03s17Tb2deprHunzMA7c,5596
+pyagxrobots-0.8.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pyagxrobots-0.8.4.dist-info/top_level.txt,sha256=x8IbatZn3yImivIdvf-THSxMLk-JCCmZR7LOO9FkQWs,12
+pyagxrobots-0.8.4.dist-info/RECORD,,
