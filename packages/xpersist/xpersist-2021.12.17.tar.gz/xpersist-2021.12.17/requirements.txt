@@ -1,0 +1,9 @@
+xarray
+zarr
+netcdf4
+pydantic
+catalogue
+fsspec
+joblib
+prefect >=0.15.9,<2.0
+xcollection
