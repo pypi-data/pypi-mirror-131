@@ -1,0 +1,17 @@
+djangorestframework==3.13.1
+django==3.2.10
+django-model-utils==4.2.0
+django-phonenumber-field==6.0.0
+phonenumbers==8.12.39
+Pillow==8.4.0
+django-crispy-forms==1.13.0
+django-select2==7.9.0
+django-bootstrap-modal-forms==2.2.0
+django-widget-tweaks==1.4.9
+django-bootstrap-datepicker-plus==4.0.0
+django-simple-menu==1.2.1
+django-extensions==3.1.5
+django_weasyprint==2.1.0
+djangorestframework-datatables==0.7.0
+nobinobi-staff==0.1.6.7
+nobinobi-core==0.1.4.6
