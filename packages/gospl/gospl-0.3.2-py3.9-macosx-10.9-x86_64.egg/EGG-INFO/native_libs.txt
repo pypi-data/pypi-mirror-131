@@ -1,0 +1,1 @@
+gospl/_fortran.cpython-39-darwin.so
