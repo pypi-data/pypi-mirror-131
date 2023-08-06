@@ -1,0 +1,149 @@
+Metadata-Version: 2.1
+Name: linkpredict
+Version: 2.2.1
+Summary: A generic and dynamic link budget tool
+Home-page: https://gitlab.com/librecube/lib/python-linkpredict
+Author-email: info@librecube.org
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# LinkPredict
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gl/librecube%2Flib%2Fpython-linkpredict/master?filepath=Fexamples)
+
+LinkPredict alows you to predict the performance of radio links. The flow of
+constructing such a link is from transmitter towards receiver, taking into
+account all elements that contribute with gains and losses.
+
+LinkPredict is written in Python and is:
+
+- *Generic*: construct radio links for terrestrial applications as well as
+    space-to-ground, ground-to-space, orbiter-to-rover, and others.
+
+- *Dynamic*: every element of the radio link can be time-depended and/or
+    depend on other parameters. This way, time-dependent effects (such as change
+    of distance) can be analyzed and visualized.
+
+- *Extensible*: subclasses can be easily created and used for the radio
+    link computations.
+
+
+## Installation
+
+Install LinkPredict by running:
+
+```bash
+$ pip install linkpredict
+```
+
+## Example
+
+Let's create the link budget for the example defined in Table 1 from this
+reference: http://www.waves.utoronto.ca/prof/svhum/ece422/notes/22-linkbudget.pdf
+
+```python
+import linkpredict as lp
+
+# Transmitter
+circuit_loss = lp.Device(gain=-2.0)
+transmitter = lp.Transmitter(amplifier_power=20, devices=[circuit_loss])
+transmit_antenna = lp.MainLobeAntenna(peak_gain=51.6, beam_3db_width=6)
+
+# Path
+geometry = lp.SimpleGeometry(slant_range=40.721e6, rx_antenna_angle=2.5)
+fade = lp.SimpleMediumLoss(4.0)
+other = lp.SimpleMediumLoss(6.0)
+medium_losses= [fade, other]
+
+# Channel
+modulation = lp.AnalogModulation(bandwidth=2e6)
+channel = lp.Channel(frequency=8e9, modulation=modulation)
+
+# Receiver
+receive_antenna = lp.MainLobeAntenna(peak_gain=35.1, beam_3db_width=6)
+receive_antenna_noise = lp.SimpleAntennaNoise(300)
+receiver = lp.Receiver(noise_temperature=3806)
+
+# Link Budget
+link = lp.Link(
+    channel=channel,
+    geometry=geometry,
+    medium_losses=medium_losses,
+    transmitter=transmitter,
+    transmit_antenna=transmit_antenna,
+    receive_antenna=receive_antenna,
+    receive_antenna_noise=receive_antenna_noise,
+    receiver=receiver)
+result = link.calculate_link_budget()
+
+k = lp.LinkBudgetKeys
+fields = (
+    k.tx_amplifier_power,
+    k.tx_circuit_loss,
+    k.tx_antenna_gain,
+    k.eirp,
+    k.free_space_path_loss,
+    k.medium_loss,
+    k.total_path_loss,
+    k.received_isotropic_signal_level,
+    k.rx_antenna_gain,
+    k.rx_antenna_pointing_loss,
+    k.received_power,
+    k.received_noise_power_density,
+    k.cno_ratio,
+    k.bandwidth,
+    k.snr,
+)
+for field in fields:
+    print("{}: {:0.1f} {}".format(field.name, result[field], field.unit))
+```
+
+Output:
+
+```
+tx_amplifier_power: 20.0 dBW
+tx_circuit_loss: 2.0 dB
+tx_antenna_gain: 51.6 dBi
+eirp: 69.6 dBW
+free_space_path_loss: 202.7 dB
+medium_loss: 10.0 dB
+total_path_loss: 212.7 dB
+received_isotropic_signal_level: -143.1 dB
+rx_antenna_gain: 35.1 dBi
+rx_antenna_pointing_loss: 2.0 dB
+received_power: -110.0 dBW
+received_noise_power_density: -192.5 dBW/Hz
+cno_ratio: 82.4 dB-Hz
+bandwidth: 2000000.0 Hz
+snr: 19.4 dB
+```
+
+You can find more examples as Jupyter notebooks in the docs folder.
+[Try them out right now using Binder](https://mybinder.org/v2/gl/librecube%2Flib%2Fpython-linkpredict/master?filepath=examples).
+
+## Documentation
+
+The API documentation is in [docs/api.md](docs/api.md).
+
+## Contribute
+
+- Issue Tracker: https://gitlab.com/librecube/lib/python-linkpredict/-/issues
+- Source Code: https://gitlab.com/librecube/lib/python-linkpredict
+
+To learn more on how to successfully contribute please read the contributing
+information in the [LibreCube guidelines](https://gitlab.com/librecube/org/guidelines).
+
+## Support
+
+If you are having issues, please let us know. Reach us at
+[Matrix](https://app.element.io/#/room/#librecube.org:matrix.org)
+or via [Email](mailto:info@librecube.org).
+
+## License
+
+The project is licensed under the MIT license. See the [LICENSE](./LICENSE.txt) file for details.
+
+
