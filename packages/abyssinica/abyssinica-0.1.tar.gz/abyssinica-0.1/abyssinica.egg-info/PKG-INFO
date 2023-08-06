@@ -1,0 +1,61 @@
+Metadata-Version: 1.2
+Name: abyssinica
+Version: 0.1
+Summary: Locale functions for the countries of Eritrea and Ethiopia.
+Home-page: https://github.com/ebenh/abyssinica/
+Author: Ebenezer Hailemariam
+Author-email: eben@derso.org
+License: MIT License
+Description: ##########
+        Abyssinica
+        ##########
+        
+        Locale functions for the countries of Eritrea and Ethiopia.
+        
+        See also `HornMT <https://github.com/gebre/HornMT/>`_: a machine-learning corpus for the Horn of Africa region.
+        
+        *************
+        Functionality
+        *************
+        
+        Numerals
+        ========
+        Convert between Arabic and Ge'ez numerals::
+        
+            >>> from abyssinica.numerals import arabic_to_geez
+            >>> arabic_to_geez(42)
+            '፵፪'
+        
+            >>> from abyssinica.numerals import geez_to_arabic
+            >>> geez_to_arabic('፵፪')
+            42
+        
+        Romanization
+        ============
+        Transliterate Ge'ez characters::
+        
+            >>> from abyssinica.romanization import romanize
+            >>> print(f"{romanize('ሰላም እንደምን አለህ?').capitalize()}")
+            Salām ʼendamn ʼalah?
+        
+        **********************
+        Upcoming Functionality
+        **********************
+        
+        Date & Time
+        ===========
+        Convert between Ge'ez and Gregorian dates and times.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Localization
+Classifier: Topic :: Software Development :: Internationalization
+Requires-Python: >=3.6
