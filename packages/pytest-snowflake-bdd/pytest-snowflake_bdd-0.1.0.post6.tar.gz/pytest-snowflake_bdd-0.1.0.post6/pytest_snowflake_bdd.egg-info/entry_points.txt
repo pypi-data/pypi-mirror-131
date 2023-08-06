@@ -1,0 +1,3 @@
+[pytest11]
+pytest-snowflake-bdd = pytest_snowflake_bdd.plugin
+
