@@ -1,0 +1,12 @@
+setup.py
+pc/__init__.py
+pc/code.py
+pc/file_crud.py
+pc/models.py
+pc/qr.py
+pc/utils.py
+pycosmic.egg-info/PKG-INFO
+pycosmic.egg-info/SOURCES.txt
+pycosmic.egg-info/dependency_links.txt
+pycosmic.egg-info/requires.txt
+pycosmic.egg-info/top_level.txt
