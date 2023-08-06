@@ -1,0 +1,11 @@
+blind_watermark/__init__.py,sha256=vno5vl29xVkX0-V9zs0vQZ3L0kkmX_E1fMij6ovNfTc,81
+blind_watermark/access.py,sha256=mXoBTDPAvGCM5vWZL-cz65H7RQlSHdhnBOHoGFlzaXc,986
+blind_watermark/att.py,sha256=_3tcEwrwMe4W_mCyW-d1RHfzhOtegJ0eJelX8QRQmko,3843
+blind_watermark/blind_watermark.py,sha256=5CrY2u2t8tZ9IODGKdEy6fOhSdbx5mkwj5oUDUdeENU,8867
+blind_watermark/cli_tools.py,sha256=dIkykodcTcBn7zpy-95J6Zpgy9_vq8OUokDTzsDLFG8,2167
+blind_watermark/pool.py,sha256=GeLwS1zF6o1GbY1MnODlSFKbMGecEa9y6LBfHzfpP6M,1116
+blind_watermark/tools.py,sha256=bgvMi9zRZlgDmqewOf9-xKzkvwO2U1qgM9I5QntHrMU,2022
+text_blind_watermark_p-1.0.4.dist-info/METADATA,sha256=P0ukzcihFnLMOI4Z4UqPGSLGe_Pas1rJnpXWJWgem68,417
+text_blind_watermark_p-1.0.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+text_blind_watermark_p-1.0.4.dist-info/top_level.txt,sha256=kUnr4RZJz8MF81HOYCJ0o7NdEtAD2-DcQ-teCdXNJgg,16
+text_blind_watermark_p-1.0.4.dist-info/RECORD,,
