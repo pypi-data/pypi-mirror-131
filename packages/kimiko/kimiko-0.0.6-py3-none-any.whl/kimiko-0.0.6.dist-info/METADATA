@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: kimiko
+Version: 0.0.6
+Summary: Standard way for interacting with Kimiko
+Home-page: UNKNOWN
+Author: Kimiko, Inc.
+Author-email: chris@kimiko.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Kimiko
+
+A standard way for interacting with Kimiko
+
+## Instructions
+
+1. Install
+
+```
+pip install kimiko
+```
+
+2. Import Client
+
+```
+from kimiko import Objects
+ob = Objects(<account_id>, <api_key>)
+```
+
+3. Use Kimko
+
+```
+objects = ob.objects()
+records = ob.records(<object_type>)
+```
+
+
