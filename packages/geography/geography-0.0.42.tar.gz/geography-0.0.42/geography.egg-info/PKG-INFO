@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: geography
+Version: 0.0.42
+Summary: Get info about countries and states
+Home-page: UNKNOWN
+Author: FrenchFries8854
+Author-email: frenchfries8854@gmail.com
+License: MIT
+Keywords: geography
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Geography API
+## geography has information for:
+#### Australian States and Territories (AST)
+#### Canadian Provinces and Territories (CPT)
+#### Continents (CNT)
+#### Countries (CNR)
+#### South African Provinces (SAP)
+#### USA States and Territories (UST)
+#### USA Regions (USR)
+## Planned upcoming subdivisions:
+#### Brazil States (BRS)
+#### China Provinces (CHP)
+#### Ethiopia Regions (ETR)
+#### France Regions (FRR)
+#### Germany States (GRS)
+#### India States and Territories (IST)
+#### Japan Prefectures (JPP)
+#### Mexican States (MXS)
+#### Russia Federal Subjects (RFS)
+#### Saudi Arabia Provinces (SRP)
+#### Spain Regions (SPR)
+#### United Arab Emirates - Emirates (AEE)
+## The information you can get:
+#### Check if country/state/province/territory exists (AST, CPT, CNT, CNR, SAP, UST, USR)
+#### Get area in Kilometers (AST, CPT, CNT, CNR, SAP, UST, USR)
+#### Get area in Miles (AST, CPT, CNT, CNR, SAP, UST, USR)
+#### Get area ranking (AST, CPT, CNT, CNR, SAP, UST, USR)
+#### Get area ranking dictionary (AST, CPT, CNT, CNR, SAP, UST, USR)
+#### Get capital (AST, CPT, CNR, SAP, UST)
+#### Get URL of flag (AST, CPT, CNR, SAP, UST)
+#### Get GDP (AST, CPT, CNT, CNR, SAP, UST, USR)
+#### Get GDP ranking (AST, CPT, CNT, CNR, SAP, UST, USR)
+#### Get GDP ranking dictionary (AST, CPT, CNT, CNR, SAP, UST, USR)
+#### Get GDP per capita (AST, CPT, CNT, CNR, SAP, UST, USR)
+#### Get GDP per capita ranking (AST, CPT, CNT, CNR, SAP, UST, USR)
+#### Get GDP per capita ranking dictionary (AST, CPT, CNT, CNR, SAP, UST, USR)
+#### Get largest city (AST, CPT, CNT, CNR, SAP, UST, USR)
+#### Get name from alpha code (AST, CPT, CNR, SAP, UST)
+#### Get population (AST, CPT, CNT, CNR, SAP, UST, USR)
+#### Get population ranking (AST, CPT, CNT, CNR, SAP, UST, USR)
+#### Get population ranking dictionary (AST, CPT, CNT, CNR, SAP, UST, USR)
+#### Get population density in kilometers (AST, CPT, CNT, CNR, SAP, UST, USR)
+#### Get population density in miles (AST, CPT, CNT, CNR, SAP, UST, USR)
+#### Get population density ranking (AST, CPT, CNT, CNR, SAP, UST, USR)
+#### Get population density ranking dictionary (AST, CPT, CNT, CNR, SAP, UST, USR)
+#### Get alpha from name (AST, CPT, SAP, UST)
+#### Get alpha3 from name (CNR)
+#### Get alpha2 from name (CNR)
+#### Get is State/Province/Territory type. (AST, CPT, SAP, UST)
+#### Get continent. (CNR)
+#### Get region. (UST)
+#### Get countries in continent. (CNT)
+#### Get States in region. (USR)
+
