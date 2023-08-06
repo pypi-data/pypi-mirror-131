@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: django_idp_user
+Version: 0.7.0
+Summary: A Django app that handles the communication between the IDP and the products for the authorization of users.
+Home-page: https://github.com/CardoAI/django-idp-user
+Author: Mahmoud Al-Rawy, Euron Metaliaj, Klajdi Çaushi, Aleksandër Nasto, Andi Çuku, Klement Omeri
+Author-email: hello@cardoai.com
+License: MIT (X11)
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.9
+License-File: LICENSE
+
+===============
+Django IDP User
+===============
+
+Quick start
+-----------
+
+1. Add "idp_user" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'idp_user',
+    ]
+
+2. Add the settings of the app in settings.py like this::
+
+    APP_ENV = "development"/"staging"/"production"
+
+    AUTH_USER_MODEL = 'idp_user.User'
+
+    IDP_USER_APP = {
+        "APP_IDENTIFIER": "str",
+        "ROLES": "path.to.roles_choices",
+        "FAUST_APP_PATH": "backend.kafka_consumer.app",
+        "OPA_DOMAIN": os.getenv("OPA_DOMAIN"),
+        "OPA_VERSION": os.getenv("OPA_VERSION"),
+        "IDP_URL": os.getenv("IDP_URL"),
+        "USE_REDIS_CACHE": True,
+        "INJECT_HEADERS_IN_DEV": True
+    }
+
+    REST_FRAMEWORK = {
+        'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema' / 'idp_user.schema_extensions.AutoSchemaWithRole',
+        'DEFAULT_AUTHENTICATION_CLASSES': (
+            'idp_user.auth.AuthenticationBackend',
+        ),
+        'DEFAULT_PERMISSION_CLASSES': (
+            'idp_user.auth.OpaCheckPermission',
+        ),
+    }
+
+    SPECTACULAR_SETTINGS = {
+        'DEFAULT_AUTHENTICATION_CLASSES': (
+            'idp_user.schema_extensions.BearerTokenScheme',
+        ),
+        'SERVE_AUTHENTICATION': ()
+    }
+
+3. Run ``python manage.py migrate`` to create the models.
+
+
