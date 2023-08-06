@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+requirements.txt
+setup.cfg
+src/ReleaseLogIt.egg-info/PKG-INFO
+src/ReleaseLogIt.egg-info/SOURCES.txt
+src/ReleaseLogIt.egg-info/dependency_links.txt
+src/ReleaseLogIt.egg-info/requires.txt
+src/ReleaseLogIt.egg-info/top_level.txt
+src/releaselogit/__init__.py
+src/releaselogit/releaselogit.py
