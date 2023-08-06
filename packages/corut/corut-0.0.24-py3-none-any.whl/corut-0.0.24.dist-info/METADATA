@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: corut
+Version: 0.0.24
+Summary: Common main platform for test automation tools
+Home-page: https://pypi.org/project/corut/
+Author: ibrahim CÖRÜT
+Author-email: ibrhmcorut@gmail.com
+License: MIT License
+Project-URL: Documentation, https://pypi.org/project/corut/
+Project-URL: Source Code, https://pypi.org/project/corut/
+Keywords: corut, cörüt
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4
+Requires-Dist: html5lib
+Requires-Dist: importlib-metadata
+Requires-Dist: lxml
+Requires-Dist: markdown
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: opencv-contrib-python
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: pillow
+Requires-Dist: pure-python-adb
+Requires-Dist: pyaudio
+Requires-Dist: pyftpdlib
+Requires-Dist: pygresql
+Requires-Dist: pyqt5
+Requires-Dist: pyserial
+Requires-Dist: pytesseract
+Requires-Dist: scipy
+Requires-Dist: selenium
+Requires-Dist: telethon
+Requires-Dist: webdriver-manager
+Requires-Dist: xlutils
+
+
+ ## corut
+This package is intended as a subsystem for applications developed/to be developed and facilitated 
+many operations. It has been tried to comply with the Design Pattern/Object Orient principles and 
+PEP standards. It will be constantly updated with additions and corrections.
+I will share all the source code and how to use it on my blog website which I will publish soon.
+
+Details will be shared on http://www.ibrahimcörüt.com/
+- The general structure of the system to be added was designed.
+- The works are not yet completed.
+- The code to be transferred is not yet complete.
+- Test modules will be added after all is completed.
+- Source code and documentation will be shared on my personal website, which is being prepared.
+
+MIT License
+
+Copyright (c) 2021 ibrahim CÖRÜT
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
