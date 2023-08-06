@@ -1,0 +1,7 @@
+hydrotools.nwis_client>=3.0.6
+hydrotools.nwm_client[gcp]>=5.0.1
+hydrotools.events>=1.1.5
+hydrotools.metrics>=1.1.3
+
+[develop]
+pytest
