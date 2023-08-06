@@ -1,0 +1,11 @@
+pymeteobridgedata/__init__.py,sha256=riw-ii6EapMUcnYvePMTYphFbucenzccSDfsZ52kcUc,419
+pymeteobridgedata/api.py,sha256=MSsMVe2IwZSoHV53-C-S0tvYRHC7D_v2QOiWwaZf0qo,15467
+pymeteobridgedata/const.py,sha256=vua9JHR1S-zvEp9Zun9Vcqnnp6QXuTHg8vATDbtvZus,3952
+pymeteobridgedata/conversion.py,sha256=-pK8eGDvje4NZ1RtGTBPhoSUu6EFcDoyIlZCrVxTJaY,10369
+pymeteobridgedata/data.py,sha256=fph_BEmXI_rbEv5ab1Cv381CkdwJzLbreJhro6kAqJM,4574
+pymeteobridgedata/exceptions.py,sha256=SrhjSbp5n6uepOXdZzLgvq8bCNb_EFmzkWEldrLsHa0,475
+pymeteobridgedata-0.1.16.dist-info/LICENSE,sha256=9fHz338YHPAZ96lGzY29mTIDxAuXfsa8DRcFLNBNU5c,1068
+pymeteobridgedata-0.1.16.dist-info/METADATA,sha256=EYHf5gkdPaczrfKjbzdOG0nXrF_aQupT3-bQd0HLQCI,4924
+pymeteobridgedata-0.1.16.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pymeteobridgedata-0.1.16.dist-info/top_level.txt,sha256=ULhJG1sYx0LUzTdfdPlLKfycA8GmAerW3EBtoYyGjH0,18
+pymeteobridgedata-0.1.16.dist-info/RECORD,,
