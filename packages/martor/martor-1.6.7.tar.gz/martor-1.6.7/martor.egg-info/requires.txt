@@ -1,0 +1,6 @@
+Django
+Markdown
+requests
+
+[:python_version < "3.10"]
+importlib-metadata>=4.4
