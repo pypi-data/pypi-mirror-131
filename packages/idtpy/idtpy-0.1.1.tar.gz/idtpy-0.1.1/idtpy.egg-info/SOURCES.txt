@@ -1,0 +1,14 @@
+README.md
+setup.py
+idtpy/__init__.py
+idtpy/designer.py
+idtpy/gdsutils.py
+idtpy/model.py
+idtpy/shapes.py
+idtpy/utils.py
+idtpy/version.py
+idtpy.egg-info/PKG-INFO
+idtpy.egg-info/SOURCES.txt
+idtpy.egg-info/dependency_links.txt
+idtpy.egg-info/requires.txt
+idtpy.egg-info/top_level.txt
