@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: typhon
+Version: 0.9.0
+Summary: Typhon is a collection of tools for atmospheric research.
+Home-page: https://github.com/atmtools/typhon
+Author: The Typhon developers
+Author-email: typhon.mi@lists.uni-hamburg.de
+License: MIT
+Download-URL: https://github.com/atmtools/typhon/tarball/v0.9.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: ~=3.7
+License-File: LICENSE
+Requires-Dist: docutils
+Requires-Dist: fsspec
+Requires-Dist: imageio
+Requires-Dist: matplotlib (>=1.4)
+Requires-Dist: netCDF4 (>=1.1.1)
+Requires-Dist: numba
+Requires-Dist: numexpr
+Requires-Dist: numpy (>=1.13)
+Requires-Dist: pandas
+Requires-Dist: scikit-image
+Requires-Dist: scikit-learn
+Requires-Dist: scipy (>=0.15.1)
+Requires-Dist: setuptools (>=0.7.2)
+Requires-Dist: xarray (>=0.10.2)
+Provides-Extra: docs
+Requires-Dist: cartopy ; extra == 'docs'
+Requires-Dist: pint ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pint ; extra == 'tests'
+
+Typhon provides:
+
+- reading and writing routines for ARTS XML files
+- an API to run and access ARTS through Python
+- conversion routines for various physical quantities
+- a tool kit to collocate different data sets (e.g. satellite, ship, ...)
+- different retrievals (e.g. QRNN, SPARE-ICE, ...)
+- a subset of the cmocean color maps
+- functions to calculate and analyse cloud masks
+- various plotting utility functions
+- functions for geodetic and geographical calculations
+- interface to the SRTM30 global elevation model
+- functions for cloudmask statistics
+- and much more...
+
+Further information on ARTS can be found on http://www.radiativetransfer.org/.
+
+
