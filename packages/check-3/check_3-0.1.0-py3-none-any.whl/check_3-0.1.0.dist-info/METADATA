@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: check-3
+Version: 0.1.0
+Summary: Library for feeding data to kafka
+Home-page: UNKNOWN
+Author: ducdv10
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: coverage
+Requires-Dist: numpy
+Requires-Dist: pyyaml
+
+UNKNOWN
+
+
