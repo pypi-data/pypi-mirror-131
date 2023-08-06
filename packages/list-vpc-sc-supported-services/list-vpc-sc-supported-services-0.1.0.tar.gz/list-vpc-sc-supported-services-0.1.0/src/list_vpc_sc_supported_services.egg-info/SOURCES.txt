@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/list_vpc_sc_supported_services/__init__.py
+src/list_vpc_sc_supported_services/__main__.py
+src/list_vpc_sc_supported_services.egg-info/PKG-INFO
+src/list_vpc_sc_supported_services.egg-info/SOURCES.txt
+src/list_vpc_sc_supported_services.egg-info/dependency_links.txt
+src/list_vpc_sc_supported_services.egg-info/entry_points.txt
+src/list_vpc_sc_supported_services.egg-info/not-zip-safe
+src/list_vpc_sc_supported_services.egg-info/requires.txt
+src/list_vpc_sc_supported_services.egg-info/top_level.txt

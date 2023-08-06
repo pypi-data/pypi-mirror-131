@@ -1,0 +1,3 @@
+[console_scripts]
+list-vpc-sc-supported-services = list_vpc_sc_supported_services.__main__:main
+
