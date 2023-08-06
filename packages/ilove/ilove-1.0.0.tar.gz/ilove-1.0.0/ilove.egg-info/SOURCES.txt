@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+setup.py
+ilove/__init__.py
+ilove.egg-info/PKG-INFO
+ilove.egg-info/SOURCES.txt
+ilove.egg-info/dependency_links.txt
+ilove.egg-info/top_level.txt
