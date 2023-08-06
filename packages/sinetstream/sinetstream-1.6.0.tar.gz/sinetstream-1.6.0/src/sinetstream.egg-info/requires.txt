@@ -1,0 +1,5 @@
+pyyaml
+pycryptodomex
+avro-python3
+promise
+requests
