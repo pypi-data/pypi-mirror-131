@@ -1,0 +1,14 @@
+numpy==1.*
+python-dateutil==2.*
+pyproj==3.*
+rasterio==1.*
+
+[cli]
+click==7.*
+colorama
+
+[dev]
+black
+flake8
+twine
+wheel
