@@ -1,0 +1,10 @@
+catchm/__init__.py,sha256=Zt-JZkbkFa5Gy5_UGk7LZZnig82dlIHcWZ7Mr3QNdC4,47
+catchm/embeddings.py,sha256=7N6QEUmF8djlXfrjyVLrf83Fj1r2dVXyw76QJr2P2wE,3958
+catchm/inductive.py,sha256=XZXS7ZW0PNxRWqdZZ50OjuSiChBTb27cUptWvv_nYUg,3435
+catchm/model.py,sha256=R3e29cYLlfha_jIJFvOkFEnGTdOjgaWe_Rb57x_9k5I,3776
+catchm/network.py,sha256=WhYFymSiMtDOBMzldoqnD7bEX3TsiQ4Z7VK_BhRnU_A,818
+catchm/utils.py,sha256=ThHnICt6xC5riaJi05kYcLz1PeZ4X1gz0mx0jNhYQ4Q,500
+CATCHM-0.1.dist-info/METADATA,sha256=YMA_HFt8xsAuEyMFqtIfl9dnbWKA5gc8tBeWFYhg1Bs,2692
+CATCHM-0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+CATCHM-0.1.dist-info/top_level.txt,sha256=AVnPwIdbkGYuuOPyVx8nyReRiPPlfRSnBs7d0FVPnJw,7
+CATCHM-0.1.dist-info/RECORD,,
