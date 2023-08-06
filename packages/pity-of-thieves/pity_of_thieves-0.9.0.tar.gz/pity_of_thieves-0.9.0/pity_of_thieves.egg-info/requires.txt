@@ -1,0 +1,6 @@
+aiohttp>=3.8.1
+balladeer==0.24.0
+
+[dev]
+flake8>=3.7.0
+wheel>=0.33.0
