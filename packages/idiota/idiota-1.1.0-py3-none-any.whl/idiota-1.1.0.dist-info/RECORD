@@ -1,0 +1,12 @@
+idiota/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+idiota/base.py,sha256=psjJksWHl0su2IsEL_FeZBPHDnyI0gYQHzVWcLWCYNc,9481
+idiota/cli.py,sha256=53CgG7ZBLLYnEiaxAUy6BBvhiVm0ncTZsUeRP5Q36pU,9796
+idiota/data.py,sha256=IuqdSCsUXvmwSCetSwHJQAErDIGMddZVoNJqXIlMXJM,4158
+idiota/diff.py,sha256=bPbXGzSIOlkj2castrwWOK978s5qf1QeBnnuxFyRwnw,2575
+idiota/remote.py,sha256=83KSyx2Duy6V164-lw4PlbqSlR_NRBAJz77qbI_alY8,2030
+idiota-1.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+idiota-1.1.0.dist-info/METADATA,sha256=CSJcoBmi9so0GeeaUur_pPnFKov4VMIQ_OlkR0n5eLs,1201
+idiota-1.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+idiota-1.1.0.dist-info/entry_points.txt,sha256=VgWGYGqC9WWaNfYly0tA_tKQFZvA7PoveEYoTPGtZuI,44
+idiota-1.1.0.dist-info/top_level.txt,sha256=6MaPeXH0hWujAXzB0X3Fy7vme41llKXD7BKsfuglPbU,7
+idiota-1.1.0.dist-info/RECORD,,
