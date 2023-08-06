@@ -1,0 +1,101 @@
+<metal:page define-macro="master">
+  <html metal:use-macro="context/@@main_template/macros/master" i18n:domain="collective.contentsections">
+
+    <metal:styleslot fill-slot="style_slot">
+      <style>
+        #content-core > div {
+        --bs-gutter-x: 0.75rem;
+        --bs-gutter-y: 0rem;
+        }
+        .section {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 1rem 0rem;
+        }
+        .section-edit-links {
+        text-align: right;
+        }
+        .section-edit-links a{
+        text-decoration: none;
+        }
+        #content-core {  /* FULL WIDTH */
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        }
+      </style>
+    </metal:styleslot>
+
+    <metal:content-core fill-slot="content-core"
+      tal:define="can_edit python: checkPermission('Modify portal content', context);
+                sections view/sections;">
+      <metal:slot define-slot="content-top" />
+      <tal:emptypage tal:condition="not:sections">
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="container" i18n:translate="">There is no section on this page.</p>
+          </div>
+        </div>
+      </tal:emptypage>
+      <tal:section tal:repeat="section sections">
+        <?python
+          section_url = section.absolute_url()
+          section_background_image_url = f"url({section_url}/@@images/background_image/huge)"
+          section_id = f"section-{section.id}"
+          section_type = section.portal_type.split(".")[-1]
+          section_type_class = f"section-{section_type.lower()}"
+          section_css_classes = section.css_classes if section.css_classes else ""
+          section_class = " ".join(["clearfix section", section_type_class, section_css_classes])
+          section_style = f"background-image: {section_background_image_url}; background-size: cover; background-position: center;"
+          ?>
+        <div id="${section_id}" class="${section_class}" style="${section_style}">
+          <a tal:attributes="name string:${section_id}" />
+          <div class="${python:'' if section.is_full_width else 'container'}">
+            <div class="section-edit-links" tal:condition="can_edit"
+              tal:attributes="style python:'float: right' if not section.hide_title else ''">
+              <div class="btn-group">
+                <div class="dropdown">
+                  <button class="btn btn-dark btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    <tal:icon replace="structure python:icons.tag('toolbar-action/actions', tag_class='')" />
+                    Actions
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li tal:condition="section/allowedContentTypes">
+                      <a class="dropdown-item" href="${section_url}/folder_contents">
+                        <tal:icon replace="structure python:icons.tag('toolbar-action/folderContents', tag_class='')" />
+                        Section content
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="${section_url}/@@edit">
+                        <tal:icon replace="structure python:icons.tag('toolbar-action/edit', tag_class='')" />
+                        Edit section
+                      </a>
+                    </li>
+                    <li tal:condition="python:len(section.getAvailableLayouts())>1">
+                      <a class="dropdown-item" href="${section_url}/select_default_view">
+                        <tal:icon replace="structure python:icons.tag('toolbar-action/view', tag_class='')" />
+                        Change section view
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="${section_url}/@@delete_confirmation">
+                        <tal:icon replace="structure python:icons.tag('trash', tag_class='')" />
+                        Delete section
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <span tal:replace="structure section/@@page_section_view | nothing" />
+          </div>
+        </div>
+      </tal:section>
+    </metal:content-core>
+
+  </html>
+</metal:page>
