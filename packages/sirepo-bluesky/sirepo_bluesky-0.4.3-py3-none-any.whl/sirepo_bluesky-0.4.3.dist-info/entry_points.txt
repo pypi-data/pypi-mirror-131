@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[intake.catalogs]
+local = sirepo_bluesky:sirepo_bluesky_catalog_instance
+
