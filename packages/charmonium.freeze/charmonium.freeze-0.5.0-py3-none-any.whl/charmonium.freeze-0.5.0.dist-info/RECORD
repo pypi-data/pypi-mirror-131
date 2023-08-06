@@ -1,0 +1,8 @@
+charmonium/freeze/__init__.py,sha256=hYNu4RKAnaMv5ATPEzCSahf3HiV6fSHkj5hoWDV0YIg,396
+charmonium/freeze/lib.py,sha256=lP1ltpY-197hNiMhiNlRtMuanXE6PJ1tJiEqJwdaagc,13428
+charmonium/freeze/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+charmonium/freeze/util.py,sha256=C3gd25FW97NvYYuxlptPhrTIu6Kiq3NxCDC0_dSOQuM,2492
+charmonium.freeze-0.5.0.dist-info/LICENSE,sha256=Fn3FlRU1hoN8hdTthi9LU2ZS396RDRjpfBcPanP4DTE,1065
+charmonium.freeze-0.5.0.dist-info/WHEEL,sha256=DRf8A_Psd1SF2kVqTQOOFU1Xzl3-A2qljAxBMTOusUs,83
+charmonium.freeze-0.5.0.dist-info/METADATA,sha256=A-ojTDbwHsdre0mnZOR2Y7RpUgn8QlRdKy6-KN2SehM,4164
+charmonium.freeze-0.5.0.dist-info/RECORD,,
