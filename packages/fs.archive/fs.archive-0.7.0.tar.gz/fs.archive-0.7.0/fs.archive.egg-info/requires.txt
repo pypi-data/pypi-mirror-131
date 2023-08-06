@@ -1,0 +1,26 @@
+fs~=2.2
+six~=1.10
+setuptools>=38.3.0
+
+[7z]
+py7zr~=0.17
+iocursor~=0.1
+
+[:python_version < "3.6"]
+typing~=3.6
+
+[all]
+pycdlib~=1.8
+py7zr~=0.17
+iocursor~=0.1
+
+[all:python_version < "3"]
+backports.lzma
+
+[iso]
+pycdlib~=1.8
+
+[tar.xz]
+
+[tar.xz:python_version < "3"]
+backports.lzma
