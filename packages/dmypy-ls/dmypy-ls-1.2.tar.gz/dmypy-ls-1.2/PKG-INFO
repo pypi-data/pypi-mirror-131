@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: dmypy-ls
+Version: 1.2
+Summary: super fast mypy language server
+Home-page: https://github.com/sileht/dmypy-ls
+Author: Mehdi Abaakouk
+Author-email: sileht@sileht.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: test
+Provides-Extra: pep8
+License-File: LICENSE
+
+UNKNOWN
+
