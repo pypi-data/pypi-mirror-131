@@ -1,0 +1,16 @@
+hipsnp/__init__.py,sha256=CweUV4o9idlDfeu8PBMtDIyoxQJRrSY6TGDTsXl0ih8,225
+hipsnp/_version.py,sha256=miSsqPy2PFJ18TW9kocQJLcv4HFpkfQhcTzgAO-GTVE,22
+hipsnp/hipsnp.py,sha256=2nYjvGUQAzi9TmNGxAh-qeLhC8jGA2jYykD5e6Q7q4U,35500
+hipsnp/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hipsnp/tests/test_genotype.py,sha256=uFzhLUPGdTJwYEK10KOK8JPPlVg_fHEMDhBY4bRzIpY,18484
+hipsnp/tests/test_io.py,sha256=tcckUaz-a0FC1-J0Kc6bIBAxSQ48KPDN2VAleO08uFc,7594
+hipsnp/utils/__init__.py,sha256=E-m5TlZcbV13qgjrXCfS_oF4pR5Q22RWHICHmDw63_4,142
+hipsnp/utils/logging.py,sha256=DJWabqAnmGj0enFEcsr2iSYnzKdK7NpNNrxthy-X0qA,6143
+hipsnp/utils/qctool.py,sha256=B4AdKsz9hbiBOBDb2kAUbjFocpCdvgGP2ZXVbzWd4Cs,806
+hipsnp/utils/testing.py,sha256=C_Ymf_pt0LpRp-kjt_x3X3BBJQRUhd9faDkoL0R0mPU,622
+hipsnp-0.0.2.dist-info/AUTHORS.rst,sha256=IelvDgFSOgVNDMOxRvZJFDec3W6I1HmVXFsIUvvlEX0,34
+hipsnp-0.0.2.dist-info/LICENSE.md,sha256=z5aMVBrc-9kk0pxaOdOAkI62S5YhYMiF6ADsMtZmOZg,34353
+hipsnp-0.0.2.dist-info/METADATA,sha256=8nTti5ockvLNE1tNnnJ6pskPkhksG-G35NoLc1lelQw,2183
+hipsnp-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+hipsnp-0.0.2.dist-info/top_level.txt,sha256=m4mIPbiBmMdTdgs6hsLuiO3nfSWadTVsuMk99jmmhBE,7
+hipsnp-0.0.2.dist-info/RECORD,,
