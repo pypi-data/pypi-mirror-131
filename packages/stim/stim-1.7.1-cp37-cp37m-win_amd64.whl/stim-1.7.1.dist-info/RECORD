@@ -1,0 +1,11 @@
+stim/__init__.py,sha256=01qOx2HluFwqx7C3xd8EH4R9dbOq3Fczxp5MFN9KY2o,889
+stim/_stim_march_avx2.cp37-win_amd64.pyd,sha256=osWuDCCnMswY56Hg-R1aE3X7DfIMuZioF8Pg7WSvzWc,1392640
+stim/_stim_march_polyfill.cp37-win_amd64.pyd,sha256=8EPjHQi0fq_j8GkVhgjThqTeRL6exPQmcEr1mOFMwn0,1393152
+stim/_stim_march_sse2.cp37-win_amd64.pyd,sha256=GEe_lpl5d8NjBAuFAiVXOfDndURkD1caAdWfo1BBNBI,1392640
+stim-1.7.1.data/data/README.md,sha256=1Kg8Mlpjrb_VaMrVynPoZZQT3UcpmEG0uEyt8ZfWlwU,3995
+stim-1.7.1.data/data/pyproject.toml,sha256=cWEJ4OFf3CnqgvAN69LOVgBAozuFq68EG0Nd8jnSAGM,105
+stim-1.7.1.dist-info/LICENSE,sha256=SbvpEU5JIU3yzMMkyzrI0dGqHDoJR_lMKGdl6GZHsy4,11558
+stim-1.7.1.dist-info/METADATA,sha256=KhS3biKB3QWh_6PIP0HhjVfyWSnffRjZTjr3AKAaPOs,4199
+stim-1.7.1.dist-info/WHEEL,sha256=OmDKD3JmZjhMu_YdpkiJDfFL1rf8n9nexhWCGhSBGVE,101
+stim-1.7.1.dist-info/top_level.txt,sha256=_h6lQZBgzVLumwrXyf13DY71YT6dUkd4SY-ZRjcljFQ,5
+stim-1.7.1.dist-info/RECORD,,
