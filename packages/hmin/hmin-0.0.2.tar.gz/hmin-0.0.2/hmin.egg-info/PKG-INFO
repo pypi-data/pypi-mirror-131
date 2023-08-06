@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: hmin
+Version: 0.0.2
+Summary: Package for Clustering Text using Ko-BERT
+Home-page: UNKNOWN
+Author: Minsub Won
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.0

@@ -1,0 +1,3 @@
+[console_scripts]
+hmin = hmin.cli:main
+
