@@ -1,0 +1,15 @@
+civics_cdf_validator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+civics_cdf_validator/base.py,sha256=3p0-d2fFimQ0JwBmaZyHIj7lpvEeEONBk6yRjtqs4C0,12293
+civics_cdf_validator/gpunit_rules.py,sha256=Qts6wbfFGaQXB5pywL_wgzhz-KjUBg0xID_tMAwjNtc,6547
+civics_cdf_validator/loggers.py,sha256=LS6U9YWzu72V2Q0PwyE9xE03Ul392UAPRnrp2uRBMLA,6923
+civics_cdf_validator/office_utils.py,sha256=mkVyria7hTUBnG3gCCGT0J5jIoYCl2CunnSTXUBYgmI,2319
+civics_cdf_validator/rules.py,sha256=nA-un-BVhsTQkT1tocBRsd2jI0JjDZGyF4qJrfsldKs,101023
+civics_cdf_validator/stats.py,sha256=YNqv3Khkt_hJxCIunFBRSl23oXqu5gNjCmWMHFbAcSU,3819
+civics_cdf_validator/validator.py,sha256=QefDM72PKn3lWuanObk8h924tF7gTwug5gnn66CODwM,11474
+civics_cdf_validator/version.py,sha256=riRuUSGRmEFDZQDuM7xGdSKzQVF5lIY69SvsytlpaBw,183
+civics_cdf_validator-1.26.dist-info/LICENSE-2.0.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+civics_cdf_validator-1.26.dist-info/METADATA,sha256=cDpaPqmB66IhZKVn0kv3hAq3lF-o3JwT3h7sOTHmWz4,748
+civics_cdf_validator-1.26.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+civics_cdf_validator-1.26.dist-info/entry_points.txt,sha256=JHphPs9JpNm-Ag585XtpQSmh1hMhEoJP4iFq2eL0l1A,78
+civics_cdf_validator-1.26.dist-info/top_level.txt,sha256=PYT5Eclxbop5o6DJIcgs4IeU6Ds5jqyftjoFbgkkJYo,21
+civics_cdf_validator-1.26.dist-info/RECORD,,
