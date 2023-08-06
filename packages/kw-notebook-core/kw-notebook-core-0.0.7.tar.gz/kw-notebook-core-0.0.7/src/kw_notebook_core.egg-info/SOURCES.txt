@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/kw_notebook_core/__init__.py
+src/kw_notebook_core/display.py
+src/kw_notebook_core.egg-info/PKG-INFO
+src/kw_notebook_core.egg-info/SOURCES.txt
+src/kw_notebook_core.egg-info/dependency_links.txt
+src/kw_notebook_core.egg-info/top_level.txt
