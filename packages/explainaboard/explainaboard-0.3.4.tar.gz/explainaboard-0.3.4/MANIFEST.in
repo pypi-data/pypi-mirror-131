@@ -1,0 +1,3 @@
+include *.txt *.png
+recursive-include explainaboard/pre_computed/* *.aspects *.pkl
+
