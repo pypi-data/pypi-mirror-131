@@ -1,0 +1,7 @@
+README.md
+setup.py
+ibge_api.egg-info/PKG-INFO
+ibge_api.egg-info/SOURCES.txt
+ibge_api.egg-info/dependency_links.txt
+ibge_api.egg-info/requires.txt
+ibge_api.egg-info/top_level.txt
