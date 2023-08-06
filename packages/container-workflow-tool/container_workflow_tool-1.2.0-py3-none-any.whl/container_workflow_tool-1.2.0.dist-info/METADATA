@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: container-workflow-tool
+Version: 1.2.0
+Summary: A python3 tool to make rebuilding images easier by automating several steps of the process.
+Home-page: https://github.com/sclorg/container-workflow-tool
+Author: Petr Kubat
+Author-email: pkubat@redhat.com
+License: MIT
+Keywords: tool,containers,images,automate,workflow
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+License-File: LICENSE
+Requires-Dist: PyYAML
+Requires-Dist: GitPython
+Requires-Dist: requests-kerberos
+
+UNKNOWN
+
