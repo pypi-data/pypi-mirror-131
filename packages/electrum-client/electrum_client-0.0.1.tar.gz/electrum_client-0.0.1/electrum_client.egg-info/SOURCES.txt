@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+electrum_client/__init__.py
+electrum_client/requests.py
+electrum_client/rpc.py
+electrum_client/segwit_addr.py
+electrum_client/util.py
+electrum_client.egg-info/PKG-INFO
+electrum_client.egg-info/SOURCES.txt
+electrum_client.egg-info/dependency_links.txt
+electrum_client.egg-info/requires.txt
+electrum_client.egg-info/top_level.txt
