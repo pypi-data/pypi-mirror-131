@@ -1,0 +1,14 @@
+LICENSE
+README.rst
+setup.py
+thot/__init__.py
+thot/_version.py
+thot/filter.py
+thot/local_project.py
+thot/db/__init__.py
+thot/db/local.py
+thot_data.egg-info/PKG-INFO
+thot_data.egg-info/SOURCES.txt
+thot_data.egg-info/dependency_links.txt
+thot_data.egg-info/requires.txt
+thot_data.egg-info/top_level.txt
