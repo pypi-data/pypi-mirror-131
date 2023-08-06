@@ -1,0 +1,10 @@
+bitmath
+bs4
+clipboard
+configset
+make_colors
+pheader
+pydebugger
+pywget
+requests
+unidecode
