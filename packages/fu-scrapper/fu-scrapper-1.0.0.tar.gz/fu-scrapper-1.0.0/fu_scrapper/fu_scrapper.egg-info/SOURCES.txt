@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+fu_scrapper/fu_scrapper.egg-info/PKG-INFO
+fu_scrapper/fu_scrapper.egg-info/SOURCES.txt
+fu_scrapper/fu_scrapper.egg-info/dependency_links.txt
+fu_scrapper/fu_scrapper.egg-info/requires.txt
+fu_scrapper/fu_scrapper.egg-info/top_level.txt
+fu_scrapper/nba/__init__.py
+fu_scrapper/nba/games.py
+fu_scrapper/nba/players.py
+fu_scrapper/nba/teams.py
+fu_scrapper/tools/Scrapper.py
+fu_scrapper/tools/__init__.py
+fu_scrapper/tools/preformator.py
+fu_scrapper/tools/tools.py
