@@ -1,0 +1,11 @@
+pycasadi_kin_din.cpython-36m-x86_64-linux-gnu.so,sha256=LuRzfQeRJXJxyuJSnZ2mTDzPzyr2H59d0cHVDcOivjw,7232
+casadi_kin_dyn/__init__.py,sha256=I7IwVySzq6yU57iQTcjdzS3qdofUv0NLYTtQZCtR1EA,173
+casadi_kin_dyn/libcasadi.so.3.6,sha256=_gVvbchG-tam80pTJkvR0PFiJTHsUdQaawDtFPWJCus,8617392
+casadi_kin_dyn/libcasadi_kin_dyn.so.1.2.0,sha256=Z5Tg7VRSdhkHeb2MvYAIRbDk-Z1qklvpSg-MxRTdqoY,1874712
+casadi_kin_dyn/libpinocchio.so.2.6.4,sha256=oeIEq3KH0R-1oY9b9xW5mYpyI5ILty5jmJbedMq2co8,258200
+casadi_kin_dyn/py3casadi_kin_dyn.cpython-36m-x86_64-linux-gnu.so,sha256=tY2HjKgGhft9iWTH5FDKpD8NcuU8NhTK7dvW8RXCI4s,175624
+casadi_kin_dyn-1.2.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+casadi_kin_dyn-1.2.0.dist-info/METADATA,sha256=YaIA15a63s-51l9ekflHNDRFrifxPhgB4pPwawrkeJU,440
+casadi_kin_dyn-1.2.0.dist-info/WHEEL,sha256=M_azqXEGaVpEiKR2nVzGU68evoQWHpkvhhwkVGZKxjs,109
+casadi_kin_dyn-1.2.0.dist-info/top_level.txt,sha256=uwwynhOL9QikrPkoAPrbpNplxS_0N2469_46SE_N13g,32
+casadi_kin_dyn-1.2.0.dist-info/RECORD,,
