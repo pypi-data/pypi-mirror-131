@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mmtester
+Version: 0.2.0
+Summary: Simple local tester for Topcoder's Marathon contests.
+Home-page: https://github.com/FakePsyho/mmtester
+Author: Psyho
+License: MIT
+Keywords: Topcoder,Marathon,Tester
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+UNKNOWN
+
