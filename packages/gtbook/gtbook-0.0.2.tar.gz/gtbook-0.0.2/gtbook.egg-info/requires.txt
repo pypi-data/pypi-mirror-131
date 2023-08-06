@@ -1,0 +1,7 @@
+pip
+packaging
+plotly
+graphviz
+gtsam
+
+[dev]

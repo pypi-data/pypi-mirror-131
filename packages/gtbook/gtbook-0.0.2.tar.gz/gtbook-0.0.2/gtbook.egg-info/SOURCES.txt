@@ -1,0 +1,17 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+gtbook/__init__.py
+gtbook/_nbdev.py
+gtbook/core.py
+gtbook/display.py
+gtbook.egg-info/PKG-INFO
+gtbook.egg-info/SOURCES.txt
+gtbook.egg-info/dependency_links.txt
+gtbook.egg-info/entry_points.txt
+gtbook.egg-info/not-zip-safe
+gtbook.egg-info/requires.txt
+gtbook.egg-info/top_level.txt
